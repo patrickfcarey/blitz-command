@@ -1,0 +1,89 @@
+name: Trey Right
+side: offense
+personnel: "12"
+strength_side: right
+
+# Trey = 12 personnel (1 RB, 2 TE, 2 WR) with both WRs aligned to the strong
+# (right) side. TE-L is the weak-side line-end (eligibility on the left); TE-R
+# is attached strong-side. Both WRs off the line strong-side as the inner two
+# of a 3-receiver overload.
+#
+# This file replaces the user-requested "I-Form 2 WR same side as TE", which
+# is IMPOSSIBLE in pure 21 personnel I-Formation (would leave the weak-side
+# line-end as an interior OL — see docs/formation-rules.md, Rule 2). Trey is
+# the closest legal expression of that intent.
+#
+# Legality: 5 OL + TE-L + TE-R = 7 on the line. Both line-ends are TEs (eligible).
+players:
+  - { label: LT,    position: LT, x: -2.0,  y:  0.0, on_line: true  }
+  - { label: LG,    position: LG, x: -1.0,  y:  0.0, on_line: true  }
+  - { label: C,     position: C,  x:  0.0,  y:  0.0, on_line: true  }
+  - { label: RG,    position: RG, x:  1.0,  y:  0.0, on_line: true  }
+  - { label: RT,    position: RT, x:  2.0,  y:  0.0, on_line: true  }
+  - { label: TE-L,  position: TE, x: -3.5,  y:  0.0, on_line: true  }
+  - { label: TE-R,  position: TE, x:  3.5,  y:  0.0, on_line: true  }
+  - { label: Z,     position: WR, x:  15.0, y: -1.0, on_line: false }
+  - { label: SLOT,  position: WR, x:  9.0,  y: -1.0, on_line: false }
+  - { label: QB,    position: QB, x:  0.0,  y: -1.5, on_line: false }
+  - { label: HB,    position: HB, x:  0.0,  y: -6.0, on_line: false }
+
+strengths:
+  - Three-receiver overload to the strong side (TE-R + Z + SLOT) without trips legality issues
+  - Backside TE-L is a credible PA bootleg target and run-side blocker
+  - 7-blocker line surface for inside power runs
+  - Heavy run threat retained (2 TEs on the line) while preserving spread passing
+  - Defense must declare strong-side rotation, opening backside throws
+
+weaknesses:
+  - Single RB (no FB) limits two-back deception
+  - Backside (left) WR threat absent — defense can roll heavy strong
+  - HB at 6-yd depth = slower release for swing/screen than singleback
+  - Strong-side run is congested (3 receivers + TE in tight space)
+  - Modern defenses rotate to the trips/overload side reliably
+
+common_uses:
+  - Strong-side flood and HI-LO concepts
+  - Crack-toss to strong side
+  - Goal-line / red-zone with 12 personnel matchup advantage
+  - PA shots to the strong side
+  - Run game to the weak side (defense rotates strong, leaving weak vulnerable)
+
+run_concepts:
+  - power-o
+  - inside-zone
+  - outside-zone
+  - crack-toss
+  - counter-trey
+
+pass_concepts:
+  - flood-strong
+  - smash-strong
+  - snag-strong
+  - pa-deep-strong
+  - pa-bootleg-weak
+
+era: "2000s onward; staple of pro-style spread offenses."
+
+famous_users:
+  - "Patriots' Erhardt-Perkins lineage (multiple personnel groupings out of same look)"
+  - "Modern NFL teams using 12 personnel as a constraint to nickel personnel"
+
+tags:
+  - pro-style
+  - 12-personnel
+  - trey
+  - strong-overload
+  - balanced-line
+  - under-center
+  - nfl
+  - college
+
+notes: |
+  Mirror this file's WR positions to make "Trey Left" (both WRs on left, TE-R as
+  weak-side line-end). For pure 21 personnel "twins" looks, see
+  i-formation-twins-weak.yaml — twins-strong in 21 personnel is illegal.
+
+verification_status: inferred
+source_notes:
+  - "Coordinates: standard 12-personnel trey alignment."
+  - "Created in lieu of an illegal 'I-Form Twins Strong' (21 personnel) — see formation-rules.md."

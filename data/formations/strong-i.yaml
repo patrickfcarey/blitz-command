@@ -1,0 +1,71 @@
+name: Strong I
+side: offense
+personnel: "21"
+strength_side: right
+
+# I-Formation variant with FB pre-aligned to the strong side as a wing-back
+# style lead blocker. All positions identical to I-Form except FB.
+players:
+  - { label: LT, position: LT, x: -2.0,  y:  0.0, on_line: true  }
+  - { label: LG, position: LG, x: -1.0,  y:  0.0, on_line: true  }
+  - { label: C,  position: C,  x:  0.0,  y:  0.0, on_line: true  }
+  - { label: RG, position: RG, x:  1.0,  y:  0.0, on_line: true  }
+  - { label: RT, position: RT, x:  2.0,  y:  0.0, on_line: true  }
+  - { label: TE, position: TE, x:  3.5,  y:  0.0, on_line: true  }
+  - { label: X,  position: WR, x: -15.0, y:  0.0, on_line: true  }
+  - { label: Z,  position: WR, x:  12.0, y: -1.0, on_line: false }
+  - { label: QB, position: QB, x:  0.0,  y: -1.5, on_line: false }
+  - { label: FB, position: FB, x:  1.5,  y: -4.0, on_line: false }
+  - { label: HB, position: HB, x:  0.0,  y: -7.0, on_line: false }
+
+strengths:
+  - FB pre-aligned strong gives a faster path to lead block on strong-side runs
+  - Strong-side run threat amplified — defense honors TE + FB + run-side WR
+  - Strong-side play-action holds the safety/LBs a beat longer
+  - Easier kickout and reach blocks — FB doesn't have to cross the QB
+
+weaknesses:
+  - Tips run direction — the FB offset is a big tell to a smart defense
+  - Weak-side runs harder; FB has further to travel for backside lead
+  - Cutback lanes restricted because FB isn't centered
+  - Same pass-protection weak-side hole as base I-Form
+
+common_uses:
+  - Strong-side outside runs (toss sweep, power off-tackle)
+  - Short-yardage to the strong side
+  - Goal-line strong-side runs
+  - Setting up strong-side PA boots
+
+run_concepts:
+  - strong-side-toss
+  - strong-side-power
+  - off-tackle-iso
+  - counter-trey
+
+pass_concepts:
+  - strong-side-pa-rollout
+  - boot-flat
+  - flood-strong
+  - pa-deep-cross
+
+era: "1980s–2000s NFL/college; still situationally used."
+
+famous_users:
+  - "Pro-style power running schemes calling this for short-yardage strong runs"
+
+tags:
+  - pro-style
+  - power
+  - 21-personnel
+  - strong-side-run
+  - under-center
+  - any-level
+
+notes: |
+  FB at x=+1.5, y=-4.0 — slightly shallower than standard I-Form (4.5 yd) for
+  faster kickout. Mirror the FB to x=-1.5 for Strong I Left.
+
+verification_status: inferred
+source_notes:
+  - "Coordinates: standard convention; FB offset 1.5 yd toward strong side."
+  - "Strengths/weaknesses: standard coaching textbook material."

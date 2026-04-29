@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blitz-command.local/schemas/game.schema.json",
+  "title": "Game knowledge entry",
+  "description": "Metadata and capability summary for a single football game on a single platform. Lives at data/games/<game-id>/game.yaml; companion file editor-grid.yaml (validated by coordinate-map.schema.json) sits beside it.",
+  "type": "object",
+  "required": ["game_id", "title", "franchise", "platform", "year", "verification_status"],
+  "additionalProperties": false,
+  "properties": {
+    "game_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "Stable identifier, lowercase kebab-case (e.g. 'ncaa-06-ps2'). Must match the parent directory name."
+    },
+    "title": { "type": "string" },
+    "franchise": { "enum": ["madden", "ncaa"] },
+    "platform": {
+      "enum": ["PS1", "PS2", "PS3"],
+      "description": "Same title on different platforms = different files (different editors, different limits)."
+    },
+    "year": { "type": "integer", "minimum": 1990, "maximum": 2030 },
+    "release_date": { "type": "string", "format": "date" },
+    "developer": { "type": "string" },
+    "publisher": { "type": "string" },
+    "engine": { "type": "string" },
+    "editors": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Which in-game editors this title provides. Each editor's verification is tracked separately because they're often documented unevenly.",
+      "properties": {
+        "custom_play": { "$ref": "#/$defs/editor_support" },
+        "custom_formation": { "$ref": "#/$defs/editor_support" },
+        "custom_playbook": { "$ref": "#/$defs/editor_support" },
+        "custom_roster": { "$ref": "#/$defs/editor_support" },
+        "custom_team": { "$ref": "#/$defs/editor_support" }
+      }
+    },
+    "limits": {
+      "type": "object",
+      "additionalProperties": true,
+      "description": "Numeric or categorical limits known to apply. Schema is permissive (additionalProperties: true) — well-known keys are documented below; per-game extras are allowed.",
+      "properties": {
+        "max_plays_per_playbook": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Max plays the user can fit in a single playbook used in a game."
+        },
+        "max_formations_per_playbook": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Max formations a single playbook can include."
+        },
+        "max_custom_plays_total": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Save-slot cap for custom plays across the whole game profile."
+        },
+        "max_custom_formations_total": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Save-slot cap for custom formations across the whole game profile."
+        },
+        "max_custom_playbooks_total": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Save-slot cap for custom playbooks themselves."
+        },
+        "max_routes_per_play": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Max number of eligible receivers that can run routes (rest are forced to block)."
+        },
+        "max_route_segments": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Max break points / segments allowed when drawing a single route."
+        }
+      }
+    },
+    "ai_quirks": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "known_limitations": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "verification_status": { "enum": ["verified", "unverified", "inferred"] },
+    "source_notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "$defs": {
+    "editor_support": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status"],
+      "properties": {
+        "status": {
+          "enum": ["present", "absent", "limited", "unknown"]
+        },
+        "notes": { "type": "string" },
+        "verification": { "enum": ["verified", "unverified", "inferred"] }
+      }
+    }
+  }
+}

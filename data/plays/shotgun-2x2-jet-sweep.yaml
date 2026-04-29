@@ -1,0 +1,129 @@
+play_id: shotgun-2x2-jet-sweep
+name: Jet Sweep (Strong)
+aliases:
+  - Jet
+  - Fly Sweep
+  - Speed Sweep
+
+formation: shotgun-2x2
+play_type: run
+ball_carrier: SLOT-W
+
+motions:
+  - player: SLOT-W
+    type: mandatory
+    motion_type: jet
+    end_position: { x: 6.0, y: -2.0 }
+    snap_on_motion: true
+    notes: |
+      SLOT-W motions full-speed across the formation. Ball is snapped to QB
+      just as SLOT-W reaches the snap point. QB hands off to SLOT-W in
+      flight — the runner is already at full speed.
+
+assignments:
+  - player: LT
+    role: run_block
+    blocking_scheme: zone-reach-playside
+  - player: LG
+    role: run_block
+    blocking_scheme: zone-reach-playside
+  - player: C
+    role: run_block
+    blocking_scheme: zone-reach-playside
+  - player: RG
+    role: run_block
+    blocking_scheme: zone-reach-playside
+  - player: RT
+    role: run_block
+    blocking_scheme: zone-reach-playside
+  - player: TE
+    role: run_block
+    blocking_scheme: reach-block
+    target: edge-defender
+    notes: "Reach the EDGE — critical block for sealing the playside corner."
+  - player: X
+    role: run_block
+    blocking_scheme: stalk
+    target: backside-cornerback
+  - player: Z
+    role: run_block
+    blocking_scheme: stalk
+    target: cornerback
+  - player: SLOT-W
+    role: ball_carrier
+    is_primary: true
+    notes: "Take the handoff at full speed (jet motion); attack the perimeter outside the playside EDGE."
+  - player: QB
+    role: handoff
+    notes: "Snap, immediate handoff to SLOT-W on the jet motion path. Carry out a fake (keep + bootleg) to hold backside."
+  - player: HB
+    role: fake
+    notes: "Fake an inside-zone path opposite the jet — holds the backside LBs and DE."
+
+strengths:
+  - Speed advantage — SLOT-W is already moving at full speed when ball arrives
+  - Forces defense to adjust pre-snap (motion across the formation)
+  - Pairs with companion plays (jet read, jet RPO, reverse) off the same motion
+  - Big-play potential when EDGE is reached
+  - Constraint to inside zone tendencies
+
+weaknesses:
+  - Mandatory motion = fragile timing; mistime the snap and play breaks
+  - Defenses with disciplined EDGE play and motion-reads neutralize quickly
+  - Predictable when motion direction tips the play call
+  - Limited if SLOT-W isn't a perimeter speed threat
+  - Crackback rule restrictions limit some inner blocks
+
+best_vs_defense:
+  - 4-3 with predictable EDGE
+  - cover-3 with stretched playside coverage
+  - defenses unprepared for jet motion timing
+  - speed-flow defenses that misread the motion
+
+worst_vs_defense:
+  - cover-2 with disciplined corners
+  - bear front
+  - any defense with disciplined EDGE contain
+  - LB blitzes from the playside
+
+common_uses:
+  - Perimeter constraint to inside zone / power
+  - Tempo / look-changer
+  - Setting up reverses off the same motion
+  - Modern HS / college perimeter run game
+  - 1st-and-10 on a hash where the boundary side is short
+
+philosophy: speed-option
+
+era: "Mid-2000s onward — jet motion / fly sweep concepts originated in West Coast and spread offenses; ubiquitous now."
+
+famous_examples:
+  - "Modern Power 5 spread offenses (Auburn, Ole Miss, Oregon)"
+  - "49ers under Kyle Shanahan (Deebo Samuel jet packages)"
+  - "Patriots / multiple NFL offenses with jet packages"
+  - "HS speed-spread offenses across the country"
+
+tags:
+  - run
+  - speed
+  - jet-sweep
+  - shotgun
+  - 2x2
+  - perimeter
+  - mandatory-motion
+  - any-level
+  - high-school
+  - college
+  - nfl
+  - modern
+
+notes: |
+  Mandatory motion: this play does NOT work without SLOT-W in motion at the
+  snap. The ball is snapped while SLOT-W is moving — that's the "jet" timing.
+  Mirror to a left-handed jet sweep by motioning Z (or another receiver)
+  across to the left and flipping the playside. Companion plays (jet read,
+  jet RPO, fake jet bootleg) all use the same motion to set up other looks.
+
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-29 — XsOs Football 'Shotgun Formation and Sets' (https://xsosfootball.com/shotgun-formation-sets/); Throw Deep Publishing 'Complete Guide to Offensive Football Formations' (https://throwdeeppublishing.com/blogs/football-glossary/the-complete-guide-to-offensive-football-formations); Wikipedia 'Wildcat formation' includes jet motion as a related package (https://en.wikipedia.org/wiki/Wildcat_formation). Modern jet sweep with mandatory motion + snap-on-motion is a foundational spread-offense perimeter run."

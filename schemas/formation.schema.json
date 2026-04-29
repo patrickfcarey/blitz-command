@@ -2,23 +2,22 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://blitz-command.local/schemas/formation.schema.json",
   "title": "Formation",
-  "description": "A football formation defined in the universal coordinate system (see docs/coordinate-systems.md).",
+  "description": "A football formation defined in the universal coordinate system (see docs/coordinate-systems.md). Legality rules NOT enforceable by JSON Schema (e.g. end-of-line players must be eligible receivers) are documented in docs/formation-rules.md.",
   "type": "object",
   "required": ["name", "side", "personnel", "players", "verification_status"],
   "additionalProperties": false,
   "properties": {
     "name": { "type": "string" },
     "side": {
-      "enum": ["offense", "defense"],
-      "description": "Which unit this formation belongs to."
+      "enum": ["offense", "defense"]
     },
     "personnel": {
       "type": "string",
-      "description": "Personnel grouping, e.g. '21' for 2 RB / 1 TE / 2 WR (offense), or '4-3' for defense."
+      "description": "Personnel grouping. Offense uses RB-TE shorthand: '21' = 2 RB / 1 TE / 2 WR. Defense uses front-LB shorthand: '4-3', '3-3-5'."
     },
-    "strength": {
+    "strength_side": {
       "enum": ["left", "right", "balanced"],
-      "description": "Strength side of an asymmetric formation."
+      "description": "Side of the formation that's strong (e.g. TE side on offense)."
     },
     "players": {
       "type": "array",
@@ -30,23 +29,46 @@
         "additionalProperties": false,
         "properties": {
           "label": { "type": "string", "description": "Free-form identifier (e.g. 'X', 'Z', 'TE', 'HB', 'LT')." },
-          "position": {
-            "type": "string",
-            "description": "Position (QB, HB, FB, WR, TE, LT, LG, C, RG, RT, etc.)."
-          },
+          "position": { "type": "string", "description": "Position (QB, HB, FB, WR, TE, LT, LG, C, RG, RT, etc.)." },
           "x": { "type": "number", "description": "Universal x in yards (positive = offense's right)." },
           "y": { "type": "number", "description": "Universal y in yards (positive = downfield)." },
           "on_line": { "type": "boolean", "description": "True if the player is on the line of scrimmage." }
         }
       }
     },
-    "common_uses": {
+    "strengths": {
       "type": "array",
-      "items": { "type": "string" }
+      "items": { "type": "string" },
+      "description": "What this formation does well — schemes/situations it's built for."
     },
     "weaknesses": {
       "type": "array",
-      "items": { "type": "string" }
+      "items": { "type": "string" },
+      "description": "Where this formation struggles — defenses or situations that exploit it."
+    },
+    "common_uses": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Game situations where you'd typically call this formation."
+    },
+    "run_concepts": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Run concepts that pair well with this formation. Names should match concept entries in data/concepts/ when those exist."
+    },
+    "pass_concepts": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Pass concepts that pair well with this formation. Names should match concept entries in data/concepts/ when those exist."
+    },
+    "era": {
+      "type": "string",
+      "description": "Era when this formation was/is most commonly used (e.g. '1970s-1990s NFL', 'modern college spread')."
+    },
+    "famous_users": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Coaches, teams, or systems known for this formation."
     },
     "tags": {
       "type": "array",

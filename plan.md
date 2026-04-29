@@ -499,6 +499,7 @@ A play should include:
 - personnel
 - game target
 - play type
+- motions (each tagged `mandatory` or `optional`, with the player's pre-snap path)
 - assignments
 - routes
 - blocking rules
@@ -508,6 +509,7 @@ A play should include:
 - timing
 - compatible variants
 - validation status
+- tags (level / era / philosophy — e.g. `high-school`, `college`, `nfl`, `west-coast`, `air-raid`, `modern`, `throwback`)
 
 ---
 

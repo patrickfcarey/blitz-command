@@ -1,0 +1,81 @@
+name: Big I
+side: offense
+personnel: "22"
+strength_side: balanced
+
+# 22 personnel I-Formation: 2 RB, 2 TE, 1 WR. Both TEs in-line for a 7-man
+# surface. Single WR off the line for legality.
+# Legality: 5 OL + TE-L + TE-R = 7 on the line.
+players:
+  - { label: LT,    position: LT, x: -2.0,  y:  0.0, on_line: true  }
+  - { label: LG,    position: LG, x: -1.0,  y:  0.0, on_line: true  }
+  - { label: C,     position: C,  x:  0.0,  y:  0.0, on_line: true  }
+  - { label: RG,    position: RG, x:  1.0,  y:  0.0, on_line: true  }
+  - { label: RT,    position: RT, x:  2.0,  y:  0.0, on_line: true  }
+  - { label: TE-L,  position: TE, x: -3.5,  y:  0.0, on_line: true  }
+  - { label: TE-R,  position: TE, x:  3.5,  y:  0.0, on_line: true  }
+  - { label: WR,    position: WR, x:  12.0, y: -1.0, on_line: false }
+  - { label: QB,    position: QB, x:  0.0,  y: -1.5, on_line: false }
+  - { label: FB,    position: FB, x:  0.0,  y: -4.5, on_line: false }
+  - { label: HB,    position: HB, x:  0.0,  y: -7.0, on_line: false }
+
+strengths:
+  - Maximum line surface short of jumbo — 7 in-line blockers
+  - Both A-gaps and both C-gaps available for double-team power runs
+  - Devastating PA — heavy run look forces full defensive commitment
+  - Single WR can run vs single coverage for matchup advantages
+  - Goal-line capable without subbing (just shift)
+
+weaknesses:
+  - One WR limits passing windows
+  - Telegraphs run intent strongly
+  - Vulnerable to 8-man fronts that bring an extra safety
+  - Slow tempo against modern spread defenses
+  - Nickel/dime defenses neutralize the run threat with speed
+
+common_uses:
+  - Short-yardage and 4-minute offense
+  - Goal-line and red-zone power
+  - Heavy PA shots
+  - Setting tempo against speed defenses
+  - 1st-and-Goal from 5-yard line and in
+
+run_concepts:
+  - power-o
+  - iso
+  - lead-toss
+  - counter-trey
+  - dive
+
+pass_concepts:
+  - pa-tight-end-corner
+  - pa-deep-cross
+  - bootleg-flat
+  - back-shoulder-fade
+  - pa-post
+
+era: "1990s–2010s widespread; modern situational use."
+
+famous_users:
+  - "Stanford under Harbaugh / David Shaw"
+  - "Patriots heavy packages (Belichick/Brady era)"
+  - "Power running NFL teams (49ers under Shanahan-tree heavy sets)"
+
+tags:
+  - jumbo
+  - 22-personnel
+  - heavy
+  - power
+  - run-heavy
+  - under-center
+  - college
+  - nfl
+
+notes: |
+  "Big" personnel grouping — 22 personnel I-Form. Variant with 3 TEs (23
+  personnel) is a separate "Heavy I" or "Goal Line" file.
+
+verification_status: inferred
+source_notes:
+  - "Coordinates: standard 22-personnel I-Form alignment."
+  - "Strengths/weaknesses: pro-style power-run textbook material."

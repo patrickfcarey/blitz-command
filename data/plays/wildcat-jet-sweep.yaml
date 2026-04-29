@@ -1,0 +1,124 @@
+play_id: wildcat-jet-sweep
+name: Wildcat Jet Sweep
+aliases:
+  - Wildcat Sweep
+  - Direct-Snap Jet
+
+formation: wildcat
+play_type: run
+ball_carrier: RB2
+
+motions:
+  - player: RB2
+    type: mandatory
+    motion_type: jet
+    end_position: { x: 6.0, y: -2.0 }
+    snap_on_motion: true
+    notes: "RB2 motions full speed across the formation; ball is snapped to RB1 just as RB2 reaches the snap point. RB1 hands off to RB2 in flight."
+
+assignments:
+  - player: LT
+    role: run_block
+    blocking_scheme: zone-reach-playside
+  - player: LG
+    role: run_block
+    blocking_scheme: zone-reach-playside
+  - player: C
+    role: run_block
+    blocking_scheme: zone-reach-playside
+  - player: RG
+    role: run_block
+    blocking_scheme: zone-reach-playside
+  - player: RT
+    role: run_block
+    blocking_scheme: zone-reach-playside
+    target: edge-defender
+  - player: TE
+    role: run_block
+    blocking_scheme: reach-block
+    target: edge-defender
+    notes: "Reach the EDGE — critical block for sealing the playside corner."
+  - player: QB-WR
+    role: run_block
+    blocking_scheme: stalk
+    target: cornerback
+    notes: "QB-as-WR stalks the playside corner — gets in the way of perimeter pursuit."
+  - player: Z
+    role: run_block
+    blocking_scheme: stalk
+    target: cornerback
+  - player: SLOT
+    role: run_block
+    blocking_scheme: crack
+    target: nickel-or-LB
+    notes: "Slot CRACK-blocks back inside — picks off the nickel or playside LB."
+  - player: RB1
+    role: handoff
+    notes: "Take direct snap, immediately pitch / hand off to RB2 coming across in jet motion."
+  - player: RB2
+    role: ball_carrier
+    is_primary: true
+    notes: "Take the handoff at full speed (jet motion); attack the perimeter outside the playside EDGE."
+
+strengths:
+  - Speed advantage — RB2 already moving at full speed when ball arrives
+  - Defense has to honor multiple threats (RB1 keep, RB2 jet, QB-WR pass)
+  - Crack block by SLOT cleans up the playside corner
+  - Big-play potential when EDGE is reached
+  - Pairs with Wildcat Power as a perimeter constraint
+
+weaknesses:
+  - Mandatory motion = fragile timing; mistime the snap and play breaks
+  - Defenses with disciplined EDGE play neutralize quickly
+  - Predictable when motion direction tips the play
+  - Limited if RB2 isn't a perimeter speed threat
+  - Crackback block has rule restrictions (can't be high)
+
+best_vs_defense:
+  - 4-3 with predictable EDGE
+  - cover-3 with stretched playside coverage
+  - defenses unprepared for jet motion timing
+  - speed-flow defenses that misread the motion
+
+worst_vs_defense:
+  - cover-2 with disciplined corners
+  - bear front
+  - any defense with disciplined EDGE contain
+  - LB blitzes from the playside
+
+common_uses:
+  - Perimeter constraint to Wildcat Power
+  - Tempo / look-changer
+  - Setting up reverses off the same motion
+  - HS / college perimeter run game
+
+philosophy: speed-option
+
+era: "2008 onward — modern Wildcat era; jet motion concepts predate Wildcat (1990s onward)."
+
+famous_examples:
+  - "2008 Dolphins jet sweep package"
+  - "Modern HS speed-spread offenses"
+  - "Air Force / academy jet motion variations"
+
+tags:
+  - run
+  - speed
+  - jet-sweep
+  - wildcat
+  - direct-snap
+  - perimeter
+  - mandatory-motion
+  - high-school
+  - college
+  - nfl
+
+notes: |
+  Mandatory jet motion: the play CANNOT run without RB2 in motion at the
+  snap. Timing is everything — snap-on-motion means RB1 catches the snap
+  while RB2 is still moving, then hands/pitches the ball forward. SLOT's
+  crack block is critical. Mirror by flipping all x.
+
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-29 — Wikipedia 'Wildcat formation' (https://en.wikipedia.org/wiki/Wildcat_formation); National Football Post 'Inside the Miami Wildcat' (https://www.nationalfootballpost.com/2008-2018-nfp-archive/inside-the-playbook/inside-the-playbook-the-miami-wildcat/). Jet motion + direct-snap perimeter run confirmed as a standard Wildcat package element."

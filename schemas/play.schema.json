@@ -1,0 +1,169 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blitz-command.local/schemas/play.schema.json",
+  "title": "Play",
+  "description": "A football play. References a formation by id (the formation file in data/formations/) and adds per-player assignments, motions, reads, success/failure analysis, and tags.",
+  "type": "object",
+  "required": ["play_id", "name", "formation", "play_type", "ball_carrier", "verification_status"],
+  "additionalProperties": false,
+  "properties": {
+    "play_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "Stable identifier (kebab-case). Convention: <formation-id>-<play-name>."
+    },
+    "name": { "type": "string" },
+    "aliases": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Alternate names this play is known by (different terminology trees)."
+    },
+    "formation": {
+      "type": "string",
+      "description": "ID of the formation this play uses (matches a file in data/formations/). Player labels in assignments must match labels in the referenced formation."
+    },
+    "play_type": {
+      "enum": ["run", "pass", "play-action", "screen", "rpo", "trick", "special"]
+    },
+    "ball_carrier": {
+      "type": "string",
+      "description": "Label of the player who has the ball at the end of the play (e.g. 'HB' for a run, 'QB' for a designed scramble, the receiver who is the primary read for a pass)."
+    },
+    "primary_read": { "type": "string", "description": "Label of the primary receiver (pass plays)." },
+    "secondary_read": { "type": "string" },
+    "tertiary_read": { "type": "string" },
+    "checkdown": { "type": "string", "description": "Label of the safety-valve receiver if all reads are covered." },
+    "motions": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/motion" },
+      "description": "Pre-snap (or at-snap) motions. Each motion is tagged mandatory or optional."
+    },
+    "assignments": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/assignment" },
+      "description": "Per-player assignment. Should cover all 11 players in the referenced formation."
+    },
+    "strengths": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "What this play does well — situations and matchups it's built for."
+    },
+    "weaknesses": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Where this play struggles — defensive reactions or matchups it can't beat."
+    },
+    "best_vs_defense": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Defensive coverages or fronts this play attacks well (e.g. 'cover-2', 'over-front', 'cover-3')."
+    },
+    "worst_vs_defense": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "common_uses": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Game situations where you'd typically call this play."
+    },
+    "philosophy": {
+      "type": "string",
+      "description": "Offensive philosophy (e.g. 'power-run', 'west-coast', 'air-raid', 'spread-option')."
+    },
+    "era": {
+      "type": "string",
+      "description": "Era when this play was/is most associated with (e.g. '1990s NFL', 'modern Air Raid')."
+    },
+    "famous_examples": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Coaches, teams, or notable instances of this play."
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Free-form tags. Conventionally includes a level tag (high-school, college, nfl, any-level), philosophy/concept tags (power-run, air-raid, west-coast, spread, gap-scheme), and situation tags (red-zone, short-yardage, hurry-up)."
+    },
+    "notes": { "type": "string" },
+    "verification_status": {
+      "enum": ["verified", "unverified", "inferred"]
+    },
+    "source_notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "$defs": {
+    "motion": {
+      "type": "object",
+      "required": ["player", "type", "motion_type"],
+      "additionalProperties": false,
+      "properties": {
+        "player": {
+          "type": "string",
+          "description": "Player label from the referenced formation (e.g. 'Z', 'HB', 'SLOT')."
+        },
+        "type": {
+          "enum": ["mandatory", "optional"],
+          "description": "Mandatory: the play assumes the motion happened — running it without motion changes the concept. Optional: motion is a check the QB / coach can call (e.g. for matchup leverage), but the play works without it."
+        },
+        "motion_type": {
+          "type": "string",
+          "description": "Motion category (e.g. 'fly', 'jet', 'short-across', 'long-across', 'short-forward', 'short-backward', 'bunch', 'shift')."
+        },
+        "end_position": {
+          "type": "object",
+          "required": ["x", "y"],
+          "additionalProperties": false,
+          "properties": {
+            "x": { "type": "number" },
+            "y": { "type": "number" }
+          },
+          "description": "Where the motioning player ends up at snap (universal coords). Optional — start position comes from the formation."
+        },
+        "snap_on_motion": {
+          "type": "boolean",
+          "description": "True if the ball is snapped while the player is still in motion (e.g. jet motion). False / omitted means the player is set before snap."
+        },
+        "notes": { "type": "string" }
+      }
+    },
+    "assignment": {
+      "type": "object",
+      "required": ["player", "role"],
+      "additionalProperties": false,
+      "properties": {
+        "player": {
+          "type": "string",
+          "description": "Player label from the formation."
+        },
+        "role": {
+          "enum": ["ball_carrier", "lead_block", "pass_block", "run_block", "route", "fake", "spy", "stay_in_protect", "release", "handoff"],
+          "description": "What the player does on this play. 'handoff' is for the QB on a designed run."
+        },
+        "route_name": {
+          "type": "string",
+          "description": "Route name when role is 'route' (e.g. 'slant', 'post', 'flat', 'comeback', 'deep-cross')."
+        },
+        "depth_yd": {
+          "type": "number",
+          "description": "Route break depth in yards (for routes), or push depth for blockers."
+        },
+        "blocking_scheme": {
+          "type": "string",
+          "description": "Blocking scheme when role is a block variant (e.g. 'down-block', 'kickout', 'pull-around', 'reach', 'man-protection', 'invite-rusher')."
+        },
+        "target": {
+          "type": "string",
+          "description": "Block target (e.g. 'playside-LB', 'edge-defender', 'closest-rusher', 'cornerback')."
+        },
+        "is_primary": {
+          "type": "boolean",
+          "description": "True if this player is the primary read (for routes) or the primary ball-carrier."
+        },
+        "notes": { "type": "string" }
+      }
+    }
+  }
+}

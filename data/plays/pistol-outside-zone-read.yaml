@@ -1,0 +1,110 @@
+play_id: pistol-outside-zone-read
+name: Pistol Outside Zone Read
+aliases:
+  - OZ Read
+  - Stretch Read
+
+formation: pistol
+play_type: run
+ball_carrier: HB
+primary_read: HB
+
+motions: []
+
+assignments:
+  - player: LT
+    role: run_block
+    blocking_scheme: zone-reach-playside
+    notes: "Backside — UNBLOCKED on the read; DE is the read defender."
+  - player: LG
+    role: run_block
+    blocking_scheme: zone-reach-playside
+  - player: C
+    role: run_block
+    blocking_scheme: zone-reach-playside
+  - player: RG
+    role: run_block
+    blocking_scheme: zone-reach-playside
+  - player: RT
+    role: run_block
+    blocking_scheme: zone-reach-playside
+  - player: TE
+    role: run_block
+    blocking_scheme: reach-block
+    target: edge-defender
+  - player: X
+    role: run_block
+    blocking_scheme: stalk-or-crack
+  - player: Z
+    role: run_block
+    blocking_scheme: stalk-or-crack
+  - player: SLOT
+    role: run_block
+    blocking_scheme: stalk
+  - player: QB
+    role: handoff
+    notes: "Read backside DE: DE crashes → PULL and run; DE plays contain → GIVE."
+  - player: HB
+    role: ball_carrier
+    is_primary: true
+    notes: "Aim point: playside C-gap. Read playside EDGE block — BOUNCE / BANG / CUTBACK."
+
+strengths:
+  - Combines outside zone's perimeter-stretch with read-option's free numbers advantage
+  - QB keeper opens the entire backside as a counter
+  - Stresses defensive edge discipline both sides
+  - HB has full outside-zone read tree
+  - Big-play potential when EDGE gets reached AND backside is unaccounted for
+
+weaknesses:
+  - Requires QB who's a credible perimeter runner
+  - Slow-developing — needs ~2.5 sec to reach playside hole
+  - Vulnerable to scrape-exchange
+  - Backside DE who plays QB pinches HB's cutback option
+
+best_vs_defense:
+  - 4-3 with crashing backside DE
+  - cover-3 with run-fit LBs
+  - speed-flow defenses that over-pursue
+  - over-front
+
+worst_vs_defense:
+  - scrape-exchange
+  - cover-1 robber
+  - bear / 8-man fronts
+  - disciplined gap-control with edge-set DEs
+
+common_uses:
+  - 1st-and-10 base call vs defenses respecting the QB run
+  - Setting up backside throws and bootlegs off the look
+  - Two-minute / hurry-up base
+  - College spread option base run
+
+philosophy: spread-option
+
+era: "Mid-2000s onward — Chris Ault Nevada; widespread college and earlier NFL spread era."
+
+famous_examples:
+  - "Nevada under Chris Ault (Colin Kaepernick)"
+  - "49ers under Jim Harbaugh (Kaepernick era)"
+  - "Modern Big 12 / Pac-12 spread offenses"
+
+tags:
+  - run
+  - pistol
+  - zone-read
+  - outside-zone
+  - high-school
+  - college
+  - nfl
+  - modern
+  - spread-option
+
+notes: |
+  Companion to Pistol Inside Zone Read. Same read mechanic (backside DE) but
+  with outside zone's perimeter-stretch path. Bootleg PA pass off this look
+  is one of the most lethal RPO/PA setups in modern football.
+
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-29 — Wikipedia 'Pistol offense' (https://en.wikipedia.org/wiki/Pistol_offense); USA Football 'Nevada Pistol Zone Read' (https://blogs.usafootball.com/blog/6491/how-the-nevada-wolfpack-and-coach-chris-ault-effectively-utilized-the-pistol-zone-read); KOKA Sports (https://blog.kokasports.com/pistol-formation-in-football-fully-explained/); SumerSports 'Shanahan Schemes' for OZ blocking (https://sumersports.com/the-zone/shanahan-schemes/)."

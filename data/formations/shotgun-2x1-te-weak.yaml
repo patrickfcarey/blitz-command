@@ -1,0 +1,87 @@
+name: Shotgun 2x1 TE-Weak
+side: offense
+personnel: "11"
+strength_side: right
+
+# 11 personnel shotgun. TE attached weak (left). 2 WRs strong (Z outer
+# on-line, SLOT inner off-line). 1 WR weak (X-slot off-line).
+#
+# By WR-only count: 2 WRs strong vs 1 WR weak = 2x1.
+# By total receiver count: 2 strong vs 2 weak (TE on weak side counts).
+#
+# Legality: 5 OL + TE + Z = 7 on line. TE is weak-side line-end (eligible);
+# Z is strong-side line-end (eligible).
+players:
+  - { label: LT,    position: LT, x: -2.0,  y:  0.0, on_line: true  }
+  - { label: LG,    position: LG, x: -1.0,  y:  0.0, on_line: true  }
+  - { label: C,     position: C,  x:  0.0,  y:  0.0, on_line: true  }
+  - { label: RG,    position: RG, x:  1.0,  y:  0.0, on_line: true  }
+  - { label: RT,    position: RT, x:  2.0,  y:  0.0, on_line: true  }
+  - { label: TE,    position: TE, x: -3.5,  y:  0.0, on_line: true  }
+  - { label: Z,     position: WR, x:  15.0, y:  0.0, on_line: true  }
+  - { label: X,     position: WR, x: -8.0,  y: -1.0, on_line: false }
+  - { label: SLOT,  position: WR, x:  6.0,  y: -1.0, on_line: false }
+  - { label: QB,    position: QB, x:  0.0,  y: -5.0, on_line: false }
+  - { label: HB,    position: HB, x:  2.5,  y: -5.0, on_line: false }
+
+strengths:
+  - TE on weak side gives backside run support and PA bootleg credibility
+  - Strong-side overload of 2 wide receivers stretches strong-side coverage
+  - Slot WR (strong) creates RPO-friendly inside-breaking routes
+  - Hides intent — TE-Weak is less common than TE-Strong, defense has fewer keys
+  - HB offset strong for protection help vs strong-side blitz
+
+weaknesses:
+  - Strong side has no in-line blocker for runs (no TE strong = harder edge sealing)
+  - Backside slot route congested with TE underneath
+  - Less common formation = less practiced by your own offense
+  - Vulnerable to weak-side blitzes (only TE for blocking help, no HB chip)
+  - Strong-side run hits the C-gap with no TE seal
+
+common_uses:
+  - PA bootleg weak-side after establishing strong-side run
+  - Constraint to TE-Strong tendencies (gives defense a different look)
+  - Strong-side passing concepts (smash, flood)
+  - 3rd-and-medium with QB needing time and protection backside
+
+run_concepts:
+  - inside-zone (weak cutback — TE seals backside)
+  - outside-zone-weak (TE reach blocks edge weak)
+  - draw
+  - counter (pull strong-side guard)
+
+pass_concepts:
+  - pa-bootleg-weak
+  - smash-strong
+  - flood-strong
+  - mesh
+  - stick (strong-side slot version)
+  - rpo-slant (read MIKE)
+
+era: "2000s onward — modern spread variant emphasizing weak-side blocking and strong-side passing."
+
+famous_users:
+  - "Patriots / Belichick offense (TE-Weak as a counter to TE-Strong tendencies)"
+  - "Modern NFL teams varying TE alignment to defeat keys"
+
+tags:
+  - spread
+  - shotgun
+  - 11-personnel
+  - 2x1
+  - te-weak
+  - balanced-passing
+  - constraint
+  - modern
+  - nfl
+  - college
+
+notes: |
+  Mirror by flipping all x to make "Shotgun 2x1 TE-Weak (Trips Left)" with TE
+  on right and 2 WRs left. The TE side here is the WEAK side (where the run
+  game is supported) but strength_side=right because that's where 2 of the 3
+  WRs align.
+
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-29 — XsOs Football 'Shotgun Formation and Sets' (https://xsosfootball.com/shotgun-formation-sets/); Throw Deep Publishing 'Complete Guide to Offensive Football Formations' (https://throwdeeppublishing.com/blogs/football-glossary/the-complete-guide-to-offensive-football-formations). 2x1 with TE-Weak = TE-side becomes the run-support side, opposite-side becomes the WR overload."

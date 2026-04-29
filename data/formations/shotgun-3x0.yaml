@@ -1,0 +1,94 @@
+name: Shotgun 3x0
+side: offense
+personnel: "11"
+strength_side: right
+
+# 11 personnel shotgun. All 3 WRs aligned to the strong (right) side; the TE
+# is the weak-side line-end (alone) for legality. By WR-only count this is
+# 3x0 (no WRs weak); by total receiver count it's 3x1 (TE counts on weak).
+#
+# Functionally equivalent to Shotgun Trips Right (which uses the same legal
+# layout: TE alone weak, 3 WRs strong). This file exists as the explicit
+# "3x0 by WR-count" naming requested by the user; for play purposes use
+# either file interchangeably.
+#
+# Legality: 5 OL + TE + WR1 (outer strong, on line) = 7 on line. TE is the
+# weak-side line-end (eligible); WR1 is the strong-side line-end (eligible).
+players:
+  - { label: LT,   position: LT, x: -2.0,  y:  0.0, on_line: true  }
+  - { label: LG,   position: LG, x: -1.0,  y:  0.0, on_line: true  }
+  - { label: C,    position: C,  x:  0.0,  y:  0.0, on_line: true  }
+  - { label: RG,   position: RG, x:  1.0,  y:  0.0, on_line: true  }
+  - { label: RT,   position: RT, x:  2.0,  y:  0.0, on_line: true  }
+  - { label: TE,   position: TE, x: -3.5,  y:  0.0, on_line: true  }
+  - { label: WR1,  position: WR, x:  15.0, y:  0.0, on_line: true  }
+  - { label: WR2,  position: WR, x:  10.0, y: -1.0, on_line: false }
+  - { label: WR3,  position: WR, x:  5.0,  y: -1.0, on_line: false }
+  - { label: QB,   position: QB, x:  0.0,  y: -5.0, on_line: false }
+  - { label: HB,   position: HB, x: -2.5,  y: -5.0, on_line: false }
+
+strengths:
+  - All 3 WRs to one side maximally overloads strong-side coverage
+  - Forces defense to declare coverage rotation pre-snap
+  - Bunch / stack alignments easy to install (just bring WR2 and WR3 closer to WR1)
+  - TE backside is a real outlet on hot reads
+  - Pairs with full Air Raid / spread route concept library on the trips side
+
+weaknesses:
+  - Run game to trips side is constrained (no in-line blockers past tackle)
+  - Backside (TE) has no second receiver — defense can fully rotate strong
+  - Wide trips alignment can stress old games' editor grids
+  - Empty-style protection if HB releases — drops to 5 vs blitz
+  - Defenses with bracket-on-WR1 + roll-strong strategy neutralize the trips advantage
+
+common_uses:
+  - 3rd-and-medium / 3rd-and-long
+  - 2-minute drill
+  - Red zone (compresses field, forces coverage decisions)
+  - RPO setups (read backside, throw to trips)
+  - Hurry-up tempo
+
+run_concepts:
+  - inside-zone (away from trips)
+  - outside-zone (away from trips)
+  - draw
+  - jet-sweep (motion WR3 across)
+  - rpo-bubble
+
+pass_concepts:
+  - snag
+  - smash
+  - stick
+  - mesh
+  - flood
+  - four-verticals
+  - bubble-screen
+  - rpo-glance
+
+era: "Mid-2000s onward; ubiquitous in modern offenses."
+
+famous_users:
+  - "Air Raid college programs (Mike Leach, Lincoln Riley, Kliff Kingsbury)"
+  - "Modern NFL spread offenses using 11 personnel trips"
+  - "Patriots variations"
+
+tags:
+  - spread
+  - shotgun
+  - 11-personnel
+  - 3x0
+  - trips
+  - passing-game
+  - rpo
+  - modern
+  - nfl
+  - college
+
+notes: |
+  Equivalent on the field to `shotgun-trips-right.yaml`. The 3x0 naming
+  emphasizes "no WRs on the weak side" (TE-only weak); Trips Right is the
+  more common naming. Mirror to "Shotgun 3x0 Left" by flipping all x.
+
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-29 — XsOs Football 'Shotgun Formation and Sets' (https://xsosfootball.com/shotgun-formation-sets/); Throw Deep Publishing 'Complete Guide to Offensive Football Formations' (https://throwdeeppublishing.com/blogs/football-glossary/the-complete-guide-to-offensive-football-formations). 3x0 by WR-only count = trips by traditional naming; TE alone weak satisfies legality requirement (eligible weak-side line-end)."

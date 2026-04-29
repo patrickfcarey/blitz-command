@@ -1,0 +1,83 @@
+name: Full House
+side: offense
+personnel: "32"
+strength_side: balanced
+
+# Classic 3-back triangle backfield. 32 personnel: 3 RB, 2 TE, 0 WR.
+# FB in middle behind QB; HBs flank FB at same depth, offset 2.5 yd each.
+# Legality: 5 OL + TE-L + TE-R = 7 on the line.
+players:
+  - { label: LT,    position: LT, x: -2.0,  y:  0.0, on_line: true  }
+  - { label: LG,    position: LG, x: -1.0,  y:  0.0, on_line: true  }
+  - { label: C,     position: C,  x:  0.0,  y:  0.0, on_line: true  }
+  - { label: RG,    position: RG, x:  1.0,  y:  0.0, on_line: true  }
+  - { label: RT,    position: RT, x:  2.0,  y:  0.0, on_line: true  }
+  - { label: TE-L,  position: TE, x: -3.5,  y:  0.0, on_line: true  }
+  - { label: TE-R,  position: TE, x:  3.5,  y:  0.0, on_line: true  }
+  - { label: QB,    position: QB, x:  0.0,  y: -1.5, on_line: false }
+  - { label: FB,    position: FB, x:  0.0,  y: -4.0, on_line: false }
+  - { label: HB-L,  position: HB, x: -2.5,  y: -4.0, on_line: false }
+  - { label: HB-R,  position: HB, x:  2.5,  y: -4.0, on_line: false }
+
+strengths:
+  - Three downhill ball-carrier threats from one look
+  - Triangle backfield creates option-style misdirection (dive, pitch, keeper)
+  - Both TEs in-line = 7-blocker surface in any direction
+  - Counter, trap, dive, off-tackle all available from same pre-snap shell
+  - Maximum heavy-package power; defense can't tell carrier or direction
+
+weaknesses:
+  - Zero receiving threats outside the formation
+  - Defense knows it's a run before the snap (90%+ run on tape)
+  - Pass game limited to TE/back routes vs near-guaranteed 8-man front
+  - Slow / antiquated against modern spread defenses
+  - Vulnerable to penetrating fronts and goal-line stand defenses
+
+common_uses:
+  - 1st-and-Goal inside the 5
+  - Short-yardage anywhere on the field
+  - 4-minute offense to bleed clock
+  - Surprise heavy package in modern offenses (rare but unsettling)
+  - Wishbone-style triple-option (with appropriate scheme)
+
+run_concepts:
+  - dive
+  - power-o
+  - iso
+  - counter-criss-cross
+  - triple-option
+  - belly-option
+
+pass_concepts:
+  - pa-tight-end-corner
+  - pa-fake-corner-route
+  - bootleg-flat
+  - waggle
+
+era: "1950s–1970s mainstream T-formation; revival as modern goal-line / short-yardage package."
+
+famous_users:
+  - "Wishbone-era Oklahoma and Texas (1970s)"
+  - "Modern short-yardage packages (Tom Coughlin Giants, Jim Harbaugh)"
+  - "High-school and small-college option offenses still running it"
+
+tags:
+  - heavy
+  - 32-personnel
+  - full-house
+  - triangle-backfield
+  - goal-line
+  - option
+  - high-school
+  - college
+  - throwback
+
+notes: |
+  Classic Full House / "Maryland I" / Wishbone variant. Triangle backfield
+  spacing varies — some teams put FB closer (3 yd) and HBs further back
+  (5 yd) for true Wishbone.
+
+verification_status: inferred
+source_notes:
+  - "Coordinates: standard Full House triangle alignment."
+  - "Strengths/weaknesses: triple-option-era and modern heavy-package literature."

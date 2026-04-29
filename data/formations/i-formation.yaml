@@ -1,11 +1,11 @@
 name: I-Formation
 side: offense
 personnel: "21"
-strength: right
+strength_side: right
 
-# 11 players, universal coordinates (yards) — see docs/coordinate-systems.md.
-# Legality: exactly 7 players with on_line: true.
-# Here: 5 OL + TE + X = 7 on the line; Z, QB, FB, HB are off.
+# Standard "Pro I" / "I-Form Normal". Strong-side TE on the right, split end (X)
+# opposite. Z aligns off the line on the strong side.
+# Legality: 5 OL + TE + X = 7 on the line; Z, QB, FB, HB are off.
 players:
   - { label: LT, position: LT, x: -2.0,  y:  0.0, on_line: true  }
   - { label: LG, position: LG, x: -1.0,  y:  0.0, on_line: true  }
@@ -19,29 +19,61 @@ players:
   - { label: FB, position: FB, x:  0.0,  y: -4.5, on_line: false }
   - { label: HB, position: HB, x:  0.0,  y: -7.0, on_line: false }
 
-common_uses:
-  - Power and gap-scheme running
-  - Play-action passing off run looks
-  - Short-yardage and goal-line situations
-  - Pro-style and old-school NFL/NCAA offenses
+strengths:
+  - Downhill power running with FB lead-block paving the way for HB
+  - Heavy play-action threat — formation looks identical to every base run
+  - Strong-side TE creates a 7-man surface for inside runs and route to flat
+  - Two-back action gives multiple ball-carrier threats (toss, dive, counter, lead)
+  - Established blocking angles — defensive front knows what's coming but still has to stop it
 
 weaknesses:
-  - Telegraphs run-first intent pre-snap
-  - Slow to spread the field for quick passing
+  - Telegraphs run-first intent pre-snap; defense can stack the box
+  - Slow to release receivers vs quick passes (only Z is a true off-line threat)
   - FB and HB stacked behind QB limits backfield deception without motion
+  - Vulnerable to 8-man fronts that bring a safety down for run support
+  - Limited horizontal stress — only 2 wideouts means Cover 2 can bracket Z
+
+common_uses:
+  - First-and-10 base run-heavy down
+  - Short-yardage and 3rd-and-short with lead block
+  - Goal-line area (4–7 yard line)
+  - Play-action setups when you've established the run
+  - 4-minute offense to bleed clock
+
+run_concepts:
+  - power-o
+  - iso
+  - lead-toss
+  - counter-trey
+  - dive
+
+pass_concepts:
+  - play-action-cross
+  - bootleg-flat
+  - pa-post
+  - hb-screen
+  - flood
+
+era: "Dominant 1970s–1990s NFL and college; still common as a complementary look in modern playbooks."
+
+famous_users:
+  - "1980s–1990s San Francisco 49ers (Roger Craig + Tom Rathman)"
+  - "1990s Dallas Cowboys (Daryl Johnston + Emmitt Smith)"
+  - "Power-running college programs (Wisconsin, Stanford under Harbaugh/Shaw)"
 
 tags:
   - pro-style
   - power
   - 21-personnel
+  - downhill
+  - under-center
+  - any-level
 
 notes: |
-  Standard "Pro I" / "I-Form Normal": strong-side TE on the right, split end
-  (X) opposite. Z aligns off the line on the strong side; if Z came on the
-  line the formation would be illegal (8 on the LOS). This file describes the
-  base alignment; per-play motion and minor splits live in play files.
+  Base I-Formation. Per-play motion and minor splits live in play files, not here.
 
 verification_status: inferred
 source_notes:
-  - "Coordinates use widely-taught coaching conventions; not measured from any specific game tape or coaching manual."
-  - "OL splits assume 1 yd C-G / G-T and 1.5 yd T-TE — typical of pro-style spacing."
+  - "Coordinates: widely-taught coaching conventions; OL splits assume 1 yd C-G/G-T and 1.5 yd T-TE."
+  - "Strengths/weaknesses: standard offensive-football textbook material."
+  - "Famous users: well-documented historical attribution; not from a single citable source."

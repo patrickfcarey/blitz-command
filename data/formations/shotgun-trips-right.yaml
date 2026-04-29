@@ -1,0 +1,86 @@
+name: Shotgun Trips Right
+side: offense
+personnel: "11"
+strength_side: right
+
+# 11 personnel shotgun, 3 WRs to the right, TE alone weak-side (left).
+# Outer WR (WR1) on the line for legality; inner two (WR2, WR3) off the line.
+# HB offset to the weak side for blitz pickup help.
+# Legality: 5 OL + TE + WR1 = 7 on the line.
+players:
+  - { label: LT,   position: LT, x: -2.0,  y:  0.0, on_line: true  }
+  - { label: LG,   position: LG, x: -1.0,  y:  0.0, on_line: true  }
+  - { label: C,    position: C,  x:  0.0,  y:  0.0, on_line: true  }
+  - { label: RG,   position: RG, x:  1.0,  y:  0.0, on_line: true  }
+  - { label: RT,   position: RT, x:  2.0,  y:  0.0, on_line: true  }
+  - { label: TE,   position: TE, x: -3.5,  y:  0.0, on_line: true  }
+  - { label: WR1,  position: WR, x:  15.0, y:  0.0, on_line: true  }
+  - { label: WR2,  position: WR, x:  10.0, y: -1.0, on_line: false }
+  - { label: WR3,  position: WR, x:  5.0,  y: -1.0, on_line: false }
+  - { label: QB,   position: QB, x:  0.0,  y: -5.0, on_line: false }
+  - { label: HB,   position: HB, x: -2.5,  y: -5.0, on_line: false }
+
+strengths:
+  - Three-receiver bunch overloads strong-side coverage
+  - Forces defense to rotate (revealing intent) or play soft
+  - Easy access to combination concepts (snag, smash, flood, mesh) on trips side
+  - Shotgun gives QB time and field vision; ideal for RPOs and quick game
+  - Backside TE + HB checkdown still gives a 3-route weakside read
+  - Pre-snap matchup advantages — great for 2-minute and obvious passing
+
+weaknesses:
+  - Run game to trips side is constrained (no in-line blockers past tackle)
+  - Backside (TE side) runs work but lack a true strong-side surface
+  - Defense can press-bracket the #1 trips WR and rotate safety help over
+  - Empty-style protection if HB releases — drops to 5 vs blitz
+  - Wide trips alignment can stress old games' editor grids
+
+common_uses:
+  - 3rd-and-medium / 3rd-and-long
+  - 2-minute drill
+  - Red zone (compresses field, forces coverage decisions)
+  - Hurry-up tempo
+  - RPO setups (read backside, throw to trips)
+
+run_concepts:
+  - inside-zone
+  - outside-zone
+  - draw
+  - jet-sweep
+  - rpo-bubble
+
+pass_concepts:
+  - snag
+  - smash
+  - stick
+  - mesh
+  - flood
+  - four-verticals
+  - bubble-screen
+  - rpo-glance
+
+era: "Mid-2000s onward; ubiquitous in modern offenses."
+
+famous_users:
+  - "Modern NFL spread offenses (Patriots, Chiefs, Rams variations)"
+  - "Air Raid college programs (Mike Leach, Lincoln Riley, Kliff Kingsbury)"
+
+tags:
+  - spread
+  - shotgun
+  - 11-personnel
+  - trips
+  - passing-game
+  - rpo
+  - modern
+  - nfl
+  - college
+
+notes: |
+  Pure Trips: 3 WRs right, TE alone weak. Outer WR on the line; inner two off.
+  HB offset weak-side for protection. Mirror to "Shotgun Trips Left."
+
+verification_status: inferred
+source_notes:
+  - "Coordinates: 11-personnel trips conventions; outer WR split 15 yd, inner stack 5/10 yd from ball."
+  - "WR3 at 5 yd is a 'tight' slot; widen to 8-10 yd for more horizontal spread."

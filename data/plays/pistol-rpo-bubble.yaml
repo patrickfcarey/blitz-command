@@ -1,0 +1,121 @@
+play_id: pistol-rpo-bubble
+name: Pistol RPO Bubble
+aliases:
+  - RPO Bubble
+  - Inside Zone Bubble RPO
+  - Bubble Screen RPO
+
+formation: pistol
+play_type: rpo
+ball_carrier: QB
+primary_read: SLOT
+
+motions: []
+
+assignments:
+  - player: LT
+    role: run_block
+    blocking_scheme: zone-step-playside
+    notes: "Run-block (RPO: OL must NOT release downfield; stays at LOS)."
+  - player: LG
+    role: run_block
+    blocking_scheme: zone-combo
+  - player: C
+    role: run_block
+    blocking_scheme: zone-combo
+  - player: RG
+    role: run_block
+    blocking_scheme: zone-combo
+  - player: RT
+    role: run_block
+    blocking_scheme: zone-combo
+  - player: TE
+    role: run_block
+    blocking_scheme: zone-step-playside
+  - player: X
+    role: run_block
+    blocking_scheme: stalk
+    target: cornerback
+  - player: Z
+    role: route
+    route_name: clear-out-fly
+    depth_yd: 18
+    notes: "Z runs vertical to clear the playside corner."
+  - player: SLOT
+    role: route
+    route_name: bubble-screen
+    depth_yd: -1
+    is_primary: true
+    notes: "SLOT runs a bubble screen 1 yard behind the LOS. Primary RPO read."
+  - player: QB
+    role: ball_carrier
+    notes: |
+      Read the playside hook/curl LB or apex defender:
+      - Defender stays in box / aggressive on run → PULL + throw bubble to SLOT
+      - Defender expands to bubble / sits in coverage → GIVE to HB on inside zone
+      Decision must be made within ~1.5 sec; OL stays at LOS to avoid ineligible-downfield.
+  - player: HB
+    role: ball_carrier
+    notes: "Run the HB inside zone path. If QB pulls and throws, HB has executed his fake."
+
+strengths:
+  - Defensive numbers conflict — defender CAN'T cover both run and bubble
+  - Quick decision and quick throw — minimal pass protection needed
+  - Easy first-down concept
+  - Setup play for vertical shots when defense over-rotates to bubble
+  - Pairs with downhill inside zone for deception
+
+weaknesses:
+  - Depends on QB read accuracy and quick decision
+  - OL must hold at LOS (no downfield release on the throw side)
+  - Defenses with disciplined apex defenders neutralize the read
+  - Bubble can be jumped by aggressive nickel
+  - Pre-snap motion / alignment can give away tendencies
+
+best_vs_defense:
+  - cover-3 with apex flat defender involved in run-fits
+  - 4-3 with strong-side LB walked out
+  - any defense with apex/box conflict between run and slot
+
+worst_vs_defense:
+  - cover-2 with squatting nickel
+  - cover-4 with disciplined apex
+  - banjo coverage on slot
+  - LB blitz from the slot side
+
+common_uses:
+  - 1st/2nd-and-medium base RPO call
+  - Modern college spread offense workhorse
+  - 3rd-and-4 to 3rd-and-7 in nickel personnel
+  - Setting up downfield shots when defense rotates
+
+philosophy: spread-option
+
+era: "Mid-2010s onward — RPO became universal across college and NFL."
+
+famous_examples:
+  - "Modern Power 5 college offenses (Auburn, Alabama, Ohio State)"
+  - "Eagles under Doug Pederson (2017-2020)"
+  - "Chiefs under Andy Reid (Mahomes era)"
+
+tags:
+  - rpo
+  - pass
+  - run
+  - pistol
+  - bubble-screen
+  - quick-game
+  - high-school
+  - college
+  - nfl
+  - modern
+
+notes: |
+  RPO = Run-Pass Option. OL is run-blocking the entire play; QB reads a
+  defender post-snap and decides to give (run) or throw the bubble. RPO
+  legality depends on OL staying at the LOS — rule is no OL more than 3 yds
+  downfield (NCAA) or 1 yd (NFL). NFL has stricter ineligible-downfield rules.
+
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-29 — Wikipedia 'Pistol offense' (https://en.wikipedia.org/wiki/Pistol_offense); KOKA Sports 'Pistol Formation Guide' (https://blog.kokasports.com/pistol-formation-in-football-fully-explained/); USA Football 'Nevada Pistol Zone Read' (https://blogs.usafootball.com/blog/6491/how-the-nevada-wolfpack-and-coach-chris-ault-effectively-utilized-the-pistol-zone-read). RPO mechanic confirmed; OL run-blocking with QB making post-snap pass-or-give decision."

@@ -1,0 +1,81 @@
+name: Goal Line (Jumbo)
+side: offense
+personnel: "22"
+strength_side: balanced
+
+# 22 personnel jumbo for short-yardage / goal-line.
+# Both TEs in-line; single WR off-line for legality.
+# Legality: 5 OL + TE-L + TE-R = 7 on the line.
+players:
+  - { label: LT,    position: LT, x: -2.0,  y:  0.0, on_line: true  }
+  - { label: LG,    position: LG, x: -1.0,  y:  0.0, on_line: true  }
+  - { label: C,     position: C,  x:  0.0,  y:  0.0, on_line: true  }
+  - { label: RG,    position: RG, x:  1.0,  y:  0.0, on_line: true  }
+  - { label: RT,    position: RT, x:  2.0,  y:  0.0, on_line: true  }
+  - { label: TE-L,  position: TE, x: -3.5,  y:  0.0, on_line: true  }
+  - { label: TE-R,  position: TE, x:  3.5,  y:  0.0, on_line: true  }
+  - { label: WR,    position: WR, x:  6.0,  y: -1.0, on_line: false }
+  - { label: QB,    position: QB, x:  0.0,  y: -1.5, on_line: false }
+  - { label: FB,    position: FB, x:  0.0,  y: -3.5, on_line: false }
+  - { label: HB,    position: HB, x:  0.0,  y: -6.0, on_line: false }
+
+strengths:
+  - Maximum blocking surface — 7 in-line blockers (5 OL + 2 TE)
+  - FB lead block + HB downhill for short-yardage power
+  - Defense can't load every gap with only 7 to block
+  - Play-action is brutal — defense has to commit hard to stop the run
+  - Strong red-zone fade option to single WR vs press
+  - Multiple gap-scheme options from same look
+
+weaknesses:
+  - Telegraphs run intent — formation only used in short-yardage / goal-line
+  - Single WR limits passing windows
+  - Struggles vs goal-line-stand defenses with 9+ in the box and zero coverage
+  - QB has minimal time on PA pass — rollout safer than dropback
+  - Cutback lanes can collapse against a disciplined penetrating front
+
+common_uses:
+  - 1st-and-Goal from inside the 5
+  - 4th-and-1 (or 4th-and-inches anywhere on the field)
+  - Short-yardage 2-point conversion
+  - Final-minute clock-killing run packages
+  - Goal-line PA shots to TE corner
+
+run_concepts:
+  - dive
+  - power-o
+  - lead-iso
+  - qb-sneak
+  - off-tackle
+
+pass_concepts:
+  - pa-fade
+  - pa-tight-end-corner
+  - bootleg-flat
+  - back-shoulder-fade
+
+era: "Universal — every era and level of football has a goal-line jumbo."
+
+famous_users:
+  - "Every team that's ever scored a 1-yard TD"
+  - "Mike Alstott / Bucs short-yardage packages of the 2000s"
+
+tags:
+  - jumbo
+  - 22-personnel
+  - goal-line
+  - short-yardage
+  - power
+  - any-level
+  - high-school
+  - college
+  - nfl
+
+notes: |
+  22 personnel: 2 RB, 2 TE, 1 WR. FB shallower (3.5 yd) for fast lead block.
+  23-personnel "Heavy" variant (3 TE, 0 WR) is a separate file when added.
+
+verification_status: inferred
+source_notes:
+  - "Coordinates: standard jumbo conventions; FB at 3.5 yd for fast kickout."
+  - "Strengths/weaknesses: universal short-yardage textbook material."
