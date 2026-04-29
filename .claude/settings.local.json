@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh auth *)",
+      "Bash(git remote *)",
+      "Bash(git ls-remote *)",
+      "Bash(mkdir -p /mnt/c/GitHub/madden_playgen_mcps/docs /mnt/c/GitHub/madden_playgen_mcps/mcps /mnt/c/GitHub/madden_playgen_mcps/data /mnt/c/GitHub/madden_playgen_mcps/schemas /mnt/c/GitHub/madden_playgen_mcps/tools /mnt/c/GitHub/madden_playgen_mcps/tests /mnt/c/GitHub/madden_playgen_mcps/examples)",
+      "Bash(touch /mnt/c/GitHub/madden_playgen_mcps/docs/.gitkeep /mnt/c/GitHub/madden_playgen_mcps/mcps/.gitkeep /mnt/c/GitHub/madden_playgen_mcps/data/.gitkeep /mnt/c/GitHub/madden_playgen_mcps/schemas/.gitkeep /mnt/c/GitHub/madden_playgen_mcps/tools/.gitkeep /mnt/c/GitHub/madden_playgen_mcps/tests/.gitkeep /mnt/c/GitHub/madden_playgen_mcps/examples/.gitkeep)",
+      "Bash(git fetch *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git config *)",
+      "Bash(git -c user.name=\"patrickfcarey\" -c user.email=\"patrickfcarey@gmail.com\" -c commit.gpgsign=false commit --allow-empty-message -m \"\")",
+      "Bash(git -c user.name=patrickfcarey -c user.email=patrickfcarey@gmail.com commit -m ' *)"
+    ]
+  }
+}

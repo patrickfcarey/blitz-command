@@ -1,0 +1,35 @@
+# PHASE 2 PLACEHOLDER PROFILE for NCAA Football 06 (PS2).
+#
+# All values here are inferred guesses, NOT measured from the actual game.
+# This file exists so the coordinate-translator has something to translate
+# against during Phase 2. Phase 3 (Game Knowledge Database) replaces this
+# with verified data.
+
+game_id: ncaa-06-ps2
+
+grid:
+  width: 100
+  height: 80
+  origin:
+    x: 50.0
+    y: 40.0
+
+scale:
+  x_yards_per_cell: 0.6
+  y_yards_per_cell: 0.6
+
+limits:
+  max_route_depth_yd: 30
+  max_player_split_yd: 22
+  max_backfield_depth_yd: 10
+  allowed_motion:
+    - short
+    - long
+    - across
+
+quirks:
+  - "All values are placeholder estimates pending Phase 3 verification."
+
+verification_status: inferred
+source_notes:
+  - "Created in Phase 2 to exercise tools/coordinate-translator. NOT verified against the actual NCAA Football 06 PS2 editor."

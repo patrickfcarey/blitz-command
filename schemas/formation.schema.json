@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blitz-command.local/schemas/formation.schema.json",
+  "title": "Formation",
+  "description": "A football formation defined in the universal coordinate system (see docs/coordinate-systems.md).",
+  "type": "object",
+  "required": ["name", "side", "personnel", "players", "verification_status"],
+  "additionalProperties": false,
+  "properties": {
+    "name": { "type": "string" },
+    "side": {
+      "enum": ["offense", "defense"],
+      "description": "Which unit this formation belongs to."
+    },
+    "personnel": {
+      "type": "string",
+      "description": "Personnel grouping, e.g. '21' for 2 RB / 1 TE / 2 WR (offense), or '4-3' for defense."
+    },
+    "strength": {
+      "enum": ["left", "right", "balanced"],
+      "description": "Strength side of an asymmetric formation."
+    },
+    "players": {
+      "type": "array",
+      "minItems": 11,
+      "maxItems": 11,
+      "items": {
+        "type": "object",
+        "required": ["label", "position", "x", "y", "on_line"],
+        "additionalProperties": false,
+        "properties": {
+          "label": { "type": "string", "description": "Free-form identifier (e.g. 'X', 'Z', 'TE', 'HB', 'LT')." },
+          "position": {
+            "type": "string",
+            "description": "Position (QB, HB, FB, WR, TE, LT, LG, C, RG, RT, etc.)."
+          },
+          "x": { "type": "number", "description": "Universal x in yards (positive = offense's right)." },
+          "y": { "type": "number", "description": "Universal y in yards (positive = downfield)." },
+          "on_line": { "type": "boolean", "description": "True if the player is on the line of scrimmage." }
+        }
+      }
+    },
+    "common_uses": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "weaknesses": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "notes": { "type": "string" },
+    "verification_status": {
+      "enum": ["verified", "unverified", "inferred"]
+    },
+    "source_notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}
