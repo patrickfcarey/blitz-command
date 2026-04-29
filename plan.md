@@ -21,21 +21,22 @@ The system should help an AI agent understand:
 
 ---
 
-## Recommended Repo Name
+## Repo Name
 
-football-command
+**blitz-command**
 
-Alternative names:
+Names considered:
 
+- football-command
 - playbook-command
 - gridiron-command
 - formation-lab
 - audible-lab
 - football-mcp-lab
-
-Recommended:
-
-football-command
+- audible-ops
+- field-command
+- trench-command
+- formation-ops
 
 ---
 
@@ -58,7 +59,7 @@ The repo should be split into:
 ## Top-Level Folder Structure
 
 ```
-football-command/
+blitz-command/
 ├── README.md
 ├── plan.md
 ├── docs/

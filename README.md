@@ -1,1 +1,1 @@
-# madden_playgen_mcps
+# blitz-command
