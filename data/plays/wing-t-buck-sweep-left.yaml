@@ -1,0 +1,137 @@
+play_id: wing-t-buck-sweep-left
+name: Buck Sweep (Mirror Left)
+aliases:
+- Wing-T Sweep
+- 27/28 Sweep
+- Buck
+formation: wing-t-left
+play_type: run
+ball_carrier: HB
+motions: []
+assignments:
+- player: LT
+  role: run_block
+  blocking_scheme: down-block
+  target: backside-DT
+- player: LG
+  role: run_block
+  blocking_scheme: pull-around
+  target: playside-LB
+  notes: PULL — both guards pull around the C, leading the HB to the perimeter.
+- player: C
+  role: run_block
+  blocking_scheme: gap-block
+  target: backside-A-gap
+- player: RG
+  role: run_block
+  blocking_scheme: pull-around
+  target: playside-cornerback
+  notes: PULL — second pulling guard, sealing the corner / kicking out edge defender.
+- player: RT
+  role: run_block
+  blocking_scheme: down-block
+  target: playside-DT
+- player: TE
+  role: run_block
+  blocking_scheme: down-block
+  target: edge-defender-or-LB
+  notes: TE down-blocks the EDGE defender, securing the playside hinge.
+- player: WING
+  role: run_block
+  blocking_scheme: kickout
+  target: cornerback
+  notes: WING kicks out the playside corner / force defender.
+- player: X
+  role: run_block
+  blocking_scheme: stalk
+  target: backside-cornerback
+- player: QB
+  role: handoff
+  path:
+  - - 0
+    - 0
+  - - 1
+    - -1
+  - - 2
+    - -2
+  notes: Reverse-out away from the play (gain depth); fake to FB on belly action; hand off to HB on the way past.
+- player: FB
+  role: fake
+  notes: FB takes a belly fake up the middle, holds the LBs.
+- player: HB
+  role: ball_carrier
+  is_primary: true
+  path:
+  - - 0
+    - 0
+  - - -4
+    - 1
+  - - -7
+    - 4
+  - - -10
+    - 9
+  notes: Take the handoff, follow the two pulling guards around the playside edge — get to the corner.
+strengths:
+- Two pulling guards = numbers advantage at the corner
+- Triple-threat fake (FB belly + bootleg-side QB) holds backside defenders
+- Misdirection makes the play look identical to Belly and Trap pre-snap
+- Edge angles are devastating with WING kicking out
+- Wing-T signature play — defines the offense
+weaknesses:
+- Slow-developing — needs ~2.5-3 sec to reach the corner
+- Requires two guards who can pull (athletic OL)
+- Vulnerable to playside DE / EDGE shooting upfield
+- Modern speed defenses with disciplined edge fits neutralize
+- HB depth and timing must be exact with the pullers
+best_vs_defense:
+- 4-3 with predictable LB flow
+- cover-3 with run-fit LBs
+- over-front
+- defenses unprepared for misdirection
+worst_vs_defense:
+- 4-6 / bear front
+- cover-1 with safety in the box
+- aggressive playside DE penetration
+- any defense with film prep on Wing-T tendencies
+common_uses:
+- Base outside run in Wing-T offense
+- Setting up Trap / Belly / Waggle off the same look
+- Short-yardage perimeter run
+- 1st-and-10 base call
+- HS / youth football base run
+philosophy: power-run
+era: 1950s onward — Dave Nelson / Tubby Raymond Delaware Wing-T tradition; HS staple universally.
+famous_examples:
+- University of Delaware (Tubby Raymond era 1966-2001)
+- Many HS programs nationally — particularly Delaware-tradition Mid-Atlantic teams
+- Pop Warner / youth football base sweep
+tags:
+- run
+- power-run
+- sweep
+- wing-t
+- misdirection
+- high-school
+- college
+- throwback
+- any-level
+notes: 'Wing-T''s signature play. Two pulling guards (LG and RG) is unusual for any
+
+  modern run scheme but is the defining feature here. The QB reverse-out and
+
+  FB belly fake are critical — without them, the LBs scrape and kill the
+
+  play. Mirror to "Buck Sweep Left" by flipping all x; the play swaps which
+
+  guard pulls first and which side gets the WING.
+
+  '
+verification_status: unverified
+source_notes:
+- 'Web validated 2026-04-29 — Youth Football Online ''Wing T Buck Sweep'' (https://youthfootballonline.com/wing-t-formation-buck-sweep-play/);
+  Throw Deep Publishing ''Wing-T Offense In-Depth'' (https://throwdeeppublishing.com/blogs/football-glossary/the-wing-t-offense-an-in-depth-guide);
+  USA Football ''Reflections from a Wing T guru'' (https://blogs.usafootball.com/blog/6633/reflections-from-a-wing-t-guru-part-1).
+  Confirmed: two pulling guards, FB belly fake, QB reverse-out, HB follows pullers around playside edge.'
+- Mirror of wing-t-buck-sweep.yaml — path waypoints flipped on x; formation reference points to the mirror formation. Routes
+  auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed look
+  — coordinates and paths are the source of truth.

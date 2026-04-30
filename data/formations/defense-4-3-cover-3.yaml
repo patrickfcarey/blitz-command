@@ -1,0 +1,97 @@
+name: 4-3 Cover 3
+side: defense
+personnel: "4-3 base"
+front: "4-3"
+coverage_shell: "cover-3"
+
+# Standard 4-3 front (4 DL, 3 LB) with Cover 3 coverage shell (3 deep,
+# 4 underneath). Single-high safety, hard run-stopping front, conservative
+# pass coverage. Most common base defense in modern football.
+#
+# Universal coords: positive y = downfield (defense's natural side).
+players:
+  - { label: LDE, position: DE, x: -4.0,  y:  1.0, on_line: false }
+  - { label: NT,  position: DT, x: -1.0,  y:  1.0, on_line: false }
+  - { label: RDT, position: DT, x:  2.5,  y:  1.0, on_line: false }
+  - { label: RDE, position: DE, x:  4.0,  y:  1.0, on_line: false }
+  - { label: WLB, position: LB, x: -4.0,  y:  5.0, on_line: false }
+  - { label: MLB, position: LB, x:  0.0,  y:  5.0, on_line: false }
+  - { label: SLB, position: LB, x:  4.0,  y:  5.0, on_line: false }
+  - { label: LCB, position: CB, x: -15.0, y:  7.0, on_line: false }
+  - { label: RCB, position: CB, x:  12.0, y:  7.0, on_line: false }
+  - { label: FS,  position: S,  x:  0.0,  y: 13.0, on_line: false }
+  - { label: SS,  position: S,  x:  8.0,  y:  8.0, on_line: false }
+
+responsibilities:
+  - { player: LDE, role: rush,         aim: "weakside contain / C-gap" }
+  - { player: NT,  role: rush,         aim: "1-tech / backside A-gap" }
+  - { player: RDT, role: rush,         aim: "3-tech / playside B-gap" }
+  - { player: RDE, role: rush,         aim: "strongside contain / TE-side C-gap" }
+  - { player: WLB, role: hook,         aim: "weak curl / hook zone" }
+  - { player: MLB, role: hook,         aim: "middle hook" }
+  - { player: SLB, role: curl,         aim: "strong curl / hook zone" }
+  - { player: LCB, role: deep-zone,    aim: "deep third — left third of the field" }
+  - { player: RCB, role: deep-zone,    aim: "deep third — right third of the field" }
+  - { player: FS,  role: deep-zone,    aim: "deep third — middle third of the field" }
+  - { player: SS,  role: flat,         aim: "strong flat / buzzes down to flat zone at snap" }
+
+best_against:
+  - "Inside running concepts (dive, ISO, power)"
+  - "Cover-3 friendly route concepts (out, hitch underneath)"
+  - "Single-WR / heavy formations (TE attached)"
+  - "PA shots (single-high stays back)"
+
+vulnerable_to:
+  - "Flood / sail concepts (3-on-2 stretch on the underneath defenders)"
+  - "Mesh / drag combos (rubs in the underneath zones)"
+  - "Four verticals (single-high splits the seams)"
+  - "RPO bubble (apex-conflict — SS can't be in run-fit AND flat)"
+  - "Smash (corner over hard flat-defender)"
+
+strengths:
+  - "Sound deep coverage with 3 deep zones"
+  - "Aggressive run support — 4 DL + SS in flat"
+  - "Conservative — gives up few big plays"
+  - "Easy to teach, base defense for nearly every level"
+
+weaknesses:
+  - "Apex defender (SS) put in run-pass conflict"
+  - "Only 3 underneath defenders to cover horizontal stretches"
+  - "Single-high vulnerable to seam routes"
+  - "Hard for FS to cover the entire deep middle"
+
+common_uses:
+  - "Base defense vs 21 / 12 personnel"
+  - "1st / 2nd down standard call"
+  - "Run-down defense"
+  - "Goal-line situations (with adjustments)"
+
+era: "Universal — 4-3 Cover 3 has been the most common base defense in football for 50+ years."
+
+famous_users:
+  - "Pete Carroll Seattle Seahawks (Legion of Boom-era base)"
+  - "Modern NFL — most teams use C3 as a primary call"
+  - "Nick Saban Alabama variants"
+
+tags:
+  - defense
+  - 4-3
+  - cover-3
+  - single-high
+  - base-defense
+  - run-stopping
+  - any-level
+  - high-school
+  - college
+  - nfl
+
+notes: |
+  4-3 (4 DL, 3 LB) + Cover 3 shell (3 deep zones, 4 underneath). The
+  classic single-high run-defense. SS aligns shallower than FS pre-snap
+  and "buzzes" down to flat coverage at snap. WLB / MLB / SLB take
+  the underneath hook / curl zones.
+
+verification_status: unverified
+source_notes:
+  - "Standard 4-3 Cover 3 alignment; documented in every football coaching textbook."
+  - "Built 2026-04-30 as part of the P5 defensive-side rollout."

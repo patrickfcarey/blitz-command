@@ -1,0 +1,21 @@
+name: hitch
+aliases:
+- stop
+- curl
+description: Push 5-6 yards then settle facing the QB.
+path:
+- - 0
+  - 0
+- - 0
+  - 5
+typical_break_depth_yd: 5
+option_route: false
+category: quick
+beats_coverage: zone
+tags:
+- quick-game
+- settle
+- smash-component
+verification_status: unverified
+source_notes:
+- Universal short route. Acts as the LO of smash concepts.

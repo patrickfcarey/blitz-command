@@ -1,0 +1,142 @@
+play_id: run-and-shoot-switch
+name: Switch (Strong)
+aliases:
+  - Switch Vertical
+  - Run-and-Shoot Switch
+  - Switch Verts
+
+formation: run-and-shoot
+play_type: pass
+ball_carrier: QB
+primary_read: SLOT-R
+secondary_read: Z
+checkdown: HB
+
+motions: []
+
+assignments:
+  - player: LT
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: LG
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: C
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: RG
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: RT
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: X
+    role: route
+    route_name: switch-go
+    depth_yd: 25
+    notes: "Weak side switch: X releases as if going outside, then bends INSIDE on a vertical (replaces SLOT-L's vacated path)."
+  - player: Z
+    role: route
+    route_name: switch-go
+    depth_yd: 25
+    notes: "Strong side switch: Z releases as if going outside, then bends INSIDE on a vertical (replaces SLOT-R's vacated path)."
+  - player: SLOT-L
+    role: route
+    route_name: switch-out-go
+    depth_yd: 22
+    notes: "Weak side switch: SLOT-L releases inside as if running a slant, then bends OUTSIDE up the seam (the outside / X path)."
+  - player: SLOT-R
+    role: route
+    route_name: switch-out-go
+    depth_yd: 22
+    is_primary: true
+    notes: "Strong side switch: SLOT-R releases inside as if running a slant, then bends OUTSIDE up the seam — the kill route. Creates a natural pick on press-man corners. Primary read."
+  - player: QB
+    role: ball_carrier
+    path: [[0, 0], [0, -2], [0, -4]]
+    notes: |
+      5-step drop. Switch concept creates rubs at 5-7 yds — the WRs and slots
+      cross paths, picking off press-man corners. Read deep:
+      - Single-high (cover-1 / cover-3) → SLOT-R outside seam (now uncovered after pick)
+      - Two-high (cover-2 / cover-4) → Z bending inside (post-style) over the safety
+      - Press man → SLOT-R wins on the rub
+      - Zone → all 4 verticals stretch the deep coverage
+  - player: HB
+    role: route
+    route_name: flat
+    depth_yd: 3
+    notes: "HB releases to the strong-side flat — universal outlet."
+
+strengths:
+  - "Two natural picks at 5-7 yds — press-man corners get rubbed"
+  - "Confuses pattern-match coverage (corners and safeties have to switch responsibility)"
+  - "Vertical stretch on every snap — 4 deep threats"
+  - "Slot-back outside seam is the kill route vs single-high"
+  - "Hard for defense to communicate switch responsibility cleanly"
+
+weaknesses:
+  - "Slow-developing — needs ~3.5 sec for verticals to develop"
+  - "Pass protection fragile (no extra blockers)"
+  - "Vulnerable to cover-2 invert (both safeties cover the seams)"
+  - "Wide splits required to make switch effective (defense can read formation)"
+  - "If picks miss, every WR is in 1-on-1 deep with no help"
+
+best_vs_defense:
+  - "Press-man (the picks shred press technique)"
+  - "Cover-3 (single-high splits)"
+  - "Cover-1 (man-free with FS in the middle)"
+  - "Any defense with predictable coverage rotation"
+
+worst_vs_defense:
+  - "Cover-2 invert (both safeties bracket the seams)"
+  - "Cover-4 with pattern-match"
+  - "Aggressive zero blitz (no time)"
+  - "Robber coverage (extra defender)"
+
+common_uses:
+  - "Vs press-man tells (shotgun looks)"
+  - "1st-and-10 deep shot"
+  - "2-minute drill (4 deep threats forces deep coverage)"
+  - "Setting up underneath throws after defense backs off"
+  - "Hash-mark / sideline shot when defense is in single-high"
+
+philosophy: spread-pass
+
+era: "1980s-90s onward — Mouse Davis / June Jones run-and-shoot signature deep concept."
+
+famous_examples:
+  - "Houston Oilers (Warren Moon)"
+  - "Detroit Lions (Andre Ware)"
+  - "Hawaii Warriors (Colt Brennan)"
+  - "SMU under June Jones"
+
+tags:
+  - pass
+  - deep
+  - run-and-shoot
+  - switch
+  - vertical
+  - 10-personnel
+  - 4-wide
+  - throwback
+  - college
+  - nfl
+  - high-school
+
+notes: |
+  Switch verticals — slot-backs and outside WRs cross paths at 5-7 yds,
+  creating natural rubs that disrupt press-man and confuse pattern-match
+  coverage. The slot-back ends up on the outside seam (vacant after WR
+  bends inside); the WR ends up on the inside seam (vacant after slot
+  bends outside).
+
+  This is the run-and-shoot's deep-shot answer to press coverage — the
+  picks neutralize press technique, and the 4 verticals stretch the deep
+  field. Best paired with single-high coverage tells.
+
+  Mirror by flipping all x.
+
+verification_status: unverified
+source_notes:
+  - "Standard switch-vertical concept; documented across run-and-shoot coaching texts (Mouse Davis / June Jones lineage)."
+  - "Built 2026-04-30 as part of the P3 specialty-play rollout."

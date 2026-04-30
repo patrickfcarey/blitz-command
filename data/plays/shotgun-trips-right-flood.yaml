@@ -1,0 +1,134 @@
+play_id: shotgun-trips-right-flood
+name: Flood (Trips Right)
+aliases:
+  - Sail
+  - 3-Level Flood
+  - Y-Sail (variant)
+
+formation: shotgun-trips-right
+play_type: pass
+ball_carrier: QB
+primary_read: WR2
+secondary_read: WR1
+checkdown: WR3
+
+motions: []
+
+assignments:
+  - player: LT
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: LG
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: C
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: RG
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: RT
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: TE
+    role: route
+    route_name: drag
+    depth_yd: 5
+    notes: "Backside TE drag — late outlet if flood is bracketed."
+  - player: WR1
+    role: route
+    route_name: clear-out-go
+    depth_yd: 25
+    notes: "Outer trips WR: deep clear-out — pulls the corner/safety out of the flood."
+  - player: WR2
+    role: route
+    route_name: sail
+    depth_yd: 12
+    is_primary: true
+    notes: "Middle trips WR: sail/out at 12 yards — the intermediate level of the flood. Primary read."
+  - player: WR3
+    role: route
+    route_name: flat
+    depth_yd: 3
+    notes: "Inner trips WR: shoot to the flat. The LO of the 3-level stretch."
+  - player: QB
+    role: ball_carrier
+    path: [[0, 0], [0, -2], [0, -4]]
+    notes: |
+      5-step drop from shotgun depth. 3-level stretch on the trips side:
+      deep clear (WR1) / sail (WR2) / flat (WR3). Primary read is the sail
+      working against a single zone defender. Read the deep-third defender:
+      - Defender carries the clear → throw the sail underneath
+      - Defender sits on the sail → throw the clear over the top
+      - Flat defender expands to sail → throw flat for easy yards
+  - player: HB
+    role: pass_block
+    blocking_scheme: man-protection
+    notes: "Pass-protect against weak-side blitz; stays in unless pressure clears."
+
+strengths:
+  - "Three-level stretch overwhelms zone coverage"
+  - "Sail at 12 yards is the rhythm throw — high completion percentage"
+  - "Forces deep-third corner to choose (sail or clear)"
+  - "Pairs with rollout to tighten reads (Y-Sail variant)"
+  - "Easy QB read — work top-down, take what defense gives"
+  - "Effective against cover-3 (the textbook target)"
+
+weaknesses:
+  - "Designed for zone — struggles vs man coverage"
+  - "Slow to develop (sail needs ~3 sec)"
+  - "Bracket on sail neutralizes the primary"
+  - "Limited backside threat (just TE drag)"
+  - "Vulnerable to blitz from the trips side"
+
+best_vs_defense:
+  - "cover-3 (the textbook beater)"
+  - "cover-2 (sail attacks the corner-safety seam)"
+  - "cover-4 with disciplined deep coverage"
+  - "any zone defense to the trips side"
+
+worst_vs_defense:
+  - "cover-1 / cover-0 man coverage"
+  - "bracket on sail receiver"
+  - "press man on outer WR"
+  - "blitz from the trips side"
+
+common_uses:
+  - "1st/2nd-and-medium against zone tendencies"
+  - "Setting up backside throws after defense over-rotates"
+  - "Red-zone fade option (sail becomes back-of-end-zone target)"
+  - "PA pairing for max effect (PA fake holds run-flow LBs)"
+
+philosophy: pro-style
+
+era: "Universal — Don Coryell origin (1980s); modernized through every era."
+
+famous_examples:
+  - "Don Coryell Chargers (originator)"
+  - "Modern NFL flood concepts (49ers Kyle Shanahan tree)"
+  - "Air Raid Y-Sail variants (Mike Leach)"
+  - "Andy Reid Eagles/Chiefs flood packages"
+
+tags:
+  - pass
+  - spread
+  - flood
+  - sail
+  - 3-level
+  - trips
+  - shotgun
+  - coryell
+  - any-level
+  - high-school
+  - college
+  - nfl
+
+notes: |
+  Flood and Sail are essentially the same concept — a 3-level horizontal
+  + vertical stretch on the playside outside zone. Y-Sail is the variant
+  where the TE (Y) runs the intermediate sail route; here it's WR2 from
+  the slot. Pairs naturally with rollout PA for tighter reads.
+
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-29 — X&O Labs 'Three-Level Sail Concept' (https://www.xandolabs.com/the-lab/offense/personnel/10-00-personnel-concepts/three-level-sail-concept-new-trends-create-a-high-low-stretch-on-the-flat-defender/); Weekly Spiral 'Sail Concept' (https://weeklyspiral.com/2021/02/08/sail-concept/); CougCenter 'Air Raid Y-Sail' (https://www.cougcenter.com/2013/4/17/4211216/air-raid-playbook-y-sail); Coach Kou 'NFL Pass Concept #4 Sail/Flood' (https://coachkoufootball.substack.com/p/nfl-pass-concepts-4-sailflood-route). Confirmed: 3-level flood = deep clear + intermediate sail + flat shoot; designed to attack zone coverage; not as effective vs man."

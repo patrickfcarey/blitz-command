@@ -1,0 +1,159 @@
+play_id: i-formation-power-o-left
+name: Power O (Strong) (Mirror Left)
+aliases:
+- I-Form Power
+- Power
+- Counter Lead
+formation: i-formation-left
+play_type: run
+ball_carrier: HB
+motions:
+- player: Z
+  type: optional
+  motion_type: short-across
+  end_position:
+    x: 8.0
+    y: -1.0
+  notes: Z shifts to weak-side slot to occupy the backside safety.
+assignments:
+- player: LT
+  role: run_block
+  blocking_scheme: down-block
+  target: backside-3-tech
+  notes: Down block on the backside DT; create the backside hinge.
+- player: LG
+  role: run_block
+  blocking_scheme: pull-around
+  target: playside-LB
+  path:
+  - - 0
+    - 0
+  - - -2
+    - -0.5
+  - - -4
+    - 0
+  - - -5
+    - 4
+  notes: Pull around the C, lead through the hole, kickout or wrap on the playside LB.
+- player: C
+  role: run_block
+  blocking_scheme: gap-block
+  target: backside-A-gap
+  notes: Help LG with backside scoop, then climb to the backside LB.
+- player: RG
+  role: run_block
+  blocking_scheme: down-block
+  target: playside-DT
+- player: RT
+  role: run_block
+  blocking_scheme: down-block
+  target: playside-5-tech
+  notes: Down block on the playside DE / 5-tech to seal the C-gap.
+- player: TE
+  role: run_block
+  blocking_scheme: kickout
+  target: edge-defender
+  notes: Kick the EDGE defender out — creates the off-tackle hole.
+- player: X
+  role: run_block
+  blocking_scheme: stalk
+  target: cornerback
+- player: Z
+  role: run_block
+  blocking_scheme: stalk
+  target: cornerback
+- player: QB
+  role: handoff
+  path:
+  - - 0
+    - 0
+  - - 1
+    - -1
+  - - 2
+    - -1
+  notes: Reverse-out to the HB; sell a fake bootleg to the backside.
+- player: FB
+  role: lead_block
+  target: playside-LB-or-strong-safety
+  path:
+  - - 0
+    - 0
+  - - -3
+    - 3
+  - - -4
+    - 6
+  notes: Lead through the hole; isolate the playside LB or kickout the strong safety.
+- player: HB
+  role: ball_carrier
+  is_primary: true
+  path:
+  - - 0
+    - 0
+  - - -3
+    - 3
+  - - -4
+    - 9
+  notes: Take the handoff, hit the off-tackle hole, follow the pulling LG.
+strengths:
+- Double-team at the point of attack (RG and RT both block down on playside)
+- Pulling guard adds an extra blocker at the second level
+- FB iso block puts a hat on the playside LB or strong safety
+- QB reverse-out and bootleg fake hold backside defenders
+- Reliable downhill production — base call in any era's playbook
+weaknesses:
+- Vulnerable to playside penetration before the down-blocks are set
+- Needs ~2 seconds to develop — fast-flow defenses can outrun the LG pull
+- HB must read the pull and not bounce the run wide
+- Backside cutback shut down by an unblocked safety filling the C-gap
+- Slower than zone runs vs disciplined fronts
+best_vs_defense:
+- over-front (gives the down-block angles)
+- cover-3 (single safety reduces second-level support)
+- 4-3 base
+- any defense with predictable LB flow
+worst_vs_defense:
+- under-front (changes the down-block math)
+- 8-man fronts / cover-1 robber (extra defender in the box)
+- penetrating 1-techs that beat the down-block
+- bear / 4-6 fronts
+common_uses:
+- 1st-and-10 base run
+- 3rd-and-short / 3rd-and-medium
+- Goal-line / red-zone (4–7 yard line)
+- Establishing the run early in a game
+- Setting up PA cross off the same look
+philosophy: power-run
+era: Universal — every era of football. Conceptually unchanged since the 1960s; modernized blocking but same idea.
+famous_examples:
+- 1990s Cowboys (Emmitt Smith behind Daryl Johnston)
+- 2000s Steelers (Jerome Bettis)
+- Stanford under Harbaugh (Toby Gerhart era)
+tags:
+- power-run
+- gap-scheme
+- downhill
+- high-school
+- college
+- nfl
+- any-level
+notes: 'Canonical Power play. The "O" suffix denotes the Off-tackle hole (between
+
+  the playside tackle and TE). Some teams call this "Power" or "Counter Lead";
+
+  the difference is in pull mechanics — true Counter has the BACKSIDE guard
+
+  and tackle (or TE) pulling, while Power has only the backside guard pulling.
+
+  '
+verification_status: unverified
+source_notes:
+- 'Assignments: standard Power O coaching texts (Mark Stoops, Joe Moore lineage).'
+- 'Strengths/weaknesses: power-run textbook material.'
+- 'Famous examples: well-documented historical attribution.'
+- 'Web validated 2026-04-29 — assignments confirmed against Throw Deep Publishing ''Complete Guide to the Power Play'' (https://throwdeeppublishing.com/blogs/football-glossary/the-complete-guide-to-the-power-play);
+  vIQtory Sports ''Install Power'' (https://www.viqtorysports.com/running-the-power-play-in-spread-power-offenses/); Wikipedia
+  ''Power run'' (https://en.wikipedia.org/wiki/Power_run). Three core elements confirmed: double-team at point of attack,
+  kick-out of EMOL, lead block through the hole.'
+- Mirror of i-formation-power-o.yaml — path waypoints flipped on x; formation reference points to the mirror formation. Routes
+  auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed look
+  — coordinates and paths are the source of truth.

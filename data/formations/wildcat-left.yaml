@@ -1,0 +1,127 @@
+name: Wildcat Left
+side: offense
+personnel: '21'
+strength_side: left
+players:
+- label: LT
+  position: LT
+  x: -2.0
+  y: 0.0
+  on_line: true
+- label: LG
+  position: LG
+  x: -1.0
+  y: 0.0
+  on_line: true
+- label: C
+  position: C
+  x: 0.0
+  y: 0.0
+  on_line: true
+- label: RG
+  position: RG
+  x: 1.0
+  y: 0.0
+  on_line: true
+- label: RT
+  position: RT
+  x: 2.0
+  y: 0.0
+  on_line: true
+- label: TE
+  position: TE
+  x: -3.5
+  y: 0.0
+  on_line: true
+- label: QB-WR
+  position: QB
+  x: 15.0
+  y: 0.0
+  on_line: true
+- label: Z
+  position: WR
+  x: -14.0
+  y: -1.0
+  on_line: false
+- label: SLOT
+  position: WR
+  x: -6.0
+  y: -1.0
+  on_line: false
+- label: RB1
+  position: HB
+  x: -0.0
+  y: -5.0
+  on_line: false
+- label: RB2
+  position: HB
+  x: 2.5
+  y: -5.0
+  on_line: false
+strengths:
+- 11 vs 11 numbers advantage in the box (the QB as WR removes a defender from the box if he's covered)
+- Direct snap = no fake/handoff timing risk; ball is in the hands of a runner immediately
+- Multiple ball-handling threats (RB1 keeper, RB2 jet/sweep, WR reverse)
+- Surprise factor — defenses rarely prepare for it
+- Pass option — RB1 can throw (Ronnie Brown TD pass vs Patriots, 2008)
+- Power-running scheme works to either side from same look
+weaknesses:
+- Loss of QB threat — defense knows pass is unlikely
+- Limited route tree (only the 3 receivers + outlet to RB2 if RB1 throws)
+- Telegraphs run intent without a credible passing threat
+- Defenses adjusted by 2010 (4-man front + safety in the box neutralizes)
+- QB removed from the formation = no audibles / no protection adjustments
+common_uses:
+- Short-yardage / goal-line constraint package
+- Surprise package on an early down
+- Trick-play setups (RB pass)
+- Runs against light boxes when defenses don't adjust
+- Power-spread teams as a tempo / look-changer
+run_concepts:
+- power
+- counter
+- jet-sweep
+- sweep
+- speed-option
+- reverse
+pass_concepts:
+- rb-pass
+- quick-screen
+- trick-fade
+era: 'Modern resurgence: 2006 Arkansas (Darren McFadden) and 2008 Miami Dolphins (Dan Henning, Ronnie Brown). Roots trace
+  to single-wing direct-snap football of the 1920s-1940s.'
+famous_users:
+- 2008 Miami Dolphins (Dan Henning OC) — 38-13 win over Patriots Sept 21 2008 (4 rushing TDs + 1 passing TD on 6 wildcat plays)
+- 2006 Arkansas (Houston Nutt) with Darren McFadden + Felix Jones
+- Various NFL teams as a surprise package (Jets / Bills / Eagles between 2008-2012)
+tags:
+- wildcat
+- direct-snap
+- 21-personnel
+- power
+- trick-package
+- constraint
+- throwback
+- high-school
+- college
+- nfl
+notes: 'The "QB-WR" label captures the unusual case where the formation''s listed QB
+
+  is split as a WR; the actual signal-caller for this play is RB1 taking the
+
+  direct snap. For motion, RB2 commonly motions across pre-snap to fake jet
+
+  or set up a counter step. Mirror left-handed wildcat by flipping all x.
+
+  '
+verification_status: unverified
+source_notes:
+- 'Web validated 2026-04-29 — Wikipedia ''Wildcat formation'' (https://en.wikipedia.org/wiki/Wildcat_formation); Pro Football
+  Hall of Fame ''Wildcat immortalized'' (https://www.profootballhof.com/news/2008/12/news-wildcat-immortalized/); ESPN ''Inside
+  story 2008 Dolphins Wildcat'' (https://www.espn.com/blog/miami-dolphins/post/_/id/28295/wildcat-strike-how-2008-dolphins-shocked-patriots-and-the-nfl);
+  National Football Post ''Inside the playbook: Miami Wildcat'' (https://www.nationalfootballpost.com/2008-2018-nfp-archive/inside-the-playbook/inside-the-playbook-the-miami-wildcat/).
+  Confirmed: 2008 Dolphins ran 90 wildcat plays for 580 yds + 8 TDs, 6.4 yd/play average; signature game vs Patriots Sept
+  21 2008.'
+- Mirror of wildcat.yaml — coordinates flipped horizontally on x; strength_side flipped; OL labels (LT/LG/C/RG/RT) and centered
+  backfield positions (QB / centered FB or HB) unchanged. Notes in this file may still describe the original right-handed
+  look in places — read coordinates as the source of truth.

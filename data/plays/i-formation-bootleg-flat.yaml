@@ -49,7 +49,8 @@ assignments:
     notes: "Z runs a deep cross strong-to-weak — the kill shot if the safety bites on the fake."
   - player: QB
     role: ball_carrier
-    notes: "Fake handoff to HB, roll out to the bootleg side (mirror left for left bootleg). Eyes on TE drag first."
+    path: [[0, 0], [-3, -1], [-5, -1], [-7, 0]]
+    notes: "Fake handoff to HB, roll out to the bootleg side (LEFT here, opposite the strong-right TE). Eyes on TE drag first."
   - player: FB
     role: route
     route_name: flat

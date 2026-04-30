@@ -1,0 +1,154 @@
+play_id: flexbone-pa-bootleg-left
+name: PA Bootleg (Strong) (Mirror Left)
+aliases:
+- Flexbone Bootleg
+- PA Boot
+- Naked Boot
+formation: flexbone-left
+play_type: play-action
+ball_carrier: QB
+primary_read: SLOT-R
+secondary_read: TE
+checkdown: SLOT-L
+motions: []
+assignments:
+- player: LT
+  role: pass_block
+  blocking_scheme: man-protection
+  notes: Sell run on first count (pull-and-trap look), then set up pass-pro.
+- player: LG
+  role: pass_block
+  blocking_scheme: man-protection
+- player: C
+  role: pass_block
+  blocking_scheme: man-protection
+- player: RG
+  role: pass_block
+  blocking_scheme: man-protection
+- player: RT
+  role: pass_block
+  blocking_scheme: man-protection
+- player: TE
+  role: route
+  route_name: drag
+  depth_yd: 8
+  notes: TE delays one count (sells block), then runs drag at 8 yds. Secondary read.
+- player: SE
+  role: route
+  route_name: post
+  depth_yd: 16
+  notes: Backside SE post — opens late if other reads covered. Secondary deep threat keeps the FS honest.
+- player: QB
+  role: ball_carrier
+  path:
+  - - 0
+    - 0
+  - - 1
+    - -1
+  - - -3
+    - -1
+  - - -5
+    - -2
+  notes: 'Triple play-fake — sell FB midline / dive, sell SLOT-R pitch action, then bootleg
+
+    to the strong (right) side. QB rolls to ~5 yd depth, scans:
+
+    - SLOT-R wheel (the kill shot — slot-back wheel route is the signature flexbone PA throw)
+
+    - TE drag if SLOT-R covered
+
+    - SLOT-L flat as outlet
+
+    '
+- player: FB
+  role: fake
+  path:
+  - - 0
+    - 0
+  - - 0
+    - 2
+  - - 0
+    - 4
+  notes: Fake midline / dive hard — sell the option look.
+- player: SLOT-L
+  role: route
+  route_name: flat
+  depth_yd: 3
+  notes: Backside slot-back releases shallow as backside outlet on rollout (away from QB roll). Late checkdown.
+- player: SLOT-R
+  role: route
+  route_name: wheel
+  depth_yd: 18
+  is_primary: true
+  notes: WHEEL ROUTE — slot-back fakes pitch action, then turns upfield on a wheel. Primary read on PA bootleg.
+strengths:
+- Triple play-fake (FB midline + SLOT-R pitch + QB bootleg) sells the run massively
+- Wheel route from a slot-back is hard to cover (LB / SS gets crossed up)
+- Flexbone defenses key heavily on run — PA shots have huge impact
+- Backside SE post threat keeps the FS honest
+- SLOT-L flat outlet provides a 3-yd quick-throw on the rollout
+- Constraint package after establishing triple-option success
+weaknesses:
+- Slow-developing — QB rolling out takes 3+ sec
+- Vulnerable to backside DE pursuing the rollout
+- Pass protection fragile (only 5 OL, no extra blockers)
+- Cover-2 with playside corner squat shuts down comeback
+- Flexbone QB may not be a true thrower — accuracy / arm-strength concerns
+best_vs_defense:
+- Cover-3 with FS biting on TE drag
+- Cover-1 with single coverage on slot-backs
+- any defense aggressively run-fitting (LBs flow, leaving voids)
+- 8-man fronts (no help for slot wheel)
+worst_vs_defense:
+- Cover-2 with disciplined corner play
+- Cover-4 with disciplined deep coverage
+- Backside DE who plays QB on rollouts
+- Defenses that don't bite on PA
+common_uses:
+- PA shot off established triple-option run game
+- 1st-and-10 after a sequence of triple-option calls
+- Red-zone TE corner / SLOT wheel (back of end zone)
+- Constraint to over-pursuing run defenses
+- Service-academy scoring concept
+philosophy: pro-style
+era: 1980s onward — Flexbone PA bootleg developed alongside the run game; signature service-academy scoring play.
+famous_examples:
+- Air Force Falcons (Fisher DeBerry / Troy Calhoun)
+- Navy Midshipmen (Paul Johnson era)
+- Georgia Tech under Paul Johnson
+tags:
+- pass
+- pa
+- bootleg
+- flexbone
+- 20-personnel
+- service-academy
+- wheel-route
+- college
+- high-school
+notes: 'Flexbone PA Bootleg is the signature passing play of the flexbone offense.
+
+  Slot-back wheel (SLOT-R) is the kill shot — flexbone defenses know they
+
+  have to fit run aggressively, so the slot-back faking pitch then turning
+
+  upfield is essentially uncovered on most snaps.
+
+
+  Triple play-fake (FB midline + SLOT-R pitch + QB bootleg) is what makes
+
+  this concept lethal — defense has to simultaneously honor 3 different
+
+  run threats, which is impossible.
+
+
+  Mirror by flipping all x.
+
+  '
+verification_status: unverified
+source_notes:
+- Standard flexbone PA bootleg per Air Force / Navy / Paul Johnson coaching trees.
+- Built 2026-04-30 as part of the P3 specialty-play rollout.
+- Mirror of flexbone-pa-bootleg.yaml — path waypoints flipped on x; formation reference points to the mirror formation. Routes
+  auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed look
+  — coordinates and paths are the source of truth.

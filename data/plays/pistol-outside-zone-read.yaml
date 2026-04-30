@@ -43,11 +43,13 @@ assignments:
     blocking_scheme: stalk
   - player: QB
     role: handoff
-    notes: "Read backside DE: DE crashes → PULL and run; DE plays contain → GIVE."
+    path: [[0, 0], [-1, 1]]
+    notes: "Pivot backside to mesh with HB. Read backside DE: DE crashes → PULL and run; DE plays contain → GIVE."
   - player: HB
     role: ball_carrier
     is_primary: true
-    notes: "Aim point: playside C-gap. Read playside EDGE block — BOUNCE / BANG / CUTBACK."
+    path: [[0, 0], [0, 2], [3, 4], [6, 6]]
+    notes: "Aim point: playside C-gap. Step forward to mesh, take handoff, stretch perimeter playside. Read playside EDGE block — BOUNCE / BANG / CUTBACK."
 
 strengths:
   - Combines outside zone's perimeter-stretch with read-option's free numbers advantage

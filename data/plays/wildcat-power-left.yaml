@@ -1,0 +1,125 @@
+play_id: wildcat-power-left
+name: Wildcat Power (Mirror Left)
+aliases:
+- Wildcat Power O
+- Direct-Snap Power
+formation: wildcat-left
+play_type: run
+ball_carrier: RB1
+motions: []
+assignments:
+- player: LT
+  role: run_block
+  blocking_scheme: down-block
+  target: backside-DE
+- player: LG
+  role: run_block
+  blocking_scheme: pull-around
+  target: playside-LB
+  notes: PULL — backside guard pulls around C, leads through the off-tackle hole.
+- player: C
+  role: run_block
+  blocking_scheme: gap-block
+  target: backside-A-gap
+- player: RG
+  role: run_block
+  blocking_scheme: down-block
+  target: playside-3-tech
+- player: RT
+  role: run_block
+  blocking_scheme: down-block
+  target: playside-DE
+- player: TE
+  role: run_block
+  blocking_scheme: kickout
+  target: edge-defender
+- player: QB-WR
+  role: route
+  route_name: stalk-or-route
+  depth_yd: 0
+  notes: Original QB lined up wide as WR — stalks or runs decoy route.
+- player: Z
+  role: run_block
+  blocking_scheme: stalk
+  target: cornerback
+- player: SLOT
+  role: run_block
+  blocking_scheme: stalk
+  target: nickel-defender
+- player: RB1
+  role: ball_carrier
+  is_primary: true
+  path:
+  - - 0
+    - 0
+  - - -3
+    - 3
+  - - -4
+    - 9
+  notes: Direct snap, take a quick read step, hit off-tackle behind RT/TE/pulling LG.
+- player: RB2
+  role: lead_block
+  target: playside-LB-or-S
+  notes: RB2 leads through the hole, isolating the playside LB or strong safety. Sometimes RB2 fakes a sweep instead.
+strengths:
+- 11-blocker advantage in the box (no QB to leave hanging back; QB-as-WR removes a defender if covered)
+- Direct snap = no fake / handoff timing risk
+- Power scheme angles work like under-center Power O
+- Misdirection from RB2 and QB-as-WR holds backside
+- Surprise factor in modern football — defenses rarely prepare for it
+weaknesses:
+- Defense knows it's a run (no credible passer at the snap)
+- Vulnerable to defenses that bring a safety down (numbers neutralized)
+- Limited counter / pass off the same look — telegraphs intent
+- RB1 must be a credible runner with vision (not a typical QB skill)
+- Modern defenses adjusted by 2010 — fewer big plays now
+best_vs_defense:
+- 4-3 with light box
+- any defense not prepared for direct-snap sets
+- cover-2 with squatting corners (no run support from corners)
+worst_vs_defense:
+- 4-3 with safety in the box
+- cover-1 robber
+- 4-6 / bear front
+- prepared / film-studied defense
+common_uses:
+- Short-yardage / goal-line surprise package
+- Tempo / look-changer in a modern offense
+- 1st-and-10 vs an unprepared defense
+- Setting up trick plays (Wildcat Pass)
+philosophy: power-run
+era: 'Modern resurgence: 2008 Miami Dolphins (Ronnie Brown). Concept dates to 1920s-1940s single-wing era.'
+famous_examples:
+- Ronnie Brown — 2008 Dolphins Wildcat Power, scored 4 rushing TDs vs Patriots Sept 21 2008
+- Darren McFadden — 2006 Arkansas Wildcat package
+- Modern NFL situational use (Jets, Bills, Eagles 2008-2014 era)
+tags:
+- run
+- power-run
+- wildcat
+- direct-snap
+- constraint
+- trick-package
+- throwback
+- high-school
+- college
+- nfl
+notes: 'Wildcat Power. Same blocking scheme as Power O (down blocks playside,
+
+  backside guard pulls), but the snap goes directly to RB1 (no QB
+
+  intermediary). RB2 lines up beside RB1 to fake/lead. Original QB
+
+  is split as a WR (covered or running a decoy route).
+
+  '
+verification_status: unverified
+source_notes:
+- 'Web validated 2026-04-29 — Wikipedia ''Wildcat formation'' (https://en.wikipedia.org/wiki/Wildcat_formation); ESPN ''Inside
+  story 2008 Dolphins Wildcat'' (https://www.espn.com/blog/miami-dolphins/post/_/id/28295/wildcat-strike-how-2008-dolphins-shocked-patriots-and-the-nfl);
+  Pro Football Hall of Fame (https://www.profootballhof.com/news/2008/12/news-wildcat-immortalized/); National Football Post
+  ''Inside the Miami Wildcat'' (https://www.nationalfootballpost.com/2008-2018-nfp-archive/inside-the-playbook/inside-the-playbook-the-miami-wildcat/).
+  Confirmed: 2008 Dolphins 38-13 win over Patriots used Wildcat for 4 rushing TDs (and 1 pass TD by Ronnie Brown) on 6 plays.'
+- Mirror of wildcat-power.yaml — path waypoints flipped on x; formation reference points to the mirror formation. Routes auto-mirror
+  in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed look — coordinates
+  and paths are the source of truth.

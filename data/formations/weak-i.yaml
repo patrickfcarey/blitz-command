@@ -14,7 +14,7 @@ players:
   - { label: TE, position: TE, x:  3.5,  y:  0.0, on_line: true  }
   - { label: X,  position: WR, x: -15.0, y:  0.0, on_line: true  }
   - { label: Z,  position: WR, x:  12.0, y: -1.0, on_line: false }
-  - { label: QB, position: QB, x:  0.0,  y: -1.5, on_line: false }
+  - { label: QB, position: QB, x:  0.0,  y: -2.0, on_line: false }
   - { label: FB, position: FB, x: -1.5,  y: -4.0, on_line: false }
   - { label: HB, position: HB, x:  0.0,  y: -7.0, on_line: false }
 
@@ -68,7 +68,8 @@ notes: |
   Mirror of Strong I (FB at x=-1.5 instead of +1.5). Often used as a constraint
   formation when defense overplays Strong I tendencies.
 
-verification_status: inferred
+verification_status: unverified
 source_notes:
   - "Coordinates: mirror of strong-i with FB shifted weak."
   - "Strengths/weaknesses: standard coaching textbook material."
+  - "Web validated 2026-04-29 — Sporting Charts 'Weak I' (https://www.sportingcharts.com/dictionary/nfl/weak-i.aspx); Wikipedia 'I formation' (https://en.wikipedia.org/wiki/I_formation); Football Tutorials 'I-Formation Offense 101' (https://www.football-tutorials.com/i-formation-offense-101/). Confirmed: FB offset to weak side enables misdirection — FB acts as feint (defense follows him) while HB takes ball opposite direction."

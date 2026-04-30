@@ -1,0 +1,148 @@
+play_id: shotgun-trips-left-rpo-bubble
+name: RPO Bubble (Trips Left)
+aliases:
+- Trips Bubble
+- Inside Zone Bubble RPO
+formation: shotgun-trips-left
+play_type: rpo
+ball_carrier: QB
+primary_read: WR3
+motions: []
+assignments:
+- player: LT
+  role: run_block
+  blocking_scheme: zone-step-playside
+  notes: Run block — OL stays at LOS (RPO ineligible-downfield rule).
+- player: LG
+  role: run_block
+  blocking_scheme: zone-combo
+- player: C
+  role: run_block
+  blocking_scheme: zone-combo
+- player: RG
+  role: run_block
+  blocking_scheme: zone-combo
+- player: RT
+  role: run_block
+  blocking_scheme: zone-combo
+- player: TE
+  role: run_block
+  blocking_scheme: backside-zone-step
+  notes: TE backside zone step; helps seal backside if HB cuts back.
+- player: WR1
+  role: run_block
+  blocking_scheme: stalk
+  target: cornerback
+  notes: Stalk-block the playside corner — clears the bubble path.
+- player: WR2
+  role: run_block
+  blocking_scheme: stalk
+  target: nickel-or-LB
+  notes: Stalk the nickel/apex defender — opens room for WR3 bubble.
+- player: WR3
+  role: route
+  route_name: bubble-screen
+  depth_yd: -1
+  is_primary: true
+  notes: 'Inner trips WR: bubble screen 1 yard behind LOS — primary RPO target.'
+- player: QB
+  role: ball_carrier
+  path:
+  - - 0
+    - 0
+  - - -1
+    - -1
+  - - 0
+    - -2
+  notes: 'Mesh point with HB at (1, -1), then snap back to throwing posture if pulling.
+
+    Read the playside apex/nickel defender:
+
+    - Apex stays in box / aggressive on run → PULL + throw bubble to WR3
+
+    - Apex expands to bubble / sits in coverage → GIVE to HB on inside zone
+
+    Decision at the mesh point. OL must stay at LOS (no downfield release).
+
+    '
+- player: HB
+  role: ball_carrier
+  path:
+  - - 0
+    - 0
+  - - 1
+    - -1
+  - - 1
+    - 1
+  - - 0
+    - 5
+  notes: Step to mesh at (-1,-1), take handoff, attack playside A/B gap. If QB pulls and throws, HB has executed his fake.
+strengths:
+- Defensive numbers conflict — apex defender CAN'T cover bubble AND fit run
+- Quick decision and quick throw — minimal pass protection needed
+- Bubble has 2 stalk-blockers (WR1, WR2) ready to clear it
+- Pairs with downhill inside zone for run-game balance
+- Modern foundational concept across HS/college/NFL
+- Easy first-down concept on 1st/2nd down
+weaknesses:
+- Depends on QB read accuracy and quick decision
+- OL must NOT release downfield (penalty risk)
+- Defenses with disciplined apex defenders neutralize the read
+- Bubble can be jumped by aggressive nickel
+- Backside has only TE drag if QB chooses to throw away from trips
+best_vs_defense:
+- cover-3 with apex flat defender involved in run-fits
+- 4-3 with strong-side LB walked out to apex
+- any defense with apex/box conflict on RPO reads
+worst_vs_defense:
+- cover-2 with squatting nickel
+- cover-4 with disciplined apex
+- banjo / pattern-match coverage on slot
+- LB blitz from the trips side
+common_uses:
+- 1st/2nd-and-medium base RPO call
+- Modern college spread offense workhorse
+- 3rd-and-4 to 3rd-and-7 in nickel personnel
+- Setting up downfield shots when defense over-rotates
+- High school spread offenses (RPO is universal)
+philosophy: spread-option
+era: Mid-2010s onward — RPO became universal across college and NFL.
+famous_examples:
+- Modern Power 5 college (Auburn, Alabama, Ohio State)
+- Eagles under Doug Pederson / Nick Sirianni
+- Chiefs under Andy Reid (Mahomes era)
+- HS spread programs across the country
+tags:
+- rpo
+- pass
+- run
+- shotgun
+- trips
+- bubble-screen
+- quick-game
+- any-level
+- high-school
+- college
+- nfl
+- modern
+- spread-option
+notes: 'Same RPO architecture as Pistol RPO Bubble and Shotgun 2x2 RPO Slant —
+
+  what changes is the formation overload (3 receivers strong) and the
+
+  apex/box conflict that creates. The bubble screen is the simpler RPO
+
+  throw; defenses that over-commit to run get punished by 3 stalk-blockers
+
+  springing the bubble.
+
+  '
+verification_status: unverified
+source_notes:
+- 'Web validated 2026-04-29 — X&O Labs ''Spread Passing Study: Snag Concept'' (https://www.xandolabs.com/the-lab/offense/pass-game/quick-game-pass-concepts/spread-passing-study-snag-concept/);
+  SchemeGuide ''Complete Guide to Air Raid Offense'' (https://schemeguide.medium.com/the-complete-guide-to-the-air-raid-offense-7a2a7ae8fc3b);
+  Wikipedia ''Trips formation'' (https://en.wikipedia.org/wiki/Trips_formation). RPO bubble from trips is foundational modern
+  concept; 3 receivers strong creates apex conflict that cannot be resolved by single defender.'
+- Mirror of shotgun-trips-right-rpo-bubble.yaml — path waypoints flipped on x; formation reference points to the mirror formation.
+  Routes auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed
+  look — coordinates and paths are the source of truth.

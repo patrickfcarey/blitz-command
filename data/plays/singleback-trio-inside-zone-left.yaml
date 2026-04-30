@@ -1,0 +1,141 @@
+play_id: singleback-trio-inside-zone-left
+name: Inside Zone (Mirror Left)
+aliases:
+- IZ
+- Inside Stretch
+- Bang
+formation: singleback-trio-left
+play_type: run
+ball_carrier: HB
+motions: []
+assignments:
+- player: LT
+  role: run_block
+  blocking_scheme: zone-step-playside
+  notes: 'Backside tackle: zone step playside; if uncovered, climb to backside LB.'
+- player: LG
+  role: run_block
+  blocking_scheme: zone-combo
+  target: backside-DT-then-LB
+  notes: Combo with C on backside DT, climb when DT secured.
+- player: C
+  role: run_block
+  blocking_scheme: zone-combo
+  target: 0-or-1-tech
+  notes: Combo with LG (or RG depending on shade) on the playside or backside DT.
+- player: RG
+  role: run_block
+  blocking_scheme: zone-combo
+  target: 3-tech-then-PSLB
+  notes: Combo with RT on playside DT, climb to playside LB.
+- player: RT
+  role: run_block
+  blocking_scheme: zone-combo
+  target: 3-tech-or-EDGE
+- player: TE
+  role: run_block
+  blocking_scheme: zone-step-playside
+  target: edge-defender
+- player: X
+  role: run_block
+  blocking_scheme: stalk
+  target: cornerback
+- player: Z
+  role: run_block
+  blocking_scheme: stalk
+  target: cornerback
+- player: SLOT
+  role: run_block
+  blocking_scheme: stalk
+  target: nickel-defender
+- player: QB
+  role: handoff
+  path:
+  - - 0
+    - 0
+  - - 1
+    - -1
+  - - 2
+    - -2
+  notes: Quick handoff to HB, reverse-pivot for backside bootleg fake.
+- player: HB
+  role: ball_carrier
+  is_primary: true
+  path:
+  - - 0
+    - 0
+  - - -2
+    - 3
+  - - -3
+    - 8
+  notes: 'Aim point is the playside A or B gap (terminology varies — Shanahan-tree
+
+    tradition uses B-gap, others use A). Read the playside DT/G combo:
+
+    - BANG (playside A or B gap) if the playside DT is reached cleanly
+
+    - BEND (cut back behind C / backside G) if DT sheds playside
+
+    - BOUNCE (outside the playside tackle) if the front crashes inside
+
+    '
+strengths:
+- Most efficient run scheme in modern football
+- HB has multiple read options (bang/bend/bounce)
+- Combo blocks let OL handle penetrating fronts
+- Sets up cutback runs vs over-pursuit
+- Works against any defensive front
+weaknesses:
+- Requires athletic OL who can climb to second level
+- HB must read correctly — wrong choice = TFL
+- Slow-developing relative to gap schemes
+- Vulnerable to playside DE shooting outside contain
+- Hard to install cleanly — assignments depend on the front
+best_vs_defense:
+- over-front (gives natural combo angles)
+- cover-3 (LB drops away from playside)
+- 4-3 base
+- any defense with stretched LBs
+worst_vs_defense:
+- bear front (DT in every gap)
+- 8-man fronts
+- any defense with disciplined gap fits
+- cover-1 robber
+common_uses:
+- 1st-and-10 base run
+- 2nd-and-medium
+- Working into the run game vs pass-heavy defenses
+- Setting up PA off zone fake
+philosophy: zone-run
+era: 1990s onward — Mike Shanahan / Alex Gibbs Broncos popularized it; now universal.
+famous_examples:
+- 1990s–2000s Broncos (Terrell Davis, Clinton Portis)
+- Modern NFL (every team runs IZ)
+- Stanford under Harbaugh / Shaw
+tags:
+- zone-run
+- inside-zone
+- any-level
+- high-school
+- college
+- nfl
+- modern
+notes: 'The "rules-based" run play. Every OL has a zone step and a defender to
+
+  account for, but no individual defender must be blocked specifically. HB
+
+  reads the playside guard/tackle combo to pick his lane. The bang/bend/
+
+  bounce decision is the hallmark of inside zone.
+
+  '
+verification_status: unverified
+source_notes:
+- 'Assignments: standard inside zone coaching (Alex Gibbs / Mike Shanahan tradition).'
+- 'Strengths/weaknesses: modern run-game textbook material.'
+- Web validated 2026-04-29 — SumerSports 'Shanahan Schemes' (https://sumersports.com/the-zone/shanahan-schemes/); BigSkillPosition
+  'Inside Zone' (https://bigskillposition.wordpress.com/category/inside-zone/); Mile High Report 'Zone vs Gap' (https://www.milehighreport.com/22451001/difference-between-zone-and-gap-scheme).
+  Confirmed BANG/BEND/BOUNCE framework; B-gap aim point is Shanahan-tradition (other traditions use A-gap).
+- Mirror of singleback-trio-inside-zone.yaml — path waypoints flipped on x; formation reference points to the mirror formation.
+  Routes auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed
+  look — coordinates and paths are the source of truth.

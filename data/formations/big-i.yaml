@@ -15,7 +15,7 @@ players:
   - { label: TE-L,  position: TE, x: -3.5,  y:  0.0, on_line: true  }
   - { label: TE-R,  position: TE, x:  3.5,  y:  0.0, on_line: true  }
   - { label: WR,    position: WR, x:  12.0, y: -1.0, on_line: false }
-  - { label: QB,    position: QB, x:  0.0,  y: -1.5, on_line: false }
+  - { label: QB,    position: QB, x:  0.0,  y: -2.0, on_line: false }
   - { label: FB,    position: FB, x:  0.0,  y: -4.5, on_line: false }
   - { label: HB,    position: HB, x:  0.0,  y: -7.0, on_line: false }
 
@@ -75,7 +75,8 @@ notes: |
   "Big" personnel grouping — 22 personnel I-Form. Variant with 3 TEs (23
   personnel) is a separate "Heavy I" or "Goal Line" file.
 
-verification_status: inferred
+verification_status: unverified
 source_notes:
   - "Coordinates: standard 22-personnel I-Form alignment."
   - "Strengths/weaknesses: pro-style power-run textbook material."
+  - "Web validated 2026-04-29 — Wikipedia 'I formation' (https://en.wikipedia.org/wiki/I_formation); KOKA Sports 'What is 22 Personnel' (https://blog.kokasports.com/what-is-22-personnel-in-football/); XsOs Football 'I-Formation and Sets' (https://xsosfootball.com/i-formation-and-sets/). Confirmed: Big I places TE on each side of OL (removes a WR), FB blocking adds two extra blockers; 22 personnel almost always a run call."

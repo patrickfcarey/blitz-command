@@ -1,0 +1,48 @@
+play_id: wing-t-reverse
+name: Wing-T Reverse
+aliases: [Buck Sweep Reverse, WING Reverse]
+formation: wing-t
+play_type: run
+ball_carrier: WING
+motions: []
+assignments:
+  - { player: LT, role: run_block, blocking_scheme: down-block, target: backside-DE }
+  - { player: LG, role: run_block, blocking_scheme: pull-around, target: alley-defender,
+      path: [[0, 0], [2, -0.5], [4, 0], [3, 4]],
+      notes: "PULL — sells Buck Sweep direction first, then doubles back to lead reverse." }
+  - { player: C, role: run_block, blocking_scheme: gap-block }
+  - { player: RG, role: run_block, blocking_scheme: pull-around, target: cornerback,
+      path: [[0, 0], [3, -0.5], [5, 0], [4, 4]],
+      notes: "PULL — same as LG, sells sweep right, then cuts back to lead the reverse." }
+  - { player: RT, role: run_block, blocking_scheme: down-block, target: playside-DT }
+  - { player: TE, role: run_block, blocking_scheme: down-block, target: edge-defender }
+  - { player: X, role: run_block, blocking_scheme: stalk-or-crack, target: cornerback }
+  - { player: WING, role: ball_carrier, is_primary: true,
+      path: [[0, 0], [-3, 0], [-7, 1], [-10, 6]],
+      notes: "WING starts on strong side (right). Receives handoff from HB on counter motion. Runs to weak side (LEFT) behind pulling guards." }
+  - { player: QB, role: handoff, path: [[0, 0], [1, -1], [-1, -1]],
+      notes: "Reverse-out, fake to HB, then handoff to WING coming opposite direction." }
+  - { player: FB, role: fake, path: [[0, 0], [0, 3], [0, 5]],
+      notes: "Belly fake — sells run direction with HB." }
+  - { player: HB, role: fake, path: [[0, 0], [4, 1], [6, 1]],
+      notes: "Sweep fake to the right (away from final run direction). Hand off to WING coming back across." }
+strengths:
+  - "Two-fake misdirection (HB sweep + FB belly) holds defense"
+  - "Two pulling guards now LEAD the reverse direction"
+  - "Punishes defenses overpursuing Buck Sweep"
+  - "Big-play potential when defense overcommits"
+weaknesses:
+  - "Slow-developing — WING has to wait for HB fake before getting ball"
+  - "Vulnerable to weak-side DE who reads the reverse"
+  - "Predictable as a constraint to Buck Sweep tendencies"
+  - "Modern fast-flow defenses neutralize"
+best_vs_defense: ["over-front overplaying strong side", "speed-flow defenses", "any defense biting on Buck Sweep"]
+worst_vs_defense: ["disciplined backside DE", "8-man fronts", "cover-1 robber"]
+common_uses: ["Setting up Buck Sweep tendencies", "1st-and-10 misdirection", "Once per game shot play"]
+philosophy: power-run
+era: "1960s onward — classic Wing-T misdirection."
+famous_examples: ["Delaware Wing-T (Tubby Raymond)", "Wing-T HS programs"]
+tags: [run, reverse, misdirection, wing-t, 22-personnel, throwback, gimmick, high-school, college]
+verification_status: unverified
+source_notes:
+  - "Wing-T Reverse off Buck Sweep look — classic misdirection. WING is at +5 universal x; runs negative-x direction after fake."

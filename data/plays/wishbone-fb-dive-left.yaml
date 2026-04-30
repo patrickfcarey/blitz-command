@@ -1,0 +1,140 @@
+play_id: wishbone-fb-dive-left
+name: FB Dive (Strong) (Mirror Left)
+aliases:
+- Wishbone Dive
+- 32 Dive
+- FB Iso
+formation: wishbone-left
+play_type: run
+ball_carrier: FB
+motions: []
+assignments:
+- player: LT
+  role: run_block
+  blocking_scheme: drive-block
+  target: backside-DT
+- player: LG
+  role: run_block
+  blocking_scheme: drive-block
+  target: backside-1-tech
+- player: C
+  role: run_block
+  blocking_scheme: drive-block
+  target: 0-tech
+- player: RG
+  role: run_block
+  blocking_scheme: drive-block
+  target: playside-3-tech
+- player: RT
+  role: run_block
+  blocking_scheme: drive-block
+  target: playside-DT
+- player: TE
+  role: run_block
+  blocking_scheme: drive-block
+  target: edge-defender
+- player: SE
+  role: run_block
+  blocking_scheme: stalk
+- player: QB
+  role: handoff
+  path:
+  - - 0
+    - 0
+  - - 1
+    - -1
+  - - 2
+    - -1
+  notes: Hand off to FB on dive path; carry out fake to HB pitch action.
+- player: FB
+  role: ball_carrier
+  is_primary: true
+  path:
+  - - 0
+    - 0
+  - - -1
+    - 2
+  - - -1
+    - 5
+  - - -1
+    - 9
+  notes: 'Aim point: playside A or B gap. Hit it fast — straight downhill, no reads.'
+- player: HBL
+  role: fake
+  path:
+  - - 0
+    - 0
+  - - -3
+    - 1
+  - - -5
+    - 3
+  notes: Fake pitch / sweep action to the strong side — holds backside LBs.
+- player: HBR
+  role: fake
+  path:
+  - - 0
+    - 0
+  - - -4
+    - 1
+  - - -7
+    - 3
+  notes: Fake pitch action to the strong side — holds playside outside defenders.
+strengths:
+- Quick-hitting downhill run (FB at 4.5 yd, ball in his hands in <1 sec)
+- Triple-option fake action (HBL, HBR sweeping) holds defenders
+- Constraint to triple-option threat (defense respects pitch, opens dive)
+- Reliable 3-5 yard gainer when defense over-rotates to option
+- Goal-line / short-yardage workhorse from wishbone
+weaknesses:
+- Slow-developing for a true power look (FB starts 4.5 yd back)
+- Vulnerable to playside DT penetration before drive-blocks set
+- Predictable in heavy run-down situations
+- Won't break for big plays — straight-ahead grinder
+best_vs_defense:
+- any defense over-rotating to the pitch threat
+- 4-3 with stretched LBs
+- cover-3 with playside LB scraping for pitch
+- 8-man fronts where FB can find a gap
+worst_vs_defense:
+- bear front (DT in every gap)
+- disciplined option-fit defenses
+- cover-1 robber
+- playside DT penetration
+common_uses:
+- Constraint to triple option (when defense overplays pitch)
+- Goal-line / short-yardage
+- 3rd-and-1 / 3rd-and-2
+- 1st-and-10 base run setup
+- Drive-extender on the goal line
+philosophy: power-run
+era: 1968 onward — wishbone-era constraint play; universal at HS / option-tradition college level.
+famous_examples:
+- Texas Wishbone (Darrell Royal era)
+- Oklahoma (Barry Switzer era)
+- Alabama under Bear Bryant
+- Modern service-academy programs
+tags:
+- run
+- power-run
+- dive
+- wishbone
+- 20-personnel
+- throwback
+- college
+- high-school
+notes: 'FB Dive is the quickest-hitting wishbone play — the constraint to
+
+  the triple-option pitch threat. When defense over-rotates outside
+
+  to defend pitch / sweep, the FB hits the A/B gap unblocked or with
+
+  drive-block angles. Mirror by flipping all x.
+
+  '
+verification_status: unverified
+source_notes:
+- Standard wishbone FB dive per Bellard / Royal coaching tradition.
+- Built 2026-04-30 as part of the P3 specialty-play rollout.
+- Mirror of wishbone-fb-dive.yaml — path waypoints flipped on x; formation reference points to the mirror formation. Routes
+  auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed look
+  — coordinates and paths are the source of truth.

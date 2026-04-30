@@ -1,0 +1,113 @@
+play_id: wildcat-speed-option-left
+name: Wildcat Speed Option (Mirror Left)
+aliases:
+- Wildcat Option
+- Direct-Snap Option
+formation: wildcat-left
+play_type: run
+ball_carrier: RB1
+motions: []
+assignments:
+- player: LT
+  role: run_block
+  blocking_scheme: drive-block
+  target: backside-DE
+- player: LG
+  role: run_block
+  blocking_scheme: drive-block
+- player: C
+  role: run_block
+  blocking_scheme: drive-block
+- player: RG
+  role: run_block
+  blocking_scheme: drive-block
+- player: RT
+  role: run_block
+  blocking_scheme: drive-block
+  notes: Drive-block playside; do NOT block playside EDGE — leave him as the read defender.
+- player: TE
+  role: run_block
+  blocking_scheme: drive-block
+  notes: Drive-block onto LB at second level.
+- player: QB-WR
+  role: route
+  route_name: stalk-or-route
+  depth_yd: 0
+- player: Z
+  role: run_block
+  blocking_scheme: stalk
+  target: cornerback
+- player: SLOT
+  role: run_block
+  blocking_scheme: stalk
+  target: nickel-defender
+- player: RB1
+  role: ball_carrier
+  is_primary: true
+  path:
+  - - 0
+    - 0
+  - - -3
+    - 1
+  - - -5
+    - 3
+  - - -7
+    - 6
+  notes: 'Direct snap, attack the playside EDGE. READ the EDGE: if he plays you, PITCH to RB2; if he chases pitch, KEEP and
+    turn upfield.'
+- player: RB2
+  role: lead_block
+  target: cornerback
+  path:
+  - - 0
+    - 0
+  - - -5
+    - 1
+  - - -8
+    - 3
+  - - -10
+    - 6
+  notes: Run pitch route 4 yards behind and outside RB1 — receives pitch if RB1 reads keep-or-pitch correctly.
+strengths:
+- Two ball-carrier threats from one direct-snap look
+- EDGE defender forced into impossible read
+- Extra blocker advantage (no QB intermediary)
+- Heritage option-football mechanic
+weaknesses:
+- Pitch timing is fragile — late pitch = TFL
+- Defense knows it's a run from Wildcat
+- Modern fast EDGE play forces tough RB1 reads
+- Predictable in any non-short-yardage situation
+best_vs_defense:
+- over-front with crashing playside DE
+- speed-flow defenses
+- defenses unprepared for option
+worst_vs_defense:
+- disciplined option-aware defenses (academy programs)
+- cover-1 robber
+- 8-man fronts
+common_uses:
+- Constraint to Wildcat Power
+- 1st-and-medium surprise option
+- Setting up future passing
+philosophy: speed-option
+era: Modern Wildcat option — speed option mechanic dates to 1960s, applied to direct-snap variant.
+famous_examples:
+- Air Force / Navy option packages (with Wildcat-style direct snap)
+- HS option offenses
+tags:
+- run
+- option
+- speed-option
+- wildcat
+- direct-snap
+- 21-personnel
+- throwback
+- college
+- high-school
+verification_status: unverified
+source_notes:
+- Wildcat speed option — RB1 reads playside EDGE for pitch/keep decision.
+- Mirror of wildcat-speed-option.yaml — path waypoints flipped on x; formation reference points to the mirror formation. Routes
+  auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed look
+  — coordinates and paths are the source of truth.

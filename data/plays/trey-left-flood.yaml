@@ -1,0 +1,142 @@
+play_id: trey-left-flood
+name: Flood (Trey Left)
+aliases:
+- Trey Sail
+- Trey Flood
+- 12P Flood
+formation: trey-left
+play_type: pass
+ball_carrier: QB
+primary_read: TE-R
+secondary_read: Z
+checkdown: SLOT
+motions: []
+assignments:
+- player: LT
+  role: pass_block
+  blocking_scheme: man-protection
+- player: LG
+  role: pass_block
+  blocking_scheme: man-protection
+- player: C
+  role: pass_block
+  blocking_scheme: man-protection
+- player: RG
+  role: pass_block
+  blocking_scheme: man-protection
+- player: RT
+  role: pass_block
+  blocking_scheme: man-protection
+- player: TE-L
+  role: route
+  route_name: drag
+  depth_yd: 5
+  notes: Backside drag — late outlet if flood bracketed.
+- player: TE-R
+  role: route
+  route_name: sail
+  depth_yd: 12
+  is_primary: true
+  notes: TE-R sails out at 12 yards — the intermediate level. Primary read.
+- player: Z
+  role: route
+  route_name: clear-out-go
+  depth_yd: 25
+  notes: 'Strong outer Z: deep clear — pulls the corner/safety out of the flood.'
+- player: SLOT
+  role: route
+  route_name: flat
+  depth_yd: 3
+  notes: 'Strong inner slot: shoot to the flat. The LO of the 3-level stretch.'
+- player: QB
+  role: ball_carrier
+  path:
+  - - 0
+    - 0
+  - - 0
+    - -2
+  - - 0
+    - -4
+  notes: 'Standard 5-step drop from shotgun depth. 3-level stretch on the trey side:
+
+    deep clear (Z) / sail (TE-R) / flat (SLOT). TE-R is the primary. Read the
+
+    deep-third defender:
+
+    - Defender carries Z''s clear → throw TE-R sail
+
+    - Defender sits on sail → throw Z over the top
+
+    - Flat defender expands to sail → throw SLOT flat
+
+    '
+- player: HB
+  role: pass_block
+  blocking_scheme: man-protection
+  notes: Pass-protect against weak-side blitz; stays in unless pressure clears.
+strengths:
+- TE-R as the sail receiver — bigger body, better matchup vs LB or nickel
+- Three-level stretch overwhelms zone coverage to the strong side
+- Backside TE-L drag adds outlet not available in pure WR trips
+- 12 personnel forces base defense — slower coverage rotation
+- Pairs with run-game tendency (12 personnel = run threat)
+- Effective vs cover-3 (textbook target)
+weaknesses:
+- Designed for zone — struggles vs man coverage
+- Slow to develop (sail needs ~3 sec)
+- Bracket on TE-R neutralizes primary
+- Limited backside threat (TE-L drag only)
+- 12 personnel slower release than 11
+best_vs_defense:
+- cover-3 (the textbook beater)
+- cover-2 (sail attacks corner-safety seam)
+- any zone defense rotating to trey side
+- base 4-3 / 3-4 (matchup advantages on TE-R)
+worst_vs_defense:
+- cover-1 / cover-0 man coverage
+- bracket on TE-R
+- press man on Z
+- blitz from the strong side
+common_uses:
+- 1st/2nd-and-medium against zone tendencies
+- Setting up backside throws after defense over-rotates
+- Red-zone fade option (TE-R sail becomes back-corner target)
+- PA pairing — 12 personnel sells run hard
+philosophy: pro-style
+era: 1990s onward — modern pro-style staple, especially in 12 personnel sets.
+famous_examples:
+- Patriots multiple-personnel offense (Gronkowski + Hernandez era)
+- Modern NFL 12 personnel teams (49ers, Rams)
+- Andy Reid 12-personnel passing concepts
+tags:
+- pass
+- pro-style
+- flood
+- sail
+- 3-level
+- trey
+- 12-personnel
+- shotgun
+- any-level
+- high-school
+- college
+- nfl
+notes: 'Same flood structure as Shotgun Trips Right Flood, but with TE-R as the
+
+  sail receiver instead of a pure WR. The TE-R matchup advantage (vs LB
+
+  or nickel) plus the 12-personnel run threat makes this a high-leverage
+
+  call.
+
+  '
+verification_status: unverified
+source_notes:
+- 'Web validated 2026-04-29 — X&O Labs ''Three-Level Sail Concept'' (https://www.xandolabs.com/the-lab/offense/personnel/10-00-personnel-concepts/three-level-sail-concept-new-trends-create-a-high-low-stretch-on-the-flat-defender/);
+  CougCenter ''Air Raid Y-Sail'' (https://www.cougcenter.com/2013/4/17/4211216/air-raid-playbook-y-sail); X&O Labs ''Protecting
+  Two-Back Runs with Flood and Naked PAPs'' (https://www.xandolabs.com/the-lab/offense/personnel/12-21-personnel-concepts/protecting-two-back-runs-with-flood-and-naked-paps/).
+  Confirmed: flood concept with deep clear + sail + flat is universal; 12-personnel version uses TE as sail receiver for matchup
+  advantage.'
+- Mirror of trey-right-flood.yaml — path waypoints flipped on x; formation reference points to the mirror formation. Routes
+  auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed look
+  — coordinates and paths are the source of truth.

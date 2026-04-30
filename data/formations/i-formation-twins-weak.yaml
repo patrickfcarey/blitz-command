@@ -15,7 +15,7 @@ players:
   - { label: TE,    position: TE, x:  3.5,  y:  0.0, on_line: true  }
   - { label: X,     position: WR, x: -15.0, y:  0.0, on_line: true  }
   - { label: SLOT,  position: WR, x: -8.0,  y: -1.0, on_line: false }
-  - { label: QB,    position: QB, x:  0.0,  y: -1.5, on_line: false }
+  - { label: QB,    position: QB, x:  0.0,  y: -2.0, on_line: false }
   - { label: FB,    position: FB, x:  0.0,  y: -4.5, on_line: false }
   - { label: HB,    position: HB, x:  0.0,  y: -7.0, on_line: false }
 
@@ -72,7 +72,8 @@ notes: |
   Sometimes called "I-Form Twins" or "I-Form Doubles Weak." Slot at x=-8 is a
   standard "plus" alignment; can widen to x=-10 for vertical stress.
 
-verification_status: inferred
+verification_status: unverified
 source_notes:
   - "Coordinates: standard 21-personnel twins conventions."
   - "Strengths/weaknesses: pro-style offensive textbook material."
+  - "Web validated 2026-04-29 — KOKA Sports 'Twins Formation Football Complete Guide' (https://blog.kokasports.com/twins-formation-football-complete-guide/); Football Advantage 'Twins Formation' (https://footballadvantage.com/twins-formation-football/); Throw Deep Publishing offensive formations guide. Confirmed: 2 receivers on weak side with FB offset weak; forces defense to commit coverage strong or weak; creates favorable matchups."

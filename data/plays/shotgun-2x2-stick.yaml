@@ -52,11 +52,12 @@ assignments:
     notes: "Strong-side STICK option route — mirrors SLOT-W. Read whichever is uncovered."
   - player: QB
     role: ball_carrier
+    path: [[0, 0], [0, -1], [0, -2]]
     notes: |
-      Mirrored 2x2 stick: pre-snap, look at MIKE / nickel positioning.
+      3-step rhythm from shotgun depth. Mirrored 2x2 stick: pre-snap, look at
+      MIKE / nickel positioning.
       - If weak-side LB walks out → SLOT-W stick is uncovered (throw weak)
       - If strong-side LB stays in box → Z stick is uncovered (throw strong)
-      3-step rhythm.
   - player: HB
     role: pass_block
     blocking_scheme: man-protection

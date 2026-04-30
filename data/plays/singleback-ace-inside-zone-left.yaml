@@ -1,0 +1,112 @@
+play_id: singleback-ace-inside-zone-left
+name: Inside Zone (Mirror Left)
+aliases:
+- IZ
+formation: singleback-ace-left
+play_type: run
+ball_carrier: HB
+motions: []
+assignments:
+- player: LT
+  role: run_block
+  blocking_scheme: zone-step-playside
+- player: LG
+  role: run_block
+  blocking_scheme: zone-combo
+- player: C
+  role: run_block
+  blocking_scheme: zone-combo
+  target: 0-or-1-tech
+- player: RG
+  role: run_block
+  blocking_scheme: zone-combo
+  target: 3-tech-then-PSLB
+- player: RT
+  role: run_block
+  blocking_scheme: zone-combo
+- player: TE-L
+  role: run_block
+  blocking_scheme: backside-zone-step
+  notes: Backside TE — zone step; helps seal cutback.
+- player: TE-R
+  role: run_block
+  blocking_scheme: zone-step-playside
+  target: edge-defender
+  notes: Playside TE — seal the edge.
+- player: X
+  role: run_block
+  blocking_scheme: stalk
+  target: cornerback
+- player: Z
+  role: run_block
+  blocking_scheme: stalk
+  target: cornerback
+- player: QB
+  role: handoff
+  path:
+  - - 0
+    - 0
+  - - 1
+    - -1
+  - - 2
+    - -2
+  notes: Reverse-pivot handoff, then sell bootleg to backside.
+- player: HB
+  role: ball_carrier
+  is_primary: true
+  path:
+  - - 0
+    - 0
+  - - -2
+    - 3
+  - - -3
+    - 8
+  notes: BANG/BEND/BOUNCE per inside zone rules; aim point is playside A or B gap.
+strengths:
+- 12 personnel singleback gives 7-blocker surface for inside zone
+- Both TEs in-line means defense has to honor both edges
+- Symmetric look — no run-direction tip pre-snap
+- Hardest run scheme in modern football to defend without a true run-stopper LB
+weaknesses:
+- Slow developing relative to gap schemes
+- Vulnerable to playside DT shooting the gap before zone-combo sets
+- HB must read correctly — wrong choice = TFL
+best_vs_defense:
+- over-front (gives natural combo angles)
+- cover-3 (LB drops away from playside)
+- any defense with stretched LBs
+worst_vs_defense:
+- bear front
+- 8-man fronts
+- cover-1 robber
+common_uses:
+- 1st-and-10 base run
+- 2nd-and-medium
+- Setting up PA off the same look
+philosophy: zone-run
+era: 1990s onward
+famous_examples:
+- Modern NFL/college 12-personnel singleback teams
+tags:
+- zone-run
+- inside-zone
+- 12-personnel
+- singleback
+- any-level
+- high-school
+- college
+- nfl
+notes: 'Inside Zone from the 12-personnel symmetric singleback. With 2 TEs flanking,
+
+  both edges have a sealing blocker. HB reads playside DT/G combo and takes
+
+  bang/bend/bounce per standard IZ rules.
+
+  '
+verification_status: unverified
+source_notes:
+- Inside zone from 12-personnel singleback — standard modern run concept; same scheme as singleback-trio-inside-zone but with
+  2 TEs and no slot.
+- Mirror of singleback-ace-inside-zone.yaml — path waypoints flipped on x; formation reference points to the mirror formation.
+  Routes auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed
+  look — coordinates and paths are the source of truth.

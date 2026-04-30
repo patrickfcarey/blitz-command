@@ -1,0 +1,21 @@
+name: out
+aliases:
+- out-cut
+description: Push to 10 yards, then break 90 degrees toward the sideline.
+path:
+- - 0
+  - 0
+- - 0
+  - 10
+- - -5
+  - 10
+typical_break_depth_yd: 10
+option_route: false
+category: intermediate
+beats_coverage: zone
+tags:
+- intermediate
+- outside-breaking
+verification_status: unverified
+source_notes:
+- Standard out cut at 10 yd break depth.

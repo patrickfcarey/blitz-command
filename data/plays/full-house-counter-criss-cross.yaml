@@ -1,0 +1,47 @@
+play_id: full-house-counter-criss-cross
+name: Full House Counter Criss-Cross
+aliases: [FH Counter, Criss-Cross, Wishbone Cross]
+formation: full-house
+play_type: run
+ball_carrier: HB-R
+motions: []
+assignments:
+  - { player: LT, role: run_block, blocking_scheme: down-block }
+  - { player: LG, role: run_block, blocking_scheme: pull-around, target: playside-LB,
+      path: [[0, 0], [-2, -0.5], [-4, 0], [-5, 3]],
+      notes: "PULL left — backside guard leads through the playside hole on the LEFT." }
+  - { player: C, role: run_block, blocking_scheme: gap-block }
+  - { player: RG, role: run_block, blocking_scheme: down-block }
+  - { player: RT, role: run_block, blocking_scheme: down-block }
+  - { player: TE-L, role: run_block, blocking_scheme: kickout, target: edge-defender,
+      notes: "Kicks out the LEFT EDGE — opens the playside hole." }
+  - { player: TE-R, role: run_block, blocking_scheme: down-block }
+  - { player: QB, role: handoff, path: [[0, 0], [1, -0.5], [-1, -0.5]], notes: "Reverse-pivot to mesh with HB-R coming across." }
+  - { player: FB, role: lead_block, target: alley-defender,
+      path: [[0, 0], [-2, 3], [-3, 5]],
+      notes: "FB leads through the playside hole on the left." }
+  - { player: HB-L, role: fake, path: [[0, 0], [3, 1], [5, 3]],
+      notes: "Sweep fake to the RIGHT — sells misdirection." }
+  - { player: HB-R, role: ball_carrier, is_primary: true,
+      path: [[0, 0], [-3, 1], [-5, 3], [-6, 8]],
+      notes: "Counter step RIGHT first (sells fake same direction as HB-L), then plant and run LEFT through the hole." }
+strengths:
+  - "Two-back misdirection (HB-L sweep fake right, HB-R runs left) holds defense"
+  - "Two pulling blockers at point of attack (LG pull + FB lead)"
+  - "FH look forces defense to honor 3 ball-carriers — counter punishes overplay"
+  - "Heritage option-style play, hard to find on film by modern defenses"
+weaknesses:
+  - "Slow-developing — needs ~2.5 sec for HB-R to arrive at the hole"
+  - "Defense knows it's a run from FH look"
+  - "Vulnerable to backside DE chasing through the criss-cross"
+  - "Modern speed defenses with disciplined keys neutralize the misdirection"
+best_vs_defense: ["over-front", "cover-3 with predictable flow", "speed-flow defenses overrun by counter"]
+worst_vs_defense: ["bear front", "cover-1 robber", "8-man fronts"]
+common_uses: ["Short-yardage from Full House", "Counter to FH Power tendencies", "Setting up reverses and option plays"]
+philosophy: power-run
+era: "Classic option football — Wishbone-era counter concept."
+famous_examples: ["Wishbone-era Oklahoma / Texas (Bud Wilkinson, Barry Switzer)", "Air Force / Navy option packages"]
+tags: [run, power-run, counter, criss-cross, misdirection, 32-personnel, full-house, option, throwback, high-school, college]
+verification_status: unverified
+source_notes:
+  - "Full House Counter Criss-Cross — heritage Wishbone-era misdirection play. Two-back fake creates the deception that makes the counter work."

@@ -1,0 +1,140 @@
+play_id: singleback-trio-four-verticals-left
+name: Four Verticals (Mirror Left)
+aliases:
+- 4 Verts
+- Verts
+- Four Streaks
+formation: singleback-trio-left
+play_type: pass
+ball_carrier: QB
+primary_read: SLOT
+secondary_read: TE
+tertiary_read: Z
+checkdown: HB
+motions: []
+assignments:
+- player: LT
+  role: pass_block
+  blocking_scheme: max-protection
+- player: LG
+  role: pass_block
+  blocking_scheme: max-protection
+- player: C
+  role: pass_block
+  blocking_scheme: max-protection
+- player: RG
+  role: pass_block
+  blocking_scheme: max-protection
+- player: RT
+  role: pass_block
+  blocking_scheme: max-protection
+- player: TE
+  role: route
+  route_name: seam
+  depth_yd: 16
+  notes: TE pushes vertical at 16 yds, then bends into the strong-side seam (between hash and numbers).
+- player: X
+  role: route
+  route_name: go
+  depth_yd: 25
+  notes: Outside vertical — stay 2 yds inside the sideline.
+- player: Z
+  role: route
+  route_name: go
+  depth_yd: 25
+  notes: Outside vertical — stay 2 yds inside the sideline.
+- player: SLOT
+  role: route
+  route_name: seam
+  depth_yd: 16
+  is_primary: true
+  notes: SLOT pushes vertical and works into the weak-side seam. Primary read against single-high coverages.
+- player: QB
+  role: ball_carrier
+  path:
+  - - 0
+    - 0
+  - - 0
+    - -2
+  - - 0
+    - -5
+  notes: '5-step deep drop from shotgun depth. Read the deep safeties pre-snap:
+
+    - 1 high (cover-1 / 3) → SLOT seam first (splits the FS), then TE seam
+
+    - 2 high (cover-2 / 4) → outside go routes, work backside Z if FS bites SLOT
+
+    - vs zero blitz → hot to HB or quickest-developing seam
+
+    '
+- player: HB
+  role: pass_block
+  blocking_scheme: man-protection
+  notes: Stay in for max-protection; release only if uncovered.
+strengths:
+- Devastating vs single-high coverages (cover-1, cover-3)
+- Multiple deep options — defense can't bracket all four
+- Forces deep safety to choose; SLOT seam wins vs single-high
+- Air Raid signature concept
+- Big-play potential on every snap
+weaknesses:
+- Slow-developing — pass protection is critical
+- Needs an accurate deep-ball QB
+- Requires WR vs safety win for big play
+- Vulnerable to cover-4 (every vertical bracketed)
+- Won't beat a true zero blitz
+best_vs_defense:
+- cover-3 (the textbook beater — SLOT seam splits it)
+- cover-1 (SLOT runs past a single-high FS)
+- cover-1 robber (the robber can't carry both seams)
+- cover-0 with a slow-developing rush
+worst_vs_defense:
+- cover-4 / quarters (every vertical has bracket help)
+- cover-2 trap with smart safeties
+- aggressive zero blitz with no time
+- any defense playing pattern-match on verticals
+common_uses:
+- 3rd-and-long
+- 2-minute drill
+- Deep shot off a run-heavy series
+- Setting up future window throws (defense backs off after a 4-Verts hit)
+philosophy: air-raid
+era: 1980s onward — Don Coryell origin, Mike Leach / Hal Mumme made it iconic in the Air Raid.
+famous_examples:
+- Don Coryell Chargers
+- Mike Leach (Texas Tech, Wazzu)
+- Drew Brees Saints
+- Modern NFL deep-ball offenses (Chiefs, Bills, Bengals)
+tags:
+- pass
+- spread
+- deep
+- four-verticals
+- air-raid
+- coryell
+- any-level
+- high-school
+- college
+- nfl
+notes: 'Four Verticals is an answer to single-high coverage. The two seam routes
+
+  (TE strong-side, SLOT weak-side) split the deep middle, while the outside
+
+  go routes pin the corners. Against cover-3, the SLOT seam between the FS
+
+  and the playside hook defender is the kill shot. Against cover-1, the
+
+  SLOT just runs past the FS.
+
+  '
+verification_status: unverified
+source_notes:
+- Air Raid 4-Verts concept; foundational to modern passing offense.
+- 'Strengths/weaknesses: deep-passing textbook material across multiple coaching trees.'
+- 'Web validated 2026-04-29 — CougCenter ''Air Raid Playbook: Four Verts'' (https://www.cougcenter.com/2013/4/19/4221492/air-raid-playbook-four-verts);
+  SchemeGuide ''Complete Guide to the Air Raid Offense'' (https://schemeguide.medium.com/the-complete-guide-to-the-air-raid-offense-7a2a7ae8fc3b);
+  X&O Labs ''Adjusting Route Progressions in Air Raid Staples'' (https://www.xandolabs.com/the-lab/offense/offensive-systems/air-raid/adjusting-route-progressions-in-air-raid-staples/).
+  Confirmed: outside go routes, inside seam routes; seam between FS and hook defender is the kill shot vs cover-3.'
+- Mirror of singleback-trio-four-verticals.yaml — path waypoints flipped on x; formation reference points to the mirror formation.
+  Routes auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed
+  look — coordinates and paths are the source of truth.

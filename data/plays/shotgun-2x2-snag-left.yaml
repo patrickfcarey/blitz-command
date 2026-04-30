@@ -1,0 +1,133 @@
+play_id: shotgun-2x2-snag-left
+name: Snag (Strong) (Mirror Left)
+aliases:
+- Snag Concept
+- Triangle
+formation: shotgun-2x2-left
+play_type: pass
+ball_carrier: QB
+primary_read: TE
+secondary_read: Z
+checkdown: HB
+motions: []
+assignments:
+- player: LT
+  role: pass_block
+  blocking_scheme: man-protection
+- player: LG
+  role: pass_block
+  blocking_scheme: man-protection
+- player: C
+  role: pass_block
+  blocking_scheme: man-protection
+- player: RG
+  role: pass_block
+  blocking_scheme: man-protection
+- player: RT
+  role: pass_block
+  blocking_scheme: man-protection
+- player: TE
+  role: route
+  route_name: snag-or-mini-curl
+  depth_yd: 5
+  is_primary: true
+  notes: TE pushes 5 yds inside, then settles in the soft spot — the 'snag' (or mini-curl).
+- player: X
+  role: route
+  route_name: comeback
+  depth_yd: 14
+  notes: Backside comeback — opens late if strong-side covered.
+- player: SLOT-W
+  role: route
+  route_name: drag
+  depth_yd: 5
+  notes: Backside drag, helps pull MIKE / underneath defender across.
+- player: Z
+  role: route
+  route_name: corner
+  depth_yd: 12
+  notes: Strong-side corner route — the HI of the snag triangle.
+- player: QB
+  role: ball_carrier
+  path:
+  - - 0
+    - 0
+  - - 0
+    - -1
+  - - 0
+    - -2
+  notes: '3-step quick rhythm from shotgun depth. Triangle read on the strong side:
+
+    TE snag (LO) / Z corner (HI) / HB flat (FLAT). Pre-snap leverage tells
+
+    you which leg of the triangle is open.
+
+    '
+- player: HB
+  role: route
+  route_name: flat
+  depth_yd: 3
+  notes: HB releases to the strong-side flat — completes the snag triangle (LO/HI/FLAT).
+strengths:
+- Triangle concept attacks all three zones (deep, flat, intermediate)
+- Always one open against any single coverage
+- Quick rhythm — 3-5 step drop, ball out fast
+- HB flat is the 'gimme' outlet — easy first down
+- Effective vs cover-2, cover-3, cover-1 — beats most coverages
+weaknesses:
+- Bracket coverage on the snag receiver shuts down the primary
+- QB must read leverage pre-snap, decide quickly post-snap
+- Defenses with banjo coverage can match the triangle
+- Limited big-play potential (corner is only 12 yds)
+- Backside comeback is a slow developer
+best_vs_defense:
+- cover-3 (snag sits in soft spot, corner over flat)
+- cover-2 (corner over flat defender, snag underneath)
+- cover-1 (snag opens vs trail, flat is uncovered)
+- any defense with predictable underneath spacing
+worst_vs_defense:
+- bracket on TE / snag receiver
+- banjo coverage on slot / TE
+- cover-2 robber
+- aggressive blitz from snag-side LB
+common_uses:
+- 3rd-and-medium (4-7 yards)
+- 1st down rhythm play
+- Anti-blitz hot read
+- Red zone short-corner option
+philosophy: pro-style
+era: 1990s onward — modern pro-style staple, originally Tom Moore / Peyton Manning era; ubiquitous now.
+famous_examples:
+- Peyton Manning Colts offense (Tom Moore tree)
+- Patriots 11-personnel snag concepts
+- Modern NFL widely (every team has a snag variant)
+tags:
+- pass
+- spread
+- quick-game
+- snag
+- triangle
+- shotgun
+- 2x2
+- any-level
+- high-school
+- college
+- nfl
+- pro-style
+notes: '"Snag" = the inside-receiver settle route at 5 yards. Combined with a
+
+  corner route and a flat release, the three routes form a triangle that
+
+  stretches the strong-side coverage three ways at once. Mirror this
+
+  concept to the weak side as needed.
+
+  '
+verification_status: unverified
+source_notes:
+- Web validated 2026-04-29 — XsOs Football 'Shotgun Formation and Sets' (https://xsosfootball.com/shotgun-formation-sets/);
+  BreakdownSports '2x2 Mirrored Concepts' (http://breakdownsports.blogspot.com/2015/02/football-fundamentals-2x2-and-mirrored-passing-concepts-route-combinations.html).
+  Snag triangle with corner-over-flat + checkdown is standard pro-style staple, well-documented across coaching trees.
+- Mirror of shotgun-2x2-snag.yaml — path waypoints flipped on x; formation reference points to the mirror formation. Routes
+  auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed look
+  — coordinates and paths are the source of truth.

@@ -1,0 +1,142 @@
+play_id: trey-left-pa-cross
+name: PA Y-Cross (Trey Left)
+aliases:
+- Trey PA Cross
+- 12P PA Y-Cross
+formation: trey-left
+play_type: play-action
+ball_carrier: QB
+primary_read: TE-R
+secondary_read: Z
+checkdown: TE-L
+motions: []
+assignments:
+- player: LT
+  role: pass_block
+  blocking_scheme: man-protection
+- player: LG
+  role: pass_block
+  blocking_scheme: man-protection
+- player: C
+  role: pass_block
+  blocking_scheme: man-protection
+- player: RG
+  role: pass_block
+  blocking_scheme: man-protection
+- player: RT
+  role: pass_block
+  blocking_scheme: man-protection
+- player: TE-L
+  role: route
+  route_name: drag
+  depth_yd: 5
+  notes: Backside TE-L drag — late outlet from the weak side.
+- player: TE-R
+  role: route
+  route_name: deep-cross
+  depth_yd: 18
+  is_primary: true
+  notes: 'Y-Cross: TE-R breaks across the field at 18 yards strong-to-weak. Primary read.'
+- player: Z
+  role: route
+  route_name: post
+  depth_yd: 16
+  notes: 'Strong outer Z: post route — forces FS to choose between Z and TE-R deep.'
+- player: SLOT
+  role: route
+  route_name: flat
+  depth_yd: 4
+  notes: 'Strong inner slot: flat — quick outlet under the deep routes.'
+- player: QB
+  role: ball_carrier
+  path:
+  - - 0
+    - 0
+  - - 1
+    - -1
+  - - 0
+    - -3
+  - - 0
+    - -5
+  notes: 'Fake handoff to HB (lateral pivot), then drop straight back to ~7 yd depth.
+
+    Y-Cross primary — read the FS:
+
+    - FS bites on Z post → throw TE-R cross underneath
+
+    - FS carries TE-R cross → throw Z post over the top
+
+    - LBs sink in coverage → throw SLOT flat or TE-L drag
+
+    '
+- player: HB
+  role: fake
+  notes: Sell run fake hard; check release as outlet only if pressure forces.
+strengths:
+- 12 personnel sells PA hard (defense expects run)
+- Y-Cross attacks the seam between safety and inside LBs
+- Z post forces safety to choose
+- TE-R is the canonical Y-Cross receiver — better mismatch than a pure WR
+- Backside TE-L drag adds 4th option not available in 11 personnel
+- Setup play after establishing run game
+weaknesses:
+- QB takes 4-5 sec to deliver — pass protection critical
+- Defense playing pass keys (no PA bite) makes it predictable
+- Vulnerable to nickel/dime defenses that don't honor 12P run
+- Bracket on TE-R neutralizes primary
+- 12 personnel slower release than 11
+best_vs_defense:
+- cover-2 (TE-R cross attacks safety hole, Z post pulls FS)
+- cover-3 (Y-Cross attacks curl/flat seam)
+- any defense biting on play-action
+- base 4-3 / 3-4 (matchup advantages on TE-R)
+worst_vs_defense:
+- cover-2 robber (extra defender in middle hole)
+- cover-4 (two deep safeties bracket TE-R)
+- aggressive zero blitz (no time to develop)
+- any pass-only defense ignoring the fake
+common_uses:
+- 1st-and-10 after a power run for 4+ yards
+- 2nd-and-medium PA shots
+- Red-zone window plays
+- Setting up future plays off the same look
+philosophy: pro-style
+era: 1980s onward — Coryell origin; modernized through Mumme/Leach Air Raid '95'.
+famous_examples:
+- Bill Walsh 49ers play-action library
+- Norv Turner / Ernie Zampese (Coryell tree)
+- Andy Reid 12-personnel PA shots
+- Patriots PA cross (Gronkowski era)
+tags:
+- pass
+- pa
+- pro-style
+- y-cross
+- trey
+- 12-personnel
+- shotgun
+- coryell
+- air-raid
+- any-level
+- high-school
+- college
+- nfl
+notes: 'Same Y-Cross concept as i-formation-pa-cross.yaml but from 12-personnel
+
+  Trey. The 12P version is harder for defenses to read because both TEs
+
+  are eligible — defense can''t shade coverage to "the TE" since there are
+
+  two. SLOT flat outlet replaces FB flat from the I-Form version.
+
+  '
+verification_status: unverified
+source_notes:
+- 'Web validated 2026-04-29 — Throw Deep Publishing ''Y Cross Concept'' (https://throwdeeppublishing.com/blogs/football-glossary/y-cross);
+  CougCenter ''Air Raid Y-Cross'' (https://www.cougcenter.com/2013/4/18/4211630/air-raid-playbook-y-cross); Weekly Spiral
+  ''Y-Cross Concept'' (https://weeklyspiral.com/2021/01/19/chiefs-passing-game-and-y-cross/); X&O Labs ''Protecting Two-Back
+  Runs with Flood and Naked PAPs'' (https://www.xandolabs.com/the-lab/offense/personnel/12-21-personnel-concepts/protecting-two-back-runs-with-flood-and-naked-paps/).
+  Confirmed: Y-Cross with TE at 18 yds working under SAM and over MIKE; 12 personnel version disguises pass intent.'
+- Mirror of trey-right-pa-cross.yaml — path waypoints flipped on x; formation reference points to the mirror formation. Routes
+  auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed look
+  — coordinates and paths are the source of truth.

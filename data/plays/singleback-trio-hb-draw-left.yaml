@@ -1,0 +1,114 @@
+play_id: singleback-trio-hb-draw-left
+name: Singleback Trio HB Draw (Mirror Left)
+aliases:
+- Draw
+- HB Draw
+- Counter Draw
+formation: singleback-trio-left
+play_type: run
+ball_carrier: HB
+motions: []
+assignments:
+- player: LT
+  role: pass_block
+  blocking_scheme: invite-rusher
+  notes: Pass-set initially (3-4 steps), then drive-block once HB takes the handoff.
+- player: LG
+  role: pass_block
+  blocking_scheme: invite-rusher
+- player: C
+  role: pass_block
+  blocking_scheme: invite-rusher
+- player: RG
+  role: pass_block
+  blocking_scheme: invite-rusher
+- player: RT
+  role: pass_block
+  blocking_scheme: invite-rusher
+- player: TE
+  role: route
+  route_name: drag
+  depth_yd: 8
+  notes: TE releases as window-dressing pass route.
+- player: X
+  role: route
+  route_name: clear-out-go
+  depth_yd: 22
+  notes: Clear-out fly — pulls weak-side corner deep.
+- player: Z
+  role: route
+  route_name: clear-out-go
+  depth_yd: 22
+  notes: Clear-out fly — pulls strong-side corner deep.
+- player: SLOT
+  role: route
+  route_name: comeback
+  depth_yd: 12
+  notes: Slot comeback — sells full-pass concept.
+- player: QB
+  role: handoff
+  path:
+  - - 0
+    - 0
+  - - 0
+    - -2
+  - - 0
+    - -3
+  notes: 5-step drop, hand off to HB late at depth.
+- player: HB
+  role: ball_carrier
+  is_primary: true
+  path:
+  - - 0
+    - 0
+  - - 0
+    - 1
+  - - -1
+    - 5
+  - - -1
+    - 10
+  notes: Pass-set look for 1 count, take handoff at -5 depth, hit playside A/B gap.
+strengths:
+- Constraint to spread passing — punishes aggressive pass rushers
+- Catches LBs in pass drop
+- QB sells pass via deep drop
+- Big-play potential when LBs vacate the box
+weaknesses:
+- Telegraphed if QB doesn't sell pass
+- LB blitzes break the play
+- Won't work against zone-heavy LBs that don't vacate
+- Requires accurate handoff timing
+best_vs_defense:
+- aggressive 4-man rushers
+- cover-2/3 with LBs in deep drops
+- pass-rushing 4-3
+worst_vs_defense:
+- LB blitzes
+- cover-1 with spy
+- 8-man fronts
+common_uses:
+- 2nd-and-long / 3rd-and-long
+- After 2-3 obvious passes
+- Pass-rushing-defense constraint
+philosophy: any
+era: Universal — every era has the HB draw as a constraint to passing.
+famous_examples:
+- 49ers Garrison Hearst draws
+- Dallas Cowboys' classics
+- Modern NFL widely
+tags:
+- run
+- draw
+- constraint
+- 11-personnel
+- singleback
+- any-level
+- high-school
+- college
+- nfl
+verification_status: unverified
+source_notes:
+- HB Draw from Singleback Trio — pass-fake into late handoff. OL pass-sets, then drives.
+- Mirror of singleback-trio-hb-draw.yaml — path waypoints flipped on x; formation reference points to the mirror formation.
+  Routes auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed
+  look — coordinates and paths are the source of truth.

@@ -1,0 +1,129 @@
+play_id: singleback-trio-smash
+name: Smash (Weak)
+aliases:
+  - Smash Concept
+  - Hi-Lo (Weak)
+
+formation: singleback-trio
+play_type: pass
+ball_carrier: QB
+primary_read: SLOT
+secondary_read: X
+checkdown: HB
+
+motions: []
+
+assignments:
+  - player: LT
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: LG
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: C
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: RG
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: RT
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: TE
+    role: route
+    route_name: drag
+    depth_yd: 5
+    notes: "Strong-side drag — backside outlet."
+  - player: X
+    role: route
+    route_name: hitch
+    depth_yd: 6
+    notes: "The LO of the hi-lo: hitch at 6 yards."
+  - player: Z
+    role: route
+    route_name: comeback
+    depth_yd: 14
+    notes: "Strong-side comeback; opens if defense rotates weak."
+  - player: SLOT
+    role: route
+    route_name: corner
+    depth_yd: 12
+    is_primary: true
+    notes: "The HI of the hi-lo: 12-yard corner route over the X hitch. Primary read. Some teams push to 14 yd; 12 yd is the standard textbook depth."
+  - player: QB
+    role: ball_carrier
+    path: [[0, 0], [0, -2], [0, -4]]
+    notes: |
+      5-step drop from shotgun depth. Read the playside corner:
+      - if corner squats on hitch → throw the corner (HI)
+      - if corner carries the corner route → throw the hitch (LO)
+  - player: HB
+    role: pass_block
+    blocking_scheme: man-protection
+    notes: "Pass-protect; release as checkdown if pressure clears."
+
+strengths:
+  - Classic high-low read for the QB — beats cover-2 by design
+  - Two-receiver concept = simple QB read tree
+  - Pairs well with PA fake to amplify
+  - Works at any level
+  - Big-play potential on the corner route
+
+weaknesses:
+  - Requires accurate corner-route throw (sideline + depth + air)
+  - Vulnerable to cover-3 (corner carries SLOT, but flat defender takes hitch)
+  - Limited to one side of the field
+  - Slow developing for the corner route (needs ~3.5 sec)
+  - Bracket on slot crushes it
+
+best_vs_defense:
+  - cover-2 (the textbook beater)
+  - cover-2 invert
+  - cover-1 with weak-side corner playing soft
+  - any defense with a flat-zone corner
+
+worst_vs_defense:
+  - cover-3 with hard flat defender
+  - cover-2 robber
+  - bracket coverage on slot
+  - quarters with poach
+
+common_uses:
+  - 1st-and-10 vs cover-2 tendency
+  - 2nd-and-medium
+  - Red-zone (corner becomes a back-of-end-zone fade)
+  - PA shot pairing
+
+philosophy: pro-style
+
+era: "1980s onward — Don Coryell / Bill Walsh staple; modernized continuously."
+
+famous_examples:
+  - "Don Coryell Chargers"
+  - "Dan Marino Dolphins"
+  - "Bill Walsh 49ers"
+  - "Modern NFL (every team's red-zone playbook)"
+
+tags:
+  - pass
+  - spread
+  - smash
+  - hi-lo
+  - coryell
+  - any-level
+  - high-school
+  - college
+  - nfl
+
+notes: |
+  Smash is a Hi-Lo concept on the playside corner: a hitch at 6 yards
+  beneath a corner route at 14 yards. With my SLOT on the weak side,
+  this fires to the WEAK side without motion (X hitch + SLOT corner).
+  Strong-side smash would need the SLOT to motion across, OR run with
+  TE corner over Z hitch (in-line TE running corner is tighter).
+
+verification_status: unverified
+source_notes:
+  - "Coryell-tree smash concept; documented across multiple coaching trees."
+  - "Strengths/weaknesses: cover-2 beater textbook material."
+  - "Web validated 2026-04-29 — Weekly Spiral 'Smash Concept' (https://weeklyspiral.com/2021/03/08/smash-concept/); Throw Deep Publishing 'Smash Concept' (https://throwdeeppublishing.com/blogs/football-glossary/smash-concept); Glazier Clinics 'Basic Passing Concepts: Smash' (https://www.glazierclinics.com/football-coach-resources/basic-passing-concepts-smash-concept). Confirmed: 6-yd hitch + 12-yd corner is the textbook spec; corrected SLOT corner depth from 14 to 12 yd."

@@ -1,0 +1,94 @@
+name: 4-3 Cover 2
+side: defense
+personnel: "4-3 base"
+front: "4-3"
+coverage_shell: "cover-2"
+
+# 4-3 front with Cover 2 zone (2 deep safeties, 5 underneath). Hard
+# corners squat in the flat; safeties play deep halves of the field.
+# Tampa 2 variant has the MLB drop deep middle ("rat" / "Tampa 2 dropper").
+players:
+  - { label: LDE, position: DE, x: -4.0,  y:  1.0, on_line: false }
+  - { label: NT,  position: DT, x: -1.0,  y:  1.0, on_line: false }
+  - { label: RDT, position: DT, x:  2.5,  y:  1.0, on_line: false }
+  - { label: RDE, position: DE, x:  4.0,  y:  1.0, on_line: false }
+  - { label: WLB, position: LB, x: -4.0,  y:  5.0, on_line: false }
+  - { label: MLB, position: LB, x:  0.0,  y:  5.0, on_line: false }
+  - { label: SLB, position: LB, x:  4.0,  y:  5.0, on_line: false }
+  - { label: LCB, position: CB, x: -15.0, y:  5.0, on_line: false }
+  - { label: RCB, position: CB, x:  12.0, y:  5.0, on_line: false }
+  - { label: FS,  position: S,  x: -8.0,  y: 13.0, on_line: false }
+  - { label: SS,  position: S,  x:  8.0,  y: 13.0, on_line: false }
+
+responsibilities:
+  - { player: LDE, role: rush,         aim: "weakside contain" }
+  - { player: NT,  role: rush,         aim: "1-tech A-gap" }
+  - { player: RDT, role: rush,         aim: "3-tech B-gap" }
+  - { player: RDE, role: rush,         aim: "strongside contain / TE-side" }
+  - { player: WLB, role: hook,         aim: "weak hook zone" }
+  - { player: MLB, role: hook,         aim: "middle hook (in Tampa 2: drops to deep middle)" }
+  - { player: SLB, role: curl,         aim: "strong hook / curl zone" }
+  - { player: LCB, role: flat,         aim: "left flat — hard corner, jam + sink" }
+  - { player: RCB, role: flat,         aim: "right flat — hard corner, jam + sink" }
+  - { player: FS,  role: deep-zone,    aim: "deep half — left side of field" }
+  - { player: SS,  role: deep-zone,    aim: "deep half — right side of field" }
+
+best_against:
+  - "4-vertical concepts (2 deep halves bracket the verts)"
+  - "Single deep WR routes (corner squats jam)"
+  - "Outside running plays (corners run-support)"
+  - "Quick game (5-yard squat from CBs)"
+
+vulnerable_to:
+  - "Smash concept (hi-lo on the corner — corner CAN'T cover both)"
+  - "Flood concept (3-level stretch overwhelms the flat-curl-deep half)"
+  - "Inside seam routes between safeties (cover-2 hole at 15-20 yds middle)"
+  - "Y-Cross / deep crosser (attacks the seam between halves)"
+  - "Heavy run sets — only 7 in box if both safeties stay deep"
+
+strengths:
+  - "Two deep defenders eliminate single-high seam exploitation"
+  - "Hard corners support outside runs and squat short routes"
+  - "MLB Tampa 2 variant adds deep middle help"
+  - "Limits big plays — gives up underneath, takes away over-the-top"
+
+weaknesses:
+  - "Hi-lo on corner is a textbook beater (Smash concept)"
+  - "Only 7 defenders in the box vs run"
+  - "Cover-2 hole at deep middle (~18 yds, between hashes)"
+  - "Outside-the-numbers throws to corner / fade tough on safeties"
+
+common_uses:
+  - "Pass-down defense (3rd-and-medium / 3rd-and-long)"
+  - "Vs. spread offenses with no deep speed threats"
+  - "After establishing run defense, settle into pass-cover"
+  - "Tampa 2 variant: vs. middle-of-field-open offenses"
+
+era: "1990s onward — Tony Dungy / Monte Kiffin Tampa 2 era + universal pro adoption."
+
+famous_users:
+  - "Tony Dungy Tampa Bay Buccaneers (Tampa 2)"
+  - "Lovie Smith Chicago Bears"
+  - "Modern NFL widely"
+
+tags:
+  - defense
+  - 4-3
+  - cover-2
+  - tampa-2-variant
+  - 2-deep
+  - pass-down
+  - any-level
+  - high-school
+  - college
+  - nfl
+
+notes: |
+  Hard corners (5-yard squat) take the flat; safeties take the deep halves.
+  Tampa 2 variant has MLB drop to deep middle to plug the cover-2 hole.
+  The textbook beater is Smash — corner over hitch puts hard corner in conflict.
+
+verification_status: unverified
+source_notes:
+  - "Standard 4-3 Cover 2 / Tampa 2 alignment."
+  - "Built 2026-04-30 as part of the P5 defensive-side rollout."

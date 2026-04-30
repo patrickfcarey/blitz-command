@@ -46,10 +46,12 @@ assignments:
     blocking_scheme: stalk
   - player: QB
     role: handoff
-    notes: "Open and hand off to FB at 2 yds depth; carry out fake to HB sweep action."
+    path: [[0, 0], [-1, -1], [-3, -1]]
+    notes: "Open and hand off to FB at 2 yds depth; carry out fake to HB sweep action backside."
   - player: FB
     role: ball_carrier
     is_primary: true
+    path: [[0, 0], [3, 2], [4, 6]]
     notes: "Hit the playside B-gap or C-gap on a belly path — slow-develop, follow blocks."
   - player: HB
     role: fake

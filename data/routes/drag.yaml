@@ -1,0 +1,25 @@
+name: drag
+aliases:
+- shallow-cross
+- mesh
+- drive-route
+description: Push 5 yards then drag across the field at constant depth toward the opposite sideline.
+path:
+- - 0
+  - 0
+- - 0
+  - 5
+- - 20
+  - 5
+typical_break_depth_yd: 5
+option_route: false
+category: underneath
+beats_coverage: man
+tags:
+- underneath
+- crossing
+- mesh-component
+- anti-man
+verification_status: unverified
+source_notes:
+- Universal underneath crossing route. Mesh point at 5-6 yds. Used in mesh, drive, and many West Coast / Air Raid concepts.

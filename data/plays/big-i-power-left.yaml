@@ -1,0 +1,135 @@
+play_id: big-i-power-left
+name: Big I Power (Mirror Left)
+aliases:
+- 22 Power
+- Heavy Power
+formation: big-i-left
+play_type: run
+ball_carrier: HB
+motions: []
+assignments:
+- player: LT
+  role: run_block
+  blocking_scheme: down-block
+  target: backside-3-tech
+- player: LG
+  role: run_block
+  blocking_scheme: pull-around
+  target: playside-LB
+  path:
+  - - 0
+    - 0
+  - - -2
+    - -0.5
+  - - -4
+    - 0
+  - - -5
+    - 4
+  notes: PULL — backside guard pulls around C, leads through the off-tackle hole.
+- player: C
+  role: run_block
+  blocking_scheme: gap-block
+  target: backside-A-gap
+- player: RG
+  role: run_block
+  blocking_scheme: down-block
+  target: playside-3-tech
+- player: RT
+  role: run_block
+  blocking_scheme: down-block
+  target: playside-DT
+- player: TE-L
+  role: run_block
+  blocking_scheme: backside-cutoff
+  target: backside-edge
+  notes: TE-L seals backside — prevents pursuit through cutback.
+- player: TE-R
+  role: run_block
+  blocking_scheme: kickout
+  target: edge-defender
+  notes: TE-R kicks out playside EDGE — opens off-tackle hole.
+- player: WR
+  role: run_block
+  blocking_scheme: stalk
+  target: cornerback
+- player: QB
+  role: handoff
+  path:
+  - - 0
+    - 0
+  - - 1
+    - -1
+  - - 2
+    - -1
+  notes: Reverse-out and PA fake to backside.
+- player: FB
+  role: lead_block
+  target: playside-LB-or-strong-safety
+  path:
+  - - 0
+    - 0
+  - - -3
+    - 3
+  - - -4
+    - 6
+  notes: Lead through the hole; iso the playside LB or kickout the strong safety.
+- player: HB
+  role: ball_carrier
+  is_primary: true
+  path:
+  - - 0
+    - 0
+  - - -3
+    - 3
+  - - -4
+    - 9
+  notes: Take handoff, hit off-tackle behind RT/TE-R/pulling LG/FB lead.
+strengths:
+- Maximum blocker advantage — 7 in-line + FB lead = 8-man surface
+- Both edges sealed (TE-L cuts backside, TE-R kicks out playside)
+- Pulling LG + FB through the same hole = devastating point of attack
+- Heavy 22 personnel forces defense into base — fewer pass-defense bodies
+- Setup for PA shots off the same heavy look
+weaknesses:
+- Single WR limits passing constraint
+- Telegraphs run intent (22 personnel)
+- Vulnerable to 8-man fronts that bring extra safety
+- Slow vs modern speed defenses
+best_vs_defense:
+- over-front
+- cover-3
+- 4-3 base
+- single-high
+worst_vs_defense:
+- bear front
+- 8-man fronts
+- cover-1 robber
+- penetrating playside DT
+common_uses:
+- Short-yardage and 4-minute offense
+- Goal-line / red-zone power
+- 1st/2nd-and-short
+- Setting up PA shots from heavy
+philosophy: power-run
+era: Universal — heavy power has been a short-yardage staple forever.
+famous_examples:
+- Stanford under Harbaugh / David Shaw
+- Patriots heavy packages
+- Modern NFL 12/22 personnel power
+tags:
+- run
+- power-run
+- gap-scheme
+- 22-personnel
+- heavy
+- downhill
+- any-level
+- high-school
+- college
+- nfl
+verification_status: unverified
+source_notes:
+- Big I 22-personnel Power — heavy variant of Power O with 2 TEs in-line for extra blocking.
+- Mirror of big-i-power.yaml — path waypoints flipped on x; formation reference points to the mirror formation. Routes auto-mirror
+  in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed look — coordinates
+  and paths are the source of truth.

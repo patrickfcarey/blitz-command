@@ -1,11 +1,16 @@
-name: Empty (10 personnel)
+name: Empty (01 personnel)
 side: offense
-personnel: "10"
+personnel: "01"
 strength_side: right
 
-# 10 personnel empty: 0 RB, 1 TE, 4 WR. TE attached to line for protection
+# 01 personnel empty: 0 RB, 1 TE, 4 WR. TE attached to line for protection
 # and as bigger-bodied target. No RB in backfield — pure passing look.
 # Legality: 5 OL + TE + X = 7 on the line.
+#
+# Note: this file was previously labeled "10 personnel" — the standard
+# convention is RB-TE so 10 = 1 RB + 0 TE + 4 WR (NOT empty). With 0 RB
+# and 1 TE this is "01" personnel. True 5-wide empty (00 personnel) is a
+# separate formation when added.
 players:
   - { label: LT,     position: LT, x: -2.0,  y:  0.0, on_line: true  }
   - { label: LG,     position: LG, x: -1.0,  y:  0.0, on_line: true  }
@@ -75,10 +80,11 @@ tags:
   - college
 
 notes: |
-  10 personnel — 0 RB, 1 TE, 4 WR. TE attached for protection help. True Empty
+  01 personnel — 0 RB, 1 TE, 4 WR. TE attached for protection help. True Empty
   (00 personnel, 5 WR no TE) is a separate file when added.
 
-verification_status: inferred
+verification_status: unverified
 source_notes:
   - "Coordinates: typical empty alignment; outer WRs split 14-15 yd, slots at 8 yd."
   - "Strengths/weaknesses: modern passing-game textbook material."
+  - "Web validated 2026-04-29 — KOKA Sports 'What is 10 Personnel' (https://blog.kokasports.com/what-is-10-personnel-in-football/); KOKA Sports '10 Personnel Football' (https://blog.kokasports.com/10-personnel-football/); CougCenter 'Air Raid WSU formations' (https://www.cougcenter.com/2013/3/12/4070202/air-raid-playbook-offensive-formations-mike-leach). CORRECTION applied: this file was labeled '10 personnel' but the standard RB-TE convention has 10 = 1 RB / 0 TE / 4 WR (not empty). With 0 RB and 1 TE this is correctly '01' personnel; true Empty (no RB) is uncommon enough that 'empty' and '10 personnel' are sometimes informally conflated."

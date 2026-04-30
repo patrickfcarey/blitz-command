@@ -1,0 +1,101 @@
+name: Prevent 3-2-6
+side: defense
+personnel: "prevent / dollar"
+front: "3-2-6"
+coverage_shell: "cover-4-deep"
+
+# End-of-half / end-of-game prevent defense. 3 DL (3-man rush), 2 ILBs
+# (mid-zone), 6 DBs (4 deep quarters + 2 underneath middle). Designed
+# to prevent the deep ball at all costs. Gives up underneath gains
+# willingly to bleed clock.
+players:
+  - { label: LDE, position: DE, x: -4.0,  y:  1.0, on_line: false }
+  - { label: NT,  position: DT, x:  0.0,  y:  1.0, on_line: false }
+  - { label: RDE, position: DE, x:  4.0,  y:  1.0, on_line: false }
+  - { label: WLB, position: LB, x: -3.0,  y:  6.0, on_line: false }
+  - { label: MLB, position: LB, x:  3.0,  y:  6.0, on_line: false }
+  - { label: NB,  position: CB, x: -8.0,  y: 12.0, on_line: false }
+  - { label: DB,  position: CB, x:  8.0,  y: 12.0, on_line: false }
+  - { label: LCB, position: CB, x: -15.0, y: 14.0, on_line: false }
+  - { label: RCB, position: CB, x:  15.0, y: 14.0, on_line: false }
+  - { label: FS,  position: S,  x: -6.0,  y: 18.0, on_line: false }
+  - { label: SS,  position: S,  x:  6.0,  y: 18.0, on_line: false }
+
+responsibilities:
+  - { player: LDE, role: rush, aim: "weak edge contain — keep QB in pocket, no scramble lanes" }
+  - { player: NT,  role: rush, aim: "push the pocket interior" }
+  - { player: RDE, role: rush, aim: "strong edge contain — keep QB in pocket" }
+  - { player: WLB, role: hook, aim: "underneath middle-hook zone, weak side" }
+  - { player: MLB, role: hook, aim: "underneath middle-hook zone, strong side" }
+  - { player: NB,  role: deep-zone, aim: "deep quarter — left half-quarter" }
+  - { player: DB,  role: deep-zone, aim: "deep quarter — right half-quarter" }
+  - { player: LCB, role: deep-zone, aim: "deep quarter — far left, top of route" }
+  - { player: RCB, role: deep-zone, aim: "deep quarter — far right, top of route" }
+  - { player: FS,  role: deep-zone, aim: "deep half — left, very deep eraser" }
+  - { player: SS,  role: deep-zone, aim: "deep half — right, very deep eraser" }
+
+best_against:
+  - "Hail Mary (4 quarters + 2 deep halves blanket end zone)"
+  - "Deep ball / verticals (4 deep DBs match 4 receivers)"
+  - "Two-minute desperation passes"
+  - "Clock-running situations"
+
+vulnerable_to:
+  - "Underneath crossing routes (LBs deep, no flat defenders)"
+  - "Quick screens / RB checkdowns (5 yds easily)"
+  - "Long developing concepts (3-man rush gives QB time)"
+  - "Run draws (only 5 in box vs 7 blockers)"
+  - "QB scramble (LBs deep, no spy)"
+
+strengths:
+  - "Prevents the explosive deep play (the goal of this defense)"
+  - "6 DBs deep makes deep-ball completions extremely rare"
+  - "Doubles every viable deep route option"
+  - "Acceptable trade-off: give up 10 yd gains to prevent 50 yd TDs"
+
+weaknesses:
+  - "By design, gives up underneath yards readily"
+  - "3-man rush means QB has plenty of time"
+  - "Vulnerable to runs (5 box defenders)"
+  - "Frustrates fans because offense moves the ball"
+
+common_uses:
+  - "End-of-half (defending a lead)"
+  - "Last 30 seconds of game with offense down 7+"
+  - "Hail Mary / desperation passing situations"
+  - "Always paired with timeout management — clock is the real defense"
+
+era: "1970s onward — prevent defense became formalized in NFL situational packages."
+
+famous_users:
+  - "Every NFL team has a prevent variant"
+  - "Notable prevent failures: 'Prevent only prevents you from winning' — John Madden"
+  - "Modern teams using cover-4 deep concepts as base prevent"
+
+tags:
+  - defense
+  - prevent
+  - cover-4
+  - dollar
+  - end-of-half
+  - end-of-game
+  - deep-coverage
+  - any-level
+  - high-school
+  - college
+  - nfl
+
+notes: |
+  Prevent defense — the situational answer to "we lead, opponent has time
+  for one drive." 3-man rush (DL only) keeps QB in pocket but gives time;
+  2 ILBs cover middle hooks; 6 DBs blanket the deep area in quarters and
+  half-deep zones. Trade-off: underneath is wide open, but a 10-yard gain
+  is acceptable when the offense needs 60 yards in 30 seconds.
+
+  Common pairing: prevent on 1st/2nd down then timeout-clock-management;
+  rarely used outside end-of-half or end-of-game scenarios.
+
+verification_status: unverified
+source_notes:
+  - "Standard prevent / cover-4 deep alignment; documented in NFL situational defensive coaching texts."
+  - "Built 2026-04-30 as part of the P5 defensive-side rollout."

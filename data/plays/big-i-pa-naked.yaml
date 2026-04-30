@@ -1,0 +1,52 @@
+play_id: big-i-pa-naked
+name: Big I PA Naked Bootleg
+aliases: [Big PA Naked, 22 Naked Boot]
+formation: big-i
+play_type: play-action
+ball_carrier: QB
+primary_read: TE-R
+secondary_read: WR
+checkdown: TE-L
+motions: []
+assignments:
+  - { player: LT, role: pass_block, blocking_scheme: man-protection,
+      notes: "Sell run for one count, then pass-set." }
+  - { player: LG, role: pass_block, blocking_scheme: man-protection }
+  - { player: C, role: pass_block, blocking_scheme: man-protection }
+  - { player: RG, role: pass_block, blocking_scheme: man-protection }
+  - { player: RT, role: pass_block, blocking_scheme: man-protection }
+  - { player: TE-L, role: route, route_name: drag, depth_yd: 8,
+      notes: "TE-L releases late as drag — outlet for the rolling QB." }
+  - { player: TE-R, role: route, route_name: deep-cross, depth_yd: 18,
+      notes: "TE-R deep cross — primary read. Works under SAM, over MIKE." }
+  - { player: WR, role: route, route_name: comeback, depth_yd: 14,
+      notes: "Single WR comeback — secondary read if TE-R covered." }
+  - { player: QB, role: ball_carrier,
+      path: [[0, 0], [-3, -1], [-5, -1], [-7, 0]],
+      notes: "PA fake to HB, NAKED bootleg LEFT (no protection on the boot side). Read TE-R cross first." }
+  - { player: FB, role: lead_block, target: backside-edge,
+      path: [[0, 0], [-2, 1], [-2, 2]],
+      notes: "FB chip / brief block on backside edge then release as outlet." }
+  - { player: HB, role: fake,
+      path: [[0, 0], [3, 3], [3, 5]],
+      notes: "Sell the run fake hard — defense MUST honor a heavy run from 22 personnel." }
+strengths:
+  - "22 personnel sells PA aggressively (defense expects run from heavy)"
+  - "TE-R deep cross attacks the seam between safety and inside LBs"
+  - "Naked boot = no rolling pocket = QB on the move = easier throws"
+  - "Multiple outlets (TE-L drag, FB chip-release) if primary covered"
+weaknesses:
+  - "QB exposed if PA fake doesn't hold defenders"
+  - "Slow-developing — needs 4 sec for TE-R to arrive"
+  - "Naked boot side has unblocked EDGE — vulnerable to chase"
+  - "Defense playing pass keys (no PA bite) makes it predictable"
+best_vs_defense: ["cover-3 with run-fit LBs", "cover-2 (TE attacks safety hole)", "any defense biting on PA from 22"]
+worst_vs_defense: ["cover-2 robber", "zero blitz", "pattern-match cover-4", "backside DE chasing"]
+common_uses: ["After 2-3 power runs from Big I (defense biting)", "1st-and-10 setup play", "Red-zone PA shot"]
+philosophy: pro-style
+era: "1990s onward — PA naked boot from heavy personnel is a NFL/college staple."
+famous_examples: ["Bill Walsh-tree PA boot game", "Modern NFL 12/22 personnel PA shots"]
+tags: [pass, pa, bootleg, 22-personnel, heavy, west-coast, any-level, high-school, college, nfl]
+verification_status: unverified
+source_notes:
+  - "Big I PA naked boot — heavy-formation PA shot rolling away from the run fake."

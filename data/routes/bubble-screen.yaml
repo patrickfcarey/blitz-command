@@ -1,0 +1,20 @@
+name: bubble-screen
+aliases:
+- bubble
+description: Quick screen behind the LOS — receiver loops back and toward the sideline to catch the ball at depth -1 yard.
+path:
+- - 0
+  - 0
+- - -3
+  - -1
+typical_break_depth_yd: 0
+option_route: false
+category: screen
+beats_coverage: both
+tags:
+- screen
+- rpo-component
+- quick
+verification_status: unverified
+source_notes:
+- Standard bubble screen used as the throw side of RPOs. Receiver loops back behind the LOS.

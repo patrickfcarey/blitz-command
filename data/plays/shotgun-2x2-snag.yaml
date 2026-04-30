@@ -52,10 +52,11 @@ assignments:
     notes: "Strong-side corner route — the HI of the snag triangle."
   - player: QB
     role: ball_carrier
+    path: [[0, 0], [0, -1], [0, -2]]
     notes: |
-      Triangle read on the strong side: TE snag (LO) / Z corner (HI) /
-      HB flat (FLAT). Pre-snap leverage tells you which leg of the triangle
-      is open. Quick throw — 3 to 5-step rhythm.
+      3-step quick rhythm from shotgun depth. Triangle read on the strong side:
+      TE snag (LO) / Z corner (HI) / HB flat (FLAT). Pre-snap leverage tells
+      you which leg of the triangle is open.
   - player: HB
     role: route
     route_name: flat

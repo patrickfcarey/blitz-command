@@ -1,0 +1,136 @@
+name: Pistol Diamond Left
+side: offense
+personnel: 20 (pistol diamond)
+strength_side: balanced
+players:
+- label: LT
+  position: LT
+  x: -2.0
+  y: 0.0
+  on_line: true
+- label: LG
+  position: LG
+  x: -1.0
+  y: 0.0
+  on_line: true
+- label: C
+  position: C
+  x: 0.0
+  y: 0.0
+  on_line: true
+- label: RG
+  position: RG
+  x: 1.0
+  y: 0.0
+  on_line: true
+- label: RT
+  position: RT
+  x: 2.0
+  y: 0.0
+  on_line: true
+- label: TE
+  position: TE
+  x: -3.5
+  y: 0.0
+  on_line: true
+- label: SE
+  position: WR
+  x: 15.0
+  y: 0.0
+  on_line: true
+- label: QB
+  position: QB
+  x: -0.0
+  y: -4.0
+  on_line: false
+- label: HB
+  position: HB
+  x: -0.0
+  y: -7.0
+  on_line: false
+- label: FB-L
+  position: FB
+  x: 3.0
+  y: -5.0
+  on_line: false
+- label: FB-R
+  position: FB
+  x: -3.0
+  y: -5.0
+  on_line: false
+strengths:
+- Three-back threat from one look (HB run, FB lead, FB ball-carrier on sweep)
+- Diamond formation hides which back is taking the ball
+- FB-L / FB-R can run kickouts, leads, jet sweeps, or routes
+- QB read-option mechanic still works (HB behind QB hides direction)
+- RPO-friendly with 2 WRs split + 1 TE — 3 receivers eligible
+- Heavy-personnel run threat with passing flexibility
+weaknesses:
+- Still 1 RB primary — not as run-overpowering as a true 22 personnel
+- Slot/spread teams may struggle vs nickel defense (only 2 WRs)
+- Diamond alignment can tip play direction if FB lean / set is off
+- Slow-developing perimeter runs (FB1/FB2 have to come from the diamond)
+- Limited use vs disciplined modern defenses with film prep
+common_uses:
+- Modern hybrid run-game (split-zone, jet-sweep, power-read)
+- Goal-line / short-yardage flex (3 backs as lead blockers)
+- Constraint to spread tendencies
+- PA shots with multiple play-fakes
+- 1st-down balanced run/pass calls
+run_concepts:
+- inside-zone-read
+- split-zone
+- power-read
+- jet-sweep
+- counter
+- lead-draw
+pass_concepts:
+- pa-flood
+- pa-naked
+- bootleg-flat
+- mesh
+era: Mid-2010s onward — modern pistol evolution used by spread-option teams; not yet widespread.
+famous_users:
+- Some Power 5 college programs in red-zone packages
+- Nevada Wolfpack (Chris Ault innovations beyond base pistol)
+- Mid-major spread-option teams
+- HS programs experimenting with 3-back pistol variants
+tags:
+- pistol
+- diamond
+- 20-personnel
+- 3-back
+- hybrid
+- balanced
+- rpo-friendly
+- modern
+- college
+- high-school
+notes: 'Pistol Diamond places 3 backs in a diamond shape behind the QB:
+
+  - HB directly behind QB at 7 yd (the deep slot of the diamond)
+
+  - FB-L and FB-R flanking QB at 5 yd depth (the side slots)
+
+
+  This gives the offense 3 ball-carrier threats from one look. The HB
+
+  can run inside zone read; FB-L can run jet sweep; FB-R can lead block
+
+  or kick out an EDGE. Defenses have to fit gaps for 3 different runners.
+
+
+  Less common than base Pistol — used in modern hybrid run packages
+
+  rather than as a base offense. Pistol Trips and Pistol Y-Off are
+
+  more common pistol variants.
+
+  '
+verification_status: unverified
+source_notes:
+- Pistol diamond formation; emerging modern hybrid run package.
+- Built 2026-04-30 as part of the P3 specialty-formation rollout.
+- Mirror of pistol-diamond.yaml — coordinates flipped horizontally on x; strength_side flipped; OL labels (LT/LG/C/RG/RT)
+  and centered backfield positions (QB / centered FB or HB) unchanged. Notes in this file may still describe the original
+  right-handed look in places — read coordinates as the source of truth.

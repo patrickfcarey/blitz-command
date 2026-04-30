@@ -1,85 +1,92 @@
 name: Singleback Ace
 side: offense
-personnel: "11"
-strength_side: right
+personnel: "12"
+strength_side: balanced
 
-# Modern 11-personnel base under-center. 1 RB, 1 TE, 3 WR.
-# X on weak side (left), Z and Slot on strong side (right) — Slot to balance.
-# Legality: 5 OL + TE + X = 7 on the line; Z, Slot, QB, HB off.
-# Note: the slot is placed weak-side here for true balance; many teams put
-# the slot strong-side for trips-feel with the TE.
+# 12 personnel symmetric Singleback. 5 OL + 2 TEs flanking + 2 WRs split wide
+# off the line + QB under center + 1 HB behind QB. This matches Madden's
+# "default Singleback" formation.
+#
+# Legality: 5 OL + TE-L + TE-R = 7 on the line. Both line-ends are TEs
+# (eligible). Both WRs are off the line.
 players:
   - { label: LT,    position: LT, x: -2.0,  y:  0.0, on_line: true  }
   - { label: LG,    position: LG, x: -1.0,  y:  0.0, on_line: true  }
   - { label: C,     position: C,  x:  0.0,  y:  0.0, on_line: true  }
   - { label: RG,    position: RG, x:  1.0,  y:  0.0, on_line: true  }
   - { label: RT,    position: RT, x:  2.0,  y:  0.0, on_line: true  }
-  - { label: TE,    position: TE, x:  3.5,  y:  0.0, on_line: true  }
-  - { label: X,     position: WR, x: -15.0, y:  0.0, on_line: true  }
-  - { label: Z,     position: WR, x:  12.0, y: -1.0, on_line: false }
-  - { label: SLOT,  position: WR, x: -8.0,  y: -1.0, on_line: false }
-  - { label: QB,    position: QB, x:  0.0,  y: -1.5, on_line: false }
+  - { label: TE-L,  position: TE, x: -3.5,  y:  0.0, on_line: true  }
+  - { label: TE-R,  position: TE, x:  3.5,  y:  0.0, on_line: true  }
+  - { label: X,     position: WR, x: -15.0, y: -1.0, on_line: false }
+  - { label: Z,     position: WR, x:  15.0, y: -1.0, on_line: false }
+  - { label: QB,    position: QB, x:  0.0,  y: -2.0, on_line: false }
   - { label: HB,    position: HB, x:  0.0,  y: -6.0, on_line: false }
 
 strengths:
-  - Three-receiver spread forces defense out of base personnel (often into nickel)
-  - Removing the FB creates better pass protection windows and cleaner inside-run lanes
-  - One-back zone runs (inside / outside zone) are the bread-and-butter
-  - Slot WR creates horizontal stress points — pick concepts, mesh, stick
-  - Play-action remains credible with TE attached and HB threat
+  - Symmetric — defense can't tilt coverage based on receiver alignment
+  - 2 TEs in-line creates a 7-blocker surface for the run game
+  - Balanced run threat to either side (both A-gaps doubled, both edges sealed)
+  - Heavy enough to threaten run, spread enough for 2-WR pass concepts
+  - 12 personnel often forces defense into base instead of nickel
+  - Matches Madden's default Singleback layout — common starting point in playbooks
 
 weaknesses:
-  - No FB lead block — relies on OL athleticism (zone) rather than power kickouts
-  - Single RB limits two-back ball-handling deception
-  - Vs heavy fronts the run game has fewer answers without a FB
-  - Strong-side balance is asymmetric (TE vs slot WR side) — defenses can roll coverage
-  - Losing the X via shift gets you to 6 on the line (illegal procedure risk)
+  - Only 2 WRs limits horizontal pass-game spread vs nickel
+  - 1 RB single-back means no two-back deception
+  - HB at 6 yd depth = slower release for swing/screen than I-Form lead
+  - Run game can be predictable from this look (12 personnel = run-likely)
+  - Tells defense to expect an in-line concept (PA, mesh, drive) more than wide RPOs
 
 common_uses:
-  - Modern NFL/college base offense — workhorse formation
-  - First and second downs in normal field position
-  - Two-minute / hurry-up (allows quick spread without subbing)
-  - Setting up RPOs and quick-game concepts
+  - Modern NFL/college base (12 personnel singleback)
+  - Madden / NCAA in-game default Singleback formation
+  - 1st/2nd-and-medium balanced calls
+  - PA shots with TE corner / TE seam from in-line release
+  - Setting up the run game against base defenses
 
 run_concepts:
   - inside-zone
   - outside-zone
-  - power
+  - power-o
+  - counter-trey
   - draw
-  - dart
 
 pass_concepts:
-  - mesh
-  - stick
-  - smash
+  - pa-y-cross
+  - pa-flood
+  - smash-strong
+  - mesh-te
   - four-verticals
-  - levels
-  - pa-post
-  - hb-screen
+  - bootleg-flat
 
-era: "2000s–present, dominant base offense in modern football."
+era: "Modern NFL / college; Madden default Singleback formation across many editions."
 
 famous_users:
-  - "2000s–2010s Indianapolis Colts (Peyton Manning)"
-  - "Modern NFL widespread — most teams' base 11-personnel under-center look"
-  - "Pro-style college programs"
+  - "Modern NFL teams using 12-personnel singleback as base (49ers, Rams under Shanahan/McVay tree)"
+  - "Patriots multiple-personnel offense (Belichick era, Gronk + Hernandez)"
+  - "Madden's default Singleback in many editions"
 
 tags:
-  - spread
-  - 11-personnel
+  - pro-style
+  - 12-personnel
+  - singleback
   - balanced
-  - zone-friendly
-  - modern
+  - symmetric
   - under-center
-  - nfl
+  - madden-default
+  - any-level
+  - high-school
   - college
+  - nfl
 
 notes: |
-  True Singleback Ace = QB under center, 1 RB. If QB is in shotgun this becomes
-  Shotgun Singleback (separate file). Slot placed weak-side for true balance;
-  move SLOT to x=+8 with Z further out for "Singleback Trips Right" feel.
+  Symmetric 12-personnel under-center singleback. Both TEs in-line as
+  line-ends; both WRs split wide off the line. Madden uses this as the
+  default "Singleback" formation. The 11-personnel variant (1 TE / 3 WR)
+  with a slot receiver lives in singleback-trio.yaml.
 
-verification_status: inferred
+verification_status: unverified
 source_notes:
-  - "Coordinates: standard 11-personnel under-center alignment."
-  - "Strengths/weaknesses: modern offensive textbook reasoning."
+  - "Layout corrected 2026-04-29 after user feedback that previous singleback-ace.yaml (11 personnel) did not match Madden's default. The 12-personnel symmetric layout matches the Madden 2005 'default Singleback' screenshot."
+  - "Formation matches modern NFL '12 personnel' singleback; widely documented across coaching trees."
+  - "QB under-center y=-2 per user-confirmed Madden 2005 measurement."

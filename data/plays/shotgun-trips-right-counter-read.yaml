@@ -1,0 +1,146 @@
+play_id: shotgun-trips-right-counter-read
+name: Counter Read (Trips Right)
+aliases:
+  - Counter-Q
+  - QB Counter Option
+  - Trips Counter Read
+
+formation: shotgun-trips-right
+play_type: run
+ball_carrier: QB
+primary_read: HB
+
+motions: []
+
+assignments:
+  - player: LT
+    role: run_block
+    blocking_scheme: pull-around
+    target: edge-defender
+    path: [[0, 0], [3, -0.5], [5, -0.5], [7, 2]]
+    notes: "PULL — backside tackle pulls and kicks out the playside EDGE."
+  - player: LG
+    role: run_block
+    blocking_scheme: pull-around
+    target: playside-LB
+    path: [[0, 0], [2, -0.5], [4, 0], [5, 4]]
+    notes: "PULL — backside guard pulls around C, leads through the off-tackle hole on the playside ILB."
+  - player: C
+    role: run_block
+    blocking_scheme: gap-block
+    target: backside-A-gap
+  - player: RG
+    role: run_block
+    blocking_scheme: down-block
+    target: playside-3-tech
+  - player: RT
+    role: run_block
+    blocking_scheme: down-block
+    target: playside-DT
+    notes: "PLAYSIDE EDGE IS THE READ — left UNBLOCKED so QB can read him."
+  - player: TE
+    role: run_block
+    blocking_scheme: down-block
+    target: backside-LB
+    notes: "Backside TE down-blocks to seal the cutback."
+  - player: WR1
+    role: run_block
+    blocking_scheme: stalk
+    target: playside-cornerback
+  - player: WR2
+    role: run_block
+    blocking_scheme: stalk
+    target: nickel-defender
+  - player: WR3
+    role: run_block
+    blocking_scheme: crack
+    target: playside-safety
+    notes: "Inner trips WR cracks back inside to seal the alley defender for the HB sweep."
+  - player: QB
+    role: ball_carrier
+    is_primary: true
+    path: [[0, 0], [-1, 0], [3, 3], [4, 8]]
+    notes: |
+      COUNTER-READ mechanic — read playside EDGE:
+      - EDGE chases HB outside → KEEP and run inside through the off-tackle
+                                  hole behind the pulling LT (kickout) and LG (lead)
+      - EDGE plays QB / sits → GIVE to HB on outside-zone sweep path
+      Counter step left first (sells the give), then plant and accelerate
+      through the hole.
+  - player: HB
+    role: ball_carrier
+    path: [[0, 0], [4, 1], [7, 3], [10, 5]]
+    notes: "Outside-zone sweep path to playside (right) — receive QB read and attack the perimeter if QB gives."
+
+strengths:
+  - "Two pulling blockers (LT kickout + LG lead) at the QB-keep point of attack"
+  - "Counter step + 3-WR look hold defenders"
+  - "Reads the EDGE — same conflict as zone-read but with power-scheme blocking"
+  - "Three-WR strong side stresses defense to honor pass — fewer box defenders"
+  - "Mobile QB becomes a downhill runner with two lead blockers"
+  - "Pairs with RPO (slant or bubble) to extend defensive conflict"
+
+weaknesses:
+  - "Slow-developing — pullers need ~2.5 sec to arrive"
+  - "Requires QB who's a credible runner AND can read EDGE accurately"
+  - "Vulnerable to scrape-exchange (LB scraping for QB)"
+  - "Predictable as a power play once defense identifies the pull tendency"
+  - "QB injury risk on every keep"
+
+best_vs_defense:
+  - "4-3 base with predictable EDGE / over-front"
+  - "cover-3 with run-fit LBs"
+  - "any defense over-pursuing the perimeter sweep"
+  - "nickel personnel (3-WR forces lighter box)"
+
+worst_vs_defense:
+  - "scrape-exchange (LB taking QB)"
+  - "cover-1 robber (extra defender)"
+  - "8-man fronts (no QB-keep room)"
+  - "bear front"
+
+common_uses:
+  - "1st-and-10 base run with mobile QB"
+  - "Constraint to inside-zone-read (different read defender, different motion)"
+  - "Red-zone scoring concept (QB power inside or HB sweep outside)"
+  - "3rd-and-medium power conversion"
+  - "Modern spread-option base from trips"
+
+philosophy: spread-option
+
+era: "Mid-2010s onward — counter-read became universal as mobile-QB spread offenses spread through college and into NFL."
+
+famous_examples:
+  - "Eagles under Doug Pederson / Nick Sirianni (Jalen Hurts QB counter)"
+  - "Ravens under John Harbaugh (Lamar Jackson designed-runs)"
+  - "Modern Power 5 spread programs (Auburn, Ohio State, Oklahoma)"
+  - "Bills under Brian Daboll (Josh Allen designed-counter)"
+
+tags:
+  - run
+  - option
+  - counter
+  - counter-read
+  - shotgun
+  - trips
+  - 11-personnel
+  - rpo-friendly
+  - modern
+  - college
+  - nfl
+  - high-school
+  - spread-option
+
+notes: |
+  Counter-Read (also called Counter-Q) — QB reads the playside EDGE
+  on a counter-blocking scheme. Two pullers (BST and BSG) come around
+  to lead the QB through the off-tackle hole, while the HB runs an
+  outside-zone sweep path as the give option.
+
+  Best with a credible mobile QB. The 3-WR trips look forces the
+  defense to honor pass, opening box runs. Mirror by flipping all x.
+
+verification_status: unverified
+source_notes:
+  - "Standard counter-read mechanic; widely documented across modern spread-option coaching texts."
+  - "Built 2026-04-30 to round out the option family in the play library."

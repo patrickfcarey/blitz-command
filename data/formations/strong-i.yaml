@@ -14,7 +14,7 @@ players:
   - { label: TE, position: TE, x:  3.5,  y:  0.0, on_line: true  }
   - { label: X,  position: WR, x: -15.0, y:  0.0, on_line: true  }
   - { label: Z,  position: WR, x:  12.0, y: -1.0, on_line: false }
-  - { label: QB, position: QB, x:  0.0,  y: -1.5, on_line: false }
+  - { label: QB, position: QB, x:  0.0,  y: -2.0, on_line: false }
   - { label: FB, position: FB, x:  1.5,  y: -4.0, on_line: false }
   - { label: HB, position: HB, x:  0.0,  y: -7.0, on_line: false }
 
@@ -65,7 +65,8 @@ notes: |
   FB at x=+1.5, y=-4.0 — slightly shallower than standard I-Form (4.5 yd) for
   faster kickout. Mirror the FB to x=-1.5 for Strong I Left.
 
-verification_status: inferred
+verification_status: unverified
 source_notes:
   - "Coordinates: standard convention; FB offset 1.5 yd toward strong side."
   - "Strengths/weaknesses: standard coaching textbook material."
+  - "Web validated 2026-04-29 — Wikipedia 'I formation' (https://en.wikipedia.org/wiki/I_formation); Sporting Charts 'Weak I' (https://www.sportingcharts.com/dictionary/nfl/weak-i.aspx); Throw Deep Publishing 'Complete Guide to Offensive Formations' (https://throwdeeppublishing.com/blogs/football-glossary/the-complete-guide-to-offensive-football-formations). Confirmed: 'Strong refers to a move towards the TE side'; FB offset 1-2 yards from center, lining up behind a guard. Allows FB to avoid blockers and release as receiver."

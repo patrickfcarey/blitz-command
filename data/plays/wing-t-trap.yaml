@@ -47,10 +47,12 @@ assignments:
     blocking_scheme: stalk
   - player: QB
     role: handoff
-    notes: "Quick handoff to FB; carry out belly / sweep fake."
+    path: [[0, 0], [-1, -1], [-3, -1]]
+    notes: "Quick handoff to FB; carry out belly / sweep fake to backside."
   - player: FB
     role: ball_carrier
     is_primary: true
+    path: [[0, 0], [2, 2], [3, 6]]
     notes: "Hit the playside A or B gap on a quick path — RG has invited the DT upfield; LG traps him from the side."
   - player: HB
     role: fake

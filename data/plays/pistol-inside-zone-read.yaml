@@ -45,14 +45,17 @@ assignments:
     blocking_scheme: stalk
   - player: QB
     role: handoff
+    path: [[0, 0], [-1, 1]]
     notes: |
-      Read the backside DE (the unblocked LT-side DE):
+      Pivot backside to mesh with HB at (-1, 1). Read the backside DE (the
+      unblocked LT-side DE):
       - DE crashes inside / chases HB → QB PULLS the ball and runs the edge
       - DE stays home / sits on QB → QB GIVES to HB
   - player: HB
     role: ball_carrier
     is_primary: true
-    notes: "Aim point: playside A/B gap (zone read terminology). BANG / BEND / BOUNCE per inside zone rules."
+    path: [[0, 0], [0, 2], [1, 5], [2, 8]]
+    notes: "Aim point: playside A/B gap (zone read terminology). BANG / BEND / BOUNCE per inside zone rules. Step forward to mesh point at (0, 2), take handoff, attack playside gap."
 
 strengths:
   - QB read replaces the need for a backside-DE blocker = numbers advantage

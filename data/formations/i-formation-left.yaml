@@ -1,0 +1,117 @@
+name: I-Formation Left
+side: offense
+personnel: '21'
+strength_side: left
+players:
+- label: LT
+  position: LT
+  x: -2.0
+  y: 0.0
+  on_line: true
+- label: LG
+  position: LG
+  x: -1.0
+  y: 0.0
+  on_line: true
+- label: C
+  position: C
+  x: 0.0
+  y: 0.0
+  on_line: true
+- label: RG
+  position: RG
+  x: 1.0
+  y: 0.0
+  on_line: true
+- label: RT
+  position: RT
+  x: 2.0
+  y: 0.0
+  on_line: true
+- label: TE
+  position: TE
+  x: -3.5
+  y: 0.0
+  on_line: true
+- label: X
+  position: WR
+  x: 15.0
+  y: 0.0
+  on_line: true
+- label: Z
+  position: WR
+  x: -12.0
+  y: -1.0
+  on_line: false
+- label: QB
+  position: QB
+  x: -0.0
+  y: -2.0
+  on_line: false
+- label: FB
+  position: FB
+  x: -0.0
+  y: -4.5
+  on_line: false
+- label: HB
+  position: HB
+  x: -0.0
+  y: -7.0
+  on_line: false
+strengths:
+- Downhill power running with FB lead-block paving the way for HB
+- Heavy play-action threat — formation looks identical to every base run
+- Strong-side TE creates a 7-man surface for inside runs and route to flat
+- Two-back action gives multiple ball-carrier threats (toss, dive, counter, lead)
+- Established blocking angles — defensive front knows what's coming but still has to stop it
+weaknesses:
+- Telegraphs run-first intent pre-snap; defense can stack the box
+- Slow to release receivers vs quick passes (only Z is a true off-line threat)
+- FB and HB stacked behind QB limits backfield deception without motion
+- Vulnerable to 8-man fronts that bring a safety down for run support
+- Limited horizontal stress — only 2 wideouts means Cover 2 can bracket Z
+common_uses:
+- First-and-10 base run-heavy down
+- Short-yardage and 3rd-and-short with lead block
+- Goal-line area (4–7 yard line)
+- Play-action setups when you've established the run
+- 4-minute offense to bleed clock
+run_concepts:
+- power-o
+- iso
+- lead-toss
+- counter-trey
+- dive
+pass_concepts:
+- play-action-cross
+- bootleg-flat
+- pa-post
+- hb-screen
+- flood
+era: Dominant 1970s–1990s NFL and college; still common as a complementary look in modern playbooks.
+famous_users:
+- 1980s–1990s San Francisco 49ers (Roger Craig + Tom Rathman)
+- 1990s Dallas Cowboys (Daryl Johnston + Emmitt Smith)
+- Power-running college programs (Wisconsin, Stanford under Harbaugh/Shaw)
+tags:
+- pro-style
+- power
+- 21-personnel
+- downhill
+- under-center
+- any-level
+notes: 'Base I-Formation. Per-play motion and minor splits live in play files, not here.
+
+  '
+verification_status: unverified
+source_notes:
+- 'Coordinates: widely-taught coaching conventions; OL splits assume 1 yd C-G/G-T and 1.5 yd T-TE.'
+- 'Strengths/weaknesses: standard offensive-football textbook material.'
+- 'Famous users: well-documented historical attribution; not from a single citable source.'
+- 'Web validated 2026-04-29 — Wikipedia ''I formation'' (https://en.wikipedia.org/wiki/I_formation); Big Blue View ''Exploring
+  21 personnel'' (https://www.bigblueview.com/2021/6/21/22538226/summer-school-2021-exploring-21-personnel-ny-giants-san-francisco-49ers);
+  Football Advantage ''21 Personnel'' (https://footballadvantage.com/21-personnel-football/). Confirmed: 21 personnel = 2
+  RB / 1 TE / 2 WR; FB lines up behind QB, HB lines up behind FB; pro-style balanced attack.'
+- Mirror of i-formation.yaml — coordinates flipped horizontally on x; strength_side flipped; OL labels (LT/LG/C/RG/RT) and
+  centered backfield positions (QB / centered FB or HB) unchanged. Notes in this file may still describe the original right-handed
+  look in places — read coordinates as the source of truth.

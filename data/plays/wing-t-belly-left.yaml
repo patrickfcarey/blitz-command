@@ -1,0 +1,126 @@
+play_id: wing-t-belly-left
+name: Belly (Mirror Left)
+aliases:
+- Wing-T Belly
+- Belly G
+- Down
+formation: wing-t-left
+play_type: run
+ball_carrier: FB
+motions: []
+assignments:
+- player: LT
+  role: run_block
+  blocking_scheme: down-block
+  target: backside-3-tech
+- player: LG
+  role: run_block
+  blocking_scheme: down-block
+  target: backside-1-tech
+- player: C
+  role: run_block
+  blocking_scheme: gap-block-playside
+- player: RG
+  role: run_block
+  blocking_scheme: down-block
+  target: playside-LB
+  notes: RG down-blocks at the second level — angle block on playside LB.
+- player: RT
+  role: run_block
+  blocking_scheme: down-block
+  target: playside-3-tech
+- player: TE
+  role: run_block
+  blocking_scheme: down-block
+  target: edge-defender
+- player: WING
+  role: run_block
+  blocking_scheme: kickout
+  target: edge-defender-or-corner
+  notes: WING kicks out the EDGE / corner; creates the hole between TE and WING.
+- player: X
+  role: run_block
+  blocking_scheme: stalk
+- player: QB
+  role: handoff
+  path:
+  - - 0
+    - 0
+  - - 1
+    - -1
+  - - 3
+    - -1
+  notes: Open and hand off to FB at 2 yds depth; carry out fake to HB sweep action backside.
+- player: FB
+  role: ball_carrier
+  is_primary: true
+  path:
+  - - 0
+    - 0
+  - - -3
+    - 2
+  - - -4
+    - 6
+  notes: Hit the playside B-gap or C-gap on a belly path — slow-develop, follow blocks.
+- player: HB
+  role: fake
+  notes: Sweep fake to the strong side — looks like Buck Sweep, holds backside LBs.
+strengths:
+- Down-blocks create good angles on every defender at the point of attack
+- HB sweep fake holds LBs from scraping playside
+- FB gets downhill momentum hitting an outside-tackle gap
+- Companion play to Buck Sweep — same look, attacks different spot
+- High-percentage 3-5 yard gainer
+weaknesses:
+- Slow-developing — FB belly path takes time
+- Vulnerable to playside DT shooting the gap before down-block sets
+- Cutback options limited (committed to playside)
+- Modern fast-flow defenses can outrun the misdirection
+best_vs_defense:
+- over-front (gives down-block angles)
+- cover-3 with stretched playside LB
+- 4-3 base
+- defenses overplaying the sweep
+worst_vs_defense:
+- bear front
+- 8-man fronts
+- playside DT penetration
+- cover-1 robber
+common_uses:
+- Constraint to Buck Sweep (when defense overplays sweep)
+- 1st-and-10 base
+- 3rd-and-short
+- Setting up Trap (different hole, same family)
+- Goal-line short yardage
+philosophy: power-run
+era: '1960s onward — core Wing-T concept (one of Tubby Raymond''s ''big three'': Trap, Belly, Down).'
+famous_examples:
+- University of Delaware Wing-T (Tubby Raymond era)
+- HS Wing-T programs
+- Pop Warner / youth football
+tags:
+- run
+- power-run
+- belly
+- wing-t
+- misdirection
+- high-school
+- college
+- throwback
+- any-level
+notes: 'Belly is one of the "big three" Wing-T base plays (with Trap and Down/Buck
+
+  Sweep). Sometimes called "Belly G" or "Down" depending on terminology. The
+
+  sweep fake is critical — without it, defenses can collapse the playside.
+
+  '
+verification_status: unverified
+source_notes:
+- 'Web validated 2026-04-29 — Throw Deep Publishing ''Wing-T Offense In-Depth'' (https://throwdeeppublishing.com/blogs/football-glossary/the-wing-t-offense-an-in-depth-guide);
+  Glazier Drive ''Base Plays in Under-Center Wing-T'' (https://production.glazierdrive.com/library/base-plays-in-the-under-center-wing-t-offense-buck-sweep-trap-down-belly-jet-sweep-boot-waggle-belly-pass);
+  USA Football ''Wing T Guru'' (https://blogs.usafootball.com/blog/6633/reflections-from-a-wing-t-guru-part-1). Confirmed:
+  Trap / Belly / Down are the ''big three'' Wing-T plays per Wakefield/Raymond tradition.'
+- Mirror of wing-t-belly.yaml — path waypoints flipped on x; formation reference points to the mirror formation. Routes auto-mirror
+  in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed look — coordinates
+  and paths are the source of truth.

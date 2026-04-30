@@ -1,0 +1,132 @@
+play_id: pistol-inside-zone-read-left
+name: Pistol Inside Zone Read (Mirror Left)
+aliases:
+- IZ Read
+- Zone Read
+- Pistol Read
+formation: pistol-left
+play_type: run
+ball_carrier: HB
+primary_read: HB
+motions: []
+assignments:
+- player: LT
+  role: run_block
+  blocking_scheme: zone-step-playside
+  notes: Backside tackle — leaves backside DE UNBLOCKED (he is the read).
+- player: LG
+  role: run_block
+  blocking_scheme: zone-combo
+- player: C
+  role: run_block
+  blocking_scheme: zone-combo
+- player: RG
+  role: run_block
+  blocking_scheme: zone-combo
+- player: RT
+  role: run_block
+  blocking_scheme: zone-combo
+- player: TE
+  role: run_block
+  blocking_scheme: zone-step-playside
+  target: edge-defender
+- player: X
+  role: run_block
+  blocking_scheme: stalk
+  target: cornerback
+- player: Z
+  role: run_block
+  blocking_scheme: stalk
+- player: SLOT
+  role: run_block
+  blocking_scheme: stalk
+- player: QB
+  role: handoff
+  path:
+  - - 0
+    - 0
+  - - 1
+    - 1
+  notes: 'Pivot backside to mesh with HB at (-1, 1). Read the backside DE (the
+
+    unblocked LT-side DE):
+
+    - DE crashes inside / chases HB → QB PULLS the ball and runs the edge
+
+    - DE stays home / sits on QB → QB GIVES to HB
+
+    '
+- player: HB
+  role: ball_carrier
+  is_primary: true
+  path:
+  - - 0
+    - 0
+  - - 0
+    - 2
+  - - -1
+    - 5
+  - - -2
+    - 8
+  notes: 'Aim point: playside A/B gap (zone read terminology). BANG / BEND / BOUNCE per inside zone rules. Step forward to
+    mesh point at (0, 2), take handoff, attack playside gap.'
+strengths:
+- QB read replaces the need for a backside-DE blocker = numbers advantage
+- Forces backside DE to choose (chase HB or contain QB)
+- Pistol depth lets QB read DE with cleaner sight lines than under-center
+- HB has full inside-zone read tree (BANG/BEND/BOUNCE)
+- Pairs with RPO at any level
+weaknesses:
+- Requires QB who's a credible runner (or DE always crashes for free)
+- Backside DE who plays slow / sits = forced give every time
+- Vulnerable to scrape-exchange (DE plays QB, LB scrapes for HB)
+- Modern defenses with disciplined gap-fits neutralize the read element
+best_vs_defense:
+- 4-3 with crashing backside DE
+- over-front
+- cover-3 (LB drops away from playside)
+- any defense without scrape-exchange discipline
+worst_vs_defense:
+- scrape-exchange (DE plays QB, LB takes HB)
+- cover-1 robber (extra defender)
+- bear front
+- aggressive disciplined gap-control
+common_uses:
+- 1st-and-10 base RPO setup
+- College spread offense base run
+- Setting up backside throws off the same look
+- Running the QB without designed-QB-run package
+philosophy: spread-option
+era: Mid-2000s onward — Chris Ault Nevada origin; widespread college, used in NFL by Kaepernick / RGIII era.
+famous_examples:
+- Nevada under Chris Ault (Colin Kaepernick era 2007-2010)
+- Robert Griffin III / Washington Redskins (2012)
+- Cam Newton / Carolina Panthers (2011-2017)
+- Modern college spread programs
+tags:
+- run
+- pistol
+- zone-read
+- rpo-friendly
+- high-school
+- college
+- nfl
+- modern
+- spread-option
+notes: 'Backside DE (the LT-side DE) is the READ DEFENDER — he is intentionally
+
+  left UNBLOCKED. QB watches him and decides give vs keep based on his
+
+  reaction. Pistol depth makes this read cleaner than shotgun-side-by-side.
+
+  '
+verification_status: unverified
+source_notes:
+- 'Web validated 2026-04-29 — Wikipedia ''Pistol offense'' (https://en.wikipedia.org/wiki/Pistol_offense); USA Football ''Nevada
+  Pistol Zone Read'' (https://blogs.usafootball.com/blog/6491/how-the-nevada-wolfpack-and-coach-chris-ault-effectively-utilized-the-pistol-zone-read);
+  KOKA Sports ''Pistol Formation Guide'' (https://blog.kokasports.com/pistol-formation-in-football-fully-explained/). Confirmed:
+  backside DE is the read; QB pull or give based on DE reaction; pistol depth allows downhill run angles preserved while QB
+  still reads.'
+- Mirror of pistol-inside-zone-read.yaml — path waypoints flipped on x; formation reference points to the mirror formation.
+  Routes auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed
+  look — coordinates and paths are the source of truth.

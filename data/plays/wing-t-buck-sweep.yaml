@@ -50,6 +50,7 @@ assignments:
     target: backside-cornerback
   - player: QB
     role: handoff
+    path: [[0, 0], [-1, -1], [-2, -2]]
     notes: "Reverse-out away from the play (gain depth); fake to FB on belly action; hand off to HB on the way past."
   - player: FB
     role: fake
@@ -57,6 +58,7 @@ assignments:
   - player: HB
     role: ball_carrier
     is_primary: true
+    path: [[0, 0], [4, 1], [7, 4], [10, 9]]
     notes: "Take the handoff, follow the two pulling guards around the playside edge — get to the corner."
 
 strengths:

@@ -15,7 +15,7 @@ players:
   - { label: TE, position: TE, x:  3.5,  y:  0.0, on_line: true  }
   - { label: X,  position: WR, x: -15.0, y:  0.0, on_line: true  }
   - { label: Z,  position: WR, x:  12.0, y: -1.0, on_line: false }
-  - { label: QB, position: QB, x:  0.0,  y: -1.5, on_line: false }
+  - { label: QB, position: QB, x:  0.0,  y: -2.0, on_line: false }
   - { label: FB, position: FB, x:  0.0,  y: -4.5, on_line: false }
   - { label: HB, position: HB, x:  0.0,  y: -7.0, on_line: false }
 
@@ -72,8 +72,9 @@ tags:
 notes: |
   Base I-Formation. Per-play motion and minor splits live in play files, not here.
 
-verification_status: inferred
+verification_status: unverified
 source_notes:
   - "Coordinates: widely-taught coaching conventions; OL splits assume 1 yd C-G/G-T and 1.5 yd T-TE."
   - "Strengths/weaknesses: standard offensive-football textbook material."
   - "Famous users: well-documented historical attribution; not from a single citable source."
+  - "Web validated 2026-04-29 — Wikipedia 'I formation' (https://en.wikipedia.org/wiki/I_formation); Big Blue View 'Exploring 21 personnel' (https://www.bigblueview.com/2021/6/21/22538226/summer-school-2021-exploring-21-personnel-ny-giants-san-francisco-49ers); Football Advantage '21 Personnel' (https://footballadvantage.com/21-personnel-football/). Confirmed: 21 personnel = 2 RB / 1 TE / 2 WR; FB lines up behind QB, HB lines up behind FB; pro-style balanced attack."

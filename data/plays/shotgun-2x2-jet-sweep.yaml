@@ -55,7 +55,8 @@ assignments:
     notes: "Take the handoff at full speed (jet motion); attack the perimeter outside the playside EDGE."
   - player: QB
     role: handoff
-    notes: "Snap, immediate handoff to SLOT-W on the jet motion path. Carry out a fake (keep + bootleg) to hold backside."
+    path: [[0, 0], [-2, -1]]
+    notes: "Snap, immediate handoff to SLOT-W on the jet motion path. Carry out a fake (keep + bootleg) backside to hold the weak-side defenders."
   - player: HB
     role: fake
     notes: "Fake an inside-zone path opposite the jet — holds the backside LBs and DE."

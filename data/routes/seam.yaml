@@ -1,0 +1,25 @@
+name: seam
+aliases:
+- seam-route
+- bender
+description: 'From a slot/inner receiver: push vertical, then bend into the seam between hash and numbers (works against single-high
+  coverages).'
+path:
+- - 0
+  - 0
+- - 0
+  - 8
+- - 2
+  - 16
+typical_break_depth_yd: 8
+option_route: false
+category: deep
+beats_coverage: zone
+tags:
+- deep
+- vertical
+- anti-cover-3
+- four-verts-component
+verification_status: unverified
+source_notes:
+- Seam route — the kill shot vs cover-3 / single-high. Heart of the four-verticals concept.

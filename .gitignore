@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+.env
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.iml
+
+# Build / dist
+build/
+dist/
+*.tgz
+
+# Local SVG output / scratch
+*.svg.bak
+output/
+out/
+scratch/
+.tmp/
+
+# Secrets
+.env.local
+secrets/
+*.pem
+*.key
+mcps/formation-library-mcp/__pycache__/server.cpython-311.pyc

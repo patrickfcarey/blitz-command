@@ -50,6 +50,7 @@ assignments:
   - player: RB1
     role: ball_carrier
     is_primary: true
+    path: [[0, 0], [-2, 0], [3, 2], [5, 7]]
     notes: "Direct snap. Take a counter step (jab to the weak side), then plant and follow the pulling LG/LT to the strong side."
   - player: RB2
     role: fake

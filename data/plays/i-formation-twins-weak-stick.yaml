@@ -1,0 +1,48 @@
+play_id: i-formation-twins-weak-stick
+name: I-Form Twins Weak Stick
+aliases: [Twins Stick, Y-Stick from I]
+formation: i-formation-twins-weak
+play_type: pass
+ball_carrier: QB
+primary_read: SLOT
+secondary_read: TE
+checkdown: HB
+motions: []
+assignments:
+  - { player: LT, role: pass_block, blocking_scheme: man-protection }
+  - { player: LG, role: pass_block, blocking_scheme: man-protection }
+  - { player: C, role: pass_block, blocking_scheme: man-protection }
+  - { player: RG, role: pass_block, blocking_scheme: man-protection }
+  - { player: RT, role: pass_block, blocking_scheme: man-protection }
+  - { player: TE, role: route, route_name: drag, depth_yd: 6,
+      notes: "Backside drag — late outlet." }
+  - { player: X, role: route, route_name: clear-out-go, depth_yd: 22,
+      notes: "Outer-left clear-out vertical." }
+  - { player: SLOT, role: route, route_name: stick, depth_yd: 6, is_primary: true,
+      notes: "Weak-side slot stick — primary read. Sit vs zone, break out vs man." }
+  - { player: QB, role: ball_carrier, path: [[0, 0], [0, -2], [0, -3]],
+      notes: "3-step drop. Throw stick on rhythm if uncovered, else work to TE drag." }
+  - { player: FB, role: pass_block, blocking_scheme: man-protection,
+      notes: "Stays in to pick up backside blitz." }
+  - { player: HB, role: pass_block, blocking_scheme: man-protection,
+      notes: "Pass-protect; release as checkdown if pressure clears." }
+strengths:
+  - "Quick rhythm (3-step) — ball out fast"
+  - "Stick is option route — wins vs zone (sit) AND man (break out)"
+  - "Twins on weak side creates 2-WR look on that side for SLOT separation"
+  - "Easy first-down concept on 3rd-and-medium"
+weaknesses:
+  - "Limited big-play potential (6-yd stick)"
+  - "21 personnel keeps defense in base — no nickel mismatch"
+  - "Bracket on slot kills it"
+  - "LB carry-and-cushion neutralizes the option"
+best_vs_defense: ["cover-2 zone (sit in soft spot)", "cover-3 (between curl and flat defender)", "cover-1 (break out vs man)"]
+worst_vs_defense: ["bracket on slot", "cover-2 robber", "banjo coverage"]
+common_uses: ["3rd-and-short / 3rd-and-medium", "1st down chains", "Quick-game tempo"]
+philosophy: pro-style
+era: "Bill Walsh / Paul Brown West Coast tradition; modernized continuously."
+famous_examples: ["Patriots offense (Belichick / Brady)", "Andy Reid Eagles / Chiefs"]
+tags: [pass, quick-game, stick, west-coast, 21-personnel, twins, any-level, high-school, college, nfl]
+verification_status: unverified
+source_notes:
+  - "Stick concept from I-Form Twins Weak — quick-game from a power-running formation."

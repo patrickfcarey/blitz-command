@@ -1,0 +1,142 @@
+play_id: weak-i-counter-left
+name: Weak I Counter (Mirror Left)
+aliases:
+- Weak Counter
+- Counter Weak
+formation: weak-i-left
+play_type: run
+ball_carrier: HB
+motions: []
+assignments:
+- player: LT
+  role: run_block
+  blocking_scheme: down-block
+  target: backside-DE
+- player: LG
+  role: run_block
+  blocking_scheme: down-block
+  target: backside-3-tech
+- player: C
+  role: run_block
+  blocking_scheme: gap-block
+  target: backside-A-gap
+- player: RG
+  role: run_block
+  blocking_scheme: pull-around
+  target: playside-LB
+  path:
+  - - 0
+    - 0
+  - - 3
+    - -0.5
+  - - 5
+    - 0
+  - - 6
+    - 4
+  notes: PULL — backside guard pulls left around C, leads through the weak-side hole.
+- player: RT
+  role: run_block
+  blocking_scheme: pull-around
+  target: edge-defender
+  path:
+  - - 0
+    - 0
+  - - 4
+    - -0.5
+  - - 6
+    - -0.5
+  - - 7
+    - 2
+  notes: PULL — backside tackle pulls and kicks out the weak-side EDGE.
+- player: TE
+  role: run_block
+  blocking_scheme: down-block
+  target: playside-LB
+  notes: Strong-side TE down-blocks at second level (selling the play right).
+- player: X
+  role: run_block
+  blocking_scheme: stalk
+  target: cornerback
+- player: Z
+  role: run_block
+  blocking_scheme: stalk
+  target: cornerback
+- player: QB
+  role: handoff
+  path:
+  - - 0
+    - 0
+  - - -1
+    - -1
+  - - 2
+    - -1
+  notes: Reverse-out (sells strong); pitch / hand back to HB on counter step.
+- player: FB
+  role: lead_block
+  target: alley-defender
+  path:
+  - - 0
+    - 0
+  - - 2
+    - 3
+  - - 3
+    - 5
+  notes: FB pre-aligned weak — short lead path on the counter direction.
+- player: HB
+  role: ball_carrier
+  is_primary: true
+  path:
+  - - 0
+    - 0
+  - - -1
+    - 1
+  - - 3
+    - 4
+  - - 4
+    - 9
+  notes: Counter step RIGHT (sells run away from playside), then plant and run LEFT through the off-tackle hole.
+strengths:
+- Two pulling blockers (RG + RT) at the point of attack
+- Weak-side FB pre-aligned for the lead block — natural fit
+- Counter step misdirection holds backside defenders
+- Punishes defenses overplaying Strong I tendency
+weaknesses:
+- Slow-developing — pullers need time to arrive
+- Vulnerable to weak-side DE penetration before pulling RT arrives
+- Weak-side run is naturally less common — defense may smell it
+- HB must read the counter correctly
+best_vs_defense:
+- over-front overplaying strong
+- cover-3 with predictable LB flow
+- speed-flow defenses
+worst_vs_defense:
+- bear front
+- 8-man fronts
+- weak-side DE shooting upfield
+common_uses:
+- Counter to Strong I tendencies
+- 1st/2nd-and-medium when defense expects strong-side
+- Setting up weak-side bootleg
+philosophy: power-run
+era: Counter Trey lineage — Joe Gibbs Redskins onward; staple of pro-style power.
+famous_examples:
+- Joe Gibbs Washington Redskins counter-from-Weak-I packages
+- Modern NFL teams using Counter as a Power complement
+tags:
+- run
+- counter
+- gap-scheme
+- weak-side
+- misdirection
+- 21-personnel
+- any-level
+- high-school
+- college
+- nfl
+verification_status: unverified
+source_notes:
+- Counter Trey scheme (BSG+BST pull) from Weak I formation — FB pre-aligned weak gives natural lead. Mirror of Counter Trey
+  running to weak side rather than strong.
+- Mirror of weak-i-counter.yaml — path waypoints flipped on x; formation reference points to the mirror formation. Routes
+  auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed look
+  — coordinates and paths are the source of truth.

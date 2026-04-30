@@ -1,0 +1,129 @@
+play_id: strong-i-power-left
+name: Strong I Power (Mirror Left)
+aliases:
+- Power Strong
+- Strong Side Power
+formation: strong-i-left
+play_type: run
+ball_carrier: HB
+motions: []
+assignments:
+- player: LT
+  role: run_block
+  blocking_scheme: down-block
+  target: backside-3-tech
+- player: LG
+  role: run_block
+  blocking_scheme: pull-around
+  target: playside-LB
+  path:
+  - - 0
+    - 0
+  - - -2
+    - -0.5
+  - - -4
+    - 0
+  - - -5
+    - 4
+  notes: PULL — backside guard pulls around C, leads through the off-tackle hole.
+- player: C
+  role: run_block
+  blocking_scheme: gap-block
+  target: backside-A-gap
+- player: RG
+  role: run_block
+  blocking_scheme: down-block
+  target: playside-3-tech
+- player: RT
+  role: run_block
+  blocking_scheme: down-block
+  target: playside-DT
+- player: TE
+  role: run_block
+  blocking_scheme: kickout
+  target: edge-defender
+- player: X
+  role: run_block
+  blocking_scheme: stalk
+  target: cornerback
+- player: Z
+  role: run_block
+  blocking_scheme: stalk
+  target: cornerback
+- player: QB
+  role: handoff
+  path:
+  - - 0
+    - 0
+  - - 1
+    - -1
+  - - 2
+    - -1
+  notes: Reverse-out and bootleg fake to backside.
+- player: FB
+  role: lead_block
+  target: playside-LB-or-strong-safety
+  path:
+  - - 0
+    - 0
+  - - -2
+    - 4
+  - - -3
+    - 6
+  notes: FB pre-aligned strong = shorter path to lead block. Hits playside LB or kicks out the SS.
+- player: HB
+  role: ball_carrier
+  is_primary: true
+  path:
+  - - 0
+    - 0
+  - - -3
+    - 3
+  - - -4
+    - 9
+  notes: Take handoff, hit off-tackle hole behind RT/TE, follow pulling LG and FB lead.
+strengths:
+- FB pre-aligned strong gives a faster lead-block path than standard I-Form Power
+- Multiple defenders accounted for at the point of attack (down-blocks + pull + lead)
+- Defense sees Strong I and expects strong-side run — but it's still hard to stop
+- Setup play for Strong I PA bootleg and Strong I Counter
+weaknesses:
+- Strong I formation tendency tips run direction
+- Cutback lanes restricted (FB not centered)
+- Vulnerable to playside DE shooting upfield before down-blocks set
+- 8-man fronts neutralize the numbers advantage
+best_vs_defense:
+- over-front
+- cover-3
+- 4-3 base
+- single-high coverage
+worst_vs_defense:
+- bear front
+- cover-1 robber
+- 8-man fronts
+- playside DT penetration
+common_uses:
+- 1st-and-10 strong-side run
+- Short-yardage to strong side
+- Goal-line strong-side
+philosophy: power-run
+era: Universal — Strong I Power has been a power-run staple for decades.
+famous_examples:
+- 1990s Cowboys Strong I packages
+- Stanford under Harbaugh strong-side runs
+tags:
+- power-run
+- gap-scheme
+- strong-side
+- 21-personnel
+- downhill
+- any-level
+- high-school
+- college
+- nfl
+verification_status: unverified
+source_notes:
+- Standard Strong I Power scheme; FB-strong alignment is the key difference from standard I-Form Power.
+- Mirror of strong-i-power.yaml — path waypoints flipped on x; formation reference points to the mirror formation. Routes
+  auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed look
+  — coordinates and paths are the source of truth.

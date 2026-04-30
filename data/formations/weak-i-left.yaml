@@ -1,0 +1,114 @@
+name: Weak I Left
+side: offense
+personnel: '21'
+strength_side: left
+players:
+- label: LT
+  position: LT
+  x: -2.0
+  y: 0.0
+  on_line: true
+- label: LG
+  position: LG
+  x: -1.0
+  y: 0.0
+  on_line: true
+- label: C
+  position: C
+  x: 0.0
+  y: 0.0
+  on_line: true
+- label: RG
+  position: RG
+  x: 1.0
+  y: 0.0
+  on_line: true
+- label: RT
+  position: RT
+  x: 2.0
+  y: 0.0
+  on_line: true
+- label: TE
+  position: TE
+  x: -3.5
+  y: 0.0
+  on_line: true
+- label: X
+  position: WR
+  x: 15.0
+  y: 0.0
+  on_line: true
+- label: Z
+  position: WR
+  x: -12.0
+  y: -1.0
+  on_line: false
+- label: QB
+  position: QB
+  x: -0.0
+  y: -2.0
+  on_line: false
+- label: FB
+  position: FB
+  x: 1.5
+  y: -4.0
+  on_line: false
+- label: HB
+  position: HB
+  x: -0.0
+  y: -7.0
+  on_line: false
+strengths:
+- Pre-aligned weak-side lead blocker for counters, traps, and weak-side power
+- Disrupts defensive expectations vs Strong I tendency
+- Bootleg passes weak-side — FB stays in to fake/release
+- Sets up strong cutback lanes for inside zone (defense overplays weak)
+weaknesses:
+- Reduces strong-side run threat (FB not pre-aligned for strong lead)
+- Weak side has no in-line blocker beyond LT — runs there rely on cutoffs
+- Pass protection vs strong-side blitz worse (FB not centered)
+- Less common = easier for film-study defenses to identify intent
+common_uses:
+- Weak-side counter and power
+- Weak-side toss / sweep
+- Weak-side bootleg and waggle
+- Setting up reverses and misdirection
+run_concepts:
+- weak-side-counter
+- weak-side-power
+- weak-side-toss
+- inside-zone
+- trap
+pass_concepts:
+- weak-side-bootleg
+- pa-flood-weak
+- waggle
+- hb-screen
+era: 1980s–2000s NFL/college; situational use today.
+famous_users:
+- Mike Holmgren-tree West Coast offenses (weak-side bootleg game)
+- Bill Walsh-derived schemes mixing FB shifts pre-snap
+tags:
+- pro-style
+- power
+- 21-personnel
+- weak-side-run
+- misdirection-setup
+- under-center
+- any-level
+notes: 'Mirror of Strong I (FB at x=-1.5 instead of +1.5). Often used as a constraint
+
+  formation when defense overplays Strong I tendencies.
+
+  '
+verification_status: unverified
+source_notes:
+- 'Coordinates: mirror of strong-i with FB shifted weak.'
+- 'Strengths/weaknesses: standard coaching textbook material.'
+- 'Web validated 2026-04-29 — Sporting Charts ''Weak I'' (https://www.sportingcharts.com/dictionary/nfl/weak-i.aspx); Wikipedia
+  ''I formation'' (https://en.wikipedia.org/wiki/I_formation); Football Tutorials ''I-Formation Offense 101'' (https://www.football-tutorials.com/i-formation-offense-101/).
+  Confirmed: FB offset to weak side enables misdirection — FB acts as feint (defense follows him) while HB takes ball opposite
+  direction.'
+- Mirror of weak-i.yaml — coordinates flipped horizontally on x; strength_side flipped; OL labels (LT/LG/C/RG/RT) and centered
+  backfield positions (QB / centered FB or HB) unchanged. Notes in this file may still describe the original right-handed
+  look in places — read coordinates as the source of truth.

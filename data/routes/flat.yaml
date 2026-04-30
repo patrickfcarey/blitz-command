@@ -1,0 +1,21 @@
+name: flat
+aliases:
+- shoot
+description: Quick release toward the sideline at low depth (3-4 yards).
+path:
+- - 0
+  - 0
+- - -5
+  - 3
+typical_break_depth_yd: 0
+option_route: false
+category: quick
+beats_coverage: zone
+tags:
+- quick-game
+- outside
+- sideline
+- snag-component
+verification_status: unverified
+source_notes:
+- Universal short flat route. The LO of snag triangles, the outlet for many PA pass concepts.

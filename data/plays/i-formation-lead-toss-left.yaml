@@ -1,0 +1,154 @@
+play_id: i-formation-lead-toss-left
+name: Lead Toss (Strong) (Mirror Left)
+aliases:
+- Toss
+- Pitch
+- Lead Pitch
+formation: i-formation-left
+play_type: run
+ball_carrier: HB
+motions: []
+assignments:
+- player: LT
+  role: run_block
+  blocking_scheme: drive-block
+  target: backside-DE
+- player: LG
+  role: run_block
+  blocking_scheme: drive-block
+  target: backside-DT
+- player: C
+  role: run_block
+  blocking_scheme: drive-block
+  target: 0-or-1-tech
+- player: RG
+  role: run_block
+  blocking_scheme: pull-around
+  target: playside-LB
+  path:
+  - - 0
+    - 0
+  - - -3
+    - -0.5
+  - - -6
+    - 0
+  - - -7
+    - 4
+  notes: PULL — playside guard pulls and leads up to the playside LB.
+- player: RT
+  role: run_block
+  blocking_scheme: down-block
+  target: playside-DE
+  notes: Down-block on playside DE — seal him inside.
+- player: TE
+  role: run_block
+  blocking_scheme: kickout
+  target: edge-defender
+  notes: Kick out the EDGE / force defender — opens the perimeter.
+- player: X
+  role: run_block
+  blocking_scheme: stalk
+  target: cornerback
+- player: Z
+  role: run_block
+  blocking_scheme: crack
+  target: outside-LB-or-S
+  notes: Crack-block back inside — pick off the alley defender.
+- player: QB
+  role: handoff
+  path:
+  - - 0
+    - 0
+  - - 1
+    - -1
+  - - 3
+    - -1
+  notes: Reverse-out and pitch the ball to HB on the move; carry out a fake bootleg backside.
+- player: FB
+  role: lead_block
+  target: cornerback
+  path:
+  - - 0
+    - 0
+  - - -5
+    - 3
+  - - -9
+    - 5
+  notes: Lead through the perimeter; kickout the corner if needed.
+- player: HB
+  role: ball_carrier
+  is_primary: true
+  path:
+  - - 0
+    - 0
+  - - -4
+    - 1
+  - - -7
+    - 5
+  - - -10
+    - 9
+  notes: 'Receive the toss while moving laterally; gain ground toward the
+
+    playside corner; turn upfield once the perimeter is sealed by FB
+
+    and pulling RG.
+
+    '
+strengths:
+- Speed advantage at the perimeter — HB receiving the ball on the move
+- Multiple lead blockers (FB + pulling RG) at the corner
+- Forces defense to honor the perimeter; opens cutback if defense overflows
+- Good complement to inside power runs (constraint to over-pursuit inside)
+- Big-play potential when the EDGE is kicked out and cornerback is cracked
+weaknesses:
+- Slow-developing — needs ~2.5 sec for HB to reach the corner
+- Requires fast HB and athletic OL who can pull
+- Vulnerable to playside DE shooting upfield
+- Cornerback who avoids the crack-block can chase HB down
+- Pre-snap motion or shifts can tip the play
+best_vs_defense:
+- 4-3 with predictable EDGE
+- cover-3 with stretched playside coverage
+- any defense over-pursuing inside runs
+- cover-2 with squatting corners
+worst_vs_defense:
+- cover-1 with EDGE squeezing
+- bear front
+- blitz from the playside
+- defenses with disciplined edge contain
+common_uses:
+- 1st/2nd-and-medium when defense expects inside runs
+- Constraint to Power tendency
+- Setting up reverses and counter sweeps
+- Quick perimeter run to get the HB into space
+philosophy: power-run
+era: 1960s onward — universal sweep / toss concept across all eras.
+famous_examples:
+- 1990s Cowboys (Emmitt Smith on toss sweeps)
+- Modern NFL teams using toss as perimeter constraint to power
+- USC under Pete Carroll (Reggie Bush era)
+tags:
+- run
+- power-run
+- toss
+- perimeter
+- sweep
+- any-level
+- high-school
+- college
+- nfl
+notes: 'Lead Toss to the strong side. RG pulls and leads through the perimeter;
+
+  FB also leads. Z cracks back to help seal the alley. HB receives the
+
+  toss on the move and gets to the corner. Mirror to "Lead Toss Weak" by
+
+  reversing all coords.
+
+  '
+verification_status: unverified
+source_notes:
+- Standard lead toss / pitch scheme; documented across coaching trees from Vince Lombardi sweep onward.
+- Mirror of i-formation-lead-toss.yaml — path waypoints flipped on x; formation reference points to the mirror formation.
+  Routes auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed
+  look — coordinates and paths are the source of truth.

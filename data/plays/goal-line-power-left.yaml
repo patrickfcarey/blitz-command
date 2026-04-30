@@ -1,0 +1,151 @@
+play_id: goal-line-power-left
+name: Goal Line Power (Mirror Left)
+aliases:
+- GL Power
+- Power O (Goal Line)
+formation: goal-line-left
+play_type: run
+ball_carrier: HB
+motions: []
+assignments:
+- player: LT
+  role: run_block
+  blocking_scheme: down-block
+  target: backside-3-tech
+  notes: Down block on backside DT to seal the cutback.
+- player: LG
+  role: run_block
+  blocking_scheme: pull-around
+  target: playside-LB
+  path:
+  - - 0
+    - 0
+  - - -2
+    - -0.5
+  - - -4
+    - 0
+  - - -5
+    - 3
+  notes: PULL — backside guard pulls around C, leads through the off-tackle hole.
+- player: C
+  role: run_block
+  blocking_scheme: gap-block
+  target: backside-A-gap
+- player: RG
+  role: run_block
+  blocking_scheme: down-block
+  target: playside-3-tech
+- player: RT
+  role: run_block
+  blocking_scheme: down-block
+  target: playside-DE
+- player: TE-L
+  role: run_block
+  blocking_scheme: down-block
+  target: backside-edge
+  notes: TE-L seals backside edge to prevent backside crash.
+- player: TE-R
+  role: run_block
+  blocking_scheme: kickout
+  target: edge-defender
+  notes: TE-R kicks out the playside EDGE — creates the off-tackle hole.
+- player: WR
+  role: run_block
+  blocking_scheme: stalk
+  target: cornerback
+  notes: Stalk the corner; goal line means he's likely close to LOS.
+- player: QB
+  role: handoff
+  path:
+  - - 0
+    - 0
+  - - -1
+    - -1
+  - - 2
+    - -1
+  notes: Reverse-out to HB; carry out fake to backside (sells PA pass option).
+- player: FB
+  role: lead_block
+  target: playside-LB-or-strong-safety
+  path:
+  - - 0
+    - 0
+  - - -3
+    - 2
+  - - -3
+    - 5
+  notes: Lead through the hole; iso the playside LB or kick out the strong safety.
+- player: HB
+  role: ball_carrier
+  is_primary: true
+  path:
+  - - 0
+    - 0
+  - - -3
+    - 2
+  - - -4
+    - 5
+  notes: Take handoff, hit off-tackle behind RT/TE-R/pulling LG. Lower shoulder — goal-line power requires contact-finishing.
+strengths:
+- Maximum blocker advantage — 7 in-line + FB lead vs 8-9 defenders in the box
+- Two pulling/lead blockers to the point of attack (LG pull + FB lead)
+- Down-block angles seal both edges
+- Hard-count / play-action threat is real (TE-R is eligible for fade)
+- High-percentage 1-3 yard gain even vs goal-line defense
+- Universal — every level of football has this play
+weaknesses:
+- Defense knows it's a run (jumbo formation telegraphs)
+- Vulnerable to playside DT penetration before pullers arrive
+- Won't break for big plays — TFL possible vs disciplined goal-line stand
+- Slow-developing relative to dive (LG pull takes ~1.5 sec)
+- Predictable in 4th-and-1 — defense expects power
+best_vs_defense:
+- 4-3 over-front (gives down-block angles)
+- Goal-line stand with 8-man front (still beat by extra blocker)
+- any defense with predictable LB flow
+- cover-1 (no extra coverage to worry about)
+worst_vs_defense:
+- Goal-line stand with 9-man front + safety blitz
+- Bear front (DT in every gap)
+- Penetrating playside 3-tech
+- Defenses with stunts that cross the down-blocks
+common_uses:
+- 1st/2nd-and-Goal from inside the 5
+- 4th-and-1 anywhere on the field
+- Short-yardage 2-point conversion
+- 4-minute offense to bleed clock
+- Setting up PA fade off the same look
+philosophy: power-run
+era: Universal — every era of football. Conceptually unchanged for 60+ years.
+famous_examples:
+- 1990s Cowboys (Emmitt Smith goal-line packages)
+- Mike Alstott Buccaneers (signature short-yardage)
+- Modern NFL — every team has a goal-line power
+- All HS football short-yardage packages
+tags:
+- run
+- power-run
+- goal-line
+- short-yardage
+- jumbo
+- any-level
+- high-school
+- college
+- nfl
+notes: 'Goal-line variant of Power O. Same blocking scheme as standard Power O
+
+  but with the jumbo formation''s extra blocker (TE-L on the line) for
+
+  added playside surface and backside seal.
+
+  '
+verification_status: unverified
+source_notes:
+- 'Web validated 2026-04-29 — Yale Sports Analytics ''Success of Short Yardage Play Types on Fourth Down'' (https://sports.sites.yale.edu/success-short-yardage-play-types-fourth-down);
+  FirstDown PlayBook ''Goal Line and Short Yardage'' archives (https://firstdown.playbooktech.com/coaches-community/tag/goal-line-and-short-yardage);
+  Throw Deep Publishing ''Complete Guide to Power Play'' (https://throwdeeppublishing.com/blogs/football-glossary/the-complete-guide-to-the-power-play).
+  Confirmed: goal-line power follows same scheme as Power O with jumbo personnel for extra blocking; high-percentage short-yardage
+  call.'
+- Mirror of goal-line-power.yaml — path waypoints flipped on x; formation reference points to the mirror formation. Routes
+  auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed look
+  — coordinates and paths are the source of truth.

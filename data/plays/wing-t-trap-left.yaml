@@ -1,0 +1,131 @@
+play_id: wing-t-trap-left
+name: Trap (Mirror Left)
+aliases:
+- Wing-T Trap
+- FB Trap
+- 32 Trap
+formation: wing-t-left
+play_type: run
+ball_carrier: FB
+motions: []
+assignments:
+- player: LT
+  role: run_block
+  blocking_scheme: down-block
+  target: backside-DT
+- player: LG
+  role: run_block
+  blocking_scheme: pull-trap
+  target: playside-3-tech
+  notes: PULL — backside guard pulls and TRAPS the playside DT (hits him from the side, taking advantage of his upfield rush).
+- player: C
+  role: run_block
+  blocking_scheme: gap-block
+  target: backside-A-gap
+- player: RG
+  role: run_block
+  blocking_scheme: invite-rusher
+  target: playside-3-tech
+  notes: Lets the playside DT rush upfield — that's the trap victim.
+- player: RT
+  role: run_block
+  blocking_scheme: down-block
+  target: playside-LB
+- player: TE
+  role: run_block
+  blocking_scheme: down-block
+  target: edge-defender
+- player: WING
+  role: run_block
+  blocking_scheme: stalk-or-block
+  target: cornerback
+- player: X
+  role: run_block
+  blocking_scheme: stalk
+- player: QB
+  role: handoff
+  path:
+  - - 0
+    - 0
+  - - 1
+    - -1
+  - - 3
+    - -1
+  notes: Quick handoff to FB; carry out belly / sweep fake to backside.
+- player: FB
+  role: ball_carrier
+  is_primary: true
+  path:
+  - - 0
+    - 0
+  - - -2
+    - 2
+  - - -3
+    - 6
+  notes: Hit the playside A or B gap on a quick path — RG has invited the DT upfield; LG traps him from the side.
+- player: HB
+  role: fake
+  notes: Sweep fake to the playside or backside; holds defenders.
+strengths:
+- Punishes aggressive penetration — the more upfield the DT rushes, the better the trap
+- Quick-hitting — ball is in the FB's hands in <1 second
+- Excellent vs hard-charging 3-techs and aggressive interior fronts
+- Misdirection from FB and HB fakes holds backside
+- Constraint to defenses that over-pursue Buck Sweep
+weaknesses:
+- Defeated by 3-techs who play patient / read the trap
+- Won't break for big plays — typically 3-6 yard gain
+- Requires LG who can pull and trap accurately
+- Predictable in heavy run-down situations
+best_vs_defense:
+- aggressive 3-techs / 1-techs that shoot upfield
+- 4-3 over-front
+- any defense with hard-attacking interior DL
+- cover-2 with shallow safeties
+worst_vs_defense:
+- read-and-react defenses with patient DTs
+- 4-6 / bear front
+- 8-man fronts
+- cover-1 robber
+common_uses:
+- 1st/2nd-and-medium when defense expects sweep
+- 3rd-and-short
+- Counter to Buck Sweep over-pursuit
+- Constraint package vs aggressive fronts
+philosophy: power-run
+era: 1960s onward — Wing-T 'big three' (Trap / Belly / Down). Universal at HS level.
+famous_examples:
+- University of Delaware Wing-T (Tubby Raymond era)
+- Many HS Wing-T programs
+- Air Force Wing-T variants (modified for option football)
+tags:
+- run
+- power-run
+- trap
+- wing-t
+- misdirection
+- constraint
+- high-school
+- college
+- throwback
+- any-level
+notes: 'Trap punishes upfield rush. The playside guard (RG) intentionally lets
+
+  his man rush past — the backside guard (LG) pulls across and traps
+
+  that defender from the side. Quick-hitting; FB hits the resulting hole
+
+  with momentum. One of the "big three" Wing-T plays per Wakefield and
+
+  Raymond. Mirror by flipping all x.
+
+  '
+verification_status: unverified
+source_notes:
+- 'Web validated 2026-04-29 — Wing-T Youth Football Coach ''Lew Johnston Perfecting the Wing-T Fullback Trap'' (https://wingt-coach.com/lew-johnston-perfecting-the-wing-t-fullback-trap/);
+  Glazier Drive ''Base Plays in Under-Center Wing-T'' (https://production.glazierdrive.com/library/base-plays-in-the-under-center-wing-t-offense-buck-sweep-trap-down-belly-jet-sweep-boot-waggle-belly-pass);
+  Throw Deep Publishing ''Wing-T Offense'' (https://throwdeeppublishing.com/blogs/football-glossary/the-wing-t-offense-an-in-depth-guide).
+  Confirmed: Trap is ''big three'' core, designed to punish penetration.'
+- Mirror of wing-t-trap.yaml — path waypoints flipped on x; formation reference points to the mirror formation. Routes auto-mirror
+  in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed look — coordinates
+  and paths are the source of truth.

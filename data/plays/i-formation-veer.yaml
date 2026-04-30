@@ -1,0 +1,145 @@
+play_id: i-formation-veer
+name: Veer Option (Strong)
+aliases:
+  - I-Form Veer
+  - Houston Veer
+  - Inside Veer
+
+formation: i-formation
+play_type: run
+ball_carrier: QB
+primary_read: FB
+
+motions: []
+
+assignments:
+  - player: LT
+    role: run_block
+    blocking_scheme: down-block
+    target: backside-DT
+  - player: LG
+    role: run_block
+    blocking_scheme: down-block
+    target: backside-1-tech
+  - player: C
+    role: run_block
+    blocking_scheme: zone-step-playside
+  - player: RG
+    role: run_block
+    blocking_scheme: zone-combo
+    target: 3-tech-then-PSLB
+    notes: "Veer combo with RT on playside DT, climb to playside LB."
+  - player: RT
+    role: run_block
+    blocking_scheme: zone-combo
+    target: 3-tech-or-DE
+    notes: "Veer combo. PLAYSIDE EDGE IS UNBLOCKED — he is the dive read defender."
+  - player: TE
+    role: run_block
+    blocking_scheme: zone-step-playside
+    target: playside-LB
+  - player: X
+    role: run_block
+    blocking_scheme: stalk
+    target: backside-cornerback
+  - player: Z
+    role: run_block
+    blocking_scheme: stalk
+    target: playside-cornerback
+  - player: QB
+    role: ball_carrier
+    is_primary: true
+    path: [[0, 0], [1, 1], [3, 3], [5, 5]]
+    notes: |
+      CLASSIC TRIPLE OPTION (Bill Yeoman 1965 Houston Veer) — TWO READS:
+      1. DIVE READ: read the playside EDGE (5-tech DE) at the mesh point
+                    with FB on his way through the playside B-gap.
+         - EDGE crashes inside on FB → PULL the ball, attack the corner with HB
+         - EDGE plays QB / contains → GIVE to FB on dive
+      2. PITCH READ (only if QB pulled): read the playside force defender
+                    (OLB or strong safety).
+         - Defender plays QB → PITCH to HB trailing
+         - Defender plays the pitch → KEEP and turn upfield
+  - player: FB
+    role: ball_carrier
+    path: [[0, 0], [1, 2], [2, 4], [2, 6]]
+    notes: "Dive path: receive QB read, hit B-gap between RG and RT. Aiming to seal blocks if read says give."
+  - player: HB
+    role: lead_block
+    target: pitch-relationship
+    path: [[0, 0], [4, 1], [7, 3], [10, 6]]
+    notes: "PITCH MAN — runs at full speed on the perimeter, stays 4 yards behind and outside the QB. Receives pitch if QB reads keep-or-pitch correctly."
+
+strengths:
+  - "Original triple option from under center (predates wishbone by 3 years)"
+  - "Three ball-carrier threats from one snap"
+  - "FB dive grinds yards when defense honors pitch"
+  - "QB pitch sweep can break for big plays"
+  - "Forces defense to commit a defender to each option phase"
+  - "Misdirection built in — no pre-snap tell of which option fires"
+
+weaknesses:
+  - "Slow-developing relative to modern spread-option"
+  - "QB takes hits as a runner — injury risk"
+  - "Modern fast defenses with disciplined option-fits neutralize triple"
+  - "Vulnerable to scrape-exchange (LB taking pitch while EDGE plays QB)"
+  - "FB is a 1-back — limited downhill power compared to wishbone double-back"
+  - "Pitch path is longer than wishbone (HB starts at 7 yd depth vs 6)"
+
+best_vs_defense:
+  - "4-3 with predictable EDGE play"
+  - "any defense unprepared for option football"
+  - "speed-flow defenses that over-pursue"
+  - "cover-3 with run-fit LBs"
+
+worst_vs_defense:
+  - "disciplined option-fit defenses"
+  - "scrape-exchange from playside LB"
+  - "cover-1 robber (extra defender)"
+  - "8-man fronts"
+
+common_uses:
+  - "Heritage triple-option from a non-Wishbone formation"
+  - "1st-and-10 base run vs 4-3 / 3-4 base defenses"
+  - "Setting up PA passes off the same look (Houston-era PA was lethal)"
+  - "Goal-line / red-zone (FB dive becomes the run)"
+
+philosophy: option
+
+era: "1965 onward — Bill Yeoman / University of Houston introduced the veer as the original triple option, predating the wishbone."
+
+famous_examples:
+  - "University of Houston (Bill Yeoman era 1962-1986) — the inventor"
+  - "Air Force Academy / Service academy programs (modernized into Flexbone)"
+  - "Modern HS option-tradition programs (especially in Texas / Oklahoma)"
+  - "Tennessee Volunteers under various option-influenced coordinators"
+
+tags:
+  - option
+  - run
+  - triple-option
+  - veer
+  - i-form
+  - 21-personnel
+  - throwback
+  - college
+  - high-school
+
+notes: |
+  Veer Option is the CLASSIC triple option from under center — Bill Yeoman's
+  1965 invention at Houston that predated the Wishbone (1968 at Texas) by
+  three years. From the I-Formation, the FB dives at the playside B-gap
+  with QB reading the EDGE, then HB trails as the pitch back if QB pulls.
+
+  Differences from Wishbone:
+    - Veer: I-Form (FB at 4.5 yd, HB at 7 yd directly behind FB)
+    - Wishbone: 3-back (FB at 4.5 yd, two HBs flanking at -3/+3 and -6 yd)
+    - Veer pitch path is longer (HB is deeper)
+    - Wishbone has 2 pitch men (either direction); veer has 1
+
+  Mirror by flipping all x.
+
+verification_status: unverified
+source_notes:
+  - "Houston Veer / triple option — Bill Yeoman 1965 origin; documented across option-football coaching tradition."
+  - "Built 2026-04-30 to round out the option family with the original under-center triple option."

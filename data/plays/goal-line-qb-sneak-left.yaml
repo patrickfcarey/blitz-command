@@ -1,0 +1,137 @@
+play_id: goal-line-qb-sneak-left
+name: QB Sneak (Mirror Left)
+aliases:
+- Sneak
+- QB Wedge
+- Tush Push (modern variant)
+formation: goal-line-left
+play_type: run
+ball_carrier: QB
+motions: []
+assignments:
+- player: LT
+  role: run_block
+  blocking_scheme: drive-block
+  target: backside-DE
+  notes: Drive forward at the snap — push the pile.
+- player: LG
+  role: run_block
+  blocking_scheme: drive-block
+  target: backside-DT
+- player: C
+  role: run_block
+  blocking_scheme: snap-and-drive
+  target: 0-or-1-tech
+  notes: Snap, then immediately drive forward into the nose. QB follows the C's path.
+- player: RG
+  role: run_block
+  blocking_scheme: drive-block
+  target: playside-DT
+- player: RT
+  role: run_block
+  blocking_scheme: drive-block
+  target: playside-DE
+- player: TE-L
+  role: run_block
+  blocking_scheme: drive-block
+  target: edge-defender
+- player: TE-R
+  role: run_block
+  blocking_scheme: drive-block
+  target: edge-defender
+- player: WR
+  role: run_block
+  blocking_scheme: stalk-or-clear
+  target: cornerback
+  notes: 'Goal-line context: stalk the corner or clear out — minimal impact on play.'
+- player: QB
+  role: ball_carrier
+  is_primary: true
+  path:
+  - - 0
+    - 0
+  - - 0
+    - 1
+  - - 0
+    - 2
+  notes: 'Take the snap, immediately dive forward over the C / between the C
+
+    and one of the guards. Lower shoulder; reach the ball forward at
+
+    the LOS. Modern Tush Push variant: FB and HB push QB from behind
+
+    to drive him forward (legal under current NFL/NCAA rules).
+
+    '
+- player: FB
+  role: lead_block
+  target: A-gap-LB
+  notes: 'Standard sneak: lead block at the LB level. Tush Push variant: push QB from behind.'
+- player: HB
+  role: lead_block
+  target: A-gap-LB
+  notes: 'Standard sneak: chase / push pile. Tush Push variant: push QB from behind.'
+strengths:
+- Statistically the most reliable short-yardage conversion play (~81% on 1-2 yd to gain)
+- Ball is already in the QB's hands — no exchange / fumble risk
+- QB just needs to fall forward 1 yard
+- Modern Tush Push variant is even higher-percentage (Eagles 90%+)
+- Defense has minimal time to react
+- Works regardless of defensive front
+weaknesses:
+- Limited to 1-2 yards (won't break for big play)
+- Risk of fumbled snap if QB is rushed
+- Defenses can cross-stunt the A-gaps and create disruption
+- QB injury risk under the pile
+- Tush Push relies on QB strength — works for some QBs (Hurts), not others
+best_vs_defense:
+- Goal-line stand (paradoxically — QB sneak is the textbook beater)
+- any 4-3 or 3-4 base front
+- stretched LBs (QB falls forward before they engage)
+- any defense with A-gap weakness
+worst_vs_defense:
+- Cross-stunt that crashes both A-gaps
+- 9-man fronts with elite NT (very rare)
+- Penetrating 0-tech / 1-tech NT
+common_uses:
+- 4th-and-1 anywhere on the field (NFL conversion rate ~81%)
+- 1st-and-Goal from the 1 yard line
+- Short-yardage on 3rd-and-1
+- Final play of game when needing inches
+- 'Tush Push: Eagles'' near-automatic short-yardage call (2021-)'
+philosophy: power-run
+era: 'Universal — oldest play in football. Tush Push variant: 2021 onward (Eagles innovation).'
+famous_examples:
+- Eagles Tush Push (Jalen Hurts era, 2021-) — 90%+ conversion rate
+- Tom Brady's iconic sneaks for first downs (Patriots era)
+- Every football game ever played has likely included this
+tags:
+- run
+- qb-run
+- sneak
+- goal-line
+- short-yardage
+- tush-push
+- any-level
+- high-school
+- college
+- nfl
+notes: 'Statistically the highest-percentage short-yardage play in football. The
+
+  Tush Push (Eagles'' variant since 2021) adds two pushers behind the QB
+
+  to drive him forward — currently legal in NFL/NCAA with debate ongoing.
+
+  Standard QB Sneak doesn''t include the push.
+
+  '
+verification_status: unverified
+source_notes:
+- 'Web validated 2026-04-29 — Wikipedia ''Quarterback sneak'' (https://en.wikipedia.org/wiki/Quarterback_sneak); Wikipedia
+  ''Tush Push'' (https://en.wikipedia.org/wiki/Tush_Push); PFF ''Eagles Tush Push edge'' (https://www.pff.com/news/nfl-philadelphia-eagles-tush-push-advantage);
+  Yale Sports Analytics ''Success of Short Yardage Play Types'' (https://sports.sites.yale.edu/success-short-yardage-play-types-fourth-down);
+  The Ringer ''Quarterback Sneaks Are Always the Answer'' (https://www.theringer.com/2018/11/15/nfl/quarterback-sneak-short-yardage-play-calling-analysis).
+  Confirmed: ~81% conversion rate on 1-2 yd to go; Tush Push variant pushes QB from behind for additional drive.'
+- Mirror of goal-line-qb-sneak.yaml — path waypoints flipped on x; formation reference points to the mirror formation. Routes
+  auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed look
+  — coordinates and paths are the source of truth.

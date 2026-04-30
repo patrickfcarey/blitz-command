@@ -1,0 +1,96 @@
+name: 46 Bear Cover 0
+side: defense
+personnel: "46-bear"
+front: "46-Bear"
+coverage_shell: "cover-0"
+
+# Buddy Ryan's 46 Bear front — overload defensive line + LBs at the LOS,
+# zero-deep coverage. Pure pressure, all-out blitz, man coverage with no
+# safety help. 5 DL + 3 LB + 3 DBs = 8-man front.
+players:
+  - { label: LDE, position: DE, x: -5.0,  y:  1.0, on_line: false }
+  - { label: LDT, position: DT, x: -2.5,  y:  1.0, on_line: false }
+  - { label: NT,  position: NT, x:  0.0,  y:  1.0, on_line: false }
+  - { label: RDT, position: DT, x:  2.0,  y:  1.0, on_line: false }
+  - { label: RDE, position: DE, x:  5.0,  y:  1.0, on_line: false }
+  - { label: WLB, position: LB, x: -3.5,  y:  3.5, on_line: false }
+  - { label: MLB, position: LB, x:  0.0,  y:  3.0, on_line: false }
+  - { label: SLB, position: LB, x:  3.5,  y:  3.5, on_line: false }
+  - { label: LCB, position: CB, x: -15.0, y:  5.0, on_line: false }
+  - { label: RCB, position: CB, x:  12.0, y:  5.0, on_line: false }
+  - { label: SS,  position: S,  x:  4.0,  y:  6.0, on_line: false }
+
+responsibilities:
+  - { player: LDE, role: rush,   aim: "weakside outside contain — speed rush" }
+  - { player: LDT, role: rush,   aim: "shoot weak A-gap" }
+  - { player: NT,  role: rush,   aim: "0-tech over center — penetrate" }
+  - { player: RDT, role: rush,   aim: "shoot strong A-gap" }
+  - { player: RDE, role: rush,   aim: "strongside contain — speed rush" }
+  - { player: WLB, role: blitz,  aim: "blitz weak B-gap" }
+  - { player: MLB, role: blitz,  aim: "spy QB / mug A-gap blitz" }
+  - { player: SLB, role: blitz,  aim: "blitz strong B-gap" }
+  - { player: LCB, role: press-man, aim: "man on X — press at the line" }
+  - { player: RCB, role: press-man, aim: "man on Z — press at the line" }
+  - { player: SS,  role: man,    aim: "man on TE", covers_player: "TE" }
+
+best_against:
+  - "Slow-developing pass plays (no time)"
+  - "Run plays vs heavy formations (8 in box wins gap counts)"
+  - "Goal-line passing (pressure forces hot throws)"
+  - "Inexperienced QBs"
+
+vulnerable_to:
+  - "Hot routes (slants, quick outs against the blitz)"
+  - "Screens (RB / WR screens in space behind blitz)"
+  - "Empty / 5-wide (no man defender for one receiver)"
+  - "Wheel routes vs LB (LBs can't run with WRs)"
+  - "Anything thrown deep with proper protection"
+
+strengths:
+  - "Maximum pressure — 8 rushers possible"
+  - "All gaps accounted for at the LOS"
+  - "Disrupts QB rhythm and timing"
+  - "Devastating vs heavy run sets"
+
+weaknesses:
+  - "ZERO deep help — every vertical is 1-on-1"
+  - "Hot routes punish the blitz"
+  - "WR screens beat the rush"
+  - "Mistimed blitz = wide-open big play"
+
+common_uses:
+  - "Goal-line / short-yardage defense"
+  - "3rd-and-short blitz"
+  - "Late-game desperation pressure"
+  - "Constraint to long-down defense (rare base call)"
+
+era: "1985 Chicago Bears (Buddy Ryan defensive coordinator) — 46 defense origin. Modern variants in NFL still."
+
+famous_users:
+  - "Buddy Ryan Chicago Bears (1985 Super Bowl team)"
+  - "Rex Ryan derivative pressure packages"
+  - "Goal-line packages across NFL"
+
+tags:
+  - defense
+  - 46-bear
+  - cover-0
+  - blitz
+  - 8-man-front
+  - pressure
+  - goal-line
+  - high-risk-high-reward
+  - any-level
+  - college
+  - nfl
+
+notes: |
+  Buddy Ryan's 46 Bear — 5 DL aligned to overload the inside (NT over
+  center, DTs in A-gaps, DEs outside the offensive tackles). 3 LBs walked
+  up to the LOS for blitz threats. CBs press-man on outside WRs. SS man
+  on TE. NO deep safety — pure cover-0. High risk, high reward.
+
+verification_status: unverified
+source_notes:
+  - "Standard 46 Bear Cover 0 alignment from 1985 Bears defensive scheme."
+  - "Built 2026-04-30 as part of the P5 defensive-side rollout."

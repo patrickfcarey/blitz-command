@@ -1,0 +1,135 @@
+play_id: wildcat-sweep-left
+name: Wildcat Sweep (Mirror Left)
+aliases:
+- Wildcat Toss
+- Direct-Snap Sweep
+formation: wildcat-left
+play_type: run
+ball_carrier: RB1
+motions: []
+assignments:
+- player: LT
+  role: run_block
+  blocking_scheme: down-block
+  target: backside-DE
+- player: LG
+  role: run_block
+  blocking_scheme: pull-around
+  target: cornerback
+  path:
+  - - 0
+    - 0
+  - - -3
+    - -0.5
+  - - -6
+    - 0
+  - - -9
+    - 3
+  notes: PULL — leads RB1 around the strong-side edge to seal the perimeter.
+- player: C
+  role: run_block
+  blocking_scheme: gap-block
+- player: RG
+  role: run_block
+  blocking_scheme: pull-around
+  target: alley-defender
+  path:
+  - - 0
+    - 0
+  - - -3
+    - -0.5
+  - - -5
+    - 0
+  - - -6
+    - 4
+  notes: PULL — second puller, leads at the LB level.
+- player: RT
+  role: run_block
+  blocking_scheme: down-block
+  target: playside-DT
+- player: TE
+  role: run_block
+  blocking_scheme: kickout
+  target: edge-defender
+- player: QB-WR
+  role: route
+  route_name: stalk-or-route
+  depth_yd: 0
+  notes: QB-as-WR holds at his split — provides cushion threat / decoy.
+- player: Z
+  role: run_block
+  blocking_scheme: stalk
+  target: cornerback
+- player: SLOT
+  role: run_block
+  blocking_scheme: crack
+  target: outside-LB
+  notes: Crack-block back inside on outside LB / alley defender.
+- player: RB1
+  role: ball_carrier
+  is_primary: true
+  path:
+  - - 0
+    - 0
+  - - -4
+    - 1
+  - - -7
+    - 4
+  - - -10
+    - 8
+  notes: Direct snap, take a quick lateral step, follow pulling guards around the strong-side perimeter.
+- player: RB2
+  role: lead_block
+  target: cornerback
+  path:
+  - - 0
+    - 0
+  - - -5
+    - 3
+  - - -9
+    - 5
+  notes: Lead through perimeter — kickout the corner if needed.
+strengths:
+- Direct snap to RB1 with two pulling guards = extreme numbers advantage at edge
+- Multiple lead blockers (pulling LG + pulling RG + RB2 + SLOT crack)
+- Speed advantage — RB1 already moving at the snap
+- Surprise factor in modern football
+weaknesses:
+- Slow-developing perimeter run (~2.5 sec to corner)
+- Wildcat formation tells defense run is coming
+- Vulnerable to disciplined edge contain
+- Defense knows pass is unlikely from this look
+best_vs_defense:
+- over-front
+- cover-3 with stretched playside coverage
+- speed-flow defenses
+worst_vs_defense:
+- cover-1 with EDGE squeezing
+- blitz from playside
+- disciplined edge defenders
+common_uses:
+- Perimeter alternative to Wildcat Power
+- 1st-and-10 surprise sweep
+- Setting up reverses
+philosophy: power-run
+era: Modern Wildcat era (2008 onward).
+famous_examples:
+- 2008 Dolphins Wildcat sweep package
+- HS direct-snap perimeter packages
+tags:
+- run
+- sweep
+- perimeter
+- wildcat
+- direct-snap
+- 21-personnel
+- any-level
+- high-school
+- college
+- nfl
+verification_status: unverified
+source_notes:
+- Wildcat sweep with two pulling guards — extreme power at the perimeter.
+- Mirror of wildcat-sweep.yaml — path waypoints flipped on x; formation reference points to the mirror formation. Routes auto-mirror
+  in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed look — coordinates
+  and paths are the source of truth.

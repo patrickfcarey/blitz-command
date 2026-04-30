@@ -1,0 +1,22 @@
+name: slant
+aliases:
+- drive
+description: Quick inside-breaking route at ~45 degrees.
+path:
+- - 0
+  - 0
+- - 0
+  - 1
+- - 4
+  - 5
+typical_break_depth_yd: 1
+option_route: false
+category: quick
+beats_coverage: man
+tags:
+- quick-game
+- anti-man
+- inside-breaking
+verification_status: unverified
+source_notes:
+- Standard quick-game route; 5 yard slant well-documented across all coaching trees.

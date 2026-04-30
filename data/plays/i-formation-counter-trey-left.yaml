@@ -1,0 +1,160 @@
+play_id: i-formation-counter-trey-left
+name: Counter Trey (Strong) (Mirror Left)
+aliases:
+- Counter
+- Counter OF
+- Counter G/T
+formation: i-formation-left
+play_type: run
+ball_carrier: HB
+motions: []
+assignments:
+- player: LT
+  role: run_block
+  blocking_scheme: pull-around
+  target: edge-defender
+  path:
+  - - 0
+    - 0
+  - - -3
+    - -0.5
+  - - -5
+    - -0.5
+  - - -7
+    - 2
+  notes: PULL — backside tackle pulls and kicks out the playside EDGE.
+- player: LG
+  role: run_block
+  blocking_scheme: pull-around
+  target: playside-LB
+  path:
+  - - 0
+    - 0
+  - - -2
+    - -0.5
+  - - -4
+    - 0
+  - - -5
+    - 4
+  notes: PULL — backside guard pulls around C, leads through the off-tackle hole onto the playside LB.
+- player: C
+  role: run_block
+  blocking_scheme: gap-block
+  target: backside-A-gap
+- player: RG
+  role: run_block
+  blocking_scheme: down-block
+  target: playside-3-tech
+- player: RT
+  role: run_block
+  blocking_scheme: down-block
+  target: playside-DT
+- player: TE
+  role: run_block
+  blocking_scheme: down-block
+  target: playside-LB
+  notes: TE down-blocks at the second level.
+- player: X
+  role: run_block
+  blocking_scheme: stalk
+  target: cornerback
+- player: Z
+  role: run_block
+  blocking_scheme: stalk
+  target: cornerback
+- player: QB
+  role: handoff
+  path:
+  - - 0
+    - 0
+  - - 1
+    - -1
+  - - 2
+    - -1
+  notes: Reverse-out to HB; sell a fake bootleg to the backside (weak side).
+- player: FB
+  role: lead_block
+  target: alley-defender
+  path:
+  - - 0
+    - 0
+  - - -3
+    - 3
+  - - -4
+    - 6
+  notes: FB leads through the playside hole; iso a free defender at the second level.
+- player: HB
+  role: ball_carrier
+  is_primary: true
+  path:
+  - - 0
+    - 0
+  - - 1
+    - 1
+  - - -3
+    - 4
+  - - -4
+    - 9
+  notes: 'Counter step LEFT first (sell run away from playside), then plant and run
+
+    RIGHT through the off-tackle hole behind the pulling LG and LT.
+
+    '
+strengths:
+- Two pulling blockers (BSG and BST) at the point of attack — a real numbers advantage
+- Counter step + reverse-out QB hold backside defenders aggressively
+- Devastating against defenses overplaying Power tendencies
+- Multiple lead blockers + double-team at the playside DT
+- One of the highest-yielding power-run plays in football history
+weaknesses:
+- Slow-developing — pullers need ~2.5 sec to arrive
+- Vulnerable to playside DE penetration before pulling tackle gets there
+- HB must read the counter correctly OR the play breaks
+- Backside cutback shut down if counter step fools backside fitters
+best_vs_defense:
+- over-front (gives down-block angles + gap to pull through)
+- cover-3 with predictable LB flow
+- any defense overplaying Power
+- speed-flow defenses that over-pursue the counter step
+worst_vs_defense:
+- bear front (DT in every gap)
+- 8-man fronts
+- cover-1 robber (extra defender)
+- playside DE shooting upfield
+common_uses:
+- Counter to Power tendencies
+- 1st/2nd-and-medium with established run game
+- Short-yardage when defense overcommits
+- Setting up bootleg PA off the same look
+philosophy: power-run
+era: 1980s onward — Joe Gibbs Washington Redskins popularized; staple of pro-style power offenses ever since.
+famous_examples:
+- 1980s Washington Redskins (Joe Gibbs / John Riggins)
+- Bill Parcells Giants / Patriots era power run game
+- Modern NFL teams using counter as a Power complement
+- HS power-run programs across the country
+tags:
+- run
+- power-run
+- counter
+- gap-scheme
+- misdirection
+- any-level
+- high-school
+- college
+- nfl
+notes: 'Counter Trey: backside guard AND tackle pull (two pullers). HB takes a
+
+  counter step opposite the playside to sell the misdirection, then plants
+
+  and runs behind the pullers. The "Trey" comes from the BSG+BST pull
+
+  combination. Mirror to "Counter Trey Weak" by reversing direction.
+
+  '
+verification_status: unverified
+source_notes:
+- Standard Counter Trey scheme; documented across power-run coaching trees (Joe Gibbs lineage onward).
+- Mirror of i-formation-counter-trey.yaml — path waypoints flipped on x; formation reference points to the mirror formation.
+  Routes auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed
+  look — coordinates and paths are the source of truth.

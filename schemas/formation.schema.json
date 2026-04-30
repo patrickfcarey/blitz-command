@@ -81,6 +81,46 @@
     "source_notes": {
       "type": "array",
       "items": { "type": "string" }
+    },
+    "front": {
+      "type": "string",
+      "description": "Defensive front (DL + LB structure). Common values: '4-3', '3-4', '4-2-5', '3-3-5', '46-Bear', 'Nickel-4-2', 'Dime-4-1', 'Goal-Line'. Defense only."
+    },
+    "coverage_shell": {
+      "type": "string",
+      "description": "Defensive coverage shell (DB rotation + responsibilities). Common values: 'cover-0', 'cover-1', 'cover-2', 'cover-2-man', 'cover-3', 'cover-4', 'tampa-2', 'cover-6'. Defense only."
+    },
+    "responsibilities": {
+      "type": "array",
+      "description": "Per-player post-snap responsibility. Defense only.",
+      "items": {
+        "type": "object",
+        "required": ["player", "role"],
+        "additionalProperties": false,
+        "properties": {
+          "player": { "type": "string" },
+          "role": {
+            "enum": [
+              "rush", "zone", "man", "spy", "blitz", "qb-spy",
+              "deep-zone", "underneath-zone", "flat", "hook", "curl", "robber",
+              "press-man", "off-man", "buzz", "rat", "lurk", "carry"
+            ]
+          },
+          "aim": { "type": "string", "description": "Where the player goes / what gap or zone they cover." },
+          "covers_player": { "type": "string", "description": "For man coverage: label of the offensive player covered (e.g. 'X', 'TE', 'HB')." },
+          "notes": { "type": "string" }
+        }
+      }
+    },
+    "best_against": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Offensive concepts this defense handles well. Defense only."
+    },
+    "vulnerable_to": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Offensive concepts that beat this defense. Defense only."
     }
   }
 }

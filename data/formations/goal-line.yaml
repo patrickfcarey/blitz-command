@@ -15,7 +15,7 @@ players:
   - { label: TE-L,  position: TE, x: -3.5,  y:  0.0, on_line: true  }
   - { label: TE-R,  position: TE, x:  3.5,  y:  0.0, on_line: true  }
   - { label: WR,    position: WR, x:  6.0,  y: -1.0, on_line: false }
-  - { label: QB,    position: QB, x:  0.0,  y: -1.5, on_line: false }
+  - { label: QB,    position: QB, x:  0.0,  y: -2.0, on_line: false }
   - { label: FB,    position: FB, x:  0.0,  y: -3.5, on_line: false }
   - { label: HB,    position: HB, x:  0.0,  y: -6.0, on_line: false }
 
@@ -75,7 +75,8 @@ notes: |
   22 personnel: 2 RB, 2 TE, 1 WR. FB shallower (3.5 yd) for fast lead block.
   23-personnel "Heavy" variant (3 TE, 0 WR) is a separate file when added.
 
-verification_status: inferred
+verification_status: unverified
 source_notes:
   - "Coordinates: standard jumbo conventions; FB at 3.5 yd for fast kickout."
   - "Strengths/weaknesses: universal short-yardage textbook material."
+  - "Web validated 2026-04-29 — Coaches Choice 'Jumbo Short-Yardage and Goal-Line Offense' (https://coacheschoice.com/jumbo-short-yardage-and-goal-line-offense/); Pro Football Network 'Personnel packages' (https://www.profootballnetwork.com/football-terminology-types-of-offensive-personnel-packages/); KOKA Sports '22 Personnel' (https://blog.kokasports.com/what-is-22-personnel-in-football/). Confirmed: Jumbo formation used exclusively in short-yardage / goal-line; can be 22 or 23 personnel; OL/DL players sometimes occupy TE/FB roles for extra blocking."

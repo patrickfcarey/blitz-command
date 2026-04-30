@@ -11,7 +11,12 @@
       "Bash(git commit -m ' *)",
       "Bash(git config *)",
       "Bash(git -c user.name=\"patrickfcarey\" -c user.email=\"patrickfcarey@gmail.com\" -c commit.gpgsign=false commit --allow-empty-message -m \"\")",
-      "Bash(git -c user.name=patrickfcarey -c user.email=patrickfcarey@gmail.com commit -m ' *)"
+      "Bash(git -c user.name=patrickfcarey -c user.email=patrickfcarey@gmail.com commit -m ' *)",
+      "Bash(python3 *)",
+      "WebSearch",
+      "Bash(/tmp/blitz-venv/bin/python *)",
+      "Bash(/tmp/blitz-venv/bin/pip install *)",
+      "Bash(./run-tests.sh)"
     ]
   }
 }

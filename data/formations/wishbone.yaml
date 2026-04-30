@@ -1,0 +1,88 @@
+name: Wishbone
+side: offense
+personnel: "20 (wishbone)"
+strength_side: balanced
+
+# Classic triple-option formation. 5 OL + 1 TE + 1 SE/WR + QB + 1 FB at fullback
+# depth + 2 HBs flanking FB. Backfield forms a "Y" or wishbone shape with FB
+# closer to LOS and HBs deeper and wider.
+#
+# Legality: 5 OL + TE + SE = 7 on line. QB + FB + HBL + HBR off the line.
+# Triple-option packaging: FB dive (give), QB keep, pitch to trailing HB.
+players:
+  - { label: LT,  position: LT, x: -2.0,  y:  0.0, on_line: true  }
+  - { label: LG,  position: LG, x: -1.0,  y:  0.0, on_line: true  }
+  - { label: C,   position: C,  x:  0.0,  y:  0.0, on_line: true  }
+  - { label: RG,  position: RG, x:  1.0,  y:  0.0, on_line: true  }
+  - { label: RT,  position: RT, x:  2.0,  y:  0.0, on_line: true  }
+  - { label: TE,  position: TE, x:  3.5,  y:  0.0, on_line: true  }
+  - { label: SE,  position: WR, x: -15.0, y:  0.0, on_line: true  }
+  - { label: QB,  position: QB, x:  0.0,  y: -2.0, on_line: false }
+  - { label: FB,  position: FB, x:  0.0,  y: -4.5, on_line: false }
+  - { label: HBL, position: HB, x: -3.0,  y: -6.0, on_line: false }
+  - { label: HBR, position: HB, x:  3.0,  y: -6.0, on_line: false }
+
+strengths:
+  - "Triple-option threat from one look (FB dive / QB keep / HB pitch)"
+  - "Two pitch-men (HBL and HBR) means option works to either side without flipping"
+  - "Defense forced to commit a defender to each option phase"
+  - "Heavy-personnel run threat in a balanced look"
+  - "FB dive is a 4-5 yd grinder when defense honors the option"
+
+weaknesses:
+  - "Predominantly run-only — passing game is limited"
+  - "QB takes hits as a runner — injury risk"
+  - "Modern fast defenses with disciplined option-fits neutralize triple threat"
+  - "Limited 4-WR / spread looks impossible from this base"
+  - "Slow-developing PA passing — defenders ignore play-fakes after seeing wishbone alignment"
+
+common_uses:
+  - "Triple option base offense (Texas Wishbone tradition)"
+  - "Service academy and tradition-heavy programs (modernized into Flexbone)"
+  - "Short-yardage / goal-line packages"
+  - "Heavy-personnel constraint in modern playbooks"
+
+run_concepts:
+  - triple-option
+  - veer
+  - midline-option
+  - fb-dive
+  - counter-option
+  - power-pitch
+
+pass_concepts:
+  - waggle
+  - pa-flood
+  - pa-deep-shot
+
+era: "1968 onward — Emory Bellard / Texas under Darrell Royal popularized; widespread college through 1990s."
+
+famous_users:
+  - "Texas Longhorns under Darrell Royal (1968-1976) — origin"
+  - "Oklahoma Sooners under Barry Switzer (1973-1988) — 3 NCs"
+  - "Alabama under Bear Bryant"
+  - "Service academies (modernized into Flexbone)"
+
+tags:
+  - wishbone
+  - triple-option
+  - 20-personnel
+  - run-heavy
+  - throwback
+  - college
+  - high-school
+  - balanced
+  - option
+
+notes: |
+  Wishbone shape: FB at 4.5 yd directly behind QB, HBL at -3 / -6, HBR
+  at +3 / -6. The two HBs are pitch men, the FB is the dive man. QB
+  reads twice — once for the dive (give to FB or keep) and once for
+  the pitch (keep or pitch to trailing HB). Modernized into the
+  Flexbone (which moves the wing-backs up to slot-back depth and
+  spreads them wider).
+
+verification_status: unverified
+source_notes:
+  - "Standard wishbone triple-option formation; documented across Texas / Oklahoma / Alabama coaching trees."
+  - "Built 2026-04-30 as part of the P3 specialty-formation rollout."

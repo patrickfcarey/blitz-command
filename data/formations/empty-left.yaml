@@ -1,0 +1,125 @@
+name: Empty (01 personnel) Left
+side: offense
+personnel: '01'
+strength_side: left
+players:
+- label: LT
+  position: LT
+  x: -2.0
+  y: 0.0
+  on_line: true
+- label: LG
+  position: LG
+  x: -1.0
+  y: 0.0
+  on_line: true
+- label: C
+  position: C
+  x: 0.0
+  y: 0.0
+  on_line: true
+- label: RG
+  position: RG
+  x: 1.0
+  y: 0.0
+  on_line: true
+- label: RT
+  position: RT
+  x: 2.0
+  y: 0.0
+  on_line: true
+- label: TE
+  position: TE
+  x: -3.5
+  y: 0.0
+  on_line: true
+- label: X
+  position: WR
+  x: 15.0
+  y: 0.0
+  on_line: true
+- label: Z
+  position: WR
+  x: -14.0
+  y: -1.0
+  on_line: false
+- label: SLOT-L
+  position: WR
+  x: 8.0
+  y: -1.0
+  on_line: false
+- label: SLOT-R
+  position: WR
+  x: -8.0
+  y: -1.0
+  on_line: false
+- label: QB
+  position: QB
+  x: -0.0
+  y: -5.0
+  on_line: false
+strengths:
+- 5 immediate receiving threats — defense must declare coverage pre-snap
+- Forces nickel/dime personnel; weakens defense vs the run (in theory)
+- Maximum horizontal field stretch
+- QB can read pre-snap matchups and audible to favorable matchup
+- Quick-game answers everywhere (slants, hitches, screens, choice routes)
+- No RB indecision in protection — 5 blockers vs 4-5 rushers is clean
+weaknesses:
+- Only 5 blockers — any blitz beyond 5 forces a hot throw
+- Zero run threat — defense can drop 7 into coverage with no respect for run
+- QB exposed if pocket collapses — no checkdown back option
+- Two-minute / desperation tell — defense knows pass is coming
+- Some games' editors limit empty sets or won't let you save them
+common_uses:
+- 3rd-and-long
+- 4th-and-long
+- 2-minute drill (when behind)
+- Forcing a defensive personnel mismatch
+- QB-led offense vs predictable nickel/dime
+run_concepts:
+- qb-draw
+- qb-sneak
+- quick-screen-as-run
+pass_concepts:
+- mesh
+- smash
+- flood
+- levels
+- choice-routes-vs-man
+- quick-screen
+- four-verticals
+- sail
+era: 1990s onward; key situational tool in modern football.
+famous_users:
+- Patriots / Tom Brady (signature 2-minute look)
+- Air Raid / Mike Leach derivatives
+- Modern NFL hurry-up offenses across the league
+tags:
+- empty
+- 10-personnel
+- spread
+- shotgun
+- passing-game
+- 5-wide-effective
+- modern
+- nfl
+- college
+notes: '01 personnel — 0 RB, 1 TE, 4 WR. TE attached for protection help. True Empty
+
+  (00 personnel, 5 WR no TE) is a separate file when added.
+
+  '
+verification_status: unverified
+source_notes:
+- 'Coordinates: typical empty alignment; outer WRs split 14-15 yd, slots at 8 yd.'
+- 'Strengths/weaknesses: modern passing-game textbook material.'
+- 'Web validated 2026-04-29 — KOKA Sports ''What is 10 Personnel'' (https://blog.kokasports.com/what-is-10-personnel-in-football/);
+  KOKA Sports ''10 Personnel Football'' (https://blog.kokasports.com/10-personnel-football/); CougCenter ''Air Raid WSU formations''
+  (https://www.cougcenter.com/2013/3/12/4070202/air-raid-playbook-offensive-formations-mike-leach). CORRECTION applied: this
+  file was labeled ''10 personnel'' but the standard RB-TE convention has 10 = 1 RB / 0 TE / 4 WR (not empty). With 0 RB and
+  1 TE this is correctly ''01'' personnel; true Empty (no RB) is uncommon enough that ''empty'' and ''10 personnel'' are sometimes
+  informally conflated.'
+- Mirror of empty.yaml — coordinates flipped horizontally on x; strength_side flipped; OL labels (LT/LG/C/RG/RT) and centered
+  backfield positions (QB / centered FB or HB) unchanged. Notes in this file may still describe the original right-handed
+  look in places — read coordinates as the source of truth.

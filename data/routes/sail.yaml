@@ -1,0 +1,20 @@
+name: sail
+description: Push to 12 yards, then break toward the sideline at a slight downhill angle (the intermediate of a flood).
+path:
+- - 0
+  - 0
+- - 0
+  - 12
+- - -3
+  - 15
+typical_break_depth_yd: 12
+option_route: false
+category: intermediate
+beats_coverage: zone
+tags:
+- intermediate
+- outside-breaking
+- flood-component
+verification_status: unverified
+source_notes:
+- Sail route — the middle level of the flood concept. Less hard-cut than 'out'; carries some downfield momentum.

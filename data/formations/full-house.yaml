@@ -14,7 +14,7 @@ players:
   - { label: RT,    position: RT, x:  2.0,  y:  0.0, on_line: true  }
   - { label: TE-L,  position: TE, x: -3.5,  y:  0.0, on_line: true  }
   - { label: TE-R,  position: TE, x:  3.5,  y:  0.0, on_line: true  }
-  - { label: QB,    position: QB, x:  0.0,  y: -1.5, on_line: false }
+  - { label: QB,    position: QB, x:  0.0,  y: -2.0, on_line: false }
   - { label: FB,    position: FB, x:  0.0,  y: -4.0, on_line: false }
   - { label: HB-L,  position: HB, x: -2.5,  y: -4.0, on_line: false }
   - { label: HB-R,  position: HB, x:  2.5,  y: -4.0, on_line: false }
@@ -77,7 +77,8 @@ notes: |
   spacing varies — some teams put FB closer (3 yd) and HBs further back
   (5 yd) for true Wishbone.
 
-verification_status: inferred
+verification_status: unverified
 source_notes:
   - "Coordinates: standard Full House triangle alignment."
   - "Strengths/weaknesses: triple-option-era and modern heavy-package literature."
+  - "Web validated 2026-04-29 — Wikipedia 'T formation' (https://en.wikipedia.org/wiki/T_formation); Big Blue View 'Full-House formation explained' (https://www.bigblueview.com/2023/7/10/23786086/nfl-glossary-the-full-house-formation-explained); Football Advantage 'Wishbone Offense' (https://footballadvantage.com/wishbone-offense/). Confirmed: T formation = full house in modern usage; three RBs ~5 yards behind QB forming T-shape; can be run from 32 personnel (no WRs)."

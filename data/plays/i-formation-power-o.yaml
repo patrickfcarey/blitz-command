@@ -29,6 +29,7 @@ assignments:
     role: run_block
     blocking_scheme: pull-around
     target: playside-LB
+    path: [[0, 0], [2, -0.5], [4, 0], [5, 4]]
     notes: "Pull around the C, lead through the hole, kickout or wrap on the playside LB."
   - player: C
     role: run_block
@@ -59,14 +60,17 @@ assignments:
     target: cornerback
   - player: QB
     role: handoff
+    path: [[0, 0], [-1, -1], [-2, -1]]
     notes: "Reverse-out to the HB; sell a fake bootleg to the backside."
   - player: FB
     role: lead_block
     target: playside-LB-or-strong-safety
+    path: [[0, 0], [3, 3], [4, 6]]
     notes: "Lead through the hole; isolate the playside LB or kickout the strong safety."
   - player: HB
     role: ball_carrier
     is_primary: true
+    path: [[0, 0], [3, 3], [4, 9]]
     notes: "Take the handoff, hit the off-tackle hole, follow the pulling LG."
 
 strengths:

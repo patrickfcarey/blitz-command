@@ -52,7 +52,8 @@ assignments:
     notes: "Post route forces the FS to choose between Z and the TE crossing."
   - player: QB
     role: ball_carrier
-    notes: "Fake handoff to HB, drop to 7-yard depth, deliver the deep cross."
+    path: [[0, 0], [-1, -1], [0, -3], [0, -5]]
+    notes: "Fake handoff to HB (lateral pivot), then drop straight back to ~7-yd depth and deliver the deep cross."
   - player: FB
     role: route
     route_name: flat

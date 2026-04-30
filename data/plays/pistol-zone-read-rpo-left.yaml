@@ -1,0 +1,145 @@
+play_id: pistol-zone-read-rpo-left
+name: Zone Read + Slant RPO (Strong) (Mirror Left)
+aliases:
+- Triple-Option RPO
+- Zone Read RPO
+- Triple-Read
+formation: pistol-left
+play_type: rpo
+ball_carrier: QB
+primary_read: HB
+secondary_read: Z
+motions: []
+assignments:
+- player: LT
+  role: run_block
+  blocking_scheme: zone-step-playside
+  notes: Backside tackle — leaves backside DE UNBLOCKED (he is the give/keep read defender).
+- player: LG
+  role: run_block
+  blocking_scheme: zone-combo
+- player: C
+  role: run_block
+  blocking_scheme: zone-combo
+- player: RG
+  role: run_block
+  blocking_scheme: zone-combo
+- player: RT
+  role: run_block
+  blocking_scheme: zone-combo
+  notes: 'Run-block (RPO: OL must NOT release downfield).'
+- player: TE
+  role: run_block
+  blocking_scheme: zone-step-playside
+  target: edge-defender
+- player: X
+  role: route
+  route_name: clear-out-go
+  depth_yd: 18
+  notes: Backside clear-out — pulls weak-side corner deep, opens window for SLOT slant.
+- player: Z
+  role: route
+  route_name: slant
+  depth_yd: 5
+  notes: Strong-side slant — RPO pass option if QB pulls and throws.
+- player: SLOT
+  role: run_block
+  blocking_scheme: stalk
+  target: nickel-defender
+  notes: Stalk-blocks if QB gives or pulls; becomes outlet only if pressure.
+- player: QB
+  role: ball_carrier
+  is_primary: true
+  path:
+  - - 0
+    - 0
+  - - 1
+    - 1
+  - - 0
+    - -2
+  notes: "TRUE TRIPLE-READ play — three options in sequence:\n1. PRE-SNAP: count the box. If defense has +1 in box, plan to\
+    \ PULL/THROW.\n             If defense has even numbers, plan to GIVE.\n2. POST-SNAP zone-read (mesh point): read backside\
+    \ DE.\n   - DE crashes inside on HB → PULL the ball\n   - DE plays QB / sits → GIVE to HB on inside zone\n3. POST-PULL\
+    \ RPO: if QB pulled, read the playside hook/curl LB.\n   - LB sits in coverage → KEEP and run\n   - LB triggers on QB\
+    \ / vacates throwing window → THROW slant to Z\nBall can end up with HB (run), QB (run), or Z (pass) — true triple option.\n"
+- player: HB
+  role: ball_carrier
+  path:
+  - - 0
+    - 0
+  - - 0
+    - 2
+  - - -1
+    - 5
+  - - -2
+    - 8
+  notes: Step forward to mesh point, take handoff, attack playside A/B gap on inside zone. If QB pulls, HB has executed his
+    fake.
+strengths:
+- TRUE triple-option play — three ball-carriers possible from one snap
+- Defense cannot defend all three options with a single defender
+- Box-counting pre-snap dictates decision tree before the ball moves
+- Mobile QB unlocks third option (keep)
+- RPO slant gives an answer when defense over-rotates to box
+- Pairs with bubble-RPO variant (substitute Z slant for SLOT bubble)
+weaknesses:
+- Cognitive load — QB must read 2 defenders sequentially
+- OL must NOT release downfield (NFL ineligible-downfield rule, NCAA more lenient)
+- Slow if QB hesitates — every option requires a different decision
+- Defenses with disciplined coverage AND option fits neutralize most reads
+- Z slant can be jumped by aggressive corner
+- Only works with credible run-AND-pass QB
+best_vs_defense:
+- any defense with apex / hook LB in run-pass conflict
+- 4-3 with crashing backside DE AND aggressive nickel
+- cover-3 with apex flat in run-fits
+- 8-man fronts (slant becomes the answer)
+- any defense unprepared for triple-option mechanics
+worst_vs_defense:
+- cover-2 with disciplined nickel squat
+- scrape-exchange that kills the QB-keep option
+- cover-4 with disciplined apex
+- bracket coverage on Z
+- zero blitz (no time to read)
+common_uses:
+- 1st-and-10 base call in modern triple-option-RPO offenses
+- Hurry-up tempo (one call, three answers)
+- Constraint to base zone read (adds the throw option)
+- Mobile-QB offense workhorse
+- College spread offense base (Power 5 modern)
+philosophy: spread-option
+era: Mid-2010s onward — RPO+read fusion became universal in modern spread offenses.
+famous_examples:
+- Modern Power 5 college (Auburn, Ohio State, Alabama RPO packages)
+- Eagles under Doug Pederson / Nick Sirianni (Jalen Hurts triple-option-RPOs)
+- Chiefs under Andy Reid (Mahomes RPO progressions)
+- Bills under Brian Daboll (Josh Allen RPO triple)
+tags:
+- rpo
+- run
+- pass
+- triple-option
+- zone-read
+- pistol
+- slant
+- 11-personnel
+- quick-game
+- modern
+- college
+- nfl
+- high-school
+- spread-option
+notes: "This is the modern evolution of the triple option — instead of FB-dive /\nQB-keep / HB-pitch (Wishbone) or HB-give\
+  \ / QB-keep / SLOT-pitch (Flexbone),\nit's HB-give (run) / QB-keep (run) / Z-slant (pass). Three ball-carrier\noutcomes\
+  \ from one snap.\n\nDecision tree:\n  pre-snap → box count → bias toward give or pull\n  post-snap mesh → backside DE →\
+  \ give or pull\n  post-pull → playside LB → keep run or throw slant\n\nMirror by flipping all x (Z slant goes to weak side;\
+  \ bubble works\nsimilarly — substitute SLOT bubble for Z slant if you want a wider throw).\n"
+verification_status: unverified
+source_notes:
+- Triple-option-RPO with zone-read mechanic + slant pass option; documented widely in modern spread-option coaching texts
+  (Gus Malzahn / Chip Kelly / Lincoln Riley lineages).
+- Built 2026-04-30 to round out the option family in the play library — combines zone-read (run/keep) with RPO (pass) into
+  a true 3-option play.
+- Mirror of pistol-zone-read-rpo.yaml — path waypoints flipped on x; formation reference points to the mirror formation. Routes
+  auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed look
+  — coordinates and paths are the source of truth.

@@ -1,0 +1,130 @@
+play_id: goal-line-pa-te-corner
+name: PA Tight End Corner (Goal Line)
+aliases:
+  - PA TE Corner
+  - Goal Line PA
+  - PA Fade
+
+formation: goal-line
+play_type: play-action
+ball_carrier: QB
+primary_read: TE-R
+secondary_read: WR
+checkdown: TE-L
+
+motions: []
+
+assignments:
+  - player: LT
+    role: pass_block
+    blocking_scheme: man-protection
+    notes: "Sell run for first count, then pass-set. Goal line — protection is short-yardage."
+  - player: LG
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: C
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: RG
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: RT
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: TE-L
+    role: route
+    route_name: drag
+    depth_yd: 4
+    notes: "Backside drag — checkdown if TE-R covered."
+  - player: TE-R
+    role: route
+    route_name: corner
+    depth_yd: 8
+    is_primary: true
+    notes: "TE-R sells run for one count, then runs corner route to back of end zone. Primary read."
+  - player: WR
+    role: route
+    route_name: fade
+    depth_yd: 8
+    notes: "WR runs fade to back-pylon — secondary read vs press / zero coverage."
+  - player: QB
+    role: ball_carrier
+    path: [[0, 0], [-1, -1], [0, -3], [0, -5]]
+    notes: |
+      Fake handoff to HB; sell the run hard (defense expects power on goal line).
+      Drop to ~5 yd depth; deliver the corner ball to TE-R at back of end zone.
+      vs cover-2: corner attacks the safety hole.
+      vs cover-1: TE-R can win 1-on-1 over a LB or SS.
+      vs cover-0 / blitz: hot to TE-L drag or WR fade.
+  - player: FB
+    role: pass_block
+    blocking_scheme: man-protection
+    notes: "Sell run with HB, then pass-protect; pick up A-gap blitzer."
+  - player: HB
+    role: fake
+    notes: "Sell the power fake hard — defense has to bite for the corner to open."
+
+strengths:
+  - "PA fake fully sells goal-line power (defense expects run 90%+ on goal line)"
+  - "TE-R corner attacks the seam between safety and corner"
+  - "Multiple options: corner, fade, drag — answers vs every coverage"
+  - "Goal-line LBs aggressive on PA fake → TE-R wins his route"
+  - "Easy 6 if TE-R wins the matchup (single coverage on TE)"
+  - "Universal red-zone constraint to power tendency"
+
+weaknesses:
+  - "QB takes 2-3 sec to deliver — pass protection critical at goal line"
+  - "Defense playing pass keys (no PA bite) makes it predictable"
+  - "WR fade is hard throw if TE-R covered"
+  - "Goal line means small field — limited room for routes to develop"
+  - "Pass interference penalty risk if PA timing is off"
+
+best_vs_defense:
+  - "Goal-line stand with run-fitting LBs"
+  - "cover-1 with single coverage on TE"
+  - "any defense that bites on the run fake"
+  - "8-man fronts that vacate coverage zones"
+
+worst_vs_defense:
+  - "cover-2 zone with safety carrying TE corner"
+  - "cover-0 blitz (no time to develop)"
+  - "bracket on TE-R"
+  - "any defense playing pass-only at goal line"
+
+common_uses:
+  - "1st/2nd-and-Goal from the 5 to the 1 (set up by power runs)"
+  - "Red-zone constraint to power tendency"
+  - "After 2-3 power runs in the red zone (defense bites hardest)"
+  - "Goal-line situations where defense overcommits"
+
+philosophy: pro-style
+
+era: "Universal — every era's red-zone playbook has a TE-corner PA call."
+
+famous_examples:
+  - "Patriots PA TE corner (Gronkowski era)"
+  - "Modern NFL red-zone passing (every team has a variant)"
+  - "Travis Kelce / Chiefs goal-line PA shots"
+
+tags:
+  - pass
+  - pa
+  - goal-line
+  - red-zone
+  - tight-end
+  - corner-route
+  - any-level
+  - high-school
+  - college
+  - nfl
+  - pro-style
+
+notes: |
+  TE-R is the primary read because the play-action draws LBs (especially
+  the SAM LB) toward the run, leaving TE-R uncovered or in single
+  coverage on the corner route. WR fade is the matchup throw if TE-R is
+  bracketed; TE-L drag is the underneath outlet.
+
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-29 — Coaches Choice 'Jumbo Short-Yardage and Goal-Line Offense' (https://coacheschoice.com/jumbo-short-yardage-and-goal-line-offense/); FirstDown PlayBook 'Goal Line and Short Yardage' (https://firstdown.playbooktech.com/coaches-community/tag/goal-line-and-short-yardage); Throw Deep Publishing on offensive formations and PA concepts. Goal-line PA TE corner is universal red-zone constraint to power tendency."

@@ -1,0 +1,124 @@
+play_id: i-formation-bootleg-flat-left
+name: Bootleg Flat (Mirror Left)
+aliases:
+- Boot Flat
+- PA Boot
+- Waggle
+formation: i-formation-left
+play_type: play-action
+ball_carrier: QB
+primary_read: TE
+secondary_read: FB
+checkdown: HB
+motions: []
+assignments:
+- player: LT
+  role: pass_block
+  blocking_scheme: half-roll-protection
+  notes: Slide protection toward the bootleg side.
+- player: LG
+  role: pass_block
+  blocking_scheme: half-roll-protection
+- player: C
+  role: pass_block
+  blocking_scheme: half-roll-protection
+- player: RG
+  role: pass_block
+  blocking_scheme: half-roll-protection
+- player: RT
+  role: pass_block
+  blocking_scheme: half-roll-protection
+  notes: Backside RT — releases late as the QB clears, scoops backside contain if possible.
+- player: TE
+  role: route
+  route_name: drag
+  depth_yd: 8
+  is_primary: true
+  notes: TE crosses at 8–10 yards; QB throws on the move.
+- player: X
+  role: route
+  route_name: comeback
+  depth_yd: 14
+- player: Z
+  role: route
+  route_name: deep-cross
+  depth_yd: 18
+  notes: Z runs a deep cross strong-to-weak — the kill shot if the safety bites on the fake.
+- player: QB
+  role: ball_carrier
+  path:
+  - - 0
+    - 0
+  - - 3
+    - -1
+  - - 5
+    - -1
+  - - 7
+    - 0
+  notes: Fake handoff to HB, roll out to the bootleg side (LEFT here, opposite the strong-right TE). Eyes on TE drag first.
+- player: FB
+  role: route
+  route_name: flat
+  depth_yd: 3
+  notes: FB chip-releases to the bootleg-side flat as the checkdown.
+- player: HB
+  role: fake
+  notes: Sell the run fake; release as a delayed leak if pressure collapses the rollout.
+strengths:
+- QB on the move = easier throws and fewer pass-rush angles
+- PA fake holds run-flow LBs, opening underneath windows
+- Multiple progression depths give a clean read tree
+- HB sneak-leak is a reliable late outlet
+- High completion percentage when defense respects the run
+weaknesses:
+- Bootleg-side EDGE defender unblocked (or chipped at best)
+- Field cut in half — only the bootleg side is in play
+- Slow-developing — needs 4 seconds to reach the launch point
+- Defenders not biting on PA make it predictable
+- Throwing back across the field is risky
+best_vs_defense:
+- cover-3 with run-fit LBs
+- 4-3 with predictable LB flow
+- any defense overcommitting to the run
+- single-high coverages
+worst_vs_defense:
+- cover-2 with a corner playing edge contain
+- safety blitz from the bootleg side
+- cover-0 / man-free with a spy on the QB
+- any defense not biting on PA
+common_uses:
+- After establishing inside-zone or power for 4+ yards
+- 1st-and-10 PA shot
+- 3rd-and-medium boot pass
+- Red-zone moving-target throws
+philosophy: west-coast
+era: 1980s onward — Bill Walsh staple, modernized continuously.
+famous_examples:
+- Mike Holmgren bootleg game (Packers / Seahawks)
+- Andy Reid offense (Eagles / Chiefs)
+- Kyle Shanahan-tree bootleg packages
+tags:
+- pa
+- bootleg
+- rollout
+- high-school
+- college
+- nfl
+- west-coast
+notes: 'Mirror to bootleg right by flipping all coordinates. QB leaves the pocket
+
+  toward the side opposite the run fake. TE drag is the bread-and-butter
+
+  read; the deep cross from Z is the kill shot if the safety bites.
+
+  '
+verification_status: unverified
+source_notes:
+- West Coast / Walsh-tree bootleg concept; documented across multiple coaching trees.
+- 'Web validated 2026-04-29 — 1985 49ers Bill Walsh playbook (PDF: https://www.footballxos.com/download/1985-san-francisco-49ers-west-coast-offense-bill-walsh-pdf/);
+  Wikipedia ''West Coast offense'' (https://en.wikipedia.org/wiki/West_Coast_offense); Bleacher Report ''Breaking Down the
+  West Coast Offense'' (https://bleacherreport.com/articles/1087386-football-101-breaking-down-the-west-coast-offense). Confirmed:
+  bootleg as a constraint to punish defenders rushing upfield; QB boot naked off any interior run.'
+- Mirror of i-formation-bootleg-flat.yaml — path waypoints flipped on x; formation reference points to the mirror formation.
+  Routes auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed
+  look — coordinates and paths are the source of truth.

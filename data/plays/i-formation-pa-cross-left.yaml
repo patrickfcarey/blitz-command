@@ -1,0 +1,132 @@
+play_id: i-formation-pa-cross-left
+name: Play-Action Y-Cross (Mirror Left)
+aliases:
+- PA Cross
+- PA Y-Cross
+- Y-Cross
+formation: i-formation-left
+play_type: play-action
+ball_carrier: QB
+primary_read: TE
+secondary_read: Z
+checkdown: FB
+motions:
+- player: Z
+  type: optional
+  motion_type: short-across
+  end_position:
+    x: 8.0
+    y: -1.0
+  notes: Optional motion to constrain the safety; can also reveal coverage rotation.
+assignments:
+- player: LT
+  role: pass_block
+  blocking_scheme: man-protection
+- player: LG
+  role: pass_block
+  blocking_scheme: man-protection
+- player: C
+  role: pass_block
+  blocking_scheme: man-protection
+- player: RG
+  role: pass_block
+  blocking_scheme: man-protection
+- player: RT
+  role: pass_block
+  blocking_scheme: man-protection
+- player: TE
+  role: route
+  route_name: deep-cross
+  depth_yd: 18
+  is_primary: true
+  notes: 'Y-Cross: TE breaks across the field at 18 yards; throw on the move toward the opposite numbers.'
+- player: X
+  role: route
+  route_name: comeback
+  depth_yd: 14
+- player: Z
+  role: route
+  route_name: post
+  depth_yd: 16
+  notes: Post route forces the FS to choose between Z and the TE crossing.
+- player: QB
+  role: ball_carrier
+  path:
+  - - 0
+    - 0
+  - - 1
+    - -1
+  - - 0
+    - -3
+  - - 0
+    - -5
+  notes: Fake handoff to HB (lateral pivot), then drop straight back to ~7-yd depth and deliver the deep cross.
+- player: FB
+  role: route
+  route_name: flat
+  depth_yd: 4
+  notes: FB releases to the strong-side flat as the checkdown.
+- player: HB
+  role: fake
+  notes: Sell the run fake; check release if pressure forces an outlet.
+strengths:
+- Run fake fully sells inside zone / power
+- Deep cross attacks the seam between the safety and inside LBs
+- Z post forces the safety to choose (TE or Z)
+- High-percentage middle-of-field throw
+- Setup play after establishing the run game
+weaknesses:
+- QB takes 4–5 seconds to deliver — pass protection is critical
+- Defenses playing pass keys (no PA bite) make it predictable
+- Vulnerable to nickel/dime defenses that don't honor the run
+- Backside comeback can be jumped by an aggressive corner
+best_vs_defense:
+- cover-2 (TE crosses through the safety hole, post pulls the FS)
+- cover-3 (Y-Cross attacks the curl/flat seam)
+- any defense biting on play-action
+- over-front with predictable LB drops
+worst_vs_defense:
+- cover-2 robber (extra defender in the middle hole)
+- cover-4 (two deep safeties bracket the TE)
+- aggressive zero blitz (no time to develop)
+- any pass-only defense ignoring the fake
+common_uses:
+- 1st-and-10 after a power run for 4+ yards
+- 2nd-and-medium PA shots
+- Red-zone window plays (TE breaks at the back of the end zone)
+- Setting up future plays off the same look
+philosophy: pro-style
+era: Deep-crossing tradition has Coryell roots (1980s). The modern 'Y-Cross' (called '95' in the original Air Raid playbook)
+  was codified by Hal Mumme and Mike Leach in the late 1990s; widespread across pro and college since.
+famous_examples:
+- Bill Walsh 49ers play-action library
+- Norv Turner / Ernie Zampese (Coryell tree)
+- Andy Reid offense (Eagles, Chiefs)
+tags:
+- pa
+- downhill
+- deep
+- high-school
+- college
+- nfl
+- west-coast
+- coryell
+notes: 'Y-Cross is a Coryell concept: the TE (Y) runs a deep crossing route that
+
+  breaks at 18 yards, paired with a backside post (Z) to force the safety to
+
+  pick. Bootleg version of this play has the QB rolling out instead of
+
+  dropping back; see i-formation-bootleg-flat.yaml for the rollout cousin.
+
+  '
+verification_status: unverified
+source_notes:
+- Coryell-tree deep-crossing tradition; the modern 'Y-Cross' was codified in the Air Raid as play '95' (Mumme/Leach).
+- 'Web validated 2026-04-29 — Throw Deep Publishing ''Y Cross Concept'' (https://throwdeeppublishing.com/blogs/football-glossary/y-cross);
+  CougCenter ''Air Raid Playbook: Y-Cross'' (https://www.cougcenter.com/2013/4/18/4211630/air-raid-playbook-y-cross); Weekly
+  Spiral ''Y-Cross Concept'' (https://weeklyspiral.com/2021/01/19/chiefs-passing-game-and-y-cross/). Confirmed 18-22 yd TE
+  landmark; TE works under SAM and over MIKE.'
+- Mirror of i-formation-pa-cross.yaml — path waypoints flipped on x; formation reference points to the mirror formation. Routes
+  auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed look
+  — coordinates and paths are the source of truth.

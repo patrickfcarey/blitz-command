@@ -1,0 +1,159 @@
+play_id: pistol-diamond-split-zone-left
+name: Split Zone (Strong) (Mirror Left)
+aliases:
+- Diamond Split Zone
+- Slice
+- H-back Slice
+formation: pistol-diamond-left
+play_type: run
+ball_carrier: HB
+primary_read: HB
+motions: []
+assignments:
+- player: LT
+  role: run_block
+  blocking_scheme: zone-step-playside
+  target: backside-DE
+  notes: Backside zone step; FB-L slices behind to seal the backside DE.
+- player: LG
+  role: run_block
+  blocking_scheme: zone-combo
+- player: C
+  role: run_block
+  blocking_scheme: zone-combo
+- player: RG
+  role: run_block
+  blocking_scheme: zone-combo
+  target: 3-tech-then-PSLB
+- player: RT
+  role: run_block
+  blocking_scheme: zone-combo
+- player: TE
+  role: run_block
+  blocking_scheme: zone-step-playside
+  target: edge-defender
+- player: SE
+  role: run_block
+  blocking_scheme: stalk
+  target: backside-cornerback
+- player: QB
+  role: handoff
+  path:
+  - - 0
+    - 0
+  - - 1
+    - 1
+  - - 2
+    - 0
+  notes: Pistol depth handoff to HB; carry out fake to backside (read-option style).
+- player: HB
+  role: ball_carrier
+  is_primary: true
+  path:
+  - - 0
+    - 0
+  - - 0
+    - 2
+  - - -1
+    - 5
+  - - -2
+    - 8
+  notes: 'Aim point: playside A or B gap. BANG / BEND / BOUNCE per inside-zone
+
+    rules. The backside DE is sealed by FB-L slicing across — the read
+
+    is gone (this is split zone, not zone read).
+
+    '
+- player: FB-L
+  role: lead_block
+  target: backside-edge
+  path:
+  - - 0
+    - 0
+  - - -3
+    - 1
+  - - -4
+    - 1
+  notes: SLICE block — FB-L slices across the formation behind the OL to seal the backside DE. Eliminates the cutback read.
+- player: FB-R
+  role: lead_block
+  target: playside-LB
+  path:
+  - - 0
+    - 0
+  - - 1
+    - 2
+  - - 0
+    - 5
+  notes: Strong FB leads into the playside hole — extra blocker on the playside LB at the second level.
+strengths:
+- Two lead blockers — slice (FB-L) and ISO (FB-R) — overwhelming numbers at point of attack
+- Slice block eliminates the cutback read (becomes a designed inside-zone, not a zone-read)
+- 3-back diamond hides which back is the lead vs ball-carrier
+- HB has a clean inside-zone path with 2 lead blockers
+- Modern hybrid concept — combines zone scheme with kickout / iso elements
+weaknesses:
+- Slow-developing relative to base inside-zone (FB-L has to slice across)
+- Pre-snap diamond can tip play if FB stances aren't disguised
+- Vulnerable to playside DT penetration (no zone-read out)
+- Loses the QB-keep threat that base zone-read has
+- Predictable as a run-only call from this formation
+best_vs_defense:
+- 4-3 over with crashing backside DE (FB-L slice eliminates the threat)
+- cover-3 with run-fit LBs
+- any defense over-rotating to the QB-keep threat
+- speed-flow defenses
+worst_vs_defense:
+- bear front (DT in every gap)
+- 8-man fronts
+- backside DE who plays catch-and-release (split-zone block can't seal him)
+- cover-1 robber
+common_uses:
+- 1st-and-10 base run vs 4-3 / over fronts
+- Constraint to inside-zone-read (when defense scrapes the EDGE)
+- Goal-line / red-zone (3-back power look)
+- Modern hybrid run package
+philosophy: zone-run
+era: Mid-2010s onward — split-zone became universal in modern spread / pistol offenses.
+famous_examples:
+- Modern NFL split-zone packages (49ers, Rams under Shanahan/McVay)
+- Spread-option college teams using slice concepts
+- Modern HS / college 3-back packages
+tags:
+- run
+- zone-run
+- split-zone
+- slice
+- pistol
+- diamond
+- 20-personnel
+- 3-back
+- modern
+- college
+- nfl
+- high-school
+notes: 'Split Zone is the modern evolution of zone-read — the slice block
+
+  (FB-L crossing to seal the backside DE) eliminates the QB-keep read,
+
+  turning the play into a designed inside-zone with a kickout. The
+
+  diamond formation gives an extra ISO blocker (FB-R) on top.
+
+
+  3-back attack: HB carries, FB-L slices, FB-R leads. Defense has to
+
+  fit gaps for the run AND honor 2 receivers split outside.
+
+
+  Mirror by flipping all x.
+
+  '
+verification_status: unverified
+source_notes:
+- Standard split-zone scheme; documented widely in modern spread-offense coaching texts.
+- Built 2026-04-30 as part of the P3 specialty-play rollout.
+- Mirror of pistol-diamond-split-zone.yaml — path waypoints flipped on x; formation reference points to the mirror formation.
+  Routes auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed
+  look — coordinates and paths are the source of truth.

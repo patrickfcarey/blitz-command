@@ -1,0 +1,147 @@
+play_id: wishbone-waggle-left
+name: Waggle (Strong) (Mirror Left)
+aliases:
+- Wishbone Waggle
+- PA Bootleg
+- Pass Option
+formation: wishbone-left
+play_type: play-action
+ball_carrier: QB
+primary_read: TE
+secondary_read: SE
+checkdown: HBR
+motions: []
+assignments:
+- player: LT
+  role: pass_block
+  blocking_scheme: man-protection
+  notes: Cut-block playside DE if pulling — sells run hard.
+- player: LG
+  role: pass_block
+  blocking_scheme: man-protection
+- player: C
+  role: pass_block
+  blocking_scheme: man-protection
+- player: RG
+  role: pass_block
+  blocking_scheme: man-protection
+- player: RT
+  role: pass_block
+  blocking_scheme: man-protection
+- player: TE
+  role: route
+  route_name: corner
+  depth_yd: 12
+  is_primary: true
+  notes: TE delays one count (sells block), then runs corner at 12 yds. Primary read.
+- player: SE
+  role: route
+  route_name: post
+  depth_yd: 16
+  notes: Backside SE runs post — secondary read if TE bracketed.
+- player: QB
+  role: ball_carrier
+  path:
+  - - 0
+    - 0
+  - - 1
+    - -1
+  - - -3
+    - -1
+  - - -5
+    - -2
+  notes: 'Triple fake — sell FB dive, sell HBR pitch, then bootleg to the strong side.
+
+    QB rolls to ~5 yd depth, scans:
+
+    - TE corner first (the kill shot)
+
+    - SE post second (vs cover-1 or cover-3 with FS biting TE)
+
+    - HBR flat as outlet (he releases late)
+
+    '
+- player: FB
+  role: fake
+  path:
+  - - 0
+    - 0
+  - - 0
+    - 2
+  - - -1
+    - 4
+  notes: Fake dive hard — sell the wishbone.
+- player: HBL
+  role: pass_block
+  blocking_scheme: chip-and-release
+  notes: Backside HBL chips the backside DE, then releases as outlet to backside flat.
+- player: HBR
+  role: route
+  route_name: flat
+  depth_yd: 3
+  notes: Pitch HB releases late to the strong-side flat — outlet for QB on rollout.
+strengths:
+- Triple play-fake (FB dive + HBR pitch + QB bootleg) sells the run massively
+- Wishbone defenses key heavily on run — PA shots have huge impact
+- TE corner attacks the seam between safety and corner
+- Backside post threat keeps the FS honest
+- HBR flat outlet provides an easy 3-yd completion
+- Constraint package after establishing FB dive / triple-option success
+weaknesses:
+- Slow-developing — QB rolling out takes 3+ sec
+- Vulnerable to backside DE pursuing the rollout
+- Pass protection fragile (only 5 OL + HBL chip)
+- Cover-2 with playside corner squat shuts down corner route
+- Wishbone QB may not be a true thrower — accuracy / arm-strength concerns
+best_vs_defense:
+- Cover-3 with FS biting on TE corner
+- Cover-1 with single coverage on TE
+- any defense aggressively run-fitting (LBs flow, leaving voids)
+- 8-man fronts (no help in deep coverage)
+worst_vs_defense:
+- Cover-2 with playside corner squatting
+- Cover-4 with disciplined deep coverage
+- Backside DE who plays QB on rollouts
+- Defenses that don't bite on PA
+common_uses:
+- PA shot off established triple-option run game
+- 1st-and-10 after a sequence of FB dives
+- Red-zone TE corner (back of end zone)
+- Constraint to over-pursuing run defenses
+- 1980s-era staple in option offenses
+philosophy: pro-style
+era: 1968 onward — wishbone-era PA bootleg; modernized through option-tradition programs.
+famous_examples:
+- Oklahoma (Barry Switzer era)
+- Texas (Darrell Royal era)
+- Service academies (Air Force Falcons in modernized form)
+- Modern triple-option teams
+tags:
+- pass
+- pa
+- bootleg
+- wishbone
+- waggle
+- 20-personnel
+- throwback
+- college
+- high-school
+notes: 'Wishbone Waggle is the PA bootleg companion to triple-option / FB dive.
+
+  Triple play-fake (FB + HBR + QB) is the signature — the formation tells
+
+  defense to expect run, and the deep play-action holds them. QB rolls
+
+  to the strong side for shorter throws to TE corner / SE post / HBR flat.
+
+
+  Mirror by flipping all x.
+
+  '
+verification_status: unverified
+source_notes:
+- Standard waggle / PA bootleg from option formations; documented across wishbone / flexbone coaching trees.
+- Built 2026-04-30 as part of the P3 specialty-play rollout.
+- Mirror of wishbone-waggle.yaml — path waypoints flipped on x; formation reference points to the mirror formation. Routes
+  auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed look
+  — coordinates and paths are the source of truth.

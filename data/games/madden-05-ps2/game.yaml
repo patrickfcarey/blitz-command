@@ -1,0 +1,44 @@
+game_id: madden-05-ps2
+title: Madden NFL 2005
+franchise: madden
+platform: PS2
+year: 2004
+release_date: "2004-08-09"
+developer: EA Tiburon
+publisher: EA Sports
+
+# Editor existence — to be filled in via game-editor-measurement-protocol.
+# User has confirmed a play editor exists with a 21x7 grid.
+editors:
+  custom_play:
+    status: present
+    notes: "Confirmed by user 2026-04-29: 21-column x 7-row play editor grid. Full capability scope (route drawing, blocking, motion) still to be measured."
+    verification: verified
+  custom_formation:
+    status: unknown
+    notes: "TO MEASURE: confirm whether players can be repositioned within formations and saved separately."
+    verification: inferred
+  custom_playbook:
+    status: unknown
+    notes: "TO MEASURE: confirm presence and play cap."
+    verification: inferred
+  custom_roster:
+    status: unknown
+    notes: "TO MEASURE: extent of name/attribute editing."
+    verification: inferred
+  custom_team:
+    status: unknown
+    notes: "TO MEASURE: confirm whether team creation exists in Madden 2005."
+    verification: inferred
+
+limits: {}
+  # TO MEASURE — populate per Part 4 of the measurement protocol.
+
+ai_quirks: []
+known_limitations: []
+
+verification_status: unverified
+source_notes:
+  - "Title, year, release date, developer, publisher: standard release info, high confidence."
+  - "Cover athlete was Ray Lewis; Hit Stick was the headline gameplay feature for this title."
+  - "Play editor grid dimensions (21x7) confirmed by user direct in-game measurement, 2026-04-29."

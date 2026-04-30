@@ -1,0 +1,42 @@
+play_id: big-i-iso
+name: Big I ISO
+aliases: [22 ISO, Heavy Iso]
+formation: big-i
+play_type: run
+ball_carrier: HB
+motions: []
+assignments:
+  - { player: LT, role: run_block, blocking_scheme: drive-block }
+  - { player: LG, role: run_block, blocking_scheme: drive-block }
+  - { player: C, role: run_block, blocking_scheme: drive-block, target: 0-or-1-tech }
+  - { player: RG, role: run_block, blocking_scheme: combo-block, target: 3-tech-then-PSLB }
+  - { player: RT, role: run_block, blocking_scheme: combo-block, target: 3-tech-then-PSLB }
+  - { player: TE-L, role: run_block, blocking_scheme: drive-block }
+  - { player: TE-R, role: run_block, blocking_scheme: drive-block, target: edge-defender }
+  - { player: WR, role: run_block, blocking_scheme: stalk, target: cornerback }
+  - { player: QB, role: handoff, path: [[0, 0], [-1, -1], [-2, -1]] }
+  - { player: FB, role: lead_block, target: playside-A-gap-LB,
+      path: [[0, 0], [1, 3], [1, 5]],
+      notes: "FB hits the playside A-gap LB — the ISOLATED defender." }
+  - { player: HB, role: ball_carrier, is_primary: true,
+      path: [[0, 0], [1, 4], [1, 9]],
+      notes: "Square handoff, hit A or B gap downhill behind FB." }
+strengths:
+  - "Heavy 22 personnel + simple man-block scheme = predictable but hard to stop"
+  - "FB ISO creates 1-on-1 vs playside LB"
+  - "Quick-hitting — ball in LB's lap in <1 sec"
+  - "Reliable for 1-3 yards in short-yardage"
+weaknesses:
+  - "Won't break for big yardage vs disciplined fronts"
+  - "Vulnerable to 1-tech shooting A-gap"
+  - "Telegraphs run from 22 personnel"
+best_vs_defense: ["4-3 with stretched LB", "cover-2 (no extra safety in box)", "3-4 with under-tackle"]
+worst_vs_defense: ["bear front", "cover-1 robber", "MIKE blitz"]
+common_uses: ["3rd-and-1, 3rd-and-2", "Red-zone short yardage", "4-minute offense"]
+philosophy: power-run
+era: "Universal short-yardage scheme."
+famous_examples: ["Mike Alstott Buccaneers heavy ISO", "Modern NFL 22 personnel short-yardage"]
+tags: [run, power-run, iso, 22-personnel, heavy, short-yardage, any-level, high-school, college, nfl]
+verification_status: unverified
+source_notes:
+  - "Big I 22-personnel ISO — same scheme as I-Form ISO but with 2 TE blockers and heavier personnel."

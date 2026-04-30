@@ -1,0 +1,119 @@
+play_id: wildcat-counter-left
+name: Wildcat Counter (Mirror Left)
+aliases:
+- Wildcat Counter Trey
+- Direct-Snap Counter
+formation: wildcat-left
+play_type: run
+ball_carrier: RB1
+motions: []
+assignments:
+- player: LT
+  role: run_block
+  blocking_scheme: pull-around
+  target: playside-LB
+  notes: PULL — backside tackle pulls around (Counter Trey style); leads through the hole.
+- player: LG
+  role: run_block
+  blocking_scheme: pull-trap
+  target: edge-defender
+  notes: PULL — backside guard pulls and kicks out the playside EDGE.
+- player: C
+  role: run_block
+  blocking_scheme: gap-block
+  target: backside-A-gap
+- player: RG
+  role: run_block
+  blocking_scheme: down-block
+  target: playside-3-tech
+- player: RT
+  role: run_block
+  blocking_scheme: down-block
+  target: playside-DT
+- player: TE
+  role: run_block
+  blocking_scheme: down-block
+  target: playside-LB
+- player: QB-WR
+  role: route
+  route_name: stalk
+  depth_yd: 0
+- player: Z
+  role: run_block
+  blocking_scheme: stalk
+- player: SLOT
+  role: run_block
+  blocking_scheme: stalk
+- player: RB1
+  role: ball_carrier
+  is_primary: true
+  path:
+  - - 0
+    - 0
+  - - 2
+    - 0
+  - - -3
+    - 2
+  - - -5
+    - 7
+  notes: Direct snap. Take a counter step (jab to the weak side), then plant and follow the pulling LG/LT to the strong side.
+- player: RB2
+  role: fake
+  notes: RB2 fakes a jet sweep to the weak side — pulls defenders and holds backside LBs.
+strengths:
+- Two pulling blockers (LG kickout + LT lead) — numbers advantage at the point of attack
+- Counter step + jet fake from RB2 holds backside defenders
+- Punishes defenses that over-rotate to Wildcat Power tendencies
+- Misdirection at multiple levels (RB1 step, RB2 fake, pulling OL)
+- Big-play potential when defense overcommits weak-side
+weaknesses:
+- Slow-developing — needs 2.5+ sec for pullers to arrive
+- Predictable as a constraint to Power if it's the only counter call
+- Vulnerable to playside DT penetration before pullers arrive
+- Requires athletic OL who can pull
+- Defense knows it's still a run
+best_vs_defense:
+- 4-3 over-front
+- cover-3 with predictable LB flow
+- defenses overplaying Wildcat Power tendencies
+- aggressive backside pursuit
+worst_vs_defense:
+- bear front
+- 8-man fronts
+- cover-1 robber
+- playside DT penetration
+common_uses:
+- Constraint to Wildcat Power
+- 1st/2nd-and-medium when defense overplays Power
+- Surprise misdirection in any package
+- Setting up reverse / trick plays off the same look
+philosophy: power-run
+era: Modern Wildcat era (2008 onward).
+famous_examples:
+- 2008 Dolphins counter package (Ronnie Brown / Ricky Williams)
+- Modern high school Wildcat programs
+tags:
+- run
+- power-run
+- counter
+- wildcat
+- direct-snap
+- misdirection
+- high-school
+- college
+- nfl
+notes: 'Counter mechanic: two-pull (BSG and BST) like Counter Trey, with the
+
+  Wildcat formation''s direct snap and RB2 jet fake adding misdirection.
+
+  Mirror by flipping all x.
+
+  '
+verification_status: unverified
+source_notes:
+- Web validated 2026-04-29 — Wikipedia 'Wildcat formation' (https://en.wikipedia.org/wiki/Wildcat_formation); National Football
+  Post 'Inside the Miami Wildcat' (https://www.nationalfootballpost.com/2008-2018-nfp-archive/inside-the-playbook/inside-the-playbook-the-miami-wildcat/).
+  Wildcat counter / two-pull mechanic confirmed across multiple Wildcat package documentations.
+- Mirror of wildcat-counter.yaml — path waypoints flipped on x; formation reference points to the mirror formation. Routes
+  auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed look
+  — coordinates and paths are the source of truth.

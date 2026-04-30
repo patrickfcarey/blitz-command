@@ -1,0 +1,132 @@
+play_id: i-formation-iso-left
+name: ISO (Lead) (Mirror Left)
+aliases:
+- Isolation
+- 21 ISO
+- Lead
+formation: i-formation-left
+play_type: run
+ball_carrier: HB
+motions: []
+assignments:
+- player: LT
+  role: run_block
+  blocking_scheme: drive-block
+  target: backside-DE
+- player: LG
+  role: run_block
+  blocking_scheme: drive-block
+  target: backside-DT
+- player: C
+  role: run_block
+  blocking_scheme: drive-block
+  target: 0-or-1-tech
+- player: RG
+  role: run_block
+  blocking_scheme: combo-block
+  target: 3-tech-then-PSLB
+  notes: Combo with RT on the playside DT, climb to playside LB.
+- player: RT
+  role: run_block
+  blocking_scheme: combo-block
+  target: 3-tech-then-PSLB
+- player: TE
+  role: run_block
+  blocking_scheme: drive-block
+  target: edge-defender
+- player: X
+  role: run_block
+  blocking_scheme: stalk
+  target: cornerback
+- player: Z
+  role: run_block
+  blocking_scheme: stalk
+  target: cornerback
+- player: QB
+  role: handoff
+  path:
+  - - 0
+    - 0
+  - - 1
+    - -1
+  - - 2
+    - -1
+  notes: Quick handoff to HB; turn out for a play-pass fake to backside.
+- player: FB
+  role: lead_block
+  target: playside-A-gap-LB
+  path:
+  - - 0
+    - 0
+  - - -1
+    - 3
+  - - -1
+    - 5
+  notes: FB hits the playside A-gap LB — that's the ISOLATED defender the play is named for.
+- player: HB
+  role: ball_carrier
+  is_primary: true
+  path:
+  - - 0
+    - 0
+  - - -1
+    - 4
+  - - -1
+    - 9
+  notes: Square handoff, hit the A or B gap depending on FB's read.
+strengths:
+- Simple man-blocking scheme with fewer moving parts than gap schemes
+- FB ISO block creates a 1-on-1 between FB and the playside LB
+- Quick-hitting — ball hits the LB's level in under a second
+- Hard to defend without committing a safety to the box
+- Reliable for 1–3 yards in short-yardage situations
+weaknesses:
+- LB blitzes split the FB's read
+- 1-tech penetration into the A-gap disrupts before FB engages
+- Won't break for big yardage against a disciplined defense
+- Vulnerable to 8-man fronts
+- Predictable — pure power tendency
+best_vs_defense:
+- 4-3 base with a stretched LB
+- 3-4 with under-tackle
+- cover-2 (no extra safety in the box)
+- any front giving up the A-gap
+worst_vs_defense:
+- cover-1 robber (extra defender in the box)
+- 4-6 / bear front (DT in every gap)
+- any defense with hot blitzes from MIKE
+common_uses:
+- 3rd-and-1 / 3rd-and-2
+- Red-zone short yardage
+- 4-minute offense
+- Establishing physicality early in a game
+philosophy: power-run
+era: 1960s to present — universal.
+famous_examples:
+- Tom Rathman / Roger Craig 49ers
+- Daryl Johnston / Emmitt Smith Cowboys
+- Mike Alstott Buccaneers
+tags:
+- power-run
+- downhill
+- short-yardage
+- high-school
+- college
+- nfl
+- any-level
+notes: 'Simplest power run in football. The play''s name describes the FB''s job:
+
+  "isolate" the playside A-gap LB so the HB can pick a side off the FB block.
+
+  '
+verification_status: unverified
+source_notes:
+- 'Assignments: standard ISO coaching texts.'
+- 'Strengths/weaknesses: power-run textbook material.'
+- 'Web validated 2026-04-29 — Wikipedia ''Iso (American football)'' (https://en.wikipedia.org/wiki/Iso_(American_football));
+  Throw Deep Publishing ''The Iso Play'' (https://throwdeeppublishing.com/blogs/football-glossary/the-iso-play-everything-you-need-to-know);
+  NFL Breakdowns ''HB Iso and Power-O'' (https://nflbreakdowns.com/2015/03/beginner-series-iso-power/). Confirmed: ''isolate
+  the FB on a lead block with a LB,'' downhill, almost always run from I-Form.'
+- Mirror of i-formation-iso.yaml — path waypoints flipped on x; formation reference points to the mirror formation. Routes
+  auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed look
+  — coordinates and paths are the source of truth.

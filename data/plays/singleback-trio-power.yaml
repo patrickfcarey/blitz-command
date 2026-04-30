@@ -1,0 +1,44 @@
+play_id: singleback-trio-power
+name: Singleback Trio Power
+aliases: [11P Power, Singleback Power]
+formation: singleback-trio
+play_type: run
+ball_carrier: HB
+motions: []
+assignments:
+  - { player: LT, role: run_block, blocking_scheme: down-block, target: backside-3-tech }
+  - { player: LG, role: run_block, blocking_scheme: pull-around, target: playside-LB,
+      path: [[0, 0], [2, -0.5], [4, 0], [5, 4]],
+      notes: "PULL — backside guard pulls around C, leads through the off-tackle hole." }
+  - { player: C, role: run_block, blocking_scheme: gap-block, target: backside-A-gap }
+  - { player: RG, role: run_block, blocking_scheme: down-block, target: playside-3-tech }
+  - { player: RT, role: run_block, blocking_scheme: down-block, target: playside-DT }
+  - { player: TE, role: run_block, blocking_scheme: kickout, target: edge-defender,
+      notes: "Kicks out playside EDGE — opens off-tackle hole." }
+  - { player: X, role: run_block, blocking_scheme: stalk, target: cornerback }
+  - { player: Z, role: run_block, blocking_scheme: stalk, target: cornerback }
+  - { player: SLOT, role: run_block, blocking_scheme: stalk, target: nickel-defender }
+  - { player: QB, role: handoff, path: [[0, 0], [-1, -1], [-2, -1]], notes: "Reverse-out and bootleg fake to backside." }
+  - { player: HB, role: ball_carrier, is_primary: true,
+      path: [[0, 0], [3, 3], [4, 8]],
+      notes: "Take handoff, hit off-tackle behind RT/TE/pulling LG. No FB lead — pulling LG IS the lead in this 11P version." }
+strengths:
+  - "11P Power forces base defense (3 WRs spread)"
+  - "Pulling LG provides lead block through the hole"
+  - "Defense must honor pass with 3 WR — opens box vs heavy fronts"
+  - "Setup for PA shots off the same 11P look"
+weaknesses:
+  - "No FB lead — 1 fewer blocker than I-Form Power"
+  - "HB has to navigate without a centered lead blocker"
+  - "Vulnerable to playside DT penetration"
+  - "Slow vs disciplined fronts"
+best_vs_defense: ["over-front", "cover-3", "4-3 base", "nickel personnel"]
+worst_vs_defense: ["bear front", "8-man fronts", "cover-1 robber"]
+common_uses: ["Modern NFL 11P run game", "1st-and-medium", "Setting up PA from spread"]
+philosophy: power-run
+era: "Modern — 11P Power is a staple of every NFL playbook."
+famous_examples: ["Modern NFL widespread", "Spread-option college teams"]
+tags: [run, power-run, gap-scheme, 11-personnel, singleback, any-level, college, nfl, modern]
+verification_status: unverified
+source_notes:
+  - "Power scheme adapted to 11P singleback — pulling LG is the only lead since no FB."

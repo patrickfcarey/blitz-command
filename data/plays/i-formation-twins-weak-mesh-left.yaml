@@ -1,0 +1,106 @@
+play_id: i-formation-twins-weak-mesh-left
+name: I-Form Twins Weak Mesh (Mirror Left)
+aliases:
+- Twins Mesh
+- I-Form Drive
+formation: i-formation-twins-weak-left
+play_type: pass
+ball_carrier: QB
+primary_read: TE
+secondary_read: SLOT
+checkdown: HB
+motions: []
+assignments:
+- player: LT
+  role: pass_block
+  blocking_scheme: man-protection
+- player: LG
+  role: pass_block
+  blocking_scheme: man-protection
+- player: C
+  role: pass_block
+  blocking_scheme: man-protection
+- player: RG
+  role: pass_block
+  blocking_scheme: man-protection
+- player: RT
+  role: pass_block
+  blocking_scheme: man-protection
+- player: TE
+  role: route
+  route_name: drag
+  depth_yd: 6
+  notes: Strong-side TE drag — primary mesh crosser.
+- player: X
+  role: route
+  route_name: comeback
+  depth_yd: 14
+  notes: Outer-left WR comeback — late outside-breaking option.
+- player: SLOT
+  role: route
+  route_name: drag
+  depth_yd: 6
+  notes: Weak-side slot drag — meshes with TE.
+- player: QB
+  role: ball_carrier
+  path:
+  - - 0
+    - 0
+  - - 0
+    - -3
+  - - 0
+    - -5
+  notes: 5-step drop. Read the mesh first (TE coming open into face), then SLOT, then HB outlet.
+- player: FB
+  role: pass_block
+  blocking_scheme: man-protection
+  notes: Stays in for blitz pickup.
+- player: HB
+  role: pass_block
+  blocking_scheme: man-protection
+  notes: Pass-protect first; release as outlet only if pressure clears.
+strengths:
+- Mesh from twins-weak creates natural rubs at the mesh point
+- Strong-side overload (TE + Z) holds the safety while mesh comes open
+- FB + HB pass-pro = clean pocket vs heavy blitz
+- Outlet to HB if mesh covered
+weaknesses:
+- 21 personnel won't force nickel — base defense matchup advantage gone
+- Slow-developing — 5-step drop needs protection
+- Cover-2 trap can squat the mesh and bracket TE
+- Bracket on TE shuts down primary
+best_vs_defense:
+- man-1
+- cover-1 robber
+- cover-3 with run-fit LBs
+worst_vs_defense:
+- cover-2 trap
+- cover-4
+- banjo coverage
+common_uses:
+- 1st-and-10 PA / pass setup
+- 3rd-and-medium
+- Setting up backside throws after mesh
+philosophy: pro-style
+era: 1990s onward — pro-style passing concept from balanced personnel.
+famous_examples:
+- Joe Moore-era Notre Dame mesh from heavy
+- Modern NFL using twins-weak as a constraint
+tags:
+- pass
+- mesh
+- anti-man
+- 21-personnel
+- twins
+- pro-style
+- west-coast
+- any-level
+- high-school
+- college
+- nfl
+verification_status: unverified
+source_notes:
+- Mesh from I-Form Twins Weak — combines power-run formation tendency with Air Raid mesh concept.
+- Mirror of i-formation-twins-weak-mesh.yaml — path waypoints flipped on x; formation reference points to the mirror formation.
+  Routes auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed
+  look — coordinates and paths are the source of truth.

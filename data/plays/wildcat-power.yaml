@@ -52,6 +52,7 @@ assignments:
   - player: RB1
     role: ball_carrier
     is_primary: true
+    path: [[0, 0], [3, 3], [4, 9]]
     notes: "Direct snap, take a quick read step, hit off-tackle behind RT/TE/pulling LG."
   - player: RB2
     role: lead_block

@@ -1,9 +1,6 @@
 play_id: singleback-ace-inside-zone
 name: Inside Zone
-aliases:
-  - IZ
-  - Inside Stretch
-  - Bang
+aliases: [IZ]
 
 formation: singleback-ace
 play_type: run
@@ -12,116 +9,56 @@ ball_carrier: HB
 motions: []
 
 assignments:
-  - player: LT
-    role: run_block
-    blocking_scheme: zone-step-playside
-    notes: "Backside tackle: zone step playside; if uncovered, climb to backside LB."
-  - player: LG
-    role: run_block
-    blocking_scheme: zone-combo
-    target: backside-DT-then-LB
-    notes: "Combo with C on backside DT, climb when DT secured."
-  - player: C
-    role: run_block
-    blocking_scheme: zone-combo
-    target: 0-or-1-tech
-    notes: "Combo with LG (or RG depending on shade) on the playside or backside DT."
-  - player: RG
-    role: run_block
-    blocking_scheme: zone-combo
-    target: 3-tech-then-PSLB
-    notes: "Combo with RT on playside DT, climb to playside LB."
-  - player: RT
-    role: run_block
-    blocking_scheme: zone-combo
-    target: 3-tech-or-EDGE
-  - player: TE
-    role: run_block
-    blocking_scheme: zone-step-playside
-    target: edge-defender
-  - player: X
-    role: run_block
-    blocking_scheme: stalk
-    target: cornerback
-  - player: Z
-    role: run_block
-    blocking_scheme: stalk
-    target: cornerback
-  - player: SLOT
-    role: run_block
-    blocking_scheme: stalk
-    target: nickel-defender
-  - player: QB
-    role: handoff
-    notes: "Quick handoff to HB, turn out for backside fake."
-  - player: HB
-    role: ball_carrier
-    is_primary: true
-    notes: |
-      Aim point is the playside A or B gap (terminology varies — Shanahan-tree
-      tradition uses B-gap, others use A). Read the playside DT/G combo:
-      - BANG (playside A or B gap) if the playside DT is reached cleanly
-      - BEND (cut back behind C / backside G) if DT sheds playside
-      - BOUNCE (outside the playside tackle) if the front crashes inside
+  - { player: LT,   role: run_block, blocking_scheme: zone-step-playside }
+  - { player: LG,   role: run_block, blocking_scheme: zone-combo }
+  - { player: C,    role: run_block, blocking_scheme: zone-combo, target: 0-or-1-tech }
+  - { player: RG,   role: run_block, blocking_scheme: zone-combo, target: 3-tech-then-PSLB }
+  - { player: RT,   role: run_block, blocking_scheme: zone-combo }
+  - { player: TE-L, role: run_block, blocking_scheme: backside-zone-step, notes: "Backside TE — zone step; helps seal cutback." }
+  - { player: TE-R, role: run_block, blocking_scheme: zone-step-playside, target: edge-defender, notes: "Playside TE — seal the edge." }
+  - { player: X,    role: run_block, blocking_scheme: stalk, target: cornerback }
+  - { player: Z,    role: run_block, blocking_scheme: stalk, target: cornerback }
+  - { player: QB,   role: handoff, path: [[0, 0], [-1, -1], [-2, -2]],
+      notes: "Reverse-pivot handoff, then sell bootleg to backside." }
+  - { player: HB,   role: ball_carrier, is_primary: true, path: [[0, 0], [2, 3], [3, 8]], notes: "BANG/BEND/BOUNCE per inside zone rules; aim point is playside A or B gap." }
 
 strengths:
-  - Most efficient run scheme in modern football
-  - HB has multiple read options (bang/bend/bounce)
-  - Combo blocks let OL handle penetrating fronts
-  - Sets up cutback runs vs over-pursuit
-  - Works against any defensive front
+  - "12 personnel singleback gives 7-blocker surface for inside zone"
+  - "Both TEs in-line means defense has to honor both edges"
+  - "Symmetric look — no run-direction tip pre-snap"
+  - "Hardest run scheme in modern football to defend without a true run-stopper LB"
 
 weaknesses:
-  - Requires athletic OL who can climb to second level
-  - HB must read correctly — wrong choice = TFL
-  - Slow-developing relative to gap schemes
-  - Vulnerable to playside DE shooting outside contain
-  - Hard to install cleanly — assignments depend on the front
+  - "Slow developing relative to gap schemes"
+  - "Vulnerable to playside DT shooting the gap before zone-combo sets"
+  - "HB must read correctly — wrong choice = TFL"
 
 best_vs_defense:
-  - over-front (gives natural combo angles)
-  - cover-3 (LB drops away from playside)
-  - 4-3 base
-  - any defense with stretched LBs
+  - "over-front (gives natural combo angles)"
+  - "cover-3 (LB drops away from playside)"
+  - "any defense with stretched LBs"
 
 worst_vs_defense:
-  - bear front (DT in every gap)
-  - 8-man fronts
-  - any defense with disciplined gap fits
-  - cover-1 robber
+  - "bear front"
+  - "8-man fronts"
+  - "cover-1 robber"
 
 common_uses:
-  - 1st-and-10 base run
-  - 2nd-and-medium
-  - Working into the run game vs pass-heavy defenses
-  - Setting up PA off zone fake
+  - "1st-and-10 base run"
+  - "2nd-and-medium"
+  - "Setting up PA off the same look"
 
 philosophy: zone-run
-
-era: "1990s onward — Mike Shanahan / Alex Gibbs Broncos popularized it; now universal."
-
+era: "1990s onward"
 famous_examples:
-  - "1990s–2000s Broncos (Terrell Davis, Clinton Portis)"
-  - "Modern NFL (every team runs IZ)"
-  - "Stanford under Harbaugh / Shaw"
-
-tags:
-  - zone-run
-  - inside-zone
-  - any-level
-  - high-school
-  - college
-  - nfl
-  - modern
+  - "Modern NFL/college 12-personnel singleback teams"
+tags: [zone-run, inside-zone, 12-personnel, singleback, any-level, high-school, college, nfl]
 
 notes: |
-  The "rules-based" run play. Every OL has a zone step and a defender to
-  account for, but no individual defender must be blocked specifically. HB
-  reads the playside guard/tackle combo to pick his lane. The bang/bend/
-  bounce decision is the hallmark of inside zone.
+  Inside Zone from the 12-personnel symmetric singleback. With 2 TEs flanking,
+  both edges have a sealing blocker. HB reads playside DT/G combo and takes
+  bang/bend/bounce per standard IZ rules.
 
 verification_status: unverified
 source_notes:
-  - "Assignments: standard inside zone coaching (Alex Gibbs / Mike Shanahan tradition)."
-  - "Strengths/weaknesses: modern run-game textbook material."
-  - "Web validated 2026-04-29 — SumerSports 'Shanahan Schemes' (https://sumersports.com/the-zone/shanahan-schemes/); BigSkillPosition 'Inside Zone' (https://bigskillposition.wordpress.com/category/inside-zone/); Mile High Report 'Zone vs Gap' (https://www.milehighreport.com/22451001/difference-between-zone-and-gap-scheme). Confirmed BANG/BEND/BOUNCE framework; B-gap aim point is Shanahan-tradition (other traditions use A-gap)."
+  - "Inside zone from 12-personnel singleback — standard modern run concept; same scheme as singleback-trio-inside-zone but with 2 TEs and no slot."

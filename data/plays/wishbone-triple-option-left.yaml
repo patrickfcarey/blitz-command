@@ -1,0 +1,155 @@
+play_id: wishbone-triple-option-left
+name: Triple Option (Strong) (Mirror Left)
+aliases:
+- Wishbone Veer
+- Triple
+- Veer Option
+formation: wishbone-left
+play_type: run
+ball_carrier: QB
+primary_read: FB
+motions: []
+assignments:
+- player: LT
+  role: run_block
+  blocking_scheme: down-block
+  target: backside-DT
+- player: LG
+  role: run_block
+  blocking_scheme: down-block
+  target: backside-1-tech
+- player: C
+  role: run_block
+  blocking_scheme: zone-step-playside
+  target: 0-tech-or-PSLB
+- player: RG
+  role: run_block
+  blocking_scheme: zone-step-playside
+  notes: Veer-step combo with RT on the playside DT.
+- player: RT
+  role: run_block
+  blocking_scheme: zone-combo
+  target: 3-tech-then-PSLB
+  notes: Veer combo with RG on playside DT, then climb to LB.
+- player: TE
+  role: run_block
+  blocking_scheme: zone-combo
+  target: edge-defender-or-LB
+  notes: Combo with RT or release directly to playside LB.
+- player: SE
+  role: run_block
+  blocking_scheme: stalk
+  target: cornerback
+  notes: Backside cutoff stalk.
+- player: QB
+  role: ball_carrier
+  is_primary: true
+  path:
+  - - 0
+    - 0
+  - - -1
+    - 1
+  - - -3
+    - 3
+  - - -5
+    - 5
+  notes: "Triple-option mechanic — TWO reads in sequence:\n1. DIVE READ: Read the playside DT/3-tech (or first defender outside\
+    \ the down-block).\n   - DT crashes inside on FB → PULL the ball, attack the corner with HBR\n   - DT plays QB / contains\
+    \ → GIVE to FB on dive (FB hits inside)\n2. PITCH READ (only if QB pulled): Read the playside EDGE / pitch defender.\n\
+    \   - Defender plays QB → PITCH to HBR trailing\n   - Defender plays the pitch → KEEP the ball, turn upfield\n"
+- player: FB
+  role: ball_carrier
+  path:
+  - - 0
+    - 0
+  - - 0
+    - 2
+  - - -1
+    - 4
+  - - -2
+    - 6
+  notes: 'Dive path: receive QB read, hit between RG and RT (B-gap or A-gap).'
+- player: HBL
+  role: lead_block
+  target: backside-edge
+  path:
+  - - 0
+    - 0
+  - - -3
+    - 1
+  - - 1
+    - 4
+  notes: Backside HB cuts behind the line to seal the backside EDGE — counter-flow block on a chasing DE.
+- player: HBR
+  role: lead_block
+  target: pitch-relationship
+  path:
+  - - 0
+    - 0
+  - - -4
+    - 1
+  - - -7
+    - 3
+  - - -10
+    - 6
+  notes: Pitch HB — runs at full speed, stays 4 yards behind and outside the QB. Receives pitch if QB reads keep-or-pitch
+    correctly.
+strengths:
+- Triple threat in one play — defense must commit a defender to each option phase
+- 'Numbers advantage when option works: 1 ball-carrier vs every defender'
+- FB dive is hard to stop without a true 0-tech / 1-tech NT
+- Pitch sweep can break for huge yardage if defense over-commits
+- Misdirection built in — no pre-snap tell of which option fires
+weaknesses:
+- Slow-developing — needs ~2.5 sec for option to develop
+- Requires QB who's a credible runner AND can pitch accurately
+- Modern fast defenses with disciplined option-fits neutralize triple threat
+- Vulnerable to disciplined safety in run support
+- Predictable as a run-only call from this formation
+best_vs_defense:
+- 4-3 base with predictable EDGE play
+- any defense unprepared for option football
+- speed-flow defenses that over-pursue
+- cover-3 with run-fit LBs
+worst_vs_defense:
+- disciplined option-fit defenses (academies, coach prep matters)
+- cover-1 robber (safety in run support)
+- scrape-exchange from playside LB
+- 8-man fronts
+common_uses:
+- Wishbone base play — most-called concept
+- 1st-and-10 base run vs 4-3 / 3-4 base defenses
+- Setting up counter / midline option from same look
+- Goal-line / red-zone (FB dive becomes the run)
+- Triple-option base offense (Texas / Oklahoma / Alabama tradition)
+philosophy: option
+era: 1968 onward — Emory Bellard / Texas under Darrell Royal popularized; widespread college through 1990s.
+famous_examples:
+- Texas under Darrell Royal (1968-1976) — origin
+- Oklahoma under Barry Switzer (1973-1988) — 3 NCs
+- Alabama under Bear Bryant (1971-1982)
+- Service academies (modernized into Flexbone)
+tags:
+- run
+- option
+- triple-option
+- wishbone
+- 20-personnel
+- throwback
+- college
+- high-school
+- veer
+notes: 'The Wishbone signature play. QB reads twice — first the DT (give to FB
+
+  or pull), then the EDGE (keep or pitch). Three ball-carriers possible
+
+  on one snap. Mirror to "Triple Option Weak" by flipping all x.
+
+  '
+verification_status: unverified
+source_notes:
+- Standard wishbone triple-option per Bellard / Royal / Switzer coaching tradition.
+- Built 2026-04-30 as part of the P3 specialty-play rollout.
+- Mirror of wishbone-triple-option.yaml — path waypoints flipped on x; formation reference points to the mirror formation.
+  Routes auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed
+  look — coordinates and paths are the source of truth.

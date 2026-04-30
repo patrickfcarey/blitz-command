@@ -1,0 +1,20 @@
+name: comeback
+description: Push to 14 yards, then break back toward the sideline at a downward angle.
+path:
+- - 0
+  - 0
+- - 0
+  - 14
+- - -2
+  - 12
+typical_break_depth_yd: 14
+option_route: false
+category: intermediate
+beats_coverage: both
+tags:
+- intermediate
+- outside-breaking
+- sideline
+verification_status: unverified
+source_notes:
+- Standard comeback at 12-15 yd break. Effective vs press / off coverage.

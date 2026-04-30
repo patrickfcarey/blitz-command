@@ -1,0 +1,100 @@
+name: Flexbone
+side: offense
+personnel: "20 (flexbone)"
+strength_side: balanced
+
+# Modern triple-option formation — evolution of the Wishbone. 5 OL, 1 TE
+# (or in some variants 0 TE / 2 SE), 2 SE/WR split wide, QB under center,
+# 1 FB at FB depth directly behind QB, 2 SLOT-BACKS (slot wing-backs)
+# flanking the OL at slot-back depth and width.
+#
+# The slot-backs replace the deep HBs of the Wishbone — they're closer
+# to the LOS for faster pitch arrivals and can run jet motion / pre-snap
+# motion. Service academies (Air Force, Navy, Army) run Flexbone as base.
+#
+# Legality: 5 OL + TE + SE = 7 on line. QB, FB, SLOT-L, SLOT-R off.
+players:
+  - { label: LT,     position: LT, x: -2.0,  y:  0.0, on_line: true  }
+  - { label: LG,     position: LG, x: -1.0,  y:  0.0, on_line: true  }
+  - { label: C,      position: C,  x:  0.0,  y:  0.0, on_line: true  }
+  - { label: RG,     position: RG, x:  1.0,  y:  0.0, on_line: true  }
+  - { label: RT,     position: RT, x:  2.0,  y:  0.0, on_line: true  }
+  - { label: TE,     position: TE, x:  3.5,  y:  0.0, on_line: true  }
+  - { label: SE,     position: WR, x: -15.0, y:  0.0, on_line: true  }
+  - { label: QB,     position: QB, x:  0.0,  y: -2.0, on_line: false }
+  - { label: FB,     position: FB, x:  0.0,  y: -4.5, on_line: false }
+  - { label: SLOT-L, position: HB, x: -7.0,  y: -1.0, on_line: false }
+  - { label: SLOT-R, position: HB, x:  7.0,  y: -1.0, on_line: false }
+
+strengths:
+  - "Triple-option threat with faster pitch (slot-backs at slot depth, not deep HB depth)"
+  - "Slot-backs can run jet motion / pre-snap motion (used heavily by service academies)"
+  - "Two pitch-men (SLOT-L and SLOT-R) — option works to either side"
+  - "Better passing flexibility than Wishbone (slot-backs are eligible receivers)"
+  - "Run-pass deception — slot-backs can route or block depending on the play"
+  - "Hard for traditional 4-3 / 3-4 defenses to fit (7 box defenders mismatch the option)"
+
+weaknesses:
+  - "Still run-heavy — not a pure passing offense"
+  - "Modern fast defenses with disciplined option-fits neutralize the read element"
+  - "Limited 4-WR / spread looks"
+  - "QB takes hits as a runner — injury risk"
+  - "Slot-backs need to be both runners AND receivers AND blockers — versatile player rare"
+
+common_uses:
+  - "Service-academy base offense (Air Force, Navy, Army)"
+  - "Triple-option base run game"
+  - "Heavy-personnel constraint in modern playbooks"
+  - "1st-down balanced run/pass calls"
+  - "PA shots from the same look"
+
+run_concepts:
+  - triple-option-veer
+  - midline-triple
+  - fb-dive
+  - counter-option
+  - power-pitch
+  - speed-option
+  - jet-sweep
+
+pass_concepts:
+  - waggle
+  - pa-flood
+  - pa-deep-shot
+  - bootleg-flat
+
+era: "1980s onward — Fisher DeBerry Air Force popularized; modernized triple-option used by service academies and some option-heavy college programs."
+
+famous_users:
+  - "Air Force Falcons (Fisher DeBerry, Troy Calhoun era 1984-)"
+  - "Navy Midshipmen (Paul Johnson, Ken Niumatalolo era)"
+  - "Army West Point (Jeff Monken era)"
+  - "Georgia Tech (Paul Johnson 2008-2018)"
+
+tags:
+  - flexbone
+  - triple-option
+  - 20-personnel
+  - balanced
+  - run-heavy
+  - service-academy
+  - college
+  - high-school
+  - option
+
+notes: |
+  Flexbone is the modernized triple-option. The wing-backs ("slot-backs")
+  replace the deep HBs of the Wishbone — they're at slot-back depth (1 yd
+  off the line) and 7 yds wide, which lets them serve as pitch men, jet
+  motion threats, and route-runners. Most-run college offense in
+  service-academy football.
+
+  Difference from Wishbone:
+  - Wishbone HBs are deep (-6) and tight (3 yd from C)
+  - Flexbone slot-backs are shallow (-1) and wide (7 yd from C)
+  - Result: faster pitches, more passing flexibility, harder for defense to fit
+
+verification_status: unverified
+source_notes:
+  - "Standard Flexbone alignment per Air Force / Navy / Georgia Tech (Paul Johnson) coaching trees."
+  - "Built 2026-04-30 as part of the P3 specialty-formation rollout."

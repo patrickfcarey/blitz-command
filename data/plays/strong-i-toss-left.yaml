@@ -1,0 +1,131 @@
+play_id: strong-i-toss-left
+name: Strong I Toss (Mirror Left)
+aliases:
+- Strong Toss
+- Strong Side Pitch
+formation: strong-i-left
+play_type: run
+ball_carrier: HB
+motions: []
+assignments:
+- player: LT
+  role: run_block
+  blocking_scheme: drive-block
+  target: backside-DE
+- player: LG
+  role: run_block
+  blocking_scheme: drive-block
+  target: backside-DT
+- player: C
+  role: run_block
+  blocking_scheme: drive-block
+  target: 0-or-1-tech
+- player: RG
+  role: run_block
+  blocking_scheme: pull-around
+  target: playside-LB
+  path:
+  - - 0
+    - 0
+  - - -3
+    - -0.5
+  - - -6
+    - 0
+  - - -7
+    - 4
+  notes: PULL — playside guard pulls and leads up to LB level on the perimeter.
+- player: RT
+  role: run_block
+  blocking_scheme: down-block
+  target: playside-DE
+- player: TE
+  role: run_block
+  blocking_scheme: kickout
+  target: edge-defender
+- player: X
+  role: run_block
+  blocking_scheme: stalk
+  target: cornerback
+- player: Z
+  role: run_block
+  blocking_scheme: crack
+  target: alley-defender
+  notes: Crack-block back inside on the alley defender.
+- player: QB
+  role: handoff
+  path:
+  - - 0
+    - 0
+  - - 1
+    - -1
+  - - 3
+    - -1
+  notes: Reverse-out and pitch the ball; carry out backside fake.
+- player: FB
+  role: lead_block
+  target: cornerback
+  path:
+  - - 0
+    - 0
+  - - -4
+    - 4
+  - - -8
+    - 5
+  notes: FB leads through the perimeter — kickout the corner if needed.
+- player: HB
+  role: ball_carrier
+  is_primary: true
+  path:
+  - - 0
+    - 0
+  - - -4
+    - 1
+  - - -7
+    - 4
+  - - -10
+    - 8
+  notes: Take pitch on the move, gain ground laterally, turn upfield once perimeter is sealed.
+strengths:
+- FB pre-aligned strong = shorter path to perimeter lead block
+- Speed advantage with HB receiving the ball on the move
+- Multiple lead blockers (FB + pulling RG)
+- Forces defense to honor the perimeter — opens cutbacks if defense overflows
+weaknesses:
+- Slow-developing — needs ~2.5 sec for HB to reach the corner
+- Vulnerable to playside DE shooting upfield
+- Cornerback who avoids crack-block can chase HB down
+- Predictable from Strong I tendency
+best_vs_defense:
+- 4-3 with predictable EDGE
+- cover-3 with stretched playside
+- cover-2 with squatting corners
+worst_vs_defense:
+- cover-1 with EDGE squeezing
+- bear front
+- playside blitz
+common_uses:
+- 1st/2nd-and-medium perimeter run
+- Setting up reverses and counters
+- Quick HB-to-space concept
+philosophy: power-run
+era: 1960s onward — universal toss / sweep concept.
+famous_examples:
+- Vince Lombardi sweep tradition
+- 1990s Cowboys (Emmitt Smith on toss sweeps)
+tags:
+- run
+- toss
+- sweep
+- perimeter
+- strong-side
+- 21-personnel
+- any-level
+- high-school
+- college
+- nfl
+verification_status: unverified
+source_notes:
+- Standard toss / pitch scheme; Strong I FB pre-alignment makes the lead path faster than I-Form Toss.
+- Mirror of strong-i-toss.yaml — path waypoints flipped on x; formation reference points to the mirror formation. Routes auto-mirror
+  in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed look — coordinates
+  and paths are the source of truth.

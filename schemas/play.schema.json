@@ -162,6 +162,47 @@
           "type": "boolean",
           "description": "True if this player is the primary read (for routes) or the primary ball-carrier."
         },
+        "path": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": { "type": "number" }
+          },
+          "description": "Polyline waypoints in yards (universal coords) relative to the player's start position. The PRIMARY path. Color depends on role (orange for ball_carrier, magenta for FB lead, green for pulling lineman, light gray for pass-block, etc.)."
+        },
+        "alt_paths": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["priority", "path"],
+            "additionalProperties": false,
+            "properties": {
+              "priority": {
+                "enum": ["primary", "secondary", "tertiary", "checkdown"],
+                "description": "Read priority — drawn in matching color (primary=orange, secondary=blue, tertiary=lavender, checkdown=light gray)."
+              },
+              "path": {
+                "type": "array",
+                "minItems": 2,
+                "items": {
+                  "type": "array",
+                  "minItems": 2,
+                  "maxItems": 2,
+                  "items": { "type": "number" }
+                }
+              },
+              "notes": { "type": "string" }
+            }
+          },
+          "description": "Additional path alternatives for the same player. Used to show HB read options on a run play (e.g. BANG/BEND/BOUNCE on stretch zone) — the primary `path` is the first read, alt_paths add the secondary and tertiary options."
+        },
+        "beats_coverage": {
+          "enum": ["man", "zone", "both"],
+          "description": "Override for which coverage type this assignment is designed to attack. If absent, falls back to the route's default beats_coverage (when role=route)."
+        },
         "notes": { "type": "string" }
       }
     }

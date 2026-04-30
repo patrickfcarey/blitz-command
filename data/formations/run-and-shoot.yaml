@@ -1,0 +1,101 @@
+name: Run and Shoot
+side: offense
+personnel: "10 (run-and-shoot)"
+strength_side: balanced
+
+# Glenn "Tiger" Ellison / Mouse Davis innovation. 4 WR (2 split wide,
+# 2 in slots) + 1 RB + 0 TE + QB. Receivers run "choice" / "option" routes
+# that adjust mid-route based on coverage. Built around horizontal stretch
+# and post-snap defensive reads.
+#
+# The system's signature: every receiver can audible his own route based
+# on what the defender does. This makes the offense extremely hard to
+# scout — formation looks the same, but routes change every snap.
+#
+# Legality: 5 OL + X + Z (or one slot) = 7 on line. Variants exist with
+# X off the line; here X is on for legality.
+players:
+  - { label: LT,    position: LT, x: -2.0,  y:  0.0, on_line: true  }
+  - { label: LG,    position: LG, x: -1.0,  y:  0.0, on_line: true  }
+  - { label: C,     position: C,  x:  0.0,  y:  0.0, on_line: true  }
+  - { label: RG,    position: RG, x:  1.0,  y:  0.0, on_line: true  }
+  - { label: RT,    position: RT, x:  2.0,  y:  0.0, on_line: true  }
+  - { label: X,     position: WR, x: -15.0, y:  0.0, on_line: true  }
+  - { label: Z,     position: WR, x:  15.0, y:  0.0, on_line: true  }
+  - { label: SLOT-L, position: WR, x: -8.0,  y: -1.0, on_line: false }
+  - { label: SLOT-R, position: WR, x:  8.0,  y: -1.0, on_line: false }
+  - { label: QB,    position: QB, x:  0.0,  y: -2.0, on_line: false }
+  - { label: HB,    position: HB, x: -2.0,  y: -5.0, on_line: false }
+
+strengths:
+  - "Four receivers all eligible — extreme spread-out attack"
+  - "Choice routes adjust to coverage post-snap — hard to defend with a fixed call"
+  - "Forces defense out of base personnel into nickel or dime"
+  - "Tempo-friendly — quick reads and quick throws"
+  - "QB has multiple options on every play; checkdown is built in"
+  - "Innovative for its era — trail-blazed modern spread offense"
+
+weaknesses:
+  - "Run game limited (1 RB, no TE, no FB lead)"
+  - "QB must read coverages quickly — high cognitive load"
+  - "Receivers must read coverage AND adjust routes — high cognitive load"
+  - "Pass-protection fragile (no extra blockers)"
+  - "Modern pattern-match coverage neutralizes choice routes"
+  - "Relies on QB being right more often than not"
+
+common_uses:
+  - "Pass-heavy passing-down packages"
+  - "Tempo offense / hurry-up base"
+  - "1980s-90s NFL run-and-shoot teams (Houston Oilers, Detroit Lions)"
+  - "Modern spread-passing variants (some Air Raid concepts inherit this)"
+  - "When the offense needs to spread the field horizontally"
+
+run_concepts:
+  - draw
+  - trap
+  - inside-zone
+
+pass_concepts:
+  - choice
+  - switch-vertical
+  - smash-with-choice
+  - mesh
+  - four-verticals
+  - slant-and-go
+
+era: "1980s-90s — Mouse Davis / Glenn Ellison origin; popularized by Jerry Glanville's Houston Oilers and June Jones's Atlanta Falcons / Hawaii teams."
+
+famous_users:
+  - "Houston Oilers (Jerry Glanville / Warren Moon era 1990-1993)"
+  - "Detroit Lions (Wayne Fontes / Andre Ware / Rodney Peete)"
+  - "Atlanta Falcons (June Jones era)"
+  - "Hawaii Warriors (June Jones, then Norm Chow)"
+  - "SMU Mustangs (June Jones era)"
+
+tags:
+  - run-and-shoot
+  - 10-personnel
+  - 4-wide
+  - spread
+  - pass-heavy
+  - choice-routes
+  - throwback
+  - college
+  - nfl
+  - high-school
+
+notes: |
+  Run-and-Shoot was the original "every receiver reads the coverage"
+  spread offense. Routes are option / choice routes — the receiver picks
+  his route post-snap based on what the corner / safety does. This makes
+  the offense extremely flexible (no two snaps look the same) but also
+  cognitively demanding for QB and receivers.
+
+  The system fell out of favor in the late 1990s as defenses developed
+  pattern-matching to neutralize choice routes. Concepts inherited into
+  the Air Raid (Mike Leach's signature offense traces partially to RnS).
+
+verification_status: unverified
+source_notes:
+  - "Web-validated as historically prominent offense; documented across NFL coaching biographies (Mouse Davis, June Jones, Jerry Glanville eras)."
+  - "Built 2026-04-30 as part of the P3 specialty-formation rollout."

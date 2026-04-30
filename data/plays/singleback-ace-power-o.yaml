@@ -1,0 +1,129 @@
+play_id: singleback-ace-power-o
+name: Power O (Strong)
+aliases:
+  - 12P Power
+  - Singleback Power
+
+formation: singleback-ace
+play_type: run
+ball_carrier: HB
+
+motions: []
+
+assignments:
+  - player: LT
+    role: run_block
+    blocking_scheme: down-block
+    target: backside-3-tech
+  - player: LG
+    role: run_block
+    blocking_scheme: pull-around
+    target: playside-LB
+    path: [[0, 0], [2, -0.5], [4, 0], [5, 4]]
+    notes: "PULL — backside guard pulls around C, leads through the off-tackle hole."
+  - player: C
+    role: run_block
+    blocking_scheme: gap-block
+    target: backside-A-gap
+  - player: RG
+    role: run_block
+    blocking_scheme: down-block
+    target: playside-3-tech
+  - player: RT
+    role: run_block
+    blocking_scheme: down-block
+    target: playside-DT
+  - player: TE-L
+    role: run_block
+    blocking_scheme: backside-cutoff
+    target: backside-edge
+    notes: "TE-L cuts off backside; prevents pursuit through the cutback."
+  - player: TE-R
+    role: run_block
+    blocking_scheme: kickout
+    target: edge-defender
+    notes: "TE-R kicks out the playside EDGE — opens the off-tackle hole."
+  - player: X
+    role: run_block
+    blocking_scheme: stalk
+    target: cornerback
+  - player: Z
+    role: run_block
+    blocking_scheme: stalk
+    target: cornerback
+  - player: QB
+    role: handoff
+    path: [[0, 0], [-1, -1], [-2, -1]]
+    notes: "Reverse-out to HB; sell a fake bootleg to the backside."
+  - player: HB
+    role: ball_carrier
+    is_primary: true
+    path: [[0, 0], [3, 2], [4, 8]]
+    notes: |
+      Take handoff at depth, hit off-tackle hole between RT and TE-R,
+      follow pulling LG through to the second level. No FB lead in this
+      12P version — pulling LG IS the lead blocker.
+
+strengths:
+  - 12 personnel singleback gives 7-blocker surface
+  - Both edges sealed (TE-L cuts backside, TE-R kicks out playside)
+  - Pulling LG provides lead block through the hole
+  - Defense forced to honor pass with 2 WRs split — can't over-load box freely
+  - Symmetric pre-snap look — defense can't shade run direction
+
+weaknesses:
+  - No FB lead block (singleback limitation) — LG pull IS the lead
+  - Slow-developing relative to dive
+  - HB must hit the hole on first read
+  - Vulnerable to playside DT penetration before down-blocks are set
+  - Backside DE who chases hard kills cutback option
+
+best_vs_defense:
+  - over-front (gives down-block angles)
+  - cover-3 with single safety
+  - 4-3 base
+  - any defense with predictable LB flow
+
+worst_vs_defense:
+  - bear front
+  - 8-man fronts
+  - cover-1 robber
+  - penetrating playside 1-tech
+
+common_uses:
+  - 1st/2nd-and-short — modern 12-personnel power
+  - Red-zone runs (4-12 yard line)
+  - Setting up PA shots off the same look
+  - 4-minute offense
+
+philosophy: power-run
+
+era: "Modern — 12 personnel power running has become a staple in NFL/college since the 2010s."
+
+famous_examples:
+  - "Modern NFL 12-personnel teams (49ers, Rams)"
+  - "Patriots multiple-personnel power packages"
+  - "College teams using 12P as their base run set"
+
+tags:
+  - run
+  - power-run
+  - power-o
+  - gap-scheme
+  - 12-personnel
+  - singleback
+  - any-level
+  - high-school
+  - college
+  - nfl
+  - modern
+
+notes: |
+  Singleback-ace (12 personnel) version of Power O. Same blocking principles
+  as the I-Formation Power O but without the FB lead — the pulling LG
+  becomes the lead blocker. TE-L provides backside cutoff; TE-R kicks out
+  the playside EDGE.
+
+verification_status: unverified
+source_notes:
+  - "12-personnel power scheme; standard modern adaptation of classic Power O."

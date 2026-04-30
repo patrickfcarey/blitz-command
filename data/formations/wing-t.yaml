@@ -20,7 +20,7 @@ players:
   - { label: TE,    position: TE, x:  3.5,  y:  0.0, on_line: true  }
   - { label: X,     position: WR, x: -15.0, y:  0.0, on_line: true  }
   - { label: WING,  position: TE, x:  5.0,  y: -1.0, on_line: false }
-  - { label: QB,    position: QB, x:  0.0,  y: -1.5, on_line: false }
+  - { label: QB,    position: QB, x:  0.0,  y: -2.0, on_line: false }
   - { label: FB,    position: FB, x:  0.0,  y: -4.5, on_line: false }
   - { label: HB,    position: HB, x: -2.0,  y: -5.5, on_line: false }
 
