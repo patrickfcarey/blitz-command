@@ -1,0 +1,31 @@
+concept_id: switch
+name: Switch
+category: crossing-route
+description: |
+  Two receivers cross or "switch" their assigned route responsibilities post-snap based
+  on coverage read. Creates confusion vs man coverage (natural picks). Flexible routing
+  with high variance. Used in sophisticated offenses with well-trained receivers.
+progression:
+  - primary: receiver A (adjusted route)
+    secondary: receiver B (adjusted route)
+best_vs_coverage:
+  - man
+  - aggressive-coverage
+attacks:
+  - "Route switching creates natural picks"
+  - "Confuses man defenders"
+pairs_with:
+  - man-protection
+  - option-route
+tags:
+  - pass-concept
+  - switch
+  - crossing-route
+  - option-route
+  - man-beater
+  - college
+  - nfl
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Throw Deep Publishing 'Switch Route' (https://throwdeeppublishing.com/blogs/football-glossary/): receiver switch concept."
+  - "Web validated 2026-04-30 — X&O Labs 'Option Route Concepts' (https://www.xandolabs.com/): switch as man-beater."

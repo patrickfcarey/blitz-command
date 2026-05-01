@@ -1,0 +1,33 @@
+concept_id: four-verticals
+name: Four Verticals
+category: vertical-stretch
+description: |
+  All four receivers run vertical routes (go/streak routes) attacking deep. Stretches
+  defense vertically. QB reads from left to right (or specific progression). Used in
+  Air Raid and high-volume passing offenses. Minimal intermediate options; forces
+  defense to choose coverage vertically.
+progression:
+  - primary: leftmost deep route
+    secondary: next receiver
+  - tertiary: rightmost deep route
+best_vs_coverage:
+  - cover-2 (split safeties)
+  - aggressive-corner-coverage
+attacks:
+  - "Deep routes vs cover-2 split"
+  - "Safety rotation vulnerability"
+pairs_with:
+  - air-raid
+  - spread-option
+tags:
+  - pass-concept
+  - four-verticals
+  - vertical-stretch
+  - deep-game
+  - air-raid
+  - college
+  - nfl
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Throw Deep Publishing '4 Verticals' (https://throwdeeppublishing.com/blogs/football-glossary/): four deep routes structure."
+  - "Web validated 2026-04-30 — X&O Labs 'Air Raid Verticals' (https://www.xandolabs.com/): common air raid concept."

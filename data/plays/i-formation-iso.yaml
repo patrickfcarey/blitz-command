@@ -92,6 +92,8 @@ common_uses:
   - Establishing physicality early in a game
 
 philosophy: power-run
+run_concept_ref: power
+philosophy_ref: power-run
 
 era: "1960s to present — universal."
 

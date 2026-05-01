@@ -1,0 +1,38 @@
+scheme_id: gap-blocking
+name: Gap Blocking
+category: run-blocking
+description: |
+  OL blocks the gap to their playside. Playside OL down-block (block away from
+  their body), backside OL pull around to lead. Creates a defined hole with
+  one specific running lane. Foundation of Power, Counter, and other gap
+  schemes. Simpler than zone-blocking but less flexible.
+assignments_by_position:
+  LT: "Down-block the playside DL; seal them away from the hole."
+  LG: "Down-block or pull (depending on play). If pulling, lead around the C."
+  C: "Down-block the playside DL / anchor the pull."
+  RG: "Down-block the playside DL."
+  RT: "Down-block or seal the edge (TE's job on many plays)."
+  TE: "Kick out the EDGE; seal them outside."
+  HB: "Hit the created hole downhill; follow the puller's lead."
+  FB: "Lead-block through the hole or kick out EDGE."
+defeats:
+  - "gap-slanting fronts (once you down-block, the DL is sealed)"
+  - "predictable fronts that stay in gaps"
+vulnerable_to:
+  - "stunts that cross gaps"
+  - "interior twist (between C and G)"
+  - "fast-flowing LBs who scrape over the top"
+tags:
+  - run-blocking
+  - gap-scheme
+  - run
+  - power
+  - counter
+  - any-level
+  - high-school
+  - college
+  - nfl
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Throw Deep Publishing 'Gap-Blocking Run Schemes' (https://throwdeeppublishing.com/blogs/football-glossary/): confirmed down-block + pull structure."
+  - "Web validated 2026-04-30 — X&O Labs 'Power Run Schemes' (https://www.xandolabs.com/): gap blocking used in Power with backside guard pull."

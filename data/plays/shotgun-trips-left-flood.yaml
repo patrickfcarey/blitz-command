@@ -103,6 +103,8 @@ common_uses:
 - Red-zone fade option (sail becomes back-of-end-zone target)
 - PA pairing for max effect (PA fake holds run-flow LBs)
 philosophy: pro-style
+pass_concept_ref: flood
+philosophy_ref: pro-style
 era: Universal — Don Coryell origin (1980s); modernized through every era.
 famous_examples:
 - Don Coryell Chargers (originator)

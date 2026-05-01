@@ -92,6 +92,8 @@ common_uses:
 - 3rd-and-medium boot pass
 - Red-zone moving-target throws
 philosophy: west-coast
+pass_concept_ref: sail
+philosophy_ref: west-coast
 era: 1980s onward — Bill Walsh staple, modernized continuously.
 famous_examples:
 - Mike Holmgren bootleg game (Packers / Seahawks)

@@ -98,6 +98,8 @@ common_uses:
   - Setting up future window throws (defense backs off after a 4-Verts hit)
 
 philosophy: air-raid
+pass_concept_ref: four-verticals
+philosophy_ref: air-raid
 
 era: "1980s onward — Don Coryell origin, Mike Leach / Hal Mumme made it iconic in the Air Raid."
 

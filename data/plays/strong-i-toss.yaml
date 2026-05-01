@@ -38,6 +38,8 @@ best_vs_defense: ["4-3 with predictable EDGE", "cover-3 with stretched playside"
 worst_vs_defense: ["cover-1 with EDGE squeezing", "bear front", "playside blitz"]
 common_uses: ["1st/2nd-and-medium perimeter run", "Setting up reverses and counters", "Quick HB-to-space concept"]
 philosophy: power-run
+run_concept_ref: sweep
+philosophy_ref: power-run
 era: "1960s onward — universal toss / sweep concept."
 famous_examples: ["Vince Lombardi sweep tradition", "1990s Cowboys (Emmitt Smith on toss sweeps)"]
 tags: [run, toss, sweep, perimeter, strong-side, 21-personnel, any-level, high-school, college, nfl]

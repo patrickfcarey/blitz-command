@@ -90,6 +90,8 @@ common_uses:
   - Constraint package vs aggressive fronts
 
 philosophy: power-run
+run_concept_ref: power
+philosophy_ref: power-run
 
 era: "1960s onward — Wing-T 'big three' (Trap / Belly / Down). Universal at HS level."
 

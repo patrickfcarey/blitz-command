@@ -1,0 +1,54 @@
+philosophy_id: pro-style
+name: Pro-Style
+description: |
+  Generic NFL/CFL balanced offense combining both run and pass elements in
+  relatively equal measure. 11 personnel (1 RB, 1 TE, 3 WR) is standard. Call
+  plays from under-center and shotgun. Attack vertically (deep routes) and
+  horizontally (perimeter, screens). Emphasis on play-caller IQ and scheme fit.
+  De facto standard for modern NFL play-design.
+era: "1960s–today"
+originators:
+  - "Don Coryell"
+  - "Chuck Noll (Pittsburgh Steelers)"
+  - "Tom Landry (Dallas Cowboys)"
+notable_practitioners:
+  - "Bill Parcells"
+  - "Jimmy Johnson"
+  - "Bill Belichick"
+  - "Jeff Saturday"
+canonical_run_concepts:
+  - power
+  - inside-zone
+  - outside-zone
+  - counter-trey
+  - draw
+canonical_pass_concepts:
+  - mesh
+  - post
+  - dig
+  - dig-corner
+  - dagger
+  - hitch
+formation_preferences:
+  - singleback-ace
+  - singleback-trio
+  - i-formation
+  - shotgun-2x2
+  - shotgun-3x1
+tendency_profile:
+  run_pct: 0.45
+  pass_pct: 0.40
+  pa_pct: 0.10
+  rpo_pct: 0.0
+  screen_pct: 0.05
+tags:
+  - philosophy
+  - pro-style
+  - balanced
+  - nfl
+  - generic
+  - any-level
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Wikipedia 'Don Coryell' (https://en.wikipedia.org/wiki/Don_Coryell): co-founder of modern pro-style balanced offense."
+  - "Web validated 2026-04-30 — Wikipedia 'Bill Belichick' (https://en.wikipedia.org/wiki/Bill_Belichick): perfected pro-style flexibility with Patriots dynasty."

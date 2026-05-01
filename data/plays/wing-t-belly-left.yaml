@@ -93,6 +93,8 @@ common_uses:
 - Setting up Trap (different hole, same family)
 - Goal-line short yardage
 philosophy: power-run
+run_concept_ref: power
+philosophy_ref: power-run
 era: '1960s onward — core Wing-T concept (one of Tubby Raymond''s ''big three'': Trap, Belly, Down).'
 famous_examples:
 - University of Delaware Wing-T (Tubby Raymond era)

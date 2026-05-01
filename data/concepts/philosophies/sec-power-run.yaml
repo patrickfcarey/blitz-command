@@ -1,0 +1,52 @@
+philosophy_id: sec-power-run
+name: SEC Power Run (Smashmouth College)
+description: |
+  Distinctive Southeastern Conference approach to power football: heavy emphasis on
+  downhill running (Power, Counter, ISO), elite OL play, and physical play-action.
+  Combines classic power-run principles with modern spread-motion. Built around
+  recruiting deep southern traditions of run-heavy football. Staple of Alabama,
+  Georgia, LSU, and other SEC blue-bloods.
+era: "1990s–present (modern era)"
+originators:
+  - "Paul Bryant (Alabama, 1960s–1980s)"
+  - "Bear Bryant era traditions"
+  - "Modern adaptation: Nick Saban (Alabama 2007–present)"
+notable_practitioners:
+  - "Nick Saban (Alabama)"
+  - "Kirby Smart (Georgia)"
+  - "Les Miles (LSU)"
+  - "Ed Orgeron (LSU)"
+canonical_run_concepts:
+  - power
+  - counter-trey
+  - iso
+  - inside-zone
+  - lead-toss
+canonical_pass_concepts:
+  - pa-mesh
+  - pa-cross
+  - bootleg
+  - play-action
+formation_preferences:
+  - i-formation
+  - singleback-ace
+  - singleback-trio
+  - big-i
+tendency_profile:
+  run_pct: 0.60
+  pass_pct: 0.25
+  pa_pct: 0.10
+  rpo_pct: 0.0
+  screen_pct: 0.05
+tags:
+  - philosophy
+  - sec-style
+  - power-run
+  - college
+  - run-heavy
+  - smashmouth
+  - southern-football
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Wikipedia 'Nick Saban' (https://en.wikipedia.org/wiki/Nick_Saban): Alabama dynasty built on power-run foundation."
+  - "Web validated 2026-04-30 — Wikipedia 'SEC football' (https://en.wikipedia.org/wiki/Southeastern_Conference): power-run tradition in SEC blue-bloods."

@@ -1,0 +1,39 @@
+scheme_id: max-protection-7-man
+name: Max Protection (7-Man)
+description: |
+  7-man protection: all 5 OL, TE, and HB stay in to block. Zero checkdown
+  receivers. Used on obvious passing situations (deep shots, two-minute drill,
+  desperate need for a large play) where the QB needs maximum time and accepts
+  the sacrifice of all receiving options. Forces the QB to take what's there or
+  scramble.
+protection_type: 7-man
+assignments_by_position:
+  LT: "Block the LDE / EMOL. Set vertical, mirror the rusher."
+  LG: "Block the 1-tech DT. Punch and anchor."
+  C: "Block the NT (0/1-tech). Slide to pressure."
+  RG: "Block the 3-tech DT. Punch and anchor."
+  RT: "Block the RDE / EMOL. Set vertical."
+  HB: "Stay in to block. Scan post-snap and pick up the most dangerous unblocked rusher."
+  TE: "Stay in to block. Either wall off EDGE or help with interior DL."
+vulnerable_to:
+  - "elite pass rushers winning 1-on-1 consistently"
+  - "defensive overload (all 11 DL blitzing)"
+  - "stunt package that beats multiple blockers"
+pairs_with:
+  - deep-routes
+  - go-routes
+  - post
+  - hail-mary
+tags:
+  - pass-protection
+  - max-protection
+  - 7-man
+  - deep-shot
+  - two-minute
+  - desperation
+  - college
+  - nfl
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Throw Deep Publishing 'Max Protection' (https://throwdeeppublishing.com/blogs/football-glossary/): confirmed 7-man (5 OL + TE + HB) structure used on deep shots."
+  - "Web validated 2026-04-30 — X&O Labs 'Protection Concepts' (https://www.xandolabs.com/): max protection defined as all available bodies in pass pro, no checkdowns."

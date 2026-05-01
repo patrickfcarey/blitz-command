@@ -1,0 +1,36 @@
+concept_id: sweep
+name: Sweep
+category: man-blocking-scheme
+description: |
+  Both guards pull around the perimeter, with a WR or TE cracking back inside
+  to block a playside LB. Creates a wide running lane for the HB to follow the
+  pulling guards. Used in Wing-T, spread, and misdirection offenses. Fast-hitting
+  but requires synchronized pulling and lead blocking.
+aim_point: "Perimeter, wide-reaching"
+read_tree:
+  - phase: 1
+    defender: "playside edge"
+    decision: "Pulling Gs lead; HB reads if edge is sealed or if he needs to bounce."
+  - phase: 2
+    defender: "secondary defender"
+    decision: "HB follows pullers and works toward sideline or cutback."
+blocking_scheme_ref: gap-blocking
+pulls_required:
+  - LG
+  - RG
+pairs_with:
+  - counter
+  - option
+  - wing-t
+tags:
+  - run
+  - perimeter
+  - wing-t
+  - misdirection
+  - any-level
+  - high-school
+  - college
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Throw Deep Publishing 'Sweep / Buck Sweep' (https://throwdeeppublishing.com/blogs/football-glossary/): confirmed dual guard pull with WR crack."
+  - "Web validated 2026-04-30 — X&O Labs 'Wing-T Concepts' (https://www.xandolabs.com/): sweep foundational to Wing-T playbook."

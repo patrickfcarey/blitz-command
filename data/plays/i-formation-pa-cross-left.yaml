@@ -96,6 +96,8 @@ common_uses:
 - Red-zone window plays (TE breaks at the back of the end zone)
 - Setting up future plays off the same look
 philosophy: pro-style
+pass_concept_ref: drive
+philosophy_ref: pro-style
 era: Deep-crossing tradition has Coryell roots (1980s). The modern 'Y-Cross' (called '95' in the original Air Raid playbook)
   was codified by Hal Mumme and Mike Leach in the late 1990s; widespread across pro and college since.
 famous_examples:

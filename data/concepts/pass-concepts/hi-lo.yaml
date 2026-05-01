@@ -1,0 +1,31 @@
+concept_id: hi-lo
+name: Hi-Lo
+category: vertical-stack
+description: |
+  Two receivers stack vertically (shallow and deep on same route stem) attacking the
+  same area at different depths. QB reads high (deep) to low (shallow) based on defender
+  actions. Strong vs man coverage; creates natural progression. Efficient use of sideline.
+progression:
+  - primary: deep route (high)
+    secondary: shallow route (low)
+best_vs_coverage:
+  - man
+  - cover-1
+attacks:
+  - "Hi receiver vs deep man-coverage"
+  - "Lo receiver vs tight man-coverage"
+pairs_with:
+  - man-protection
+  - smash
+tags:
+  - pass-concept
+  - hi-lo
+  - vertical-stack
+  - man-beater
+  - any-level
+  - college
+  - nfl
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Throw Deep Publishing 'Hi-Lo Concept' (https://throwdeeppublishing.com/blogs/football-glossary/): vertical stacking structure."
+  - "Web validated 2026-04-30 — X&O Labs 'Man-Beater Concepts' (https://www.xandolabs.com/): hi-lo vs man coverage."

@@ -100,6 +100,8 @@ common_uses:
   - Quick perimeter run to get the HB into space
 
 philosophy: power-run
+run_concept_ref: power
+philosophy_ref: power-run
 
 era: "1960s onward — universal sweep / toss concept across all eras."
 

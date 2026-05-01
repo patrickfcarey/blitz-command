@@ -123,6 +123,8 @@ common_uses:
 - Establishing the run early in a game
 - Setting up PA cross off the same look
 philosophy: power-run
+run_concept_ref: power
+philosophy_ref: power-run
 era: Universal — every era of football. Conceptually unchanged since the 1960s; modernized blocking but same idea.
 famous_examples:
 - 1990s Cowboys (Emmitt Smith behind Daryl Johnston)

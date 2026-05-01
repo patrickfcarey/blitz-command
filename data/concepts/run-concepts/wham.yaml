@@ -1,0 +1,33 @@
+concept_id: wham
+name: Wham
+category: misdirection
+description: |
+  FB blocks across the formation as a surprise — OL releases as if running a pass
+  route (pass-sets with a slight bend). Creates misdirection by disguising the
+  play as pass initially, then the FB attacks a backer from an unexpected angle.
+  Punishes aggressive LBs who flow too quickly.
+aim_point: "Backside or cutback lane, based on FB block"
+read_tree:
+  - phase: 1
+    defender: "FB's target (usually backside LB)"
+    decision: "FB wham-blocks him; HB reads the created lane."
+  - phase: 2
+    defender: "secondary defenders"
+    decision: "HB exploits the misdirection and follows his path."
+blocking_scheme_ref: gap-blocking
+pulls_required: []
+lead_blocker: FB
+pairs_with:
+  - play-action
+  - misdirection-concepts
+tags:
+  - run
+  - misdirection
+  - constraint
+  - pass-disguise
+  - college
+  - high-school
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Throw Deep Publishing 'Wham Block' (https://throwdeeppublishing.com/blogs/football-glossary/): confirmed FB cross-block with surprise misdirection element."
+  - "Web validated 2026-04-30 — X&O Labs 'Misdirection Concepts' (https://www.xandolabs.com/): wham listed as key constraint run."

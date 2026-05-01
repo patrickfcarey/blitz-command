@@ -1,0 +1,38 @@
+concept_id: stretch
+name: Stretch
+category: zone-scheme
+description: |
+  Even wider than Outside Zone — full perimeter stretch with OL taking aggressive
+  reach-blocks to the sideline. The HB attacks the edge and reads shoulder-to-
+  shoulder with the EDGE defender. If EDGE is sealed, HB attacks upfield; if
+  EDGE wins, cutback lane opens. Used in modern Shanahan-style systems and
+  spread offenses.
+aim_point: "Full perimeter / D-gap and beyond"
+read_tree:
+  - phase: 1
+    defender: "playside DE / EDGE"
+    decision: "Read if sealed or if edge crashes. Attack upfield if sealed, cut back if not."
+  - phase: 2
+    defender: "secondary defender"
+    decision: "If perimeter is contained, reverse field or cut back."
+blocking_scheme_ref: zone-blocking
+pulls_required: []
+lead_blocker: FB
+pairs_with:
+  - outside-zone
+  - inside-zone
+  - shanahan-zone
+  - bootleg
+tags:
+  - run
+  - zone-scheme
+  - perimeter
+  - stretch
+  - wide-zone
+  - modern
+  - college
+  - nfl
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Throw Deep Publishing 'Stretch Run' (https://throwdeeppublishing.com/blogs/football-glossary/): confirmed full-perimeter stretch aim with flexibility."
+  - "Web validated 2026-04-30 — X&O Labs 'Shanahan Zone Concepts' (https://www.xandolabs.com/): stretch described as widest zone run variant."

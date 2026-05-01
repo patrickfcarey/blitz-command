@@ -99,6 +99,7 @@ common_uses:
   - Setting up PA off zone fake
 
 philosophy: zone-run
+run_concept_ref: inside-zone
 
 era: "1990s onward — Mike Shanahan / Alex Gibbs Broncos popularized it; now universal."
 

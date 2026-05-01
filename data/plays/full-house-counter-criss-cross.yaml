@@ -39,6 +39,8 @@ best_vs_defense: ["over-front", "cover-3 with predictable flow", "speed-flow def
 worst_vs_defense: ["bear front", "cover-1 robber", "8-man fronts"]
 common_uses: ["Short-yardage from Full House", "Counter to FH Power tendencies", "Setting up reverses and option plays"]
 philosophy: power-run
+run_concept_ref: power
+philosophy_ref: power-run
 era: "Classic option football — Wishbone-era counter concept."
 famous_examples: ["Wishbone-era Oklahoma / Texas (Bud Wilkinson, Barry Switzer)", "Air Force / Navy option packages"]
 tags: [run, power-run, counter, criss-cross, misdirection, 32-personnel, full-house, option, throwback, high-school, college]

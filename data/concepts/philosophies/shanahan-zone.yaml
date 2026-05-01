@@ -1,0 +1,48 @@
+philosophy_id: shanahan-zone
+name: Shanahan Zone
+description: |
+  Outside-zone run + bootleg play-action + tempo passing. Developed by Mike
+  Shanahan at Denver Broncos in 1990s; carried forward by Kyle Shanahan at
+  Atlanta, San Francisco, Washington. Emphasizes horizontal run game, quick
+  hitters off play-action, and motion/tempo concepts. Zone-based OL blocking
+  with QB flexibility.
+era: "1990s–present"
+originators:
+  - "Mike Shanahan (Denver Broncos, 1995–1999; Washington 2010–2013)"
+  - "Kyle Shanahan (Atlanta, San Francisco, Washington)"
+notable_practitioners:
+  - "Mike McDaniel"
+  - "Jon Gruden (adapted Shanahan concepts)"
+canonical_run_concepts:
+  - outside-zone
+  - inside-zone
+  - stretch
+  - counter-trey
+canonical_pass_concepts:
+  - bootleg
+  - pa-flood
+  - mesh
+  - pa-mesh
+  - quick-pass
+formation_preferences:
+  - singleback-ace
+  - singleback-trio
+  - shotgun-2x2
+  - i-formation
+tendency_profile:
+  run_pct: 0.50
+  pass_pct: 0.35
+  pa_pct: 0.10
+  rpo_pct: 0.0
+  screen_pct: 0.05
+tags:
+  - philosophy
+  - shanahan-zone
+  - zone-run
+  - bootleg
+  - modern
+  - nfl
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Wikipedia 'Mike Shanahan' (https://en.wikipedia.org/wiki/Mike_Shanahan): developed outside-zone system at Denver."
+  - "Web validated 2026-04-30 — Wikipedia 'Kyle Shanahan' (https://en.wikipedia.org/wiki/Kyle_Shanahan): son of Mike; evolved Shanahan zone at San Francisco."

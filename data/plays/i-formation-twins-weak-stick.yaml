@@ -40,6 +40,8 @@ best_vs_defense: ["cover-2 zone (sit in soft spot)", "cover-3 (between curl and 
 worst_vs_defense: ["bracket on slot", "cover-2 robber", "banjo coverage"]
 common_uses: ["3rd-and-short / 3rd-and-medium", "1st down chains", "Quick-game tempo"]
 philosophy: pro-style
+pass_concept_ref: stick
+philosophy_ref: pro-style
 era: "Bill Walsh / Paul Brown West Coast tradition; modernized continuously."
 famous_examples: ["Patriots offense (Belichick / Brady)", "Andy Reid Eagles / Chiefs"]
 tags: [pass, quick-game, stick, west-coast, 21-personnel, twins, any-level, high-school, college, nfl]

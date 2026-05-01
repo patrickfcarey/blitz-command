@@ -1,0 +1,50 @@
+philosophy_id: air-raid
+name: Air Raid
+description: |
+  Pass-heavy, 4-WR shotgun offense emphasizing multiple receivers and high-low
+  reads. Developed by Mike Mumme and elevated to prominence by Mike Leach at
+  Texas Tech in the late 1990s. Focuses on spacing, receiver separation, and
+  QB touches on many short-intermediate routes. Low run rate; high pass rate.
+  Adapted widely in college and increasingly in NFL.
+era: "Mid-1990s–present"
+originators:
+  - "Mike Mumme (University of Wyoming, 1990s)"
+  - "Mike Leach (Texas Tech, 2000–2009; Washington State 2012–2019)"
+notable_practitioners:
+  - "Sonny Cumbie"
+  - "Kliff Kingsbury"
+  - "Dana Holgorsen"
+  - "Lincoln Riley"
+  - "Brent Venables"
+canonical_run_concepts:
+  - draw
+  - screen
+  - counter-trey
+canonical_pass_concepts:
+  - mesh
+  - 4-verts
+  - stick
+  - slant-flat
+  - levels
+formation_preferences:
+  - shotgun-2x2
+  - shotgun-3x1
+  - shotgun-2x1-1te
+tendency_profile:
+  run_pct: 0.30
+  pass_pct: 0.50
+  pa_pct: 0.10
+  rpo_pct: 0.05
+  screen_pct: 0.05
+tags:
+  - philosophy
+  - air-raid
+  - pass-heavy
+  - 4-wr
+  - shotgun
+  - college
+  - modern
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Wikipedia 'Air Raid offense' (https://en.wikipedia.org/wiki/Air_raid): confirmed Mumme origin, Leach elevation at Texas Tech."
+  - "Web validated 2026-04-30 — Wikipedia 'Mike Leach' (https://en.wikipedia.org/wiki/Mike_Leach_(football_coach)): confirmed Leach's Texas Tech era (2000-2009) popularized Air Raid system."

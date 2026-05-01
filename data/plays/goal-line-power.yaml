@@ -99,6 +99,8 @@ common_uses:
   - "Setting up PA fade off the same look"
 
 philosophy: power-run
+run_concept_ref: power
+philosophy_ref: power-run
 
 era: "Universal — every era of football. Conceptually unchanged for 60+ years."
 

@@ -1,0 +1,35 @@
+scheme_id: full-slide-left
+name: Full Slide Left
+description: |
+  All 5 OL slide one cell to the LEFT (offense's left, defense's right). Used
+  to combat heavy weak-side pressure or stunts. The HB MUST stay in to pick
+  up the backside C-gap rusher (the unblocked man on the right). Releases the
+  playside (left) flat as a hot read if pressure beats the slide.
+protection_type: 5-man
+assignments_by_position:
+  LT: "Slide left — block whatever shows in the leftmost gap (could be wide-9 EDGE)."
+  LG: "Slide left — block 5-tech if there, otherwise climb."
+  C: "Slide left — block weakside 1-tech / 0-tech."
+  RG: "Slide left — block playside NT (now the C's old assignment from his right)."
+  RT: "Slide left — block playside 3-tech."
+  HB: "REQUIRED: scan the right C-gap. Pick up the most dangerous unblocked rusher coming off the right edge."
+  TE: "Optional: stay in for chip-and-release on the unblocked playside EDGE."
+vulnerable_to:
+  - "double-A-gap blitz that overloads C+RG slide direction"
+  - "twist stunt that exchanges 3-tech and EDGE — the slide can lose track"
+  - "delayed LB blitz from the slide direction"
+pairs_with:
+  - bootleg-strong
+  - flood-strong
+  - mesh
+tags:
+  - pass-protection
+  - slide
+  - any-level
+  - high-school
+  - college
+  - nfl
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Throw Deep Publishing 'Pass Protection — Slide Schemes' (https://throwdeeppublishing.com/blogs/football-glossary/): confirmed 5-OL slide structure with HB picking up backside edge."
+  - "Web validated 2026-04-30 — X&O Labs 'Slide Protection Variations' (https://www.xandolabs.com/): confirmed full slide is 5-man, leaves backside C-gap to HB."

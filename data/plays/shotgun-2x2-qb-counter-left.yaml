@@ -125,6 +125,8 @@ common_uses:
 - Constraint to base inside-zone-read (different ball-carrier, different read)
 - Modern NFL (Hurts, Lamar, Allen, Fields, Daniels) staple call
 philosophy: spread-option
+run_concept_ref: power
+philosophy_ref: spread-option
 era: Mid-2010s onward — designed QB runs from spread became universal as mobile QBs spread through college and NFL.
 famous_examples:
 - Eagles under Doug Pederson / Nick Sirianni (Jalen Hurts QB counter)

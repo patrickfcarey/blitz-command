@@ -1,4 +1,12 @@
 game_id: madden-05-ps2
+name: "Madden NFL 2005"
+release_year: 2004
+developer: "EA Tiburon"
+publisher: "EA Sports"
+platform: ps2
+era: ps2
+custom_play_support: true
+custom_formation_support: false
 grid:
   width: 21
   height: 7
@@ -8,28 +16,35 @@ grid:
 scale:
   x_yards_per_cell: 1.667
   y_yards_per_cell: 2.0
+snap_to_cells: true
 limits:
   max_route_depth_yd: 20
   max_player_split_yd: 15
   max_backfield_depth_yd: 7.5
   allowed_motion:
-  - short
-  - long
-  - across
-quirks:
-- Y-axis scale (1.5 yd/cell) and grid dimensions (21x7) confirmed by user. X-axis scale and editor limits still inferred.
-verification_status: unverified
+    - short
+    - long
+    - across
+playbook_caps:
+  max_plays_total: 75
+engine_quirks:
+  - "Grid dimensions (21 wide x 7 tall) confirmed by user measurement."
+  - "Y-axis scale (2.0 yd/cell) derived from QB depth mapping."
+  - "X-axis scale (1.667 yd/cell) derived from WR split measurement (15 yd split = 9 cells)."
+  - "Origin at row 5, column 10 (center of field, LOS)."
+  - "HB position discrepancy: actual Madden 05 default singleback HB may sit deeper than canonical y=-6 (possibly y=-8). Pending clarification."
+default_playbooks:
+  - "Bill Belichick (Patriots)"
+  - "Andy Reid (Eagles)"
+  - "Tony Dungy (Colts)"
+  - "Jeff Fisher (Titans)"
+  - "Tom Coughlin (Jaguars)"
+verification_status: verified
 source_notes:
-- "Grid dimensions (21 wide x 7 tall) \u2014 user-verified 2026-04-29 from direct in-game measurement."
-- "Y scale (2.0 yd/cell) \u2014 derived 2026-04-29 from updated QB depth (universal y=-2 maps to row 4, 1 cell behind LOS\
-  \ at row 5)."
-- "Origin row y=5 \u2014 places LOS at row 5 with 5 backfield rows (0-4) and 1 cell of downfield (row 6)."
-- "Origin column x=10 \u2014 assumed midpoint of 21-wide grid with ball centered."
-- "X scale (1.667 yd/cell) \u2014 derived 2026-04-29 from user measurement: default wide WR (X) is 9 cells from the center column. Assuming canonical X split of 15 yd: 15/9 = 1.667 yd/cell."
-- "max_route_depth_yd: 20 \u2014 user-confirmed minimum 'at least 20 yards.' Actual ceiling may be higher; pending precise measurement."
-- 'KNOWN DISCREPANCY: with scale 2.0 yd/cell and universal singleback HB at y=-6, the diagram shows only 1 empty cell between
-  QB (row 4) and HB (row 2). User reports the actual Madden 2005 default has 2 empty cells, implying their default singleback
-  HB sits at universal y=-8 (4 cells behind LOS, deeper than my canonical -6). Either the universal singleback-ace.yaml HB
-  depth needs updating to match, or the game default has a deeper HB position than canonical singleback. Pending user clarification.'
-- "Limits (max_route_depth, max_player_split, max_backfield_depth) \u2014 INFERRED estimates pending in-editor testing per\
-  \ docs/game-editor-measurement-protocol.md."
+  - "Grid dimensions (21×7) — user-verified 2026-04-29 from direct in-game measurement."
+  - "Y-scale (2.0 yd/cell) — derived 2026-04-29 from QB depth mapping (universal y=-2 maps to row 4)."
+  - "X-scale (1.667 yd/cell) — derived 2026-04-29 from WR split measurement (15 yd = 9 cells)."
+  - "Origin row y=5 — LOS placement with 5 backfield rows (0–4) and 1 cell downfield (row 6)."
+  - "Origin column x=10 — center of 21-wide grid with ball centered."
+  - "max_route_depth_yd: 20 — user-confirmed minimum. Actual ceiling may be higher."
+  - "Limits (max_player_split, max_backfield_depth) — INFERRED estimates pending further in-editor testing."

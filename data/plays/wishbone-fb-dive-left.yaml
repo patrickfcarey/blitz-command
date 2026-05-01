@@ -107,6 +107,8 @@ common_uses:
 - 1st-and-10 base run setup
 - Drive-extender on the goal line
 philosophy: power-run
+run_concept_ref: power
+philosophy_ref: power-run
 era: 1968 onward — wishbone-era constraint play; universal at HS / option-tradition college level.
 famous_examples:
 - Texas Wishbone (Darrell Royal era)

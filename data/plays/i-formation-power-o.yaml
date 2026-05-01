@@ -8,6 +8,19 @@ aliases:
 formation: i-formation
 play_type: run
 ball_carrier: HB
+run_reads:
+  - priority: 1
+    read_key: pulling guard (RG)
+    run_to: follow the puller through the C-gap or off-tackle hole; trust his kickout on the edge
+    notes: "The RG pulls and leads — your job is to stay on his hip. Don't outrun him."
+  - priority: 2
+    read_key: playside linebacker
+    run_to: if the LB scrapes over the top of the FB's block, cut inside underneath
+    notes: "FB should lock the LB. If the LB goes over, the B-gap opens behind him."
+  - priority: 3
+    read_key: cutback lane (backside A-gap)
+    run_to: if the playside is blown up, cut all the way back against the grain behind the center
+    notes: "Last resort — only hit the cutback if the frontside is completely collapsed."
 
 # Z motion across pre-snap to constrain the backside safety. Optional — the
 # base play works without it. Mandatory motion would imply the play breaks
@@ -107,6 +120,8 @@ common_uses:
   - Setting up PA cross off the same look
 
 philosophy: power-run
+run_concept_ref: power
+philosophy_ref: power-run
 
 era: "Universal — every era of football. Conceptually unchanged since the 1960s; modernized blocking but same idea."
 

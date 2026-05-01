@@ -101,6 +101,8 @@ common_uses:
   - "Modern NFL (Hurts, Lamar, Allen, Fields, Daniels) staple call"
 
 philosophy: spread-option
+run_concept_ref: power
+philosophy_ref: spread-option
 
 era: "Mid-2010s onward — designed QB runs from spread became universal as mobile QBs spread through college and NFL."
 

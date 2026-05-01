@@ -1,0 +1,32 @@
+concept_id: sail
+name: Sail
+category: perimeter-read
+description: |
+  Receiver running a corner or vertical route on the perimeter with underneath receiver
+  running a flat or shallow route. Attacks perimeter vertically with checkdown. Related
+  to smash but with different route stems. Used vs cover-2 and 2-high looks. Natural
+  progression from boundary to intermediate.
+progression:
+  - primary: corner/vertical on perimeter
+    secondary: flat/shallow underneath
+best_vs_coverage:
+  - cover-2
+  - 2-high
+  - edge-corner
+attacks:
+  - "Perimeter corner route vs rotated coverage"
+  - "Flat/shallow underneath"
+pairs_with:
+  - smash
+  - flood
+tags:
+  - pass-concept
+  - sail
+  - perimeter-read
+  - corner-route
+  - college
+  - nfl
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Throw Deep Publishing 'Sail Concept' (https://throwdeeppublishing.com/blogs/football-glossary/): perimeter corner + underneath."
+  - "Web validated 2026-04-30 — X&O Labs 'Perimeter Concepts' (https://www.xandolabs.com/): sail route structure."

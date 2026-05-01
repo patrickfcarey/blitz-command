@@ -8,6 +8,19 @@ aliases:
 formation: i-formation
 play_type: run
 ball_carrier: HB
+run_reads:
+  - priority: 1
+    read_key: kicking guard (LG) — kickout block on EDGE
+    run_to: follow the pulling tackle (RT) through the C-gap once you see the LG kick the DE out
+    notes: "LG kicks the EDGE, RT logs or wraps the linebacker. Hit the seam between those two blocks."
+  - priority: 2
+    read_key: playside linebacker (wrapping tackle's target)
+    run_to: if the LB shoots the gap before the RT can wrap him, press the B-gap immediately inside
+    notes: "Don't wait for the LB to be blocked — if he's shooting, bang it inside fast."
+  - priority: 3
+    read_key: backside pursuit
+    run_to: if the frontside clogs, bounce all the way backside (counter action slowed pursuit)
+    notes: "The counter misdirection buys time — backside DE is hand-off fake away. Use it if needed."
 
 motions: []
 
@@ -98,6 +111,8 @@ common_uses:
   - Setting up bootleg PA off the same look
 
 philosophy: power-run
+run_concept_ref: power
+philosophy_ref: power-run
 
 era: "1980s onward — Joe Gibbs Washington Redskins popularized; staple of pro-style power offenses ever since."
 

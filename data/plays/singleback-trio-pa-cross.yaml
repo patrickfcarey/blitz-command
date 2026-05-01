@@ -1,0 +1,119 @@
+play_id: singleback-trio-pa-cross
+name: PA Cross
+aliases: []
+formation: singleback-trio
+play_type: play-action
+ball_carrier: QB
+motions: []
+assignments:
+- player: LT
+  role: pass_block
+  blocking_scheme: man-protection
+  notes: Sell run-block 1 count, then pass-set.
+- player: LG
+  role: pass_block
+  blocking_scheme: man-protection
+  notes: Sell run-block 1 count, then pass-set.
+- player: C
+  role: pass_block
+  blocking_scheme: man-protection
+  notes: Sell run-block 1 count, then pass-set.
+- player: RG
+  role: pass_block
+  blocking_scheme: man-protection
+  notes: Sell run-block 1 count, then pass-set.
+- player: RT
+  role: pass_block
+  blocking_scheme: man-protection
+  notes: Sell run-block 1 count, then pass-set.
+- player: TE
+  role: route
+  route_name: drag
+  depth_yd: 8
+  notes: Strong-side TE delays one count (sells block), then drag at 8 yds. Primary read on PA.
+  is_primary: true
+- player: X
+  role: route
+  route_name: deep-cross
+  depth_yd: 18
+  notes: Backside X runs deep cross at 18 yds — secondary read; opens late if FS bites TE drag.
+- player: Z
+  role: route
+  route_name: post
+  depth_yd: 16
+  notes: Strong-side Z post — pulls FS away from middle so X cross is open.
+- player: SLOT
+  role: route
+  route_name: flat
+  depth_yd: 4
+  notes: Quick flat — checkdown / hot read vs blitz.
+- player: QB
+  role: ball_carrier
+  path:
+  - - 0
+    - 0
+  - - -1
+    - -1
+  - - 0
+    - -3
+  - - 0
+    - -5
+  notes: 'Fake handoff to HB on inside-zone path (sell hard), then 5-step drop to ~5 yd depth. Read tree: TE drag first (he
+    comes open into your face on PA), then X deep cross, then Z post if FS sat, then SLOT flat as outlet.'
+- player: HB
+  role: fake
+  notes: Sell IZ run hard — backside zone step + cup, hold cup if no pressure.
+strengths:
+- Constraint to Singleback Trio run-heavy tendency (IZ/OZ/Power/Draw all from same look)
+- TE drag wins vs LBs flowing to PA fake
+- X deep cross attacks the seam vacated by FS biting on TE
+- Z post forces FS to choose between Z deep and X cross
+- SLOT flat outlet handles blitz / hot pressure
+- 11-personnel disguise — looks like a base run pre-snap
+weaknesses:
+- Slow-developing — 5-step PA needs ~3.5 sec to deliver
+- Pass protection fragile if HB releases (no extra blockers)
+- Vulnerable to defenses playing pass-keys (no PA bite)
+- Cover-2 robber bracket on TE drag shuts down primary
+- Backside DE chasing the rollout direction kills the cross
+best_vs_defense:
+- cover-3 with run-fit LBs (PA holds them, TE drag underneath, X cross over)
+- cover-1 with single coverage on TE
+- 8-man fronts (vacates deep coverage)
+- any defense aggressively run-fitting after IZ/OZ tendency established
+worst_vs_defense:
+- cover-2 robber
+- cover-4 quarters with disciplined deep coverage
+- zero blitz (no time to develop)
+- pass-only defenses ignoring PA
+common_uses:
+- 1st-and-10 after a sequence of inside-zone / power runs
+- 2nd-and-medium PA shot
+- Setting up future deep shots
+- Red-zone TE-corner / X-cross scoring concept
+philosophy: west-coast
+pass_concept_ref: drive
+philosophy_ref: west-coast
+era: 1980s onward — Bill Walsh / Coryell PA tradition; modernized through Shanahan-tree.
+famous_examples:
+- Bill Walsh 49ers
+- Modern NFL teams using 11P-singleback PA shots (Rams, 49ers under Shanahan/McVay)
+tags:
+- pass
+- pa
+- spread
+- y-cross
+- 11-personnel
+- singleback
+- any-level
+- high-school
+- college
+- nfl
+verification_status: unverified
+source_notes:
+- Scaffold built via build_starter_play() and filled in for the dogfood test playbook.
+- PA Cross concept — TE drag underneath + X deep cross + Z post + SLOT flat. Standard west-coast PA-cross combo.
+primary_read: TE
+secondary_read: X
+checkdown: SLOT
+tertiary_read: Z

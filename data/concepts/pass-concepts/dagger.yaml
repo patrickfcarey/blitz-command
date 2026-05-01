@@ -1,0 +1,33 @@
+concept_id: dagger
+name: Dagger
+category: vertical-read
+description: |
+  Deep cornerback route (attacking corner of endzone) with underneath receiver providing
+  safety valve. Attacks safeties deep; underneath receiver provides outlet vs aggressive
+  coverage. Vertical concept with layered protection. Used for deep shots in red zone
+  or aggressive situations.
+progression:
+  - primary: deep corner route (high-risk, high-reward)
+    secondary: underneath route (safety valve)
+best_vs_coverage:
+  - cover-2
+  - 2-high-safety
+  - aggressive-corners
+attacks:
+  - "Corner route vs rotated safeties"
+  - "Underneath if dagger is covered"
+pairs_with:
+  - max-protection
+  - deep-shot
+tags:
+  - pass-concept
+  - dagger
+  - deep-corner
+  - red-zone
+  - high-risk
+  - college
+  - nfl
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Throw Deep Publishing 'Dagger Concept' (https://throwdeeppublishing.com/blogs/football-glossary/): deep corner + underneath."
+  - "Web validated 2026-04-30 — X&O Labs 'Red Zone Concepts' (https://www.xandolabs.com/): dagger used in red zone."

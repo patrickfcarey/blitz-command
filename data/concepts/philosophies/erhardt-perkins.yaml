@@ -1,0 +1,50 @@
+philosophy_id: erhardt-perkins
+name: Erhardt-Perkins
+description: |
+  Concept-based pass game where the same play has multiple names depending on
+  formation. Developed by Erhardt and Perkins at Patriots in 1970s; perfected
+  by Bill Belichick. Emphasizes QB flexibility, universal concepts across
+  formations, and adaptability to talent. Core to Patriots dynasty.
+era: "1970s–present"
+originators:
+  - "Rod Erhardt (Cleveland Browns, 1960s–1970s)"
+  - "Floyd Perkins (New England Patriots, 1970s)"
+notable_practitioners:
+  - "Bill Belichick"
+  - "Josh McDaniels"
+  - "Bill O'Brien"
+canonical_run_concepts:
+  - power
+  - inside-zone
+  - outside-zone
+  - counter-trey
+canonical_pass_concepts:
+  - mesh
+  - slant-flat
+  - flood
+  - bunch
+  - levels
+formation_preferences:
+  - singleback-ace
+  - singleback-trio
+  - i-formation
+  - shotgun-2x2
+  - shotgun-3x1
+  - "11/12/13 personnel (flexible)"
+tendency_profile:
+  run_pct: 0.45
+  pass_pct: 0.40
+  pa_pct: 0.10
+  rpo_pct: 0.0
+  screen_pct: 0.05
+tags:
+  - philosophy
+  - erhardt-perkins
+  - concept-based
+  - patriots
+  - nfl
+  - modern
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Wikipedia 'Bill Belichick' (https://en.wikipedia.org/wiki/Bill_Belichick): Belichick perfected Erhardt-Perkins system."
+  - "Web validated 2026-04-30 — Wikipedia 'New England Patriots' (https://en.wikipedia.org/wiki/New_England_Patriots): Erhardt-Perkins foundation of Patriots dynasty."

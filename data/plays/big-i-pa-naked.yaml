@@ -44,6 +44,8 @@ best_vs_defense: ["cover-3 with run-fit LBs", "cover-2 (TE attacks safety hole)"
 worst_vs_defense: ["cover-2 robber", "zero blitz", "pattern-match cover-4", "backside DE chasing"]
 common_uses: ["After 2-3 power runs from Big I (defense biting)", "1st-and-10 setup play", "Red-zone PA shot"]
 philosophy: pro-style
+pass_concept_ref: sail
+philosophy_ref: pro-style
 era: "1990s onward — PA naked boot from heavy personnel is a NFL/college staple."
 famous_examples: ["Bill Walsh-tree PA boot game", "Modern NFL 12/22 personnel PA shots"]
 tags: [pass, pa, bootleg, 22-personnel, heavy, west-coast, any-level, high-school, college, nfl]

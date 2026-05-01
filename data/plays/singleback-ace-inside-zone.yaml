@@ -5,6 +5,19 @@ aliases: [IZ]
 formation: singleback-ace
 play_type: run
 ball_carrier: HB
+run_reads:
+  - priority: 1
+    read_key: backside defensive end / 4-technique
+    run_to: if the DE closes playside, bend the run back to the cutback lane behind the center
+    notes: "Zone key — the backside DE tells you whether to press or cut. If he's working playside, the cutback is wide open."
+  - priority: 2
+    read_key: playside linebacker (frontside)
+    run_to: press the designed hole (A-gap / B-gap playside); if the LB fills hard, bounce slightly outside
+    notes: "OL is zone-blocking to the playside — trust the double-team and hit the crease."
+  - priority: 3
+    read_key: safety / second level
+    run_to: once past the linebackers, press directly toward the most space at the second level
+    notes: "If both reads 1 and 2 are covered, the OL didn't win a double. Take what you can in the line of scrimmage."
 
 motions: []
 
@@ -49,6 +62,7 @@ common_uses:
   - "Setting up PA off the same look"
 
 philosophy: zone-run
+run_concept_ref: inside-zone
 era: "1990s onward"
 famous_examples:
   - "Modern NFL/college 12-personnel singleback teams"

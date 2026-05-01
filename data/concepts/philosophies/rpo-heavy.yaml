@@ -1,0 +1,50 @@
+philosophy_id: rpo-heavy
+name: RPO-Heavy (Run-Pass Option Modern)
+description: |
+  Modern offensive philosophy emphasizing RPO (Run-Pass Option) and read-option concepts
+  heavily. Post-snap read-based attack where QB decides run vs pass based on defender
+  actions. Combines zone-run efficiency with vertical passing threat. Growing trend in
+  college and modern NFL. Requires versatile QB and multiple route trees. Used to attack
+  both run-stopping and pass-rushing defenses simultaneously.
+era: "2010s–present"
+originators:
+  - "Gus Malzahn (Auburn, early RPO adoption)"
+  - "Brent Venables"
+  - "Modern spread-option coaches"
+notable_practitioners:
+  - "Lincoln Riley (Oklahoma)"
+  - "Gus Malzahn"
+  - "Dave Christensen"
+  - "Bryan Harsin"
+canonical_run_concepts:
+  - inside-zone
+  - outside-zone
+  - read-option
+  - zone-read
+canonical_pass_concepts:
+  - rpo
+  - mesh
+  - slant-flat
+  - bubble
+formation_preferences:
+  - shotgun-2x2
+  - shotgun-spread
+  - singlebank-spread
+tendency_profile:
+  run_pct: 0.35
+  pass_pct: 0.30
+  pa_pct: 0.05
+  rpo_pct: 0.25
+  screen_pct: 0.05
+tags:
+  - philosophy
+  - rpo
+  - read-option
+  - modern
+  - college
+  - dual-threat-qb
+  - balanced
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Wikipedia 'Gus Malzahn' (https://en.wikipedia.org/wiki/Gus_Malzahn): RPO adoption at Auburn."
+  - "Web validated 2026-04-30 — Wikipedia 'Run-pass option' (https://en.wikipedia.org/wiki/Run%E2%80%93pass_option): modern RPO concepts."

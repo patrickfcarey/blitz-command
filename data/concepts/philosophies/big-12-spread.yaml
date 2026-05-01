@@ -1,0 +1,51 @@
+philosophy_id: big-12-spread
+name: Big 12 Spread (Modern College Spread)
+description: |
+  Modern spread offense emphasizing 4-5 WRs, high-tempo play-calling, and pass-heavy
+  attack. Developed in Big 12 conference (Oklahoma, Texas, Kansas State). Heavy use
+  of motion, misdirection, and QB-read decisions. Balances run and pass but leans
+  pass. Influenced by Air Raid but with more balanced approach.
+era: "2000s–present"
+originators:
+  - "Bob Stoops (Oklahoma, 2000–2016)"
+  - "Mack Brown (Texas, 1998–2013)"
+  - "Bill Snyder (Kansas State, 1995–2005)"
+notable_practitioners:
+  - "Lincoln Riley (Oklahoma, now USC)"
+  - "Tom Herman"
+  - "Chris Petersen"
+canonical_run_concepts:
+  - counter-trey
+  - outside-zone
+  - inside-zone
+  - draw
+  - screen
+canonical_pass_concepts:
+  - mesh
+  - stick
+  - slant-flat
+  - bubble
+  - 4-verts
+formation_preferences:
+  - shotgun-3x1
+  - shotgun-2x2
+  - shotgun-bunch
+  - empty-backfield
+tendency_profile:
+  run_pct: 0.35
+  pass_pct: 0.50
+  pa_pct: 0.05
+  rpo_pct: 0.05
+  screen_pct: 0.05
+tags:
+  - philosophy
+  - big-12
+  - spread
+  - high-tempo
+  - college
+  - pass-heavy
+  - modern
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Wikipedia 'Bob Stoops' (https://en.wikipedia.org/wiki/Bob_Stoops): spread offense development at Oklahoma."
+  - "Web validated 2026-04-30 — Wikipedia 'Mack Brown' (https://en.wikipedia.org/wiki/Mack_Brown): spread-based offense at Texas."

@@ -41,6 +41,8 @@ best_vs_defense: ["man-1", "cover-1 robber (rubs disrupt)", "any aggressive man 
 worst_vs_defense: ["cover-2 trap", "cover-4 deep zone", "banjo coverage on slots", "zero blitz"]
 common_uses: ["3rd-and-medium / 3rd-and-long", "2-minute drill", "Forcing a defensive personnel mismatch"]
 philosophy: air-raid
+pass_concept_ref: mesh
+philosophy_ref: air-raid
 era: "1990s onward — Mike Leach Air Raid mesh from empty"
 famous_examples: ["Mike Leach Texas Tech / Wazzu empty packages", "Modern NFL 2-minute mesh"]
 tags: [pass, spread, empty, mesh, air-raid, anti-man, 01-personnel, any-level, high-school, college, nfl]

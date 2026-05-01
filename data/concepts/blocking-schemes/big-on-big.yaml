@@ -1,0 +1,36 @@
+scheme_id: big-on-big
+name: Big-On-Big Protection
+category: pass-protection
+description: |
+  OL blocks every DL one-on-one. RB and TE scan and react to secondary
+  blitzers. Same fundamental structure as Boss Protection but with emphasis
+  on the skill-position players reading and reacting (not just picking up first
+  blitzer). Used in Air Raid and modern spread offenses.
+assignments_by_position:
+  LT: "Block the assigned defensive lineman one-on-one."
+  LG: "Block the assigned defensive lineman one-on-one."
+  C: "Block the nose tackle or center DL one-on-one."
+  RG: "Block the assigned defensive lineman one-on-one."
+  RT: "Block the assigned defensive lineman one-on-one."
+  HB: "Scan the LB level; pick up secondary blitzers based on coverage read."
+  TE: "Help RB on blitz pick-up; secondary threat assessment."
+pairs_with:
+  - air-raid
+  - mesh
+  - 4-verts
+defeats:
+  - "4-man DL rush schemes"
+vulnerable_to:
+  - "5+ blitzers"
+  - "overloaded secondary blitz patterns"
+tags:
+  - pass-protection
+  - big-on-big
+  - spread
+  - air-raid
+  - college
+  - nfl
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Throw Deep Publishing 'Big-On-Big / Boss Protection' (https://throwdeeppublishing.com/blogs/football-glossary/): confirmed one-on-one DL blocking with RB scan structure."
+  - "Web validated 2026-04-30 — X&O Labs 'Air Raid Protection' (https://www.xandolabs.com/): air raid uses big-on-big with RB as secondary blitz pick-up."

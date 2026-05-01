@@ -42,6 +42,8 @@ best_vs_defense: ["cover-3 (textbook beater)", "cover-1", "cover-1 robber (robbe
 worst_vs_defense: ["cover-4 / quarters", "cover-2 trap", "zero blitz", "pattern-match coverage"]
 common_uses: ["3rd-and-long deep shots", "2-minute drill", "After a deep run sets up safety bite"]
 philosophy: air-raid
+pass_concept_ref: four-verticals
+philosophy_ref: air-raid
 era: "1980s onward — Don Coryell origin; Mike Leach made it iconic in the Air Raid."
 famous_examples: ["Mike Leach Texas Tech / Wazzu", "Drew Brees Saints", "Modern NFL deep-ball offenses"]
 tags: [pass, spread, empty, four-verticals, deep, air-raid, coryell, anti-cover-3, 01-personnel, any-level, high-school, college, nfl]

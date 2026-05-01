@@ -1,0 +1,30 @@
+concept_id: post-corner
+name: Post-Corner (Coryell Deep)
+category: deep-route
+description: |
+  Receiver runs a post route initially, then cuts to the corner. Creates confusion
+  vs defender. Strong vertical concept attacking safeties. Originated in Coryell system.
+  High-skill throw requiring QB to anticipate and deliver accurately. Works vs cover-2
+  when safeties are split.
+progression:
+  - primary: post-corner route
+best_vs_coverage:
+  - cover-2 (split safeties)
+  - aggressive-corner
+attacks:
+  - "Post move fakes safety rotation"
+  - "Corner breaks away from coverage"
+pairs_with:
+  - coryell
+  - deep-shot
+tags:
+  - pass-concept
+  - post-corner
+  - deep-route
+  - coryell
+  - college
+  - nfl
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Throw Deep Publishing 'Post-Corner Route' (https://throwdeeppublishing.com/blogs/football-glossary/): Coryell deep route."
+  - "Web validated 2026-04-30 — X&O Labs 'Deep Routes' (https://www.xandolabs.com/): post-corner structure."

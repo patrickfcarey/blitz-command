@@ -37,6 +37,8 @@ best_vs_defense: ["over-front", "cover-3", "4-3 base", "single-high coverage"]
 worst_vs_defense: ["bear front", "cover-1 robber", "8-man fronts", "playside DT penetration"]
 common_uses: ["1st-and-10 strong-side run", "Short-yardage to strong side", "Goal-line strong-side"]
 philosophy: power-run
+run_concept_ref: power
+philosophy_ref: power-run
 era: "Universal — Strong I Power has been a power-run staple for decades."
 famous_examples: ["1990s Cowboys Strong I packages", "Stanford under Harbaugh strong-side runs"]
 tags: [power-run, gap-scheme, strong-side, 21-personnel, downhill, any-level, high-school, college, nfl]

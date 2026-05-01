@@ -1,0 +1,39 @@
+concept_id: outside-zone
+name: Outside Zone (OZ)
+category: zone-scheme
+description: |
+  Zone-blocking run with OL taking a wider zone-step (reach-block) to stretch
+  the play laterally. The HB attacks the perimeter, reading the playside tackle
+  and TE for whether to continue attacking lateral or cut inside. Used to
+  attack edge and create cutback lanes. Flexibility is key.
+aim_point: "Perimeter / C-gap or wider"
+read_tree:
+  - phase: 1
+    defender: "playside EDGE / DE"
+    decision: "If sealed by OZ blocks, work upfield along sideline. If EDGE wins, prepare cutback."
+  - phase: 2
+    defender: "secondary defender (corner, S)"
+    decision: "Attack his hip or cut back if path closes."
+blocking_scheme_ref: zone-blocking
+pulls_required: []
+lead_blocker: FB
+pairs_with:
+  - inside-zone
+  - stretch
+  - bootleg
+  - west-coast
+  - shanahan-zone
+tags:
+  - run
+  - zone-scheme
+  - perimeter
+  - west-coast
+  - stretch
+  - any-level
+  - high-school
+  - college
+  - nfl
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Throw Deep Publishing 'Outside Zone' (https://throwdeeppublishing.com/blogs/football-glossary/): confirmed reach-block + perimeter stretch structure."
+  - "Web validated 2026-04-30 — X&O Labs 'Zone Blocking Perimeter' (https://www.xandolabs.com/): outside zone creates cutback lanes for flexible ball carrier."

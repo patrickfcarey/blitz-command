@@ -1,0 +1,34 @@
+concept_id: snag
+name: Snag
+category: option-route
+description: |
+  TE runs a seam/option route while one WR runs a slant and another runs a flat.
+  Creates a 3-level read in a confined area. Versatile vs most coverages. Can be
+  adjusted based on post-snap reads. Particularly strong vs cover-1 and cover-3.
+progression:
+  - primary: seam route (middle)
+    secondary: slant (interior)
+  - tertiary: flat (perimeter)
+best_vs_coverage:
+  - cover-1
+  - cover-3
+  - single-high-look
+attacks:
+  - "Seam exploits middle of cover-1"
+  - "Slant/flat combo vs cover-3 zones"
+pairs_with:
+  - west-coast
+  - pro-style
+  - mesh
+tags:
+  - pass-concept
+  - snag
+  - option-route
+  - 3-level
+  - any-level
+  - college
+  - nfl
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Throw Deep Publishing 'Snag Route' (https://throwdeeppublishing.com/blogs/football-glossary/): seam + slant + flat structure."
+  - "Web validated 2026-04-30 — X&O Labs 'Snag Concept' (https://www.xandolabs.com/): versatile vs multiple coverages."

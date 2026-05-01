@@ -1,0 +1,33 @@
+concept_id: drive
+name: Drive
+category: intermediate-read
+description: |
+  Three receivers running dig/drive routes at intermediate depth (8-15 yards) attacking
+  the middle of the field. Creates a concentrated passing attack. Strong vs cover-2
+  and soft zone looks. Intermediate alternative to deep routes or short timing plays.
+progression:
+  - primary: middle dig route
+    secondary: inside dig
+  - tertiary: outside dig
+best_vs_coverage:
+  - cover-2
+  - soft-zone
+  - "tampa-2"
+attacks:
+  - "Dig routes attack middle zones"
+  - "Intermediate targets"
+pairs_with:
+  - mesh
+  - snag
+  - west-coast
+tags:
+  - pass-concept
+  - drive
+  - intermediate-read
+  - dig-routes
+  - college
+  - nfl
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Throw Deep Publishing 'Drive Concept' (https://throwdeeppublishing.com/blogs/football-glossary/): dig route structure."
+  - "Web validated 2026-04-30 — X&O Labs 'Intermediate Concepts' (https://www.xandolabs.com/): drive route intermediate."

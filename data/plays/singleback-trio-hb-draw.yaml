@@ -39,6 +39,7 @@ best_vs_defense: ["aggressive 4-man rushers", "cover-2/3 with LBs in deep drops"
 worst_vs_defense: ["LB blitzes", "cover-1 with spy", "8-man fronts"]
 common_uses: ["2nd-and-long / 3rd-and-long", "After 2-3 obvious passes", "Pass-rushing-defense constraint"]
 philosophy: any
+run_concept_ref: draw
 era: "Universal — every era has the HB draw as a constraint to passing."
 famous_examples: ["49ers Garrison Hearst draws", "Dallas Cowboys' classics", "Modern NFL widely"]
 tags: [run, draw, constraint, 11-personnel, singleback, any-level, high-school, college, nfl]

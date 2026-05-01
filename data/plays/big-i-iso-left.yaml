@@ -90,6 +90,8 @@ common_uses:
 - Red-zone short yardage
 - 4-minute offense
 philosophy: power-run
+run_concept_ref: power
+philosophy_ref: power-run
 era: Universal short-yardage scheme.
 famous_examples:
 - Mike Alstott Buccaneers heavy ISO

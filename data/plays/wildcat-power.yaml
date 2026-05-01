@@ -91,6 +91,8 @@ common_uses:
   - Setting up trick plays (Wildcat Pass)
 
 philosophy: power-run
+run_concept_ref: power
+philosophy_ref: power-run
 
 era: "Modern resurgence: 2008 Miami Dolphins (Ronnie Brown). Concept dates to 1920s-1940s single-wing era."
 

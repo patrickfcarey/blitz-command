@@ -36,6 +36,8 @@ best_vs_defense: ["over-front", "cover-3", "4-3 base", "nickel personnel"]
 worst_vs_defense: ["bear front", "8-man fronts", "cover-1 robber"]
 common_uses: ["Modern NFL 11P run game", "1st-and-medium", "Setting up PA from spread"]
 philosophy: power-run
+run_concept_ref: power
+philosophy_ref: power-run
 era: "Modern — 11P Power is a staple of every NFL playbook."
 famous_examples: ["Modern NFL widespread", "Spread-option college teams"]
 tags: [run, power-run, gap-scheme, 11-personnel, singleback, any-level, college, nfl, modern]

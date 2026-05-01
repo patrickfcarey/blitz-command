@@ -40,6 +40,8 @@ best_vs_defense: ["man-1", "cover-1 robber", "cover-3 with run-fit LBs"]
 worst_vs_defense: ["cover-2 trap", "cover-4", "banjo coverage"]
 common_uses: ["1st-and-10 PA / pass setup", "3rd-and-medium", "Setting up backside throws after mesh"]
 philosophy: pro-style
+pass_concept_ref: mesh
+philosophy_ref: pro-style
 era: "1990s onward — pro-style passing concept from balanced personnel."
 famous_examples: ["Joe Moore-era Notre Dame mesh from heavy", "Modern NFL using twins-weak as a constraint"]
 tags: [pass, mesh, anti-man, 21-personnel, twins, pro-style, west-coast, any-level, high-school, college, nfl]

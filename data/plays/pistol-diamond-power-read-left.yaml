@@ -127,6 +127,8 @@ common_uses:
 - Red-zone scoring concept (HB sweep or QB power)
 - Modern spread-option base
 philosophy: spread-option
+run_concept_ref: power
+philosophy_ref: spread-option
 era: Early 2010s onward — Auburn under Gus Malzahn / Cam Newton popularized; widespread modern college / NFL spread.
 famous_examples:
 - Auburn under Gus Malzahn (Cam Newton 2010 NC season)

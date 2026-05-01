@@ -1,0 +1,41 @@
+game_id: ncaa-11-ps2
+name: "NCAA Football 2011"
+release_year: 2010
+developer: "EA Tiburon"
+publisher: "EA Sports"
+platform: ps2
+era: ps2
+custom_play_support: true
+custom_formation_support: false
+grid:
+  width: 21
+  height: 7
+  origin:
+    x: 10
+    y: 5
+scale:
+  x_yards_per_cell: 1.667
+  y_yards_per_cell: 2.0
+snap_to_cells: true
+limits:
+  max_route_depth_yd: 20
+  max_player_split_yd: 15
+  max_backfield_depth_yd: 7.5
+  allowed_motion:
+    - short
+    - long
+    - across
+playbook_caps:
+  max_plays_total: 75
+engine_quirks:
+  - "Final NCAA release for PS2."
+  - "Same 21x7 grid as Madden 10/11 PS2."
+default_playbooks:
+  - "Auburn"
+  - "Oklahoma"
+  - "Alabama"
+verification_status: inferred
+source_notes:
+  - "Web validated 2026-04-30 — Wikipedia 'NCAA Football 2011' (https://en.wikipedia.org/wiki/NCAA_Football_2011): custom-play editor confirmed."
+  - "Web validated 2026-04-30 — GameFAQs NCAA Football 2011 PS2 (https://gamefaqs.gamespot.com/ps2/): last PS2 NCAA release."
+  - "Inferred from PS2-era engine."

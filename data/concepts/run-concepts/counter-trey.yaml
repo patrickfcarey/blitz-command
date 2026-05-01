@@ -1,0 +1,37 @@
+concept_id: counter-trey
+name: Counter Trey
+category: gap-scheme
+description: |
+  Counter-action Power variant with TWO guards pulling (backside guard + backside
+  tackle) to lead the HB around the opposite side from the play-call look.
+  Creates deception by attacking the weak-side A-gap while the offense looks
+  like it's going strong-side. Requires precise footwork and timing.
+aim_point: "Weak-side A-gap, attacking away from the 'flow' look"
+read_tree:
+  - phase: 1
+    defender: "backside linebacker"
+    decision: "The pulling BST takes him; HB follows the pulling blockers."
+  - phase: 2
+    defender: "playside edge"
+    decision: "If edge stays home, cutback lane opens. If edge crashes in, bounce."
+blocking_scheme_ref: gap-blocking
+pulls_required:
+  - LG
+  - LT
+lead_blocker: FB
+pairs_with:
+  - power
+  - iso
+  - play-action
+tags:
+  - run
+  - gap-scheme
+  - misdirection
+  - counter
+  - power-run
+  - college
+  - nfl
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Throw Deep Publishing 'Counter Trey' (https://throwdeeppublishing.com/blogs/football-glossary/): confirmed two-guard pull structure and weak-side attack."
+  - "Web validated 2026-04-30 — X&O Labs 'Counter Concepts' (https://www.xandolabs.com/): counter trey described as pulling both BSG and BST."

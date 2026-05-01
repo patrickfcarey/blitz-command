@@ -1,0 +1,49 @@
+philosophy_id: spread-to-run
+name: Spread-to-Run (Modern HS/College)
+description: |
+  High school and college offensive approach using spread formations (4-5 WRs) but
+  built around power-run concepts (Inside Zone, Outside Zone). Uses spacing to create
+  run lanes while maintaining passing threat. Combines spread efficiency with downhill
+  run game. Common in modern high school systems and mid-major college programs.
+era: "2000s–present"
+originators:
+  - "Modern high school football evolution"
+  - "Mike Leach (modified Air Raid with more run)"
+notable_practitioners:
+  - "Urban Meyer (zone-run based spread at Florida/Ohio State)"
+  - "Mark Richt (zone-run spread)"
+  - "Many modern HS coaches"
+canonical_run_concepts:
+  - inside-zone
+  - outside-zone
+  - stretch
+  - counter-trey
+  - draw
+canonical_pass_concepts:
+  - mesh
+  - bubble
+  - slant-flat
+  - quick-pass
+  - stick
+formation_preferences:
+  - shotgun-2x2
+  - shotgun-3x1
+  - singleback-spread
+tendency_profile:
+  run_pct: 0.50
+  pass_pct: 0.35
+  pa_pct: 0.05
+  rpo_pct: 0.05
+  screen_pct: 0.05
+tags:
+  - philosophy
+  - spread-to-run
+  - modern
+  - zone-run
+  - high-school
+  - college
+  - balanced
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Wikipedia 'Urban Meyer' (https://en.wikipedia.org/wiki/Urban_Meyer): developed zone-run based spread at Florida."
+  - "Web validated 2026-04-30 — Wikipedia 'Mark Richt' (https://en.wikipedia.org/wiki/Mark_Richt): spread-to-run offense at Georgia."

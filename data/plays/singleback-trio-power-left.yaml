@@ -100,6 +100,8 @@ common_uses:
 - 1st-and-medium
 - Setting up PA from spread
 philosophy: power-run
+run_concept_ref: power
+philosophy_ref: power-run
 era: Modern — 11P Power is a staple of every NFL playbook.
 famous_examples:
 - Modern NFL widespread

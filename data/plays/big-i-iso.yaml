@@ -34,6 +34,8 @@ best_vs_defense: ["4-3 with stretched LB", "cover-2 (no extra safety in box)", "
 worst_vs_defense: ["bear front", "cover-1 robber", "MIKE blitz"]
 common_uses: ["3rd-and-1, 3rd-and-2", "Red-zone short yardage", "4-minute offense"]
 philosophy: power-run
+run_concept_ref: power
+philosophy_ref: power-run
 era: "Universal short-yardage scheme."
 famous_examples: ["Mike Alstott Buccaneers heavy ISO", "Modern NFL 22 personnel short-yardage"]
 tags: [run, power-run, iso, 22-personnel, heavy, short-yardage, any-level, high-school, college, nfl]

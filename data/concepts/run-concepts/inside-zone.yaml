@@ -1,0 +1,38 @@
+concept_id: inside-zone
+name: Inside Zone (IZ)
+category: zone-scheme
+description: |
+  Zone-blocking run where OL zone-step playside and combo-block DL, climbing
+  to LBs on the second level. The HB reads the interior DL — if he bends away
+  (BANG), attack inside; if he presses (BEND), work up to the LB; if he
+  overcommits (BOUNCE), cut it back. Aims for the B-gap initially but can
+  change based on reads.
+aim_point: "B-gap, with flexibility based on DL movement"
+read_tree:
+  - phase: 1
+    defender: "playside DT / 3-tech"
+    decision: "BANG/BEND/BOUNCE read: if defender leans playside, attack inside; if over-aggressive, bounce it."
+  - phase: 2
+    defender: "playside ILB"
+    decision: "Read block progression to LB level; attack his hip."
+blocking_scheme_ref: zone-blocking
+pulls_required: []
+lead_blocker: FB
+pairs_with:
+  - outside-zone
+  - stretch
+  - west-coast
+tags:
+  - run
+  - zone-scheme
+  - interior
+  - west-coast
+  - spread
+  - any-level
+  - high-school
+  - college
+  - nfl
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Throw Deep Publishing 'Inside Zone' (https://throwdeeppublishing.com/blogs/football-glossary/): confirmed B-gap aim and BANG/BEND/BOUNCE read structure."
+  - "Web validated 2026-04-30 — X&O Labs 'Zone Run Concepts' (https://www.xandolabs.com/): inside zone foundational to West Coast and modern spread offenses."

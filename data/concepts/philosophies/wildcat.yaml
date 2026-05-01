@@ -1,0 +1,47 @@
+philosophy_id: wildcat
+name: Wildcat (Gadget/Gimmick Offense)
+description: |
+  Unconventional offensive set where a non-QB takes the snap directly (typically an
+  elite RB or WR). Used to bypass weak QB play or create confusion. Originally popularized
+  by Miami Dolphins (Ricky Williams era). Can be run-heavy or pass-heavy depending on
+  personnel. Effective as a change-of-pace or situational attack. Limited long-term
+  viability due to defensive adaptation.
+era: "2008–present"
+originators:
+  - "Miami Dolphins (Wildcat with Ricky Williams, 2008–2009)"
+  - "Bill Parcells / David Lee"
+notable_practitioners:
+  - "Arizona Cardinals (2009–2010)"
+  - "Denver Broncos (occasional use)"
+  - "Various HS/college programs"
+canonical_run_concepts:
+  - power
+  - counter-trey
+  - iso
+  - sweep
+canonical_pass_concepts:
+  - quick-pass
+  - bootleg
+  - rpo
+formation_preferences:
+  - wildcat
+  - shotgun-wildcat
+  - wildcat-spread
+tendency_profile:
+  run_pct: 0.70
+  pass_pct: 0.15
+  pa_pct: 0.05
+  rpo_pct: 0.05
+  screen_pct: 0.05
+tags:
+  - philosophy
+  - wildcat
+  - gimmick
+  - gadget
+  - run-heavy
+  - nfl
+  - situational
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Wikipedia 'Wildcat offense' (https://en.wikipedia.org/wiki/Wildcat_formation): popularized by Dolphins 2008."
+  - "Web validated 2026-04-30 — Wikipedia 'Ricky Williams' (https://en.wikipedia.org/wiki/Ricky_Williams): Wildcat with Dolphins."

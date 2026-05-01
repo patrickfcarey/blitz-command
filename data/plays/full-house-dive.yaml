@@ -33,6 +33,8 @@ best_vs_defense: ["any base front", "speed-flow defenses overrun by misdirection
 worst_vs_defense: ["bear front", "8-man fronts", "1-tech penetration"]
 common_uses: ["Short-yardage from Full House look", "1st-and-Goal inside 3", "Surprise heavy package"]
 philosophy: power-run
+run_concept_ref: power
+philosophy_ref: power-run
 era: "1950s-1970s mainstream T-formation; revival as goal-line package today."
 famous_examples: ["Wishbone-era Oklahoma / Texas (1970s)", "Modern goal-line packages"]
 tags: [run, power-run, dive, 32-personnel, full-house, heavy, goal-line, throwback, high-school, college]

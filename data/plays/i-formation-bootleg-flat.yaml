@@ -93,6 +93,8 @@ common_uses:
   - Red-zone moving-target throws
 
 philosophy: west-coast
+pass_concept_ref: sail
+philosophy_ref: west-coast
 
 era: "1980s onward — Bill Walsh staple, modernized continuously."
 

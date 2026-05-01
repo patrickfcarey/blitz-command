@@ -1,0 +1,47 @@
+philosophy_id: pistol-formation
+name: Pistol Formation
+description: |
+  Hybrid formation combining elements of shotgun (QB in shotgun) and I-Form (RB closer
+  behind QB). Popularized by Colin Kaepernick and the 49ers. Provides flexibility:
+  can run zone or gap schemes, quick passing, or read options. Used in modern NFL and
+  increasingly in college. Balanced approach with both run and pass threats.
+era: "2010s–present"
+originators:
+  - "Greg Roman (San Francisco 49ers, Colin Kaepernick era)"
+  - "Nevada Wolf Pack (Kaepernick college)"
+notable_practitioners:
+  - "Colin Kaepernick (49ers, 2011–2014)"
+  - "Chip Kelly (adapted for Eagles)"
+  - "Modern offensive coordinators"
+canonical_run_concepts:
+  - inside-zone
+  - outside-zone
+  - stretch
+  - read-option
+canonical_pass_concepts:
+  - mesh
+  - slant-flat
+  - bootleg
+  - read-play
+formation_preferences:
+  - pistol
+  - pistol-spread
+  - pistol-trips
+tendency_profile:
+  run_pct: 0.45
+  pass_pct: 0.40
+  pa_pct: 0.05
+  rpo_pct: 0.05
+  screen_pct: 0.05
+tags:
+  - philosophy
+  - pistol
+  - hybrid-formation
+  - modern
+  - nfl
+  - college
+  - balanced
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Wikipedia 'Pistol formation' (https://en.wikipedia.org/wiki/Pistol_formation): popularized by Kaepernick and 49ers."
+  - "Web validated 2026-04-30 — Wikipedia 'Colin Kaepernick' (https://en.wikipedia.org/wiki/Colin_Kaepernick): Pistol formation development."

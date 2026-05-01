@@ -1,0 +1,49 @@
+philosophy_id: high-school-power
+name: High School Power (Classic HS)
+description: |
+  Traditional high school football approach emphasizing downhill power running (Power,
+  Counter, ISO), physical OL play, and simplicity. Heavy use of fullback lead blocking.
+  Designed for high school athletes' strength and skill levels. Often mirrors old-school
+  college/NFL approaches. Focus on blocking schemes, gap discipline, and ball security.
+  Still dominant in many HS programs.
+era: "1950s–present"
+originators:
+  - "Classic HS coaching traditions (recursive)"
+  - "Vince Lombardi / Paul Brown influence on HS coaches"
+notable_practitioners:
+  - "Many traditional HS programs"
+  - "Successful HS power-run programs nationwide"
+canonical_run_concepts:
+  - power
+  - counter-trey
+  - iso
+  - trap
+  - lead-toss
+canonical_pass_concepts:
+  - play-action
+  - bootleg
+  - quick-pass
+  - slant-flat
+formation_preferences:
+  - i-formation
+  - wing-t
+  - singleback-ace
+  - singleback-trio
+tendency_profile:
+  run_pct: 0.65
+  pass_pct: 0.20
+  pa_pct: 0.10
+  rpo_pct: 0.0
+  screen_pct: 0.05
+tags:
+  - philosophy
+  - high-school
+  - power-run
+  - classic
+  - smashmouth
+  - downhill
+  - run-heavy
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Wikipedia 'High school football' (https://en.wikipedia.org/wiki/High_school_football): power-run tradition in HS football."
+  - "Web validated 2026-04-30 — Wikipedia 'I-formation' (https://en.wikipedia.org/wiki/I-formation): classic HS formation for power-run."

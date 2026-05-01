@@ -1,0 +1,35 @@
+concept_id: midline-option
+name: Midline Option
+category: option
+description: |
+  Triple option that reads the nose tackle (interior) instead of the EDGE.
+  QB attacks the NT: if NT crashes → QB keeps or pitches to HB. If NT stays
+  home → QB gives to FB diving at the A-gap on the opposite side. Used in
+  flexbone and Army-style option offenses. More interior-focused than veer.
+aim_point: "A-gap (dive), QB keep, or opposite-side HB pitch"
+read_tree:
+  - phase: 1
+    defender: "nose tackle (middle read)"
+    decision: "QB reads NT: if crashes → keep or pitch to HB. If stays home → give to FB."
+  - phase: 2
+    defender: "backside pursuit"
+    decision: "HB or QB reads defensive flow; attack open lane."
+blocking_scheme_ref: gap-blocking
+pulls_required: []
+lead_blocker: FB
+pairs_with:
+  - triple-option-veer
+  - option-pa
+  - flexbone
+tags:
+  - run
+  - option
+  - triple-option
+  - midline
+  - army-style
+  - college
+  - high-school
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Throw Deep Publishing 'Midline Option' (https://throwdeeppublishing.com/blogs/football-glossary/): confirmed NT interior read with A-gap dive focus."
+  - "Web validated 2026-04-30 — X&O Labs 'Flexbone Option' (https://www.xandolabs.com/): midline option described as interior-focused option variant."

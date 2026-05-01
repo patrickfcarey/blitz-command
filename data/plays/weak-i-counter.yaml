@@ -40,6 +40,7 @@ best_vs_defense: ["over-front overplaying strong", "cover-3 with predictable LB 
 worst_vs_defense: ["bear front", "8-man fronts", "weak-side DE shooting upfield"]
 common_uses: ["Counter to Strong I tendencies", "1st/2nd-and-medium when defense expects strong-side", "Setting up weak-side bootleg"]
 philosophy: power-run
+philosophy_ref: power-run
 era: "Counter Trey lineage — Joe Gibbs Redskins onward; staple of pro-style power."
 famous_examples: ["Joe Gibbs Washington Redskins counter-from-Weak-I packages", "Modern NFL teams using Counter as a Power complement"]
 tags: [run, counter, gap-scheme, weak-side, misdirection, 21-personnel, any-level, high-school, college, nfl]

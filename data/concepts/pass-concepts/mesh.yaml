@@ -1,0 +1,38 @@
+concept_id: mesh
+name: Mesh
+category: timing-route
+description: |
+  Two receivers running crossing routes at nearly the same depth, creating a "mesh"
+  point where they cross. QB reads one route vs the other based on coverage. Timing-based,
+  high-completion percentage concept. Foundation of West Coast and many modern offenses.
+  Can create natural picks against man coverage.
+progression:
+  - primary: primary receiver (usually middle-depth cross)
+    secondary: second receiver (same-depth or slight variation)
+  - tertiary: checkdown if mesh is covered
+best_vs_coverage:
+  - man
+  - two-high
+  - zone-with-aggressive-linebackers
+attacks:
+  - "Man coverage pick at mesh point"
+  - "Gap zones in man-look coverage"
+  - "LB flow in zone"
+pairs_with:
+  - west-coast
+  - pro-style
+  - erhardt-perkins
+  - spread-to-run
+tags:
+  - pass-concept
+  - timing-route
+  - mesh
+  - west-coast
+  - high-completion
+  - any-level
+  - college
+  - nfl
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Throw Deep Publishing 'Mesh Concept' (https://throwdeeppublishing.com/blogs/football-glossary/): mesh confirmed as crossing timing route."
+  - "Web validated 2026-04-30 — X&O Labs 'West Coast Concepts' (https://www.xandolabs.com/): mesh foundational to West Coast."

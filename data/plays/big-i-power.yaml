@@ -40,6 +40,8 @@ best_vs_defense: ["over-front", "cover-3", "4-3 base", "single-high"]
 worst_vs_defense: ["bear front", "8-man fronts", "cover-1 robber", "penetrating playside DT"]
 common_uses: ["Short-yardage and 4-minute offense", "Goal-line / red-zone power", "1st/2nd-and-short", "Setting up PA shots from heavy"]
 philosophy: power-run
+run_concept_ref: power
+philosophy_ref: power-run
 era: "Universal — heavy power has been a short-yardage staple forever."
 famous_examples: ["Stanford under Harbaugh / David Shaw", "Patriots heavy packages", "Modern NFL 12/22 personnel power"]
 tags: [run, power-run, gap-scheme, 22-personnel, heavy, downhill, any-level, high-school, college, nfl]

@@ -1,0 +1,35 @@
+scheme_id: half-slide-protection
+name: Half-Slide Protection
+category: pass-protection
+description: |
+  3 OL slide one direction (toward the blitz side), while 2 OL man-block the
+  backside. The RB scans the blitz-side backfield. Used when pressure is
+  expected from one direction but you want man-block security on the weak side.
+  Hybrid approach between full slide and man.
+assignments_by_position:
+  LT: "Slide left — protect the blind side."
+  LG: "Slide left — combo with LT if needed."
+  C: "Man-block the backside NT."
+  RG: "Man-block the backside DT."
+  RT: "Slide left if needed, otherwise stay on right side defender."
+  HB: "Scan the left side (blitz side); pick up first uncovered rusher."
+  TE: "Optional: chip on EDGE."
+pairs_with:
+  - pa-mesh
+  - quick-hitter
+defeats:
+  - "one-sided blitz packages"
+  - "overloaded weak-side pressure"
+vulnerable_to:
+  - "stunts that cross the slide boundary"
+  - "delayed blitz from the man-block side"
+tags:
+  - pass-protection
+  - hybrid
+  - any-level
+  - college
+  - nfl
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Throw Deep Publishing 'Half-Slide vs Man' (https://throwdeeppublishing.com/blogs/football-glossary/): describes 3-OL slide + 2-OL man hybrid approach."
+  - "Web validated 2026-04-30 — X&O Labs 'Combo Protections' (https://www.xandolabs.com/): confirmed hybrid slide-man structure used in modern NFL."

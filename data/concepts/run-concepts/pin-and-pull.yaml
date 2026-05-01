@@ -1,0 +1,36 @@
+concept_id: pin-and-pull
+name: Pin-and-Pull
+category: zone-scheme
+description: |
+  Hybrid zone-gap scheme where playside OL "pin" (down-block) the closest defender
+  to keep them from backside escape, while backside OL pull around to lead the
+  perimeter. Combines zone principles (area responsibility) with gap principles
+  (defined pullers). Used in spread and modern zone offenses.
+aim_point: "Perimeter with interior support"
+read_tree:
+  - phase: 1
+    defender: "playside DL"
+    decision: "Pinned by down-blocks. Pulling OL attack the edge defender."
+  - phase: 2
+    defender: "secondary defender"
+    decision: "HB reads pulling blockers and attacks created lane."
+blocking_scheme_ref: zone-blocking
+pulls_required:
+  - LG
+  - RG
+lead_blocker: FB
+pairs_with:
+  - outside-zone
+  - inside-zone
+  - stretch
+tags:
+  - run
+  - zone-scheme
+  - hybrid
+  - gap-zone-hybrid
+  - modern
+  - college
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Throw Deep Publishing 'Pin-and-Pull Blocking' (https://throwdeeppublishing.com/blogs/football-glossary/): confirmed down-block pin + backside pull structure."
+  - "Web validated 2026-04-30 — X&O Labs 'Hybrid Zone Concepts' (https://www.xandolabs.com/): pin-and-pull described as modern zone-gap hybrid."

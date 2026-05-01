@@ -1,0 +1,32 @@
+concept_id: double-slant
+name: Double Slant
+category: interior-read
+description: |
+  Two receivers running slant routes at interior (creating natural spacing). QB reads
+  one slant vs the other based on coverage. Quick interior passing concept. Strong vs
+  man coverage (natural separation). Used as constraint and in quick-passing game.
+progression:
+  - primary: first slant
+    secondary: second slant
+best_vs_coverage:
+  - man
+  - blitz
+  - interior-zone
+attacks:
+  - "Natural separation on slants vs man"
+  - "Quick decision making"
+pairs_with:
+  - mesh
+  - slant-flat
+tags:
+  - pass-concept
+  - double-slant
+  - interior-read
+  - quick-game
+  - any-level
+  - college
+  - nfl
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Throw Deep Publishing 'Double Slant' (https://throwdeeppublishing.com/blogs/football-glossary/): two-slant structure."
+  - "Web validated 2026-04-30 — X&O Labs 'Interior Passing' (https://www.xandolabs.com/): double-slant concept."

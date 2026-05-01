@@ -1,0 +1,36 @@
+concept_id: smash
+name: Smash
+category: area-read
+description: |
+  Corner route and flat route on the same side, attacking the perimeter vertically
+  and underneath. Strong vs cover-2 and cover-4 (splits safeties). QB reads the corner
+  route against the corner/safety. Can be run strong or weak side. Natural constraint
+  for run-heavy offenses.
+progression:
+  - primary: corner route (vertical threat)
+    secondary: flat route (underneath)
+  - tertiary: backside option
+best_vs_coverage:
+  - cover-2
+  - cover-4
+  - 2-high-safety
+attacks:
+  - "Corner route beats safety rotation"
+  - "Flat route finds space in cover-2"
+pairs_with:
+  - man-protection
+  - slide-protection
+  - west-coast
+  - power-run
+tags:
+  - pass-concept
+  - smash
+  - area-read
+  - perimeter
+  - any-level
+  - college
+  - nfl
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Throw Deep Publishing 'Smash Concept' (https://throwdeeppublishing.com/blogs/football-glossary/): corner + flat route structure."
+  - "Web validated 2026-04-30 — X&O Labs 'Smash Route' (https://www.xandolabs.com/): attacks 2-high safeties."

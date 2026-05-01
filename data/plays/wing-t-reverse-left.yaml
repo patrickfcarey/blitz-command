@@ -122,6 +122,8 @@ common_uses:
 - 1st-and-10 misdirection
 - Once per game shot play
 philosophy: power-run
+run_concept_ref: sweep
+philosophy_ref: power-run
 era: 1960s onward — classic Wing-T misdirection.
 famous_examples:
 - Delaware Wing-T (Tubby Raymond)

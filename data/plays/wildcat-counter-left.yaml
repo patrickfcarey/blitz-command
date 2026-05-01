@@ -88,6 +88,8 @@ common_uses:
 - Surprise misdirection in any package
 - Setting up reverse / trick plays off the same look
 philosophy: power-run
+run_concept_ref: power
+philosophy_ref: power-run
 era: Modern Wildcat era (2008 onward).
 famous_examples:
 - 2008 Dolphins counter package (Ronnie Brown / Ricky Williams)

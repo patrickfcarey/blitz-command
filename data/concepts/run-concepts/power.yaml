@@ -1,0 +1,38 @@
+concept_id: power
+name: Power
+category: gap-scheme
+description: |
+  Gap-blocking run scheme with playside OL down-blocking and the backside
+  guard pulling around the center to lead through the off-tackle hole. The
+  playside TE kicks out the EDGE defender, creating a defined hole between RT
+  and TE. The HB takes a delivered handoff and follows the puller through.
+  Variants include Counter Trey (two pullers) and Power-O (the canonical form).
+aim_point: "Off-tackle gap, between playside RT and TE"
+read_tree:
+  - phase: 1
+    defender: "playside EDGE / OLB"
+    decision: "If TE seals EDGE clean → run inside the kick-out. If EDGE wins → bounce around."
+  - phase: 2
+    defender: "playside ILB"
+    decision: "Pulling guard takes him; HB reads the LG's path and finds the crease."
+blocking_scheme_ref: gap-blocking
+pulls_required:
+  - LG
+lead_blocker: FB
+pairs_with:
+  - counter-trey
+  - iso
+  - i-formation
+  - singleback-trio
+tags:
+  - run
+  - power-run
+  - gap-scheme
+  - any-level
+  - high-school
+  - college
+  - nfl
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Throw Deep Publishing 'Complete Guide to the Power Play' (https://throwdeeppublishing.com/blogs/football-glossary/): confirmed three core elements — double-team at point of attack, kick-out of EMOL, lead block through the hole."
+  - "Web validated 2026-04-30 — vIQtory Sports 'Install Power' (https://www.viqtorysports.com/): backside guard pull described identically; aim point off-tackle confirmed."

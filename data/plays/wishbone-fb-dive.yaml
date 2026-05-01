@@ -90,6 +90,8 @@ common_uses:
   - "Drive-extender on the goal line"
 
 philosophy: power-run
+run_concept_ref: power
+philosophy_ref: power-run
 
 era: "1968 onward — wishbone-era constraint play; universal at HS / option-tradition college level."
 

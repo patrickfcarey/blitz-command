@@ -112,6 +112,8 @@ common_uses:
 - 1st-and-10 surprise sweep
 - Setting up reverses
 philosophy: power-run
+run_concept_ref: sweep
+philosophy_ref: power-run
 era: Modern Wildcat era (2008 onward).
 famous_examples:
 - 2008 Dolphins Wildcat sweep package

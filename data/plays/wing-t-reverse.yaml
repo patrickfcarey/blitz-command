@@ -40,6 +40,8 @@ best_vs_defense: ["over-front overplaying strong side", "speed-flow defenses", "
 worst_vs_defense: ["disciplined backside DE", "8-man fronts", "cover-1 robber"]
 common_uses: ["Setting up Buck Sweep tendencies", "1st-and-10 misdirection", "Once per game shot play"]
 philosophy: power-run
+run_concept_ref: sweep
+philosophy_ref: power-run
 era: "1960s onward — classic Wing-T misdirection."
 famous_examples: ["Delaware Wing-T (Tubby Raymond)", "Wing-T HS programs"]
 tags: [run, reverse, misdirection, wing-t, 22-personnel, throwback, gimmick, high-school, college]

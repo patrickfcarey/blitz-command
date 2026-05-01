@@ -93,6 +93,8 @@ common_uses:
 - Counter to Buck Sweep over-pursuit
 - Constraint package vs aggressive fronts
 philosophy: power-run
+run_concept_ref: power
+philosophy_ref: power-run
 era: 1960s onward — Wing-T 'big three' (Trap / Belly / Down). Universal at HS level.
 famous_examples:
 - University of Delaware Wing-T (Tubby Raymond era)
