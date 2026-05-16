@@ -1,0 +1,183 @@
+play_id: run-and-shoot-screen
+name: HB Screen (Strong)
+aliases:
+  - Run-and-Shoot Screen
+  - Quick Screen off Verts
+  - HB Slip Screen
+
+formation: run-and-shoot
+play_type: screen
+ball_carrier: HB
+primary_read: HB
+checkdown: SLOT-R
+
+# SLOT-R short across motion — identical to the rest of the Run-and-Shoot
+# disguise family (base play: run-and-shoot-switch). The motion that sets up
+# the vertical concepts here also walks SLOT-R into position to lead the
+# screen alley. Same motion family-wide so the defense cannot key it.
+# Mandatory.
+motions:
+  - player: SLOT-R
+    type: mandatory
+    motion_type: short-across
+    end_position: { x: 5.0, y: -1.0 }
+    notes: "SLOT-R tightens his split with a short inside motion — identical across the whole Run-and-Shoot family so motion is never a tell."
+
+assignments:
+  - player: LT
+    role: pass_block
+    blocking_scheme: invite-rusher
+    notes: "Set pass for a 1-count to sell the dropback, invite the rusher upfield, then release flat to lead the screen wall."
+  - player: LG
+    role: pass_block
+    blocking_scheme: invite-rusher
+    notes: "Show the man-protection set for a 1-count, then release and climb to the first defender in the screen alley."
+  - player: C
+    role: pass_block
+    blocking_scheme: invite-rusher
+    notes: "Show the protection, hold the interior rusher one beat, then release downfield as the lead blocker on the alley defender."
+  - player: RG
+    role: pass_block
+    blocking_scheme: man-protection
+    notes: "Stay in — full man-protection to give the QB a clean platform to set up and deliver the screen."
+  - player: RT
+    role: pass_block
+    blocking_scheme: man-protection
+    notes: "Stay in — anchor the play-side edge so the QB is not flushed off the screen timing."
+  - player: X
+    role: route
+    route_name: go
+    depth_yd: 25
+    beats_coverage: both
+    notes: "Clear-out vertical — release hard upfield to carry the backside corner deep and empty the backside of the screen."
+  - player: Z
+    role: route
+    route_name: go
+    depth_yd: 25
+    beats_coverage: both
+    notes: "Clear-out vertical, strong side — run the play-side corner off the screen so he cannot squat and trigger on the HB."
+  - player: SLOT-L
+    role: route
+    route_name: slant
+    depth_yd: 1
+    beats_coverage: both
+    notes: "Inside slant to occupy the weak-side inside linebacker and pull him away from the screen-side pursuit."
+  - player: SLOT-R
+    role: route
+    route_name: hitch
+    depth_yd: 5
+    beats_coverage: zone
+    notes: "After the motion, push to 5 yards and settle as window-dressing in front of the screen — pulls the strong-side flat defender up and becomes the QB's outlet if the screen is read and blown up."
+  - player: QB
+    role: ball_carrier
+    path: [[0, 0], [0, -2], [0, -5]]
+    notes: |
+      Drop — IDENTICAL first two waypoints to every play in the Run-and-Shoot
+      family (the family's shared QB drop), then continue one step deeper to
+      sell a true dropback pass and create the throwing platform. Hold the eyes
+      downfield on the verticals for a 1-count to suck the rush and freeze the
+      linebackers, then come down and deliver the screen to the HB behind the
+      LT/LG/C wall. If the screen is covered, climb to the SLOT-R hitch outlet.
+  - player: HB
+    role: ball_carrier
+    is_primary: true
+    path: [[0, 0], [1, 0], [3, -1], [5, 3], [8, 9]]
+    notes: |
+      Sell pass protection: take one shuffle step toward the line as if to
+      cut-block the edge rusher, let him cross your face, then slip out to the
+      strong-side flat behind the LOS. Settle in the screen pocket behind the
+      LT/LG/C wall, catch it on the move, and explode upfield off the blocks.
+
+strengths:
+  - "Identical motion and QB-drop start to Switch / Choice / Go — defense reads dropback pass"
+  - "Punishes the aggressive four-man rush the vertical concepts invite"
+  - "Outside go routes clear both corners out of the screen area"
+  - "Quick-hitting answer when the defense is teeing off on the deep passing game"
+  - "Turns a pass-rush-friendly look into blockers in front of the back"
+
+weaknesses:
+  - "Needs the vertical passing game on tape first — a cold screen holds no rush"
+  - "Screen timing is fragile — a late HB slip lets the rush recover"
+  - "Vulnerable to DL who read the 'happy' OL release and peel into the alley"
+  - "Five blockers only — a screen-side LB blitz outnumbers the wall"
+  - "Backside pressure can chase the QB off the throw before the HB is set"
+
+best_vs_defense:
+  - "Aggressive four-man rush teeing off on the dropback"
+  - "Cover-3 (linebackers carry the verticals / drop deep, vacating underneath)"
+  - "Cover-1 man (the HB's man defender gets walled by the screen wall)"
+  - "Any defense overcommitting to the run-and-shoot vertical game"
+
+worst_vs_defense:
+  - "Screen-side linebacker blitz"
+  - "Cover-2 with corners squatting in the flat"
+  - "Zone coverage with a dedicated back/screen spy"
+  - "Screen-aware defenses reading the OL release tells"
+
+defensive_counters:
+  - counter_id: dl-screen-read
+    pre_snap_look: "The play-side defensive end in a loose, upright, hands-ready stance instead of a low get-off sprinter's stance"
+    qb_key: "Scan the play-side DL stance — lineman upright and patient, no get-off lean"
+    read_category: dl-alignment
+    why: "An upright, patient end is coached to read the 'happy' OL release, peel into the screen alley, and either bat the throw or meet the HB at the catch."
+    typical_against: ["screen-aware defenses", "any DL coached to read 'happy' OL"]
+  - counter_id: screen-side-lb-walkup
+    pre_snap_look: "A linebacker or the nickel walked up tight to the line on the strong (screen) side, showing blitz outside the play-side tackle"
+    qb_key: "Count the box on the screen side — an extra defender walked up over the alley"
+    read_category: box-count
+    why: "A walked-up screen-side rusher attacks the alley the HB is slipping into and outnumbers the three-man OL wall before it can form."
+    typical_against: ["fire-zone strong-side pressure", "nickel pressure"]
+  - counter_id: squat-corner-cover-2
+    pre_snap_look: "Both corners at 5-7 yards in an off, flat-footed squat with two deep safeties behind them"
+    qb_key: "Check the corners — off and squatting, two-high behind"
+    read_category: cb-leverage
+    why: "A squatting cover-2 corner does not chase the clear-out go and instead sits on the screen flat, triggering downhill on the HB before the OL wall arrives."
+    typical_against: ["cover-2", "cover-2 zone"]
+
+common_uses:
+  - "After the vertical passing game has the rush teeing off"
+  - "2nd-and-long / 3rd-and-medium"
+  - "Slowing down an aggressive four-man rush"
+  - "Constraint call when linebackers are bailing to carry the verticals"
+  - "Getting the ball to a playmaker HB in space"
+
+philosophy: spread-pass
+pass_concept_ref: screen
+philosophy_ref: run-and-shoot
+
+era: "1980s-90s onward — the run-and-shoot leaned on the HB screen as the constraint that kept the four-man rush honest."
+
+famous_examples:
+  - "Houston Oilers (screen game off the run-and-shoot verticals)"
+  - "Detroit Lions (Barry Sanders on screens out of four-wide sets)"
+  - "Hawaii Warriors (June Jones screen package)"
+
+tags:
+  - screen
+  - constraint
+  - run-and-shoot
+  - 10-personnel
+  - 4-wide
+  - throwback
+  - high-school
+  - college
+  - nfl
+
+notes: |
+  HB slip screen off the run-and-shoot dropback look. The SLOT-R motion, the
+  QB's drop start, and the OL pass-set all show the defense the same dropback
+  picture as Switch, Choice, and Go — the rush teed up for the vertical game
+  is exactly what this play punishes. The HB sells protection, slips to the
+  strong flat, and catches it behind the LT/LG/C wall while the outside go
+  routes clear both corners.
+
+  Companion in the Run-and-Shoot disguise family (base: run-and-shoot-switch).
+  Timing window: HB slips on the QB's 1-count downfield hold; LT/LG/C invite
+  the rush for a 1-count, then release to form the wall.
+
+  Mirror by flipping all x.
+
+verification_status: unverified
+source_notes:
+  - "Screen off a dropback pass game is a universal constraint concept; the run-and-shoot screen is named in the run-and-shoot philosophy file (data/concepts/philosophies/run-and-shoot.yaml) as a canonical run/constraint concept."
+  - "Authored 2026-05-15 as a companion of the Run-and-Shoot disguise family — SLOT-R motion and QB drop first two waypoints deliberately mirror run-and-shoot-switch. OL invite-and-release timing (1-count) follows standard screen coaching, consistent with i-formation-power-screen."

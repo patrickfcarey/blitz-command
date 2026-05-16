@@ -8,66 +8,60 @@ Format: a short title + 1-line description. Add a `**(blocked: ...)**` note when
 
 ## Highest leverage right now
 
-- **Make MCPs actually useful + document them.** Both servers (`formation-library-mcp`, `play-library-mcp`) are built and tested but not invoked anywhere — they wrap data that's currently read directly from files. Action: (a) write `docs/using-the-mcps.md` showing how to register them in `.mcp.json`, what tools they expose, example queries, and which AI clients can use them; (b) demonstrate their value with a worked example (e.g. ChatGPT or another Claude session querying via MCP); (c) consider whether the *current* drawing/editing workflow should call them too (or if direct file reads are fine here and the MCPs exist for external consumers).
+- **Concept libraries (Phase 5).** The data side has plays, formations, routes, and games. What's still missing as first-class data is run-concept / blocking-scheme / coverage / philosophy libraries. These would let plays foreign-key into reusable concept definitions instead of repeating descriptions inline. Once they exist, concept MCPs (`run-concept-mcp`, `blocking-scheme-mcp`, `coverage-mcp`) can wrap them.
 
-- **Make the MCPs usable by smaller AIs (Sonnet / Haiku) for play design.** Today the MCPs only support retrieval. A smaller model trying to *design* a play needs more. Plan:
-  - **(a) Top-3 ship-first improvements** that close the design loop:
-    1. Add `render_play(play_id, game_id)` and `validate_play(play_data, game_id)` MCP tools — the AI can author + validate + visualize without leaving the chat.
-    2. Add `build_starter_play(formation_id, play_type, philosophy)` returning a 70%-filled YAML scaffold. Smaller models excel at filling in, struggle at authoring from scratch.
-    3. Rewrite all existing tool docstrings with worked examples + enum hints (e.g. list common tag values). Pure mechanical change, biggest accuracy win.
-  - **(b) New MCP servers/tools** (after the data lands):
-    - `route-library-mcp` (list / get / find by category / find by coverage)
-    - `run-concept-mcp`, `blocking-scheme-mcp`, `coverage-mcp` (after the concept libraries are built — see Phase 5 work below)
-    - `game-knowledge-mcp` exposing the editor-grid + capabilities + limits in one bundled call
-  - **(c) Composition tools on existing MCPs**: `mirror_play`, `describe_play`, `compare_plays`, `suggest_complementary(play_id)` (returns 3-5 paired plays), `find_plays_by_concept`, `find_plays_for_situation`.
-  - **(d) Workflow scaffolding**: a `/design-a-play` skill (or MCP prompt) walking the AI through the full design recipe — pick formation → pick concept → fill assignments → validate → render. Smaller models follow recipes much better than they author them.
-  - **(e) Data improvements that unblock these tools**: explicit `family:` field on plays for play-graph queries, standardized concept references (foreign-key validated once `data/concepts/` exists), 1-2 sentence `description:` field per play tuned for AI consumption.
-  - **(f) AI-friendliness polish**: pagination on `list_*` tools, actionable error messages with `Did you mean...?` suggestions, server-level `__doc__` describing the MCP's purpose.
-  - **(g) Persistence / write tools** *(critical gap from gap analysis 2026-04-30)*: `save_play(play_yaml, validate=True)`, `save_formation(formation_yaml)`, `save_route(route_yaml)` — AI must be able to commit authored plays back to the library. Plus `update_play(play_id, patch)` for incremental fixes (avoids wasting context re-authoring whole YAML).
-  - **(h) Cross-MCP meta-tools**: `/help` or `manifest()` per server announcing purpose + tools + examples. Plus `find_play_for_situation(formation_constraint, defense, philosophy)` doing the multi-MCP join so smaller AIs don't have to coordinate 5 calls.
-  - **(i) Pattern library**: 10-15 named play templates (`template:power-run`, `template:y-cross-pa`, `template:stretch-zone`) with the structural skeleton already filled in. AI picks template + fills receivers / targets / coverage tweaks.
-  - **(j) AI onboarding & worked examples**: `docs/ai-onboarding.md` — concrete tutorial for a new Sonnet/Haiku model joining the repo. Plus `examples/play-design-walkthroughs/` with 5-10 fully-narrated tool-call sequences. Smaller models learn from examples >> abstract docs.
-  - **(k) Provenance tracking**: when an AI saves a play, auto-record authoring model, sources referenced, timestamp, validation pass. Stored in `source_notes`. Useful for auditing once library scales.
-  - **(l) Sanity / common-mistakes linter**: beyond schema + legality, catch concept-level errors ("Counter Trey should have 2 pullers, you specified 1"; "Mesh point depths don't match between crossers"; "WR split exceeds editor max"). Saves AI iterations.
-  - **(m) Defensive matchup analysis** *(Phase 7+, after defensive side lands)*: `predict_matchup(play_id, def_formation, coverage)` → structured "this play vs this defense" with best read, worst case, expected yards. Killer feature for playbook design.
-- **Document play-data provenance.** Add `docs/play-data-provenance.md` explaining the distinction between (a) **generic-football** plays (drafted from training data + WebSearch + coaching texts — what currently fills `data/plays/`) and (b) **Madden-canonical** plays (extracted from a specific game's actual playbook — currently zero of these). Make clear that `verification_status` on a play file does NOT mean "matches the game's built-in playbook" — it means "the football concept is sourced." Future contributors and AI agents need this distinction explicitly.
+- **AI onboarding doc + worked examples.** `docs/ai-onboarding.md` for new Sonnet/Haiku models joining the repo (one-shot tutorial with 5-10 fully-narrated tool-call sequences in `examples/play-design-walkthroughs/`). Smaller models learn from examples >> abstract docs.
+
 - **Game measurements.** *(blocked: user)* Diagrams against any game profile are placeholder-accurate until `data/games/<game-id>/editor-grid.yaml` is filled in via `docs/game-editor-measurement-protocol.md`. Madden 2005 PS2 partially measured (grid + y-scale + x-scale ≈ 9-cell-default-WR + ≥20 yd route depth); still need: max player split, max backfield depth, motion options, max plays per playbook.
+
+- **MCP improvements still open** (after the top-3 + composition tools landed):
+  - `update_play(play_id, patch)` for incremental fixes (avoids re-authoring whole YAML)
+  - `save_formation(formation_yaml)`, `save_route(route_yaml)` (currently only `save_play`)
+  - `manifest()` per server announcing purpose + tool list (smaller AIs benefit)
+  - Pagination on `list_*` tools — 144 plays in one response is bandwidth-heavy
+  - `find_play_for_situation(formation_constraint, defense, philosophy)` doing a multi-MCP join
+  - 10-15 named play templates (`template:power-run`, `template:y-cross-pa`)
+  - Provenance auto-tracking (model name, sources, timestamp) on `save_play`
+  - Concept-level lint extensions (mesh-point depths match between crossers, WR split vs editor max)
+  - Suggest concept-appropriate routes in `build_starter_play` (not just `'TODO-fill-in'`)
+  - Cross-reference check: `validate_play` should flag route_names that don't exist in `data/routes/`
 
 ## Drawing improvements
 
-- **Blocking arrows** on the SVG (need defensive players for block targets, OR draw arrows in named direction).
-- **Motion arrows** as curved dashed lines from start → end position.
-- **Option-route branching** (snag / stick currently render only primary path; show both branches).
-- **Defensive overlay** — once defensive formations exist, draw the defense in muted color.
-- **Animation** — SVG `<animate>` to show route progression.
-- **`draw_play` MCP tool** — wrap the drawing script as an MCP tool inside `play-library-mcp` so AI agents can render plays on demand.
+- **Motion arrows** as curved dashed lines from start → end position
+- **Option-route branching** (snag / stick currently render only primary path; show both branches)
+- **Animation** — SVG `<animate>` to show route progression
+- **Defense-only via MCP** — `render_play` requires a `play_id`; need a `render_defense(defense_id, game_id)` companion
+- **Blocking arrows that target specific defenders** (now possible since defenses exist)
 
 ## More plays
 
-- Plays for the formations that still have **none**: Strong I, Weak I, Big I, Full House, Empty, I-Formation Twins Weak, Shotgun 2x1 TE-Strong, Shotgun 2x1 TE-Weak, Shotgun 3x0.
-- Plays for **17 mirror formations** (or build an auto-mirror tool similar to `tools/generate-mirrors/`).
-- Round out existing formations' playbooks — e.g. I-Form needs Sweep / Off-Tackle / Smash variants; Singleback Ace needs PA / Y-Stick / Bootleg from 12P; Wing-T needs Boot / Waggle / Down / Reverse / Belly Pass / Jet Sweep; Wildcat needs Pass / Speed Option / Reverse.
+- Plays for the formations that still have **none**: Strong I, Weak I, Big I, Full House, Empty (only 2), I-Formation Twins Weak (only 2), Shotgun 2x1 TE-Strong, Shotgun 2x1 TE-Weak, Shotgun 3x0
+- Round out existing playbooks — Singleback Trio still needs RPO + screen variants; Wing-T could add Boot / Down / Belly Pass; Wildcat could add a true Pass
+- I-Formation has no pure pass (only PA + run + screen) — under-center 5-step concepts missing
+- Shotgun-trips-right has no PA despite trey-right having one — port
 
 ## Future formations (offensive)
 
-- Wishbone, Flexbone (option / academy football)
 - Single Wing, Double Wing (HS / youth throwback)
-- Singleback Doubles / Trips / Bunch / Big variants
-- Empty 5-wide (00 personnel, no TE)
-- Pistol Diamond / Pistol Trips
-- Run-and-Shoot
+- Singleback Doubles / Bunch / Big variants
+- Empty 5-wide variants
+- Pistol Trips
 
-## Defensive side (entirely new track)
+## Defensive side — more
 
-- Defensive formation schema — fronts (4-3, 3-4, 4-2-5, 3-3-5, 46 Bear) + coverage shells (Cover 0/1/2/3/4, Tampa 2, pattern-match)
-- Defensive formation files (~12-15 once schema lands)
-- Defensive coverage library (zones with assignments + responsibilities)
+- 3-3-5 stack
+- 4-3 cover-1
+- Tampa 2 standalone
+- Blitz packages: zero blitz, fire zone, double-A blitz
 
 ## More schemas
 
 - `blocking.schema.json`
-- `playbook.schema.json`
+- `playbook.schema.json` — for saveable named playbooks
 - Run concept schema (separate from plays — concepts as reusable building blocks)
+- `source_provenance` schema (formalize the `verification_status` distinction; see `docs/play-data-provenance.md`)
+- Add `'option'` to `play_type` enum so triple options can self-describe
 
 ## More data libraries (Phase 5)
 
@@ -80,8 +74,8 @@ Format: a short title + 1-line description. Add a `**(blocked: ...)**` note when
 
 - `validate-formations` tool / MCP — promote the inline checker to a real reusable tool
 - `game-knowledge-mcp`
-- `route-tree-mcp` (route library exists, this is small now)
-- `blocking-scheme-mcp` (after blocking library exists)
+- `route-tree-mcp`
+- `blocking-scheme-mcp`
 - `play-concept-mcp`
 - `validation-mcp`
 - `play-variant-mcp`
@@ -100,18 +94,36 @@ Format: a short title + 1-line description. Add a `**(blocked: ...)**` note when
 
 ## Administrative
 
-- README.md still just the project title — needs a real intro
-- `.gitignore` for `.venv/`, `__pycache__/`, etc.
-- Repo-local Python venv (currently using `/tmp/blitz-venv`)
-- `tests/` still empty — formal test suite for tools and validators
-- Commits — frequent uncommitted work; consider a hook or workflow note
+- `tests/` could add test_drawing_modes coverage for defense-only short-field combinations
+- Frequent uncommitted work — consider adopting a workflow note for periodic commits
+- Consider GitHub Actions running `./run-tests.sh` on PR
 
 ---
+
+## Done
+
+(Move items here when they land. Trim periodically — old completions don't need to live here forever.)
+
+### 2026-04-30
+
+- ✅ Drawing tool now supports both/offense-only/defense-only/show-selectively modes + short/long field
+- ✅ Green field background + NFL/NCAA hash marks (per game profile)
+- ✅ Defensive formations + coverage rendering (zones / man / rush / spy)
+- ✅ MCP top-3 — `validate_play`, `render_play`, `build_starter_play`
+- ✅ MCP composition — `find_plays_by_concept`, `compare_plays`, `suggest_complementary_plays`, `predict_matchup`
+- ✅ MCP write — `save_play`, `mirror_play`
+- ✅ All MCP docstrings rewritten with examples + enum hints + "Did you mean…?" suggestions
+- ✅ `docs/using-the-mcps.md`, `docs/play-data-provenance.md`, refreshed `README.md` and per-MCP READMEs
+- ✅ Repo-local `.venv` (python3.11) + `requirements.txt` + `.gitignore` + `tests/` (50 tests) + `run-tests.sh`
+- ✅ Specialty offensive formations: Wishbone, Flexbone, Pistol Diamond, Run-and-Shoot
+- ✅ Defensive formations: 3-4 C3, 4-2-5 C2, Goal-Line 6-2, Prevent 3-2-6 (added to existing 4-3 C2/C3, Nickel C1, Dime C4, 46 Bear C0)
+- ✅ Round out option family: power-read, counter-read, triple-option-RPO, veer, QB-counter, QB-power
+- ✅ Path backfills (P4) — every QB-bearing play now has a QB drop/handoff path
 
 ## How to update this file
 
 When something here lands or changes scope:
 
-1. Move completed items to the bottom under a `## Done` section, OR delete them once they've been done long enough that they're not interesting context.
+1. Move completed items to `## Done` (with date) — OR delete them once they've been done long enough that they're not interesting context.
 2. If a category empties out, delete the section heading too.
 3. Keep items terse — 1 line each. Detail belongs in the implementation, plan.md, or a per-item doc.

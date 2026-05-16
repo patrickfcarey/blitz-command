@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blitz-command.local/schemas/pass-concept.schema.json",
+  "title": "PassConcept",
+  "description": "A reusable pass concept (mesh, smash, snag, etc.) that multiple play files can reference via pass_concept_ref.",
+  "type": "object",
+  "required": ["concept_id", "name", "category", "description", "best_vs_coverage", "verification_status", "source_notes"],
+  "additionalProperties": false,
+  "properties": {
+    "concept_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "Stable identifier (kebab-case). Must match the filename (without .yaml)."
+    },
+    "name": { "type": "string" },
+    "category": {
+      "enum": ["timing-route", "area-read", "option-route", "vertical-stretch", "horizontal-stretch", "intermediate-read", "vertical-stack", "quick-read", "interior-read", "crossing-route", "deep-route", "perimeter-read", "vertical-read"],
+      "description": "Pass concept category."
+    },
+    "description": {
+      "type": "string",
+      "description": "2-3 sentence explanation of the concept — what routes, what coverage it attacks, when to use it."
+    },
+    "progression": {
+      "type": "array",
+      "description": "Read progression through the concept (primary, secondary, tertiary receivers/options).",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "primary": { "type": "string", "description": "Primary read/receiver." },
+          "secondary": { "type": "string", "description": "Secondary read/receiver." },
+          "tertiary": { "type": "string", "description": "Tertiary read/receiver." }
+        }
+      }
+    },
+    "best_vs_coverage": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Coverage types this concept attacks well (e.g. cover-2, man, zone-blitz)."
+    },
+    "attacks": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "How the concept beats specific defensive strategies."
+    },
+    "pairs_with": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "IDs of complementary pass concepts, philosophies, or plays."
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "verification_status": {
+      "enum": ["verified", "unverified", "inferred"]
+    },
+    "source_notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

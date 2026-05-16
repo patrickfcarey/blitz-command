@@ -33,6 +33,35 @@
     "secondary_read": { "type": "string" },
     "tertiary_read": { "type": "string" },
     "checkdown": { "type": "string", "description": "Label of the safety-valve receiver if all reads are covered." },
+    "run_reads": {
+      "type": "array",
+      "description": "Ball-carrier read progression for run plays. Each entry names what the runner reads at that priority and where to go based on the result. Analogous to a QB's read tree but for the ground game.",
+      "items": {
+        "type": "object",
+        "required": ["priority", "read_key", "run_to"],
+        "additionalProperties": false,
+        "properties": {
+          "priority": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 5,
+            "description": "1 = first read, 2 = second read, 3 = third read, etc."
+          },
+          "read_key": {
+            "type": "string",
+            "description": "What the ball carrier reads — a defender, blocker, or landmark. E.g. 'backside DE', 'playside linebacker', 'pulling guard', 'C-gap', 'frontside A-gap'."
+          },
+          "run_to": {
+            "type": "string",
+            "description": "Where to go if this read is available / the gap opens. E.g. 'cut outside', 'bang the A-gap', 'follow the puller through the C-gap', 'cut back behind the center'."
+          },
+          "notes": {
+            "type": "string",
+            "description": "Optional coaching point or concept note for this read."
+          }
+        }
+      }
+    },
     "motions": {
       "type": "array",
       "items": { "$ref": "#/$defs/motion" },
@@ -62,6 +91,84 @@
       "type": "array",
       "items": { "type": "string" }
     },
+    "defensive_counters": {
+      "type": "array",
+      "description": "Pre-snap defensive ALIGNMENTS that beat or threaten this play. Each entry is a look the QB can recognize before the snap by scanning the defense — NOT a post-snap movement. The QB sees the alignment, then checks to an audible (the playbook's counter_responses map each counter_id to an audible). Post-snap adjustments are handled by the play's run_reads / primary_read progression and assignment alt_paths, not here. Distinct from 'weaknesses' (static play shortcomings) and 'worst_vs_defense' (season-long matchup problems). Each entry has a stable counter_id so playbooks can reference it from their counter_responses field.",
+      "items": {
+        "type": "object",
+        "required": ["counter_id", "pre_snap_look", "qb_key", "read_category", "why"],
+        "additionalProperties": false,
+        "properties": {
+          "counter_id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$",
+            "description": "Stable kebab-case id unique within this play (e.g. 'pinch-dl', 'loaded-box'). A stable handle that playbook counter_responses reference — it need not perfectly describe the alignment, and should NOT be changed once playbooks reference it."
+          },
+          "pre_snap_look": {
+            "type": "string",
+            "description": "The defensive ALIGNMENT the QB sees pre-snap. Must be observable before the snap — a static picture, not a post-snap movement. E.g. 'Both DTs in tight 3-techniques shaded inside the guards', '8 defenders inside the tackle box with a single-high safety', 'Both corners pressed at the line on the outside WRs'."
+          },
+          "qb_key": {
+            "type": "string",
+            "description": "The single fastest visual recognition cue — what the QB scans to identify this look in one glance. E.g. 'Count the box', 'Check the safety shell — one high', 'Scan the interior DL shade'."
+          },
+          "read_category": {
+            "enum": ["box-count", "safety-shell", "dl-alignment", "lb-depth", "cb-leverage"],
+            "description": "Which part of the defense the QB scans to identify this counter. 'box-count' = number of defenders inside the tackle box. 'safety-shell' = number and depth of deep safeties (0/1/2-high). 'dl-alignment' = defensive-line technique and shade. 'lb-depth' = linebacker depth and width (walked up, stacked, cheated). 'cb-leverage' = cornerback depth and leverage (press/off, inside/outside)."
+          },
+          "why": {
+            "type": "string",
+            "description": "One sentence on WHY this alignment beats or threatens the play. Helps a coach understand the mechanism (e.g. 'Inside-shaded tackles kill the down-block angles; the off-tackle hole is dead before the pull arrives')."
+          },
+          "typical_against": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Defensive fronts/coverages where you'd commonly see this alignment (e.g. ['over-front', '4-3 base']). Optional."
+          }
+        }
+      }
+    },
+    "flip_reads": {
+      "type": "array",
+      "description": "Pre-snap alignment reads that tell the QB to FLIP this play's direction — same as defensive_counters in form (a look the QB scans before the snap), but the response is to mirror rather than audible to a different play. 'mirror-play' = run this exact play flipped to the other side (call the play's -left/-right mirror). 'mirror-formation' = flip the whole formation to its mirror, re-setting the defense's strength call, then run the play. Used for the 'check-with-me' run-direction decision and the formation-flip decision.",
+      "items": {
+        "type": "object",
+        "required": ["flip_id", "pre_snap_look", "qb_key", "read_category", "flip_to", "why"],
+        "additionalProperties": false,
+        "properties": {
+          "flip_id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$",
+            "description": "Stable kebab-case id unique within this play (e.g. 'overshift-strong', 'box-heavy-callside')."
+          },
+          "pre_snap_look": {
+            "type": "string",
+            "description": "The defensive ALIGNMENT the QB sees pre-snap that triggers the flip — a static picture, observable before the snap (e.g. 'Front overshifted to the called side — an extra hat in the strong-side box')."
+          },
+          "qb_key": {
+            "type": "string",
+            "description": "The single fastest visual cue the QB scans to identify this look (e.g. 'Count the box by side — called side is +1')."
+          },
+          "read_category": {
+            "enum": ["box-count", "safety-shell", "dl-alignment", "lb-depth", "cb-leverage"],
+            "description": "Which part of the defense the QB scans — same enum as defensive_counters.read_category."
+          },
+          "flip_to": {
+            "enum": ["mirror-play", "mirror-formation"],
+            "description": "'mirror-play' = run this play flipped to the other side (its mirror play). 'mirror-formation' = flip the entire formation to its mirror, then run the play."
+          },
+          "why": {
+            "type": "string",
+            "description": "One sentence on why flipping beats the look (e.g. 'Running into the overshift is into the teeth; flipping attacks the lighter box')."
+          },
+          "typical_against": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Defensive fronts/coverages where you'd commonly see this alignment. Optional."
+          }
+        }
+      }
+    },
     "common_uses": {
       "type": "array",
       "items": { "type": "string" },
@@ -70,6 +177,59 @@
     "philosophy": {
       "type": "string",
       "description": "Offensive philosophy (e.g. 'power-run', 'west-coast', 'air-raid', 'spread-option')."
+    },
+    "run_concept_ref": {
+      "type": "string",
+      "description": "Foreign key into data/concepts/run-concepts/ (kebab-case id). Set for run and play-action plays."
+    },
+    "pass_concept_ref": {
+      "type": "string",
+      "description": "Foreign key into data/concepts/pass-concepts/ (kebab-case id). Set for pass and play-action plays."
+    },
+    "pass_protection_ref": {
+      "type": "string",
+      "description": "Foreign key into data/concepts/pass-protections/ (kebab-case id). Set for pass, play-action, and screen plays."
+    },
+    "concepts": {
+      "type": "array",
+      "description": "Multi-concept composition (the Erhardt-Perkins model — a play is a package of concepts, callable from many formations). A play can run several concepts at once, each occupying a subset of the formation: e.g. Smash on the left two receivers + Spacing on the right three + a QB-run concept. Each entry foreign-keys into data/concepts/pass-concepts/ or run-concepts/ and names the players that execute it. A play uses EITHER the single-valued run_concept_ref / pass_concept_ref (a single-concept play) OR this array (a multi-concept play) — not both.",
+      "items": {
+        "type": "object",
+        "required": ["concept_ref", "concept_type", "players"],
+        "additionalProperties": false,
+        "properties": {
+          "concept_ref": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$",
+            "description": "Foreign key into data/concepts/pass-concepts/ (when concept_type is 'pass') or data/concepts/run-concepts/ (when 'run')."
+          },
+          "concept_type": {
+            "enum": ["pass", "run"],
+            "description": "Which concept library this entry references."
+          },
+          "players": {
+            "type": "array",
+            "items": { "type": "string" },
+            "minItems": 1,
+            "description": "Player labels (matching the play's formation) that execute this concept. A concept may occupy as few as one player (a QB-run) or span the whole formation (four-verticals)."
+          },
+          "field_area": {
+            "enum": ["left", "right", "middle", "backfield", "full"],
+            "description": "Optional shorthand for where the concept sits in the formation."
+          },
+          "is_primary": {
+            "type": "boolean",
+            "description": "True for the concept the QB works first post-snap. Exactly one concept entry in a play should be marked primary."
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "philosophy_ref": {
+      "type": "string",
+      "description": "Foreign key into data/concepts/philosophies/ (kebab-case id). Prefer this over the freeform 'philosophy' string for validated links."
     },
     "era": {
       "type": "string",
@@ -86,6 +246,11 @@
       "description": "Free-form tags. Conventionally includes a level tag (high-school, college, nfl, any-level), philosophy/concept tags (power-run, air-raid, west-coast, spread, gap-scheme), and situation tags (red-zone, short-yardage, hurry-up)."
     },
     "notes": { "type": "string" },
+    "verified_in_games": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "List of game_ids where this play has been manually verified in-game (recreated in the editor and confirmed to work as designed). Each entry must match a profile in data/games/."
+    },
     "verification_status": {
       "enum": ["verified", "unverified", "inferred"]
     },

@@ -87,6 +87,26 @@ worst_vs_defense:
   - any defense with disciplined EDGE contain
   - LB blitzes from the playside
 
+defensive_counters:
+  - counter_id: set-the-edge
+    pre_snap_look: "Playside CB pressed up tight on the LOS with the EDGE aligned wide outside the TE — both defenders set to box the perimeter"
+    qb_key: "Scan the playside edge — CB rocked up and the EDGE aligned wide"
+    read_category: dl-alignment
+    why: "An EDGE already aligned wide with a hard corner outside him sets the edge before the snap, so the sweep can't turn the corner and dies in the alley with the defense overlapping."
+    typical_against: ["cover-2 with disciplined CBs", "force-and-fit defenses", "any defense with corner contain rules"]
+  - counter_id: alley-fill
+    pre_snap_look: "Strong safety walked down to 6-8 yds inside the playside hash, sitting in the alley/cutback window"
+    qb_key: "Check the strong safety — walked down into the alley toward the motion side"
+    read_category: box-count
+    why: "A safety pre-set in the alley fills the cutback before the play develops, and the crack/zone-reach blocks are designed for a clean perimeter, not a stacked alley."
+    typical_against: ["cover-3 sky to motion side", "cover-1 with alley SS", "8-man fronts"]
+  - counter_id: fast-flow-lbs
+    pre_snap_look: "All three LBs at shallow run-fit depth (3-4 yds), spaced wide toward the sidelines rather than stacked over the box"
+    qb_key: "Check LB depth and width — shallow and spread wide, not stacked in the box"
+    read_category: lb-depth
+    why: "Shallow, wide-aligned LBs are pre-set to fast-flow with the motion; if none of them honor the QB/HB fakes the sweep is outnumbered on the perimeter before the handoff."
+    typical_against: ["fast-flow zone teams", "speed-flow LBs", "defenses with motion-key rules"]
+
 common_uses:
   - Perimeter constraint to inside zone / power
   - Tempo / look-changer
@@ -129,3 +149,26 @@ notes: |
 verification_status: unverified
 source_notes:
   - "Web validated 2026-04-29 — XsOs Football 'Shotgun Formation and Sets' (https://xsosfootball.com/shotgun-formation-sets/); Throw Deep Publishing 'Complete Guide to Offensive Football Formations' (https://throwdeeppublishing.com/blogs/football-glossary/the-complete-guide-to-offensive-football-formations); Wikipedia 'Wildcat formation' includes jet motion as a related package (https://en.wikipedia.org/wiki/Wildcat_formation). Modern jet sweep with mandatory motion + snap-on-motion is a foundational spread-offense perimeter run."
+flip_reads:
+- flip_id: force-set-callside
+  pre_snap_look: The playside force defender (corner or outside linebacker) is aligned tight and
+    downhill with run support set hard to the called side.
+  qb_key: Check the playside edge — force defender squatted and downhill, no cushion.
+  read_category: cb-leverage
+  flip_to: mirror-play
+  why: A perimeter run into a set force defender has no edge; flipping to the side with a soft,
+    depth-aligned corner gives the play the room it needs.
+  typical_against:
+  - cover-2 with hard corners
+  - cloud support
+- flip_id: alley-stacked-formation
+  pre_snap_look: Defense has stacked the alley to the formation's strength — an extra defender
+    plus a rolled safety filling the strong-side perimeter.
+  qb_key: Check the strong-side alley — it is stacked while the backside alley is open.
+  read_category: box-count
+  flip_to: mirror-formation
+  why: Flipping the formation relocates the strength and the run target away from the stacked
+    alley, forcing the defense to re-rotate or surrender the edge.
+  typical_against:
+  - quarters with strong roll
+  - 8-man fronts

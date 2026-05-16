@@ -1,0 +1,240 @@
+play_id: shotgun-2x2-qb-power-keep-throw-left
+name: QB Power Keep-Throw (Strong) (Mirror Left)
+aliases:
+- Power Q RPO
+- QB Power Read-Throw
+- Q-Power Glance
+formation: shotgun-2x2-left
+play_type: rpo
+ball_carrier: QB
+primary_read: SLOT-W
+secondary_read: TE
+motions: []
+assignments:
+- player: LT
+  role: run_block
+  blocking_scheme: down-block
+  target: backside-DT
+  notes: Block QB Power exactly — down block on the backside DT. Run-blocking the RPO; stay under the LOS.
+- player: LG
+  role: run_block
+  blocking_scheme: pull-around
+  target: playside-LB
+  path:
+  - - 0
+    - 0
+  - - -2
+    - -0.5
+  - - -4
+    - 0
+  - - -5
+    - 4
+  notes: PULL — identical pull track to QB Power; lead through the off-tackle hole on the playside ILB. Run-block the whole
+    way.
+- player: C
+  role: run_block
+  blocking_scheme: gap-block
+  target: backside-A-gap
+  notes: Block QB Power exactly — backside scoop, climb to the backside LB.
+- player: RG
+  role: run_block
+  blocking_scheme: down-block
+  target: playside-3-tech
+  notes: Block QB Power exactly — down block on the playside 3-tech.
+- player: RT
+  role: run_block
+  blocking_scheme: down-block
+  target: playside-DT
+  notes: Block QB Power exactly — down block on the playside DT.
+- player: TE
+  role: route
+  route_name: pop
+  depth_yd: 6
+  notes: Show the kickout block on the EDGE for one beat to sell QB Power, then pop off into the seam window behind the linebacker
+    — the keep-or-throw alert if the box conflict defender squeezes.
+- player: X
+  role: run_block
+  blocking_scheme: stalk
+  target: backside-cornerback
+  notes: Stalk the backside corner — identical to QB Power.
+- player: Z
+  role: run_block
+  blocking_scheme: stalk
+  target: playside-cornerback
+  notes: Stalk the playside corner — identical to QB Power.
+- player: SLOT-W
+  role: route
+  route_name: slant
+  depth_yd: 4
+  is_primary: true
+  notes: RPO THROW READ — quick three-step slant into the weak-side window. If the conflict defender (weak ILB / nickel) sits
+    in the box for the QB run, the QB pulls and throws this now.
+- player: QB
+  role: ball_carrier
+  is_primary: true
+  path:
+  - - 0
+    - 0
+  - - -3
+    - 3
+  - - -4
+    - 8
+  alt_paths:
+  - priority: secondary
+    path:
+    - - 0
+      - 0
+    - - -3
+      - 3
+    - - -3
+      - 1
+    notes: 'THROW: conflict defender stays in the box — pull up off the QB-Power track and fire the SLOT-W slant.'
+  notes: "RPO KEEP-OR-THROW — first two waypoints IDENTICAL to QB Power.\nAttack the off-tackle hole exactly like the designed\
+    \ QB run, reading\nthe weak-side conflict defender (backside ILB / nickel):\n- conflict defender triggers down to the\
+    \ QB run → PULL UP and throw the\n                            SLOT-W slant into the vacated window\n- conflict defender\
+    \ widens / drops to the slant → KEEP and run QB Power\n                            downhill through the off-tackle hole\n"
+- player: HB
+  role: lead_block
+  target: alley-defender
+  path:
+  - - 0
+    - 0
+  - - 1
+    - 1
+  - - -3
+    - 3
+  - - -4
+    - 6
+  notes: Run the exact QB-Power lead-sweep track — first two steps identical — then lead up on the alley defender or playside
+    safety on the keep.
+strengths:
+- Identical pre-snap look and first-step QB action to QB Power — the defense cannot tell it from the run
+- Puts the weak-side conflict defender in a true run/pass bind every snap
+- QB showing the run himself makes the box defender commit hard
+- Keep option still has the full QB-Power blocking (down + pull + HB lead)
+- Quick slant throw punishes any box defender who crashes the QB run
+weaknesses:
+- Needs QB Power on tape first — a cold fake does not move the conflict defender
+- QB must process the conflict-defender read instantly while attacking the line
+- QB injury risk on every keep
+- Throw window closes fast if the conflict defender is disciplined
+- Linemen must stay under the LOS — an ineligible-downfield penalty kills the play
+best_vs_defense:
+- 4-3 with an aggressive run-fit weak ILB
+- cover-3 with linebackers keying the run
+- any defense walking the nickel into the box
+- single-high coverages overcommitting to QB Power
+worst_vs_defense:
+- two-high shells with the conflict defender at pass depth
+- cover-1 robber bracketing the slant window
+- scrape-exchange taking the QB on the keep
+- any defense that plays the RPO with a disciplined apex defender
+defensive_counters:
+- counter_id: apex-pass-depth
+  pre_snap_look: Weak-side conflict defender — backside ILB or nickel — aligned at pass depth (5-6 yards) splitting the SLOT-W
+    and the box, not crowding the LOS
+  qb_key: Check the weak-side apex defender — backed off at pass depth, not in the box
+  read_category: lb-depth
+  why: A conflict defender already at pass depth is not bound by the QB-Power fake; he sits in the slant window so the throw
+    is covered while the box stays even for the keep.
+  typical_against:
+  - cover-4
+  - quarters
+  - any RPO-disciplined defense
+- counter_id: robber-slant-window
+  pre_snap_look: A safety dropped to 8-10 yards squared over the weak-side slant window with a two-high shell rolled behind
+    him
+  qb_key: Check the weak-side slant window — a safety squatting at 8-10 yards over it
+  read_category: safety-shell
+  why: A robber stationed in the slant window undercuts the RPO throw, taking away the pull-and-throw answer before the QB
+    can read the conflict defender.
+  typical_against:
+  - cover-1 robber
+  - cover-3 buzz
+- counter_id: extra-box-defender
+  pre_snap_look: 8 defenders inside the tackle box — strong safety walked down to 6-8 yards inside the playside hash, single-high
+    shell behind it
+  qb_key: Count the box — eight, with one high safety
+  read_category: box-count
+  why: QB is the runner on the keep, so the offense gains no number — the extra box defender comes free unblocked, and the
+    lone-high shell still covers the slant.
+  typical_against:
+  - cover-1 robber
+  - quarters with SS rolled down
+  - 8-man fronts
+common_uses:
+- 1st-and-10 base RPO with a mobile QB
+- Constraint to QB Power once the box loads up
+- Red-zone keep-or-throw concept
+- 3rd-and-medium with a run/pass conflict on the apex defender
+- Modern spread-option base from a 2x2 look
+philosophy: spread-option
+run_concept_ref: power
+pass_concept_ref: slant-flat
+philosophy_ref: spread-option
+era: Mid-2010s onward — power-scheme RPOs off the designed QB run grew with mobile-QB spread offenses.
+famous_examples:
+- Eagles (Jalen Hurts) QB-run RPO package
+- Modern Power 5 spread programs pairing QB power with quick-game RPOs
+tags:
+- rpo
+- run-pass-option
+- power-run
+- qb-run
+- qb-run-action
+- shotgun
+- 2x2
+- 11-personnel
+- modern
+- high-school
+- college
+- nfl
+notes: 'Run-pass option off QB Power. The QB''s first two steps attacking the
+
+  off-tackle hole, the HB lead-sweep track, the LG pull, and the OL
+
+  down-block show are all IDENTICAL to QB Power — the defense reads the
+
+  designed QB run. The QB reads the weak-side conflict defender: keep and
+
+  run QB Power, or pull up and throw the SLOT-W slant. Member of the
+
+  Shotgun 2x2 QB-Power disguise family (see data/play-families/).
+
+
+  Linemen must stay under the LOS on the read so the throw stays legal.
+
+  Mirror to qb-power-keep-throw-left by flipping all coordinates.
+
+  '
+verification_status: unverified
+source_notes:
+- Power-scheme RPO off the designed QB run is a universal modern constraint concept. Authored as a disguise twin of shotgun-2x2-qb-power
+  — initial action (QB off-tackle attack, HB lead-sweep track, LG pull) deliberately mirrors the base play through the first
+  two waypoints.
+- Mirror of shotgun-2x2-qb-power-keep-throw.yaml — path waypoints flipped on x; formation reference points to the mirror formation.
+  Routes auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed
+  look — coordinates and paths are the source of truth.
+flip_reads:
+- flip_id: box-overload-callside
+  pre_snap_look: The box is overloaded to the run side — the defense has +1 to the run side while
+    leaving the conflict defender's grass open.
+  qb_key: Count the box to the run side — it is heavy, the give is no longer the answer.
+  read_category: box-count
+  flip_to: mirror-play
+  why: Flipping the run portion away from the overload keeps the box count honest, so the give
+    stays a live answer instead of a forced throw.
+  typical_against:
+  - over-front
+  - 8-man fronts
+- flip_id: strength-declared-to-formation
+  pre_snap_look: Defense has declared fully to the formation's strength — an extra box defender
+    and a safety rolled down over the passing strength.
+  qb_key: Check the strength side — both the box count and the safety roll are set to it.
+  read_category: safety-shell
+  flip_to: mirror-formation
+  why: Flipping the formation re-sets the defense's strength call and rebalances the RPO conflict
+    so both the run and the throw stay viable.
+  typical_against:
+  - cover-3 with strong roll
+  - quarters with strong roll

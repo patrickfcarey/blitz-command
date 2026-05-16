@@ -132,3 +132,26 @@ verification_status: unverified
 source_notes:
   - "Standard split-zone scheme; documented widely in modern spread-offense coaching texts."
   - "Built 2026-04-30 as part of the P3 specialty-play rollout."
+flip_reads:
+- flip_id: three-tech-callside
+  pre_snap_look: The 3-technique tackle and the playside linebacker are both set to the called
+    side, loading the front-side gaps the zone is aiming for.
+  qb_key: Find the 3-technique — it is aligned to the called side, in the zone's path.
+  read_category: dl-alignment
+  flip_to: mirror-play
+  why: Zone run into the 3-technique blocks the penetrator head-on; flipping the zone away runs
+    at the lighter shade and a cleaner front-side double.
+  typical_against:
+  - over-front
+  - shifted 4-3
+- flip_id: strength-declared-to-formation
+  pre_snap_look: Defense has declared to the formation's strength — an extra box defender to the
+    strong side with a safety rolled down to support it.
+  qb_key: Check the strength side — the box count and the safety roll are both committed to it.
+  read_category: safety-shell
+  flip_to: mirror-formation
+  why: Flipping the whole formation re-locates the strength call; a defense slow to re-set leaves
+    the front-side gaps the zone wants unfilled.
+  typical_against:
+  - cover-3 with strong roll
+  - quarters with strong roll

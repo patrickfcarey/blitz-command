@@ -12,7 +12,17 @@ primary_read: SLOT-R
 secondary_read: Z
 checkdown: HB
 
-motions: []
+# SLOT-R short across motion — the run-and-shoot motions a receiver every
+# snap, and this play is the BASE of the Run-and-Shoot disguise family. The
+# identical SLOT-R short-across motion runs on every member (switch, choice,
+# go, screen, draw) so the defense cannot key the motion. Mandatory: the
+# system never snaps without motion, and the family's disguise depends on it.
+motions:
+  - player: SLOT-R
+    type: mandatory
+    motion_type: short-across
+    end_position: { x: 5.0, y: -1.0 }
+    notes: "SLOT-R tightens his split with a short inside motion — identical across the whole Run-and-Shoot family so motion is never a tell."
 
 assignments:
   - player: LT
@@ -55,8 +65,10 @@ assignments:
     role: ball_carrier
     path: [[0, 0], [0, -2], [0, -4]]
     notes: |
-      5-step drop. Switch concept creates rubs at 5-7 yds — the WRs and slots
-      cross paths, picking off press-man corners. Read deep:
+      5-step drop — IDENTICAL first two waypoints to every play in the
+      Run-and-Shoot family (this is the family's shared QB drop). Switch
+      concept creates rubs at 5-7 yds — the WRs and slots cross paths,
+      picking off press-man corners. Read deep:
       - Single-high (cover-1 / cover-3) → SLOT-R outside seam (now uncovered after pick)
       - Two-high (cover-2 / cover-4) → Z bending inside (post-style) over the safety
       - Press man → SLOT-R wins on the rub
@@ -93,6 +105,26 @@ worst_vs_defense:
   - "Aggressive zero blitz (no time)"
   - "Robber coverage (extra defender)"
 
+defensive_counters:
+  - counter_id: two-high-bracket-seams
+    pre_snap_look: "Two deep safeties at 12-14 yards, each cheated inside toward a hash — squared over the slots rather than splitting the field evenly"
+    qb_key: "Check the safety shell — two-high, both narrowed over the slot seams"
+    read_category: safety-shell
+    why: "Two safeties already stationed over the seams cap both switch verticals; the inside-bending releases run straight into the bracket and the pick buys nothing downfield."
+    typical_against: ["cover-2", "cover-4 with pattern-match"]
+  - counter_id: press-bail-banjo
+    pre_snap_look: "Both slot-side defenders pressed at the line, stacked tight over SLOT-R and Z, with no inside cushion"
+    qb_key: "Scan the slot-side corners — both pressed and stacked with no leverage gap"
+    read_category: cb-leverage
+    why: "Defenders stacked tight in a banjo can pass the crossing receivers off cleanly, switching man responsibility with the offense and erasing the pick the concept is built on."
+    typical_against: ["cover-1 banjo", "pattern-match press"]
+  - counter_id: interior-overload-blitz
+    pre_snap_look: "Both inside linebackers walked up over the guard-center gaps, showing five rushers against a five-man protection with no back to help"
+    qb_key: "Count the box — five walked up over a five-man front, HB releasing"
+    read_category: box-count
+    why: "Five interior rushers against five linemen leaves a free runner; the deep switch verticals need ~3.5 seconds and the throw never gets out."
+    typical_against: ["zero blitz", "double-A-gap mug"]
+
 common_uses:
   - "Vs press-man tells (shotgun looks)"
   - "1st-and-10 deep shot"
@@ -102,6 +134,7 @@ common_uses:
 
 philosophy: spread-pass
 pass_concept_ref: switch
+philosophy_ref: run-and-shoot
 
 era: "1980s-90s onward — Mouse Davis / June Jones run-and-shoot signature deep concept."
 
@@ -135,9 +168,15 @@ notes: |
   picks neutralize press technique, and the 4 verticals stretch the deep
   field. Best paired with single-high coverage tells.
 
+  BASE PLAY of the Run-and-Shoot disguise family (see data/play-families/
+  run-and-shoot-family.yaml). The SLOT-R short-across motion and the QB's
+  first two drop waypoints are identical across switch, choice, go, screen,
+  and draw — the defense sees one pre-snap picture for the whole family.
+
   Mirror by flipping all x.
 
 verification_status: unverified
 source_notes:
   - "Standard switch-vertical concept; documented across run-and-shoot coaching texts (Mouse Davis / June Jones lineage)."
   - "Built 2026-04-30 as part of the P3 specialty-play rollout."
+  - "Updated 2026-05-15 — adopted as the base play of the Run-and-Shoot disguise family; added the family-shared SLOT-R short-across motion and alignment-model defensive_counters. Initial QB drop and motion deliberately mirror the family companions."

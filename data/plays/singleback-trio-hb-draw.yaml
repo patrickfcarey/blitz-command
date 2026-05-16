@@ -37,6 +37,25 @@ weaknesses:
   - "Requires accurate handoff timing"
 best_vs_defense: ["aggressive 4-man rushers", "cover-2/3 with LBs in deep drops", "pass-rushing 4-3"]
 worst_vs_defense: ["LB blitzes", "cover-1 with spy", "8-man fronts"]
+defensive_counters:
+  - counter_id: dl-stay-square
+    pre_snap_look: "DL down in a heavy, square run-read stance with weight back over the heels rather than coiled in an upfield pass-rush stagger"
+    qb_key: "Scan the DL stance — square and weight-back, not staggered to pin their ears back"
+    read_category: dl-alignment
+    why: "Draw needs the DL to vacate the inside gaps by rushing upfield; a square run-read stance means they hold the A/B gaps and the HB has nowhere to go."
+    typical_against: ["any 4-down front with draw rules", "cover-2 over"]
+  - counter_id: lb-trigger-on-flow
+    pre_snap_look: "LBs walked up tight to 3-4 yds in a downhill, weight-forward stance with eyes on the OL and HB instead of bailed to coverage depth"
+    qb_key: "Check LB depth — walked up tight and weight-forward, eyes in the backfield"
+    read_category: lb-depth
+    why: "Draw works because LBs read pass and bail to coverage; LBs already walked up downhill trigger on the OL run-conversion and fill the gap before the handoff arrives."
+    typical_against: ["cover-3 buzz", "cover-2 sink"]
+  - counter_id: spy-lb
+    pre_snap_look: "MIKE or nickel sitting at 5-6 yds directly over the ball showing no drop and no blitz, eyes locked on the QB"
+    qb_key: "Check the MIKE — parked over the ball at depth with QB-eyes, no drop, no blitz"
+    read_category: lb-depth
+    why: "A spy parked in the middle sits in the exact lane the HB needs and tackles him before he can read the OL's drive blocks."
+    typical_against: ["cover-1 with spy", "cover-3 with MIKE spy"]
 common_uses: ["2nd-and-long / 3rd-and-long", "After 2-3 obvious passes", "Pass-rushing-defense constraint"]
 philosophy: any
 run_concept_ref: draw
@@ -46,3 +65,26 @@ tags: [run, draw, constraint, 11-personnel, singleback, any-level, high-school, 
 verification_status: unverified
 source_notes:
   - "HB Draw from Singleback Trio — pass-fake into late handoff. OL pass-sets, then drives."
+flip_reads:
+- flip_id: front-overshift-callside
+  pre_snap_look: Defensive front slid toward the called side — an extra down lineman or a walked-up
+    linebacker puts +1 in the called-side box.
+  qb_key: Count the box side to side — the called side has one more hat than the backside.
+  read_category: box-count
+  flip_to: mirror-play
+  why: Running a gap scheme into the overshift is into the teeth; flipping the play attacks the
+    lighter box with the same blocking math.
+  typical_against:
+  - over-front
+  - shifted 4-3
+- flip_id: strength-declared-to-formation
+  pre_snap_look: Defense has fully declared to the formation's strength — an extra box defender
+    to the strong side and a safety rolled down over it.
+  qb_key: Check the strength side — both the box count and the safety roll are committed to it.
+  read_category: safety-shell
+  flip_to: mirror-formation
+  why: When the defense keys the formation's strength, flipping the whole formation forces a re-declare
+    and the run hits the side they vacated.
+  typical_against:
+  - cover-3 with strong roll
+  - 8-man fronts

@@ -96,6 +96,42 @@ worst_vs_defense:
   - "playside DT penetration"
   - "defenses keying on QB"
 
+defensive_counters:
+  - counter_id: extra-box-defender
+    pre_snap_look: "8 defenders inside the tackle box — strong safety walked down to 6-8 yds inside the playside hash, single-high shell behind it"
+    qb_key: "Count the box — eight, with one high safety"
+    read_category: box-count
+    why: "QB is the runner, so the offense doesn't gain a number — the extra box defender comes free unblocked at the point of attack."
+    typical_against: ["cover-1 robber", "quarters with SS rolled down", "8-man fronts"]
+  - counter_id: scrape-exchange
+    pre_snap_look: "Playside EDGE squeezed down inside in a heavy tight shade, with the MIKE/SAM walked up and cheated outside his normal alignment"
+    qb_key: "Scan the playside EDGE — squeezed inside with a LB cheated outside him"
+    read_category: dl-alignment
+    why: "An EDGE already squeezed inside is set to crash the off-tackle hole so the cheated-out LB scrapes over the top and meets the QB unblocked where the puller expected a static defender."
+    typical_against: ["over-front", "4-3 base", "any defense with a QB-run game-plan"]
+  - counter_id: pinch-dl
+    pre_snap_look: "Both DTs in tight inside shades — 1-tech / inside-eye 3-techniques crowding the A and B gaps"
+    qb_key: "Scan the interior DL shade — tackles crowding the inside gaps"
+    read_category: dl-alignment
+    why: "Inside-shaded tackles give the down-blocks nothing to push; the off-tackle hole closes before the pulling LG clears the center and the TE kickout has no edge to define."
+    typical_against: ["over-front", "4-3 base"]
+
+flip_reads:
+  - flip_id: front-overshift-callside
+    pre_snap_look: "Front slid toward the called side — the 3-technique and a walked-up LB put the extra hat in the called-side box"
+    qb_key: "Count the box side to side — the called side is heavier"
+    read_category: box-count
+    flip_to: mirror-play
+    why: "QB Power into the overshift gives the puller no room; flipping the play runs the same scheme at the lighter box."
+    typical_against: ["over-front", "shifted 4-3"]
+  - flip_id: pressure-declared-callside
+    pre_snap_look: "A nickel or LB is walked up and bracketed outside the called-side tackle, showing edge pressure to that side"
+    qb_key: "Scan the called-side edge — a second defender stacked outside, pressure look"
+    read_category: lb-depth
+    flip_to: mirror-play
+    why: "Flipping away from the shown pressure runs QB Power at the edge the defense just vacated, before the pressure can redirect."
+    typical_against: ["nickel pressure", "cover-1 with edge blitz"]
+
 common_uses:
   - "Goal-line / short-yardage with mobile QB"
   - "1st-and-Goal from the 1-3 yard line"

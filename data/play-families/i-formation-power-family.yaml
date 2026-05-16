@@ -1,0 +1,42 @@
+family_id: i-formation-power-family
+name: "I-Formation Power Family"
+description: |
+  A disguise family anchored by Power-O. Every member shows the defense the
+  identical pre-snap look and the identical first ~1.5 seconds — Z motion, QB
+  reverse-out, HB off-tackle track, FB lead through the hole, LG pull, OL
+  down-block show. Only after the mesh do they diverge: Power-O hands off,
+  Power Pass settles and throws from the pocket, Power Boot keeps it and boots
+  backside. The defense cannot distinguish them until it is too late to react.
+
+formation_id: i-formation
+philosophy: power-run
+philosophy_ref: power-run
+
+base_play_id: i-formation-power-o
+companion_play_ids:
+  - i-formation-power-pass
+  - i-formation-power-boot
+  - i-formation-power-counter
+  - i-formation-power-screen
+
+disguise_score: 0.9
+
+defensive_coverage_matrix:
+  defense-4-3-cover-3: i-formation-power-pass
+  defense-46-bear-cover-0: i-formation-power-boot
+  defense-dime-cover-4: i-formation-power-o
+  defense-nickel-cover-1: i-formation-power-o
+
+tags:
+  - power-run
+  - play-action
+  - i-formation
+  - disguise-family
+  - high-school
+  - college
+  - nfl
+
+verification_status: unverified
+source_notes:
+  - "Disguise family curated for the HS base playbook. The two companion plays (power-pass, power-boot) were authored specifically as disguise twins of i-formation-power-o — their QB/HB/FB/LG initial path waypoints are identical to the base play through the mesh."
+  - "disguise_score 0.9 reflects identical pre-snap motion + identical initial action; the < 1.0 accounts for receiver releases (route vs stalk-block) differing slightly earlier than the backfield action."

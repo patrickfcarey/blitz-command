@@ -1,0 +1,220 @@
+play_id: singleback-ace-outside-zone-left
+name: Outside Zone (Mirror Left)
+aliases:
+- OZ
+- Stretch
+- Wide Zone
+formation: singleback-ace-left
+play_type: run
+ball_carrier: HB
+run_reads:
+- priority: 1
+  read_key: playside edge defender (EMOL)
+  run_to: if TE-R reaches and seals the edge, press the perimeter and get the ball outside
+  notes: The bounce read. If the edge is hooked, take it to the sideline.
+- priority: 2
+  read_key: playside defensive tackle / B-C gap
+  run_to: if the edge sets a hard edge, plant and cut up into the first vertical crease
+  notes: The bang. One cut, get downhill — don't keep stretching into a wall.
+- priority: 3
+  read_key: backside pursuit
+  run_to: if the entire front overflows playside, cut all the way back behind the backside blocks
+  notes: The bend. Only when the whole defense runs themselves out of position.
+motions: []
+assignments:
+- player: LT
+  role: run_block
+  blocking_scheme: zone-reach-playside
+  target: backside-gap
+  notes: Backside tackle — reach and cut off backside pursuit.
+- player: LG
+  role: run_block
+  blocking_scheme: zone-reach-playside
+  target: backside-A-gap
+- player: C
+  role: run_block
+  blocking_scheme: zone-reach-playside
+  target: playside-A-gap
+- player: RG
+  role: run_block
+  blocking_scheme: zone-reach-playside
+  target: 3-tech
+  notes: Reach the 3-tech; if reached, climb to the playside LB.
+- player: RT
+  role: run_block
+  blocking_scheme: zone-reach-playside
+  target: 5-tech-or-EDGE
+- player: TE-R
+  role: run_block
+  blocking_scheme: reach-block
+  target: edge-defender
+  notes: The key block — reach and hook the playside EMOL to open the bounce.
+- player: TE-L
+  role: run_block
+  blocking_scheme: backside-cutoff
+  target: backside-edge
+  notes: Backside TE — cut off backside pursuit through the cutback lane.
+- player: X
+  role: run_block
+  blocking_scheme: stalk-or-crack
+  target: cornerback
+- player: Z
+  role: run_block
+  blocking_scheme: stalk-or-crack
+  target: cornerback
+- player: QB
+  role: handoff
+  path:
+  - - 0
+    - 0
+  - - 1
+    - -1
+  - - 2
+    - -2
+  notes: Reverse-pivot handoff, then sell bootleg to the backside.
+- player: HB
+  role: ball_carrier
+  is_primary: true
+  path:
+  - - 0
+    - 0
+  - - -3
+    - 2
+  - - -5
+    - 6
+  alt_paths:
+  - priority: secondary
+    path:
+    - - 0
+      - 0
+    - - -2
+      - 2
+    - - -3
+      - 7
+    notes: 'Read 2 (hard edge set): plant and bang it up in the first crease.'
+  - priority: tertiary
+    path:
+    - - 0
+      - 0
+    - - -2
+      - 2
+    - - 0
+      - 6
+    - - 2
+      - 9
+    notes: 'Read 3 (front overflows): bend all the way back behind the backside.'
+  notes: Stretch the perimeter, press the edge, make ONE cut — reach/bang/bend per outside-zone rules.
+strengths:
+- Stretches the defensive front horizontally and tests their discipline
+- One-cut downhill running — simple for the back to read
+- Both edges have an in-line TE to reach and seal
+- Symmetric 12-personnel look — no run-direction tip pre-snap
+- Pairs naturally with PA boot off the same flow
+weaknesses:
+- Needs athletic offensive linemen who can reach on the move
+- Vulnerable to penetration that beats the reach before it sets
+- A fast, wide edge defender can be impossible to hook
+- Slower to the point of attack than gap schemes
+best_vs_defense:
+- under-front (favorable reach angles)
+- slower, heavier defensive lines
+- defenses with predictable fast LB flow
+- 4-3 base
+worst_vs_defense:
+- wide, fast edge defenders
+- penetrating slant fronts
+- bear front
+- disciplined gap-and-spill defenses
+defensive_counters:
+- counter_id: wide-9-spill
+  pre_snap_look: Playside EDGE in a wide-9 — hand down, aligned well outside TE-R's outside shoulder
+  qb_key: Scan the playside edge — EDGE flared out past the TE in a wide-9
+  read_category: dl-alignment
+  why: A wide-9 EDGE cannot be reached and hooked by the TE; he runs up the field and forces the run to bounce wide into pursuit
+    or bend back.
+  typical_against:
+  - over-front
+  - 4-3 with wide edges
+- counter_id: fast-flow-lbs
+  pre_snap_look: Linebackers walked up to roughly 3-4 yards, shoulders square to the LOS, eyes in the backfield
+  qb_key: Check the LB depth — backers shallow and squared, not at normal coverage depth
+  read_category: lb-depth
+  why: Shallow, square linebackers out-flow the climbing zone blockers to the playside and string the stretch out to the sideline
+    before a crease opens.
+  typical_against:
+  - over-front
+  - run-committed fronts
+- counter_id: slant-dl-playside
+  pre_snap_look: Interior DL set even but visibly cocked and leaning toward the playside, weight on the playside hand
+  qb_key: Scan the interior DL stagger — tackles tilted and leaning toward the call
+  read_category: dl-alignment
+  why: A playside slant beats the reach blocks at the snap and puts a penetrating lineman directly in the stretch track, killing
+    the horizontal push.
+  typical_against:
+  - over-front
+  - any 4-down front with movement calls
+common_uses:
+- 1st-and-10 base run
+- 2nd-and-medium
+- Perimeter complement to inside zone and power
+- Setting up PA boot off the stretch action
+philosophy: zone-run
+run_concept_ref: outside-zone
+philosophy_ref: zone-run
+era: 1990s onward — popularized by the Mike Shanahan / Alex Gibbs zone-running tradition, now universal.
+famous_examples:
+- Mike Shanahan Broncos zone-running game
+- Kyle Shanahan / Sean McVay-tree outside-zone offenses
+- Modern 12-personnel NFL and college run games
+tags:
+- run
+- zone-run
+- outside-zone
+- stretch
+- 12-personnel
+- singleback
+- high-school
+- college
+- nfl
+notes: 'Outside Zone from the 12-personnel symmetric singleback. The perimeter
+
+  complement to singleback-ace-inside-zone — same personnel and flow, but
+
+  the OL reaches playside and the back stretches the edge before making
+
+  one cut. TE-R''s reach of the EMOL is the make-or-break block.
+
+
+  Mirror to outside-zone-left by flipping all coordinates.
+
+  '
+verification_status: unverified
+source_notes:
+- Outside / wide zone is a standard modern run concept; same scheme family as singleback-trio-outside-zone, adapted to the
+  2-TE singleback-ace personnel.
+- Mirror of singleback-ace-outside-zone.yaml — path waypoints flipped on x; formation reference points to the mirror formation.
+  Routes auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed
+  look — coordinates and paths are the source of truth.
+flip_reads:
+- flip_id: three-tech-callside
+  pre_snap_look: The 3-technique tackle and the playside linebacker are both set to the called
+    side, loading the front-side gaps the zone is aiming for.
+  qb_key: Find the 3-technique — it is aligned to the called side, in the zone's path.
+  read_category: dl-alignment
+  flip_to: mirror-play
+  why: Zone run into the 3-technique blocks the penetrator head-on; flipping the zone away runs
+    at the lighter shade and a cleaner front-side double.
+  typical_against:
+  - over-front
+  - shifted 4-3
+- flip_id: strength-declared-to-formation
+  pre_snap_look: Defense has declared to the formation's strength — an extra box defender to the
+    strong side with a safety rolled down to support it.
+  qb_key: Check the strength side — the box count and the safety roll are both committed to it.
+  read_category: safety-shell
+  flip_to: mirror-formation
+  why: Flipping the whole formation re-locates the strength call; a defense slow to re-set leaves
+    the front-side gaps the zone wants unfilled.
+  typical_against:
+  - cover-3 with strong roll
+  - quarters with strong roll

@@ -91,6 +91,26 @@ worst_vs_defense:
   - "9-man fronts with elite NT (very rare)"
   - "Penetrating 0-tech / 1-tech NT"
 
+defensive_counters:
+  - counter_id: submarine-the-nt
+    pre_snap_look: "Nose tackle in a head-up 0-technique crowding the ball, hand down low and weight forward, eyes up on the center's hands"
+    qb_key: "Scan the nose — crowding the ball, hand low, weight loaded forward"
+    read_category: dl-alignment
+    why: "A low, weight-forward nose crowding the ball is set to submarine under the center's pads, stopping the vertical push the sneak needs."
+    typical_against: ["goal-line stand", "any front with a true NG"]
+  - counter_id: cross-stunt-a-gaps
+    pre_snap_look: "A 1-technique cocked in each A-gap, the two interior linemen staggered and angled toward one another"
+    qb_key: "Scan the interior DL shade — a tackle cocked in each A-gap, angled to cross"
+    read_category: dl-alignment
+    why: "Two 1-techs pre-set in both A-gaps and angled inward are aligned to cross-stunt, so the center and a guard cannot block both penetrators."
+    typical_against: ["short-yardage stunts", "twist-heavy goal-line fronts"]
+  - counter_id: lb-leap-the-pile
+    pre_snap_look: "MLB stacked tight on the LOS directly over the ball at roughly 1-2 yds depth, rocking forward on the cadence"
+    qb_key: "Check MLB depth — backer crowded right onto the ball, weight forward"
+    read_category: lb-depth
+    why: "A MLB crowded onto the ball is positioned to leap the line and meet the QB the instant the ball crosses the LOS, stopping forward progress."
+    typical_against: ["short-yardage with a quick MLB", "any defense with a snap-count tell"]
+
 common_uses:
   - "4th-and-1 anywhere on the field (NFL conversion rate ~81%)"
   - "1st-and-Goal from the 1 yard line"

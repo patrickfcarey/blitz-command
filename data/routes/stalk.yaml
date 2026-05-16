@@ -1,0 +1,28 @@
+name: stalk
+aliases:
+  - stalk-block
+  - stalk-route
+description: >
+  Receiver approaches the cornerback at a controlled pace, mirroring their
+  movements to occupy and seal them away from the run or screen. No deep
+  release — the receiver "stalks" the corner's near shoulder and walls them
+  off. Used by WRs on run plays and screens where the CB is the force defender.
+path:
+  - [0, 0]
+  - [0, 4]
+  - [-1, 6]
+typical_break_depth_yd: 4
+option_route: false
+category: underneath
+beats_coverage: both
+tags:
+  - run-support
+  - blocking-route
+  - screen-support
+  - stalk
+verification_status: unverified
+source_notes:
+  - >
+    Stalk block technique — receiver runs toward the CB at a jog pace,
+    mirrors their shuffle, and seals them. Common on outside zone, power,
+    and screen plays. Path approximates the approach angle toward the corner.

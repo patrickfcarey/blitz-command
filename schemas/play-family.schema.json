@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blitz-command.local/schemas/play-family.schema.json",
+  "title": "PlayFamily",
+  "description": "A curated group of 3-7 plays that share a pre-snap look but attack different areas or use different mechanics. Families are the fundamental design unit — every play should belong to at least one family.",
+  "type": "object",
+  "required": ["family_id", "name", "description", "formation_id", "base_play_id", "companion_play_ids", "tags", "verification_status", "source_notes"],
+  "additionalProperties": false,
+  "properties": {
+    "family_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "Stable identifier (kebab-case). Convention: <formation-id>-<anchor-concept>-family."
+    },
+    "name": {
+      "type": "string",
+      "description": "Human-readable name, e.g. 'Singleback Trio Disguise Family'."
+    },
+    "description": {
+      "type": "string",
+      "description": "1-2 sentences: what makes this a coherent family, what pre-snap look they share, and what they collectively attack."
+    },
+    "formation_id": {
+      "type": "string",
+      "description": "ID of the formation shared by all plays in the family (matches data/formations/ stem)."
+    },
+    "philosophy": {
+      "type": "string",
+      "description": "Offensive philosophy this family belongs to (e.g. 'west-coast', 'power-run', 'air-raid')."
+    },
+    "philosophy_ref": {
+      "type": "string",
+      "description": "Foreign key into data/concepts/philosophies/ (kebab-case id)."
+    },
+    "base_play_id": {
+      "type": "string",
+      "description": "The anchor play — the play that defines the family's pre-snap look and sets up the companions."
+    },
+    "companion_play_ids": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 7,
+      "items": { "type": "string" },
+      "description": "IDs of 2-7 companion plays that share the base play's pre-snap look. All must exist in data/plays/."
+    },
+    "disguise_score": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "description": "How similar the pre-snap look is across all plays in the family (0=all different, 1=identical look). Computed by compare_plays."
+    },
+    "defensive_coverage_matrix": {
+      "type": "object",
+      "description": "Map of defense_id → which play in the family attacks it best.",
+      "additionalProperties": { "type": "string" }
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Tags inherited from member plays. Include formation, philosophy, level (any-level, high-school, college, nfl)."
+    },
+    "verification_status": {
+      "enum": ["verified", "unverified", "inferred"]
+    },
+    "source_notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

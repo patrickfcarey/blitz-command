@@ -86,6 +86,26 @@ worst_vs_defense:
   - cover-0 / man-free with a spy on the QB
   - any defense not biting on PA
 
+defensive_counters:
+  - counter_id: alert-zone-no-bite
+    pre_snap_look: "LBs aligned at full passing depth (5+ yds off the LOS) under a two-high safety shell, not crowding the box"
+    qb_key: "Check the LB depth and safety shell — backers deep, two-high behind them"
+    read_category: lb-depth
+    why: "LBs already at pass depth under a two-high shell are reading pass first; they will not vacate on the fake, so the 8-yd TE drag arrives into a populated zone."
+    typical_against: ["cover-3 alert", "cover-4", "any defense after the run game has been stopped"]
+  - counter_id: rush-the-boot-edge
+    pre_snap_look: "Bootleg-side EDGE in a wide-9 sprinter's stance with the chip-blocker (RT) left uncovered to bait the speed rush"
+    qb_key: "Scan the boot-side edge — EDGE flared wide-9, weight forward, RT uncovered"
+    read_category: dl-alignment
+    why: "A wide-9 EDGE in a get-off stance with no blocker on him is set to crash upfield and flush the QB before the ~4-second rollout reaches its launch point."
+    typical_against: ["any defense with a free-runner off the boot side", "cover-1 with edge pressure"]
+  - counter_id: squat-flat-corner
+    pre_snap_look: "Bootleg-side CB aligned tight at 5-6 yds with inside leverage and a safety capped over the top of him"
+    qb_key: "Check the boot-side corner — CB squatted at 5-6 yds with a safety overlapping above"
+    read_category: cb-leverage
+    why: "A low, inside-leverage corner with deep safety help is free to trigger down on the FB flat, removing the rolling QB's bread-and-butter outlet."
+    typical_against: ["cover-2 with hard corners", "quarters with cloud rotation"]
+
 common_uses:
   - After establishing inside-zone or power for 4+ yards
   - 1st-and-10 PA shot

@@ -85,6 +85,26 @@ worst_vs_defense:
   - 4-6 / bear front (DT in every gap)
   - any defense with hot blitzes from MIKE
 
+defensive_counters:
+  - counter_id: pinch-dl
+    pre_snap_look: "Both DTs in tight A-gap shades — 1-techniques / 2i crowding the center-guard gaps"
+    qb_key: "Scan the interior DL — tackles crowding the A-gaps"
+    read_category: dl-alignment
+    why: "A-gap-shaded tackles compress the dive lane so the FB can't establish the ISO point."
+    typical_against: ["over-front", "4-3 base"]
+  - counter_id: shoot-the-a-gap
+    pre_snap_look: "Nose / 1-tech crowding the ball in a tight A-gap shade, hand down and weight forward"
+    qb_key: "Check the nose — crowding the ball, tilted into the A-gap"
+    read_category: dl-alignment
+    why: "A nose tilted and crowding the ball is set to beat the center to the A-gap and blow up the FB's track."
+    typical_against: ["odd-front", "3-4 base", "any front with a true NG"]
+  - counter_id: scrape-mlb-fill
+    pre_snap_look: "MLB walked up tight to the LOS, stacked directly over the ball in the A-gap window"
+    qb_key: "Check MLB depth — walked up onto the ball"
+    read_category: lb-depth
+    why: "A MLB already at the LOS meets the FB with downhill momentum, jamming two bodies into the ISO hole."
+    typical_against: ["over-front", "stack 4-3"]
+
 common_uses:
   - 3rd-and-1 / 3rd-and-2
   - Red-zone short yardage
@@ -120,3 +140,26 @@ source_notes:
   - "Assignments: standard ISO coaching texts."
   - "Strengths/weaknesses: power-run textbook material."
   - "Web validated 2026-04-29 — Wikipedia 'Iso (American football)' (https://en.wikipedia.org/wiki/Iso_(American_football)); Throw Deep Publishing 'The Iso Play' (https://throwdeeppublishing.com/blogs/football-glossary/the-iso-play-everything-you-need-to-know); NFL Breakdowns 'HB Iso and Power-O' (https://nflbreakdowns.com/2015/03/beginner-series-iso-power/). Confirmed: 'isolate the FB on a lead block with a LB,' downhill, almost always run from I-Form."
+flip_reads:
+- flip_id: front-overshift-callside
+  pre_snap_look: Defensive front slid toward the called side — an extra down lineman or a walked-up
+    linebacker puts +1 in the called-side box.
+  qb_key: Count the box side to side — the called side has one more hat than the backside.
+  read_category: box-count
+  flip_to: mirror-play
+  why: Running a gap scheme into the overshift is into the teeth; flipping the play attacks the
+    lighter box with the same blocking math.
+  typical_against:
+  - over-front
+  - shifted 4-3
+- flip_id: strength-declared-to-formation
+  pre_snap_look: Defense has fully declared to the formation's strength — an extra box defender
+    to the strong side and a safety rolled down over it.
+  qb_key: Check the strength side — both the box count and the safety roll are committed to it.
+  read_category: safety-shell
+  flip_to: mirror-formation
+  why: When the defense keys the formation's strength, flipping the whole formation forces a re-declare
+    and the run hits the side they vacated.
+  typical_against:
+  - cover-3 with strong roll
+  - 8-man fronts

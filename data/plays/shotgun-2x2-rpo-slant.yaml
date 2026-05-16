@@ -87,6 +87,26 @@ worst_vs_defense:
   - bracket on Z
   - blitz from the slant side
 
+defensive_counters:
+  - counter_id: read-defender-slow-play
+    pre_snap_look: "Strong-side conflict LB / nickel aligned at a mid-depth split (4-5 yds), squared up at the LOS with feet quiet — neither walked into the box nor dropped into the slant window"
+    qb_key: "Check the conflict LB / nickel — squared up at a mid-depth split, feet still"
+    read_category: lb-depth
+    why: "A conflict defender pre-set at a non-committal mid-depth alignment can read-and-react to either phase, making both the give and the slant look covered enough to force a QB hesitation or wrong decision."
+    typical_against: ["disciplined cover-3 / cover-4 RPO defenses", "any defense with RPO triangle rules"]
+  - counter_id: sticky-man-slant
+    pre_snap_look: "Strong-side corner pressed on Z with the inside foot up, no deep safety help showing to the slant side"
+    qb_key: "Check the strong-side CB leverage — pressed inside-foot-up with no deep help"
+    read_category: cb-leverage
+    why: "An inside-leverage press corner is set to drive on the 5-yd slant break and undercut the throw, turning the RPO pull into an interception or PBU."
+    typical_against: ["cover-1", "cover-0", "match coverages with inside-leverage CB"]
+  - counter_id: second-level-box
+    pre_snap_look: "MIKE and strong-side LB both widened toward the strong-side hash sitting in the slant window, with a safety walked down to 6-8 yds, eyes in the backfield"
+    qb_key: "Count the box — extra hat down with the LBs widened into the slant window"
+    read_category: box-count
+    why: "LBs pre-set in the hook/curl close the slant lane while the walked-down safety adds a +1 on the give — both phases of the RPO are answered before the snap."
+    typical_against: ["robber coverages", "cover-1 with rolled-down SS", "quarters with SS in the box"]
+
 common_uses:
   - 1st-and-10 base RPO call
   - 2nd-and-medium
@@ -129,3 +149,26 @@ notes: |
 verification_status: unverified
 source_notes:
   - "Web validated 2026-04-29 — XsOs Football 'Shotgun Formation and Sets' (https://xsosfootball.com/shotgun-formation-sets/); Throw Deep Publishing 'Complete Guide to Offensive Football Formations' (https://throwdeeppublishing.com/blogs/football-glossary/the-complete-guide-to-offensive-football-formations); BreakdownSports '2x2 Mirrored Concepts' (http://breakdownsports.blogspot.com/2015/02/football-fundamentals-2x2-and-mirrored-passing-concepts-route-combinations.html). RPO slant mechanic confirmed across modern coaching documentation."
+flip_reads:
+- flip_id: box-overload-callside
+  pre_snap_look: The box is overloaded to the run side — the defense has +1 to the run side while
+    leaving the conflict defender's grass open.
+  qb_key: Count the box to the run side — it is heavy, the give is no longer the answer.
+  read_category: box-count
+  flip_to: mirror-play
+  why: Flipping the run portion away from the overload keeps the box count honest, so the give
+    stays a live answer instead of a forced throw.
+  typical_against:
+  - over-front
+  - 8-man fronts
+- flip_id: strength-declared-to-formation
+  pre_snap_look: Defense has declared fully to the formation's strength — an extra box defender
+    and a safety rolled down over the passing strength.
+  qb_key: Check the strength side — both the box count and the safety roll are set to it.
+  read_category: safety-shell
+  flip_to: mirror-formation
+  why: Flipping the formation re-sets the defense's strength call and rebalances the RPO conflict
+    so both the run and the throw stay viable.
+  typical_against:
+  - cover-3 with strong roll
+  - quarters with strong roll

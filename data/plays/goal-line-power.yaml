@@ -91,6 +91,26 @@ worst_vs_defense:
   - "Penetrating playside 3-tech"
   - "Defenses with stunts that cross the down-blocks"
 
+defensive_counters:
+  - counter_id: pinch-dl
+    pre_snap_look: "Interior DL crowded into tight inside shades — 1-techs and inside-eye 3-techs — aligned nearly shoulder-to-shoulder over the A and B gaps"
+    qb_key: "Scan the interior DL shade — tackles crammed into the inside gaps, no width"
+    read_category: dl-alignment
+    why: "DL pre-set in tight inside shades are aligned to pinch and close the A and B gaps, leaving the puller no off-tackle seam to lead through."
+    typical_against: ["goal-line 6-2", "any 8+ man front coached to pinch on short-yardage"]
+  - counter_id: safety-blitz-the-c-gap
+    pre_snap_look: "Strong safety walked down to 4-5 yds just outside the playside hash, in the C-gap window, with no deep safety behind him"
+    qb_key: "Count the box — strong safety walked down to the playside C-gap, no deep help"
+    read_category: box-count
+    why: "A safety pre-set in the C-gap window beats the TE-R kickout to the spot and adds a box defender the offense has no blocker for."
+    typical_against: ["goal-line stand", "cover-0 short-yardage pressure"]
+  - counter_id: cross-stunt-down-blocks
+    pre_snap_look: "Playside DT cocked slightly outside the guard and the DE cocked inside the tackle — a staggered, mismatched alignment"
+    qb_key: "Scan the playside DL shade — tackle cheated out, end cheated in, staggered"
+    read_category: dl-alignment
+    why: "A staggered playside DT and DE are aligned to run a cross-stunt that trades gaps, making the down-blockers chase the wrong man and opening the puller's path."
+    typical_against: ["goal-line stunts", "twist-heavy short-yardage fronts"]
+
 common_uses:
   - "1st/2nd-and-Goal from inside the 5"
   - "4th-and-1 anywhere on the field"
@@ -129,3 +149,26 @@ notes: |
 verification_status: unverified
 source_notes:
   - "Web validated 2026-04-29 — Yale Sports Analytics 'Success of Short Yardage Play Types on Fourth Down' (https://sports.sites.yale.edu/success-short-yardage-play-types-fourth-down); FirstDown PlayBook 'Goal Line and Short Yardage' archives (https://firstdown.playbooktech.com/coaches-community/tag/goal-line-and-short-yardage); Throw Deep Publishing 'Complete Guide to Power Play' (https://throwdeeppublishing.com/blogs/football-glossary/the-complete-guide-to-the-power-play). Confirmed: goal-line power follows same scheme as Power O with jumbo personnel for extra blocking; high-percentage short-yardage call."
+flip_reads:
+- flip_id: front-overshift-callside
+  pre_snap_look: Defensive front slid toward the called side — an extra down lineman or a walked-up
+    linebacker puts +1 in the called-side box.
+  qb_key: Count the box side to side — the called side has one more hat than the backside.
+  read_category: box-count
+  flip_to: mirror-play
+  why: Running a gap scheme into the overshift is into the teeth; flipping the play attacks the
+    lighter box with the same blocking math.
+  typical_against:
+  - over-front
+  - shifted 4-3
+- flip_id: strength-declared-to-formation
+  pre_snap_look: Defense has fully declared to the formation's strength — an extra box defender
+    to the strong side and a safety rolled down over it.
+  qb_key: Check the strength side — both the box count and the safety roll are committed to it.
+  read_category: safety-shell
+  flip_to: mirror-formation
+  why: When the defense keys the formation's strength, flipping the whole formation forces a re-declare
+    and the run hits the side they vacated.
+  typical_against:
+  - cover-3 with strong roll
+  - 8-man fronts

@@ -88,6 +88,26 @@ worst_vs_defense:
   - aggressive zero blitz (no time to develop)
   - any pass-only defense ignoring the fake
 
+defensive_counters:
+  - counter_id: alert-zone-no-bite
+    pre_snap_look: "LBs aligned at 5-6 yd passing depth under a two-high quarters shell, neither walked up nor cheated to the box"
+    qb_key: "Check the LB depth and safety shell — backers at pass depth, two-high quarters behind"
+    read_category: lb-depth
+    why: "LBs already at pass depth under quarters are keying pass and will not bite the fake, so the 18-yd cross arrives into populated middle zones instead of vacated grass."
+    typical_against: ["cover-3 alert", "cover-4 quarters", "any defense after the run game is stopped"]
+  - counter_id: robber-fs
+    pre_snap_look: "Single-high shell with the lone FS shaded toward the TE side and aligned shallow at 10-12 yds rather than a true 14+ deep middle"
+    qb_key: "Check the safety shell — one high, shaded to the TE, sitting short"
+    read_category: safety-shell
+    why: "A shallow single-high safety shaded to the TE side is sitting in the hole to rob the deep cross instead of carrying the Z post, taking away the primary read."
+    typical_against: ["cover-1 robber", "cover-3 with rolled-down robber FS"]
+  - counter_id: zero-blitz
+    pre_snap_look: "No deep safeties, all second-level defenders crowding the LOS, and both corners pressed tight in man"
+    qb_key: "Check the safety shell — zero deep, everyone walked up to the line"
+    read_category: safety-shell
+    why: "An empty deep shell with everyone walked up signals a six-plus man pressure that forces the throw before the 4-5 second cross can break, pushing the QB to the FB checkdown."
+    typical_against: ["cover-0", "fire-zone with overload pressure"]
+
 common_uses:
   - 1st-and-10 after a power run for 4+ yards
   - 2nd-and-medium PA shots

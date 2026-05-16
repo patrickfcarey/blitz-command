@@ -85,6 +85,26 @@ worst_vs_defense:
   - zone-with-spy
   - any defense reading screen tells (LT/LG release timing)
 
+defensive_counters:
+  - counter_id: dl-screen-read
+    pre_snap_look: "Playside DT/DE in a loose, upright, off-the-ball stance with hands ready rather than a low get-off sprinter's stance"
+    qb_key: "Scan the playside DL stance — lineman upright and loose, no get-off lean"
+    read_category: dl-alignment
+    why: "A DL aligned upright and patient is set to read the 'happy' OL invite, peel into the screen lane, and bat the throw or meet the HB at the catch."
+    typical_against: ["screen-aware defenses", "any DL coached to read 'happy' OL"]
+  - counter_id: lb-flow-to-screen
+    pre_snap_look: "LBs aligned shallow and shaded toward the HB's release side, tilted that way rather than squared at hook depth"
+    qb_key: "Check the LB depth — backers shallow and shaded to the HB release side"
+    read_category: lb-depth
+    why: "LBs pre-shaded to the screen side are positioned to flow flat on the HB's leak-out and outnumber the OL wall before it can seal the second level."
+    typical_against: ["screen-alert cover-3", "any defense that pattern-matches RB releases"]
+  - counter_id: blitz-away-from-screen
+    pre_snap_look: "Backside LB or nickel walked up tight to the LOS on the side away from the HB, with defenders overloaded to that opposite side"
+    qb_key: "Count the box away from the HB — extra defender walked up on the backside"
+    read_category: box-count
+    why: "A walked-up overload on the side away from the screen signals a fast backside pressure that forces the throw before the HB and OL wall get into position."
+    typical_against: ["fire-zone weak-side pressure", "any pressure scheme on obvious pass downs"]
+
 common_uses:
   - 2nd-and-long / 3rd-and-long
   - After 2–3 plays of obvious passing

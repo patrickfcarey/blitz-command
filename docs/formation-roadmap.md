@@ -3,11 +3,12 @@
 Comprehensive list of formations and play families across HS / college / pro football, with status:
 
 - **(have)** — file exists in `data/formations/` or `data/plays/`
-- **(this batch)** — being added in the current build pass
 - **(next)** — planned for the immediate next pass
 - **(future)** — known but lower priority
 
 When this list grows out of date, update it. Cross-reference for "what's missing."
+
+**Last refresh:** 2026-04-30 — 54 formations / 144 plays in library.
 
 ---
 
@@ -25,28 +26,29 @@ When this list grows out of date, update it. Cross-reference for "what's missing
 
 ### Singleback family (under-center, 1 RB)
 
-- Singleback Ace **(have)** — 11 personnel, balanced
+- Singleback Ace **(have)** — 12 personnel, symmetric (Madden default)
+- Singleback Trio **(have)** — 11 personnel, 1 TE / 3 WR with weak slot
 - Singleback Doubles — 2 WR each side **(future)**
-- Singleback Trips **(future)** — 3 WR one side
-- Singleback Bunch **(future)** — 3 WR clustered tight
-- Singleback Big — 12 or 13 personnel **(future)**
-- Trey Right **(have)** — 12 personnel, 2 TE flanking, 2 WR strong
+- Singleback Bunch — 3 WR clustered tight **(future)**
+- Singleback Big — 13 personnel **(future)**
+- Trey Right / Trey Left **(have)** — 12 personnel, 2 TE flanking + 2 WR strong
 
 ### Shotgun family (QB ~5 yd back, HB beside)
 
-- Shotgun Trips Right **(have)** — 11 personnel, 3 WR strong
-- Shotgun 2x2 / Spread **(this batch)** — 11 personnel, balanced 2x2
-- Shotgun Trips Left **(future)** — mirror of Trips Right
+- Shotgun 2x2 **(have)** — 11 personnel, balanced 2x2
+- Shotgun Trips Right / Left **(have)** — 11 personnel, 3 WR strong
+- Shotgun 2x1 TE-Strong / TE-Weak **(have)** — 11 personnel asymmetric
+- Shotgun 3x0 **(have)** — all 3 WR one side
+- Empty **(have)** — 10 personnel, 1 TE + 4 WR
 - Shotgun Bunch **(future)** — 3 WR clustered
-- Shotgun Empty 5-wide **(future)** — 00 personnel, no RB
+- Empty 00 personnel — 5 WR no TE **(future)**
 - Shotgun Y-Flex **(future)** — TE flexed as slot
-- Shotgun Spread Option / RPO base **(future)**
 
 ### Pistol family (QB ~4 yd back, HB directly behind QB)
 
-- Pistol **(this batch)** — 11 personnel base
-- Pistol Diamond — 3 backs in pistol **(future)**
-- Pistol Trips — 3 WR one side **(future)**
+- Pistol **(have)** — 11 personnel base (Chris Ault Nevada)
+- Pistol Diamond **(have)** — 20 personnel, 3 backs in diamond
+- Pistol Trips **(future)** — 3 WR one side
 
 ### Heavy / goal-line family
 
@@ -62,83 +64,92 @@ When this list grows out of date, update it. Cross-reference for "what's missing
 
 ### Specialty / option family
 
-- Wildcat **(this batch)** — direct snap to RB, QB split as WR
-- Wing-T **(this batch)** — classic option / misdirection 22-personnel HS staple
-- Wishbone — 3-back triple-option **(future)**
-- Flexbone — modern triple-option (academies) **(future)**
-- Run-and-Shoot — shotgun 4-WR no TE **(future)**
+- Wildcat **(have)** — direct snap to RB, QB split as WR
+- Wing-T **(have)** — classic option / misdirection 21-personnel HS staple
+- Wishbone **(have)** — 3-back triple-option (Texas / Oklahoma 1968-)
+- Flexbone **(have)** — modern triple-option (Air Force / Navy / Georgia Tech)
+- Run-and-Shoot **(have)** — shotgun 4-WR no TE (Mouse Davis / June Jones)
 - Single Wing — single-wing direct-snap throwback **(future)**
 - Double Wing — youth/HS heavy 2-wing **(future)**
 
 ---
 
-## Defensive formations (separate schema work)
+## Defensive formations
 
-Defensive formations don't have plays in the same way — they have **fronts** (DL alignment) + **coverage shells** (DB rotation). A future schema for defensive formations should support both layers.
+Defensive formations carry **front** (DL alignment) + **coverage shell** (DB rotation) + per-defender `responsibilities` (role + aim + covers_player). The drawing tool renders zones / man-coverage lines / rush arrows from these.
 
-### Fronts
+### Built (9)
 
-- 4-3 base **(future)**
-- 3-4 base **(future)**
-- 4-2-5 **(future)**
-- 3-3-5 **(future)**
-- 46 Bear front **(future)**
-- 5-2 Eagle front **(future)**
-- Goal-line stand (8+ in box) **(future)**
+- **defense-4-3-cover-3** — base 4-3 front + cover 3 shell (most common base in football)
+- **defense-4-3-cover-2** — base 4-3 + 2 deep
+- **defense-3-4-cover-3** — 3-4 front + cover 3 (NT two-gap)
+- **defense-4-2-5-cover-2** — modern nickel, 2 deep halves
+- **defense-nickel-cover-1** — 5 DBs, single-high man (man-coverage situations)
+- **defense-dime-cover-4** — 6 DBs, quarters (passing-down)
+- **defense-46-bear-cover-0** — Bear front, zero blitz
+- **defense-goal-line-6-2** — 6 DL across, short-yardage stop
+- **defense-prevent-3-2-6** — end-of-half cover-4 deep
 
-### Personnel groupings
+### Future
 
-- Base (4-3 or 3-4) **(future)**
-- Nickel (5 DBs) **(future)**
-- Dime (6 DBs) **(future)**
-- Quarter / Prevent (7 DBs) **(future)**
-
-### Coverage shells
-
-- Cover 0 (man, no help) **(future)**
-- Cover 1 / Cover 1 robber **(future)**
-- Cover 2 (zone) **(future)**
-- Cover 2 man **(future)**
-- Cover 3 **(future)**
-- Cover 4 / quarters **(future)**
-- Tampa 2 **(future)**
-- Pattern-match variants **(future)**
+- 3-3-5 stack
+- 4-3 cover-1
+- Tampa 2 standalone
+- Blitz packages (zero blitz, fire zone, double-A)
 
 ---
 
 ## Play families per formation (offense)
 
-For each formation, the staple plays we should cover. **Bold** = added in current builds; plain = future.
+For each formation, the staple plays. **Bold** = built; plain = future. The library currently has **144 plays** across these formations — count via `find_plays_by_formation()` for the live total.
 
 ### I-Formation
-**Power O, ISO, PA Y-Cross, Bootleg Flat, HB Screen** — Counter Trey, Lead Toss, Off-Tackle, Smash Strong, Flood
+**Power O, ISO, Counter Trey, Lead Toss, PA Y-Cross, Bootleg Flat, HB Screen, Veer Option** — Off-Tackle, Smash Strong, Flood
 
 ### Singleback Ace
-**Inside Zone, Outside Zone, Mesh, Stick, Smash, Four Verticals** — Power, HB Draw, PA Bootleg, Y-Stick variants
+**Inside Zone, Power O** — PA Cross, Bootleg, Y-Stick variants
 
-### Shotgun Trips Right
-RPO Bubble, Snag, Smash Trips, Flood, Levels, Y-Cross from spread, Quick Slants, Stick-Nod **(future)**
+### Singleback Trio
+**Inside Zone, Outside Zone, Power, HB Draw, Mesh, Smash, Stick, Four Verticals, PA Cross** — RPO variants, Screen
 
-### Pistol *(this batch)*
-**Inside Zone Read, Outside Zone Read, Power Read** — Veer, RPO Slant, Bootleg, Counter Read
+### Shotgun 2x2
+**Snag, Stick, Jet Sweep, RPO Slant, Power Read, QB Counter, QB Power** — Mesh, Smash, Curl-Flat
 
-### Shotgun 2x2 *(this batch)*
-**Snag, Stick, RPO Slant** — Mesh, Curl-Flat, Smash, Hi-Lo, Drive, Crossers
+### Shotgun Trips Right / Left
+**Flood, Snag, RPO Bubble, Counter Read** — Smash Trips, Levels, Y-Cross, Stick-Nod, Quick Slants
 
-### Wing-T *(this batch)*
-**Buck Sweep, Belly, Trap** — Down, Jet Sweep, Boot, Waggle, Reverse, Belly Pass
+### Trey Right / Left
+**Flood, Smash, PA Cross** — Y-Sail, Stick-Stop combos
 
-### Wildcat *(this batch)*
-**Power, Counter, Jet Sweep** — Sweep, Pass (RB throws), Speed Option, Reverse
+### Pistol
+**Inside Zone Read, Outside Zone Read, RPO Bubble, Bootleg, Zone Read + Slant RPO** — RPO Slant, Counter Read
+
+### Pistol Diamond
+**Split Zone, Power Read** — Lead Draw, Counter
+
+### Wing-T
+**Buck Sweep, Belly, Trap, Reverse, Waggle** — Down, Jet Sweep, Boot, Belly Pass
+
+### Wildcat
+**Power, Counter, Sweep, Jet Sweep, Speed Option** — Pass (RB throws), Reverse
+
+### Wishbone
+**Triple Option, FB Dive, Waggle** — Counter Option, Sprint Pass
+
+### Flexbone
+**Triple Option Veer, Midline Triple, PA Bootleg** — Counter Option, Power Pitch, Jet Sweep
+
+### Run-and-Shoot
+**Choice, Switch Verticals** — Smash-with-Choice, Mesh, 4-Verts (choice form), Slant-and-Go
 
 ### Goal Line / Big I / Full House
-QB Sneak, Power O, Lead ISO, PA Tight End Corner, PA Fade, Naked Boot **(future)**
+**QB Sneak, Power, PA Tight End Corner** — Lead ISO, PA Fade, Naked Boot, FB Dive (Full House)
 
 ### Empty 10 personnel
-Mesh, Levels, Smash, Flood, 4 Verts, Quick Slants, Hot reads, Choice routes **(future)**
+**Mesh, Four Verticals** — Levels, Smash, Flood, Quick Slants, Hot reads, Choice routes
 
-### Trey Right
-Flood, Smash, PA Cross, Y-Sail, Stick-Stop combos **(future)**
+### I-Formation Twins Weak
+**Mesh, Stick** — Quick-game variants from a power formation
 
 ---
 

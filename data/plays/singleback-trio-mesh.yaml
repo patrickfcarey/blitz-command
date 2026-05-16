@@ -94,6 +94,26 @@ worst_vs_defense:
   - banjo / bracket coverage
   - aggressive LB carry-and-cushion
 
+defensive_counters:
+  - counter_id: zone-the-mesh
+    pre_snap_look: "LBs aligned off the receivers in clear zone posture — at depth, eyes on the QB, not bodied-up face-to-face with a man assignment"
+    qb_key: "Check the LBs — at zone depth with QB-eyes, no man leverage on a receiver"
+    read_category: lb-depth
+    why: "Mesh lives on natural picks vs man; LBs in a zone posture pass the crossers off instead of chasing through traffic, so the rub never happens."
+    typical_against: ["cover-3", "cover-2 zone", "cover-4 pattern-match"]
+  - counter_id: switch-the-mesh
+    pre_snap_look: "DBs and LBs over the crossers communicating and pointing pre-snap, with the slot defender's eyes on the TE rather than his own man"
+    qb_key: "Scan the underneath defenders — visible banjo communication over the crossers"
+    read_category: lb-depth
+    why: "A banjo switch call kills the pick because neither defender fights through traffic; each takes the new man entering his area at the mesh point."
+    typical_against: ["cover-1 with banjo call", "cover-0 with switch rules"]
+  - counter_id: pressure-the-qb
+    pre_snap_look: "Walked-up nickel or LB on the LOS in a rush posture, defense showing more rushers than the protection can account for"
+    qb_key: "Count the rushers at the LOS — more walked up than the protection covers"
+    read_category: lb-depth
+    why: "Mesh routes hit the QB's face at ~2 sec; an extra walked-up rusher collapses the pocket before the crossers clear, forcing a hurried throw or a checkdown to the HB."
+    typical_against: ["cover-1 with simulated pressure", "fire-zone pressure"]
+
 common_uses:
   - 3rd-and-medium
   - 2-minute drill

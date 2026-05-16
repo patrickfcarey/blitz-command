@@ -144,3 +144,26 @@ source_notes:
 - Mirror of shotgun-2x2-rpo-slant.yaml — path waypoints flipped on x; formation reference points to the mirror formation.
   Routes auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed
   look — coordinates and paths are the source of truth.
+flip_reads:
+- flip_id: box-overload-callside
+  pre_snap_look: The box is overloaded to the run side — the defense has +1 to the run side while
+    leaving the conflict defender's grass open.
+  qb_key: Count the box to the run side — it is heavy, the give is no longer the answer.
+  read_category: box-count
+  flip_to: mirror-play
+  why: Flipping the run portion away from the overload keeps the box count honest, so the give
+    stays a live answer instead of a forced throw.
+  typical_against:
+  - over-front
+  - 8-man fronts
+- flip_id: strength-declared-to-formation
+  pre_snap_look: Defense has declared fully to the formation's strength — an extra box defender
+    and a safety rolled down over the passing strength.
+  qb_key: Check the strength side — both the box count and the safety roll are set to it.
+  read_category: safety-shell
+  flip_to: mirror-formation
+  why: Flipping the formation re-sets the defense's strength call and rebalances the RPO conflict
+    so both the run and the throw stay viable.
+  typical_against:
+  - cover-3 with strong roll
+  - quarters with strong roll

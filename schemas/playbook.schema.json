@@ -1,0 +1,408 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blitz-command.local/schemas/playbook.schema.json",
+  "title": "Playbook",
+  "description": "A curated collection of plays organized into sections. Sections are hybrid: 'formation_sections' are explicit play-id lists (the coach-authored spine of the playbook); 'situational_sections' are tag-driven views over the play library (3rd-and-short, goal-line, two-minute, etc.). The 'audience' field is documentation only — level-of-play appropriateness (HS / college / NFL / youth) is enforced by the validation MCP, not by this schema.",
+  "type": "object",
+  "required": ["playbook_id", "name", "audible_mode", "formation_sections", "situational_sections"],
+  "additionalProperties": false,
+
+  "allOf": [
+    {
+      "if": {
+        "properties": { "audible_mode": { "const": "global" } },
+        "required": ["audible_mode"]
+      },
+      "then": {
+        "required": ["audibles"],
+        "$comment": "global mode: the top-level audibles pool is required."
+      }
+    },
+    {
+      "if": {
+        "properties": { "audible_mode": { "const": "per-formation" } },
+        "required": ["audible_mode"]
+      },
+      "then": {
+        "properties": {
+          "formation_sections": {
+            "items": { "required": ["audibles"] }
+          }
+        },
+        "$comment": "per-formation mode: every formation_section must define its own audibles."
+      }
+    }
+  ],
+
+  "$defs": {
+    "play_entry_role": {
+      "enum": [
+        "base",
+        "counter",
+        "constraint",
+        "complement",
+        "misdirection",
+        "answer",
+        "opener",
+        "package",
+        "tempo",
+        "trick"
+      ],
+      "description": "Structural relationship of this play to the rest of the playbook. 'base' = core call you live on. 'counter' = punishes over-pursuit of a base call. 'constraint' = constrains a defensive tendency (alignment, key, leverage). 'complement' = pairs with a base call (e.g. PA off the run game, screen off a drop-back package). 'misdirection' = primary mechanism is deception (reverse, naked boot, fake reverse). 'answer' = beats a specific defensive look (cover-0 beater, blitz beater, fire-zone beater). 'opener' = scripted first-15 / early-script call used to feel out the defense. 'package' = designed as part of a multi-play option series (triple option tree, RPO tree). 'tempo' = primary purpose is no-huddle / catch-the-defense pace. 'trick' = gadget / fake / one-time special (Statue of Liberty, fake punt, halfback pass). Distinct from call frequency, which is captured by expected_calls_per_game / call_share_pct."
+    },
+    "play_entry_install_order": {
+      "enum": [
+        "install-day-1",
+        "install-day-2",
+        "install-week-1",
+        "install-week-2",
+        "mid-season-add"
+      ],
+      "description": "When this play gets taught during the install calendar. 'install-day-1' = first day of camp / first install meeting. 'mid-season-add' = added during the season as a game-plan answer."
+    },
+    "play_entry_calls_per_game": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "min": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Lower bound of expected calls in a typical game."
+        },
+        "max": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Upper bound of expected calls in a typical game."
+        }
+      },
+      "anyOf": [
+        { "required": ["min"] },
+        { "required": ["max"] }
+      ],
+      "description": "Expected call count per game. Most natural for coaches scripting a game plan ('I want this called 6-10 times tonight'). At least one of min/max must be present; provide both for a range."
+    },
+    "play_entry_practice_reps": {
+      "enum": [
+        "every-period",
+        "weekly-team",
+        "game-week-only",
+        "showcase"
+      ],
+      "description": "How often this play gets reps in practice once installed. 'every-period' = full reps every practice. 'weekly-team' = a team period every week. 'game-week-only' = repped only the week of a game it's been game-planned into. 'showcase' = installed once, then walked through before games when called for."
+    },
+    "play_entry": {
+      "type": "object",
+      "required": ["play_id"],
+      "additionalProperties": false,
+      "properties": {
+        "play_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$",
+          "description": "Must match a play_id from data/plays/. Cross-reference validation is performed by the validation MCP, not the schema."
+        },
+        "role": { "$ref": "#/$defs/play_entry_role" },
+        "install_order": { "$ref": "#/$defs/play_entry_install_order" },
+        "expected_calls_per_game": { "$ref": "#/$defs/play_entry_calls_per_game" },
+        "share_of_section_pct": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Share of THIS SECTION'S snaps that this play represents, as a percentage (0-100). To get the play's share of total offensive snaps, multiply by the section's target_snap_share_pct. Within a section, all plays' share_of_section_pct should sum to ~100 — the validation MCP flags significant deviations."
+        },
+        "practice_reps": { "$ref": "#/$defs/play_entry_practice_reps" },
+        "notes": {
+          "type": "string",
+          "description": "Playbook-specific coaching note for this play (e.g. 'our base 1st-down call vs 4-3'). Distinct from the play YAML's own notes."
+        },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Playbook-local tags that don't belong on the play itself (e.g. 'qb-friendly', 'red-zone-only')."
+        },
+        "counter_responses": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/counter_response" },
+          "description": "How this play responds to specific defensive counters. Each entry pairs a defensive_counter (referenced by id from the play's defensive_counters list) with the offensive response — an audible to one of the 5 playbook audibles, optionally with hot routes. Exactly one entry should be marked priority: primary (the best answer); the rest are alternatives if the primary is itself defended."
+        }
+      }
+    },
+    "audible_entry": {
+      "type": "object",
+      "required": ["slot", "play_id"],
+      "additionalProperties": false,
+      "properties": {
+        "slot": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Audible slot number (1-based). Each slot must be unique within its audibles array, and slots should run contiguously from 1. The number of slots is not fixed by the schema — it is a per-playbook (and ultimately per-game) choice."
+        },
+        "play_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$",
+          "description": "The play this audible slot checks to. Must reference a real play in data/plays/ and should be one of the plays already in the playbook's formation_sections."
+        },
+        "call_name": {
+          "type": "string",
+          "description": "The actual word/phrase the QB shouts at the LOS to trigger this audible (e.g. 'RED 22', 'OMAHA', 'KILL KILL'). Optional but recommended."
+        },
+        "notes": {
+          "type": "string",
+          "description": "Coaching note on when this audible gets used in general."
+        }
+      }
+    },
+    "hot_route": {
+      "type": "object",
+      "required": ["player", "new_route"],
+      "additionalProperties": false,
+      "properties": {
+        "player": {
+          "type": "string",
+          "description": "Player label (e.g. 'Z', 'TE', 'HB') whose route gets changed."
+        },
+        "new_route": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$",
+          "description": "Route id (matches a file in data/routes/) to replace the player's assigned route with."
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "counter_response": {
+      "type": "object",
+      "required": ["counter_ref", "response"],
+      "additionalProperties": false,
+      "properties": {
+        "counter_ref": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$",
+          "description": "References a counter_id from the play's defensive_counters array (data/plays/<play_id>.yaml). The validation MCP checks that this id resolves."
+        },
+        "priority": {
+          "enum": ["primary", "secondary", "tertiary"],
+          "default": "primary",
+          "description": "Which response this is. Exactly one counter_response per play should be 'primary' — the best answer. Others are secondary/tertiary alternatives if the primary is itself defended."
+        },
+        "response": {
+          "type": "object",
+          "required": ["audible_slot"],
+          "additionalProperties": false,
+          "properties": {
+            "audible_slot": {
+              "type": "integer",
+              "minimum": 1,
+              "description": "Which audible to check to, by slot number. In 'global' audible_mode this references a slot in the playbook's top-level audibles array. In 'per-formation' mode it references a slot in the audibles array of the formation_section this play belongs to."
+            },
+            "hot_routes": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/hot_route" },
+              "description": "Optional pre-snap route changes layered on top of the audible play. The audible play stays the same; specific receivers get a different route."
+            },
+            "notes": {
+              "type": "string",
+              "description": "Coaching note explaining why this audible+hot-routes combination beats the defensive counter."
+            }
+          }
+        }
+      }
+    },
+    "tag_filter": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "any_of": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1,
+          "description": "A play matches if it has ANY of these tags."
+        },
+        "all_of": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "A play matches only if it has ALL of these tags."
+        },
+        "none_of": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "A play is excluded if it has ANY of these tags."
+        }
+      },
+      "anyOf": [
+        { "required": ["any_of"] },
+        { "required": ["all_of"] }
+      ],
+      "description": "Tag-based filter for situational sections. At least one of any_of/all_of must be present."
+    }
+  },
+
+  "properties": {
+    "playbook_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "Stable identifier (kebab-case). Convention: <audience>-<theme>-<season>, e.g. 'hs-base-2026' or 'hs-spread-power-2026'."
+    },
+    "name": {
+      "type": "string",
+      "description": "Human-readable name, e.g. 'High School Base Playbook'."
+    },
+    "description": {
+      "type": "string",
+      "description": "1-3 sentences: what this playbook is for, what offense it represents, what level / style it targets."
+    },
+    "audience": {
+      "enum": ["youth", "high-school", "college", "nfl", "any-level"],
+      "description": "Target level of play. Documentation only — does NOT gate which plays may be included. Use the validation MCP to check level-appropriateness of individual plays."
+    },
+    "philosophy": {
+      "type": "string",
+      "description": "Anchoring philosophy (e.g. 'power-run', 'spread-power', 'west-coast', 'pro-style'). Should match a philosophy_ref used by the plays inside."
+    },
+    "season": {
+      "type": "string",
+      "description": "Free-form season label, e.g. '2026', 'Spring 2026 install', 'Week 5 game plan vs East High'."
+    },
+    "author": {
+      "type": "string",
+      "description": "Who authored this playbook."
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$",
+      "description": "SemVer string for tracking playbook revisions."
+    },
+
+    "audible_mode": {
+      "enum": ["global", "per-formation"],
+      "description": "Which audible model this playbook uses. 'global' = one playbook-wide pool of audibles (the top-level `audibles` array); every play's counter_responses checks into that one pool. 'per-formation' = each formation_section defines its own `audibles` array; a play's counter_responses checks into the pool of its own section (this mirrors games like Madden 2014 that scope audibles per formation). The model is a per-playbook choice; ultimately a target game's profile may constrain which models are legal, but the schema permits either."
+    },
+
+    "audibles": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/audible_entry" },
+      "minItems": 1,
+      "description": "The playbook-wide audible pool. Used (and required) when audible_mode is 'global'. Ignored when audible_mode is 'per-formation' (each formation_section carries its own audibles instead). Slots must be unique and run contiguously from 1; the count is a per-playbook choice, not fixed by the schema. play_ids should already appear in formation_sections.plays — a play used as an audible should be one you've installed."
+    },
+
+    "formation_sections": {
+      "type": "array",
+      "description": "Explicit play-list sections. Each section is anchored to one or more formations and contains a curated, ordered list of plays. This is the coach-authored spine of the playbook.",
+      "items": {
+        "type": "object",
+        "required": ["section_id", "name", "plays"],
+        "additionalProperties": false,
+        "properties": {
+          "section_id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$",
+            "description": "Stable identifier for the section, e.g. 'i-formation-base'."
+          },
+          "name": {
+            "type": "string",
+            "description": "Human-readable section heading, e.g. 'I-Formation'."
+          },
+          "description": {
+            "type": "string",
+            "description": "1-2 sentences explaining the section's role in the playbook."
+          },
+          "formations": {
+            "type": "array",
+            "items": { "type": "string" },
+            "minItems": 1,
+            "description": "Formation IDs this section covers. Most sections will list one (e.g. ['i-formation']); a 'Shotgun' section may list several (e.g. ['shotgun-2x2', 'shotgun-trips-left', 'shotgun-trips-right']). The validation MCP checks that every play in the section uses a formation in this list."
+          },
+          "target_snap_share_pct": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100,
+            "description": "Share of total offensive snaps this section is targeted to get, as a percentage (0-100). 'We want to be a 40% I-Formation team' → 40. Across all formation_sections, target_snap_share_pct should sum to ~100 (allowing a small residual for situational packages). The validation MCP flags significant deviations."
+          },
+          "formation_usage_split": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "description": "Optional breakdown when a section covers multiple formations. Map of formation_id → percentage (0-100) of THIS SECTION's snaps that go to each formation. Values should sum to ~100. Example for a Shotgun section: { shotgun-2x2: 60, shotgun-trips-left: 20, shotgun-trips-right: 20 }. Omit when the section has a single formation."
+          },
+          "audibles": {
+            "type": "array",
+            "items": { "$ref": "#/$defs/audible_entry" },
+            "minItems": 1,
+            "description": "This section's audible pool. Used (and required) only when the playbook's audible_mode is 'per-formation'. The plays in this section reference these slots in their counter_responses. Slots must be unique and run contiguously from 1. Ignored when audible_mode is 'global'."
+          },
+          "plays": {
+            "type": "array",
+            "items": { "$ref": "#/$defs/play_entry" },
+            "minItems": 1,
+            "description": "Ordered list of plays in this section. Convention: ordered by call frequency (highest share_of_section_pct first). When share is tied, fall back to install_order (earliest first). Install order is captured by the play_entry.install_order field, not by YAML position. Display tools (PDFs, call sheets) should respect this ordering."
+          },
+          "min_plays": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "Optional minimum-play target for this section (e.g. 'I-Formation must have at least 6 runs'). The validation MCP can report sections that fall short."
+          },
+          "notes": {
+            "type": "string",
+            "description": "Coach-level notes about the section as a whole."
+          }
+        }
+      }
+    },
+
+    "situational_sections": {
+      "type": "array",
+      "description": "Tag-driven views over the play inventory. Used for situational call lists (3rd-and-short, goal-line, two-minute) that cross formation boundaries.",
+      "items": {
+        "type": "object",
+        "required": ["section_id", "name", "tag_filter"],
+        "additionalProperties": false,
+        "properties": {
+          "section_id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$",
+            "description": "Stable identifier, e.g. 'third-and-short'."
+          },
+          "name": {
+            "type": "string",
+            "description": "Human-readable heading, e.g. '3rd & Short'."
+          },
+          "description": {
+            "type": "string"
+          },
+          "tag_filter": { "$ref": "#/$defs/tag_filter" },
+          "explicit_includes": {
+            "type": "array",
+            "items": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+            "description": "Play IDs to add to the view on top of the tag filter. Use when a play belongs here but doesn't have the right tag and you don't want to retag it."
+          },
+          "explicit_excludes": {
+            "type": "array",
+            "items": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+            "description": "Play IDs to remove from the tag-filtered view (e.g. a play that has the 'goal-line' tag but isn't in this particular playbook's goal-line package)."
+          },
+          "scope": {
+            "enum": ["whole-library", "playbook-only"],
+            "default": "playbook-only",
+            "description": "'playbook-only' = the view is restricted to plays appearing in formation_sections of this playbook. 'whole-library' = the view can pull any play in data/plays/. Default 'playbook-only' is the coach-sane choice."
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    },
+
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Free-form tags about the playbook itself, e.g. ['power-run', 'install-friendly', 'first-year-program']."
+    },
+    "notes": {
+      "type": "string",
+      "description": "Free-form coach notes about the playbook as a whole."
+    }
+  }
+}

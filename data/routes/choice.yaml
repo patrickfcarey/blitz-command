@@ -1,0 +1,29 @@
+name: choice
+aliases:
+  - option-route
+  - sight-adjustment
+  - read-route
+description: >
+  12-yard stem, then the receiver reads the corner's leverage and
+  self-adjusts post-snap: press / inside leverage → break IN (post or dig);
+  off / outside leverage → break OUT (comeback or out); cover-2 trap → fade
+  vertical. The signature read-and-react route of the run-and-shoot.
+path:
+  - [0, 0]
+  - [0, 12]
+  - [-3, 10]
+typical_break_depth_yd: 12
+option_route: true
+category: intermediate
+beats_coverage: both
+tags:
+  - option-route
+  - run-and-shoot
+  - intermediate
+  - outside-breaking
+verification_status: unverified
+source_notes:
+  - >
+    Run-and-shoot choice route; described in Mouse Davis / June Jones
+    run-and-shoot coaching texts. Break direction is coverage-dependent
+    — path shows default out/comeback break (most common against soft coverage).

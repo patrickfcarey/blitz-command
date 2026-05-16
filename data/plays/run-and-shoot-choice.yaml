@@ -12,7 +12,16 @@ primary_read: SLOT-R
 secondary_read: Z
 checkdown: HB
 
-motions: []
+# SLOT-R short across motion — identical to the rest of the Run-and-Shoot
+# disguise family (base play: run-and-shoot-switch). The run-and-shoot
+# motions a receiver every snap; running the SAME motion family-wide means
+# the defense cannot key it. Mandatory.
+motions:
+  - player: SLOT-R
+    type: mandatory
+    motion_type: short-across
+    end_position: { x: 5.0, y: -1.0 }
+    notes: "SLOT-R tightens his split with a short inside motion — identical across the whole Run-and-Shoot family so motion is never a tell."
 
 assignments:
   - player: LT
@@ -66,7 +75,9 @@ assignments:
     role: ball_carrier
     path: [[0, 0], [0, -2], [0, -4]]
     notes: |
-      5-step drop. Read the deep coverage:
+      5-step drop — IDENTICAL first two waypoints to every play in the
+      Run-and-Shoot family (this is the family's shared QB drop). Read the
+      deep coverage:
       - Single-high (cover-1 / cover-3) → SLOT-R seam (the signature R&S read)
       - Two-high (cover-2 / cover-4) → outside choice route (whichever side has more space)
       - Pressure / blitz → HB checkdown (built-in outlet)
@@ -104,6 +115,26 @@ worst_vs_defense:
   - "Disciplined banjo coverage on slot"
   - "Aggressive zero blitz (no time to read)"
 
+defensive_counters:
+  - counter_id: middle-robber
+    pre_snap_look: "A safety dropped to 8-10 yards squared over the ball, with a two-high shell rotating behind him"
+    qb_key: "Check the middle of the field — a safety squatting at 8-10 yards over the hash"
+    read_category: safety-shell
+    why: "A robber parked in the slot-seam window undercuts the primary choice-seam read; the slot has no clean window and the QB's first read is dead."
+    typical_against: ["cover-1 robber", "cover-3 buzz"]
+  - counter_id: quarters-carry-slot
+    pre_snap_look: "Two safeties at 10-12 yards, each squared and triggered down toward the slot — apex alignment splitting the slot and the tackle"
+    qb_key: "Check the safeties — two-high, both apexed down over the slots"
+    read_category: safety-shell
+    why: "Quarters safeties pattern-match and carry the slot vertical man-to-man, so the choice-seam never uncovers and the receiver's read produces no separation."
+    typical_against: ["cover-4", "quarters pattern-match"]
+  - counter_id: nickel-press-no-cushion
+    pre_snap_look: "All four coverage defenders pressed tight on the WRs and slots with no cushion, single-high safety behind"
+    qb_key: "Scan the corners and nickel — every cover defender jammed at the line, no cushion"
+    read_category: cb-leverage
+    why: "Press with no cushion removes the leverage cue the receivers read; the choice break is a guess, and a missed beat leaves every option route covered with the protection already stressed."
+    typical_against: ["cover-1 press", "press-bail disguise"]
+
 common_uses:
   - "1st-and-10 base call in run-and-shoot offense"
   - "3rd-and-medium / 3rd-and-long"
@@ -112,7 +143,8 @@ common_uses:
   - "Vs defenses showing single-high pre-snap"
 
 philosophy: spread-pass
-pass_concept_ref: mesh
+pass_concept_ref: four-verticals
+philosophy_ref: run-and-shoot
 
 era: "1980s-90s — Mouse Davis / June Jones / Jerry Glanville era; modern revival in select Air Raid concepts."
 
@@ -146,9 +178,15 @@ notes: |
   other's choices. June Jones / Mouse Davis spent years drilling the
   read keys.
 
+  Companion in the Run-and-Shoot disguise family (base: run-and-shoot-switch).
+  The SLOT-R short-across motion and the QB's first two drop waypoints are
+  identical to switch, go, screen, and draw — to the defense, Choice and the
+  Switch base look the same from the huddle break through the QB's drop.
+
   Mirror by flipping all x.
 
 verification_status: unverified
 source_notes:
   - "Run-and-shoot choice concept; documented across Mouse Davis / June Jones / Jerry Glanville coaching biographies."
   - "Built 2026-04-30 as part of the P3 specialty-play rollout."
+  - "Updated 2026-05-15 — joined the Run-and-Shoot disguise family; added the family-shared SLOT-R short-across motion, alignment-model defensive_counters, and philosophy_ref. pass_concept_ref corrected from 'mesh' to 'four-verticals' (the choice-seam vertical-stem option routes attack the deep field, not a shallow mesh)."

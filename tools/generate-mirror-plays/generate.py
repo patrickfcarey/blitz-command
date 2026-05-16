@@ -83,6 +83,13 @@ def mirror_play(play: dict, original_stem: str) -> dict:
         for alt in assignment.get("alt_paths", []):
             alt["path"] = [[-wp[0], wp[1]] for wp in alt["path"]]
 
+    # multi-concept composition — flip each concept's field_area (left<->right)
+    _flip_area = {"left": "right", "right": "left"}
+    for concept in new.get("concepts", []):
+        area = concept.get("field_area")
+        if area in _flip_area:
+            concept["field_area"] = _flip_area[area]
+
     # source_notes breadcrumb
     notes = new.setdefault("source_notes", [])
     notes.append(

@@ -99,6 +99,26 @@ worst_vs_defense:
   - "8-man fronts (no QB-keep room)"
   - "bear front"
 
+defensive_counters:
+  - counter_id: scrape-exchange
+    pre_snap_look: "Playside read EDGE squeezed down in a tight inside shade, with the playside LB walked up and cheated outside his normal alignment"
+    qb_key: "Scan the read EDGE — squeezed inside with a LB cheated outside him"
+    read_category: dl-alignment
+    why: "An EDGE squeezed inside is set to crash the give and tell the QB to keep, while the cheated-out LB scrapes over to meet the QB unblocked at the off-tackle hole."
+    typical_against: ["over-front", "4-3 base", "any defense with QB-run rules"]
+  - counter_id: force-the-give
+    pre_snap_look: "Playside read EDGE in a square two-point stance with hands free, no alley pressure showing, defense content to fit outside"
+    qb_key: "Scan the read EDGE — squared up, two-point, feet quiet"
+    read_category: dl-alignment
+    why: "A squared-up flat-footed EDGE is set to slow-play the mesh and force the give into a sweep where the alley defender and CB have already set the edge."
+    typical_against: ["disciplined zone-read defenses", "cover-3 cloud to trips", "pattern-match"]
+  - counter_id: fly-to-give-man
+    pre_snap_look: "Strong safety walked down to 6-8 yds inside the playside hash with the nickel cheated up and outside — extra hats stacked on the sweep edge"
+    qb_key: "Count the perimeter hats — safety down and nickel cheated up outside"
+    read_category: box-count
+    why: "Extra defenders pre-set on the sweep edge lock down the give, forcing the QB to keep into a defense already playing the keep-only fit."
+    typical_against: ["cover-3 sky to trips", "cover-1 with alley SS", "robber coverages"]
+
 common_uses:
   - "1st-and-10 base run with mobile QB"
   - "Constraint to inside-zone-read (different read defender, different motion)"
@@ -145,3 +165,27 @@ verification_status: unverified
 source_notes:
   - "Standard counter-read mechanic; widely documented across modern spread-option coaching texts."
   - "Built 2026-04-30 to round out the option family in the play library."
+flip_reads:
+- flip_id: keys-set-callside
+  pre_snap_look: The dive key and the pitch key (first two defenders outside the tackle) are both
+    aligned hard and downhill to the called side.
+  qb_key: Scan the called-side edge — both option keys are squatted and committed, no width left
+    to read.
+  read_category: dl-alignment
+  flip_to: mirror-play
+  why: An option into keys that are already set gives the QB no honest read; flipping the option
+    attacks the side where the keys still have to choose.
+  typical_against:
+  - over-front
+  - cover-1 with edge pressure
+- flip_id: strength-declared-to-formation
+  pre_snap_look: Defense has declared to the formation's strength — an extra perimeter defender
+    and a safety rolled down to the strong side.
+  qb_key: Check the strength side — the extra hat and the safety roll are committed to it.
+  read_category: safety-shell
+  flip_to: mirror-formation
+  why: Flipping the formation moves the option away from the loaded perimeter and forces the defense
+    to re-declare its keys.
+  typical_against:
+  - cover-3 with strong roll
+  - 8-man fronts

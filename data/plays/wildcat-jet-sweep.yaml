@@ -123,3 +123,26 @@ notes: |
 verification_status: unverified
 source_notes:
   - "Web validated 2026-04-29 — Wikipedia 'Wildcat formation' (https://en.wikipedia.org/wiki/Wildcat_formation); National Football Post 'Inside the Miami Wildcat' (https://www.nationalfootballpost.com/2008-2018-nfp-archive/inside-the-playbook/inside-the-playbook-the-miami-wildcat/). Jet motion + direct-snap perimeter run confirmed as a standard Wildcat package element."
+flip_reads:
+- flip_id: force-set-callside
+  pre_snap_look: The playside force defender (corner or outside linebacker) is aligned tight and
+    downhill with run support set hard to the called side.
+  qb_key: Check the playside edge — force defender squatted and downhill, no cushion.
+  read_category: cb-leverage
+  flip_to: mirror-play
+  why: A perimeter run into a set force defender has no edge; flipping to the side with a soft,
+    depth-aligned corner gives the play the room it needs.
+  typical_against:
+  - cover-2 with hard corners
+  - cloud support
+- flip_id: alley-stacked-formation
+  pre_snap_look: Defense has stacked the alley to the formation's strength — an extra defender
+    plus a rolled safety filling the strong-side perimeter.
+  qb_key: Check the strong-side alley — it is stacked while the backside alley is open.
+  read_category: box-count
+  flip_to: mirror-formation
+  why: Flipping the formation relocates the strength and the run target away from the stacked
+    alley, forcing the defense to re-rotate or surrender the edge.
+  typical_against:
+  - quarters with strong roll
+  - 8-man fronts

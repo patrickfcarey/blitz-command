@@ -95,6 +95,26 @@ worst_vs_defense:
   - "8-man fronts"
   - "EDGE who plays catch-and-release"
 
+defensive_counters:
+  - counter_id: slow-play-read
+    pre_snap_look: "Playside read EDGE in a square two-point stance with hands free and feet quiet, no alley pressure showing"
+    qb_key: "Scan the read EDGE — squared up, two-point, feet still"
+    read_category: dl-alignment
+    why: "A squared-up catch-and-release EDGE is set to slow-play the mesh and force the give into a perimeter where the corner and alley safety can rally."
+    typical_against: ["disciplined zone-read defenses", "any defense with feathered-EDGE rules"]
+  - counter_id: bracket-qb-force-give
+    pre_snap_look: "Playside EDGE tight in the B-gap with the MIKE/SAM walked up over the read-side B-gap — two defenders stacked on the inside power lane, alley defender left wide"
+    qb_key: "Scan the read-side B-gap — EDGE and a LB both stacked on the QB keep lane"
+    read_category: lb-depth
+    why: "Two defenders pre-set on the inside power lane take the QB keep away, forcing a give into a perimeter where the defense has dedicated extra hats to the alley."
+    typical_against: ["over-front with scrape-exchange", "modern 4-3 / 3-4 hybrids", "any defense game-planning QB runs"]
+  - counter_id: scrape-over-give
+    pre_snap_look: "Playside read EDGE in a tight crash alignment with a hand down, strong safety walked down to 6-8 yds inside the playside hash"
+    qb_key: "Scan the read EDGE and the strong safety — EDGE in a crash stance, safety walked down"
+    read_category: dl-alignment
+    why: "A crash-aligned EDGE is set to take the QB keep while the walked-down safety scrapes over to the HB give — both option phases are covered before the crack block can land."
+    typical_against: ["cover-3 sky to read side", "robber coverages", "cover-1 with crashing safety"]
+
 common_uses:
   - "1st-and-10 base run with mobile QB"
   - "Constraint to base inside-zone-read (different read = different look)"
@@ -140,3 +160,27 @@ verification_status: unverified
 source_notes:
   - "Standard power-read / inverted-veer scheme; documented widely in spread-option coaching texts (Gus Malzahn lineage)."
   - "Built 2026-04-30 to round out the option family in the play library."
+flip_reads:
+- flip_id: keys-set-callside
+  pre_snap_look: The dive key and the pitch key (first two defenders outside the tackle) are both
+    aligned hard and downhill to the called side.
+  qb_key: Scan the called-side edge — both option keys are squatted and committed, no width left
+    to read.
+  read_category: dl-alignment
+  flip_to: mirror-play
+  why: An option into keys that are already set gives the QB no honest read; flipping the option
+    attacks the side where the keys still have to choose.
+  typical_against:
+  - over-front
+  - cover-1 with edge pressure
+- flip_id: strength-declared-to-formation
+  pre_snap_look: Defense has declared to the formation's strength — an extra perimeter defender
+    and a safety rolled down to the strong side.
+  qb_key: Check the strength side — the extra hat and the safety roll are committed to it.
+  read_category: safety-shell
+  flip_to: mirror-formation
+  why: Flipping the formation moves the option away from the loaded perimeter and forces the defense
+    to re-declare its keys.
+  typical_against:
+  - cover-3 with strong roll
+  - 8-man fronts

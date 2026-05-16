@@ -1,0 +1,286 @@
+play_id: run-and-shoot-draw-left
+name: HB Draw (Strong) (Mirror Left)
+aliases:
+- Run-and-Shoot Draw
+- Shotgun Draw
+- Lead Draw off Verts
+formation: run-and-shoot-left
+play_type: run
+ball_carrier: HB
+run_reads:
+- priority: 1
+  read_key: first down lineman to displace (the play-side 3-technique)
+  run_to: aim for the strong-side B-gap; press the LOS behind the RG/RT and read whether the 3-tech is washed inside or ridden
+    out
+  notes: The draw is a one-cut run — let the pass-set wash the DL past the gap, then plant and go through the crease their
+    rush created.
+- priority: 2
+  read_key: play-side inside linebacker
+  run_to: if the LB triggers downhill into the B-gap, cut back to the A-gap behind the center
+  notes: The OL pass-set holds the LBs a half-beat; whichever gap the play-side LB does not fill is the lane.
+- priority: 3
+  read_key: backside A-gap
+  run_to: if the front slants strong and the play-side is walled off, cut all the way back behind the center into the weak
+    A-gap
+  notes: Last read — the pass-rush lean of the backside tackle often vacates the weak A-gap entirely.
+motions:
+- player: SLOT-R
+  type: mandatory
+  motion_type: short-across
+  end_position:
+    x: -5.0
+    y: -1.0
+  notes: SLOT-R tightens his split with a short inside motion — identical across the whole Run-and-Shoot family so motion
+    is never a tell.
+assignments:
+- player: LT
+  role: run_block
+  blocking_scheme: invite-rusher
+  notes: Pass-set vertical to sell protection and invite the backside rusher upfield, then drive him past the pocket — his
+    own rush lane becomes the backside wall.
+- player: LG
+  role: run_block
+  blocking_scheme: invite-rusher
+  target: backside-A-gap
+  notes: Show the pass-set, let the 1-tech commit upfield, then climb off the block to wall the backside inside linebacker.
+- player: C
+  role: run_block
+  blocking_scheme: gap-block
+  target: play-side-A-gap
+  notes: Pass-set show, then work play-side — secure the A-gap and climb to the Mike.
+- player: RG
+  role: run_block
+  blocking_scheme: invite-rusher
+  target: play-side-3-tech
+  notes: Invite the 3-technique upfield with a soft pass-set, ride him past the B-gap, then seal him out of the crease — the
+    key block of the draw.
+- player: RT
+  role: run_block
+  blocking_scheme: invite-rusher
+  target: play-side-LB
+  notes: Pass-set the edge to sell protection, let the rusher climb, then release inside and wall the play-side linebacker.
+- player: X
+  role: route
+  route_name: go
+  depth_yd: 25
+  beats_coverage: both
+  notes: Run a full go route — sell four verticals and carry the backside corner deep and out of the run fit.
+- player: Z
+  role: route
+  route_name: go
+  depth_yd: 25
+  beats_coverage: both
+  notes: Run a full go route, strong side — pull the play-side corner deep so he cannot trigger down into the alley.
+- player: SLOT-L
+  role: route
+  route_name: hitch
+  depth_yd: 5
+  beats_coverage: zone
+  notes: Push to 5 yards and stalk — occupy the weak-side underneath defender and wall him from the cutback.
+- player: SLOT-R
+  role: route
+  route_name: hitch
+  depth_yd: 5
+  beats_coverage: zone
+  notes: After the motion, push to 5 yards and stalk the strong-side underneath defender — keeps him out of the B-gap pursuit.
+- player: QB
+  role: handoff
+  path:
+  - - 0
+    - 0
+  - - 0
+    - -2
+  - - 1
+    - -3
+  notes: 'Drop — IDENTICAL first two waypoints to every play in the Run-and-Shoot
+
+    family (the family''s shared QB drop). Sell the dropback with the eyes up
+
+    and the shoulders square, then on the third step turn and hand to the HB
+
+    crossing underneath. After the mesh, carry out the pass fake — drift and
+
+    pat the ball to hold the backside rush honest.
+
+    '
+- player: HB
+  role: ball_carrier
+  is_primary: true
+  path:
+  - - 0
+    - 0
+  - - -1
+    - 1
+  - - -2
+    - 3
+  - - -3
+    - 9
+  alt_paths:
+  - priority: secondary
+    path:
+    - - 0
+      - 0
+    - - -1
+      - 1
+    - - 0
+      - 3
+    - - 1
+      - 9
+    notes: 'Read 2: the play-side LB fills the B-gap — cut back to the A-gap behind the center.'
+  - priority: tertiary
+    path:
+    - - 0
+      - 0
+    - - -1
+      - 1
+    - - 1
+      - 2
+    - - 3
+      - 8
+    notes: 'Read 3: front slants strong and the play-side is walled — cut all the way back into the weak A-gap.'
+  notes: 'Open up as if to slip into a screen / pass-protection track, take the
+
+    delayed handoff from the QB, then press the strong-side B-gap behind the
+
+    RG/RT. One cut off the read — explode through the crease the pass-rush
+
+    created. Patience for one beat, then downhill.
+
+    '
+strengths:
+- Identical motion and QB-drop start to Switch / Choice / Go — defense reads dropback pass
+- Punishes the upfield pass-rush the run-and-shoot vertical game invites
+- Four-wide spacing empties the box — light fronts mean clean interior creases
+- Outside go routes carry both corners out of the run fit
+- Gives the run-and-shoot a genuine run answer without changing personnel or look
+weaknesses:
+- No fullback or tight end — zero lead blocker at the point of attack
+- Needs the vertical pass game on tape first — a cold draw holds no rush
+- Disciplined linemen who do not rush upfield kill the wash blocks
+- Slow-developing for a run — the delayed mesh gives a read defense time
+- Vulnerable to interior penetration that beats the soft pass-set
+best_vs_defense:
+- Light boxes (six or fewer — the four-wide set pulls defenders out)
+- Aggressive upfield four-man rush
+- Nickel and dime sub packages on obvious passing downs
+- Cover-3 / cover-1 single-high with linebackers bailing to the verticals
+worst_vs_defense:
+- Loaded boxes / extra defender walked down
+- Disciplined two-gap fronts that do not rush upfield
+- Interior A-gap pressure that beats the pass-set
+- Run-blitz looks keyed on the draw
+defensive_counters:
+- counter_id: loaded-box-walkdown
+  pre_snap_look: A safety or nickel walked down to 4-5 yards into the box, putting seven defenders inside the tackle box against
+    a six-man run-blocking front
+  qb_key: Count the box — seven inside against the four-wide set, one walked down
+  read_category: box-count
+  why: With seven in the box against six blockers and no lead back, the extra defender fills a gap unblocked and meets the
+    draw at the line.
+  typical_against:
+  - cover-1 with the SS rolled down
+  - nickel run-fit looks
+- counter_id: pinch-no-upfield-rush
+  pre_snap_look: Both defensive tackles in tight inside shades — 2i / inside-eye alignments — cocked square and low rather
+    than tilted upfield
+  qb_key: Scan the interior DL — tackles inside-shaded and square, no upfield tilt
+  read_category: dl-alignment
+  why: Tackles that pinch and play square do not get washed past the gap by the soft pass-set, so the draw has no crease and
+    the interior creases never open.
+  typical_against:
+  - two-gap fronts
+  - pinch fronts on passing downs
+- counter_id: double-a-mug
+  pre_snap_look: Both inside linebackers walked up and mugged in the A-gaps over the center, threatening interior pressure
+  qb_key: Check the A-gaps — both inside backers mugged tight over the center
+  read_category: lb-depth
+  why: Linebackers mugged in the A-gaps shoot the interior gaps the draw aims for and beat the climbing OL to the point of
+    attack.
+  typical_against:
+  - double-A-gap pressure
+  - zone-pressure looks
+common_uses:
+- 2nd-and-medium / 3rd-and-short against a light box
+- Slowing down an aggressive upfield pass rush
+- Catching a nickel / dime sub package in a light front
+- Constraint call after the vertical passing game has the box emptied
+- Mixing in a run to keep the run-and-shoot from being one-dimensional
+philosophy: spread-pass
+run_concept_ref: draw
+philosophy_ref: run-and-shoot
+era: 1980s-90s onward — the draw was the run-and-shoot's primary ground-game constraint, keeping the four-man rush honest.
+famous_examples:
+- Houston Oilers (Lorenzo White on draws out of the run-and-shoot)
+- Detroit Lions (Barry Sanders draws out of four-wide sets)
+- Atlanta Falcons (June Jones era draw game)
+tags:
+- run
+- draw
+- misdirection
+- constraint
+- run-and-shoot
+- 10-personnel
+- 4-wide
+- throwback
+- high-school
+- college
+- nfl
+notes: 'The "run" in run-and-shoot. An HB draw off the dropback look — the SLOT-R
+
+  motion, the QB''s drop start, and the OL pass-set all show the same dropback
+
+  picture as Switch, Choice, and Go. The OL invites the rush upfield, the QB
+
+  sells the pass and hands off late, and the HB presses the strong-side B-gap
+
+  through whatever crease the pass-rush lean has created. The four-wide set
+
+  pulls defenders out of the box, so the draw hunts a light front.
+
+
+  Companion in the Run-and-Shoot disguise family (base: run-and-shoot-switch).
+
+  The SLOT-R short-across motion and the QB''s first two drop waypoints are
+
+  identical to switch, choice, go, and screen — to the defense, the draw is
+
+  indistinguishable from the vertical passing game until the late mesh.
+
+
+  Mirror by flipping all x.
+
+  '
+verification_status: unverified
+source_notes:
+- Draw is a universal pass-game constraint; named in the draw run-concept file (data/concepts/run-concepts/draw.yaml) and
+  listed as a canonical run-and-shoot run concept in the run-and-shoot philosophy file. The pass-set-then-drive blocking and
+  delayed handoff follow that concept's read tree.
+- Authored 2026-05-15 as a companion of the Run-and-Shoot disguise family — SLOT-R motion and QB drop first two waypoints
+  deliberately mirror run-and-shoot-switch. The draw has no lead blocker (no FB/TE in 10 personnel); the run_reads reflect
+  a one-cut interior draw read off the displaced 3-technique.
+- Mirror of run-and-shoot-draw.yaml — path waypoints flipped on x; formation reference points to the mirror formation. Routes
+  auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed look
+  — coordinates and paths are the source of truth.
+flip_reads:
+- flip_id: front-overshift-callside
+  pre_snap_look: Defensive front slid toward the called side — an extra down lineman or a walked-up
+    linebacker puts +1 in the called-side box.
+  qb_key: Count the box side to side — the called side has one more hat than the backside.
+  read_category: box-count
+  flip_to: mirror-play
+  why: Running a gap scheme into the overshift is into the teeth; flipping the play attacks the
+    lighter box with the same blocking math.
+  typical_against:
+  - over-front
+  - shifted 4-3
+- flip_id: strength-declared-to-formation
+  pre_snap_look: Defense has fully declared to the formation's strength — an extra box defender
+    to the strong side and a safety rolled down over it.
+  qb_key: Check the strength side — both the box count and the safety roll are committed to it.
+  read_category: safety-shell
+  flip_to: mirror-formation
+  why: When the defense keys the formation's strength, flipping the whole formation forces a re-declare
+    and the run hits the side they vacated.
+  typical_against:
+  - cover-3 with strong roll
+  - 8-man fronts

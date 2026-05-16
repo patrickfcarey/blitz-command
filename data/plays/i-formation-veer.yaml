@@ -98,6 +98,26 @@ worst_vs_defense:
   - "cover-1 robber (extra defender)"
   - "8-man fronts"
 
+defensive_counters:
+  - counter_id: scrape-exchange
+    pre_snap_look: "Playside LB cheated outside his normal width toward the C-gap, stacked behind a playside EDGE who is squeezed down inside on the tackle"
+    qb_key: "Check the playside LB width — backer cheated outside, EDGE pinched in over the tackle"
+    read_category: lb-depth
+    why: "A LB pre-set wide and an inside-squeezed EDGE are aligned to run a scrape exchange — EDGE takes the dive, LB scrapes for the QB — forcing a hurried pitch read."
+    typical_against: ["disciplined option-fit defenses", "4-3 with veer-trained LBs"]
+  - counter_id: slow-play-the-edge
+    pre_snap_look: "Playside EDGE in a head-up 5-technique squared to the tackle, hands inside and eyes on the mesh, with no upfield-rush stagger to his stance"
+    qb_key: "Scan the playside edge — EDGE squared and patient, no get-off lean"
+    read_category: dl-alignment
+    why: "An EDGE aligned square and flat-footed with no rush stagger is set to feather the mesh, giving the QB no clean dive-or-keep read and inviting a TFL."
+    typical_against: ["option-experienced defenses", "service-academy preparation defenses"]
+  - counter_id: force-the-pitch
+    pre_snap_look: "Force defender (OLB or SS) aligned flat-footed and squared directly over the QB's keep path, with an alley defender stacked tight inside-out of the pitch man"
+    qb_key: "Scan the pitch-key — force defender squared on the QB, alley defender crowding the pitch man"
+    read_category: lb-depth
+    why: "A force defender pre-squared on the QB will take the keep and force the pitch, while the pre-positioned alley defender beats the HB to the corner."
+    typical_against: ["cover-3 with disciplined force player", "4-4 stack vs option"]
+
 common_uses:
   - "Heritage triple-option from a non-Wishbone formation"
   - "1st-and-10 base run vs 4-3 / 3-4 base defenses"
@@ -144,3 +164,27 @@ verification_status: unverified
 source_notes:
   - "Houston Veer / triple option — Bill Yeoman 1965 origin; documented across option-football coaching tradition."
   - "Built 2026-04-30 to round out the option family with the original under-center triple option."
+flip_reads:
+- flip_id: keys-set-callside
+  pre_snap_look: The dive key and the pitch key (first two defenders outside the tackle) are both
+    aligned hard and downhill to the called side.
+  qb_key: Scan the called-side edge — both option keys are squatted and committed, no width left
+    to read.
+  read_category: dl-alignment
+  flip_to: mirror-play
+  why: An option into keys that are already set gives the QB no honest read; flipping the option
+    attacks the side where the keys still have to choose.
+  typical_against:
+  - over-front
+  - cover-1 with edge pressure
+- flip_id: strength-declared-to-formation
+  pre_snap_look: Defense has declared to the formation's strength — an extra perimeter defender
+    and a safety rolled down to the strong side.
+  qb_key: Check the strength side — the extra hat and the safety roll are committed to it.
+  read_category: safety-shell
+  flip_to: mirror-formation
+  why: Flipping the formation moves the option away from the loaded perimeter and forces the defense
+    to re-declare its keys.
+  typical_against:
+  - cover-3 with strong roll
+  - 8-man fronts

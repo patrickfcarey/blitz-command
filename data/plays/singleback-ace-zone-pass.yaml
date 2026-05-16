@@ -1,0 +1,155 @@
+play_id: singleback-ace-zone-pass
+name: Zone Pass (Strong)
+aliases:
+  - PA Inside Zone
+  - Zone Play-Action
+  - IZ Pop Pass
+
+formation: singleback-ace
+play_type: play-action
+ball_carrier: QB
+primary_read: TE-R
+secondary_read: X
+checkdown: HB
+
+# Identical motions to Inside Zone — the base play runs no motion, so neither
+# does this twin. The shared empty motions block is part of the family's
+# disguise: the defense gets the exact same static pre-snap picture.
+motions: []
+
+assignments:
+  - player: LT
+    role: pass_block
+    blocking_scheme: pa-zone-protection
+    notes: "Fire out low showing the zone step for a beat, then anchor and protect the backside edge."
+  - player: LG
+    role: pass_block
+    blocking_scheme: pa-zone-protection
+    notes: "Show the zone-combo for one count, then settle and protect the backside A-gap."
+  - player: C
+    role: pass_block
+    blocking_scheme: pa-zone-protection
+    notes: "Show the zone-combo, then protect the A-gaps."
+  - player: RG
+    role: pass_block
+    blocking_scheme: pa-zone-protection
+    notes: "Fire out showing the zone-combo, then recover and protect the playside B-gap."
+  - player: RT
+    role: pass_block
+    blocking_scheme: pa-zone-protection
+    notes: "Show the zone step, then protect the playside edge."
+  - player: TE-L
+    role: pass_block
+    blocking_scheme: pa-zone-protection
+    notes: "Backside TE — show the backside zone step exactly like Inside Zone, then hinge and protect the backside edge."
+  - player: TE-R
+    role: route
+    route_name: drag
+    depth_yd: 8
+    is_primary: true
+    notes: "Playside TE — show the edge-seal block for one beat to sell the zone run, then release across on the drag behind the run-flow linebackers. The bread-and-butter throw."
+  - player: X
+    role: route
+    route_name: post
+    depth_yd: 18
+    notes: "Stalk-release to sell the run, then stem to the post — the shot if the backside safety bites the zone fake."
+  - player: Z
+    role: route
+    route_name: dig
+    depth_yd: 14
+    notes: "Stalk-release to sell the run, then break to the dig — the intermediate window if the drag is walled off."
+  - player: QB
+    role: ball_carrier
+    path: [[0, 0], [-1, -1], [-2, -2], [-2, -4]]
+    notes: "Reverse-pivot IDENTICAL to Inside Zone for the first two steps, ride the HB fake through the mesh, then settle at depth in the pocket and throw. Eyes on the TE-R drag first."
+  - player: HB
+    role: fake
+    path: [[0, 0], [2, 3], [3, 6]]
+    notes: "Run the exact Inside Zone bang track for the first two waypoints to sell the handoff, then settle as a late outlet only if pressure clears."
+
+strengths:
+  - Identical pre-snap look and first-step action to Inside Zone — the defense cannot tell it from the run
+  - Holds run-flow linebackers, opening the TE-R drag behind them
+  - QB stays in the pocket — no edge given up, unlike a boot
+  - 12-personnel keeps both TEs as protection-or-route options, so the pocket holds
+  - High completion percentage once the zone run has been established
+
+weaknesses:
+  - Needs Inside Zone on tape first — a cold PA fake holds no one
+  - The deeper pocket set takes longer than a boot to reach the throw
+  - Vulnerable to interior pressure that doesn't honor the run fake
+  - Field stays full-width — reads are more demanding than a half-field boot
+  - Only 2 WRs limits the horizontal stretch against a two-high shell
+
+best_vs_defense:
+  - cover-3 with run-fit linebackers
+  - 4-3 with downhill, aggressive LB play
+  - any defense overcommitting to the zone run
+  - single-high coverages
+
+worst_vs_defense:
+  - two-high shells with LBs at pass depth
+  - cover-1 robber sitting in the drag window
+  - interior twist / A-gap pressure
+  - any defense that has stopped the zone run and stopped respecting it
+
+defensive_counters:
+  - counter_id: alert-zone-no-bite
+    pre_snap_look: "Linebackers aligned at full passing depth (5+ yards off the LOS) under a two-high safety shell, not crowding the box"
+    qb_key: "Check the LB depth and safety shell — backers deep, two-high behind them"
+    read_category: lb-depth
+    why: "Linebackers already at pass depth under a two-high shell read pass first; they will not vacate on the zone fake, so the TE drag arrives into a populated zone."
+    typical_against: ["cover-4", "cover-3 alert", "any defense after the zone run has been slowed"]
+  - counter_id: robber-middle
+    pre_snap_look: "A safety dropped to 8-10 yards, squared and stationed over the middle of the field, with a two-high shell rolled behind him"
+    qb_key: "Check the middle of the field — a safety squatting at 8-10 yards over the ball"
+    read_category: safety-shell
+    why: "A robber sitting in the drag's window undercuts the primary read and brackets the crosser inside-out."
+    typical_against: ["cover-1 robber", "cover-3 buzz"]
+  - counter_id: interior-a-gap-pressure
+    pre_snap_look: "Both inside linebackers walked up and stacked over the A-gaps on the guards' inside eyes, showing a double-A look"
+    qb_key: "Scan the interior — both LBs creeping into the A-gaps over the guards"
+    read_category: lb-depth
+    why: "A double-A pressure that ignores the run fake collapses the pocket up the middle before the pocket PA's deeper drop completes."
+    typical_against: ["cover-1 with double-A", "zone-pressure looks"]
+
+common_uses:
+  - After establishing Inside Zone for 4+ yards
+  - 1st-and-10 play-action shot
+  - 2nd-and-medium
+  - Red-zone moving the linebackers with the zone fake
+
+philosophy: zone-run
+pass_concept_ref: drive
+run_concept_ref: inside-zone
+philosophy_ref: zone-run
+
+era: "Universal — play-action off the inside-zone run is as old as the zone running game itself; every modern offense runs a zone PA pass."
+
+famous_examples:
+  - "Mike Shanahan / Gary Kubiak play-action off the zone run"
+  - "Kyle Shanahan-tree pocket PA off 12-personnel zone"
+
+tags:
+  - pa
+  - play-action
+  - zone-run
+  - pocket-pass
+  - 12-personnel
+  - singleback
+  - high-school
+  - college
+  - nfl
+
+notes: |
+  Play-action pass off Inside Zone. The QB reverse-pivot, the HB bang-track
+  fake, and the OL zone-step show are all IDENTICAL to singleback-ace-inside-
+  zone through the mesh — the defense reads the zone run. The QB then settles
+  in the pocket and throws the TE-R drag behind the run-flow linebackers.
+  Member of the Singleback Ace Zone disguise family (see data/play-families/).
+
+  Mirror to zone-pass-left by flipping all coordinates.
+
+verification_status: unverified
+source_notes:
+  - "Play-action off the inside-zone run is a universal constraint concept. Authored as a disguise twin of singleback-ace-inside-zone — initial action (QB reverse-pivot, HB bang track) deliberately mirrors the base play for the first two path waypoints."

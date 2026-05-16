@@ -38,6 +38,25 @@ weaknesses:
   - "LB carry-and-cushion neutralizes the option"
 best_vs_defense: ["cover-2 zone (sit in soft spot)", "cover-3 (between curl and flat defender)", "cover-1 (break out vs man)"]
 worst_vs_defense: ["bracket on slot", "cover-2 robber", "banjo coverage"]
+defensive_counters:
+  - counter_id: bracket-the-slot
+    pre_snap_look: "Apex defender aligned tight to the slot with inside leverage and a safety stacked directly over the top of that slot"
+    qb_key: "Check the slot's leverage — apex inside and tight, safety capped above him"
+    read_category: cb-leverage
+    why: "An apex inside with a safety over the top is a pre-built high-low bracket that takes away both the sit-vs-zone and break-out-vs-man options of the stick at once."
+    typical_against: ["cover-2 trap", "any defense scouting the slot as primary"]
+  - counter_id: carry-the-stick
+    pre_snap_look: "Curl-flat defender (LB or nickel apex) aligned with depth and inside leverage on the slot, with the corner pressed on the outside WR and no defender sitting in the flat"
+    qb_key: "Check the apex leverage — defender depth and inside, no squat flat defender outside"
+    read_category: cb-leverage
+    why: "A deep, inside-leverage apex with no flat squatter is set to carry the stick vertically, leaving the break-out no soft spot and forcing the QB off rhythm to the TE drag."
+    typical_against: ["cover-3 with disciplined hook-curl drops", "match quarters"]
+  - counter_id: rat-the-throwing-lane
+    pre_snap_look: "MLB stacked over the ball at shallow hook depth showing blitz, behind a single-high safety shell"
+    qb_key: "Check MLB depth and the safety shell — backer shallow over the ball, one high behind"
+    read_category: lb-depth
+    why: "A MLB sitting shallow in the middle hook under single-high is positioned to rat the stick throwing lane, forcing a check-down or risking a tipped interception."
+    typical_against: ["cover-2 robber", "fire-zone with rat in middle"]
 common_uses: ["3rd-and-short / 3rd-and-medium", "1st down chains", "Quick-game tempo"]
 philosophy: pro-style
 pass_concept_ref: stick

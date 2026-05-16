@@ -1,0 +1,207 @@
+play_id: i-formation-toss-counter
+name: Toss Counter (Strong)
+aliases:
+  - Toss Counter
+  - Counter off Toss
+  - Toss Reverse-Out Counter
+
+formation: i-formation
+play_type: run
+ball_carrier: HB
+run_reads:
+  - priority: 1
+    read_key: kicking tackle (LT) — kickout block on the backside EDGE
+    run_to: show the toss perimeter track, then plant and run BACKSIDE behind the pulling LT through the weak-side C-gap
+    notes: "HB sells the toss perimeter path for two steps, then redirects backside. Follow the LT's kickout."
+  - priority: 2
+    read_key: backside linebacker (pulling guard's target)
+    run_to: if the backside LB scrapes over the LG's wrap, cut underneath into the B-gap
+    notes: "LG pulls and wraps the backside LB. If the LB goes over the top, the B-gap opens behind him."
+  - priority: 3
+    read_key: backside pursuit / cutback
+    run_to: if the weak-side hole clogs, press the backside A-gap behind the down-blocks
+    notes: "The toss show flowed the defense hard to the perimeter; if the C-gap clogs, the inside cutback is there."
+
+# No motion — identical empty motions block to Lead Toss. The Toss family
+# shares its pre-snap look with NO motion; run it the same across the family
+# so the defense cannot key a tell.
+motions: []
+
+assignments:
+  - player: LT
+    role: run_block
+    blocking_scheme: pull-around
+    target: backside-edge
+    path: [[0, 0], [-3, -0.5], [-5, -0.5], [-7, 2]]
+    notes: "PULL — backside tackle pulls and kicks out the backside EDGE to open the weak-side C-gap."
+  - player: LG
+    role: run_block
+    blocking_scheme: pull-around
+    target: backside-LB
+    path: [[0, 0], [-2, -0.5], [-4, 0], [-5, 4]]
+    notes: "PULL — backside guard pulls around the C, leads through the weak-side hole onto the backside LB."
+  - player: C
+    role: run_block
+    blocking_scheme: gap-block
+    target: playside-A-gap
+    notes: "Reach the playside A-gap to wall the frontside; sells the toss drive-block flow."
+  - player: RG
+    role: run_block
+    blocking_scheme: down-block
+    target: playside-DT
+    notes: "Down-block the playside DT — shows the toss blocking and flows the front to the perimeter."
+  - player: RT
+    role: run_block
+    blocking_scheme: down-block
+    target: playside-DE
+    notes: "Down-block the playside DE — sells the toss perimeter seal."
+  - player: TE
+    role: run_block
+    blocking_scheme: down-block
+    target: playside-LB
+    notes: "Show the toss kickout for a beat, then down-block the playside LB to climb and flow the front."
+  - player: X
+    role: run_block
+    blocking_scheme: stalk
+    target: cornerback
+    notes: "Backside stalk — the play is now coming to the X's side; wall the corner."
+  - player: Z
+    role: run_block
+    blocking_scheme: stalk
+    target: cornerback
+    notes: "Show the crack-block for a beat to sell the toss, then stalk the corner."
+  - player: QB
+    role: handoff
+    path: [[0, 0], [-1, -1], [-3, -1]]
+    notes: "Reverse-out IDENTICAL to Lead Toss, fake the pitch and hand the ball to the HB on the counter, then sell a fake bootleg to the playside."
+  - player: FB
+    role: lead_block
+    target: backside-alley-defender
+    path: [[0, 0], [5, 3], [1, 5], [-3, 7]]
+    notes: "Lead to the perimeter exactly like Lead Toss for the first two steps to sell the toss, then cross back to lead the HB through the weak-side hole."
+  - player: HB
+    role: ball_carrier
+    is_primary: true
+    path: [[0, 0], [4, 1], [-1, 4], [-4, 9]]
+    alt_paths:
+      - priority: secondary
+        path: [[0, 0], [4, 1], [0, 4], [-1, 9]]
+        notes: "Read 2: backside LB scrapes over the LG wrap — cut underneath into the B-gap."
+      - priority: tertiary
+        path: [[0, 0], [4, 1], [1, 4], [2, 9]]
+        notes: "Read 3: weak-side hole clogs — press the backside A-gap behind the down-blocks."
+    notes: |
+      Show the exact Lead Toss perimeter track for the first two steps to flow
+      the defense playside, then plant and run BACKSIDE behind the pulling LT
+      and LG through the weak-side C-gap.
+
+strengths:
+  - Identical pre-snap look and first-step action to Lead Toss — the defense reads toss
+  - Two pulling blockers (LT and LG) arriving at the backside point of attack
+  - The toss show flows fast linebackers to the perimeter, away from where the ball goes
+  - Devastating against defenses over-pursuing the toss perimeter
+  - QB reverse-out and playside bootleg fake hold frontside defenders
+
+weaknesses:
+  - Needs Lead Toss on tape first — a cold counter fake flows no one
+  - Slow-developing — the LT and LG pulls need ~2.5 seconds to arrive
+  - Vulnerable to a backside DE shooting upfield before the LT kickout lands
+  - HB must read the counter correctly or the play breaks
+  - Backside-shaded linebackers who don't chase the toss show kill the pull lane
+
+best_vs_defense:
+  - over-front (gives the down-block and pull angles)
+  - cover-3 with fast-flowing linebackers
+  - any defense over-pursuing the toss perimeter
+  - speed-flow defenses that chase the toss show hard
+
+worst_vs_defense:
+  - bear front (a DT in every gap)
+  - 8-man fronts / cover-1 robber (extra defender)
+  - backside DE shooting upfield
+  - disciplined defenses drilled against counter
+
+defensive_counters:
+  - counter_id: spill-the-puller
+    pre_snap_look: "Backside EDGE in a tight 6/7-technique with his inside shoulder cocked down and a force defender (OLB or SS) cheated wide outside him"
+    qb_key: "Scan the backside edge — EDGE hand and shoulder pointed inside, force defender widened"
+    read_category: dl-alignment
+    why: "An inside-cocked backside EDGE is set to wrong-arm the LT's kickout and spill the counter wide into the pre-widened force defender, where the pullers have no angle."
+    typical_against: ["over-front", "4-3 base", "any defense coached to spill the counter"]
+  - counter_id: backside-stay-home
+    pre_snap_look: "Backside LB stacked square behind the line at normal depth with his eyes inside on the guards, not shaded or cheated to the toss strength"
+    qb_key: "Check the backside LB — backer squared up and not honoring the toss show"
+    read_category: lb-depth
+    why: "A squared backside LB who does not chase the toss flow stays home over the weak-side hole and fills it before the LG wrap arrives."
+    typical_against: ["disciplined option-fit defenses", "any defense drilled against counter"]
+  - counter_id: 8-man-front
+    pre_snap_look: "8 defenders inside the tackle box — strong safety walked down to 4-5 yards, single-high shell behind it"
+    qb_key: "Count the box — eight, with one high safety"
+    read_category: box-count
+    why: "There aren't enough blockers for the extra box defender; someone in the counter run fit comes free unblocked."
+    typical_against: ["cover-1 robber", "quarters with SS rolled down"]
+
+common_uses:
+  - Counter to an established Lead Toss tendency
+  - 1st/2nd-and-medium with the run game established
+  - Short-yardage when the defense over-pursues the perimeter
+  - Setting up the boot and PA pass off the same toss look
+
+philosophy: power-run
+run_concept_ref: power
+philosophy_ref: power-run
+
+era: "1980s onward — counter off the perimeter run game is a staple of pro-style power offenses."
+
+famous_examples:
+  - "1980s Washington Redskins (Joe Gibbs counter game off the perimeter run)"
+  - "Modern NFL teams using counter as a constraint to the toss"
+  - "HS power-run programs across the country"
+
+tags:
+  - run
+  - power-run
+  - toss
+  - counter
+  - gap-scheme
+  - misdirection
+  - high-school
+  - college
+  - nfl
+
+notes: |
+  Counter off Lead Toss. The QB reverse-out, the HB perimeter track, the FB
+  lead, and the OL run-block show are all IDENTICAL to Lead Toss for the
+  first two steps — the defense reads toss and flows to the perimeter. The HB
+  then plants and runs BACKSIDE behind the pulling LT and LG through the
+  weak-side C-gap. Member of the I-Formation Toss disguise family (see
+  data/play-families/).
+
+  Mirror to toss-counter-left by flipping all coordinates.
+
+verification_status: unverified
+source_notes:
+  - "Counter off the toss sweep is a universal constraint concept. Authored as a disguise twin of i-formation-lead-toss — initial action (QB reverse-out, HB/FB tracks) deliberately mirrors the base play's first two waypoints exactly."
+flip_reads:
+- flip_id: front-overshift-callside
+  pre_snap_look: Defensive front slid toward the called side — an extra down lineman or a walked-up
+    linebacker puts +1 in the called-side box.
+  qb_key: Count the box side to side — the called side has one more hat than the backside.
+  read_category: box-count
+  flip_to: mirror-play
+  why: Running a gap scheme into the overshift is into the teeth; flipping the play attacks the
+    lighter box with the same blocking math.
+  typical_against:
+  - over-front
+  - shifted 4-3
+- flip_id: strength-declared-to-formation
+  pre_snap_look: Defense has fully declared to the formation's strength — an extra box defender
+    to the strong side and a safety rolled down over it.
+  qb_key: Check the strength side — both the box count and the safety roll are committed to it.
+  read_category: safety-shell
+  flip_to: mirror-formation
+  why: When the defense keys the formation's strength, flipping the whole formation forces a re-declare
+    and the run hits the side they vacated.
+  typical_against:
+  - cover-3 with strong roll
+  - 8-man fronts

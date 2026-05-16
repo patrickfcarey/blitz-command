@@ -97,6 +97,34 @@ worst_vs_defense:
 - bracket on sail receiver
 - press man on outer WR
 - blitz from the trips side
+defensive_counters:
+- counter_id: cloud-three-to-trips
+  pre_snap_look: Trips-side corner cheated down toward the flat, nickel walling underneath the slot, and a single safety rotated over the trips-side third
+  qb_key: Check the safety shell — one safety rotated over the trips third, corner cheated down
+  read_category: safety-shell
+  why: Three defenders pre-aligned to match the three vertical levels by leverage leave the 3-level stretch no soft window — corner caps the flat, nickel walls the sail, safety carries the clear-out.
+  typical_against:
+  - cover-3 cloud
+  - cover-3 buzz
+  - modern pattern-match to trips
+- counter_id: bracket-sail
+  pre_snap_look: Nickel walked down with inside leverage on the sail receiver (WR2), with the corner off in a soft 8-9 yd deep-half cushion over the top
+  qb_key: Check the leverage on WR2 — nickel inside, corner capping deep
+  read_category: cb-leverage
+  why: Inside-and-over leverage pre-set on WR2 brackets the sail — the rhythm throw and primary read — and the zone-beating flood has no quick man-beater to flip to.
+  typical_against:
+  - pattern-match
+  - cover-2 with cone on #2
+  - robber coverages
+- counter_id: trips-side-pressure
+  pre_snap_look: Nickel / apex defender walked up in a blitz alignment off the trips edge, single-high safety shell behind
+  qb_key: Scan the trips-edge defender — walked up on the line, one high safety
+  read_category: lb-depth
+  why: A walked-up trips-edge defender is a free runner; on a 3-second-developing play he hits the QB before the sail clears, forcing a throw into the deep third or a sack.
+  typical_against:
+  - cover-1 zero-pressure
+  - fire-zone to trips
+  - nickel pressure packages
 common_uses:
 - 1st/2nd-and-medium against zone tendencies
 - Setting up backside throws after defense over-rotates

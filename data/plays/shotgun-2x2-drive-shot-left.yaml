@@ -1,0 +1,215 @@
+play_id: shotgun-2x2-drive-shot-left
+name: Drive Shot (Strong) (Mirror Left)
+aliases:
+- Drive Post Shot
+- Drag Clear-Out Post
+- Drive Switch Shot
+formation: shotgun-2x2-left
+play_type: pass
+ball_carrier: Z
+primary_read: Z
+secondary_read: TE
+checkdown: HB
+motions: []
+assignments:
+- player: LT
+  role: pass_block
+  blocking_scheme: man-protection
+  notes: Five-man slide protection — hold up long enough for the deep post to develop.
+- player: LG
+  role: pass_block
+  blocking_scheme: man-protection
+- player: C
+  role: pass_block
+  blocking_scheme: man-protection
+- player: RG
+  role: pass_block
+  blocking_scheme: man-protection
+- player: RT
+  role: pass_block
+  blocking_scheme: man-protection
+- player: Z
+  role: route
+  route_name: post
+  depth_yd: 14
+  is_primary: true
+  beats_coverage: both
+  notes: The shot. Stem vertical off the strong-side slot, then break the post at 14 yds into the middle of the field — into
+    the exact space the TE drag has just cleared underneath the safety. The primary, deep read.
+- player: TE
+  role: route
+  route_name: drag
+  depth_yd: 6
+  beats_coverage: both
+  notes: 'The shallow cross becomes the CLEAR-OUT. Push to 6 yds off the
+
+    strong-side line and drag flat across — IDENTICAL to the Drive base''s
+
+    crosser, but here its job is to pull the middle/hook defender and the
+
+    robber across the field, vacating the post''s landing window. Live as the
+
+    LO outlet only if the deep shot is doubled.
+
+    '
+- player: X
+  role: route
+  route_name: go
+  depth_yd: 25
+  notes: Backside vertical clear-out — takes the weak-side corner and the backside-half safety deep, removing post-side help
+    over the top.
+- player: SLOT-W
+  role: route
+  route_name: dig
+  depth_yd: 12
+  notes: Weak-side dig — occupies the backside hook defender and gives the QB an intermediate alternate if the deep shot is
+    bracketed.
+- player: QB
+  role: ball_carrier
+  path:
+  - - 0
+    - 0
+  - - 0
+    - -1
+  - - 0
+    - -3
+  - - 0
+    - -5
+  notes: 'Drop starts IDENTICAL to the Drive base for the first two waypoints,
+
+    then continues to a deeper five-step pocket set to let the post
+
+    develop. Eyes hold the free safety: the TE drag underneath pulls the
+
+    robber, the X go clears the backside half — if the safety widens or
+
+    sits, the Z post breaks behind him. TE drag (LO) only if the shot is
+
+    doubled; HB is the safety valve.
+
+    '
+- player: HB
+  role: route
+  route_name: flat
+  depth_yd: 3
+  path:
+  - - 0
+    - 0
+  - - 1
+    - 0
+  - - 4
+    - 3
+  notes: 'Check-release: scan and help on strong-side pressure first, then leak to the flat as the checkdown if the shot and
+    the drag are both covered.'
+strengths:
+- Identical empty-motion look and identical QB first-two-step drop to the Drive base — the defense reads the shallow-cross
+  concept, not a deep shot
+- The drag the defense expects as the primary is repurposed as a clear-out, pulling the robber out of the post window
+- The backside vertical removes post-side safety help over the top
+- One-high coverages that crowd the underneath to stop the base Drive are exactly the look this punishes
+- True explosive-play call from a concept the defense has been taught to read short
+weaknesses:
+- The deepest-developing play in the family — needs ~4 seconds and a clean pocket
+- Two-high coverage keeps a safety capping the post and removes the shot
+- Five-man protection with no back chipping is vulnerable to a five-man rush
+- A disciplined free safety who does not chase the drag keeps the post window closed
+- Lower completion percentage than the rhythm-throw members of the family
+best_vs_defense:
+- cover-1 / man (the post breaks away from trail leverage with the safety pulled by the drag)
+- cover-3 (the single high safety is stressed by the post and the backside vertical)
+- any defense crowding the underneath to take away the base Drive
+- single-high coverages with an aggressive, ball-watching free safety
+worst_vs_defense:
+- cover-2 / quarters with a safety capping the post
+- two-high shells that never commit a safety to the underneath
+- five- and six-man pressure that beats the five-man protection
+- a disciplined free safety who ignores the clear-out drag
+defensive_counters:
+- counter_id: two-high-cap-post
+  pre_snap_look: Two deep safeties at 12-14 yards splitting the field, neither showing any rotation down toward the box
+  qb_key: Check the safety shell — two deep and static, no rotation
+  read_category: safety-shell
+  why: A genuine two-high shell keeps a safety capping the post over the top, so the deep shot has no window no matter how
+    the underneath defenders chase the clear-out.
+  typical_against:
+  - cover-4
+  - cover-2
+  - two-high pressure looks
+- counter_id: five-man-interior-pressure
+  pre_snap_look: Five rushers walked up on the LOS — four down linemen plus a creeping linebacker — with the back held in
+    to protect and no high-low help
+  qb_key: Count the rush — five on the line against five blockers, back already in to protect
+  read_category: lb-depth
+  why: A five-man rush against five-man protection with no chipper gets a free runner home before the deep post can develop
+    its full-depth break.
+  typical_against:
+  - cover-1 zero-pressure
+  - fire-zone five-man pressure
+- counter_id: disciplined-free-safety
+  pre_snap_look: Single-high free safety parked deep and square at 14+ yards, eyes on the QB rather than jumping any underneath
+    route
+  qb_key: Check the free safety — deep, square, patient, not leaning to the underneath
+  read_category: safety-shell
+  why: A disciplined single-high safety who refuses to chase the clear-out drag stays squared over the post, keeping the deep
+    window closed and inviting an interception if the QB forces it.
+  typical_against:
+  - cover-3 with a deep-keying safety
+  - cover-1 with a patient post-safety
+common_uses:
+- 1st-and-10 shot play off an established Drive look
+- 2nd-and-medium when the defense has crowded the underneath
+- Taking a deep shot after the base Drive has moved the chains
+- Punishing a single-high safety who has been jumping the shallow cross
+- Backed-up or chunk-yardage situations needing an explosive play
+philosophy: west-coast
+pass_concept_ref: dagger
+pass_protection_ref: half-slide-protect
+philosophy_ref: west-coast
+era: 1980s onward — taking the deep shot off a shallow-cross look is a long-standing West Coast and pro-style constraint.
+famous_examples:
+- Bill Walsh West Coast tree (deep posts layered behind the shallow-cross game)
+- Modern NFL pro-style offenses (clear-out shots off recognizable underneath concepts)
+tags:
+- pass
+- west-coast
+- drive
+- shot-play
+- post
+- clear-out
+- deep-shot
+- shotgun
+- 2x2
+- 11-personnel
+- high-school
+- college
+- nfl
+notes: 'A shot play off the Drive look. The base Drive''s shallow crosser is the
+
+  primary throw; here the IDENTICAL TE drag becomes a clear-out that drags
+
+  the robber and the middle defender across the field, vacating the window
+
+  for the Z post — now the primary, deep read. The backside vertical removes
+
+  post-side safety help. The empty motion block and the QB''s first two drop
+
+  steps are IDENTICAL to the Drive base — the defense reads the shallow-cross
+
+  concept until the post breaks behind them. Member of the Shotgun 2x2 West
+
+  Coast Drive disguise family (see data/play-families/).
+
+
+  Mirror to drive-shot-left by flipping all coordinates.
+
+  '
+verification_status: unverified
+source_notes:
+- 'Web validated 2026-05-15 — Throw Deep Publishing ''Drive Concept'' and ''Dagger Concept'' (https://throwdeeppublishing.com/blogs/football-glossary/):
+  a shallow crosser used as a clear-out beneath a deep in-breaking route is the standard structure of the dagger / shot family.
+  Layering a deep shot off an established shallow-cross look is a documented West Coast constraint.'
+- Authored as a disguise twin of shotgun-2x2-drive — empty motions block and the QB's first two drop waypoints deliberately
+  mirror the base play; the TE drag is shared with the family's other plays and repurposed here as a clear-out.
+- Mirror of shotgun-2x2-drive-shot.yaml — path waypoints flipped on x; formation reference points to the mirror formation.
+  Routes auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed
+  look — coordinates and paths are the source of truth.

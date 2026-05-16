@@ -97,6 +97,26 @@ worst_vs_defense:
   - cover-2 robber
   - any defense with a hot underneath defender on the slot
 
+defensive_counters:
+  - counter_id: quarters-squat-on-shorts
+    pre_snap_look: "Two-high quarters shell with the playside CB squatting at 5-6 yds in inside leverage and the safety's eyes locked on the #2 receiver"
+    qb_key: "Check the safety shell — two-high, with the playside safety keying #2"
+    read_category: safety-shell
+    why: "Stick relies on a soft spot between underneath defenders; a squatting CB and a #2-reading safety wall off both the sit and the out break, leaving the slot no window."
+    typical_against: ["cover-4 quarters", "pattern-match coverages"]
+  - counter_id: trap-corner
+    pre_snap_look: "Playside CB aligned at 5-7 yds in a soft cover-3 shell but with his eyes inside on the slot rather than on the X"
+    qb_key: "Check the playside CB's eyes — inside on the slot, not on the #1 WR"
+    read_category: cb-leverage
+    why: "The pre-snap MIKE read says SLOT wins on the out vs cover-3; a CB whose eyes are already inside is a trap defender set to undercut the out break for a pick."
+    typical_against: ["cover-2 trap", "cover-3 buzz with corner trap"]
+  - counter_id: sticky-man-on-slot
+    pre_snap_look: "Nickel pressed up on the slot with inside shade and a single-high safety shell behind, no underneath zone help"
+    qb_key: "Check the nickel on the slot — pressed with inside shade, one high behind"
+    read_category: cb-leverage
+    why: "Stick is a 3-step option route; a nickel pressed to the slot's hip from the snap travels with him and takes away both branches of the option."
+    typical_against: ["cover-1", "cover-0", "cover-1 robber"]
+
 common_uses:
   - 3rd-and-short / 3rd-and-medium
   - 1st down chains

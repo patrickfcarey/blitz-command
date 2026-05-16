@@ -1,0 +1,218 @@
+play_id: shotgun-2x2-quick-snag-left
+name: Quick Snag (Strong) (Mirror Left)
+aliases:
+- 2x2 Quick Snag
+- Snag off Stick
+- Quick-Game Snag
+formation: shotgun-2x2-left
+play_type: pass
+ball_carrier: QB
+primary_read: Z
+secondary_read: HB
+checkdown: HB
+motions: []
+assignments:
+- player: LT
+  role: pass_block
+  blocking_scheme: man-protection
+- player: LG
+  role: pass_block
+  blocking_scheme: man-protection
+- player: C
+  role: pass_block
+  blocking_scheme: man-protection
+- player: RG
+  role: pass_block
+  blocking_scheme: man-protection
+- player: RT
+  role: pass_block
+  blocking_scheme: man-protection
+- player: TE
+  role: route
+  route_name: corner
+  depth_yd: 12
+  path:
+  - - 0
+    - 0
+  - - 0
+    - 3
+  - - 0
+    - 12
+  - - 4
+    - 17
+  notes: Same vertical release as the Stick clear-out for the first three steps, then stem to the corner — the HI of the snag
+    triangle.
+- player: X
+  role: route
+  route_name: clear-out-go
+  depth_yd: 18
+  path:
+  - - 0
+    - 0
+  - - 0
+    - 3
+  - - 0
+    - 18
+  notes: Identical vertical clear-out release to Stick — pushes vertical to clear the weak-side corner.
+- player: SLOT-W
+  role: route
+  route_name: drag
+  depth_yd: 5
+  path:
+  - - 0
+    - 0
+  - - 0
+    - 3
+  - - 0
+    - 5
+  - - -18
+    - 5
+  notes: Same vertical stem as the Stick option route for the first three steps, then break across on the drag, pulling the
+    underneath defender to help the snag triangle.
+- player: Z
+  role: route
+  route_name: snag
+  depth_yd: 5
+  is_primary: true
+  path:
+  - - 0
+    - 0
+  - - 0
+    - 3
+  - - 0
+    - 5
+  notes: Identical vertical release to the base Stick option route for the first three steps — same early picture — then settle
+    as the snag (the LO of the triangle) rather than working the stick out-cut.
+- player: QB
+  role: ball_carrier
+  path:
+  - - 0
+    - 0
+  - - 0
+    - -1
+  - - 0
+    - -2
+  notes: '3-step rhythm from shotgun depth — IDENTICAL drop to Stick. Triangle
+
+    read on the strong side: Z snag (LO) / TE corner (HI) / HB flat
+
+    (FLAT). Pre-snap leverage tells you which leg of the triangle is open.
+
+    '
+- player: HB
+  role: route
+  route_name: flat
+  depth_yd: 3
+  path:
+  - - 0
+    - 0
+  - - 1
+    - 0
+  - - -4
+    - 3
+  notes: Release to the strong-side flat — completes the snag triangle (LO/HI/FLAT) and is the easy outlet.
+strengths:
+- Identical pre-snap look, QB drop, and early receiver releases to Stick — the defense cannot tell it apart
+- Triangle concept attacks all three zones (deep corner, flat, intermediate snag)
+- Always one leg of the triangle open against any single coverage
+- Quick rhythm — 3-step drop, ball out fast off the same timing as Stick
+- HB flat is the gimme outlet — easy first down
+weaknesses:
+- Limited big-play potential (corner tops out around 12 yards)
+- Bracket coverage on the snag receiver shuts down the primary
+- Banjo / pattern-match coverage can match the triangle
+- QB must read leverage pre-snap and decide quickly post-snap
+- Backside drag is a slower-developing outlet
+best_vs_defense:
+- cover-3 (snag sits in the soft spot, corner over the flat)
+- cover-2 (corner over the flat defender, snag underneath)
+- cover-1 (snag opens vs trail man, flat is uncovered)
+- any defense with predictable underneath spacing
+worst_vs_defense:
+- bracket coverage on the snag receiver
+- banjo / pattern-match on the slot and TE
+- cover-2 robber
+- aggressive nickel blitz from the snag side
+defensive_counters:
+- counter_id: trap-corner
+  pre_snap_look: Strong-side corner squatted at 5-7 yards depth (tighter than a normal cover-3 corner), with the strong safety
+    widened toward the flat
+  qb_key: Check the strong-side CB depth — squatted short, eyes inside
+  read_category: cb-leverage
+  why: A short, squatted corner is set to trap the HB flat instead of carrying the deep half, taking the easy LO outlet and
+    leaving the safety to bracket the corner route over the top.
+  typical_against:
+  - cover-2 trap
+  - cover-2 invert
+  - any cover-2 with disguised corner roll
+- counter_id: bracket-snag
+  pre_snap_look: MIKE walked out and cheated toward the strong-side slot, with a safety rolled down over the strong hash
+  qb_key: Check the MIKE — walked out toward the strong slot with a safety capping him
+  read_category: lb-depth
+  why: A MIKE pre-set toward the snag receiver with a safety over the top brackets the play's anchor, forcing the QB onto
+    the slower backside drag or the bracketed flat.
+  typical_against:
+  - cover-1 robber
+  - match quarters
+  - pattern-match coverages
+- counter_id: snag-side-pressure
+  pre_snap_look: Strong-side LB / nickel walked up in a blitz alignment on the LOS, single-high safety shell behind
+  qb_key: Scan the strong-side LB / nickel — walked up on the line, one high safety
+  read_category: lb-depth
+  why: A walked-up snag-side defender is a free runner; with the HB releasing rather than protecting, he gets home before
+    the triangle develops, forcing a checkdown or sack.
+  typical_against:
+  - cover-1 zero-pressure
+  - fire-zone
+  - nickel pressure packages
+common_uses:
+- 3rd-and-medium (4-7 yards)
+- 1st-down rhythm play
+- Anti-blitz hot read
+- Red-zone short-corner option
+- Changing the picture after Stick has been on tape
+philosophy: pro-style
+pass_concept_ref: snag
+philosophy_ref: pro-style
+era: 1990s onward — modern pro-style quick-game staple; ubiquitous in spread and West Coast playbooks.
+famous_examples:
+- Peyton Manning Colts offense (Tom Moore tree)
+- Andy Reid Eagles / Chiefs quick-game packages
+tags:
+- pass
+- spread
+- quick-game
+- snag
+- triangle
+- shotgun
+- 2x2
+- pro-style
+- high-school
+- college
+- nfl
+notes: 'Snag-concept quick-game play disguised off Stick. The QB''s 3-step drop is
+
+  IDENTICAL to Stick, and the receivers take the same early vertical
+
+  releases (Z and SLOT-W stem vertical exactly like the base option routes,
+
+  TE and X push vertical exactly like the base clear-outs) before the
+
+  routes branch into the snag triangle. The defense reads the same picture
+
+  as Stick. Member of the Shotgun 2x2 Quick-Game disguise family (see
+
+  data/play-families/).
+
+
+  Mirror to quick-snag-left by flipping all coordinates.
+
+  '
+verification_status: unverified
+source_notes:
+- Snag is a textbook pro-style quick-game concept. Authored as a disguise twin of shotgun-2x2-stick — the QB drop's first
+  two waypoints are identical to the base play, all members carry the same empty motions block, and the receivers' early release
+  waypoints match the base play's vertical stems before the routes branch.
+- Mirror of shotgun-2x2-quick-snag.yaml — path waypoints flipped on x; formation reference points to the mirror formation.
+  Routes auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed
+  look — coordinates and paths are the source of truth.

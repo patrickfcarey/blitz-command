@@ -1,0 +1,229 @@
+play_id: shotgun-2x2-quick-zebra-left
+name: Quick Zebra (Strong) (Mirror Left)
+aliases:
+- 2x2 Zebra
+- Fake-Drag Quick Game
+- Zebra off Stick
+formation: shotgun-2x2-left
+play_type: pass
+ball_carrier: QB
+primary_read: SLOT-W
+secondary_read: Z
+checkdown: HB
+motions: []
+assignments:
+- player: LT
+  role: pass_block
+  blocking_scheme: man-protection
+- player: LG
+  role: pass_block
+  blocking_scheme: man-protection
+- player: C
+  role: pass_block
+  blocking_scheme: man-protection
+- player: RG
+  role: pass_block
+  blocking_scheme: man-protection
+- player: RT
+  role: pass_block
+  blocking_scheme: man-protection
+- player: TE
+  role: route
+  route_name: clear-out-go
+  depth_yd: 18
+  path:
+  - - 0
+    - 0
+  - - 0
+    - 3
+  - - 0
+    - 18
+  notes: Identical vertical clear-out release to Stick — pushes vertical to remove the strong-side help over the zebra's catch
+    window.
+- player: X
+  role: route
+  route_name: clear-out-go
+  depth_yd: 18
+  path:
+  - - 0
+    - 0
+  - - 0
+    - 3
+  - - 0
+    - 18
+  notes: Identical vertical clear-out release to Stick — pushes vertical to clear the weak-side corner.
+- player: SLOT-W
+  role: route
+  route_name: zebra
+  depth_yd: 3
+  is_primary: true
+  path:
+  - - 0
+    - 0
+  - - 3
+    - 3
+  - - -17
+    - 5
+  notes: 'The zebra (fake-drag) — three hard steps to the outside showing the
+
+    Stick out-cut, the same early picture the base option route gives
+
+    versus man, then pivot sharply back inside and cross underneath like a
+
+    drag. The covering defender widens or triggers on the fake; the
+
+    receiver works back behind him for the easy underneath completion.
+
+    '
+- player: Z
+  role: route
+  route_name: snag
+  depth_yd: 6
+  path:
+  - - 0
+    - 0
+  - - 0
+    - 3
+  - - 0
+    - 6
+  notes: Same vertical stem as the base Stick option route — settle in the soft spot of zone as the strong-side secondary
+    read while the zebra clears underneath.
+- player: QB
+  role: ball_carrier
+  path:
+  - - 0
+    - 0
+  - - 0
+    - -1
+  - - 0
+    - -2
+  notes: '3-step rhythm from shotgun depth — IDENTICAL drop to Stick. Eyes on
+
+    the zebra first: it shows the out, then pivots back in. If the
+
+    defender triggers on the fake-out, the receiver is wide open crossing
+
+    underneath. Z settle and HB flat are the progression behind it.
+
+    '
+- player: HB
+  role: route
+  route_name: flat
+  depth_yd: 3
+  path:
+  - - 0
+    - 0
+  - - 1
+    - 0
+  - - -4
+    - 3
+  notes: Release to the strong-side flat as the safety-valve outlet if the zebra and the Z settle are both covered.
+strengths:
+- Identical pre-snap look, QB drop, and early receiver releases to Stick — the defense cannot tell it apart
+- The zebra's out-fake influences the covering defender to widen, springing the underneath crosser
+- Quick rhythm — 3-step drop, ball out fast off the same timing as Stick
+- Especially punishing versus man coverage that trails the out-cut
+- HB flat is a reliable safety-valve outlet
+weaknesses:
+- Limited big-play potential — the zebra is an underneath completion
+- A disciplined zone defender who does not chase the out-fake takes the crosser away
+- The pivot adds timing risk versus a pure drag
+- Bracket coverage on the slot kills the primary
+- QB must trust the fake and throw the receiver open on the cross
+best_vs_defense:
+- cover-1 / man coverage that trails and over-chases the out-fake
+- cover-3 with an aggressive curl-flat defender who widens
+- any defense with underneath defenders who jump out-breaking routes
+- press man on the slot
+worst_vs_defense:
+- disciplined zone defenders who sit inside and do not chase the fake
+- bracket coverage on the slot
+- banjo / pattern-match coverage
+- cover-2 robber sitting in the crossing window
+defensive_counters:
+- counter_id: squat-no-chase
+  pre_snap_look: Nickel / OLB aligned tight to the slot at 5-6 yards depth, squared and inside-shaded rather than widened
+    to curl-flat width
+  qb_key: Check the flat defender's depth and shade — squatted inside, not widened
+  read_category: lb-depth
+  why: An underneath defender squatted inside will not chase the zebra's out-fake; he sits in the crossing window the route
+    wants to settle into, taking the primary away on the 3-step rhythm.
+  typical_against:
+  - cover-2
+  - quarters
+  - cover-3 zone-match
+- counter_id: bracket-the-slot
+  pre_snap_look: Nickel pressed on the slot with a safety rolled down and capping him over the top, no other deep-middle help
+    showing
+  qb_key: Check the slot — pressed underneath with a safety capping over the top
+  read_category: cb-leverage
+  why: A bracket on the slot puts a defender under the out-fake and over the cross at the same time, so the zebra's pivot
+    has no grass to work back into.
+  typical_against:
+  - cover-1 robber
+  - match quarters
+  - pattern-match coverages
+- counter_id: slot-side-pressure
+  pre_snap_look: Strong-side nickel walked up on the LOS over the slot (toes on the line, hand low), with a single-high safety
+    shell behind
+  qb_key: Scan the slot defender — walked up on the line with only one high safety
+  read_category: lb-depth
+  why: A nickel on the line over the slot is a free runner; with the HB releasing rather than protecting, the pocket collapses
+    before the zebra completes its pivot, forcing a dump underneath into coverage.
+  typical_against:
+  - cover-1 zero-pressure
+  - fire-zone
+  - nickel pressure packages
+common_uses:
+- 3rd-and-short / 3rd-and-medium
+- 1st-down chains
+- Anti-man change-up after Stick has been on tape
+- Quick-game tempo
+- Hot read against blitz
+philosophy: pro-style
+pass_concept_ref: stick
+philosophy_ref: pro-style
+era: Modern — the fake-drag wrinkle is a deception change-up layered onto established quick-game concepts.
+famous_examples:
+- Modern NFL quick-game packages using fake-route wrinkles off established concepts
+- Air Raid and West Coast programs disguising drags as out-breaking routes
+tags:
+- pass
+- spread
+- quick-game
+- zebra
+- fake-route
+- deception
+- shotgun
+- 2x2
+- pro-style
+- high-school
+- college
+- nfl
+notes: 'Quick-game play built on the zebra (fake-drag) as the primary route. The
+
+  QB''s 3-step drop is IDENTICAL to Stick; TE and X push vertical exactly
+
+  like the base clear-outs, and the zebra''s first three steps show the same
+
+  out-breaking release the base Stick option route gives versus man — the
+
+  defense reads the same picture. The zebra then pivots back inside and
+
+  crosses underneath for the completion. Member of the Shotgun 2x2
+
+  Quick-Game disguise family (see data/play-families/).
+
+
+  Mirror to quick-zebra-left by flipping all coordinates.
+
+  '
+verification_status: unverified
+source_notes:
+- Built on the zebra route (data/routes/zebra.yaml), a documented fake-drag disguise wrinkle. Authored as a disguise twin
+  of shotgun-2x2-stick — the QB drop's first two waypoints are identical to the base play, all members carry the same empty
+  motions block, and the receivers' early release waypoints match the base play's releases (vertical clear-outs; the zebra's
+  out-fake mirrors the base option route's man-beating out-cut) before the routes branch.
+- Mirror of shotgun-2x2-quick-zebra.yaml — path waypoints flipped on x; formation reference points to the mirror formation.
+  Routes auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed
+  look — coordinates and paths are the source of truth.

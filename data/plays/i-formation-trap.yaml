@@ -1,0 +1,192 @@
+play_id: i-formation-trap
+name: Trap (Strong)
+aliases:
+  - G-Trap
+  - Quick Trap
+  - 32 Trap
+
+formation: i-formation
+play_type: run
+ball_carrier: HB
+run_reads:
+  - priority: 1
+    read_key: pulling guard (LG) trap block
+    run_to: hit the playside B-gap downhill the instant the LG kicks the 3-tech out
+    notes: "The trap hits NOW. Don't dance — plant and go off the LG's kickout."
+  - priority: 2
+    read_key: FB lead block
+    run_to: follow the FB through the hole to the second level
+    notes: "FB cleans up the playside LB. Stay tight to his outside hip."
+  - priority: 3
+    read_key: trapped 3-technique
+    run_to: if the 3-tech squeezes the trap instead of running upfield, press tighter inside off the down blocks
+    notes: "A 3-tech who reads it and squeezes shrinks the hole — get skinny and bang it inside him."
+
+motions: []
+
+assignments:
+  - player: LT
+    role: run_block
+    blocking_scheme: backside-cutoff
+    target: backside-edge
+    notes: "Hinge and cut off backside pursuit through the cutback."
+  - player: LG
+    role: run_block
+    blocking_scheme: trap-block
+    target: playside-3-tech
+    path: [[0, 0], [1, -0.5], [3, 0]]
+    notes: "THE trap block. Pull flat, kick the playside 3-tech out from the inside — let him come upfield, the harder he comes the better."
+  - player: C
+    role: run_block
+    blocking_scheme: gap-block
+    target: backside-1-tech
+    notes: "Back block — seal the backside 1-tech away from the trap hole."
+  - player: RG
+    role: run_block
+    blocking_scheme: skip-release
+    target: playside-LB
+    notes: "Skip the 3-tech — leave him for the LG trap. Release flat and climb to the playside LB."
+  - player: RT
+    role: run_block
+    blocking_scheme: down-block
+    target: playside-B-gap
+    notes: "Down block inside — secure the B-gap interior in case the 3-tech squeezes."
+  - player: TE
+    role: run_block
+    blocking_scheme: down-block
+    target: playside-edge
+    notes: "Down block the playside EMOL — seal the C-gap edge so the hole stays clean."
+  - player: X
+    role: run_block
+    blocking_scheme: stalk
+    target: cornerback
+  - player: Z
+    role: run_block
+    blocking_scheme: stalk
+    target: cornerback
+  - player: QB
+    role: handoff
+    path: [[0, 0], [-1, -1], [-2, -1]]
+    notes: "Reverse-out to the HB; sell a fake bootleg to the backside."
+  - player: FB
+    role: lead_block
+    target: playside-LB-or-alley
+    path: [[0, 0], [1.5, 2], [2, 5]]
+    notes: "Lead through the B-gap; take the first wrong-colored jersey — scraping LB or filling safety."
+  - player: HB
+    role: ball_carrier
+    is_primary: true
+    path: [[0, 0], [1, 3], [2, 8]]
+    alt_paths:
+      - priority: secondary
+        path: [[0, 0], [1, 3], [1, 8]]
+        notes: "Read 3: 3-tech squeezes — get skinny and bang it tight off the down blocks."
+    notes: "Take the handoff, hit the B-gap downhill behind the LG trap. Quick-hitting — no hesitation."
+
+strengths:
+  - Quick-hitting — the ball is in the hole before the defense can react
+  - Uses an aggressive, penetrating DT against himself — the harder he rushes, the cleaner the trap
+  - Beats fast-flow linebackers — the trap hits behind their pursuit
+  - Simple, teachable line scheme — a high-school staple
+  - Influences the defense to think pass, then traps the upfield DT
+
+weaknesses:
+  - Needs a penetrating 3-technique to trap — a squeezing 2-gap DT is hard to kick out
+  - The pulling guard has a tight, timing-sensitive track
+  - If the trapped DT reads it and squeezes, the hole closes fast
+  - Interior-only — no perimeter or edge threat
+  - A linebacker blitzing the trap gap fills the hole before the puller arrives
+
+best_vs_defense:
+  - over-front (a clean 3-tech to trap)
+  - penetrating, upfield-attacking defensive lines
+  - fast-flow linebackers
+  - 4-3 base
+
+worst_vs_defense:
+  - bear / 46 front (a DT in every gap — no clean trap target)
+  - 2-gap / read fronts (a squeezing DT won't run himself into the trap)
+  - even fronts with no 3-technique
+  - A-gap / B-gap run blitzes into the trap hole
+
+defensive_counters:
+  - counter_id: dt-squeeze
+    pre_snap_look: "Playside DT head-up over the guard in a heavy, low two-gap stance — hands ready, weight set back, not tilted upfield"
+    qb_key: "Scan the playside DT stance — head-up and weight-back, not in a sprinter's upfield stagger"
+    read_category: dl-alignment
+    why: "The trap needs a DT who attacks upfield; a head-up, weight-back DT reads the pull and squeezes the trap, closing the hole on the puller."
+    typical_against: ["two-gap fronts", "3-4 base"]
+  - counter_id: no-trap-target
+    pre_snap_look: "Even / under front with the down linemen head-up over both guards and the center — no 3-technique in a B-gap"
+    qb_key: "Scan the interior DL — everyone head-up over a blocker, no one shaded into a gap"
+    read_category: dl-alignment
+    why: "Trap blocking needs one penetrating gap defender to kick out; with the front all head-up there is no defined man for the puller to trap."
+    typical_against: ["even front", "bear front", "under front"]
+  - counter_id: lb-stacked-trap-gap
+    pre_snap_look: "Playside LB walked up tight and stacked directly in the B-gap window at roughly 3 yards"
+    qb_key: "Check the playside LB — walked up and sitting in the B-gap"
+    read_category: lb-depth
+    why: "A linebacker already in the trap hole fills downhill before the LG trap and FB lead can clear the gap, meeting the HB at the line of scrimmage."
+    typical_against: ["run-blitz looks", "over-front with a walked-up LB"]
+
+common_uses:
+  - 1st-and-10 base run
+  - 2nd-and-medium
+  - Changing up the pace after Power and Counter
+  - Punishing an aggressive, penetrating defensive front
+
+philosophy: power-run
+run_concept_ref: trap
+philosophy_ref: power-run
+
+era: "Universal — the trap is one of the oldest run concepts in football, a staple from single-wing days through modern offenses."
+
+famous_examples:
+  - "Vince Lombardi's Packers (trap as a complement to the Power sweep)"
+  - "Classic Wing-T and I-Formation high-school offenses"
+
+tags:
+  - run
+  - trap
+  - gap-scheme
+  - influence
+  - downhill
+  - high-school
+  - college
+  - any-level
+
+notes: |
+  Classic I-Formation Trap. The playside 3-technique is intentionally left
+  unblocked so he penetrates; the backside guard pulls flat and kicks him
+  out from the inside, and the HB hits the B-gap downhill behind the trap.
+  Quick-hitting interior complement to Power and Counter — it punishes the
+  same penetrating DTs that those gap plays struggle against.
+
+  Mirror to trap-left by flipping all coordinates.
+
+verification_status: unverified
+source_notes:
+  - "Trap is a foundational gap-scheme run concept documented across every era of football coaching literature; the influence/trap block on a penetrating DT is standard."
+flip_reads:
+- flip_id: front-overshift-callside
+  pre_snap_look: Defensive front slid toward the called side — an extra down lineman or a walked-up
+    linebacker puts +1 in the called-side box.
+  qb_key: Count the box side to side — the called side has one more hat than the backside.
+  read_category: box-count
+  flip_to: mirror-play
+  why: Running a gap scheme into the overshift is into the teeth; flipping the play attacks the
+    lighter box with the same blocking math.
+  typical_against:
+  - over-front
+  - shifted 4-3
+- flip_id: strength-declared-to-formation
+  pre_snap_look: Defense has fully declared to the formation's strength — an extra box defender
+    to the strong side and a safety rolled down over it.
+  qb_key: Check the strength side — both the box count and the safety roll are committed to it.
+  read_category: safety-shell
+  flip_to: mirror-formation
+  why: When the defense keys the formation's strength, flipping the whole formation forces a re-declare
+    and the run hits the side they vacated.
+  typical_against:
+  - cover-3 with strong roll
+  - 8-man fronts

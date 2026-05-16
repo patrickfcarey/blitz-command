@@ -93,6 +93,26 @@ worst_vs_defense:
   - "8-man fronts"
   - "bear front"
 
+defensive_counters:
+  - counter_id: scrape-exchange
+    pre_snap_look: "Playside EDGE squeezed down in a tight inside shade, with the MIKE/SAM walked up and cheated outside his normal alignment"
+    qb_key: "Scan the playside EDGE — squeezed inside with a LB cheated outside him"
+    read_category: dl-alignment
+    why: "An EDGE already squeezed inside is set to take the off-tackle hole, so the cheated-out LB scrapes over to meet the QB unblocked where the LT kickout expected a static defender."
+    typical_against: ["over-front", "4-3 base", "any defense with QB-run rules"]
+  - counter_id: spill-puller
+    pre_snap_look: "Playside EDGE in a tight, heavy inside-hand stance with his outside shoulder cocked down, alley safety creeping toward the LOS"
+    qb_key: "Scan the playside EDGE — heavy inside hand, outside shoulder ducked"
+    read_category: dl-alignment
+    why: "An EDGE aligned to wrong-arm spills the LT kickout, bending the QB outside into the creeping alley help instead of letting him run downhill behind the lead guard."
+    typical_against: ["over-front", "spill-everything defenses", "modern 4-3 / 3-4 hybrids"]
+  - counter_id: extra-box-defender
+    pre_snap_look: "7+ defenders in the box against the 3-WR look — strong safety walked down to 6-8 yds inside the playside hash, single-high shell behind"
+    qb_key: "Count the box — seven-plus vs a 3-WR set, one high safety"
+    read_category: box-count
+    why: "QB is the runner, so the offense doesn't gain a number — the extra box body leaves someone in the gap-scheme fit unblocked when the pullers arrive."
+    typical_against: ["cover-1 robber", "quarters with SS rolled down", "8-man fronts"]
+
 common_uses:
   - "1st-and-10 base run with mobile QB"
   - "Goal-line / red-zone scoring concept"
@@ -140,3 +160,26 @@ verification_status: unverified
 source_notes:
   - "Standard counter-trey scheme adapted to QB-run; widely documented across modern NFL/college mobile-QB offense literature."
   - "Built 2026-04-30 to round out the option family with designed-QB-runs."
+flip_reads:
+- flip_id: front-overshift-callside
+  pre_snap_look: Defensive front slid toward the called side — an extra down lineman or a walked-up
+    linebacker puts +1 in the called-side box.
+  qb_key: Count the box side to side — the called side has one more hat than the backside.
+  read_category: box-count
+  flip_to: mirror-play
+  why: Running a gap scheme into the overshift is into the teeth; flipping the play attacks the
+    lighter box with the same blocking math.
+  typical_against:
+  - over-front
+  - shifted 4-3
+- flip_id: strength-declared-to-formation
+  pre_snap_look: Defense has fully declared to the formation's strength — an extra box defender
+    to the strong side and a safety rolled down over it.
+  qb_key: Check the strength side — both the box count and the safety roll are committed to it.
+  read_category: safety-shell
+  flip_to: mirror-formation
+  why: When the defense keys the formation's strength, flipping the whole formation forces a re-declare
+    and the run hits the side they vacated.
+  typical_against:
+  - cover-3 with strong roll
+  - 8-man fronts

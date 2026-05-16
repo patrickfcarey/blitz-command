@@ -1,108 +1,154 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://blitz-command.local/schemas/game.schema.json",
-  "title": "Game knowledge entry",
-  "description": "Metadata and capability summary for a single football game on a single platform. Lives at data/games/<game-id>/game.yaml; companion file editor-grid.yaml (validated by coordinate-map.schema.json) sits beside it.",
+  "title": "Game Profile",
+  "description": "Complete editor profile for a single football game on a single platform. Captures release info, editor capabilities, grid specifications, limits, quirks, and verification status.",
   "type": "object",
-  "required": ["game_id", "title", "franchise", "platform", "year", "verification_status"],
+  "required": ["game_id", "name", "release_year", "platform", "era", "custom_play_support", "custom_formation_support", "verification_status", "source_notes"],
   "additionalProperties": false,
   "properties": {
     "game_id": {
       "type": "string",
       "pattern": "^[a-z0-9-]+$",
-      "description": "Stable identifier, lowercase kebab-case (e.g. 'ncaa-06-ps2'). Must match the parent directory name."
+      "description": "Stable identifier (kebab-case). Format: <franchise>-<year>-<platform> (e.g. 'madden-08-ps2', 'ncaa-06-ps2')."
     },
-    "title": { "type": "string" },
-    "franchise": { "enum": ["madden", "ncaa"] },
+    "name": {
+      "type": "string",
+      "description": "Full game title (e.g. 'Madden NFL 08', 'NCAA Football 06')."
+    },
+    "release_year": {
+      "type": "integer",
+      "minimum": 1990,
+      "maximum": 2030,
+      "description": "Year the game was released."
+    },
+    "developer": {
+      "type": "string",
+      "description": "Development studio (e.g. 'EA Tiburon', 'Visual Concepts')."
+    },
+    "publisher": {
+      "type": "string",
+      "description": "Publisher (e.g. 'EA Sports')."
+    },
     "platform": {
-      "enum": ["PS1", "PS2", "PS3"],
-      "description": "Same title on different platforms = different files (different editors, different limits)."
+      "enum": ["ps1", "ps2", "ps3", "pc", "xbox", "gamecube"],
+      "description": "Platform this profile describes."
     },
-    "year": { "type": "integer", "minimum": 1990, "maximum": 2030 },
-    "release_date": { "type": "string", "format": "date" },
-    "developer": { "type": "string" },
-    "publisher": { "type": "string" },
-    "engine": { "type": "string" },
-    "editors": {
-      "type": "object",
+    "era": {
+      "enum": ["ps1", "ps2", "ps3"],
+      "description": "Hardware era grouping (for filtering across generations)."
+    },
+    "custom_play_support": {
+      "type": "boolean",
+      "description": "True if the game has a create-a-play editor; false if not."
+    },
+    "custom_formation_support": {
+      "type": "boolean",
+      "description": "True if the game has a create-a-formation editor; false if not."
+    },
+    "grid": {
+      "type": ["object", "null"],
       "additionalProperties": false,
-      "description": "Which in-game editors this title provides. Each editor's verification is tracked separately because they're often documented unevenly.",
+      "description": "Editor grid dimensions (null if no editor). Contains width, height, and origin.",
       "properties": {
-        "custom_play": { "$ref": "#/$defs/editor_support" },
-        "custom_formation": { "$ref": "#/$defs/editor_support" },
-        "custom_playbook": { "$ref": "#/$defs/editor_support" },
-        "custom_roster": { "$ref": "#/$defs/editor_support" },
-        "custom_team": { "$ref": "#/$defs/editor_support" }
-      }
-    },
-    "limits": {
-      "type": "object",
-      "additionalProperties": true,
-      "description": "Numeric or categorical limits known to apply. Schema is permissive (additionalProperties: true) — well-known keys are documented below; per-game extras are allowed.",
-      "properties": {
-        "max_plays_per_playbook": {
+        "width": {
           "type": "integer",
           "minimum": 1,
-          "description": "Max plays the user can fit in a single playbook used in a game."
+          "description": "Grid width in cells."
         },
-        "max_formations_per_playbook": {
+        "height": {
           "type": "integer",
           "minimum": 1,
-          "description": "Max formations a single playbook can include."
+          "description": "Grid height in cells."
         },
-        "max_custom_plays_total": {
-          "type": "integer",
-          "minimum": 0,
-          "description": "Save-slot cap for custom plays across the whole game profile."
-        },
-        "max_custom_formations_total": {
-          "type": "integer",
-          "minimum": 0,
-          "description": "Save-slot cap for custom formations across the whole game profile."
-        },
-        "max_custom_playbooks_total": {
-          "type": "integer",
-          "minimum": 0,
-          "description": "Save-slot cap for custom playbooks themselves."
-        },
-        "max_routes_per_play": {
-          "type": "integer",
-          "minimum": 1,
-          "description": "Max number of eligible receivers that can run routes (rest are forced to block)."
-        },
-        "max_route_segments": {
-          "type": "integer",
-          "minimum": 1,
-          "description": "Max break points / segments allowed when drawing a single route."
+        "origin": {
+          "type": "object",
+          "required": ["x", "y"],
+          "additionalProperties": false,
+          "description": "Origin cell (where the LOS/ball is). Coordinates are 0-indexed.",
+          "properties": {
+            "x": { "type": "integer" },
+            "y": { "type": "integer" }
+          }
         }
       }
     },
-    "ai_quirks": {
-      "type": "array",
-      "items": { "type": "string" }
+    "scale": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "description": "Conversion from grid cells to real yards (null if no editor).",
+      "properties": {
+        "x_yards_per_cell": {
+          "type": "number",
+          "description": "Horizontal cell-to-yard conversion factor."
+        },
+        "y_yards_per_cell": {
+          "type": "number",
+          "description": "Vertical cell-to-yard conversion factor."
+        }
+      }
     },
-    "known_limitations": {
-      "type": "array",
-      "items": { "type": "string" }
+    "snap_to_cells": {
+      "type": ["boolean", "null"],
+      "description": "True if editor snaps player positions to grid cells; false if free positioning allowed (null if no editor)."
     },
-    "verification_status": { "enum": ["verified", "unverified", "inferred"] },
+    "limits": {
+      "type": ["object", "null"],
+      "additionalProperties": true,
+      "description": "Editor capability limits (null if no editor). Well-known keys documented; custom keys allowed.",
+      "properties": {
+        "max_route_depth_yd": {
+          "type": ["number", "null"],
+          "description": "Maximum receiver route depth in yards."
+        },
+        "max_player_split_yd": {
+          "type": ["number", "null"],
+          "description": "Maximum horizontal split width in yards."
+        },
+        "max_backfield_depth_yd": {
+          "type": ["number", "null"],
+          "description": "Maximum backfield depth in yards."
+        },
+        "allowed_motion": {
+          "type": ["array", "null"],
+          "items": { "type": "string" },
+          "description": "Types of pre-snap motion allowed (e.g. 'short', 'long', 'across')."
+        }
+      }
+    },
+    "playbook_caps": {
+      "type": ["object", "null"],
+      "additionalProperties": true,
+      "description": "Playbook and play count limits (null if no editor).",
+      "properties": {
+        "max_plays_total": {
+          "type": ["integer", "null"],
+          "description": "Total plays per playbook."
+        },
+        "max_plays_per_personnel": {
+          "type": ["integer", "null"],
+          "description": "Plays per personnel grouping."
+        }
+      }
+    },
+    "engine_quirks": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Known engine behaviors, bugs, or limitations affecting play design."
+    },
+    "default_playbooks": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Names of built-in playbooks (e.g. 'Bill Belichick (Patriots)', 'Mike Holmgren (Eagles)'). May be partial list."
+    },
+    "verification_status": {
+      "enum": ["verified", "unverified", "inferred"],
+      "description": "Verified = measured in-game or from official docs; inferred = from related games; unverified = incomplete."
+    },
     "source_notes": {
       "type": "array",
-      "items": { "type": "string" }
-    }
-  },
-  "$defs": {
-    "editor_support": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": ["status"],
-      "properties": {
-        "status": {
-          "enum": ["present", "absent", "limited", "unknown"]
-        },
-        "notes": { "type": "string" },
-        "verification": { "enum": ["verified", "unverified", "inferred"] }
-      }
+      "items": { "type": "string" },
+      "description": "Web-validated citations for each claim in this profile."
     }
   }
 }

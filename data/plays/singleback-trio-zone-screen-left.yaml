@@ -1,0 +1,203 @@
+play_id: singleback-trio-zone-screen-left
+name: Zone Screen (Strong) (Mirror Left)
+aliases:
+- Zone HB Screen
+- IZ Screen
+- Slip Screen off Zone
+formation: singleback-trio-left
+play_type: screen
+ball_carrier: HB
+primary_read: HB
+checkdown: SLOT
+motions: []
+assignments:
+- player: LT
+  role: pass_block
+  blocking_scheme: invite-rusher
+  notes: Show the backside zone step for a beat, set the protection, then deliberately let the backside rusher upfield past
+    the screen — sell the pass-set.
+- player: LG
+  role: pass_block
+  blocking_scheme: screen-release
+  target: screen-alley
+  notes: Show the zone-combo, sell the protection for a beat, then release flat to the playside as the second blocker out
+    front of the screen.
+- player: C
+  role: pass_block
+  blocking_scheme: screen-release
+  target: screen-alley
+  notes: Show the zone-combo, sell the protection for a beat, then release flat to the playside as the point blocker out front
+    of the screen.
+- player: RG
+  role: pass_block
+  blocking_scheme: pull-around
+  target: screen-alley
+  path:
+  - - 0
+    - 0
+  - - -2
+    - 0
+  - - -4
+    - 0
+  - - -5
+    - 2
+  notes: PULL — set the protection for a beat to sell the zone, then peel out and lead the screen, walling the first defender
+    in the playside alley.
+- player: RT
+  role: pass_block
+  blocking_scheme: invite-rusher
+  notes: Show the zone step, set the protection, then invite the playside edge rusher upfield away from the screen.
+- player: TE
+  role: pass_block
+  blocking_scheme: chip-and-release
+  notes: Chip the playside edge to sell the zone step, then stay in late as extra protection while the screen sets up.
+- player: X
+  role: route
+  route_name: clear-out-fly
+  depth_yd: 22
+  notes: Backside X — stalk-release to sell the run, then run a fly route to clear the backside corner away from the screen
+    lane.
+- player: Z
+  role: route
+  route_name: clear-out-fly
+  depth_yd: 22
+  notes: Playside Z — stalk-release to sell the run, then run a fly route to clear the playside corner and safety up and away
+    from the screen.
+- player: SLOT
+  role: route
+  route_name: clear-out-slant
+  depth_yd: 6
+  notes: Stalk-release to sell the run for a beat, then run a clearing slant to drag the nickel away from the screen lane.
+- player: QB
+  role: ball_carrier
+  path:
+  - - 0
+    - 0
+  - - 1
+    - -1
+  - - 2
+    - -2
+  - - 2
+    - -4
+  notes: Reverse-pivot IDENTICAL to Inside Zone for the first two waypoints, ride the mesh, then drop and let the rush come
+    before flipping the screen out to the HB. Eyes downfield to hold the rush.
+- player: HB
+  role: ball_carrier
+  is_primary: true
+  path:
+  - - 0
+    - 0
+  - - -2
+    - 3
+  - - -3
+    - 1
+  - - -6
+    - 4
+  notes: First two waypoints IDENTICAL to Inside Zone — run the bang track to sell the give, then plant, slip back toward
+    the LOS, settle, catch the screen, and follow the C/RG/LG convoy upfield.
+strengths:
+- Identical pre-snap look and first-step action to Inside Zone — the defense cannot tell it from the base run
+- Constraint play that punishes an aggressive pass rush keying the zone run
+- Three releasing linemen (C + LG + RG pull) give the HB a convoy at the catch
+- Three-receiver clear-outs vacate the whole second level, opening grass for the screen
+- Catches linebackers flowing to the zone fake, opening the underneath
+weaknesses:
+- Needs Inside Zone on tape first — a cold fake holds no one
+- Screen timing is fragile — a late HB release kills it
+- Vulnerable to zone defenders staying flat and reading the screen
+- No FB or extra back to help protect while the screen sets up
+- The QB must hold the rush long enough without taking a sack
+best_vs_defense:
+- aggressive four-man rush with no spy
+- cover-3 zone with linebackers flowing to the run fake
+- blitz-heavy nickel fronts vacating the underneath
+- over-front with stretched, hard-rushing DEs
+worst_vs_defense:
+- linebacker or nickel blitzes from the screen side
+- a spy assigned to the HB
+- cover-2 with corners squatting on the flat
+- any defense reading the screen tells (OL release timing)
+defensive_counters:
+- counter_id: dl-screen-read
+  pre_snap_look: Playside DT/DE in a loose, upright, off-the-ball stance with hands ready rather than a low get-off sprinter's
+    stance
+  qb_key: Scan the playside DL stance — lineman upright and loose, no get-off lean
+  read_category: dl-alignment
+  why: A DL aligned upright and patient is set to read the 'happy' OL invite, peel into the screen lane, and bat the throw
+    or meet the HB at the catch.
+  typical_against:
+  - screen-aware defenses
+  - any DL coached to read 'happy' OL
+- counter_id: lb-flow-to-screen
+  pre_snap_look: Linebackers aligned shallow and shaded toward the HB's release side, tilted that way rather than squared
+    at hook depth
+  qb_key: Check the LB depth — backers shallow and shaded to the HB release side
+  read_category: lb-depth
+  why: LBs pre-shaded to the screen side flow flat on the HB's slip-out and outnumber the OL convoy before it can seal the
+    second level.
+  typical_against:
+  - screen-alert cover-3
+  - any defense that pattern-matches RB releases
+- counter_id: blitz-away-from-screen
+  pre_snap_look: Backside LB or nickel walked up tight to the LOS on the side away from the HB, with defenders overloaded
+    to that opposite side
+  qb_key: Count the box away from the HB — extra defender walked up on the backside
+  read_category: box-count
+  why: A walked-up overload on the side away from the screen signals a fast backside pressure that forces the throw before
+    the HB and OL convoy get into position.
+  typical_against:
+  - fire-zone weak-side pressure
+  - any pressure scheme on obvious pass downs
+common_uses:
+- After establishing Inside Zone for 4+ yards
+- 2nd-and-long / 3rd-and-long against an aggressive rush
+- Slowing a hot-blitzing defense
+- Constraint changeup off the zone look from a spread set
+philosophy: zone-run
+pass_concept_ref: hb-screen
+pass_protection_ref: screen-protection
+philosophy_ref: zone-run
+era: Universal — the running-back screen as a constraint on an aggressive rush is a timeless concept; pairing it with zone-run
+  action from a spread set is standard modern football.
+famous_examples:
+- Mike Shanahan / Gary Kubiak screen game off the zone run
+- Modern NFL 11-personnel screens off an established zone look
+tags:
+- screen
+- hb-screen
+- slip-screen
+- constraint
+- zone-run
+- 11-personnel
+- singleback
+- high-school
+- college
+- nfl
+notes: 'Slip screen off Inside Zone from the 11-personnel singleback trio set.
+
+  The QB reverse-pivot and the HB bang track are IDENTICAL to singleback-
+
+  trio-inside-zone for the first two path waypoints — the defense reads
+
+  the zone run and rushes. The interior OL invites the rush; the HB sells
+
+  the bang track, then slips back toward the LOS and catches the screen
+
+  behind the C, LG, and RG convoy, with all three receivers clearing the
+
+  second level. Member of the Singleback Trio Zone disguise family (see
+
+  data/play-families/).
+
+
+  Mirror to zone-screen-left by flipping all coordinates.
+
+  '
+verification_status: unverified
+source_notes:
+- The running-back screen off run-game action is a universal modern constraint concept. Authored as a disguise twin of singleback-trio-inside-zone
+  — the QB reverse-pivot and HB bang track deliberately mirror the base play's first two path waypoints exactly; the OL switch
+  from zone blocking to invite-rusher / screen-release / pull is the structural change that builds the screen.
+- Mirror of singleback-trio-zone-screen.yaml — path waypoints flipped on x; formation reference points to the mirror formation.
+  Routes auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed
+  look — coordinates and paths are the source of truth.

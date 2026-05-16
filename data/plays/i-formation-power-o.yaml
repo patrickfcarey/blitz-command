@@ -84,6 +84,13 @@ assignments:
     role: ball_carrier
     is_primary: true
     path: [[0, 0], [3, 3], [4, 9]]
+    alt_paths:
+      - priority: secondary
+        path: [[0, 0], [2, 2], [2, 9]]
+        notes: "Read 2: LB scrapes over FB — cut inside underneath, bang the B-gap."
+      - priority: tertiary
+        path: [[0, 0], [-1, 2], [-3, 8]]
+        notes: "Read 3: frontside collapsed — cut all the way back against grain."
     notes: "Take the handoff, hit the off-tackle hole, follow the pulling LG."
 
 strengths:
@@ -111,6 +118,42 @@ worst_vs_defense:
   - 8-man fronts / cover-1 robber (extra defender in the box)
   - penetrating 1-techs that beat the down-block
   - bear / 4-6 fronts
+
+defensive_counters:
+  - counter_id: pinch-dl
+    pre_snap_look: "Both DTs in tight inside shades — 2i / inside-eye 3-techniques, cocked toward the guards"
+    qb_key: "Scan the interior DL shade — tackles cheated to the inside eye of the guards"
+    read_category: dl-alignment
+    why: "Inside-shaded tackles kill the down-block angles; the off-tackle hole is squeezed shut before the pulling LG can clear the center."
+    typical_against: ["over-front", "4-3 base"]
+  - counter_id: scrape-lb-playside
+    pre_snap_look: "Playside LB cheated down and tight, stacked over the playside B-gap inside his normal width"
+    qb_key: "Check the playside LB — walked up and cheated toward the call"
+    read_category: lb-depth
+    why: "A LB already cheated playside beats the FB to the iso point and fills the off-tackle hole before the block can land."
+    typical_against: ["over-front", "stack 4-3"]
+  - counter_id: 8-man-front
+    pre_snap_look: "8 defenders inside the tackle box — strong safety walked down to 4-5 yards, single-high shell behind it"
+    qb_key: "Count the box — eight, with one high safety"
+    read_category: box-count
+    why: "There aren't enough blockers for the extra box defender; someone in the run fit comes free unblocked."
+    typical_against: ["cover-1 robber", "quarters with SS rolled down"]
+
+flip_reads:
+  - flip_id: front-overshift-callside
+    pre_snap_look: "Defensive front slid toward the called (strong) side — an extra down lineman or a walked-up LB puts +1 in the strong-side box"
+    qb_key: "Count the box side to side — the called side has one more defender than the weak side"
+    read_category: box-count
+    flip_to: mirror-play
+    why: "Power into the overshift runs into the teeth; flipping the play to the weak side attacks the lighter box with the same blocking math."
+    typical_against: ["over-front", "shifted 4-3"]
+  - flip_id: strength-declared-to-formation
+    pre_snap_look: "Defense has fully declared to the formation's strength — extra box defender to the TE side AND a safety rolled down over the TE"
+    qb_key: "Check the TE side — both the box count and the safety roll are committed to it"
+    read_category: safety-shell
+    flip_to: mirror-formation
+    why: "When the defense keys the formation's strength, flipping the whole formation forces a re-declare; a defense slow to re-set is caught mis-aligned and Power hits the side they vacated."
+    typical_against: ["cover-3 with strong roll", "8-man fronts that set to the TE"]
 
 common_uses:
   - 1st-and-10 base run

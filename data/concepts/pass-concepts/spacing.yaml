@@ -1,0 +1,37 @@
+concept_id: spacing
+name: Spacing
+category: horizontal-stretch
+description: |
+  Three or more receivers settle at staggered widths across the field at the
+  same shallow depth (~5-6 yards), flooding the underneath zones with more
+  bodies than the defense has short defenders. The QB takes a quick drop and
+  throws to whoever the coverage leaves open in the "space." A bedrock
+  quick-game answer versus zone and pressure.
+progression:
+  - primary: the inside settle route in the first soft spot
+    secondary: the next settle route working outside
+  - tertiary: checkdown or scramble-drill
+best_vs_coverage:
+  - cover-3
+  - zone-blitz
+  - cover-2
+attacks:
+  - "Floods the underneath zones with more receivers than defenders"
+  - "Quick rhythm throw gets the ball out before pressure arrives"
+  - "Forces zone defenders to choose, then throws off the choice"
+pairs_with:
+  - man-protection
+  - west-coast
+  - spread
+tags:
+  - pass-concept
+  - spacing
+  - horizontal-stretch
+  - quick-game
+  - any-level
+  - high-school
+  - college
+  - nfl
+verification_status: unverified
+source_notes:
+  - "Spacing is a standard quick-game zone-beater — receivers settle in the windows between underneath defenders at a common shallow depth. Documented across West Coast and spread coaching material as a core 'find the space' rhythm concept."

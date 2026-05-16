@@ -88,6 +88,26 @@ worst_vs_defense:
   - bracket coverage on slot
   - quarters with poach
 
+defensive_counters:
+  - counter_id: cover-2-invert-safety
+    pre_snap_look: "Two-deep shell with the playside safety cheated down toward the hash and the playside CB at depth with inside eyes on the slot"
+    qb_key: "Check the safety shell — playside safety cheated down off the two-high look"
+    read_category: safety-shell
+    why: "Smash is built to attack a flat-zone CB; a cheated-down safety is set to invert and jump the corner while the CB stays deep, bracketing both routes and making the corner throw an interception."
+    typical_against: ["cover-2 invert", "cover-2 robber"]
+  - counter_id: cover-3-squat-hitch
+    pre_snap_look: "Single-high shell with the playside CB at 7+ yds in outside leverage on the X and an apex LB/nickel shaded outside in the flat"
+    qb_key: "Check the playside CB — 7+ yds and outside leverage, single-high behind"
+    read_category: cb-leverage
+    why: "Smash's HI/LO read depends on the CB choosing; a deep, outside-leverage CB with a flat defender outside means the CB carries the corner and the apex takes the LO, so no one is wrong."
+    typical_against: ["cover-3", "cover-3 buzz"]
+  - counter_id: bracket-the-corner
+    pre_snap_look: "Two-high shell with the playside safety aligned tight to the hash, shaded down over the slot in clear bracket position"
+    qb_key: "Check the safety shell — playside safety stacked inside over the slot"
+    read_category: safety-shell
+    why: "The corner is Smash's big play; a safety pre-set to bracket the slot inside-out with the CB eliminates the deep shot and forces a throw into the contested hitch."
+    typical_against: ["cover-4 quarters with poach", "cover-1 robber"]
+
 common_uses:
   - 1st-and-10 vs cover-2 tendency
   - 2nd-and-medium

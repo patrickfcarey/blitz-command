@@ -1,0 +1,266 @@
+play_id: goal-line-power-counter-left
+name: Goal Line Power Counter (Mirror Left)
+aliases:
+- GL Counter
+- Power Counter (Goal Line)
+- Goal Line Counter Trey
+formation: goal-line-left
+play_type: run
+ball_carrier: HB
+motions: []
+run_reads:
+- priority: 1
+  read_key: kickout block on the backside edge (TE-L)
+  run_to: follow the pullers around the backside edge once TE-L kicks out the EDGE; turn upfield off his block
+  notes: The counter sends the ball BACKSIDE — the HB shows the playside Power track for a beat, then redirects behind the
+    pull. Stay on the pullers' hips.
+- priority: 2
+  read_key: backside linebacker
+  run_to: if the backside LB scrapes over the kickout, cut inside underneath him for the goal line
+  notes: RG wraps for the backside LB. If the LB beats the wrap over the top, the inside lane behind the kickout is a yard.
+- priority: 3
+  read_key: nothing there
+  run_to: lower the pads and fall forward behind the pullers for whatever yardage is available
+  notes: Last resort — at the goal line a hard fall forward across the stripe still scores.
+assignments:
+- player: LT
+  role: run_block
+  blocking_scheme: down-block
+  target: playside-3-tech
+  notes: Down block away from the counter — the LT now blocks the original-playside-side DT down, sealing the front the HB
+    fakes toward.
+- player: LG
+  role: run_block
+  blocking_scheme: pull-around
+  target: playside-LB
+  path:
+  - - 0
+    - 0
+  - - -2
+    - -0.5
+  - - -4
+    - 0
+  - - -5
+    - 3
+  notes: PULL — IDENTICAL pull track to Goal Line Power for the first two waypoints to sell Power; on the counter the LG keeps
+    pulling and wraps to the new-playside (backside-of-the-fake) edge.
+- player: C
+  role: run_block
+  blocking_scheme: gap-block
+  target: frontside-A-gap
+  notes: Show the gap block exactly like Goal Line Power, then climb to seal the A-gap on the side the HB fakes toward.
+- player: RG
+  role: run_block
+  blocking_scheme: pull-around
+  target: backside-LB
+  path:
+  - - 0
+    - 0
+  - - 2
+    - -0.5
+  - - 4
+    - 0
+  - - 5
+    - 3
+  notes: Second puller — wrap around the TE-L kickout and lead up on the backside LB through the counter hole.
+- player: RT
+  role: run_block
+  blocking_scheme: down-block
+  target: playside-DE
+  notes: Down block on the original-playside DE to seal the front the HB fakes toward.
+- player: TE-R
+  role: run_block
+  blocking_scheme: down-block
+  target: edge-defender
+  notes: Down block on the playside EDGE — sells the off-tackle Power hole the HB fakes into for a beat.
+- player: WR
+  role: run_block
+  blocking_scheme: stalk
+  target: cornerback
+  notes: Stalk the corner; goal line means he is likely near the LOS.
+- player: TE-L
+  role: run_block
+  blocking_scheme: kickout
+  target: backside-edge
+  notes: KEY BLOCK — instead of down-blocking, TE-L kicks out the backside EDGE to open the counter hole the pullers wrap
+    through.
+- player: QB
+  role: handoff
+  path:
+  - - 0
+    - 0
+  - - -1
+    - -1
+  - - 2
+    - -1
+  notes: Reverse-out IDENTICAL to Goal Line Power, ride the mesh, then hand to the HB on the counter; carry the fake out to
+    the original playside to hold that edge.
+- player: FB
+  role: lead_block
+  target: backside-LB-or-strong-safety
+  path:
+  - - 0
+    - 0
+  - - -3
+    - 2
+  - - 0
+    - 4
+  - - 3
+    - 5
+  notes: First two waypoints IDENTICAL to Goal Line Power — step playside to sell the Power lead, then redirect and lead through
+    the counter hole behind the pullers.
+- player: HB
+  role: ball_carrier
+  is_primary: true
+  path:
+  - - 0
+    - 0
+  - - -3
+    - 2
+  - - 1
+    - 3
+  - - 4
+    - 5
+  notes: First two waypoints IDENTICAL to Goal Line Power — jab-step the playside off-tackle Power track to sell the give,
+    then plant and cut back behind the LG/RG pull. Lower the shoulder — goal-line counter still requires contact-finishing.
+  alt_paths:
+  - priority: secondary
+    path:
+    - - 0
+      - 0
+    - - -3
+      - 2
+    - - 1
+      - 3
+    - - 2
+      - 5
+    notes: 'Read 2 (backside LB scrapes over the kickout): cut inside underneath the wrap for the goal line.'
+strengths:
+- Identical pre-snap look and first-step action to Goal Line Power — the defense cannot tell it from the base run
+- The playside Power fake pulls goal-line pursuit one way before the ball goes back the other
+- Two pullers (LG wrap + RG wrap) plus the FB give the HB a convoy through the counter hole
+- Punishes a fast-flowing, over-pursuing goal-line front by using its momentum against it
+- TE-L kickout turns the backside edge into the new point of attack
+weaknesses:
+- Needs Goal Line Power on tape first — a cold fake does not pull the pursuit
+- Slow-developing — the fake plus the double-pull takes longer than straight Power
+- Vulnerable to backside penetration before the kickout and wrap are set
+- A disciplined backside EDGE who refuses the TE-L kickout walls the counter hole
+- Pulling both guards thins the interior if a nose shoots a vacated A-gap
+best_vs_defense:
+- goal-line stand with fast, downhill, over-pursuing linebackers
+- cover-1 with the backside defender flowing hard to the Power fake
+- any defense overcommitting to the playside power look
+- 8-man fronts with predictable run flow
+worst_vs_defense:
+- goal-line stand with a disciplined backside contain player
+- bear front with a defender in every gap
+- penetrating nose that shoots the vacated pulling-guard A-gap
+- cover-0 with a backside edge blitz
+defensive_counters:
+- counter_id: backside-edge-stays-home
+  pre_snap_look: Backside EDGE outside TE-L in a wide, square stance with his outside arm and hand free, weight back rather
+    than crashing inside
+  qb_key: Scan the backside edge — EDGE widened outside TE-L, outside arm free, square stance
+  read_category: dl-alignment
+  why: A backside EDGE already wide and squared is set to refuse the TE-L kickout and keep contain, walling the counter hole
+    before the pullers wrap through.
+  typical_against:
+  - goal-line stand
+  - any defense with disciplined backside contain
+- counter_id: backside-lb-cheated
+  pre_snap_look: Backside LB cheated down and tight, stacked over the backside B-gap inside his normal width, with no deep
+    safety behind him
+  qb_key: Count the box — backside LB walked up and cheated toward the counter side, no deep help
+  read_category: box-count
+  why: A LB already cheated to the counter side beats the RG wrap to the hole and fills the counter lane before the block
+    can land.
+  typical_against:
+  - cover-0 short-yardage pressure
+  - goal-line stand
+- counter_id: pinch-dl
+  pre_snap_look: Interior DL crowded into tight inside shades over the A and B gaps, aligned nearly shoulder-to-shoulder with
+    no width
+  qb_key: Scan the interior DL shade — tackles crammed into the inside gaps, no width
+  read_category: dl-alignment
+  why: DL pre-set in tight inside shades shoot the gaps the guards vacate to pull, blowing up the mesh before the counter
+    can redirect.
+  typical_against:
+  - goal-line 6-2
+  - any 8+ man front coached to pinch on short-yardage
+common_uses:
+- 1st/2nd-and-Goal from inside the 5 after Goal Line Power has been established
+- 4th-and-1 against a defense over-flowing to the power look
+- Short-yardage 2-point conversion misdirection
+- Changing direction against a fast-flowing goal-line front
+philosophy: power-run
+run_concept_ref: counter
+philosophy_ref: power-run
+era: Universal — the counter off a power look is a timeless short-yardage misdirection at every level of football.
+famous_examples:
+- 1980s Redskins Counter Trey (the original two-puller counter)
+- Modern NFL goal-line counter packages off the power look
+- HS short-yardage counters off an established power game
+tags:
+- run
+- power-run
+- gap-scheme
+- counter
+- counter-action
+- goal-line
+- short-yardage
+- jumbo
+- misdirection
+- high-school
+- college
+- nfl
+notes: 'Counter off Goal Line Power. The QB reverse-out, the HB off-tackle jab
+
+  step, the FB playside lead step, and the LG pull are all IDENTICAL to
+
+  Goal Line Power for the first two path waypoints — the defense reads
+
+  Power and flows playside. The ball then goes BACKSIDE: TE-L kicks out
+
+  the backside edge, the LG keeps pulling and wraps, the RG pulls as the
+
+  second blocker, and the HB cuts back behind the convoy. Member of the
+
+  Goal Line Power disguise family (see data/play-families/).
+
+
+  Mirror to goal-line-power-counter-left by flipping all coordinates.
+
+  '
+verification_status: unverified
+source_notes:
+- The counter off a power look is a universal short-yardage misdirection concept (Counter Trey lineage — Joe Gibbs / Joe Bugel
+  Redskins). Authored as a disguise twin of goal-line-power — the QB/HB/FB/LG initial action deliberately mirrors the base
+  play's first two path waypoints exactly; only TE-L's assignment (down-block to kickout) and the RG's assignment (down-block
+  to pull) change to open the counter hole.
+- Mirror of goal-line-power-counter.yaml — path waypoints flipped on x; formation reference points to the mirror formation.
+  Routes auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed
+  look — coordinates and paths are the source of truth.
+flip_reads:
+- flip_id: front-overshift-callside
+  pre_snap_look: Defensive front slid toward the called side — an extra down lineman or a walked-up
+    linebacker puts +1 in the called-side box.
+  qb_key: Count the box side to side — the called side has one more hat than the backside.
+  read_category: box-count
+  flip_to: mirror-play
+  why: Running a gap scheme into the overshift is into the teeth; flipping the play attacks the
+    lighter box with the same blocking math.
+  typical_against:
+  - over-front
+  - shifted 4-3
+- flip_id: strength-declared-to-formation
+  pre_snap_look: Defense has fully declared to the formation's strength — an extra box defender
+    to the strong side and a safety rolled down over it.
+  qb_key: Check the strength side — both the box count and the safety roll are committed to it.
+  read_category: safety-shell
+  flip_to: mirror-formation
+  why: When the defense keys the formation's strength, flipping the whole formation forces a re-declare
+    and the run hits the side they vacated.
+  typical_against:
+  - cover-3 with strong roll
+  - 8-man fronts

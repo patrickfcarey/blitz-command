@@ -91,6 +91,26 @@ worst_vs_defense:
   - aggressive zero blitz with no time
   - any defense playing pattern-match on verticals
 
+defensive_counters:
+  - counter_id: cover-4-quarters
+    pre_snap_look: "Two-high safety shell with both safeties at 10-12 yds and both corners off in inside leverage at depth rather than pressed"
+    qb_key: "Check the safety shell — two-high at 10-12 yds with off, inside-leverage corners"
+    read_category: safety-shell
+    why: "Quarters gives every deep route a bracket — two safeties on the seams, two corners on the outside go's — so the QB has nowhere to throw the deep ball."
+    typical_against: ["cover-4 quarters", "palms / 2-read"]
+  - counter_id: robber-fs
+    pre_snap_look: "A single safety on the hash at 10-12 yds with eyes on the slot, the other safety bailed deep — a disguised one-high robber shell"
+    qb_key: "Check the safety shell — one safety sunk to robber depth keying the slot"
+    read_category: safety-shell
+    why: "The SLOT seam is the kill shot vs single-high; a robber FS sitting at 10-12 yds undercuts the seam at its breaking point instead of carrying it deep."
+    typical_against: ["cover-1 robber", "cover-3 buzz with robber"]
+  - counter_id: rush-3-cover-8
+    pre_snap_look: "Only three down linemen with a hand down (or interior linemen in 2-point stances), the rest of the front bailed off the LOS at coverage depth"
+    qb_key: "Count the rush — only three hands-down, everyone else off at coverage depth"
+    read_category: dl-alignment
+    why: "Max-protection 4-Verts assumes a 4-man rush; a 3-man rush with 8 dropping doubles both seams while CB+safety help still brackets the outside go's, leaving nowhere to throw."
+    typical_against: ["cover-3 with hot drop", "tampa-2 with deep MIKE"]
+
 common_uses:
   - 3rd-and-long
   - 2-minute drill

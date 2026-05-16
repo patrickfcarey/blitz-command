@@ -96,6 +96,34 @@ worst_vs_defense:
 - banjo / pattern-match
 - cover-2 robber
 - blitz from the trips side
+defensive_counters:
+- counter_id: trap-corner-trips
+  pre_snap_look: Trips-side corner squatted at 5-7 yd depth with eyes inside, strong safety widened toward the trips side
+  qb_key: Check the trips-side CB depth — squatted short, eyes inside
+  read_category: cb-leverage
+  why: A short, squatted corner is set to trap the WR3 flat instead of carrying deep, taking the easy throw and leaving the safety to bracket the primary corner route over the top.
+  typical_against:
+  - cover-2 trap to trips
+  - cover-2 invert
+  - disguised cover-2 from a cover-3 look
+- counter_id: cloud-three-to-trips
+  pre_snap_look: Trips-side corner cheated down toward the flat, nickel aligned inside-out on the slots, and a single safety rotated over the trips-side third
+  qb_key: Check the safety shell — one safety rotated over the trips third, corner cheated down
+  read_category: safety-shell
+  why: Three defenders pre-aligned to match the three trips routes by leverage turn the 3-on-2 triangle into 3-on-3, with no soft spot left for the snag to settle.
+  typical_against:
+  - cover-3 cloud
+  - cover-3 buzz
+  - modern pattern-match coverages
+- counter_id: trips-side-blitz
+  pre_snap_look: Nickel / apex defender walked up in a blitz alignment off the trips edge (toes on LOS, hand low), single-high safety shell behind
+  qb_key: Scan the trips-edge defender — walked up on the line, one high safety
+  read_category: lb-depth
+  why: A walked-up trips-edge defender is a free runner; with the HB in weak-side protection he gets home before the triangle develops, forcing a sack or hurried throw.
+  typical_against:
+  - cover-1 zero-pressure
+  - fire-zone from trips
+  - nickel pressure packages
 common_uses:
 - 3rd-and-medium (4–7 yards)
 - 1st down rhythm play

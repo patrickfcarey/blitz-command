@@ -1,5 +1,52 @@
 # Football Playcraft MCP Repo Plan
 
+> **This document is the original spec** (Phase 1-8 design). For the live arc going forward see [`docs/roadmap.md`](docs/roadmap.md). For the rolling near-term backlog see [`docs/pending-queue.md`](docs/pending-queue.md). The status block below summarizes what's actually implemented vs planned.
+
+## Implementation status (last refresh: 2026-05-01)
+
+**What's live:**
+
+- **12 MCP servers, 78 tools combined** (exceeds the 9 originally planned):
+  - `play-library-mcp` — 17 tools: full discovery, authoring, analysis, export, and `manifest()`. All `list_*` tools paginated (cursor/limit).
+  - `formation-library-mcp` — 5 tools: `list_formations`, `get_formation`, `find_formations_by_tag`, `find_formations_by_concept`, `manifest()`. Paginated.
+  - `route-library-mcp` — 6 tools: `list_routes`, `get_route`, `find_routes_by_category`, `find_routes_by_coverage`, `find_routes_by_depth`, `manifest()`. Paginated.
+  - `coverage-mcp` — 6 tools: `list_coverages`, `get_coverage`, `find_coverage_by_shell`, `find_coverage_by_front`, `find_coverage_vulnerable_to`, `manifest()`. Paginated.
+  - `run-concept-mcp` — 6 tools: `list_run_concepts`, `get_run_concept`, `find_run_concepts_by_category`, `find_run_concepts_by_aim_point`, `find_run_concepts_pairs_with`, `manifest()`. Paginated.
+  - `blocking-scheme-mcp` — 6 tools: `list_blocking_schemes`, `get_blocking_scheme`, `find_schemes_by_category`, `find_schemes_that_defeat`, `find_schemes_vulnerable_to`, `manifest()`. Paginated.
+  - `pass-protection-mcp` — 5 tools: `list_pass_protections`, `get_pass_protection`, `find_protections_by_type`, `find_protections_vulnerable_to`, `manifest()`. Paginated.
+  - `philosophy-mcp` — 6 tools: `list_philosophies`, `get_philosophy`, `find_philosophies_by_era`, `find_philosophies_by_originator`, `find_philosophies_by_tendency`, `manifest()`. Paginated.
+  - `game-knowledge-mcp` — 6 tools: `list_games`, `get_game`, `compare_games`, `find_games_supporting`, `find_games_by_era`, `manifest()`. Paginated.
+  - `validation-mcp` — 7 tools: `validate_play`, `validate_formation`, `validate_route`, `validate_concept`, `validate_game_profile`, `lint_play`, `manifest()`.
+  - `play-variant-mcp` — 4 tools: `mirror_play_variant`, `flip_strength`, `generate_play_family_stub`, `manifest()`.
+  - `playbook-generation-mcp` — 4 tools: `assemble_playbook_simple`, `list_available_formations`, `list_available_philosophies`, `manifest()`.
+- **144 plays / 54 formations / 18 routes / 8 concept templates** in the data library
+- **Concept libraries** as first-class data: `data/concepts/run-concepts/`, `data/concepts/blocking-schemes/`, `data/concepts/pass-protections/`, `data/concepts/philosophies/` — all with schemas; plays foreign-key into them via `run_concept_ref`, `pass_concept_ref`, `pass_protection_ref`, `philosophy_ref`
+- **45 game profiles** spanning PS1, PS2, and PS3 era Madden + NCAA — Madden 05 PS2 is the most measured; the rest are placeholder pending user measurement
+- **Defensive side**: 9 defensive formations with fronts + coverage shells + per-defender responsibilities (`vulnerable_to`/`best_against` arrays)
+- **Drawing tool**: green field, NFL/NCAA hash marks, defensive coverage rendering (zones / man / rush / spy), 4 visibility modes, short/long field, cell-snap + BFS overlap avoidance
+- **Schemas**: `play.schema.json` (with concept FK fields + `verified_in_games`), `formation.schema.json`, `route.schema.json`, `blocking-scheme.schema.json`, `run-concept.schema.json`, `pass-protection.schema.json`, `pass-concept.schema.json`, `philosophy.schema.json`, `game.schema.json`, `play-family.schema.json`, `canonical-play-extraction.schema.json`
+- **Tests**: 68 in `tests/` covering schemas, drawing modes, every MCP tool, concept FK validation, and pagination coverage
+
+**Completed planned work (from this doc):**
+- ✅ Phase 1 — Repo Skeleton
+- ✅ Phase 2 — Universal Football Coordinate System
+- ⚠️ Phase 3 — Game Knowledge Database (45 game profiles exist; Madden 05 PS2 is partially measured, rest are placeholder — blocked on user measurement)
+- ✅ Phase 4 — Formation Library (54 formations, far beyond the original 12)
+- ✅ Phase 5 — Route library (18 routes), blocking-scheme, run-concept, pass-protection, and philosophy libraries all shipped as first-class data with schemas
+- ✅ Phase 6 — All 12 MCP servers shipped with full tool sets, `manifest()` on every server, cursor-based pagination on all `list_*` tools
+- ⚠️ Phase 7 — Play Family Generator: `generate_play_family_stub` stub shipped (returns scaffold); full procedural generator not built. Manually-authored families exist.
+- ⚠️ Phase 8 — Game-Specific Export: `export_play_instructions` (markdown) shipped; per-game profiles other than Madden 05 are still placeholder so cell coordinates are only verified for that title
+
+**Most-recent additions** (chronological — full changelog in `docs/pending-queue.md` Done section):
+- All 10 new MCP servers (route-library, coverage, run-concept, blocking-scheme, pass-protection, philosophy, game-knowledge, validation, play-variant, playbook-generation)
+- `manifest()` tool on every MCP server — purpose, tool list, worked examples
+- Cursor-based pagination on all `list_*` tools across all 12 MCPs (`{items, next_cursor}`)
+- Concept FK fields on `play.schema.json` (`run_concept_ref`, `pass_concept_ref`, `pass_protection_ref`, `philosophy_ref`, `verified_in_games`)
+- `play-family.schema.json` and `canonical-play-extraction.schema.json` — new schemas
+- `tools/migrate-add-concept-refs/` — inference migration tool, 88% run / 80% pass coverage across 144 plays
+- `tools/export-instructions/formatters.py` — per-game export formatter (Madden 05/10 PS2, Madden 10 PS3, NCAA 06 PS2)
+- `validation-mcp` concept FK cross-reference checks + route-name cross-reference checks
+
 ## Goal
 
 Create a repo containing multiple MCP servers, tools, datasets, schemas, and documentation to help AI agents like Codex, Claude, or ChatGPT design custom football formations and plays for NCAA and Madden games across PS1, PS2, and PS3 eras.

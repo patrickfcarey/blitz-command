@@ -1,0 +1,242 @@
+play_id: goal-line-power-keeper-left
+name: Goal Line Power Keeper (Mirror Left)
+aliases:
+- GL QB Keep
+- Power Keeper (Goal Line)
+- QB Power Boot (Goal Line)
+formation: goal-line-left
+play_type: run
+ball_carrier: QB
+motions: []
+run_reads:
+- priority: 1
+  read_key: backside edge defender (sealed by TE-L)
+  run_to: if TE-L seals the backside edge, keep around the corner and turn upfield for the pylon
+  notes: The keeper attacks the edge the defense vacates flowing to the Power fake. TE-L's seal is the key block.
+- priority: 2
+  read_key: backside contain (corner / safety)
+  run_to: if the edge is sealed but contain widens, plant and dive inside the TE-L block for the goal line
+  notes: Don't run into the sideline — if contain stays disciplined, the inside lane off TE-L is still a yard.
+- priority: 3
+  read_key: nothing there
+  run_to: lower the pads and fall forward behind TE-L for whatever yardage is available
+  notes: Last resort — at the goal line a hard fall forward across the stripe still scores.
+assignments:
+- player: LT
+  role: run_block
+  blocking_scheme: down-block
+  target: backside-3-tech
+  notes: Down block on the backside DT — sell the Power down-block, then wall him from chasing the keeper.
+- player: LG
+  role: run_block
+  blocking_scheme: pull-around
+  target: playside-LB
+  path:
+  - - 0
+    - 0
+  - - -2
+    - -0.5
+  - - -4
+    - 0
+  - - -5
+    - 3
+  notes: PULL — identical pull track to Goal Line Power; lead through the off-tackle hole to sell Power and pull the playside
+    LB toward the fake.
+- player: C
+  role: run_block
+  blocking_scheme: gap-block
+  target: backside-A-gap
+  notes: Show the gap block, then help wall the backside A-gap as the QB clears.
+- player: RG
+  role: run_block
+  blocking_scheme: down-block
+  target: playside-3-tech
+  notes: Down block on the playside DT — sell the Power point-of-attack.
+- player: RT
+  role: run_block
+  blocking_scheme: down-block
+  target: playside-DE
+  notes: Down block on the playside DE — adds to the Power surface the fake sells.
+- player: TE-R
+  role: lead_block
+  blocking_scheme: kickout
+  target: edge-defender
+  notes: Kick out the playside EDGE exactly like Goal Line Power — sells the off-tackle hole the HB fake attacks.
+- player: WR
+  role: run_block
+  blocking_scheme: stalk
+  target: cornerback
+  notes: Stalk the playside corner; goal line means he is likely near the LOS.
+- player: TE-L
+  role: lead_block
+  blocking_scheme: kickout
+  target: backside-edge
+  notes: KEY BLOCK — instead of down-blocking, TE-L now hinges and kicks out the backside edge defender to open the QB keeper
+    lane around the backside corner.
+- player: QB
+  role: ball_carrier
+  is_primary: true
+  path:
+  - - 0
+    - 0
+  - - -1
+    - -1
+  - - 2
+    - -1
+  - - 4
+    - 1
+  - - 5
+    - 4
+  notes: Reverse-out IDENTICAL to Goal Line Power, ride and pull the HB fake through the mesh, then keep the ball and boot
+    around the backside edge for the pylon. Lower the shoulder at the goal line.
+- player: FB
+  role: lead_block
+  target: playside-LB-or-strong-safety
+  path:
+  - - 0
+    - 0
+  - - -3
+    - 2
+  - - -3
+    - 5
+  notes: Lead through the hole exactly like Goal Line Power — iso the playside LB to sell the run and pull second-level defenders
+    away from the keeper.
+- player: HB
+  role: fake
+  path:
+  - - 0
+    - 0
+  - - -3
+    - 2
+  - - -4
+    - 5
+  notes: Run the exact Goal Line Power off-tackle track and sell the handoff hard — lower the shoulder into the hole so the
+    defense fits the run away from the QB.
+strengths:
+- Identical pre-snap look and first-step action to Goal Line Power — the defense cannot tell it from the run
+- The entire defense flows to the HB Power fake, leaving the backside edge for the QB
+- Adds the QB as a ball-carrier — the defense is short a fitter when he keeps it
+- TE-L kickout opens a clean edge lane to the pylon
+- Very high-percentage from inside the 3 — a yard or two is all it needs
+weaknesses:
+- Exposes the QB to contact at the goal line — injury risk on a hard-hitting play
+- Needs Goal Line Power on tape first — a cold fake holds no one
+- Backside edge defender with discipline can refuse the TE-L kickout
+- No true counter once the QB commits — he has the ball and must score or fall forward
+- Slow-developing relative to a QB sneak — the fake adds time before the keep
+best_vs_defense:
+- goal-line stand with downhill, run-fitting linebackers
+- cover-1 with the backside defender pinching to the run
+- any defense overcommitting to the HB power fake
+- 8-man fronts with predictable run flow
+worst_vs_defense:
+- goal-line stand with a disciplined backside contain player
+- bear front with a defender in every gap
+- cover-0 with a backside edge blitz
+- any defense that does not honor the HB power fake
+defensive_counters:
+- counter_id: backside-edge-stays-home
+  pre_snap_look: Backside EDGE in a wide-9 stance outside TE-L with his outside shoulder and hand free, squared to the LOS
+    rather than crashing inside
+  qb_key: Scan the backside edge — EDGE widened outside TE-L, outside arm free, square stance
+  read_category: dl-alignment
+  why: A backside EDGE already wide and squared is set to keep contain and refuse the TE-L kickout, walling the keeper lane
+    before the QB clears the mesh.
+  typical_against:
+  - goal-line stand
+  - any defense with disciplined backside contain
+- counter_id: safety-blitz-the-backside
+  pre_snap_look: A safety walked down to 4-5 yards just outside TE-L on the backside, in the C-gap window, with no deep safety
+    behind him
+  qb_key: Count the box — a safety walked down to the backside C-gap with no deep help
+  read_category: box-count
+  why: A safety pre-set in the backside C-gap window adds an unblocked defender right in the keeper's lane and beats the QB
+    to the edge.
+  typical_against:
+  - cover-0 short-yardage pressure
+  - goal-line stand
+- counter_id: pinch-dl
+  pre_snap_look: Interior DL crowded into tight inside shades over the A and B gaps, aligned nearly shoulder-to-shoulder with
+    no width
+  qb_key: Scan the interior DL shade — tackles crammed into the inside gaps, no width
+  read_category: dl-alignment
+  why: DL pre-set in tight inside shades pinch and blow up the HB fake instantly, so the fake never holds and the defense
+    flows clean to the keeper.
+  typical_against:
+  - goal-line 6-2
+  - any 8+ man front coached to pinch on short-yardage
+common_uses:
+- 1st/2nd-and-Goal from inside the 3
+- 4th-and-inches when the defense has sold out to stop the HB power
+- 2-point conversion off the power look
+- Sneak-alternative when the interior is too crowded to sneak
+philosophy: power-run
+run_concept_ref: power
+philosophy_ref: power-run
+era: Universal — the QB keep off a power fake is a timeless short-yardage and goal-line answer at every level.
+famous_examples:
+- Modern NFL goal-line QB keeps off power and read action
+- College spread-to-power teams using the QB as the goal-line plus-one
+- HS short-yardage packages keeping a mobile QB off the power fake
+tags:
+- run
+- power-run
+- goal-line
+- short-yardage
+- qb-run
+- keeper
+- bootleg
+- high-school
+- college
+- nfl
+notes: 'QB keep off the Goal Line Power action. The QB reverse-out, the HB
+
+  off-tackle fake, the FB lead, the LG pull, and the playside OL
+
+  down-block / TE-R kickout are all IDENTICAL to Goal Line Power — the
+
+  defense reads Power and flows to the HB. The one structural change is
+
+  TE-L: instead of down-blocking the backside edge, he kicks it out to
+
+  open the QB keeper lane around the backside corner. Keeping the QB adds
+
+  a ball-carrier and leaves the defense one fitter short. Member of the
+
+  Goal Line Power disguise family (see data/play-families/).
+
+
+  Mirror to goal-line-power-keeper-left by flipping all coordinates.
+
+  '
+verification_status: unverified
+source_notes:
+- The QB keep off a power fake is a universal short-yardage constraint concept. Authored as a disguise twin of goal-line-power
+  — the QB/HB/FB initial action (reverse-out, off-tackle track, FB lead, LG pull) deliberately mirrors the base play's first
+  two waypoints exactly; only TE-L's assignment changes (down-block to kickout) to open the keeper lane.
+- Mirror of goal-line-power-keeper.yaml — path waypoints flipped on x; formation reference points to the mirror formation.
+  Routes auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed
+  look — coordinates and paths are the source of truth.
+flip_reads:
+- flip_id: front-overshift-callside
+  pre_snap_look: Defensive front slid toward the called side — an extra down lineman or a walked-up
+    linebacker puts +1 in the called-side box.
+  qb_key: Count the box side to side — the called side has one more hat than the backside.
+  read_category: box-count
+  flip_to: mirror-play
+  why: Running a gap scheme into the overshift is into the teeth; flipping the play attacks the
+    lighter box with the same blocking math.
+  typical_against:
+  - over-front
+  - shifted 4-3
+- flip_id: strength-declared-to-formation
+  pre_snap_look: Defense has fully declared to the formation's strength — an extra box defender
+    to the strong side and a safety rolled down over it.
+  qb_key: Check the strength side — both the box count and the safety roll are committed to it.
+  read_category: safety-shell
+  flip_to: mirror-formation
+  why: When the defense keys the formation's strength, flipping the whole formation forces a re-declare
+    and the run hits the side they vacated.
+  typical_against:
+  - cover-3 with strong roll
+  - 8-man fronts

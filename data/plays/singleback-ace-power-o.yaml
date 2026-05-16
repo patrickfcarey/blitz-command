@@ -90,6 +90,26 @@ worst_vs_defense:
   - cover-1 robber
   - penetrating playside 1-tech
 
+defensive_counters:
+  - counter_id: pinch-dl
+    pre_snap_look: "Both DTs in tight inside shades — 1-techniques / inside-eye 3-techniques crowding the guards, hands cocked toward the A/B gaps"
+    qb_key: "Scan the interior DL shade — tackles crowding the guards' inside eye"
+    read_category: dl-alignment
+    why: "Inside-shaded tackles give the down-blocks nothing to push outside; the off-tackle hole squeezes shut before the pulling LG can clear the center, and there's no FB to isolate the LB."
+    typical_against: ["over-front", "4-3 base"]
+  - counter_id: spill-the-puller
+    pre_snap_look: "Playside EDGE aligned wide in a wide-9 stance with the strong safety rolled down to a flat-footed 4-5 yard read position"
+    qb_key: "Check the playside edge — wide-9 EDGE with the SS rolled down behind him"
+    read_category: dl-alignment
+    why: "A wide-9 EDGE is set to wrong-arm the LG's kickout and spill the run wide; with no FB lead, the spilled HB meets the rolled-down safety as a free hitter on the perimeter."
+    typical_against: ["over-front", "cover-3 with rolled SS"]
+  - counter_id: 8-man-front
+    pre_snap_look: "8 defenders inside the tackle box — strong safety aligned at 6-8 yards inside the playside hash, single-high shell behind"
+    qb_key: "Count the box — eight, with one high safety"
+    read_category: box-count
+    why: "Singleback Power has only 7 blockers (no FB); the safety's +1 in the run fit means at least one defender goes unblocked at the point of attack."
+    typical_against: ["cover-1 robber", "quarters with SS rolled down"]
+
 common_uses:
   - 1st/2nd-and-short — modern 12-personnel power
   - Red-zone runs (4-12 yard line)
@@ -129,3 +149,26 @@ notes: |
 verification_status: unverified
 source_notes:
   - "12-personnel power scheme; standard modern adaptation of classic Power O."
+flip_reads:
+- flip_id: front-overshift-callside
+  pre_snap_look: Defensive front slid toward the called side — an extra down lineman or a walked-up
+    linebacker puts +1 in the called-side box.
+  qb_key: Count the box side to side — the called side has one more hat than the backside.
+  read_category: box-count
+  flip_to: mirror-play
+  why: Running a gap scheme into the overshift is into the teeth; flipping the play attacks the
+    lighter box with the same blocking math.
+  typical_against:
+  - over-front
+  - shifted 4-3
+- flip_id: strength-declared-to-formation
+  pre_snap_look: Defense has fully declared to the formation's strength — an extra box defender
+    to the strong side and a safety rolled down over it.
+  qb_key: Check the strength side — both the box count and the safety roll are committed to it.
+  read_category: safety-shell
+  flip_to: mirror-formation
+  why: When the defense keys the formation's strength, flipping the whole formation forces a re-declare
+    and the run hits the side they vacated.
+  typical_against:
+  - cover-3 with strong roll
+  - 8-man fronts

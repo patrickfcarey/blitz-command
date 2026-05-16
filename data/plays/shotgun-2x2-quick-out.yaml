@@ -1,0 +1,167 @@
+play_id: shotgun-2x2-quick-out
+name: Quick Out (Speed Out)
+aliases:
+  - 2x2 Quick Out
+  - Speed Out off Stick
+  - West Coast Quick Out
+
+formation: shotgun-2x2
+play_type: pass
+ball_carrier: QB
+primary_read: SLOT-W
+secondary_read: Z
+checkdown: HB
+
+# Identical (empty) motions to Stick — the base play carries no motion, so
+# this twin does too. Running no motion on every member of the Quick-Game
+# family keeps the pre-snap look identical so the defense cannot key it.
+motions: []
+
+assignments:
+  - player: LT
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: LG
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: C
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: RG
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: RT
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: TE
+    role: route
+    route_name: clear-out-go
+    depth_yd: 18
+    path: [[0, 0], [0, 3], [0, 18]]
+    notes: "Identical vertical clear-out release to Stick — pushes vertical to carry the strong-side corner out of the Z quick-out window."
+  - player: X
+    role: route
+    route_name: clear-out-go
+    depth_yd: 18
+    path: [[0, 0], [0, 3], [0, 18]]
+    notes: "Identical vertical clear-out release to Stick — pushes vertical to carry the weak-side corner off and clear the grass for the SLOT-W speed-out."
+  - player: SLOT-W
+    role: route
+    route_name: out
+    depth_yd: 6
+    is_primary: true
+    path: [[0, 0], [0, 3], [0, 6], [-5, 6]]
+    notes: "Same vertical stem as the base Stick option route for the first three steps — same early picture — then snap the speed-out at 6 yards into the grass the X clear-out vacated. The primary on the 3-step rhythm."
+  - player: Z
+    role: route
+    route_name: out
+    depth_yd: 6
+    path: [[0, 0], [0, 3], [0, 6], [5, 6]]
+    notes: "Same vertical stem as the base Stick option route for the first three steps, then snap the speed-out at 6 yards under the TE clear-out — the strong-side mirror answer."
+  - player: QB
+    role: ball_carrier
+    path: [[0, 0], [0, -1], [0, -2]]
+    notes: |
+      3-step rhythm from shotgun depth — IDENTICAL drop to Stick. Quick-out /
+      speed-out: the outside WR clear-outs carry the corners vertical, opening
+      the 6-yard out for the slots. Throw the SLOT-W out versus a flat
+      defender with depth or inside leverage; Z out is the strong-side mirror.
+      Ball must come out on time — the out is a timing throw to the sideline.
+  - player: HB
+    role: pass_block
+    blocking_scheme: man-protection
+    notes: "Pass-pro; release as the checkdown only if pressure clears — same protection role as the base Stick play."
+
+strengths:
+  - Identical pre-snap look, QB drop, and early receiver releases to Stick — the defense cannot tell it apart
+  - Clear-out + out is a defined-grass concept — the outside WR vacates the corner for the slot's out-cut
+  - Speed-out is a high-percentage timing throw — ball and receiver meet at the sideline
+  - Mirrored — the QB takes whichever out the leverage and clear-out give him
+  - Quick rhythm — 3-step drop, ball out before pressure on the same timing as Stick
+
+weaknesses:
+  - Limited big-play potential — the out tops out around 6 yards plus sideline YAC
+  - A jumped out-cut is a pick-six — the throw travels toward the sideline
+  - Squat / trap corners that ignore the clear-out can drive the out
+  - Inside-leverage press man on the slot widens the break and kills the timing
+  - QB must trust the timing — the throw is gone before the break is fully seen
+
+best_vs_defense:
+  - cover-1 / man coverage — the clear-out carries the corner, the out breaks away from trailing man
+  - cover-3 with corners bailing to the deep third (out underneath the vacated corner)
+  - any defense whose corners turn and run with the vertical clear-out
+  - off-coverage that gives the slot a clean release to the out
+
+worst_vs_defense:
+  - cover-2 with corners squatting and trapping the out
+  - inside-leverage press man on the slot
+  - a robber / zone defender sitting at the out-cut depth
+  - banjo / pattern-match that passes the clear-out and traps the out
+
+defensive_counters:
+  - counter_id: trap-the-out
+    pre_snap_look: "Outside corners squatted at 5-7 yards depth, eyes inside, with two safeties capping the deep halves behind them"
+    qb_key: "Check the corner depth and eyes — squatted short, looking inside, two-high behind"
+    read_category: cb-leverage
+    why: "A squatted corner ignores the vertical clear-out and sits at out-cut depth, set to drive and trap the speed-out — and the throw toward the sideline is a pick-six if jumped."
+    typical_against: ["cover-2", "cover-2 trap", "quarters with squat corners"]
+  - counter_id: inside-press-slot
+    pre_snap_look: "Nickel and SAM pressed inside-leverage on both slots, foot up inside, no deep-middle safety showing"
+    qb_key: "Check slot-defender leverage — pressed with the inside foot up, no middle help"
+    read_category: cb-leverage
+    why: "Inside-leverage press forces the slot to widen its release, blowing up the timing of the speed-out so the ball arrives before the receiver can snap the break."
+    typical_against: ["cover-1", "cover-0", "sticky man-match"]
+  - counter_id: out-side-pressure
+    pre_snap_look: "Weak-side nickel walked up on the LOS over the slot (toes on the line, hand low), single-high safety shell behind"
+    qb_key: "Scan the slot defender — walked up on the line with only one high safety"
+    read_category: lb-depth
+    why: "A nickel on the line over the slot is a free runner; with the HB in protection the pocket collapses before the 6-yard out breaks, forcing a rushed throw or a checkdown."
+    typical_against: ["cover-1 zero-pressure", "fire-zone", "nickel pressure packages"]
+
+common_uses:
+  - 3rd-and-short / 3rd-and-medium
+  - 1st-down chains
+  - Sideline timing throw to stop the clock
+  - Quick-game tempo
+  - Beating man coverage after Stick has been on tape
+
+philosophy: west-coast
+pass_concept_ref: stick
+philosophy_ref: west-coast
+
+era: "1980s onward — the quick-out / speed-out is a foundational West Coast timing throw, a staple of every pro-style and spread quick-game package."
+
+famous_examples:
+  - "Bill Walsh 49ers (the West Coast timing quick-out)"
+  - "Andy Reid Eagles / Chiefs quick-game packages"
+  - "Modern NFL 11-personnel rhythm calls"
+
+tags:
+  - pass
+  - spread
+  - quick-game
+  - quick-out
+  - speed-out
+  - clear-out
+  - west-coast
+  - shotgun
+  - 2x2
+  - high-school
+  - college
+  - nfl
+
+notes: |
+  West Coast quick-out / speed-out quick-game play disguised off Stick. The
+  QB's 3-step drop is IDENTICAL to Stick, and the receivers take the same
+  early vertical releases (TE and X push vertical exactly like the base
+  clear-outs, the slots stem vertical exactly like the base option routes)
+  before the routes branch — the outside WRs run the vertical clear-out, the
+  slots snap a 6-yard speed-out into the vacated grass. The defense reads the
+  same picture as Stick. Member of the Shotgun 2x2 Quick-Game disguise family
+  (see data/play-families/).
+
+  Mirror to quick-out-left by flipping all coordinates.
+
+verification_status: unverified
+source_notes:
+  - "The quick-out / speed-out paired with a vertical clear-out is a textbook West Coast timing concept — the outside WR carries the corner, defining grass for the slot's out-cut. Authored as a disguise twin of shotgun-2x2-stick — the QB drop's first two waypoints are identical to the base play, all members carry the same empty motions block, and the receivers' early release waypoints match the base play's vertical stems before the routes branch."

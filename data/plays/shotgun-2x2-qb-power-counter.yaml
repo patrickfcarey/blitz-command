@@ -1,0 +1,207 @@
+play_id: shotgun-2x2-qb-power-counter
+name: QB Power Counter (Strong)
+aliases:
+  - QB Counter
+  - Power Q Counter
+  - Q-Counter Backside
+
+formation: shotgun-2x2
+play_type: run
+ball_carrier: QB
+
+# Identical motion to QB Power — the base play carries an empty motions
+# block, so this twin does too. No motion on every member of the QB-Power
+# family keeps the pre-snap look identical so the defense cannot key it.
+motions: []
+
+run_reads:
+  - priority: 1
+    read_key: pulling RG (backside puller)
+    run_to: follow the RG's kickout on the backside edge, then bend up off his hip
+    notes: "The QB shows the strong-side power track, then plants and works behind the RG pulling the other way."
+  - priority: 2
+    read_key: backside linebacker
+    run_to: if the backside LB scrapes over the top, cut underneath him inside the kickout
+    notes: "HB seals the first backside LB; if a second one scrapes, the lane is inside that block."
+  - priority: 3
+    read_key: frontside cutback (strong A-gap)
+    run_to: if the backside is walled off, cut back behind the center into the strong A-gap
+    notes: "Last resort — only hit the cutback if the entire backside is collapsed."
+
+assignments:
+  - player: LT
+    role: run_block
+    blocking_scheme: down-block
+    target: backside-3-tech
+    notes: "Down block — now the PLAYSIDE tackle for the counter. Seal the 3-tech inside; the play goes off your edge."
+  - player: LG
+    role: run_block
+    blocking_scheme: down-block
+    target: backside-DT
+    notes: "Down block on the backside DT — counter blocking seals the interior toward the new playside."
+  - player: C
+    role: run_block
+    blocking_scheme: gap-block
+    target: strong-A-gap
+    notes: "Backside scoop toward the strong side, then climb to the frontside LB."
+  - player: RG
+    role: run_block
+    blocking_scheme: pull-around
+    target: backside-edge
+    path: [[0, 0], [-2, -0.5], [-4, 0], [-5, 2]]
+    notes: "PULL — backside (strong-side) guard pulls and kicks out the weak-side EDGE, opening the counter hole."
+  - player: RT
+    role: run_block
+    blocking_scheme: down-block
+    target: strong-3-tech
+    notes: "Down block — show the QB-Power down-block for a beat to sell the strong-side power, then seal the strong 3-tech."
+  - player: TE
+    role: run_block
+    blocking_scheme: down-block
+    target: strong-edge
+    notes: "Show the QB-Power kickout on the strong EDGE for one beat to sell the base run, then hinge down to wall the strong-side pursuit."
+  - player: X
+    role: run_block
+    blocking_scheme: stalk
+    target: backside-cornerback
+    notes: "Stalk the weak-side corner — now the playside corner for the counter."
+  - player: Z
+    role: run_block
+    blocking_scheme: stalk
+    target: strong-cornerback
+  - player: SLOT-W
+    role: run_block
+    blocking_scheme: stalk
+    target: nickel-defender
+    notes: "Stalk the nickel — clears the weak-side perimeter for the QB on the counter."
+  - player: QB
+    role: ball_carrier
+    is_primary: true
+    path: [[0, 0], [3, 3], [-1, 2], [-4, 6]]
+    notes: |
+      DESIGNED QB COUNTER — first two waypoints IDENTICAL to QB Power.
+      Show the strong-side off-tackle attack exactly like the base run for
+      two steps, then plant the strong foot and counter back to the weak
+      side, following the RG kickout and bending up off his hip. No read —
+      QB is the ball-carrier the whole way.
+  - player: HB
+    role: lead_block
+    target: backside-LB
+    path: [[0, 0], [-1, 1], [3, 3], [-2, 4]]
+    notes: "Run the exact QB-Power lead-sweep track for the first two steps to sell the strong-side run, then reverse field and lead up on the first backside linebacker at the counter hole."
+
+strengths:
+  - Identical pre-snap look and first-step QB action to QB Power — the defense cannot tell it from the base run
+  - The strong-side power track pulls fast-flow defenders away from the actual hole
+  - Pulling RG kickout gives the QB a defined backside edge
+  - HB reversing field adds a lead blocker at the counter point of attack
+  - Punishes a defense that over-pursues the QB-Power strong-side track
+
+weaknesses:
+  - Needs QB Power on tape first — a cold counter step holds no one
+  - Slow-developing — the RG pull and the QB plant-and-go take time to set up
+  - QB injury risk on every snap as the designed ball-carrier
+  - Vulnerable to a backside EDGE who squeezes flat and beats the RG kickout
+  - The QB plant-and-counter footwork must be clean or the timing breaks
+
+best_vs_defense:
+  - 4-3 with fast-flowing, aggressive linebackers
+  - cover-3 with run-fit linebackers chasing the power track
+  - any defense over-pursuing the QB-Power strong side
+  - single-high coverages with downhill safety run support
+
+worst_vs_defense:
+  - disciplined gap-sound fronts that do not over-pursue
+  - bear front with a defender in every gap
+  - scrape-exchange taking the QB on the counter
+  - 8-man fronts with no backside counter room
+
+defensive_counters:
+  - counter_id: backside-edge-squeeze
+    pre_snap_look: "Weak-side EDGE squeezed down in a tight inside shade with a square two-point stance, hands free, not flared wide"
+    qb_key: "Scan the weak-side EDGE — squeezed inside, squared up, feet quiet"
+    read_category: dl-alignment
+    why: "A squeezed weak-side EDGE crashes flat under the RG kickout and closes the counter hole before the puller can define an edge."
+    typical_against: ["over-front", "4-3 base", "any defense with counter-game rules"]
+  - counter_id: backside-scrape-lb
+    pre_snap_look: "Backside (weak-side) linebacker walked up tight and cheated outside his normal alignment toward the counter edge"
+    qb_key: "Check the weak-side LB — walked up and cheated outside toward the counter side"
+    read_category: lb-depth
+    why: "A backside LB already cheated to the counter edge beats the HB to the lead-block point and fills the counter hole unblocked."
+    typical_against: ["over-front", "stack 4-3", "QB-run game-plan defenses"]
+  - counter_id: extra-box-defender
+    pre_snap_look: "8 defenders inside the tackle box — a safety walked down to 6-8 yards, single-high shell behind it"
+    qb_key: "Count the box — eight, with one high safety"
+    read_category: box-count
+    why: "The QB is the runner, so the offense gains no number — the extra box defender comes free unblocked at the counter point of attack."
+    typical_against: ["cover-1 robber", "quarters with a safety rolled down", "8-man fronts"]
+
+common_uses:
+  - Constraint to QB Power once the defense fast-flows the strong-side track
+  - 1st-and-10 base run with a mobile QB
+  - 2nd-and-medium changeup against an aggressive front
+  - Red-zone backside scoring concept
+  - Modern spread-option base from a 2x2 look
+
+philosophy: power-run
+run_concept_ref: counter
+philosophy_ref: power-run
+
+era: "Mid-2010s onward — designed QB counter grew alongside mobile-QB spread offenses as a constraint on QB power."
+
+famous_examples:
+  - "Eagles (Jalen Hurts) QB counter off the QB-power game"
+  - "Modern Power 5 spread programs pairing QB power with QB counter"
+
+tags:
+  - run
+  - qb-run
+  - designed-qb-run
+  - counter
+  - power-run
+  - gap-scheme
+  - shotgun
+  - 2x2
+  - 11-personnel
+  - modern
+  - high-school
+  - college
+  - nfl
+
+notes: |
+  Designed QB counter off QB Power. The QB's first two steps attacking the
+  strong-side off-tackle hole, the HB lead-sweep track, and the OL
+  down-block show are all IDENTICAL to QB Power through the first two
+  waypoints — the defense reads the designed QB power run. The QB then
+  plants and counters back to the weak side behind the pulling RG, with the
+  HB reversing field to lead. Member of the Shotgun 2x2 QB-Power disguise
+  family (see data/play-families/).
+
+  Mirror to qb-power-counter-left by flipping all coordinates.
+
+verification_status: unverified
+source_notes:
+  - "Designed QB counter off the QB power run is a universal modern constraint concept. Authored as a disguise twin of shotgun-2x2-qb-power — initial action (QB strong-side off-tackle attack, HB lead-sweep track) deliberately mirrors the base play through the first two waypoints."
+flip_reads:
+- flip_id: front-overshift-callside
+  pre_snap_look: Defensive front slid toward the called side — an extra down lineman or a walked-up
+    linebacker puts +1 in the called-side box.
+  qb_key: Count the box side to side — the called side has one more hat than the backside.
+  read_category: box-count
+  flip_to: mirror-play
+  why: Running a gap scheme into the overshift is into the teeth; flipping the play attacks the
+    lighter box with the same blocking math.
+  typical_against:
+  - over-front
+  - shifted 4-3
+- flip_id: strength-declared-to-formation
+  pre_snap_look: Defense has fully declared to the formation's strength — an extra box defender
+    to the strong side and a safety rolled down over it.
+  qb_key: Check the strength side — both the box count and the safety roll are committed to it.
+  read_category: safety-shell
+  flip_to: mirror-formation
+  why: When the defense keys the formation's strength, flipping the whole formation forces a re-declare
+    and the run hits the side they vacated.
+  typical_against:
+  - cover-3 with strong roll
+  - 8-man fronts

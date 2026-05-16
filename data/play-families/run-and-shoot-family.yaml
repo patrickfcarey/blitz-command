@@ -1,0 +1,50 @@
+family_id: run-and-shoot-family
+name: "Run-and-Shoot Family"
+description: |
+  A disguise family anchored by the Switch concept. Every member shows the
+  defense the identical pre-snap picture and the identical first ~1.5 seconds
+  — the same SLOT-R short-across motion and the same QB drop (first two
+  waypoints byte-identical across all five plays). Only after the drop do they
+  fork: Switch and Go take vertical shots, Choice options off coverage
+  underneath, the HB Screen punishes the teed-up rush, and the HB Draw hits
+  the emptied box. True to the run-and-shoot — motion every snap, receivers
+  read coverage live — the defense cannot tell run from pass, vertical from
+  underneath, until it is too late.
+
+formation_id: run-and-shoot
+philosophy: spread-pass
+philosophy_ref: run-and-shoot
+
+base_play_id: run-and-shoot-switch
+companion_play_ids:
+  - run-and-shoot-choice
+  - run-and-shoot-go
+  - run-and-shoot-screen
+  - run-and-shoot-draw
+
+disguise_score: 0.9
+
+defensive_coverage_matrix:
+  defense-4-3-cover-3: run-and-shoot-go
+  defense-nickel-cover-1: run-and-shoot-switch
+  defense-dime-cover-4: run-and-shoot-draw
+  defense-nickel-cover-2: run-and-shoot-choice
+
+tags:
+  - run-and-shoot
+  - spread-pass
+  - 10-personnel
+  - 4-wide
+  - choice-routes
+  - vertical
+  - disguise-family
+  - throwback
+  - high-school
+  - college
+  - nfl
+
+verification_status: unverified
+source_notes:
+  - "Disguise family curated 2026-05-15 around the run-and-shoot's signature concepts (Switch, Choice, Go/seam-read) plus its two constraints (HB Screen, HB Draw). All five plays were authored or updated to share an identical SLOT-R short-across motion and an identical QB drop — the first two QB path waypoints ([0,0],[0,-2]) are byte-identical across every member."
+  - "disguise_score 0.9 reflects the identical pre-snap motion and identical QB drop start; the < 1.0 accounts for the receivers' route stems diverging slightly earlier than the QB action (and the screen/draw mesh resolving the run-pass picture by ~1.5 seconds)."
+  - "Concept sourcing: switch, four-verticals concepts in data/concepts/pass-concepts/; draw, screen as canonical run-and-shoot run concepts in data/concepts/philosophies/run-and-shoot.yaml. Routes referenced from data/routes/ (switch-go, switch-out-go, choice, choice-seam, seam, go, slant, hitch, flat)."

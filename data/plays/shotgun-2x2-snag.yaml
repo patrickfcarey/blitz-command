@@ -89,6 +89,26 @@ worst_vs_defense:
   - cover-2 robber
   - aggressive blitz from snag-side LB
 
+defensive_counters:
+  - counter_id: trap-corner
+    pre_snap_look: "Strong-side corner squatted at 5-7 yds depth (tighter than a normal cover-3 corner), with the strong safety widened toward the flat"
+    qb_key: "Check the strong-side CB depth — squatted short, eyes inside"
+    read_category: cb-leverage
+    why: "A short, squatted corner is set to trap the HB flat instead of carrying the deep half, taking the easy LO outlet and leaving the safety to bracket the corner route over the top."
+    typical_against: ["cover-2 trap", "cover-2 invert", "any cover-2 with disguised corner roll"]
+  - counter_id: bracket-snag
+    pre_snap_look: "MIKE walked out and cheated toward the TE, with a safety rolled down over the strong hash"
+    qb_key: "Check the MIKE — walked out toward the TE with a safety capping him"
+    read_category: lb-depth
+    why: "A MIKE pre-set toward the TE with a safety over the top brackets the snag — the play's anchor — forcing the QB onto the slower comeback or the bracketed flat."
+    typical_against: ["cover-1 robber", "match quarters", "pattern-match coverages"]
+  - counter_id: snag-side-pressure
+    pre_snap_look: "Strong-side LB / nickel walked up in a blitz alignment on the LOS, single-high safety shell behind"
+    qb_key: "Scan the strong-side LB / nickel — walked up on the line, one high safety"
+    read_category: lb-depth
+    why: "A walked-up snag-side defender is a free runner; with the HB in protection he gets home before the triangle develops, forcing a checkdown or sack."
+    typical_against: ["cover-1 zero-pressure", "fire-zone", "nickel pressure packages"]
+
 common_uses:
   - 3rd-and-medium (4-7 yards)
   - 1st down rhythm play

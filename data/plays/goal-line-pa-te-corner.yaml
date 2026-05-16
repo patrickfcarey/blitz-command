@@ -91,6 +91,26 @@ worst_vs_defense:
   - "bracket on TE-R"
   - "any defense playing pass-only at goal line"
 
+defensive_counters:
+  - counter_id: alert-zone-no-bite
+    pre_snap_look: "LBs and SS aligned with coverage depth off the LOS instead of crowding the box, with the defense in nickel/dime personnel rather than goal-line jumbo"
+    qb_key: "Check the LB depth and personnel — backers off the ball, sub package on the field"
+    read_category: lb-depth
+    why: "LBs and a SS already at coverage depth in a sub package are keying pass and will not suck up on the fake, so the TE corner breaks into populated coverage."
+    typical_against: ["goal-line pass alert", "any defense after the offense shows pass tendency"]
+  - counter_id: bracket-the-te
+    pre_snap_look: "Safety aligned over the top of TE-R at 8-10 yds with the TE-side corner pressed underneath in inside leverage"
+    qb_key: "Check the TE side — safety capped over the TE, corner pressed inside beneath him"
+    read_category: safety-shell
+    why: "A safety over the top with a pressed corner beneath is a pre-set bracket on the primary read, covering both above and below the corner break."
+    typical_against: ["cover-2 with bracket rules", "Tampa-2 with carrying safeties"]
+  - counter_id: zero-blitz-edge
+    pre_snap_look: "OLB or SS walked up tight outside the TE on the corner-route side, with no deep safety and corners pressed in man"
+    qb_key: "Check the safety shell — zero deep, an extra defender walked up off the TE edge"
+    read_category: safety-shell
+    why: "An empty deep shell with a defender walked up off the TE edge signals a cover-0 edge blitz that forces the throw before the TE can even break."
+    typical_against: ["cover-0 short-yardage blitz", "any defense bringing pressure on obvious pass downs"]
+
 common_uses:
   - "1st/2nd-and-Goal from the 5 to the 1 (set up by power runs)"
   - "Red-zone constraint to power tendency"

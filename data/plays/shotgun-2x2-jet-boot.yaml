@@ -1,0 +1,177 @@
+play_id: shotgun-2x2-jet-boot
+name: Jet Boot (Strong)
+aliases:
+  - Jet Bootleg
+  - Jet Fake Waggle
+  - Fly Sweep Naked
+
+formation: shotgun-2x2
+play_type: play-action
+ball_carrier: QB
+primary_read: X
+secondary_read: TE
+checkdown: HB
+
+# Jet motion block — BYTE-IDENTICAL across every member of the Jet family
+# (shotgun-2x2-jet-sweep base + jet-counter + jet-pop-pass + jet-boot). SLOT-W
+# motions full-speed across the formation and the ball is snapped while she
+# is still moving. This is the disguise thread: the defense sees the exact
+# same jet motion on the sweep, the counter, the pop pass, and the boot.
+motions:
+  - player: SLOT-W
+    type: mandatory
+    motion_type: jet
+    end_position: { x: 6.0, y: -2.0 }
+    snap_on_motion: true
+    notes: |
+      SLOT-W motions full-speed across the formation. Ball is snapped to QB
+      just as SLOT-W reaches the snap point. QB hands off to SLOT-W in
+      flight — the runner is already at full speed.
+
+assignments:
+  - player: LT
+    role: pass_block
+    blocking_scheme: half-roll-protection
+    notes: "Reach-step playside showing the Jet Sweep zone-reach for a beat, then hinge to protect the backside as the QB boots away from the jet."
+  - player: LG
+    role: pass_block
+    blocking_scheme: half-roll-protection
+    notes: "Show the jet zone-reach, then slide protection toward the strong side as the QB boots weak."
+  - player: C
+    role: pass_block
+    blocking_scheme: half-roll-protection
+    notes: "Show the jet zone-reach, then slide-protect toward the strong side."
+  - player: RG
+    role: pass_block
+    blocking_scheme: half-roll-protection
+    notes: "Show the jet zone-reach, then slide-protect the strong side."
+  - player: RT
+    role: pass_block
+    blocking_scheme: half-roll-protection
+    notes: "Show the jet zone-reach, then seal the strong side as the protection slides."
+  - player: TE
+    role: route
+    route_name: drag
+    depth_yd: 9
+    notes: "Show the reach block on the strong EDGE for one beat to sell the Jet Sweep, then release across on the drag to the boot side — the intermediate crosser arriving on the move."
+  - player: X
+    role: route
+    route_name: comeback
+    depth_yd: 14
+    is_primary: true
+    notes: "Release vertically off the weak-side perimeter, then break the comeback back toward the boot — the primary throw into the space the jet flow vacates."
+  - player: Z
+    role: route
+    route_name: clearout-go
+    depth_yd: 20
+    notes: "Release vertically to clear the strong-side corner and safety away from the boot side."
+  - player: SLOT-W
+    role: fake
+    notes: "Take the jet motion full-speed and run the Jet Sweep path as a pure fake — sell the sweep to pull the strong-side pursuit away from the boot."
+  - player: QB
+    role: ball_carrier
+    path: [[0, 0], [-2, -1], [-5, -1], [-8, 0]]
+    notes: |
+      First two waypoints IDENTICAL to Jet Sweep — catch the snap and ride
+      the jet mesh exactly like the handoff on Jet Sweep, then pull it and
+      keep booting weak-side away from the jet flow to a moving launch
+      point. Eyes on the X comeback first, then the TE drag.
+  - player: HB
+    role: fake
+    notes: "Fake an inside-zone path opposite the jet — IDENTICAL to the Jet Sweep HB fake — holding the backside LBs and DE before the boot clears."
+
+strengths:
+  - Identical jet motion and first-step QB action to Jet Sweep — the defense cannot tell it from the sweep
+  - The jet motion pulls the strong-side pursuit one way while the QB boots the other
+  - QB on the move — easier throws, fewer pass-rush angles
+  - Jet Sweep flow naturally vacates the weak side the boot attacks
+  - High-percentage throws into space against an over-pursuing defense
+
+weaknesses:
+  - Needs Jet Sweep on tape first — a cold jet fake holds no one
+  - Mandatory motion = fragile timing; mistime the snap and the play breaks
+  - Boot-side EDGE defender is unblocked or chipped at best
+  - Field cut in half — only the boot side is live
+  - Slow-developing — the boot needs time to reach the launch point
+
+best_vs_defense:
+  - cover-3 with run-fit, motion-keying linebackers
+  - 4-3 with predictable LB flow chasing the jet
+  - any defense overcommitting to the jet sweep
+  - single-high coverages rotating to the motion
+
+worst_vs_defense:
+  - two-high shells with linebackers at pass depth
+  - safety blitz from the boot side
+  - cover-2 with a corner playing edge contain on the boot side
+  - any defense not biting the jet fake
+
+defensive_counters:
+  - counter_id: alert-zone-no-bite
+    pre_snap_look: "Linebackers aligned at full passing depth (5+ yards off the LOS) under a two-high safety shell, not crowding the box"
+    qb_key: "Check the LB depth and safety shell — backers deep, two-high behind them"
+    read_category: lb-depth
+    why: "Linebackers already at pass depth under a two-high shell read pass first; they will not flow on the jet fake, so the drag arrives into a populated zone."
+    typical_against: ["cover-4", "cover-3 alert", "any defense after the jet sweep has been slowed"]
+  - counter_id: rush-the-boot-edge
+    pre_snap_look: "Boot-side (weak-side) EDGE in a wide-9 sprinter's stance with no blocker assigned to him"
+    qb_key: "Scan the boot-side edge — EDGE flared wide-9, weight forward, uncovered"
+    read_category: dl-alignment
+    why: "A wide-9 boot-side EDGE in a get-off stance with no blocker ignores the jet and crashes upfield, flushing the QB before the bootleg reaches its launch point."
+    typical_against: ["cover-1 with edge pressure", "any defense with a free runner off the boot side"]
+  - counter_id: squat-flat-corner
+    pre_snap_look: "Boot-side CB aligned tight at 5-6 yards with inside leverage and a safety capped over the top of him"
+    qb_key: "Check the boot-side corner — CB squatted low and inside with a safety overlapping above"
+    read_category: cb-leverage
+    why: "A low, inside-leverage corner with deep safety help is free to trigger down on the comeback and drag, removing the rolling QB's primary and intermediate windows."
+    typical_against: ["cover-2 with hard corners", "quarters with cloud rotation"]
+
+common_uses:
+  - After establishing Jet Sweep for 4+ yards
+  - 1st-and-10 play-action shot
+  - 3rd-and-medium moving-pocket throw
+  - Red-zone moving-target passing
+  - Changing the launch point against an interior-pressure front
+
+philosophy: speed-option
+run_concept_ref: sweep
+pass_concept_ref: flood
+philosophy_ref: spread-option
+
+era: "Mid-2010s onward — bootlegs off jet motion grew with the spread play-action game as a constraint on the jet sweep."
+
+famous_examples:
+  - "Modern Power 5 spread offenses pairing jet sweep with a bootleg (Auburn, Ole Miss)"
+  - "49ers under Kyle Shanahan — bootleg play-action off the jet/fly-sweep motion"
+
+tags:
+  - pa
+  - play-action
+  - bootleg
+  - rollout
+  - jet-motion
+  - shotgun
+  - 2x2
+  - 11-personnel
+  - mandatory-motion
+  - modern
+  - high-school
+  - college
+  - nfl
+
+notes: |
+  Play-action bootleg off the jet fake. The jet motion is IDENTICAL to Jet
+  Sweep — SLOT-W motions full-speed and the ball is snapped on the move —
+  and the QB's first two steps riding the jet mesh are identical to the Jet
+  Sweep handoff. The QB then pulls it and boots weak-side away from the jet
+  flow with a three-level read (X comeback / TE drag / HB checkdown), while
+  SLOT-W and the HB run their Jet Sweep fakes. Member of the Shotgun 2x2
+  Jet disguise family (see data/play-families/).
+
+  The jet flow pulls the strong-side pursuit so the boot springs back into
+  the vacated weak side. Mirror to jet-boot-left by motioning Z across and
+  flipping all coordinates.
+
+verification_status: unverified
+source_notes:
+  - "The bootleg off jet/fly-sweep motion is a universal modern constraint concept. Authored as a disguise twin of shotgun-2x2-jet-sweep — the jet motion block is byte-identical to the base play and the QB's first two path waypoints mirror the Jet Sweep handoff."

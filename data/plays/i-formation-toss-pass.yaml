@@ -1,0 +1,158 @@
+play_id: i-formation-toss-pass
+name: Toss Pass (Strong)
+aliases:
+  - PA Toss
+  - Toss Play-Action
+  - Toss Pop Pass
+
+formation: i-formation
+play_type: play-action
+ball_carrier: QB
+primary_read: TE
+secondary_read: Z
+checkdown: FB
+
+# No motion — identical empty motions block to Lead Toss. The Toss family
+# shares its pre-snap look with NO motion; run it the same across the family
+# so the defense cannot key a tell.
+motions: []
+
+assignments:
+  - player: LT
+    role: pass_block
+    blocking_scheme: pa-toss-protection
+    notes: "Show the drive-block on the backside DE for a beat, then anchor and protect the backside."
+  - player: LG
+    role: pass_block
+    blocking_scheme: pa-toss-protection
+    notes: "Fire out showing the toss drive-block, then recover and protect the interior."
+  - player: C
+    role: pass_block
+    blocking_scheme: pa-toss-protection
+    notes: "Show the drive-block on the nose, then protect the A-gaps."
+  - player: RG
+    role: pass_block
+    blocking_scheme: pull-around
+    target: playside-edge
+    path: [[0, 0], [3, -0.5], [6, 0]]
+    notes: "PULL — identical pull track to Lead Toss for the first two steps to sell the toss, then log and wall the playside edge rusher."
+  - player: RT
+    role: pass_block
+    blocking_scheme: pa-toss-protection
+    notes: "Show the down-block on the playside DE, then anchor and protect the playside."
+  - player: TE
+    role: route
+    route_name: drag
+    depth_yd: 8
+    is_primary: true
+    notes: "Show the kickout block on the EDGE for one beat to sell the toss, then release across on the drag behind the flowing linebackers — the bread-and-butter throw."
+  - player: X
+    role: route
+    route_name: post
+    depth_yd: 18
+    notes: "Stalk-release to sell the perimeter run, then stem to the post — the shot if the backside safety chases the toss flow."
+  - player: Z
+    role: route
+    route_name: corner
+    depth_yd: 12
+    notes: "Show the crack-block for a beat to sell the toss, then break the corner into the void the toss flow vacates."
+  - player: QB
+    role: ball_carrier
+    path: [[0, 0], [-1, -1], [-3, -1], [-3, -3]]
+    notes: "Reverse-out IDENTICAL to Lead Toss, fake the pitch to the HB, then settle at depth and throw. Eyes on the TE drag first."
+  - player: FB
+    role: route
+    route_name: flat
+    depth_yd: 3
+    path: [[0, 0], [5, 3], [8, 3]]
+    notes: "Lead to the perimeter exactly like Lead Toss for the first two steps, then settle in the playside flat as the underneath outlet."
+  - player: HB
+    role: fake
+    path: [[0, 0], [4, 1], [7, 4]]
+    notes: "Run the exact Lead Toss track — catch-and-carry the pitch fake to the corner to sell it, then continue as if finishing the perimeter run."
+
+strengths:
+  - Identical pre-snap look and first-step action to Lead Toss — the defense cannot tell it from the run
+  - Toss flow pulls linebackers to the perimeter, opening the TE drag behind them
+  - Keeping the RG pull sells the toss harder than a standard PA fake
+  - QB stays at modest depth — quicker to the throw than a full bootleg
+  - Attacks defenses that have over-committed to stopping the toss perimeter
+
+weaknesses:
+  - Needs Lead Toss on tape first — a cold PA fake holds no one
+  - Pulling the RG opens a protection seam if the playside edge rush is wide
+  - Vulnerable to interior pressure that doesn't honor the run fake
+  - Field stays full-width — reads are more demanding than a half-field boot
+  - Slower to the throw than a quick game pass against pure pass defenses
+
+best_vs_defense:
+  - cover-3 with run-fit linebackers
+  - 4-3 with fast-flowing, aggressive LB play
+  - any defense over-pursuing the toss perimeter
+  - single-high coverages
+
+worst_vs_defense:
+  - two-high shells with LBs at pass depth
+  - cover-1 robber sitting in the drag window
+  - interior twist / A-gap pressure
+  - any defense that has stopped the toss and stopped respecting it
+
+defensive_counters:
+  - counter_id: alert-zone-no-bite
+    pre_snap_look: "Linebackers aligned at full passing depth (5+ yards off the LOS) under a two-high safety shell, not crowding the box or cheating to the toss strength"
+    qb_key: "Check the LB depth and safety shell — backers deep, two-high behind them"
+    read_category: lb-depth
+    why: "Linebackers already at pass depth under a two-high shell read pass first; they will not flow on the toss fake, so the TE drag arrives into a populated zone."
+    typical_against: ["cover-4", "cover-3 alert", "any defense after the toss has been slowed"]
+  - counter_id: robber-middle
+    pre_snap_look: "A safety dropped to 8-10 yards, squared and stationed over the middle of the field, with a two-high shell rolled behind him"
+    qb_key: "Check the middle of the field — a safety squatting at 8-10 yards over the ball"
+    read_category: safety-shell
+    why: "A robber sitting in the drag's window undercuts the primary read and brackets the crosser inside-out."
+    typical_against: ["cover-1 robber", "cover-3 buzz"]
+  - counter_id: edge-overload
+    pre_snap_look: "Playside EDGE in a wide get-off stance with a second rusher — a LB or strong safety — walked up and stacked just outside him"
+    qb_key: "Scan the playside edge — EDGE in a sprinter's stance with a second defender stacked outside"
+    read_category: dl-alignment
+    why: "An overloaded playside edge outnumbers the protection — with the RG pulling, the rush gets home before the pocket PA's drop completes."
+    typical_against: ["cover-1 with edge pressure", "zone-pressure looks"]
+
+common_uses:
+  - After establishing Lead Toss for 4+ yards
+  - 1st-and-10 play-action shot
+  - 2nd-and-medium
+  - Moving the linebackers with the toss fake to open the middle
+
+philosophy: power-run
+pass_concept_ref: sail
+philosophy_ref: power-run
+
+era: "Universal — play-action off the toss sweep is as old as the sweep itself; every era runs a Toss Pass."
+
+famous_examples:
+  - "Vince Lombardi's Packers (play-pass off the Power sweep)"
+  - "USC under Pete Carroll (PA shots off the perimeter run game)"
+
+tags:
+  - pa
+  - play-action
+  - power-run
+  - toss
+  - pocket-pass
+  - high-school
+  - college
+  - nfl
+
+notes: |
+  Play-action pass off Lead Toss. The QB reverse-out, the HB perimeter
+  fake, the FB lead, the RG pull, and the OL run-block show are all
+  IDENTICAL to Lead Toss through the pitch fake — the defense reads toss.
+  The QB then settles at modest depth and throws the TE drag behind the
+  flowing linebackers. Member of the I-Formation Toss disguise family
+  (see data/play-families/).
+
+  Mirror to toss-pass-left by flipping all coordinates.
+
+verification_status: unverified
+source_notes:
+  - "Play-action off the toss sweep is a universal constraint concept. Authored as a disguise twin of i-formation-lead-toss — initial action (QB reverse-out, HB/FB tracks, RG pull) deliberately mirrors the base play's first two waypoints exactly."

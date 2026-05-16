@@ -1,0 +1,258 @@
+play_id: singleback-trio-zone-counter-left
+name: Zone Counter (Strong) (Mirror Left)
+aliases:
+- Zone Counter
+- IZ Counter
+- Counter off Zone
+formation: singleback-trio-left
+play_type: run
+ball_carrier: HB
+motions: []
+run_reads:
+- priority: 1
+  read_key: kickout block on the backside edge (LT)
+  run_to: follow the puller around the backside edge once the LT seals the EDGE; turn upfield off his block
+  notes: The counter sends the ball BACKSIDE — the HB shows the playside zone bang track for a beat, then redirects behind
+    the pull. Stay on the puller's hip.
+- priority: 2
+  read_key: backside linebacker
+  run_to: if the backside LB scrapes over the kickout, cut inside underneath him into the counter crease
+  notes: RG wraps for the backside LB. If the LB beats the wrap over the top, the inside lane behind the kickout opens.
+- priority: 3
+  read_key: cutback lane (frontside A-gap)
+  run_to: if the counter hole is blown up, cut all the way back to the frontside A-gap behind the center
+  notes: Last resort — only hit the cutback if the counter hole is completely collapsed.
+assignments:
+- player: LT
+  role: run_block
+  blocking_scheme: kickout
+  target: backside-edge
+  notes: KEY BLOCK — instead of the backside zone step, the LT hinges and kicks out the backside EDGE to open the counter
+    hole the RG wraps through.
+- player: LG
+  role: run_block
+  blocking_scheme: zone-combo
+  target: backside-DT-then-LB
+  notes: Show the zone-combo exactly like Inside Zone for one count, then secure the backside DT and the counter-side A-gap.
+- player: C
+  role: run_block
+  blocking_scheme: zone-combo
+  target: 0-or-1-tech
+  notes: Show the zone-combo exactly like Inside Zone, then climb to seal the frontside A-gap on the side the HB fakes toward.
+- player: RG
+  role: run_block
+  blocking_scheme: pull-around
+  target: backside-LB
+  path:
+  - - 0
+    - 0
+  - - 2
+    - -0.5
+  - - 4
+    - 0
+  - - 5
+    - 3
+  notes: PULL — the backside guard pulls around, wraps the LT kickout, and leads up on the backside LB through the counter
+    hole.
+- player: RT
+  role: run_block
+  blocking_scheme: zone-step-playside
+  target: 3-tech-or-EDGE
+  notes: Zone step to the original playside — seal the playside front so the defense flows toward the zone fake.
+- player: TE
+  role: run_block
+  blocking_scheme: zone-step-playside
+  target: edge-defender
+  notes: Show the edge-seal zone step exactly like Inside Zone, selling the playside zone hole the HB fakes toward.
+- player: X
+  role: run_block
+  blocking_scheme: stalk
+  target: cornerback
+  notes: Backside X — stalk-release the backside corner to wall the perimeter on the counter side.
+- player: Z
+  role: run_block
+  blocking_scheme: stalk
+  target: cornerback
+- player: SLOT
+  role: run_block
+  blocking_scheme: stalk
+  target: nickel-defender
+  notes: Backside slot — stalk the nickel to wall the second-level perimeter on the counter side.
+- player: QB
+  role: handoff
+  path:
+  - - 0
+    - 0
+  - - 1
+    - -1
+  - - 2
+    - -2
+  notes: Reverse-pivot IDENTICAL to Inside Zone, ride the mesh, then hand to the HB on the counter; carry the fake to the
+    original playside to hold that edge.
+- player: HB
+  role: ball_carrier
+  is_primary: true
+  path:
+  - - 0
+    - 0
+  - - -2
+    - 3
+  - - 1
+    - 4
+  - - 4
+    - 8
+  notes: First two waypoints IDENTICAL to Inside Zone — jab the playside zone bang track to sell the give, then plant and
+    cut back behind the RG pull through the counter hole.
+  alt_paths:
+  - priority: secondary
+    path:
+    - - 0
+      - 0
+    - - -2
+      - 3
+    - - 1
+      - 4
+    - - 2
+      - 8
+    notes: 'Read 2 (backside LB scrapes over the kickout): cut inside underneath the wrap into the counter crease.'
+  - priority: tertiary
+    path:
+    - - 0
+      - 0
+    - - -2
+      - 3
+    - - 0
+      - 4
+    - - -1
+      - 8
+    notes: 'Read 3 (counter hole collapsed): cut all the way back to the frontside A-gap behind the center.'
+strengths:
+- Identical pre-snap look and first-step action to Inside Zone — the defense cannot tell it from the base run
+- The playside zone fake pulls fast-flowing linebackers one way before the ball goes back the other
+- The RG pull adds a lead blocker at the second level through the counter hole
+- Punishes an over-pursuing zone-keying defense by using its flow against it
+- Three-receiver spread thins the box, leaving fewer fitters for the counter side
+weaknesses:
+- Needs Inside Zone on tape first — a cold fake does not pull the linebackers
+- Slow-developing — the fake plus the guard pull takes longer than straight zone
+- No FB to insert — the counter relies on the single RG pull plus the LT kickout
+- A disciplined backside EDGE who refuses the LT kickout walls the counter hole
+- Vulnerable to backside penetration before the kickout and wrap are set
+best_vs_defense:
+- nickel with fast, downhill, over-pursuing linebackers
+- cover-3 with linebackers flowing hard to the zone fake
+- any defense overcommitting to the zone run
+- over-front (gives the kickout and wrap angles)
+worst_vs_defense:
+- bear front with a defender in every gap
+- 8-man fronts with disciplined gap fits
+- a backside EDGE in a contain alignment refusing the kickout
+- cover-1 robber with an extra fitter in the box
+defensive_counters:
+- counter_id: backside-edge-stays-home
+  pre_snap_look: Backside DE outside the LT in a wide-9 stance with his outside arm and hand free, squared to the LOS rather
+    than crashing inside
+  qb_key: Scan the backside edge — DE widened outside the LT, outside arm free, square stance
+  read_category: dl-alignment
+  why: A backside DE already wide and squared is set to refuse the LT kickout and keep contain, walling the counter hole before
+    the RG wraps through.
+  typical_against:
+  - over-front with a wide-9
+  - any defense with disciplined backside contain
+- counter_id: backside-lb-cheated
+  pre_snap_look: Backside LB cheated down and tight, stacked over the backside B-gap inside his normal width, walked up off
+    the LOS
+  qb_key: Check the backside LB — walked up and cheated toward the counter side
+  read_category: lb-depth
+  why: A LB already cheated to the counter side beats the RG wrap to the hole and fills the counter lane before the block
+    can land.
+  typical_against:
+  - over-front
+  - 4-3 stack with movement
+- counter_id: slant-dl-to-counter
+  pre_snap_look: Interior DL set in even alignment but visibly cocked and leaning toward the counter side, weight on the counter-side
+    hand
+  qb_key: Scan the interior DL stagger — tackles tilted and leaning toward the counter side
+  read_category: dl-alignment
+  why: A DL cocked toward the counter side telegraphs a slant that shoots the gap the RG vacates to pull, blowing up the mesh
+    before the counter can redirect.
+  typical_against:
+  - over-front
+  - any 4-down front with movement calls
+common_uses:
+- 1st-and-10 after establishing Inside Zone
+- 2nd-and-medium misdirection against a fast-flow defense
+- Changing direction against an over-pursuing linebacker corps
+- Gap-scheme answer off the zone look from a spread set
+philosophy: zone-run
+run_concept_ref: counter
+philosophy_ref: zone-run
+era: Modern — pairing a gap-scheme counter with zone-run action is a staple of every modern run game; the counter punishes
+  a defense that has learned to fly to the zone.
+famous_examples:
+- Modern NFL teams pairing counter with their 11-personnel zone run game
+- Spread college programs running counter off an established zone identity
+tags:
+- run
+- gap-scheme
+- counter
+- counter-action
+- zone-run
+- 11-personnel
+- singleback
+- misdirection
+- high-school
+- college
+- nfl
+notes: 'Counter off Inside Zone from the 11-personnel singleback trio set. The
+
+  QB reverse-pivot and the HB bang track are IDENTICAL to singleback-trio-
+
+  inside-zone for the first two path waypoints — the defense reads the
+
+  zone run and flows playside. The ball then goes BACKSIDE: the LT kicks
+
+  out the backside edge, the RG pulls and wraps, and the HB cuts back
+
+  behind the convoy. With no FB, the counter leans on the single guard
+
+  pull plus the tackle kickout. Member of the Singleback Trio Zone
+
+  disguise family (see data/play-families/).
+
+
+  Mirror to zone-counter-left by flipping all coordinates.
+
+  '
+verification_status: unverified
+source_notes:
+- The gap-scheme counter run off zone action is a universal modern constraint concept. Authored as a disguise twin of singleback-trio-inside-zone
+  — the QB reverse-pivot and HB bang track deliberately mirror the base play's first two path waypoints exactly; the LT's
+  switch from backside zone step to kickout and the RG's switch from zone-combo to pull are the structural changes that build
+  the counter.
+- Mirror of singleback-trio-zone-counter.yaml — path waypoints flipped on x; formation reference points to the mirror formation.
+  Routes auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed
+  look — coordinates and paths are the source of truth.
+flip_reads:
+- flip_id: front-overshift-callside
+  pre_snap_look: Defensive front slid toward the called side — an extra down lineman or a walked-up
+    linebacker puts +1 in the called-side box.
+  qb_key: Count the box side to side — the called side has one more hat than the backside.
+  read_category: box-count
+  flip_to: mirror-play
+  why: Running a gap scheme into the overshift is into the teeth; flipping the play attacks the
+    lighter box with the same blocking math.
+  typical_against:
+  - over-front
+  - shifted 4-3
+- flip_id: strength-declared-to-formation
+  pre_snap_look: Defense has fully declared to the formation's strength — an extra box defender
+    to the strong side and a safety rolled down over it.
+  qb_key: Check the strength side — both the box count and the safety roll are committed to it.
+  read_category: safety-shell
+  flip_to: mirror-formation
+  why: When the defense keys the formation's strength, flipping the whole formation forces a re-declare
+    and the run hits the side they vacated.
+  typical_against:
+  - cover-3 with strong roll
+  - 8-man fronts

@@ -88,6 +88,26 @@ worst_vs_defense:
   - cover-2 robber
   - aggressive nickel blitz
 
+defensive_counters:
+  - counter_id: quarters-squat-flat
+    pre_snap_look: "Nickel / OLB aligned tight to the slot at 5-6 yds depth, squared up rather than at normal curl-flat width"
+    qb_key: "Check the flat defender's depth — squatted tight on the slot, not widened"
+    read_category: lb-depth
+    why: "An underneath defender already squatting at stick depth sits in the soft spot the option route wants to settle in, taking it away before the QB's 3-step rhythm hits."
+    typical_against: ["cover-2", "quarters", "cover-3 zone-match"]
+  - counter_id: sticky-man-slot
+    pre_snap_look: "Nickel and SAM pressed inside-leverage on both slots, no deep-middle safety showing"
+    qb_key: "Check slot-defender leverage — pressed with the inside foot up, no middle help"
+    read_category: cb-leverage
+    why: "Inside-leverage man press lets the defender trail through the out-cut break with no separation, leaving the QB nowhere to throw on a 3-step rhythm."
+    typical_against: ["cover-1", "cover-0", "sticky man-match"]
+  - counter_id: nickel-blitz-strong
+    pre_snap_look: "Nickel walked up on the LOS over the slot (toes on the line, hand low), with a single-high safety shell behind"
+    qb_key: "Scan the slot defender — walked up on the line with only one high safety"
+    read_category: lb-depth
+    why: "A nickel on the line over the slot is a free runner; with the HB in protection the pocket collapses before the option route breaks, forcing a dump underneath into coverage."
+    typical_against: ["cover-1 zero-pressure", "fire-zone", "nickel pressure packages"]
+
 common_uses:
   - 3rd-and-short / 3rd-and-medium
   - 1st down chains

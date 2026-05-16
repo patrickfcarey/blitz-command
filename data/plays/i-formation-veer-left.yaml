@@ -145,3 +145,27 @@ source_notes:
 - Mirror of i-formation-veer.yaml — path waypoints flipped on x; formation reference points to the mirror formation. Routes
   auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed look
   — coordinates and paths are the source of truth.
+flip_reads:
+- flip_id: keys-set-callside
+  pre_snap_look: The dive key and the pitch key (first two defenders outside the tackle) are both
+    aligned hard and downhill to the called side.
+  qb_key: Scan the called-side edge — both option keys are squatted and committed, no width left
+    to read.
+  read_category: dl-alignment
+  flip_to: mirror-play
+  why: An option into keys that are already set gives the QB no honest read; flipping the option
+    attacks the side where the keys still have to choose.
+  typical_against:
+  - over-front
+  - cover-1 with edge pressure
+- flip_id: strength-declared-to-formation
+  pre_snap_look: Defense has declared to the formation's strength — an extra perimeter defender
+    and a safety rolled down to the strong side.
+  qb_key: Check the strength side — the extra hat and the safety roll are committed to it.
+  read_category: safety-shell
+  flip_to: mirror-formation
+  why: Flipping the formation moves the option away from the loaded perimeter and forces the defense
+    to re-declare its keys.
+  typical_against:
+  - cover-3 with strong roll
+  - 8-man fronts

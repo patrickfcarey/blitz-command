@@ -1,0 +1,59 @@
+family_id: shotgun-2x2-quick-game-family
+name: "Shotgun 2x2 Quick-Game Family"
+description: |
+  A disguise family anchored by Stick whose deception lives in the receiver
+  releases. Every member shows the defense the identical pre-snap look, the
+  identical 3-step QB drop, and the identical early receiver releases — the
+  WRs take the same first ~3 steps off the line. Only then do the routes
+  branch into different concepts: Stick runs the mirrored option routes,
+  Quick Snag breaks into the snag triangle, Quick Zebra pivots the fake-drag
+  back underneath, and the West Coast trio attacks every level of the quick
+  game — Slant-Flat hi-los the flat defender, Quick Hitch settles hitches
+  with a seam answer, Quick Out snaps speed-outs behind vertical clear-outs.
+  The defense reads the same quick-game picture on all members until the
+  routes diverge.
+
+formation_id: shotgun-2x2
+philosophy: pro-style
+philosophy_ref: pro-style
+
+base_play_id: shotgun-2x2-stick
+companion_play_ids:
+  - shotgun-2x2-quick-snag
+  - shotgun-2x2-quick-zebra
+  - shotgun-2x2-slant-flat
+  - shotgun-2x2-quick-hitch
+  - shotgun-2x2-quick-out
+
+disguise_score: 0.85
+
+defensive_coverage_matrix:
+  defense-4-3-cover-3: shotgun-2x2-quick-snag
+  defense-nickel-cover-1: shotgun-2x2-quick-zebra
+  defense-dime-cover-4: shotgun-2x2-stick
+  defense-46-bear-cover-0: shotgun-2x2-stick
+
+tags:
+  - pass
+  - quick-game
+  - stick
+  - snag
+  - zebra
+  - slant-flat
+  - hitch
+  - quick-out
+  - spread
+  - shotgun
+  - 2x2
+  - pro-style
+  - west-coast
+  - disguise-family
+  - high-school
+  - college
+  - nfl
+
+verification_status: unverified
+source_notes:
+  - "Disguise family curated for the HS base playbook. The companion plays (quick-snag, quick-zebra) were authored specifically as disguise twins of shotgun-2x2-stick — the QB's 3-step drop first two waypoints are identical to the base play, all members carry the same empty motions block, and every receiver's early release waypoints match the base play before the routes branch into their respective concepts."
+  - "Extended 2026-05-15 with three West Coast quick-game companions (slant-flat, quick-hitch, quick-out) — Bill Walsh bread-and-butter slants / hitches / outs off the 3-step drop. Each was authored as a disguise twin of shotgun-2x2-stick: byte-identical QB drop first two waypoints, the same empty motions block, and early receiver release waypoints matching the base play's vertical stems before the routes branch. One inherent exception: the SLOT-W flat in slant-flat releases outside immediately, as a flat route cannot match a vertical stem."
+  - "disguise_score 0.85 reflects identical (empty) pre-snap motion, identical QB drop, and matched early receiver releases; the < 0.9 accounts for this family's disguise living in the route releases (which branch after ~3 steps) rather than in a backfield run fake that holds for the full ~1.5 seconds, and for the one flat route that releases outside immediately."

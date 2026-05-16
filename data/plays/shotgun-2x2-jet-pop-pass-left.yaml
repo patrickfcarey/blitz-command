@@ -1,0 +1,200 @@
+play_id: shotgun-2x2-jet-pop-pass-left
+name: Jet Pop Pass (Strong) (Mirror Left)
+aliases:
+- Jet Pop
+- Jet Fake Pop Pass
+- Fly Sweep Pop
+formation: shotgun-2x2-left
+play_type: play-action
+ball_carrier: QB
+primary_read: TE
+secondary_read: X
+checkdown: HB
+motions:
+- player: SLOT-W
+  type: mandatory
+  motion_type: jet
+  end_position:
+    x: -6.0
+    y: -2.0
+  snap_on_motion: true
+  notes: 'SLOT-W motions full-speed across the formation. Ball is snapped to QB
+
+    just as SLOT-W reaches the snap point. QB hands off to SLOT-W in
+
+    flight — the runner is already at full speed.
+
+    '
+assignments:
+- player: LT
+  role: pass_block
+  blocking_scheme: pa-jet-protection
+  notes: Reach-step playside showing the Jet Sweep zone-reach for a beat, then anchor and protect the backside on the quick
+    pop.
+- player: LG
+  role: pass_block
+  blocking_scheme: pa-jet-protection
+  notes: Show the jet zone-reach, then recover and protect the interior.
+- player: C
+  role: pass_block
+  blocking_scheme: pa-jet-protection
+  notes: Show the jet zone-reach, then protect the A-gaps on the quick throw.
+- player: RG
+  role: pass_block
+  blocking_scheme: pa-jet-protection
+  notes: Show the jet zone-reach, then recover and protect.
+- player: RT
+  role: pass_block
+  blocking_scheme: pa-jet-protection
+  notes: Show the jet zone-reach, then protect the strong-side edge.
+- player: TE
+  role: route
+  route_name: pop
+  depth_yd: 7
+  is_primary: true
+  notes: Show the reach block on the strong EDGE for one beat to sell the Jet Sweep, then pop off vertically into the seam
+    window behind the linebacker as he triggers on the jet — the bread-and-butter quick throw.
+- player: X
+  role: route
+  route_name: slant
+  depth_yd: 5
+  notes: Stalk-release to sell run for a beat, then break the slant into the weak-side window — the quick answer if the pop
+    seam is squeezed.
+- player: Z
+  role: route
+  route_name: clearout-go
+  depth_yd: 20
+  notes: Release vertically to clear the strong-side corner and safety away from the TE pop window.
+- player: SLOT-W
+  role: fake
+  notes: Take the jet motion full-speed and run the Jet Sweep path as a pure fake — sell the sweep to trigger the linebackers
+    downhill.
+- player: QB
+  role: ball_carrier
+  path:
+  - - 0
+    - 0
+  - - 2
+    - -1
+  - - 2
+    - -2
+  notes: 'First two waypoints IDENTICAL to Jet Sweep — catch the snap and ride
+
+    the jet mesh exactly like the handoff on Jet Sweep, then pull it,
+
+    settle one step, and fire the quick pop pass. Eyes on the TE pop
+
+    window the whole way; this is a one-hitch, quick-rhythm throw.
+
+    '
+- player: HB
+  role: fake
+  notes: Fake an inside-zone path opposite the jet — IDENTICAL to the Jet Sweep HB fake — holding the backside LBs and DE
+    before the pop is thrown behind them.
+strengths:
+- Identical jet motion and first-step QB action to Jet Sweep — the defense cannot tell it from the sweep
+- The jet motion triggers run-flow linebackers downhill, opening the TE pop behind them
+- Quick one-hitch throw — the ball is out before the rush arrives
+- QB stays in the pocket — no edge given up
+- Punishes a defense that triggers hard on the jet motion
+weaknesses:
+- Needs Jet Sweep on tape first — a cold jet fake holds no linebacker
+- Mandatory motion = fragile timing; mistime the snap and the play breaks
+- Short throw window — a linebacker who does not trigger sits in the pop seam
+- Limited to the quick game — no deep concept built in
+- The TE must sell the reach block before releasing or the timing is off
+best_vs_defense:
+- cover-3 with run-fit, motion-keying linebackers
+- 4-3 with aggressive downhill LB play
+- any defense triggering hard on the jet motion
+- single-high coverages with linebackers crowding the box
+worst_vs_defense:
+- two-high shells with linebackers at pass depth
+- cover-1 robber sitting in the seam window
+- linebackers who spot-drop and do not honor the jet
+- any defense that has stopped the jet sweep and stopped respecting it
+defensive_counters:
+- counter_id: alert-zone-no-bite
+  pre_snap_look: Linebackers aligned at full passing depth (5+ yards off the LOS) under a two-high safety shell, not crowding
+    the box
+  qb_key: Check the LB depth and safety shell — backers deep, two-high behind them
+  read_category: lb-depth
+  why: Linebackers already at pass depth under a two-high shell read pass first; they will not trigger on the jet fake, so
+    the TE pop arrives into a populated seam.
+  typical_against:
+  - cover-4
+  - cover-3 alert
+  - any defense after the jet sweep has been slowed
+- counter_id: robber-seam
+  pre_snap_look: A safety dropped to 8-10 yards squared over the middle of the field with a two-high shell rolled behind him
+  qb_key: Check the middle of the field — a safety squatting at 8-10 yards over the ball
+  read_category: safety-shell
+  why: A robber sitting in the TE pop window undercuts the primary read before the QB can release the quick throw.
+  typical_against:
+  - cover-1 robber
+  - cover-3 buzz
+- counter_id: strong-edge-overload
+  pre_snap_look: Strong-side EDGE in a wide get-off stance with a second rusher — a LB or nickel — walked up and stacked just
+    outside him
+  qb_key: Scan the strong-side edge — EDGE in a sprinter's stance with a second defender stacked outside
+  read_category: dl-alignment
+  why: An overloaded strong-side edge outnumbers the protection and gets home fast against the quick pop's minimal pocket
+    time.
+  typical_against:
+  - cover-1 with edge pressure
+  - zone-pressure looks
+common_uses:
+- After establishing Jet Sweep for 4+ yards
+- 1st-and-10 quick play-action throw
+- 2nd-and-medium
+- Red-zone moving the linebackers with the jet fake
+- Tempo / quick-rhythm changeup
+philosophy: speed-option
+run_concept_ref: sweep
+pass_concept_ref: pop-pass
+philosophy_ref: spread-option
+era: Mid-2010s onward — pop passes off jet motion grew with the spread RPO and play-action quick game.
+famous_examples:
+- Modern Power 5 spread offenses pairing jet sweep with the pop pass (Auburn, Ole Miss)
+- 49ers under Kyle Shanahan — quick play-action off the jet/fly-sweep motion
+tags:
+- pa
+- play-action
+- pop-pass
+- quick-game
+- jet-motion
+- shotgun
+- 2x2
+- 11-personnel
+- mandatory-motion
+- modern
+- high-school
+- college
+- nfl
+notes: 'Quick pop pass off the jet fake. The jet motion is IDENTICAL to Jet
+
+  Sweep — SLOT-W motions full-speed and the ball is snapped on the move —
+
+  and the QB''s first two steps riding the jet mesh are identical to the Jet
+
+  Sweep handoff. The QB then pulls it and fires a one-hitch pop pass to the
+
+  TE in the seam behind the run-flow linebackers, while SLOT-W and the HB
+
+  run their Jet Sweep fakes. Member of the Shotgun 2x2 Jet disguise family
+
+  (see data/play-families/).
+
+
+  Mirror to jet-pop-pass-left by motioning Z across and flipping all
+
+  coordinates.
+
+  '
+verification_status: unverified
+source_notes:
+- The pop pass off jet/fly-sweep motion is a universal modern constraint concept. Authored as a disguise twin of shotgun-2x2-jet-sweep
+  — the jet motion block is byte-identical to the base play and the QB's first two path waypoints mirror the Jet Sweep handoff.
+- Mirror of shotgun-2x2-jet-pop-pass.yaml — path waypoints flipped on x; formation reference points to the mirror formation.
+  Routes auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed
+  look — coordinates and paths are the source of truth.

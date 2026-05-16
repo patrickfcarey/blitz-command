@@ -1,0 +1,178 @@
+play_id: shotgun-2x2-drive-screen
+name: Drive Screen (Strong)
+aliases:
+  - Drive TE Screen
+  - Drag Screen
+  - Drive Throwback Screen
+
+formation: shotgun-2x2
+play_type: screen
+ball_carrier: TE
+primary_read: TE
+checkdown: HB
+
+# Empty motions block — identical to the Drive base. No motion on every
+# member of the West Coast Drive family keeps the pre-snap look identical so
+# the defense cannot key the call.
+motions: []
+
+assignments:
+  - player: LT
+    role: pass_block
+    blocking_scheme: invite-rusher
+    notes: "Show the rhythm-drop pass set, then deliberately let the backside rusher upfield past the screen — sell the dropback."
+  - player: LG
+    role: pass_block
+    blocking_scheme: invite-rusher
+    notes: "Show the pass set, then invite the interior rusher upfield away from the screen lane."
+  - player: C
+    role: pass_block
+    blocking_scheme: screen-release
+    target: screen-alley
+    path: [[0, 0], [1, 0.5], [3, 1], [6, 2]]
+    notes: "Show the protection for a beat to sell the dropback, then release flat to the strong side as the lead point blocker out front of the TE screen."
+  - player: RG
+    role: pass_block
+    blocking_scheme: screen-release
+    target: screen-alley
+    path: [[0, 0], [1, 0.5], [3, 1], [5, 1]]
+    notes: "Show the protection, sell the dropback, then release to the strong side and lead the screen on the first alley defender."
+  - player: RT
+    role: pass_block
+    blocking_scheme: invite-rusher
+    notes: "Show the pass set, then invite the strong-side rusher upfield away from the screen."
+  - player: TE
+    role: route
+    route_name: drag
+    depth_yd: 1
+    is_primary: true
+    notes: |
+      Show the shallow-cross release for one beat — IDENTICAL to the Drive
+      base's first step so the defense reads the Drive concept — then settle,
+      let the rush pass, slip behind the LOS to the strong-side screen lane,
+      catch the screen, and follow the C and RG convoy.
+    path: [[0, 0], [1, 1], [3, 0], [6, -1]]
+  - player: Z
+    role: route
+    route_name: clear-out-go
+    depth_yd: 20
+    notes: "Release vertically to clear the strong-side corner and safety away from the screen lane."
+  - player: X
+    role: route
+    route_name: clear-out-go
+    depth_yd: 20
+    notes: "Release vertically to clear the weak-side corner and pull defenders away from the screen."
+  - player: SLOT-W
+    role: route
+    route_name: dig
+    depth_yd: 12
+    notes: "Run the dig to occupy the middle-of-field defender and hold a robber from leaning toward the strong-side screen lane."
+  - player: QB
+    role: ball_carrier
+    path: [[0, 0], [0, -1], [0, -3], [1, -4]]
+    notes: |
+      Three-step rhythm drop IDENTICAL to the Drive base for the first two
+      waypoints, then drift back off the drop, eyes downfield holding the
+      clear-out routes, letting the rush come — before flipping the screen
+      strong-side to the TE behind the LOS. Hold the rush; do not bail early.
+  - player: HB
+    role: route
+    route_name: flat
+    depth_yd: 3
+    path: [[0, 0], [-1, 0], [-4, 3]]
+    notes: "Check-release weak side as the outlet if the screen is read and blown up; otherwise occupies the weak-side underneath defender."
+
+strengths:
+  - Identical empty-motion look and identical QB first-two-step drop to the Drive base — the defense cannot pre-snap key it
+  - Punishes an aggressive rush by using its own upfield charge against it
+  - The C and RG release out front to give the TE a convoy on the catch
+  - Clear-out routes vacate the strong side, opening grass for the screen
+  - Slows a hot pass rush and changes pace against a fast-flow front
+
+weaknesses:
+  - Needs the Drive concept on tape first — a cold dropback look does not pull the rush
+  - Timing-dependent — a mistimed release lets defenders read and sit on the screen
+  - Dead against a defense that rushes under control or spies the TE
+  - Loses yardage badly if a strong-side defender sniffs the screen and beats the linemen out
+  - The QB must hold the rush without taking a sack
+
+best_vs_defense:
+  - aggressive four-man rushes that get upfield fast
+  - blitz-heavy fronts vacating the underneath
+  - any defense overcommitting to the Drive dropback
+  - man coverage with the secondary chasing the clear-out routes
+
+worst_vs_defense:
+  - zone defenses with linebackers reading the QB and sitting underneath
+  - a spy assigned to the TE or the HB
+  - disciplined four-man rushes that stay in their lanes
+  - any defense that has stopped the screen and stopped respecting the dropback look
+
+defensive_counters:
+  - counter_id: lb-spot-drop-read-screen
+    pre_snap_look: "Linebackers aligned at pass depth (5+ yards) squared to the QB with eyes in the backfield, not crowding the box"
+    qb_key: "Check the LB depth and eyes — backers deep, squared up, reading the QB"
+    read_category: lb-depth
+    why: "Linebackers already at depth reading the QB spot-drop and pass off the clear-outs, leaving them free to trigger on the screen the moment the TE slips out."
+    typical_against: ["cover-3 zone", "cover-4", "any screen-aware defense"]
+  - counter_id: contain-rush-no-upfield
+    pre_snap_look: "Both EDGE defenders in square two-point stances playing contain, hands free, not in get-off sprinter's stances"
+    qb_key: "Scan the edges — both EDGEs squared and squatting, playing contain rather than rushing"
+    read_category: dl-alignment
+    why: "A contain rush that does not sell out upfield never vacates the screen lane, so the strong-side EDGE is in position to beat the releasing linemen to the TE."
+    typical_against: ["bend-don't-break zone", "any defense playing the screen"]
+  - counter_id: strongside-screen-spy
+    pre_snap_look: "A linebacker or safety walked into the strong-side underneath, shaded to the TE with no clear coverage or run-fit responsibility"
+    qb_key: "Check the strong-side underneath — a defender shaded to the TE with no other job"
+    read_category: lb-depth
+    why: "A defender spying the TE mirrors him out of the formation and arrives at the screen catch point before the convoy of linemen can set up."
+    typical_against: ["cover-1 with a spy", "screen-alert game-plans"]
+
+common_uses:
+  - After establishing the Drive concept for completions
+  - 2nd-and-long / 3rd-and-long against an aggressive rush
+  - Slowing a hot pass rush
+  - Catching a blitz-heavy defense vacating the underneath
+  - Changing pace against a fast-flow front
+
+philosophy: west-coast
+pass_concept_ref: drive
+pass_protection_ref: half-slide-protect
+philosophy_ref: west-coast
+
+era: "Modern — slipping a screen off a recognizable dropback passing concept is a staple of West Coast and pro-style offenses."
+
+famous_examples:
+  - "Andy Reid offenses (screen game layered off the shallow-cross dropback look)"
+  - "Modern NFL pro-style offenses (TE and back screens off recognizable pass concepts)"
+
+tags:
+  - screen
+  - te-screen
+  - throwback-screen
+  - west-coast
+  - drive
+  - shotgun
+  - 2x2
+  - 11-personnel
+  - modern
+  - high-school
+  - college
+  - nfl
+
+notes: |
+  A tight-end screen off the Drive dropback look. The TE shows the
+  shallow-cross release for one beat — identical to the Drive base's first
+  step — then settles and slips behind the LOS to the strong-side screen
+  lane; the C and RG release to lead. The empty motion block and the QB's
+  first two drop steps are IDENTICAL to the Drive base, so the defense reads
+  the Drive concept until the screen springs. The dropback action and the
+  clear-out routes pull the rush and the coverage upfield so the screen
+  releases into vacated grass. Member of the Shotgun 2x2 West Coast Drive
+  disguise family (see data/play-families/).
+
+  Mirror to drive-screen-left by flipping all coordinates.
+
+verification_status: unverified
+source_notes:
+  - "Screens layered off a recognizable dropback passing concept are a universal modern constraint. Authored as a disguise twin of shotgun-2x2-drive — empty motions block and the QB's first two drop waypoints deliberately mirror the base play."

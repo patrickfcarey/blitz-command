@@ -93,6 +93,42 @@ worst_vs_defense:
   - blitz from the playside
   - defenses with disciplined edge contain
 
+defensive_counters:
+  - counter_id: force-the-cutback
+    pre_snap_look: "Playside EDGE in a wide-9 outside the TE with his outside hand and shoulder free, and the force defender aligned outside the TE rather than over him"
+    qb_key: "Scan the playside edge — EDGE in a wide-9 with outside leverage, force defender widened"
+    read_category: dl-alignment
+    why: "An EDGE already wide with outside leverage is set to squeeze and refuse the TE kickout, walling the perimeter and forcing the HB to bend back into pursuit."
+    typical_against: ["cover-1 with EDGE squeeze", "any defense with disciplined contain"]
+  - counter_id: crash-safety-alley
+    pre_snap_look: "Strong safety walked down to 6-8 yds inside the playside hash, in the run alley, under a single-high shell"
+    qb_key: "Count the box — strong safety rolled down into the playside alley"
+    read_category: box-count
+    why: "A safety already sitting in the alley beats the Z crack-block to the spot, so the cracker has no angle and an unblocked defender meets the HB on the perimeter."
+    typical_against: ["cover-3 with rolled-down SS", "cover-1 robber"]
+  - counter_id: cb-avoid-crack
+    pre_snap_look: "Playside CB in soft press at 3-4 yds with his eyes turned inside on the Z, and the strong safety aligned head-up mirroring the outside WR"
+    qb_key: "Check the playside corner — CB in soft press, eyes inside on the slot, safety capping the WR"
+    read_category: cb-leverage
+    why: "A corner peeking inside with the safety already over the WR is set to crack-replace — he runs the alley while the safety takes the WR, so the cracker hits air."
+    typical_against: ["cover-2 with crack-replace rules", "press-quarters teams"]
+
+flip_reads:
+  - flip_id: force-set-callside
+    pre_snap_look: "The playside force defender (CB or OLB) is aligned tight and downhill with run support clearly set to the called side"
+    qb_key: "Check the playside edge — force defender squatted and downhill, no cushion"
+    read_category: cb-leverage
+    flip_to: mirror-play
+    why: "A toss into a set force defender is a loss; flipping the toss to the side with a soft, depth-aligned corner gives the perimeter the play needs."
+    typical_against: ["cover-2 with hard corners", "cloud support"]
+  - flip_id: alley-stacked-formation
+    pre_snap_look: "Defense has stacked the alley to the formation's strength — an extra defender plus a rolled safety filling the strong-side perimeter"
+    qb_key: "Check the strong-side alley — it is stacked while the weak alley is open"
+    read_category: box-count
+    flip_to: mirror-formation
+    why: "Flipping the formation relocates the strength and the toss target away from the stacked alley; the defense must re-rotate or surrender the edge."
+    typical_against: ["quarters with strong roll", "8-man fronts"]
+
 common_uses:
   - 1st/2nd-and-medium when defense expects inside runs
   - Constraint to Power tendency

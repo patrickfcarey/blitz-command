@@ -38,6 +38,25 @@ weaknesses:
   - "Bracket on TE shuts down primary"
 best_vs_defense: ["man-1", "cover-1 robber", "cover-3 with run-fit LBs"]
 worst_vs_defense: ["cover-2 trap", "cover-4", "banjo coverage"]
+defensive_counters:
+  - counter_id: switch-banjo-the-mesh
+    pre_snap_look: "Inside LB and the apex/slot defender both aligned with inside leverage on the TE and slot, stacked close enough to pass receivers off to each other"
+    qb_key: "Check the crosser defenders' leverage — both man defenders inside and tight on the TE and slot"
+    read_category: cb-leverage
+    why: "Two man defenders pre-set with inside leverage on the crossers are aligned to banjo (switch) at the mesh, removing the rub the mesh needs to beat man."
+    typical_against: ["cover-1 man with banjo rules", "any man defense drilled vs mesh"]
+  - counter_id: squat-the-mesh
+    pre_snap_look: "MLB and apex defender aligned at a shallow 5-yd depth with eyes on the QB, under a two-high safety shell"
+    qb_key: "Check the LB depth and safety shell — backers sitting at 5 yds, two high behind"
+    read_category: lb-depth
+    why: "LBs already parked at mesh depth under two-high will rob both crossers rather than carry them, closing the throwing windows and risking a tipped ball."
+    typical_against: ["cover-2 trap", "cover-2 robber"]
+  - counter_id: pressure-the-pocket
+    pre_snap_look: "A sixth defender walked up tight to the LOS with the interior DL in a staggered, cocked twist alignment"
+    qb_key: "Count the rushers — a sixth man walked up, interior DL staggered for a twist"
+    read_category: lb-depth
+    why: "A walked-up sixth rusher over staggered, twist-ready DL signals a five-to-six man pressure that gets home before the 5-step mesh can come open."
+    typical_against: ["fire-zone pressure", "cover-1 man with edge blitz"]
 common_uses: ["1st-and-10 PA / pass setup", "3rd-and-medium", "Setting up backside throws after mesh"]
 philosophy: pro-style
 pass_concept_ref: mesh

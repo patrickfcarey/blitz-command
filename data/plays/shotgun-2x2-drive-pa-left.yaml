@@ -1,0 +1,195 @@
+play_id: shotgun-2x2-drive-pa-left
+name: Drive Play-Action (Strong) (Mirror Left)
+aliases:
+- PA Drive
+- Drive Play-Pass
+- Zone PA Drive
+formation: shotgun-2x2-left
+play_type: play-action
+ball_carrier: TE
+primary_read: TE
+secondary_read: Z
+checkdown: HB
+motions: []
+assignments:
+- player: LT
+  role: pass_block
+  blocking_scheme: pa-zone-protection
+  notes: Show the inside-zone playside step for a beat to sell the run fake, then anchor and protect the edge.
+- player: LG
+  role: pass_block
+  blocking_scheme: pa-zone-protection
+  notes: Show the zone-combo step to sell the run, then recover and protect the A-gap.
+- player: C
+  role: pass_block
+  blocking_scheme: pa-zone-protection
+  notes: Show the zone-combo step, then protect the A-gaps.
+- player: RG
+  role: pass_block
+  blocking_scheme: pa-zone-protection
+  notes: Show the zone-combo step to sell the run, then recover and protect.
+- player: RT
+  role: pass_block
+  blocking_scheme: pa-zone-protection
+  notes: Show the zone step, then protect the playside edge.
+- player: TE
+  role: route
+  route_name: drag
+  depth_yd: 6
+  is_primary: true
+  beats_coverage: both
+  notes: Show the inside-zone playside arc-block for one beat to sell the run, then release across on the shallow drag — the
+    LO of the Drive hi-lo, now arriving behind run-flow linebackers.
+- player: Z
+  role: route
+  route_name: dig
+  depth_yd: 14
+  notes: Stalk-release to sell the run, then stem vertical and break the dig at 14 yds — the HI of the Drive hi-lo, sitting
+    in the window the run fake just emptied.
+- player: X
+  role: route
+  route_name: comeback
+  depth_yd: 14
+  notes: Backside comeback — the field-stretching outlet if the strong-side hi-lo is bracketed.
+- player: SLOT-W
+  role: route
+  route_name: dig
+  depth_yd: 12
+  notes: Stalk-release to sell run, then run the weak-side dig — a second deep in-cut occupies the backside hook defender.
+- player: QB
+  role: ball_carrier
+  path:
+  - - 0
+    - 0
+  - - 0
+    - -1
+  - - -1
+    - -1
+  - - 0
+    - -3
+  notes: 'Three-step rhythm drop IDENTICAL to the Drive base for the first two
+
+    waypoints, then extend the mesh and ride the HB inside-zone fake before
+
+    settling at depth to throw. Eyes hold the run fake, then snap up to the
+
+    hi-lo: Z dig (HI) over the run-flow linebackers, TE drag (LO) under.
+
+    '
+- player: HB
+  role: fake
+  path:
+  - - 0
+    - 0
+  - - 1
+    - 0
+  - - 2
+    - -1
+  - - 0
+    - 4
+  notes: Open with the same lateral step as the Drive base (HB to [-1, 0]) so the early picture holds, then carry out the
+    inside-zone mesh fake; settle as a late outlet only if the rush clears the pocket.
+strengths:
+- Identical empty-motion look and identical QB first-two-step drop to the Drive base — the defense cannot pre-snap key it
+- The run fake holds run-flow linebackers, emptying the window the dig settles into
+- The shallow crosser arrives behind linebackers sucked up by the zone fake
+- Beats both man and zone — the crosser runs away from trail leverage, the dig works the vacated seam
+- QB stays in the pocket — no edge surrendered, full-field hi-lo read intact
+weaknesses:
+- Needs the Drive base or the inside-zone run on tape first — a cold fake holds no one
+- The mesh-and-settle takes longer than a straight three-step drop
+- Vulnerable to interior pressure that ignores the run fake
+- Two-high linebackers at pass depth do not bite, so the dig window stays populated
+- A robber in the crossing window undercuts the primary throw
+best_vs_defense:
+- cover-3 with downhill, run-fit linebackers
+- 4-3 with aggressive run-keying linebacker play
+- any defense overcommitting to the inside-zone run
+- single-high coverages
+worst_vs_defense:
+- two-high shells with linebackers at pass depth
+- cover-1 robber sitting in the crossing window
+- interior twist / A-gap pressure
+- any defense that has stopped the run and stopped respecting it
+defensive_counters:
+- counter_id: alert-zone-no-bite
+  pre_snap_look: Linebackers aligned at full passing depth (5+ yards off the LOS) under a two-high safety shell, not crowding
+    the box
+  qb_key: Check the LB depth and safety shell — backers deep, two-high behind them
+  read_category: lb-depth
+  why: Linebackers already at pass depth under a two-high shell read pass first and will not vacate on the run fake, so the
+    dig window stays populated and the crosser arrives into traffic.
+  typical_against:
+  - cover-4
+  - cover-3 alert
+  - any defense after the run has been slowed
+- counter_id: robber-middle
+  pre_snap_look: A safety dropped to 8-10 yards, squared and stationed over the middle of the field, with a two-high shell
+    rolled behind him
+  qb_key: Check the middle of the field — a safety squatting at 8-10 yards over the ball
+  read_category: safety-shell
+  why: A robber sitting in the crossing window undercuts the shallow drag and brackets it from the top, taking the play's
+    primary throw away.
+  typical_against:
+  - cover-1 robber
+  - cover-3 buzz
+- counter_id: interior-a-gap-pressure
+  pre_snap_look: Both inside linebackers creep-walked into the A-gaps on the LOS, hands low, single-high safety shell behind
+  qb_key: Scan the A-gaps — both inside LBs walked up tight over the center, one high safety
+  read_category: lb-depth
+  why: A-gap pressure that ignores the run fake outnumbers the pocket and arrives before the play-action mesh and the dig's
+    developing route are complete.
+  typical_against:
+  - cover-1 double-A pressure
+  - fire-zone
+common_uses:
+- After establishing the inside-zone run or the Drive base
+- 1st-and-10 play-action rhythm down
+- 2nd-and-medium
+- Red-zone moving the linebackers with the run fake to clear the dig
+philosophy: west-coast
+run_concept_ref: inside-zone
+pass_concept_ref: drive
+pass_protection_ref: half-slide-protect
+philosophy_ref: west-coast
+era: 1980s onward — play-action off the zone run paired with the West Coast crossing game; every West Coast tree runs it.
+famous_examples:
+- Mike Shanahan / Kyle Shanahan zone-run play-action paired with crossers
+- Andy Reid offenses (play-pass off the run game into the shallow-cross concepts)
+tags:
+- pa
+- play-action
+- west-coast
+- drive
+- hi-lo
+- shallow-cross
+- inside-zone
+- shotgun
+- 2x2
+- 11-personnel
+- high-school
+- college
+- nfl
+notes: 'Play-action pass off the inside-zone run, throwing the Drive concept. The
+
+  empty motion block and the QB''s first two drop steps are IDENTICAL to the
+
+  Drive base — the defense reads the same dropback look until the HB mesh
+
+  shows run. The run fake holds the linebackers, emptying the window the Z
+
+  dig settles into while the TE drag arrives behind the run flow. Member of
+
+  the Shotgun 2x2 West Coast Drive disguise family (see data/play-families/).
+
+
+  Mirror to drive-pa-left by flipping all coordinates.
+
+  '
+verification_status: unverified
+source_notes:
+- Play-action off the zone run feeding a crossing concept is a universal West Coast constraint. Authored as a disguise twin
+  of shotgun-2x2-drive — empty motions block and the QB's first two drop waypoints deliberately mirror the base play.
+- Mirror of shotgun-2x2-drive-pa.yaml — path waypoints flipped on x; formation reference points to the mirror formation. Routes
+  auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed look
+  — coordinates and paths are the source of truth.

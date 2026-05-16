@@ -98,6 +98,26 @@ worst_vs_defense:
   - disciplined gap-control fronts
   - cover-1 with EDGE squeezing
 
+defensive_counters:
+  - counter_id: wide-9-edge
+    pre_snap_look: "Playside DE aligned wide outside the TE's outside shoulder in a wide-9, square in a track stance ready to run upfield"
+    qb_key: "Check the playside edge width — DE flared outside the TE's shoulder"
+    read_category: dl-alignment
+    why: "Outside Zone needs the EDGE reached; a wide-9 alignment puts the DE outside the reach angle, making the seal geometrically impossible and forcing the HB to BANG or CUTBACK into pursuit."
+    typical_against: ["over-front", "4-3 with movement"]
+  - counter_id: de-wrong-arm-kickout
+    pre_snap_look: "Backside DE in a tight, square inside alignment with the backside LB cheated over playside, ready to scrape"
+    qb_key: "Scan the backside DE — tight and square inside, not flared for contain"
+    read_category: dl-alignment
+    why: "A tight, square backside DE is set to chase flat down the line and wrong-arm any kickout; the cutback closes and the HB is forced back into the playside flow."
+    typical_against: ["over-front", "4-3 base"]
+  - counter_id: fast-flow-lbs
+    pre_snap_look: "LBs in a sprinter's stance with weight forward, cheated a half-step toward the stretch side at normal depth"
+    qb_key: "Check the LBs — weight-forward sprinter's stance, leaning to the stretch"
+    read_category: lb-depth
+    why: "OZ depends on combo blocks climbing to the second level; LBs in a weight-forward stance are set to fast-flow and beat the climbing OL to the perimeter before the combo releases."
+    typical_against: ["cover-3", "any defense keying HB flow"]
+
 common_uses:
   - 1st-and-10 base run
   - Setting up bootleg PA
@@ -134,3 +154,26 @@ source_notes:
   - "Assignments: Alex Gibbs / Mike Shanahan zone tradition."
   - "Strengths/weaknesses: modern run-game textbook material."
   - "Web validated 2026-04-29 — SumerSports 'Shanahan Schemes' (https://sumersports.com/the-zone/shanahan-schemes/); The Ringer 'Shanahan System' (https://www.theringer.com/2020/01/22/nfl/kyle-mike-shanahan-zone-blocking-raheem-mostert-running-backs); vIQtory Sports 'Outside Zone Install Guide' (https://www.viqtorysports.com/complete-outside-zone-guide-tutorial/); Mile High Report 'Hacking the Broncos OZ' (https://www.milehighreport.com/2022/1/31/22907767/film-breakdown-broncos-outside-zone). Confirmed: HB sets track to outside hip of TE, reads gaps outside-in; reach-blocking from playside T."
+flip_reads:
+- flip_id: three-tech-callside
+  pre_snap_look: The 3-technique tackle and the playside linebacker are both set to the called
+    side, loading the front-side gaps the zone is aiming for.
+  qb_key: Find the 3-technique — it is aligned to the called side, in the zone's path.
+  read_category: dl-alignment
+  flip_to: mirror-play
+  why: Zone run into the 3-technique blocks the penetrator head-on; flipping the zone away runs
+    at the lighter shade and a cleaner front-side double.
+  typical_against:
+  - over-front
+  - shifted 4-3
+- flip_id: strength-declared-to-formation
+  pre_snap_look: Defense has declared to the formation's strength — an extra box defender to the
+    strong side with a safety rolled down to support it.
+  qb_key: Check the strength side — the box count and the safety roll are both committed to it.
+  read_category: safety-shell
+  flip_to: mirror-formation
+  why: Flipping the whole formation re-locates the strength call; a defense slow to re-set leaves
+    the front-side gaps the zone wants unfilled.
+  typical_against:
+  - cover-3 with strong roll
+  - quarters with strong roll

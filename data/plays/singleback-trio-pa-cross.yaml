@@ -86,6 +86,31 @@ worst_vs_defense:
 - cover-4 quarters with disciplined deep coverage
 - zero blitz (no time to develop)
 - pass-only defenses ignoring PA
+defensive_counters:
+- counter_id: pass-key-no-bite
+  pre_snap_look: LBs aligned at full coverage depth (4.5-5 yds off the ball) in a backpedal-ready posture, eyes up on the OL rather than crowding the LOS
+  qb_key: Check LB depth — already at coverage depth, not walked up to fit the run
+  read_category: lb-depth
+  why: PA-Cross depends on LBs sucking up to the run fake; LBs already at coverage depth never bite and wall off the TE drag and X cross at their drop landmarks.
+  typical_against:
+  - cover-3
+  - cover-4 quarters
+- counter_id: robber-fs
+  pre_snap_look: A single safety dropped down to 10-12 yds inside the hash with the other safety bailed deep — a disguised one-high robber shell
+  qb_key: Check the safety shell — one safety sunk to 10-12 yds over the middle
+  read_category: safety-shell
+  why: The X cross is the answer when the FS bites on the TE drag; a robber FS sitting at intermediate depth takes the cross away at its breaking point and leaves the QB nothing in the middle.
+  typical_against:
+  - cover-1 robber
+  - cover-2 robber
+- counter_id: pa-pressure
+  pre_snap_look: Walked-up nickel or SS on the bootleg edge with a LB creeping toward the LOS — a five-man pressure shell with no deep help to that side
+  qb_key: Scan the bootleg edge — extra defender walked up, deep help vacated
+  read_category: lb-depth
+  why: PA-Cross is a 5-step PA needing ~3.5 sec to deliver; a walked-up extra rusher with no HB to chip beats the protection and forces a checkdown to the SLOT flat.
+  typical_against:
+  - cover-1 with simulated pressure
+  - cover-0 zero blitz
 common_uses:
 - 1st-and-10 after a sequence of inside-zone / power runs
 - 2nd-and-medium PA shot

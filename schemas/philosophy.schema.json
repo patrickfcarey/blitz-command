@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blitz-command.local/schemas/philosophy.schema.json",
+  "title": "Philosophy",
+  "description": "An offensive football philosophy (West Coast, Air Raid, Power Run, etc.) capturing origins, typical run/pass balance, and what formations and concepts it prefers.",
+  "type": "object",
+  "required": ["philosophy_id", "name", "description", "era", "originators", "canonical_run_concepts", "canonical_pass_concepts", "formation_preferences", "tendency_profile", "verification_status", "source_notes"],
+  "additionalProperties": false,
+  "properties": {
+    "philosophy_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "Stable identifier (kebab-case). Must match the filename (without .yaml)."
+    },
+    "name": { "type": "string" },
+    "description": {
+      "type": "string",
+      "description": "2-5 sentence description of the philosophy — core principles, how it uses the run/pass, historical context."
+    },
+    "era": {
+      "type": "string",
+      "description": "Approximate time span when the philosophy was/is prominent (e.g. '1979–present', 'Mid-1990s–present')."
+    },
+    "originators": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Coaches credited with originating or defining the system. Include team and year range where known."
+    },
+    "notable_practitioners": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Coaches who carried the system forward. Include team and year range where known."
+    },
+    "canonical_run_concepts": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Foreign keys into data/concepts/run-concepts/ — the run concepts most associated with this philosophy."
+    },
+    "canonical_pass_concepts": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Foreign keys into data/concepts/pass-concepts/ — the pass concepts most associated with this philosophy."
+    },
+    "formation_preferences": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Formation IDs or formation-family names most commonly used (e.g. 'i-formation', 'shotgun-2x2')."
+    },
+    "tendency_profile": {
+      "type": "object",
+      "required": ["run_pct", "pass_pct", "pa_pct", "rpo_pct", "screen_pct"],
+      "additionalProperties": false,
+      "description": "Approximate play-type distribution. The 5 values must sum to 1.0 (±0.02).",
+      "properties": {
+        "run_pct":    { "type": "number", "minimum": 0, "maximum": 1 },
+        "pass_pct":   { "type": "number", "minimum": 0, "maximum": 1 },
+        "pa_pct":     { "type": "number", "minimum": 0, "maximum": 1 },
+        "rpo_pct":    { "type": "number", "minimum": 0, "maximum": 1 },
+        "screen_pct": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "verification_status": {
+      "enum": ["verified", "unverified", "inferred"]
+    },
+    "source_notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

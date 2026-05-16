@@ -1,0 +1,30 @@
+name: choice-seam
+aliases:
+  - seam-choice
+  - slot-choice
+description: >
+  Slot version of the choice route. 12-yard vertical stem, then read the
+  safety: single-high (cover-3 / cover-1) → continue up the seam past the
+  safety; two-high (cover-2 / cover-4) → settle in the soft zone between the
+  safeties and the inside linebacker. The primary high-percentage weapon vs
+  single-high in the run-and-shoot system.
+path:
+  - [0, 0]
+  - [0, 12]
+  - [2, 20]
+typical_break_depth_yd: 12
+option_route: true
+category: deep
+beats_coverage: zone
+tags:
+  - option-route
+  - run-and-shoot
+  - deep
+  - seam
+  - anti-cover-3
+verification_status: unverified
+source_notes:
+  - >
+    Run-and-shoot slot choice-seam; slot receiver reads the middle safety at
+    the stem depth. Path shows seam-continuation read (go route up the seam)
+    — the settle read terminates shorter at the soft zone window.
