@@ -9,6 +9,12 @@ Checks performed:
   5. Each formation_usage_split sums to ~100.
   6. When formation_usage_split is set, per-formation play-share sums match it.
   7. Plays inside each section are sorted by share_of_section_pct desc.
+  8. Each audible pool (the global pool, or each per-formation pool) has
+     unique slots numbered contiguously from 1 and play_ids that resolve.
+  9. counter_responses: each counter_ref resolves on the referenced play,
+     each audible_slot resolves in the relevant pool, hot-route names resolve.
+ 10. Self-containment: every play-family companion in the playbook also has
+     one of its family base plays installed.
 
 Exit code 0 on full pass, 1 on any failure.
 
@@ -19,7 +25,6 @@ from __future__ import annotations
 
 import argparse
 import json
-import os
 import sys
 from pathlib import Path
 
@@ -138,28 +143,32 @@ def validate(playbook_path: Path) -> int:
             split = sec.get("formation_usage_split")
             if not split:
                 continue
-            by_fmt = {f: 0.0 for f in split}
+            share_by_formation = {formation_id: 0.0 for formation_id in split}
             for p in sec.get("plays", []):
                 # Attribute by the play file's actual `formation` field. Falling
                 # back to play_id prefix matching is ambiguous when one formation
                 # id is a prefix of another (i-formation / i-formation-twins-weak).
-                fmt = None
-                pf = PLAYS_DIR / f"{p['play_id']}.yaml"
-                if pf.exists():
-                    fmt = _load_yaml(pf).get("formation")
-                if fmt not in by_fmt:
-                    fmt = next((f for f in sorted(split, key=len, reverse=True)
-                                if p["play_id"].startswith(f + "-")
-                                or p["play_id"] == f), None)
-                if fmt in by_fmt:
-                    by_fmt[fmt] += p.get("share_of_section_pct", 0)
-            for fmt, actual in by_fmt.items():
-                target = split[fmt]
-                ok = abs(actual - target) < SHARE_TOLERANCE
+                formation_id = None
+                play_file = PLAYS_DIR / f"{p['play_id']}.yaml"
+                if play_file.exists():
+                    formation_id = _load_yaml(play_file).get("formation")
+                if formation_id not in share_by_formation:
+                    formation_id = next(
+                        (candidate_formation
+                         for candidate_formation in sorted(split, key=len, reverse=True)
+                         if p["play_id"].startswith(candidate_formation + "-")
+                         or p["play_id"] == candidate_formation),
+                        None,
+                    )
+                if formation_id in share_by_formation:
+                    share_by_formation[formation_id] += p.get("share_of_section_pct", 0)
+            for formation_id, actual_share in share_by_formation.items():
+                target_share = split[formation_id]
+                ok = abs(actual_share - target_share) < SHARE_TOLERANCE
                 all_ok = all_ok and ok
                 marker = "OK" if ok else "OFF"
-                print(f"    {sec['section_id']}/{fmt:<25} "
-                      f"target={target}%  actual={actual:.1f}%  [{marker}]")
+                print(f"    {sec['section_id']}/{formation_id:<25} "
+                      f"target={target_share}%  actual={actual_share:.1f}%  [{marker}]")
         if not all_ok:
             failures += 1
 

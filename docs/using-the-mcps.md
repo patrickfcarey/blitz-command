@@ -4,21 +4,21 @@ blitz-command ships **13 MCP servers** under `mcps/`. Each owns one narrow respo
 
 | Server | Purpose | Tools |
 |--------|---------|-------|
-| `play-library-mcp` | Plays + disguise families — discovery, authoring, validation, rendering, scouting, pairwise analysis | 21 |
-| `playbook-generation-mcp` | Assembling playbooks + working with authored playbooks (sections, audibles, counter-responses, validation) | 12 |
-| `game-knowledge-mcp` | Per-game editor capabilities + universal→editor coordinate translation | 9 |
-| `formation-library-mcp` | Offensive formations — discovery + inspection | 7 |
-| `validation-mcp` | Standalone validation of plays / formations / routes / concepts / game profiles | 7 |
-| `coverage-mcp` | Defensive formations / coverage shells | 6 |
-| `route-library-mcp` | The route library | 6 |
-| `run-concept-mcp` | Run concepts (power, counter, inside-zone, …) | 6 |
-| `pass-concept-mcp` | Pass concepts (mesh, smash, drive, …) | 6 |
-| `blocking-scheme-mcp` | Blocking schemes | 6 |
-| `philosophy-mcp` | Offensive philosophies | 6 |
-| `pass-protection-mcp` | Pass protections | 5 |
-| `play-variant-mcp` | Play mirroring, strength-flip, family stubs | 4 |
+| [`play-library-mcp`](../mcps/play-library-mcp/README.md) | Plays + disguise families — discovery, authoring, validation, rendering, scouting, pairwise analysis | 21 |
+| [`playbook-generation-mcp`](../mcps/playbook-generation-mcp/README.md) | Assembling playbooks + working with authored playbooks (sections, audibles, counter-responses, validation) | 12 |
+| [`game-knowledge-mcp`](../mcps/game-knowledge-mcp/README.md) | Per-game editor capabilities + universal→editor coordinate translation | 9 |
+| [`formation-library-mcp`](../mcps/formation-library-mcp/README.md) | Offensive formations — discovery + inspection | 7 |
+| [`validation-mcp`](../mcps/validation-mcp/README.md) | Standalone validation of plays / formations / routes / concepts / game profiles | 7 |
+| [`coverage-mcp`](../mcps/coverage-mcp/README.md) | Defensive formations / coverage shells | 6 |
+| [`route-library-mcp`](../mcps/route-library-mcp/README.md) | The route library | 6 |
+| [`run-concept-mcp`](../mcps/run-concept-mcp/README.md) | Run concepts (power, counter, inside-zone, …) | 6 |
+| [`pass-concept-mcp`](../mcps/pass-concept-mcp/README.md) | Pass concepts (mesh, smash, drive, …) | 6 |
+| [`blocking-scheme-mcp`](../mcps/blocking-scheme-mcp/README.md) | Blocking schemes | 6 |
+| [`philosophy-mcp`](../mcps/philosophy-mcp/README.md) | Offensive philosophies | 6 |
+| [`pass-protection-mcp`](../mcps/pass-protection-mcp/README.md) | Pass protections | 5 |
+| [`play-variant-mcp`](../mcps/play-variant-mcp/README.md) | Play mirroring, strength-flip, family stubs | 4 |
 
-Each server's `mcps/<name>/README.md` is the authoritative tool catalog. Every server also exposes a `manifest()` tool that returns its own purpose + current tool list.
+Each server's `mcps/<name>-mcp/README.md` (linked above) is the authoritative tool catalog. Every server also exposes a `manifest()` tool that returns its own purpose + current tool list.
 
 All speak MCP over stdio. Any MCP-aware client can use them: Claude Desktop, Claude Code, custom clients via the `mcp` SDK.
 

@@ -4,7 +4,7 @@
 `flip_reads` (schema sibling of `defensive_counters`) are pre-snap alignment
 reads that tell the QB to FLIP the run — `mirror-play` flips the play to the
 other side, `mirror-formation` flips the whole formation. They were authored
-by hand on three exemplar plays in Phase; this fills in the rest.
+by hand on three exemplar run plays; this script fills in the rest.
 
 The content of a flip_read is side-agnostic ("the called side", "the
 formation's strength") and `flip_to` is an enum, not a play reference — so a
@@ -26,10 +26,13 @@ from pathlib import Path
 
 import yaml
 
-REPO = Path(__file__).resolve().parents[2]
-PLAYS_DIR = REPO / "data" / "plays"
+REPO_ROOT = Path(__file__).resolve().parents[2]
+PLAYS_DIR = REPO_ROOT / "data" / "plays"
 
-INSIDE_GAP = [
+MIRROR_SUFFIX = "-left"                      # a left-mirror play is "<base>-left"
+RUN_PLAY_TYPES = ("run", "rpo", "option")    # play_types this script gives flip_reads
+
+INSIDE_GAP_TEMPLATE = [
     {
         "flip_id": "front-overshift-callside",
         "pre_snap_look": "Defensive front slid toward the called side — an extra down "
@@ -56,7 +59,7 @@ INSIDE_GAP = [
     },
 ]
 
-PERIMETER = [
+PERIMETER_TEMPLATE = [
     {
         "flip_id": "force-set-callside",
         "pre_snap_look": "The playside force defender (corner or outside linebacker) is "
@@ -83,7 +86,7 @@ PERIMETER = [
     },
 ]
 
-ZONE = [
+ZONE_TEMPLATE = [
     {
         "flip_id": "three-tech-callside",
         "pre_snap_look": "The 3-technique tackle and the playside linebacker are both "
@@ -110,7 +113,7 @@ ZONE = [
     },
 ]
 
-OPTION = [
+OPTION_TEMPLATE = [
     {
         "flip_id": "keys-set-callside",
         "pre_snap_look": "The dive key and the pitch key (first two defenders outside "
@@ -137,7 +140,7 @@ OPTION = [
     },
 ]
 
-RPO = [
+RPO_TEMPLATE = [
     {
         "flip_id": "box-overload-callside",
         "pre_snap_look": "The box is overloaded to the run side — the defense has +1 to "
@@ -165,57 +168,71 @@ RPO = [
 ]
 
 
-def _bucket(base_id: str, play_type: str) -> list | None:
-    """Return the flip_read template for a play, or None to skip it."""
-    pid = base_id
-    if "sneak" in pid or "kneel" in pid:
+def _flip_read_template(base_play_id: str, play_type: str) -> list | None:
+    """Pick the flip_read template for a run play, keyed on its scheme.
+
+    Returns None for non-directional runs (a QB sneak or kneel), which have
+    no 'flip the play' decision to make. Scheme is detected from tokens in
+    the base play_id. The `counter` check deliberately precedes the
+    perimeter and zone checks: a toss-counter or a zone-counter is a
+    gap-scheme counter, not a perimeter toss or a zone run.
+    """
+    if "sneak" in base_play_id or "kneel" in base_play_id:
         return None
     if play_type == "rpo":
-        return RPO
-    if any(t in pid for t in ("triple-option", "speed-option", "-option",
-                              "veer", "midline", "-read", "counter-keep")):
-        return OPTION
-    if "counter" in pid:
-        return INSIDE_GAP
-    if any(t in pid for t in ("toss", "sweep", "reverse", "jet", "stretch")):
-        return PERIMETER
-    if "zone" in pid:
-        return ZONE
-    return INSIDE_GAP
+        return RPO_TEMPLATE
+    option_tokens = ("triple-option", "speed-option", "-option",
+                     "veer", "midline", "-read", "counter-keep")
+    if any(token in base_play_id for token in option_tokens):
+        return OPTION_TEMPLATE
+    if "counter" in base_play_id:
+        return INSIDE_GAP_TEMPLATE
+    perimeter_tokens = ("toss", "sweep", "reverse", "jet", "stretch")
+    if any(token in base_play_id for token in perimeter_tokens):
+        return PERIMETER_TEMPLATE
+    if "zone" in base_play_id:
+        return ZONE_TEMPLATE
+    return INSIDE_GAP_TEMPLATE
 
 
 def main() -> None:
-    added, skipped_existing, skipped_nondir, untouched = [], [], [], []
-    for pf in sorted(PLAYS_DIR.glob("*.yaml")):
-        play = yaml.safe_load(pf.read_text())
-        if not play or play.get("play_type") not in ("run", "rpo", "option"):
+    """Add flip_reads to every directional run play that lacks them."""
+    plays_updated: list[str] = []
+    plays_skipped_existing: list[str] = []
+    plays_skipped_nondirectional: list[str] = []
+    for play_file in sorted(PLAYS_DIR.glob("*.yaml")):
+        play = yaml.safe_load(play_file.read_text())
+        if not play or play.get("play_type") not in RUN_PLAY_TYPES:
             continue
-        pid = play["play_id"]
+        play_id = play["play_id"]
         if play.get("flip_reads"):
-            skipped_existing.append(pid)
+            plays_skipped_existing.append(play_id)
             continue
-        base = pid[:-5] if pid.endswith("-left") else pid
-        template = _bucket(base, play.get("play_type"))
-        if template is None:
-            skipped_nondir.append(pid)
+        base_play_id = play_id.removesuffix(MIRROR_SUFFIX)
+        flip_read_template = _flip_read_template(base_play_id, play.get("play_type"))
+        if flip_read_template is None:
+            plays_skipped_nondirectional.append(play_id)
             continue
-        block = yaml.dump({"flip_reads": template}, sort_keys=False,
-                          default_flow_style=False, allow_unicode=True, width=92)
-        text = pf.read_text()
-        if not text.endswith("\n"):
-            text += "\n"
-        new_text = text + block
-        # parse-check before writing
-        parsed = yaml.safe_load(new_text)
-        if not parsed.get("flip_reads"):
-            raise SystemExit(f"parse check failed for {pid}")
-        pf.write_text(new_text)
-        added.append(pid)
+        flip_reads_yaml_block = yaml.dump(
+            {"flip_reads": flip_read_template}, sort_keys=False,
+            default_flow_style=False, allow_unicode=True, width=92,
+        )
+        original_text = play_file.read_text()
+        if not original_text.endswith("\n"):
+            original_text += "\n"
+        updated_text = original_text + flip_reads_yaml_block
+        # Re-parse the result before writing so a malformed append can never
+        # land on disk.
+        if not yaml.safe_load(updated_text).get("flip_reads"):
+            raise SystemExit(f"parse check failed for {play_id}")
+        play_file.write_text(updated_text)
+        plays_updated.append(play_id)
 
-    print(f"flip_reads added to {len(added)} plays")
-    print(f"already had flip_reads (skipped): {len(skipped_existing)} -> "
-          f"{sorted(skipped_existing)}")
-    print(f"non-directional (skipped): {len(skipped_nondir)} -> {sorted(skipped_nondir)}")
+    print(f"flip_reads added to {len(plays_updated)} plays")
+    print(f"already had flip_reads (skipped): {len(plays_skipped_existing)} -> "
+          f"{sorted(plays_skipped_existing)}")
+    print(f"non-directional (skipped): {len(plays_skipped_nondirectional)} -> "
+          f"{sorted(plays_skipped_nondirectional)}")
 
 
 if __name__ == "__main__":

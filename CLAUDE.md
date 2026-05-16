@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository state
 
-This repository is **pre-implementation**. No source code, build system, MCPs, schemas, or data files exist yet — only `README.md`, `plan.md`, and this file. The full design is in `plan.md`; treat it as the source of truth for scope and structure, and expand the codebase incrementally along the phases it describes.
+The repository is **in active implementation**. It has a working set of MCP servers under `mcps/`, JSON schemas under `schemas/`, a large play / formation / route / concept dataset under `data/`, supporting scripts under `tools/`, and a test suite. `plan.md` holds the original phased design and is still the design reference, but the codebase — not `plan.md` — is the source of truth for what currently exists.
 
 ## Project purpose
 
@@ -42,12 +42,26 @@ Do not invent game-specific capabilities. When information is incomplete, add ex
 
 When modifying existing data files, preserve prior notes — append, don't overwrite.
 
+## MCP servers and their documentation
+
+The project's functionality is exposed through a set of narrow, single-responsibility MCP servers under `mcps/`. `docs/using-the-mcps.md` is the cross-server index and registration guide.
+
+**Each server is documented by its own `README.md`** at `mcps/<name>-mcp/README.md`. That README is the authoritative tool catalog for the server: it must list every tool the server exposes, and the tool count it states must equal the number of `@mcp.tool()` decorators in `server.py`.
+
+- **A new MCP server is not complete without its `README.md`.** Commit the README in the same change that adds the server — never the server alone. Also add the server to the `docs/using-the-mcps.md` index.
+- **When you add, remove, or change a tool on an existing server, update that server's `README.md` in the same change.** Code and README must never drift.
+- **Before using an MCP in a task, consult its `README.md`** (or call its `manifest()` tool) to confirm which tools exist and what they cover — do not assume a tool's behavior.
+- **Whenever an MCP returns game-specific data, check its `verification_status`** (`verified` / `unverified` / `inferred`) and surface that uncertainty. Never present an `unverified` or `inferred` game capability as established fact — see "Working with game-specific claims" above.
+
 ## Phasing
 
-The plan is explicitly phased. The first MVP targets only **NCAA 06 PS2** and **Madden 04 PS2**, with a small starter set of formations, routes, and concepts. Don't broaden scope unprompted — adding a new game, formation, concept, or MCP is a deliberate decision, not a side effect.
+`plan.md` lays out the original phased build. The early phases — the core MCP servers, the schemas, and the starter dataset — are done; current work is mostly dataset expansion and refinement.
 
-When building MCPs, implement them one at a time in the order in `plan.md`. **`coordinate-translation-mcp` comes first**, because most other MCPs depend on its output.
+Still: **don't broaden scope unprompted** — adding a new game, formation, concept, or MCP server is a deliberate decision, not a side effect. When you do add an MCP server, follow the documentation rules above.
 
 ## Build, test, run
 
-Not yet established. When the first MCP is added, decide on language/runtime/test framework and update this section.
+- **Runtime:** Python. The MCP servers require Python 3.10+ (the `mcp` SDK); the repo `.venv` is built with `python3.11`. Use `.venv/bin/python` for anything that imports `mcp`, `pyyaml`, or `jsonschema` — the system `python3` may be too old.
+- **Setup:** `python3.11 -m venv .venv && .venv/bin/pip install -r requirements.txt`.
+- **Tests:** `./run-tests.sh` runs the full suite (`python -m unittest discover -s tests`).
+- **Tools:** the standalone scripts under `tools/` are run with `.venv/bin/python tools/<name>/<script>.py`.
