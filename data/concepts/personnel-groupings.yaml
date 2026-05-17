@@ -1,0 +1,165 @@
+# Offensive personnel-grouping reference. The two-digit code is running-back
+# count then tight-end count; the remaining skill spots (of five, the QB
+# aside) are wide receivers. An offensive formation's `personnel` field
+# carries the matching `code`.
+groupings:
+  - code: "00"
+    name: 00 Personnel (Empty / 5-Wide)
+    running_backs: 0
+    tight_ends: 0
+    wide_receivers: 5
+    description: >-
+      Five wide receivers, no running back and no tight end — the lightest,
+      most spread grouping. It forces the defense to declare coverage and
+      defend the full width of the field.
+    typical_use: Spread / Air Raid shotgun passing, two-minute, obvious passing downs.
+    example_formations: []
+    tags: [spread, empty, pass-heavy]
+  - code: "01"
+    name: 01 Personnel (Empty with a TE)
+    running_backs: 0
+    tight_ends: 1
+    wide_receivers: 4
+    description: >-
+      No running back, one tight end, four wide receivers — a modern empty
+      look that keeps a tight end as an extra protector or seam threat.
+    typical_use: Spread passing that wants a TE's protection help or a seam route from empty.
+    example_formations: [empty]
+    tags: [spread, empty, pass-heavy]
+  - code: "02"
+    name: 02 Personnel
+    running_backs: 0
+    tight_ends: 2
+    wide_receivers: 3
+    description: >-
+      No running back, two tight ends, three wide receivers — a tight-end-heavy
+      empty grouping for offenses built around big, athletic skill players.
+    typical_use: TE-centric spread passing; mismatch hunting with two move tight ends.
+    example_formations: []
+    tags: [spread, empty, te-heavy]
+  - code: "03"
+    name: 03 Personnel
+    running_backs: 0
+    tight_ends: 3
+    wide_receivers: 2
+    description: No running back, three tight ends, two wide receivers — a rare, heavy empty grouping.
+    typical_use: Heavy-personnel passing looks; uncommon.
+    example_formations: []
+    tags: [empty, te-heavy, heavy]
+  - code: "10"
+    name: 10 Personnel
+    running_backs: 1
+    tight_ends: 0
+    wide_receivers: 4
+    description: One running back, no tight end, four wide receivers — the classic four-wide spread grouping.
+    typical_use: Run & Shoot and Air Raid offenses; quick game and four-vertical passing.
+    example_formations: [run-and-shoot]
+    tags: [spread, pass-heavy]
+  - code: "11"
+    name: 11 Personnel
+    running_backs: 1
+    tight_ends: 1
+    wide_receivers: 3
+    description: >-
+      One running back, one tight end, three wide receivers — the most common
+      grouping in modern football, balanced enough to run or throw without
+      tipping the call.
+    typical_use: Base down-and-distance offense at every level; the workhorse spread grouping.
+    example_formations: [singleback-trio, singleback-ace, shotgun-2x2]
+    tags: [balanced, spread, base]
+  - code: "12"
+    name: 12 Personnel
+    running_backs: 1
+    tight_ends: 2
+    wide_receivers: 2
+    description: >-
+      One running back, two tight ends, two wide receivers — the second-most
+      common grouping, heavier than 11, with the second tight end taking on
+      the old fullback's role.
+    typical_use: Run-leaning early downs, play-action, and the two-TE run game.
+    example_formations: []
+    tags: [balanced, run-leaning, te-heavy]
+  - code: "13"
+    name: 13 Personnel
+    running_backs: 1
+    tight_ends: 3
+    wide_receivers: 1
+    description: One running back, three tight ends, one wide receiver — a heavy run-down grouping.
+    typical_use: Short yardage, goal line, and heavy run downs.
+    example_formations: []
+    tags: [heavy, run-heavy, short-yardage]
+  - code: "20"
+    name: 20 Personnel
+    running_backs: 2
+    tight_ends: 0
+    wide_receivers: 3
+    description: >-
+      Two running backs, no tight end, three wide receivers. Historically a
+      pro-style look; today it is the base of option offenses that align their
+      extra backs as slotbacks or pitch men.
+    typical_use: Flexbone / wishbone option offenses; some modern split-back spread.
+    example_formations: [flexbone, wishbone, pistol-diamond]
+    tags: [option, two-back]
+  - code: "21"
+    name: 21 Personnel
+    running_backs: 2
+    tight_ends: 1
+    wide_receivers: 2
+    description: >-
+      Two running backs, one tight end, two wide receivers — the classic
+      pro-style grouping: a fullback, a tailback, a tight end, two receivers.
+    typical_use: Downhill pro-style run game (I-Formation power / iso) and play-action off it.
+    example_formations: [i-formation]
+    tags: [pro-style, two-back, run-leaning]
+  - code: "22"
+    name: 22 Personnel
+    running_backs: 2
+    tight_ends: 2
+    wide_receivers: 1
+    description: Two running backs, two tight ends, one wide receiver — a heavy run-first grouping.
+    typical_use: Short yardage and run-heavy attacks; heavy I-Formation and full-house looks.
+    example_formations: [big-i]
+    tags: [heavy, run-heavy, short-yardage]
+  - code: "23"
+    name: 23 Personnel
+    running_backs: 2
+    tight_ends: 3
+    wide_receivers: 0
+    description: >-
+      Two running backs, three tight ends, no wide receiver — the heaviest
+      realistic grouping, all backs and blockers.
+    typical_use: Goal-line and short-yardage maximum-heavy formations.
+    example_formations: [goal-line]
+    tags: [heavy, goal-line, short-yardage]
+  - code: "30"
+    name: 30 Personnel
+    running_backs: 3
+    tight_ends: 0
+    wide_receivers: 2
+    description: Three running backs, no tight end, two wide receivers — a backfield-heavy option grouping.
+    typical_use: Flexbone and wishbone triple-option offenses.
+    example_formations: []
+    tags: [option, three-back]
+  - code: "31"
+    name: 31 Personnel
+    running_backs: 3
+    tight_ends: 1
+    wide_receivers: 1
+    description: Three running backs, one tight end, one wide receiver — a heavy option / throwback grouping.
+    typical_use: Option-heavy and older power schemes; uncommon today.
+    example_formations: []
+    tags: [option, three-back, heavy]
+  - code: "32"
+    name: 32 Personnel
+    running_backs: 3
+    tight_ends: 2
+    wide_receivers: 0
+    description: >-
+      Three running backs, two tight ends, no wide receiver — a maximum-heavy
+      option / throwback grouping (Power I, Maryland I).
+    typical_use: Goal-line and short-yardage power; throwback heavy formations.
+    example_formations: []
+    tags: [option, three-back, heavy, goal-line]
+verification_status: unverified
+source_notes:
+  - "Personnel-grouping definitions reviewed 2026-05-17 against the Playbook Gamer 'Personnel Groupings Guide' (https://playbookgamer.com/personnel-groupings-guide/): standard two-digit RB/TE notation with the remaining skill spots counted as wide receivers, plus per-grouping usage."

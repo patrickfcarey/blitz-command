@@ -1,6 +1,6 @@
 name: Run and Shoot Left
 side: offense
-personnel: 10 (run-and-shoot)
+personnel: "10"
 strength_side: balanced
 players:
 - label: LT

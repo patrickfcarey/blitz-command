@@ -13,7 +13,7 @@
     },
     "personnel": {
       "type": "string",
-      "description": "Personnel grouping. Offense uses RB-TE shorthand: '21' = 2 RB / 1 TE / 2 WR. Defense uses front-LB shorthand: '4-3', '3-3-5'."
+      "description": "Personnel grouping. An OFFENSIVE formation uses the two-digit RB-TE code and must match a `code` in data/concepts/personnel-groupings.yaml (e.g. '21' = 2 RB / 1 TE / 2 WR). A DEFENSIVE formation uses front-LB shorthand for its package (e.g. '4-3 base', 'nickel', '3-3-5')."
     },
     "strength_side": {
       "enum": ["left", "right", "balanced"],
