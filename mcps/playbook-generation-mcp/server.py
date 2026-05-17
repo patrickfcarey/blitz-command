@@ -15,12 +15,14 @@ Tools:
       list_formations_with_plays, list_philosophies_with_plays
   Authored playbooks (data/playbooks/ — sections, audibles, counter_responses):
     - list_playbooks, get_playbook, get_playbook_section, get_audibles,
-      get_play_in_playbook, validate_playbook, playbook_call_sheet
+      get_play_in_playbook, validate_playbook, playbook_call_sheet,
+      playbook_glossary
 
 Requires Python 3.10+.
 """
 from __future__ import annotations
 
+import json
 import subprocess
 import sys
 from pathlib import Path
@@ -36,6 +38,7 @@ GAMES_DIR = REPO_ROOT / "data" / "games"
 CONCEPTS_DIR = REPO_ROOT / "data" / "concepts"
 PLAYBOOKS_DIR = REPO_ROOT / "data" / "playbooks"
 VALIDATE_SCRIPT = REPO_ROOT / "tools" / "validate-playbook" / "validate.py"
+GLOSSARY_SCRIPT = REPO_ROOT / "tools" / "compile-glossary" / "compile_glossary.py"
 
 mcp = FastMCP("playbook-generation")
 
@@ -623,6 +626,56 @@ def playbook_call_sheet(playbook_id: str) -> dict[str, Any]:
 
 
 @mcp.tool()
+def playbook_glossary(playbook_id: str) -> dict[str, Any]:
+    """Compile a playbook's glossary — every route and concept its plays use,
+    each paired with the description from its data file, plus any terms
+    authored in the playbook's front_matter.glossary_additions.
+
+    The glossary is compiled on demand (it is never stored), so it can never
+    drift from the plays. Runs tools/compile-glossary/compile_glossary.py.
+
+    Returns:
+        {
+          "playbook_id": str,
+          "term_count":  int,
+          "by_category": {"route": N, "run-concept": N, "pass-concept": N, ...},
+          "glossary":    [{"term", "definition", "category", "source"}, ...],
+        }
+
+    Args:
+        playbook_id: see list_playbooks().
+    """
+    books = _load_all_playbooks()
+    if playbook_id not in books:
+        return {"error": f"no playbook '{playbook_id}'", "available": sorted(books)}
+    path = _PLAYBOOK_PATHS.get(playbook_id)
+    if path is None or not path.exists():
+        return {"error": f"could not locate the file for playbook '{playbook_id}'"}
+    try:
+        proc = subprocess.run(
+            [sys.executable, str(GLOSSARY_SCRIPT), str(path)],
+            capture_output=True, text=True, timeout=60,
+        )
+    except Exception as e:  # noqa: BLE001
+        return {"error": f"glossary compiler failed to run: {e}"}
+    if proc.returncode != 0:
+        return {"error": f"glossary compiler failed: {(proc.stderr or '').strip()}"}
+    try:
+        glossary = json.loads(proc.stdout)
+    except json.JSONDecodeError as e:
+        return {"error": f"could not parse glossary output: {e}"}
+    by_category: dict[str, int] = {}
+    for entry in glossary:
+        by_category[entry["category"]] = by_category.get(entry["category"], 0) + 1
+    return {
+        "playbook_id": playbook_id,
+        "term_count": len(glossary),
+        "by_category": by_category,
+        "glossary": glossary,
+    }
+
+
+@mcp.tool()
 def manifest() -> dict[str, Any]:
     """Return this server's purpose, tool list, and worked examples."""
     return {
@@ -646,6 +699,7 @@ def manifest() -> dict[str, Any]:
             {"name": "get_play_in_playbook", "description": "A play's entry in a playbook — role, install, shares, counter_responses."},
             {"name": "validate_playbook", "description": "Full validation: schema, share math, audibles, counter refs, family self-containment."},
             {"name": "playbook_call_sheet", "description": "Every play with its derived total snap share, sorted — the call-sheet view."},
+            {"name": "playbook_glossary", "description": "Compile a playbook's glossary — the routes/concepts its plays use, with definitions, plus authored glossary_additions."},
             {"name": "manifest", "description": "This document."},
         ],
         "examples": [
@@ -653,6 +707,7 @@ def manifest() -> dict[str, Any]:
             "suggest_complementary_plays(['singleback-trio-inside-zone', 'singleback-trio-mesh'], max_results=3)",
             "validate_playbook('hs-base-2026') -> {valid: true, report: '...'}",
             "playbook_call_sheet('hs-base-2026') -> plays ranked by derived snap share",
+            "playbook_glossary('hs-base-2026') -> routes/concepts used, with definitions",
         ],
     }
 

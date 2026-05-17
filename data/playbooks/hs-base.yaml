@@ -23,6 +23,126 @@ philosophy: power-run
 season: '2026'
 author: patrickfcarey
 version: 0.1.0
+front_matter:
+  identity:
+    title: Multiple Pro-Style — Run-First, Built on Disguise
+    summary: 'We are a multiple, run-first offense built on disguise. Every play belongs to a family that
+      looks identical pre-snap and through the first step after the snap — the defense cannot tell our
+      base run from its counter, its play-action, or its screen until the ball is already gone. We major
+      in the I-Formation and Singleback, change the picture and the tempo with Shotgun and the Run & Shoot,
+      and we finish drives at the goal line. We ask three things of every player: know your family, sell
+      every fake, and win your first step.'
+    philosophy: 'We believe a disciplined offense beats a more talented defense by making it wrong, not
+      by out-athleting it. That is what disguise buys us: when Power, Counter, the play-action boot, and
+      the screen all show the same picture for the first second and a half, the defense cannot key, cannot
+      fast-flow, and cannot pin its ears back. Every fast defender we face becomes a step slow.
+
+
+      The offense is built on constraint football. The base run is the threat; the counter punishes a
+      defense that over-pursues the base; the boot punishes linebackers who fly up to stop the counter;
+      the screen punishes a rush that finally gets impatient. Each call protects the last one. We do not
+      chase the perfect play — we run the family and let the defense choose how to be wrong.
+
+
+      Games are won before the snap. The quarterback counts the box, reads the safeties, and checks leverage
+      on every snap, and he has a short, fixed set of answers — five audibles he can reach without thinking.
+      We are multiple in formation but small in concept: the same families run from the I-Formation, from
+      Singleback, and from Shotgun, so the install stays a high-school install. A good rep is simple to
+      grade — identical pre-snap picture, identical first step, and a fake run at full speed.'
+    keys_to_success:
+    - Know your family — every play has siblings that look identical; learn the picture, not just your
+      job.
+    - Sell every fake at full speed — a lazy fake gives the whole disguise away.
+    - Win your first step — the family only holds if your first move matches the base play.
+    - Ball security before everything — we out-execute, we do not out-gamble.
+    - The QB counts the box and checks leverage before the snap, every snap.
+  how_to_read: 'The playbook is organized by formation group — I-Formation, Singleback, Shotgun, Run &
+    Shoot, and Goal Line — and within each group the plays are ordered by how often they are called. Every
+    diagram is drawn from the offense''s point of view: the offense attacks up the page, X-positive is
+    to the offense''s right, and every distance is in yards measured from the ball. Solid lines are runs
+    and ball-carrier paths; routes are drawn as the receiver''s path with the break shown. The pre-snap
+    reads printed on each play page — the counter responses and the flip reads — are what the quarterback
+    scans before the snap; they tell him when to check to one of the five audibles or to flip the play''s
+    direction. Always read a play as a member of its family: the disguise only works if you know what
+    the play is pretending to be.'
+  cadence: Base cadence is "Down — Set — Go," ball snapped on the first "Go." On a check-with-me call
+    the QB gives the formation, scans the front, and either confirms the call or audibles — the line waits
+    for the second "Set" before keying the snap. In the two-minute and tempo offense we snap on a single
+    word off a silent count, with no freeze calls.
+  install_notes: 'Plays install by family, not by formation. Once a family''s base play is in, its counter,
+    play-action, boot, and screen install quickly because they share the same footwork and the same first
+    step — never install a companion play before its base. The install schedule on the following pages
+    is built from each play''s install order: install-day-1 and install-week-1 plays are the spine you
+    must have to play a game; install-week-2 and mid-season adds layer disguise depth on top of it.'
+  glossary_additions:
+  - term: RED 22
+    definition: Audible to I-Formation Power-O (audible slot 1). The QB's default check against a soft
+      box or a coverage shell that invites the run.
+    category: audible
+  - term: WIDE 28
+    definition: Audible to the I-Formation lead toss (slot 2). Check to it when the defense pinches the
+      front and is light or slow to the perimeter.
+    category: audible
+  - term: BLUE 80
+    definition: Audible to the Stick quick-game concept (slot 3). Check to it against a loaded box of
+      eight or more.
+    category: audible
+  - term: KILL POWER
+    definition: Audible to QB Power (slot 4). Check to it against a light box when the count gives the
+      offense a hat advantage with the quarterback as a runner.
+    category: audible
+  - term: WHITE BOOT
+    definition: Audible to the Power boot (slot 5). Check to it against linebackers who over-flow and
+      fly up hard to stop the run.
+    category: audible
+  - term: box count
+    definition: The number of defenders aligned in the tackle box. The QB counts it pre-snap to decide
+      run versus pass and which way to run.
+    category: coverage
+  - term: force defender
+    definition: The defender responsible for turning a perimeter run back inside — usually the corner
+      or outside linebacker to that side.
+    category: coverage
+  - term: 3-technique
+    definition: A defensive tackle aligned on the outside shoulder of the guard. The run game keys his
+      alignment to set the point of attack.
+    category: coverage
+  - term: leverage
+    definition: Which side of a blocker or receiver a defender lines up on. The QB reads corner leverage
+      pre-snap to pick a side.
+    category: coverage
+  - term: check-with-me
+    definition: A play call left open at the line — the QB reads the defense and chooses the play, or
+      its direction, pre-snap.
+    category: situational
+  - term: kickout block
+    definition: A blocker drives the force defender out, away from the running lane, opening the edge
+      of the hole.
+    category: blocking
+  - term: down block
+    definition: A blocker blocks down toward the center, away from the play's direction, to create a double-team
+      or seal a gap.
+    category: blocking
+  - term: pull
+    definition: A lineman leaves his alignment at the snap and runs to block at the point of attack —
+      the engine of the Power and Counter families.
+    category: blocking
+  appendix:
+  - title: Situational — Short Yardage & Goal Line
+    body: Inside the 5, and on 3rd- or 4th-and-1, we live in the Goal Line and I-Formation power families.
+      Tighten the splits, expect the box to load, and trust the double-team at the point of attack. The
+      QB sneak is always available on 4th-and-inches.
+  - title: Situational — Two-Minute & Tempo
+    body: In the two-minute offense we play fast from Shotgun and the Run & Shoot, snap on a single-word
+      cadence, and lean on the quick-game families (Stick, Drive). Get out of bounds or get the ball down;
+      protect the football and the clock above all else.
+  - title: Situational — Backed Up
+    body: Inside our own 5-yard line we call only the highest-percentage, lowest-risk plays — inside zone
+      and lead runs from under center. No reverses, no deep drop-backs, nothing that risks a safety.
+  - title: Self-Scout Reminder
+    body: Every two weeks, chart our calls by down, distance, and hash. The disguise families only work
+      while our tendencies stay hidden — if film shows we always run Power on 1st-and-10 from the I-Formation,
+      the disguise is already beaten. Vary the family member, not just the play.
 tags:
 - power-run
 - hs-base

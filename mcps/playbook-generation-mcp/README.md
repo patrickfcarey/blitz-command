@@ -1,6 +1,6 @@
 # playbook-generation-mcp
 
-MCP server for **assembling** custom playbooks from the library and for **working with authored playbooks** in `data/playbooks/` — their sections, audible systems, counter-responses, and validation. **12 tools.**
+MCP server for **assembling** custom playbooks from the library and for **working with authored playbooks** in `data/playbooks/` — their sections, audible systems, counter-responses, validation, and glossary compilation. **13 tools.**
 
 **Boundary rule**: this server owns collection-level reasoning — anything that treats a *set* of plays as a unit. Single-play analysis (compare two plays, predict a matchup, scout a play, query a disguise family) belongs in `play-library-mcp`.
 
@@ -22,6 +22,7 @@ MCP server for **assembling** custom playbooks from the library and for **workin
 - **`get_play_in_playbook(playbook_id, play_id)`** — a play's *entry* in the playbook (role, install_order, call shares, counter_responses) — distinct from the football play itself (`play-library-mcp` `get_play`)
 - **`validate_playbook(playbook_id)`** — full validation via `tools/validate-playbook/validate.py`: schema, share-math rollups, audible integrity, counter_ref resolution, disguise-family self-containment
 - **`playbook_call_sheet(playbook_id)`** — every play with its derived total snap share (`section target_snap_share_pct × play share_of_section_pct`), sorted — the coach's-eye call sheet
+- **`playbook_glossary(playbook_id)`** — compile the playbook's glossary: every route/concept its plays use, paired with the description from its data file, plus authored `front_matter.glossary_additions`. Compiled on demand via `tools/compile-glossary/compile_glossary.py`, so it never drifts from the plays
 
 ### Meta
 

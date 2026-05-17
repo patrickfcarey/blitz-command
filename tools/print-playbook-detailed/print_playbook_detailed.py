@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate a detailed teaching PDF: 2 fully-explained plays per page.
+"""Generate a detailed teaching PDF — a whole playbook, or an ad-hoc set of plays.
 
 Layout: letter portrait. Each page has 2 play slots stacked vertically.
 Within each slot: title bar + diagram (top half) + notes (bottom half, 2 columns).
@@ -14,13 +14,20 @@ For every play, we surface:
   - Best vs / Worst vs / Common uses
   - Play-level notes (free text)
 
+In --playbook mode the PDF additionally carries the playbook's front matter
+(identity / philosophy, how-to-read, cadence, install notes), a compiled
+glossary, and the appendix — assembled as: identity -> how-to-read ->
+glossary -> plays -> appendix.
+
 Usage:
+    # A whole playbook — front matter, glossary, every play, appendix:
+    python print_playbook_detailed.py --playbook data/playbooks/hs-base.yaml -o book.pdf
+
+    # An ad-hoc set of plays (no front matter):
     python print_playbook_detailed.py \
         data/plays/i-formation-power-o.yaml \
         data/plays/i-formation-counter-trey.yaml \
-        --game madden-05-ps2 \
-        --diagram-dir examples/play-diagrams \
-        -o detailed.pdf
+        --game madden-05-ps2 --diagram-dir examples/play-diagrams -o detailed.pdf
 """
 from __future__ import annotations
 
@@ -41,6 +48,14 @@ from reportlab.pdfgen.canvas import Canvas
 from reportlab.platypus import Frame, KeepInFrame, Paragraph, Spacer
 from svglib.svglib import svg2rlg
 from reportlab.graphics import renderPDF
+
+# The glossary compiler is a shared tool module — add its directory to the
+# import path so the printed playbook's Glossary pages use the very same
+# logic the playbook-generation MCP exposes as the `playbook_glossary` tool.
+REPO_ROOT = Path(__file__).resolve().parents[2]
+PLAYS_DIR = REPO_ROOT / "data" / "plays"
+sys.path.insert(0, str(REPO_ROOT / "tools" / "compile-glossary"))
+import compile_glossary  # noqa: E402
 
 
 # ─── Page geometry ────────────────────────────────────────────────────────────
@@ -428,7 +443,8 @@ def _draw_play_slot(c: Canvas, play: dict, svg_path: Path | None, y_top: float) 
 
 # ─── Play / SVG resolution ────────────────────────────────────────────────────
 
-def _load_play(path: Path) -> dict:
+def _load_yaml(path: Path) -> dict:
+    """Parse a YAML file (a play or a playbook) into a dict."""
     with open(path, encoding="utf-8") as f:
         return yaml.safe_load(f)
 
@@ -444,53 +460,266 @@ def _resolve_svg(play_id: str, game: str, diagram_dir: Path) -> Path | None:
     return candidates[0]  # return non-existent path for "missing" message
 
 
-# ─── Main ─────────────────────────────────────────────────────────────────────
+# ─── Front-matter / glossary / appendix rendering ─────────────────────────────
 
-def main() -> None:
-    ap = argparse.ArgumentParser(
-        description="Detailed teaching PDF — 2 fully-explained plays per page.",
+# Glossary category id -> the heading shown for that group on the glossary pages.
+GLOSSARY_CATEGORY_LABELS = {
+    "formation": "Formations",
+    "route": "Routes",
+    "run-concept": "Run Concepts",
+    "pass-concept": "Pass Concepts",
+    "blocking": "Blocking",
+    "coverage": "Coverage & Recognition",
+    "motion": "Motion",
+    "audible": "Audibles",
+    "situational": "Situational",
+    "other": "Other Terms",
+}
+
+
+def _doc_styles() -> dict[str, ParagraphStyle]:
+    """Paragraph styles for the full-page front-matter, glossary, and appendix
+    sections — larger and more readable than the half-page play-note styles."""
+    base = ParagraphStyle(
+        "doc-base", fontName="Helvetica", fontSize=10, leading=14,
+        textColor=C_BODY_TEXT, spaceAfter=6,
     )
-    ap.add_argument("plays", nargs="+", metavar="PLAY",
-                    help="Path to play YAML file(s).")
-    ap.add_argument("--game", default="madden-05-ps2",
-                    help="Game tag for diagram lookup (default: madden-05-ps2).")
-    ap.add_argument("--diagram-dir", default="examples/play-diagrams", type=Path,
-                    help="Directory containing SVG diagrams.")
-    ap.add_argument("--title", default="Playbook Notes",
-                    help="Title printed at the top of each page.")
-    ap.add_argument("-o", "--output", default="playbook-detailed.pdf", type=Path,
-                    help="Output PDF path.")
-    args = ap.parse_args()
+    return {
+        "body": base,
+        "lead": ParagraphStyle(
+            "doc-lead", parent=base, fontSize=11, leading=15,
+            textColor=C_MUTED, spaceAfter=10,
+        ),
+        "h1": ParagraphStyle(
+            "doc-h1", parent=base, fontName="Helvetica-Bold", fontSize=15,
+            leading=19, textColor=C_PAGE_TITLE, spaceBefore=4, spaceAfter=8,
+        ),
+        "h2": ParagraphStyle(
+            "doc-h2", parent=base, fontName="Helvetica-Bold", fontSize=11,
+            leading=14, textColor=C_SECTION_HEAD, spaceBefore=12, spaceAfter=4,
+        ),
+        "bullet": ParagraphStyle(
+            "doc-bullet", parent=base, leftIndent=14, spaceAfter=3,
+        ),
+        "term": ParagraphStyle(
+            "doc-term", parent=base, leftIndent=14, firstLineIndent=-14,
+            spaceAfter=5,
+        ),
+    }
 
-    play_paths = [Path(p) for p in args.plays]
-    missing = [p for p in play_paths if not p.exists()]
-    if missing:
-        for p in missing:
-            print(f"ERROR: play YAML not found: {p}", file=sys.stderr)
-        sys.exit(1)
 
-    plays_with_svgs: list[tuple[dict, Path | None]] = []
-    for p in play_paths:
-        play = _load_play(p)
-        pid = play.get("play_id") or p.stem
-        svg = _resolve_svg(pid, args.game, args.diagram_dir)
-        plays_with_svgs.append((play, svg))
+def _text_to_paragraphs(text: Any, style: ParagraphStyle) -> list:
+    """One Paragraph per non-empty block of `text`. Front-matter prose is
+    stored as folded YAML scalars, so paragraph breaks arrive as newlines."""
+    paragraphs = []
+    for block in str(text or "").split("\n"):
+        block = block.strip()
+        if block:
+            paragraphs.append(Paragraph(_esc(block), style))
+    return paragraphs
 
-    c = Canvas(str(args.output), pagesize=letter)
 
-    PER_PAGE = 2
-    for page_idx in range(0, len(plays_with_svgs), PER_PAGE):
-        chunk = plays_with_svgs[page_idx:page_idx + PER_PAGE]
-        _draw_page_title(c, args.title)
+def _identity_flowables(front_matter: dict, styles: dict) -> list:
+    """Flowables for the identity / philosophy opening page(s)."""
+    identity = front_matter.get("identity") or {}
+    flowables: list = []
+    if identity.get("title"):
+        flowables.append(Paragraph(_esc(identity["title"]), styles["h1"]))
+    if identity.get("summary"):
+        flowables.extend(_text_to_paragraphs(identity["summary"], styles["lead"]))
+    if identity.get("philosophy"):
+        flowables.append(Paragraph("Philosophy", styles["h2"]))
+        flowables.extend(_text_to_paragraphs(identity["philosophy"], styles["body"]))
+    if identity.get("keys_to_success"):
+        flowables.append(Paragraph("Keys to Success", styles["h2"]))
+        for key in identity["keys_to_success"]:
+            flowables.append(Paragraph(f"•  {_esc(key)}", styles["bullet"]))
+    return flowables
+
+
+def _how_to_read_flowables(front_matter: dict, styles: dict) -> list:
+    """Flowables for the how-to-read / cadence / install page."""
+    flowables: list = []
+    for heading, text in [
+        ("How to Read This Playbook", front_matter.get("how_to_read")),
+        ("Cadence", front_matter.get("cadence")),
+        ("Install", front_matter.get("install_notes")),
+    ]:
+        if text:
+            flowables.append(Paragraph(heading, styles["h2"]))
+            flowables.extend(_text_to_paragraphs(text, styles["body"]))
+    return flowables
+
+
+def _glossary_flowables(glossary: list, styles: dict) -> list:
+    """Flowables for the glossary pages, grouped by category."""
+    entries_by_category: dict[str, list] = {}
+    for entry in glossary:
+        entries_by_category.setdefault(entry["category"], []).append(entry)
+    flowables: list = []
+    for category in sorted(entries_by_category,
+                           key=lambda cat: GLOSSARY_CATEGORY_LABELS.get(cat, cat)):
+        label = GLOSSARY_CATEGORY_LABELS.get(category, category.replace("-", " ").title())
+        flowables.append(Paragraph(label, styles["h2"]))
+        for entry in sorted(entries_by_category[category],
+                            key=lambda e: e["term"].lower()):
+            definition = _esc(entry.get("definition", "")).replace("\n", " ")
+            flowables.append(
+                Paragraph(f"<b>{_esc(entry['term'])}</b> — {definition}", styles["term"])
+            )
+    return flowables
+
+
+def _appendix_flowables(front_matter: dict, styles: dict) -> list:
+    """Flowables for the appendix sections."""
+    flowables: list = []
+    for section in front_matter.get("appendix") or []:
+        if section.get("title"):
+            flowables.append(Paragraph(_esc(section["title"]), styles["h2"]))
+        flowables.extend(_text_to_paragraphs(section.get("body", ""), styles["body"]))
+    return flowables
+
+
+def _flow_text_pages(c: Canvas, page_title: str, flowables: list) -> int:
+    """Draw `flowables` across as many letter pages as needed, each carrying
+    `page_title`. Returns the number of pages drawn."""
+    if not flowables:
+        return 0
+    remaining = list(flowables)
+    body_height = PAGE_H - 2 * MARGIN - PAGE_TITLE_H - GAP_AFTER_TITLE
+    pages = 0
+    while remaining:
+        _draw_page_title(c, page_title)
+        frame = Frame(
+            MARGIN, MARGIN, CONTENT_W, body_height,
+            leftPadding=6, rightPadding=6, topPadding=6, bottomPadding=6,
+            showBoundary=0,
+        )
+        count_before = len(remaining)
+        frame.addFromList(remaining, c)
+        c.showPage()
+        pages += 1
+        if len(remaining) == count_before:
+            # A single flowable could not fit an empty frame. Paragraphs and
+            # headings split or are tiny, so this is a guard against a
+            # pathological input, not an expected path — drop it and move on.
+            remaining.pop(0)
+    return pages
+
+
+def _draw_play_pages(c: Canvas, plays_with_svgs: list, title: str) -> int:
+    """Draw the play pages — two fully-explained plays per page. Returns the
+    number of pages drawn."""
+    plays_per_page = 2
+    pages = 0
+    for start in range(0, len(plays_with_svgs), plays_per_page):
+        chunk = plays_with_svgs[start:start + plays_per_page]
+        _draw_page_title(c, title)
         y_cursor = PAGE_H - MARGIN - PAGE_TITLE_H - GAP_AFTER_TITLE
         for play, svg in chunk:
             _draw_play_slot(c, play, svg, y_cursor)
             y_cursor -= SLOT_H + GAP_BETWEEN_SLOTS
         c.showPage()
+        pages += 1
+    return pages
+
+
+# ─── Main ─────────────────────────────────────────────────────────────────────
+
+def _render_playbook(playbook_path: Path, args: argparse.Namespace) -> None:
+    """Render a full playbook PDF: front matter, glossary, plays, appendix."""
+    playbook = _load_yaml(playbook_path)
+    front_matter = playbook.get("front_matter") or {}
+    title = args.title or playbook.get("name") or "Playbook"
+    styles = _doc_styles()
+
+    c = Canvas(str(args.output), pagesize=letter)
+
+    _flow_text_pages(c, title, _identity_flowables(front_matter, styles))
+    _flow_text_pages(c, "How to Read This Playbook",
+                     _how_to_read_flowables(front_matter, styles))
+
+    glossary = compile_glossary.compile_glossary(playbook_path)
+    _flow_text_pages(c, "Glossary", _glossary_flowables(glossary, styles))
+
+    play_entries = [
+        entry
+        for section in playbook.get("formation_sections", [])
+        for entry in section.get("plays", [])
+    ]
+    plays_with_svgs: list = []
+    missing_play_ids: list[str] = []
+    for entry in play_entries:
+        play_path = PLAYS_DIR / f"{entry['play_id']}.yaml"
+        if not play_path.exists():
+            missing_play_ids.append(entry["play_id"])
+            continue
+        play = _load_yaml(play_path)
+        svg = _resolve_svg(play.get("play_id") or entry["play_id"],
+                           args.game, args.diagram_dir)
+        plays_with_svgs.append((play, svg))
+    _draw_play_pages(c, plays_with_svgs, title)
+
+    _flow_text_pages(c, "Appendix", _appendix_flowables(front_matter, styles))
 
     c.save()
-    print(f"Wrote {args.output} ({len(plays_with_svgs)} plays, "
-          f"{(len(plays_with_svgs) + PER_PAGE - 1) // PER_PAGE} pages)")
+    summary = (f"Wrote {args.output} — playbook '{playbook.get('playbook_id')}': "
+               f"{len(plays_with_svgs)} plays, {len(glossary)} glossary terms")
+    if missing_play_ids:
+        summary += f"; {len(missing_play_ids)} play file(s) missing"
+    print(summary)
+
+
+def _render_play_list(play_paths: list[Path], args: argparse.Namespace) -> None:
+    """Render an ad-hoc set of plays — play pages only, no front matter."""
+    missing = [path for path in play_paths if not path.exists()]
+    if missing:
+        for path in missing:
+            print(f"ERROR: play YAML not found: {path}", file=sys.stderr)
+        sys.exit(1)
+    plays_with_svgs: list = []
+    for path in play_paths:
+        play = _load_yaml(path)
+        svg = _resolve_svg(play.get("play_id") or path.stem,
+                           args.game, args.diagram_dir)
+        plays_with_svgs.append((play, svg))
+    c = Canvas(str(args.output), pagesize=letter)
+    pages = _draw_play_pages(c, plays_with_svgs, args.title or "Playbook Notes")
+    c.save()
+    print(f"Wrote {args.output} ({len(plays_with_svgs)} plays, {pages} pages)")
+
+
+def main() -> None:
+    ap = argparse.ArgumentParser(
+        description="Detailed teaching PDF — a whole playbook, or an ad-hoc set of plays.",
+    )
+    ap.add_argument("plays", nargs="*", metavar="PLAY",
+                    help="Play YAML file(s). Used when --playbook is not given.")
+    ap.add_argument("--playbook", type=Path, default=None,
+                    help="Playbook YAML. Renders front matter + glossary + every "
+                         "play in the playbook + appendix.")
+    ap.add_argument("--game", default="madden-05-ps2",
+                    help="Game tag for diagram lookup (default: madden-05-ps2).")
+    ap.add_argument("--diagram-dir", default="examples/play-diagrams", type=Path,
+                    help="Directory containing SVG diagrams.")
+    ap.add_argument("--title", default=None,
+                    help="Page title. Defaults to the playbook name (playbook "
+                         "mode) or 'Playbook Notes' (play-list mode).")
+    ap.add_argument("-o", "--output", default="playbook-detailed.pdf", type=Path,
+                    help="Output PDF path.")
+    args = ap.parse_args()
+
+    if args.playbook:
+        if not args.playbook.exists():
+            print(f"ERROR: playbook YAML not found: {args.playbook}", file=sys.stderr)
+            sys.exit(1)
+        _render_playbook(args.playbook, args)
+    elif args.plays:
+        _render_play_list([Path(p) for p in args.plays], args)
+    else:
+        print("ERROR: pass either --playbook PATH or one or more play files",
+              file=sys.stderr)
+        sys.exit(1)
 
 
 if __name__ == "__main__":

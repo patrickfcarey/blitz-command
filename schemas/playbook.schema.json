@@ -234,6 +234,91 @@
         { "required": ["all_of"] }
       ],
       "description": "Tag-based filter for situational sections. At least one of any_of/all_of must be present."
+    },
+    "front_matter": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Teaching front matter for the playbook — the philosophy, orientation, and reference material a coach or player needs to actually implement the offense or defense. Optional in the schema; the validation MCP warns when a playbook omits it. The glossary and the diagram pages are NOT stored here: the print tool compiles the glossary from the routes/concepts/blocking-schemes the playbook's plays use (and their data-file descriptions), and the diagrams from the play/formation renders. Only the authored prose and 'glossary_additions' (playbook-specific terms not defined in any data file) live here.",
+      "properties": {
+        "identity": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "The philosophy / identity introduction — who this offense or defense is.",
+          "properties": {
+            "title": {
+              "type": "string",
+              "description": "The identity in a phrase, e.g. 'Multiple Pro-Style — Run-First'."
+            },
+            "summary": {
+              "type": "string",
+              "description": "One paragraph: who we are, how we win, what we ask of the players."
+            },
+            "philosophy": {
+              "type": "string",
+              "description": "The full narrative — the beliefs behind the scheme, why these formations and play families, what a good rep looks like."
+            },
+            "keys_to_success": {
+              "type": "array",
+              "items": { "type": "string" },
+              "description": "The non-negotiables, as short bullet points."
+            }
+          }
+        },
+        "how_to_read": {
+          "type": "string",
+          "description": "Orientation for the reader: how the playbook is organized, how to read a play page, and the coordinate / diagram conventions."
+        },
+        "cadence": {
+          "type": "string",
+          "description": "Snap count and cadence rules."
+        },
+        "install_notes": {
+          "type": "string",
+          "description": "Authored introduction to the install plan. The week-by-week install table itself is compiled by the print tool from each play_entry's install_order."
+        },
+        "glossary_additions": {
+          "type": "array",
+          "description": "Playbook-specific terms that are NOT already defined in a data file. The print tool merges these into the compiled glossary. Use for things like audible call names, cadence words, or playbook-local conventions.",
+          "items": {
+            "type": "object",
+            "required": ["term", "definition"],
+            "additionalProperties": false,
+            "properties": {
+              "term": {
+                "type": "string",
+                "description": "The term being defined."
+              },
+              "definition": {
+                "type": "string",
+                "description": "The definition."
+              },
+              "category": {
+                "enum": ["formation", "route", "blocking", "coverage", "motion", "audible", "situational", "other"],
+                "description": "Glossary grouping for this term."
+              }
+            }
+          }
+        },
+        "appendix": {
+          "type": "array",
+          "description": "Back-of-book reference sections, authored — situational football, self-scout reminders, practice scripts, and the like.",
+          "items": {
+            "type": "object",
+            "required": ["title", "body"],
+            "additionalProperties": false,
+            "properties": {
+              "title": {
+                "type": "string",
+                "description": "Appendix section heading."
+              },
+              "body": {
+                "type": "string",
+                "description": "Appendix section content."
+              }
+            }
+          }
+        }
+      }
     }
   },
 
@@ -272,6 +357,8 @@
       "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$",
       "description": "SemVer string for tracking playbook revisions."
     },
+
+    "front_matter": { "$ref": "#/$defs/front_matter" },
 
     "audible_mode": {
       "enum": ["global", "per-formation"],

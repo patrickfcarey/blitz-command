@@ -15,6 +15,8 @@ Checks performed:
      each audible_slot resolves in the relevant pool, hot-route names resolve.
  10. Self-containment: every play-family companion in the playbook also has
      one of its family base plays installed.
+ 11. front_matter presence — warns (does not fail) when a playbook has no
+     front_matter teaching block.
 
 Exit code 0 on full pass, 1 on any failure.
 
@@ -355,6 +357,32 @@ def validate(playbook_path: Path) -> int:
             print("    (no playbook plays are family companions)")
         if sc_failures:
             failures += 1
+
+    # 11. front_matter presence. Warning only — front_matter is optional in the
+    #     schema, but a playbook without it is not a complete teaching document
+    #     (no philosophy intro, glossary additions, or appendix).
+    print()
+    print("  Front matter:")
+    front_matter = pb.get("front_matter")
+    if not front_matter:
+        print("    [WARN] no front_matter — the playbook has no philosophy "
+              "intro, glossary additions, or appendix")
+    else:
+        identity = front_matter.get("identity") or {}
+        present = []
+        if identity.get("philosophy"):
+            present.append("identity/philosophy")
+        if front_matter.get("how_to_read"):
+            present.append("how_to_read")
+        if front_matter.get("glossary_additions"):
+            present.append(f"{len(front_matter['glossary_additions'])} glossary additions")
+        if front_matter.get("appendix"):
+            present.append(f"{len(front_matter['appendix'])} appendix sections")
+        print(f"    [PASS] front_matter present: "
+              f"{', '.join(present) if present else '(empty)'}")
+        if not identity.get("philosophy"):
+            print("    [WARN] front_matter has no identity.philosophy — the "
+                  "playbook's philosophy narrative is unwritten")
 
     print()
     if failures:
