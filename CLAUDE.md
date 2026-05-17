@@ -53,6 +53,16 @@ The project's functionality is exposed through a set of narrow, single-responsib
 - **Before using an MCP in a task, consult its `README.md`** (or call its `manifest()` tool) to confirm which tools exist and what they cover — do not assume a tool's behavior.
 - **Whenever an MCP returns game-specific data, check its `verification_status`** (`verified` / `unverified` / `inferred`) and surface that uncertainty. Never present an `unverified` or `inferred` game capability as established fact — see "Working with game-specific claims" above.
 
+## Keeping the pending queue current
+
+`docs/pending-queue.md` is the living list of open work. Keep it current as a matter of course — **without being asked**:
+
+- When work lands, move the matching item to the file's `## Done` section (or delete it once it is no longer useful context).
+- When new open work surfaces — a follow-up, a bug, a deferred idea — add it as a terse one-line entry under the right category.
+- Do this in the same change as the work itself, so the queue never drifts.
+
+A stale queue is worse than none — it has previously listed long-shipped MCPs and schemas as "pending." Updating it is part of finishing a task, not a separate chore.
+
 ## Phasing
 
 `plan.md` lays out the original phased build. The early phases — the core MCP servers, the schemas, and the starter dataset — are done; current work is mostly dataset expansion and refinement.
