@@ -5,7 +5,7 @@ blitz-command ships **13 MCP servers** under `mcps/`. Each owns one narrow respo
 | Server | Purpose | Tools |
 |--------|---------|-------|
 | [`play-library-mcp`](../mcps/play-library-mcp/README.md) | Plays + disguise families — discovery, authoring, validation, rendering, scouting, pairwise analysis | 21 |
-| [`playbook-generation-mcp`](../mcps/playbook-generation-mcp/README.md) | Assembling playbooks + working with authored playbooks (sections, audibles, counter-responses, validation, glossary) | 13 |
+| [`playbook-generation-mcp`](../mcps/playbook-generation-mcp/README.md) | Assembling playbooks + working with authored playbooks (sections, audibles, counter-responses, validation, glossary, tendency profile) | 14 |
 | [`game-knowledge-mcp`](../mcps/game-knowledge-mcp/README.md) | Per-game editor capabilities + universal→editor coordinate translation | 9 |
 | [`formation-library-mcp`](../mcps/formation-library-mcp/README.md) | Offensive formations — discovery + inspection | 7 |
 | [`validation-mcp`](../mcps/validation-mcp/README.md) | Standalone validation of plays / formations / routes / concepts / game profiles | 7 |

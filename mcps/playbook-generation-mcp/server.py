@@ -16,7 +16,7 @@ Tools:
   Authored playbooks (data/playbooks/ — sections, audibles, counter_responses):
     - list_playbooks, get_playbook, get_playbook_section, get_audibles,
       get_play_in_playbook, validate_playbook, playbook_call_sheet,
-      playbook_glossary
+      playbook_glossary, playbook_tendency_profile
 
 Requires Python 3.10+.
 """
@@ -39,6 +39,7 @@ CONCEPTS_DIR = REPO_ROOT / "data" / "concepts"
 PLAYBOOKS_DIR = REPO_ROOT / "data" / "playbooks"
 VALIDATE_SCRIPT = REPO_ROOT / "tools" / "validate-playbook" / "validate.py"
 GLOSSARY_SCRIPT = REPO_ROOT / "tools" / "compile-glossary" / "compile_glossary.py"
+PROFILE_SCRIPT = REPO_ROOT / "tools" / "playbook-profile" / "profile.py"
 
 mcp = FastMCP("playbook-generation")
 
@@ -676,6 +677,50 @@ def playbook_glossary(playbook_id: str) -> dict[str, Any]:
 
 
 @mcp.tool()
+def playbook_tendency_profile(playbook_id: str) -> dict[str, Any]:
+    """Compute a playbook's tendency profile — the coach's-eye summary of what
+    the playbook does: its run/pass balance, and how its snaps split by play
+    type, formation, and personnel grouping.
+
+    Every figure is derived from the call shares already stored in the
+    playbook (section target_snap_share_pct x play share_of_section_pct), so
+    the profile never drifts. Runs tools/playbook-profile/profile.py.
+
+    Returns:
+        {
+          "playbook_id":          str,
+          "total_snap_share_pct": float,
+          "run_pass_split":       {"run": pct, "pass": pct, ...},
+          "by_play_type":         {play_type: pct, ...},
+          "by_formation":         {formation_id: pct, ...},
+          "by_personnel":         {personnel_code: pct, ...},
+        }
+
+    Args:
+        playbook_id: see list_playbooks().
+    """
+    books = _load_all_playbooks()
+    if playbook_id not in books:
+        return {"error": f"no playbook '{playbook_id}'", "available": sorted(books)}
+    path = _PLAYBOOK_PATHS.get(playbook_id)
+    if path is None or not path.exists():
+        return {"error": f"could not locate the file for playbook '{playbook_id}'"}
+    try:
+        proc = subprocess.run(
+            [sys.executable, str(PROFILE_SCRIPT), str(path)],
+            capture_output=True, text=True, timeout=60,
+        )
+    except Exception as e:  # noqa: BLE001
+        return {"error": f"profile tool failed to run: {e}"}
+    if proc.returncode != 0:
+        return {"error": f"profile tool failed: {(proc.stderr or '').strip()}"}
+    try:
+        return json.loads(proc.stdout)
+    except json.JSONDecodeError as e:
+        return {"error": f"could not parse profile output: {e}"}
+
+
+@mcp.tool()
 def manifest() -> dict[str, Any]:
     """Return this server's purpose, tool list, and worked examples."""
     return {
@@ -700,6 +745,7 @@ def manifest() -> dict[str, Any]:
             {"name": "validate_playbook", "description": "Full validation: schema, share math, audibles, counter refs, family self-containment."},
             {"name": "playbook_call_sheet", "description": "Every play with its derived total snap share, sorted — the call-sheet view."},
             {"name": "playbook_glossary", "description": "Compile a playbook's glossary — the routes/concepts its plays use, with definitions, plus authored glossary_additions."},
+            {"name": "playbook_tendency_profile", "description": "Derive a playbook's run/pass balance and its snap split by play type, formation, and personnel grouping."},
             {"name": "manifest", "description": "This document."},
         ],
         "examples": [
@@ -708,6 +754,7 @@ def manifest() -> dict[str, Any]:
             "validate_playbook('hs-base-2026') -> {valid: true, report: '...'}",
             "playbook_call_sheet('hs-base-2026') -> plays ranked by derived snap share",
             "playbook_glossary('hs-base-2026') -> routes/concepts used, with definitions",
+            "playbook_tendency_profile('hs-base-2026') -> run/pass %, play-type / formation / personnel mix",
         ],
     }
 

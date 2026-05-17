@@ -16,9 +16,9 @@ For every play, we surface:
   - Play-level notes (free text)
 
 In --playbook mode the PDF additionally carries the playbook's front matter
-(identity / philosophy, how-to-read, cadence, install notes), a compiled
-glossary, and the appendix — assembled as: identity -> how-to-read ->
-glossary -> plays -> appendix.
+(identity / philosophy, how-to-read, cadence, install notes), a tendency
+profile, a compiled glossary, and the appendix — assembled as: identity ->
+how-to-read -> tendencies -> glossary -> plays -> appendix.
 
 Usage:
     # A whole playbook — front matter, glossary, every play, appendix:
@@ -57,7 +57,9 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 PLAYS_DIR = REPO_ROOT / "data" / "plays"
 DRAW_SCRIPT = REPO_ROOT / "tools" / "draw-play" / "draw.py"
 sys.path.insert(0, str(REPO_ROOT / "tools" / "compile-glossary"))
+sys.path.insert(0, str(REPO_ROOT / "tools" / "playbook-profile"))
 import compile_glossary  # noqa: E402
+import profile  # noqa: E402  - the shared tendency-profile module (not stdlib profile)
 
 
 # ─── Page geometry ────────────────────────────────────────────────────────────
@@ -586,6 +588,33 @@ def _appendix_flowables(front_matter: dict, styles: dict) -> list:
     return flowables
 
 
+def _tendency_flowables(tendency: dict, styles: dict) -> list:
+    """Flowables for the playbook tendency-profile page."""
+    run_pass = tendency.get("run_pass_split", {})
+    run_pct = run_pass.get("run", 0)
+    pass_pct = run_pass.get("pass", 0)
+    flowables: list = [
+        Paragraph(f"Run / Pass Balance — {run_pct}% run, {pass_pct}% pass",
+                  styles["h2"]),
+        Paragraph(
+            "Every figure below is derived from the playbook's stored call "
+            "shares — each section's snap-share target times its plays' "
+            "shares — so the profile always matches the playbook as written.",
+            styles["body"]),
+    ]
+    for heading, distribution in [
+        ("By Play Type", tendency.get("by_play_type", {})),
+        ("By Formation", tendency.get("by_formation", {})),
+        ("By Personnel Grouping", tendency.get("by_personnel", {})),
+    ]:
+        flowables.append(Paragraph(heading, styles["h2"]))
+        for key, share_pct in distribution.items():
+            flowables.append(
+                Paragraph(f"{_esc(str(key))} — {share_pct}%", styles["bullet"])
+            )
+    return flowables
+
+
 def _flow_text_pages(c: Canvas, page_title: str, flowables: list) -> int:
     """Draw `flowables` across as many letter pages as needed, each carrying
     `page_title`. Returns the number of pages drawn."""
@@ -648,6 +677,9 @@ def _render_playbook(playbook_path: Path, args: argparse.Namespace) -> None:
     _flow_text_pages(c, title, _identity_flowables(front_matter, styles))
     _flow_text_pages(c, "How to Read This Playbook",
                      _how_to_read_flowables(front_matter, styles))
+
+    tendency = profile.compute_tendency_profile(playbook_path)
+    _flow_text_pages(c, "Playbook Tendencies", _tendency_flowables(tendency, styles))
 
     glossary = compile_glossary.compile_glossary(playbook_path)
     _flow_text_pages(c, "Glossary", _glossary_flowables(glossary, styles))
