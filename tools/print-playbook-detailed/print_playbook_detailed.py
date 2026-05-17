@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Generate a detailed teaching PDF — a whole playbook, or an ad-hoc set of plays.
 
-Layout: letter portrait. Each page has 2 play slots stacked vertically.
-Within each slot: title bar + diagram (top half) + notes (bottom half, 2 columns).
+Play pages come in two layouts, chosen with --layout: 'side-by-side' (two
+plays per page as tall columns) and 'one-per-page' (one play with a large
+diagram). Each play slot has a title bar, the play diagram, and notes.
 
 Notes are pulled from existing fields in the play YAML — no schema additions.
 For every play, we surface:
@@ -33,11 +34,11 @@ from __future__ import annotations
 
 import argparse
 import re
+import subprocess
 import sys
 import tempfile
-import xml.etree.ElementTree as ET
 from pathlib import Path
-from typing import Any
+from typing import Any, NamedTuple
 
 import yaml
 from reportlab.lib import colors
@@ -54,6 +55,7 @@ from reportlab.graphics import renderPDF
 # logic the playbook-generation MCP exposes as the `playbook_glossary` tool.
 REPO_ROOT = Path(__file__).resolve().parents[2]
 PLAYS_DIR = REPO_ROOT / "data" / "plays"
+DRAW_SCRIPT = REPO_ROOT / "tools" / "draw-play" / "draw.py"
 sys.path.insert(0, str(REPO_ROOT / "tools" / "compile-glossary"))
 import compile_glossary  # noqa: E402
 
@@ -63,20 +65,31 @@ import compile_glossary  # noqa: E402
 PAGE_W, PAGE_H = letter
 MARGIN = 36
 CONTENT_W = PAGE_W - 2 * MARGIN
-CONTENT_H = PAGE_H - 2 * MARGIN
 
 PAGE_TITLE_H = 24
 GAP_AFTER_TITLE = 6
-GAP_BETWEEN_SLOTS = 8
 
-SLOT_H = (CONTENT_H - PAGE_TITLE_H - GAP_AFTER_TITLE - GAP_BETWEEN_SLOTS) / 2
+# The content area below the page title.
+CONTENT_TOP = PAGE_H - MARGIN - PAGE_TITLE_H - GAP_AFTER_TITLE
+CONTENT_HEIGHT = CONTENT_TOP - MARGIN
 
-# Within a slot
-SLOT_HEADER_H = 26
-DIAGRAM_H = 150
-NOTES_H = SLOT_H - SLOT_HEADER_H - DIAGRAM_H
-NOTES_COL_GAP = 10
-NOTES_COL_W = (CONTENT_W - NOTES_COL_GAP) / 2
+SLOT_HEADER_H = 26      # the play-name bar at the top of a play slot
+NOTES_COL_GAP = 12      # gap between the two note columns (one-per-page layout)
+COLUMN_GAP = 16         # gap between the two plays in side-by-side layout
+
+# Diagram-box height per layout, tuned so downfield pass routes stay readable.
+ONE_PER_PAGE_DIAGRAM_H = 470
+SIDE_BY_SIDE_DIAGRAM_H = 400
+
+
+class _Slot(NamedTuple):
+    """The rectangle and per-slot sizing for one play on a page."""
+    x: float
+    y_top: float
+    width: float
+    height: float
+    diagram_h: float
+    notes_columns: int
 
 
 # ─── Colors ───────────────────────────────────────────────────────────────────
@@ -136,51 +149,6 @@ def _load_svg_print(svg_path: Path):
     finally:
         Path(tmp_path).unlink(missing_ok=True)
     return drawing
-
-
-def _field_bounds(svg_path: Path) -> tuple[float, float, float, float] | None:
-    """Return (x, y, w, h) of the editor field — the largest STROKED rect.
-
-    Palette-agnostic: in the legacy dark SVGs the editor field is a green rect
-    with a white stroke; in the current light SVGs it is a white rect with a
-    dark stroke. Either way it is the largest rect carrying a stroke (panels
-    and backgrounds are drawn fill-only), so 'largest stroked rect' finds it
-    without depending on a specific fill color."""
-    try:
-        tree = ET.parse(svg_path)
-    except ET.ParseError:
-        return None
-    root = tree.getroot()
-    best: tuple[float, float, float, float, float] | None = None  # (area,x,y,w,h)
-
-    def scan(elem: ET.Element, tx: float, ty: float) -> None:
-        nonlocal best
-        t = elem.get("transform", "")
-        m = re.match(r"translate\(\s*([0-9.+-]+)\s*(?:,\s*([0-9.+-]+))?\s*\)", t)
-        if m:
-            tx += float(m.group(1))
-            ty += float(m.group(2)) if m.group(2) else 0.0
-        tag = elem.tag.split("}")[-1] if "}" in elem.tag else elem.tag
-        stroke = elem.get("stroke")
-        if tag == "rect" and stroke and stroke.lower() != "none":
-            try:
-                w = float(elem.get("width", 0))
-                h = float(elem.get("height", 0))
-                x = float(elem.get("x", 0)) + tx
-                y = float(elem.get("y", 0)) + ty
-            except ValueError:
-                w = h = 0.0
-                x = y = 0.0
-            area = w * h
-            if area > 0 and (best is None or area > best[0]):
-                best = (area, x, y, w, h)
-        for child in elem:
-            scan(child, tx, ty)
-
-    scan(root, 0.0, 0.0)
-    if best is None:
-        return None
-    return (best[1], best[2], best[3], best[4])
 
 
 # ─── Paragraph styles ─────────────────────────────────────────────────────────
@@ -341,22 +309,28 @@ def _draw_page_title(c: Canvas, title: str) -> None:
     c.restoreState()
 
 
-def _draw_slot_header(c: Canvas, x: float, y_top: float, play: dict) -> None:
+def _draw_slot_header(c: Canvas, x: float, y_top: float, width: float,
+                      play: dict) -> None:
     name = play.get("name", play.get("play_id", "Untitled"))
     pid = play.get("play_id", "")
+    name_size = 13 if width >= 380 else 11  # the narrow side-by-side column
     c.saveState()
     c.setFillColor(C_SLOT_HEADER_BG)
-    c.rect(x, y_top - SLOT_HEADER_H, CONTENT_W, SLOT_HEADER_H, fill=1, stroke=0)
+    c.rect(x, y_top - SLOT_HEADER_H, width, SLOT_HEADER_H, fill=1, stroke=0)
     c.setFillColor(C_SLOT_HEADER_FG)
-    c.setFont("Helvetica-Bold", 13)
-    c.drawString(x + 10, y_top - SLOT_HEADER_H + 8, str(name))
+    c.setFont("Helvetica-Bold", name_size)
+    c.drawString(x + 8, y_top - SLOT_HEADER_H + 8, str(name))
     if pid:
-        c.setFont("Helvetica-Oblique", 8)
-        c.drawRightString(x + CONTENT_W - 10, y_top - SLOT_HEADER_H + 9, str(pid))
+        c.setFont("Helvetica-Oblique", 7)
+        c.drawRightString(x + width - 8, y_top - SLOT_HEADER_H + 9, str(pid))
     c.restoreState()
 
 
-def _draw_diagram(c: Canvas, svg_path: Path | None, x: float, y_bottom: float, w: float, h: float) -> None:
+def _draw_diagram(c: Canvas, svg_path: Path | None, x: float, y_bottom: float,
+                  w: float, h: float) -> None:
+    """Draw a play's SVG diagram into the (x, y_bottom, w, h) box — the WHOLE
+    diagram, scaled to fit and centered. The full SVG canvas is used (not just
+    the editor-grid rectangle), so downfield routes are never clipped off."""
     c.saveState()
     c.setStrokeColor(C_BORDER)
     c.setLineWidth(0.5)
@@ -367,9 +341,7 @@ def _draw_diagram(c: Canvas, svg_path: Path | None, x: float, y_bottom: float, w
         c.saveState()
         c.setFillColor(C_MUTED)
         c.setFont("Helvetica-Oblique", 9)
-        msg = "diagram not found" if svg_path else "no diagram provided"
-        if svg_path:
-            msg = f"missing: {svg_path.name}"
+        msg = f"missing: {svg_path.name}" if svg_path else "no diagram provided"
         c.drawCentredString(x + w / 2, y_bottom + h / 2, msg)
         c.restoreState()
         return
@@ -378,28 +350,15 @@ def _draw_diagram(c: Canvas, svg_path: Path | None, x: float, y_bottom: float, w
         drawing = _load_svg_print(svg_path)
         if drawing is None:
             raise ValueError("svg2rlg returned None")
-        bounds = _field_bounds(svg_path)
-        if bounds:
-            fx, fy, fw, fh = bounds
-        else:
-            fx, fy, fw, fh = 0.0, 0.0, drawing.width, drawing.height
-        pad = 3
-        avail_w = w - 2 * pad
-        avail_h = h - 2 * pad
-        scale = min(avail_w / fw, avail_h / fh)
-        field_pdf_w = fw * scale
-        field_pdf_h = fh * scale
-        clip_x = x + (w - field_pdf_w) / 2
-        clip_y = y_bottom + (h - field_pdf_h) / 2
-        field_pdf_bottom = (drawing.height - fy - fh) * scale
-        field_pdf_left = fx * scale
-        draw_x = clip_x - field_pdf_left
-        draw_y = clip_y - field_pdf_bottom
+        pad = 4
+        scale = min((w - 2 * pad) / drawing.width,
+                    (h - 2 * pad) / drawing.height)
+        drawn_w = drawing.width * scale
+        drawn_h = drawing.height * scale
+        origin_x = x + (w - drawn_w) / 2
+        origin_y = y_bottom + (h - drawn_h) / 2
         c.saveState()
-        cp = c.beginPath()
-        cp.rect(clip_x, clip_y, field_pdf_w, field_pdf_h)
-        c.clipPath(cp, stroke=0, fill=0)
-        c.translate(draw_x, draw_y)
+        c.translate(origin_x, origin_y)
         c.scale(scale, scale)
         renderPDF.draw(drawing, c, 0, 0)
         c.restoreState()
@@ -411,34 +370,53 @@ def _draw_diagram(c: Canvas, svg_path: Path | None, x: float, y_bottom: float, w
         c.restoreState()
 
 
-def _draw_notes_columns(c: Canvas, play: dict, x: float, y_bottom: float) -> None:
+def _draw_notes(c: Canvas, play: dict, x: float, y_bottom: float,
+                width: float, height: float, columns: int) -> None:
+    """Draw the play's coaching notes into the given box, in 1 or 2 columns.
+    KeepInFrame shrinks the content to fit the box."""
     styles = _styles()
     left_flow = _left_column_flowables(play, styles)
     right_flow = _right_column_flowables(play, styles)
-
-    left_frame = Frame(
-        x, y_bottom, NOTES_COL_W, NOTES_H,
-        leftPadding=2, rightPadding=2, topPadding=2, bottomPadding=2,
-        showBoundary=0,
-    )
-    right_frame = Frame(
-        x + NOTES_COL_W + NOTES_COL_GAP, y_bottom, NOTES_COL_W, NOTES_H,
-        leftPadding=2, rightPadding=2, topPadding=2, bottomPadding=2,
-        showBoundary=0,
-    )
-    # KeepInFrame shrinks content to fit; "truncate" mode drops overflow instead.
-    left_frame.addFromList([KeepInFrame(NOTES_COL_W, NOTES_H, left_flow, mode="shrink")], c)
-    right_frame.addFromList([KeepInFrame(NOTES_COL_W, NOTES_H, right_flow, mode="shrink")], c)
+    pad = dict(leftPadding=2, rightPadding=2, topPadding=2, bottomPadding=2,
+               showBoundary=0)
+    if columns == 1:
+        flow = left_flow + right_flow
+        frame = Frame(x, y_bottom, width, height, **pad)
+        frame.addFromList([KeepInFrame(width, height, flow, mode="shrink")], c)
+        return
+    col_w = (width - NOTES_COL_GAP) / 2
+    left = Frame(x, y_bottom, col_w, height, **pad)
+    right = Frame(x + col_w + NOTES_COL_GAP, y_bottom, col_w, height, **pad)
+    left.addFromList([KeepInFrame(col_w, height, left_flow, mode="shrink")], c)
+    right.addFromList([KeepInFrame(col_w, height, right_flow, mode="shrink")], c)
 
 
-def _draw_play_slot(c: Canvas, play: dict, svg_path: Path | None, y_top: float) -> None:
-    x = MARGIN
-    _draw_slot_header(c, x, y_top, play)
-    diagram_y_top = y_top - SLOT_HEADER_H
-    diagram_y_bottom = diagram_y_top - DIAGRAM_H
-    _draw_diagram(c, svg_path, x, diagram_y_bottom, CONTENT_W, DIAGRAM_H)
-    notes_y_bottom = diagram_y_bottom - NOTES_H
-    _draw_notes_columns(c, play, x, notes_y_bottom)
+def _draw_play_in_rect(c: Canvas, play: dict, svg_path: Path | None,
+                       slot: _Slot) -> None:
+    """Draw one fully-explained play into the given slot rectangle."""
+    _draw_slot_header(c, slot.x, slot.y_top, slot.width, play)
+    diagram_top = slot.y_top - SLOT_HEADER_H
+    diagram_bottom = diagram_top - slot.diagram_h
+    _draw_diagram(c, svg_path, slot.x, diagram_bottom, slot.width, slot.diagram_h)
+    notes_height = slot.height - SLOT_HEADER_H - slot.diagram_h
+    notes_bottom = diagram_bottom - notes_height
+    _draw_notes(c, play, slot.x, notes_bottom, slot.width, notes_height,
+                slot.notes_columns)
+
+
+def _play_slots(layout: str) -> list[_Slot]:
+    """Return the play-slot rectangle(s) for one page in the given layout."""
+    if layout == "one-per-page":
+        return [_Slot(MARGIN, CONTENT_TOP, CONTENT_W, CONTENT_HEIGHT,
+                      ONE_PER_PAGE_DIAGRAM_H, 2)]
+    # side-by-side: two equal-width columns, each the full content height
+    column_w = (CONTENT_W - COLUMN_GAP) / 2
+    return [
+        _Slot(MARGIN, CONTENT_TOP, column_w, CONTENT_HEIGHT,
+              SIDE_BY_SIDE_DIAGRAM_H, 1),
+        _Slot(MARGIN + column_w + COLUMN_GAP, CONTENT_TOP, column_w,
+              CONTENT_HEIGHT, SIDE_BY_SIDE_DIAGRAM_H, 1),
+    ]
 
 
 # ─── Play / SVG resolution ────────────────────────────────────────────────────
@@ -458,6 +436,34 @@ def _resolve_svg(play_id: str, game: str, diagram_dir: Path) -> Path | None:
         if c.exists():
             return c
     return candidates[0]  # return non-existent path for "missing" message
+
+
+def _ensure_svg(play_id: str, game: str, diagram_dir: Path,
+                render_dir: Path) -> tuple[Path | None, str]:
+    """Return (svg_path, status) for a play's diagram.
+
+    Uses a pre-rendered SVG from diagram_dir when one exists; otherwise
+    renders the play on demand with the draw tool into render_dir, so the PDF
+    always has a diagram for every play. status is 'found', 'rendered', or
+    'failed' — on 'failed' the path is None and the page shows a placeholder.
+    """
+    pre_rendered = _resolve_svg(play_id, game, diagram_dir)
+    if pre_rendered and pre_rendered.exists():
+        return pre_rendered, "found"
+    cached = render_dir / f"{play_id}--{game}.svg"
+    if cached.exists():
+        return cached, "rendered"
+    try:
+        proc = subprocess.run(
+            [sys.executable, str(DRAW_SCRIPT),
+             "--play", play_id, "--game", game, "-o", str(cached)],
+            capture_output=True, text=True, timeout=90,
+        )
+    except Exception:  # noqa: BLE001 - a render failure must not abort the PDF
+        return None, "failed"
+    if proc.returncode == 0 and cached.exists():
+        return cached, "rendered"
+    return None, "failed"
 
 
 # ─── Front-matter / glossary / appendix rendering ─────────────────────────────
@@ -607,18 +613,18 @@ def _flow_text_pages(c: Canvas, page_title: str, flowables: list) -> int:
     return pages
 
 
-def _draw_play_pages(c: Canvas, plays_with_svgs: list, title: str) -> int:
-    """Draw the play pages — two fully-explained plays per page. Returns the
-    number of pages drawn."""
-    plays_per_page = 2
+def _draw_play_pages(c: Canvas, plays_with_svgs: list, title: str,
+                     layout: str) -> int:
+    """Draw the play pages in `layout` ('one-per-page' or 'side-by-side').
+    Returns the number of pages drawn."""
+    slots = _play_slots(layout)
+    plays_per_page = len(slots)
     pages = 0
     for start in range(0, len(plays_with_svgs), plays_per_page):
         chunk = plays_with_svgs[start:start + plays_per_page]
         _draw_page_title(c, title)
-        y_cursor = PAGE_H - MARGIN - PAGE_TITLE_H - GAP_AFTER_TITLE
-        for play, svg in chunk:
-            _draw_play_slot(c, play, svg, y_cursor)
-            y_cursor -= SLOT_H + GAP_BETWEEN_SLOTS
+        for (play, svg), slot in zip(chunk, slots):
+            _draw_play_in_rect(c, play, svg, slot)
         c.showPage()
         pages += 1
     return pages
@@ -627,7 +633,11 @@ def _draw_play_pages(c: Canvas, plays_with_svgs: list, title: str) -> int:
 # ─── Main ─────────────────────────────────────────────────────────────────────
 
 def _render_playbook(playbook_path: Path, args: argparse.Namespace) -> None:
-    """Render a full playbook PDF: front matter, glossary, plays, appendix."""
+    """Render a full playbook PDF: front matter, glossary, plays, appendix.
+
+    Play diagrams not pre-rendered in --diagram-dir are rendered on demand
+    with the draw tool, so the PDF always carries a diagram for every play.
+    """
     playbook = _load_yaml(playbook_path)
     front_matter = playbook.get("front_matter") or {}
     title = args.title or playbook.get("name") or "Playbook"
@@ -649,44 +659,67 @@ def _render_playbook(playbook_path: Path, args: argparse.Namespace) -> None:
     ]
     plays_with_svgs: list = []
     missing_play_ids: list[str] = []
-    for entry in play_entries:
-        play_path = PLAYS_DIR / f"{entry['play_id']}.yaml"
-        if not play_path.exists():
-            missing_play_ids.append(entry["play_id"])
-            continue
-        play = _load_yaml(play_path)
-        svg = _resolve_svg(play.get("play_id") or entry["play_id"],
-                           args.game, args.diagram_dir)
-        plays_with_svgs.append((play, svg))
-    _draw_play_pages(c, plays_with_svgs, title)
+    failed_diagram_ids: list[str] = []
+    diagram_counts = {"found": 0, "rendered": 0, "failed": 0}
+    with tempfile.TemporaryDirectory(prefix="playbook-diagrams-") as render_dir_name:
+        render_dir = Path(render_dir_name)
+        for entry in play_entries:
+            play_id = entry["play_id"]
+            play_path = PLAYS_DIR / f"{play_id}.yaml"
+            if not play_path.exists():
+                missing_play_ids.append(play_id)
+                continue
+            play = _load_yaml(play_path)
+            resolved_id = play.get("play_id") or play_id
+            svg, status = _ensure_svg(resolved_id, args.game,
+                                      args.diagram_dir, render_dir)
+            diagram_counts[status] += 1
+            if status == "failed":
+                failed_diagram_ids.append(resolved_id)
+            plays_with_svgs.append((play, svg))
+        # The on-demand renders live in the temp dir — it must outlive the
+        # play pages being drawn, so draw them inside the `with` block.
+        _draw_play_pages(c, plays_with_svgs, title, args.layout)
 
     _flow_text_pages(c, "Appendix", _appendix_flowables(front_matter, styles))
 
     c.save()
-    summary = (f"Wrote {args.output} — playbook '{playbook.get('playbook_id')}': "
-               f"{len(plays_with_svgs)} plays, {len(glossary)} glossary terms")
+    print(f"Wrote {args.output} — playbook '{playbook.get('playbook_id')}': "
+          f"{len(plays_with_svgs)} plays, {len(glossary)} glossary terms")
+    print(f"  diagrams: {diagram_counts['found']} pre-rendered, "
+          f"{diagram_counts['rendered']} rendered on demand, "
+          f"{diagram_counts['failed']} failed")
+    if failed_diagram_ids:
+        print(f"  diagram render failed for: {failed_diagram_ids}", file=sys.stderr)
     if missing_play_ids:
-        summary += f"; {len(missing_play_ids)} play file(s) missing"
-    print(summary)
+        print(f"  play file(s) missing: {missing_play_ids}", file=sys.stderr)
 
 
 def _render_play_list(play_paths: list[Path], args: argparse.Namespace) -> None:
-    """Render an ad-hoc set of plays — play pages only, no front matter."""
+    """Render an ad-hoc set of plays — play pages only, no front matter.
+
+    Diagrams missing from --diagram-dir are rendered on demand."""
     missing = [path for path in play_paths if not path.exists()]
     if missing:
         for path in missing:
             print(f"ERROR: play YAML not found: {path}", file=sys.stderr)
         sys.exit(1)
     plays_with_svgs: list = []
-    for path in play_paths:
-        play = _load_yaml(path)
-        svg = _resolve_svg(play.get("play_id") or path.stem,
-                           args.game, args.diagram_dir)
-        plays_with_svgs.append((play, svg))
+    diagram_counts = {"found": 0, "rendered": 0, "failed": 0}
     c = Canvas(str(args.output), pagesize=letter)
-    pages = _draw_play_pages(c, plays_with_svgs, args.title or "Playbook Notes")
+    with tempfile.TemporaryDirectory(prefix="playbook-diagrams-") as render_dir_name:
+        render_dir = Path(render_dir_name)
+        for path in play_paths:
+            play = _load_yaml(path)
+            svg, status = _ensure_svg(play.get("play_id") or path.stem,
+                                      args.game, args.diagram_dir, render_dir)
+            diagram_counts[status] += 1
+            plays_with_svgs.append((play, svg))
+        pages = _draw_play_pages(c, plays_with_svgs,
+                                 args.title or "Playbook Notes", args.layout)
     c.save()
-    print(f"Wrote {args.output} ({len(plays_with_svgs)} plays, {pages} pages)")
+    print(f"Wrote {args.output} ({len(plays_with_svgs)} plays, {pages} pages; "
+          f"{diagram_counts['rendered']} diagram(s) rendered on demand)")
 
 
 def main() -> None:
@@ -702,6 +735,11 @@ def main() -> None:
                     help="Game tag for diagram lookup (default: madden-05-ps2).")
     ap.add_argument("--diagram-dir", default="examples/play-diagrams", type=Path,
                     help="Directory containing SVG diagrams.")
+    ap.add_argument("--layout", choices=["side-by-side", "one-per-page"],
+                    default="side-by-side",
+                    help="Play-page layout: 'side-by-side' (two plays per page "
+                         "as tall columns; default) or 'one-per-page' (one play "
+                         "with a large diagram).")
     ap.add_argument("--title", default=None,
                     help="Page title. Defaults to the playbook name (playbook "
                          "mode) or 'Playbook Notes' (play-list mode).")
