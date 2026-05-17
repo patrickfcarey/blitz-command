@@ -1,6 +1,7 @@
 concept_id: dagger
 name: Dagger
 category: vertical-read
+depth: deep
 description: |
   Deep cornerback route (attacking corner of endzone) with underneath receiver providing
   safety valve. Attacks safeties deep; underneath receiver provides outlet vs aggressive

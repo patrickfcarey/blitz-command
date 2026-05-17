@@ -1,6 +1,7 @@
 concept_id: switch
 name: Switch
 category: crossing-route
+depth: deep
 description: |
   Two receivers cross or "switch" their assigned route responsibilities post-snap based
   on coverage read. Creates confusion vs man coverage (natural picks). Flexible routing

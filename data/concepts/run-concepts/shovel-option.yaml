@@ -1,0 +1,38 @@
+concept_id: shovel-option
+name: Shovel Option
+category: option
+description: |
+  Short-yardage option built off Power action: the OL blocks Power with a
+  pulling guard, the QB reads the playside EDGE, and the second option is a
+  forward shovel pass to a trailing runner (a slot, TE, or back) crossing
+  underneath rather than a downfield pitch. EDGE crashes the QB → shovel it to
+  the trailer behind the puller; EDGE widens or sits → QB keeps. The shovel
+  keeps the ball moving forward, so it counters aggressive edge pressure with
+  low risk.
+aim_point: "QB keep behind the puller, or forward shovel to the crossing trailer"
+read_tree:
+  - phase: 1
+    defender: "playside EDGE / DE (read key)"
+    decision: "EDGE crashes the QB → shovel the ball forward to the trailing runner. EDGE widens or sits → QB keeps inside behind the puller."
+  - phase: 2
+    defender: "playside ILB"
+    decision: "Trailer (on the shovel) or QB (on the keep) reads the ILB's fill and presses the open gap."
+blocking_scheme_ref: gap-blocking
+pulls_required:
+  - LG
+pairs_with:
+  - power
+  - power-read
+  - triple-option-veer
+tags:
+  - run
+  - option
+  - short-yardage
+  - qb-run
+  - gap-scheme
+  - high-school
+  - college
+  - nfl
+verification_status: unverified
+source_notes:
+  - "Concept reviewed 2026-05-17 from Playbook Gamer 'Option & RPO Concepts Guide' (https://playbookgamer.com/option-rpo-concepts-guide/): Shovel Option reads the playside DE — DE crashes → shovel (underhand forward pass) to a trailing runner, DE widens → QB keeps — with Power blocking and a pulling guard; used in short yardage to counter aggressive edge defenders."

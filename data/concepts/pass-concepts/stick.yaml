@@ -1,6 +1,7 @@
 concept_id: stick
 name: Stick
 category: option-route
+depth: quick
 description: |
   Three receivers running option routes at different levels: inside slant, dig/stick
   route (intermediate), and a deep route. QB reads down the levels. High variance routing

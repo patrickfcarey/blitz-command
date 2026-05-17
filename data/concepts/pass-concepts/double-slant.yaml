@@ -1,6 +1,7 @@
 concept_id: double-slant
 name: Double Slant
 category: interior-read
+depth: quick
 description: |
   Two receivers running slant routes at interior (creating natural spacing). QB reads
   one slant vs the other based on coverage. Quick interior passing concept. Strong vs

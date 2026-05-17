@@ -1,6 +1,6 @@
 concept_id: sweep
 name: Sweep
-category: man-blocking-scheme
+category: gap-scheme
 description: |
   Both guards pull around the perimeter, with a WR or TE cracking back inside
   to block a playside LB. Creates a wide running lane for the HB to follow the

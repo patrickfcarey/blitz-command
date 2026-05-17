@@ -1,6 +1,7 @@
 concept_id: hi-lo
 name: Hi-Lo
 category: vertical-stack
+depth: medium
 description: |
   Two receivers stack vertically (shallow and deep on same route stem) attacking the
   same area at different depths. QB reads high (deep) to low (shallow) based on defender

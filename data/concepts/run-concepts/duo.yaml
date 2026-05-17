@@ -1,0 +1,38 @@
+concept_id: duo
+name: Duo
+category: gap-scheme
+description: |
+  Gap-scheme power run with NO pulling lineman — "Power without the puller."
+  Every playside and center-to-backside pair drives a vertical double-team off
+  the down linemen, then one blocker climbs late to a linebacker. The HB runs
+  downhill at the A/B-gap and reads the Mike, cutting off whichever double-team
+  the Mike does not fill. Built for tough downhill yards on early downs and in
+  short yardage.
+aim_point: "A-gap to B-gap, downhill — the cut is set by the Mike's fill"
+read_tree:
+  - phase: 1
+    defender: "Mike linebacker"
+    decision: "Read the Mike: run off the double-team away from the gap he fills."
+  - phase: 2
+    defender: "playside double-teams"
+    decision: "Press the double-team, then break off the lineman who climbs to the second level."
+blocking_scheme_ref: gap-blocking
+pulls_required: []
+pairs_with:
+  - power
+  - inside-zone
+  - i-formation
+  - singleback-trio
+tags:
+  - run
+  - gap-scheme
+  - power-run
+  - short-yardage
+  - downhill
+  - any-level
+  - high-school
+  - college
+  - nfl
+verification_status: unverified
+source_notes:
+  - "Concept reviewed 2026-05-17 from Playbook Gamer 'Run Concepts Guide' (https://playbookgamer.com/run-concepts-guide/): Duo described as 'Power without a puller' using vertical double-teams, an A/B-gap aim point and a Mike-linebacker read; cited as efficient for short-yardage and goal-line situations."

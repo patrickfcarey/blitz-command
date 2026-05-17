@@ -1,6 +1,7 @@
 concept_id: drive
 name: Drive
 category: intermediate-read
+depth: medium
 description: |
   Three receivers running dig/drive routes at intermediate depth (8-15 yards) attacking
   the middle of the field. Creates a concentrated passing attack. Strong vs cover-2

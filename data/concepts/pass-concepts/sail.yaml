@@ -1,6 +1,7 @@
 concept_id: sail
 name: Sail
 category: perimeter-read
+depth: medium
 description: |
   Receiver running a corner or vertical route on the perimeter with underneath receiver
   running a flat or shallow route. Attacks perimeter vertically with checkdown. Related

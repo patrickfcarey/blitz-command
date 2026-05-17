@@ -17,6 +17,10 @@
       "enum": ["timing-route", "area-read", "option-route", "vertical-stretch", "horizontal-stretch", "intermediate-read", "vertical-stack", "quick-read", "interior-read", "crossing-route", "deep-route", "perimeter-read", "vertical-read"],
       "description": "Pass concept category."
     },
+    "depth": {
+      "enum": ["quick", "medium", "deep"],
+      "description": "Primary route-depth bucket the concept attacks: 'quick' (rhythm game, breaks at ~6 yd or less), 'medium' (intermediate, ~7-15 yd), or 'deep' (shot plays, 16+ yd). Optional; `category` remains the route-mechanic axis."
+    },
     "description": {
       "type": "string",
       "description": "2-3 sentence explanation of the concept — what routes, what coverage it attacks, when to use it."

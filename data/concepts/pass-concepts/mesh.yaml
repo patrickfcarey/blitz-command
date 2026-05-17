@@ -1,6 +1,7 @@
 concept_id: mesh
 name: Mesh
 category: timing-route
+depth: quick
 description: |
   Two receivers running crossing routes at nearly the same depth, creating a "mesh"
   point where they cross. QB reads one route vs the other based on coverage. Timing-based,

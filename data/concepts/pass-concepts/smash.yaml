@@ -1,6 +1,7 @@
 concept_id: smash
 name: Smash
 category: area-read
+depth: medium
 description: |
   Corner route and flat route on the same side, attacking the perimeter vertically
   and underneath. Strong vs cover-2 and cover-4 (splits safeties). QB reads the corner

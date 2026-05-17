@@ -1,6 +1,7 @@
 concept_id: post-corner
 name: Post-Corner (Coryell Deep)
 category: deep-route
+depth: deep
 description: |
   Receiver runs a post route initially, then cuts to the corner. Creates confusion
   vs defender. Strong vertical concept attacking safeties. Originated in Coryell system.

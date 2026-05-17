@@ -1,0 +1,36 @@
+concept_id: reverse
+name: Reverse
+category: misdirection
+description: |
+  Misdirection run that attacks the opposite sideline: the initial backfield
+  flow (a sweep or jet look) goes one way, then the ball is handed to a
+  receiver running back against the grain, with a trailing blocker or two
+  leading on the reverse side. It punishes a fast-flowing, over-pursuing
+  defense — but the multiple exchanges carry real ball-security risk, so it
+  is a low-volume constraint call.
+aim_point: "Backside perimeter — opposite the initial flow"
+read_tree:
+  - phase: 1
+    defender: "backside contain / force defender"
+    decision: "Reverse runner reads whether contain flowed with the fake: vacated → press the edge, still home → cut up inside the trail blocker."
+  - phase: 2
+    defender: "backside pursuit"
+    decision: "Outrun the pursuit to the sideline, or cut north off the trailing block."
+blocking_scheme_ref: zone-blocking
+pulls_required: []
+pairs_with:
+  - jet-sweep
+  - sweep
+  - outside-zone
+tags:
+  - run
+  - misdirection
+  - constraint
+  - perimeter
+  - trick
+  - high-school
+  - college
+  - nfl
+verification_status: unverified
+source_notes:
+  - "Concept reviewed 2026-05-17 from Playbook Gamer 'Run Concepts Guide' (https://playbookgamer.com/run-concepts-guide/): Reverse described as a misdirection run to the opposite sideline with trailing blockers; variations include the double reverse and the reverse-pass; flagged for fumble risk from multiple handoffs."

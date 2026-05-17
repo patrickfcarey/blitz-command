@@ -1,6 +1,7 @@
 concept_id: levels
 name: Levels
 category: area-read
+depth: medium
 description: |
   Multiple receivers creating distinct levels (short, intermediate, deep) attacking
   the same area. Used in Air Raid and option-route offenses. QB reads through levels

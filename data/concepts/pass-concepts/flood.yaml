@@ -1,6 +1,7 @@
 concept_id: flood
 name: Flood
 category: horizontal-stretch
+depth: medium
 description: |
   Three receivers attacking the same side/area horizontally at different depths (deep,
   intermediate, flat). Forces cornerback and safety to spread. QB reads from deep to

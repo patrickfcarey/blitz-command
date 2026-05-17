@@ -1,0 +1,38 @@
+concept_id: power-read
+name: Power Read (Inverted Veer)
+category: option
+description: |
+  Gap-scheme option that pairs Power blocking with a QB read — the inverse of
+  a standard zone read. The OL blocks Power (playside down-blocks, backside
+  guard pulls) and leaves the playside EDGE defender unblocked as the read key.
+  The HB runs the sweep / edge path while the QB rides the mesh: if the EDGE
+  sits or widens with the HB, the QB keeps inside behind the puller; if the
+  EDGE crashes the QB, he hands the sweep. A staple of spread offenses with a
+  running quarterback.
+aim_point: "QB keep inside off the puller, or HB sweep to the edge"
+read_tree:
+  - phase: 1
+    defender: "playside EDGE / DE (unblocked read key)"
+    decision: "EDGE crashes the QB → give the sweep to the HB. EDGE sits or widens with the HB → QB keeps inside behind the pulling guard."
+  - phase: 2
+    defender: "playside ILB"
+    decision: "On the keep, the QB follows the puller and reads the ILB for the crease."
+blocking_scheme_ref: gap-blocking
+pulls_required:
+  - LG
+pairs_with:
+  - power
+  - triple-option-veer
+  - midline-option
+tags:
+  - run
+  - option
+  - qb-run
+  - gap-scheme
+  - spread
+  - high-school
+  - college
+  - nfl
+verification_status: unverified
+source_notes:
+  - "Concept reviewed 2026-05-17 from Playbook Gamer 'Option & RPO Concepts Guide' (https://playbookgamer.com/option-rpo-concepts-guide/): Inverted Veer reads the playside DE — DE sits outside → RB gets the ball, DE crashes inside → QB keeps — with Power blocking and a pulling guard; used by spread offenses with athletic QBs."

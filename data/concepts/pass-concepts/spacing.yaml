@@ -1,6 +1,7 @@
 concept_id: spacing
 name: Spacing
 category: horizontal-stretch
+depth: quick
 description: |
   Three or more receivers settle at staggered widths across the field at the
   same shallow depth (~5-6 yards), flooding the underneath zones with more

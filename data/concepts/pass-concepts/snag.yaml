@@ -1,6 +1,7 @@
 concept_id: snag
 name: Snag
 category: option-route
+depth: quick
 description: |
   TE runs a seam/option route while one WR runs a slant and another runs a flat.
   Creates a 3-level read in a confined area. Versatile vs most coverages. Can be
