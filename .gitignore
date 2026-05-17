@@ -42,7 +42,7 @@ scratch/
 secrets/
 *.pem
 *.key
-mcps/formation-library-mcp/__pycache__/server.cpython-311.pyc
-.claude/settings.local.json
-.claude/settings.local.json
+
+# Local / machine-specific (not version-controlled)
 /.claude
+check_this.png
