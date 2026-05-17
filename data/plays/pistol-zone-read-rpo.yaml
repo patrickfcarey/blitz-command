@@ -7,6 +7,7 @@ aliases:
 
 formation: pistol
 play_type: rpo
+rpo_type: read
 ball_carrier: QB
 primary_read: HB
 secondary_read: Z

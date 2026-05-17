@@ -6,6 +6,7 @@ aliases:
 
 formation: shotgun-trips-right
 play_type: rpo
+rpo_type: peek
 ball_carrier: QB
 primary_read: WR3
 

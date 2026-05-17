@@ -6,6 +6,7 @@ aliases:
 - Bubble Screen RPO
 formation: pistol-left
 play_type: rpo
+rpo_type: peek
 ball_carrier: QB
 primary_read: SLOT
 motions: []

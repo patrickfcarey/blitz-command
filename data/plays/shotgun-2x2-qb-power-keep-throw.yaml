@@ -7,6 +7,7 @@ aliases:
 
 formation: shotgun-2x2
 play_type: rpo
+rpo_type: read
 ball_carrier: QB
 primary_read: SLOT-W
 secondary_read: TE

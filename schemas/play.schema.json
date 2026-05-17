@@ -25,6 +25,10 @@
     "play_type": {
       "enum": ["run", "pass", "play-action", "screen", "rpo", "trick", "special"]
     },
+    "rpo_type": {
+      "enum": ["alert", "peek", "read"],
+      "description": "For play_type 'rpo' only — which RPO read mechanic the play uses. 'alert' = a pre-snap decision off the defense's alignment (the called run is checked to a quick pass). 'peek' = a post-snap read of a conflict linebacker while riding the HB mesh — give, or pull and throw. 'read' = a post-snap read where the QB is himself a run threat (zone-read / QB-run RPO), reading a specific edge or second-level defender. Optional; meaningful only when play_type is 'rpo'."
+    },
     "ball_carrier": {
       "type": "string",
       "description": "Label of the player who has the ball at the end of the play (e.g. 'HB' for a run, 'QB' for a designed scramble, the receiver who is the primary read for a pass)."

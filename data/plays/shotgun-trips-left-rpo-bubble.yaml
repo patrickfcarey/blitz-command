@@ -5,6 +5,7 @@ aliases:
 - Inside Zone Bubble RPO
 formation: shotgun-trips-left
 play_type: rpo
+rpo_type: peek
 ball_carrier: QB
 primary_read: WR3
 motions: []
