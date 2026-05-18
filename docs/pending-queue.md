@@ -16,12 +16,18 @@ when an item depends on something external (user input, upstream work).
   is partially measured; still needed: max player split, max backfield depth,
   motion options, max plays per playbook.
 
-- **Playbook Gamer — remaining games.** Phase B catalog coverage is 7 games
-  (madden-04/05/07/25, ncaa-04/06/07). ESPN NFL 2K5 PS2 (34 docx) is next —
-  game profile exists, catalog not yet run. `ingest_docx_playbooks.py` handles
-  the ESPN screenshot format. Madden 01/03 PS2 still need their game profiles +
-  ingest. Vision ingest can run keyless in-session via subagents reading the
-  extracted images, or via the script with an `ANTHROPIC_API_KEY`.
+- **Playbook Gamer — remaining games.** Phase B catalog coverage is 8 games
+  (madden-04/05/07/25, ncaa-04/06/07, espn-2k5). Madden 01/03 PS2 still need
+  their game profiles + ingest. Vision ingest can run keyless in-session via
+  subagents reading the extracted images, or via the script with an
+  `ANTHROPIC_API_KEY`.
+
+- **Formation-family detection is crude.** `_family()` (shared by
+  `build_playbook_catalog.py` + `ingest_docx_playbooks.py`) under-classifies
+  modern Madden / ESPN names — e.g. "I Pro", "Split Spread" fall to "other".
+  The `formation_families` rollup is a derived convenience field and the
+  formation names themselves are correct, but the buckets are noisy. A better
+  classifier would need a re-run of all catalogs.
 
 - **AI onboarding doc.** `docs/ai-onboarding.md` for smaller models joining the
   repo — a one-shot tutorial with fully-narrated tool-call sequences under
@@ -82,6 +88,9 @@ Trim periodically — old completions need not live here forever.
   Case-insensitive formation dedup; restartable per-team JSON cache; needs no
   API key for a cache-only re-aggregate. Madden 25 PS3 catalog built (50 teams,
   968 formations, schema-valid). New game profiles: madden-25-ps3, espn-2k5-ps2.
+- ✅ ESPN NFL 2K5 PS2 catalog — 34 teams, 773 formations, schema-valid. Vision
+  done keyless via in-session subagents (one per team) writing cache JSONs that
+  the ingest script's tested aggregation/dedup path then assembled.
 
 ### 2026-05
 

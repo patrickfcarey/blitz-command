@@ -29,7 +29,7 @@ Append-only handoff log. The newest session goes at the **top**. The point is so
 
 ---
 
-## 2026-05-18 (cont.) — docx vision-ingest pipeline + Madden 25 PS3 catalog
+## 2026-05-18 (cont.) — docx vision-ingest pipeline + Madden 25 & ESPN 2K5 catalogs
 
 **Active thread:** running the docx-screenshot playbook ingest for games with
 no xlsx data, starting with Madden NFL 25 (PS3).
@@ -53,14 +53,20 @@ no xlsx data, starting with Madden NFL 25 (PS3).
   colour-coded families (RED/BROWN). Not vision misses. Status stays `unverified`.
 - 266 tests pass.
 
-**In progress / next step:** ESPN NFL 2K5 PS2 catalog (34 docx). Game profile
-exists; run `ingest_docx_playbooks.py --game espn-2k5-ps2`. Can run keyless
-in-session via subagents reading the extracted images, or via the script with
-an `ANTHROPIC_API_KEY`. User raised the API-key cost concern — the keyless
-subagent route is the answer for ESPN.
+**ESPN NFL 2K5 PS2 catalog — done (keyless route):** 34 teams, 773 formations,
+schema-valid. To avoid a second pay-as-you-go API bill (user flagged the cost),
+the vision was done *in-session* — one Haiku subagent per team read the
+extracted screenshots with the Read tool and wrote a cache JSON in the format
+`ingest_docx_playbooks.py` consumes; the script's tested aggregation/dedup path
+then assembled `data/games/espn-2k5-ps2/team-playbooks.yaml` with no API key.
+Hit a usage limit mid-run; the per-team cache made it cleanly resumable.
 
-**Uncommitted state:** committed this session — pipeline + Madden 25 catalog +
-both game profiles + doc updates.
+**In progress / next step:** Madden 01/03 PS2 catalogs (need game profiles +
+ingest). Also noted: `_family()` formation-family classifier is crude for
+modern names — see pending-queue.
+
+**Uncommitted state:** Madden 25 work committed earlier (e48d0ad). ESPN 2K5
+catalog committed at end of this session.
 
 ---
 

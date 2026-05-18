@@ -1,0 +1,1176 @@
+game_id: espn-2k5-ps2
+source: Playbook Gamer
+verification_status: unverified
+generated_date: "2026-05-18"
+notes: "Derived from per-team .docx screenshot sequences in Playbooks. Vision extraction via Claude (haiku). Per layering rules: game-truth data; not in-game-verified."
+teams:
+  - team_id: arizona_cardinals
+    name: Arizona Cardinals
+    playbook_style: null
+    formation_count: 21
+    formation_families:
+      ace: 2
+      i_form: 1
+      other: 17
+      spread: 1
+    personnel_breakdown: null
+    formations:
+      - name: Ace
+      - name: Triple
+      - name: Ace Trips
+      - name: Doubles
+      - name: Tight Triple
+      - name: Split Pro
+      - name: Split Jokers
+      - name: I Pro
+      - name: Split Spread
+      - name: Spread
+      - name: I Jokers
+      - name: I Jacks
+      - name: Strong I Pro
+      - name: Strong I Twins
+      - name: Weak I Pro
+      - name: I Twins
+      - name: I Wing Jokers
+      - name: I Spread
+      - name: Strong I Spread
+      - name: Strong I Jacks
+      - name: Flip I Wing
+  - team_id: atlanta_falcons
+    name: Atlanta Falcons
+    playbook_style: null
+    formation_count: 22
+    formation_families:
+      ace: 1
+      bunch: 1
+      i_form: 3
+      other: 16
+      trips: 1
+    personnel_breakdown: null
+    formations:
+      - name: Split Pro
+      - name: Split Twins
+      - name: Split Flip Pro
+      - name: Split Spread
+      - name: Split Jokers
+      - name: Flip Tight Triple
+      - name: Quads
+      - name: Triple
+      - name: Trips
+      - name: Doubles
+      - name: Ace
+      - name: Bunch Left
+      - name: I Pro
+      - name: I Twins
+      - name: I Spread
+      - name: I Jokers
+      - name: Strong I Pro
+      - name: Weak I Pro
+      - name: Weak I Spread
+      - name: Weak I Jokers
+      - name: Straight Trips
+      - name: Straight Open
+  - team_id: baltimore_ravens
+    name: Baltimore Ravens
+    playbook_style: null
+    formation_count: 15
+    formation_families:
+      ace: 2
+      bunch: 1
+      empty: 1
+      other: 8
+      shotgun: 3
+    personnel_breakdown: null
+    formations:
+      - name: Ace Quads
+      - name: F Spread
+      - name: Tight F Trips
+      - name: Flip Tight Triple
+      - name: Tight Triple
+      - name: Bunch
+      - name: Pair Slot
+      - name: Ace
+      - name: Triple
+      - name: Doubles
+      - name: Empty Open
+      - name: Triple Empty
+      - name: "Gun: Empty Open"
+      - name: "Gun: Split Spread"
+      - name: "Gun: H Slot"
+  - team_id: buffalo_bills
+    name: Buffalo Bills
+    playbook_style: null
+    formation_count: 27
+    formation_families:
+      ace: 3
+      empty: 1
+      i_form: 1
+      other: 16
+      shotgun: 6
+    personnel_breakdown: null
+    formations:
+      - name: Triple
+      - name: Doubles
+      - name: Quads
+      - name: Trey
+      - name: Tight Triple
+      - name: Ace
+      - name: Ace Bunch
+      - name: Ace Trips
+      - name: I Pro
+      - name: I Twins
+      - name: I Spread
+      - name: I Jokers
+      - name: I Jacks
+      - name: Strong I Twins
+      - name: Strong I Jokers
+      - name: Strong I Jacks
+      - name: Weak I Pro
+      - name: Split Pro
+      - name: Split Twins
+      - name: Split Spread
+      - name: Empty Tight
+      - name: "Gun: Empty Tight"
+      - name: "Gun: Trey Right"
+      - name: "Gun: Triple Right"
+      - name: "Gun: Doubles Right"
+      - name: "Gun: Quads Left"
+      - name: "Gun: Straight"
+  - team_id: carolina_panthers
+    name: Carolina Panthers
+    playbook_style: null
+    formation_count: 25
+    formation_families:
+      ace: 2
+      other: 17
+      shotgun: 6
+    personnel_breakdown: null
+    formations:
+      - name: I Pro
+      - name: I Spread
+      - name: I Twins
+      - name: I Jokers
+      - name: I Jokers Pair
+      - name: Wing Jokers
+      - name: Strong II Pro
+      - name: Strong I Spread
+      - name: Strong II Jokers
+      - name: Split Twins
+      - name: Doubles
+      - name: Tight Triple
+      - name: Pro F Flex
+      - name: Pair Slot
+      - name: Gun Stack Open
+      - name: Gun Split Twins
+      - name: "Gun: Triple Left"
+      - name: Gun Doubles Right
+      - name: Split Jokers
+      - name: Triple
+      - name: Flip Tight Triple
+      - name: Ace Bunch
+      - name: Ace
+      - name: Gun Split Spread
+      - name: "Gun: Ace Bunch"
+  - team_id: chicago_bears
+    name: Chicago Bears
+    playbook_style: null
+    formation_count: 19
+    formation_families:
+      ace: 2
+      bunch: 1
+      other: 16
+    personnel_breakdown: null
+    formations:
+      - name: Bunch
+      - name: Triple Bunch
+      - name: Pair Slot
+      - name: Doubles
+      - name: Triple
+      - name: Tight Triple
+      - name: Flip Tight Triple
+      - name: Trey
+      - name: Quads
+      - name: Twins F Spread
+      - name: Ace
+      - name: Ace Trips
+      - name: I Pro
+      - name: I Spread
+      - name: I Jokers
+      - name: Strong I Pro
+      - name: Split Twins
+      - name: Split Jokers
+      - name: Straight Open
+  - team_id: cincinnati_bengals
+    name: Cincinnati Bengals
+    playbook_style: null
+    formation_count: 25
+    formation_families:
+      ace: 2
+      bunch: 1
+      empty: 1
+      i_form: 1
+      other: 15
+      shotgun: 5
+    personnel_breakdown: null
+    formations:
+      - name: I Pro
+      - name: I Spread
+      - name: I Twins
+      - name: Jokers
+      - name: Jokers Pair
+      - name: I Wing Jokers
+      - name: Strong I Pro
+      - name: Strong I Jokers
+      - name: Weak I Pro
+      - name: Split Pro
+      - name: Split Twins
+      - name: Bunch
+      - name: Quads
+      - name: Triple
+      - name: Trey
+      - name: Doubles
+      - name: Ace
+      - name: Ace Trips
+      - name: Pair Slot
+      - name: Empty Spread
+      - name: "Gun: Trey Right"
+      - name: "Gun: Split Spread"
+      - name: "Gun: Bunch Left"
+      - name: "Gun: Triple Left"
+      - name: "Gun: Doubles Right"
+  - team_id: cleveland_browns
+    name: Cleveland Browns
+    playbook_style: null
+    formation_count: 24
+    formation_families:
+      ace: 2
+      bunch: 1
+      empty: 1
+      other: 14
+      shotgun: 6
+    personnel_breakdown: null
+    formations:
+      - name: Ace Trips
+      - name: Ace
+      - name: Pair Slot
+      - name: Tight Triple
+      - name: Flip Tight Triple
+      - name: Bunch
+      - name: Doubles
+      - name: Triple
+      - name: Quads
+      - name: Empty Ace Trips
+      - name: I-Pro
+      - name: I-Twins
+      - name: I-Spread
+      - name: I-Jokers Pair
+      - name: I-Jokers
+      - name: Strong I-Pro
+      - name: Strong I-Jokers
+      - name: Split Pro
+      - name: "Gun: Ace Trips"
+      - name: "Gun: Split Pro"
+      - name: "Gun: Split Spread"
+      - name: "Gun: Bunch Left"
+      - name: "Gun: Triple Left"
+      - name: "Gun: Doubles Right"
+  - team_id: dallas_cowboys
+    name: Dallas Cowboys
+    playbook_style: null
+    formation_count: 21
+    formation_families:
+      ace: 2
+      bunch: 1
+      other: 14
+      shotgun: 4
+    personnel_breakdown: null
+    formations:
+      - name: I Pro
+      - name: I Te Flex
+      - name: I Twins
+      - name: Strong Power
+      - name: Strong I Jokers
+      - name: Split Spread
+      - name: Split Twins
+      - name: Triple
+      - name: Quads
+      - name: Trey
+      - name: Pair Slot
+      - name: Doubles
+      - name: Bunch
+      - name: Ace
+      - name: Ace Trips
+      - name: Tight Triple
+      - name: Base Doubles
+      - name: "Gun: Empty Open"
+      - name: "Gun: Quads Left"
+      - name: "Gun: Split Spread"
+      - name: "Gun: Kings Spread"
+  - team_id: denver_broncos
+    name: Denver Broncos
+    playbook_style: null
+    formation_count: 24
+    formation_families:
+      ace: 2
+      bunch: 1
+      i_form: 1
+      other: 20
+    personnel_breakdown: null
+    formations:
+      - name: Triple
+      - name: Flip Triple
+      - name: Tight Triple
+      - name: Pair Slot
+      - name: Ace
+      - name: Doubles
+      - name: Ace Trips
+      - name: Trey
+      - name: Bunch
+      - name: Quads
+      - name: F Wing Jokers
+      - name: Split Pro
+      - name: Split Twins
+      - name: Split Jokers
+      - name: I Pro
+      - name: I Twins
+      - name: I Wing Jokers
+      - name: I Jokers
+      - name: Strong I Pro
+      - name: Strong I Twins
+      - name: Weak I Pro
+      - name: Straight Trips
+      - name: Flip Triple Open
+      - name: Straight Open
+  - team_id: detroit_lions
+    name: Detroit Lions
+    playbook_style: null
+    formation_count: 24
+    formation_families:
+      ace: 1
+      bunch: 1
+      i_form: 2
+      other: 16
+      shotgun: 3
+      trips: 1
+    personnel_breakdown: null
+    formations:
+      - name: Split Pro
+      - name: Split Twins
+      - name: Split Spread
+      - name: Split Jokers
+      - name: Near Twins
+      - name: Far Twins
+      - name: Twins H Split
+      - name: Quads
+      - name: Doubles
+      - name: Trips
+      - name: Flip Tight Triple
+      - name: Tight Triple
+      - name: Ace
+      - name: Triple
+      - name: Bunch
+      - name: Pair Slot
+      - name: I-Pro
+      - name: I-Twins
+      - name: I-Spread
+      - name: I-Jokers
+      - name: Strong I-Spread
+      - name: "Gun: Triple Left"
+      - name: "Gun: Trips Left"
+      - name: "Gun: Doubles Right"
+  - team_id: general
+    name: General
+    playbook_style: null
+    formation_count: 23
+    formation_families:
+      ace: 1
+      bunch: 1
+      i_form: 4
+      other: 12
+      shotgun: 4
+      trips: 1
+    personnel_breakdown: null
+    formations:
+      - name: I Pro
+      - name: I Twins
+      - name: I Spread
+      - name: I Jokers
+      - name: Strong I Pro
+      - name: Strong I Twins
+      - name: Strong I Spread
+      - name: Weak I Pro
+      - name: Weak I Twins
+      - name: Weak I Spread
+      - name: Weak I Jokers Pair
+      - name: Split Pro
+      - name: Quads
+      - name: Doubles
+      - name: Trips
+      - name: Triple
+      - name: Tight Triple
+      - name: Bunch
+      - name: Ace
+      - name: "Gun: Quads Left"
+      - name: "Gun: Trips Left"
+      - name: "Gun: Bunch Left"
+      - name: "Gun: Split Spread"
+  - team_id: green_bay_packers
+    name: Green Bay Packers
+    playbook_style: null
+    formation_count: 16
+    formation_families:
+      other: 10
+      shotgun: 6
+    personnel_breakdown: null
+    formations:
+      - name: I Pro
+      - name: I Jokers
+      - name: I Jokers Flip Pair
+      - name: Split Twins
+      - name: Split Pro
+      - name: Split Jokers
+      - name: Split Spread
+      - name: Pair Slot
+      - name: Quads
+      - name: Flip Tight Triple
+      - name: "Gun: Split Pro"
+      - name: "Gun: Trey Left"
+      - name: "Gun: Triple Left"
+      - name: "Gun: Split Spread"
+      - name: "Gun: Doubles Right"
+      - name: "Gun: Quads Left"
+  - team_id: houston_texans
+    name: Houston Texans
+    playbook_style: null
+    formation_count: 19
+    formation_families:
+      ace: 1
+      other: 14
+      shotgun: 4
+    personnel_breakdown: null
+    formations:
+      - name: Ace Trips
+      - name: Pair Slot
+      - name: I Pro
+      - name: I Twins
+      - name: I Spread
+      - name: I Jokers
+      - name: Strong I Pro
+      - name: Strong I Twins
+      - name: Strong I Spread
+      - name: Strong I Jokers
+      - name: Split Pro
+      - name: Split Twins
+      - name: Split Spread
+      - name: Split Jokers
+      - name: Pair Slot Flex
+      - name: "Gun: Quads Left"
+      - name: "Gun: Triple Left"
+      - name: "Gun: Doubles Right"
+      - name: "Gun: Split Spread"
+  - team_id: indianapolis_colts
+    name: Indianapolis Colts
+    playbook_style: null
+    formation_count: 27
+    formation_families:
+      ace: 2
+      i_form: 1
+      other: 15
+      shotgun: 8
+      trips: 1
+    personnel_breakdown: null
+    formations:
+      - name: Triple
+      - name: Quads
+      - name: Trey
+      - name: Trips
+      - name: Ace
+      - name: Flip Ace
+      - name: Tight Triple
+      - name: Straight Trips
+      - name: Straight Open
+      - name: Ace H Flex
+      - name: I Pro
+      - name: I Twins
+      - name: I Jacks
+      - name: Strong I Pro
+      - name: Strong I Jacks
+      - name: Weak I Pro
+      - name: Split Pro
+      - name: Split Spread
+      - name: Split Jacks
+      - name: "Gun: Split Spread"
+      - name: "Gun: H Flex"
+      - name: "Gun: Triple Left"
+      - name: "Gun: Quads Left"
+      - name: "Gun: Straight Trips"
+      - name: "Gun: Straight Open"
+      - name: "Gun: Doubles Right"
+      - name: "Gun: Trips Left"
+  - team_id: jacksonville_jaguars
+    name: Jacksonville Jaguars
+    playbook_style: null
+    formation_count: 21
+    formation_families:
+      ace: 2
+      empty: 1
+      i_form: 2
+      other: 11
+      shotgun: 5
+    personnel_breakdown: null
+    formations:
+      - name: Triple
+      - name: Pair Slot
+      - name: Ace
+      - name: Tight Triple
+      - name: Ace Trips
+      - name: I Pro
+      - name: I Twins
+      - name: I Spread
+      - name: I Jokers
+      - name: I Jokers Pair
+      - name: Strong I Pro
+      - name: Strong I Twins
+      - name: Strong I Jokers
+      - name: Weak I Pro
+      - name: Weak I Spread
+      - name: Empty Open
+      - name: "Gun: Triple Left"
+      - name: "Gun: Empty Open"
+      - name: "Gun: Bunch Left"
+      - name: "Gun: Doubles Right"
+      - name: "Gun: Diamonds"
+  - team_id: kansas_city_chiefs
+    name: Kansas City Chiefs
+    playbook_style: null
+    formation_count: 19
+    formation_families:
+      ace: 2
+      bunch: 1
+      other: 11
+      shotgun: 5
+    personnel_breakdown: null
+    formations:
+      - name: Pair Slot
+      - name: Tight Triple
+      - name: Doubles
+      - name: Triple
+      - name: Twins F Spread
+      - name: Ace
+      - name: Ace Trips
+      - name: Trey
+      - name: Quads
+      - name: Bunch
+      - name: Triple Bunch
+      - name: Flip Tight Triple
+      - name: Triple Load
+      - name: Straight Open
+      - name: "Gun: Quads Left"
+      - name: "Gun: Straight"
+      - name: "Gun: Split Spread"
+      - name: "Gun: Doubles Right"
+      - name: "Gun: Ace Trips"
+  - team_id: miami_dolphins
+    name: Miami Dolphins
+    playbook_style: null
+    formation_count: 26
+    formation_families:
+      ace: 3
+      empty: 1
+      i_form: 4
+      other: 12
+      shotgun: 5
+      trips: 1
+    personnel_breakdown: null
+    formations:
+      - name: Tight Triple
+      - name: Quads
+      - name: Ace
+      - name: Ace Doubles
+      - name: Ace Trips
+      - name: Pair Slot
+      - name: Triple
+      - name: Trips
+      - name: I Pro
+      - name: I Spread
+      - name: I Twins
+      - name: I Jokers
+      - name: I Wing Jokers
+      - name: Strong I Pro
+      - name: Strong I Spread
+      - name: Strong I Jumbo
+      - name: Weak I Pro
+      - name: Weak I Flip Spread
+      - name: Weak I Jokers
+      - name: Weak I Jumbo
+      - name: Empty Open
+      - name: "Gun: Quads Left"
+      - name: "Gun: Ace Doubles"
+      - name: "Gun: Split Spread"
+      - name: "Gun: Empty Open"
+      - name: "Gun: Trips Left"
+  - team_id: minnesota_vikings
+    name: Minnesota Vikings
+    playbook_style: null
+    formation_count: 28
+    formation_families:
+      ace: 3
+      empty: 1
+      other: 14
+      shotgun: 9
+      trips: 1
+    personnel_breakdown: null
+    formations:
+      - name: Doubles
+      - name: Tight Triple
+      - name: Triple
+      - name: Pair Slot
+      - name: Quads
+      - name: Ace
+      - name: Trips
+      - name: Ace Trips
+      - name: Ace Bunch
+      - name: I Pro
+      - name: I Spread
+      - name: I Twins
+      - name: I Jokers
+      - name: I Jokers Pair
+      - name: Split Pro
+      - name: Split Twins
+      - name: Split Spread
+      - name: Split Jokers
+      - name: Empty Open
+      - name: "Gun: Empty Open"
+      - name: "Gun: Quads Left"
+      - name: "Gun: Triple Left"
+      - name: "Gun: Trips Left"
+      - name: "Gun: Doubles Right"
+      - name: "Gun: Ace Right"
+      - name: "Gun: Split Pro"
+      - name: "Gun: Split Twins"
+      - name: "Gun: Split Spread"
+  - team_id: new_england_patriots
+    name: New England Patriots
+    playbook_style: null
+    formation_count: 20
+    formation_families:
+      ace: 2
+      i_form: 1
+      other: 10
+      shotgun: 6
+      trips: 1
+    personnel_breakdown: null
+    formations:
+      - name: Trips
+      - name: Ace
+      - name: Quads
+      - name: Doubles
+      - name: F Wing Jokers
+      - name: I Pro
+      - name: I Twins
+      - name: I Jokers
+      - name: Strong I Pro
+      - name: Weak I Pro
+      - name: Split Jokers
+      - name: Triple H Flex
+      - name: Doubles H Flex
+      - name: Ace Trips Open
+      - name: "Gun: Pair Slot Left"
+      - name: "Gun: Base Open"
+      - name: "Gun: Trey Right"
+      - name: "Gun: Trips Left"
+      - name: "Gun: Doubles Right"
+      - name: "Gun: Quads Left"
+  - team_id: new_orleans_saints
+    name: New Orleans Saints
+    playbook_style: null
+    formation_count: 16
+    formation_families:
+      i_form: 2
+      other: 10
+      shotgun: 4
+    personnel_breakdown: null
+    formations:
+      - name: Triple
+      - name: H Flex Spread
+      - name: I Pro
+      - name: I Twins
+      - name: I Jokers
+      - name: I Jokers Pair
+      - name: I Jacks
+      - name: I Jacks Load
+      - name: Strong I Twins
+      - name: Weak I Spread
+      - name: Weak I Twins
+      - name: Queens Stack
+      - name: "Gun: Bunch Left"
+      - name: "Gun: Doubles Right"
+      - name: "Gun: Triple Left"
+      - name: "Gun: Trips Left"
+  - team_id: new_york_giants
+    name: New York Giants
+    playbook_style: null
+    formation_count: 26
+    formation_families:
+      ace: 3
+      i_form: 2
+      other: 16
+      shotgun: 5
+    personnel_breakdown: null
+    formations:
+      - name: Ace Quads
+      - name: Flip Tight Triple
+      - name: F Spread
+      - name: Tight F Trips
+      - name: Tight Triple
+      - name: Doubles
+      - name: Ace
+      - name: Ace Trips
+      - name: Triple
+      - name: Pair Slot
+      - name: Pro H Split
+      - name: I Pro
+      - name: I Twins
+      - name: I Spread
+      - name: I Jokers
+      - name: I Jokers Pair
+      - name: Strong I Pro
+      - name: Strong I Twins
+      - name: Strong I Jokers
+      - name: Weak I Pro
+      - name: Weak I Spread
+      - name: "Gun: Split Spread"
+      - name: "Gun: Doubles Right"
+      - name: "Gun: Trips Left"
+      - name: "Gun: Quads Left"
+      - name: "Gun: Triple Left"
+  - team_id: new_york_jets
+    name: New York Jets
+    playbook_style: null
+    formation_count: 22
+    formation_families:
+      empty: 2
+      i_form: 1
+      other: 17
+      trips: 2
+    personnel_breakdown: null
+    formations:
+      - name: Flip Triple
+      - name: Quads
+      - name: Trips
+      - name: Trey
+      - name: Triple
+      - name: Doubles
+      - name: F Split Quads
+      - name: F Split Doubles
+      - name: Split Pro
+      - name: Split Spread
+      - name: Split Jokers
+      - name: I Pro
+      - name: I Spread
+      - name: I Load
+      - name: I Jokers
+      - name: Strong I Spread
+      - name: Weak I Pro
+      - name: H Flex Pro
+      - name: Empty Open
+      - name: Flip Triple Open
+      - name: Empty Bunch
+      - name: Trips Empty
+  - team_id: oakland_raiders
+    name: Oakland Raiders
+    playbook_style: null
+    formation_count: 24
+    formation_families:
+      ace: 4
+      bunch: 2
+      i_form: 3
+      other: 12
+      shotgun: 3
+    personnel_breakdown: null
+    formations:
+      - name: Tight Triple
+      - name: Ace
+      - name: Ace Doubles
+      - name: Ace Trips
+      - name: Doubles
+      - name: Quads
+      - name: Trey
+      - name: Ace Flip Trips
+      - name: Pair Slot
+      - name: Bunch
+      - name: I Pro
+      - name: I Twins
+      - name: I Jokers
+      - name: I Jacks
+      - name: Weak I Twins
+      - name: Weak I Pro
+      - name: Weak I Jokers
+      - name: Strong I Spread
+      - name: Strong I Jokers
+      - name: Strong I Jokers Pair
+      - name: Bunch Empty
+      - name: "Gun: Split Spread"
+      - name: "Gun: Ace Doubles"
+      - name: "Gun: Quads Left"
+  - team_id: philadelphia_eagles
+    name: Philadelphia Eagles
+    playbook_style: null
+    formation_count: 24
+    formation_families:
+      ace: 2
+      bunch: 1
+      other: 20
+      trips: 1
+    personnel_breakdown: null
+    formations:
+      - name: Triple
+      - name: Doubles
+      - name: Tight Triple
+      - name: Bunch
+      - name: Pair Slot
+      - name: Ace
+      - name: Ace Trips
+      - name: Quads
+      - name: Trips
+      - name: Flip Tight Triple
+      - name: Doubles Right
+      - name: Triple H Slot
+      - name: Doubles H Wide
+      - name: Triple Empty
+      - name: Split Spread
+      - name: I Pro
+      - name: I Twins
+      - name: I Spread
+      - name: I Pro Load
+      - name: I Wing
+      - name: I Wing Jokers
+      - name: I Jokers Pair
+      - name: I Jacks
+      - name: Strong I Jacks
+  - team_id: pittsburgh_steelers
+    name: Pittsburgh Steelers
+    playbook_style: null
+    formation_count: 24
+    formation_families:
+      ace: 2
+      empty: 1
+      i_form: 1
+      other: 14
+      shotgun: 4
+      spread: 1
+      trips: 1
+    personnel_breakdown: null
+    formations:
+      - name: I Pro
+      - name: Spread
+      - name: Jokers
+      - name: Strong I Pro
+      - name: Jacks
+      - name: Strong I Spread
+      - name: Strong I Twins
+      - name: Strong I Jokers
+      - name: Weak I Twins
+      - name: Split Pro
+      - name: Split Spread
+      - name: Split Twins
+      - name: Split Jacks
+      - name: Quads
+      - name: Pair Slot
+      - name: Trips
+      - name: Tight Triple
+      - name: Ace Bunch
+      - name: Ace
+      - name: Empty Tight
+      - name: Gun Quads Left
+      - name: Gun Split Spread
+      - name: Gun Trips Left
+      - name: Gun Empty Tight
+  - team_id: san_diego_chargers
+    name: San Diego Chargers
+    playbook_style: null
+    formation_count: 24
+    formation_families:
+      ace: 2
+      bunch: 1
+      i_form: 3
+      other: 13
+      shotgun: 5
+    personnel_breakdown: null
+    formations:
+      - name: I Pro
+      - name: I Spread
+      - name: I Twins
+      - name: I Jokers Pair
+      - name: I Jacks
+      - name: Strong I Spread
+      - name: Strong I Jokers
+      - name: Weak I Pro
+      - name: Weak I Twins
+      - name: Weak I Jacks
+      - name: Split Spread
+      - name: Bunch
+      - name: Doubles
+      - name: Triple
+      - name: Tight Triple
+      - name: Quads
+      - name: Pair Slot
+      - name: Ace Trips
+      - name: Ace
+      - name: "Gun: Doubles Right"
+      - name: "Gun: Split Spread"
+      - name: "Gun: Quads Left"
+      - name: "Gun: Triple Left"
+      - name: "Gun: Trips Left"
+  - team_id: san_francisco_49ers
+    name: San Francisco 49ers
+    playbook_style: null
+    formation_count: 22
+    formation_families:
+      ace: 1
+      bunch: 1
+      i_form: 3
+      other: 16
+      trips: 1
+    personnel_breakdown: null
+    formations:
+      - name: Triple
+      - name: Doubles
+      - name: Ace
+      - name: Quads
+      - name: Flip Tight Triple
+      - name: Trips
+      - name: Bunch Left
+      - name: I Pro
+      - name: I Twins
+      - name: I Spread
+      - name: I Jokers
+      - name: Strong I Pro
+      - name: Weak I Pro
+      - name: Weak I Spread
+      - name: Weak I Jokers
+      - name: Split Pro
+      - name: Split Twins
+      - name: Split Flip Pro
+      - name: Split Spread
+      - name: Split Jokers
+      - name: Straight Trips
+      - name: Straight Open
+  - team_id: seattle_seahawks
+    name: Seattle Seahawks
+    playbook_style: null
+    formation_count: 26
+    formation_families:
+      ace: 3
+      bunch: 2
+      i_form: 2
+      other: 16
+      shotgun: 3
+    personnel_breakdown: null
+    formations:
+      - name: I Spread
+      - name: I Pro
+      - name: I Twins
+      - name: I Wing Jokers
+      - name: I Jokers
+      - name: Strong I Spread
+      - name: Strong I Pro
+      - name: Weak I Spread
+      - name: Weak I Twins
+      - name: Split Spread
+      - name: Split Twins
+      - name: Split Jokers
+      - name: Triple
+      - name: Doubles
+      - name: Bunch
+      - name: Quads
+      - name: Flip Tight Triple
+      - name: Pair Slot
+      - name: Ace
+      - name: Ace Doubles
+      - name: Ace Trips
+      - name: Quads H Flex
+      - name: Bunch H Flex
+      - name: "Gun: Triple Left"
+      - name: "Gun: Doubles Right"
+      - name: "Gun: Split Spread"
+  - team_id: st_louis_rams
+    name: St. Louis Rams
+    playbook_style: null
+    formation_count: 28
+    formation_families:
+      ace: 3
+      bunch: 1
+      empty: 1
+      other: 20
+      shotgun: 1
+      trips: 2
+    personnel_breakdown: null
+    formations:
+      - name: Quads
+      - name: Trey
+      - name: Triple
+      - name: Trips
+      - name: Doubles
+      - name: Pair Slot
+      - name: Ace Wing
+      - name: Ace
+      - name: Ace Trips
+      - name: Flip Pair Slot
+      - name: Bunch
+      - name: Tight Triple
+      - name: Doubles Left
+      - name: Triple Right
+      - name: I Spread Doubles
+      - name: Trips Empty
+      - name: Empty Tight
+      - name: I Pro
+      - name: I Spread
+      - name: I Twins
+      - name: I Wing Jokers
+      - name: I Wing
+      - name: I Jokers
+      - name: Strong I Pro
+      - name: Strong I Spread
+      - name: Strong I Wing Jokers
+      - name: Split Twins
+      - name: "Gun: Split Spread"
+  - team_id: tampa_bay_buccaneers
+    name: Tampa Bay Buccaneers
+    playbook_style: null
+    formation_count: 32
+    formation_families:
+      ace: 3
+      bunch: 1
+      i_form: 6
+      other: 22
+    personnel_breakdown: null
+    formations:
+      - name: Split Pro
+      - name: Split Spread
+      - name: Split Twins
+      - name: Far Pro
+      - name: Far Spread
+      - name: Far Twins
+      - name: I Pro
+      - name: I Spread
+      - name: I Twins
+      - name: I Wing
+      - name: I Jokers
+      - name: Strong I Spread
+      - name: Strong I Twins
+      - name: Strong I Jokers
+      - name: Strong I Jokers Pair
+      - name: Weak I Pro
+      - name: Weak I Spread
+      - name: Weak I Jokers
+      - name: Trey
+      - name: Triple
+      - name: Doubles
+      - name: Quads
+      - name: Tight Triple
+      - name: Ace
+      - name: Ace Trips
+      - name: Bunch
+      - name: Pair Slot
+      - name: Triple Left
+      - name: Trey Left
+      - name: Doubles Right
+      - name: Quads Right
+      - name: Ace Right
+  - team_id: tennessee_titans
+    name: Tennessee Titans
+    playbook_style: null
+    formation_count: 21
+    formation_families:
+      ace: 3
+      i_form: 1
+      other: 12
+      shotgun: 4
+      trips: 1
+    personnel_breakdown: null
+    formations:
+      - name: Quads
+      - name: Doubles
+      - name: Tight Triple
+      - name: Trey
+      - name: Trips
+      - name: Ace
+      - name: Ace Trips
+      - name: Triple
+      - name: Pair Slot
+      - name: Ace Right
+      - name: I Pro
+      - name: I Twins
+      - name: I Jokers
+      - name: I Jokers Pair
+      - name: Strong I Pro
+      - name: Strong I Jokers
+      - name: Weak I Twins
+      - name: "Gun: Quads Left"
+      - name: "Gun: Doubles Right"
+      - name: "Gun: Empty Tight"
+      - name: "Gun: Triple Left"
+  - team_id: washington_redskins
+    name: Washington Redskins
+    playbook_style: null
+    formation_count: 21
+    formation_families:
+      ace: 4
+      bunch: 1
+      i_form: 2
+      other: 11
+      shotgun: 2
+      trips: 1
+    personnel_breakdown: null
+    formations:
+      - name: Doubles
+      - name: Triple
+      - name: Trips Tight
+      - name: Tight Triple
+      - name: Ace Flip
+      - name: Ace
+      - name: Ace Trips
+      - name: Pair Slot
+      - name: Bunch
+      - name: Ace Bunch
+      - name: I Spread
+      - name: I Twins
+      - name: Jokers
+      - name: I Wing Jokers
+      - name: Strong I Pro
+      - name: Strong I Jokers
+      - name: Strong I Wing Jokers
+      - name: Weak I Pro
+      - name: Weak I Twins
+      - name: "Gun: Doubles Right"
+      - name: "Gun: Ace Trips"
+  - team_id: west_coast
+    name: West Coast
+    playbook_style: null
+    formation_count: 17
+    formation_families:
+      ace: 1
+      bunch: 1
+      i_form: 5
+      other: 9
+      trips: 1
+    personnel_breakdown: null
+    formations:
+      - name: Far Twins
+      - name: Far Spread
+      - name: I Pro
+      - name: I Spread
+      - name: I Jokers
+      - name: Strong I Pro
+      - name: Strong I Twins
+      - name: Strong I Spread
+      - name: Weak I Pro
+      - name: Weak I Twins
+      - name: Weak I Spread
+      - name: Quads
+      - name: Trips
+      - name: Doubles
+      - name: Tight Triple
+      - name: Bunch
+      - name: Ace
