@@ -16,10 +16,11 @@ when an item depends on something external (user input, upstream work).
   is partially measured; still needed: max player split, max backfield depth,
   motion options, max plays per playbook.
 
-- **Playbook Gamer PDF integration.** *(blocked: user)* Ingest the team-playbook
-  PDFs from the Playbook Gamer Vault as reference data — see
-  `docs/playbookgamer-pdf-integration.md`. The user supplies the files
-  (Phase 1); inventory, extraction, and integration follow.
+- **Playbook Gamer — remaining games.** Phase B catalog coverage is 6 games
+  (madden-04/05/07-ps2, ncaa-04/06/07-ps2). Games with docx-only data (Madden
+  25 PS3: 51 teams, Madden 01/03 PS2) need `extract_docx_images.py` + vision
+  agent to read play-screen screenshots. `tools/ingest-research/extract_docx_images.py`
+  is built; `build_playbook_catalog.py` handles all xlsx formats already.
 
 - **AI onboarding doc.** `docs/ai-onboarding.md` for smaller models joining the
   repo — a one-shot tutorial with fully-narrated tool-call sequences under
@@ -67,6 +68,14 @@ when an item depends on something external (user input, upstream work).
 ## Done
 
 Trim periodically — old completions need not live here forever.
+
+### 2026-05-18
+
+- ✅ Team playbook catalog — 6 games ingested (madden-04/05/07-ps2, ncaa-04/06/07-ps2).
+  `tools/ingest-research/build_playbook_catalog.py` + `schemas/team-playbooks.schema.json`
+  + `find_team_playbooks` / `get_team_playbook` tools on game-knowledge-mcp (now 11 tools).
+- ✅ `tools/ingest-research/extract_docx_images.py` — docx image extractor for
+  screenshot-based playbooks (untracked from yesterday's crash; included here).
 
 ### 2026-05
 

@@ -1,0 +1,2825 @@
+game_id: ncaa-07-ps2
+source: Playbook Gamer
+verification_status: unverified
+generated_date: "2026-05-18"
+notes: "Derived from NCAA Football 07 Offensive Formation List.xlsx. Per layering rules: game-truth data; not in-game-verified."
+teams:
+  - team_id: air_force
+    name: Air Force
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      flexbone: 7
+      i_form: 2
+      power_i: 1
+      wishbone: 2
+    personnel_breakdown: null
+    formations:
+      - name: Flexbone Normal
+      - name: Flexbone Slot
+      - name: Flexbone Split
+      - name: Flexbone Tight
+      - name: Flexbone Trips
+      - name: Flexbone Twins
+      - name: Flexbone Wide
+      - name: I-Form Slot
+      - name: I-Form Twin TE
+      - name: Power-I Normal
+      - name: Wishbone Normal
+      - name: Wishbone Wide
+  - team_id: akron
+    name: Akron
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 4
+      i_form: 3
+      other: 2
+      shotgun: 3
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Slot
+      - name: Ace Twin TE Slot
+      - name: Ace Y-Trips
+      - name: Gun Normal
+      - name: Gun Trips Over
+      - name: Gun Y-Trips
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: I-Form Twins
+      - name: Strong Normal
+      - name: Weak Twins
+  - team_id: alabama
+    name: Alabama
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 5
+      i_form: 2
+      other: 3
+      shotgun: 2
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twin TE
+      - name: Ace Bunch
+      - name: Ace Slot
+      - name: Ace Y-Trips
+      - name: Gun 2-Back Slot
+      - name: Gun Spread Flex
+      - name: I-Form Normal
+      - name: I-Form Twins
+      - name: Pro Normal
+      - name: Strong Close
+      - name: Weak H Pro
+  - team_id: arizona
+    name: Arizona
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 5
+      i_form: 3
+      shotgun: 4
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Slot
+      - name: Ace Spread
+      - name: Ace Twin TE Slot
+      - name: Ace Y-Trips
+      - name: Gun 4WR Trey
+      - name: Gun Double Flex
+      - name: Gun Spread Flex
+      - name: Gun Y-Trips
+      - name: I-Form Normal
+      - name: I-Form Twin TE
+      - name: I-Form Twins
+  - team_id: arizona_state
+    name: Arizona State
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 8
+      i_form: 2
+      other: 2
+    personnel_breakdown: null
+    formations:
+      - name: Ace 4WR Trey
+      - name: Ace Big
+      - name: Ace Big Bunch
+      - name: Ace Big Twin TE
+      - name: Ace Big Wing Twins
+      - name: Ace Double Flex
+      - name: Ace Slot
+      - name: Ace Y-Trips
+      - name: I-Form Normal
+      - name: I-Form Twin TE
+      - name: Strong Normal
+      - name: Strong Twin TE
+  - team_id: arkansas
+    name: Arkansas
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 3
+      i_form: 3
+      other: 1
+      shotgun: 5
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twins
+      - name: Ace Y-Trips
+      - name: Gun Normal HB Wk
+      - name: Gun Split Offset
+      - name: Gun Spread Flex
+      - name: Gun Trips
+      - name: Gun Wing Trips Wk
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: I-Form Twins
+      - name: Strong H Pro
+  - team_id: arkansas_state
+    name: Arkansas State
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 3
+      i_form: 3
+      other: 3
+      pistol: 1
+      shotgun: 2
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Slot
+      - name: Ace Spread Flex
+      - name: Gun 4WR Trio
+      - name: Gun Spread Flex
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: I-Form Twins
+      - name: Pistol Slot
+      - name: Strong Normal
+      - name: Strong Twins
+      - name: Weak Twins
+  - team_id: army
+    name: Army
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 5
+      i_form: 2
+      other: 5
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twin TE
+      - name: Ace Slot
+      - name: Ace Twin TE Slot
+      - name: Ace Y-Trips
+      - name: I-Form Normal
+      - name: I-Form Twins
+      - name: Pro Normal
+      - name: Pro Slot
+      - name: Strong Normal
+      - name: Strong Twins
+      - name: Weak Normal
+  - team_id: auburn
+    name: Auburn
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 3
+      i_form: 3
+      other: 1
+      shotgun: 5
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big Bunch
+      - name: Ace Slot
+      - name: Ace Spread
+      - name: Gun 2-Back Slot
+      - name: Gun Flip Trips
+      - name: Gun Normal
+      - name: Gun Trips
+      - name: Gun Y-Trips HB Wk
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: I-Form Twins Flex
+      - name: Strong Normal
+  - team_id: byu
+    name: BYU
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 3
+      other: 2
+      shotgun: 7
+    personnel_breakdown: null
+    formations:
+      - name: Ace 4WR Trips
+      - name: Ace Big
+      - name: Ace Big Flip
+      - name: Gun 4WR Trey
+      - name: Gun Bunch
+      - name: Gun Double Flex
+      - name: Gun Split Close
+      - name: Gun Split Offset
+      - name: Gun Spread Flex
+      - name: Gun Trips HB Wk
+      - name: Strong H Pro
+      - name: Strong H Slot
+  - team_id: balanced_pass
+    name: Balanced Pass
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 3
+      i_form: 2
+      other: 1
+      shotgun: 6
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Bunch
+      - name: Ace Slot Flex
+      - name: Gun 2-Back Slot
+      - name: Gun Empty Trey
+      - name: Gun Normal Wing TE
+      - name: Gun Spread
+      - name: Gun Twin TE Slot
+      - name: Gun Wing Trips
+      - name: I-Form Normal
+      - name: I-Form Twins
+      - name: Weak H Pro
+  - team_id: balanced_run
+    name: Balanced Run
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 2
+      i_form: 4
+      other: 4
+      shotgun: 2
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Slot
+      - name: Full House
+      - name: Gun Normal
+      - name: Gun Split Offset
+      - name: I-Form Normal
+      - name: I-Form Slot
+      - name: I-Form Y-Trips
+      - name: Strong Normal
+      - name: Strong Tight
+      - name: Weak H Pro
+      - name: Weak Slot
+  - team_id: ball_state
+    name: Ball State
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 3
+      i_form: 2
+      other: 2
+      shotgun: 5
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big Twin TE
+      - name: Ace Big Twins
+      - name: Ace Y-Trips
+      - name: Gun 5-Wide
+      - name: Gun Double Flex
+      - name: Gun Normal
+      - name: Gun Trips Over
+      - name: Gun Y-Trips
+      - name: I-Form Normal
+      - name: I-Form Twins
+      - name: Strong H Pro
+      - name: Strong Twins
+  - team_id: baylor
+    name: Baylor
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 3
+      i_form: 1
+      other: 1
+      shotgun: 7
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twin TE
+      - name: Ace Slot
+      - name: Gun 5WR Trio
+      - name: Gun Normal
+      - name: Gun Split Offset
+      - name: Gun Spread
+      - name: Gun Trips
+      - name: Gun Trips Over
+      - name: Gun Y-Trips
+      - name: I-Form Slot
+      - name: Strong Twins
+  - team_id: boise_state
+    name: Boise State
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 4
+      i_form: 2
+      other: 3
+      shotgun: 3
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twin TE
+      - name: Ace Big Twins
+      - name: Ace Y-Trips
+      - name: Gun Normal HB Wk
+      - name: Gun Spread Flex
+      - name: Gun Wing Trips Wk
+      - name: I-Form Normal
+      - name: I-Form Twins
+      - name: Strong Normal
+      - name: Strong Tight
+      - name: Weak Normal
+  - team_id: boston_college
+    name: Boston College
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 4
+      i_form: 2
+      other: 2
+      shotgun: 4
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twin TE
+      - name: Ace Slot
+      - name: Ace Spread
+      - name: Gun Double Flex
+      - name: Gun Normal
+      - name: Gun Twin TE Slot
+      - name: Gun Y-Trips HB Wk
+      - name: I-Form Normal
+      - name: I-Form Twins
+      - name: Strong Normal
+      - name: Weak Slot
+  - team_id: bowling_green
+    name: Bowling Green
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 3
+      shotgun: 9
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twin TE
+      - name: Ace Y-Trips
+      - name: Gun 2-Back Slot
+      - name: Gun 5-Wide
+      - name: Gun Flip Trips
+      - name: Gun Normal HB Wk
+      - name: Gun Spread
+      - name: Gun Trips
+      - name: Gun Trips Over
+      - name: Gun Twin TE Slot
+      - name: Gun Y-Trips HB Wk
+  - team_id: buffalo
+    name: Buffalo
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 4
+      i_form: 3
+      other: 2
+      shotgun: 3
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twins
+      - name: Ace Slot Flex
+      - name: Ace Y-Trips
+      - name: Gun 2-Back Slot
+      - name: Gun Normal
+      - name: Gun Spread
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: I-Form Twins
+      - name: Strong Normal
+      - name: Weak Tight
+  - team_id: cal
+    name: Cal
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 4
+      empty: 1
+      i_form: 1
+      other: 5
+      shotgun: 1
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Slot
+      - name: Ace Trips
+      - name: Ace Y-Trips
+      - name: Empty Flex Trey
+      - name: Gun Spread
+      - name: I-Form Twins
+      - name: Pro Normal
+      - name: Strong Normal
+      - name: Strong Twins Flex
+      - name: Weak Normal
+      - name: Weak Twins
+  - team_id: central_michigan
+    name: Central Michigan
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 5
+      shotgun: 7
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twin TE
+      - name: Ace Big Twins
+      - name: Ace Slot
+      - name: Ace Y-Trips
+      - name: Gun 2-Back Slot
+      - name: Gun 5-Wide
+      - name: Gun Normal HB Wk
+      - name: Gun Spread
+      - name: Gun Trips
+      - name: Gun Trips HB Wk
+      - name: Gun Y-Trips HB Wk
+  - team_id: cincinnati
+    name: Cincinnati
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 3
+      empty: 1
+      i_form: 2
+      other: 2
+      shotgun: 4
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twin TE
+      - name: Ace Slot
+      - name: Empty Trey
+      - name: Gun Empty Trey
+      - name: Gun Split Twins
+      - name: Gun Tight
+      - name: Gun Twin TE Slot
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: Strong Close
+      - name: Weak Twins
+  - team_id: clemson
+    name: Clemson
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 4
+      i_form: 1
+      other: 1
+      shotgun: 6
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big Flip
+      - name: Ace Big Wing
+      - name: Ace Jumbo Pair
+      - name: Ace Y-Trips
+      - name: Gun 2-Back Slot
+      - name: Gun 4WR Trio
+      - name: Gun Ace Twins
+      - name: Gun Flip Trips
+      - name: Gun Normal
+      - name: Gun Spread Flex
+      - name: I-Form H Pro
+      - name: Strong H Tight
+  - team_id: colorado
+    name: Colorado
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 5
+      i_form: 2
+      other: 3
+      shotgun: 2
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twin TE
+      - name: Ace Slot
+      - name: Ace Tight
+      - name: Ace Y-Trips
+      - name: Gun 5WR Trio
+      - name: Gun Y-Trips HB Wk
+      - name: I-Form Normal
+      - name: I-Form Twin TE
+      - name: Strong Normal
+      - name: Strong Slot
+      - name: Weak Twins
+  - team_id: colorado_state
+    name: Colorado State
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 5
+      other: 4
+      shotgun: 3
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twin TE
+      - name: Ace Jumbo
+      - name: Ace Slot Flex
+      - name: Ace Y-Trips
+      - name: Gun 4WR Trio
+      - name: Gun Double Flex
+      - name: Gun Flex Trio
+      - name: Strong H Pro
+      - name: Strong H Tight
+      - name: Weak H Pro
+      - name: Weak H Twins
+  - team_id: connecticut
+    name: Connecticut
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 4
+      i_form: 2
+      other: 2
+      shotgun: 4
+    personnel_breakdown: null
+    formations:
+      - name: Ace 4WR Trips
+      - name: Ace Big
+      - name: Ace Big Bunch
+      - name: Ace Slot
+      - name: Gun 5-Wide
+      - name: Gun Split Offset
+      - name: Gun Spread Flex
+      - name: Gun Y-Trips HB Wk
+      - name: I-Form Tight
+      - name: I-Form Twins Flex
+      - name: Strong Normal
+      - name: Weak Normal
+  - team_id: duke
+    name: Duke
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 4
+      flexbone: 1
+      i_form: 2
+      other: 1
+      shotgun: 4
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big Twin TE
+      - name: Ace Big Wing
+      - name: Ace Slot
+      - name: Ace Twin TE Slot
+      - name: Flexbone Normal
+      - name: Gun 4WR Trey
+      - name: Gun Double Flex
+      - name: Gun Normal HB Wk
+      - name: Gun Wing Trips Wk
+      - name: I-Form Normal
+      - name: I-Form Twin TE
+      - name: Strong H Pro
+  - team_id: ecu
+    name: ECU
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 4
+      i_form: 1
+      power_i: 1
+      shotgun: 6
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twin TE
+      - name: Ace Big Twins
+      - name: Ace Slot
+      - name: Gun 4WR Trio
+      - name: Gun 5WR Trio
+      - name: Gun Normal HB Wk
+      - name: Gun Spread Flex
+      - name: Gun Trips Over
+      - name: Gun Y-Trips
+      - name: I-Form Slot
+      - name: Power-T Normal
+  - team_id: eastern_michigan
+    name: Eastern Michigan
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 1
+      other: 1
+      shotgun: 10
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Gun 2-Back Slot
+      - name: Gun Bunch
+      - name: Gun Double Flex
+      - name: Gun Flex Trio
+      - name: Gun Normal
+      - name: Gun Spread Flex
+      - name: Gun Tight Slots
+      - name: Gun Trio
+      - name: Gun Trips
+      - name: Gun Y-Trips HB Wk
+      - name: Pro Slot
+  - team_id: florida
+    name: Florida
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 1
+      i_form: 1
+      other: 1
+      shotgun: 9
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big Bunch
+      - name: Gun 2-Back Slot
+      - name: Gun 4WR Trey
+      - name: Gun 5-Wide
+      - name: Gun Big Bunch Str
+      - name: Gun Flanker Close
+      - name: Gun Slot F Trips
+      - name: Gun Spread Flex
+      - name: Gun Trips Over
+      - name: Gun Y-Trips HB Wk
+      - name: I-Form Twins Flex
+      - name: Strong Close
+  - team_id: florida_atlantic
+    name: Florida Atlantic
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 4
+      i_form: 3
+      other: 1
+      shotgun: 4
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big Wing
+      - name: Ace Slot
+      - name: Ace Trio
+      - name: Ace Y-Trips
+      - name: Gun 2-Back Slot
+      - name: Gun Split
+      - name: Gun Trio
+      - name: Gun Y-Trips HB Wk
+      - name: I-Form Normal
+      - name: I-Form Slot
+      - name: I-Form Twins
+      - name: Pro Normal
+  - team_id: florida_int_l
+    name: "Florida Int'l"
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 7
+      i_form: 2
+      other: 3
+    personnel_breakdown: null
+    formations:
+      - name: Ace 4WR Trey
+      - name: Ace Big
+      - name: Ace Big Twins
+      - name: Ace Double Flex
+      - name: Ace Jumbo
+      - name: Ace Slot
+      - name: Ace Y-Trips
+      - name: I-Form Normal
+      - name: I-Form Twins
+      - name: Pro Normal
+      - name: Strong H Pro
+      - name: Weak Normal
+  - team_id: florida_state
+    name: Florida State
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 2
+      i_form: 2
+      other: 2
+      shotgun: 6
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big Twin TE
+      - name: Ace Y-Trips
+      - name: Gun 2-Back Slot
+      - name: Gun Normal
+      - name: Gun Spread Flex
+      - name: Gun Trips
+      - name: Gun Wing Trips Wk
+      - name: Gun Y-Trips HB Wk
+      - name: I-Form Normal
+      - name: I-Form Slot
+      - name: Strong Twins
+      - name: Weak Normal
+  - team_id: fresno_state
+    name: Fresno State
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 4
+      i_form: 3
+      other: 2
+      shotgun: 3
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twins
+      - name: Ace Slot
+      - name: Ace Y-Trips
+      - name: Gun 5WR Trey
+      - name: Gun Spread Flex
+      - name: Gun Y-Trips HB Wk
+      - name: I-Form Normal
+      - name: I-Form Twin TE
+      - name: I-Form Twins
+      - name: Strong Normal
+      - name: Weak Twins
+  - team_id: georgia
+    name: Georgia
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 3
+      i_form: 2
+      other: 1
+      power_i: 1
+      shotgun: 5
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Flip Trips
+      - name: Ace Slot
+      - name: Gun Ace
+      - name: Gun Normal Flex
+      - name: Gun Split Offset
+      - name: Gun Spread Flex
+      - name: Gun Y-Trips HB Wk
+      - name: I-Form Normal
+      - name: I-Form Twin TE
+      - name: Power-I Normal
+      - name: Strong Twins Flex
+  - team_id: georgia_tech
+    name: Georgia Tech
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 3
+      i_form: 1
+      other: 4
+      shotgun: 4
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Slot
+      - name: Ace Twin TE Slot
+      - name: Gun 2-Back Slot
+      - name: Gun Spread Flex
+      - name: Gun Trips
+      - name: Gun Wing Trips
+      - name: I-Form Twins
+      - name: Strong Normal
+      - name: Strong Slot
+      - name: Weak Tight
+      - name: Weak Twins
+  - team_id: hawaii
+    name: Hawaii
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 2
+      shotgun: 10
+    personnel_breakdown: null
+    formations:
+      - name: Ace 4WR Trips
+      - name: Ace Spread
+      - name: Gun 5WR Flex
+      - name: Gun Bunch
+      - name: Gun Double Flex
+      - name: Gun Flanker Close
+      - name: Gun Flip Trips
+      - name: Gun Spread
+      - name: Gun Spread Flex
+      - name: Gun Tight
+      - name: Gun Trips
+      - name: Gun Trips HB Wk
+  - team_id: houston
+    name: Houston
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 2
+      flexbone: 1
+      i_form: 1
+      shotgun: 8
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big Wing Twins
+      - name: Ace Slot Wing
+      - name: Flexbone Trips
+      - name: Gun 2-Back Slot
+      - name: Gun 4WR Trey
+      - name: Gun 5WR Flex
+      - name: Gun Double Flex
+      - name: Gun Normal Wing TE
+      - name: Gun Spread
+      - name: Gun Trips
+      - name: Gun Y-Trips
+      - name: I-Form Slot
+  - team_id: idaho
+    name: Idaho
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 8
+      other: 1
+      shotgun: 3
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twin TE
+      - name: Ace Big Twins
+      - name: Ace Bunch
+      - name: Ace Slot
+      - name: Ace Spread
+      - name: Ace Trips
+      - name: Ace Y-Trips
+      - name: Gun 5-Wide
+      - name: Gun Normal
+      - name: Gun Y-Trips HB Wk
+      - name: Strong H Twins
+  - team_id: illinois
+    name: Illinois
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 2
+      flexbone: 1
+      i_form: 3
+      shotgun: 6
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big Bunch
+      - name: Ace Y-Trips
+      - name: Flexbone Normal
+      - name: Gun 2-Back Slot
+      - name: Gun Empty Trey
+      - name: Gun Normal HB Wk
+      - name: Gun Spread
+      - name: Gun Trips
+      - name: Gun Y-Trips
+      - name: I-Form Slot
+      - name: I-Form Twins
+      - name: I-Form Wing TE
+  - team_id: indiana
+    name: Indiana
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 6
+      shotgun: 6
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twins
+      - name: Ace Jumbo
+      - name: Ace Slot
+      - name: Ace Trips
+      - name: Ace Y-Trips
+      - name: Gun 4WR Trio
+      - name: Gun 5WR Trey
+      - name: Gun Normal HB Wk
+      - name: Gun Spread Flex
+      - name: Gun Trips Over
+      - name: Gun Y-Trips HB Wk
+  - team_id: iowa
+    name: Iowa
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 4
+      i_form: 3
+      other: 2
+      shotgun: 3
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twin TE
+      - name: Ace Slot
+      - name: Ace Y-Trips
+      - name: Gun Double Flex
+      - name: Gun Normal HB Wk
+      - name: Gun Y-Trips HB Wk
+      - name: I-Form Normal
+      - name: I-Form Slot
+      - name: I-Form Twin TE
+      - name: Strong Normal
+      - name: Strong Slot
+  - team_id: iowa_state
+    name: Iowa State
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 4
+      i_form: 2
+      shotgun: 6
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twins
+      - name: Ace Bunch
+      - name: Ace Y-Trips
+      - name: Gun Flex Trio
+      - name: Gun Normal
+      - name: Gun Spread
+      - name: Gun Trips
+      - name: Gun Trips Over
+      - name: Gun Y-Trips
+      - name: I-Form Slot
+      - name: I-Form Tight
+  - team_id: kansas
+    name: Kansas
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 6
+      i_form: 1
+      shotgun: 5
+    personnel_breakdown: null
+    formations:
+      - name: Ace 4WR Trips
+      - name: Ace Big
+      - name: Ace Big Twins
+      - name: Ace Slot
+      - name: Ace Spread
+      - name: Ace Y-Trips
+      - name: Gun 2-Back Slot
+      - name: Gun Normal
+      - name: Gun Spread
+      - name: Gun Trips
+      - name: Gun Y-Trips HB Wk
+      - name: I-Form Slot
+  - team_id: kansas_state
+    name: Kansas State
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 5
+      i_form: 2
+      other: 2
+      shotgun: 3
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Bunch
+      - name: Ace Big Twin TE
+      - name: Ace Slot
+      - name: Ace Y-Trips
+      - name: Gun 2-Back Slot
+      - name: Gun Spread
+      - name: Gun Y-Trips HB Wk
+      - name: I-Form Normal
+      - name: I-Form Twins
+      - name: Pro Normal
+      - name: Strong Twins
+  - team_id: kent_state
+    name: Kent State
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 3
+      shotgun: 9
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Slot
+      - name: Ace Y-Trips
+      - name: Gun 2-Back Slot
+      - name: Gun 4WR Trio
+      - name: Gun 5-Wide
+      - name: Gun Cluster
+      - name: Gun Normal
+      - name: Gun Normal HB Wk
+      - name: Gun Spread
+      - name: Gun Trips
+      - name: Gun Y-Trips HB Wk
+  - team_id: kentucky
+    name: Kentucky
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 4
+      i_form: 2
+      shotgun: 6
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Slot
+      - name: Ace Trips
+      - name: Ace Y-Trips
+      - name: Gun 2-Back Slot
+      - name: Gun 5-Wide
+      - name: Gun Normal
+      - name: Gun Split Twins
+      - name: Gun Trips
+      - name: Gun Y-Trips
+      - name: I-Form Normal
+      - name: I-Form Twins
+  - team_id: lsu
+    name: LSU
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 4
+      i_form: 3
+      other: 1
+      shotgun: 4
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Bunch
+      - name: Ace Slot
+      - name: Ace Y-Trips
+      - name: Gun 2-Back Slot
+      - name: Gun Normal HB Wk
+      - name: Gun Spread Flex
+      - name: Gun Y-Trips
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: I-Form Twins Flex
+      - name: Weak Twins
+  - team_id: louisiana_tech
+    name: Louisiana Tech
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 5
+      shotgun: 7
+    personnel_breakdown: null
+    formations:
+      - name: Ace 4WR Trips
+      - name: Ace Big
+      - name: Ace Big Twins
+      - name: Ace Slot
+      - name: Ace Y-Trips
+      - name: Gun 5-Wide
+      - name: Gun Ace
+      - name: Gun Normal
+      - name: Gun Normal HB Wk
+      - name: Gun Spread
+      - name: Gun Y-Trips
+      - name: Gun Y-Trips HB Wk
+  - team_id: louisville
+    name: Louisville
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 3
+      i_form: 2
+      other: 2
+      shotgun: 5
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Slot
+      - name: Ace Y-Trips
+      - name: Gun 2-Back Slot
+      - name: Gun 4WR Trey
+      - name: Gun 5WR Trio
+      - name: Gun Spread Flex
+      - name: Gun Trio
+      - name: I-Form Normal
+      - name: I-Form Twins Flex
+      - name: Strong Twin TE
+      - name: Weak Twins
+  - team_id: marshall
+    name: Marshall
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 7
+      shotgun: 5
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twins
+      - name: Ace Bunch
+      - name: Ace Jumbo Pair
+      - name: Ace Slot
+      - name: Ace Twin TE Slot
+      - name: Ace Y-Trips
+      - name: Gun 5-Wide
+      - name: Gun Bunch
+      - name: Gun Normal Wing TE
+      - name: Gun Trips
+      - name: Gun Wing Trips
+  - team_id: maryland
+    name: Maryland
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 3
+      flexbone: 1
+      i_form: 2
+      other: 2
+      shotgun: 4
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big Twin TE
+      - name: Ace Slot
+      - name: Ace Spread
+      - name: Flexbone Normal
+      - name: Gun Normal HB Wk
+      - name: Gun Split Twins
+      - name: Gun Spread Flex
+      - name: Gun Trips
+      - name: I-Form Normal
+      - name: I-Form Twins
+      - name: Strong Normal
+      - name: Weak Twins
+  - team_id: memphis
+    name: Memphis
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 4
+      i_form: 1
+      power_i: 1
+      shotgun: 6
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Slot
+      - name: Ace Spread
+      - name: Ace Trips
+      - name: Gun 5-Wide
+      - name: Gun Empty Trips TE
+      - name: Gun Normal HB Wk
+      - name: Gun Spread
+      - name: Gun Trips Over
+      - name: Gun Y-Trips
+      - name: I-Form Twins
+      - name: Power-T Wide
+  - team_id: miami_fl
+    name: Miami FL
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 5
+      i_form: 2
+      other: 1
+      shotgun: 4
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twins
+      - name: Ace Bunch TE
+      - name: Ace Slot
+      - name: Ace Y-Trips
+      - name: Gun Normal Flex
+      - name: Gun Spread Flex
+      - name: Gun Trips Over
+      - name: Gun Y-Trips HB Wk
+      - name: I-Form Normal
+      - name: I-Form Twin TE
+      - name: Strong Normal
+  - team_id: miami_oh
+    name: Miami OH
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 4
+      other: 2
+      shotgun: 6
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twin TE
+      - name: Ace Twin TE Slot
+      - name: Ace Y-Trips
+      - name: Gun Normal HB Wk
+      - name: Gun Spread
+      - name: Gun Trips
+      - name: Gun Trips Over
+      - name: Gun Y-Trips
+      - name: Gun Y-Trips HB Wk
+      - name: Strong Twin TE
+      - name: Strong Twins
+  - team_id: michigan
+    name: Michigan
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 5
+      i_form: 3
+      other: 4
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big Wing
+      - name: Ace Bunch
+      - name: Ace Double Flex
+      - name: Ace Slot
+      - name: Ace Y-Trips
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: I-Form Twins
+      - name: Strong Normal
+      - name: Strong Twin TE
+      - name: Strong Twins
+      - name: Weak Twins
+  - team_id: michigan_state
+    name: Michigan State
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 6
+      shotgun: 6
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Double Flex
+      - name: Ace Slot
+      - name: Ace Trio
+      - name: Ace Twin TE Slot
+      - name: Ace Y-Trips
+      - name: Gun 4WR Trey
+      - name: Gun Double Flex
+      - name: Gun Flex Trio
+      - name: Gun Normal Flex
+      - name: Gun Trio HB Wk
+      - name: Gun Twin TE Slot
+  - team_id: mid_tenn_state
+    name: Mid Tenn State
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 3
+      i_form: 2
+      other: 3
+      shotgun: 4
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Slot
+      - name: Ace Y-Trips
+      - name: Gun 5-Wide
+      - name: Gun Normal
+      - name: Gun Spread Flex
+      - name: Gun Trips Over
+      - name: I-Form Normal
+      - name: I-Form Twins
+      - name: Pro Slot
+      - name: Strong Slot
+      - name: Weak Twins
+  - team_id: minnesota
+    name: Minnesota
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 8
+      i_form: 4
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twin TE
+      - name: Ace Big Twins
+      - name: Ace Bunch TE
+      - name: Ace Slot
+      - name: Ace Spread
+      - name: Ace Trips
+      - name: Ace Y-Trips
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: I-Form Twin TE
+      - name: I-Form Twins
+  - team_id: mississippi_state
+    name: Mississippi State
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 4
+      i_form: 2
+      other: 3
+      shotgun: 3
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big Bunch
+      - name: Ace Big Twin TE
+      - name: Ace Slot
+      - name: Ace Y-Trips
+      - name: Gun Normal Flex
+      - name: Gun Split
+      - name: Gun Y-Trips HB Wk
+      - name: I-Form Normal
+      - name: I-Form Twin TE
+      - name: Strong Close
+      - name: Strong Normal
+      - name: Weak Twins
+  - team_id: missouri
+    name: Missouri
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 2
+      empty: 1
+      shotgun: 9
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Y-Trips
+      - name: Empty Trips
+      - name: Gun 2-Back Slot
+      - name: Gun Normal HB Wk
+      - name: Gun Y-Trips HB Wk
+      - name: Gun Trio HB Wk
+      - name: Gun Bunch
+      - name: Gun Spread
+      - name: Gun Trips
+      - name: Gun Trips HB Wk
+      - name: Gun 5-Wide
+  - team_id: nc_state
+    name: NC State
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 6
+      i_form: 2
+      other: 1
+      shotgun: 3
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twin TE
+      - name: Ace Big Twins
+      - name: Ace Bunch
+      - name: Ace Slot
+      - name: Ace Y-Trips
+      - name: Gun 2-Back Slot
+      - name: Gun Flip Trips
+      - name: Gun Normal HB Wk
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: Weak Close Twins
+  - team_id: navy
+    name: Navy
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      flexbone: 7
+      i_form: 1
+      power_i: 1
+      wishbone: 3
+    personnel_breakdown: null
+    formations:
+      - name: Flexbone Normal
+      - name: Flexbone Slot
+      - name: Flexbone Split
+      - name: Flexbone Tight
+      - name: Flexbone Trips
+      - name: Flexbone Twins
+      - name: Flexbone Wide
+      - name: I-Form Slot
+      - name: Power-I Normal
+      - name: Wishbone Normal
+      - name: Wishbone Tight
+      - name: Wishbone Wide
+  - team_id: nebraska
+    name: Nebraska
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 4
+      i_form: 2
+      other: 3
+      shotgun: 3
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Bunch
+      - name: Ace Spread Flex
+      - name: Ace Y-Trips
+      - name: Gun 4WR Trey
+      - name: Gun Normal
+      - name: Gun Split Offset
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: Strong Normal
+      - name: Weak Normal
+      - name: Weak Twins TE
+  - team_id: nevada
+    name: Nevada
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 2
+      pistol: 8
+      shotgun: 2
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Slot Flex
+      - name: Gun 5WR Trio
+      - name: Gun Trio Offset
+      - name: Pistol Big Bunch
+      - name: Pistol Big Wing
+      - name: Pistol Slot
+      - name: Pistol Strong H Twins
+      - name: Pistol Trips
+      - name: Pistol Twin TE WR
+      - name: Pistol Unbalanced Wing
+      - name: Pistol Y-Trips
+  - team_id: new_mexico
+    name: New Mexico
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 4
+      i_form: 3
+      other: 2
+      shotgun: 3
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twin TE
+      - name: Ace Slot
+      - name: Ace Y-Trips
+      - name: Gun Normal
+      - name: Gun Split Offset
+      - name: Gun Spread
+      - name: I-Form Close Twins
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: Strong Normal
+      - name: Weak Normal
+  - team_id: new_mexico_state
+    name: New Mexico State
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 2
+      i_form: 1
+      other: 1
+      shotgun: 8
+    personnel_breakdown: null
+    formations:
+      - name: Ace Slot
+      - name: Ace Spread Flex
+      - name: Gun Cluster
+      - name: Gun Flanker Close
+      - name: Gun Split
+      - name: Gun Split Close
+      - name: Gun Split Offset
+      - name: Gun Spread Flex
+      - name: Gun Trips HB Wk
+      - name: Gun Trips Over
+      - name: I-Form Slot
+      - name: Strong H Pro
+  - team_id: north_carolina
+    name: North Carolina
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 4
+      i_form: 2
+      other: 2
+      shotgun: 4
+    personnel_breakdown: null
+    formations:
+      - name: Ace 4WR Trips
+      - name: Ace Big
+      - name: Ace Slot
+      - name: Ace Spread
+      - name: Gun 5-Wide
+      - name: Gun Bunch
+      - name: Gun Normal
+      - name: Gun Y-Trips HB Wk
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: Strong Normal
+      - name: Weak Twins
+  - team_id: north_texas
+    name: North Texas
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 5
+      i_form: 3
+      other: 2
+      shotgun: 2
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twins
+      - name: Ace Slot Flex
+      - name: Ace Trio
+      - name: Ace Twin TE Slot
+      - name: Gun 2-Back Slot
+      - name: Gun Normal Flex
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: I-Form Twins
+      - name: Strong Tight
+      - name: Weak Slot
+  - team_id: northern_illinois
+    name: Northern Illinois
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 8
+      shotgun: 4
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twin TE
+      - name: Ace Big Twins
+      - name: Ace Jumbo
+      - name: Ace Slot
+      - name: Ace Trips
+      - name: Ace Twin TE Slot
+      - name: Ace Y-Trips
+      - name: Gun Normal HB Wk
+      - name: Gun Trips
+      - name: Gun Trips Over
+      - name: Gun Y-Trips HB Wk
+  - team_id: northwestern
+    name: Northwestern
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 1
+      i_form: 1
+      other: 1
+      shotgun: 9
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Gun 2-Back Slot
+      - name: Gun 5-Wide
+      - name: Gun Bunch
+      - name: Gun Normal HB Wk
+      - name: Gun Normal Wing TE
+      - name: Gun Spread
+      - name: Gun Tight Slots
+      - name: Gun Trips HB Wk
+      - name: Gun Wing Trips
+      - name: I-Form Tight
+      - name: Strong Normal
+  - team_id: notre_dame
+    name: Notre Dame
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 4
+      i_form: 2
+      other: 2
+      shotgun: 4
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Jumbo
+      - name: Ace Slot
+      - name: Ace Y-Trips
+      - name: Gun 5WR Trio
+      - name: Gun Normal
+      - name: Gun Spread Flex
+      - name: Gun Trips
+      - name: I-Form Normal
+      - name: I-Form Twins
+      - name: Pro Normal
+      - name: Weak Normal
+  - team_id: ohio
+    name: Ohio
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 4
+      i_form: 3
+      other: 2
+      shotgun: 3
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twins
+      - name: Ace Slot Flex
+      - name: Ace Y-Trips
+      - name: Gun Ace Twins
+      - name: Gun Normal
+      - name: Gun Y-Trips HB Wk
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: I-Form Twins Flex
+      - name: Strong Normal
+      - name: Strong Twins Flex
+  - team_id: ohio_state
+    name: Ohio State
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 3
+      i_form: 3
+      other: 1
+      shotgun: 5
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twin TE
+      - name: Ace Slot
+      - name: Gun Empty Trips TE
+      - name: Gun Normal
+      - name: Gun Spread
+      - name: Gun Trips HB Wk
+      - name: Gun Y-Trips
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: I-Form Twins Flex
+      - name: Strong H Pro
+  - team_id: oklahoma
+    name: Oklahoma
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 2
+      i_form: 2
+      other: 1
+      shotgun: 7
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Y-Trips
+      - name: Gun 4WR Trey
+      - name: Gun 5WR Trey
+      - name: Gun Normal
+      - name: Gun Slot F Trips
+      - name: Gun Spread Flex
+      - name: Gun Trips Over
+      - name: Gun Y-Trips
+      - name: I-Form Normal
+      - name: I-Form Twin TE
+      - name: Strong Normal
+  - team_id: oklahoma_state
+    name: Oklahoma State
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 3
+      i_form: 3
+      shotgun: 6
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Bunch
+      - name: Ace Twin TE Slot
+      - name: Gun 2-Back Slot
+      - name: Gun 4WR Trey
+      - name: Gun Normal
+      - name: Gun Spread
+      - name: Gun Trips
+      - name: Gun Y-Trips
+      - name: I-Form Normal
+      - name: I-Form Slot
+      - name: I-Form Twins
+  - team_id: ole_miss
+    name: Ole Miss
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 5
+      i_form: 1
+      other: 4
+      shotgun: 2
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Bunch
+      - name: Ace Slot
+      - name: Ace Trips
+      - name: Ace Y-Trips
+      - name: Gun Flex Trey
+      - name: Gun Normal
+      - name: I-Form Normal
+      - name: Pro Twins
+      - name: Strong Close
+      - name: Strong Normal
+      - name: Weak Normal
+  - team_id: option_run
+    name: Option Run
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      flexbone: 6
+      i_form: 1
+      other: 1
+      power_i: 2
+      shotgun: 1
+      wishbone: 1
+    personnel_breakdown: null
+    formations:
+      - name: Flexbone Normal
+      - name: Flexbone Slot
+      - name: Flexbone Tight
+      - name: Flexbone Trips
+      - name: Flexbone Twins
+      - name: Flexbone Wide
+      - name: Gun 2-Back Slot
+      - name: I-Form Tight
+      - name: Maryland-I
+      - name: Power-I Normal
+      - name: Power-T Wide
+      - name: Wishbone Normal
+  - team_id: oregon
+    name: Oregon
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 3
+      shotgun: 9
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Jumbo
+      - name: Ace Jumbo Pair
+      - name: Gun 4WR Trey
+      - name: Gun 4WR Trio
+      - name: Gun Double Flex
+      - name: Gun Flex Trey
+      - name: Gun Normal
+      - name: Gun Split Offset
+      - name: Gun Spread
+      - name: Gun Spread Flex
+      - name: Gun Y-Trips
+  - team_id: oregon_state
+    name: Oregon State
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 11
+      shotgun: 1
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Flip
+      - name: Ace Big Twin TE
+      - name: Ace Big Wing Twins
+      - name: Ace Bunch
+      - name: Ace Flip Trips
+      - name: Ace Slot
+      - name: Ace Tight
+      - name: Ace Trips
+      - name: Ace Twin TE Slot
+      - name: Ace Y-Trips
+      - name: Gun Split Offset
+  - team_id: pass_heavy
+    name: Pass Heavy
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 7
+      empty: 1
+      shotgun: 4
+    personnel_breakdown: null
+    formations:
+      - name: Ace 4WR Trio
+      - name: Ace Big
+      - name: Ace Big Twin TE
+      - name: Ace Slot
+      - name: Ace Spread
+      - name: Ace Trio
+      - name: Ace Y-Trips
+      - name: Empty Trips
+      - name: Gun Double Flex
+      - name: Gun Empty Trips TE
+      - name: Gun Normal
+      - name: Gun Trips HB Wk
+  - team_id: penn_state
+    name: Penn State
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 3
+      i_form: 2
+      other: 1
+      shotgun: 6
+    personnel_breakdown: null
+    formations:
+      - name: Ace Flip Trips
+      - name: Ace Slot
+      - name: Ace Y-Trips
+      - name: Gun 2-Back Slot
+      - name: Gun 4WR Trey
+      - name: Gun Normal HB Wk
+      - name: Gun Split
+      - name: Gun Spread Flex
+      - name: Gun Y-Trips
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: Weak H Pro
+  - team_id: pittsburgh
+    name: Pittsburgh
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 5
+      i_form: 2
+      other: 1
+      shotgun: 4
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Bunch
+      - name: Ace Slot
+      - name: Ace Tight Slots
+      - name: Ace Y-Trips
+      - name: Gun 2-Back Slot
+      - name: Gun 4WR Trey
+      - name: Gun Split Close
+      - name: Gun Spread Flex
+      - name: I-Form Normal
+      - name: I-Form Twins
+      - name: Strong Normal
+  - team_id: purdue
+    name: Purdue
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 1
+      shotgun: 11
+    personnel_breakdown: null
+    formations:
+      - name: Ace Slot Close
+      - name: Gun 4WR Trio
+      - name: Gun Bunch
+      - name: Gun Flanker Close
+      - name: Gun Flex Trio
+      - name: Gun Normal
+      - name: Gun Split Big
+      - name: Gun Split Offset
+      - name: Gun Split Twins
+      - name: Gun Spread
+      - name: Gun Wing Trips Wk
+      - name: Gun Y-Trips HB Wk
+  - team_id: rice
+    name: Rice
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 3
+      i_form: 2
+      shotgun: 7
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Slot
+      - name: Ace Y-Trips
+      - name: Gun 2-Back Slot
+      - name: Gun 4WR Trio
+      - name: Gun 5-Wide
+      - name: Gun Normal
+      - name: Gun Spread
+      - name: Gun Twin TE Slot
+      - name: Gun Y-Trips
+      - name: I-Form Normal
+      - name: I-Form Tight
+  - team_id: run_n_gun
+    name: Run N Gun
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 3
+      other: 1
+      shotgun: 8
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big Wing
+      - name: Ace Spread
+      - name: Ace Y-Trips
+      - name: Gun 4WR Trio
+      - name: Gun 5-Wide
+      - name: Gun Ace
+      - name: Gun Flip Trips
+      - name: Gun Normal HB Wk
+      - name: Gun Split Offset
+      - name: Gun Spread
+      - name: Gun Wing Trips
+      - name: Strong H Pro
+  - team_id: rutgers
+    name: Rutgers
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 5
+      i_form: 2
+      other: 1
+      shotgun: 4
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twin TE
+      - name: Ace Bunch
+      - name: Ace Slot
+      - name: Ace Y-Trips
+      - name: Gun 5-Wide
+      - name: Gun Bunch
+      - name: Gun Normal
+      - name: Gun Y-Trips HB Wk
+      - name: I-Form Normal
+      - name: I-Form Twins Flex
+      - name: Strong Normal
+  - team_id: smu
+    name: SMU
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 3
+      i_form: 1
+      shotgun: 8
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big Twins
+      - name: Ace Slot
+      - name: Ace Twin TE Slot
+      - name: Gun 2-Back Slot
+      - name: Gun Bunch
+      - name: Gun Double Flex
+      - name: Gun Flex Trio
+      - name: Gun Normal HB Wk
+      - name: Gun Spread
+      - name: Gun Trio HB Wk
+      - name: Gun Trips Over
+      - name: I-Form Slot
+  - team_id: san_diego_state
+    name: San Diego State
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 3
+      i_form: 3
+      shotgun: 6
+    personnel_breakdown: null
+    formations:
+      - name: Ace Bunch
+      - name: Ace Slot
+      - name: Ace Twin TE Slot
+      - name: Gun 4WR Trey
+      - name: Gun 5WR Trey
+      - name: Gun Bunch
+      - name: Gun Normal
+      - name: Gun Normal HB Wk
+      - name: Gun Spread Flex
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: I-Form Twins
+  - team_id: san_jose_state
+    name: San Jose State
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 5
+      i_form: 2
+      other: 2
+      shotgun: 3
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twin TE
+      - name: Ace Slot
+      - name: Ace Spread
+      - name: Ace Y-Trips
+      - name: Gun 2-Back Slot
+      - name: Gun Ace
+      - name: Gun Twin TE Slot
+      - name: I-Form Normal
+      - name: I-Form Twins
+      - name: Strong Normal
+      - name: Strong Twins
+  - team_id: south_carolina
+    name: South Carolina
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 4
+      i_form: 2
+      other: 3
+      shotgun: 3
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twins
+      - name: Ace Slot
+      - name: Ace Trips
+      - name: Gun 5-Wide
+      - name: Gun Spread
+      - name: Gun Y-Trips
+      - name: I-Form Normal
+      - name: I-Form Twins
+      - name: Pro Slot
+      - name: Strong Normal
+      - name: Weak Twins
+  - team_id: southern_miss
+    name: Southern Miss
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 4
+      i_form: 3
+      other: 2
+      shotgun: 3
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Slot
+      - name: Ace Spread
+      - name: Ace Y-Trips
+      - name: Gun Double Flex
+      - name: Gun Normal Flex
+      - name: Gun Y-Trips HB Wk
+      - name: I-Form Normal
+      - name: I-Form Slot
+      - name: I-Form Twins Flex
+      - name: Weak Normal
+      - name: Weak Twins Flex
+  - team_id: stanford
+    name: Stanford
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 5
+      i_form: 3
+      other: 4
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twin TE
+      - name: Ace Slot
+      - name: Ace Twin TE Slot
+      - name: Ace Y-Trips
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: I-Form Twins
+      - name: Pro Normal
+      - name: Pro Slot
+      - name: Strong Normal
+      - name: Weak Twins
+  - team_id: syracuse
+    name: Syracuse
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 4
+      i_form: 4
+      other: 2
+      shotgun: 2
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Bunch
+      - name: Ace Jumbo
+      - name: Ace Slot
+      - name: Gun Spread Flex
+      - name: Gun Y-Trips
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: I-Form Twin TE
+      - name: I-Form Twins Flex
+      - name: Strong Normal
+      - name: Weak Twins
+  - team_id: tcu
+    name: TCU
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 4
+      i_form: 3
+      other: 1
+      shotgun: 4
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Slot
+      - name: Ace Spread
+      - name: Ace Twin TE Slot
+      - name: Gun 5-Wide
+      - name: Gun Spread
+      - name: Gun Trips
+      - name: Gun Y-Trips
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: I-Form Twins
+      - name: Strong Normal
+  - team_id: temple
+    name: Temple
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 3
+      i_form: 3
+      other: 2
+      shotgun: 4
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Slot
+      - name: Ace Y-Trips
+      - name: Gun 5WR Trio
+      - name: Gun Normal Flex
+      - name: Gun Spread
+      - name: Gun Trio HB Wk
+      - name: I-Form Normal
+      - name: I-Form Twin TE
+      - name: I-Form Twins
+      - name: Strong Normal
+      - name: Weak Close
+  - team_id: tennessee
+    name: Tennessee
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 3
+      i_form: 3
+      other: 3
+      shotgun: 3
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Bunch
+      - name: Ace Spread
+      - name: Full House
+      - name: Gun Split Offset
+      - name: Gun Spread Flex
+      - name: Gun Trips HB Wk
+      - name: I-Form Normal
+      - name: I-Form Slot
+      - name: Strong Twin TE
+      - name: Strong Twins Flex
+      - name: Weak Slot
+  - team_id: texas
+    name: Texas
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 3
+      i_form: 2
+      other: 2
+      shotgun: 5
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Slot
+      - name: Ace Y-Trips
+      - name: Gun Ace
+      - name: Gun Ace Twins
+      - name: Gun Normal
+      - name: Gun Normal HB Wk
+      - name: Gun Y-Trips HB Wk
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: Strong Normal
+      - name: Weak Normal
+  - team_id: texas_a_m
+    name: "Texas A&M"
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 3
+      i_form: 3
+      shotgun: 6
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big Twins
+      - name: Ace Bunch
+      - name: Ace Y-Trips
+      - name: Gun 4WR Trey
+      - name: Gun 5WR Trio
+      - name: Gun Normal HB Wk
+      - name: Gun Split Offset
+      - name: Gun Split Twins
+      - name: Gun Spread Flex
+      - name: I-Form Normal
+      - name: I-Form Slot
+      - name: I-Form Tight
+  - team_id: texas_tech
+    name: Texas Tech
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 4
+      other: 1
+      shotgun: 7
+    personnel_breakdown: null
+    formations:
+      - name: Ace 4WR Trips
+      - name: Ace Big
+      - name: Ace Big Flip
+      - name: Ace Spread Flex
+      - name: Gun 4WR Trey
+      - name: Gun Double Flex
+      - name: Gun Normal
+      - name: Gun Split Close
+      - name: Gun Split Offset
+      - name: Gun Spread Flex
+      - name: Gun Trips HB Wk
+      - name: Weak H Pro
+  - team_id: toledo
+    name: Toledo
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 6
+      shotgun: 6
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Jumbo
+      - name: Ace Jumbo Pair
+      - name: Ace Slot
+      - name: Ace Twin TE Slot
+      - name: Ace Y-Trips
+      - name: Gun Ace
+      - name: Gun Normal
+      - name: Gun Split Offset
+      - name: Gun Spread
+      - name: Gun Twin TE Slot
+      - name: Gun Y-Trips HB Wk
+  - team_id: troy
+    name: Troy
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 4
+      i_form: 4
+      shotgun: 4
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big Wing
+      - name: Ace Bunch
+      - name: Ace Slot Flex
+      - name: Ace Y-Trips
+      - name: Gun Double Flex
+      - name: Gun Normal Flex
+      - name: Gun Split Offset
+      - name: Gun Spread Flex
+      - name: I-Form Normal
+      - name: I-Form Twins
+      - name: I-Form Wing TE
+      - name: I-Form Y-Trips
+  - team_id: tulane
+    name: Tulane
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 4
+      i_form: 3
+      shotgun: 5
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Flip
+      - name: Ace Slot
+      - name: Ace Y-Trips
+      - name: Gun 5WR Trio
+      - name: Gun Bunch
+      - name: Gun Spread
+      - name: Gun Trips
+      - name: Gun Trips HB Wk
+      - name: I-Form Normal
+      - name: I-Form Twins
+      - name: I-Form Y-Trips
+  - team_id: tulsa
+    name: Tulsa
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 5
+      i_form: 1
+      other: 1
+      shotgun: 5
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Jumbo
+      - name: Ace Slot
+      - name: Ace Spread
+      - name: Ace Twin TE Slot
+      - name: Gun 5-Wide
+      - name: Gun Normal
+      - name: Gun Spread Flex
+      - name: Gun Trips HB Wk
+      - name: Gun Y-Trips HB Wk
+      - name: I-Form Twins
+      - name: Strong Tight
+  - team_id: uab
+    name: UAB
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 2
+      flexbone: 1
+      i_form: 3
+      power_i: 1
+      shotgun: 5
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Y-Trips
+      - name: Flexbone Trips
+      - name: Gun 4WR Trio
+      - name: Gun Normal
+      - name: Gun Split
+      - name: Gun Split Offset
+      - name: Gun Spread Flex
+      - name: I-Form Slot
+      - name: I-Form Tight
+      - name: I-Form Twins Flex
+      - name: Power-T Normal
+  - team_id: ucf
+    name: UCF
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 8
+      i_form: 3
+      shotgun: 1
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twins
+      - name: Ace Jumbo
+      - name: Ace Jumbo Pair
+      - name: Ace Slot
+      - name: Ace Trio
+      - name: Ace Twin TE Slot
+      - name: Ace Y-Trips
+      - name: Gun Y-Trips HB Wk
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: I-Form Twins Flex
+  - team_id: ucla
+    name: UCLA
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 6
+      i_form: 4
+      other: 2
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twin TE
+      - name: Ace Big Twins
+      - name: Ace Slot
+      - name: Ace Trips
+      - name: Ace Y-Trips
+      - name: I-Form Normal
+      - name: I-Form Slot
+      - name: I-Form Twin TE
+      - name: I-Form Twins
+      - name: Strong Normal
+      - name: Weak Twins
+  - team_id: ul_lafayette
+    name: UL Lafayette
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 3
+      i_form: 3
+      other: 1
+      shotgun: 5
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twin TE
+      - name: Ace Y-Trips
+      - name: Gun Double Flex
+      - name: Gun Split
+      - name: Gun Split Offset
+      - name: Gun Trips
+      - name: Gun Y-Trips HB Wk
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: I-Form Twins
+      - name: Strong Twins
+  - team_id: ul_monroe
+    name: UL Monroe
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 4
+      shotgun: 8
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Slot
+      - name: Ace Twin TE Slot
+      - name: Ace Y-Trips
+      - name: Gun 5-Wide
+      - name: Gun Ace Twins
+      - name: Gun Empty Trips TE
+      - name: Gun Normal
+      - name: Gun Split Twins
+      - name: Gun Spread
+      - name: Gun Trips
+      - name: Gun Y-Trips HB Wk
+  - team_id: unlv
+    name: UNLV
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      shotgun: 12
+    personnel_breakdown: null
+    formations:
+      - name: Gun 2-Back Slot
+      - name: Gun 4WR Trey
+      - name: Gun 4WR Trio
+      - name: Gun Bunch
+      - name: Gun Empty Trips TE
+      - name: Gun Flex Trey
+      - name: Gun Flip Trips
+      - name: Gun Split Twins
+      - name: Gun Spread
+      - name: Gun Spread Flex
+      - name: Gun Trips Over
+      - name: Gun Y-Trips
+  - team_id: usc
+    name: USC
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 5
+      empty: 1
+      i_form: 2
+      other: 4
+    personnel_breakdown: null
+    formations:
+      - name: Ace 4WR Trio
+      - name: Ace Big
+      - name: Ace Slot Flex
+      - name: Ace Twin TE Slot
+      - name: Ace Y-Trips
+      - name: Empty Flex Trio
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: Strong Close
+      - name: Strong Normal
+      - name: Strong Twins Flex
+      - name: Weak Normal
+  - team_id: usf
+    name: USF
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 3
+      i_form: 1
+      shotgun: 8
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Slot
+      - name: Ace Y-Trips
+      - name: Gun 5WR Trio
+      - name: Gun Empty Trey
+      - name: Gun Normal
+      - name: Gun Split
+      - name: Gun Split Offset
+      - name: Gun Spread Flex
+      - name: Gun Trio
+      - name: Gun Y-Trips
+      - name: I-Form Normal
+  - team_id: utep
+    name: UTEP
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 7
+      empty: 1
+      other: 1
+      shotgun: 3
+    personnel_breakdown: null
+    formations:
+      - name: Ace 4WR Trips
+      - name: Ace Big
+      - name: Ace Big Twin TE
+      - name: Ace Slot
+      - name: Ace Spread
+      - name: Ace Trips
+      - name: Ace Y-Trips
+      - name: Empty Flex Trips
+      - name: Gun Normal HB Wk
+      - name: Gun Spread
+      - name: Gun Trio HB Wk
+      - name: Maryland-I
+  - team_id: utah
+    name: Utah
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 5
+      shotgun: 7
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Bunch
+      - name: Ace Slot Flex
+      - name: Ace Twin TE Slot
+      - name: Ace Y-Trips
+      - name: Gun 4WR Trey
+      - name: Gun 5WR Trey
+      - name: Gun Normal HB Wk
+      - name: Gun Split Offset
+      - name: Gun Spread
+      - name: Gun Spread Flex
+      - name: Gun Trio Offset
+  - team_id: utah_state
+    name: Utah State
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 2
+      i_form: 3
+      other: 1
+      shotgun: 6
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big Twin TE
+      - name: Ace Y-Trips
+      - name: Gun 2-Back Slot
+      - name: Gun Normal HB Wk
+      - name: Gun Spread
+      - name: Gun Trips Over
+      - name: Gun Twin TE Slot
+      - name: Gun Y-Trips
+      - name: I-Form Normal
+      - name: I-Form Twin TE
+      - name: I-Form Twins
+      - name: Weak Normal
+  - team_id: vanderbilt
+    name: Vanderbilt
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 1
+      i_form: 3
+      other: 3
+      shotgun: 5
+    personnel_breakdown: null
+    formations:
+      - name: Ace Y-Trips
+      - name: Gun Bunch
+      - name: Gun Flanker Close
+      - name: Gun Normal
+      - name: Gun Trips
+      - name: Gun Y-Trips HB Wk
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: I-Form Twins
+      - name: Strong Normal
+      - name: Strong Twins Flex
+      - name: Weak Twins Flex
+  - team_id: virginia
+    name: Virginia
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 5
+      empty: 1
+      i_form: 2
+      other: 2
+      shotgun: 2
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Bunch
+      - name: Ace Big Twin TE
+      - name: Ace Slot
+      - name: Ace Y-Trips
+      - name: Empty Flex Trey
+      - name: Gun 2-Back Slot
+      - name: Gun Spread Flex
+      - name: I-Form Normal
+      - name: I-Form Twins
+      - name: Pro Normal
+      - name: Strong Twins
+  - team_id: virginia_tech
+    name: Virginia Tech
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 4
+      i_form: 3
+      shotgun: 5
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big Twin TE
+      - name: Ace Big Twins
+      - name: Ace Flip Trips
+      - name: Ace Y-Trips
+      - name: Gun Double Flex
+      - name: Gun Normal
+      - name: Gun Split Offset
+      - name: Gun Twin TE Slot
+      - name: Gun Y-Trips HB Wk
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: I-Form Twins Flex
+  - team_id: wake_forest
+    name: Wake Forest
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 3
+      i_form: 2
+      shotgun: 7
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twin TE
+      - name: Ace Spread Flex
+      - name: Gun Normal HB Wk
+      - name: Gun Split
+      - name: Gun Split Close
+      - name: Gun Split Offset
+      - name: Gun Split Twins
+      - name: Gun Trips Over
+      - name: Gun Y-Trips HB Wk
+      - name: I-Form Normal
+      - name: I-Form Tight
+  - team_id: washington
+    name: Washington
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 6
+      i_form: 2
+      other: 2
+      shotgun: 2
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Bunch
+      - name: Ace Slot
+      - name: Ace Spread
+      - name: Ace Twin TE Slot
+      - name: Ace Y-Trips
+      - name: Gun 5WR Flex
+      - name: Gun Empty Trips TE
+      - name: I-Form Normal
+      - name: I-Form Twins
+      - name: Strong H Pro
+      - name: Weak H Pro
+  - team_id: washington_state
+    name: Washington State
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 7
+      empty: 1
+      i_form: 2
+      shotgun: 2
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twins
+      - name: Ace Slot
+      - name: Ace Spread
+      - name: Ace Trips
+      - name: Ace Twin TE Slot
+      - name: Ace Y-Trips
+      - name: Empty Trips
+      - name: Gun Normal HB Wk
+      - name: Gun Trips
+      - name: I-Form Tight
+      - name: I-Form Twins
+  - team_id: west_coast
+    name: West Coast
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 4
+      i_form: 3
+      other: 3
+      shotgun: 2
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big Twin TE
+      - name: Ace Bunch
+      - name: Ace Slot
+      - name: Ace Spread Flex
+      - name: Gun Spread
+      - name: Gun Y-Trips HB Wk
+      - name: I-Form Close
+      - name: I-Form Normal
+      - name: I-Form Twins
+      - name: Pro Twins
+      - name: Strong Normal
+      - name: Weak Close Twins
+  - team_id: west_virginia
+    name: West Virginia
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 2
+      i_form: 2
+      other: 1
+      shotgun: 7
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Jumbo
+      - name: Gun 2-Back Slot
+      - name: Gun 5WR Trio
+      - name: Gun Normal
+      - name: Gun Split
+      - name: Gun Spread Flex
+      - name: Gun Trips
+      - name: Gun Y-Trips
+      - name: I-Form Normal
+      - name: I-Form Twins
+      - name: Strong Normal
+  - team_id: western_michigan
+    name: Western Michigan
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 3
+      empty: 1
+      i_form: 2
+      other: 2
+      shotgun: 4
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Slot
+      - name: Ace Y-Trips
+      - name: Empty Trips
+      - name: Gun 5-Wide
+      - name: Gun Bunch
+      - name: Gun Double Flex
+      - name: Gun Normal
+      - name: I-Form Normal
+      - name: I-Form Slot
+      - name: Strong Normal
+      - name: Weak Twins Flex
+  - team_id: wisconsin
+    name: Wisconsin
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 5
+      i_form: 4
+      other: 1
+      shotgun: 2
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big Twin TE
+      - name: Ace Big Twins
+      - name: Ace Bunch
+      - name: Ace Slot Flex
+      - name: Ace Y-Trips
+      - name: Gun Bunch
+      - name: Gun Y-Trips HB Wk
+      - name: I-Form Close
+      - name: I-Form Normal
+      - name: I-Form Twins
+      - name: I-Form Wing TE
+      - name: Weak Twins TE
+  - team_id: wyoming
+    name: Wyoming
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 3
+      other: 4
+      shotgun: 5
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twin TE
+      - name: Ace Y-Trips
+      - name: Gun 4WR Trey
+      - name: Gun Double Flex
+      - name: Gun Spread Flex
+      - name: Gun Trips
+      - name: Gun Y-Trips HB Wk
+      - name: Strong H Pro
+      - name: Strong H Twins
+      - name: Strong Normal
+      - name: Weak H Pro

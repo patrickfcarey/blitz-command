@@ -1,0 +1,1643 @@
+game_id: madden-04-ps2
+source: Playbook Gamer
+verification_status: unverified
+generated_date: "2026-05-18"
+notes: "Derived from Madden NFL 2004 Offensive Formation List.xlsx. Per layering rules: game-truth data; not in-game-verified."
+teams:
+  - team_id: arizona_cardinals
+    name: Arizona Cardinals
+    playbook_style: null
+    formation_count: 14
+    formation_families:
+      i_form: 5
+      other: 2
+      shotgun: 3
+      singleback: 4
+    personnel_breakdown:
+      "10": 2
+      "11": 2
+      "12": 2
+      "20": 3
+      "21": 5
+    formations:
+      - name: Singleback Normal
+        personnel: "11"
+      - name: Singleback Big
+        personnel: "12"
+      - name: Singleback 4WR
+        personnel: "10"
+      - name: Singleback Twin TE
+        personnel: "12"
+      - name: I Form Normal
+        personnel: "21"
+      - name: I Form Twin WR
+        personnel: "21"
+      - name: I Form 3WR
+        personnel: "20"
+      - name: Shotgun 2RB 3WR
+        personnel: "20"
+      - name: Shotgun 4WR
+        personnel: "10"
+      - name: Shotgun Slot Strong
+        personnel: "11"
+      - name: Weak I Normal
+        personnel: "21"
+      - name: Weak I Twins WR
+        personnel: "21"
+      - name: Strong I Normal
+        personnel: "21"
+      - name: Strong I 3WR
+        personnel: "20"
+  - team_id: atlanta_falcons
+    name: Atlanta Falcons
+    playbook_style: null
+    formation_count: 15
+    formation_families:
+      i_form: 6
+      pro_set: 1
+      shotgun: 2
+      singleback: 6
+    personnel_breakdown:
+      "10": 2
+      "11": 4
+      "12": 1
+      "20": 1
+      "21": 4
+      "22": 3
+    formations:
+      - name: I Form Normal
+        personnel: "21"
+      - name: I Form Twin WR
+        personnel: "21"
+      - name: Full House Normal
+        personnel: "22"
+      - name: Full House Strong
+        personnel: "22"
+      - name: Full House Weak
+        personnel: "22"
+      - name: Singleback Normal
+        personnel: "11"
+      - name: Singleback Tight
+        personnel: "10"
+      - name: Singleback Big
+        personnel: "12"
+      - name: Singleback 4WR
+        personnel: "10"
+      - name: Singleback Trips Bunch
+        personnel: "11"
+      - name: Singleback Slot Strong
+        personnel: "11"
+      - name: Split Backs Normal
+        personnel: "21"
+      - name: Weak I Normal
+        personnel: "21"
+      - name: Shotgun 2RB 3WR
+        personnel: "20"
+      - name: Shotgun Trips Bunch
+        personnel: "11"
+  - team_id: balanced
+    name: Balanced
+    playbook_style: null
+    formation_count: 13
+    formation_families:
+      i_form: 5
+      other: 2
+      shotgun: 3
+      singleback: 3
+    personnel_breakdown:
+      "10": 2
+      "11": 2
+      "12": 1
+      "20": 1
+      "21": 4
+      "22": 3
+    formations:
+      - name: I Form Normal
+        personnel: "21"
+      - name: I Form Twin WR
+        personnel: "21"
+      - name: I Form Big
+        personnel: "22"
+      - name: Shotgun Normal
+        personnel: "11"
+      - name: Shotgun 4WR
+        personnel: "10"
+      - name: Shotgun 2RB 3WR
+        personnel: "20"
+      - name: Singleback Normal
+        personnel: "11"
+      - name: Singleback Big
+        personnel: "12"
+      - name: Singleback 4WR
+        personnel: "10"
+      - name: Strong I Normal
+        personnel: "21"
+      - name: Strong I Big
+        personnel: "22"
+      - name: Weak I Twins WR
+        personnel: "21"
+      - name: Weak I Big
+        personnel: "22"
+  - team_id: baltimore_ravens
+    name: Baltimore Ravens
+    playbook_style: null
+    formation_count: 11
+    formation_families:
+      i_form: 4
+      pro_set: 1
+      shotgun: 2
+      singleback: 4
+    personnel_breakdown:
+      "10": 1
+      "11": 3
+      "12": 1
+      "20": 2
+      "21": 3
+      "22": 1
+    formations:
+      - name: Singleback Normal
+        personnel: "11"
+      - name: Singleback Big
+        personnel: "12"
+      - name: Singleback Slot Strong
+        personnel: "11"
+      - name: Singleback 4WR
+        personnel: "10"
+      - name: I Form Normal
+        personnel: "21"
+      - name: I Form Twin WR
+        personnel: "21"
+      - name: I Form Big
+        personnel: "22"
+      - name: I Form 3WR
+        personnel: "20"
+      - name: Split Backs Normal
+        personnel: "21"
+      - name: Shotgun Normal Offset Wk
+        personnel: "11"
+      - name: Shotgun 2RB 3WR
+        personnel: "20"
+  - team_id: buffalo_bills
+    name: Buffalo Bills
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      i_form: 2
+      other: 1
+      shotgun: 5
+      singleback: 4
+    personnel_breakdown:
+      "0": 1
+      "1": 1
+      "10": 3
+      "11": 3
+      "20": 1
+      "21": 3
+    formations:
+      - name: Shotgun Normal
+        personnel: "11"
+      - name: Shotgun 4WR
+        personnel: "10"
+      - name: Shotgun 5WR
+        personnel: "0"
+      - name: Shotgun 2RB 3WR
+        personnel: "20"
+      - name: Shotgun Trips
+        personnel: "10"
+      - name: Singleback Normal
+        personnel: "11"
+      - name: Singleback 4WR
+        personnel: "10"
+      - name: Singleback Empty 4WR
+        personnel: "1"
+      - name: Singleback Trips
+        personnel: "11"
+      - name: I Form Normal
+        personnel: "21"
+      - name: Strong I Normal
+        personnel: "21"
+      - name: Weak I Normal
+        personnel: "21"
+  - team_id: carolina_panthers
+    name: Carolina Panthers
+    playbook_style: null
+    formation_count: 13
+    formation_families:
+      i_form: 4
+      pro_set: 3
+      shotgun: 1
+      singleback: 5
+    personnel_breakdown:
+      "0": 1
+      "10": 1
+      "11": 2
+      "12": 2
+      "20": 1
+      "21": 5
+      "22": 1
+    formations:
+      - name: Singleback Normal
+        personnel: "11"
+      - name: Singleback Big
+        personnel: "12"
+      - name: Singleback 4WR
+        personnel: "10"
+      - name: Singleback Empty 5WR
+        personnel: "0"
+      - name: Singleback Twin TE
+        personnel: "12"
+      - name: I Form Normal
+        personnel: "21"
+      - name: I Form 3WR
+        personnel: "20"
+      - name: I Form Twin WR
+        personnel: "21"
+      - name: Split Backs Normal
+        personnel: "21"
+      - name: Split Backs Twins WR
+        personnel: "21"
+      - name: Split Backs Big
+        personnel: "22"
+      - name: Near Normal
+        personnel: "21"
+      - name: Shotgun Normal
+        personnel: "11"
+  - team_id: chicago_bears
+    name: Chicago Bears
+    playbook_style: null
+    formation_count: 13
+    formation_families:
+      i_form: 3
+      pro_set: 1
+      shotgun: 4
+      singleback: 5
+    personnel_breakdown:
+      "0": 1
+      "10": 3
+      "11": 3
+      "12": 1
+      "20": 2
+      "21": 2
+      "22": 1
+    formations:
+      - name: Singleback Normal
+        personnel: "11"
+      - name: Singleback Big
+        personnel: "12"
+      - name: Singleback 4WR
+        personnel: "10"
+      - name: Singleback Slot Strong
+        personnel: "11"
+      - name: Singleback Trips WR
+        personnel: "10"
+      - name: Shotgun Normal
+        personnel: "11"
+      - name: Shotgun 5WR
+        personnel: "0"
+      - name: Shotgun 2RB 3WR
+        personnel: "20"
+      - name: Shotgun Trips
+        personnel: "10"
+      - name: I Form Normal
+        personnel: "21"
+      - name: I Form Twin WR
+        personnel: "21"
+      - name: I Form Twin TE
+        personnel: "22"
+      - name: Split Backs 3WR
+        personnel: "20"
+  - team_id: cincinnati_bengals
+    name: Cincinnati Bengals
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      i_form: 6
+      other: 1
+      shotgun: 1
+      singleback: 4
+    personnel_breakdown:
+      "10": 2
+      "11": 1
+      "12": 1
+      "20": 3
+      "21": 5
+    formations:
+      - name: I Form Normal
+        personnel: "21"
+      - name: I Form Twin WR
+        personnel: "21"
+      - name: I Form 3WR
+        personnel: "20"
+      - name: Singleback Normal
+        personnel: "11"
+      - name: Singleback Big
+        personnel: "12"
+      - name: Singleback 4WR
+        personnel: "10"
+      - name: Singleback Trips WR
+        personnel: "10"
+      - name: Shotgun 2RB 3WR
+        personnel: "20"
+      - name: Weak I Normal
+        personnel: "21"
+      - name: Weak I Twins WR
+        personnel: "21"
+      - name: Weak I 3WR
+        personnel: "20"
+      - name: Strong I Normal
+        personnel: "21"
+  - team_id: cleveland_browns
+    name: Cleveland Browns
+    playbook_style: null
+    formation_count: 13
+    formation_families:
+      i_form: 4
+      other: 2
+      shotgun: 2
+      singleback: 5
+    personnel_breakdown:
+      "1": 1
+      "10": 1
+      "11": 2
+      "12": 3
+      "21": 3
+      "22": 3
+    formations:
+      - name: Singleback Normal
+        personnel: "11"
+      - name: Singleback Big
+        personnel: "12"
+      - name: Singleback Empty 4WR
+        personnel: "1"
+      - name: Singleback Twin TE
+        personnel: "12"
+      - name: Singleback Twin TE WR
+        personnel: "12"
+      - name: I Form Normal
+        personnel: "21"
+      - name: I Form Twin TE
+        personnel: "22"
+      - name: I Form Big
+        personnel: "22"
+      - name: Shotgun Normal
+        personnel: "11"
+      - name: Shotgun 4WR
+        personnel: "10"
+      - name: Strong I Normal
+        personnel: "21"
+      - name: Strong I Big
+        personnel: "22"
+      - name: Weak I Normal
+        personnel: "21"
+  - team_id: dallas_cowboys
+    name: Dallas Cowboys
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      i_form: 5
+      other: 1
+      pro_set: 1
+      shotgun: 1
+      singleback: 4
+    personnel_breakdown:
+      "10": 2
+      "11": 1
+      "12": 2
+      "20": 1
+      "21": 4
+      "22": 2
+    formations:
+      - name: I Form Normal
+        personnel: "21"
+      - name: I Form Twin WR
+        personnel: "21"
+      - name: I Form Twin TE
+        personnel: "22"
+      - name: Singleback Normal
+        personnel: "11"
+      - name: Singleback Big
+        personnel: "12"
+      - name: Singleback 4WR
+        personnel: "10"
+      - name: Singleback Twin TE
+        personnel: "12"
+      - name: Weak I Normal
+        personnel: "21"
+      - name: Weak I Big
+        personnel: "22"
+      - name: Split Backs 3WR
+        personnel: "20"
+      - name: Strong I Normal
+        personnel: "21"
+      - name: Shotgun 4WR
+        personnel: "10"
+  - team_id: denver_broncos
+    name: Denver Broncos
+    playbook_style: null
+    formation_count: 15
+    formation_families:
+      i_form: 5
+      other: 2
+      shotgun: 2
+      singleback: 6
+    personnel_breakdown:
+      "0": 1
+      "1": 1
+      "10": 1
+      "11": 2
+      "12": 3
+      "21": 5
+      "22": 2
+    formations:
+      - name: Singleback Normal
+        personnel: "11"
+      - name: Singleback Big
+        personnel: "12"
+      - name: Singleback 4WR
+        personnel: "10"
+      - name: Singleback Twin TE WR
+        personnel: "12"
+      - name: Singleback Big Twin WR
+        personnel: "12"
+      - name: Singleback Empty 4WR
+        personnel: "1"
+      - name: I Form Normal
+        personnel: "21"
+      - name: I Form Twin WR
+        personnel: "21"
+      - name: I Form Big
+        personnel: "22"
+      - name: Strong I Twins
+        personnel: "21"
+      - name: Strong I Normal
+        personnel: "21"
+      - name: Weak I Twins WR
+        personnel: "21"
+      - name: Weak I Big
+        personnel: "22"
+      - name: Shotgun 5WR
+        personnel: "0"
+      - name: Shotgun Trips TE
+        personnel: "11"
+  - team_id: detroit_lions
+    name: Detroit Lions
+    playbook_style: null
+    formation_count: 15
+    formation_families:
+      i_form: 5
+      other: 1
+      pro_set: 2
+      shotgun: 3
+      singleback: 4
+    personnel_breakdown:
+      "10": 2
+      "11": 4
+      "12": 1
+      "21": 8
+    formations:
+      - name: Singleback Normal
+        personnel: "11"
+      - name: Singleback Slot Strong
+        personnel: "11"
+      - name: Singleback 4WR
+        personnel: "10"
+      - name: Singleback Big
+        personnel: "12"
+      - name: I Form Normal
+        personnel: "21"
+      - name: I Form Twin WR
+        personnel: "21"
+      - name: Split Backs Normal
+        personnel: "21"
+      - name: Split Backs Twins WR
+        personnel: "21"
+      - name: Strong I Normal
+        personnel: "21"
+      - name: Weak I Normal
+        personnel: "21"
+      - name: Near Normal
+        personnel: "21"
+      - name: Far Normal
+        personnel: "21"
+      - name: Shotgun Normal
+        personnel: "11"
+      - name: Shotgun Normal Offset Wk
+        personnel: "11"
+      - name: Shotgun 4WR
+        personnel: "10"
+  - team_id: green_bay_packers
+    name: Green Bay Packers
+    playbook_style: null
+    formation_count: 11
+    formation_families:
+      i_form: 2
+      other: 3
+      shotgun: 3
+      singleback: 3
+    personnel_breakdown:
+      "10": 2
+      "11": 2
+      "12": 1
+      "20": 1
+      "21": 2
+      "22": 2
+      "32": 1
+    formations:
+      - name: I Form Normal
+        personnel: "21"
+      - name: I Form Big
+        personnel: "22"
+      - name: Strong I Normal
+        personnel: "21"
+      - name: Strong I Big
+        personnel: "22"
+      - name: Singleback Normal
+        personnel: "11"
+      - name: Singleback 4WR
+        personnel: "10"
+      - name: Singleback Big
+        personnel: "12"
+      - name: Shotgun 2RB 3WR
+        personnel: "20"
+      - name: Shotgun Normal
+        personnel: "11"
+      - name: Shotgun 4WR
+        personnel: "10"
+      - name: Jumbo T
+        personnel: "32"
+  - team_id: houston_texans
+    name: Houston Texans
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      i_form: 5
+      other: 1
+      shotgun: 2
+      singleback: 4
+    personnel_breakdown:
+      "10": 1
+      "11": 1
+      "12": 3
+      "20": 2
+      "21": 4
+      "22": 1
+    formations:
+      - name: Singleback Normal
+        personnel: "11"
+      - name: Singleback Big
+        personnel: "12"
+      - name: Singleback Big Twin WR
+        personnel: "12"
+      - name: Singleback Twin TE WR
+        personnel: "12"
+      - name: I Form Normal
+        personnel: "21"
+      - name: I Form Twin WR
+        personnel: "21"
+      - name: I Form 3WR
+        personnel: "20"
+      - name: Shotgun 2RB 3WR
+        personnel: "20"
+      - name: Shotgun Trips
+        personnel: "10"
+      - name: Strong I Big
+        personnel: "22"
+      - name: Weak I Normal
+        personnel: "21"
+      - name: Weak I Twins WR
+        personnel: "21"
+  - team_id: indianapolis_colts
+    name: Indianapolis Colts
+    playbook_style: null
+    formation_count: 11
+    formation_families:
+      i_form: 2
+      pro_set: 3
+      shotgun: 3
+      singleback: 3
+    personnel_breakdown:
+      "10": 1
+      "11": 3
+      "12": 1
+      "20": 2
+      "21": 4
+    formations:
+      - name: Singleback Normal
+        personnel: "11"
+      - name: Singleback Big
+        personnel: "12"
+      - name: Singleback Slot Strong
+        personnel: "11"
+      - name: I Form Normal
+        personnel: "21"
+      - name: I Form Twin WR
+        personnel: "21"
+      - name: Split Backs Normal
+        personnel: "21"
+      - name: Split Backs 3WR
+        personnel: "20"
+      - name: Split Backs Twins WR
+        personnel: "21"
+      - name: Shotgun Normal
+        personnel: "11"
+      - name: Shotgun 4WR
+        personnel: "10"
+      - name: Shotgun 2RB 3WR
+        personnel: "20"
+  - team_id: jacksonville_jaguars
+    name: Jacksonville Jaguars
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      i_form: 3
+      shotgun: 4
+      singleback: 5
+    personnel_breakdown:
+      "0": 1
+      "10": 1
+      "11": 4
+      "12": 2
+      "20": 1
+      "21": 3
+    formations:
+      - name: Singleback Normal
+        personnel: "11"
+      - name: Singleback Big
+        personnel: "12"
+      - name: Singleback Slot Strong
+        personnel: "11"
+      - name: Singleback Twin TE
+        personnel: "12"
+      - name: Singleback Trips WR
+        personnel: "10"
+      - name: I Form Normal
+        personnel: "21"
+      - name: I Form Twin WR
+        personnel: "21"
+      - name: Shotgun Normal
+        personnel: "11"
+      - name: Shotgun 5WR
+        personnel: "0"
+      - name: Shotgun Normal Offset Wk
+        personnel: "11"
+      - name: Shotgun 2RB 3WR
+        personnel: "20"
+      - name: Weak I Normal
+        personnel: "21"
+  - team_id: kansas_city_chiefs
+    name: Kansas City Chiefs
+    playbook_style: null
+    formation_count: 14
+    formation_families:
+      i_form: 4
+      other: 2
+      shotgun: 3
+      singleback: 5
+    personnel_breakdown:
+      "0": 1
+      "10": 2
+      "11": 3
+      "12": 1
+      "20": 3
+      "21": 3
+      "22": 1
+    formations:
+      - name: Singleback Normal
+        personnel: "11"
+      - name: Singleback Big
+        personnel: "12"
+      - name: Singleback Slot Strong
+        personnel: "11"
+      - name: Singleback 4WR
+        personnel: "10"
+      - name: Singleback Empty 5WR
+        personnel: "0"
+      - name: I Form Normal
+        personnel: "21"
+      - name: I Form Big
+        personnel: "22"
+      - name: I Form Twin WR
+        personnel: "21"
+      - name: I Form 3WR
+        personnel: "20"
+      - name: Strong I Normal
+        personnel: "21"
+      - name: Strong I 3WR
+        personnel: "20"
+      - name: Shotgun Normal
+        personnel: "11"
+      - name: Shotgun 2RB 3WR
+        personnel: "20"
+      - name: Shotgun 4WR
+        personnel: "10"
+  - team_id: miami_dolphins
+    name: Miami Dolphins
+    playbook_style: null
+    formation_count: 10
+    formation_families:
+      i_form: 5
+      shotgun: 2
+      singleback: 3
+    personnel_breakdown:
+      "10": 2
+      "11": 2
+      "12": 1
+      "20": 2
+      "21": 2
+      "22": 1
+    formations:
+      - name: I Form Normal
+        personnel: "21"
+      - name: I Form Big
+        personnel: "22"
+      - name: I Form 3WR
+        personnel: "20"
+      - name: Singleback Normal
+        personnel: "11"
+      - name: Singleback 4WR
+        personnel: "10"
+      - name: Singleback Big
+        personnel: "12"
+      - name: Shotgun Normal
+        personnel: "11"
+      - name: Shotgun 4WR
+        personnel: "10"
+      - name: Weak I Normal
+        personnel: "21"
+      - name: Weak I 3WR
+        personnel: "20"
+  - team_id: minnesota_vikings
+    name: Minnesota Vikings
+    playbook_style: null
+    formation_count: 16
+    formation_families:
+      i_form: 5
+      other: 2
+      shotgun: 4
+      singleback: 5
+    personnel_breakdown:
+      "10": 3
+      "11": 5
+      "12": 1
+      "21": 5
+      "22": 2
+    formations:
+      - name: Singleback Normal
+        personnel: "11"
+      - name: Singleback Big
+        personnel: "12"
+      - name: Singleback 4WR
+        personnel: "10"
+      - name: Singleback Trips Bunch
+        personnel: "11"
+      - name: Singleback Trips WR
+        personnel: "10"
+      - name: Shotgun Normal
+        personnel: "11"
+      - name: Shotgun 4WR
+        personnel: "10"
+      - name: Shotgun Slot Strong
+        personnel: "11"
+      - name: Shotgun Trips TE
+        personnel: "11"
+      - name: I Form Normal
+        personnel: "21"
+      - name: I Form Twin WR
+        personnel: "21"
+      - name: Weak I Normal
+        personnel: "21"
+      - name: Weak I Big
+        personnel: "22"
+      - name: Weak I Twins WR
+        personnel: "21"
+      - name: Strong I Normal
+        personnel: "21"
+      - name: Strong I Big
+        personnel: "22"
+  - team_id: new_england_patriots
+    name: New England Patriots
+    playbook_style: null
+    formation_count: 13
+    formation_families:
+      i_form: 4
+      other: 1
+      pro_set: 2
+      singleback: 6
+    personnel_breakdown:
+      "0": 1
+      "10": 1
+      "11": 1
+      "12": 3
+      "20": 2
+      "21": 5
+    formations:
+      - name: Singleback Normal
+        personnel: "11"
+      - name: Singleback Big
+        personnel: "12"
+      - name: Singleback Twin TE
+        personnel: "12"
+      - name: Singleback Twin TE WR
+        personnel: "12"
+      - name: Singleback Empty 5WR
+        personnel: "0"
+      - name: Singleback Trips WR
+        personnel: "10"
+      - name: I Form Normal
+        personnel: "21"
+      - name: I Form Twin WR
+        personnel: "21"
+      - name: Weak I Normal
+        personnel: "21"
+      - name: Weak I 3WR
+        personnel: "20"
+      - name: Strong I Normal
+        personnel: "21"
+      - name: Split Backs Normal
+        personnel: "21"
+      - name: Split Backs 3WR
+        personnel: "20"
+  - team_id: new_orleans_saints
+    name: New Orleans Saints
+    playbook_style: null
+    formation_count: 15
+    formation_families:
+      i_form: 4
+      other: 2
+      shotgun: 4
+      singleback: 5
+    personnel_breakdown:
+      "1": 1
+      "10": 4
+      "11": 3
+      "12": 1
+      "20": 3
+      "21": 3
+    formations:
+      - name: I Form Normal
+        personnel: "21"
+      - name: I Form 3WR
+        personnel: "20"
+      - name: Singleback Normal
+        personnel: "11"
+      - name: Singleback Big
+        personnel: "12"
+      - name: Singleback 4WR
+        personnel: "10"
+      - name: Singleback Trips WR
+        personnel: "10"
+      - name: Singleback Empty 4WR
+        personnel: "1"
+      - name: Shotgun Normal
+        personnel: "11"
+      - name: Shotgun 4WR
+        personnel: "10"
+      - name: Shotgun Slot Strong
+        personnel: "11"
+      - name: Shotgun Trips
+        personnel: "10"
+      - name: Strong I Normal
+        personnel: "21"
+      - name: Strong I 3WR
+        personnel: "20"
+      - name: Weak I Normal
+        personnel: "21"
+      - name: Weak I 3WR
+        personnel: "20"
+  - team_id: new_york_giants
+    name: New York Giants
+    playbook_style: null
+    formation_count: 14
+    formation_families:
+      i_form: 3
+      pro_set: 1
+      shotgun: 3
+      singleback: 7
+    personnel_breakdown:
+      "1": 1
+      "10": 3
+      "11": 3
+      "12": 2
+      "20": 1
+      "21": 3
+      "22": 1
+    formations:
+      - name: I Form Normal
+        personnel: "21"
+      - name: I Form Twin WR
+        personnel: "21"
+      - name: I Form Big
+        personnel: "22"
+      - name: Singleback Normal
+        personnel: "11"
+      - name: Singleback 4WR
+        personnel: "10"
+      - name: Singleback Empty 4WR
+        personnel: "1"
+      - name: Singleback Big
+        personnel: "12"
+      - name: Singleback Twin TE
+        personnel: "12"
+      - name: Singleback Tight
+        personnel: "10"
+      - name: Singleback Slot Strong
+        personnel: "11"
+      - name: Shotgun Normal
+        personnel: "11"
+      - name: Shotgun 2RB 3WR
+        personnel: "20"
+      - name: Shotgun 4WR
+        personnel: "10"
+      - name: Split Backs Normal
+        personnel: "21"
+  - team_id: new_york_jets
+    name: New York Jets
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      i_form: 5
+      other: 2
+      pro_set: 1
+      singleback: 4
+    personnel_breakdown:
+      "0": 1
+      "10": 1
+      "11": 2
+      "20": 3
+      "21": 4
+      "22": 1
+    formations:
+      - name: Singleback Normal
+        personnel: "11"
+      - name: Singleback Trips
+        personnel: "11"
+      - name: Singleback 4WR
+        personnel: "10"
+      - name: Singleback Empty 5WR
+        personnel: "0"
+      - name: I Form Normal
+        personnel: "21"
+      - name: I Form 3WR
+        personnel: "20"
+      - name: I Form Big
+        personnel: "22"
+      - name: Strong I Normal
+        personnel: "21"
+      - name: Strong I 3WR
+        personnel: "20"
+      - name: Weak I Normal
+        personnel: "21"
+      - name: Weak I Twins WR
+        personnel: "21"
+      - name: Split Backs 3WR
+        personnel: "20"
+  - team_id: oakland_raiders
+    name: Oakland Raiders
+    playbook_style: null
+    formation_count: 13
+    formation_families:
+      i_form: 4
+      pro_set: 2
+      shotgun: 1
+      singleback: 6
+    personnel_breakdown:
+      "0": 2
+      "1": 1
+      "10": 2
+      "11": 2
+      "20": 2
+      "21": 4
+    formations:
+      - name: Singleback Normal
+        personnel: "11"
+      - name: Singleback Empty 4WR
+        personnel: "1"
+      - name: Singleback Empty 5WR
+        personnel: "0"
+      - name: Singleback Trips WR
+        personnel: "10"
+      - name: Singleback Tight
+        personnel: "10"
+      - name: Singleback Trips Bunch
+        personnel: "11"
+      - name: I Form Normal
+        personnel: "21"
+      - name: I Form Twin WR
+        personnel: "21"
+      - name: Split Backs Normal
+        personnel: "21"
+      - name: Split Backs 3WR
+        personnel: "20"
+      - name: Shotgun 5WR
+        personnel: "0"
+      - name: Weak I Normal
+        personnel: "21"
+      - name: Weak I 3WR
+        personnel: "20"
+  - team_id: pass_balanced
+    name: Pass Balanced
+    playbook_style: null
+    formation_count: 10
+    formation_families:
+      i_form: 3
+      pro_set: 2
+      shotgun: 3
+      singleback: 2
+    personnel_breakdown:
+      "0": 1
+      "10": 2
+      "11": 1
+      "20": 3
+      "21": 3
+    formations:
+      - name: I Form Normal
+        personnel: "21"
+      - name: I Form Twin WR
+        personnel: "21"
+      - name: I Form 3WR
+        personnel: "20"
+      - name: Shotgun 2RB 3WR
+        personnel: "20"
+      - name: Shotgun 4WR
+        personnel: "10"
+      - name: Shotgun 5WR
+        personnel: "0"
+      - name: Singleback Normal
+        personnel: "11"
+      - name: Singleback 4WR
+        personnel: "10"
+      - name: Split Backs Normal
+        personnel: "21"
+      - name: Split Backs 3WR
+        personnel: "20"
+  - team_id: philadelphia_eagles
+    name: Philadelphia Eagles
+    playbook_style: null
+    formation_count: 15
+    formation_families:
+      i_form: 6
+      other: 1
+      pro_set: 2
+      singleback: 6
+    personnel_breakdown:
+      "1": 1
+      "10": 2
+      "11": 2
+      "12": 1
+      "20": 2
+      "21": 7
+    formations:
+      - name: Singleback Normal
+        personnel: "11"
+      - name: Singleback Big
+        personnel: "12"
+      - name: Singleback 4WR
+        personnel: "10"
+      - name: Singleback Slot Strong
+        personnel: "11"
+      - name: Singleback Empty 4WR
+        personnel: "1"
+      - name: Singleback Trips WR
+        personnel: "10"
+      - name: I Form Normal
+        personnel: "21"
+      - name: I Form 3WR
+        personnel: "20"
+      - name: I Form Twin WR
+        personnel: "21"
+      - name: Split Backs Normal
+        personnel: "21"
+      - name: Split Backs 3WR
+        personnel: "20"
+      - name: Strong I Normal
+        personnel: "21"
+      - name: Weak I Twins WR
+        personnel: "21"
+      - name: Far Normal
+        personnel: "21"
+      - name: Near Normal
+        personnel: "21"
+  - team_id: pittsburgh_steelers
+    name: Pittsburgh Steelers
+    playbook_style: null
+    formation_count: 13
+    formation_families:
+      i_form: 4
+      other: 1
+      shotgun: 3
+      singleback: 5
+    personnel_breakdown:
+      "1": 1
+      "10": 4
+      "11": 2
+      "12": 1
+      "20": 1
+      "21": 3
+      "22": 1
+    formations:
+      - name: I Form Normal
+        personnel: "21"
+      - name: I Form Twin WR
+        personnel: "21"
+      - name: I Form Twin TE
+        personnel: "22"
+      - name: I Form 3WR
+        personnel: "20"
+      - name: Singleback Trips Bunch
+        personnel: "11"
+      - name: Singleback 4WR
+        personnel: "10"
+      - name: Singleback Twin TE WR
+        personnel: "12"
+      - name: Singleback Empty 4WR
+        personnel: "1"
+      - name: Singleback Trips WR
+        personnel: "10"
+      - name: Shotgun Normal
+        personnel: "11"
+      - name: Shotgun 4WR
+        personnel: "10"
+      - name: Shotgun Trips
+        personnel: "10"
+      - name: Strong I Normal
+        personnel: "21"
+  - team_id: run_balanced
+    name: Run Balanced
+    playbook_style: null
+    formation_count: 13
+    formation_families:
+      i_form: 7
+      other: 2
+      pro_set: 1
+      singleback: 3
+    personnel_breakdown:
+      "11": 1
+      "12": 2
+      "21": 7
+      "22": 3
+    formations:
+      - name: I Form Normal
+        personnel: "21"
+      - name: I Form Twin WR
+        personnel: "21"
+      - name: I Form Big
+        personnel: "22"
+      - name: Singleback Normal
+        personnel: "11"
+      - name: Singleback Big
+        personnel: "12"
+      - name: Singleback Twin TE
+        personnel: "12"
+      - name: Split Backs Normal
+        personnel: "21"
+      - name: Strong I Normal
+        personnel: "21"
+      - name: Strong I Big
+        personnel: "22"
+      - name: Weak I Normal
+        personnel: "21"
+      - name: Weak I Big
+        personnel: "22"
+      - name: Weak I Twins WR
+        personnel: "21"
+      - name: Near Normal
+        personnel: "21"
+  - team_id: run_heavy
+    name: Run Heavy
+    playbook_style: null
+    formation_count: 9
+    formation_families:
+      i_form: 4
+      other: 1
+      pro_set: 1
+      singleback: 3
+    personnel_breakdown:
+      "12": 3
+      "21": 3
+      "22": 3
+    formations:
+      - name: I Form Big
+        personnel: "22"
+      - name: Split Backs Normal
+        personnel: "21"
+      - name: Singleback Big
+        personnel: "12"
+      - name: Singleback Twin TE
+        personnel: "12"
+      - name: Singleback Twin TE WR
+        personnel: "12"
+      - name: Strong I Big
+        personnel: "22"
+      - name: Weak I Big
+        personnel: "22"
+      - name: Far Normal
+        personnel: "21"
+      - name: Near Normal
+        personnel: "21"
+  - team_id: run_n_gun
+    name: Run N Gun
+    playbook_style: null
+    formation_count: 14
+    formation_families:
+      i_form: 3
+      shotgun: 5
+      singleback: 6
+    personnel_breakdown:
+      "1": 1
+      "10": 3
+      "11": 5
+      "12": 1
+      "20": 2
+      "21": 2
+    formations:
+      - name: Shotgun Normal
+        personnel: "11"
+      - name: Shotgun 4WR
+        personnel: "10"
+      - name: Shotgun 2RB 3WR
+        personnel: "20"
+      - name: Shotgun Trips Bunch
+        personnel: "11"
+      - name: Shotgun Trips TE
+        personnel: "11"
+      - name: Singleback Normal
+        personnel: "11"
+      - name: Singleback Big
+        personnel: "12"
+      - name: Singleback 4WR
+        personnel: "10"
+      - name: Singleback Tight
+        personnel: "10"
+      - name: Singleback Trips Bunch
+        personnel: "11"
+      - name: Singleback Empty 4WR
+        personnel: "1"
+      - name: I Form Normal
+        personnel: "21"
+      - name: I Form Twin WR
+        personnel: "21"
+      - name: I Form 3WR
+        personnel: "20"
+  - team_id: san_diego_chargers
+    name: San Diego Chargers
+    playbook_style: null
+    formation_count: 11
+    formation_families:
+      i_form: 4
+      other: 1
+      pro_set: 1
+      shotgun: 2
+      singleback: 3
+    personnel_breakdown:
+      "11": 3
+      "12": 1
+      "20": 2
+      "21": 4
+      "22": 1
+    formations:
+      - name: I Form Normal
+        personnel: "21"
+      - name: I Form Twin WR
+        personnel: "21"
+      - name: I Form Big
+        personnel: "22"
+      - name: Singleback Normal
+        personnel: "11"
+      - name: Singleback Big
+        personnel: "12"
+      - name: Singleback Slot Strong
+        personnel: "11"
+      - name: Strong I Normal
+        personnel: "21"
+      - name: Split Backs 3WR
+        personnel: "20"
+      - name: Weak I Normal
+        personnel: "21"
+      - name: Shotgun Normal
+        personnel: "11"
+      - name: Shotgun 2RB 3WR
+        personnel: "20"
+  - team_id: san_francisco_49ers
+    name: San Francisco 49ers
+    playbook_style: null
+    formation_count: 14
+    formation_families:
+      i_form: 7
+      other: 1
+      pro_set: 2
+      singleback: 4
+    personnel_breakdown:
+      "10": 1
+      "11": 2
+      "12": 1
+      "20": 2
+      "21": 7
+      "22": 1
+    formations:
+      - name: I Form Normal
+        personnel: "21"
+      - name: I Form Twin WR
+        personnel: "21"
+      - name: I Form 3WR
+        personnel: "20"
+      - name: I Form Big
+        personnel: "22"
+      - name: Singleback Normal
+        personnel: "11"
+      - name: Singleback Big
+        personnel: "12"
+      - name: Singleback 4WR
+        personnel: "10"
+      - name: Singleback Slot Strong
+        personnel: "11"
+      - name: Split Backs Normal
+        personnel: "21"
+      - name: Split Backs 3WR
+        personnel: "20"
+      - name: Strong I Normal
+        personnel: "21"
+      - name: Weak I Normal
+        personnel: "21"
+      - name: Far Normal
+        personnel: "21"
+      - name: Near Normal
+        personnel: "21"
+  - team_id: seattle_seahawks
+    name: Seattle Seahawks
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      i_form: 5
+      other: 1
+      pro_set: 1
+      singleback: 5
+    personnel_breakdown:
+      "10": 1
+      "11": 2
+      "12": 2
+      "20": 1
+      "21": 5
+      "22": 1
+    formations:
+      - name: I Form Normal
+        personnel: "21"
+      - name: I Form 3WR
+        personnel: "20"
+      - name: I Form Big
+        personnel: "22"
+      - name: Singleback Normal
+        personnel: "11"
+      - name: Singleback Big
+        personnel: "12"
+      - name: Singleback 4WR
+        personnel: "10"
+      - name: Singleback Slot Strong
+        personnel: "11"
+      - name: Singleback Twin TE
+        personnel: "12"
+      - name: Split Backs Normal
+        personnel: "21"
+      - name: Strong I Normal
+        personnel: "21"
+      - name: Weak I Normal
+        personnel: "21"
+      - name: Near Normal
+        personnel: "21"
+  - team_id: st_louis_rams
+    name: St. Louis Rams
+    playbook_style: null
+    formation_count: 16
+    formation_families:
+      i_form: 5
+      other: 1
+      pro_set: 2
+      shotgun: 2
+      singleback: 6
+    personnel_breakdown:
+      "0": 1
+      "10": 3
+      "11": 3
+      "12": 1
+      "20": 4
+      "21": 3
+      "22": 1
+    formations:
+      - name: Singleback Normal
+        personnel: "11"
+      - name: Singleback Big
+        personnel: "12"
+      - name: Singleback Trips WR
+        personnel: "10"
+      - name: Singleback Trips Bunch
+        personnel: "11"
+      - name: Singleback 4WR
+        personnel: "10"
+      - name: Singleback Empty 5WR
+        personnel: "0"
+      - name: Shotgun Normal
+        personnel: "11"
+      - name: Shotgun 4WR
+        personnel: "10"
+      - name: I Form Normal
+        personnel: "21"
+      - name: I Form 3WR
+        personnel: "20"
+      - name: I Form Twin WR
+        personnel: "21"
+      - name: Split Backs Normal
+        personnel: "21"
+      - name: Split Backs 3WR
+        personnel: "20"
+      - name: Weak I Big
+        personnel: "22"
+      - name: Weak I 3WR
+        personnel: "20"
+      - name: Strong I 3WR
+        personnel: "20"
+  - team_id: tampa_bay_buccaneers
+    name: Tampa Bay Buccaneers
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      i_form: 4
+      other: 1
+      singleback: 7
+    personnel_breakdown:
+      "0": 1
+      "1": 1
+      "10": 1
+      "11": 3
+      "12": 1
+      "20": 1
+      "21": 4
+    formations:
+      - name: Singleback Normal
+        personnel: "11"
+      - name: Singleback Big
+        personnel: "12"
+      - name: Singleback Empty 4WR
+        personnel: "1"
+      - name: Singleback Trips Bunch
+        personnel: "11"
+      - name: Singleback Tight
+        personnel: "10"
+      - name: Singleback Slot Strong
+        personnel: "11"
+      - name: Singleback Empty 5WR
+        personnel: "0"
+      - name: I Form Normal
+        personnel: "21"
+      - name: I Form 3WR
+        personnel: "20"
+      - name: I Form Twin WR
+        personnel: "21"
+      - name: Strong I Normal
+        personnel: "21"
+      - name: Weak I Twins WR
+        personnel: "21"
+  - team_id: tennessee_titans
+    name: Tennessee Titans
+    playbook_style: null
+    formation_count: 15
+    formation_families:
+      i_form: 4
+      other: 2
+      shotgun: 4
+      singleback: 5
+    personnel_breakdown:
+      "0": 2
+      "10": 2
+      "11": 4
+      "12": 1
+      "20": 2
+      "21": 3
+      "22": 1
+    formations:
+      - name: Singleback Normal
+        personnel: "11"
+      - name: Singleback Big
+        personnel: "12"
+      - name: Singleback Empty 5WR
+        personnel: "0"
+      - name: Singleback Slot Strong
+        personnel: "11"
+      - name: Singleback 4WR
+        personnel: "10"
+      - name: Shotgun Normal
+        personnel: "11"
+      - name: Shotgun 4WR
+        personnel: "10"
+      - name: Shotgun Slot Strong
+        personnel: "11"
+      - name: Shotgun 5WR
+        personnel: "0"
+      - name: I Form Normal
+        personnel: "21"
+      - name: I Form Big
+        personnel: "22"
+      - name: Weak I Normal
+        personnel: "21"
+      - name: Weak I 3WR
+        personnel: "20"
+      - name: Strong I Normal
+        personnel: "21"
+      - name: Strong I 3WR
+        personnel: "20"
+  - team_id: washington_redskins
+    name: Washington Redskins
+    playbook_style: null
+    formation_count: 15
+    formation_families:
+      i_form: 5
+      other: 1
+      pro_set: 1
+      shotgun: 3
+      singleback: 5
+    personnel_breakdown:
+      "0": 2
+      "1": 1
+      "10": 2
+      "11": 2
+      "12": 1
+      "20": 2
+      "21": 5
+    formations:
+      - name: Singleback Normal
+        personnel: "11"
+      - name: Singleback Big
+        personnel: "12"
+      - name: Singleback 4WR
+        personnel: "10"
+      - name: Singleback Empty 4WR
+        personnel: "1"
+      - name: Singleback Empty 5WR
+        personnel: "0"
+      - name: I Form Normal
+        personnel: "21"
+      - name: I Form 3WR
+        personnel: "20"
+      - name: I Form Twin WR
+        personnel: "21"
+      - name: Strong I Normal
+        personnel: "21"
+      - name: Shotgun 4WR
+        personnel: "10"
+      - name: Shotgun 5WR
+        personnel: "0"
+      - name: Shotgun Trips TE
+        personnel: "11"
+      - name: Weak I Normal
+        personnel: "21"
+      - name: Weak I Twins WR
+        personnel: "21"
+      - name: Split Backs 3WR
+        personnel: "20"
+  - team_id: west_coast
+    name: West Coast
+    playbook_style: null
+    formation_count: 16
+    formation_families:
+      i_form: 7
+      other: 1
+      pro_set: 3
+      singleback: 5
+    personnel_breakdown:
+      "10": 1
+      "11": 2
+      "12": 2
+      "20": 2
+      "21": 8
+      "22": 1
+    formations:
+      - name: I Form Normal
+        personnel: "21"
+      - name: I Form Twin WR
+        personnel: "21"
+      - name: I Form 3WR
+        personnel: "20"
+      - name: I Form Big
+        personnel: "22"
+      - name: Split Backs Normal
+        personnel: "21"
+      - name: Split Backs 3WR
+        personnel: "20"
+      - name: Split Backs Twins WR
+        personnel: "21"
+      - name: Singleback Normal
+        personnel: "11"
+      - name: Singleback Big
+        personnel: "12"
+      - name: Singleback Trips
+        personnel: "11"
+      - name: Singleback 4WR
+        personnel: "10"
+      - name: Singleback Twin TE WR
+        personnel: "12"
+      - name: Strong I Normal
+        personnel: "21"
+      - name: Weak I Normal
+        personnel: "21"
+      - name: Weak I Twins WR
+        personnel: "21"
+      - name: Far Normal
+        personnel: "21"

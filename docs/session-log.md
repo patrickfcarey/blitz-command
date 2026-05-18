@@ -29,6 +29,43 @@ Append-only handoff log. The newest session goes at the **top**. The point is so
 
 ---
 
+## 2026-05-18 — Real-game playbook catalog — Phase B build
+
+**Active thread:** Building the per-team playbook catalog from the Playbook
+Gamer corpus so the system can answer "which real team playbook from Madden 04
+fits West Coast style?" User confirmed: the docx/xlsx data is NOT for learning
+new plays — it is a lookup catalog so generated playbooks are grounded in what
+a specific game actually contains.
+
+**User direction (confirmed this session):** Catalog every game's per-team
+playbooks as structured data. Primary use: `find_team_playbook(game_id, style)`
+so when a user asks for "a Madden 08 playbook" we match the closest real team.
+
+**Landed this session:**
+- `tools/ingest-research/extract_docx_images.py` — extracts docx images in
+  document order (carries over from crash mid-session-17).
+- `tools/ingest-research/build_playbook_catalog.py` — ingests xlsx formation
+  lists into `data/games/<id>/team-playbooks.yaml`. Handles row format
+  (PLAYBOOK|FORMATION|STYLE|PERSONNEL), matrix format (formation×team X-marks),
+  and style-only sheets (NCAA Formation Type). 6 games built:
+  madden-04/05/07-ps2 (38 teams each), ncaa-04-ps2 (123), ncaa-06-ps2 (125),
+  ncaa-07-ps2 (125).
+- `schemas/team-playbooks.schema.json` — per-team catalog schema.
+- `find_team_playbooks(game_id, style, formation_family)` + `get_team_playbook(game_id, team_name)` 
+  added to game-knowledge-mcp (9 → 11 tools). README + manifest updated.
+- Memory + pending queue updated to reflect clarified purpose.
+- 266 tests pass.
+
+**In progress / next step:** Remaining games with docx-only playbooks (Madden 25 PS3
+= 51 teams, others without xlsx). `extract_docx_images.py` is ready; need a vision
+agent to read the extracted screenshots and produce formation names.
+
+**Blockers / waiting on:** User — commit this work? Proceed to docx vision pipeline?
+
+**Uncommitted state:** Everything above is uncommitted.
+
+---
+
 ## 2026-05-17 — MCP capability additions + playbook presentation + research corpus
 
 **Active thread:** four approved MCP additions, the per-formation play-call

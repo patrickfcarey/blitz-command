@@ -574,6 +574,223 @@ def translate_play(game_id: str, play_id: str) -> dict[str, Any]:
     }
 
 
+# ---------------------------------------------------------------------------
+# Team playbook catalog
+# ---------------------------------------------------------------------------
+
+_CATALOG_CACHE: dict[str, dict[str, Any]] = {}
+
+
+def _load_team_catalog(game_id: str) -> dict[str, Any] | None:
+    """Load and cache data/games/<game_id>/team-playbooks.yaml, or None if absent."""
+    if game_id in _CATALOG_CACHE:
+        return _CATALOG_CACHE[game_id]
+    path = GAMES_DIR / game_id / "team-playbooks.yaml"
+    if not path.exists():
+        return None
+    with open(path) as f:
+        data = yaml.safe_load(f)
+    _CATALOG_CACHE[game_id] = data
+    return data
+
+
+def _catalog_has_style(game_id: str) -> bool:
+    catalog = _load_team_catalog(game_id)
+    if not catalog:
+        return False
+    return any(t.get("playbook_style") for t in catalog.get("teams", []))
+
+
+@mcp.tool()
+def get_team_playbook(game_id: str, team_name: str) -> dict[str, Any]:
+    """Return a team's complete formation list from the real-game playbook catalog.
+
+    The catalog is derived from the Playbook Gamer research corpus (third-party
+    sourced, verification_status=unverified). Available for: madden-04-ps2,
+    madden-05-ps2, madden-07-ps2, ncaa-04-ps2, ncaa-06-ps2, ncaa-07-ps2.
+
+    Use this to ground a generated playbook in what a specific team actually ran
+    in a particular game — formations, personnel groupings, and family breakdown.
+
+    Returns:
+        {
+          "game_id":   "madden-04-ps2",
+          "team":      {
+            "team_id":          "new_england_patriots",
+            "name":             "New England Patriots",
+            "playbook_style":   null,          # or "West Coast" etc. (NCAA games)
+            "formation_count":  14,
+            "formation_families": {"i_form": 4, "shotgun": 6, ...},
+            "personnel_breakdown": {"11": 8, "12": 4, "21": 2} | null,
+            "formations": [{"name": "Shotgun 4WR", "personnel": "10"}, ...],
+          },
+          "verification_status": "unverified",
+          "source": "Playbook Gamer",
+        }
+
+    Args:
+        game_id:   game profile key, e.g. 'madden-04-ps2'.
+        team_name: team or school name (case-insensitive, partial match ok).
+                   E.g. "patriots", "New England", "Air Force".
+    """
+    catalog = _load_team_catalog(game_id)
+    if not catalog:
+        covered = ["madden-04-ps2", "madden-05-ps2", "madden-07-ps2",
+                   "ncaa-04-ps2", "ncaa-06-ps2", "ncaa-07-ps2"]
+        raise ValueError(
+            f"No team playbook catalog for '{game_id}'. "
+            f"Catalog available for: {covered}"
+        )
+    query = team_name.lower().strip()
+    matches = [
+        t for t in catalog["teams"]
+        if query in t["name"].lower() or query in t["team_id"]
+    ]
+    if not matches:
+        names = [t["name"] for t in catalog["teams"]]
+        raise ValueError(
+            f"No team matching '{team_name}' in {game_id}. "
+            f"Available ({len(names)} total): {names[:10]}{'...' if len(names) > 10 else ''}"
+        )
+    if len(matches) > 1:
+        # If one is an exact match, prefer it
+        exact = [m for m in matches if m["name"].lower() == query or m["team_id"] == query.replace(" ", "_")]
+        if len(exact) == 1:
+            matches = exact
+        else:
+            options = [m["name"] for m in matches]
+            raise ValueError(
+                f"'{team_name}' matches multiple teams in {game_id}: {options}. "
+                "Use a more specific name."
+            )
+    return {
+        "game_id": game_id,
+        "team": matches[0],
+        "verification_status": catalog.get("verification_status", "unverified"),
+        "source": catalog.get("source", "Playbook Gamer"),
+    }
+
+
+@mcp.tool()
+def find_team_playbooks(game_id: str,
+                        style: str | None = None,
+                        formation_family: str | None = None,
+                        limit: int = 10) -> dict[str, Any]:
+    """Find real team playbooks in a game that match a requested style or emphasis.
+
+    Primary use: when a user asks for a playbook for a specific game, call this
+    to find which real teams' formations best fit the requested style, then use
+    that team as the base.
+
+    Catalog coverage: madden-04-ps2, madden-05-ps2, madden-07-ps2,
+                      ncaa-04-ps2, ncaa-06-ps2, ncaa-07-ps2.
+
+    Returns a ranked list of teams — best match first — with formation summary.
+
+    Ranking logic:
+      - style filter: if provided, exact-match on playbook_style field (NCAA
+        games only have style tags; Madden teams are untagged).
+      - formation_family: if provided, ranks by percentage of formations in
+        that family. Values: singleback, i_form, shotgun, pistol, flexbone,
+        wishbone, power_i, ace, pro_set, wing, other.
+      - No filters: returns all teams sorted by formation_count desc.
+
+    Returns:
+        {
+          "game_id":   "ncaa-06-ps2",
+          "query":     {"style": "Option", "formation_family": null},
+          "matches":   [
+            {
+              "team_id":          "air_force",
+              "name":             "Air Force",
+              "playbook_style":   "Option",  # or null
+              "formation_count":  9,
+              "formation_families": {"flexbone": 6, "i_form": 3},
+              "personnel_breakdown": {"21": 5, "20": 3, "31": 1},
+              "match_score":      1.0,        # 0.0–1.0 for family filter; else null
+            }, ...
+          ],
+          "total_teams_in_catalog": 125,
+          "verification_status": "unverified",
+          "catalog_available": true,
+        }
+
+    Args:
+        game_id:          game profile key, e.g. 'ncaa-06-ps2'.
+        style:            optional playbook style tag, e.g. 'Option', 'West Coast',
+                          'Pro Style', 'Flexbone', 'Spread', 'Multiple'.
+        formation_family: optional family emphasis filter — returns teams with the
+                          highest share of formations in this family.
+        limit:            max results to return (default 10).
+    """
+    catalog = _load_team_catalog(game_id)
+    covered = ["madden-04-ps2", "madden-05-ps2", "madden-07-ps2",
+               "ncaa-04-ps2", "ncaa-06-ps2", "ncaa-07-ps2"]
+    if not catalog:
+        return {
+            "game_id": game_id,
+            "query": {"style": style, "formation_family": formation_family},
+            "matches": [],
+            "total_teams_in_catalog": 0,
+            "verification_status": "unverified",
+            "catalog_available": False,
+            "note": f"No catalog for '{game_id}'. Catalog available for: {covered}",
+        }
+
+    teams = catalog["teams"]
+    style_lower = style.lower().strip() if style else None
+    family_lower = formation_family.lower().strip() if formation_family else None
+
+    # Apply style filter
+    if style_lower:
+        filtered = [t for t in teams if (t.get("playbook_style") or "").lower() == style_lower]
+        if not filtered:
+            # Partial match fallback
+            filtered = [t for t in teams if style_lower in (t.get("playbook_style") or "").lower()]
+        teams = filtered if filtered else teams  # fall back to all if nothing matched
+
+    # Score by formation family share
+    scored: list[tuple[float, dict]] = []
+    for team in teams:
+        if family_lower:
+            families = team.get("formation_families") or {}
+            total = team.get("formation_count", 1) or 1
+            family_count = families.get(family_lower, 0)
+            score = family_count / total
+        else:
+            score = 0.0
+        scored.append((score, team))
+
+    # Sort: by score desc (family filter), then formation_count desc
+    scored.sort(key=lambda x: (x[0], x[1].get("formation_count", 0)), reverse=True)
+    top = scored[:limit]
+
+    matches = []
+    for score, team in top:
+        entry: dict[str, Any] = {
+            "team_id": team["team_id"],
+            "name": team["name"],
+            "playbook_style": team.get("playbook_style"),
+            "formation_count": team.get("formation_count"),
+            "formation_families": team.get("formation_families"),
+            "personnel_breakdown": team.get("personnel_breakdown"),
+        }
+        if family_lower:
+            entry["match_score"] = round(score, 3)
+        else:
+            entry["match_score"] = None
+        matches.append(entry)
+
+    return {
+        "game_id": game_id,
+        "query": {"style": style, "formation_family": formation_family},
+        "matches": matches,
+        "total_teams_in_catalog": len(catalog["teams"]),
+        "verification_status": catalog.get("verification_status", "unverified"),
+        "catalog_available": True,
+    }
+
+
 @mcp.tool()
 def manifest() -> dict[str, Any]:
     """Return this server's purpose, tool list, and worked examples."""
@@ -589,14 +806,21 @@ def manifest() -> dict[str, Any]:
             {"name": "translate_position", "description": "Convert a universal (x_yd, y_yd) point to a game's editor grid (col, row)."},
             {"name": "translate_formation", "description": "Translate all 11 player positions for a formation into editor cells."},
             {"name": "translate_play", "description": "Translate all assignment paths for a play into per-waypoint editor cells."},
+            {"name": "find_team_playbooks", "description": "Find real team playbooks in a game by style or formation family. Use to ground generated playbooks in real game data."},
+            {"name": "get_team_playbook", "description": "Full formation list for a specific team in a specific game (from Playbook Gamer corpus)."},
             {"name": "manifest", "description": "This document."},
         ],
+        "team_catalog_coverage": ["madden-04-ps2", "madden-05-ps2", "madden-07-ps2",
+                                   "ncaa-04-ps2", "ncaa-06-ps2", "ncaa-07-ps2"],
         "examples": [
             "find_games_by_era('ps2') → 20 games with 21×7 editor grid",
             "compare_games('madden-05-ps2', 'madden-10-ps3') → grid/depth/motion diff",
             "translate_position('madden-05-ps2', x_yd=0, y_yd=0) → {'col': 10, 'row': 5}",
             "translate_formation('madden-05-ps2', 'singleback-trio') → per-player cells",
             "translate_play('madden-05-ps2', 'singleback-trio-mesh') → per-waypoint cells",
+            "find_team_playbooks('ncaa-06-ps2', style='Option') → Air Force, Army, ... (Option teams)",
+            "find_team_playbooks('madden-07-ps2', formation_family='shotgun') → shotgun-heavy teams",
+            "get_team_playbook('madden-04-ps2', 'Patriots') → New England's 14 formations with personnel",
         ],
     }
 

@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blitz-command.local/schemas/team-playbooks.schema.json",
+  "title": "Team Playbook Catalog",
+  "description": "Per-team offensive formation catalog for one game, derived from the Playbook Gamer research corpus. Used to find real in-game playbooks that match a requested style.",
+  "type": "object",
+  "required": ["game_id", "source", "verification_status", "generated_date", "teams"],
+  "additionalProperties": false,
+  "properties": {
+    "game_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "Matches the game profile key (e.g. 'madden-04-ps2', 'ncaa-06-ps2')."
+    },
+    "source": {
+      "type": "string",
+      "description": "Attribution for the raw data (always 'Playbook Gamer')."
+    },
+    "verification_status": {
+      "enum": ["unverified", "inferred", "verified"],
+      "description": "Corpus data is third-party sourced, so 'unverified' unless independently confirmed."
+    },
+    "generated_date": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "teams": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/team_playbook" },
+      "minItems": 1
+    }
+  },
+  "$defs": {
+    "team_playbook": {
+      "type": "object",
+      "required": ["team_id", "name", "formations"],
+      "additionalProperties": false,
+      "properties": {
+        "team_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9_]+$",
+          "description": "Slug derived from the team name."
+        },
+        "name": {
+          "type": "string",
+          "description": "Team or school name as it appears in the game."
+        },
+        "playbook_style": {
+          "type": ["string", "null"],
+          "description": "Style tag where the source provides one (e.g. 'Option', 'West Coast', 'Pro Style', 'Multiple', 'Spread')."
+        },
+        "formation_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "formations": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/formation_entry" },
+          "minItems": 1
+        },
+        "personnel_breakdown": {
+          "type": ["object", "null"],
+          "description": "Count of formations by personnel grouping code. Only present when source data includes personnel codes.",
+          "additionalProperties": { "type": "integer" }
+        },
+        "formation_families": {
+          "type": ["object", "null"],
+          "description": "Count of formations grouped by family (singleback, i_form, shotgun, etc.). Derived from formation names.",
+          "additionalProperties": { "type": "integer" }
+        }
+      }
+    },
+    "formation_entry": {
+      "type": "object",
+      "required": ["name"],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "personnel": {
+          "type": ["string", "null"],
+          "description": "Personnel grouping code (e.g. '11', '12', '21'). Null when not in source data."
+        }
+      }
+    }
+  }
+}
