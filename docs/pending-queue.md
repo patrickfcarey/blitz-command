@@ -16,11 +16,12 @@ when an item depends on something external (user input, upstream work).
   is partially measured; still needed: max player split, max backfield depth,
   motion options, max plays per playbook.
 
-- **Playbook Gamer — remaining games.** Phase B catalog coverage is 6 games
-  (madden-04/05/07-ps2, ncaa-04/06/07-ps2). Games with docx-only data (Madden
-  25 PS3: 51 teams, Madden 01/03 PS2) need `extract_docx_images.py` + vision
-  agent to read play-screen screenshots. `tools/ingest-research/extract_docx_images.py`
-  is built; `build_playbook_catalog.py` handles all xlsx formats already.
+- **Playbook Gamer — remaining games.** Phase B catalog coverage is 7 games
+  (madden-04/05/07/25, ncaa-04/06/07). ESPN NFL 2K5 PS2 (34 docx) is next —
+  game profile exists, catalog not yet run. `ingest_docx_playbooks.py` handles
+  the ESPN screenshot format. Madden 01/03 PS2 still need their game profiles +
+  ingest. Vision ingest can run keyless in-session via subagents reading the
+  extracted images, or via the script with an `ANTHROPIC_API_KEY`.
 
 - **AI onboarding doc.** `docs/ai-onboarding.md` for smaller models joining the
   repo — a one-shot tutorial with fully-narrated tool-call sequences under
@@ -76,6 +77,11 @@ Trim periodically — old completions need not live here forever.
   + `find_team_playbooks` / `get_team_playbook` tools on game-knowledge-mcp (now 11 tools).
 - ✅ `tools/ingest-research/extract_docx_images.py` — docx image extractor for
   screenshot-based playbooks (untracked from yesterday's crash; included here).
+- ✅ docx vision-ingest pipeline — `tools/ingest-research/ingest_docx_playbooks.py`
+  classifies per-team screenshot docx via Claude vision into `team-playbooks.yaml`.
+  Case-insensitive formation dedup; restartable per-team JSON cache; needs no
+  API key for a cache-only re-aggregate. Madden 25 PS3 catalog built (50 teams,
+  968 formations, schema-valid). New game profiles: madden-25-ps3, espn-2k5-ps2.
 
 ### 2026-05
 

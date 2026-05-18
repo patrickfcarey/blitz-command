@@ -1,0 +1,20 @@
+game_id: espn-2k5-ps2
+name: "ESPN NFL 2K5"
+release_year: 2004
+developer: "Visual Concepts"
+publisher: "Sega Sports"
+platform: ps2
+era: ps2
+custom_play_support: false
+custom_formation_support: false
+grid: null
+scale: null
+snap_to_cells: false
+limits: {}
+ai_quirks: []
+known_limitations: []
+verification_status: inferred
+source_notes:
+  - "title, year, developer, publisher: standard release info."
+  - "ESPN NFL 2K5 was Sega/Visual Concepts' final NFL title before losing the NFL license to EA."
+  - "grid/scale/limits: not measured — no custom play editor in this title."

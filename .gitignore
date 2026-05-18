@@ -49,3 +49,6 @@ check_this.png
 
 # Research source corpus — extracted/derived data is committed, the raw files are not.
 research_artifacts/
+
+# docx vision-ingest caches — per-team JSON cache for ingest_docx_playbooks.py (restartable).
+.docx-cache-*/

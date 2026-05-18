@@ -29,6 +29,41 @@ Append-only handoff log. The newest session goes at the **top**. The point is so
 
 ---
 
+## 2026-05-18 (cont.) — docx vision-ingest pipeline + Madden 25 PS3 catalog
+
+**Active thread:** running the docx-screenshot playbook ingest for games with
+no xlsx data, starting with Madden NFL 25 (PS3).
+
+**Landed this session:**
+- `tools/ingest-research/ingest_docx_playbooks.py` — finished + hardened. Two
+  fixes after the first run: (1) **case-insensitive formation dedup** — vision
+  OCR reads the same formation with inconsistent casing ("Bunch Wk" / "Bunch WK");
+  exact-string dedup left 10 teams with dupes. (2) **lazy Anthropic client** —
+  a cache-only re-aggregate run now needs no `ANTHROPIC_API_KEY` at all.
+- **Madden 25 PS3 catalog** — `data/games/madden-25-ps3/team-playbooks.yaml`:
+  50 teams (38 NFL + 12 scheme/coach playbooks), 968 formation entries,
+  schema-valid. Run was done with an API key; `.docx-cache-m25/` (gitignored)
+  holds the restartable per-team classification cache.
+- New game profiles: `data/games/madden-25-ps3/editor-grid.yaml`,
+  `data/games/espn-2k5-ps2/editor-grid.yaml` (both `inferred`, grid unmeasured).
+- `.gitignore` — added `.docx-cache-*/`.
+- `requirements.txt` — added `anthropic>=0.50`.
+- Data-quality note: low formation counts on legends playbooks (Vince Lombardi=3,
+  etc.) are *real* — verified by eye, those docs are play-screen heavy and use
+  colour-coded families (RED/BROWN). Not vision misses. Status stays `unverified`.
+- 266 tests pass.
+
+**In progress / next step:** ESPN NFL 2K5 PS2 catalog (34 docx). Game profile
+exists; run `ingest_docx_playbooks.py --game espn-2k5-ps2`. Can run keyless
+in-session via subagents reading the extracted images, or via the script with
+an `ANTHROPIC_API_KEY`. User raised the API-key cost concern — the keyless
+subagent route is the answer for ESPN.
+
+**Uncommitted state:** committed this session — pipeline + Madden 25 catalog +
+both game profiles + doc updates.
+
+---
+
 ## 2026-05-18 — Real-game playbook catalog — Phase B build
 
 **Active thread:** Building the per-team playbook catalog from the Playbook

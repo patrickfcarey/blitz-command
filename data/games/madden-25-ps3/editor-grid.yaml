@@ -1,0 +1,20 @@
+game_id: madden-25-ps3
+name: "Madden NFL 25"
+release_year: 2013
+developer: "EA Tiburon"
+publisher: "EA Sports"
+platform: ps3
+era: ps3
+custom_play_support: true
+custom_formation_support: false
+grid: null
+scale: null
+snap_to_cells: false
+limits: {}
+ai_quirks: []
+known_limitations: []
+verification_status: inferred
+source_notes:
+  - "title, year, developer, publisher: standard release info."
+  - "Madden NFL 25 is the 25th-anniversary edition (released 2013). Named '25' rather than '14'."
+  - "grid/scale/limits: not yet measured — pending docs/game-editor-measurement-protocol.md."

@@ -1,0 +1,1559 @@
+game_id: madden-25-ps3
+source: Playbook Gamer
+verification_status: unverified
+generated_date: "2026-05-18"
+notes: "Derived from per-team .docx screenshot sequences in Playbooks. Vision extraction via Claude (haiku). Per layering rules: game-truth data; not in-game-verified."
+teams:
+  - team_id: arizona_cardinals
+    name: Arizona Cardinals
+    playbook_style: null
+    formation_count: 22
+    formation_families:
+      ace: 3
+      bunch: 2
+      empty: 1
+      other: 14
+      spread: 1
+      trips: 1
+    personnel_breakdown: null
+    formations:
+      - name: Jumbo
+      - name: Ace
+      - name: Ace Pair
+      - name: Ace Twins
+      - name: Bunch Base
+      - name: Doubles
+      - name: Tight Doubles
+      - name: Zona Y-Trips
+      - name: Pro
+      - name: Tight
+      - name: Tight Pair
+      - name: Split Close
+      - name: Doubles Wk
+      - name: Y Trips Wk
+      - name: Trio
+      - name: Snugs
+      - name: Bunch Wk
+      - name: Spread
+      - name: Flip Trips
+      - name: Trips HB Wk
+      - name: Empty Trey
+      - name: 5WR Trips
+  - team_id: atlanta_falcons
+    name: Atlanta Falcons
+    playbook_style: null
+    formation_count: 22
+    formation_families:
+      ace: 2
+      bunch: 2
+      empty: 2
+      other: 15
+      spread: 1
+    personnel_breakdown: null
+    formations:
+      - name: Jumbo
+      - name: Ace
+      - name: Ace Pair
+      - name: Doubles
+      - name: Tight Doubles
+      - name: V-Trips
+      - name: Y-Trips
+      - name: Bunch
+      - name: Pro
+      - name: Tight Pair
+      - name: Close
+      - name: Split Offset
+      - name: Doubles On
+      - name: Wing Trips
+      - name: Trio Falcon
+      - name: Tight Flex
+      - name: Tria Falcon
+      - name: Bunch Wk
+      - name: Spread Y-Flex
+      - name: Trey Open
+      - name: Empty Falcon
+      - name: Empty Base
+  - team_id: balanced
+    name: Balanced
+    playbook_style: null
+    formation_count: 17
+    formation_families:
+      ace: 2
+      bunch: 1
+      empty: 1
+      other: 11
+      spread: 1
+      trips: 1
+    personnel_breakdown: null
+    formations:
+      - name: Jumbo
+      - name: Ace
+      - name: Ace Pair Twins
+      - name: Doubles
+      - name: Bunch
+      - name: Trips Open
+      - name: Pro
+      - name: Tight
+      - name: Tight Pair
+      - name: Pro Twins
+      - name: Normal Wide
+      - name: Split Slot
+      - name: Y-Trips HB Wk
+      - name: Snugs Flip
+      - name: Spread
+      - name: V-Trips HB Wk
+      - name: Empty Trey
+  - team_id: baltimore_ravens
+    name: Baltimore Ravens
+    playbook_style: null
+    formation_count: 24
+    formation_families:
+      ace: 3
+      bunch: 2
+      other: 18
+      spread: 1
+    personnel_breakdown: null
+    formations:
+      - name: Jumbo
+      - name: Ace
+      - name: Ace Pair
+      - name: F Pair Twins
+      - name: Doubles Flex
+      - name: V-Trips TE Slot
+      - name: Y-Trips TE Slot
+      - name: Bunch
+      - name: Pro
+      - name: Twins Flex
+      - name: Tight
+      - name: Close
+      - name: H Twins
+      - name: H Twin TE
+      - name: H Pro
+      - name: H Close Flip
+      - name: Split Raven
+      - name: Ace Twins
+      - name: Raven Trips
+      - name: Wing Trips
+      - name: Trey Raven
+      - name: Bunch Wk
+      - name: Spread Y-Flex
+      - name: Raven Empty
+  - team_id: bill_walsh
+    name: Bill Walsh
+    playbook_style: null
+    formation_count: 14
+    formation_families:
+      other: 11
+      spread: 1
+      trips: 1
+      wing: 1
+    personnel_breakdown: null
+    formations:
+      - name: Solo
+      - name: East Right
+      - name: West Right
+      - name: Deuce Rt Near
+      - name: Double Wing
+      - name: Trips Right
+      - name: Spread
+      - name: Right
+      - name: Right Twins
+      - name: Right Close
+      - name: Slot
+      - name: Close Twins
+      - name: Jumbo
+      - name: Close
+  - team_id: brian_billick
+    name: Brian Billick
+    playbook_style: null
+    formation_count: 17
+    formation_families:
+      ace: 1
+      bunch: 1
+      other: 15
+    personnel_breakdown: null
+    formations:
+      - name: Jumbo
+      - name: Ace
+      - name: Pair Twins
+      - name: Pair Slot
+      - name: Slot Flex
+      - name: Y-Trips
+      - name: Bunch
+      - name: Slot Y-Flex
+      - name: Pro
+      - name: Pro Twins
+      - name: Slot
+      - name: Tight
+      - name: Tight Pair
+      - name: Twin TE
+      - name: Doubles
+      - name: Y-Trips HB Wk
+      - name: Normal Y-Flex
+  - team_id: buffalo_bills
+    name: Buffalo Bills
+    playbook_style: null
+    formation_count: 19
+    formation_families:
+      ace: 1
+      bunch: 2
+      empty: 1
+      other: 13
+      trips: 2
+    personnel_breakdown: null
+    formations:
+      - name: Big Wing
+      - name: Ace Pair Twins
+      - name: Tight Doubles
+      - name: Wing Trips
+      - name: Bunch
+      - name: Slot Y-Flex
+      - name: Pro
+      - name: Twins Flex
+      - name: Tight Pair
+      - name: Strong Slot Bills
+      - name: Split Slot
+      - name: Doubles Wing
+      - name: Bunch Wk
+      - name: Normal Y-Flex
+      - name: Trips Y-Flex
+      - name: Trio Open
+      - name: Trips Open
+      - name: Empty Base
+      - name: Normal
+  - team_id: carolina_panthers
+    name: Carolina Panthers
+    playbook_style: null
+    formation_count: 22
+    formation_families:
+      ace: 2
+      bunch: 1
+      empty: 1
+      other: 16
+      spread: 1
+      trips: 1
+    personnel_breakdown: null
+    formations:
+      - name: Ace
+      - name: Ace Pair Flex
+      - name: Bunch Ace
+      - name: Panther Doubles
+      - name: Tight Slot
+      - name: Tight Slots
+      - name: Tight Pair
+      - name: Pro
+      - name: Twins
+      - name: Full Panther
+      - name: Strong
+      - name: Weak
+      - name: Split Panther
+      - name: Heavy Panther
+      - name: Doubles
+      - name: V-Trips TE Slot
+      - name: Y-Trips TE Slot
+      - name: Trips TE
+      - name: Spread Y-Slot
+      - name: Trey Open
+      - name: Empty Base
+      - name: Slot Flex
+  - team_id: chicago_bears
+    name: Chicago Bears
+    playbook_style: null
+    formation_count: 20
+    formation_families:
+      ace: 2
+      bunch: 1
+      empty: 1
+      other: 15
+      spread: 1
+    personnel_breakdown: null
+    formations:
+      - name: Ace
+      - name: Ace Pair Twins
+      - name: Doubles
+      - name: Y-Trips Bear
+      - name: Bunch
+      - name: Tight Clev
+      - name: Tight Flex
+      - name: Pro
+      - name: Twins Flex
+      - name: Tight
+      - name: Tight Pair
+      - name: Split Offset
+      - name: Doubles Wk
+      - name: Y-Trips Wk
+      - name: Trio
+      - name: Snugs Flip
+      - name: Spread Flex Wk
+      - name: Trey Open
+      - name: Empty Trey
+      - name: 5WR Trio
+  - team_id: cincinnati_bengals
+    name: Cincinnati Bengals
+    playbook_style: null
+    formation_count: 21
+    formation_families:
+      ace: 2
+      bunch: 2
+      empty: 1
+      other: 13
+      spread: 2
+      trips: 1
+    personnel_breakdown: null
+    formations:
+      - name: Ace
+      - name: Ace Pair
+      - name: Doubles
+      - name: Y-Trips
+      - name: Snugs Flip
+      - name: Bunch
+      - name: Pro
+      - name: Tight Pair
+      - name: Close
+      - name: Y-Flex
+      - name: V-Flex
+      - name: Split Slot
+      - name: Normal Y-Flex Tight
+      - name: Y-Trips Bengal
+      - name: Trio
+      - name: Bunch Wk
+      - name: Spread Y-Slot
+      - name: Spread
+      - name: Trips Y Iso
+      - name: Empty Trey
+      - name: Bengal
+  - team_id: cleveland_browns
+    name: Cleveland Browns
+    playbook_style: null
+    formation_count: 21
+    formation_families:
+      ace: 2
+      bunch: 1
+      empty: 1
+      other: 15
+      spread: 1
+      trips: 1
+    personnel_breakdown: null
+    formations:
+      - name: Jumbo
+      - name: Ace
+      - name: Ace Pair Twins
+      - name: Browns Doubles
+      - name: Y-Trips
+      - name: Bunch
+      - name: Pro
+      - name: Slot Flex
+      - name: Tight Pair
+      - name: Close
+      - name: Twins Flex
+      - name: Split V-Flex
+      - name: Tight Doubles On
+      - name: Y-Trips Open
+      - name: Normal Y-Flex Tight
+      - name: Split Y-Flex
+      - name: Trips TE
+      - name: Snugs Flip
+      - name: Spread
+      - name: Trey Open
+      - name: Empty Trey
+  - team_id: dallas_cowboys
+    name: Dallas Cowboys
+    playbook_style: null
+    formation_count: 22
+    formation_families:
+      ace: 3
+      bunch: 1
+      empty: 1
+      other: 17
+    personnel_breakdown: null
+    formations:
+      - name: Jumbo
+      - name: Ace
+      - name: Ace Pair
+      - name: Ace Pair Flex
+      - name: Doubles
+      - name: V-Trips
+      - name: Y-Trips
+      - name: Bunch
+      - name: Pro
+      - name: Slot Flex
+      - name: Tight Pair
+      - name: Close
+      - name: Y-Flex
+      - name: Split Cowboy
+      - name: Y-Trips Cowboy
+      - name: Snugs Flip
+      - name: Norm Y-Flex Tight
+      - name: Y-Trips Lowboy
+      - name: Flip Trips
+      - name: Trey Open Cowboy
+      - name: Empty Trips TE
+      - name: Cowboys
+  - team_id: denver_broncos
+    name: Denver Broncos
+    playbook_style: null
+    formation_count: 21
+    formation_families:
+      bunch: 2
+      empty: 1
+      other: 17
+      trips: 1
+    personnel_breakdown: null
+    formations:
+      - name: Jumbo Z
+      - name: Deuce
+      - name: Deuce Twins
+      - name: Dice Slot
+      - name: Jumbo 2
+      - name: Y-Trips
+      - name: Bunch
+      - name: Tight
+      - name: Tight Pair
+      - name: Split Slot
+      - name: Dice Slot Wk
+      - name: Dice
+      - name: Dice Wk
+      - name: Deuce Trips
+      - name: Y-Trips HB Wk
+      - name: Trips Over
+      - name: Bunch Wk
+      - name: Dice V-Flex
+      - name: Trey 4WR Str
+      - name: Dice Y-Flex
+      - name: Empty Trey
+  - team_id: detroit_lions
+    name: Detroit Lions
+    playbook_style: null
+    formation_count: 22
+    formation_families:
+      ace: 5
+      bunch: 1
+      empty: 2
+      other: 13
+      spread: 1
+    personnel_breakdown: null
+    formations:
+      - name: Jumbo
+      - name: Ace
+      - name: Ace Pair
+      - name: Ace Pair Flex
+      - name: Doubles
+      - name: Y Trips Lion
+      - name: V-Trips Lion
+      - name: Y-Trips Lion
+      - name: Bunch
+      - name: Pro
+      - name: Tight Pair
+      - name: Strong
+      - name: Twin TE Flex
+      - name: Split Lion
+      - name: Ace Twins
+      - name: Ace TE Slot
+      - name: Y-Trips Wk
+      - name: Snugs Flip
+      - name: Spread Y-Flex
+      - name: Trey Open
+      - name: Empty Trey
+      - name: Empty Lion
+  - team_id: dick_vermeil
+    name: Dick Vermeil
+    playbook_style: null
+    formation_count: 23
+    formation_families:
+      ace: 2
+      bunch: 1
+      empty: 1
+      other: 19
+    personnel_breakdown: null
+    formations:
+      - name: Ace
+      - name: Ace Twins
+      - name: F Pair Twins
+      - name: Bunch Base
+      - name: Tight Doubles
+      - name: Doubles
+      - name: Y-Trips
+      - name: Trio
+      - name: Slot Y-Flex
+      - name: V-Trips
+      - name: Flip Trips
+      - name: Pro
+      - name: Pro Twins
+      - name: Tight
+      - name: Tight Pair
+      - name: H Pro
+      - name: Y-Flex
+      - name: V-Flex
+      - name: Split V-Flex
+      - name: Normal Y-Flex
+      - name: Empty Spread
+      - name: Normal V-Flex
+      - name: Split Y-Flex
+  - team_id: green_bay_packers
+    name: Green Bay Packers
+    playbook_style: null
+    formation_count: 22
+    formation_families:
+      ace: 3
+      bunch: 2
+      empty: 3
+      other: 14
+    personnel_breakdown: null
+    formations:
+      - name: Ace
+      - name: Ace Twins
+      - name: Ace Pair
+      - name: Flex
+      - name: Tight Flex
+      - name: Bunch
+      - name: Pro
+      - name: Slot Flex
+      - name: Tight Pair
+      - name: Doubles On
+      - name: Doubles Flex Wing
+      - name: Y-Trips Wk
+      - name: Wing Offset Wk
+      - name: Normal Y-Flex Tight
+      - name: V-Trips Wk
+      - name: Bunch Wk
+      - name: Double Flex
+      - name: Pack Trips
+      - name: Empty Trey
+      - name: Empty Wing Trip
+      - name: Empty Wing Trio
+      - name: Flex Trey
+  - team_id: houston_texans
+    name: Houston Texans
+    playbook_style: null
+    formation_count: 24
+    formation_families:
+      ace: 3
+      bunch: 2
+      empty: 2
+      other: 16
+      trips: 1
+    personnel_breakdown: null
+    formations:
+      - name: Jumbo Z
+      - name: Ace
+      - name: Ace Close
+      - name: Ace Twins
+      - name: Jumbo 2
+      - name: Bunch Base
+      - name: Tight Doubles
+      - name: Doubles
+      - name: Y-Trips Texan
+      - name: Wing Trio
+      - name: Pro
+      - name: Close
+      - name: Tight Pair
+      - name: Twins
+      - name: Split Close
+      - name: Split Texan
+      - name: Tight Doubles On
+      - name: Y-Trips HB Wk
+      - name: Tight Doubles Un
+      - name: Trips TE
+      - name: Snugs Flip
+      - name: Bunch Wk
+      - name: Empty Y-Flex
+      - name: Empty V-Flex
+  - team_id: indianapolis_colts
+    name: Indianapolis Colts
+    playbook_style: null
+    formation_count: 24
+    formation_families:
+      ace: 2
+      bunch: 2
+      empty: 1
+      i_form: 1
+      other: 16
+      spread: 1
+      trips: 1
+    personnel_breakdown: null
+    formations:
+      - name: Jumbo
+      - name: Ace
+      - name: Ace Twins
+      - name: Doubles
+      - name: Indy Y-Trips
+      - name: Indy V-Trips
+      - name: Bunch
+      - name: Pro
+      - name: Twins Flex
+      - name: Tight
+      - name: Tight Pair
+      - name: Tackle Over
+      - name: Hulk
+      - name: Flex Twins
+      - name: Full House
+      - name: Y-Trips
+      - name: Split Close
+      - name: Y Trips Wk
+      - name: Bunch TE
+      - name: Snugs
+      - name: Spread Y-Slot
+      - name: Trey Open
+      - name: Empty Trey
+      - name: Trips Over
+  - team_id: jacksonville_jaguars
+    name: Jacksonville Jaguars
+    playbook_style: null
+    formation_count: 23
+    formation_families:
+      ace: 4
+      bunch: 2
+      empty: 3
+      other: 12
+      spread: 1
+      trips: 1
+    personnel_breakdown: null
+    formations:
+      - name: Jumbo Z
+      - name: Ace
+      - name: Ace Twins
+      - name: Ace Pair Slot
+      - name: Jumbo 2
+      - name: Doubles
+      - name: Bunch
+      - name: Pro
+      - name: Tight
+      - name: Tight Pair
+      - name: Twins
+      - name: Split Jaguar
+      - name: Ace Wing TE
+      - name: Y-Trips HB Wk
+      - name: Bunch Wk
+      - name: V-Trips HB Wk
+      - name: Trips TE
+      - name: Tight Flex
+      - name: Spread Y-Flex
+      - name: Trey Open
+      - name: Empty Base
+      - name: Empty Y-Flex
+      - name: Empty V-Flex
+  - team_id: jimmy_johnson
+    name: Jimmy Johnson
+    playbook_style: null
+    formation_count: 18
+    formation_families:
+      ace: 2
+      other: 15
+      spread: 1
+    personnel_breakdown: null
+    formations:
+      - name: Ace
+      - name: Big Wing
+      - name: Ace Pair
+      - name: F Pair Twins
+      - name: Doubles
+      - name: Slot Wing
+      - name: Pair Twins
+      - name: V-Trips
+      - name: Y-Trips
+      - name: Wing Trips
+      - name: Spread
+      - name: Pro
+      - name: TE Flip
+      - name: Pro Twins
+      - name: Tight
+      - name: Tight Pair
+      - name: Split Slot
+      - name: Normal Y-Slot
+  - team_id: joe_gibbs
+    name: Joe Gibbs
+    playbook_style: null
+    formation_count: 20
+    formation_families:
+      bunch: 2
+      other: 17
+      trips: 1
+    personnel_breakdown: null
+    formations:
+      - name: Jumbo Wing
+      - name: Dot
+      - name: Dot Twins
+      - name: Twins Right
+      - name: Twins Clip
+      - name: Twins Flip
+      - name: F Pair Twins
+      - name: Deuce Wing
+      - name: Walk Right
+      - name: I Pair Twins
+      - name: Train Right
+      - name: Bunch
+      - name: Bunch Rt Freeze
+      - name: Rocket
+      - name: Trips Open
+      - name: Close
+      - name: Slot
+      - name: Tight Pair
+      - name: H Twin TE
+      - name: H Wing TE
+  - team_id: john_madden
+    name: John Madden
+    playbook_style: null
+    formation_count: 14
+    formation_families:
+      ace: 1
+      empty: 1
+      other: 12
+    personnel_breakdown: null
+    formations:
+      - name: Ace Wing
+      - name: Pair
+      - name: F Pair T Ins
+      - name: Slot
+      - name: F Pair Twins
+      - name: Pro
+      - name: Tight
+      - name: Right
+      - name: Right Twins
+      - name: Close Twins
+      - name: Jumbo
+      - name: Doubles
+      - name: Y-Trips Open
+      - name: Empty Base
+  - team_id: kansas_city_chiefs
+    name: Kansas City Chiefs
+    playbook_style: null
+    formation_count: 23
+    formation_families:
+      ace: 1
+      bunch: 2
+      empty: 2
+      other: 16
+      spread: 1
+      trips: 1
+    personnel_breakdown: null
+    formations:
+      - name: Jumbo Pair
+      - name: Ace
+      - name: Chief Doubles
+      - name: Y-Trips
+      - name: Pro
+      - name: Slot Flex
+      - name: Tight Pair
+      - name: Twin TE Slot
+      - name: Slot
+      - name: Trips
+      - name: Split Offset
+      - name: Doubles
+      - name: Doubles Wk
+      - name: Y-Trips Wk
+      - name: Snugs Flip
+      - name: Bunch Wk
+      - name: Normal Y-Slot
+      - name: Spread Flex
+      - name: Trey Open
+      - name: Empty Trey
+      - name: Empty Chief
+      - name: Bunch Quads
+      - name: Chief
+  - team_id: miami_dolphins
+    name: Miami Dolphins
+    playbook_style: null
+    formation_count: 21
+    formation_families:
+      ace: 2
+      bunch: 1
+      empty: 2
+      other: 15
+      trips: 1
+    personnel_breakdown: null
+    formations:
+      - name: Jumbo
+      - name: Ace
+      - name: Ace Pair
+      - name: Flex
+      - name: Wing Trio
+      - name: Bunch
+      - name: Pro
+      - name: Tight
+      - name: Tight Pair
+      - name: Split Dolphin
+      - name: Doubles Wk
+      - name: Doubles Wing TE
+      - name: Doubles Flex Wing
+      - name: Tight Doubles On
+      - name: Dolphin Trips
+      - name: Wing Trio Wk
+      - name: Wing Offset Wk
+      - name: Trips TE
+      - name: Snugs Flip
+      - name: Empty Base
+      - name: Empty Trey
+  - team_id: mike_ditka
+    name: Mike Ditka
+    playbook_style: null
+    formation_count: 13
+    formation_families:
+      ace: 3
+      other: 10
+    personnel_breakdown: null
+    formations:
+      - name: Ace
+      - name: Ace Twins
+      - name: Ace Pair
+      - name: F Pair Twins
+      - name: Doubles
+      - name: Y-Trips
+      - name: Wing Trips
+      - name: Slot Y-Flex
+      - name: Pro
+      - name: TE Flip
+      - name: Pro Twins
+      - name: Tight
+      - name: Tight Pair
+  - team_id: minnesota_vikings
+    name: Minnesota Vikings
+    playbook_style: null
+    formation_count: 24
+    formation_families:
+      ace: 3
+      bunch: 1
+      empty: 2
+      other: 15
+      trips: 3
+    personnel_breakdown: null
+    formations:
+      - name: Jumbo Pair
+      - name: Ace
+      - name: Ace Twins
+      - name: Ace Pair Twins
+      - name: Doubles
+      - name: Y-Trips
+      - name: Bunch
+      - name: Pro
+      - name: Twins Flex
+      - name: Slot Flex
+      - name: Tight Pair
+      - name: Close
+      - name: Split Viking
+      - name: Doubles On
+      - name: Y-Trips Wk
+      - name: Trips TE
+      - name: Doubles Un
+      - name: Double Flex
+      - name: Trips Y Iso
+      - name: Trips V Iso
+      - name: Snugs Flip
+      - name: Trey Open
+      - name: Empty Bunch
+      - name: Empty Trey
+  - team_id: new_england_patriots
+    name: New England Patriots
+    playbook_style: null
+    formation_count: 27
+    formation_families:
+      ace: 7
+      bunch: 1
+      empty: 3
+      other: 15
+      trips: 1
+    personnel_breakdown: null
+    formations:
+      - name: Jumbo Pair
+      - name: Deuce Wing
+      - name: Ace Pair Twins
+      - name: Normal Patriots
+      - name: Bunch
+      - name: TE Flip
+      - name: Tight Pair
+      - name: Pro
+      - name: Twins
+      - name: Split Patriot
+      - name: Ace
+      - name: Ace Pair Flex
+      - name: Normal Flex Wk Pats
+      - name: Ace Wing TE
+      - name: Normal Wing Pats
+      - name: Y-Trips Wk
+      - name: Pats Wing Trips
+      - name: Trips TE
+      - name: Oca Tight Slots
+      - name: Ace Tight Slots
+      - name: Normal Y-Slot
+      - name: Ace Trips Y-Iso
+      - name: Empty Ace Patriot
+      - name: Empty Y-Flex
+      - name: Ace Trips V-Iso
+      - name: Empty V-Flex
+      - name: 5WR Patriot
+  - team_id: new_orleans_saints
+    name: New Orleans Saints
+    playbook_style: null
+    formation_count: 23
+    formation_families:
+      ace: 1
+      bunch: 2
+      empty: 3
+      other: 14
+      spread: 1
+      trips: 2
+    personnel_breakdown: null
+    formations:
+      - name: Jumbo
+      - name: Ace
+      - name: Twin TE Flex
+      - name: Bunch Base
+      - name: Doubles
+      - name: Y-Trips
+      - name: Snugs Flip
+      - name: Pro
+      - name: Twins Flex
+      - name: Tight
+      - name: H Twins
+      - name: Split Offset
+      - name: Doubles Wk
+      - name: Wing Trio Wk
+      - name: Snugs
+      - name: Bunch Wk
+      - name: Spread Y-Slot
+      - name: Trips Y Iso
+      - name: Trips V Iso
+      - name: Trey Open
+      - name: Empty Trey
+      - name: Empty Saint
+      - name: Empty V-Saints
+  - team_id: new_york_giants
+    name: New York Giants
+    playbook_style: null
+    formation_count: 21
+    formation_families:
+      ace: 3
+      bunch: 1
+      empty: 2
+      other: 13
+      spread: 1
+      trips: 1
+    personnel_breakdown: null
+    formations:
+      - name: Jumbo
+      - name: Ace
+      - name: Ace Pair Twins
+      - name: Doubles Giants
+      - name: Y-Trips
+      - name: Bunch
+      - name: Pro
+      - name: Pro Twins
+      - name: Tight
+      - name: Tight Pair
+      - name: Split Giant
+      - name: Ace Twins
+      - name: Doubles Wk
+      - name: Normal Wing NY
+      - name: Y-Trips Wk
+      - name: Wing Trips Wk NY
+      - name: Trips TE
+      - name: Snugs
+      - name: Spread
+      - name: Empty Giant
+      - name: Empty Spread
+  - team_id: new_york_jets
+    name: New York Jets
+    playbook_style: null
+    formation_count: 19
+    formation_families:
+      ace: 2
+      bunch: 3
+      empty: 2
+      other: 11
+      spread: 1
+    personnel_breakdown: null
+    formations:
+      - name: Jumbo
+      - name: Ace
+      - name: Ace Pair Twins
+      - name: Doubles
+      - name: Y-Trips
+      - name: Bunch
+      - name: Pro
+      - name: Slot Flex
+      - name: Close
+      - name: Y-Flex
+      - name: Tight Pair
+      - name: Split Jet
+      - name: Snugs
+      - name: Bunch Wk
+      - name: Spread Y-Slot
+      - name: Trey Open
+      - name: Empty Trey
+      - name: Empty Jet
+      - name: Bunch Quads
+  - team_id: oakland_raiders
+    name: Oakland Raiders
+    playbook_style: null
+    formation_count: 23
+    formation_families:
+      ace: 2
+      bunch: 1
+      empty: 2
+      other: 17
+      spread: 1
+    personnel_breakdown: null
+    formations:
+      - name: Jumbo Z
+      - name: Ace
+      - name: Ace Pair Slot
+      - name: Bunch Base
+      - name: Jumbo 2
+      - name: Doubles
+      - name: Tight Doubles
+      - name: Wing Trio
+      - name: Pro
+      - name: TE Flip
+      - name: Pro Twins
+      - name: Tight Pair
+      - name: Twins
+      - name: Split V-Flex
+      - name: Doubles On
+      - name: Y-Trips Wk
+      - name: Trio Offset
+      - name: Split Y-Flex
+      - name: Snugs
+      - name: Spread Y-Flex
+      - name: Trey Open
+      - name: Empty Trey
+      - name: Empty Spread
+  - team_id: pass_balanced
+    name: Pass Balanced
+    playbook_style: null
+    formation_count: 16
+    formation_families:
+      ace: 4
+      bunch: 2
+      empty: 1
+      other: 6
+      spread: 2
+      trips: 1
+    personnel_breakdown: null
+    formations:
+      - name: Ace
+      - name: Ace Twins
+      - name: Ace Y Flex
+      - name: Ace Pair Tight
+      - name: Tight Flex
+      - name: Doubles
+      - name: Bunch
+      - name: Spread Flex
+      - name: Pro
+      - name: Tight Pair
+      - name: Split Flex
+      - name: Y Trips Wk
+      - name: Bunch Wk
+      - name: Spread Y-Slot
+      - name: Trips HB Wk
+      - name: Empty Trey
+  - team_id: philadelphia_eagles
+    name: Philadelphia Eagles
+    playbook_style: null
+    formation_count: 18
+    formation_families:
+      ace: 2
+      bunch: 1
+      empty: 2
+      other: 11
+      spread: 1
+      trips: 1
+    personnel_breakdown: null
+    formations:
+      - name: Ace
+      - name: Ace Pair Twins
+      - name: Eagle Doubles
+      - name: Tight Slots
+      - name: Bunch
+      - name: Pro
+      - name: Tight Pair
+      - name: Split Eagle
+      - name: Normal
+      - name: Y-Trips Offset
+      - name: Wing Trips Offset
+      - name: Spread HB Wk
+      - name: Trips Offset
+      - name: Trio 4WR
+      - name: Empty Trey
+      - name: Empty Spread
+      - name: 5WR Trio
+      - name: Philly
+  - team_id: pistol
+    name: Pistol
+    playbook_style: null
+    formation_count: 20
+    formation_families:
+      ace: 2
+      bunch: 1
+      i_form: 1
+      other: 13
+      spread: 1
+      trips: 2
+    personnel_breakdown: null
+    formations:
+      - name: Full House
+      - name: Strong
+      - name: Strong Twins
+      - name: Strong Slot
+      - name: Weak
+      - name: Weak Twins
+      - name: Weak Slot
+      - name: Ace
+      - name: Ace Twins
+      - name: Twin TE
+      - name: Twin TE Slot
+      - name: Wing Trips TE
+      - name: Slot
+      - name: V-Trips
+      - name: Y-Trips
+      - name: Wing Trips
+      - name: Trips
+      - name: Bunch
+      - name: Spread
+      - name: Trips Open
+  - team_id: pittsburgh_steelers
+    name: Pittsburgh Steelers
+    playbook_style: null
+    formation_count: 23
+    formation_families:
+      ace: 3
+      bunch: 2
+      empty: 1
+      other: 15
+      spread: 1
+      trips: 1
+    personnel_breakdown: null
+    formations:
+      - name: Jumbo
+      - name: Ace
+      - name: Ace Close
+      - name: Ace Pair Flex
+      - name: Ditt Doubles
+      - name: Pitt Doubles
+      - name: Y-Trips
+      - name: Bunch
+      - name: Pro
+      - name: Twins
+      - name: Tight Pair
+      - name: Close
+      - name: Split Close
+      - name: Doubles
+      - name: Y-Trips Wk
+      - name: Wing Trips Wk
+      - name: Trio
+      - name: V-Trips Wk
+      - name: Snugs
+      - name: Bunch Wk
+      - name: Spread Y-Slot
+      - name: Trips HB Wk
+      - name: Empty Steeler
+  - team_id: run_balanced
+    name: Run Balanced
+    playbook_style: null
+    formation_count: 13
+    formation_families:
+      ace: 3
+      other: 9
+      trips: 1
+    personnel_breakdown: null
+    formations:
+      - name: Ace
+      - name: Ace Twins
+      - name: Ace Pair Twins
+      - name: Flex
+      - name: V-Trips
+      - name: Y-Trips
+      - name: Trips
+      - name: Wing Trio
+      - name: Pro
+      - name: Tight Pair
+      - name: Tight Twins
+      - name: Slot
+      - name: Normal
+  - team_id: run_heavy
+    name: Run Heavy
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 3
+      bunch: 1
+      other: 7
+      spread: 1
+    personnel_breakdown: null
+    formations:
+      - name: Jumbo
+      - name: Ace
+      - name: Ace Pair Twins
+      - name: Ace Twins
+      - name: Bunch
+      - name: Spread 4WR
+      - name: Pro
+      - name: Tight Pair
+      - name: Twin TE
+      - name: Twins
+      - name: Doubles
+      - name: Wing Trips
+  - team_id: run_n_gun
+    name: Run N Gun
+    playbook_style: null
+    formation_count: 17
+    formation_families:
+      ace: 2
+      empty: 1
+      other: 13
+      spread: 1
+    personnel_breakdown: null
+    formations:
+      - name: Ace
+      - name: Ace Twins
+      - name: Y-Trips
+      - name: Doubles
+      - name: V-Trips
+      - name: Pro
+      - name: Pro Twins
+      - name: Tight
+      - name: Tight Twins
+      - name: Tight Pair
+      - name: Heavy
+      - name: Split Flex
+      - name: Tight Flex
+      - name: Spread
+      - name: Trey Open
+      - name: Empty Trio
+      - name: Normal
+  - team_id: run_and_shoot
+    name: Run and Shoot
+    playbook_style: null
+    formation_count: 7
+    formation_families:
+      other: 2
+      spread: 1
+      trips: 4
+    personnel_breakdown: null
+    formations:
+      - name: Spread
+      - name: Trips 4WR
+      - name: Trips Open
+      - name: Flanker Close
+      - name: Trips
+      - name: Trips HB Wk
+      - name: 5WR Trips
+  - team_id: san_diego_chargers
+    name: San Diego Chargers
+    playbook_style: null
+    formation_count: 22
+    formation_families:
+      ace: 3
+      bunch: 2
+      empty: 1
+      other: 14
+      spread: 1
+      trips: 1
+    personnel_breakdown: null
+    formations:
+      - name: Jumbo
+      - name: Ace
+      - name: Ace Pair
+      - name: Ace Pair Twins
+      - name: Tight Doubles
+      - name: Doubles
+      - name: Wing Trio
+      - name: Bunch
+      - name: Pro
+      - name: Pro Twins
+      - name: Tight
+      - name: Split V-Flex
+      - name: Normal Y-Flex Tight
+      - name: Doubles Wk
+      - name: Y-Trips Open
+      - name: Normal V-Flex Tight
+      - name: Split Y-Flex
+      - name: Trips TE
+      - name: Bunch Wk
+      - name: Spread
+      - name: Trey Open Charger
+      - name: Empty Trey
+  - team_id: san_francisco_49ers
+    name: San Francisco 49ers
+    playbook_style: null
+    formation_count: 23
+    formation_families:
+      ace: 3
+      bunch: 2
+      empty: 1
+      i_form: 2
+      other: 15
+    personnel_breakdown: null
+    formations:
+      - name: Jumbo Pair
+      - name: Ace Close
+      - name: Ace Pair
+      - name: Twin TE Flex
+      - name: Flex
+      - name: Bunch
+      - name: Pro
+      - name: Pro Twins
+      - name: Tight
+      - name: Tight Pair
+      - name: Niners Heavy
+      - name: Full House TE
+      - name: Full House Base
+      - name: Strong
+      - name: Strong Twins
+      - name: Weak Twins
+      - name: Ace Twins
+      - name: Doubles On
+      - name: Y-Trips Wk
+      - name: Wing Trips Wk
+      - name: Bunch HB Str
+      - name: Trey Open
+      - name: Empty Trey Flex
+  - team_id: seattle_seahawks
+    name: Seattle Seahawks
+    playbook_style: null
+    formation_count: 23
+    formation_families:
+      ace: 3
+      empty: 1
+      other: 17
+      spread: 1
+      trips: 1
+    personnel_breakdown: null
+    formations:
+      - name: Ace
+      - name: Ace Pair Flip
+      - name: Ace Pair Flex
+      - name: Doubles
+      - name: Snugs
+      - name: H Pro
+      - name: H Slot
+      - name: H Tight
+      - name: H Twin Pair
+      - name: Strong
+      - name: Strong Twins
+      - name: Jumbo Z
+      - name: Twin TE
+      - name: Trips
+      - name: Split Hawk
+      - name: Doubles On
+      - name: Y-Trips Wk
+      - name: Trio Offset
+      - name: Doubles Un
+      - name: Tight Slots
+      - name: Spread
+      - name: Trio 4WR
+      - name: Empty Trey
+  - team_id: st_louis_rams
+    name: St. Louis Rams
+    playbook_style: null
+    formation_count: 24
+    formation_families:
+      ace: 2
+      bunch: 2
+      empty: 1
+      other: 17
+      trips: 2
+    personnel_breakdown: null
+    formations:
+      - name: Jumbo
+      - name: Ace
+      - name: Ace Pair Twins
+      - name: Tight Doubles On
+      - name: Doubles
+      - name: Y-Trips
+      - name: Bunch
+      - name: Pro
+      - name: Slot Flex
+      - name: Tight Pair
+      - name: Tackle Over
+      - name: Close
+      - name: Y-Flex
+      - name: Pro Twins
+      - name: Split Offset
+      - name: Doubles On
+      - name: Wing Trips Wk
+      - name: Trips T
+      - name: Trips TE
+      - name: Snugs Flip
+      - name: Bunch Wk
+      - name: Double Flex
+      - name: Trey Open
+      - name: Empty Trey
+  - team_id: tampa_bay_buccaneers
+    name: Tampa Bay Buccaneers
+    playbook_style: null
+    formation_count: 20
+    formation_families:
+      ace: 2
+      bunch: 2
+      empty: 2
+      other: 13
+      spread: 1
+    personnel_breakdown: null
+    formations:
+      - name: Jumbo
+      - name: Ace
+      - name: Ace Pair Twins
+      - name: Doubles
+      - name: Y-Trips
+      - name: Bunch
+      - name: Pro
+      - name: Slot Flex
+      - name: Tight Pair
+      - name: H Pro
+      - name: Close
+      - name: Pro Twins
+      - name: Split Slot
+      - name: Wing Trips Wk
+      - name: Snugs Flip
+      - name: Bunch Wk
+      - name: Spread
+      - name: Buc Trips
+      - name: Empty Buc
+      - name: Empty Trey
+  - team_id: tennessee_titans
+    name: Tennessee Titans
+    playbook_style: null
+    formation_count: 20
+    formation_families:
+      ace: 3
+      bunch: 1
+      empty: 1
+      other: 15
+    personnel_breakdown: null
+    formations:
+      - name: Jumbo Pair
+      - name: Ace
+      - name: Ace Pair
+      - name: Doubles
+      - name: Y-Trips
+      - name: Snugs Flip
+      - name: Bunch
+      - name: Pro
+      - name: Tight
+      - name: Tight Pair
+      - name: Pro Twins
+      - name: Split Slot
+      - name: Ace Twins
+      - name: Doubles Wk
+      - name: Y-Trips Wk
+      - name: Dbls Y-Flex Tight
+      - name: Dbls V-Flex Tight
+      - name: Normal Y-Slot
+      - name: Trey Open
+      - name: Empty Spread
+  - team_id: tom_flores
+    name: Tom Flores
+    playbook_style: null
+    formation_count: 11
+    formation_families:
+      ace: 2
+      other: 8
+      trips: 1
+    personnel_breakdown: null
+    formations:
+      - name: Ace
+      - name: Ace Twins
+      - name: Pair
+      - name: F Pair Twins
+      - name: Slot
+      - name: Trips
+      - name: Pro
+      - name: Pro Twins
+      - name: Tight
+      - name: Twins
+      - name: Normal
+  - team_id: tom_landry
+    name: Tom Landry
+    playbook_style: null
+    formation_count: 13
+    formation_families:
+      ace: 3
+      other: 9
+      spread: 1
+    personnel_breakdown: null
+    formations:
+      - name: Ace
+      - name: Ace Twins
+      - name: Ace Wing
+      - name: TE Flip
+      - name: Twin TE
+      - name: Slot
+      - name: Pro
+      - name: Pro Twins
+      - name: Tight
+      - name: Split Slot
+      - name: Wing Trips
+      - name: Normal Y-Slot
+      - name: Spread 4WR
+  - team_id: vince_lombardi
+    name: Vince Lombardi
+    playbook_style: null
+    formation_count: 3
+    formation_families:
+      other: 2
+      wing: 1
+    personnel_breakdown: null
+    formations:
+      - name: Right
+      - name: Triple Wing
+      - name: Double Wing
+  - team_id: washington_redskins
+    name: Washington Redskins
+    playbook_style: null
+    formation_count: 21
+    formation_families:
+      ace: 2
+      bunch: 1
+      empty: 2
+      i_form: 1
+      other: 15
+    personnel_breakdown: null
+    formations:
+      - name: Jumbo
+      - name: Ace
+      - name: Ace Pair Slot
+      - name: Normal Skins
+      - name: Tight Doubles
+      - name: Pro
+      - name: Twins Flex
+      - name: Full House Tight
+      - name: Strong
+      - name: Weak
+      - name: Weak Twins Flex
+      - name: Y-Trips
+      - name: Wing Trio
+      - name: Split Redskin
+      - name: Doubles
+      - name: Snugs Flip
+      - name: Bunch Offset
+      - name: Wing Trio Wk
+      - name: Trey Open
+      - name: Empty Y-Flex
+      - name: Empty V-Flex
+  - team_id: west_coast
+    name: West Coast
+    playbook_style: null
+    formation_count: 16
+    formation_families:
+      ace: 1
+      bunch: 2
+      empty: 1
+      other: 11
+      spread: 1
+    personnel_breakdown: null
+    formations:
+      - name: Ace
+      - name: Flex
+      - name: Tight Doubles
+      - name: Y-Trips
+      - name: Bunch Swap
+      - name: Spread
+      - name: Pro
+      - name: Tight Pair
+      - name: Tight Twins
+      - name: Y Left Twins
+      - name: Flex Twins
+      - name: Split Offset
+      - name: Bunch Wk
+      - name: Snugs Flip
+      - name: Double Flex
+      - name: Empty Trey
