@@ -46,3 +46,6 @@ secrets/
 # Local / machine-specific (not version-controlled)
 /.claude
 check_this.png
+
+# Research source corpus — extracted/derived data is committed, the raw files are not.
+research_artifacts/

@@ -58,8 +58,12 @@ PLAYS_DIR = REPO_ROOT / "data" / "plays"
 DRAW_SCRIPT = REPO_ROOT / "tools" / "draw-play" / "draw.py"
 sys.path.insert(0, str(REPO_ROOT / "tools" / "compile-glossary"))
 sys.path.insert(0, str(REPO_ROOT / "tools" / "playbook-profile"))
+sys.path.insert(0, str(REPO_ROOT / "tools" / "playbook-call-breakdown"))
+sys.path.insert(0, str(REPO_ROOT / "tools" / "playbook-install-schedule"))
 import compile_glossary  # noqa: E402
 import profile  # noqa: E402  - the shared tendency-profile module (not stdlib profile)
+import breakdown  # noqa: E402  - the shared per-formation call-breakdown module
+import schedule  # noqa: E402  - the shared install-schedule module
 
 
 # ─── Page geometry ────────────────────────────────────────────────────────────
@@ -615,6 +619,57 @@ def _tendency_flowables(tendency: dict, styles: dict) -> list:
     return flowables
 
 
+def _call_breakdown_flowables(section: dict, styles: dict) -> list:
+    """Flowables for one formation section's play-call breakdown — its plays
+    grouped by disguise family, each with its share of the formation's calls.
+    The page title carries the section name; this returns the page body."""
+    share = section.get("target_snap_share_pct")
+    intro = (f"This formation group is {share}% of the offense's snaps. "
+             if share else "")
+    intro += ("Plays are grouped by disguise family — every play in a family "
+              "shows the defense the same pre-snap look and early action, so "
+              "they install together. The percentage after each play is its "
+              "share of the calls made from this formation.")
+    flowables: list = [Paragraph(intro, styles["body"])]
+    for family in section.get("families", []):
+        flowables.append(Paragraph(
+            f"{_esc(family['family_name'])} — "
+            f"{family.get('family_share_pct', 0)}% of formation calls",
+            styles["h2"]))
+        for play in family.get("plays", []):
+            role = play.get("role")
+            role_text = f"  <i>({_esc(role)})</i>" if role else ""
+            flowables.append(Paragraph(
+                f"•  {_esc(play['name'])} — "
+                f"{play.get('share_of_section_pct', 0)}%{role_text}",
+                styles["bullet"]))
+    return flowables
+
+
+def _install_schedule_flowables(install_schedule: list, styles: dict) -> list:
+    """Flowables for the install-schedule page — plays grouped into install
+    phases, each annotated with its formation section and disguise family."""
+    flowables: list = [Paragraph(
+        "Plays install in phases. The Day-1 and Week-1 plays are the spine — "
+        "the minimum needed to play a game. Week-2 and the mid-season adds "
+        "layer disguise depth on top. A companion play never installs before "
+        "its family's base play.", styles["body"])]
+    for phase in install_schedule:
+        flowables.append(Paragraph(
+            f"{_esc(phase['label'])} — {phase['play_count']} plays",
+            styles["h2"]))
+        for play in phase.get("plays", []):
+            tail = [play["section_name"]]
+            if play.get("family_name"):
+                tail.append(play["family_name"])
+            if play.get("role"):
+                tail.append(play["role"])
+            flowables.append(Paragraph(
+                f"•  {_esc(play['name'])} — <i>{_esc(' · '.join(tail))}</i>",
+                styles["bullet"]))
+    return flowables
+
+
 def _flow_text_pages(c: Canvas, page_title: str, flowables: list) -> int:
     """Draw `flowables` across as many letter pages as needed, each carrying
     `page_title`. Returns the number of pages drawn."""
@@ -678,46 +733,61 @@ def _render_playbook(playbook_path: Path, args: argparse.Namespace) -> None:
     _flow_text_pages(c, "How to Read This Playbook",
                      _how_to_read_flowables(front_matter, styles))
 
+    install_schedule = schedule.compute_install_schedule(playbook_path)
+    _flow_text_pages(c, "Install Schedule",
+                     _install_schedule_flowables(install_schedule, styles))
+
     tendency = profile.compute_tendency_profile(playbook_path)
     _flow_text_pages(c, "Playbook Tendencies", _tendency_flowables(tendency, styles))
 
     glossary = compile_glossary.compile_glossary(playbook_path)
     _flow_text_pages(c, "Glossary", _glossary_flowables(glossary, styles))
 
-    play_entries = [
-        entry
-        for section in playbook.get("formation_sections", [])
-        for entry in section.get("plays", [])
-    ]
-    plays_with_svgs: list = []
+    breakdown_sections = breakdown.compute_call_breakdown(playbook_path)
+    breakdown_by_id = {s["section_id"]: s for s in breakdown_sections}
+
+    total_plays = 0
     missing_play_ids: list[str] = []
     failed_diagram_ids: list[str] = []
     diagram_counts = {"found": 0, "rendered": 0, "failed": 0}
     with tempfile.TemporaryDirectory(prefix="playbook-diagrams-") as render_dir_name:
         render_dir = Path(render_dir_name)
-        for entry in play_entries:
-            play_id = entry["play_id"]
-            play_path = PLAYS_DIR / f"{play_id}.yaml"
-            if not play_path.exists():
-                missing_play_ids.append(play_id)
-                continue
-            play = _load_yaml(play_path)
-            resolved_id = play.get("play_id") or play_id
-            svg, status = _ensure_svg(resolved_id, args.game,
-                                      args.diagram_dir, render_dir)
-            diagram_counts[status] += 1
-            if status == "failed":
-                failed_diagram_ids.append(resolved_id)
-            plays_with_svgs.append((play, svg))
-        # The on-demand renders live in the temp dir — it must outlive the
-        # play pages being drawn, so draw them inside the `with` block.
-        _draw_play_pages(c, plays_with_svgs, title, args.layout)
+        for section in playbook.get("formation_sections", []):
+            section_name = (section.get("name") or section.get("section_id")
+                            or "Formation")
+            # 1. The play-call breakdown — before the formation's play pages.
+            section_breakdown = breakdown_by_id.get(section.get("section_id"))
+            if section_breakdown:
+                _flow_text_pages(
+                    c, f"{section_name} — Play-Call Breakdown",
+                    _call_breakdown_flowables(section_breakdown, styles))
+            # 2. The formation's play pages.
+            section_plays_with_svgs: list = []
+            for entry in section.get("plays", []):
+                play_id = entry["play_id"]
+                play_path = PLAYS_DIR / f"{play_id}.yaml"
+                if not play_path.exists():
+                    missing_play_ids.append(play_id)
+                    continue
+                play = _load_yaml(play_path)
+                resolved_id = play.get("play_id") or play_id
+                svg, status = _ensure_svg(resolved_id, args.game,
+                                          args.diagram_dir, render_dir)
+                diagram_counts[status] += 1
+                if status == "failed":
+                    failed_diagram_ids.append(resolved_id)
+                section_plays_with_svgs.append((play, svg))
+            # The on-demand renders live in the temp dir — it must outlive the
+            # play pages being drawn, so draw them inside the `with` block.
+            _draw_play_pages(c, section_plays_with_svgs, section_name,
+                             args.layout)
+            total_plays += len(section_plays_with_svgs)
 
     _flow_text_pages(c, "Appendix", _appendix_flowables(front_matter, styles))
 
     c.save()
     print(f"Wrote {args.output} — playbook '{playbook.get('playbook_id')}': "
-          f"{len(plays_with_svgs)} plays, {len(glossary)} glossary terms")
+          f"{total_plays} plays, {len(glossary)} glossary terms")
     print(f"  diagrams: {diagram_counts['found']} pre-rendered, "
           f"{diagram_counts['rendered']} rendered on demand, "
           f"{diagram_counts['failed']} failed")

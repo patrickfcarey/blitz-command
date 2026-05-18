@@ -29,6 +29,43 @@ Append-only handoff log. The newest session goes at the **top**. The point is so
 
 ---
 
+## 2026-05-17 — MCP capability additions + playbook presentation + research corpus
+
+**Active thread:** four approved MCP additions, the per-formation play-call
+breakdown the user asked for mid-session, and starting analysis of the
+Playbook Gamer research corpus.
+
+**Landed this session:**
+- **formation-library-mcp** +3 personnel tools — `list_personnel_groupings`,
+  `get_personnel_grouping`, `find_formations_by_personnel` (10 tools).
+- **pass-concept-mcp** +`find_pass_concepts_by_depth` (7 tools).
+  **play-library-mcp** +`find_plays_by_rpo_type`, `rpo_type` now surfaced in
+  `scout_play` (22 tools — also fixed a manifest missing `list_play_templates`).
+  run-concept-mcp's category filter already existed — no change.
+- `update_play` on play-library-mcp was already implemented — verified only.
+- **Per-formation play-call breakdown** — new `tools/playbook-call-breakdown/
+  breakdown.py`; the playbook PDF now opens each formation section with a page
+  listing its plays grouped by disguise family with each play's call %.
+  Exposed as `playbook_call_breakdown`.
+- **Install schedule** — new `tools/playbook-install-schedule/schedule.py`;
+  PDF gains an Install Schedule page (Day 1 / Week 1 / Week 2 / mid-season).
+  Exposed as `playbook_install_schedule` (playbook-generation-mcp now 16 tools).
+- **Phase A research corpus** — `research_artifacts/` (19,389 files) is
+  git-ignored; `tools/ingest-research/parse_xlsx.py` reads the 26 structured
+  xlsx without openpyxl. Findings in `docs/playbookgamer-pdf-integration.md`.
+- 266 tests pass (was 257).
+
+**In progress / next step:** Phase B of the research corpus — the 559 docx
+turned out to be per-team / per-defense PLAYBOOK documents (not game manuals),
+largely redundant with the Phase A xlsx. Decide whether docx extraction is
+worth the effort before launching subagents.
+
+**Blockers / waiting on:** user decision on (1) committing this session's
+work, (2) Phase B direction.
+
+**Uncommitted state:** everything above is uncommitted, on top of the large
+pre-existing uncommitted tree. Nothing committed this session.
+
 ## 2026-05-15 — Playbook schema + first HS playbook + audible/counter system
 
 **Active thread:** designing the playbook data layer and authoring the first

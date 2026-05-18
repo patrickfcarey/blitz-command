@@ -24,6 +24,8 @@ from mcp.server.fastmcp import FastMCP
 REPO_ROOT = Path(__file__).resolve().parents[2]
 FORMATIONS_DIR = REPO_ROOT / "data" / "formations"
 SCHEMA_PATH = REPO_ROOT / "schemas" / "formation.schema.json"
+PERSONNEL_PATH = REPO_ROOT / "data" / "concepts" / "personnel-groupings.yaml"
+PERSONNEL_SCHEMA_PATH = REPO_ROOT / "schemas" / "personnel-groupings.schema.json"
 
 
 _SCHEMA_CACHE: dict | None = None
@@ -76,6 +78,48 @@ def _invalidate_formations_cache() -> None:
     global _FORMATIONS_CACHE, _FORMATIONS_CACHE_MTIME
     _FORMATIONS_CACHE = None
     _FORMATIONS_CACHE_MTIME = 0.0
+
+
+_PERSONNEL_CACHE: list[dict[str, Any]] | None = None
+_PERSONNEL_CACHE_MTIME: float = 0.0
+
+
+def _load_personnel_groupings() -> list[dict[str, Any]]:
+    """Load the personnel-grouping reference list. Cached by file mtime."""
+    global _PERSONNEL_CACHE, _PERSONNEL_CACHE_MTIME
+    current_mtime = (
+        PERSONNEL_PATH.stat().st_mtime if PERSONNEL_PATH.exists() else 0.0
+    )
+    if _PERSONNEL_CACHE is not None and current_mtime == _PERSONNEL_CACHE_MTIME:
+        return _PERSONNEL_CACHE
+    groupings: list[dict[str, Any]] = []
+    if PERSONNEL_PATH.exists():
+        with open(PERSONNEL_PATH) as f:
+            data = yaml.safe_load(f) or {}
+        if PERSONNEL_SCHEMA_PATH.exists():
+            try:
+                with open(PERSONNEL_SCHEMA_PATH) as schema_file:
+                    validate(data, json.load(schema_file))
+            except ValidationError as e:
+                print(f"WARN: personnel-groupings.yaml failed schema "
+                      f"validation: {e}", file=sys.stderr)
+        groupings = data.get("groupings", [])
+    _PERSONNEL_CACHE = groupings
+    _PERSONNEL_CACHE_MTIME = current_mtime
+    return _PERSONNEL_CACHE
+
+
+def _normalize_personnel_code(value: Any) -> str:
+    """Normalize a personnel value to a comparable two-character code.
+
+    Formation `personnel` fields and grouping `code`s can arrive as '11', 11,
+    or '0'; this maps them all to a zero-padded two-character string. An
+    empty or missing value stays empty so it matches no real code.
+    """
+    if value is None:
+        return ""
+    text = str(value).strip()
+    return text.zfill(2) if text else ""
 
 
 mcp = FastMCP("formation-library")
@@ -265,6 +309,103 @@ def find_formations_by_concept(concept: str) -> list[str]:
 
 
 @mcp.tool()
+def list_personnel_groupings() -> list[dict[str, Any]]:
+    """List every offensive personnel grouping (the two-digit RB/TE codes).
+
+    A personnel grouping is named by a two-digit code: the first digit is the
+    running-back count, the second the tight-end count. The five skill spots
+    (the QB aside) not filled by a back or tight end are wide receivers — so
+    11 personnel is 1 RB + 1 TE + 3 WR. An offensive formation's `personnel`
+    field carries the matching code; find_formations_by_personnel(code) goes
+    the other way.
+
+    Returns one object per grouping:
+        {
+          "code":           "11",
+          "name":           "11 Personnel",
+          "running_backs":  1,
+          "tight_ends":     1,
+          "wide_receivers": 3,
+          "typical_use":    "Base down-and-distance offense at every level; ...",
+          "tags":           ["balanced", "spread", "base"],
+        }
+
+    For the long description + example formations of one grouping, call
+    get_personnel_grouping(code).
+
+    Example:
+        >>> [g['code'] for g in list_personnel_groupings()][:5]
+        ['00', '01', '02', '03', '10']
+    """
+    return [
+        {
+            "code": g.get("code"),
+            "name": g.get("name"),
+            "running_backs": g.get("running_backs"),
+            "tight_ends": g.get("tight_ends"),
+            "wide_receivers": g.get("wide_receivers"),
+            "typical_use": g.get("typical_use"),
+            "tags": g.get("tags", []),
+        }
+        for g in _load_personnel_groupings()
+    ]
+
+
+@mcp.tool()
+def get_personnel_grouping(code: str) -> dict[str, Any]:
+    """Get the full reference entry for one personnel grouping by its code.
+
+    Returns the complete object — code, name, running_backs, tight_ends,
+    wide_receivers, description, typical_use, example_formations, tags.
+
+    Codes are two-character strings '00' through '32' (first digit the RB
+    count, second the TE count). Integer-style input is accepted and
+    zero-padded — both 11 and '11' resolve to '11'.
+
+    Example:
+        >>> g = get_personnel_grouping('21')
+        >>> (g['running_backs'], g['tight_ends'], g['wide_receivers'])
+        (2, 1, 2)
+
+    Args:
+        code: the two-digit grouping code (e.g. '11', '21').
+    """
+    wanted = _normalize_personnel_code(code)
+    groupings = _load_personnel_groupings()
+    for grouping in groupings:
+        if _normalize_personnel_code(grouping.get("code", "")) == wanted:
+            return grouping
+    available = sorted(g.get("code", "") for g in groupings)
+    raise ValueError(
+        f"No personnel grouping with code '{code}'. Available codes: {available}"
+    )
+
+
+@mcp.tool()
+def find_formations_by_personnel(code: str) -> list[str]:
+    """Return formation IDs that use the given personnel grouping.
+
+    Matches each offensive formation's `personnel` field against the two-digit
+    code. Integer-style input is accepted and zero-padded — '0' and 0 both
+    match the '00' (empty / 5-wide) grouping.
+
+    Example:
+        >>> find_formations_by_personnel('21')
+        ['i-formation', 'i-formation-left', ...]
+        >>> find_formations_by_personnel('11')
+        ['shotgun-2x2', 'singleback-ace', 'singleback-trio', ...]
+
+    Args:
+        code: the two-digit personnel code (e.g. '11', '21').
+    """
+    wanted = _normalize_personnel_code(code)
+    return [
+        fid for fid, f in _load_all().items()
+        if _normalize_personnel_code(f.get("personnel", "")) == wanted
+    ]
+
+
+@mcp.tool()
 def save_formation(
     formation_data: dict[str, Any],
     overwrite: bool = False,
@@ -424,12 +565,16 @@ def manifest() -> dict[str, Any]:
             {"name": "get_formation", "description": "Full YAML: player coords, on_line flags, run_concepts, pass_concepts, era, famous_users."},
             {"name": "find_formations_by_tag", "description": "Exact tag match (e.g., 'shotgun', 'trips', '11-personnel', 'defense')."},
             {"name": "find_formations_by_concept", "description": "Formations whose run_concepts or pass_concepts include this concept."},
+            {"name": "list_personnel_groupings", "description": "Every offensive personnel grouping (two-digit RB/TE code, counts, typical use, tags)."},
+            {"name": "get_personnel_grouping", "description": "Full reference entry for one personnel grouping by code ('00'-'32')."},
+            {"name": "find_formations_by_personnel", "description": "Formations whose personnel field matches a two-digit grouping code."},
             {"name": "save_formation", "description": "Validate + write a new formation YAML to data/formations/."},
             {"name": "update_formation", "description": "Shallow-patch top-level fields of an existing formation (re-validates schema)."},
             {"name": "manifest", "description": "This document."},
         ],
         "examples": [
             "find_formations_by_tag('shotgun') → shotgun-2x2, shotgun-trips-right, ...",
+            "find_formations_by_personnel('21') → i-formation, i-formation-left, ...",
             "save_formation(data) → {saved: True, path: '...', warnings: [...]}",
             "update_formation('singleback-trio', {'era': '1990s–present'}) → {updated: True, changed_keys: ['era']}",
         ],

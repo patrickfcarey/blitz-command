@@ -1,6 +1,6 @@
 # playbook-generation-mcp
 
-MCP server for **assembling** custom playbooks from the library and for **working with authored playbooks** in `data/playbooks/` — their sections, audible systems, counter-responses, validation, glossary compilation, and tendency profiling. **14 tools.**
+MCP server for **assembling** custom playbooks from the library and for **working with authored playbooks** in `data/playbooks/` — their sections, audible systems, counter-responses, validation, glossary compilation, tendency profiling, per-formation call breakdowns, and install schedules. **16 tools.**
 
 **Boundary rule**: this server owns collection-level reasoning — anything that treats a *set* of plays as a unit. Single-play analysis (compare two plays, predict a matchup, scout a play, query a disguise family) belongs in `play-library-mcp`.
 
@@ -24,6 +24,8 @@ MCP server for **assembling** custom playbooks from the library and for **workin
 - **`playbook_call_sheet(playbook_id)`** — every play with its derived total snap share (`section target_snap_share_pct × play share_of_section_pct`), sorted — the coach's-eye call sheet
 - **`playbook_glossary(playbook_id)`** — compile the playbook's glossary: every route/concept its plays use, paired with the description from its data file, plus authored `front_matter.glossary_additions`. Compiled on demand via `tools/compile-glossary/compile_glossary.py`, so it never drifts from the plays
 - **`playbook_tendency_profile(playbook_id)`** — derive the playbook's run/pass balance and its snap split by play type, formation, and personnel grouping, from the stored call shares. Computed on demand via `tools/playbook-profile/profile.py`
+- **`playbook_call_breakdown(playbook_id)`** — break the playbook down formation by formation: each section's plays grouped by disguise family, with each play's share of that formation's calls. Computed on demand via `tools/playbook-call-breakdown/breakdown.py`
+- **`playbook_install_schedule(playbook_id)`** — group the playbook's plays into install phases (Day 1 / Day 2 / Week 1 / Week 2 / mid-season) from each play's `install_order`, annotated with formation + disguise family. Computed on demand via `tools/playbook-install-schedule/schedule.py`
 
 ### Meta
 

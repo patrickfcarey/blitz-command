@@ -1,6 +1,6 @@
 # formation-library-mcp
 
-MCP server that exposes blitz-command's **offensive** formation library to AI agents. Defensive formations are owned by coverage-mcp. **7 tools.**
+MCP server that exposes blitz-command's **offensive** formation library to AI agents. Defensive formations are owned by coverage-mcp. **10 tools.**
 
 For end-to-end client setup + worked examples, see [`docs/using-the-mcps.md`](../../docs/using-the-mcps.md).
 
@@ -10,6 +10,9 @@ For end-to-end client setup + worked examples, see [`docs/using-the-mcps.md`](..
 - **`get_formation(formation_id)`** — full formation YAML; suggests "Did you mean…?" on miss
 - **`find_formations_by_tag(tag)`** — exact case-insensitive tag match (`shotgun`, `flexbone`, `trips`, `11-personnel`, etc.)
 - **`find_formations_by_concept(concept)`** — formations whose `run_concepts` or `pass_concepts` include this concept (e.g. `inside-zone`, `four-verticals`, `mesh`)
+- **`list_personnel_groupings()`** — every offensive personnel grouping (two-digit RB/TE code, counts, typical use, tags)
+- **`get_personnel_grouping(code)`** — full reference entry for one grouping (`'00'`–`'32'`)
+- **`find_formations_by_personnel(code)`** — formations whose `personnel` field matches the grouping code
 - **`save_formation(formation_data, overwrite=False)`** — validate and write a new formation YAML to `data/formations/`
 - **`update_formation(formation_id, patch)`** — shallow-patch top-level fields of an existing formation (re-validates schema)
 - **`manifest()`** — this server's purpose, tool list, and worked examples

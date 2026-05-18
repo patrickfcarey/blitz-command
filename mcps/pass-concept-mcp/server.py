@@ -86,6 +86,7 @@ def list_pass_concepts(cursor: str | None = None, limit: int = 50) -> dict[str, 
           "id":               "mesh",
           "name":             "Mesh",
           "category":         "timing-route" | "area-read" | ...,
+          "depth":            "quick" | "medium" | "deep",
           "best_vs_coverage": ["man", "two-high", ...],
           "tags":             ["mesh", "west-coast", ...],
         }
@@ -104,6 +105,7 @@ def list_pass_concepts(cursor: str | None = None, limit: int = 50) -> dict[str, 
             "id": cid,
             "name": c.get("name"),
             "category": c.get("category"),
+            "depth": c.get("depth"),
             "best_vs_coverage": c.get("best_vs_coverage", []),
             "tags": c.get("tags", []),
         }
@@ -161,6 +163,36 @@ def find_pass_concepts_by_category(category: str) -> list[str]:
     """
     cat = category.lower()
     return [cid for cid, c in _load_all().items() if c.get("category", "").lower() == cat]
+
+
+@mcp.tool()
+def find_pass_concepts_by_depth(depth: str) -> list[str]:
+    """Return concept IDs at the given route depth (case-insensitive exact match).
+
+    `depth` classifies how far downfield a concept's primary read attacks — a
+    quick filter for calling pass concepts by down and distance:
+
+        'quick'  — at or behind the line to ~5 yd (slants, quick-game hitches).
+                   Built to beat pressure and take what's there now.
+        'medium' — ~6-15 yd (curls, digs, the timing and area-read concepts
+                   that work the intermediate field on standard downs).
+        'deep'   — 16+ yd (verticals, post-corner, shot concepts) for
+                   explosive plays and obvious passing downs.
+
+    Concepts without a `depth` are omitted from every result.
+
+    Example:
+        >>> find_pass_concepts_by_depth('quick')
+        ['double-slant', 'slant-flat', 'stick']
+
+    Args:
+        depth: 'quick', 'medium', or 'deep' (case-insensitive).
+    """
+    wanted = depth.lower()
+    return [
+        cid for cid, c in _load_all().items()
+        if str(c.get("depth", "")).lower() == wanted
+    ]
 
 
 @mcp.tool()
@@ -233,6 +265,7 @@ def manifest() -> dict[str, Any]:
             {"name": "list_pass_concepts", "description": "All concepts with id, category, best_vs_coverage, tags. Start here."},
             {"name": "get_pass_concept", "description": "Full YAML: description, progression, best_vs_coverage, attacks, pairs_with."},
             {"name": "find_pass_concepts_by_category", "description": "Filter by timing-route / area-read / vertical-stretch / horizontal-stretch / etc."},
+            {"name": "find_pass_concepts_by_depth", "description": "Filter by route depth — quick (<=5 yd) / medium (6-15 yd) / deep (16+ yd)."},
             {"name": "find_pass_concepts_best_vs_coverage", "description": "Concepts best vs a coverage type (man, cover-2, cover-3, zone...)."},
             {"name": "find_pass_concepts_pairs_with", "description": "Concepts pairing with a given concept, philosophy, or tag."},
             {"name": "manifest", "description": "This document."},
@@ -240,6 +273,7 @@ def manifest() -> dict[str, Any]:
         "examples": [
             "find_pass_concepts_best_vs_coverage('man') → ['double-slant', 'drive', 'mesh', ...]",
             "find_pass_concepts_by_category('area-read') → ['hi-lo', 'sail', 'smash', 'snag', 'stick']",
+            "find_pass_concepts_by_depth('deep') → vertical / shot concepts for passing downs",
             "find_pass_concepts_pairs_with('west-coast') → concepts designed for West Coast philosophy",
         ],
     }

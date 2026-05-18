@@ -1,6 +1,6 @@
 # pass-concept-mcp
 
-MCP server that exposes blitz-command's pass concept library to AI agents. **6 tools.**
+MCP server that exposes blitz-command's pass concept library to AI agents. **7 tools.**
 
 Mirrors the `run-concept-mcp` pattern for pass-side concepts: Mesh, Smash, Snag, Four Verticals, Flood, Dagger, etc.
 
@@ -9,6 +9,7 @@ Mirrors the `run-concept-mcp` pattern for pass-side concepts: Mesh, Smash, Snag,
 - **`list_pass_concepts(cursor, limit)`** — all concepts with id, category, best_vs_coverage, tags. Paginated.
 - **`get_pass_concept(concept_id)`** — full YAML: description, read progression, best_vs_coverage, attacks, pairs_with
 - **`find_pass_concepts_by_category(category)`** — filter by `timing-route` / `area-read` / `vertical-stretch` / `horizontal-stretch` / etc.
+- **`find_pass_concepts_by_depth(depth)`** — filter by route depth: `quick` (≤5 yd) / `medium` (6–15 yd) / `deep` (16+ yd)
 - **`find_pass_concepts_best_vs_coverage(coverage)`** — concepts best against a coverage type (man, cover-2, cover-3, zone…). Substring match.
 - **`find_pass_concepts_pairs_with(other_id)`** — concepts that pair with a given concept, philosophy, or tag
 - **`manifest()`** — this server's purpose and worked examples

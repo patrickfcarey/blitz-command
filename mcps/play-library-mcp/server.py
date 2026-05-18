@@ -444,6 +444,38 @@ def find_plays_by_tag(tag: str) -> list[str]:
 
 
 @mcp.tool()
+def find_plays_by_rpo_type(rpo_type: str) -> list[str]:
+    """Return play IDs with the given RPO sub-type (case-insensitive exact match).
+
+    Only run-pass-option plays carry `rpo_type`; it classifies what the QB is
+    actually reading:
+
+        'alert' — a pre-snap RPO. The QB throws the tagged route before the
+                  snap if the look (box count, leverage) says so, else hands
+                  off. No post-snap read.
+        'peek'  — a post-snap RPO. The QB rides the mesh and reads one conflict
+                  defender (usually a linebacker), then hands off or pulls to
+                  throw the tagged route.
+        'read'  — the QB is the run threat. A zone/option read where pulling
+                  the ball means the QB keeps and runs, not throws.
+
+    Every non-RPO play (no `rpo_type`) is omitted.
+
+    Example:
+        >>> find_plays_by_rpo_type('peek')
+        ['shotgun-2x2-rpo-slant', 'shotgun-2x2-rpo-slant-left', ...]
+
+    Args:
+        rpo_type: 'alert', 'peek', or 'read' (case-insensitive).
+    """
+    wanted = rpo_type.lower()
+    return [
+        pid for pid, p in _load_all().items()
+        if str(p.get("rpo_type", "")).lower() == wanted
+    ]
+
+
+@mcp.tool()
 def find_plays_vs_defense(coverage: str) -> list[dict[str, str]]:
     """Find plays that EXPLOIT or STRUGGLE against a specific defensive look.
 
@@ -2286,12 +2318,18 @@ def scout_play(play_id: str) -> dict[str, Any]:
         {k: fr.get(k) for k in ("flip_id", "pre_snap_look", "qb_key", "read_category", "flip_to", "why")}
         for fr in (p.get("flip_reads") or [])
     ]
+    rpo_type = p.get("rpo_type")
+    summary = f"{len(counters)} pre-snap counter look(s), {len(flips)} flip read(s)"
+    if rpo_type:
+        summary += f"; RPO ({rpo_type}-type read)"
     return {
         "play_id": play_id,
         "name": p.get("name"),
+        "play_type": p.get("play_type"),
+        "rpo_type": rpo_type,
         "defensive_counters": counters,
         "flip_reads": flips,
-        "summary": f"{len(counters)} pre-snap counter look(s), {len(flips)} flip read(s)",
+        "summary": summary,
     }
 
 
@@ -2306,11 +2344,13 @@ def manifest() -> dict[str, Any]:
             {"name": "get_play", "description": "Full YAML: assignments, paths, routes, blocking, concept refs, defensive_counters, flip_reads, tags."},
             {"name": "find_plays_by_formation", "description": "Plays matching a formation_id."},
             {"name": "find_plays_by_tag", "description": "Plays whose tags include the given value."},
+            {"name": "find_plays_by_rpo_type", "description": "RPO plays by sub-type — alert (pre-snap) / peek (post-snap LB read) / read (QB run threat)."},
             {"name": "find_plays_vs_defense", "description": "Plays tagged to beat a specific defensive shell."},
             {"name": "find_plays_by_concept", "description": "Search across id, name, aliases, tags, formation concepts, and concept refs (single + multi-concept concepts[])."},
             {"name": "validate_play", "description": "Schema + concept lints: formation cross-ref, route ref, concept FKs, concepts[] integrity, defensive_counters/flip_reads ids, TODO scan."},
             {"name": "render_play", "description": "Return SVG of play in a game's editor grid."},
             {"name": "build_starter_play", "description": "Return a 70%-filled YAML scaffold for a given formation + play type."},
+            {"name": "list_play_templates", "description": "Concept templates available for build_starter_play(concept=...); filter by play_type or philosophy."},
             {"name": "save_play", "description": "Validate then write to data/plays/. Requires overwrite=True to update existing."},
             {"name": "update_play", "description": "Shallow-patch top-level fields of an existing play (re-validates schema)."},
             {"name": "mirror_play", "description": "Generate and optionally save the -left mirror of a play."},
@@ -2319,7 +2359,7 @@ def manifest() -> dict[str, Any]:
             {"name": "list_families", "description": "All disguise families with base play, companion count, disguise_score. Paginated."},
             {"name": "get_family", "description": "Full disguise-family record: base, companions, disguise_score, coverage matrix."},
             {"name": "get_disguise_twins", "description": "A play's disguise families + its twin plays (what looks identical to it early)."},
-            {"name": "scout_play", "description": "Coaching scout: defensive_counters (how to beat it) + flip_reads (when to flip it), keyed to pre-snap looks."},
+            {"name": "scout_play", "description": "Coaching scout: defensive_counters (how to beat it), flip_reads (when to flip it), and rpo_type, keyed to pre-snap looks."},
             {"name": "export_play_instructions", "description": "Click-by-click create-a-play instructions for a specific game."},
             {"name": "manifest", "description": "This document."},
         ],

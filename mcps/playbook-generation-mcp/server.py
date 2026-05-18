@@ -16,7 +16,8 @@ Tools:
   Authored playbooks (data/playbooks/ — sections, audibles, counter_responses):
     - list_playbooks, get_playbook, get_playbook_section, get_audibles,
       get_play_in_playbook, validate_playbook, playbook_call_sheet,
-      playbook_glossary, playbook_tendency_profile
+      playbook_glossary, playbook_tendency_profile, playbook_call_breakdown,
+      playbook_install_schedule
 
 Requires Python 3.10+.
 """
@@ -40,6 +41,8 @@ PLAYBOOKS_DIR = REPO_ROOT / "data" / "playbooks"
 VALIDATE_SCRIPT = REPO_ROOT / "tools" / "validate-playbook" / "validate.py"
 GLOSSARY_SCRIPT = REPO_ROOT / "tools" / "compile-glossary" / "compile_glossary.py"
 PROFILE_SCRIPT = REPO_ROOT / "tools" / "playbook-profile" / "profile.py"
+BREAKDOWN_SCRIPT = REPO_ROOT / "tools" / "playbook-call-breakdown" / "breakdown.py"
+SCHEDULE_SCRIPT = REPO_ROOT / "tools" / "playbook-install-schedule" / "schedule.py"
 
 mcp = FastMCP("playbook-generation")
 
@@ -721,6 +724,121 @@ def playbook_tendency_profile(playbook_id: str) -> dict[str, Any]:
 
 
 @mcp.tool()
+def playbook_call_breakdown(playbook_id: str) -> dict[str, Any]:
+    """Break a playbook down formation by formation: for each formation
+    section, its plays grouped by disguise family, with each play's share of
+    that formation's calls.
+
+    This is the "before every formation, list the plays and their call %"
+    view. Grouping by disguise family shows how the formation installs — each
+    family is a set of plays that share a pre-snap look and early action.
+
+    Every figure is read straight from the playbook's stored call shares, so
+    it never drifts. Runs tools/playbook-call-breakdown/breakdown.py.
+
+    Returns:
+        {
+          "playbook_id": str,
+          "sections": [
+            {
+              "section_id":            str,
+              "section_name":          str,
+              "target_snap_share_pct": int,
+              "formations":            [str, ...],
+              "play_count":            int,
+              "families": [
+                {
+                  "family_id":        str | null,   # null = standalone plays
+                  "family_name":      str,
+                  "family_share_pct": int,          # sum of its plays' shares
+                  "plays": [{"play_id", "name", "role",
+                             "share_of_section_pct"}, ...],
+                }, ...
+              ],
+            }, ...
+          ],
+        }
+
+    Args:
+        playbook_id: see list_playbooks().
+    """
+    books = _load_all_playbooks()
+    if playbook_id not in books:
+        return {"error": f"no playbook '{playbook_id}'", "available": sorted(books)}
+    path = _PLAYBOOK_PATHS.get(playbook_id)
+    if path is None or not path.exists():
+        return {"error": f"could not locate the file for playbook '{playbook_id}'"}
+    try:
+        proc = subprocess.run(
+            [sys.executable, str(BREAKDOWN_SCRIPT), str(path)],
+            capture_output=True, text=True, timeout=60,
+        )
+    except Exception as e:  # noqa: BLE001
+        return {"error": f"call-breakdown tool failed to run: {e}"}
+    if proc.returncode != 0:
+        return {"error": f"call-breakdown tool failed: {(proc.stderr or '').strip()}"}
+    try:
+        sections = json.loads(proc.stdout)
+    except json.JSONDecodeError as e:
+        return {"error": f"could not parse call-breakdown output: {e}"}
+    return {"playbook_id": playbook_id, "sections": sections}
+
+
+@mcp.tool()
+def playbook_install_schedule(playbook_id: str) -> dict[str, Any]:
+    """Return a playbook's install schedule — its plays grouped into install
+    phases (Day 1, Day 2, Week 1, Week 2, mid-season), in teaching order.
+
+    Each play is annotated with its formation section and disguise family, so
+    the schedule shows the install rule the playbook is built on: the Day-1
+    and Week-1 plays are the spine, Week-2 and mid-season adds layer disguise
+    depth, and a companion play never installs before its family's base.
+
+    Derived from each play entry's `install_order`. Runs
+    tools/playbook-install-schedule/schedule.py.
+
+    Returns:
+        {
+          "playbook_id": str,
+          "phases": [
+            {
+              "install_order": "install-day-1",
+              "label":         "Install — Day 1",
+              "play_count":    int,
+              "plays": [
+                {"play_id", "name", "section_id", "section_name",
+                 "family_name", "role", "share_of_section_pct"}, ...
+              ],
+            }, ...
+          ],
+        }
+
+    Args:
+        playbook_id: see list_playbooks().
+    """
+    books = _load_all_playbooks()
+    if playbook_id not in books:
+        return {"error": f"no playbook '{playbook_id}'", "available": sorted(books)}
+    path = _PLAYBOOK_PATHS.get(playbook_id)
+    if path is None or not path.exists():
+        return {"error": f"could not locate the file for playbook '{playbook_id}'"}
+    try:
+        proc = subprocess.run(
+            [sys.executable, str(SCHEDULE_SCRIPT), str(path)],
+            capture_output=True, text=True, timeout=60,
+        )
+    except Exception as e:  # noqa: BLE001
+        return {"error": f"install-schedule tool failed to run: {e}"}
+    if proc.returncode != 0:
+        return {"error": f"install-schedule tool failed: {(proc.stderr or '').strip()}"}
+    try:
+        phases = json.loads(proc.stdout)
+    except json.JSONDecodeError as e:
+        return {"error": f"could not parse install-schedule output: {e}"}
+    return {"playbook_id": playbook_id, "phases": phases}
+
+
+@mcp.tool()
 def manifest() -> dict[str, Any]:
     """Return this server's purpose, tool list, and worked examples."""
     return {
@@ -746,6 +864,8 @@ def manifest() -> dict[str, Any]:
             {"name": "playbook_call_sheet", "description": "Every play with its derived total snap share, sorted — the call-sheet view."},
             {"name": "playbook_glossary", "description": "Compile a playbook's glossary — the routes/concepts its plays use, with definitions, plus authored glossary_additions."},
             {"name": "playbook_tendency_profile", "description": "Derive a playbook's run/pass balance and its snap split by play type, formation, and personnel grouping."},
+            {"name": "playbook_call_breakdown", "description": "Per formation section, the plays grouped by disguise family with each play's share of that formation's calls."},
+            {"name": "playbook_install_schedule", "description": "Plays grouped into install phases (Day 1 / Week 1 / Week 2 / mid-season), annotated with formation + disguise family."},
             {"name": "manifest", "description": "This document."},
         ],
         "examples": [
@@ -753,6 +873,8 @@ def manifest() -> dict[str, Any]:
             "suggest_complementary_plays(['singleback-trio-inside-zone', 'singleback-trio-mesh'], max_results=3)",
             "validate_playbook('hs-base-2026') -> {valid: true, report: '...'}",
             "playbook_call_sheet('hs-base-2026') -> plays ranked by derived snap share",
+            "playbook_call_breakdown('hs-base-2026') -> per-formation plays grouped by disguise family",
+            "playbook_install_schedule('hs-base-2026') -> plays grouped into install phases",
             "playbook_glossary('hs-base-2026') -> routes/concepts used, with definitions",
             "playbook_tendency_profile('hs-base-2026') -> run/pass %, play-type / formation / personnel mix",
         ],

@@ -1,6 +1,6 @@
 # play-library-mcp
 
-MCP server that exposes blitz-command's play library to AI agents — discovery, authoring, validation, rendering, pairwise analysis, disguise families, and scouting. **21 tools** total.
+MCP server that exposes blitz-command's play library to AI agents — discovery, authoring, validation, rendering, pairwise analysis, disguise families, and scouting. **22 tools** total.
 
 **Boundary rule**: this server owns single-play concerns. Anything that reasons about a *collection* of plays as a unit (gap-filling, playbook selection, balance scoring) belongs in `playbook-generation-mcp`.
 
@@ -14,6 +14,7 @@ For end-to-end client setup + worked examples, see [`docs/using-the-mcps.md`](..
 - **`get_play(play_id)`** — full play YAML; suggests "Did you mean…?" on miss
 - **`find_plays_by_formation(formation_id)`** — all plays that run from a given formation
 - **`find_plays_by_tag(tag)`** — exact case-insensitive tag match (`air-raid`, `rpo`, `high-school`, `mesh`, etc.)
+- **`find_plays_by_rpo_type(rpo_type)`** — RPO plays by sub-type: `alert` (pre-snap) / `peek` (post-snap LB read) / `read` (QB run threat)
 - **`find_plays_by_concept(concept)`** — broader cross-field search (id stem + name + aliases + tags + formation concepts + concept refs — both the single `run/pass_concept_ref` and the multi-concept `concepts[]` array); returns the matched-via source for each result
 - **`find_plays_vs_defense(coverage)`** — plays that exploit (`best`) or struggle against (`worst`) a coverage substring
 
@@ -38,7 +39,7 @@ For end-to-end client setup + worked examples, see [`docs/using-the-mcps.md`](..
 - **`list_families()`** — brief metadata for every disguise family in `data/play-families/` (base play, companion count, `disguise_score`)
 - **`get_family(family_id)`** — full family record: base play, companions, `disguise_score`, `defensive_coverage_matrix`, source notes
 - **`get_disguise_twins(play_id)`** — the families a play belongs to + its twin plays (the plays that show the defense the same pre-snap + early-action picture, then diverge)
-- **`scout_play(play_id)`** — coaching scout: `defensive_counters` (the pre-snap looks that beat the play) + `flip_reads` (when to flip the play's direction or the whole formation), both keyed to a one-glance QB read
+- **`scout_play(play_id)`** — coaching scout: `defensive_counters` (the pre-snap looks that beat the play), `flip_reads` (when to flip the play's direction or the whole formation), and `rpo_type` (for RPOs), keyed to a one-glance QB read
 
 ## Setup
 

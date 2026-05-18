@@ -4,15 +4,15 @@ blitz-command ships **13 MCP servers** under `mcps/`. Each owns one narrow respo
 
 | Server | Purpose | Tools |
 |--------|---------|-------|
-| [`play-library-mcp`](../mcps/play-library-mcp/README.md) | Plays + disguise families — discovery, authoring, validation, rendering, scouting, pairwise analysis | 21 |
-| [`playbook-generation-mcp`](../mcps/playbook-generation-mcp/README.md) | Assembling playbooks + working with authored playbooks (sections, audibles, counter-responses, validation, glossary, tendency profile) | 14 |
+| [`play-library-mcp`](../mcps/play-library-mcp/README.md) | Plays + disguise families — discovery, authoring, validation, rendering, scouting, pairwise analysis | 22 |
+| [`playbook-generation-mcp`](../mcps/playbook-generation-mcp/README.md) | Assembling playbooks + working with authored playbooks (sections, audibles, counter-responses, validation, glossary, tendency profile, call breakdown, install schedule) | 16 |
 | [`game-knowledge-mcp`](../mcps/game-knowledge-mcp/README.md) | Per-game editor capabilities + universal→editor coordinate translation | 9 |
-| [`formation-library-mcp`](../mcps/formation-library-mcp/README.md) | Offensive formations — discovery + inspection | 7 |
+| [`formation-library-mcp`](../mcps/formation-library-mcp/README.md) | Offensive formations + personnel groupings — discovery + inspection | 10 |
 | [`validation-mcp`](../mcps/validation-mcp/README.md) | Standalone validation of plays / formations / routes / concepts / game profiles | 7 |
 | [`coverage-mcp`](../mcps/coverage-mcp/README.md) | Defensive formations / coverage shells | 6 |
 | [`route-library-mcp`](../mcps/route-library-mcp/README.md) | The route library | 6 |
 | [`run-concept-mcp`](../mcps/run-concept-mcp/README.md) | Run concepts (power, counter, inside-zone, …) | 6 |
-| [`pass-concept-mcp`](../mcps/pass-concept-mcp/README.md) | Pass concepts (mesh, smash, drive, …) | 6 |
+| [`pass-concept-mcp`](../mcps/pass-concept-mcp/README.md) | Pass concepts (mesh, smash, drive, …) | 7 |
 | [`blocking-scheme-mcp`](../mcps/blocking-scheme-mcp/README.md) | Blocking schemes | 6 |
 | [`philosophy-mcp`](../mcps/philosophy-mcp/README.md) | Offensive philosophies | 6 |
 | [`pass-protection-mcp`](../mcps/pass-protection-mcp/README.md) | Pass protections | 5 |

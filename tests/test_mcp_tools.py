@@ -358,6 +358,20 @@ class TestPlayLibraryMCP(unittest.TestCase):
             if mirror_res and mirror_res.get("mirror_path") and Path(mirror_res["mirror_path"]).exists():
                 Path(mirror_res["mirror_path"]).unlink()
 
+    def test_find_plays_by_rpo_type(self):
+        peek = self.server.find_plays_by_rpo_type("peek")
+        self.assertGreater(len(peek), 0)
+        for pid in peek:
+            self.assertEqual(self.server.get_play(pid).get("rpo_type"), "peek")
+
+    def test_find_plays_by_rpo_type_unknown_is_empty(self):
+        self.assertEqual(self.server.find_plays_by_rpo_type("not-a-type"), [])
+
+    def test_scout_play_surfaces_rpo_type(self):
+        scout = self.server.scout_play("shotgun-2x2-rpo-slant")
+        self.assertEqual(scout["rpo_type"], "peek")
+        self.assertIn("RPO", scout["summary"])
+
 
 class TestFormationLibraryMCP(unittest.TestCase):
     @classmethod
@@ -402,6 +416,34 @@ class TestFormationLibraryMCP(unittest.TestCase):
 
     def test_find_formations_by_concept(self):
         ids = self.server.find_formations_by_concept("inside-zone")
+        self.assertGreater(len(ids), 0)
+
+    def test_list_personnel_groupings(self):
+        groupings = self.server.list_personnel_groupings()
+        self.assertGreater(len(groupings), 0)
+        codes = [g["code"] for g in groupings]
+        self.assertIn("11", codes)
+        self.assertIn("21", codes)
+        for g in groupings:
+            for key in ("code", "name", "running_backs", "tight_ends", "wide_receivers"):
+                self.assertIn(key, g)
+
+    def test_get_personnel_grouping(self):
+        g = self.server.get_personnel_grouping("21")
+        self.assertEqual(g["running_backs"], 2)
+        self.assertEqual(g["tight_ends"], 1)
+        self.assertEqual(g["wide_receivers"], 2)
+
+    def test_get_personnel_grouping_accepts_int_style(self):
+        self.assertEqual(self.server.get_personnel_grouping(11)["code"], "11")
+
+    def test_get_personnel_grouping_unknown_raises(self):
+        with self.assertRaises(ValueError):
+            self.server.get_personnel_grouping("99")
+
+    def test_find_formations_by_personnel(self):
+        ids = self.server.find_formations_by_personnel("21")
+        self.assertIn("i-formation", ids)
         self.assertGreater(len(ids), 0)
 
 
@@ -621,6 +663,98 @@ class TestPlaybookGenerationMCP(unittest.TestCase):
             self.assertIn("singleback-trio", p["formation"])
 
 
+class TestPlaybookCallBreakdown(unittest.TestCase):
+    """playbook_call_breakdown — per-formation plays grouped by disguise family."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.server = _load_module(
+            "playbook_gen_server",
+            REPO_ROOT / "mcps" / "playbook-generation-mcp" / "server.py",
+        )
+        cls.playbook_id = cls.server.list_playbooks()[0]["playbook_id"]
+
+    def test_breakdown_has_sections(self):
+        result = self.server.playbook_call_breakdown(self.playbook_id)
+        self.assertNotIn("error", result)
+        self.assertEqual(result["playbook_id"], self.playbook_id)
+        self.assertGreater(len(result["sections"]), 0)
+
+    def test_each_section_has_families_with_plays(self):
+        result = self.server.playbook_call_breakdown(self.playbook_id)
+        for section in result["sections"]:
+            for key in ("section_id", "section_name", "families", "play_count"):
+                self.assertIn(key, section)
+            self.assertGreater(len(section["families"]), 0)
+            for family in section["families"]:
+                for key in ("family_name", "family_share_pct", "plays"):
+                    self.assertIn(key, family)
+                self.assertGreater(len(family["plays"]), 0)
+
+    def test_section_shares_sum_to_100(self):
+        result = self.server.playbook_call_breakdown(self.playbook_id)
+        for section in result["sections"]:
+            total = sum(play["share_of_section_pct"]
+                        for family in section["families"]
+                        for play in family["plays"])
+            self.assertEqual(total, 100,
+                             f"{section['section_id']} shares sum to {total}, not 100")
+
+    def test_families_ordered_by_share_standalone_last(self):
+        result = self.server.playbook_call_breakdown(self.playbook_id)
+        for section in result["sections"]:
+            real = [f for f in section["families"] if f["family_id"] is not None]
+            shares = [f["family_share_pct"] for f in real]
+            self.assertEqual(shares, sorted(shares, reverse=True))
+            standalone = [i for i, f in enumerate(section["families"])
+                          if f["family_id"] is None]
+            for index in standalone:
+                self.assertEqual(index, len(section["families"]) - 1)
+
+    def test_unknown_playbook_returns_error(self):
+        result = self.server.playbook_call_breakdown("not-a-real-playbook")
+        self.assertIn("error", result)
+
+
+class TestPlaybookInstallSchedule(unittest.TestCase):
+    """playbook_install_schedule — plays grouped into install phases."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.server = _load_module(
+            "playbook_gen_server",
+            REPO_ROOT / "mcps" / "playbook-generation-mcp" / "server.py",
+        )
+        cls.playbook_id = cls.server.list_playbooks()[0]["playbook_id"]
+
+    def test_schedule_has_phases(self):
+        result = self.server.playbook_install_schedule(self.playbook_id)
+        self.assertNotIn("error", result)
+        self.assertGreater(len(result["phases"]), 0)
+        for phase in result["phases"]:
+            for key in ("install_order", "label", "play_count", "plays"):
+                self.assertIn(key, phase)
+
+    def test_phases_in_teaching_order(self):
+        result = self.server.playbook_install_schedule(self.playbook_id)
+        order = ["install-day-1", "install-day-2", "install-week-1",
+                 "install-week-2", "mid-season-add"]
+        ranks = [order.index(p["install_order"]) for p in result["phases"]
+                 if p["install_order"] in order]
+        self.assertEqual(ranks, sorted(ranks))
+
+    def test_every_play_scheduled_once(self):
+        breakdown = self.server.playbook_call_breakdown(self.playbook_id)
+        play_total = sum(s["play_count"] for s in breakdown["sections"])
+        schedule = self.server.playbook_install_schedule(self.playbook_id)
+        scheduled_total = sum(p["play_count"] for p in schedule["phases"])
+        self.assertEqual(scheduled_total, play_total)
+
+    def test_unknown_playbook_returns_error(self):
+        result = self.server.playbook_install_schedule("not-a-real-playbook")
+        self.assertIn("error", result)
+
+
 class TestPassConceptMCP(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -672,9 +806,22 @@ class TestPassConceptMCP(unittest.TestCase):
         tool_names = {t["name"] for t in m["tools"]}
         for expected in ("list_pass_concepts", "get_pass_concept",
                          "find_pass_concepts_by_category",
+                         "find_pass_concepts_by_depth",
                          "find_pass_concepts_best_vs_coverage",
                          "find_pass_concepts_pairs_with", "manifest"):
             self.assertIn(expected, tool_names)
+
+    def test_find_by_depth(self):
+        results = self.server.find_pass_concepts_by_depth("quick")
+        self.assertIsInstance(results, list)
+        self.assertGreater(len(results), 0)
+
+    def test_find_by_depth_partitions_all_concepts(self):
+        all_ids = {c["id"] for c in self.server.list_pass_concepts()["items"]}
+        by_depth: set[str] = set()
+        for depth in ("quick", "medium", "deep"):
+            by_depth.update(self.server.find_pass_concepts_by_depth(depth))
+        self.assertEqual(by_depth, all_ids)
 
 
 class TestGameKnowledgeTranslation(unittest.TestCase):
