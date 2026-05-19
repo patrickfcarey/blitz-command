@@ -24,17 +24,9 @@ when an item depends on something external (user input, upstream work).
 
 - **Formation-family classifier for xlsx games.** `_family()` under-classifies
   modern names ("I Pro", "Split Spread" → "other") for the xlsx-sourced games
-  (madden-04/05/07, ncaa-04/06/07) and for ESPN 2K5 (no panel header in source).
-  Needs a better classifier. (Madden 25's families are now panel-header-derived
-  and accurate — see Done.)
-
-- **Formation-level playbook matching needs a structural crosswalk.** Matching
-  a repo playbook against a game's catalog currently works only at family
-  granularity (singleback / i_form / shotgun) — too coarse to tell NFL
-  playbooks apart. A real match needs a shared sub-formation vocabulary:
-  normalize both sides to (family, alignment) tags — e.g. hs-base `shotgun-2x2`
-  and Madden `Doubles` both → (shotgun, 2x2). Until then, or until play-name
-  data exists, formation matching is directional only.
+  (madden-04/05/07, ncaa-04/06/07). Needs a better classifier. (Madden 25's
+  families are panel-header-derived; ESPN 2K5's are now a screenshot-verified
+  prefix classifier — both accurate. See Done.)
 
 - **Play-name extraction (catalog Phase 2).** The docx catalogs hold formations
   + play counts, not play names. Play names live on the play-diagram screens
@@ -56,6 +48,14 @@ when an item depends on something external (user input, upstream work).
 - Wire plays to the 6 new run concepts (duo, jet-sweep, reverse, power-read,
   shovel-option, speed-option) via `run_concept_ref`.
 - Future offensive formations: Single Wing, Double Wing, Bunch, Pistol Trips.
+- **`run-and-shoot` is mis-modelled as a formation.** Run-and-shoot is a
+  *philosophy*, not a formation — and the repo already has it as one
+  (`data/concepts/philosophies/run-and-shoot.yaml`). But `data/formations/
+  run-and-shoot.yaml` (+ `-left`) is structurally just a 10-personnel
+  under-center 2x2 spread. Rename it to its real identity (e.g. `spread-2x2`)
+  and retag the philosophy onto the plays/section. Touches ~15 files
+  (formation + mirror, ~10 plays, the family file, hs-base's "Run & Shoot"
+  section). Deliberate cross-cutting rename — confirm scope before doing it.
 
 ## Drawing improvements
 
@@ -107,6 +107,14 @@ Trim periodically — old completions need not live here forever.
   now threads the Madden formation-menu panel header (SINGLEBACK/I-FORM/GUN/…)
   through aggregation as the family — accurate, replacing crude name-guessing —
   and carries the per-formation play count. Schema + both docx catalogs updated.
+- ✅ ESPN 2K5 family classifier — `_espn_family()`, a prefix classifier verified
+  against in-game screenshots (I/Strong-I/Weak-I/Near/Far → i_form; Gun → shotgun;
+  empty/spread → shotgun; bare receiver-shapes → singleback). ESPN catalog
+  re-run: every formation now classified, no `other`.
+- ✅ Formation-level playbook matcher — `tools/playbook-game-match/match.py`.
+  Normalizes both a repo playbook and a game catalog to (family-group, alignment
+  tags) signatures and scores formation-by-formation coverage. Works for
+  madden-25-ps3 and espn-2k5-ps2.
 
 ### 2026-05
 

@@ -67,11 +67,21 @@ through aggregation as the family — accurate, replacing crude `_family()` name
 guessing — and carries each formation's play count. Schema + both docx catalogs
 regenerated from cache (no API key); 266 tests pass.
 
+**Formation-level playbook matcher built** — `tools/playbook-game-match/match.py`.
+Normalizes a repo playbook and a game catalog to (family-group, alignment-tag)
+signatures and scores formation-by-formation coverage. hs-base vs madden-25:
+Pittsburgh Steelers #1; vs espn-2k5: San Diego Chargers #1.
+
+**ESPN 2K5 family classifier** — `_espn_family()` in `ingest_docx_playbooks.py`,
+a prefix classifier verified against in-game screenshots (3 subagents read
+backfield alignment off 44 formations). ESPN catalog re-run — every formation
+now classified (singleback 357 / i_form 261 / shotgun 155), no `other`.
+
 **In progress / next step:** (1) play-name extraction (catalog Phase 2 — a
-vision pass over the discarded play-diagram screens); (2) formation-level
-playbook matching needs a (family, alignment) structural crosswalk — family
-granularity is too coarse to tell NFL playbooks apart. (3) Madden 01/03 PS2
-catalogs still need profiles + ingest. See pending-queue.
+vision pass over the discarded play-diagram screens); (2) `run-and-shoot` is
+mis-modelled as a formation (it's a philosophy) — see pending-queue, a ~15-file
+rename awaiting a go-ahead; (3) Madden 01/03 PS2 catalogs still need profiles +
+ingest. See pending-queue.
 
 **Uncommitted state:** Madden 25 work committed earlier (e48d0ad). ESPN 2K5
 catalog committed at end of this session.

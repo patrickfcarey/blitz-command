@@ -268,7 +268,7 @@ def _aggregate_espn2k5(results: list[dict]) -> list[dict]:
             ordered.append({
                 "name": name,
                 "personnel": None,
-                "family": _family(name),
+                "family": _espn_family(name),
                 "play_count": None,
             })
     return ordered
@@ -313,6 +313,40 @@ def _family(name: str) -> str:
         if re.match(pattern, lowered):
             return fam
     return "other"
+
+
+# ESPN NFL 2K5 name prefixes that mark the I-formation family. Checked before
+# anything else: an I / Strong-I / Weak-I / Near / Far prefix wins even when
+# the name also contains "spread" (e.g. "Weak I Spread" is still i_form).
+_ESPN_I_FORM_PREFIXES: tuple[str, ...] = (
+    "i ", "i-", "strong i", "strong ii", "weak i", "near ", "far ",
+    "strong power",
+)
+
+
+def _espn_family(name: str) -> str:
+    """Family for an ESPN NFL 2K5 formation name.
+
+    ESPN play screens carry no family panel, so family is read from the name.
+    Rules verified against in-game screenshots (the QB / backfield alignment
+    in the play diagrams):
+
+      - I / Strong-I / Strong-II / Weak-I / Near / Far prefix -> i_form
+        (under centre, 1-2 backs).
+      - Gun / "Gun:" prefix -> shotgun.
+      - "empty" anywhere, or a bare "spread" set -> shotgun (0-1 back gun set).
+      - everything else -> singleback: the bare receiver-shape names (Ace,
+        Doubles, Triple, Trips, Trey, Quads, Bunch, Pair Slot, Split, Flip,
+        Jokers, Jacks, ...) were all verified as under-centre one-back sets.
+    """
+    lowered = name.lower().strip()
+    if lowered.startswith(_ESPN_I_FORM_PREFIXES):
+        return "i_form"
+    if lowered.startswith(("gun ", "gun:")):
+        return "shotgun"
+    if "empty" in lowered or "spread" in lowered:
+        return "shotgun"
+    return "singleback"
 
 
 def _team_id(name: str) -> str:
