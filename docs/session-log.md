@@ -99,11 +99,14 @@ order); ESPN will use the on-screen formation header. Indianapolis Colts done �
 333 plays, 24/24 formations within +/-2 of play_count. Chunk caches live in
 `.docx-cache-<game>-plays/` (gitignored), resumable.
 
-**Play-name grind progress:** 45/50 madden-25 playbooks done (+ Tennessee,
-Washington, Run and Shoot, Run Balanced, Run Heavy). 5 remain: Run N Gun,
-Tom Flores, Tom Landry, Vince Lombardi, West Coast.
+**Play-name grind: Madden 25 COMPLETE** — 50/50 playbooks, 14,419 plays.
 
-**NEW — NCAA Football 14 (PS3)** added by the user at research_artifacts/PS3/
+**NCAA Football 14 (PS3) formation catalog DONE** — 141 teams, 3084
+formations, from the Formation List.xlsx via build_playbook_catalog.py (fixed
+two bugs: team_id slugs like "3_3_5" parsed as ints — now quoted; numeric junk
+rows filtered). Play names still pending — the Play Database is 371 docx organised
+by formation (not per-team screenshots), so it needs a different pipeline than
+extract_play_names.py. Original note: NCAA 14 added by the user at research_artifacts/PS3/
 "NCAA Football 14-.../NCAA Football 14". Has a Formation List.xlsx (build the
 formation catalog with build_playbook_catalog.py), a Playbooks.xlsx, and a
 371-docx Play Database organized by formation family. data/games/ncaa-14-ps3/
@@ -112,7 +115,9 @@ extract docx images to /tmp/m25-img/<slug>/, launch 4 chunked Haiku subagents
 (~40 imgs each) writing `.docx-cache-m25-plays/<Team>__chunkNN.json`, then
 `extract_play_names.py --game madden-25-ps3 --cache-dir .docx-cache-m25-plays`.
 
-**In progress / next step:** 5 madden-25 playbooks, then NCAA 14 catalog + play names + 34 espn-2k5 remain. Same
+**In progress / next step:** ESPN 2K5 play names (34 playbooks, header-based
+association — its play screens name their formation). Then NCAA 14 play names
+(needs a per-formation pipeline for the 371-docx Play Database). + 34 espn-2k5 remain. Same
 workflow; ESPN uses header-based association (its play screens name the
 formation). (2) Madden 01/03 PS2 catalogs still need profiles + ingest.
 

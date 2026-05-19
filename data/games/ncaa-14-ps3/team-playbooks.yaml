@@ -1,0 +1,4683 @@
+game_id: ncaa-14-ps3
+source: Playbook Gamer
+verification_status: unverified
+generated_date: "2026-05-19"
+notes: "Derived from NCAA Football 14 Formation List.xlsx. Per layering rules: game-truth data; not in-game-verified."
+teams:
+  - team_id: "3_4_multiple"
+    name: 3-4 Multiple
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      other: 12
+    personnel_breakdown: null
+    formations:
+      - name: 3-4 Even
+      - name: 3-4 Odd
+      - name: 3-4 Predator
+      - name: 3-4 Solid
+      - name: Dime 2-3-6 Odd
+      - name: Dime Normal
+      - name: Goal Line 5-3-3
+      - name: Goal Line 6-3-2
+      - name: Nickel 1-5-5
+      - name: Nickel 2-4-5
+      - name: Quarter 3 Deep
+      - name: Quarter Normal
+  - team_id: "4_3_multiple"
+    name: 4-3 Multiple
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      other: 12
+    personnel_breakdown: null
+    formations:
+      - name: 4-3 Over Odd
+      - name: 4-3 Over Plus
+      - name: 4-3 Stack
+      - name: 4-3 Under
+      - name: Dime Normal
+      - name: Dollar 3-2-6
+      - name: Goal Line 5-3-3
+      - name: Goal Line 6-3-2
+      - name: Nickel 3-3-5
+      - name: Nickel 3-3-5 Sam
+      - name: Quarter 3 Deep
+      - name: Quarter Normal
+  - team_id: "air_force"
+    name: Air Force
+    playbook_style: null
+    formation_count: 20
+    formation_families:
+      ace: 2
+      flexbone: 4
+      i_form: 5
+      other: 4
+      shotgun: 5
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Y-Trips
+      - name: Flexbone Normal
+      - name: Flexbone Split Wing X
+      - name: Flexbone Split Wing Z
+      - name: Flexbone Twins Over
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Slot
+      - name: I-Form Tight
+      - name: I-Form Twin TE
+      - name: I-Form Twins
+      - name: Maryland I Heavy
+      - name: Maryland I Wide
+      - name: Shotgun Normal
+      - name: Shotgun Split
+      - name: Shotgun Split Offset
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread Flex
+      - name: Wingbone Normal
+  - team_id: "air_raid"
+    name: Air Raid
+    playbook_style: null
+    formation_count: 19
+    formation_families:
+      ace: 2
+      other: 1
+      shotgun: 16
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Slot Y-Flex
+      - name: Goal Line Normal
+      - name: Shotgun Double Flex
+      - name: Shotgun Empty Base
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Normal Y-Flex
+      - name: Shotgun Normal Y-Slot
+      - name: Shotgun Split Offset
+      - name: Shotgun Split Slot
+      - name: Shotgun Split Twins
+      - name: Shotgun Spread Flex
+      - name: Shotgun Spread Flex Wk
+      - name: Shotgun Trey 4WR
+      - name: Shotgun Trey Str 4WR
+      - name: Shotgun Trio
+      - name: Shotgun Trio Open
+      - name: Shotgun Trips
+      - name: Shotgun Trips Open
+  - team_id: "akron"
+    name: Akron
+    playbook_style: null
+    formation_count: 20
+    formation_families:
+      ace: 1
+      other: 1
+      pistol: 3
+      shotgun: 15
+    personnel_breakdown: null
+    formations:
+      - name: Ace Jumbo Z
+      - name: Goal Line Normal
+      - name: Pistol Full House
+      - name: Pistol Strong Slot
+      - name: Pistol Trips 4WR
+      - name: Shotgun 5WR Trio
+      - name: Shotgun Ace
+      - name: Shotgun Bunch
+      - name: Shotgun Double Flex
+      - name: Shotgun Normal
+      - name: Shotgun Split Offset
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread
+      - name: Shotgun Spread Flex
+      - name: Shotgun Spread Flex Wk
+      - name: Shotgun Tight Flex
+      - name: Shotgun Trio HB Wk
+      - name: Shotgun Trips
+      - name: Shotgun Trips HB Wk
+      - name: Shotgun Y-Trips
+  - team_id: "alabama"
+    name: Alabama
+    playbook_style: null
+    formation_count: 26
+    formation_families:
+      ace: 10
+      i_form: 1
+      other: 1
+      pistol: 4
+      shotgun: 9
+      wildcat: 1
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twins
+      - name: Ace Big Wing
+      - name: Ace Bunch Base
+      - name: Ace Slot Flex
+      - name: Ace Twin TE
+      - name: Ace Twin TE Flex
+      - name: Ace Wing Trio
+      - name: Ace Wing Trio TE
+      - name: Ace Y-Trips
+      - name: Goal Line Normal
+      - name: I-Form H Tight
+      - name: Pistol Slot Flex
+      - name: Pistol Trio
+      - name: Pistol Twin TE Slot
+      - name: Pistol Y-Trips
+      - name: Shotgun 5WR Flex Trey
+      - name: Shotgun Normal Flex Wk
+      - name: Shotgun Normal Y-Slot
+      - name: Shotgun Tight
+      - name: Shotgun Trey Open
+      - name: Shotgun Trio
+      - name: Shotgun Trio HB Wk
+      - name: Shotgun Wing Trio Wk
+      - name: Shotgun Y-Trips HB Wk
+      - name: Wildcat Normal
+  - team_id: "arizona"
+    name: Arizona
+    playbook_style: null
+    formation_count: 21
+    formation_families:
+      i_form: 2
+      other: 1
+      shotgun: 18
+    personnel_breakdown: null
+    formations:
+      - name: Goal Line Normal
+      - name: I-Form Tight
+      - name: I-Form Y-Trips
+      - name: Shotgun 5WR Flex Trio
+      - name: Shotgun 5WR Trio
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Normal Offset Wk
+      - name: Shotgun Normal Wing Offset
+      - name: Shotgun Split Slot
+      - name: Shotgun Split Twins
+      - name: Shotgun Spread
+      - name: Shotgun Spread 4WR
+      - name: Shotgun Spread Flex
+      - name: Shotgun Spread Flex Wk
+      - name: Shotgun Trio 4WR Str
+      - name: Shotgun Trio HB Wk
+      - name: Shotgun Trio Open
+      - name: Shotgun Trips
+      - name: Shotgun Wing Trips Offset
+      - name: Shotgun Wing Trips Offset Wk
+      - name: Shotgun Y-Trips
+  - team_id: "arizona_state"
+    name: Arizona State
+    playbook_style: null
+    formation_count: 26
+    formation_families:
+      ace: 2
+      i_form: 1
+      other: 1
+      shotgun: 19
+      wildcat: 3
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Slot
+      - name: Goal Line Twins Over
+      - name: I-Form Tight
+      - name: Shotgun 5WR Trio
+      - name: Shotgun F Twins Over
+      - name: Shotgun Normal Flex Wing
+      - name: Shotgun Normal Flex Wing Wk
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Normal Offset
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread
+      - name: Shotgun Spread Flex
+      - name: Shotgun Trio 4WR Str
+      - name: Shotgun Trio HB Wk
+      - name: Shotgun Trips Offset
+      - name: Shotgun Twin TE
+      - name: Shotgun Twin TE Flex
+      - name: Shotgun Wing Offset
+      - name: Shotgun Wing Offset Wk
+      - name: Shotgun Wing Trio Wk
+      - name: Shotgun Wing Trips Offset
+      - name: Shotgun Y-Trips Offset
+      - name: Wildcat Fight Song
+      - name: Wildcat Normal
+      - name: Wildcat Spread Flex
+  - team_id: "arkansas"
+    name: Arkansas
+    playbook_style: null
+    formation_count: 25
+    formation_families:
+      ace: 6
+      i_form: 6
+      other: 5
+      shotgun: 8
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Close
+      - name: Ace Bunch Base
+      - name: Ace Slot Flex
+      - name: Ace Twin TE
+      - name: Ace Y-Trips
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: I-Form Twin TE
+      - name: I-Form Twins
+      - name: I-Form Twins Flex
+      - name: Shotgun 5WR Flex Trio
+      - name: Shotgun Double Flex
+      - name: Shotgun Empty Base
+      - name: Shotgun Normal
+      - name: Shotgun Normal Flex Wk
+      - name: Shotgun Trey Open
+      - name: Shotgun Trio
+      - name: Shotgun Y-Trips
+      - name: Strong I Normal
+      - name: Strong I Twins Flex
+      - name: Strong I Y-Flex
+      - name: Strong I Y-Trips
+      - name: Weak I Normal
+  - team_id: "arkansas_state"
+    name: Arkansas State
+    playbook_style: null
+    formation_count: 25
+    formation_families:
+      ace: 5
+      i_form: 4
+      other: 3
+      pistol: 4
+      shotgun: 8
+      wildcat: 1
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twins
+      - name: Ace Big Wing
+      - name: Ace Bunch
+      - name: Ace Jumbo Z
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: Pistol H Twins
+      - name: Pistol Slot
+      - name: Pistol Trio
+      - name: Pistol Twin TE Slot
+      - name: Shotgun Double Flex
+      - name: Shotgun Empty Base
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Normal Offset
+      - name: Shotgun Normal Y-Slot
+      - name: Shotgun Split Slot
+      - name: Shotgun Trey Open
+      - name: Shotgun Y-Trips
+      - name: Strong I Normal
+      - name: Strong I Y-Trips
+      - name: Weak I Normal
+      - name: Weak I Twins
+      - name: Wildcat Normal
+  - team_id: "army"
+    name: Army
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      flexbone: 4
+      other: 7
+      wishbone: 1
+    personnel_breakdown: null
+    formations:
+      - name: Flexbone Normal
+      - name: Flexbone Tight
+      - name: Flexbone Trips Right
+      - name: Flexbone Twins Over
+      - name: Goal Line Normal
+      - name: Split Army Split
+      - name: Wingbone Normal
+      - name: Wingbone Split Wing X
+      - name: Wingbone Split Wing Z
+      - name: Wingbone Trips Over
+      - name: Wingbone Twins Over
+      - name: Wishbone Wide
+  - team_id: "auburn"
+    name: Auburn
+    playbook_style: null
+    formation_count: 25
+    formation_families:
+      other: 1
+      shotgun: 20
+      wildcat: 4
+    personnel_breakdown: null
+    formations:
+      - name: Goal Line Twins Over
+      - name: Shotgun 5WR Trio
+      - name: Shotgun F Twins Over
+      - name: Shotgun Normal Flex Wing
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Normal Offset
+      - name: Shotgun Normal Offset Wk
+      - name: Shotgun Normal Wing Offset
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread
+      - name: Shotgun Spread Flex
+      - name: Shotgun Trio 4WR Str
+      - name: Shotgun Trio HB Wk
+      - name: Shotgun Twin TE Slot Wk
+      - name: Shotgun Wing Offset
+      - name: Shotgun Wing Offset Wk
+      - name: Shotgun Wing Trio Wk
+      - name: Shotgun Wing Trips Offset
+      - name: Shotgun Wing Trips Offset Wk
+      - name: Shotgun Wing Trips Wk
+      - name: Shotgun Y-Trips Offset
+      - name: Wildcat Fight Song
+      - name: Wildcat Normal
+      - name: Wildcat Spread Flex
+      - name: Wildcat Trips Over
+  - team_id: "byu"
+    name: BYU
+    playbook_style: null
+    formation_count: 20
+    formation_families:
+      i_form: 4
+      other: 1
+      pistol: 1
+      shotgun: 14
+    personnel_breakdown: null
+    formations:
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Slot
+      - name: I-Form Tight
+      - name: I-Form Twins
+      - name: Pistol Strong Slot
+      - name: Shotgun 5WR Flex Trio
+      - name: Shotgun Bunch
+      - name: Shotgun Double Flex
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Normal Offset Wk
+      - name: Shotgun Normal Y-Flex
+      - name: Shotgun Split Offset
+      - name: Shotgun Split Slot
+      - name: Shotgun Split Y-Flex
+      - name: Shotgun Spread 4WR
+      - name: Shotgun Spread Flex
+      - name: Shotgun Spread Flex Wk
+      - name: Shotgun Trey Open Offset
+      - name: Shotgun Trips
+  - team_id: "balanced"
+    name: Balanced
+    playbook_style: null
+    formation_count: 24
+    formation_families:
+      ace: 3
+      flexbone: 1
+      i_form: 3
+      other: 3
+      pistol: 3
+      shotgun: 9
+      wildcat: 1
+      wishbone: 1
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Bunch
+      - name: Ace Slot
+      - name: Flexbone Normal
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Twins
+      - name: I-Form Y-Trips
+      - name: Maryland I Heavy
+      - name: Pistol Full House
+      - name: Pistol Strong
+      - name: Pistol Wing Offset
+      - name: Shotgun 5WR Trio
+      - name: Shotgun Empty Quads
+      - name: Shotgun Empty Trey
+      - name: Shotgun Heavy
+      - name: Shotgun Split Y- Offset
+      - name: Shotgun Spread HB Wk
+      - name: Shotgun Tight Slots
+      - name: Shotgun Trio Offset
+      - name: Shotgun Y-Trips HB Wk
+      - name: Strong I Close
+      - name: Wildcat Trips Over
+      - name: Wishbone Tight
+  - team_id: "ball_state"
+    name: Ball State
+    playbook_style: null
+    formation_count: 19
+    formation_families:
+      ace: 2
+      i_form: 1
+      other: 1
+      shotgun: 15
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Y-Trips
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: Shotgun Ace
+      - name: Shotgun Ace Twins
+      - name: Shotgun Empty Spread
+      - name: Shotgun Flanker Close
+      - name: Shotgun Normal
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Normal Wing TE
+      - name: Shotgun Spread
+      - name: Shotgun Tight Slots
+      - name: Shotgun Trips
+      - name: Shotgun Trips Open
+      - name: Shotgun Trips TE
+      - name: Shotgun Wing Trips Wk
+      - name: Shotgun Y-Trips
+      - name: Shotgun Y-Trips HB Wk
+  - team_id: "baylor"
+    name: Baylor
+    playbook_style: null
+    formation_count: 24
+    formation_families:
+      ace: 4
+      empty: 1
+      other: 1
+      pistol: 2
+      shotgun: 16
+    personnel_breakdown: null
+    formations:
+      - name: Ace F Wing Trips
+      - name: Ace Slot Flex
+      - name: Ace Slot Wing
+      - name: Ace Wing Trio
+      - name: Empty Flex Trey Open
+      - name: Goal Line Normal
+      - name: Pistol Slot Flex Wing
+      - name: Pistol Wing Trips
+      - name: Shotgun 5WR Flex Trey
+      - name: Shotgun Ace
+      - name: Shotgun Double Flex
+      - name: Shotgun Normal Flex Wing Wk
+      - name: Shotgun Normal Offset
+      - name: Shotgun Normal Wing Offset
+      - name: Shotgun Spread
+      - name: Shotgun Spread 4WR
+      - name: Shotgun Spread Flex
+      - name: Shotgun Trey 4WR Str
+      - name: Shotgun Trio 4WR Str
+      - name: Shotgun Trio HB Wk
+      - name: Shotgun Trips HB Wk
+      - name: Shotgun Wing Trio Wk
+      - name: Shotgun Wing Trips Offset Wk
+      - name: Shotgun Y-Trips Offset
+  - team_id: "boise_state"
+    name: Boise State
+    playbook_style: null
+    formation_count: 26
+    formation_families:
+      ace: 7
+      i_form: 5
+      other: 3
+      pistol: 1
+      shotgun: 8
+      wildcat: 2
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twins
+      - name: Ace Bunch
+      - name: Ace Bunch Spread
+      - name: Ace Jumbo Z
+      - name: Ace Slot
+      - name: Ace Y-Trips
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Twin TE
+      - name: I-Form Twins
+      - name: Pistol Slot
+      - name: Shotgun 5WR Flex Trey
+      - name: Shotgun Bunch
+      - name: Shotgun Double Flex
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Normal Y-Slot
+      - name: Shotgun Split Slot
+      - name: Shotgun Trey 4WR
+      - name: Shotgun Y-Trips
+      - name: Strong I Normal
+      - name: Strong I Tight
+      - name: Weak I Normal
+      - name: Weak I Twin TE
+      - name: Wildcat Fight Song
+      - name: Wildcat Normal
+  - team_id: "boston_college"
+    name: Boston College
+    playbook_style: null
+    formation_count: 23
+    formation_families:
+      ace: 4
+      i_form: 3
+      other: 2
+      pistol: 2
+      shotgun: 12
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big Twins
+      - name: Ace F Pair Twins
+      - name: Ace F Wing Trips
+      - name: Ace Twin TE
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: I-Form Twin TE
+      - name: Pistol Wing Over
+      - name: Pistol Wing Trio
+      - name: Shotgun 5WR Flex Trey
+      - name: Shotgun Double Flex
+      - name: Shotgun Normal Offset Wk
+      - name: Shotgun Split Y- Offset
+      - name: Shotgun Spread Flex
+      - name: Shotgun Trey Open
+      - name: Shotgun Trio HB Wk
+      - name: Shotgun Trips Over
+      - name: Shotgun Wing Trio Wk
+      - name: Shotgun Wing Trips Offset
+      - name: Shotgun Wing Trips Wk
+      - name: Shotgun Y-Trips HB Wk
+      - name: Strong I Twin TE
+  - team_id: "bowling_green"
+    name: Bowling Green
+    playbook_style: null
+    formation_count: 23
+    formation_families:
+      ace: 4
+      i_form: 3
+      other: 1
+      shotgun: 14
+      wildcat: 1
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twins
+      - name: Ace F Pair Twins
+      - name: Ace Slot
+      - name: Goal Line Normal
+      - name: I-Form H Pro
+      - name: I-Form H Tight
+      - name: Shotgun 5WR Trio
+      - name: Shotgun Ace
+      - name: Shotgun Bunch HB Str
+      - name: Shotgun Cluster
+      - name: Shotgun Heavy
+      - name: Shotgun Normal
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread
+      - name: Shotgun Trips Open
+      - name: Shotgun Trips Over
+      - name: Shotgun Wing Offset
+      - name: Shotgun Y-Trips
+      - name: Shotgun Y-Trips HB Wk
+      - name: Weak I Twins
+      - name: Wildcat Heavy Ace
+  - team_id: "buffalo"
+    name: Buffalo
+    playbook_style: null
+    formation_count: 20
+    formation_families:
+      ace: 2
+      i_form: 3
+      other: 2
+      shotgun: 13
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Y-Trips
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Twins
+      - name: Shotgun 5WR Trio
+      - name: Shotgun Ace
+      - name: Shotgun Bunch
+      - name: Shotgun Empty Quads
+      - name: Shotgun Normal
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Spread
+      - name: Shotgun Tight Slots
+      - name: Shotgun Trips
+      - name: Shotgun Trips HB Wk
+      - name: Shotgun Wing Trips Wk
+      - name: Shotgun Y-Trips
+      - name: Shotgun Y-Trips HB Wk
+      - name: Strong I Normal
+      - name: Weak I Twins
+  - team_id: "cal"
+    name: Cal
+    playbook_style: null
+    formation_count: 20
+    formation_families:
+      other: 1
+      pistol: 2
+      shotgun: 16
+      wildcat: 1
+    personnel_breakdown: null
+    formations:
+      - name: Goal Line Normal
+      - name: Pistol Full House
+      - name: Pistol Wing Trips
+      - name: Shotgun 5WR Tight
+      - name: Shotgun 5WR Trips
+      - name: Shotgun Ace
+      - name: Shotgun Cluster
+      - name: Shotgun Cluster HB Str
+      - name: Shotgun Empty Quads
+      - name: Shotgun Empty Spread
+      - name: Shotgun Normal Y-Slot
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread
+      - name: Shotgun Spread HB Wk
+      - name: Shotgun Tight Slots
+      - name: Shotgun Trips
+      - name: Shotgun Trips HB Wk
+      - name: Shotgun Trips Open
+      - name: Shotgun Trips Y-Flex
+      - name: Wildcat Spread
+  - team_id: "central_michigan"
+    name: Central Michigan
+    playbook_style: null
+    formation_count: 22
+    formation_families:
+      ace: 5
+      i_form: 4
+      other: 2
+      pistol: 1
+      shotgun: 10
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Slot
+      - name: Ace Trips
+      - name: Ace Twin TE
+      - name: Ace Y-Trips
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Slot
+      - name: I-Form Tight
+      - name: Maryland I Heavy
+      - name: Pistol Strong Slot
+      - name: Shotgun Empty Spread
+      - name: Shotgun Normal
+      - name: Shotgun Normal Y-Slot
+      - name: Shotgun Split Slot
+      - name: Shotgun Tight Flex
+      - name: Shotgun Trips
+      - name: Shotgun Trips Open
+      - name: Shotgun Trips Over
+      - name: Shotgun Wing Trips Wk
+      - name: Shotgun Y-Trips HB Wk
+      - name: Weak I Twins
+  - team_id: "cincinnati"
+    name: Cincinnati
+    playbook_style: null
+    formation_count: 24
+    formation_families:
+      ace: 4
+      i_form: 4
+      other: 1
+      pistol: 2
+      shotgun: 13
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace F Pair Twins
+      - name: Ace Slot
+      - name: Ace Slot Wing
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: I-Form Twin TE
+      - name: I-Form Twins
+      - name: Pistol Trio 4WR
+      - name: Pistol Y-Trips
+      - name: Shotgun 5WR Flex Trey
+      - name: Shotgun Bunch
+      - name: Shotgun Double Flex
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Normal Y-Flex
+      - name: Shotgun Split
+      - name: Shotgun Split Slot
+      - name: Shotgun Split Twins
+      - name: Shotgun Spread Flex Wk
+      - name: Shotgun Spread Offset
+      - name: Shotgun Tight Slots
+      - name: Shotgun Trey 4WR Str
+      - name: Shotgun Y-Trips HB Wk
+  - team_id: "clemson"
+    name: Clemson
+    playbook_style: null
+    formation_count: 27
+    formation_families:
+      ace: 2
+      other: 1
+      pistol: 11
+      shotgun: 9
+      wildcat: 4
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace F Pair Twins
+      - name: Goal Line Twins Over
+      - name: Pistol Ace
+      - name: Pistol Full House
+      - name: Pistol Slot Flex
+      - name: Pistol Slot Flex Wing
+      - name: Pistol Spread Flex
+      - name: Pistol Train
+      - name: Pistol Trio 4WR
+      - name: Pistol Twin TE
+      - name: Pistol Wing Over
+      - name: Pistol Wing Trio
+      - name: Pistol Y-Trips
+      - name: Shotgun 5WR Trio
+      - name: Shotgun F Twins Over
+      - name: Shotgun Normal Flex Wing
+      - name: Shotgun Normal Flex Wing Wk
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread Flex
+      - name: Shotgun Wing Offset Wk
+      - name: Shotgun Wing Trio Wk
+      - name: Wildcat Fight Song
+      - name: Wildcat Normal
+      - name: Wildcat Spread Flex
+      - name: Wildcat Trips Over
+  - team_id: "colorado"
+    name: Colorado
+    playbook_style: null
+    formation_count: 24
+    formation_families:
+      ace: 2
+      i_form: 3
+      other: 2
+      pistol: 13
+      shotgun: 4
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Twin TE
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: I-Form Twins
+      - name: Pistol Ace
+      - name: Pistol Ace Twins
+      - name: Pistol Bunch
+      - name: Pistol Slot
+      - name: Pistol Spread Flex
+      - name: Pistol Strong
+      - name: Pistol Trey Open
+      - name: Pistol Trio
+      - name: Pistol Trio 4WR
+      - name: Pistol Twin TE
+      - name: Pistol Twin TE Slot
+      - name: Pistol Wing Over
+      - name: Pistol Y-Trips
+      - name: Shotgun 5WR Flex Trey
+      - name: Shotgun Double Flex
+      - name: Shotgun Spread Flex
+      - name: Shotgun Trey 4WR
+      - name: Strong I Normal
+  - team_id: "colorado_state"
+    name: Colorado State
+    playbook_style: null
+    formation_count: 23
+    formation_families:
+      ace: 10
+      other: 1
+      pistol: 4
+      shotgun: 7
+      wildcat: 1
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twins
+      - name: Ace Big Wing
+      - name: Ace Bunch Base
+      - name: Ace Slot Flex
+      - name: Ace Twin TE
+      - name: Ace Twin TE Flex
+      - name: Ace Wing Trio
+      - name: Ace Wing Trio TE
+      - name: Ace Y-Trips
+      - name: Goal Line Normal
+      - name: Pistol Slot Flex
+      - name: Pistol Trio
+      - name: Pistol Twin TE Slot
+      - name: Pistol Y-Trips
+      - name: Shotgun 5WR Flex Trey
+      - name: Shotgun Normal Flex
+      - name: Shotgun Normal Y-Slot
+      - name: Shotgun Tight
+      - name: Shotgun Trey Open
+      - name: Shotgun Trio
+      - name: Shotgun Y-Trips HB Wk
+      - name: Wildcat Normal
+  - team_id: "duke"
+    name: Duke
+    playbook_style: null
+    formation_count: 22
+    formation_families:
+      ace: 1
+      i_form: 1
+      other: 1
+      shotgun: 19
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Goal Line Normal
+      - name: I-Form Slot
+      - name: Shotgun 5WR Flex Trey
+      - name: Shotgun Ace
+      - name: Shotgun Double Flex
+      - name: Shotgun Normal Flex Wing Wk
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Normal Offset
+      - name: Shotgun Normal Offset Wk
+      - name: Shotgun Slot Offset
+      - name: Shotgun Spread
+      - name: Shotgun Spread Flex
+      - name: Shotgun Spread Flex Wk
+      - name: Shotgun Spread Offset
+      - name: Shotgun Tight Slots
+      - name: Shotgun Trey 4WR Str
+      - name: Shotgun Trips HB Wk
+      - name: Shotgun Wing Offset
+      - name: Shotgun Wing Trips Offset
+      - name: Shotgun Wing Trips Offset Wk
+      - name: Shotgun Y-Trips HB Wk
+  - team_id: "east_carolina"
+    name: East Carolina
+    playbook_style: null
+    formation_count: 21
+    formation_families:
+      other: 1
+      pistol: 6
+      shotgun: 14
+    personnel_breakdown: null
+    formations:
+      - name: Goal Line Normal
+      - name: Pistol Ace Twins
+      - name: Pistol Spread Flex
+      - name: Pistol Strong
+      - name: Pistol Strong Slot
+      - name: Pistol Trips 4WR
+      - name: Pistol Weak H Flex
+      - name: Shotgun Double Flex
+      - name: Shotgun Empty Base
+      - name: Shotgun Normal
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Normal Y-Flex
+      - name: Shotgun Normal Y-Slot
+      - name: Shotgun Split Offset
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread Flex
+      - name: Shotgun Spread Flex Wk
+      - name: Shotgun Trey Open Offset
+      - name: Shotgun Trips
+      - name: Shotgun Trips Open
+      - name: Shotgun Y-Trips HB Wk
+  - team_id: "eastern_michigan"
+    name: Eastern Michigan
+    playbook_style: null
+    formation_count: 21
+    formation_families:
+      ace: 11
+      i_form: 2
+      other: 1
+      pistol: 3
+      shotgun: 4
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twins
+      - name: Ace Bunch Base
+      - name: Ace F Pair Twins
+      - name: Ace Jumbo
+      - name: Ace Jumbo Heavy
+      - name: Ace Slot
+      - name: Ace Trio
+      - name: Ace Trio 4WR
+      - name: Ace Twin TE
+      - name: Ace Y-Trips
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: Pistol Ace
+      - name: Pistol Slot
+      - name: Pistol Trio
+      - name: Shotgun Ace Twins Wk
+      - name: Shotgun Double Flex
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Split Offset
+  - team_id: "fiu"
+    name: FIU
+    playbook_style: null
+    formation_count: 23
+    formation_families:
+      ace: 8
+      i_form: 4
+      other: 3
+      shotgun: 8
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Close
+      - name: Ace Bunch
+      - name: Ace F Pair Twins
+      - name: Ace Slot
+      - name: Ace Twin TE
+      - name: Ace Wing Trio
+      - name: Ace Y-Trips
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Tackle Over
+      - name: I-Form Tight
+      - name: I-Form Twins Flex
+      - name: Shotgun Double Flex
+      - name: Shotgun Empty Spread
+      - name: Shotgun Normal
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread Flex
+      - name: Shotgun Trey Open
+      - name: Shotgun Trips Over
+      - name: Shotgun Y-Trips HB Wk
+      - name: Strong I Normal
+      - name: Strong I Twin TE
+  - team_id: "florida"
+    name: Florida
+    playbook_style: null
+    formation_count: 26
+    formation_families:
+      ace: 5
+      i_form: 5
+      other: 3
+      pistol: 4
+      shotgun: 8
+      wildcat: 1
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Slot
+      - name: Ace Spread
+      - name: Ace Twin TE
+      - name: Ace Y-Trips
+      - name: Goal Line Normal
+      - name: I-Form Hulk
+      - name: I-Form Normal
+      - name: I-Form Tackle Over
+      - name: I-Form Twins Flex
+      - name: Pistol Full House
+      - name: Pistol Slot Flex Wing
+      - name: Pistol Strong Slot
+      - name: Pistol Wing Trio
+      - name: Shotgun Bunch
+      - name: Shotgun Empty Y-Flex
+      - name: Shotgun Normal
+      - name: Shotgun Normal Y-Slot
+      - name: Shotgun Split Close
+      - name: Shotgun Tight
+      - name: Shotgun Trips Open
+      - name: Shotgun Wing Trips Wk
+      - name: Strong I Twins
+      - name: Strong I Y-Trips
+      - name: Weak I Normal
+      - name: Wildcat Normal
+  - team_id: "florida_atlantic"
+    name: Florida Atlantic
+    playbook_style: null
+    formation_count: 25
+    formation_families:
+      other: 1
+      pistol: 10
+      shotgun: 13
+      wildcat: 1
+    personnel_breakdown: null
+    formations:
+      - name: Goal Line Normal
+      - name: Pistol Ace Twins
+      - name: Pistol H Twins
+      - name: Pistol Slot
+      - name: Pistol Slot Flex Wing
+      - name: Pistol Trips 4WR
+      - name: Pistol Twin TE Slot
+      - name: Pistol Weak Slot
+      - name: Pistol Wing Over
+      - name: Pistol Wing Trips
+      - name: Pistol Y-Trips
+      - name: Shotgun 5WR Flex Trey
+      - name: Shotgun Ace Twins
+      - name: Shotgun Normal Offset
+      - name: Shotgun Normal Wing TE
+      - name: Shotgun Split Twins
+      - name: Shotgun Spread 4WR
+      - name: Shotgun Spread Flex Wk
+      - name: Shotgun Trey 4WR Str
+      - name: Shotgun Trey Open
+      - name: Shotgun Trips Over
+      - name: Shotgun Wing Trips Offset
+      - name: Shotgun Wing Trips Offset Wk
+      - name: Shotgun Y-Trips HB Wk
+      - name: Wildcat Wing
+  - team_id: "florida_state"
+    name: Florida State
+    playbook_style: null
+    formation_count: 24
+    formation_families:
+      ace: 4
+      i_form: 4
+      other: 1
+      pistol: 1
+      shotgun: 14
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Bunch Base
+      - name: Ace F Pair Twins
+      - name: Ace Slot
+      - name: Goal Line Normal
+      - name: I-Form H Pro
+      - name: I-Form H Tight
+      - name: I-Form H Twins
+      - name: I-Form Twin TE
+      - name: Pistol Trio 4WR
+      - name: Shotgun 5WR Flex Trio
+      - name: Shotgun Bunch
+      - name: Shotgun Double Flex
+      - name: Shotgun Normal
+      - name: Shotgun Normal Flex Wk
+      - name: Shotgun Normal Y-Flex
+      - name: Shotgun Split
+      - name: Shotgun Split Slot
+      - name: Shotgun Split Twins
+      - name: Shotgun Spread
+      - name: Shotgun Spread Flex Wk
+      - name: Shotgun Tight
+      - name: Shotgun Trey 4WR Str
+      - name: Shotgun Y-Trips HB Wk
+  - team_id: "fresno_state"
+    name: Fresno State
+    playbook_style: null
+    formation_count: 23
+    formation_families:
+      other: 1
+      pistol: 1
+      shotgun: 19
+      wildcat: 2
+    personnel_breakdown: null
+    formations:
+      - name: Goal Line Normal
+      - name: Pistol Strong
+      - name: Shotgun 5WR Flex
+      - name: Shotgun 5WR Trio
+      - name: Shotgun Double Flex
+      - name: Shotgun Normal Flex Wing
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Normal Offset
+      - name: Shotgun Normal Offset Wk
+      - name: Shotgun Split
+      - name: Shotgun Spread 4WR
+      - name: Shotgun Spread Offset
+      - name: Shotgun Tight Flex
+      - name: Shotgun Trey Open Offset
+      - name: Shotgun Trio Offset
+      - name: Shotgun Trips HB Wk
+      - name: Shotgun Trips Offset
+      - name: Shotgun Trips Over
+      - name: Shotgun Wing Trips Wk
+      - name: Shotgun Y-Trips HB Wk
+      - name: Shotgun Y-Trips Offset
+      - name: Wildcat Twin TE
+      - name: Wildcat Wing
+  - team_id: "georgia"
+    name: Georgia
+    playbook_style: null
+    formation_count: 24
+    formation_families:
+      ace: 6
+      i_form: 6
+      other: 1
+      pistol: 1
+      power_i: 1
+      shotgun: 9
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twins
+      - name: Ace Bunch
+      - name: Ace Slot Flex
+      - name: Ace Twin TE Flex
+      - name: Ace Y-Trips
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Slot Flex
+      - name: I-Form Tight
+      - name: I-Form Twin TE
+      - name: I-Form Twins Flex
+      - name: I-Form Y-Trips
+      - name: Pistol H Twins
+      - name: Power I Tight
+      - name: Shotgun 5WR Flex Trey
+      - name: Shotgun Double Flex
+      - name: Shotgun Normal
+      - name: Shotgun Normal Flex Wk
+      - name: Shotgun Normal Y-Flex
+      - name: Shotgun Split Offset
+      - name: Shotgun Trey Open
+      - name: Shotgun Trio HB Wk
+      - name: Shotgun Y-Trips HB Wk
+  - team_id: "georgia_state"
+    name: Georgia State
+    playbook_style: null
+    formation_count: 22
+    formation_families:
+      ace: 5
+      i_form: 5
+      other: 3
+      shotgun: 9
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twins
+      - name: Ace Bunch
+      - name: Ace Slot
+      - name: Ace Y-Trips
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: I-Form Twin TE
+      - name: I-Form Twins
+      - name: Shotgun 5WR
+      - name: Shotgun Ace
+      - name: Shotgun Bunch
+      - name: Shotgun Normal
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread
+      - name: Shotgun Tight
+      - name: Shotgun Trips Offset
+      - name: Shotgun Y-Trips HB Wk
+      - name: Strong I Normal
+      - name: Strong I Twins
+      - name: Weak I Normal
+  - team_id: "georgia_tech"
+    name: Georgia Tech
+    playbook_style: null
+    formation_count: 17
+    formation_families:
+      flexbone: 13
+      other: 1
+      pistol: 2
+      shotgun: 1
+    personnel_breakdown: null
+    formations:
+      - name: Flexbone Close
+      - name: Flexbone Normal
+      - name: Flexbone Slot Left
+      - name: Flexbone Slot Right
+      - name: Flexbone Split Wing X
+      - name: Flexbone Split Wing Z
+      - name: Flexbone Tackle Over
+      - name: Flexbone Tight
+      - name: Flexbone Trio Right
+      - name: Flexbone Trips Left
+      - name: Flexbone Trips Right
+      - name: Flexbone Twins Over
+      - name: Flexbone Wing Trips
+      - name: Goal Line Normal
+      - name: Pistol Flexbone Slot
+      - name: Pistol Flexbone Trips
+      - name: Shotgun Split Slot
+  - team_id: "hawaii"
+    name: Hawaii
+    playbook_style: null
+    formation_count: 22
+    formation_families:
+      ace: 7
+      i_form: 5
+      other: 3
+      shotgun: 7
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Bunch
+      - name: Ace F Pair Twins
+      - name: Ace Slot
+      - name: Ace Slot Y-Flex
+      - name: Ace Twin TE
+      - name: Ace Y-Trips
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: I-Form Twin TE
+      - name: I-Form Y-Trips
+      - name: Shotgun 5WR Flex Trio
+      - name: Shotgun Double Flex
+      - name: Shotgun Normal
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Normal Y-Slot
+      - name: Shotgun Split Slot
+      - name: Shotgun Y-Trips HB Wk
+      - name: Strong I Normal
+      - name: Strong I Twins
+      - name: Weak I Normal
+  - team_id: "houston"
+    name: Houston
+    playbook_style: null
+    formation_count: 20
+    formation_families:
+      other: 1
+      pistol: 7
+      shotgun: 12
+    personnel_breakdown: null
+    formations:
+      - name: Goal Line Normal
+      - name: Pistol Full House
+      - name: Pistol Spread
+      - name: Pistol Strong Slot
+      - name: Pistol Trips 4WR
+      - name: Pistol Trips Open
+      - name: Pistol Weak Slot
+      - name: Pistol Wing Trips
+      - name: Shotgun 5WR Trips
+      - name: Shotgun Cluster
+      - name: Shotgun Empty Base
+      - name: Shotgun Empty Quads
+      - name: Shotgun Slot Offset
+      - name: Shotgun Spread
+      - name: Shotgun Spread 4WR
+      - name: Shotgun Spread Flex
+      - name: Shotgun Spread Offset
+      - name: Shotgun Trio Open
+      - name: Shotgun Trips
+      - name: Shotgun Trips HB Wk
+  - team_id: "idaho"
+    name: Idaho
+    playbook_style: null
+    formation_count: 23
+    formation_families:
+      ace: 7
+      i_form: 5
+      other: 2
+      pistol: 2
+      shotgun: 7
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Bunch
+      - name: Ace Slot Flex
+      - name: Ace Trio
+      - name: Ace Twin TE
+      - name: Ace Twin TE Slot
+      - name: Ace Y-Trips
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: I-Form Twin TE
+      - name: I-Form Twins
+      - name: Pistol Slot
+      - name: Pistol Train
+      - name: Shotgun 5WR Trio
+      - name: Shotgun Ace
+      - name: Shotgun Normal Flex
+      - name: Shotgun Normal Flex Wk
+      - name: Shotgun Spread HB Wk
+      - name: Shotgun Trio
+      - name: Shotgun Y-Trips HB Wk
+      - name: Strong I Normal
+      - name: Weak I Twins
+  - team_id: "illinois"
+    name: Illinois
+    playbook_style: null
+    formation_count: 25
+    formation_families:
+      ace: 8
+      i_form: 3
+      other: 5
+      shotgun: 9
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twins
+      - name: Ace Bunch
+      - name: Ace Slot Flex
+      - name: Ace Slot Y-Flex
+      - name: Ace Trio
+      - name: Ace Twin TE
+      - name: Ace Y-Trips
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Slot
+      - name: I-Form Tight
+      - name: Maryland I Heavy
+      - name: Shotgun 5WR Flex Trey
+      - name: Shotgun Bunch HB Str
+      - name: Shotgun Double Flex
+      - name: Shotgun Normal Flex Wk
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread
+      - name: Shotgun Tight
+      - name: Shotgun Trey Open
+      - name: Shotgun Y-Trips
+      - name: Strong I Normal
+      - name: Strong I Twin TE
+      - name: Strong I Twins
+  - team_id: "indiana"
+    name: Indiana
+    playbook_style: null
+    formation_count: 21
+    formation_families:
+      i_form: 1
+      other: 1
+      pistol: 5
+      shotgun: 14
+    personnel_breakdown: null
+    formations:
+      - name: Goal Line Normal
+      - name: I-Form Twins
+      - name: Pistol Full House
+      - name: Pistol Slot
+      - name: Pistol Spread Flex
+      - name: Pistol Trey Open
+      - name: Pistol Y-Trips
+      - name: Shotgun Normal
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Normal Wing Offset
+      - name: Shotgun Normal Y-Flex
+      - name: Shotgun Split Offset
+      - name: Shotgun Split Twins
+      - name: Shotgun Spread
+      - name: Shotgun Spread Flex
+      - name: Shotgun Spread Flex Wk
+      - name: Shotgun Trey 4WR Str
+      - name: Shotgun Trey Open Offset
+      - name: Shotgun Trips TE Offset
+      - name: Shotgun Wing Trips Offset
+      - name: Shotgun Y-Trips HB Wk
+  - team_id: "iowa"
+    name: Iowa
+    playbook_style: null
+    formation_count: 21
+    formation_families:
+      ace: 7
+      i_form: 6
+      other: 2
+      shotgun: 6
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twins
+      - name: Ace Slot
+      - name: Ace Slot Flex
+      - name: Ace Twin TE
+      - name: Ace Twin TE Slot
+      - name: Ace Y-Trips
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: I-Form Twin TE
+      - name: I-Form Twins
+      - name: I-Form Y-Trips
+      - name: Shotgun Empty Base
+      - name: Shotgun Empty Trey Flex
+      - name: Shotgun Normal
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Y-Trips
+      - name: Shotgun Y-Trips HB Wk
+      - name: Strong I Normal
+      - name: Weak I Twins
+  - team_id: "iowa_state"
+    name: Iowa State
+    playbook_style: null
+    formation_count: 22
+    formation_families:
+      other: 1
+      pistol: 4
+      shotgun: 16
+      wildcat: 1
+    personnel_breakdown: null
+    formations:
+      - name: Goal Line Normal
+      - name: Pistol Ace
+      - name: Pistol Full House
+      - name: Pistol Strong Slot
+      - name: Pistol Wing Trips
+      - name: Shotgun 5WR
+      - name: Shotgun 5WR Trips
+      - name: Shotgun Ace
+      - name: Shotgun Normal
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Normal Wing TE
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread
+      - name: Shotgun Spread Offset
+      - name: Shotgun Trips
+      - name: Shotgun Trips HB Wk
+      - name: Shotgun Trips Offset
+      - name: Shotgun Trips Over
+      - name: Shotgun Wing Trips Offset
+      - name: Shotgun Wing Trips Offset Wk
+      - name: Shotgun Y-Trips HB Wk
+      - name: Wildcat Wing
+  - team_id: "kansas"
+    name: Kansas
+    playbook_style: null
+    formation_count: 24
+    formation_families:
+      ace: 5
+      i_form: 3
+      other: 2
+      pistol: 3
+      shotgun: 10
+      wildcat: 1
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Bunch
+      - name: Ace Jumbo
+      - name: Ace Slot
+      - name: Ace Y-Trips
+      - name: Goal Line Normal
+      - name: I-Form Tight
+      - name: I-Form Y-Trips
+      - name: Pistol Full House
+      - name: Pistol Slot
+      - name: Pistol Strong
+      - name: Shotgun Bunch
+      - name: Shotgun Empty Y-Flex
+      - name: Shotgun Normal
+      - name: Shotgun Slot Offset
+      - name: Shotgun Split
+      - name: Shotgun Split Close
+      - name: Shotgun Spread
+      - name: Shotgun Tight
+      - name: Shotgun Trips Y-Flex
+      - name: Shotgun Y-Trips HB Wk
+      - name: Strong I Normal
+      - name: Weak I Normal
+      - name: Wildcat Normal
+  - team_id: "kansas_state"
+    name: Kansas State
+    playbook_style: null
+    formation_count: 23
+    formation_families:
+      ace: 2
+      i_form: 2
+      other: 3
+      pistol: 5
+      shotgun: 10
+      wildcat: 1
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Slot
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: Pistol Ace
+      - name: Pistol Strong
+      - name: Pistol Trips
+      - name: Pistol Wing Trips
+      - name: Pistol Y-Trips
+      - name: Shotgun Ace Twins Wk
+      - name: Shotgun Empty Spread
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Normal Y-Slot
+      - name: Shotgun Split Slot
+      - name: Shotgun Trips
+      - name: Shotgun Trips HB Wk
+      - name: Shotgun Trips TE
+      - name: Shotgun Y-Trips
+      - name: Shotgun Y-Trips HB Wk
+      - name: Strong I Normal
+      - name: Strong I Y-Trips
+      - name: Wildcat Slot
+  - team_id: "kent_state"
+    name: Kent State
+    playbook_style: null
+    formation_count: 22
+    formation_families:
+      ace: 8
+      i_form: 3
+      other: 1
+      shotgun: 10
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Close
+      - name: Ace Big Twins
+      - name: Ace Slot
+      - name: Ace Trips
+      - name: Ace Twin TE
+      - name: Ace Twin TE Slot
+      - name: Ace Y-Trips
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Slot
+      - name: I-Form Twins
+      - name: Shotgun 5WR Flex Trey
+      - name: Shotgun Bunch
+      - name: Shotgun Bunch TE
+      - name: Shotgun Normal
+      - name: Shotgun Normal Flex Wk
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread
+      - name: Shotgun Trips HB Wk
+      - name: Shotgun Trips TE
+      - name: Shotgun Y-Trips
+  - team_id: "kentucky"
+    name: Kentucky
+    playbook_style: null
+    formation_count: 21
+    formation_families:
+      other: 1
+      pistol: 6
+      shotgun: 13
+      wildcat: 1
+    personnel_breakdown: null
+    formations:
+      - name: Goal Line Normal
+      - name: Pistol Full House
+      - name: Pistol Spread
+      - name: Pistol Strong Slot
+      - name: Pistol Trips 4WR
+      - name: Pistol Trips Open
+      - name: Pistol Weak Slot
+      - name: Shotgun 5WR Trips
+      - name: Shotgun Empty Quads
+      - name: Shotgun Normal
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Normal Y-Flex
+      - name: Shotgun Normal Y-Slot
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread HB Wk
+      - name: Shotgun Trey 4WR Str
+      - name: Shotgun Trey Open Offset
+      - name: Shotgun Trips
+      - name: Shotgun Trips Open
+      - name: Shotgun Y-Trips HB Wk
+      - name: Wildcat Slot
+  - team_id: "lsu"
+    name: LSU
+    playbook_style: null
+    formation_count: 23
+    formation_families:
+      ace: 5
+      i_form: 7
+      other: 2
+      pistol: 1
+      shotgun: 8
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Bunch Base
+      - name: Ace Slot
+      - name: Ace Twin TE
+      - name: Ace Y-Trips
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Slot Flex
+      - name: I-Form Tackle Over
+      - name: I-Form Tight
+      - name: I-Form Twin TE
+      - name: I-Form Twins
+      - name: I-Form Y-Trips
+      - name: Pistol Y-Trips
+      - name: Shotgun 5WR Trio
+      - name: Shotgun Normal
+      - name: Shotgun Spread Flex
+      - name: Shotgun Tight
+      - name: Shotgun Trey 4WR Str
+      - name: Shotgun Trio 4WR
+      - name: Shotgun Wing Trio Wk
+      - name: Shotgun Y-Trips HB Wk
+      - name: Strong I Close
+  - team_id: "louisiana_tech"
+    name: Louisiana Tech
+    playbook_style: null
+    formation_count: 21
+    formation_families:
+      ace: 1
+      other: 1
+      pistol: 6
+      shotgun: 13
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Goal Line Normal
+      - name: Pistol Slot Flex Wing
+      - name: Pistol Spread
+      - name: Pistol Strong Slot
+      - name: Pistol Trips 4WR
+      - name: Pistol Weak Slot
+      - name: Pistol Wing Trips
+      - name: Shotgun 5WR
+      - name: Shotgun Ace
+      - name: Shotgun Double Flex
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Normal Offset
+      - name: Shotgun Normal Y-Slot
+      - name: Shotgun Slot Offset
+      - name: Shotgun Spread Offset
+      - name: Shotgun Trips
+      - name: Shotgun Trips Offset
+      - name: Shotgun Trips Open
+      - name: Shotgun Y-Trips
+      - name: Shotgun Y-Trips HB Wk
+  - team_id: "louisville"
+    name: Louisville
+    playbook_style: null
+    formation_count: 25
+    formation_families:
+      ace: 6
+      i_form: 4
+      other: 1
+      pistol: 6
+      shotgun: 8
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big Twins
+      - name: Ace Big Wing
+      - name: Ace Slot Wing
+      - name: Ace Twin TE
+      - name: Ace Twin TE Slot
+      - name: Ace Y-Trips
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Slot Flex
+      - name: I-Form Tight
+      - name: I-Form Twins Flex
+      - name: Pistol Ace
+      - name: Pistol Ace Twins
+      - name: Pistol Slot
+      - name: Pistol Spread Flex
+      - name: Pistol Trey Open
+      - name: Pistol Y-Trips
+      - name: Shotgun Ace
+      - name: Shotgun Ace Twins
+      - name: Shotgun Normal Flex Wk
+      - name: Shotgun Split Offset
+      - name: Shotgun Trey 4WR Str
+      - name: Shotgun Trey Open
+      - name: Shotgun Trips Over
+      - name: Shotgun Y-Trips HB Wk
+  - team_id: "marshall"
+    name: Marshall
+    playbook_style: null
+    formation_count: 22
+    formation_families:
+      ace: 1
+      i_form: 2
+      other: 1
+      pistol: 6
+      shotgun: 12
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Goal Line Normal
+      - name: I-Form Slot
+      - name: I-Form Tight
+      - name: Pistol Slot Flex Wing
+      - name: Pistol Spread
+      - name: Pistol Strong Slot
+      - name: Pistol Trips 4WR
+      - name: Pistol Weak Slot
+      - name: Pistol Wing Trips
+      - name: Shotgun 5WR
+      - name: Shotgun Ace
+      - name: Shotgun Double Flex
+      - name: Shotgun Normal Offset
+      - name: Shotgun Normal Y-Slot
+      - name: Shotgun Slot Offset
+      - name: Shotgun Spread Offset
+      - name: Shotgun Trips
+      - name: Shotgun Trips Offset
+      - name: Shotgun Trips Open
+      - name: Shotgun Y-Trips
+      - name: Shotgun Y-Trips HB Wk
+  - team_id: "maryland"
+    name: Maryland
+    playbook_style: null
+    formation_count: 23
+    formation_families:
+      ace: 4
+      i_form: 4
+      other: 1
+      pistol: 1
+      shotgun: 12
+      wildcat: 1
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twins
+      - name: Ace Slot
+      - name: Ace Twin TE Slot
+      - name: Goal Line Normal
+      - name: I-Form Slot
+      - name: I-Form Twin TE
+      - name: I-Form Twins
+      - name: I-Form Y-Trips
+      - name: Pistol Slot
+      - name: Shotgun Ace Twins
+      - name: Shotgun Normal
+      - name: Shotgun Normal Wing Offset
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread
+      - name: Shotgun Spread 4WR
+      - name: Shotgun Spread Flex
+      - name: Shotgun Trey 4WR Str
+      - name: Shotgun Trips HB Wk
+      - name: Shotgun Twin TE Slot Wk
+      - name: Shotgun Wing Trio Wk
+      - name: Shotgun Wing Trips Offset Wk
+      - name: Wildcat Slot
+  - team_id: "memphis"
+    name: Memphis
+    playbook_style: null
+    formation_count: 26
+    formation_families:
+      ace: 2
+      i_form: 1
+      other: 2
+      pistol: 3
+      power_i: 1
+      shotgun: 15
+      wildcat: 2
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace F Pair Twins
+      - name: Goal Line Normal
+      - name: I-Form H Tight
+      - name: Pistol Full House
+      - name: Pistol Strong
+      - name: Pistol Weak
+      - name: Power I Tight
+      - name: Shotgun 5WR Flex
+      - name: Shotgun Ace
+      - name: Shotgun Ace Twins
+      - name: Shotgun Double Flex
+      - name: Shotgun Empty Spread
+      - name: Shotgun Normal Offset Wk
+      - name: Shotgun Normal Wing TE
+      - name: Shotgun Split Slot
+      - name: Shotgun Split Y- Offset
+      - name: Shotgun Spread
+      - name: Shotgun Spread 4WR
+      - name: Shotgun Trips
+      - name: Shotgun Trips HB Wk
+      - name: Shotgun Twin TE Slot
+      - name: Shotgun Wing Trips Wk
+      - name: Strong I Normal
+      - name: Wildcat Fight Song
+      - name: Wildcat Wing
+  - team_id: "miami"
+    name: Miami
+    playbook_style: null
+    formation_count: 23
+    formation_families:
+      ace: 7
+      i_form: 6
+      other: 3
+      shotgun: 6
+      wildcat: 1
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twins
+      - name: Ace Bunch
+      - name: Ace Flex Close
+      - name: Ace Slot
+      - name: Ace Twin TE
+      - name: Ace Twin TE Slot
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: I-Form Twin TE
+      - name: I-Form Twins
+      - name: Shotgun Double Flex
+      - name: Shotgun Empty Trey
+      - name: Shotgun Normal
+      - name: Shotgun Split Slot
+      - name: Shotgun Trips Over
+      - name: Shotgun Y-Trips HB Wk
+      - name: Strong I Normal
+      - name: Strong I Twins
+      - name: Weak I Normal
+      - name: Weak I Twin TE
+      - name: Wildcat Normal
+  - team_id: "miami_oh"
+    name: Miami (OH)
+    playbook_style: null
+    formation_count: 22
+    formation_families:
+      ace: 8
+      i_form: 2
+      other: 2
+      pistol: 3
+      shotgun: 7
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twins
+      - name: Ace Jumbo Z
+      - name: Ace Slot
+      - name: Ace Slot Wing
+      - name: Ace Spread
+      - name: Ace Trips
+      - name: Ace Y-Trips
+      - name: Goal Line Normal
+      - name: I-Form Tight
+      - name: I-Form Y-Trips
+      - name: Pistol Slot
+      - name: Pistol Trips 4WR
+      - name: Pistol Y-Trips
+      - name: Shotgun Bunch
+      - name: Shotgun Empty Spread
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Normal Y-Slot
+      - name: Shotgun Trips
+      - name: Shotgun Trips Over
+      - name: Shotgun Y-Trips HB Wk
+      - name: Strong I Tight
+  - team_id: "michigan"
+    name: Michigan
+    playbook_style: null
+    formation_count: 24
+    formation_families:
+      ace: 7
+      i_form: 5
+      other: 3
+      shotgun: 9
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Bunch
+      - name: Ace F Pair Twins
+      - name: Ace Slot
+      - name: Ace Tight
+      - name: Ace Twin TE
+      - name: Ace Y-Trips
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: I-Form Twins
+      - name: I-Form Y-Trips
+      - name: Shotgun 5WR Flex Trey
+      - name: Shotgun Bunch HB Str
+      - name: Shotgun Normal
+      - name: Shotgun Normal Y-Flex
+      - name: Shotgun Split Close
+      - name: Shotgun Split Y-Flex
+      - name: Shotgun Trey Open
+      - name: Shotgun Trio
+      - name: Shotgun Y-Trips HB Wk
+      - name: Split Pro
+      - name: Strong I Normal
+      - name: Weak I Twins
+  - team_id: "michigan_state"
+    name: Michigan State
+    playbook_style: null
+    formation_count: 23
+    formation_families:
+      ace: 6
+      i_form: 6
+      other: 2
+      shotgun: 8
+      wildcat: 1
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twins
+      - name: Ace Slot
+      - name: Ace Trips
+      - name: Ace Twin TE
+      - name: Ace Twin TE Slot
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: I-Form Twin TE
+      - name: I-Form Twins
+      - name: I-Form Y-Trips
+      - name: Maryland I Heavy
+      - name: Shotgun 5WR Flex
+      - name: Shotgun Cluster
+      - name: Shotgun Flanker Close
+      - name: Shotgun Normal
+      - name: Shotgun Normal Y-Slot
+      - name: Shotgun Trips Open
+      - name: Shotgun Trips Over
+      - name: Shotgun Y-Trips HB Wk
+      - name: Weak I Normal
+      - name: Wildcat Normal
+  - team_id: "mid_tenn_state"
+    name: Mid Tenn State
+    playbook_style: null
+    formation_count: 22
+    formation_families:
+      other: 1
+      pistol: 8
+      shotgun: 13
+    personnel_breakdown: null
+    formations:
+      - name: Goal Line Normal
+      - name: Pistol Jumbo Z
+      - name: Pistol Slot Flex Wing
+      - name: Pistol Spread
+      - name: Pistol Trey Open
+      - name: Pistol Trips
+      - name: Pistol Wing Trio
+      - name: Pistol Wing Trips
+      - name: Pistol Y-Trips
+      - name: Shotgun 5WR Trey
+      - name: Shotgun Bunch
+      - name: Shotgun Cluster
+      - name: Shotgun Double Flex
+      - name: Shotgun Slot Offset
+      - name: Shotgun Spread
+      - name: Shotgun Spread HB Wk
+      - name: Shotgun Trey 4WR Str
+      - name: Shotgun Trey Open Offset
+      - name: Shotgun Trips
+      - name: Shotgun Trips Open
+      - name: Shotgun Wing Trips
+      - name: Shotgun Wing Trips Offset Wk
+  - team_id: "minnesota"
+    name: Minnesota
+    playbook_style: null
+    formation_count: 23
+    formation_families:
+      ace: 3
+      i_form: 2
+      other: 4
+      shotgun: 13
+      wildcat: 1
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twins
+      - name: Ace F Pair Twins
+      - name: Goal Line Normal
+      - name: I-Form Tight
+      - name: I-Form Y-Trips
+      - name: Maryland I Wide
+      - name: Shotgun 5WR Trio
+      - name: Shotgun Ace Twins Wk
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Normal Offset
+      - name: Shotgun Normal Offset Wk
+      - name: Shotgun Normal Y-Slot
+      - name: Shotgun Split Twins
+      - name: Shotgun Trips HB Wk
+      - name: Shotgun Trips Offset
+      - name: Shotgun Twin TE Slot
+      - name: Shotgun Wing Trips Wk
+      - name: Shotgun Y-Trips HB Wk
+      - name: Shotgun Y-Trips Offset
+      - name: Strong I Normal
+      - name: Strong I Y-Trips
+      - name: Wildcat Normal
+  - team_id: "mississippi_state"
+    name: Mississippi State
+    playbook_style: null
+    formation_count: 22
+    formation_families:
+      ace: 1
+      other: 1
+      pistol: 1
+      shotgun: 18
+      wishbone: 1
+    personnel_breakdown: null
+    formations:
+      - name: Ace Wing Trips
+      - name: Goal Line Normal
+      - name: Pistol Wing Trips
+      - name: Shotgun 5WR Flex Trey
+      - name: Shotgun Ace
+      - name: Shotgun Empty Trey TE
+      - name: Shotgun Normal
+      - name: Shotgun Normal Flex Wing
+      - name: Shotgun Slot F Wing
+      - name: Shotgun Split Offset
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread
+      - name: Shotgun Spread Flex
+      - name: Shotgun Trio 4WR Str
+      - name: Shotgun Trio HB Wk
+      - name: Shotgun Trips
+      - name: Shotgun Trips Over
+      - name: Shotgun Wing Offset Wk
+      - name: Shotgun Wing Trips Wk
+      - name: Shotgun Y-Trips
+      - name: Shotgun Y-Trips HB Wk
+      - name: Wishbone Tight
+  - team_id: "missouri"
+    name: Missouri
+    playbook_style: null
+    formation_count: 22
+    formation_families:
+      ace: 1
+      other: 1
+      pistol: 3
+      shotgun: 16
+      wildcat: 1
+    personnel_breakdown: null
+    formations:
+      - name: Ace Twin TE Slot
+      - name: Goal Line Normal
+      - name: Pistol Full House
+      - name: Pistol Spread
+      - name: Pistol Y-Trips
+      - name: Shotgun 5WR
+      - name: Shotgun 5WR Bunch
+      - name: Shotgun 5WR Trips
+      - name: Shotgun Bunch HB Str
+      - name: Shotgun Bunch Quads
+      - name: Shotgun Empty Quads
+      - name: Shotgun Empty Spread
+      - name: Shotgun Monster
+      - name: Shotgun Normal Y-Slot
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread
+      - name: Shotgun Spread HB Wk
+      - name: Shotgun Trips
+      - name: Shotgun Trips HB Wk
+      - name: Shotgun Trips Open
+      - name: Shotgun Trips Over
+      - name: Wildcat Wing
+  - team_id: "multiple_d"
+    name: Multiple D
+    playbook_style: null
+    formation_count: 15
+    formation_families:
+      other: 15
+    personnel_breakdown: null
+    formations:
+      - name: 3-4 Odd
+      - name: 3-4 Over Ed
+      - name: 3-4 Predator
+      - name: 4-4- Split
+      - name: 46- Bear
+      - name: 5-2- Normal
+      - name: Dime Normal
+      - name: Dollar 3-2-6
+      - name: Goal Line 5-3-3
+      - name: Goal Line 6-3-2
+      - name: Nickel 1-5-5 Prowl
+      - name: Nickel 3-3-5
+      - name: Nickel Normal
+      - name: Quarter 3 Deep
+      - name: Quarter Normal
+  - team_id: "nc_state"
+    name: NC State
+    playbook_style: null
+    formation_count: 23
+    formation_families:
+      other: 1
+      pistol: 11
+      shotgun: 11
+    personnel_breakdown: null
+    formations:
+      - name: Goal Line Normal
+      - name: Pistol Full House
+      - name: Pistol H Twins
+      - name: Pistol Slot
+      - name: Pistol Slot Flex Wing
+      - name: Pistol Strong Slot
+      - name: Pistol Train
+      - name: Pistol Trips
+      - name: Pistol Twin TE
+      - name: Pistol Twin TE Slot
+      - name: Pistol Weak Twins
+      - name: Pistol Wing Over
+      - name: Shotgun 5WR Flex
+      - name: Shotgun Empty Quads
+      - name: Shotgun Spread
+      - name: Shotgun Spread Flex
+      - name: Shotgun Trips HB Wk
+      - name: Shotgun Trips Offset
+      - name: Shotgun Trips TE
+      - name: Shotgun Twin TE Slot Wk
+      - name: Shotgun Wing Trips Offset
+      - name: Shotgun Wing Trips Wk
+      - name: Shotgun Y-Trips
+  - team_id: "navy"
+    name: Navy
+    playbook_style: null
+    formation_count: 17
+    formation_families:
+      flexbone: 13
+      other: 1
+      pistol: 2
+      shotgun: 1
+    personnel_breakdown: null
+    formations:
+      - name: Flexbone Close
+      - name: Flexbone Normal
+      - name: Flexbone Slot Left
+      - name: Flexbone Slot Right
+      - name: Flexbone Split Wing X
+      - name: Flexbone Split Wing Z
+      - name: Flexbone Tackle Over
+      - name: Flexbone Tight
+      - name: Flexbone Trio Right
+      - name: Flexbone Trips Left
+      - name: Flexbone Trips Right
+      - name: Flexbone Twins Over
+      - name: Flexbone Wing Trips
+      - name: Goal Line Normal
+      - name: Pistol Flexbone Slot
+      - name: Pistol Flexbone Trips
+      - name: Shotgun Trips
+  - team_id: "nebraska"
+    name: Nebraska
+    playbook_style: null
+    formation_count: 24
+    formation_families:
+      ace: 2
+      i_form: 3
+      other: 1
+      pistol: 4
+      shotgun: 12
+      wildcat: 2
+    personnel_breakdown: null
+    formations:
+      - name: Ace Bunch Base
+      - name: Ace Twin TE
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: I-Form Y-Trips
+      - name: Pistol Ace Twins
+      - name: Pistol Full House
+      - name: Pistol Twin TE Slot
+      - name: Pistol Y-Trips
+      - name: Shotgun Empty Spread
+      - name: Shotgun Normal
+      - name: Shotgun Normal Y-Flex
+      - name: Shotgun Normal Y-Slot
+      - name: Shotgun Split Y-Flex
+      - name: Shotgun Trey Open
+      - name: Shotgun Trio HB Wk
+      - name: Shotgun Trips Y-Flex
+      - name: Shotgun Twin TE Slot
+      - name: Shotgun Y-Trips
+      - name: Shotgun Y-Trips HB Wk
+      - name: Shotgun Y-Trips Offset
+      - name: Wildcat Slot
+      - name: Wildcat Wing Trio
+  - team_id: "nevada"
+    name: Nevada
+    playbook_style: null
+    formation_count: 19
+    formation_families:
+      other: 1
+      pistol: 15
+      shotgun: 3
+    personnel_breakdown: null
+    formations:
+      - name: Goal Line Normal
+      - name: Pistol Ace
+      - name: Pistol Ace Twins
+      - name: Pistol Bunch
+      - name: Pistol Jumbo Z
+      - name: Pistol Slot
+      - name: Pistol Slot Flex
+      - name: Pistol Train
+      - name: Pistol Trio
+      - name: Pistol Trips
+      - name: Pistol Trips 4WR
+      - name: Pistol Twin TE
+      - name: Pistol Twin TE Slot
+      - name: Pistol Wing Over
+      - name: Pistol Wing Trips TE
+      - name: Pistol Y-Trips
+      - name: Shotgun Twin TE Slot
+      - name: Shotgun Wing Trio Wk
+      - name: Shotgun Y-Trips Offset
+  - team_id: "new_mexico"
+    name: New Mexico
+    playbook_style: null
+    formation_count: 21
+    formation_families:
+      other: 1
+      pistol: 14
+      shotgun: 6
+    personnel_breakdown: null
+    formations:
+      - name: Goal Line Normal
+      - name: Pistol Ace
+      - name: Pistol Ace Twins
+      - name: Pistol Full House
+      - name: Pistol H Twins
+      - name: Pistol Slot
+      - name: Pistol Spread
+      - name: Pistol Strong
+      - name: Pistol Train
+      - name: Pistol Twin TE
+      - name: Pistol Twin TE Slot
+      - name: Pistol Weak Twins
+      - name: Pistol Wing Over
+      - name: Pistol Wing Trips
+      - name: Pistol Y-Trips
+      - name: Shotgun Ace Twins Wk
+      - name: Shotgun Bunch
+      - name: Shotgun F Twins Over
+      - name: Shotgun Normal Offset Wk
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread HB Wk
+  - team_id: "new_mexico_state"
+    name: New Mexico State
+    playbook_style: null
+    formation_count: 21
+    formation_families:
+      ace: 2
+      other: 1
+      pistol: 3
+      shotgun: 14
+      wildcat: 1
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Slot
+      - name: Goal Line Normal
+      - name: Pistol Full House
+      - name: Pistol Strong Slot
+      - name: Pistol Trips 4WR
+      - name: Shotgun 5WR
+      - name: Shotgun Ace
+      - name: Shotgun Bunch HB Str
+      - name: Shotgun Empty Quads
+      - name: Shotgun Normal
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread
+      - name: Shotgun Tight
+      - name: Shotgun Trips
+      - name: Shotgun Trips HB Wk
+      - name: Shotgun Trips TE Offset
+      - name: Shotgun Wing Trio Wk
+      - name: Shotgun Wing Trips Offset
+      - name: Shotgun Y-Trips
+      - name: Wildcat Normal
+  - team_id: "north_carolina"
+    name: North Carolina
+    playbook_style: null
+    formation_count: 20
+    formation_families:
+      ace: 2
+      other: 2
+      shotgun: 16
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Bunch Swap
+      - name: Goal Line Normal
+      - name: Shotgun 5WR Flex Trey
+      - name: Shotgun Bunch HB Str
+      - name: Shotgun Double Flex
+      - name: Shotgun Normal
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Normal Y-Flex
+      - name: Shotgun Normal Y-Slot
+      - name: Shotgun Slot Offset
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread Flex Wk
+      - name: Shotgun Tight Flex
+      - name: Shotgun Trio 4WR Str
+      - name: Shotgun Trips HB Wk
+      - name: Shotgun Trips Over
+      - name: Shotgun Trips TE Offset
+      - name: Shotgun Y-Trips
+      - name: Strong I Twins
+  - team_id: "north_texas"
+    name: North Texas
+    playbook_style: null
+    formation_count: 29
+    formation_families:
+      ace: 6
+      i_form: 5
+      other: 3
+      pistol: 6
+      shotgun: 7
+      wildcat: 2
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twins
+      - name: Ace Bunch
+      - name: Ace F Pair Twins
+      - name: Ace Slot
+      - name: Ace Twin TE
+      - name: Goal Line Normal
+      - name: I-Form Tackle Over
+      - name: I-Form Tight
+      - name: I-Form Twin TE
+      - name: I-Form Twins Flex
+      - name: Pistol Full House
+      - name: Pistol H Twins
+      - name: Pistol Slot
+      - name: Pistol Strong
+      - name: Pistol Trips 4WR
+      - name: Pistol Twin TE Slot
+      - name: Shotgun 5WR Flex Trio
+      - name: Shotgun Double Flex
+      - name: Shotgun Normal Flex
+      - name: Shotgun Split Offset
+      - name: Shotgun Trey 4WR
+      - name: Shotgun Twin TE Flex
+      - name: Shotgun Y-Trips HB Wk
+      - name: Strong I Normal
+      - name: Strong I Tight
+      - name: Weak I Twins
+      - name: Wildcat Fight Song
+      - name: Wildcat Wing
+  - team_id: "northern_illinois"
+    name: Northern Illinois
+    playbook_style: null
+    formation_count: 23
+    formation_families:
+      other: 1
+      pistol: 11
+      shotgun: 11
+    personnel_breakdown: null
+    formations:
+      - name: Goal Line Normal
+      - name: Pistol Full House
+      - name: Pistol H Twins
+      - name: Pistol Slot
+      - name: Pistol Slot Flex Wing
+      - name: Pistol Strong Slot
+      - name: Pistol Train
+      - name: Pistol Trips
+      - name: Pistol Twin TE
+      - name: Pistol Twin TE Slot
+      - name: Pistol Weak Twins
+      - name: Pistol Wing Over
+      - name: Shotgun 5WR Flex
+      - name: Shotgun Empty Quads
+      - name: Shotgun Spread
+      - name: Shotgun Spread Flex
+      - name: Shotgun Trips HB Wk
+      - name: Shotgun Trips Offset
+      - name: Shotgun Trips TE
+      - name: Shotgun Twin TE Slot Wk
+      - name: Shotgun Wing Trips Offset
+      - name: Shotgun Wing Trips Wk
+      - name: Shotgun Y-Trips
+  - team_id: "northwestern"
+    name: Northwestern
+    playbook_style: null
+    formation_count: 22
+    formation_families:
+      ace: 1
+      i_form: 1
+      other: 1
+      pistol: 3
+      shotgun: 16
+    personnel_breakdown: null
+    formations:
+      - name: Ace Jumbo Z
+      - name: Goal Line Normal
+      - name: I-Form Tight
+      - name: Pistol Strong Slot
+      - name: Pistol Twin TE Slot
+      - name: Pistol Weak Twins
+      - name: Shotgun 5WR Trio
+      - name: Shotgun 5WR Trips
+      - name: Shotgun Bunch
+      - name: Shotgun Normal
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Slot F Wing
+      - name: Shotgun Slot Offset
+      - name: Shotgun Spread
+      - name: Shotgun Tight Slots
+      - name: Shotgun Trips Offset
+      - name: Shotgun Trips Open
+      - name: Shotgun Trips Over
+      - name: Shotgun Trips TE Offset
+      - name: Shotgun Wing Trips Wk
+      - name: Shotgun Y-Trips HB Wk
+      - name: Shotgun Y-Trips Offset
+  - team_id: "notre_dame"
+    name: Notre Dame
+    playbook_style: null
+    formation_count: 24
+    formation_families:
+      ace: 6
+      other: 1
+      shotgun: 16
+      wildcat: 1
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace F Pair Twins
+      - name: Ace F Wing Trips
+      - name: Ace Slot
+      - name: Ace Twin TE
+      - name: Ace Y-Trips
+      - name: Goal Line Normal
+      - name: Shotgun 5WR
+      - name: Shotgun 5WR Flex
+      - name: Shotgun Ace
+      - name: Shotgun Ace Twins Wk
+      - name: Shotgun Bunch TE
+      - name: Shotgun Normal
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Quads Trio
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread
+      - name: Shotgun Tight Slots
+      - name: Shotgun Trips
+      - name: Shotgun Trips Open
+      - name: Shotgun Trips Over
+      - name: Shotgun Y-Trips
+      - name: Shotgun Y-Trips HB Wk
+      - name: Wildcat Y-Trips
+  - team_id: "ohio"
+    name: Ohio
+    playbook_style: null
+    formation_count: 22
+    formation_families:
+      other: 1
+      pistol: 12
+      shotgun: 9
+    personnel_breakdown: null
+    formations:
+      - name: Goal Line Normal
+      - name: Pistol Ace
+      - name: Pistol Ace Twins
+      - name: Pistol Jumbo Z
+      - name: Pistol Slot Flex
+      - name: Pistol Slot Flex Wing
+      - name: Pistol Trips
+      - name: Pistol Trips 4WR
+      - name: Pistol Twin TE
+      - name: Pistol Twin TE Slot
+      - name: Pistol Wing Over
+      - name: Pistol Wing Trio
+      - name: Pistol Y-Trips
+      - name: Shotgun 5WR Trio
+      - name: Shotgun Ace
+      - name: Shotgun Ace Twins
+      - name: Shotgun Normal Flex
+      - name: Shotgun Trips HB Wk
+      - name: Shotgun Trips Over
+      - name: Shotgun Twin TE
+      - name: Shotgun Wing Trips Wk
+      - name: Shotgun Y-Trips
+  - team_id: "ohio_state"
+    name: Ohio State
+    playbook_style: null
+    formation_count: 23
+    formation_families:
+      other: 2
+      pistol: 2
+      shotgun: 19
+    personnel_breakdown: null
+    formations:
+      - name: Goal Line Normal
+      - name: Pistol Twin TE Slot
+      - name: Pistol Wing Trio
+      - name: Shotgun 5WR Flex Trey
+      - name: Shotgun Ace Twins
+      - name: Shotgun Double Flex
+      - name: Shotgun Empty Base
+      - name: Shotgun Empty Wing Trio
+      - name: Shotgun F Twins Over
+      - name: Shotgun Normal Offset
+      - name: Shotgun Normal Wing Offset
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread Flex
+      - name: Shotgun Spread Offset
+      - name: Shotgun Trey 4WR Str
+      - name: Shotgun Trio 4WR Str
+      - name: Shotgun Trio HB Wk
+      - name: Shotgun Trio Unbalanced
+      - name: Shotgun Wing Offset Wk
+      - name: Shotgun Wing Trio Wk
+      - name: Shotgun Wing Trips Offset
+      - name: Shotgun Y-Trips HB Wk
+      - name: Strong I Twins Over
+  - team_id: "oklahoma"
+    name: Oklahoma
+    playbook_style: null
+    formation_count: 21
+    formation_families:
+      ace: 2
+      other: 1
+      pistol: 8
+      shotgun: 10
+    personnel_breakdown: null
+    formations:
+      - name: Ace Bunch Base
+      - name: Ace Slot
+      - name: Goal Line Normal
+      - name: Pistol Bunch
+      - name: Pistol Full House
+      - name: Pistol Spread
+      - name: Pistol Spread Flex
+      - name: Pistol Strong Slot
+      - name: Pistol Trips Open
+      - name: Pistol Weak H Flex
+      - name: Pistol Weak Slot
+      - name: Shotgun 5WR
+      - name: Shotgun Normal
+      - name: Shotgun Normal Y-Flex
+      - name: Shotgun Normal Y-Slot
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread 4WR
+      - name: Shotgun Spread Flex
+      - name: Shotgun Spread Flex Wk
+      - name: Shotgun Trips
+      - name: Shotgun Trips Open
+  - team_id: "oklahoma_state"
+    name: Oklahoma State
+    playbook_style: null
+    formation_count: 21
+    formation_families:
+      other: 1
+      pistol: 9
+      shotgun: 11
+    personnel_breakdown: null
+    formations:
+      - name: Goal Line Normal
+      - name: Pistol Ace Twins
+      - name: Pistol Full House
+      - name: Pistol Spread Flex
+      - name: Pistol Strong Slot
+      - name: Pistol Trey Open
+      - name: Pistol Trips Open
+      - name: Pistol Twin TE
+      - name: Pistol Weak H Flex
+      - name: Pistol Weak Slot
+      - name: Shotgun 5WR Trey
+      - name: Shotgun Double Flex
+      - name: Shotgun Normal Y-Flex
+      - name: Shotgun Normal Y-Slot
+      - name: Shotgun Split Offset
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread Flex Wk
+      - name: Shotgun Trey 4WR Str
+      - name: Shotgun Trey Open Offset
+      - name: Shotgun Trips
+      - name: Shotgun Trips Open
+  - team_id: "old_dominion"
+    name: Old Dominion
+    playbook_style: null
+    formation_count: 20
+    formation_families:
+      other: 1
+      pistol: 5
+      shotgun: 14
+    personnel_breakdown: null
+    formations:
+      - name: Goal Line Normal
+      - name: Pistol Full House
+      - name: Pistol Spread
+      - name: Pistol Spread Flex
+      - name: Pistol Trey Open
+      - name: Pistol Trips 4WR
+      - name: Shotgun 5WR Flex
+      - name: Shotgun 5WR Flex Trey
+      - name: Shotgun Double Flex
+      - name: Shotgun Empty Quads
+      - name: Shotgun Normal Offset Wk
+      - name: Shotgun Normal Y-Flex
+      - name: Shotgun Slot Offset
+      - name: Shotgun Spread Flex
+      - name: Shotgun Spread Flex Wk
+      - name: Shotgun Spread Offset
+      - name: Shotgun Trey 4WR Str
+      - name: Shotgun Trey Open Offset
+      - name: Shotgun Trio 4WR Str
+      - name: Shotgun Trips Offset
+  - team_id: "ole_miss"
+    name: Ole Miss
+    playbook_style: null
+    formation_count: 24
+    formation_families:
+      other: 1
+      pistol: 4
+      shotgun: 17
+      wildcat: 2
+    personnel_breakdown: null
+    formations:
+      - name: Goal Line Twins Over
+      - name: Pistol Full House
+      - name: Pistol Strong
+      - name: Pistol Strong Slot
+      - name: Pistol Wing Trips
+      - name: Shotgun Ace Twins
+      - name: Shotgun Empty Spread
+      - name: Shotgun F Twins Over
+      - name: Shotgun Normal Flex Wing Wk
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Normal Offset Wk
+      - name: Shotgun Normal Wing Offset
+      - name: Shotgun Slot Offset
+      - name: Shotgun Split Slot
+      - name: Shotgun Split Y- Offset
+      - name: Shotgun Spread
+      - name: Shotgun Trio HB Wk
+      - name: Shotgun Trips HB Wk
+      - name: Shotgun Wing Trio Wk
+      - name: Shotgun Wing Trips Offset
+      - name: Shotgun Wing Trips Offset Wk
+      - name: Shotgun Y-Trips Offset
+      - name: Wildcat Fight Song
+      - name: Wildcat Spread Flex
+  - team_id: "one_back"
+    name: One Back
+    playbook_style: null
+    formation_count: 24
+    formation_families:
+      ace: 11
+      empty: 1
+      other: 1
+      pistol: 2
+      shotgun: 9
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Slot
+      - name: Ace Slot Wing
+      - name: Ace Slot Y-Flex
+      - name: Ace Spread
+      - name: Ace Trey Open
+      - name: Ace Trips
+      - name: Ace Trips 4WR
+      - name: Ace Twin TE
+      - name: Ace Wing Trips
+      - name: Ace Y-Trips
+      - name: Empty Flex Trips
+      - name: Goal Line Normal
+      - name: Pistol Trips Open
+      - name: Pistol Y-Trips
+      - name: Shotgun 5WR Flex
+      - name: Shotgun 5WR Trips
+      - name: Shotgun Double Flex
+      - name: Shotgun Normal
+      - name: Shotgun Normal Y-Flex
+      - name: Shotgun Spread
+      - name: Shotgun Trey Open
+      - name: Shotgun Trips Open
+      - name: Shotgun Trips TE
+  - team_id: "option_attack"
+    name: Option Attack
+    playbook_style: null
+    formation_count: 2
+    formation_families:
+      other: 2
+    personnel_breakdown: null
+    formations:
+      - name: A- Option Attack
+      - name: B- Option Attack
+  - team_id: "option_run"
+    name: Option Run
+    playbook_style: null
+    formation_count: 21
+    formation_families:
+      ace: 1
+      flexbone: 3
+      i_form: 2
+      other: 3
+      pistol: 5
+      shotgun: 5
+      wildcat: 1
+      wishbone: 1
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Flexbone Normal
+      - name: Flexbone Split Wing Z
+      - name: Flexbone Tight
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Twin TE
+      - name: Maryland I Heavy
+      - name: Pistol Ace
+      - name: Pistol Slot
+      - name: Pistol Strong Slot
+      - name: Pistol Train
+      - name: Pistol Trio
+      - name: Shotgun Normal
+      - name: Shotgun Split Offset
+      - name: Shotgun Spread Flex
+      - name: Shotgun Trio 4WR
+      - name: Shotgun Y-Trips HB Wk
+      - name: Strong I Twins
+      - name: Wildcat Trips Over
+      - name: Wishbone Tight
+  - team_id: "oregon"
+    name: Oregon
+    playbook_style: null
+    formation_count: 21
+    formation_families:
+      other: 1
+      shotgun: 20
+    personnel_breakdown: null
+    formations:
+      - name: Goal Line Normal
+      - name: Shotgun 5WR Trio
+      - name: Shotgun Ace Twins
+      - name: Shotgun F Twins Over
+      - name: Shotgun Normal
+      - name: Shotgun Normal Wing Offset
+      - name: Shotgun Split Offset
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread Flex
+      - name: Shotgun Spread HB Wk
+      - name: Shotgun Spread Offset
+      - name: Shotgun Trio 4WR
+      - name: Shotgun Trio 4WR Str
+      - name: Shotgun Trio HB Wk
+      - name: Shotgun Trio Offset
+      - name: Shotgun Trio Unbalanced
+      - name: Shotgun Trips Offset
+      - name: Shotgun Twin TE Flex
+      - name: Shotgun Wing Offset Wk
+      - name: Shotgun Wing Trips Offset
+      - name: Shotgun Y-Trips Offset
+  - team_id: "oregon_state"
+    name: Oregon State
+    playbook_style: null
+    formation_count: 23
+    formation_families:
+      ace: 9
+      i_form: 3
+      other: 3
+      shotgun: 6
+      wildcat: 2
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twins
+      - name: Ace Bunch Base
+      - name: Ace F Pair Twins
+      - name: Ace F Wing Trips
+      - name: Ace Slot
+      - name: Ace Trips
+      - name: Ace Twin TE
+      - name: Ace Y-Trips
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: Shotgun Ace
+      - name: Shotgun Bunch HB Str
+      - name: Shotgun Normal
+      - name: Shotgun Tight Flex
+      - name: Shotgun Trey Open
+      - name: Shotgun Y-Trips
+      - name: Strong I Normal
+      - name: Strong I Twins
+      - name: Weak I Normal
+      - name: Wildcat Heavy Ace
+      - name: Wildcat Slot Flex
+  - team_id: "penn_state"
+    name: Penn State
+    playbook_style: null
+    formation_count: 25
+    formation_families:
+      ace: 6
+      i_form: 3
+      other: 3
+      power_i: 1
+      shotgun: 12
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Bunch
+      - name: Ace Deuce Wing
+      - name: Ace Jumbo Pair
+      - name: Ace Slot
+      - name: Ace Twin TE Flex
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: I-Form Twin TE
+      - name: Power I Tight
+      - name: Shotgun Bunch
+      - name: Shotgun Bunch Quads
+      - name: Shotgun Double Flex
+      - name: Shotgun Empty Trey
+      - name: Shotgun Empty Y-Flex
+      - name: Shotgun Normal
+      - name: Shotgun Split Offset
+      - name: Shotgun Tight Slots
+      - name: Shotgun Trips TE
+      - name: Shotgun Trips Y-Flex
+      - name: Shotgun Twin TE Flex
+      - name: Shotgun Y-Trips HB Wk
+      - name: Strong I Normal
+      - name: Strong I Twins
+  - team_id: "pistol"
+    name: Pistol
+    playbook_style: null
+    formation_count: 19
+    formation_families:
+      other: 1
+      pistol: 18
+    personnel_breakdown: null
+    formations:
+      - name: Goal Line Normal
+      - name: Pistol Ace
+      - name: Pistol Ace Twins
+      - name: Pistol Bunch
+      - name: Pistol Jumbo Z
+      - name: Pistol Slot
+      - name: Pistol Slot Flex
+      - name: Pistol Spread Flex
+      - name: Pistol Strong Slot
+      - name: Pistol Train
+      - name: Pistol Trio
+      - name: Pistol Trio 4WR
+      - name: Pistol Trips
+      - name: Pistol Twin TE
+      - name: Pistol Twin TE Slot
+      - name: Pistol Weak H Flex
+      - name: Pistol Wing Over
+      - name: Pistol Wing Trips TE
+      - name: Pistol Y-Trips
+  - team_id: "pittsburgh"
+    name: Pittsburgh
+    playbook_style: null
+    formation_count: 24
+    formation_families:
+      ace: 9
+      i_form: 7
+      other: 2
+      shotgun: 6
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Close
+      - name: Ace Big Twins
+      - name: Ace Bunch
+      - name: Ace F Pair Twins
+      - name: Ace Slot Flex
+      - name: Ace Trey Open
+      - name: Ace Twin TE
+      - name: Ace Y-Trips
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: I-Form Twin TE
+      - name: I-Form Twins
+      - name: I-Form Y-Trips
+      - name: Shotgun Bunch HB Str
+      - name: Shotgun Normal Flex
+      - name: Shotgun Trey
+      - name: Shotgun Trey Open
+      - name: Shotgun Wing Trio Wk
+      - name: Shotgun Y-Trips HB Wk
+      - name: Strong I Tight
+      - name: Weak I Twin TE
+      - name: Weak I Twins
+  - team_id: "purdue"
+    name: Purdue
+    playbook_style: null
+    formation_count: 21
+    formation_families:
+      ace: 7
+      i_form: 5
+      other: 3
+      shotgun: 6
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Bunch Base
+      - name: Ace Flex Close
+      - name: Ace Slot
+      - name: Ace Twin TE
+      - name: Ace Twin TE Slot
+      - name: Ace Y-Trips
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: I-Form Twin TE
+      - name: I-Form Twins
+      - name: Shotgun Bunch
+      - name: Shotgun Empty Base
+      - name: Shotgun Normal
+      - name: Shotgun Normal Y-Slot
+      - name: Shotgun Trey Open
+      - name: Shotgun Y-Trips HB Wk
+      - name: Strong I Normal
+      - name: Strong I Twins Flex
+      - name: Weak I Twins
+  - team_id: "rice"
+    name: Rice
+    playbook_style: null
+    formation_count: 24
+    formation_families:
+      other: 1
+      pistol: 5
+      shotgun: 16
+      wildcat: 2
+    personnel_breakdown: null
+    formations:
+      - name: Goal Line Normal
+      - name: Pistol Ace Twins
+      - name: Pistol Bunch
+      - name: Pistol Slot
+      - name: Pistol Twin TE Slot
+      - name: Pistol Y-Trips
+      - name: Shotgun 5WR
+      - name: Shotgun Ace Twins
+      - name: Shotgun Bunch Quads
+      - name: Shotgun Bunch TE
+      - name: Shotgun Normal
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Normal Y-Slot
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread
+      - name: Shotgun Trips
+      - name: Shotgun Trips Open
+      - name: Shotgun Trips Over
+      - name: Shotgun Trips TE
+      - name: Shotgun Wing Trips Wk
+      - name: Shotgun Y-Trips
+      - name: Shotgun Y-Trips HB Wk
+      - name: Wildcat Heavy Ace
+      - name: Wildcat Twin TE
+  - team_id: "run_balance"
+    name: Run Balance
+    playbook_style: null
+    formation_count: 23
+    formation_families:
+      ace: 6
+      i_form: 9
+      other: 2
+      pistol: 2
+      power_i: 1
+      shotgun: 3
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twins
+      - name: Ace Jumbo
+      - name: Ace Jumbo Heavy
+      - name: Ace Slot
+      - name: Ace Y-Trips
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Tackle Over
+      - name: I-Form Tight
+      - name: I-Form Twin TE
+      - name: I-Form Twins
+      - name: I-Form Twins Flex
+      - name: I-Form Y-Trips
+      - name: Maryland I Heavy
+      - name: Pistol Twin TE Slot
+      - name: Pistol Wing Over
+      - name: Power I Strong
+      - name: Shotgun 5WR Trio
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread Flex
+      - name: Weak I Slot
+      - name: Weak I Twin TE
+  - team_id: "run_and_shoot"
+    name: Run and Shoot
+    playbook_style: null
+    formation_count: 12
+    formation_families:
+      ace: 2
+      pistol: 3
+      shotgun: 7
+    personnel_breakdown: null
+    formations:
+      - name: Ace Jumbo Z
+      - name: Ace Trips 4WR
+      - name: Pistol Spread
+      - name: Pistol Trips 4WR
+      - name: Pistol Trips Open
+      - name: Shotgun 5WR Trips
+      - name: Shotgun Flanker Close
+      - name: Shotgun Spread
+      - name: Shotgun Trips
+      - name: Shotgun Trips HB Wk
+      - name: Shotgun Trips Open
+      - name: Shotgun Trips Open Str
+  - team_id: "rushing_attack"
+    name: Rushing Attack
+    playbook_style: null
+    formation_count: 1
+    formation_families:
+      other: 1
+    personnel_breakdown: null
+    formations:
+      - name: A- LB Drill
+  - team_id: "rutgers"
+    name: Rutgers
+    playbook_style: null
+    formation_count: 21
+    formation_families:
+      ace: 5
+      i_form: 6
+      other: 5
+      shotgun: 5
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Bunch Base
+      - name: Ace Slot Flex
+      - name: Ace Twin TE
+      - name: Ace Y-Trips
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: I-Form Twin TE
+      - name: I-Form Twins
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Normal Y-Flex
+      - name: Shotgun Split Y-Flex
+      - name: Shotgun Trio Open
+      - name: Shotgun Y-Trips HB Wk
+      - name: Strong I Normal
+      - name: Strong I Twin TE
+      - name: Strong I Twins Flex
+      - name: Strong I Y-Flex
+      - name: Weak I Normal
+      - name: Weak I Twins Flex
+  - team_id: "smu"
+    name: SMU
+    playbook_style: null
+    formation_count: 19
+    formation_families:
+      ace: 1
+      other: 1
+      pistol: 4
+      shotgun: 13
+    personnel_breakdown: null
+    formations:
+      - name: Ace Trips 4WR
+      - name: Goal Line Normal
+      - name: Pistol Slot
+      - name: Pistol Spread
+      - name: Pistol Trips 4WR
+      - name: Pistol Y-Trips
+      - name: Shotgun 5WR Trips
+      - name: Shotgun Bunch HB Str
+      - name: Shotgun Flanker Close
+      - name: Shotgun Flanker Close Wk
+      - name: Shotgun Spread
+      - name: Shotgun Spread Flex Wk
+      - name: Shotgun Spread HB Wk
+      - name: Shotgun Trey Open Offset
+      - name: Shotgun Trips
+      - name: Shotgun Trips HB Wk
+      - name: Shotgun Trips Open
+      - name: Shotgun Trips Open Str
+      - name: Shotgun Y-Trips HB Wk
+  - team_id: "san_diego_state"
+    name: San Diego State
+    playbook_style: null
+    formation_count: 23
+    formation_families:
+      ace: 6
+      i_form: 5
+      other: 3
+      shotgun: 8
+      wildcat: 1
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Bunch
+      - name: Ace Slot
+      - name: Ace Tight
+      - name: Ace Twin TE
+      - name: Ace Y-Trips
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: I-Form Twins
+      - name: Shotgun 5WR Flex Trey
+      - name: Shotgun Bunch HB Str
+      - name: Shotgun Normal
+      - name: Shotgun Normal Y-Flex
+      - name: Shotgun Split Y-Flex
+      - name: Shotgun Trey Open
+      - name: Shotgun Trio
+      - name: Shotgun Y-Trips HB Wk
+      - name: Split Pro
+      - name: Strong I Normal
+      - name: Weak I Normal
+      - name: Weak I Twins
+      - name: Wildcat Normal
+  - team_id: "san_jose_state"
+    name: San Jose State
+    playbook_style: null
+    formation_count: 23
+    formation_families:
+      ace: 8
+      i_form: 4
+      other: 3
+      shotgun: 8
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Bunch
+      - name: Ace Jumbo Pair
+      - name: Ace Jumbo Z
+      - name: Ace Slot
+      - name: Ace Twin TE
+      - name: Ace Twin TE Slot
+      - name: Ace Y-Trips
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Twin TE
+      - name: I-Form Twins Flex
+      - name: Shotgun Bunch HB Str
+      - name: Shotgun Double Flex
+      - name: Shotgun Empty Base
+      - name: Shotgun Normal
+      - name: Shotgun Normal Y-Flex
+      - name: Shotgun Split Slot
+      - name: Shotgun Trey Open
+      - name: Shotgun Y-Trips
+      - name: Split Pro
+      - name: Strong I Normal
+      - name: Weak I Twin TE
+  - team_id: "south_alabama"
+    name: South Alabama
+    playbook_style: null
+    formation_count: 22
+    formation_families:
+      i_form: 1
+      other: 2
+      shotgun: 19
+    personnel_breakdown: null
+    formations:
+      - name: Goal Line Normal
+      - name: I-Form Tight
+      - name: Shotgun Ace
+      - name: Shotgun Ace Twins
+      - name: Shotgun Bunch
+      - name: Shotgun Double Flex
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Normal Offset
+      - name: Shotgun Split Offset
+      - name: Shotgun Spread 4WR
+      - name: Shotgun Spread Flex
+      - name: Shotgun Spread Flex Wk
+      - name: Shotgun Tight Flex
+      - name: Shotgun Trey 4WR Str
+      - name: Shotgun Trey Open
+      - name: Shotgun Trio 4WR Str
+      - name: Shotgun Trips Over
+      - name: Shotgun Trips TE Offset
+      - name: Shotgun Twin TE Slot Wk
+      - name: Shotgun Y-Trips HB Wk
+      - name: Shotgun Y-Trips Offset
+      - name: Strong I Twins
+  - team_id: "south_carolina"
+    name: South Carolina
+    playbook_style: null
+    formation_count: 23
+    formation_families:
+      ace: 5
+      i_form: 4
+      other: 3
+      shotgun: 11
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Bunch
+      - name: Ace Slot
+      - name: Ace Slot Y-Flex
+      - name: Ace Y-Trips
+      - name: Goal Line Normal
+      - name: I-Form H Pro
+      - name: I-Form H Slot
+      - name: I-Form Tight
+      - name: I-Form Y-Trips
+      - name: Shotgun 5WR Flex Trey
+      - name: Shotgun Ace Twins
+      - name: Shotgun Normal
+      - name: Shotgun Normal Y-Flex
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread Flex Wk
+      - name: Shotgun Trey 4WR Str
+      - name: Shotgun Trey Open
+      - name: Shotgun Trips Over
+      - name: Shotgun Twin TE Slot
+      - name: Shotgun Y-Trips HB Wk
+      - name: Strong I Normal
+      - name: Strong I Y-Trips
+  - team_id: "southern_miss"
+    name: Southern Miss
+    playbook_style: null
+    formation_count: 20
+    formation_families:
+      other: 1
+      pistol: 8
+      shotgun: 11
+    personnel_breakdown: null
+    formations:
+      - name: Goal Line Normal
+      - name: Pistol Ace Twins
+      - name: Pistol Full House
+      - name: Pistol Spread Flex
+      - name: Pistol Strong Slot
+      - name: Pistol Trey Open
+      - name: Pistol Trips Open
+      - name: Pistol Twin TE
+      - name: Pistol Weak Slot
+      - name: Shotgun 5WR Trey
+      - name: Shotgun Double Flex
+      - name: Shotgun Normal Y-Flex
+      - name: Shotgun Normal Y-Slot
+      - name: Shotgun Split Offset
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread Flex Wk
+      - name: Shotgun Trey 4WR Str
+      - name: Shotgun Trey Open Offset
+      - name: Shotgun Trips
+      - name: Shotgun Trips Open
+  - team_id: "spread"
+    name: Spread
+    playbook_style: null
+    formation_count: 21
+    formation_families:
+      other: 1
+      shotgun: 19
+      wildcat: 1
+    personnel_breakdown: null
+    formations:
+      - name: Goal Line Normal
+      - name: Shotgun 5WR Flex Trey
+      - name: Shotgun 5WR Trio
+      - name: Shotgun Ace Twins
+      - name: Shotgun Bunch
+      - name: Shotgun Double Flex
+      - name: Shotgun Normal Flex Wing Wk
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Normal Offset
+      - name: Shotgun Quads Trio
+      - name: Shotgun Split Offset
+      - name: Shotgun Spread Flex
+      - name: Shotgun Spread Flex Wk
+      - name: Shotgun Tight Flex
+      - name: Shotgun Trey Open Offset
+      - name: Shotgun Trio HB Wk
+      - name: Shotgun Trips
+      - name: Shotgun Trips Open
+      - name: Shotgun Wing Trips Wk
+      - name: Shotgun Y-Trips Offset
+      - name: Wildcat Slot
+  - team_id: "spread_option"
+    name: Spread Option
+    playbook_style: null
+    formation_count: 24
+    formation_families:
+      other: 1
+      pistol: 5
+      shotgun: 17
+      wildcat: 1
+    personnel_breakdown: null
+    formations:
+      - name: Goal Line Heavy
+      - name: Pistol Full House
+      - name: Pistol Strong
+      - name: Pistol Strong Slot
+      - name: Pistol Train
+      - name: Pistol Wing Trio
+      - name: Shotgun Empty Spread
+      - name: Shotgun F Twins Over
+      - name: Shotgun Normal
+      - name: Shotgun Normal Offset Wk
+      - name: Shotgun Split Big
+      - name: Shotgun Split Offset
+      - name: Shotgun Split Slot
+      - name: Shotgun Split Y- Offset
+      - name: Shotgun Spread HB Wk
+      - name: Shotgun Spread Offset
+      - name: Shotgun Trio Offset
+      - name: Shotgun Trio Unbalanced
+      - name: Shotgun Trips Offset
+      - name: Shotgun Twin TE Slot Wk
+      - name: Shotgun Wing Trips Offset
+      - name: Shotgun Wing Trips Offset Wk
+      - name: Shotgun Y-Trips Offset
+      - name: Wildcat Normal
+  - team_id: "stanford"
+    name: Stanford
+    playbook_style: null
+    formation_count: 27
+    formation_families:
+      ace: 8
+      i_form: 8
+      other: 2
+      pistol: 1
+      power_i: 1
+      shotgun: 6
+      wildcat: 1
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Close
+      - name: Ace Bunch
+      - name: Ace F Pair Twins
+      - name: Ace Slot Flex
+      - name: Ace Trey Open
+      - name: Ace Twin TE
+      - name: Ace Y-Trips
+      - name: Goal Line Normal
+      - name: I-Form Hulk
+      - name: I-Form Normal
+      - name: I-Form Slot Flex
+      - name: I-Form Tackle Over
+      - name: I-Form Tight
+      - name: I-Form Twins Flex
+      - name: I-Form Y-Trips
+      - name: Pistol Full House
+      - name: Power I Strong
+      - name: Shotgun Bunch HB Str
+      - name: Shotgun Empty Trey Flex
+      - name: Shotgun Normal Flex Wk
+      - name: Shotgun Split Y-Flex
+      - name: Shotgun Trey Open
+      - name: Shotgun Y-Trips HB Wk
+      - name: Strong I Normal
+      - name: Weak I Normal
+      - name: Wildcat Trips Over
+  - team_id: "syracuse"
+    name: Syracuse
+    playbook_style: null
+    formation_count: 24
+    formation_families:
+      ace: 9
+      i_form: 4
+      other: 5
+      shotgun: 6
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Bunch
+      - name: Ace F Pair Twins
+      - name: Ace Slot
+      - name: Ace Slot Flex
+      - name: Ace Slot Y-Flex
+      - name: Ace Tight
+      - name: Ace Twin TE
+      - name: Ace Wing Trio
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Twin TE
+      - name: I-Form Twins Flex
+      - name: Shotgun 5WR Flex Trey
+      - name: Shotgun Bunch HB Str
+      - name: Shotgun Normal
+      - name: Shotgun Normal Y-Flex
+      - name: Shotgun Trey Open
+      - name: Shotgun Y-Trips HB Wk
+      - name: Strong I Close
+      - name: Strong I Normal
+      - name: Strong I Twin TE
+      - name: Strong I Y-Flex
+      - name: Weak I Twins
+  - team_id: "tcu"
+    name: TCU
+    playbook_style: null
+    formation_count: 22
+    formation_families:
+      ace: 2
+      i_form: 1
+      other: 1
+      pistol: 5
+      power_i: 1
+      shotgun: 12
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Twin TE
+      - name: Goal Line Normal
+      - name: I-Form Tight
+      - name: Pistol Bunch
+      - name: Pistol Full House
+      - name: Pistol Strong Slot
+      - name: Pistol Twin TE
+      - name: Pistol Twin TE Slot
+      - name: Power I Tight
+      - name: Shotgun Empty Spread
+      - name: Shotgun Normal
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Normal Y-Flex
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread
+      - name: Shotgun Trips
+      - name: Shotgun Trips HB Wk
+      - name: Shotgun Trips Over
+      - name: Shotgun Trips TE
+      - name: Shotgun Twin TE Slot Wk
+      - name: Shotgun Y-Trips HB Wk
+  - team_id: "temple"
+    name: Temple
+    playbook_style: null
+    formation_count: 23
+    formation_families:
+      ace: 4
+      i_form: 3
+      other: 2
+      pistol: 4
+      shotgun: 10
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twins
+      - name: Ace Bunch Base
+      - name: Ace Slot
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: I-Form Twins
+      - name: Pistol Full House
+      - name: Pistol Slot
+      - name: Pistol Twin TE Slot
+      - name: Pistol Y-Trips
+      - name: Shotgun Double Flex
+      - name: Shotgun Empty Base
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Normal Offset
+      - name: Shotgun Normal Y-Slot
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread Flex
+      - name: Shotgun Trips
+      - name: Shotgun Trips Over
+      - name: Shotgun Y-Trips
+      - name: Strong I Normal
+  - team_id: "tennessee"
+    name: Tennessee
+    playbook_style: null
+    formation_count: 22
+    formation_families:
+      ace: 1
+      other: 1
+      shotgun: 19
+      wildcat: 1
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Goal Line Normal
+      - name: Shotgun 5WR Trio
+      - name: Shotgun 5WR Trips
+      - name: Shotgun Bunch
+      - name: Shotgun Bunch Quads
+      - name: Shotgun Double Flex
+      - name: Shotgun Normal
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Normal Offset Wk
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread
+      - name: Shotgun Spread Offset
+      - name: Shotgun Tight Slots
+      - name: Shotgun Trips
+      - name: Shotgun Trips Open
+      - name: Shotgun Trips Over
+      - name: Shotgun Twin TE
+      - name: Shotgun Wing Trips Offset Wk
+      - name: Shotgun Y-Trips HB Wk
+      - name: Shotgun Y-Trips Offset
+      - name: Wildcat Spread Flex
+  - team_id: "texas"
+    name: Texas
+    playbook_style: null
+    formation_count: 23
+    formation_families:
+      i_form: 1
+      other: 1
+      pistol: 6
+      shotgun: 15
+    personnel_breakdown: null
+    formations:
+      - name: Goal Line Normal
+      - name: I-Form Twin TE
+      - name: Pistol Ace Twins
+      - name: Pistol Slot Flex Wing
+      - name: Pistol Strong Slot
+      - name: Pistol Weak H Flex
+      - name: Pistol Weak Slot
+      - name: Pistol Wing Trips
+      - name: Shotgun 5WR Flex Trey
+      - name: Shotgun Bunch
+      - name: Shotgun Double Flex
+      - name: Shotgun Normal Flex
+      - name: Shotgun Normal Flex Wing Wk
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Split Offset
+      - name: Shotgun Spread 4WR
+      - name: Shotgun Spread Flex
+      - name: Shotgun Spread Offset
+      - name: Shotgun Trey
+      - name: Shotgun Trey 4WR Str
+      - name: Shotgun Trey Open Offset
+      - name: Shotgun Wing Trips Offset
+      - name: Shotgun Y-Trips HB Wk
+  - team_id: "texas_a_m"
+    name: "Texas A&M"
+    playbook_style: null
+    formation_count: 22
+    formation_families:
+      ace: 1
+      other: 1
+      pistol: 5
+      shotgun: 14
+      wildcat: 1
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Goal Line Normal
+      - name: Pistol Full House
+      - name: Pistol Spread Flex
+      - name: Pistol Strong Slot
+      - name: Pistol Trips 4WR
+      - name: Pistol Weak Slot
+      - name: Shotgun 5WR Flex
+      - name: Shotgun Double Flex
+      - name: Shotgun Empty Base
+      - name: Shotgun Empty Quads
+      - name: Shotgun Normal Y-Flex
+      - name: Shotgun Split Offset
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread Flex
+      - name: Shotgun Spread Flex Wk
+      - name: Shotgun Trey 4WR Str
+      - name: Shotgun Trey Open Offset
+      - name: Shotgun Trips
+      - name: Shotgun Trips Open
+      - name: Shotgun Twin TE Slot Wk
+      - name: Wildcat Twin TE
+  - team_id: "texas_state"
+    name: Texas State
+    playbook_style: null
+    formation_count: 21
+    formation_families:
+      other: 1
+      pistol: 12
+      shotgun: 8
+    personnel_breakdown: null
+    formations:
+      - name: Goal Line Normal
+      - name: Pistol Ace
+      - name: Pistol Ace Twins
+      - name: Pistol Full House
+      - name: Pistol Slot
+      - name: Pistol Strong
+      - name: Pistol Train
+      - name: Pistol Twin TE
+      - name: Pistol Twin TE Slot
+      - name: Pistol Weak Twins
+      - name: Pistol Wing Over
+      - name: Pistol Wing Trips
+      - name: Pistol Y-Trips
+      - name: Shotgun Ace
+      - name: Shotgun Double Flex
+      - name: Shotgun F Twins Over
+      - name: Shotgun Normal Offset Wk
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread Flex
+      - name: Shotgun Twin TE Slot Wk
+      - name: Shotgun Wing Trips Offset
+  - team_id: "texas_tech"
+    name: Texas Tech
+    playbook_style: null
+    formation_count: 22
+    formation_families:
+      ace: 1
+      other: 1
+      pistol: 5
+      shotgun: 14
+      wildcat: 1
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big Wing
+      - name: Goal Line Normal
+      - name: Pistol Full House
+      - name: Pistol Spread Flex
+      - name: Pistol Strong Slot
+      - name: Pistol Trips Open
+      - name: Pistol Weak Slot
+      - name: Shotgun 5WR Flex
+      - name: Shotgun Double Flex
+      - name: Shotgun Empty Base
+      - name: Shotgun Empty Quads
+      - name: Shotgun Normal Y-Flex
+      - name: Shotgun Split Offset
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread Flex
+      - name: Shotgun Spread Flex Wk
+      - name: Shotgun Trey 4WR
+      - name: Shotgun Trey 4WR Str
+      - name: Shotgun Trips
+      - name: Shotgun Trips Open
+      - name: Shotgun Twin TE Slot Wk
+      - name: Wildcat Heavy Ace
+  - team_id: "toledo"
+    name: Toledo
+    playbook_style: null
+    formation_count: 22
+    formation_families:
+      ace: 2
+      other: 1
+      pistol: 1
+      shotgun: 18
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big Twins
+      - name: Ace F Pair Twins
+      - name: Goal Line Normal
+      - name: Pistol Y-Trips
+      - name: Shotgun 5WR Trio
+      - name: Shotgun Ace
+      - name: Shotgun Ace Twins
+      - name: Shotgun Bunch HB Str
+      - name: Shotgun Double Flex
+      - name: Shotgun Empty Quads
+      - name: Shotgun Normal
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread
+      - name: Shotgun Tight
+      - name: Shotgun Trips HB Wk
+      - name: Shotgun Trips Open
+      - name: Shotgun Trips Over
+      - name: Shotgun Twin TE
+      - name: Shotgun Wing Trips Wk
+      - name: Shotgun Y-Trips
+      - name: Shotgun Y-Trips HB Wk
+  - team_id: "troy"
+    name: Troy
+    playbook_style: null
+    formation_count: 21
+    formation_families:
+      other: 1
+      pistol: 4
+      shotgun: 15
+      wildcat: 1
+    personnel_breakdown: null
+    formations:
+      - name: Goal Line Normal
+      - name: Pistol Ace Twins
+      - name: Pistol Slot Flex Wing
+      - name: Pistol Wing Trio
+      - name: Pistol Y-Trips
+      - name: Shotgun 5WR Trio
+      - name: Shotgun Double Flex
+      - name: Shotgun Normal
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Normal Y-Flex
+      - name: Shotgun Normal Y-Slot
+      - name: Shotgun Split Offset
+      - name: Shotgun Spread 4WR
+      - name: Shotgun Spread Flex
+      - name: Shotgun Spread Flex Wk
+      - name: Shotgun Trey 4WR
+      - name: Shotgun Trey 4WR Str
+      - name: Shotgun Trio 4WR Str
+      - name: Shotgun Trio Open
+      - name: Shotgun Wing Offset
+      - name: Wildcat Spread Flex
+  - team_id: "tulane"
+    name: Tulane
+    playbook_style: null
+    formation_count: 23
+    formation_families:
+      ace: 7
+      i_form: 3
+      other: 2
+      shotgun: 11
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Close
+      - name: Ace Slot
+      - name: Ace Tight
+      - name: Ace Twin TE
+      - name: Ace Twin TE Flex
+      - name: Ace Y-Trips
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: Shotgun 5WR Flex Trey
+      - name: Shotgun Bunch
+      - name: Shotgun Double Flex
+      - name: Shotgun Normal Flex Wk
+      - name: Shotgun Normal Y-Flex
+      - name: Shotgun Split
+      - name: Shotgun Split Close
+      - name: Shotgun Tight Flex
+      - name: Shotgun Tight Slots
+      - name: Shotgun Trey Open
+      - name: Shotgun Y-Trips HB Wk
+      - name: Strong I Normal
+      - name: Weak I H Twins Flex
+  - team_id: "tulsa"
+    name: Tulsa
+    playbook_style: null
+    formation_count: 23
+    formation_families:
+      ace: 1
+      i_form: 2
+      other: 1
+      shotgun: 17
+      wildcat: 2
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big Wing
+      - name: Goal Line Twins Over
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: Shotgun Empty Spread
+      - name: Shotgun Normal
+      - name: Shotgun Normal Flex Wing
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Normal Offset Wk
+      - name: Shotgun Normal Y-Flex
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread
+      - name: Shotgun Tight Slots
+      - name: Shotgun Trio 4WR
+      - name: Shotgun Trio 4WR Str
+      - name: Shotgun Trips HB Wk
+      - name: Shotgun Twin TE Slot Wk
+      - name: Shotgun Wing Offset Wk
+      - name: Shotgun Wing Trips Offset
+      - name: Shotgun Y-Trips HB Wk
+      - name: Shotgun Y-Trips Offset
+      - name: Wildcat Fight Song
+      - name: Wildcat Spread Flex
+  - team_id: "uab"
+    name: UAB
+    playbook_style: null
+    formation_count: 24
+    formation_families:
+      ace: 5
+      i_form: 7
+      other: 3
+      pistol: 2
+      shotgun: 7
+    personnel_breakdown: null
+    formations:
+      - name: Ace Slot Flex
+      - name: Ace Trio
+      - name: Ace Twin TE
+      - name: Ace Twin TE Slot
+      - name: Ace Y-Trips
+      - name: Goal Line Normal
+      - name: I-Form Hulk
+      - name: I-Form Normal
+      - name: I-Form Slot Flex
+      - name: I-Form Tight
+      - name: I-Form Twins
+      - name: Pistol Weak Twins
+      - name: Pistol Y-Trips
+      - name: Shotgun 5WR Trio
+      - name: Shotgun Ace
+      - name: Shotgun Normal Flex
+      - name: Shotgun Spread HB Wk
+      - name: Shotgun Trio
+      - name: Shotgun Trips Offset
+      - name: Shotgun Y-Trips HB Wk
+      - name: Strong I Normal
+      - name: Strong I Twin TE
+      - name: Weak I Normal
+      - name: Weak I Twin TE
+  - team_id: "ucf"
+    name: UCF
+    playbook_style: null
+    formation_count: 24
+    formation_families:
+      ace: 8
+      i_form: 4
+      other: 2
+      pistol: 1
+      shotgun: 8
+      wildcat: 1
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twins
+      - name: Ace Bunch Base
+      - name: Ace Slot
+      - name: Ace Slot Flex
+      - name: Ace Twin TE
+      - name: Ace Twin TE Flex
+      - name: Ace Y-Trips
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: I-Form Twin TE
+      - name: I-Form Twins Flex
+      - name: Pistol Slot
+      - name: Shotgun Ace Twins
+      - name: Shotgun Double Flex
+      - name: Shotgun Empty Trey
+      - name: Shotgun Normal Flex Wk
+      - name: Shotgun Trey 4WR
+      - name: Shotgun Trio HB Wk
+      - name: Shotgun Trips Offset
+      - name: Shotgun Wing Trio Wk
+      - name: Strong I Normal
+      - name: Wildcat Normal
+  - team_id: "ucla"
+    name: UCLA
+    playbook_style: null
+    formation_count: 22
+    formation_families:
+      other: 1
+      pistol: 5
+      shotgun: 16
+    personnel_breakdown: null
+    formations:
+      - name: Goal Line Normal
+      - name: Pistol Full House
+      - name: Pistol Strong Slot
+      - name: Pistol Trips Open
+      - name: Pistol Twin TE Slot
+      - name: Pistol Weak H Flex
+      - name: Shotgun Ace Twins
+      - name: Shotgun Double Flex
+      - name: Shotgun Empty Base
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Normal Y-Flex
+      - name: Shotgun Split Offset
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread Flex
+      - name: Shotgun Spread Flex Wk
+      - name: Shotgun Spread Offset
+      - name: Shotgun Trey 4WR Str
+      - name: Shotgun Trey Open Offset
+      - name: Shotgun Trio 4WR Str
+      - name: Shotgun Trio Open
+      - name: Shotgun Trips Over
+      - name: Shotgun Twin TE Slot Wk
+  - team_id: "uconn"
+    name: UConn
+    playbook_style: null
+    formation_count: 24
+    formation_families:
+      ace: 6
+      i_form: 7
+      other: 4
+      shotgun: 7
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twins
+      - name: Ace Bunch
+      - name: Ace F Pair Twins
+      - name: Ace Trips
+      - name: Ace Y-Trips
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: I-Form Twin TE
+      - name: I-Form Twins
+      - name: I-Form Y-Trips
+      - name: Shotgun Ace
+      - name: Shotgun Empty Spread
+      - name: Shotgun Normal
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread
+      - name: Shotgun Tight Flex
+      - name: Shotgun Trips TE
+      - name: Strong I Normal
+      - name: Strong I Twins
+      - name: Strong I Y-Flex
+      - name: Weak I Twin TE
+      - name: Weak I Twins Flex
+  - team_id: "ul_lafayette"
+    name: UL Lafayette
+    playbook_style: null
+    formation_count: 22
+    formation_families:
+      ace: 1
+      other: 1
+      pistol: 8
+      shotgun: 12
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Goal Line Normal
+      - name: Pistol Ace
+      - name: Pistol Slot Flex Wing
+      - name: Pistol Spread
+      - name: Pistol Trey Open
+      - name: Pistol Twin TE
+      - name: Pistol Wing Trio
+      - name: Pistol Wing Trips
+      - name: Pistol Y-Trips
+      - name: Shotgun 5WR Flex Trey
+      - name: Shotgun Double Flex
+      - name: Shotgun Normal
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Normal Y-Flex
+      - name: Shotgun Spread
+      - name: Shotgun Tight Slots
+      - name: Shotgun Trips
+      - name: Shotgun Trips Over
+      - name: Shotgun Wing Offset
+      - name: Shotgun Y-Trips
+      - name: Shotgun Y-Trips HB Wk
+  - team_id: "ul_monroe"
+    name: UL Monroe
+    playbook_style: null
+    formation_count: 22
+    formation_families:
+      other: 1
+      pistol: 5
+      shotgun: 15
+      wildcat: 1
+    personnel_breakdown: null
+    formations:
+      - name: Goal Line Normal
+      - name: Pistol Ace Twins
+      - name: Pistol Slot
+      - name: Pistol Twin TE
+      - name: Pistol Twin TE Slot
+      - name: Pistol Y-Trips
+      - name: Shotgun 5WR Flex Trio
+      - name: Shotgun 5WR Trio
+      - name: Shotgun Bunch
+      - name: Shotgun Empty Base
+      - name: Shotgun Empty Spread
+      - name: Shotgun Normal
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread Flex
+      - name: Shotgun Spread Flex Wk
+      - name: Shotgun Trey Open
+      - name: Shotgun Trio 4WR Str
+      - name: Shotgun Trips Over
+      - name: Shotgun Twin TE Slot
+      - name: Shotgun Wing Trips Wk
+      - name: Shotgun Y-Trips
+      - name: Wildcat Slot
+  - team_id: "umass"
+    name: UMass
+    playbook_style: null
+    formation_count: 21
+    formation_families:
+      ace: 3
+      other: 1
+      shotgun: 16
+      wildcat: 1
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twins
+      - name: Ace Twin TE Flex
+      - name: Goal Line Normal
+      - name: Shotgun 5WR Trio
+      - name: Shotgun 5WR Trips
+      - name: Shotgun Ace
+      - name: Shotgun Ace Twins Wk
+      - name: Shotgun Bunch TE
+      - name: Shotgun Normal
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Quads Trio
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread
+      - name: Shotgun Tight Slots
+      - name: Shotgun Trips
+      - name: Shotgun Trips Open
+      - name: Shotgun Trips Over
+      - name: Shotgun Y-Trips
+      - name: Shotgun Y-Trips HB Wk
+      - name: Wildcat Y-Trips
+  - team_id: "unlv"
+    name: UNLV
+    playbook_style: null
+    formation_count: 21
+    formation_families:
+      other: 1
+      pistol: 6
+      shotgun: 14
+    personnel_breakdown: null
+    formations:
+      - name: Goal Line Normal
+      - name: Pistol Ace
+      - name: Pistol Slot Flex Wing
+      - name: Pistol Spread
+      - name: Pistol Strong Slot
+      - name: Pistol Trips 4WR
+      - name: Pistol Twin TE Slot
+      - name: Shotgun 5WR Flex Trey
+      - name: Shotgun Ace
+      - name: Shotgun Ace Twins
+      - name: Shotgun Bunch
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Normal Offset
+      - name: Shotgun Slot Offset
+      - name: Shotgun Spread
+      - name: Shotgun Spread Offset
+      - name: Shotgun Trips Offset
+      - name: Shotgun Trips TE Offset
+      - name: Shotgun Twin TE Slot
+      - name: Shotgun Wing Trips Offset Wk
+      - name: Shotgun Y-Trips HB Wk
+  - team_id: "usc"
+    name: USC
+    playbook_style: null
+    formation_count: 26
+    formation_families:
+      ace: 9
+      empty: 1
+      i_form: 5
+      other: 4
+      shotgun: 5
+      wildcat: 2
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twins
+      - name: Ace Bunch
+      - name: Ace Slot
+      - name: Ace Slot Flex
+      - name: Ace Tight
+      - name: Ace Twin TE
+      - name: Ace Twin TE Flex
+      - name: Ace Y-Trips
+      - name: Empty Flex Trey Open
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: I-Form Twins Flex
+      - name: Shotgun Double Flex
+      - name: Shotgun Normal Flex Wk
+      - name: Shotgun Split Offset
+      - name: Shotgun Trio Open
+      - name: Shotgun Y-Trips HB Wk
+      - name: Strong I Normal
+      - name: Strong I Twin TE
+      - name: Strong I Twins Flex
+      - name: Weak I Normal
+      - name: Weak I Twins
+      - name: Wildcat Fight Song
+      - name: Wildcat Trips Over
+  - team_id: "usf"
+    name: USF
+    playbook_style: null
+    formation_count: 24
+    formation_families:
+      ace: 7
+      i_form: 8
+      other: 2
+      pistol: 2
+      shotgun: 5
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twins
+      - name: Ace Bunch
+      - name: Ace F Pair Twins
+      - name: Ace Slot Flex
+      - name: Ace Twin TE
+      - name: Ace Y-Trips
+      - name: Goal Line Normal
+      - name: I-Form Hulk
+      - name: I-Form Normal
+      - name: I-Form Slot Flex
+      - name: I-Form Tackle Over
+      - name: I-Form Tight
+      - name: I-Form Twins Flex
+      - name: I-Form Y-Trips
+      - name: Pistol Slot
+      - name: Pistol Y-Trips
+      - name: Shotgun Ace Twins
+      - name: Shotgun Empty Trey Flex
+      - name: Shotgun Normal Flex
+      - name: Shotgun Normal Y-Flex
+      - name: Shotgun Y-Trips
+      - name: Strong I Normal
+      - name: Weak I Normal
+  - team_id: "utep"
+    name: UTEP
+    playbook_style: null
+    formation_count: 24
+    formation_families:
+      ace: 8
+      i_form: 4
+      other: 4
+      pistol: 2
+      shotgun: 6
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Bunch Swap
+      - name: Ace Jumbo Z
+      - name: Ace Slot
+      - name: Ace Tight
+      - name: Ace Twin TE
+      - name: Ace Twin TE Slot
+      - name: Ace Y-Trips
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Twin TE
+      - name: I-Form Twins
+      - name: Pistol Slot
+      - name: Pistol Weak Twins
+      - name: Shotgun 5WR Flex
+      - name: Shotgun Normal
+      - name: Shotgun Normal Y-Flex
+      - name: Shotgun Split Slot
+      - name: Shotgun Trey Open
+      - name: Shotgun Y-Trips HB Wk
+      - name: Strong I Normal
+      - name: Strong I Twin TE
+      - name: Strong I Y-Trips
+      - name: Weak I Twins
+  - team_id: "utsa"
+    name: UTSA
+    playbook_style: null
+    formation_count: 24
+    formation_families:
+      ace: 3
+      i_form: 4
+      other: 3
+      pistol: 3
+      shotgun: 11
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Twins
+      - name: Ace Y-Trips
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: I-Form Twin TE
+      - name: Pistol Full House
+      - name: Pistol H Twins
+      - name: Pistol Strong
+      - name: Shotgun 5WR Trips
+      - name: Shotgun Ace
+      - name: Shotgun Bunch
+      - name: Shotgun Normal
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread Offset
+      - name: Shotgun Trips HB Wk
+      - name: Shotgun Trips Offset
+      - name: Shotgun Trips TE
+      - name: Shotgun Twin TE Slot
+      - name: Shotgun Y-Trips HB Wk
+      - name: Strong I Normal
+      - name: Strong I Y-Trips
+      - name: Weak I Twins
+  - team_id: "utah"
+    name: Utah
+    playbook_style: null
+    formation_count: 22
+    formation_families:
+      ace: 1
+      other: 1
+      pistol: 3
+      shotgun: 17
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Goal Line Normal
+      - name: Pistol Full House
+      - name: Pistol Strong Slot
+      - name: Pistol Twin TE Slot
+      - name: Shotgun 5WR Flex Trey
+      - name: Shotgun Bunch HB Str
+      - name: Shotgun Double Flex
+      - name: Shotgun Normal Flex
+      - name: Shotgun Normal Flex Wing
+      - name: Shotgun Normal Flex Wing Wk
+      - name: Shotgun Normal Offset
+      - name: Shotgun Normal Y-Flex
+      - name: Shotgun Split Offset
+      - name: Shotgun Spread Flex
+      - name: Shotgun Trey Open Offset
+      - name: Shotgun Trio 4WR Str
+      - name: Shotgun Trips Over
+      - name: Shotgun Twin TE Slot Wk
+      - name: Shotgun Wing Offset
+      - name: Shotgun Wing Offset Wk
+      - name: Shotgun Y-Trips
+  - team_id: "utah_state"
+    name: Utah State
+    playbook_style: null
+    formation_count: 21
+    formation_families:
+      ace: 2
+      other: 1
+      pistol: 5
+      shotgun: 12
+      wishbone: 1
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace F Pair Twins
+      - name: Goal Line Normal
+      - name: Pistol Bunch
+      - name: Pistol Slot
+      - name: Pistol Strong Slot
+      - name: Pistol Train
+      - name: Pistol Trips 4WR
+      - name: Shotgun 5WR Flex Trey
+      - name: Shotgun 5WR Trio
+      - name: Shotgun Double Flex
+      - name: Shotgun Normal
+      - name: Shotgun Normal Y-Slot
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread Flex
+      - name: Shotgun Trey 4WR
+      - name: Shotgun Trips
+      - name: Shotgun Trips Open
+      - name: Shotgun Twin TE Slot
+      - name: Shotgun Y-Trips
+      - name: Wishbone Wide
+  - team_id: "vanderbilt"
+    name: Vanderbilt
+    playbook_style: null
+    formation_count: 24
+    formation_families:
+      ace: 5
+      i_form: 4
+      other: 3
+      shotgun: 8
+      wildcat: 4
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Bunch Base
+      - name: Ace Slot Flex
+      - name: Ace Trips
+      - name: Ace Twin TE
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Tackle Over
+      - name: Shotgun 5WR Flex Trey
+      - name: Shotgun Double Flex
+      - name: Shotgun Normal Flex Wk
+      - name: Shotgun Split Y-Flex
+      - name: Shotgun Trey Open
+      - name: Shotgun Trio HB Wk
+      - name: Shotgun Wing Offset Wk
+      - name: Shotgun Y-Trips
+      - name: Strong I Normal
+      - name: Strong I Twin TE
+      - name: Weak I Twin TE
+      - name: Weak I Twins Flex
+      - name: Wildcat Fight Song
+      - name: Wildcat Normal
+      - name: Wildcat Spread Flex
+      - name: Wildcat Trips Over
+  - team_id: "virginia"
+    name: Virginia
+    playbook_style: null
+    formation_count: 24
+    formation_families:
+      ace: 10
+      i_form: 6
+      other: 2
+      shotgun: 6
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Close
+      - name: Ace Big Wing
+      - name: Ace Bunch Base
+      - name: Ace Slot Flex
+      - name: Ace Slot Y-Flex
+      - name: Ace Spread
+      - name: Ace Twin TE
+      - name: Ace Wing Trio
+      - name: Ace Y-Trips
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: I-Form Twin TE
+      - name: I-Form Twins
+      - name: I-Form Twins Flex
+      - name: Shotgun 5WR Flex Trey
+      - name: Shotgun Bunch
+      - name: Shotgun Normal
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread
+      - name: Shotgun Trey Open
+      - name: Strong I Normal
+      - name: Weak I H Twins Flex
+  - team_id: "virginia_tech"
+    name: Virginia Tech
+    playbook_style: null
+    formation_count: 22
+    formation_families:
+      ace: 6
+      i_form: 3
+      other: 2
+      pistol: 1
+      shotgun: 10
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Bunch
+      - name: Ace Slot
+      - name: Ace Twin TE
+      - name: Ace Twin TE Flex
+      - name: Ace Y-Trips
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: I-Form Twins
+      - name: Pistol Wing Trio
+      - name: Shotgun 5WR Flex Trey
+      - name: Shotgun Ace Twins Wk
+      - name: Shotgun Double Flex
+      - name: Shotgun Normal Wing Wk
+      - name: Shotgun Spread Flex
+      - name: Shotgun Trio 4WR
+      - name: Shotgun Trips Over
+      - name: Shotgun Trips TE
+      - name: Shotgun Wing Trio Wk
+      - name: Shotgun Y-Trips HB Wk
+      - name: Strong I Normal
+  - team_id: "wake_forest"
+    name: Wake Forest
+    playbook_style: null
+    formation_count: 21
+    formation_families:
+      i_form: 2
+      other: 1
+      pistol: 6
+      shotgun: 12
+    personnel_breakdown: null
+    formations:
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: Pistol H Twins
+      - name: Pistol Slot
+      - name: Pistol Strong
+      - name: Pistol Strong Slot
+      - name: Pistol Trips
+      - name: Pistol Y-Trips
+      - name: Shotgun Ace
+      - name: Shotgun Normal
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Split
+      - name: Shotgun Split Slot
+      - name: Shotgun Split Twins
+      - name: Shotgun Spread
+      - name: Shotgun Trips HB Wk
+      - name: Shotgun Trips Open Str
+      - name: Shotgun Trips Over
+      - name: Shotgun Y-Trips
+      - name: Shotgun Y-Trips HB Wk
+  - team_id: "washington"
+    name: Washington
+    playbook_style: null
+    formation_count: 25
+    formation_families:
+      ace: 7
+      empty: 1
+      i_form: 5
+      other: 4
+      shotgun: 7
+      wildcat: 1
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Wing
+      - name: Ace Bunch
+      - name: Ace F Pair Twins
+      - name: Ace Slot Flex
+      - name: Ace Twin TE
+      - name: Ace Y-Trips
+      - name: Empty Flex Trey Open
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Slot Flex
+      - name: I-Form Tight
+      - name: I-Form Twins Flex
+      - name: Shotgun 5WR Flex Trey
+      - name: Shotgun Bunch
+      - name: Shotgun Double Flex
+      - name: Shotgun Normal Flex
+      - name: Shotgun Split Offset
+      - name: Shotgun Trey
+      - name: Shotgun Y-Trips HB Wk
+      - name: Strong I Normal
+      - name: Strong I Y-Flex
+      - name: Strong I Y-Trips
+      - name: Weak I Normal
+      - name: Wildcat Normal
+  - team_id: "washington_state"
+    name: Washington State
+    playbook_style: null
+    formation_count: 19
+    formation_families:
+      ace: 1
+      other: 1
+      pistol: 1
+      shotgun: 16
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big Wing
+      - name: Goal Line Normal
+      - name: Pistol Strong Slot
+      - name: Shotgun Ace
+      - name: Shotgun Big Flip
+      - name: Shotgun Double Flex
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Normal Y-Flex
+      - name: Shotgun Normal Y-Slot
+      - name: Shotgun Split Offset
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread Flex
+      - name: Shotgun Spread Flex Wk
+      - name: Shotgun Spread Offset
+      - name: Shotgun Trey 4WR Str
+      - name: Shotgun Trey Open Offset
+      - name: Shotgun Trips
+      - name: Shotgun Trips Open
+      - name: Shotgun Twin TE Slot Wk
+  - team_id: "west_coast"
+    name: West Coast
+    playbook_style: null
+    formation_count: 24
+    formation_families:
+      ace: 7
+      i_form: 8
+      other: 4
+      shotgun: 5
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Flip
+      - name: Ace Big Twins
+      - name: Ace Bunch
+      - name: Ace Slot
+      - name: Ace Twin TE Flex
+      - name: Ace Y-Trips
+      - name: Goal Line Normal
+      - name: I-Form Close Twins
+      - name: I-Form Normal
+      - name: I-Form Tackle Over
+      - name: I-Form Twins
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Normal Y-Flex
+      - name: Shotgun Split
+      - name: Shotgun Trio HB Wk
+      - name: Shotgun Y-Trips
+      - name: Strong I Normal
+      - name: Strong I Tight
+      - name: Strong I Twins Over
+      - name: Weak I Close Twins
+      - name: Weak I Normal
+      - name: Weak I Twin TE
+      - name: Weak I Twins
+  - team_id: "west_virginia"
+    name: West Virginia
+    playbook_style: null
+    formation_count: 19
+    formation_families:
+      other: 1
+      pistol: 8
+      shotgun: 10
+    personnel_breakdown: null
+    formations:
+      - name: Goal Line Normal
+      - name: Pistol Ace Twins
+      - name: Pistol Full House
+      - name: Pistol Spread
+      - name: Pistol Strong Slot
+      - name: Pistol Trips 4WR
+      - name: Pistol Trips Open
+      - name: Pistol Twin TE
+      - name: Pistol Weak Slot
+      - name: Shotgun Empty Spread
+      - name: Shotgun Normal Y-Slot
+      - name: Shotgun Slot Offset
+      - name: Shotgun Split Slot
+      - name: Shotgun Spread
+      - name: Shotgun Spread HB Wk
+      - name: Shotgun Trips
+      - name: Shotgun Trips HB Wk
+      - name: Shotgun Trips Open
+      - name: Shotgun Wing Trips Wk
+  - team_id: "western_kentucky"
+    name: Western Kentucky
+    playbook_style: null
+    formation_count: 22
+    formation_families:
+      ace: 7
+      i_form: 5
+      other: 2
+      pistol: 1
+      shotgun: 7
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Bunch
+      - name: Ace Slot Flex
+      - name: Ace Trio
+      - name: Ace Twin TE
+      - name: Ace Twin TE Slot
+      - name: Ace Y-Trips
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: I-Form Twin TE
+      - name: I-Form Twins
+      - name: Pistol Slot Flex
+      - name: Shotgun 5WR Trio
+      - name: Shotgun Ace
+      - name: Shotgun Normal Flex
+      - name: Shotgun Spread HB Wk
+      - name: Shotgun Trio
+      - name: Shotgun Trips Offset
+      - name: Shotgun Y-Trips HB Wk
+      - name: Strong I Normal
+      - name: Weak I Normal
+  - team_id: "western_michigan"
+    name: Western Michigan
+    playbook_style: null
+    formation_count: 22
+    formation_families:
+      ace: 5
+      i_form: 5
+      other: 5
+      shotgun: 6
+      wildcat: 1
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Bunch Base
+      - name: Ace Slot Flex
+      - name: Ace Twin TE
+      - name: Ace Y-Trips
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Tight
+      - name: I-Form Twin TE
+      - name: I-Form Twins
+      - name: Shotgun 5WR Flex
+      - name: Shotgun Normal HB Wk
+      - name: Shotgun Normal Y-Flex
+      - name: Shotgun Split Y-Flex
+      - name: Shotgun Trio Open
+      - name: Shotgun Y-Trips HB Wk
+      - name: Strong I Normal
+      - name: Strong I Twin TE
+      - name: Strong I Twins Flex
+      - name: Strong I Y-Flex
+      - name: Weak I Twins Flex
+      - name: Wildcat Normal
+  - team_id: "wisconsin"
+    name: Wisconsin
+    playbook_style: null
+    formation_count: 25
+    formation_families:
+      ace: 8
+      i_form: 7
+      other: 4
+      shotgun: 6
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big
+      - name: Ace Big Close
+      - name: Ace Bunch
+      - name: Ace F Pair Twins
+      - name: Ace Jumbo Heavy
+      - name: Ace Slot Flex
+      - name: Ace Twin TE
+      - name: Ace Y-Trips
+      - name: Goal Line Normal
+      - name: I-Form Normal
+      - name: I-Form Tackle Over
+      - name: I-Form Tight
+      - name: I-Form Twin TE
+      - name: I-Form Twins
+      - name: Shotgun Bunch HB Str
+      - name: Shotgun Double Flex
+      - name: Shotgun Normal Flex
+      - name: Shotgun Normal Y-Flex
+      - name: Shotgun Trey Open
+      - name: Shotgun Y-Trips HB Wk
+      - name: Strong I Normal
+      - name: Strong I Twin TE
+      - name: Strong I Y-Trips
+      - name: Weak I Twin TE
+      - name: Weak I Twins Flex
+  - team_id: "wyoming"
+    name: Wyoming
+    playbook_style: null
+    formation_count: 21
+    formation_families:
+      ace: 1
+      other: 1
+      shotgun: 17
+      wildcat: 2
+    personnel_breakdown: null
+    formations:
+      - name: Ace Big Twins
+      - name: Goal Line Normal
+      - name: Shotgun 5WR
+      - name: Shotgun 5WR Bunch
+      - name: Shotgun 5WR Trips
+      - name: Shotgun Ace
+      - name: Shotgun Bunch
+      - name: Shotgun Empty Quads
+      - name: Shotgun Empty Spread
+      - name: Shotgun Monster
+      - name: Shotgun Normal Y-Slot
+      - name: Shotgun Spread
+      - name: Shotgun Spread HB Wk
+      - name: Shotgun Trips
+      - name: Shotgun Trips HB Wk
+      - name: Shotgun Trips Open
+      - name: Shotgun Trips Open Str
+      - name: Shotgun Trips Over
+      - name: Shotgun Y-Trips HB Wk
+      - name: Wildcat Trips Over
+      - name: Wildcat Wing

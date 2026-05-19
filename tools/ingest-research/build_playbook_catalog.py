@@ -309,6 +309,11 @@ def build_catalog(game_id: str,
 
     teams = []
     for team_name in sorted(teams_by_name):
+        # Skip junk rows: some xlsx sheets carry stray numeric cells in the
+        # team column (e.g. "44989.0"). A real team/playbook name always has
+        # at least one letter.
+        if not re.search(r"[A-Za-z]", team_name):
+            continue
         formations = teams_by_name[team_name]
         style = styles.get(team_name)
         teams.append(_build_team_entry(team_name, formations, style))
@@ -347,7 +352,9 @@ def _write_yaml(catalog: dict, path: Path) -> None:
     lines.append(f"notes: {_yaml_str(catalog['notes'])}")
     lines.append("teams:")
     for team in catalog["teams"]:
-        lines.append(f"  - team_id: {team['team_id']}")
+        # Always quote team_id: an all-digit / underscored slug like "3_3_5"
+        # is otherwise parsed back as an integer by the YAML loader.
+        lines.append(f'  - team_id: "{team["team_id"]}"')
         lines.append(f"    name: {_yaml_str(team['name'])}")
         style = team["playbook_style"]
         lines.append(f"    playbook_style: {_yaml_str(style) if style else 'null'}")
