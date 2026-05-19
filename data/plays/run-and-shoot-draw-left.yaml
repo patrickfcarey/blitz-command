@@ -4,7 +4,7 @@ aliases:
 - Run-and-Shoot Draw
 - Shotgun Draw
 - Lead Draw off Verts
-formation: run-and-shoot-left
+formation: double-slot-left
 play_type: run
 ball_carrier: HB
 run_reads:

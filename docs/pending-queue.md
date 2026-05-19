@@ -48,14 +48,6 @@ when an item depends on something external (user input, upstream work).
 - Wire plays to the 6 new run concepts (duo, jet-sweep, reverse, power-read,
   shovel-option, speed-option) via `run_concept_ref`.
 - Future offensive formations: Single Wing, Double Wing, Bunch, Pistol Trips.
-- **`run-and-shoot` is mis-modelled as a formation.** Run-and-shoot is a
-  *philosophy*, not a formation — and the repo already has it as one
-  (`data/concepts/philosophies/run-and-shoot.yaml`). But `data/formations/
-  run-and-shoot.yaml` (+ `-left`) is structurally just a 10-personnel
-  under-center 2x2 spread. Rename it to its real identity (e.g. `spread-2x2`)
-  and retag the philosophy onto the plays/section. Touches ~15 files
-  (formation + mirror, ~10 plays, the family file, hs-base's "Run & Shoot"
-  section). Deliberate cross-cutting rename — confirm scope before doing it.
 
 ## Drawing improvements
 
@@ -115,6 +107,13 @@ Trim periodically — old completions need not live here forever.
   Normalizes both a repo playbook and a game catalog to (family-group, alignment
   tags) signatures and scores formation-by-formation coverage. Works for
   madden-25-ps3 and espn-2k5-ps2.
+- ✅ `run-and-shoot` formation renamed to `double-slot`. Run-and-shoot is a
+  philosophy (kept as `data/concepts/philosophies/run-and-shoot.yaml`); the
+  formation file was a mis-named 10-personnel under-center 2x2 double-slot.
+  Renamed formation + `-left` mirror, retargeted 10 plays' `formation:` refs,
+  the play-family `formation_id`, hs-base's section, personnel-groupings, and
+  the section maps in `expand.py`. Plays / family / philosophy keep their
+  run-and-shoot names (they belong to the philosophy).
 
 ### 2026-05
 

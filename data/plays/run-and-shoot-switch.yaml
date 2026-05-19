@@ -5,7 +5,7 @@ aliases:
   - Run-and-Shoot Switch
   - Switch Verts
 
-formation: run-and-shoot
+formation: double-slot
 play_type: pass
 ball_carrier: QB
 primary_read: SLOT-R

@@ -204,7 +204,7 @@ def get_formation(formation_id: str) -> dict[str, Any]:
                        'shotgun-2x1-te-strong', 'shotgun-2x1-te-weak',
                        'empty', 'trey-right', 'trey-left'
         Pistol:        'pistol', 'pistol-diamond'
-        Specialty:     'wildcat', 'wishbone', 'flexbone', 'run-and-shoot'
+        Specialty:     'wildcat', 'wishbone', 'flexbone', 'double-slot'
 
     Example:
         >>> f = get_formation('singleback-trio')

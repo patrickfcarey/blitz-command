@@ -378,7 +378,7 @@ def find_plays_by_formation(formation_id: str) -> list[str]:
                        'shotgun-trips-left', 'shotgun-3x0', 'empty',
                        'trey-right', 'trey-left'
         Pistol:        'pistol', 'pistol-diamond'
-        Specialty:     'wildcat', 'wishbone', 'flexbone', 'run-and-shoot'
+        Specialty:     'wildcat', 'wishbone', 'flexbone', 'double-slot'
 
     Use get_formation(formation_id) on the formation-library MCP to inspect
     the formation itself.

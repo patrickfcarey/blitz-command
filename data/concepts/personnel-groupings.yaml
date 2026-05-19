@@ -53,7 +53,7 @@ groupings:
     wide_receivers: 4
     description: One running back, no tight end, four wide receivers — the classic four-wide spread grouping.
     typical_use: Run & Shoot and Air Raid offenses; quick game and four-vertical passing.
-    example_formations: [run-and-shoot]
+    example_formations: [double-slot]
     tags: [spread, pass-heavy]
   - code: "11"
     name: 11 Personnel

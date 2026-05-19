@@ -41,19 +41,19 @@ SECTION_BY_FORMATION = {
     "shotgun-trips-left": "shotgun",
     "shotgun-trips-right": "shotgun",
     "goal-line": "goal-line",
-    "run-and-shoot": "run-and-shoot",
+    "double-slot": "double-slot",
 }
-SECTION_ORDER = ["i-formation", "singleback", "shotgun", "run-and-shoot", "goal-line"]
+SECTION_ORDER = ["i-formation", "singleback", "shotgun", "double-slot", "goal-line"]
 SECTION_DISPLAY_NAME = {
     "i-formation": "I-Formation",
     "singleback": "Singleback",
     "shotgun": "Shotgun",
-    "run-and-shoot": "Run & Shoot",
+    "double-slot": "Double Slot",
     "goal-line": "Goal Line",
 }
 SECTION_TARGET_SNAP_SHARE = {
     "i-formation": 33, "singleback": 25, "shotgun": 27,
-    "run-and-shoot": 9, "goal-line": 6,
+    "double-slot": 9, "goal-line": 6,
 }
 
 # A new play's defensive_counters read_category -> which of the five hs-base

@@ -5,7 +5,7 @@ aliases:
   - Streak-Choice
   - Run-and-Shoot Mesh-Up
 
-formation: run-and-shoot
+formation: double-slot
 play_type: pass
 ball_carrier: QB
 primary_read: SLOT-R

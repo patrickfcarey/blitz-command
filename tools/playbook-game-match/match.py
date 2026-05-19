@@ -118,9 +118,9 @@ def _repo_family(formation_id: str) -> str:
     fid = formation_id.lower()
     if fid.startswith("i-formation") or fid.startswith("i_formation"):
         return "i_form"
-    if fid.startswith("singleback"):
-        return "singleback"
-    if fid.startswith("shotgun") or fid.startswith("run-and-shoot"):
+    if fid.startswith("singleback") or fid.startswith("double-slot"):
+        return "singleback"  # double-slot: under-centre 10-personnel single-back
+    if fid.startswith("shotgun"):
         return "shotgun"
     if fid.startswith("goal-line"):
         return "goal_line"

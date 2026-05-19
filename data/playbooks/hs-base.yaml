@@ -2080,10 +2080,10 @@ formation_sections:
         audible_slot: 4
         notes: Trips-edge blitz vacates a coverage defender; QB power away from the pressure into the
           void.
-- section_id: run-and-shoot
-  name: Run & Shoot
+- section_id: double-slot
+  name: Double Slot
   formations:
-  - run-and-shoot
+  - double-slot
   target_snap_share_pct: 9
   plays:
   - play_id: run-and-shoot-switch
