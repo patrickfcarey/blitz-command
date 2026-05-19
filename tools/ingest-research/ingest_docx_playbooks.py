@@ -334,16 +334,21 @@ def _espn_family(name: str) -> str:
       - I / Strong-I / Strong-II / Weak-I / Near / Far prefix -> i_form
         (under centre, 1-2 backs).
       - Gun / "Gun:" prefix -> shotgun.
+      - "Jokers" / "Jacks" anywhere -> i_form. Both are two-back heavy sets
+        (1 HB + 1 FB; Jacks adds three TEs, Jokers two TEs + one WR) — power
+        run formations regardless of any receiver-shape modifier.
       - "empty" anywhere, or a bare "spread" set -> shotgun (0-1 back gun set).
       - everything else -> singleback: the bare receiver-shape names (Ace,
         Doubles, Triple, Trips, Trey, Quads, Bunch, Pair Slot, Split, Flip,
-        Jokers, Jacks, ...) were all verified as under-centre one-back sets.
+        ...) were verified as under-centre one-back sets.
     """
     lowered = name.lower().strip()
     if lowered.startswith(_ESPN_I_FORM_PREFIXES):
         return "i_form"
     if lowered.startswith(("gun ", "gun:")):
         return "shotgun"
+    if "jokers" in lowered or "jacks" in lowered:
+        return "i_form"
     if "empty" in lowered or "spread" in lowered:
         return "shotgun"
     return "singleback"

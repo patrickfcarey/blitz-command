@@ -9,9 +9,9 @@ teams:
     playbook_style: null
     formation_count: 21
     formation_families:
-      i_form: 11
+      i_form: 12
       shotgun: 2
-      singleback: 8
+      singleback: 7
     personnel_breakdown: null
     formations:
       - name: Ace
@@ -33,7 +33,7 @@ teams:
         family: singleback
         play_count: null
       - name: Split Jokers
-        family: singleback
+        family: i_form
         play_count: null
       - name: I Pro
         family: i_form
@@ -82,9 +82,9 @@ teams:
     playbook_style: null
     formation_count: 22
     formation_families:
-      i_form: 8
+      i_form: 9
       shotgun: 1
-      singleback: 13
+      singleback: 12
     personnel_breakdown: null
     formations:
       - name: Split Pro
@@ -100,7 +100,7 @@ teams:
         family: shotgun
         play_count: null
       - name: Split Jokers
-        family: singleback
+        family: i_form
         play_count: null
       - name: Flip Tight Triple
         family: singleback
@@ -303,9 +303,9 @@ teams:
     playbook_style: null
     formation_count: 25
     formation_families:
-      i_form: 8
+      i_form: 10
       shotgun: 6
-      singleback: 11
+      singleback: 9
     personnel_breakdown: null
     formations:
       - name: I Pro
@@ -324,7 +324,7 @@ teams:
         family: i_form
         play_count: null
       - name: Wing Jokers
-        family: singleback
+        family: i_form
         play_count: null
       - name: Strong II Pro
         family: i_form
@@ -363,7 +363,7 @@ teams:
         family: shotgun
         play_count: null
       - name: Split Jokers
-        family: singleback
+        family: i_form
         play_count: null
       - name: Triple
         family: singleback
@@ -388,9 +388,9 @@ teams:
     playbook_style: null
     formation_count: 19
     formation_families:
-      i_form: 4
+      i_form: 5
       shotgun: 1
-      singleback: 14
+      singleback: 13
     personnel_breakdown: null
     formations:
       - name: Bunch
@@ -445,7 +445,7 @@ teams:
         family: singleback
         play_count: null
       - name: Split Jokers
-        family: singleback
+        family: i_form
         play_count: null
       - name: Straight Open
         family: singleback
@@ -455,9 +455,9 @@ teams:
     playbook_style: null
     formation_count: 25
     formation_families:
-      i_form: 7
+      i_form: 9
       shotgun: 6
-      singleback: 12
+      singleback: 10
     personnel_breakdown: null
     formations:
       - name: I Pro
@@ -470,10 +470,10 @@ teams:
         family: i_form
         play_count: null
       - name: Jokers
-        family: singleback
+        family: i_form
         play_count: null
       - name: Jokers Pair
-        family: singleback
+        family: i_form
         play_count: null
       - name: I Wing Jokers
         family: i_form
@@ -695,8 +695,8 @@ teams:
     playbook_style: null
     formation_count: 24
     formation_families:
-      i_form: 7
-      singleback: 17
+      i_form: 9
+      singleback: 15
     personnel_breakdown: null
     formations:
       - name: Triple
@@ -730,7 +730,7 @@ teams:
         family: singleback
         play_count: null
       - name: F Wing Jokers
-        family: singleback
+        family: i_form
         play_count: null
       - name: Split Pro
         family: singleback
@@ -739,7 +739,7 @@ teams:
         family: singleback
         play_count: null
       - name: Split Jokers
-        family: singleback
+        family: i_form
         play_count: null
       - name: I Pro
         family: i_form
@@ -776,9 +776,9 @@ teams:
     playbook_style: null
     formation_count: 24
     formation_families:
-      i_form: 7
+      i_form: 8
       shotgun: 4
-      singleback: 13
+      singleback: 12
     personnel_breakdown: null
     formations:
       - name: Split Pro
@@ -791,7 +791,7 @@ teams:
         family: shotgun
         play_count: null
       - name: Split Jokers
-        family: singleback
+        family: i_form
         play_count: null
       - name: Near Twins
         family: i_form
@@ -937,9 +937,9 @@ teams:
     playbook_style: null
     formation_count: 16
     formation_families:
-      i_form: 3
+      i_form: 4
       shotgun: 7
-      singleback: 6
+      singleback: 5
     personnel_breakdown: null
     formations:
       - name: I Pro
@@ -958,7 +958,7 @@ teams:
         family: singleback
         play_count: null
       - name: Split Jokers
-        family: singleback
+        family: i_form
         play_count: null
       - name: Split Spread
         family: shotgun
@@ -995,9 +995,9 @@ teams:
     playbook_style: null
     formation_count: 19
     formation_families:
-      i_form: 8
+      i_form: 9
       shotgun: 5
-      singleback: 6
+      singleback: 5
     personnel_breakdown: null
     formations:
       - name: Ace Trips
@@ -1040,7 +1040,7 @@ teams:
         family: shotgun
         play_count: null
       - name: Split Jokers
-        family: singleback
+        family: i_form
         play_count: null
       - name: Pair Slot Flex
         family: singleback
@@ -1062,9 +1062,9 @@ teams:
     playbook_style: null
     formation_count: 27
     formation_families:
-      i_form: 6
+      i_form: 7
       shotgun: 9
-      singleback: 12
+      singleback: 11
     personnel_breakdown: null
     formations:
       - name: Triple
@@ -1122,7 +1122,7 @@ teams:
         family: shotgun
         play_count: null
       - name: Split Jacks
-        family: singleback
+        family: i_form
         play_count: null
       - name: "Gun: Split Spread"
         family: shotgun
@@ -1380,9 +1380,9 @@ teams:
     playbook_style: null
     formation_count: 28
     formation_families:
-      i_form: 5
+      i_form: 6
       shotgun: 11
-      singleback: 12
+      singleback: 11
     personnel_breakdown: null
     formations:
       - name: Doubles
@@ -1437,7 +1437,7 @@ teams:
         family: shotgun
         play_count: null
       - name: Split Jokers
-        family: singleback
+        family: i_form
         play_count: null
       - name: Empty Open
         family: shotgun
@@ -1474,9 +1474,9 @@ teams:
     playbook_style: null
     formation_count: 20
     formation_families:
-      i_form: 5
+      i_form: 7
       shotgun: 6
-      singleback: 9
+      singleback: 7
     personnel_breakdown: null
     formations:
       - name: Trips
@@ -1492,7 +1492,7 @@ teams:
         family: singleback
         play_count: null
       - name: F Wing Jokers
-        family: singleback
+        family: i_form
         play_count: null
       - name: I Pro
         family: i_form
@@ -1510,7 +1510,7 @@ teams:
         family: i_form
         play_count: null
       - name: Split Jokers
-        family: singleback
+        family: i_form
         play_count: null
       - name: Triple H Flex
         family: singleback
@@ -1690,9 +1690,9 @@ teams:
     playbook_style: null
     formation_count: 22
     formation_families:
-      i_form: 6
+      i_form: 7
       shotgun: 4
-      singleback: 12
+      singleback: 11
     personnel_breakdown: null
     formations:
       - name: Flip Triple
@@ -1726,7 +1726,7 @@ teams:
         family: shotgun
         play_count: null
       - name: Split Jokers
-        family: singleback
+        family: i_form
         play_count: null
       - name: I Pro
         family: i_form
@@ -1930,9 +1930,9 @@ teams:
     playbook_style: null
     formation_count: 24
     formation_families:
-      i_form: 6
+      i_form: 9
       shotgun: 7
-      singleback: 11
+      singleback: 8
     personnel_breakdown: null
     formations:
       - name: I Pro
@@ -1942,13 +1942,13 @@ teams:
         family: shotgun
         play_count: null
       - name: Jokers
-        family: singleback
+        family: i_form
         play_count: null
       - name: Strong I Pro
         family: i_form
         play_count: null
       - name: Jacks
-        family: singleback
+        family: i_form
         play_count: null
       - name: Strong I Spread
         family: i_form
@@ -1972,7 +1972,7 @@ teams:
         family: singleback
         play_count: null
       - name: Split Jacks
-        family: singleback
+        family: i_form
         play_count: null
       - name: Quads
         family: singleback
@@ -2094,9 +2094,9 @@ teams:
     playbook_style: null
     formation_count: 22
     formation_families:
-      i_form: 8
+      i_form: 9
       shotgun: 1
-      singleback: 13
+      singleback: 12
     personnel_breakdown: null
     formations:
       - name: Triple
@@ -2157,7 +2157,7 @@ teams:
         family: shotgun
         play_count: null
       - name: Split Jokers
-        family: singleback
+        family: i_form
         play_count: null
       - name: Straight Trips
         family: singleback
@@ -2170,9 +2170,9 @@ teams:
     playbook_style: null
     formation_count: 26
     formation_families:
-      i_form: 9
+      i_form: 10
       shotgun: 4
-      singleback: 13
+      singleback: 12
     personnel_breakdown: null
     formations:
       - name: I Spread
@@ -2209,7 +2209,7 @@ teams:
         family: singleback
         play_count: null
       - name: Split Jokers
-        family: singleback
+        family: i_form
         play_count: null
       - name: Triple
         family: singleback
@@ -2531,9 +2531,9 @@ teams:
     playbook_style: null
     formation_count: 21
     formation_families:
-      i_form: 8
+      i_form: 9
       shotgun: 2
-      singleback: 11
+      singleback: 10
     personnel_breakdown: null
     formations:
       - name: Doubles
@@ -2573,7 +2573,7 @@ teams:
         family: i_form
         play_count: null
       - name: Jokers
-        family: singleback
+        family: i_form
         play_count: null
       - name: I Wing Jokers
         family: i_form

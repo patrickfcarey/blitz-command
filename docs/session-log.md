@@ -84,11 +84,15 @@ formation + `-left` mirror, retargeted 10 plays, the play-family, hs-base's
 section, personnel-groupings, and `expand.py`'s section maps. Plays / family /
 philosophy keep their run-and-shoot names.
 
+**ESPN `_espn_family` — Jokers/Jacks fix:** per user, `Jacks` (1HB+1FB+3TE)
+and `Jokers` (1HB+1FB+2TE+1WR) are two-back heavy power sets — `_espn_family`
+now maps any name containing "jokers"/"jacks" to i_form (was defaulting bare
+ones to singleback). ESPN catalog re-run: 24 Jokers/Jacks formations now
+i_form (singleback 334 / i_form 284 / shotgun 155).
+
 **In progress / next step:** (1) play-name extraction (catalog Phase 2 — a
-vision pass over the discarded play-diagram screens); (2) ESPN `_espn_family`
-needs a fix — bare `Jokers`/`Jacks` are 2-back heavy sets (1HB+1FB, 2-3 TE),
-should be i_form not singleback; (3) Madden 01/03 PS2 catalogs still need
-profiles + ingest. See pending-queue.
+vision pass over the discarded play-diagram screens); (2) Madden 01/03 PS2
+catalogs still need profiles + ingest. See pending-queue.
 
 **Uncommitted state:** Madden 25 work committed earlier (e48d0ad). ESPN 2K5
 catalog committed at end of this session.
