@@ -120,10 +120,10 @@ extract docx images to /tmp/m25-img/<slug>/, launch 4 chunked Haiku subagents
 (~40 imgs each) writing `.docx-cache-m25-plays/<Team>__chunkNN.json`, then
 `extract_play_names.py --game madden-25-ps3 --cache-dir .docx-cache-m25-plays`.
 
-**In progress / next step:** ESPN 2K5 play names COMPLETE (34/34, 8021 plays).
-Next: NCAA 14 play names — 371-docx Play Database, one docx per formation
-(filename = formation name), grouped in 16 formation-family folders. Needs a
-per-docx pipeline (different from the per-team screenshot one). + 34 espn-2k5 remain. Same
+**In progress / next step:** NCAA 14 play names — pipeline built (extract_ncaa14_play_names.py;
+one docx per formation). 75/244 Play Database docx done; 539 catalog formation-entries
+have plays. Loop continues docx-list.txt lines 76-244 (cache .docx-cache-ncaa14-plays/).
+Defensive formations in the catalog stay unmatched by design (offense-only Play Database). + 34 espn-2k5 remain. Same
 workflow; ESPN uses header-based association (its play screens name the
 formation). (2) Madden 01/03 PS2 catalogs still need profiles + ingest.
 
