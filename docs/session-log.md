@@ -99,14 +99,13 @@ order); ESPN will use the on-screen formation header. Indianapolis Colts done â€
 333 plays, 24/24 formations within +/-2 of play_count. Chunk caches live in
 `.docx-cache-<game>-plays/` (gitignored), resumable.
 
-**Play-name grind progress:** 35/50 madden-25 playbooks done (+ Balanced,
-Bill Walsh, Brian Billick, Dick Vermeil, Jimmy Johnson). 15 scheme/coach
-playbooks remain. Per-team workflow:
+**Play-name grind progress:** 40/50 madden-25 playbooks done (+ Joe Gibbs,
+John Madden, Mike Ditka, Pass Balanced, Pistol). 10 scheme/coach playbooks remain. Per-team workflow:
 extract docx images to /tmp/m25-img/<slug>/, launch 4 chunked Haiku subagents
 (~40 imgs each) writing `.docx-cache-m25-plays/<Team>__chunkNN.json`, then
 `extract_play_names.py --game madden-25-ps3 --cache-dir .docx-cache-m25-plays`.
 
-**In progress / next step:** 15 madden-25 playbooks (scheme/coach books) + 34 espn-2k5 remain. Same
+**In progress / next step:** 10 madden-25 playbooks (scheme/coach books) + 34 espn-2k5 remain. Same
 workflow; ESPN uses header-based association (its play screens name the
 formation). (2) Madden 01/03 PS2 catalogs still need profiles + ingest.
 

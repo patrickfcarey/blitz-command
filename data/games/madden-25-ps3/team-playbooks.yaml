@@ -14415,63 +14415,599 @@ teams:
       - name: Jumbo Wing
         family: singleback
         play_count: 9
+        plays:
+          - name: Y Option
+            type: pass
+          - name: HB Toss
+            type: run
+          - name: Trail
+            type: pass
+          - name: TE Corner
+            type: pass
+          - name: HB Plunge
+            type: run
+          - name: PA Boot
+            type: pass
+          - name: HB Smash
+            type: run
+          - name: PA FL Stretch
+            type: pass
+          - name: HB Counter Wk
+            type: run
       - name: Dot
         family: singleback
         play_count: 15
+        plays:
+          - name: Ace Overload
+            type: pass
+          - name: HB Counter
+            type: run
+          - name: PA Counter
+            type: pass
+          - name: FL Corner
+            type: pass
+          - name: HB Smash
+            type: run
+          - name: PA Deep In
+            type: pass
+          - name: Ace Posts
+            type: pass
+          - name: HB Draw
+            type: run
+          - name: WR Screen
+            type: pass
+          - name: Ace TE Drag
+            type: pass
+          - name: HB Pitch
+            type: run
+          - name: Comebacks
+            type: pass
+          - name: Quick Slants
+            type: pass
+          - name: HB Blunt Dive
+            type: run
+          - name: PA Boot Roll
+            type: pass
       - name: Dot Twins
         family: singleback
         play_count: 15
+        plays:
+          - name: Curl Flat
+            type: pass
+          - name: HB Dive
+            type: run
+          - name: PA FL Stretch
+            type: pass
+          - name: Slants
+            type: pass
+          - name: Zone Weak
+            type: run
+          - name: PA Boot Over
+            type: pass
+          - name: Stick
+            type: pass
+          - name: HB Counter
+            type: run
+          - name: PA Ctr Waggle
+            type: pass
+          - name: Roll Out Smash
+            type: pass
+          - name: HB Slant 18
+            type: run
+          - name: PA Boot Wk
+            type: pass
+          - name: Weak Flood
+            type: pass
+          - name: HB Misdirection
+            type: run
+          - name: HB Slip Screen
+            type: pass
       - name: Twins Right
         family: singleback
         play_count: 18
+        plays:
+          - name: Strong Curls
+            type: pass
+          - name: HB Stretch
+            type: run
+          - name: PA Boot Lt
+            type: pass
+          - name: Y Stick
+            type: pass
+          - name: HB Dive
+            type: run
+          - name: PA Middle
+            type: pass
+          - name: TE Attack
+            type: pass
+          - name: HB Smash
+            type: run
+          - name: PA TE Flood
+            type: pass
+          - name: Power O
+            type: run
+          - name: PA Power O
+            type: pass
+          - name: H Zone Wk
+            type: run
+          - name: Z Spot
+            type: pass
+          - name: HB Toss Crack
+            type: run
+          - name: Spacing
+            type: pass
+          - name: Curl Combo
+            type: pass
+          - name: HB Counter Wk
+            type: run
+          - name: Drive
+            type: pass
       - name: Twins Clip
         family: singleback
         play_count: 12
+        plays:
+          - name: TE Out
+            type: pass
+          - name: HB Dive
+            type: run
+          - name: PA Dive
+            type: pass
+          - name: Slants Slot Flat
+            type: pass
+          - name: HB Off Tackle
+            type: run
+          - name: PA FL Stretch
+            type: pass
+          - name: Smash Slot Post
+            type: pass
+          - name: HB Draw
+            type: run
+          - name: HB Slip Screen
+            type: pass
+          - name: TE Inside
+            type: pass
+          - name: Counter H Wk
+            type: run
+          - name: TE Angle
+            type: pass
       - name: Twins Flip
         family: singleback
         play_count: 12
+        plays:
+          - name: Y Stick
+            type: pass
+          - name: HB Stretch
+            type: run
+          - name: PA Boot Lt
+            type: pass
+          - name: H Counter Str
+            type: run
+          - name: PA Counter Str
+            type: pass
+          - name: H Power Toss
+            type: run
+          - name: PA Spot
+            type: pass
+          - name: H Zone Wk
+            type: run
+          - name: PA Boot Screen
+            type: pass
+          - name: TE Spot
+            type: pass
+          - name: HB Draw
+            type: run
+          - name: Bubble Screen
+            type: pass
       - name: F Pair Twins
         family: singleback
         play_count: 15
+        plays:
+          - name: X Curl
+            type: pass
+          - name: HB Dive
+            type: run
+          - name: PA FL Dive
+            type: pass
+          - name: Curl Flats
+            type: pass
+          - name: Mtn HB Dive
+            type: run
+          - name: PA Mtn Boot
+            type: pass
+          - name: PA Power O
+            type: pass
+          - name: Power O
+            type: run
+          - name: PA Boot Slide
+            type: pass
+          - name: HB Toss
+            type: run
+          - name: Z Dig
+            type: pass
+          - name: H Counter Wk
+            type: run
+          - name: PA Dig
+            type: pass
+          - name: HB Smash
+            type: run
+          - name: Dual TE Flats
+            type: pass
       - name: Deuce Wing
         family: singleback
         play_count: 15
+        plays:
+          - name: FL Drag Clearout
+            type: pass
+          - name: End Around
+            type: run
+          - name: PA End Around
+            type: pass
+          - name: Swing Slant
+            type: pass
+          - name: Power 0
+            type: run
+          - name: PA Power 0
+            type: pass
+          - name: H Option
+            type: pass
+          - name: HB Draw
+            type: run
+          - name: Four Verticals
+            type: pass
+          - name: TE Option
+            type: pass
+          - name: HB Dive
+            type: run
+          - name: PA WR Out
+            type: pass
+          - name: HB Slip Screen
+            type: pass
+          - name: H Counter Wk
+            type: run
+          - name: WR Deep Hook
+            type: pass
       - name: Walk Right
         family: singleback
         play_count: 15
+        plays:
+          - name: WR Option
+            type: pass
+          - name: HB Sprint
+            type: run
+          - name: Ins Left
+            type: pass
+          - name: SE Curl
+            type: pass
+          - name: Off Tackle
+            type: run
+          - name: PA Boot Rt
+            type: pass
+          - name: Curls
+            type: pass
+          - name: Power 0
+            type: run
+          - name: PA Power 0
+            type: pass
+          - name: SE In HB Out
+            type: pass
+          - name: Counter Weak
+            type: run
+          - name: Slants
+            type: pass
+          - name: China Under
+            type: pass
+          - name: HB Wham
+            type: run
+          - name: PA Verticals
+            type: pass
       - name: I Pair Twins
         family: singleback
         play_count: 15
+        plays:
+          - name: HB Slip Screen
+            type: pass
+          - name: HB Draw
+            type: run
+          - name: Stick
+            type: pass
+          - name: Z Spot
+            type: pass
+          - name: H Zone Str
+            type: run
+          - name: PA Verticals
+            type: pass
+          - name: Spacing
+            type: pass
+          - name: H Counter Str
+            type: run
+          - name: PA Counter Str
+            type: pass
+          - name: PA Zone Wk
+            type: pass
+          - name: H Zone Wk
+            type: run
+          - name: PA Boot Screen
+            type: pass
+          - name: H Power Toss
+            type: run
+          - name: PA Ctr Waggle
+            type: pass
+          - name: HB Counter
+            type: run
       - name: Train Right
         family: singleback
         play_count: 15
+        plays:
+          - name: Seattle
+            type: pass
+          - name: End Around
+            type: run
+          - name: PA End Around
+            type: pass
+          - name: Slot Curl Flat
+            type: pass
+          - name: HB Sweep
+            type: run
+          - name: Corner Flat
+            type: pass
+          - name: WR Option
+            type: pass
+          - name: HB Draw
+            type: run
+          - name: Skins Corner Strike
+            type: pass
+          - name: WR Corners
+            type: pass
+          - name: HB Blast
+            type: run
+          - name: Slot Cross
+            type: pass
+          - name: WR Short Posts
+            type: pass
+          - name: HB Dive
+            type: run
+          - name: PA HB Out
+            type: pass
       - name: Bunch
         family: singleback
         play_count: 15
+        plays:
+          - name: Hitch Corners
+            type: pass
+          - name: HB Draw
+            type: run
+          - name: Bubble Screen
+            type: pass
+          - name: Slot Pivot
+            type: pass
+          - name: HB Cutback
+            type: run
+          - name: Four Verticals
+            type: pass
+          - name: Smash Corners
+            type: pass
+          - name: HB Slip Screen
+            type: run
+          - name: Comebacks
+            type: pass
+          - name: Slants Middle
+            type: pass
+          - name: HB Slash
+            type: run
+          - name: Pivot Slants
+            type: pass
+          - name: Stick
+            type: pass
+          - name: HB Dive
+            type: run
+          - name: PA Streak
+            type: pass
       - name: Bunch Rt Freeze
         family: singleback
         play_count: 9
+        plays:
+          - name: Bubble Screen
+            type: pass
+          - name: HB Draw
+            type: run
+          - name: Four Verticals
+            type: pass
+          - name: HB Slip Screen
+            type: pass
+          - name: HB Trap
+            type: run
+          - name: WR Post Corner
+            type: pass
+          - name: Spacing
+            type: pass
+          - name: Middle Slant
+            type: pass
+          - name: Slot Middle
+            type: pass
       - name: Rocket
         family: singleback
         play_count: 15
+        plays:
+          - name: Mesh
+            type: pass
+          - name: Iso
+            type: run
+          - name: PA Boot Flow
+            type: pass
+          - name: Flanker Drive
+            type: pass
+          - name: HB Lead Dive
+            type: run
+          - name: PA HB Wheel
+            type: pass
+          - name: Counter Wk
+            type: run
+          - name: PA Ctr Waggle
+            type: pass
+          - name: Pitch
+            type: run
+          - name: WR Option
+            type: pass
+          - name: Inside Zone
+            type: run
+          - name: PA TE Leak
+            type: pass
+          - name: HB Iso
+            type: run
+          - name: PA Slot In
+            type: pass
+          - name: Quick Slant
+            type: pass
       - name: Trips Open
         family: singleback
         play_count: 12
+        plays:
+          - name: X Post
+            type: pass
+          - name: Rollout Smash
+            type: pass
+          - name: Deep Cross
+            type: pass
+          - name: HB Blast
+            type: run
+          - name: PA Boot Screen
+            type: pass
+          - name: HB Lead Toss
+            type: run
+          - name: Z Option
+            type: pass
+          - name: HB Draw
+            type: run
+          - name: X Slant
+            type: pass
+          - name: HB Stretch
+            type: run
+          - name: PA Boot Flow
+            type: pass
+          - name: Curls
+            type: pass
       - name: Close
         family: i_form
         play_count: 12
+        plays:
+          - name: Counter Wk
+            type: run
+          - name: TE Post
+            type: pass
+          - name: Iso
+            type: run
+          - name: PA Spot
+            type: pass
+          - name: HB Toss
+            type: run
+          - name: Power O
+            type: run
+          - name: PA Power O
+            type: pass
+          - name: FB Dive
+            type: run
+          - name: Slot Z Out
+            type: pass
+          - name: HB Draw
+            type: run
+          - name: WR Option
+            type: pass
+          - name: WR Corners
+            type: pass
       - name: Slot
         family: i_form
         play_count: 12
+        plays:
+          - name: Off Tackle
+            type: run
+          - name: Comebacks
+            type: pass
+          - name: Slants
+            type: pass
+          - name: FB Belly
+            type: run
+          - name: PA Slide
+            type: pass
+          - name: Curls
+            type: pass
+          - name: Zone Wk
+            type: run
+          - name: PA Rollout
+            type: pass
+          - name: Fade
+            type: pass
+          - name: HB Misdirection
+            type: run
+          - name: X Slant
+            type: pass
+          - name: Power O
+            type: run
       - name: Tight Pair
         family: i_form
         play_count: 12
+        plays:
+          - name: PA Power O
+            type: pass
+          - name: HB Dive
+            type: run
+          - name: FB Dive
+            type: run
+          - name: F Trail
+            type: pass
+          - name: HB Cntr Wk
+            type: run
+          - name: X Slant
+            type: pass
+          - name: HB Gut
+            type: run
+          - name: PA Boot
+            type: pass
+          - name: Skinny Post
+            type: pass
+          - name: Stretch
+            type: run
+          - name: PA Boot Lt
+            type: pass
+          - name: Power O
+            type: run
       - name: H Twin TE
         family: weak
         play_count: 9
+        plays:
+          - name: PA Power O
+            type: pass
+          - name: Toss Weak
+            type: run
+          - name: TE Drag
+            type: pass
+          - name: HB Gut
+            type: run
+          - name: PA Waggle
+            type: pass
+          - name: X Comeback
+            type: pass
+          - name: H Counter Strg
+            type: run
+          - name: Hook Ins
+            type: pass
+          - name: WR Comebacks
+            type: pass
       - name: H Wing TE
         family: weak
         play_count: 6
+        plays:
+          - name: HB Sweep
+            type: run
+          - name: Slants
+            type: pass
+          - name: Curls
+            type: pass
+          - name: HB Draw
+            type: run
+          - name: PA Middle
+            type: pass
+          - name: Power O
+            type: run
   - team_id: john_madden
     name: John Madden
     playbook_style: null
@@ -14487,45 +15023,455 @@ teams:
       - name: Ace Wing
         family: singleback
         play_count: 12
+        plays:
+          - name: Curl Flats
+            type: pass
+          - name: Power 0
+            type: run
+          - name: PA Power 0
+            type: pass
+          - name: Quick Slants
+            type: pass
+          - name: HB Dive
+            type: run
+          - name: PA FL Clown
+            type: pass
+          - name: Y Shallow Cross
+            type: pass
+          - name: HB Counter
+            type: run
+          - name: Corner Strike
+            type: pass
+          - name: Inside Cross
+            type: pass
+          - name: Zone Wk
+            type: run
+          - name: PA F Slide
+            type: pass
       - name: Pair
         family: singleback
         play_count: 15
+        plays:
+          - name: Strong Curls
+            type: pass
+          - name: HB Stretch
+            type: run
+          - name: PA Boot Lt
+            type: pass
+          - name: Y Stick
+            type: pass
+          - name: HB Dive
+            type: run
+          - name: PA Middle
+            type: pass
+          - name: TE Attack
+            type: pass
+          - name: HB Smash
+            type: run
+          - name: PA TE Flood
+            type: pass
+          - name: Power 0
+            type: run
+          - name: PA Power 0
+            type: pass
+          - name: H Zone Wk
+            type: run
+          - name: Curl Combo
+            type: pass
+          - name: HB Counter Wk
+            type: run
+          - name: Drive
+            type: pass
       - name: F Pair T Ins
         family: singleback
         play_count: 15
+        plays:
+          - name: Y Stick
+            type: pass
+          - name: HB Stretch
+            type: run
+          - name: PA Boot Lt
+            type: pass
+          - name: TE Spot
+            type: pass
+          - name: HB Draw
+            type: run
+          - name: Bubble Screen
+            type: pass
+          - name: X Curl
+            type: pass
+          - name: HB Dive
+            type: run
+          - name: PA FL Dive
+            type: pass
+          - name: Dagger
+            type: pass
+          - name: HB Belly Weak
+            type: run
+          - name: U Drive
+            type: pass
+          - name: HB Slip Screen
+            type: pass
+          - name: HB Blunt Dive
+            type: run
+          - name: PA Y-Drag Wheel
+            type: pass
       - name: Slot
         family: singleback
         play_count: 18
+        plays:
+          - name: Slants
+            type: pass
+          - name: HB Dive
+            type: run
+          - name: PA Y-Corner
+            type: pass
+          - name: All Slam
+            type: pass
+          - name: Inside Zone
+            type: run
+          - name: Cross Dagger
+            type: pass
+          - name: Y Shallow Cross
+            type: pass
+          - name: HB Counter
+            type: run
+          - name: PA Ctr Waggle
+            type: pass
+          - name: Y Option
+            type: pass
+          - name: Zone Weak
+            type: run
+          - name: PA Boot Screen
+            type: pass
+          - name: Four Verticals
+            type: pass
+          - name: Draw Fk Bubble
+            type: run
+          - name: Bubble Screen
+            type: pass
+          - name: TE Post
+            type: pass
+          - name: HB Slip Screen
+            type: pass
+          - name: Flanker Dig
+            type: pass
       - name: F Pair Twins
         family: singleback
         play_count: 15
+        plays:
+          - name: Quick Slants
+            type: pass
+          - name: Iso
+            type: run
+          - name: PA Scissors
+            type: pass
+          - name: Curls
+            type: pass
+          - name: HB Counter Wk
+            type: run
+          - name: Short Fades
+            type: pass
+          - name: Bench
+            type: pass
+          - name: Power 0
+            type: run
+          - name: PA Power 0
+            type: pass
+          - name: X Post
+            type: pass
+          - name: Iso Weak
+            type: run
+          - name: PA Comebacks
+            type: pass
+          - name: PA Deep
+            type: pass
+          - name: RB Stretch
+            type: run
+          - name: PA Comeback Slide
+            type: pass
       - name: Pro
         family: i_form
         play_count: 18
+        plays:
+          - name: HB Lead Draw
+            type: run
+          - name: Quick Outs
+            type: pass
+          - name: HB Blast
+            type: run
+          - name: Z Slant
+            type: pass
+          - name: Iso
+            type: run
+          - name: PA TE Corner
+            type: pass
+          - name: Angle
+            type: pass
+          - name: Power 0
+            type: run
+          - name: PA Power 0
+            type: pass
+          - name: FB Dive
+            type: run
+          - name: WR Fade
+            type: pass
+          - name: FB Fake HB Flip
+            type: run
+          - name: Z Spot
+            type: pass
+          - name: HB Toss
+            type: run
+          - name: Mesh
+            type: pass
+          - name: PA Boot
+            type: pass
+          - name: HB Zone Wk
+            type: run
+          - name: PA Y-Seam
+            type: pass
       - name: Tight
         family: i_form
         play_count: 15
+        plays:
+          - name: HB Out
+            type: pass
+          - name: Off Tackle
+            type: run
+          - name: Curl Combo
+            type: pass
+          - name: Slants
+            type: pass
+          - name: FB Belly
+            type: run
+          - name: PA Slide
+            type: pass
+          - name: TE Sail F Flat
+            type: pass
+          - name: HB Draw
+            type: run
+          - name: Flanker Hook
+            type: pass
+          - name: SS Pressure
+            type: pass
+          - name: HB Sweep
+            type: run
+          - name: 394 Swing
+            type: pass
+          - name: Backs Cross
+            type: pass
+          - name: QB Rollout
+            type: pass
+          - name: Texas
+            type: pass
       - name: Right
         family: far
         play_count: 18
+        plays:
+          - name: Curls
+            type: pass
+          - name: HB Sweep
+            type: run
+          - name: PA Waggle
+            type: pass
+          - name: Slants
+            type: pass
+          - name: FB Dive
+            type: run
+          - name: PA Corner
+            type: pass
+          - name: Weak Flood
+            type: pass
+          - name: HB Dive
+            type: run
+          - name: HB Seam
+            type: pass
+          - name: Roll Out
+            type: pass
+          - name: HB Counter
+            type: run
+          - name: FB Circle
+            type: pass
+          - name: TE Corner
+            type: pass
+          - name: FB Lead
+            type: run
+          - name: HB Slip Screen
+            type: pass
+          - name: Y Post
+            type: pass
+          - name: TE Around
+            type: pass
+          - name: Cross Right
+            type: pass
       - name: Right Twins
         family: far
         play_count: 12
+        plays:
+          - name: Double Slant
+            type: pass
+          - name: FB Dive
+            type: run
+          - name: Curls
+            type: pass
+          - name: Dagger
+            type: pass
+          - name: Power O
+            type: run
+          - name: PA Waggle
+            type: pass
+          - name: HB Slip Screen
+            type: pass
+          - name: HB Draw
+            type: run
+          - name: Smash Swing
+            type: pass
+          - name: China Special
+            type: pass
+          - name: HB Counter
+            type: run
+          - name: WR Attack
+            type: pass
       - name: Close Twins
         family: near
         play_count: 12
+        plays:
+          - name: Texas
+            type: pass
+          - name: HB Counter
+            type: run
+          - name: PA Ctr Waggle
+            type: pass
+          - name: Curls
+            type: pass
+          - name: HB Inside
+            type: run
+          - name: Double Comeback
+            type: pass
+          - name: TE Corner
+            type: pass
+          - name: FB Dive Strong
+            type: run
+          - name: PA Strong Flow
+            type: pass
+          - name: HB Screen
+            type: pass
+          - name: FB Dive Weak
+            type: run
+          - name: Slants
+            type: pass
       - name: Jumbo
         family: near
         play_count: 6
+        plays:
+          - name: FB Circle
+            type: pass
+          - name: Toss
+            type: run
+          - name: Strong Flood
+            type: pass
+          - name: Spacing
+            type: pass
+          - name: HB Inside
+            type: run
+          - name: Flanker Drive
+            type: pass
       - name: Doubles
         family: shotgun
         play_count: 12
+        plays:
+          - name: Post Drag
+            type: pass
+          - name: HB Draw
+            type: run
+          - name: Texas
+            type: pass
+          - name: Smash
+            type: pass
+          - name: FB Dive
+            type: run
+          - name: PA Read Special
+            type: pass
+          - name: Mtn Stick
+            type: pass
+          - name: FB Dive Weak
+            type: run
+          - name: Mtn Stick N Nod
+            type: pass
+          - name: TE Hitch Out
+            type: pass
+          - name: FB Dive Strong
+            type: run
+          - name: PA Strong Flow
+            type: pass
       - name: Y-Trips Open
         family: shotgun
         play_count: 15
+        plays:
+          - name: HB Inside
+            type: run
+          - name: TE Corner
+            type: pass
+          - name: HB Counter
+            type: run
+          - name: HB Angle
+            type: pass
+          - name: 45 Quick Base
+            type: run
+          - name: PA Dagger
+            type: pass
+          - name: Curl Flats
+            type: pass
+          - name: HB Mid Draw
+            type: run
+          - name: PA Verticals
+            type: pass
+          - name: Slants
+            type: pass
+          - name: Strong Flood
+            type: pass
+          - name: Y Shallow Cross
+            type: pass
+          - name: Flanker Drive
+            type: pass
+          - name: Z Spot
+            type: pass
+          - name: HB Slip Screen
+            type: pass
       - name: Empty Base
         family: shotgun
         play_count: 15
+        plays:
+          - name: Curls
+            type: pass
+          - name: HB Off Tackle
+            type: run
+          - name: PA WR In
+            type: pass
+          - name: Inside Cross
+            type: pass
+          - name: HB Mid Draw
+            type: run
+          - name: PA FL Corner
+            type: pass
+          - name: Inside Attack
+            type: pass
+          - name: Stick
+            type: pass
+          - name: Stick N Nod
+            type: pass
+          - name: Corner Strike
+            type: pass
+          - name: Strong Flood
+            type: pass
+          - name: HB Slip Screen
+            type: pass
+          - name: WR Smash
+            type: pass
+          - name: Four Verticals
+            type: pass
+          - name: Go DBL Post
+            type: pass
   - team_id: kansas_city_chiefs
     name: Kansas City Chiefs
     playbook_style: null
@@ -16034,42 +16980,451 @@ teams:
       - name: Ace
         family: singleback
         play_count: 15
+        plays:
+          - name: Curl Flats
+            type: pass
+          - name: HB Dive
+            type: run
+          - name: PA Y-In
+            type: pass
+          - name: Quick Slants
+            type: pass
+          - name: Counter Wk
+            type: run
+          - name: PA Ctr Waggle
+            type: pass
+          - name: Y-Drag
+            type: pass
+          - name: HB Zone Wk
+            type: run
+          - name: PA Roll Rt
+            type: pass
+          - name: Y Shallow Cross
+            type: pass
+          - name: HB Toss Strg
+            type: run
+          - name: WR Comebacks
+            type: pass
+          - name: Z Spot
+            type: pass
+          - name: HB Misdirection Mtn
+            type: run
+          - name: Flanker Drive
+            type: pass
       - name: Ace Twins
         family: singleback
         play_count: 15
+        plays:
+          - name: Curl Flat
+            type: pass
+          - name: HB Dive
+            type: run
+          - name: PA FL Stretch
+            type: pass
+          - name: Slants
+            type: pass
+          - name: Zone Weak
+            type: run
+          - name: PA Boot Over
+            type: pass
+          - name: Stick
+            type: pass
+          - name: HB Counter
+            type: run
+          - name: PA Ctr Waggle
+            type: pass
+          - name: Roll Out Smash
+            type: pass
+          - name: HB Slant 18
+            type: run
+          - name: PA Boot Wk
+            type: pass
+          - name: Weak Flood
+            type: pass
+          - name: HB Misdirection
+            type: run
+          - name: HB Slip Screen
+            type: pass
       - name: Ace Pair
         family: singleback
         play_count: 15
+        plays:
+          - name: Curl Combo
+            type: pass
+          - name: HB Stretch
+            type: run
+          - name: PA Boot Lt
+            type: pass
+          - name: Y Stick
+            type: pass
+          - name: HB Dive
+            type: run
+          - name: PA Middle
+            type: pass
+          - name: TE Attack
+            type: pass
+          - name: HB Smash
+            type: run
+          - name: Drive
+            type: pass
+          - name: Power O
+            type: run
+          - name: PA Power O
+            type: pass
+          - name: H Misdirection Wk
+            type: run
+          - name: Z Spot
+            type: pass
+          - name: HB Toss Crack
+            type: run
+          - name: Spacing
+            type: pass
       - name: F Pair Twins
         family: singleback
         play_count: 15
+        plays:
+          - name: Y Stick
+            type: pass
+          - name: HB Stretch
+            type: run
+          - name: PA Boot Lt
+            type: pass
+          - name: H Counter Str
+            type: run
+          - name: PA Counter Str
+            type: pass
+          - name: H Power Toss
+            type: run
+          - name: PA Spot
+            type: pass
+          - name: H Zone Wk
+            type: run
+          - name: PA Boot Screen
+            type: pass
+          - name: TE Spot
+            type: pass
+          - name: HB Draw
+            type: run
+          - name: Bubble Screen
+            type: pass
+          - name: X Curl
+            type: pass
+          - name: HB Dive
+            type: run
+          - name: PA FL Dive
+            type: pass
       - name: Doubles
         family: singleback
         play_count: 21
+        plays:
+          - name: Slot Post
+            type: pass
+          - name: HB Dive
+            type: run
+          - name: PA HB Look
+            type: pass
+          - name: Levels Divide
+            type: pass
+          - name: HB Slam
+            type: run
+          - name: PA Boot
+            type: pass
+          - name: HB Swing
+            type: pass
+          - name: HB Stretch
+            type: run
+          - name: PA Corner Post
+            type: pass
+          - name: Slants
+            type: pass
+          - name: Power O
+            type: run
+          - name: Y Shallow Cross
+            type: pass
+          - name: All Slam
+            type: pass
+          - name: Zone Weak
+            type: run
+          - name: PA Comeback
+            type: pass
+          - name: Z Under
+            type: pass
+          - name: Cross Dagger
+            type: pass
+          - name: FL Dagger
+            type: pass
+          - name: Four Verticals
+            type: pass
+          - name: Draw Fk Bubble
+            type: run
+          - name: Bubble Screen
+            type: pass
       - name: Y-Trips
         family: singleback
         play_count: 18
+        plays:
+          - name: Comebacks
+            type: pass
+          - name: HB Dive
+            type: run
+          - name: PA Cross Up
+            type: pass
+          - name: Hi Lo Post
+            type: pass
+          - name: HB Plunge
+            type: run
+          - name: Stick
+            type: pass
+          - name: SE Cross
+            type: pass
+          - name: HB Draw
+            type: run
+          - name: Four Verticals
+            type: pass
+          - name: Middle Read
+            type: pass
+          - name: HB Counter
+            type: run
+          - name: PA Ctr Waggle
+            type: pass
+          - name: Double China
+            type: pass
+          - name: HB Toss Strong
+            type: run
+          - name: Smash
+            type: pass
+          - name: Slot Drive
+            type: pass
+          - name: HB Power O
+            type: run
+          - name: Y Trail
+            type: pass
       - name: Wing Trips
         family: singleback
         play_count: 15
+        plays:
+          - name: SE Curl
+            type: pass
+          - name: Off Tackle
+            type: run
+          - name: PA Boot Rt
+            type: pass
+          - name: Curls
+            type: pass
+          - name: Power O
+            type: run
+          - name: PA Power O
+            type: pass
+          - name: Inside Switch
+            type: pass
+          - name: Counter Weak
+            type: run
+          - name: WR Drag
+            type: pass
+          - name: China Under
+            type: pass
+          - name: HB Wham
+            type: run
+          - name: PA Verticals
+            type: pass
+          - name: HB Slip Screen
+            type: pass
+          - name: HB Draw
+            type: run
+          - name: Stick
+            type: pass
       - name: Slot Y-Flex
         family: singleback
         play_count: 12
+        plays:
+          - name: Slants
+            type: pass
+          - name: HB Dive
+            type: run
+          - name: PA Slot Crosses
+            type: pass
+          - name: Bubble Screen
+            type: pass
+          - name: HB Draw
+            type: run
+          - name: Four Verticals
+            type: pass
+          - name: Mtn Stick N Nod
+            type: pass
+          - name: QB Draw
+            type: run
+          - name: Mtn Y Stick
+            type: pass
+          - name: Y Cross Flood
+            type: pass
+          - name: WR Quick
+            type: run
+          - name: HB Slip Screen
+            type: pass
       - name: Pro
         family: i_form
         play_count: 18
+        plays:
+          - name: Quick Slants
+            type: pass
+          - name: Iso
+            type: run
+          - name: PA Scissors
+            type: pass
+          - name: Curls
+            type: pass
+          - name: HB Counter Wk
+            type: run
+          - name: Short Fades
+            type: pass
+          - name: Bench
+            type: pass
+          - name: Power O
+            type: run
+          - name: PA Power O
+            type: pass
+          - name: X Post
+            type: pass
+          - name: Iso Weak
+            type: run
+          - name: PA Comebacks
+            type: pass
+          - name: PA Deep
+            type: pass
+          - name: RB Stretch
+            type: run
+          - name: PA Comeback Slide
+            type: pass
+          - name: HB Lead Draw
+            type: run
+          - name: Quick Outs
+            type: pass
+          - name: HB Blast
+            type: run
       - name: TE Flip
         family: i_form
         play_count: 9
+        plays:
+          - name: Curls
+            type: pass
+          - name: HB Blast
+            type: run
+          - name: PA Boot
+            type: pass
+          - name: Slants
+            type: pass
+          - name: FB Fake HB Flip
+            type: run
+          - name: X Under
+            type: pass
+          - name: X Post
+            type: pass
+          - name: HB Iso
+            type: run
+          - name: PA FB Flat
+            type: pass
       - name: Pro Twins
         family: i_form
         play_count: 18
+        plays:
+          - name: Sail
+            type: pass
+          - name: Power O
+            type: run
+          - name: PA Power O
+            type: pass
+          - name: Fade Smash
+            type: pass
+          - name: Iso
+            type: run
+          - name: PA TE Out
+            type: pass
+          - name: FB Dive
+            type: run
+          - name: Y Cop
+            type: pass
+          - name: FB Fake HB Flip
+            type: run
+          - name: HB Misdirection
+            type: run
+          - name: Weak Flood
+            type: pass
+          - name: HB Toss
+            type: run
+          - name: Double Slant
+            type: pass
+          - name: Strong Stretch
+            type: run
+          - name: PA Boot Corner
+            type: pass
+          - name: HB Slip Screen
+            type: pass
+          - name: HB Lead Draw
+            type: run
+          - name: Dagger
+            type: pass
       - name: Tight
         family: i_form
         play_count: 15
+        plays:
+          - name: Z Slant
+            type: pass
+          - name: Iso
+            type: run
+          - name: PA TE Corner
+            type: pass
+          - name: FB Dive Strong
+            type: run
+          - name: WR Post
+            type: pass
+          - name: HB Toss
+            type: run
+          - name: Angle
+            type: pass
+          - name: HB Blast
+            type: run
+          - name: PA HB Wheel
+            type: pass
+          - name: Power O
+            type: run
+          - name: PA Power O
+            type: pass
+          - name: HB Misdirection
+            type: run
+          - name: Flea Flicker
+            type: pass
+          - name: HB Counter
+            type: run
+          - name: PA Ctr Waggle
+            type: pass
       - name: Tight Pair
         family: strong
         play_count: 12
+        plays:
+          - name: HB Out
+            type: pass
+          - name: Off Tackle
+            type: run
+          - name: Curl Combo
+            type: pass
+          - name: Slants
+            type: pass
+          - name: FB Belly
+            type: run
+          - name: PA Slide
+            type: pass
+          - name: TE Sail F Flat
+            type: pass
+          - name: HB Draw
+            type: run
+          - name: Flanker Hook
+            type: pass
+          - name: SS Pressure
+            type: pass
+          - name: HB Sweep
+            type: run
+          - name: 394 Swing
+            type: pass
   - team_id: minnesota_vikings
     name: Minnesota Vikings
     playbook_style: null
@@ -20664,51 +22019,607 @@ teams:
       - name: Ace
         family: singleback
         play_count: 21
+        plays:
+          - name: Ace Posts
+            type: pass
+          - name: HB Stretch
+            type: run
+          - name: PA Stretch
+            type: pass
+          - name: Flanker Curl
+            type: pass
+          - name: HB Dive
+            type: run
+          - name: PA Deep In
+            type: pass
+          - name: X Post
+            type: pass
+          - name: Counter Wk
+            type: run
+          - name: PA Ctr Waggle
+            type: pass
+          - name: Ace TE Drag
+            type: pass
+          - name: Curl Flats
+            type: pass
+          - name: Y Shallow Cross
+            type: pass
+          - name: PA Roll Rt
+            type: pass
+          - name: HB Zone Wk
+            type: run
+          - name: PA DBL Go
+            type: pass
+          - name: Quick Slants
+            type: pass
+          - name: Inside Cross
+            type: pass
+          - name: Double Sluggo
+            type: pass
+          - name: Z Spot
+            type: pass
+          - name: Corner Strike
+            type: pass
+          - name: Flanker Drive
+            type: pass
       - name: Ace Twins
         family: singleback
         play_count: 15
+        plays:
+          - name: Smash
+            type: pass
+          - name: HB Stretch
+            type: run
+          - name: PA Boot
+            type: pass
+          - name: Flood
+            type: pass
+          - name: Curl Flat
+            type: pass
+          - name: Slot Under
+            type: pass
+          - name: Curl Flat Corner
+            type: pass
+          - name: HB Counter
+            type: run
+          - name: PA Ctr Waggle
+            type: pass
+          - name: Slants
+            type: pass
+          - name: HB Dive
+            type: run
+          - name: PA FL Stretch
+            type: pass
+          - name: HB Slip Screen
+            type: pass
+          - name: PA Boot Over
+            type: pass
+          - name: X Under
+            type: pass
       - name: Ace Y Flex
         family: singleback
         play_count: 18
+        plays:
+          - name: HB Dive Wk
+            type: run
+          - name: PA Comeback
+            type: pass
+          - name: Z Fade
+            type: pass
+          - name: HB Dive
+            type: run
+          - name: PA HB Look
+            type: pass
+          - name: WR Streak
+            type: pass
+          - name: HB Draw
+            type: run
+          - name: PA All Go
+            type: pass
+          - name: WR Screen
+            type: pass
+          - name: HB Cutback
+            type: run
+          - name: PA Z Over
+            type: pass
+          - name: HB Slip Screen
+            type: pass
+          - name: Curl Flats
+            type: pass
+          - name: Slot Post
+            type: pass
+          - name: Levels Divide
+            type: pass
+          - name: Power O
+            type: run
+          - name: FL Drag
+            type: pass
+          - name: PA Y-Drag
+            type: pass
       - name: Ace Pair Tight
         family: singleback
         play_count: 21
+        plays:
+          - name: HB Slam
+            type: run
+          - name: PA Dig
+            type: pass
+          - name: PA Post
+            type: pass
+          - name: HB Dive
+            type: run
+          - name: PA HB Trail
+            type: pass
+          - name: WR Under
+            type: pass
+          - name: HB Stretch
+            type: run
+          - name: Clown Cross
+            type: pass
+          - name: Y Stick
+            type: pass
+          - name: Power O
+            type: run
+          - name: PA Power O
+            type: pass
+          - name: Smash Drive
+            type: pass
+          - name: HB Belly Weak
+            type: run
+          - name: TE Spot
+            type: pass
+          - name: PA Y-Drag Wheel
+            type: pass
+          - name: HB Zone Wk
+            type: run
+          - name: PA Fork
+            type: pass
+          - name: HB Slip Screen
+            type: pass
+          - name: Dagger
+            type: pass
+          - name: Four Verticals
+            type: pass
+          - name: Bench
+            type: pass
       - name: Tight Flex
         family: singleback
         play_count: 9
+        plays:
+          - name: HB Dive
+            type: run
+          - name: PA Waggle
+            type: pass
+          - name: HB Slip Screen
+            type: pass
+          - name: Off Tackle
+            type: run
+          - name: Shallow Cross
+            type: pass
+          - name: Slot Corner
+            type: pass
+          - name: HB Slam
+            type: run
+          - name: Mesh
+            type: pass
+          - name: Divide
+            type: pass
       - name: Doubles
         family: singleback
         play_count: 27
+        plays:
+          - name: Inside Zone
+            type: run
+          - name: PA HB Look
+            type: pass
+          - name: Z Under
+            type: pass
+          - name: HB Draw
+            type: run
+          - name: PA TE Screen
+            type: pass
+          - name: PA Corner Post
+            type: pass
+          - name: Stretch
+            type: run
+          - name: PA Stretch
+            type: pass
+          - name: Flanker Dig
+            type: pass
+          - name: HB Cutback
+            type: run
+          - name: X Under
+            type: pass
+          - name: Inside Cross
+            type: pass
+          - name: Double Sluggo
+            type: pass
+          - name: Middle Slants
+            type: pass
+          - name: PA Comeback
+            type: pass
+          - name: Zone Weak
+            type: run
+          - name: PA X Post
+            type: pass
+          - name: WR Fade
+            type: pass
+          - name: Curl Flats
+            type: pass
+          - name: HB Slip Screen
+            type: pass
+          - name: Slot Swing
+            type: pass
+          - name: HB Misdirection
+            type: run
+          - name: Slot Cross
+            type: pass
+          - name: Z Spot
+            type: pass
+          - name: HB Toss Crack
+            type: run
+          - name: Flanker Drive
+            type: pass
+          - name: Spacing
+            type: pass
       - name: Bunch
         family: singleback
         play_count: 12
+        plays:
+          - name: HB Dive
+            type: run
+          - name: PA Pin Deep
+            type: pass
+          - name: Verticals
+            type: pass
+          - name: Toss Crack
+            type: run
+          - name: Stick
+            type: pass
+          - name: Z Spot
+            type: pass
+          - name: HB Ace Power
+            type: run
+          - name: Flanker Drive
+            type: pass
+          - name: End Around
+            type: run
+          - name: PA End Around
+            type: pass
+          - name: HB Slash Fk End Ard
+            type: run
+          - name: Curl Flats
+            type: pass
       - name: Spread Flex
         family: singleback
         play_count: 15
+        plays:
+          - name: HB Dive
+            type: run
+          - name: PA Dig
+            type: pass
+          - name: Verticals
+            type: pass
+          - name: HB Draw
+            type: run
+          - name: Quick Hitter
+            type: pass
+          - name: Slants
+            type: pass
+          - name: Short Ins N Outs
+            type: pass
+          - name: Slot Middle
+            type: pass
+          - name: HB Option
+            type: pass
+          - name: Inside Zone
+            type: run
+          - name: HB Slip Screen
+            type: pass
+          - name: Slot Cross
+            type: pass
+          - name: Slot Out
+            type: pass
+          - name: WR Post Flags
+            type: pass
+          - name: Curls
+            type: pass
       - name: Pro
         family: i_form
         play_count: 21
+        plays:
+          - name: Inside Zone
+            type: run
+          - name: PA FL Hitch
+            type: pass
+          - name: Texas
+            type: pass
+          - name: Stretch
+            type: run
+          - name: PA Comeback Slide
+            type: pass
+          - name: PA Scissors
+            type: pass
+          - name: Iso
+            type: run
+          - name: PA WR In
+            type: pass
+          - name: FB Dive Fake HB
+            type: run
+          - name: Quick Slants
+            type: pass
+          - name: FB Fake HB Flip
+            type: run
+          - name: Z Spot
+            type: pass
+          - name: HB Slip Screen
+            type: pass
+          - name: Mesh
+            type: pass
+          - name: X Post
+            type: pass
+          - name: HB Blast
+            type: run
+          - name: PA Clearout
+            type: pass
+          - name: "Slant and Go's"
+            type: pass
+          - name: HB Misdirection
+            type: run
+          - name: PA Misdirection
+            type: pass
+          - name: X Slant
+            type: pass
       - name: Tight Pair
         family: i_form
         play_count: 12
+        plays:
+          - name: Stretch
+            type: run
+          - name: PA Boot Flow
+            type: pass
+          - name: X Sluggo
+            type: pass
+          - name: Weak Iso
+            type: run
+          - name: PA Clearout
+            type: pass
+          - name: TE Post
+            type: pass
+          - name: Power O
+            type: run
+          - name: PA Power O
+            type: pass
+          - name: WR Corner
+            type: pass
+          - name: Iso
+            type: run
+          - name: PA TE Leak
+            type: pass
+          - name: Slants
+            type: pass
       - name: Split Flex
         family: shotgun
         play_count: 15
+        plays:
+          - name: HB Draw
+            type: run
+          - name: Curls
+            type: pass
+          - name: HB Option
+            type: pass
+          - name: FB Dive
+            type: run
+          - name: PA Slide
+            type: pass
+          - name: Slot Z Out
+            type: pass
+          - name: Z Option
+            type: pass
+          - name: Slot Cross
+            type: pass
+          - name: WR Corners
+            type: pass
+          - name: Off Tackle
+            type: run
+          - name: Slot Post
+            type: pass
+          - name: FL Drive
+            type: pass
+          - name: HB Dive
+            type: run
+          - name: PA Scissors
+            type: pass
+          - name: HB Slip Screen
+            type: pass
       - name: Y Trips Wk
         family: shotgun
         play_count: 21
+        plays:
+          - name: HB Off Tackle
+            type: run
+          - name: Mesh
+            type: pass
+          - name: "Stutter Go's"
+            type: pass
+          - name: HB Dive Weak
+            type: run
+          - name: PA Deep Cross
+            type: pass
+          - name: Inside Post
+            type: pass
+          - name: Quick Toss
+            type: run
+          - name: V Trail
+            type: pass
+          - name: Quick Slants
+            type: pass
+          - name: HB Gut
+            type: run
+          - name: PA Deep Post
+            type: pass
+          - name: WR In
+            type: pass
+          - name: Stretch
+            type: run
+          - name: PA Boot Lt
+            type: pass
+          - name: Curls
+            type: pass
+          - name: FB Dive
+            type: run
+          - name: HB Slip Screen
+            type: pass
+          - name: HB Option
+            type: pass
+          - name: Power 0
+            type: run
+          - name: PA Power 0
+            type: pass
+          - name: HB Circle
+            type: pass
       - name: Bunch Wk
         family: shotgun
         play_count: 12
+        plays:
+          - name: Power 0
+            type: run
+          - name: PA Skinny Post
+            type: pass
+          - name: Slot Out
+            type: pass
+          - name: HB Draw
+            type: run
+          - name: HB Wheel
+            type: pass
+          - name: Slants Middle
+            type: pass
+          - name: WR Curls
+            type: pass
+          - name: HB Slip Screen
+            type: pass
+          - name: 689 Hook
+            type: pass
+          - name: Flat Combo
+            type: pass
+          - name: Slot Cross
+            type: pass
+          - name: Stop N Go
+            type: pass
       - name: Spread Y-Slot
         family: shotgun
         play_count: 18
+        plays:
+          - name: Deep Comeback
+            type: pass
+          - name: Z Under
+            type: pass
+          - name: WR Ins
+            type: pass
+          - name: HB Off Tackle
+            type: run
+          - name: PA Dagger
+            type: pass
+          - name: Slants
+            type: pass
+          - name: Curl Flats
+            type: pass
+          - name: Strong Flood
+            type: pass
+          - name: Texas
+            type: pass
+          - name: HB Mid Draw
+            type: run
+          - name: PA Slot Post
+            type: pass
+          - name: Y Shallow Cross
+            type: pass
+          - name: Drag Under
+            type: pass
+          - name: Corner Strike
+            type: pass
+          - name: Z Spot
+            type: pass
+          - name: HB Slip Screen
+            type: run
+          - name: Flanker Drive
+            type: pass
+          - name: Slot Shake
+            type: pass
       - name: Trips HB Wk
         family: shotgun
         play_count: 18
+        plays:
+          - name: HB Base
+            type: run
+          - name: PA Dig
+            type: pass
+          - name: Inside Hooks
+            type: pass
+          - name: Double Cross
+            type: pass
+          - name: Slot Post
+            type: pass
+          - name: Four Verticals
+            type: pass
+          - name: HB Counter
+            type: run
+          - name: QB Sonya Check
+            type: pass
+          - name: Y-Corner
+            type: pass
+          - name: HB Off Tackle
+            type: run
+          - name: PA Under
+            type: pass
+          - name: Slot Under
+            type: pass
+          - name: HB Mid Draw
+            type: run
+          - name: Clearout Dig
+            type: pass
+          - name: FL Short Dig
+            type: pass
+          - name: Slot Cross
+            type: pass
+          - name: Deep In
+            type: pass
+          - name: Corner Strike
+            type: pass
       - name: Empty Trey
         family: shotgun
         play_count: 15
+        plays:
+          - name: Curls
+            type: pass
+          - name: Slants
+            type: pass
+          - name: Four Verticals
+            type: pass
+          - name: Strong Flood
+            type: pass
+          - name: HB Slip Screen
+            type: pass
+          - name: Stick
+            type: pass
+          - name: Stick N Nod
+            type: pass
+          - name: Z Spot
+            type: pass
+          - name: Slot Seam
+            type: pass
+          - name: Y Trail
+            type: pass
+          - name: V-Drag
+            type: pass
+          - name: WR Ins
+            type: pass
+          - name: HB Mid Draw
+            type: run
+          - name: PA Post
+            type: pass
+          - name: Divide
+            type: pass
   - team_id: philadelphia_eagles
     name: Philadelphia Eagles
     playbook_style: null
@@ -21385,60 +23296,621 @@ teams:
       - name: Full House
         family: pistol
         play_count: 12
+        plays:
+          - name: Slants
+            type: pass
+          - name: HB Slam
+            type: run
+          - name: PA Boot
+            type: pass
+          - name: HB Off Tackle
+            type: run
+          - name: PA X Post
+            type: pass
+          - name: Inverted Veer
+            type: run
+          - name: PA Flood Comeback
+            type: pass
+          - name: Tr Opt Switch
+            type: run
+          - name: PA Flood FB Slip
+            type: pass
+          - name: Deep Curl
+            type: pass
+          - name: Zone Read
+            type: run
+          - name: PA Comebacks
+            type: pass
       - name: Strong
         family: pistol
         play_count: 15
+        plays:
+          - name: Inside Zone Split
+            type: run
+          - name: PA Boot Lt
+            type: pass
+          - name: F Lead Read Option
+            type: run
+          - name: Slants
+            type: pass
+          - name: Tr Opt Switch
+            type: run
+          - name: PA Flood
+            type: pass
+          - name: Tr Option Slip
+            type: run
+          - name: PA Corner HB Slip
+            type: pass
+          - name: HB Off Tackle
+            type: run
+          - name: X Post
+            type: pass
+          - name: HB Power O
+            type: run
+          - name: HB Slip Screen
+            type: pass
+          - name: HB Stretch
+            type: run
+          - name: 494 F Flat
+            type: pass
+          - name: HB Counter
+            type: run
       - name: Strong Twins
         family: pistol
         play_count: 12
+        plays:
+          - name: Inside Zone Split
+            type: run
+          - name: PA Boot Lt
+            type: pass
+          - name: F Lead Read Option
+            type: run
+          - name: HB Power O
+            type: run
+          - name: PA Power O
+            type: pass
+          - name: HB Counter
+            type: run
+          - name: Double Flares
+            type: pass
+          - name: HB Zone
+            type: run
+          - name: PA Deep In
+            type: pass
+          - name: WR Smash
+            type: pass
+          - name: Tr Option Lt
+            type: run
+          - name: Fade Smash
+            type: pass
       - name: Strong Slot
         family: pistol
         play_count: 13
+        plays:
+          - name: Under
+            type: pass
+          - name: HB Zone
+            type: run
+          - name: PA Flood
+            type: pass
+          - name: Inside Zone Split
+            type: run
+          - name: PA Boot Lt
+            type: pass
+          - name: F Lead Read Option
+            type: run
+          - name: Mid Slants
+            type: pass
+          - name: HB Draw
+            type: run
+          - name: Shakes
+            type: pass
+          - name: HB Slip Screen
+            type: pass
+          - name: HB Dive
+            type: run
+          - name: Cross Weak Flood
+            type: pass
+          - name: Flat Combo
+            type: pass
       - name: Weak
         family: pistol
         play_count: 9
+        plays:
+          - name: other
+            type: null
+          - name: Slants
+            type: pass
+          - name: HB Zone Wk
+            type: run
+          - name: Curls
+            type: pass
+          - name: PA Crossers
+            type: pass
+          - name: F Lead Read Option
+            type: run
+          - name: PA Comebacks
+            type: pass
+          - name: Y Corner
+            type: pass
+          - name: Triple Option
+            type: run
       - name: Weak Twins
         family: pistol
         play_count: 12
+        plays:
+          - name: HB Slip Screen
+            type: pass
+          - name: Slants
+            type: pass
+          - name: HB Dive
+            type: run
+          - name: PA Bubble
+            type: pass
+          - name: Dig Wheel
+            type: pass
+          - name: Lead Read Option
+            type: run
+          - name: PA Seams
+            type: pass
+          - name: X Dig
+            type: pass
+          - name: HB Slam
+            type: run
+          - name: PA Boot
+            type: pass
+          - name: Smash Y-Corner
+            type: pass
+          - name: Counter Str
+            type: run
       - name: Weak Slot
         family: pistol
         play_count: 15
+        plays:
+          - name: Roll Out Smash
+            type: pass
+          - name: Slants
+            type: pass
+          - name: HB Dive
+            type: run
+          - name: PA Short Post
+            type: pass
+          - name: Corner Strike
+            type: pass
+          - name: HB Draw
+            type: run
+          - name: Y Cross Flood
+            type: pass
+          - name: Shallow Cross
+            type: pass
+          - name: Lead Read Option
+            type: run
+          - name: Deep Curls
+            type: pass
+          - name: PA SE Screen
+            type: pass
+          - name: HB Slam
+            type: run
+          - name: PA Bubble
+            type: pass
+          - name: Mtn Flood
+            type: pass
+          - name: Mtn Y Stick
+            type: pass
       - name: Ace
         family: pistol
         play_count: 15
+        plays:
+          - name: Mtn Z Under
+            type: pass
+          - name: Quick Slants
+            type: pass
+          - name: Power O
+            type: run
+          - name: PA Power O
+            type: pass
+          - name: FL Cross
+            type: pass
+          - name: HB Slam
+            type: run
+          - name: PA Boot
+            type: pass
+          - name: HB Counter
+            type: run
+          - name: PA Ctr Waggle
+            type: pass
+          - name: Strong Power
+            type: run
+          - name: Corner Post
+            type: pass
+          - name: HB Dive
+            type: run
+          - name: PA Deep In
+            type: pass
+          - name: Jet Sweep
+            type: run
+          - name: PA Jet Sweep
+            type: pass
       - name: Ace Twins
         family: pistol
         play_count: 15
+        plays:
+          - name: Read Option
+            type: run
+          - name: HB Counter
+            type: run
+          - name: PA Ctr Waggle
+            type: pass
+          - name: Strong Power
+            type: run
+          - name: WR Screen
+            type: pass
+          - name: HB Dive
+            type: run
+          - name: PA FL Stretch
+            type: pass
+          - name: Slot Under
+            type: pass
+          - name: HB Power O
+            type: run
+          - name: HB Slip Screen
+            type: pass
+          - name: Stick
+            type: pass
+          - name: Flood
+            type: pass
+          - name: Smash
+            type: pass
+          - name: HB Slam
+            type: run
+          - name: PA Boot
+            type: pass
       - name: Twin TE
         family: pistol
         play_count: 18
+        plays:
+          - name: TE Stick
+            type: pass
+          - name: HB Stretch
+            type: run
+          - name: PA Boot Lt
+            type: pass
+          - name: Read Option Wk
+            type: run
+          - name: PA TE Slip
+            type: pass
+          - name: Read Option
+            type: run
+          - name: HB Counter
+            type: run
+          - name: PA Ctr Waggle
+            type: pass
+          - name: Strong Power
+            type: run
+          - name: Curl Combo
+            type: pass
+          - name: HB Slam
+            type: run
+          - name: PA Boot
+            type: pass
+          - name: Drive
+            type: pass
+          - name: Power O
+            type: run
+          - name: PA Power O
+            type: pass
+          - name: WR Screen
+            type: pass
+          - name: TE Attack
+            type: run
+          - name: HB Slip Screen
+            type: pass
       - name: Twin TE Slot
         family: pistol
         play_count: 15
+        plays:
+          - name: Y Stick
+            type: pass
+          - name: HB Stretch
+            type: run
+          - name: PA Boot Lt
+            type: pass
+          - name: Hitch Corners
+            type: pass
+          - name: Power O
+            type: run
+          - name: PA Power O
+            type: pass
+          - name: DBL Post
+            type: pass
+          - name: Read Option
+            type: run
+          - name: PA WR Screen
+            type: pass
+          - name: PA Slot Out
+            type: pass
+          - name: HB Slam
+            type: run
+          - name: PA Boot Over
+            type: pass
+          - name: Quick Slants
+            type: pass
+          - name: Strong Power
+            type: run
+          - name: HB Slip Screen
+            type: pass
       - name: Wing Trips TE
         family: pistol
         play_count: 15
+        plays:
+          - name: Stick
+            type: pass
+          - name: HB Dive
+            type: run
+          - name: PA FL Clown
+            type: pass
+          - name: HB Stretch
+            type: run
+          - name: PA Boot
+            type: pass
+          - name: HB Counter
+            type: run
+          - name: DBL Post
+            type: pass
+          - name: Read Option
+            type: run
+          - name: PA WR Screen
+            type: pass
+          - name: PA Slot Out
+            type: pass
+          - name: HB Slam
+            type: run
+          - name: PA Boot Over
+            type: pass
+          - name: Posts
+            type: pass
+          - name: HB Slip Screen
+            type: pass
+          - name: PA Ctr Waggle
+            type: pass
       - name: Slot
         family: pistol
         play_count: 18
+        plays:
+          - name: Strong Power
+            type: run
+          - name: Curl Flats
+            type: pass
+          - name: HB Slam
+            type: run
+          - name: PA Boot
+            type: pass
+          - name: Slants
+            type: pass
+          - name: HB Draw
+            type: run
+          - name: Four Verticals
+            type: pass
+          - name: Flanker Dig
+            type: pass
+          - name: HB Dive
+            type: run
+          - name: PA Comebacks
+            type: pass
+          - name: HB Slip Screen
+            type: pass
+          - name: Read Option
+            type: run
+          - name: Y Shallow Cross
+            type: pass
+          - name: Weak Flood
+            type: pass
+          - name: Read Option Wk
+            type: run
+          - name: PA WR Slip
+            type: pass
+          - name: TE Stick
+            type: pass
+          - name: HB Counter
+            type: run
       - name: V-Trips
         family: pistol
         play_count: 15
+        plays:
+          - name: PA Ctr Waggle
+            type: pass
+          - name: Y Trail
+            type: pass
+          - name: Read Option
+            type: run
+          - name: PA Comebacks
+            type: pass
+          - name: Curls
+            type: pass
+          - name: HB Draw
+            type: run
+          - name: Four Verticals
+            type: pass
+          - name: Smash
+            type: pass
+          - name: Strong Power
+            type: run
+          - name: HB Slip Screen
+            type: pass
+          - name: HB Slam
+            type: run
+          - name: WR Screen
+            type: pass
+          - name: HB Stretch
+            type: run
+          - name: Slants
+            type: pass
+          - name: HB Dive
+            type: run
       - name: Y-Trips
         family: pistol
         play_count: 15
+        plays:
+          - name: PA Double Post
+            type: pass
+          - name: Inside Zone Split
+            type: run
+          - name: PA Boot Slide
+            type: pass
+          - name: F Lead Read Option
+            type: run
+          - name: Fake Screen Wheel
+            type: pass
+          - name: HB Slam
+            type: run
+          - name: PA WR Screen
+            type: pass
+          - name: Curls
+            type: pass
+          - name: HB Draw
+            type: run
+          - name: Vertical TE Cross
+            type: pass
+          - name: HB Slip Screen
+            type: pass
+          - name: Counter Y
+            type: run
+          - name: Strong Flood
+            type: pass
+          - name: Stick
+            type: pass
+          - name: PA Boot
+            type: pass
       - name: Wing Trips
         family: pistol
         play_count: 15
+        plays:
+          - name: WR Screen
+            type: pass
+          - name: HB Draw
+            type: run
+          - name: Verticals
+            type: pass
+          - name: Inside Smash
+            type: pass
+          - name: HB Counter
+            type: run
+          - name: PA Ctr Waggle
+            type: pass
+          - name: HB Slip Screen
+            type: pass
+          - name: Strong Power
+            type: run
+          - name: PA Comeback
+            type: pass
+          - name: Smash
+            type: pass
+          - name: Read Option
+            type: run
+          - name: Bubble Screen
+            type: pass
+          - name: Spacing
+            type: pass
+          - name: HB Slam
+            type: run
+          - name: Flanker Drive
+            type: pass
       - name: Trips
         family: pistol
         play_count: 15
+        plays:
+          - name: PA Pin Deep
+            type: pass
+          - name: HB Dive
+            type: run
+          - name: PA Deep In
+            type: pass
+          - name: Corner Strike
+            type: pass
+          - name: HB Draw
+            type: run
+          - name: Seattle
+            type: pass
+          - name: Read Option Wk
+            type: run
+          - name: Curl Flat
+            type: pass
+          - name: HB Counter
+            type: run
+          - name: Quick Slants
+            type: pass
+          - name: Y Shallow Cross
+            type: pass
+          - name: Four Verticals
+            type: pass
+          - name: Quick Slot Out
+            type: pass
+          - name: PA Bubble
+            type: pass
+          - name: Fade Smash
+            type: pass
       - name: Bunch
         family: pistol
         play_count: 12
+        plays:
+          - name: HB Slam
+            type: run
+          - name: PA Boot
+            type: pass
+          - name: HB Slip Screen
+            type: pass
+          - name: Read Option
+            type: run
+          - name: PA WR Screen
+            type: pass
+          - name: Stick
+            type: pass
+          - name: Air Raid Under
+            type: pass
+          - name: PA Bubble
+            type: pass
+          - name: HB Draw
+            type: run
+          - name: Four Verticals
+            type: pass
+          - name: HB Dive
+            type: run
+          - name: PA Verticals
+            type: pass
       - name: Spread
         family: pistol
         play_count: 15
+        plays:
+          - name: Inside Smash
+            type: pass
+          - name: HB Counter
+            type: run
+          - name: PA Ctr Waggle
+            type: pass
+          - name: Scat
+            type: pass
+          - name: Flood Post
+            type: pass
+          - name: Mesh Dig
+            type: pass
+          - name: HB Dive
+            type: run
+          - name: PA Spot
+            type: pass
+          - name: QB Sneak
+            type: run
+          - name: Power O
+            type: run
+          - name: PA Power O
+            type: pass
+          - name: FB Dive
+            type: run
+          - name: Strong Toss
+            type: run
+          - name: PA Waggle
+            type: pass
+          - name: HB Sting
+            type: run
       - name: Trips Open
         family: pistol
         play_count: 18
