@@ -8141,60 +8141,493 @@ teams:
       - name: Pair Slot
         family: singleback
         play_count: null
+        plays:
+          - name: 90 Y Speed Out
+            type: null
+          - name: Weak Dive
+            type: null
+          - name: 50 TE Out-n-In
+            type: null
+          - name: Weak Zone Bounce
+            type: null
+          - name: 50 TE Spin Out
+            type: null
+          - name: Flip Strong
+            type: null
+          - name: PA X Stop-n-Go
+            type: null
+          - name: Weak Draw
+            type: null
+          - name: PA Z Quick Slant
+            type: null
+          - name: Slot Reverse Strong B
+            type: null
+          - name: Fake Toss Reverse
+            type: null
+          - name: Toss Reverse Strong B
+            type: null
       - name: Tight Triple
         family: singleback
         play_count: null
+        plays:
+          - name: Weak Zone Cutback
+            type: null
+          - name: 50 H Screen Weak
+            type: null
+          - name: Flip Strong
+            type: null
+          - name: 90 Y/TE Speed Cross
+            type: null
+          - name: Strong Draw
+            type: null
+          - name: 50 Clear Drags
+            type: null
+          - name: Weak Sweep
+            type: null
+          - name: 50 H Swing Strong
+            type: null
+          - name: Strong G-Toss
+            type: null
+          - name: PA Z Slide-n-Go
+            type: null
+          - name: Fake Toss Reverse
+            type: null
+          - name: PA-RO TE Delay Out
+            type: null
       - name: Doubles
         family: singleback
         play_count: null
+        plays:
+          - name: 90 H Bubble Motion
+            type: null
+          - name: Strong Dive
+            type: null
+          - name: 50 Y Seam
+            type: null
+          - name: Weak Toss
+            type: null
+          - name: 90 Y/TE Quick Curls
+            type: null
+          - name: Flip Strong
+            type: null
+          - name: PA Double Cross
+            type: null
+          - name: Weak Zone Cutback
+            type: null
+          - name: 50 TE Clear Corner
+            type: null
+          - name: Slot Reverse Strong
+            type: null
+          - name: PA Reverse H Screen
+            type: null
+          - name: Toss Reverse Strong
+            type: null
       - name: Triple
         family: singleback
         play_count: null
+        plays:
+          - name: 90 F Speed Rub Out
+            type: null
+          - name: Weak Zone Cutback
+            type: null
+          - name: 50 X Arrow-n-Go
+            type: null
+          - name: Weak Zone Bounce
+            type: null
+          - name: 50 X Opposite Flow
+            type: null
+          - name: Strong Sweep
+            type: null
+          - name: RO Z In-n-Out
+            type: null
+          - name: Strong Trap
+            type: null
+          - name: PA TE Seam
+            type: null
+          - name: Slot Reverse Weak
+            type: null
+          - name: H Shovel Strong
+            type: null
+          - name: Toss Reverse Weak
+            type: null
       - name: Twins F Spread
         family: shotgun
         play_count: null
+        plays:
+          - name: 90 Z Arrow
+            type: null
+          - name: Weak Draw
+            type: null
+          - name: 50 TE Fade Out
+            type: null
+          - name: Weak Zone Bounce
+            type: null
+          - name: 50 X Curl
+            type: null
+          - name: Flip Strong
+            type: null
+          - name: 90 F Speed Under
+            type: null
+          - name: Weak Counter
+            type: null
+          - name: RO TE Rub Out
+            type: null
       - name: Ace
         family: singleback
         play_count: null
+        plays:
+          - name: 90 X/Z Stops
+            type: null
+          - name: Strong Zone Cutback
+            type: null
+          - name: 50 Stops-n-Corners
+            type: null
+          - name: Flip Weak
+            type: null
+          - name: 50 TE/Y Outs
+            type: null
+          - name: Strong Outside Zone
+            type: null
+          - name: PA TE Curl-n-Go
+            type: null
+          - name: Strong Counter
+            type: null
+          - name: PA-RO Z Rollaway
+            type: null
       - name: Ace Trips
         family: singleback
         play_count: null
+        plays:
+          - name: 90 X/Z Stops
+            type: null
+          - name: Weak Dive
+            type: null
+          - name: 50 TE Wheel
+            type: null
+          - name: Weak Toss Counter
+            type: null
+          - name: 50 Z/TE Cross
+            type: null
+          - name: Strong Toss Counter
+            type: null
+          - name: 50 TE Spin Out
+            type: null
+          - name: Strong Zone Cutback
+            type: null
+          - name: PA X/Z Out-n-Up
+            type: null
+          - name: Flip Weak
+            type: null
+          - name: 50 H Screen Weak
+            type: null
+          - name: Strong G-Toss
+            type: null
+          - name: Slot Reverse Weak B
+            type: null
+          - name: H Shovel Strong
+            type: null
+          - name: Toss Reverse Weak B
+            type: null
       - name: Trey
         family: singleback
         play_count: null
+        plays:
+          - name: 90 X Hot
+            type: null
+          - name: Weak Dive
+            type: null
+          - name: 50 Clear Drags
+            type: null
+          - name: Weak Zone Bounce
+            type: null
+          - name: 90 TE Swing Strong
+            type: null
+          - name: Strong Toss
+            type: null
+          - name: 90 Slants-n-Stops
+            type: null
+          - name: Strong Zone Cutback
+            type: null
+          - name: 50 H Screen Strong
+            type: null
+          - name: H Shovel Strong
+            type: null
+          - name: Strong Draw
+            type: null
+          - name: Flea Flicker
+            type: null
+          - name: Slot Reverse Weak C
+            type: null
+          - name: 50 H Screen Weak
+            type: null
+          - name: Toss Reverse Weak C
+            type: null
       - name: Quads
         family: singleback
         play_count: null
+        plays:
+          - name: 90 Slants-n-Stops
+            type: null
+          - name: Weak Zone Cutback
+            type: null
+          - name: 50 Double Cross
+            type: null
+          - name: Weak Toss
+            type: null
+          - name: 50 Z Slip Screen
+            type: null
+          - name: Strong Counter
+            type: null
+          - name: RO Y Speed Out
+            type: null
+          - name: Strong Dive
+            type: null
+          - name: PA Z Side-n-Go
+            type: null
+          - name: HB Pass
+            type: null
+          - name: Strong G-Toss
+            type: null
+          - name: Flea Flicker
+            type: null
+          - name: Slot Reverse Strong
+            type: null
+          - name: H Shovel Strong
+            type: null
+          - name: Toss Reverse Strong
+            type: null
       - name: Bunch
         family: singleback
         play_count: null
+        plays:
+          - name: 90 X Hot
+            type: null
+          - name: Weak Dive
+            type: null
+          - name: 50 Strong Spread
+            type: null
+          - name: Weak Outside Zone
+            type: null
+          - name: 50 Z Slant
+            type: null
+          - name: Strong Toss
+            type: null
+          - name: 90 Y Flat
+            type: null
+          - name: Strong Zone Cutback
+            type: null
+          - name: 50 Z Drag Rub
+            type: null
+          - name: PA Z Side-n-Go
+            type: null
+          - name: Strong Draw
+            type: null
+          - name: 50 Z Deep Comeback
+            type: null
+          - name: H Shovel Strong
+            type: null
+          - name: Fake Toss Reverse
+            type: null
+          - name: 50 H Screen Strong
+            type: null
       - name: Triple Bunch
         family: singleback
         play_count: null
+        plays:
+          - name: 90 Z Hook
+            type: null
+          - name: Strong Dive
+            type: null
+          - name: 50 H Screen Strong
+            type: null
+          - name: Weak Zone Bounce
+            type: null
+          - name: 90 Clear Under
+            type: null
+          - name: Strong Lead Stretch
+            type: null
+          - name: Weak Dive
+            type: null
+          - name: PA TE/Z Spread
+            type: null
+          - name: Strong Trap
+            type: null
       - name: Flip Tight Triple
         family: singleback
         play_count: null
+        plays:
+          - name: 90 TE Swing Strong
+            type: null
+          - name: Weak Dive
+            type: null
+          - name: 50 TE Wheel
+            type: null
+          - name: Strong Counter
+            type: null
+          - name: 50 Z Drag Rub
+            type: null
+          - name: Flip Strong
+            type: null
+          - name: PA X/Z Out-n-Up
+            type: null
+          - name: Strong Draw
+            type: null
+          - name: PA-RO Strong Flow
+            type: null
       - name: Triple Load
         family: singleback
         play_count: null
+        plays:
+          - name: Weak Toss
+            type: null
+          - name: 90 Tackle Eligible
+            type: null
+          - name: Flip Strong
+            type: null
+          - name: Weak Dive
+            type: null
+          - name: PA Y Rip
+            type: null
+          - name: Strong Trap
+            type: null
+          - name: Weak Counter
+            type: null
+          - name: QB Sneak
+            type: null
+          - name: Strong Dive
+            type: null
       - name: Straight Open
         family: singleback
         play_count: null
+        plays:
+          - name: 90 TE Stop
+            type: null
+          - name: QB Draw
+            type: null
+          - name: 50 X/A Posts
+            type: null
+          - name: 50 Clear Drags
+            type: null
+          - name: QB Sneak
+            type: null
+          - name: 50 Y/TE Curl-n-Go
+            type: null
+          - name: RO A Slide-n-Go
+            type: null
+          - name: 50 Strong Flood
+            type: null
+          - name: 50 Y/Z Double Out
+            type: null
       - name: "Gun: Quads Left"
         family: shotgun
         play_count: null
+        plays:
+          - name: 90 TE Quick Hitch
+            type: null
+          - name: Weak Draw
+            type: null
+          - name: 50 Double Cross
+            type: null
+          - name: 90 Slants-n-Stops
+            type: null
+          - name: Strong Sweep
+            type: null
+          - name: 50 TE Curl In
+            type: null
+          - name: 50 Red Flood
+            type: null
+          - name: Weak Toss
+            type: null
+          - name: 50 Slot Outs
+            type: null
       - name: "Gun: Straight"
         family: shotgun
         play_count: null
+        plays:
+          - name: 90 TE Curl
+            type: null
+          - name: QB Draw
+            type: null
+          - name: 50 A/Z Cross
+            type: null
+          - name: 90 Z Quick Screen
+            type: null
+          - name: 50 Y/Z Double Out
+            type: null
+          - name: 50 Strong Flood
+            type: null
       - name: "Gun: Split Spread"
         family: shotgun
         play_count: null
+        plays:
+          - name: 90 X Qk Hitch
+            type: null
+          - name: Weak Draw
+            type: null
+          - name: 50 X Speed Over
+            type: null
+          - name: 90 All Stop
+            type: null
+          - name: Weak Outside Zone
+            type: null
+          - name: 50 H Screen Weak
+            type: null
+          - name: PA X Drag-n-Go
+            type: null
+          - name: Weak FB Sweep
+            type: null
+          - name: 50 Z Deep Comeback
+            type: null
       - name: "Gun: Doubles Right"
         family: shotgun
         play_count: null
+        plays:
+          - name: 90 H Quick Dump
+            type: null
+          - name: Strong Dive
+            type: null
+          - name: 50 H Screen Strong
+            type: null
+          - name: 90 Y/TE Quick Curls
+            type: null
+          - name: Weak Sweep
+            type: null
+          - name: 50 Y Seam
+            type: null
+          - name: 50 TE Spin Out
+            type: null
+          - name: Strong Draw
+            type: null
+          - name: PA Inside Seam
+            type: null
       - name: "Gun: Ace Trips"
         family: shotgun
         play_count: null
+        plays:
+          - name: 90 X/Z Stops
+            type: null
+          - name: Strong Draw
+            type: null
+          - name: 50 TE Wheel
+            type: null
+          - name: Weak Sweep
+            type: null
+          - name: 50 Z Under
+            type: null
+          - name: Strong Toss
+            type: null
+          - name: 90 Z Hook
+            type: null
+          - name: Strong Dive
+            type: null
+          - name: 50 Stops-n-Corners
+            type: null
+          - name: PA TE Curl-n-Go
+            type: null
+          - name: QB Draw
+            type: null
+          - name: 50 TE Spin Out
+            type: null
   - team_id: miami_dolphins
     name: Miami Dolphins
     playbook_style: null
@@ -8208,81 +8641,639 @@ teams:
       - name: Tight Triple
         family: singleback
         play_count: null
+        plays:
+          - name: 90 Y Speed Under
+            type: null
+          - name: Strong Bendback
+            type: null
+          - name: 50 Hi/Low Drags
+            type: null
+          - name: Weak Counter Trap
+            type: null
+          - name: PA Counter Pass
+            type: null
+          - name: Strong Counter
+            type: null
+          - name: PA Z Out-n-Up
+            type: null
+          - name: Strong Draw
+            type: null
+          - name: PA-RO Strong Flood
+            type: null
+          - name: H Shovel Strong
+            type: null
+          - name: Strong Sweep
+            type: null
+          - name: 50 H Screen Strong
+            type: null
+          - name: 90 TE Speed Out
+            type: null
+          - name: Fake Toss Reverse
+            type: null
+          - name: 50 Z Out
+            type: null
       - name: Quads
         family: singleback
         play_count: null
+        plays:
+          - name: 90 Z Quick Slant
+            type: null
+          - name: Strong Bendback
+            type: null
+          - name: 50 Double Cross
+            type: null
+          - name: Weak Sweep
+            type: null
+          - name: PA Z Fade
+            type: null
+          - name: Strong Toss
+            type: null
+          - name: 50 H Swing Weak
+            type: null
+          - name: Strong Dive
+            type: null
+          - name: Flea Flicker
+            type: null
+          - name: 50 Dolphin Flood
+            type: null
+          - name: Strong Zone Cutback
+            type: null
+          - name: PA-RO Z Stop
+            type: null
+          - name: Slot Reverse Strong
+            type: null
+          - name: PA Reverse Z Post
+            type: null
+          - name: Toss Reverse Strong
+            type: null
       - name: Ace
         family: singleback
         play_count: null
+        plays:
+          - name: 90 TE Speed Out
+            type: null
+          - name: Strong Bendback
+            type: null
+          - name: 50 Verts-n-Flats
+            type: null
+          - name: Weak Toss
+            type: null
+          - name: PA H Screen Strong
+            type: null
+          - name: Strong Zone Cutback
+            type: null
+          - name: PA H Delay Streak
+            type: null
+          - name: Strong Draw
+            type: null
+          - name: RO Strong Flow
+            type: null
+          - name: Weak Counter
+            type: null
+          - name: PA X Short Drag
+            type: null
+          - name: Strong Power
+            type: null
       - name: Ace Doubles
         family: singleback
         play_count: null
+        plays:
+          - name: 90 TE Speed Out
+            type: null
+          - name: Strong Bendback
+            type: null
+          - name: 50 H Screen Strong
+            type: null
+          - name: Weak Zone Bounce
+            type: null
+          - name: 50 Y Corner
+            type: null
+          - name: Strong Toss
+            type: null
+          - name: 50 Y Post
+            type: null
+          - name: Weak Draw
+            type: null
+          - name: PA H Delay Streak
+            type: null
+          - name: Slot Reverse Strong B
+            type: null
+          - name: Flea Flicker
+            type: null
+          - name: Toss Reverse Strong B
+            type: null
       - name: Ace Trips
         family: singleback
         play_count: null
+        plays:
+          - name: 90 Z Quick Slant
+            type: null
+          - name: Strong Dive
+            type: null
+          - name: 50 H Swing Weak
+            type: null
+          - name: Weak Toss
+            type: null
+          - name: PA Counter Pass
+            type: null
+          - name: Strong Counter
+            type: null
+          - name: 50 Z Deep Slide
+            type: null
+          - name: Weak Power
+            type: null
+          - name: PA X Short Drag
+            type: null
+          - name: Slot Reverse Weak B
+            type: null
+          - name: Flea Flicker
+            type: null
+          - name: Toss Reverse Weak B
+            type: null
       - name: Pair Slot
         family: singleback
         play_count: null
+        plays:
+          - name: 90 Z Quick Slant
+            type: null
+          - name: Strong Bendback
+            type: null
+          - name: 50 X/Z Rub Cross
+            type: null
+          - name: Weak Counter
+            type: null
+          - name: 50 Z Out
+            type: null
+          - name: Strong Power
+            type: null
+          - name: 90 TE Speed Out
+            type: null
+          - name: Strong Draw
+            type: null
+          - name: 50 X Speed Over
+            type: null
+          - name: PA Z Slant
+            type: null
+          - name: Toss Reverse Weak
+            type: null
+          - name: HB Pass
+            type: null
       - name: Triple
         family: singleback
         play_count: null
+        plays:
+          - name: 90 TE Speed Out
+            type: null
+          - name: Strong Bendback
+            type: null
+          - name: 50 Hi/Low Drags
+            type: null
+          - name: Weak Sweep
+            type: null
+          - name: PA Counter Pass
+            type: null
+          - name: Strong Counter
+            type: null
+          - name: 50 H Screen Strong
+            type: null
+          - name: Strong Draw
+            type: null
+          - name: PA-RO Strong Flood
+            type: null
+          - name: Slot Reverse Weak
+            type: null
+          - name: Flea Flicker
+            type: null
+          - name: Toss Reverse Weak
+            type: null
       - name: Trips
         family: singleback
         play_count: null
+        plays:
+          - name: 90 Z Quick Slant
+            type: null
+          - name: Strong Dive
+            type: null
+          - name: 50 Y Drag
+            type: null
+          - name: Weak Toss
+            type: null
+          - name: 50 H Screen Strong
+            type: null
+          - name: Strong Outside Zone
+            type: null
       - name: I Pro
         family: i_form
         play_count: null
+        plays:
+          - name: PA X Stop-n-Go
+            type: null
+          - name: Strong Bendback
+            type: null
+          - name: 50 Deep Cross
+            type: null
+          - name: 90 Z Speed Under
+            type: null
+          - name: Strong Iso
+            type: null
+          - name: 50 Z Deep Hook
+            type: null
+          - name: Weak Outside Zone
+            type: null
+          - name: 50 X Speed Over
+            type: null
+          - name: Strong Power-O
+            type: null
+          - name: Weak Toss
+            type: null
+          - name: PA-RO Z Comeback
+            type: null
+          - name: Strong Toss
+            type: null
+          - name: RO F Dump
+            type: null
+          - name: Weak Counter Trap
+            type: null
+          - name: HB Pass
+            type: null
       - name: I Spread
         family: i_form
         play_count: null
       - name: I Twins
         family: i_form
         play_count: null
+        plays:
+          - name: 90 TE Speed Out
+            type: null
+          - name: Weak Iso
+            type: null
+          - name: 50 X/Z Cross
+            type: null
+          - name: Weak Toss
+            type: null
+          - name: 50 TE Zone In
+            type: null
+          - name: Strong Power-O
+            type: null
+          - name: PA-RO Z Delay Out
+            type: null
+          - name: Weak Counter Trap
+            type: null
+          - name: PA Z Slant-n-Go
+            type: null
+          - name: Slot Reverse I
+            type: null
+          - name: H Shovel Strong
+            type: null
+          - name: Toss Reverse I
+            type: null
       - name: I Jokers
         family: i_form
         play_count: null
+        plays:
+          - name: 90 X Speed Under
+            type: null
+          - name: Weak Iso
+            type: null
+          - name: 50 Y/TE Corners
+            type: null
+          - name: Weak Power-O
+            type: null
+          - name: 90 Y/TE Hot
+            type: null
+          - name: Strong Toss
+            type: null
+          - name: QB Sneak
+            type: null
+          - name: PA X Drag
+            type: null
+          - name: Strong Counter Trap
+            type: null
       - name: I Wing Jokers
         family: i_form
         play_count: null
       - name: Strong I Pro
         family: i_form
         play_count: null
+        plays:
+          - name: 90 F Speed Out
+            type: null
+          - name: Strong Iso
+            type: null
+          - name: 50 X Speed Over
+            type: null
+          - name: Weak C-Toss
+            type: null
+          - name: 50 H Screen Strong
+            type: null
+          - name: Strong Power-O
+            type: null
+          - name: PA-RO X Comeback
+            type: null
+          - name: Strong Lead Draw
+            type: null
+          - name: PA TE Dump
+            type: null
+          - name: Weak Counter Trap
+            type: null
+          - name: 50 TE/Z Curls
+            type: null
+          - name: Strong FB Toss
+            type: null
       - name: Strong I Spread
         family: i_form
         play_count: null
+        plays:
+          - name: 90 Y/Z Speed Cross
+            type: null
+          - name: Strong Iso
+            type: null
+          - name: 50 H Screen Strong
+            type: null
+          - name: Weak C-Toss
+            type: null
+          - name: PA Y/Z Comeback
+            type: null
+          - name: Strong Sweep
+            type: null
+          - name: RO F Dump
+            type: null
+          - name: Strong Lead Draw
+            type: null
+          - name: PA-RO Z Stop-n-Go
+            type: null
       - name: Strong I Jumbo
         family: i_form
         play_count: null
+        plays:
+          - name: Strong Iso
+            type: null
+          - name: 90 Y/TE Slants
+            type: null
+          - name: Strong Power-O
+            type: null
+          - name: Weak WB Sweep
+            type: null
+          - name: RO Air Option Flood
+            type: null
+          - name: Strong G-Toss
+            type: null
+          - name: QB Sneak
+            type: null
+          - name: RO Rub Flood Weak
+            type: null
+          - name: Strong FB Dive
+            type: null
       - name: Weak I Pro
         family: i_form
         play_count: null
+        plays:
+          - name: 90 F Speed Out
+            type: null
+          - name: Weak Iso
+            type: null
+          - name: 50 H/F Wheels
+            type: null
+          - name: Weak Toss
+            type: null
+          - name: 50 H Screen Strong
+            type: null
+          - name: Strong Counter Trap
+            type: null
+          - name: RO H Dump
+            type: null
+          - name: Weak Lead Draw
+            type: null
+          - name: PA X Slant-n-Go
+            type: null
+          - name: RO Air Option Flood
+            type: null
+          - name: Weak FB Dive
+            type: null
+          - name: PA-RO Y Speed Out
+            type: null
       - name: Weak I Flip Spread
         family: i_form
         play_count: null
+        plays:
+          - name: 90 X Speed Under
+            type: null
+          - name: Weak Iso
+            type: null
+          - name: 50 X Deep Drag
+            type: null
+          - name: Weak Zone Bounce
+            type: null
+          - name: 90 Z Speed Under
+            type: null
+          - name: Strong C-Toss
+            type: null
+          - name: Weak Lead Draw
+            type: null
+          - name: PA Counter Pass
+            type: null
+          - name: Strong Counter
+            type: null
+          - name: PA H Screen Strong
+            type: null
+          - name: Strong Zone Cutback
+            type: null
+          - name: RO Z Out
+            type: null
       - name: Weak I Jokers
         family: i_form
         play_count: null
+        plays:
+          - name: 90 F Speed Out
+            type: null
+          - name: Weak Fan Iso
+            type: null
+          - name: 50 Y/TE Cross
+            type: null
+          - name: Weak Power
+            type: null
+          - name: 50 Y/TE Corners
+            type: null
+          - name: Strong C-Toss
+            type: null
+          - name: PA X Fly
+            type: null
+          - name: Weak Power-O
+            type: null
+          - name: PA-RO X Side-n-Go
+            type: null
       - name: Weak I Jumbo
         family: i_form
         play_count: null
+        plays:
+          - name: 90 Y/TE Slants
+            type: null
+          - name: Weak Iso
+            type: null
+          - name: 90 All Stop
+            type: null
+          - name: Weak Power-O
+            type: null
+          - name: PA-RO TE Out
+            type: null
+          - name: Strong FB Lead Dive
+            type: null
+          - name: RO FB Hook
+            type: null
+          - name: Weak WB Sweep
+            type: null
+          - name: RO Air Option Flood
+            type: null
+          - name: PA H Screen Strong
+            type: null
+          - name: Fake Toss Reverse I
+            type: null
+          - name: RO Strong Flow
+            type: null
       - name: Empty Open
         family: shotgun
         play_count: null
+        plays:
+          - name: 90 All Slam
+            type: null
+          - name: QB Sneak
+            type: null
+          - name: 50 Z/B Cross
+            type: null
+          - name: 50 Verts
+            type: null
+          - name: QB Draw
+            type: null
+          - name: 50 X/A In-n-Out
+            type: null
+          - name: 50 A Cross
+            type: null
+          - name: 50 Dolphin Flood
+            type: null
+          - name: 50 Double Cross Under
+            type: null
       - name: "Gun: Quads Left"
         family: shotgun
         play_count: null
+        plays:
+          - name: 90 A Quick Hitch
+            type: null
+          - name: Weak Dive
+            type: null
+          - name: 50 Double Cross
+            type: null
+          - name: Weak Toss
+            type: null
+          - name: 50 Comebacks
+            type: null
+          - name: Strong Sweep
+            type: null
+          - name: PA X Post-Corner
+            type: null
+          - name: Weak Draw
+            type: null
+          - name: 50 X Out
+            type: null
+          - name: 90 Z Quick Slant
+            type: null
+          - name: H Direct Snap
+            type: null
+          - name: 50 Deep Cross
+            type: null
       - name: "Gun: Ace Doubles"
         family: shotgun
         play_count: null
+        plays:
+          - name: 90 TE Speed Out
+            type: null
+          - name: Strong Dive
+            type: null
+          - name: 50 Y Corner
+            type: null
+          - name: 90 Y Speed Under
+            type: null
+          - name: Strong Zone Cutback
+            type: null
+          - name: 50 X/Z Rub Cross
+            type: null
+          - name: 50 Y Post
+            type: null
+          - name: Strong Toss
+            type: null
+          - name: PA H Screen Strong
+            type: null
       - name: "Gun: Split Spread"
         family: shotgun
         play_count: null
+        plays:
+          - name: 90 All Stop
+            type: null
+          - name: Weak Draw
+            type: null
+          - name: 50 X Speed Over
+            type: null
+          - name: 50 H/F Wheels
+            type: null
+          - name: Weak Toss
+            type: null
+          - name: 50 Double Swing
+            type: null
+          - name: PA Y Slant-n-Go
+            type: null
+          - name: Strong FB Toss
+            type: null
+          - name: 50 Z Rollaway
+            type: null
+          - name: 90 F Speed Out
+            type: null
+          - name: H Direct Snap
+            type: null
+          - name: PA X Short Drag
+            type: null
       - name: "Gun: Empty Open"
         family: shotgun
         play_count: null
+        plays:
+          - name: 90 All Slam
+            type: null
+          - name: QB Draw
+            type: null
+          - name: 50 Double Cross Under
+            type: null
+          - name: 50 A Cross
+            type: null
+          - name: 50 Dolphin Flood
+            type: null
+          - name: 50 X/A In-n-Out
+            type: null
+          - name: 50 Z/B Cross
+            type: null
+          - name: 50 Z Deep Side
+            type: null
+          - name: 50 Verts
+            type: null
       - name: "Gun: Trips Left"
         family: shotgun
         play_count: null
+        plays:
+          - name: 50 Z Out
+            type: null
+          - name: H Direct Snap
+            type: null
+          - name: 50 H Swing Weak
+            type: null
+          - name: Weak Toss
+            type: null
+          - name: 50 Comebacks
+            type: null
+          - name: Strong Sweep
+            type: null
+          - name: 50 X Post-Corner
+            type: null
+          - name: QB Draw
+            type: null
+          - name: 50 Deep Cross
+            type: null
   - team_id: minnesota_vikings
     name: Minnesota Vikings
     playbook_style: null
@@ -8296,87 +9287,743 @@ teams:
       - name: Doubles
         family: singleback
         play_count: null
+        plays:
+          - name: 90 Y Speed Out
+            type: null
+          - name: Weak Draw
+            type: null
+          - name: 50 Double Cross
+            type: null
+          - name: Weak Toss
+            type: null
+          - name: 50 Y Swing Weak
+            type: null
+          - name: Strong T-Toss
+            type: null
+          - name: RO Y Bubble Cut
+            type: null
+          - name: QB Draw
+            type: null
+          - name: PA Z/TE Cross
+            type: null
+          - name: Slot Reverse Strong
+            type: null
+          - name: Flea Flicker
+            type: null
+          - name: Toss Reverse Strong
+            type: null
       - name: Tight Triple
         family: singleback
         play_count: null
+        plays:
+          - name: 90 Y/TE Speed Cross
+            type: null
+          - name: Weak Dive
+            type: null
+          - name: 50 H Swing Strong
+            type: null
+          - name: Weak Stretch
+            type: null
+          - name: 90 Y Speed Out
+            type: null
+          - name: Strong Toss
+            type: null
+          - name: 90 Slants-n-Stops
+            type: null
+          - name: Strong Counter
+            type: null
+          - name: 50 H Screen Strong
+            type: null
+          - name: 50 Strong Flood
+            type: null
+          - name: Fake Toss Reverse
+            type: null
+          - name: PA Z Slide-n-Go
+            type: null
       - name: Triple
         family: singleback
         play_count: null
+        plays:
+          - name: 90 Y/Z Speed Cross
+            type: null
+          - name: Weak Dive
+            type: null
+          - name: 50 All Go
+            type: null
+          - name: 50 Z Out
+            type: null
+          - name: Strong Draw
+            type: null
+          - name: 50 X Opposite Flow
+            type: null
+          - name: 50 H Swing Strong
+            type: null
+          - name: Weak Zone Cutback
+            type: null
+          - name: PA TE Seam
+            type: null
+          - name: Weak Trap
+            type: null
+          - name: 50 Z Deep Slide
+            type: null
+          - name: Strong T-Toss
+            type: null
+          - name: Slot Reverse Weak
+            type: null
+          - name: Flea Flicker
+            type: null
+          - name: Toss Reverse Weak
+            type: null
       - name: Pair Slot
         family: singleback
         play_count: null
+        plays:
+          - name: 90 Y/TE Speed Cross
+            type: null
+          - name: Weak Trap
+            type: null
+          - name: 50 X/Z Deep Cross
+            type: null
+          - name: Weak X-Crack Toss
+            type: null
+          - name: 50 Y Curl
+            type: null
+          - name: Strong T-Toss
+            type: null
+          - name: PA-RO X Comeback
+            type: null
+          - name: Strong Draw
+            type: null
+          - name: PA Z Slam-n-Go
+            type: null
+          - name: Slot Reverse Strong B
+            type: null
+          - name: Fake Toss Reverse
+            type: null
+          - name: Toss Reverse Strong B
+            type: null
       - name: Quads
         family: singleback
         play_count: null
+        plays:
+          - name: 90 Slants-n-Stops
+            type: null
+          - name: Weak Dive
+            type: null
+          - name: 50 Double Cross
+            type: null
+          - name: Weak Outside Zone
+            type: null
+          - name: 50 Y/A Swing
+            type: null
+          - name: Strong Toss
+            type: null
+          - name: 50 A/X Cross
+            type: null
+          - name: Strong Zone Cutback
+            type: null
+          - name: 50 X Slant-n-Go
+            type: null
+          - name: 50 Z Slant-n-Go
+            type: null
+          - name: Weak Draw
+            type: null
+          - name: 50 Slot Outs
+            type: null
+          - name: Flea Flicker
+            type: null
+          - name: Weak Zone Cutback
+            type: null
+          - name: HB Pass
+            type: null
+          - name: Slot Reverse Strong
+            type: null
+          - name: 50 All Go
+            type: null
+          - name: Toss Reverse Strong
+            type: null
       - name: Ace
         family: singleback
         play_count: null
+        plays:
+          - name: 90 X Qk Hitch
+            type: null
+          - name: Strong Draw
+            type: null
+          - name: 50 Curls-n-Corners
+            type: null
+          - name: 50 Z Slip Screen
+            type: null
+          - name: QB Naked
+            type: null
+          - name: PA TE Seam
+            type: null
+          - name: 50 H Swing Weak
+            type: null
+          - name: Strong Toss Counter
+            type: null
+          - name: 50 Posts-n-Comebacks
+            type: null
       - name: Trips
         family: singleback
         play_count: null
+        plays:
+          - name: 90 All Stops
+            type: null
+          - name: Weak Trap
+            type: null
+          - name: 50 Y Fade Rub
+            type: null
+          - name: Weak Zone Bounce
+            type: null
+          - name: 50 H Swing Weak
+            type: null
+          - name: Strong Power
+            type: null
+          - name: PA Y/A Cross
+            type: null
+          - name: Strong Draw
+            type: null
+          - name: 50 Strong Flow
+            type: null
+          - name: Slot Reverse Strong
+            type: null
+          - name: Flea Flicker
+            type: null
+          - name: Toss Reverse Strong
+            type: null
       - name: Ace Trips
         family: singleback
         play_count: null
+        plays:
+          - name: 90 X/Z Stops
+            type: null
+          - name: Weak Dive
+            type: null
+          - name: 50 Z Slip Screen
+            type: null
+          - name: Weak Toss
+            type: null
+          - name: 90 All Stops
+            type: null
+          - name: Strong Power
+            type: null
+          - name: PA TE Seam
+            type: null
+          - name: Weak Zone Cutback
+            type: null
+          - name: 50 Z Deep Slide
+            type: null
+          - name: Weak Outside Zone
+            type: null
+          - name: 50 H Screen Strong
+            type: null
+          - name: Strong Counter
+            type: null
+          - name: Slot Reverse Weak B
+            type: null
+          - name: HB Pass
+            type: null
+          - name: Toss Reverse Weak B
+            type: null
       - name: Ace Bunch
         family: singleback
         play_count: null
+        plays:
+          - name: 90 Z Quick Out
+            type: null
+          - name: Weak Dive
+            type: null
+          - name: 50 All Go
+            type: null
+          - name: Weak Toss
+            type: null
+          - name: 50 Jumble
+            type: null
+          - name: Strong Sweep
+            type: null
+          - name: Weak Draw
+            type: null
+          - name: 90 Bubble Screen
+            type: null
+          - name: Strong Toss
+            type: null
+          - name: Strong Draw
+            type: null
+          - name: 50 H Swing Strong
+            type: null
+          - name: Strong Power
+            type: null
       - name: I Pro
         family: i_form
         play_count: null
+        plays:
+          - name: 90 Z Quick Hitch
+            type: null
+          - name: Strong Iso
+            type: null
+          - name: 50 Z Quick Out-n-Up
+            type: null
+          - name: Weak Zone Cutback
+            type: null
+          - name: 50 Comebacks
+            type: null
+          - name: Strong Counter
+            type: null
+          - name: PA-RO Z Corner
+            type: null
+          - name: Strong Lead Draw
+            type: null
+          - name: PA X Slant-n-Go
+            type: null
       - name: I Spread
         family: i_form
         play_count: null
+        plays:
+          - name: 90 Y Qk Slant
+            type: null
+          - name: Weak Iso
+            type: null
+          - name: 50 X Out-n-Up
+            type: null
+          - name: Weak Zone Bounce
+            type: null
+          - name: 50 Y/Z In-n-Out
+            type: null
+          - name: Strong Toss
+            type: null
+          - name: PA-RO Z Stop-n-Go
+            type: null
+          - name: Strong Lead Draw
+            type: null
+          - name: PA Y Curl
+            type: null
       - name: I Twins
         family: i_form
         play_count: null
+        plays:
+          - name: 90 Z Speed Under
+            type: null
+          - name: Weak G-Iso
+            type: null
+          - name: 50 Z Comeback
+            type: null
+          - name: Weak Zone Bounce
+            type: null
+          - name: 50 H Swing Strong
+            type: null
+          - name: Strong Toss
+            type: null
+          - name: PA X/Z Cross
+            type: null
+          - name: Strong Counter
+            type: null
+          - name: 50 H Screen Weak
+            type: null
+          - name: Slot Reverse I
+            type: null
+          - name: H Lead Shovel
+            type: null
+          - name: Toss Reverse I
+            type: null
       - name: I Jokers
         family: i_form
         play_count: null
+        plays:
+          - name: Weak Stretch
+            type: null
+          - name: 50 Y/TE Zones
+            type: null
+          - name: Strong Toss
+            type: null
+          - name: 90 X Lob Fade
+            type: null
+          - name: Weak Iso
+            type: null
+          - name: 50 Y/TE Comebacks
+            type: null
+          - name: Strong Counter Trap
+            type: null
+          - name: 90 X Speed Under
+            type: null
+          - name: Strong Iso
+            type: null
+          - name: QB Sneak
+            type: null
+          - name: PA Z Slant
+            type: null
+          - name: Strong Speed Option
+            type: null
       - name: I Jokers Pair
         family: i_form
         play_count: null
+        plays:
+          - name: 90 TE/Y Speed Cross
+            type: null
+          - name: Strong Zone Cutback
+            type: null
+          - name: 50 Y Swing Strong
+            type: null
+          - name: Weak Toss
+            type: null
+          - name: 90 X Lob Fade
+            type: null
+          - name: Strong Counter Trap
+            type: null
+          - name: PA Y/TE In-n-Out
+            type: null
+          - name: Strong Y Trap
+            type: null
+          - name: 50 Y Swing Weak
+            type: null
       - name: Split Pro
         family: singleback
         play_count: null
+        plays:
+          - name: 90 Z Speed Under
+            type: null
+          - name: Strong FB Dive
+            type: null
+          - name: 50 X Post-Corner
+            type: null
+          - name: Weak X-Crack Toss
+            type: null
+          - name: 50 Double Swing
+            type: null
+          - name: Strong Sweep
+            type: null
+          - name: 90 Z Quick Hitch
+            type: null
+          - name: Strong FB Toss
+            type: null
+          - name: 50 H Screen Weak
+            type: null
+          - name: 50 X Hook
+            type: null
+          - name: Weak Dive
+            type: null
+          - name: PA TE Dump
+            type: null
       - name: Split Twins
         family: singleback
         play_count: null
+        plays:
+          - name: 90 X/Z Speed Cross
+            type: null
+          - name: Weak Dive
+            type: null
+          - name: 50 Double Swing
+            type: null
+          - name: Weak Zone Cutback
+            type: null
+          - name: 50 Purple Flow
+            type: null
+          - name: Strong Sweep
+            type: null
+          - name: RO Weak Flow
+            type: null
+          - name: Strong FB Draw
+            type: null
+          - name: PA Z Slant
+            type: null
       - name: Split Spread
         family: shotgun
         play_count: null
+        plays:
+          - name: 90 F Speed Out
+            type: null
+          - name: Weak Dive
+            type: null
+          - name: 50 Y/Z Cross
+            type: null
+          - name: Weak X-Crack Toss
+            type: null
+          - name: 50 Double Swing
+            type: null
+          - name: Strong Sweep
+            type: null
+          - name: RO Y Stop
+            type: null
+          - name: Strong FB Draw
+            type: null
+          - name: PA Strong Flood
+            type: null
       - name: Split Jokers
         family: i_form
         play_count: null
+        plays:
+          - name: 90 X Speed Under
+            type: null
+          - name: Weak Dive
+            type: null
+          - name: 50 H/F Wheels
+            type: null
+          - name: Weak Draw
+            type: null
+          - name: 50 Y/TE Comebacks
+            type: null
+          - name: Strong FB Toss
+            type: null
+          - name: Strong Counter
+            type: null
+          - name: 50 Double Swing
+            type: null
+          - name: Strong Power
+            type: null
       - name: Empty Open
         family: shotgun
         play_count: null
+        plays:
+          - name: 90 A In
+            type: null
+          - name: QB Center Follow
+            type: null
+          - name: 50 Verts
+            type: null
+          - name: 90 All Slam
+            type: null
+          - name: 50 Viking Flood
+            type: null
+          - name: 50 X/A In-n-Out
+            type: null
       - name: "Gun: Empty Open"
         family: shotgun
         play_count: null
+        plays:
+          - name: 90 All Slam
+            type: null
+          - name: QB Draw
+            type: null
+          - name: 50 Verts
+            type: null
+          - name: 50 Z Slide-n-Up
+            type: null
+          - name: 90 A In
+            type: null
+          - name: 50 Viking Flood
+            type: null
       - name: "Gun: Quads Left"
         family: shotgun
         play_count: null
+        plays:
+          - name: 90 Slants-n-Stops
+            type: null
+          - name: Weak Draw
+            type: null
+          - name: 50 Double Cross
+            type: null
+          - name: 50 Posts-n-Comebacks
+            type: null
+          - name: Strong Sweep
+            type: null
+          - name: 50 Y/A Swing
+            type: null
+          - name: PA Z Slide-n-Go
+            type: null
+          - name: QB Draw
+            type: null
+          - name: PA Z Slam-n-Go
+            type: null
+          - name: 50 All Go
+            type: null
+          - name: H Direct Snap
+            type: null
+          - name: 50 A/X Cross
+            type: null
       - name: "Gun: Triple Left"
         family: shotgun
         play_count: null
+        plays:
+          - name: Weak Draw
+            type: null
+          - name: 50 All Go
+            type: null
+          - name: 50 Y Wheel
+            type: null
+          - name: Strong Sweep
+            type: null
+          - name: 50 H Swing Weak
+            type: null
+          - name: Weak Dive
+            type: null
+          - name: 50 Strong Flood
+            type: null
+          - name: Strong Counter
+            type: null
+          - name: PA Y Slant
+            type: null
+          - name: QB Draw
+            type: null
+          - name: PA TE Seam
+            type: null
+          - name: 50 X Opposite Flow
+            type: null
+          - name: H Direct Snap
+            type: null
+          - name: 50 Posts-n-Comebacks
+            type: null
       - name: "Gun: Trips Left"
         family: shotgun
         play_count: null
+        plays:
+          - name: 90 A Under
+            type: null
+          - name: Weak Draw
+            type: null
+          - name: 50 A/X Cross
+            type: null
+          - name: Weak Toss
+            type: null
+          - name: 50 Y Fade Rub
+            type: null
+          - name: Strong Sweep
+            type: null
+          - name: 50 X Deep Hook
+            type: null
+          - name: H Direct Snap
+            type: null
+          - name: 50 All Go
+            type: null
+          - name: 50 Strong Flow
+            type: null
+          - name: QB Draw
+            type: null
+          - name: 50 Z Slide-n-Up
+            type: null
       - name: "Gun: Doubles Right"
         family: shotgun
         play_count: null
+        plays:
+          - name: 90 Z/TE Quick Outs
+            type: null
+          - name: Weak Dive
+            type: null
+          - name: 50 Z Post
+            type: null
+          - name: 50 H Swing Strong
+            type: null
+          - name: Strong Draw
+            type: null
+          - name: 50 H Screen Strong
+            type: null
+          - name: 50 Z Deep Slide
+            type: null
+          - name: QB Draw
+            type: null
+          - name: 50 X Out
+            type: null
+          - name: 50 All Go
+            type: null
+          - name: H Direct Snap
+            type: null
+          - name: 50 A/X Cross
+            type: null
       - name: "Gun: Ace Right"
         family: shotgun
         play_count: null
+        plays:
+          - name: 90 All Stops
+            type: null
+          - name: Strong Draw
+            type: null
+          - name: 50 Z Slant-n-Go
+            type: null
+          - name: 90 Z Quick Out
+            type: null
+          - name: Weak Counter
+            type: null
+          - name: 50 H Swing Strong
+            type: null
+          - name: 50 Viking Flood
+            type: null
+          - name: QB Draw
+            type: null
+          - name: 50 TE/Z Comebacks
+            type: null
       - name: "Gun: Split Pro"
         family: shotgun
         play_count: null
+        plays:
+          - name: 90 All Hot
+            type: null
+          - name: Weak Draw
+            type: null
+          - name: 50 H/F Wheels
+            type: null
+          - name: H Lead Shovel
+            type: null
+          - name: Strong FB Draw
+            type: null
+          - name: 50 Double Swing
+            type: null
+          - name: H Direct Snap
+            type: null
+          - name: 50 X Hook
+            type: null
+          - name: QB Lead Draw
+            type: null
       - name: "Gun: Split Twins"
         family: shotgun
         play_count: null
+        plays:
+          - name: 90 All Hot
+            type: null
+          - name: Weak Draw
+            type: null
+          - name: 50 Double Swing
+            type: null
+          - name: 50 Purple Flow
+            type: null
+          - name: Strong Sweep
+            type: null
+          - name: 50 X Out-n-Up
+            type: null
+          - name: Strong FB Toss
+            type: null
+          - name: H Lead Shovel
+            type: null
+          - name: Strong FB Draw
+            type: null
+          - name: Weak Toss
+            type: null
+          - name: 50 X Stop
+            type: null
+          - name: QB Lead Draw
+            type: null
+          - name: 50 H Screen Weak
+            type: null
+          - name: H Direct Snap
+            type: null
+          - name: 50 All Go
+            type: null
       - name: "Gun: Split Spread"
         family: shotgun
         play_count: null
+        plays:
+          - name: 90 Y Speed Under
+            type: null
+          - name: Weak Draw
+            type: null
+          - name: 50 Z Slide
+            type: null
+          - name: 50 Z Lob Fade
+            type: null
+          - name: Strong FB Draw
+            type: null
+          - name: 50 H/F Wheels
+            type: null
+          - name: 50 Purple Flow
+            type: null
+          - name: QB Lead Draw
+            type: null
+          - name: 50 Double Swing
+            type: null
+          - name: 50 All Go
+            type: null
+          - name: Weak Toss
+            type: null
+          - name: 50 H Swing Weak
+            type: null
   - team_id: new_england_patriots
     name: New England Patriots
     playbook_style: null
@@ -8390,63 +10037,473 @@ teams:
       - name: Trips
         family: singleback
         play_count: null
+        plays:
+          - name: 90 Y Speed Rub Out
+            type: null
+          - name: Strong Zone Cutback
+            type: null
+          - name: 50 Y Slam-n-Go
+            type: null
+          - name: Weak Toss
+            type: null
+          - name: 50 Over-n-Under
+            type: null
+          - name: Strong Outside Zone
+            type: null
+          - name: PA X Post-Corner
+            type: null
+          - name: Weak Draw
+            type: null
+          - name: 50 Y Stop-n-Go
+            type: null
+          - name: Slot Reverse Strong
+            type: null
+          - name: Flea Flicker
+            type: null
+          - name: Toss Reverse Strong
+            type: null
       - name: Ace
         family: singleback
         play_count: null
+        plays:
+          - name: 90 H Speed Out
+            type: null
+          - name: Weak Dive
+            type: null
+          - name: 50 H Wheel
+            type: null
+          - name: Weak Counter
+            type: null
+          - name: 50 Stops-n-Corners
+            type: null
+          - name: Strong Toss Counter
+            type: null
+          - name: 90 Quick Slants
+            type: null
+          - name: Strong Dive
+            type: null
+          - name: 50 H Screen Strong
+            type: null
+          - name: PA X/Z Go
+            type: null
+          - name: Strong Draw
+            type: null
+          - name: PA-RO Z Rollaway
+            type: null
       - name: Quads
         family: singleback
         play_count: null
+        plays:
+          - name: 90 Quick Slants
+            type: null
+          - name: Weak Dive
+            type: null
+          - name: 50 Double Cross
+            type: null
+          - name: Weak Outside Zone
+            type: null
+          - name: 50 Z Slip Screen
+            type: null
+          - name: Strong Toss
+            type: null
+          - name: 50 X/A Cross
+            type: null
+          - name: Strong Draw
+            type: null
+          - name: PA X Post-Corner
+            type: null
+          - name: Slot Reverse Strong
+            type: null
+          - name: PA Reverse X Post
+            type: null
+          - name: Toss Reverse Strong
+            type: null
       - name: Doubles
         family: singleback
         play_count: null
+        plays:
+          - name: 90 Z Arrow
+            type: null
+          - name: Strong Dive
+            type: null
+          - name: 50 H Swing Strong
+            type: null
+          - name: Weak Zone Bounce
+            type: null
+          - name: 50 Y Swing Weak
+            type: null
+          - name: Strong Stretch
+            type: null
+          - name: PA Double Cross
+            type: null
+          - name: Strong Draw
+            type: null
+          - name: 50 Y Stop-n-Go
+            type: null
+          - name: Slot Reverse Strong
+            type: null
+          - name: Flea Flicker
+            type: null
+          - name: Toss Reverse Strong
+            type: null
       - name: F Wing Jokers
         family: i_form
         play_count: null
+        plays:
+          - name: 90 F Speed Out
+            type: null
+          - name: Weak Fan Iso
+            type: null
+          - name: 50 Wings Zip
+            type: null
+          - name: Weak Outside Zone
+            type: null
+          - name: 50 WB Wheel
+            type: null
+          - name: Strong Sweep
+            type: null
+          - name: Weak C-Toss
+            type: null
+          - name: PA Curls-n-Corners
+            type: null
+          - name: Fake Toss Reverse
+            type: null
       - name: I Pro
         family: i_form
         play_count: null
+        plays:
+          - name: 90 Z Speed Under
+            type: null
+          - name: Strong Iso
+            type: null
+          - name: 50 Double Post
+            type: null
+          - name: Weak Zone Bounce
+            type: null
+          - name: "50 Outs-n-Go's"
+            type: null
+          - name: Strong Toss
+            type: null
+          - name: PA X Slant-n-Go
+            type: null
+          - name: Weak Belly
+            type: null
+          - name: PA-RO Z Corner
+            type: null
+          - name: HB Pass
+            type: null
+          - name: Strong Center Power
+            type: null
+          - name: H Lead Shovel
+            type: null
       - name: I Twins
         family: i_form
         play_count: null
+        plays:
+          - name: 90 X/Z Speed Cross
+            type: null
+          - name: Strong Zone Cutback
+            type: null
+          - name: 50 Slot Left Gin
+            type: null
+          - name: Weak Outside Zone
+            type: null
+          - name: 50 Double Follow
+            type: null
+          - name: Strong Center Power
+            type: null
+          - name: PA-RO Z Delay Out
+            type: null
+          - name: Weak Lead Draw
+            type: null
+          - name: PA F Dump
+            type: null
+          - name: Slot Reverse I
+            type: null
+          - name: H Lead Shovel
+            type: null
+          - name: Toss Reverse I
+            type: null
       - name: I Jokers
         family: i_form
         play_count: null
+        plays:
+          - name: 90 X Speed Under
+            type: null
+          - name: Weak Fan Iso
+            type: null
+          - name: 50 Y/TE Comebacks
+            type: null
+          - name: Weak Toss
+            type: null
+          - name: 90 Hitches
+            type: null
+          - name: Strong Center Power
+            type: null
+          - name: 90 X Lob Fade
+            type: null
+          - name: Strong Counter Trap
+            type: null
+          - name: PA TE Rub Out
+            type: null
       - name: Strong I Pro
         family: i_form
         play_count: null
+        plays:
+          - name: 90 F Speed Out
+            type: null
+          - name: Strong FB Dive
+            type: null
+          - name: 50 TE Skinny
+            type: null
+          - name: Weak FB Sweep
+            type: null
+          - name: 50 TE/Z Curls
+            type: null
+          - name: Strong Toss
+            type: null
+          - name: PA F Dump
+            type: null
+          - name: Weak Counter Trap
+            type: null
+          - name: RO H Flare
+            type: null
       - name: Weak I Pro
         family: i_form
         play_count: null
+        plays:
+          - name: 90 F Speed Out
+            type: null
+          - name: Weak Lead Draw
+            type: null
+          - name: 50 Double Screen
+            type: null
+          - name: Weak Toss
+            type: null
+          - name: 50 Z Rub In
+            type: null
+          - name: Strong Counter Trap
+            type: null
+          - name: PA X Post-Corner
+            type: null
+          - name: Weak FB Dive
+            type: null
+          - name: RO H Dump
+            type: null
       - name: Split Jokers
         family: i_form
         play_count: null
+        plays:
+          - name: 90 X Lob Fade
+            type: null
+          - name: Weak Dive
+            type: null
+          - name: 50 Strong Outs
+            type: null
+          - name: Strong F Lead T-Toss
+            type: null
+          - name: 50 H/F Replace
+            type: null
+          - name: Strong Sweep
+            type: null
+          - name: Weak Zone Cutback
+            type: null
+          - name: PA TE Seam
+            type: null
+          - name: Strong FB Toss
+            type: null
+          - name: PA Y Corner
+            type: null
+          - name: QB Sneak
+            type: null
+          - name: RO Strong Flow
+            type: null
       - name: Triple H Flex
         family: singleback
         play_count: null
+        plays:
+          - name: 90 H Speed Under
+            type: null
+          - name: QB Draw
+            type: null
+          - name: 50 Y Seam
+            type: null
+          - name: 90 H Lob Corner
+            type: null
+          - name: RO Z Corner-Post
+            type: null
+          - name: 50 H Wheel
+            type: null
       - name: Doubles H Flex
         family: singleback
         play_count: null
+        plays:
+          - name: 90 Z/H Hot
+            type: null
+          - name: QB Pump Draw
+            type: null
+          - name: 50 Y Seam
+            type: null
+          - name: RO Y Sprint Screen
+            type: null
+          - name: 90 Y Screen Weak
+            type: null
+          - name: RO Z/H Deep Cross
+            type: null
       - name: Ace Trips Open
         family: singleback
         play_count: null
+        plays:
+          - name: 90 H Speed Under
+            type: null
+          - name: QB Draw
+            type: null
+          - name: 50 Y/H Cross
+            type: null
+          - name: 90 H Lob Fade
+            type: null
+          - name: 50 Z Deep Slide
+            type: null
+          - name: 50 X/Z In-n-Out
+            type: null
       - name: "Gun: Pair Slot Left"
         family: shotgun
         play_count: null
+        plays:
+          - name: 90 X/Y Slam
+            type: null
+          - name: Weak Draw
+            type: null
+          - name: 50 Slot Left Gin
+            type: null
+          - name: 50 Z Deep Slide
+            type: null
+          - name: Strong Sweep
+            type: null
+          - name: 50 X Arrow-n-Go
+            type: null
+          - name: 50 Y Seam
+            type: null
+          - name: H Direct Snap
+            type: null
+          - name: Direct Snap Tossback
+            type: null
       - name: "Gun: Base Open"
         family: shotgun
         play_count: null
+        plays:
+          - name: 90 F Swing Strong
+            type: null
+          - name: QB Pump Draw
+            type: null
+          - name: 50 F Rub Out
+            type: null
+          - name: 90 H Lob Fade
+            type: null
+          - name: 50 Flow Away
+            type: null
+          - name: 50 H Slip Screen
+            type: null
       - name: "Gun: Trey Right"
         family: shotgun
         play_count: null
+        plays:
+          - name: 90 X/Y Slam
+            type: null
+          - name: Strong Dive
+            type: null
+          - name: 50 H Wheel
+            type: null
+          - name: Weak Sweep
+            type: null
+          - name: 50 H Swing Strong
+            type: null
+          - name: Strong Toss
+            type: null
+          - name: 50 Z Deep Slide
+            type: null
+          - name: Strong Draw
+            type: null
+          - name: PA Y Curl
+            type: null
+          - name: 50 H Screen Strong
+            type: null
+          - name: H Direct Snap
+            type: null
+          - name: Direct Snap Tossback
+            type: null
       - name: "Gun: Trips Left"
         family: shotgun
         play_count: null
+        plays:
+          - name: 50 H Swing Weak
+            type: null
+          - name: Weak Draw
+            type: null
+          - name: 50 Over-n-Under
+            type: null
+          - name: Weak Toss
+            type: null
+          - name: PA X Post-Corner
+            type: null
+          - name: Strong Sweep
+            type: null
+          - name: Direct Snap Tossback
+            type: null
+          - name: H Direct Snap
+            type: null
+          - name: 50 Y Stop-n-Go
+            type: null
       - name: "Gun: Doubles Right"
         family: shotgun
         play_count: null
+        plays:
+          - name: 90 Z Arrow
+            type: null
+          - name: Strong Draw
+            type: null
+          - name: 50 Y Slam-n-Go
+            type: null
+          - name: Weak Sweep
+            type: null
+          - name: 50 Y Swing Weak
+            type: null
+          - name: Strong Toss
+            type: null
+          - name: PA Z/TE Cross
+            type: null
+          - name: Strong Zone Cutback
+            type: null
+          - name: PA Double Cross
+            type: null
+          - name: Direct Snap Tossback
+            type: null
+          - name: H Direct Snap
+            type: null
+          - name: 50 H Swing Strong
+            type: null
       - name: "Gun: Quads Left"
         family: shotgun
         play_count: null
+        plays:
+          - name: 90 Z Arrow
+            type: null
+          - name: Weak Draw
+            type: null
+          - name: 50 Double Cross
+            type: null
+          - name: Weak Toss
+            type: null
+          - name: 50 Stops-n-Corners
+            type: null
+          - name: Strong Sweep
+            type: null
+          - name: PA Y Curl
+            type: null
+          - name: QB Lead Draw
+            type: null
+          - name: 50 X/A Cross
+            type: null
   - team_id: new_orleans_saints
     name: New Orleans Saints
     playbook_style: null
@@ -8460,51 +10517,391 @@ teams:
       - name: Triple
         family: singleback
         play_count: null
+        plays:
+          - name: 90 Y Speed Rub Out
+            type: null
+          - name: Strong Draw
+            type: null
+          - name: 50 H Wheel
+            type: null
+          - name: Weak Toss Dive
+            type: null
+          - name: 50 H Swing Strong
+            type: null
+          - name: Strong Sweep
+            type: null
+          - name: RO Z In-n-Out
+            type: null
+          - name: Weak Zone Cutback
+            type: null
+          - name: PA TE Delay Seam
+            type: null
+          - name: QB Naked
+            type: null
+          - name: 50 Y Corner
+            type: null
+          - name: Strong Outside Zone
+            type: null
+          - name: Slot Reverse Weak
+            type: null
+          - name: Flea Flicker
+            type: null
+          - name: Toss Reverse Weak
+            type: null
       - name: H Flex Spread
         family: shotgun
         play_count: null
+        plays:
+          - name: 90 H Speed Under
+            type: null
+          - name: Strong FB Dive
+            type: null
+          - name: 50 H Jet
+            type: null
+          - name: PA H Stop-n-Go
+            type: null
+          - name: QB F Lead Draw
+            type: null
+          - name: RO Side-n-Flow
+            type: null
+          - name: H Slot Reverse
+            type: null
+          - name: H Slot Reverse Pass
+            type: null
+          - name: H Toss Reverse
+            type: null
       - name: I Pro
         family: i_form
         play_count: null
+        plays:
+          - name: 90 X Qk Hitch
+            type: null
+          - name: Weak Iso
+            type: null
+          - name: 50 TE Zone In
+            type: null
+          - name: FB Fake Weak Toss
+            type: null
+          - name: 50 X Deep Drag
+            type: null
+          - name: Strong FB Dive
+            type: null
+          - name: PA-RO Z Comeback
+            type: null
+          - name: Strong Lead Draw
+            type: null
+          - name: PA X Slant-n-Go
+            type: null
+          - name: Weak Zone Bounce
+            type: null
+          - name: HB Pass
+            type: null
+          - name: Strong Toss
+            type: null
       - name: I Twins
         family: i_form
         play_count: null
+        plays:
+          - name: 90 X/Z Slants
+            type: null
+          - name: Weak Iso
+            type: null
+          - name: 50 X/Z Cross
+            type: null
+          - name: Weak Zone Bounce
+            type: null
+          - name: 50 X/Z In-n-Out
+            type: null
+          - name: Strong Power
+            type: null
+          - name: 90 TE Slam
+            type: null
+          - name: Strong Outside Zone
+            type: null
+          - name: Weak Lead Draw
+            type: null
+          - name: PA X Out-n-Up
+            type: null
+          - name: Strong Speed Option
+            type: null
+          - name: PA-RO Z Delay Out
+            type: null
+          - name: Slot Reverse I
+            type: null
+          - name: H Lead Shovel
+            type: null
+          - name: Toss Reverse I
+            type: null
       - name: I Jokers
         family: i_form
         play_count: null
+        plays:
+          - name: Weak Counter Trap
+            type: null
+          - name: 90 X Lob Corner
+            type: null
+          - name: Strong Toss
+            type: null
+          - name: Strong Iso
+            type: null
+          - name: 90 TE Slam
+            type: null
+          - name: Strong Power
+            type: null
+          - name: Weak Speed Option
+            type: null
+          - name: PA TE Dump
+            type: null
+          - name: Strong Fan Iso
+            type: null
+          - name: PA X Drag
+            type: null
+          - name: QB Sneak
+            type: null
+          - name: PA Y/TE Seams
+            type: null
       - name: I Jokers Pair
         family: i_form
         play_count: null
+        plays:
+          - name: 90 TE Curl
+            type: null
+          - name: Weak Iso
+            type: null
+          - name: 50 H Swing Weak
+            type: null
+          - name: Weak Counter Trap
+            type: null
+          - name: 90 Y/TE Speed Outs
+            type: null
+          - name: Strong Toss
+            type: null
+          - name: PA X Drag
+            type: null
+          - name: Strong Iso
+            type: null
+          - name: PA Y In-n-Out
+            type: null
       - name: I Jacks
         family: i_form
         play_count: null
+        plays:
+          - name: 90 All Hooks
+            type: null
+          - name: Strong Iso
+            type: null
+          - name: 50 Jack Wheel
+            type: null
+          - name: Weak Power
+            type: null
+          - name: 90 Jack Hot
+            type: null
+          - name: Strong Toss
+            type: null
+          - name: PA TE Dump
+            type: null
+          - name: Strong Counter
+            type: null
+          - name: PA Y/TE Seams
+            type: null
+          - name: Weak A-Iso
+            type: null
+          - name: 50 H Replace
+            type: null
+          - name: Fake Toss Reverse I
+            type: null
       - name: I Jacks Load
         family: i_form
         play_count: null
+        plays:
+          - name: FB Fake Weak Toss
+            type: null
+          - name: 90 Tackle Eligible
+            type: null
+          - name: Strong Iso
+            type: null
+          - name: Weak A-Iso
+            type: null
+          - name: PA Jack Swing
+            type: null
+          - name: Strong Counter
+            type: null
+          - name: Weak Counter
+            type: null
+          - name: PA H Wheel
+            type: null
+          - name: Fake Toss Reverse I
+            type: null
       - name: Strong I Twins
         family: i_form
         play_count: null
+        plays:
+          - name: 90 Z Speed Under
+            type: null
+          - name: Strong Fan Iso
+            type: null
+          - name: 50 TE Seam
+            type: null
+          - name: Weak Outside Zone
+            type: null
+          - name: 50 H Swing Weak
+            type: null
+          - name: Strong Lead Draw
+            type: null
+          - name: PA X/Z Cross
+            type: null
+          - name: Weak Counter Trap
+            type: null
+          - name: PA-RO X Out
+            type: null
       - name: Weak I Spread
         family: i_form
         play_count: null
+        plays:
+          - name: 90 Y Qk Slant
+            type: null
+          - name: Strong Outside Zone
+            type: null
+          - name: 50 Y/Z Deep Cross
+            type: null
+          - name: 50 Y/Z In-n-Out
+            type: null
+          - name: FB Fake Strong Toss
+            type: null
+          - name: PA-RO Y/Z Switch
+            type: null
+          - name: Weak Lead Draw
+            type: null
+          - name: PA H Weak Screen
+            type: null
+          - name: Weak Speed Option
+            type: null
       - name: Weak I Twins
         family: i_form
         play_count: null
+        plays:
+          - name: 90 Z Sprint Screen
+            type: null
+          - name: Weak Toss Dive
+            type: null
+          - name: 50 X/Z Cross
+            type: null
+          - name: 90 F Speed Out
+            type: null
+          - name: Strong Outside Zone
+            type: null
+          - name: RO Air Option
+            type: null
+          - name: Weak Lead Draw
+            type: null
+          - name: PA H Wheel
+            type: null
+          - name: Weak Speed Option
+            type: null
       - name: Queens Stack
         family: singleback
         play_count: null
+        plays:
+          - name: 50 F Short Wheel
+            type: null
+          - name: QB Draw
+            type: null
+          - name: 50 Double Tight Cross
+            type: null
+          - name: 50 H/F Sticky
+            type: null
+          - name: 90 Fans
+            type: null
+          - name: 50 Z Fade
+            type: null
       - name: "Gun: Bunch Left"
         family: shotgun
         play_count: null
+        plays:
+          - name: 90 X Hot
+            type: null
+          - name: Weak Draw
+            type: null
+          - name: 50 Z Deep Drag
+            type: null
+          - name: Weak Dive
+            type: null
+          - name: 50 Strong Spread
+            type: null
+          - name: Strong Sweep
+            type: null
+          - name: 90 A In
+            type: null
+          - name: QB Lead Draw
+            type: null
+          - name: 50 H Swing Weak
+            type: null
       - name: "Gun: Doubles Right"
         family: shotgun
         play_count: null
+        plays:
+          - name: 90 Y Quick Hitch
+            type: null
+          - name: Strong Draw
+            type: null
+          - name: 50 Stops-n-Hooks
+            type: null
+          - name: 90 Z Arrow
+            type: null
+          - name: Weak Sweep
+            type: null
+          - name: 90 H Quick Dump
+            type: null
+          - name: 50 Y Stop-n-Go
+            type: null
+          - name: QB Lead Draw
+            type: null
+          - name: 50 Z Deep Corner
+            type: null
       - name: "Gun: Triple Left"
         family: shotgun
         play_count: null
+        plays:
+          - name: 50 Y Drag
+            type: null
+          - name: Weak Draw
+            type: null
+          - name: 50 Z Hook-n-Go
+            type: null
+          - name: PA X Slide-n-Go
+            type: null
+          - name: Strong Sweep
+            type: null
+          - name: 50 Y Wheel
+            type: null
+          - name: 50 Y Corner
+            type: null
+          - name: QB Lead Draw
+            type: null
+          - name: PA X Post-Corner
+            type: null
       - name: "Gun: Trips Left"
         family: shotgun
         play_count: null
+        plays:
+          - name: 90 A Quick Out
+            type: null
+          - name: Weak Draw
+            type: null
+          - name: 50 Y Drag
+            type: null
+          - name: Weak Toss Dive
+            type: null
+          - name: 50 Y/A Curl-n-Go
+            type: null
+          - name: Strong Sweep
+            type: null
+          - name: 50 H Replace
+            type: null
+          - name: Weak Toss
+            type: null
+          - name: 50 H Wheel
+            type: null
   - team_id: new_york_giants
     name: New York Giants
     playbook_style: null
