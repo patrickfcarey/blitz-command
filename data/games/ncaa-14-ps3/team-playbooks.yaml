@@ -941,6 +941,49 @@ teams:
           - name: Z Spot
             type: pass
       - name: Wingbone Normal
+        plays:
+          - name: Tr Cntr Wk
+            type: run
+          - name: Curl Flats
+            type: pass
+          - name: FB Dive
+            type: run
+          - name: FB Slip Screen
+            type: pass
+          - name: HB Counter
+            type: run
+          - name: Midline QB Iso
+            type: run
+          - name: PA Ctr Waggle
+            type: pass
+          - name: PA Curl Flat
+            type: pass
+          - name: PA Middle
+            type: pass
+          - name: PA Switch
+            type: pass
+          - name: Quick Slants
+            type: pass
+          - name: Speed Option Str
+            type: run
+          - name: Speed Sweep
+            type: run
+          - name: Tr Option Cntr
+            type: run
+          - name: Tr Option Str
+            type: run
+          - name: Trap Option
+            type: run
+          - name: Triple Option
+            type: run
+          - name: WB Dive
+            type: run
+          - name: WB Misdirection
+            type: run
+          - name: WB Toss Pass
+            type: pass
+          - name: WB Toss Str
+            type: run
   - team_id: "air_raid"
     name: Air Raid
     playbook_style: null
@@ -4971,6 +5014,21 @@ teams:
           - name: Z Spot
             type: pass
       - name: Wildcat Normal
+        plays:
+          - name: Jet Counter
+            type: run
+          - name: Jet Inverted Veer
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: Jet Sweep Pass
+            type: pass
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power Fk Jet
+            type: run
+          - name: Sweep QB Screen
+            type: pass
   - team_id: "arizona"
     name: Arizona
     playbook_style: null
@@ -7446,8 +7504,45 @@ teams:
           - name: Y Corner
             type: pass
       - name: Wildcat Fight Song
+        plays:
+          - name: Blast
+            type: run
+          - name: Bubble Screen
+            type: pass
+          - name: Fight Song
+            type: pass
+          - name: Fight Song Jet
+            type: run
       - name: Wildcat Normal
+        plays:
+          - name: Jet Counter
+            type: run
+          - name: Jet Inverted Veer
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: Jet Sweep Pass
+            type: pass
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power Fk Jet
+            type: run
+          - name: Sweep QB Screen
+            type: pass
       - name: Wildcat Spread Flex
+        plays:
+          - name: Jet Counter
+            type: run
+          - name: Jet Inverted Veer
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: PA Inverted Veer
+            type: pass
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power Fk Jet
+            type: run
   - team_id: "arkansas"
     name: Arkansas
     playbook_style: null
@@ -9924,6 +10019,21 @@ teams:
           - name: X Dig
             type: pass
       - name: Wildcat Normal
+        plays:
+          - name: Jet Counter
+            type: run
+          - name: Jet Inverted Veer
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: Jet Sweep Pass
+            type: pass
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power Fk Jet
+            type: run
+          - name: Sweep QB Screen
+            type: pass
   - team_id: "army"
     name: Army
     playbook_style: null
@@ -10125,11 +10235,179 @@ teams:
       - name: Goal Line Normal
       - name: Split Army Split
       - name: Wingbone Normal
+        plays:
+          - name: Tr Cntr Wk
+            type: run
+          - name: Curl Flats
+            type: pass
+          - name: FB Dive
+            type: run
+          - name: FB Slip Screen
+            type: pass
+          - name: HB Counter
+            type: run
+          - name: Midline QB Iso
+            type: run
+          - name: PA Ctr Waggle
+            type: pass
+          - name: PA Curl Flat
+            type: pass
+          - name: PA Middle
+            type: pass
+          - name: PA Switch
+            type: pass
+          - name: Quick Slants
+            type: pass
+          - name: Speed Option Str
+            type: run
+          - name: Speed Sweep
+            type: run
+          - name: Tr Option Cntr
+            type: run
+          - name: Tr Option Str
+            type: run
+          - name: Trap Option
+            type: run
+          - name: Triple Option
+            type: run
+          - name: WB Dive
+            type: run
+          - name: WB Misdirection
+            type: run
+          - name: WB Toss Pass
+            type: pass
+          - name: WB Toss Str
+            type: run
       - name: Wingbone Split Wing X
+        plays:
+          - name: Tr Cntr Wk
+            type: run
+          - name: FB Dive
+            type: run
+          - name: FB Slip Screen
+            type: pass
+          - name: HB Counter
+            type: run
+          - name: Midline QB Iso
+            type: run
+          - name: PA Ctr Waggle
+            type: pass
+          - name: PA Middle
+            type: pass
+          - name: PA Switch
+            type: pass
+          - name: Quick Slant
+            type: pass
+          - name: Speed Option Str
+            type: run
+          - name: Speed Sweep
+            type: run
+          - name: Tr Option Cntr
+            type: run
+          - name: Tr Option Str
+            type: run
+          - name: Trap Option
+            type: run
+          - name: Triple Option
+            type: run
+          - name: WB Misdirection
+            type: run
+          - name: WB Toss Pass
+            type: pass
+          - name: WB Toss Str
+            type: run
       - name: Wingbone Split Wing Z
+        plays:
+          - name: FB Dive
+            type: run
+          - name: FB Slip Screen
+            type: pass
+          - name: HB Counter
+            type: run
+          - name: Midline QB Iso
+            type: run
+          - name: PA Curl Flat
+            type: pass
+          - name: PA Switch
+            type: pass
+          - name: Post HB Wheel
+            type: pass
+          - name: Speed Option Str
+            type: run
+          - name: Speed Sweep
+            type: run
+          - name: Tr Option Str
+            type: run
+          - name: Triple Option
+            type: run
+          - name: WB Misdirection
+            type: run
       - name: Wingbone Trips Over
+        plays:
+          - name: Curl Flats
+            type: pass
+          - name: FB Slip Screen
+            type: pass
+          - name: HB Counter
+            type: run
+          - name: PA Ctr Waggle
+            type: pass
+          - name: Speed Option Str
+            type: run
+          - name: Speed Sweep
+            type: run
+          - name: Tr Option Cntr
+            type: run
+          - name: Triple Option
+            type: run
+          - name: WB Toss Str
+            type: run
       - name: Wingbone Twins Over
+        plays:
+          - name: Tr Cntr Wk
+            type: run
+          - name: FB Dive
+            type: run
+          - name: FB Slip Screen
+            type: pass
+          - name: HB Counter
+            type: run
+          - name: Midline QB Iso
+            type: run
+          - name: PA Curl Flat
+            type: pass
+          - name: PA Switch
+            type: pass
+          - name: Speed Sweep
+            type: run
+          - name: Tr Option Str
+            type: run
+          - name: Trap Option
+            type: run
+          - name: WB Misdirection
+            type: run
+          - name: WR Screen
+            type: pass
       - name: Wishbone Wide
+        plays:
+          - name: HB Tackle
+            type: run
+          - name: Double Iso
+            type: run
+          - name: FB Flat
+            type: pass
+          - name: Inside Counter
+            type: run
+          - name: PA Boot
+            type: pass
+          - name: Power Option
+            type: run
+          - name: Tri Option Pass
+            type: pass
+          - name: Triple Option
+            type: run
+          - name: Vertical
+            type: pass
   - team_id: "auburn"
     name: Auburn
     playbook_style: null
@@ -11328,9 +11606,55 @@ teams:
           - name: Y Corner
             type: pass
       - name: Wildcat Fight Song
+        plays:
+          - name: Blast
+            type: run
+          - name: Bubble Screen
+            type: pass
+          - name: Fight Song
+            type: pass
+          - name: Fight Song Jet
+            type: run
       - name: Wildcat Normal
+        plays:
+          - name: Jet Counter
+            type: run
+          - name: Jet Inverted Veer
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: Jet Sweep Pass
+            type: pass
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power Fk Jet
+            type: run
+          - name: Sweep QB Screen
+            type: pass
       - name: Wildcat Spread Flex
+        plays:
+          - name: Jet Counter
+            type: run
+          - name: Jet Inverted Veer
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: PA Inverted Veer
+            type: pass
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power Fk Jet
+            type: run
       - name: Wildcat Trips Over
+        plays:
+          - name: Counter
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power
+            type: run
   - team_id: "byu"
     name: BYU
     playbook_style: null
@@ -13314,7 +13638,61 @@ teams:
           - name: Y Trail
             type: pass
       - name: Wildcat Trips Over
+        plays:
+          - name: Counter
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power
+            type: run
       - name: Wishbone Tight
+        plays:
+          - name: Double Iso
+            type: run
+          - name: FB Blast
+            type: run
+          - name: FB Flat
+            type: pass
+          - name: FB Trap
+            type: run
+          - name: HB Lead
+            type: run
+          - name: HB Power
+            type: run
+          - name: HB Streaks
+            type: pass
+          - name: HB Tackle
+            type: run
+          - name: Inside Counter
+            type: run
+          - name: PA Boot
+            type: pass
+          - name: PA Boot Lt
+            type: pass
+          - name: PA Boot Screen
+            type: pass
+          - name: PA Post
+            type: pass
+          - name: PA Speed Option Rev
+            type: pass
+          - name: PA TE Go
+            type: pass
+          - name: Power Option
+            type: run
+          - name: Power Toss
+            type: run
+          - name: QB FB Option
+            type: run
+          - name: Speed Option Rev
+            type: run
+          - name: Tri Option Pass
+            type: pass
+          - name: Triple Option
+            type: run
+          - name: Vertical
+            type: pass
   - team_id: "ball_state"
     name: Ball State
     playbook_style: null
@@ -16994,7 +17372,31 @@ teams:
           - name: X Slant
             type: pass
       - name: Wildcat Fight Song
+        plays:
+          - name: Blast
+            type: run
+          - name: Bubble Screen
+            type: pass
+          - name: Fight Song
+            type: pass
+          - name: Fight Song Jet
+            type: run
       - name: Wildcat Normal
+        plays:
+          - name: Jet Counter
+            type: run
+          - name: Jet Inverted Veer
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: Jet Sweep Pass
+            type: pass
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power Fk Jet
+            type: run
+          - name: Sweep QB Screen
+            type: pass
   - team_id: "boston_college"
     name: Boston College
     playbook_style: null
@@ -19543,6 +19945,19 @@ teams:
           - name: X Dig
             type: pass
       - name: Wildcat Heavy Ace
+        plays:
+          - name: HB Zone
+            type: run
+          - name: Counter
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power
+            type: run
+          - name: Zone
+            type: run
   - team_id: "buffalo"
     name: Buffalo
     playbook_style: null
@@ -22027,6 +22442,19 @@ teams:
           - name: WR Smash
             type: pass
       - name: Wildcat Spread
+        plays:
+          - name: Blast
+            type: run
+          - name: Counter
+            type: run
+          - name: Fake Jet Power
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: PA TE Post
+            type: pass
+          - name: Power Rt
+            type: run
   - team_id: "central_michigan"
     name: Central Michigan
     playbook_style: null
@@ -25678,9 +26106,55 @@ teams:
           - name: Y Lead Read Option
             type: run
       - name: Wildcat Fight Song
+        plays:
+          - name: Blast
+            type: run
+          - name: Bubble Screen
+            type: pass
+          - name: Fight Song
+            type: pass
+          - name: Fight Song Jet
+            type: run
       - name: Wildcat Normal
+        plays:
+          - name: Jet Counter
+            type: run
+          - name: Jet Inverted Veer
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: Jet Sweep Pass
+            type: pass
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power Fk Jet
+            type: run
+          - name: Sweep QB Screen
+            type: pass
       - name: Wildcat Spread Flex
+        plays:
+          - name: Jet Counter
+            type: run
+          - name: Jet Inverted Veer
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: PA Inverted Veer
+            type: pass
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power Fk Jet
+            type: run
       - name: Wildcat Trips Over
+        plays:
+          - name: Counter
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power
+            type: run
   - team_id: "colorado"
     name: Colorado
     playbook_style: null
@@ -28091,6 +28565,21 @@ teams:
           - name: Z Spot
             type: pass
       - name: Wildcat Normal
+        plays:
+          - name: Jet Counter
+            type: run
+          - name: Jet Inverted Veer
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: Jet Sweep Pass
+            type: pass
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power Fk Jet
+            type: run
+          - name: Sweep QB Screen
+            type: pass
   - team_id: "duke"
     name: Duke
     playbook_style: null
@@ -34504,6 +34993,21 @@ teams:
           - name: Y-Option
             type: pass
       - name: Wildcat Normal
+        plays:
+          - name: Jet Counter
+            type: run
+          - name: Jet Inverted Veer
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: Jet Sweep Pass
+            type: pass
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power Fk Jet
+            type: run
+          - name: Sweep QB Screen
+            type: pass
   - team_id: "florida_atlantic"
     name: Florida Atlantic
     playbook_style: null
@@ -35587,6 +36091,19 @@ teams:
           - name: Z Spot
             type: pass
       - name: Wildcat Wing
+        plays:
+          - name: Blast Rt
+            type: run
+          - name: Counter
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power
+            type: run
+          - name: Zone
+            type: run
   - team_id: "florida_state"
     name: Florida State
     playbook_style: null
@@ -38048,6 +38565,19 @@ teams:
             type: pass
       - name: Wildcat Twin TE
       - name: Wildcat Wing
+        plays:
+          - name: Blast Rt
+            type: run
+          - name: Counter
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power
+            type: run
+          - name: Zone
+            type: run
   - team_id: "georgia"
     name: Georgia
     playbook_style: null
@@ -49970,6 +50500,19 @@ teams:
           - name: Z Spot
             type: pass
       - name: Wildcat Wing
+        plays:
+          - name: Blast Rt
+            type: run
+          - name: Counter
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power
+            type: run
+          - name: Zone
+            type: run
   - team_id: "kansas"
     name: Kansas
     playbook_style: null
@@ -51251,6 +51794,21 @@ teams:
           - name: Y-Option
             type: pass
       - name: Wildcat Normal
+        plays:
+          - name: Jet Counter
+            type: run
+          - name: Jet Inverted Veer
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: Jet Sweep Pass
+            type: pass
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power Fk Jet
+            type: run
+          - name: Sweep QB Screen
+            type: pass
   - team_id: "kansas_state"
     name: Kansas State
     playbook_style: null
@@ -52515,6 +53073,19 @@ teams:
           - name: Slant Flats
             type: pass
       - name: Wildcat Slot
+        plays:
+          - name: "*Power"
+            type: run
+          - name: Blast Rt
+            type: run
+          - name: Counter
+            type: run
+          - name: Fake Jet Power
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: PA TE Post
+            type: pass
   - team_id: "kent_state"
     name: Kent State
     playbook_style: null
@@ -55044,6 +55615,19 @@ teams:
           - name: Z Spot
             type: pass
       - name: Wildcat Slot
+        plays:
+          - name: "*Power"
+            type: run
+          - name: Blast Rt
+            type: run
+          - name: Counter
+            type: run
+          - name: Fake Jet Power
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: PA TE Post
+            type: pass
   - team_id: "lsu"
     name: LSU
     playbook_style: null
@@ -60886,6 +61470,19 @@ teams:
           - name: Y Lead Read Option
             type: run
       - name: Wildcat Slot
+        plays:
+          - name: "*Power"
+            type: run
+          - name: Blast Rt
+            type: run
+          - name: Counter
+            type: run
+          - name: Fake Jet Power
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: PA TE Post
+            type: pass
   - team_id: "memphis"
     name: Memphis
     playbook_style: null
@@ -61975,6 +62572,25 @@ teams:
           - name: Y Cross Flood
             type: pass
       - name: Shotgun Twin TE Slot
+        plays:
+          - name: Inside Zone
+            type: run
+          - name: Inverted Veer
+            type: run
+          - name: 45 Quick Base
+            type: run
+          - name: Four Verticals
+            type: pass
+          - name: HB Slip Screen
+            type: pass
+          - name: Inside Cross
+            type: pass
+          - name: Jet Sweep
+            type: run
+          - name: Mtn Off Tackle
+            type: run
+          - name: PA Read
+            type: pass
       - name: Shotgun Wing Trips Wk
         plays:
           - name: Buck Read Opt
@@ -62140,7 +62756,29 @@ teams:
           - name: Z Spot
             type: pass
       - name: Wildcat Fight Song
+        plays:
+          - name: Blast
+            type: run
+          - name: Bubble Screen
+            type: pass
+          - name: Fight Song
+            type: pass
+          - name: Fight Song Jet
+            type: run
       - name: Wildcat Wing
+        plays:
+          - name: Blast Rt
+            type: run
+          - name: Counter
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power
+            type: run
+          - name: Zone
+            type: run
   - team_id: "miami"
     name: Miami
     playbook_style: null
@@ -63369,6 +64007,21 @@ teams:
           - name: X Slant
             type: pass
       - name: Wildcat Normal
+        plays:
+          - name: Jet Counter
+            type: run
+          - name: Jet Inverted Veer
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: Jet Sweep Pass
+            type: pass
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power Fk Jet
+            type: run
+          - name: Sweep QB Screen
+            type: pass
   - team_id: "miami_oh"
     name: Miami (OH)
     playbook_style: null
@@ -66982,6 +67635,21 @@ teams:
           - name: Y-Option
             type: pass
       - name: Wildcat Normal
+        plays:
+          - name: Jet Counter
+            type: run
+          - name: Jet Inverted Veer
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: Jet Sweep Pass
+            type: pass
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power Fk Jet
+            type: run
+          - name: Sweep QB Screen
+            type: pass
   - team_id: "mid_tenn_state"
     name: Mid Tenn State
     playbook_style: null
@@ -68941,6 +69609,25 @@ teams:
           - name: Zone Speed Option
             type: run
       - name: Shotgun Twin TE Slot
+        plays:
+          - name: Inside Zone
+            type: run
+          - name: Inverted Veer
+            type: run
+          - name: 45 Quick Base
+            type: run
+          - name: Four Verticals
+            type: pass
+          - name: HB Slip Screen
+            type: pass
+          - name: Inside Cross
+            type: pass
+          - name: Jet Sweep
+            type: run
+          - name: Mtn Off Tackle
+            type: run
+          - name: PA Read
+            type: pass
       - name: Shotgun Wing Trips Wk
         plays:
           - name: Buck Read Opt
@@ -69298,6 +69985,21 @@ teams:
           - name: Slant Flats
             type: pass
       - name: Wildcat Normal
+        plays:
+          - name: Jet Counter
+            type: run
+          - name: Jet Inverted Veer
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: Jet Sweep Pass
+            type: pass
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power Fk Jet
+            type: run
+          - name: Sweep QB Screen
+            type: pass
   - team_id: "mississippi_state"
     name: Mississippi State
     playbook_style: null
@@ -70552,6 +71254,51 @@ teams:
           - name: Z Spot
             type: pass
       - name: Wishbone Tight
+        plays:
+          - name: Double Iso
+            type: run
+          - name: FB Blast
+            type: run
+          - name: FB Flat
+            type: pass
+          - name: FB Trap
+            type: run
+          - name: HB Lead
+            type: run
+          - name: HB Power
+            type: run
+          - name: HB Streaks
+            type: pass
+          - name: HB Tackle
+            type: run
+          - name: Inside Counter
+            type: run
+          - name: PA Boot
+            type: pass
+          - name: PA Boot Lt
+            type: pass
+          - name: PA Boot Screen
+            type: pass
+          - name: PA Post
+            type: pass
+          - name: PA Speed Option Rev
+            type: pass
+          - name: PA TE Go
+            type: pass
+          - name: Power Option
+            type: run
+          - name: Power Toss
+            type: run
+          - name: QB FB Option
+            type: run
+          - name: Speed Option Rev
+            type: run
+          - name: Tri Option Pass
+            type: pass
+          - name: Triple Option
+            type: run
+          - name: Vertical
+            type: pass
   - team_id: "missouri"
     name: Missouri
     playbook_style: null
@@ -71812,6 +72559,19 @@ teams:
           - name: X Spot
             type: pass
       - name: Wildcat Wing
+        plays:
+          - name: Blast Rt
+            type: run
+          - name: Counter
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power
+            type: run
+          - name: Zone
+            type: run
   - team_id: "multiple_d"
     name: Multiple D
     playbook_style: null
@@ -74420,6 +75180,25 @@ teams:
           - name: WR Smash
             type: pass
       - name: Shotgun Twin TE Slot
+        plays:
+          - name: Inside Zone
+            type: run
+          - name: Inverted Veer
+            type: run
+          - name: 45 Quick Base
+            type: run
+          - name: Four Verticals
+            type: pass
+          - name: HB Slip Screen
+            type: pass
+          - name: Inside Cross
+            type: pass
+          - name: Jet Sweep
+            type: run
+          - name: Mtn Off Tackle
+            type: run
+          - name: PA Read
+            type: pass
       - name: Shotgun Y-Trips
         plays:
           - name: Alert WR Screen
@@ -74659,7 +75438,27 @@ teams:
           - name: Y Corner
             type: pass
       - name: Wildcat Slot
+        plays:
+          - name: "*Power"
+            type: run
+          - name: Blast Rt
+            type: run
+          - name: Counter
+            type: run
+          - name: Fake Jet Power
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: PA TE Post
+            type: pass
       - name: Wildcat Wing Trio
+        plays:
+          - name: Cntr Bash
+            type: run
+          - name: PA Read
+            type: pass
+          - name: Read Option
+            type: run
   - team_id: "nevada"
     name: Nevada
     playbook_style: null
@@ -75271,6 +76070,25 @@ teams:
           - name: Y Trail
             type: pass
       - name: Shotgun Twin TE Slot
+        plays:
+          - name: Inside Zone
+            type: run
+          - name: Inverted Veer
+            type: run
+          - name: 45 Quick Base
+            type: run
+          - name: Four Verticals
+            type: pass
+          - name: HB Slip Screen
+            type: pass
+          - name: Inside Cross
+            type: pass
+          - name: Jet Sweep
+            type: run
+          - name: Mtn Off Tackle
+            type: run
+          - name: PA Read
+            type: pass
       - name: Shotgun Wing Trio Wk
         plays:
           - name: 93 H Wheel
@@ -77517,6 +78335,21 @@ teams:
           - name: Z Spot
             type: pass
       - name: Wildcat Normal
+        plays:
+          - name: Jet Counter
+            type: run
+          - name: Jet Inverted Veer
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: Jet Sweep Pass
+            type: pass
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power Fk Jet
+            type: run
+          - name: Sweep QB Screen
+            type: pass
   - team_id: "north_carolina"
     name: North Carolina
     playbook_style: null
@@ -80181,7 +81014,29 @@ teams:
           - name: X Dig
             type: pass
       - name: Wildcat Fight Song
+        plays:
+          - name: Blast
+            type: run
+          - name: Bubble Screen
+            type: pass
+          - name: Fight Song
+            type: pass
+          - name: Fight Song Jet
+            type: run
       - name: Wildcat Wing
+        plays:
+          - name: Blast Rt
+            type: run
+          - name: Counter
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power
+            type: run
+          - name: Zone
+            type: run
   - team_id: "northern_illinois"
     name: Northern Illinois
     playbook_style: null
@@ -84230,6 +85085,19 @@ teams:
           - name: Z Spot
             type: pass
       - name: Wildcat Y-Trips
+        plays:
+          - name: Fk Fly Read Opt
+            type: run
+          - name: Blast
+            type: run
+          - name: HB Counter
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: PA Read
+            type: pass
+          - name: Wrap
+            type: run
   - team_id: "ohio"
     name: Ohio
     playbook_style: null
@@ -90693,7 +91561,29 @@ teams:
           - name: Y Corner
             type: pass
       - name: Wildcat Fight Song
+        plays:
+          - name: Blast
+            type: run
+          - name: Bubble Screen
+            type: pass
+          - name: Fight Song
+            type: pass
+          - name: Fight Song Jet
+            type: run
       - name: Wildcat Spread Flex
+        plays:
+          - name: Jet Counter
+            type: run
+          - name: Jet Inverted Veer
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: PA Inverted Veer
+            type: pass
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power Fk Jet
+            type: run
   - team_id: "one_back"
     name: One Back
     playbook_style: null
@@ -93166,7 +94056,61 @@ teams:
           - name: WR Streak
             type: pass
       - name: Wildcat Trips Over
+        plays:
+          - name: Counter
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power
+            type: run
       - name: Wishbone Tight
+        plays:
+          - name: Double Iso
+            type: run
+          - name: FB Blast
+            type: run
+          - name: FB Flat
+            type: pass
+          - name: FB Trap
+            type: run
+          - name: HB Lead
+            type: run
+          - name: HB Power
+            type: run
+          - name: HB Streaks
+            type: pass
+          - name: HB Tackle
+            type: run
+          - name: Inside Counter
+            type: run
+          - name: PA Boot
+            type: pass
+          - name: PA Boot Lt
+            type: pass
+          - name: PA Boot Screen
+            type: pass
+          - name: PA Post
+            type: pass
+          - name: PA Speed Option Rev
+            type: pass
+          - name: PA TE Go
+            type: pass
+          - name: Power Option
+            type: run
+          - name: Power Toss
+            type: run
+          - name: QB FB Option
+            type: run
+          - name: Speed Option Rev
+            type: run
+          - name: Tri Option Pass
+            type: pass
+          - name: Triple Option
+            type: run
+          - name: Vertical
+            type: pass
   - team_id: "oregon"
     name: Oregon
     playbook_style: null
@@ -95549,7 +96493,27 @@ teams:
           - name: Y-Option
             type: pass
       - name: Wildcat Heavy Ace
+        plays:
+          - name: HB Zone
+            type: run
+          - name: Counter
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power
+            type: run
+          - name: Zone
+            type: run
       - name: Wildcat Slot Flex
+        plays:
+          - name: Counter
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: Power
+            type: run
   - team_id: "penn_state"
     name: Penn State
     playbook_style: null
@@ -100898,6 +101862,19 @@ teams:
           - name: Z Spot
             type: pass
       - name: Wildcat Heavy Ace
+        plays:
+          - name: HB Zone
+            type: run
+          - name: Counter
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power
+            type: run
+          - name: Zone
+            type: run
       - name: Wildcat Twin TE
   - team_id: "run_balance"
     name: Run Balance
@@ -106344,6 +107321,21 @@ teams:
           - name: X Dig
             type: pass
       - name: Wildcat Normal
+        plays:
+          - name: Jet Counter
+            type: run
+          - name: Jet Inverted Veer
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: Jet Sweep Pass
+            type: pass
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power Fk Jet
+            type: run
+          - name: Sweep QB Screen
+            type: pass
   - team_id: "san_jose_state"
     name: San Jose State
     playbook_style: null
@@ -109804,6 +110796,25 @@ teams:
           - name: X Spot
             type: pass
       - name: Shotgun Twin TE Slot
+        plays:
+          - name: Inside Zone
+            type: run
+          - name: Inverted Veer
+            type: run
+          - name: 45 Quick Base
+            type: run
+          - name: Four Verticals
+            type: pass
+          - name: HB Slip Screen
+            type: pass
+          - name: Inside Cross
+            type: pass
+          - name: Jet Sweep
+            type: run
+          - name: Mtn Off Tackle
+            type: run
+          - name: PA Read
+            type: pass
       - name: Shotgun Y-Trips HB Wk
         plays:
           - name: "*Alert WR Screen"
@@ -112328,6 +113339,19 @@ teams:
           - name: Y Corner
             type: pass
       - name: Wildcat Slot
+        plays:
+          - name: "*Power"
+            type: run
+          - name: Blast Rt
+            type: run
+          - name: Counter
+            type: run
+          - name: Fake Jet Power
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: PA TE Post
+            type: pass
   - team_id: "spread_option"
     name: Spread Option
     playbook_style: null
@@ -113323,6 +114347,21 @@ teams:
           - name: Y Corner
             type: pass
       - name: Wildcat Normal
+        plays:
+          - name: Jet Counter
+            type: run
+          - name: Jet Inverted Veer
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: Jet Sweep Pass
+            type: pass
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power Fk Jet
+            type: run
+          - name: Sweep QB Screen
+            type: pass
   - team_id: "stanford"
     name: Stanford
     playbook_style: null
@@ -114486,6 +115525,15 @@ teams:
           - name: Y-Option
             type: pass
       - name: Wildcat Trips Over
+        plays:
+          - name: Counter
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power
+            type: run
   - team_id: "syracuse"
     name: Syracuse
     playbook_style: null
@@ -119961,6 +121009,19 @@ teams:
           - name: Y Corner
             type: pass
       - name: Wildcat Spread Flex
+        plays:
+          - name: Jet Counter
+            type: run
+          - name: Jet Inverted Veer
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: PA Inverted Veer
+            type: pass
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power Fk Jet
+            type: run
   - team_id: "texas"
     name: Texas
     playbook_style: null
@@ -124513,6 +125574,19 @@ teams:
           - name: TE Lead Read Opt
             type: run
       - name: Wildcat Heavy Ace
+        plays:
+          - name: HB Zone
+            type: run
+          - name: Counter
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power
+            type: run
+          - name: Zone
+            type: run
   - team_id: "toledo"
     name: Toledo
     playbook_style: null
@@ -127158,6 +128232,19 @@ teams:
           - name: Z Spot
             type: pass
       - name: Wildcat Spread Flex
+        plays:
+          - name: Jet Counter
+            type: run
+          - name: Jet Inverted Veer
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: PA Inverted Veer
+            type: pass
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power Fk Jet
+            type: run
   - team_id: "tulane"
     name: Tulane
     playbook_style: null
@@ -129694,7 +130781,29 @@ teams:
           - name: Y Corner
             type: pass
       - name: Wildcat Fight Song
+        plays:
+          - name: Blast
+            type: run
+          - name: Bubble Screen
+            type: pass
+          - name: Fight Song
+            type: pass
+          - name: Fight Song Jet
+            type: run
       - name: Wildcat Spread Flex
+        plays:
+          - name: Jet Counter
+            type: run
+          - name: Jet Inverted Veer
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: PA Inverted Veer
+            type: pass
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power Fk Jet
+            type: run
   - team_id: "uab"
     name: UAB
     playbook_style: null
@@ -132282,6 +133391,21 @@ teams:
           - name: Z Spot
             type: pass
       - name: Wildcat Normal
+        plays:
+          - name: Jet Counter
+            type: run
+          - name: Jet Inverted Veer
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: Jet Sweep Pass
+            type: pass
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power Fk Jet
+            type: run
+          - name: Sweep QB Screen
+            type: pass
   - team_id: "ucla"
     name: UCLA
     playbook_style: null
@@ -137150,6 +138274,25 @@ teams:
           - name: X Spot
             type: pass
       - name: Shotgun Twin TE Slot
+        plays:
+          - name: Inside Zone
+            type: run
+          - name: Inverted Veer
+            type: run
+          - name: 45 Quick Base
+            type: run
+          - name: Four Verticals
+            type: pass
+          - name: HB Slip Screen
+            type: pass
+          - name: Inside Cross
+            type: pass
+          - name: Jet Sweep
+            type: run
+          - name: Mtn Off Tackle
+            type: run
+          - name: PA Read
+            type: pass
       - name: Shotgun Wing Trips Wk
         plays:
           - name: Buck Read Opt
@@ -137287,6 +138430,19 @@ teams:
           - name: Z Spot
             type: pass
       - name: Wildcat Slot
+        plays:
+          - name: "*Power"
+            type: run
+          - name: Blast Rt
+            type: run
+          - name: Counter
+            type: run
+          - name: Fake Jet Power
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: PA TE Post
+            type: pass
   - team_id: "umass"
     name: UMass
     playbook_style: null
@@ -138724,6 +139880,19 @@ teams:
           - name: Z Spot
             type: pass
       - name: Wildcat Y-Trips
+        plays:
+          - name: Fk Fly Read Opt
+            type: run
+          - name: Blast
+            type: run
+          - name: HB Counter
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: PA Read
+            type: pass
+          - name: Wrap
+            type: run
   - team_id: "unlv"
     name: UNLV
     playbook_style: null
@@ -139726,6 +140895,25 @@ teams:
           - name: Verticals
             type: pass
       - name: Shotgun Twin TE Slot
+        plays:
+          - name: Inside Zone
+            type: run
+          - name: Inverted Veer
+            type: run
+          - name: 45 Quick Base
+            type: run
+          - name: Four Verticals
+            type: pass
+          - name: HB Slip Screen
+            type: pass
+          - name: Inside Cross
+            type: pass
+          - name: Jet Sweep
+            type: run
+          - name: Mtn Off Tackle
+            type: run
+          - name: PA Read
+            type: pass
       - name: Shotgun Wing Trips Offset Wk
         plays:
           - name: Counter Y
@@ -141249,7 +142437,25 @@ teams:
           - name: X Dig
             type: pass
       - name: Wildcat Fight Song
+        plays:
+          - name: Blast
+            type: run
+          - name: Bubble Screen
+            type: pass
+          - name: Fight Song
+            type: pass
+          - name: Fight Song Jet
+            type: run
       - name: Wildcat Trips Over
+        plays:
+          - name: Counter
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power
+            type: run
   - team_id: "usf"
     name: USF
     playbook_style: null
@@ -144771,6 +145977,25 @@ teams:
           - name: GT Counter Option
             type: run
       - name: Shotgun Twin TE Slot
+        plays:
+          - name: Inside Zone
+            type: run
+          - name: Inverted Veer
+            type: run
+          - name: 45 Quick Base
+            type: run
+          - name: Four Verticals
+            type: pass
+          - name: HB Slip Screen
+            type: pass
+          - name: Inside Cross
+            type: pass
+          - name: Jet Sweep
+            type: run
+          - name: Mtn Off Tackle
+            type: run
+          - name: PA Read
+            type: pass
       - name: Shotgun Y-Trips HB Wk
         plays:
           - name: "*Alert WR Screen"
@@ -147487,6 +148712,25 @@ teams:
           - name: Stick N Nod
             type: pass
       - name: Shotgun Twin TE Slot
+        plays:
+          - name: Inside Zone
+            type: run
+          - name: Inverted Veer
+            type: run
+          - name: 45 Quick Base
+            type: run
+          - name: Four Verticals
+            type: pass
+          - name: HB Slip Screen
+            type: pass
+          - name: Inside Cross
+            type: pass
+          - name: Jet Sweep
+            type: run
+          - name: Mtn Off Tackle
+            type: run
+          - name: PA Read
+            type: pass
       - name: Shotgun Y-Trips
         plays:
           - name: Alert WR Screen
@@ -147564,6 +148808,25 @@ teams:
           - name: Z Spot
             type: pass
       - name: Wishbone Wide
+        plays:
+          - name: HB Tackle
+            type: run
+          - name: Double Iso
+            type: run
+          - name: FB Flat
+            type: pass
+          - name: Inside Counter
+            type: run
+          - name: PA Boot
+            type: pass
+          - name: Power Option
+            type: run
+          - name: Tri Option Pass
+            type: pass
+          - name: Triple Option
+            type: run
+          - name: Vertical
+            type: pass
   - team_id: "vanderbilt"
     name: Vanderbilt
     playbook_style: null
@@ -148672,9 +149935,55 @@ teams:
           - name: X Dig
             type: pass
       - name: Wildcat Fight Song
+        plays:
+          - name: Blast
+            type: run
+          - name: Bubble Screen
+            type: pass
+          - name: Fight Song
+            type: pass
+          - name: Fight Song Jet
+            type: run
       - name: Wildcat Normal
+        plays:
+          - name: Jet Counter
+            type: run
+          - name: Jet Inverted Veer
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: Jet Sweep Pass
+            type: pass
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power Fk Jet
+            type: run
+          - name: Sweep QB Screen
+            type: pass
       - name: Wildcat Spread Flex
+        plays:
+          - name: Jet Counter
+            type: run
+          - name: Jet Inverted Veer
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: PA Inverted Veer
+            type: pass
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power Fk Jet
+            type: run
       - name: Wildcat Trips Over
+        plays:
+          - name: Counter
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power
+            type: run
   - team_id: "virginia"
     name: Virginia
     playbook_style: null
@@ -153709,6 +155018,21 @@ teams:
           - name: Y-Option
             type: pass
       - name: Wildcat Normal
+        plays:
+          - name: Jet Counter
+            type: run
+          - name: Jet Inverted Veer
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: Jet Sweep Pass
+            type: pass
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power Fk Jet
+            type: run
+          - name: Sweep QB Screen
+            type: pass
   - team_id: "washington_state"
     name: Washington State
     playbook_style: null
@@ -159629,6 +160953,21 @@ teams:
           - name: X Dig
             type: pass
       - name: Wildcat Normal
+        plays:
+          - name: Jet Counter
+            type: run
+          - name: Jet Inverted Veer
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: Jet Sweep Pass
+            type: pass
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power Fk Jet
+            type: run
+          - name: Sweep QB Screen
+            type: pass
   - team_id: "wisconsin"
     name: Wisconsin
     playbook_style: null
@@ -162063,4 +163402,26 @@ teams:
           - name: Z Spot
             type: pass
       - name: Wildcat Trips Over
+        plays:
+          - name: Counter
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power
+            type: run
       - name: Wildcat Wing
+        plays:
+          - name: Blast Rt
+            type: run
+          - name: Counter
+            type: run
+          - name: Jet Sweep
+            type: run
+          - name: PA Jet Sweep
+            type: pass
+          - name: Power
+            type: run
+          - name: Zone
+            type: run

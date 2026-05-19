@@ -29,6 +29,22 @@ Append-only handoff log. The newest session goes at the **top**. The point is so
 
 ---
 
+## 2026-05-19 — NCAA 14 play names complete (end of Phase 2)
+
+**Active thread:** finishing the NCAA Football 14 play-name extraction (per-formation docx vision).
+
+**Landed this session:**
+- Processed the final 35 missing docx in 7 Haiku subagents (5/each), all verified on disk.
+- `.docx-cache-ncaa14-plays/` now holds 243 distinct per-formation JSONs.
+- `data/games/ncaa-14-ps3/team-playbooks.yaml` — 2,570 catalog formation-entries now carry `plays` (up from 2,483). Remaining ~514 unmatched entries are defensive formations (3-4 Over, 4-3 Stack, Nickel/Dime/etc.) — out-of-scope for the offensive Play Database docx.
+- Schema valid; 266 tests pass.
+
+**In progress / next step:** Phase 2 (Madden 25 + ESPN 2K5 + NCAA 14 play-name attachment) is now complete end-to-end. Next pending-queue items: Madden 01/03 PS2 catalogs, `_family()` classifier for xlsx games, AI onboarding doc, README refresh. Game-editor measurements still blocked on user.
+
+**Uncommitted state:** committing the NCAA 14 catalog + this session-log entry now.
+
+---
+
 **REPO MOVED** — the working directory was renamed from `madden_playgen_mcps`
 to `/mnt/c/GitHub/blitz-command` (matching the git remote / "blitz-command").
 The harness still resets cwd to the old name each command — prefix every
