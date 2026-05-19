@@ -93,6 +93,22 @@
           "type": ["integer", "null"],
           "minimum": 0,
           "description": "Number of plays the game ships in this formation. Null when the source does not expose a count."
+        },
+        "plays": {
+          "type": ["array", "null"],
+          "description": "Play names the game ships in this formation, from a play-name vision pass over the play-diagram screens. Null/absent when that pass has not been run for this game.",
+          "items": {
+            "type": "object",
+            "required": ["name"],
+            "additionalProperties": false,
+            "properties": {
+              "name": { "type": "string" },
+              "type": {
+                "enum": ["run", "pass", null],
+                "description": "Play type where the game labels it (Madden play screens tag PASS/RUN); null otherwise."
+              }
+            }
+          }
         }
       }
     }

@@ -90,8 +90,18 @@ now maps any name containing "jokers"/"jacks" to i_form (was defaulting bare
 ones to singleback). ESPN catalog re-run: 24 Jokers/Jacks formations now
 i_form (singleback 334 / i_form 284 / shotgun 155).
 
-**In progress / next step:** (1) play-name extraction (catalog Phase 2 — a
-vision pass over the discarded play-diagram screens); (2) Madden 01/03 PS2
+**Play-name extraction (catalog Phase 2) — started.** Pipeline built and
+validated: `tools/ingest-research/extract_play_names.py`, a `plays` field on
+the catalog schema, chunked Haiku vision (one-shot Haiku over ~150 images was
+too lossy — ~40-image chunks fixed it). Madden association is play_count
+segmentation (play screens don't name their formation, but appear in formation
+order); ESPN will use the on-screen formation header. Indianapolis Colts done —
+333 plays, 24/24 formations within +/-2 of play_count. Chunk caches live in
+`.docx-cache-<game>-plays/` (gitignored), resumable.
+
+**In progress / next step:** the bulk play-name vision grind — ~49 madden-25
+teams + 34 espn-2k5 teams. Run chunked Haiku subagents per team, then
+`extract_play_names.py`. Multi-window (usage limits). (2) Madden 01/03 PS2
 catalogs still need profiles + ingest. See pending-queue.
 
 **Uncommitted state:** Madden 25 work committed earlier (e48d0ad). ESPN 2K5

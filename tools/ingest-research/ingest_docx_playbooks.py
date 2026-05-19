@@ -416,6 +416,15 @@ def _write_yaml(catalog: dict, path: Path) -> None:
             play_count = f.get("play_count")
             lines.append(f"        play_count: "
                          f"{play_count if isinstance(play_count, int) else 'null'}")
+            # plays: only emitted once a play-name vision pass has populated it.
+            plays = f.get("plays")
+            if plays:
+                lines.append("        plays:")
+                for p in plays:
+                    lines.append(f"          - name: {_yaml_str(p['name'])}")
+                    ptype = p.get("type")
+                    lines.append(f"            type: "
+                                 f"{ptype if ptype in ('run', 'pass') else 'null'}")
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 

@@ -28,10 +28,12 @@ when an item depends on something external (user input, upstream work).
   families are panel-header-derived; ESPN 2K5's are now a screenshot-verified
   prefix classifier — both accurate. See Done.)
 
-- **Play-name extraction (catalog Phase 2).** The docx catalogs hold formations
-  + play counts, not play names. Play names live on the play-diagram screens
-  (the "OFFENSE" 3-play screens) which the ingest discards as "other". A second
-  vision pass over those screens would give a true per-formation play list.
+- **Play-name extraction (catalog Phase 2) — in progress.** Pipeline built
+  (`extract_play_names.py`, `plays` schema field, chunked Haiku vision). Madden
+  uses play_count segmentation, ESPN will use the on-screen formation header.
+  Done: Indianapolis Colts (madden-25). Remaining: ~49 madden-25 teams + 34
+  espn-2k5 teams — the bulk vision grind, ~40-image Haiku chunks, resumable via
+  the `.docx-cache-*-plays/` chunk caches.
 
 - **AI onboarding doc.** `docs/ai-onboarding.md` for smaller models joining the
   repo — a one-shot tutorial with fully-narrated tool-call sequences under
