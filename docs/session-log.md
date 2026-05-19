@@ -115,12 +115,8 @@ extract docx images to /tmp/m25-img/<slug>/, launch 4 chunked Haiku subagents
 (~40 imgs each) writing `.docx-cache-m25-plays/<Team>__chunkNN.json`, then
 `extract_play_names.py --game madden-25-ps3 --cache-dir .docx-cache-m25-plays`.
 
-**In progress / next step:** ESPN 2K5 play names — 5/34 done (Arizona,
-Atlanta, Baltimore, Buffalo, Carolina). ESPN subagents tend to write JSON-Lines
-not a JSON array (fixable post-hoc) and sometimes grab the player name+number at
-the top of a column instead of the bottom-bar play name — re-prompt with the
-"bottom bar" emphasis. Then NCAA 14 play names (371-docx Play Database, needs a
-per-formation pipeline). LOOP PAUSED 6h by user request ~01:45 2026-05-19. + 34 espn-2k5 remain. Same
+**In progress / next step:** ESPN 2K5 play names — 10/34 done (through Denver).
+Then NCAA 14 play names (371-docx Play Database, per-formation pipeline). + 34 espn-2k5 remain. Same
 workflow; ESPN uses header-based association (its play screens name the
 formation). (2) Madden 01/03 PS2 catalogs still need profiles + ingest.
 
