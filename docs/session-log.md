@@ -29,6 +29,11 @@ Append-only handoff log. The newest session goes at the **top**. The point is so
 
 ---
 
+**REPO MOVED** — the working directory was renamed from `madden_playgen_mcps`
+to `/mnt/c/GitHub/blitz-command` (matching the git remote / "blitz-command").
+The harness still resets cwd to the old name each command — prefix every
+Bash command with `cd /mnt/c/GitHub/blitz-command`.
+
 ## 2026-05-18 (cont.) — docx vision-ingest pipeline + Madden 25 & ESPN 2K5 catalogs
 
 **Active thread:** running the docx-screenshot playbook ingest for games with
@@ -115,7 +120,7 @@ extract docx images to /tmp/m25-img/<slug>/, launch 4 chunked Haiku subagents
 (~40 imgs each) writing `.docx-cache-m25-plays/<Team>__chunkNN.json`, then
 `extract_play_names.py --game madden-25-ps3 --cache-dir .docx-cache-m25-plays`.
 
-**In progress / next step:** ESPN 2K5 play names — 10/34 done (through Denver).
+**In progress / next step:** ESPN 2K5 play names — 15/34 done (through Jacksonville).
 Then NCAA 14 play names (371-docx Play Database, per-formation pipeline). + 34 espn-2k5 remain. Same
 workflow; ESPN uses header-based association (its play screens name the
 formation). (2) Madden 01/03 PS2 catalogs still need profiles + ingest.
