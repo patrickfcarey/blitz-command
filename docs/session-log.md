@@ -61,9 +61,17 @@ extracted screenshots with the Read tool and wrote a cache JSON in the format
 then assembled `data/games/espn-2k5-ps2/team-playbooks.yaml` with no API key.
 Hit a usage limit mid-run; the per-team cache made it cleanly resumable.
 
-**In progress / next step:** Madden 01/03 PS2 catalogs (need game profiles +
-ingest). Also noted: `_family()` formation-family classifier is crude for
-modern names — see pending-queue.
+**Catalog formation entries gained `family` + `play_count`:** `ingest_docx_playbooks.py`
+now threads the Madden formation-menu panel header (SINGLEBACK/I-FORM/GUN/…)
+through aggregation as the family — accurate, replacing crude `_family()` name
+guessing — and carries each formation's play count. Schema + both docx catalogs
+regenerated from cache (no API key); 266 tests pass.
+
+**In progress / next step:** (1) play-name extraction (catalog Phase 2 — a
+vision pass over the discarded play-diagram screens); (2) formation-level
+playbook matching needs a (family, alignment) structural crosswalk — family
+granularity is too coarse to tell NFL playbooks apart. (3) Madden 01/03 PS2
+catalogs still need profiles + ingest. See pending-queue.
 
 **Uncommitted state:** Madden 25 work committed earlier (e48d0ad). ESPN 2K5
 catalog committed at end of this session.

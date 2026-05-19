@@ -190,30 +190,68 @@ def _process_team_docx(client: anthropic.Anthropic | None,
 # Aggregation
 # ---------------------------------------------------------------------------
 
+# Madden formation-menu panel headers → family slug. The panel header is the
+# game's own grouping and far more reliable than guessing from a name; OCR
+# variants ("I FOR", "I FO" for "I-FORM") are folded in here. Headers absent
+# from this map — including the legends-playbook colour headers RED/BROWN/BLUE
+# — fall through to "other".
+_MADDEN_GROUP_FAMILY: dict[str, str] = {
+    "GUN": "shotgun", "SHOTGUN": "shotgun",
+    "SINGLEBACK": "singleback",
+    "I-FORM": "i_form", "I FORM": "i_form", "I FOR": "i_form", "I FO": "i_form",
+    "STRONG": "strong", "STRONG I": "strong",
+    "WEAK": "weak", "WEAK I": "weak",
+    "PISTOL": "pistol",
+    "WILDCAT": "wildcat",
+    "NEAR": "near", "FAR": "far", "FULL HOUSE": "full_house",
+    "PRO": "pro_set", "SPLIT": "pro_set",
+}
+
+
+def _normalize_madden_group(group: str | None) -> str:
+    """Map a Madden formation-menu panel header to a family slug."""
+    return _MADDEN_GROUP_FAMILY.get((group or "").strip().upper(), "other")
+
+
 def _aggregate_madden25(results: list[dict]) -> list[dict]:
     """Collapse formation-list results into a deduplicated formation list.
 
-    Returns [{"name": ..., "personnel": None}, ...] preserving first-seen order.
+    Each entry is {"name", "personnel", "family", "play_count"}, preserving
+    first-seen order. ``family`` comes from the formation's menu panel header
+    (SINGLEBACK / I-FORM / GUN / ...), and ``play_count`` from the play count
+    the menu prints beside each formation.
+
     Deduplication is case-insensitive: vision OCR routinely reads the same
     formation with inconsistent casing (e.g. "Bunch Wk" vs "Bunch WK"); the
-    first-seen spelling is kept as canonical.
+    first-seen spelling — and its family / play_count — is kept as canonical.
     """
     seen: set[str] = set()  # case-folded formation names already emitted
     ordered: list[dict] = []
     for r in results:
         if r.get("type") != "formation_list":
             continue
+        family = _normalize_madden_group(r.get("group"))
         for f in r.get("formations", []):
             name = f.get("name", "").strip()
             key = name.lower()
             if name and key not in seen:
                 seen.add(key)
-                ordered.append({"name": name, "personnel": None})
+                plays = f.get("plays")
+                ordered.append({
+                    "name": name,
+                    "personnel": None,
+                    "family": family,
+                    "play_count": plays if isinstance(plays, int) else None,
+                })
     return ordered
 
 
 def _aggregate_espn2k5(results: list[dict]) -> list[dict]:
     """Collect unique formation names from ESPN 2K5 play screens.
+
+    ESPN play screens carry no panel header or play count, so ``family`` is
+    derived from the formation name and ``play_count`` is None — keeping the
+    entry shape identical to the Madden path.
 
     Deduplication is case-insensitive for the same OCR-casing reason as
     _aggregate_madden25; the first-seen spelling is kept as canonical.
@@ -227,7 +265,12 @@ def _aggregate_espn2k5(results: list[dict]) -> list[dict]:
         key = name.lower()
         if name and key not in seen:
             seen.add(key)
-            ordered.append({"name": name, "personnel": None})
+            ordered.append({
+                "name": name,
+                "personnel": None,
+                "family": _family(name),
+                "play_count": None,
+            })
     return ordered
 
 
@@ -282,7 +325,9 @@ def _build_team_entry(docx_path: Path, formations: list[dict]) -> dict:
     team_name = docx_path.stem  # e.g. "Arizona Cardinals"
     fam_counts: dict[str, int] = defaultdict(int)
     for f in formations:
-        fam_counts[_family(f["name"])] += 1
+        # Each formation already carries its family (panel header for Madden,
+        # name-derived for ESPN); roll those up rather than re-deriving.
+        fam_counts[f.get("family") or _family(f["name"])] += 1
     return {
         "team_id": _team_id(team_name),
         "name": team_name,
@@ -327,6 +372,11 @@ def _write_yaml(catalog: dict, path: Path) -> None:
         lines.append("    formations:")
         for f in team["formations"]:
             lines.append(f"      - name: {_yaml_str(f['name'])}")
+            family = f.get("family")
+            lines.append(f"        family: {family if family else 'null'}")
+            play_count = f.get("play_count")
+            lines.append(f"        play_count: "
+                         f"{play_count if isinstance(play_count, int) else 'null'}")
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 

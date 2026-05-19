@@ -22,12 +22,24 @@ when an item depends on something external (user input, upstream work).
   subagents reading the extracted images, or via the script with an
   `ANTHROPIC_API_KEY`.
 
-- **Formation-family detection is crude.** `_family()` (shared by
-  `build_playbook_catalog.py` + `ingest_docx_playbooks.py`) under-classifies
-  modern Madden / ESPN names — e.g. "I Pro", "Split Spread" fall to "other".
-  The `formation_families` rollup is a derived convenience field and the
-  formation names themselves are correct, but the buckets are noisy. A better
-  classifier would need a re-run of all catalogs.
+- **Formation-family classifier for xlsx games.** `_family()` under-classifies
+  modern names ("I Pro", "Split Spread" → "other") for the xlsx-sourced games
+  (madden-04/05/07, ncaa-04/06/07) and for ESPN 2K5 (no panel header in source).
+  Needs a better classifier. (Madden 25's families are now panel-header-derived
+  and accurate — see Done.)
+
+- **Formation-level playbook matching needs a structural crosswalk.** Matching
+  a repo playbook against a game's catalog currently works only at family
+  granularity (singleback / i_form / shotgun) — too coarse to tell NFL
+  playbooks apart. A real match needs a shared sub-formation vocabulary:
+  normalize both sides to (family, alignment) tags — e.g. hs-base `shotgun-2x2`
+  and Madden `Doubles` both → (shotgun, 2x2). Until then, or until play-name
+  data exists, formation matching is directional only.
+
+- **Play-name extraction (catalog Phase 2).** The docx catalogs hold formations
+  + play counts, not play names. Play names live on the play-diagram screens
+  (the "OFFENSE" 3-play screens) which the ingest discards as "other". A second
+  vision pass over those screens would give a true per-formation play list.
 
 - **AI onboarding doc.** `docs/ai-onboarding.md` for smaller models joining the
   repo — a one-shot tutorial with fully-narrated tool-call sequences under
@@ -91,6 +103,10 @@ Trim periodically — old completions need not live here forever.
 - ✅ ESPN NFL 2K5 PS2 catalog — 34 teams, 773 formations, schema-valid. Vision
   done keyless via in-session subagents (one per team) writing cache JSONs that
   the ingest script's tested aggregation/dedup path then assembled.
+- ✅ Catalog formation entries gained `family` + `play_count`. `ingest_docx_playbooks.py`
+  now threads the Madden formation-menu panel header (SINGLEBACK/I-FORM/GUN/…)
+  through aggregation as the family — accurate, replacing crude name-guessing —
+  and carries the per-formation play count. Schema + both docx catalogs updated.
 
 ### 2026-05
 

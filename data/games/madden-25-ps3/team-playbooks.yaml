@@ -9,1551 +9,3452 @@ teams:
     playbook_style: null
     formation_count: 22
     formation_families:
-      ace: 3
-      bunch: 2
-      empty: 1
-      other: 14
-      spread: 1
-      trips: 1
+      i_form: 3
+      shotgun: 11
+      singleback: 8
     personnel_breakdown: null
     formations:
       - name: Jumbo
+        family: singleback
+        play_count: 12
       - name: Ace
+        family: singleback
+        play_count: 15
       - name: Ace Pair
+        family: singleback
+        play_count: 15
       - name: Ace Twins
+        family: singleback
+        play_count: 15
       - name: Bunch Base
+        family: singleback
+        play_count: 12
       - name: Doubles
+        family: singleback
+        play_count: 18
       - name: Tight Doubles
+        family: singleback
+        play_count: 12
       - name: Zona Y-Trips
+        family: singleback
+        play_count: 15
       - name: Pro
+        family: i_form
+        play_count: 18
       - name: Tight
+        family: i_form
+        play_count: 12
       - name: Tight Pair
+        family: i_form
+        play_count: 15
       - name: Split Close
+        family: shotgun
+        play_count: 12
       - name: Doubles Wk
+        family: shotgun
+        play_count: 12
       - name: Y Trips Wk
+        family: shotgun
+        play_count: 21
       - name: Trio
+        family: shotgun
+        play_count: 15
       - name: Snugs
+        family: shotgun
+        play_count: 12
       - name: Bunch Wk
+        family: shotgun
+        play_count: 15
       - name: Spread
+        family: shotgun
+        play_count: 15
       - name: Flip Trips
+        family: shotgun
+        play_count: 9
       - name: Trips HB Wk
+        family: shotgun
+        play_count: 18
       - name: Empty Trey
+        family: shotgun
+        play_count: 15
       - name: 5WR Trips
+        family: shotgun
+        play_count: 12
   - team_id: atlanta_falcons
     name: Atlanta Falcons
     playbook_style: null
     formation_count: 22
     formation_families:
-      ace: 2
-      bunch: 2
-      empty: 2
-      other: 15
-      spread: 1
+      i_form: 2
+      shotgun: 11
+      singleback: 8
+      strong: 1
     personnel_breakdown: null
     formations:
       - name: Jumbo
+        family: singleback
+        play_count: 12
       - name: Ace
+        family: singleback
+        play_count: 15
       - name: Ace Pair
+        family: singleback
+        play_count: 18
       - name: Doubles
+        family: singleback
+        play_count: 21
       - name: Tight Doubles
+        family: singleback
+        play_count: 12
       - name: V-Trips
+        family: singleback
+        play_count: 18
       - name: Y-Trips
+        family: singleback
+        play_count: 18
       - name: Bunch
+        family: singleback
+        play_count: 15
       - name: Pro
+        family: i_form
+        play_count: 18
       - name: Tight Pair
+        family: i_form
+        play_count: 18
       - name: Close
+        family: strong
+        play_count: 15
       - name: Split Offset
+        family: shotgun
+        play_count: 18
       - name: Doubles On
+        family: shotgun
+        play_count: 12
       - name: Wing Trips
+        family: shotgun
+        play_count: 12
       - name: Trio Falcon
+        family: shotgun
+        play_count: 12
       - name: Tight Flex
+        family: shotgun
+        play_count: 15
       - name: Tria Falcon
+        family: shotgun
+        play_count: 12
       - name: Bunch Wk
+        family: shotgun
+        play_count: 9
       - name: Spread Y-Flex
+        family: shotgun
+        play_count: 15
       - name: Trey Open
+        family: shotgun
+        play_count: 21
       - name: Empty Falcon
+        family: shotgun
+        play_count: 12
       - name: Empty Base
+        family: shotgun
+        play_count: 15
   - team_id: balanced
     name: Balanced
     playbook_style: null
     formation_count: 17
     formation_families:
-      ace: 2
-      bunch: 1
-      empty: 1
-      other: 11
-      spread: 1
-      trips: 1
+      full_house: 1
+      i_form: 2
+      shotgun: 6
+      singleback: 6
+      strong: 1
+      weak: 1
     personnel_breakdown: null
     formations:
       - name: Jumbo
+        family: singleback
+        play_count: 12
       - name: Ace
+        family: singleback
+        play_count: 15
       - name: Ace Pair Twins
+        family: singleback
+        play_count: 12
       - name: Doubles
+        family: singleback
+        play_count: 21
       - name: Bunch
+        family: singleback
+        play_count: 15
       - name: Trips Open
+        family: singleback
+        play_count: 12
       - name: Pro
+        family: i_form
+        play_count: 15
       - name: Tight
+        family: i_form
+        play_count: 12
       - name: Tight Pair
+        family: strong
+        play_count: 12
       - name: Pro Twins
+        family: weak
+        play_count: 12
       - name: Normal Wide
+        family: full_house
+        play_count: 9
       - name: Split Slot
+        family: shotgun
+        play_count: 15
       - name: Y-Trips HB Wk
+        family: shotgun
+        play_count: 21
       - name: Snugs Flip
+        family: shotgun
+        play_count: 12
       - name: Spread
+        family: shotgun
+        play_count: 15
       - name: V-Trips HB Wk
+        family: shotgun
+        play_count: 21
       - name: Empty Trey
+        family: shotgun
+        play_count: 12
   - team_id: baltimore_ravens
     name: Baltimore Ravens
     playbook_style: null
     formation_count: 24
     formation_families:
-      ace: 3
-      bunch: 2
-      other: 18
-      spread: 1
+      i_form: 3
+      shotgun: 8
+      singleback: 8
+      strong: 3
+      weak: 2
     personnel_breakdown: null
     formations:
       - name: Jumbo
+        family: singleback
+        play_count: 12
       - name: Ace
+        family: singleback
+        play_count: 12
       - name: Ace Pair
+        family: singleback
+        play_count: 15
       - name: F Pair Twins
+        family: singleback
+        play_count: 18
       - name: Doubles Flex
+        family: singleback
+        play_count: 21
       - name: V-Trips TE Slot
+        family: singleback
+        play_count: 15
       - name: Y-Trips TE Slot
+        family: singleback
+        play_count: 15
       - name: Bunch
+        family: singleback
+        play_count: 12
       - name: Pro
+        family: i_form
+        play_count: 18
       - name: Twins Flex
+        family: i_form
+        play_count: 12
       - name: Tight
+        family: i_form
+        play_count: 12
       - name: Close
+        family: strong
+        play_count: 12
       - name: H Twins
+        family: strong
+        play_count: 15
       - name: H Twin TE
+        family: strong
+        play_count: 9
       - name: H Pro
+        family: weak
+        play_count: 15
       - name: H Close Flip
+        family: weak
+        play_count: 18
       - name: Split Raven
+        family: shotgun
+        play_count: 18
       - name: Ace Twins
+        family: shotgun
+        play_count: 12
       - name: Raven Trips
+        family: shotgun
+        play_count: 9
       - name: Wing Trips
+        family: shotgun
+        play_count: 15
       - name: Trey Raven
+        family: shotgun
+        play_count: 18
       - name: Bunch Wk
+        family: shotgun
+        play_count: 12
       - name: Spread Y-Flex
+        family: shotgun
+        play_count: 15
       - name: Raven Empty
+        family: shotgun
+        play_count: 12
   - team_id: bill_walsh
     name: Bill Walsh
     playbook_style: null
     formation_count: 14
     formation_families:
-      other: 11
-      spread: 1
-      trips: 1
-      wing: 1
+      other: 7
+      singleback: 7
     personnel_breakdown: null
     formations:
       - name: Solo
+        family: singleback
+        play_count: 18
       - name: East Right
+        family: singleback
+        play_count: 9
       - name: West Right
+        family: singleback
+        play_count: 12
       - name: Deuce Rt Near
+        family: singleback
+        play_count: 9
       - name: Double Wing
+        family: singleback
+        play_count: 21
       - name: Trips Right
+        family: singleback
+        play_count: 15
       - name: Spread
+        family: singleback
+        play_count: 15
       - name: Right
+        family: other
+        play_count: 18
       - name: Right Twins
+        family: other
+        play_count: 18
       - name: Right Close
+        family: other
+        play_count: 15
       - name: Slot
+        family: other
+        play_count: 15
       - name: Close Twins
+        family: other
+        play_count: 15
       - name: Jumbo
+        family: other
+        play_count: 6
       - name: Close
+        family: other
+        play_count: 6
   - team_id: brian_billick
     name: Brian Billick
     playbook_style: null
     formation_count: 17
     formation_families:
-      ace: 1
-      bunch: 1
-      other: 15
+      i_form: 5
+      shotgun: 3
+      singleback: 8
+      weak: 1
     personnel_breakdown: null
     formations:
       - name: Jumbo
+        family: singleback
+        play_count: 15
       - name: Ace
+        family: singleback
+        play_count: 18
       - name: Pair Twins
+        family: singleback
+        play_count: 18
       - name: Pair Slot
+        family: singleback
+        play_count: 18
       - name: Slot Flex
+        family: singleback
+        play_count: 21
       - name: Y-Trips
+        family: singleback
+        play_count: 21
       - name: Bunch
+        family: singleback
+        play_count: 12
       - name: Slot Y-Flex
+        family: singleback
+        play_count: 12
       - name: Pro
+        family: i_form
+        play_count: 21
       - name: Pro Twins
+        family: i_form
+        play_count: 18
       - name: Slot
+        family: i_form
+        play_count: 12
       - name: Tight
+        family: i_form
+        play_count: 15
       - name: Tight Pair
+        family: i_form
+        play_count: 12
       - name: Twin TE
+        family: weak
+        play_count: 9
       - name: Doubles
+        family: shotgun
+        play_count: 15
       - name: Y-Trips HB Wk
+        family: shotgun
+        play_count: 15
       - name: Normal Y-Flex
+        family: shotgun
+        play_count: 12
   - team_id: buffalo_bills
     name: Buffalo Bills
     playbook_style: null
     formation_count: 19
     formation_families:
-      ace: 1
-      bunch: 2
-      empty: 1
-      other: 13
-      trips: 2
+      i_form: 3
+      pistol: 1
+      shotgun: 8
+      singleback: 6
+      wildcat: 1
     personnel_breakdown: null
     formations:
       - name: Big Wing
+        family: singleback
+        play_count: 18
       - name: Ace Pair Twins
+        family: singleback
+        play_count: 15
       - name: Tight Doubles
+        family: singleback
+        play_count: 12
       - name: Wing Trips
+        family: singleback
+        play_count: 18
       - name: Bunch
+        family: singleback
+        play_count: 12
       - name: Slot Y-Flex
+        family: singleback
+        play_count: 15
       - name: Pro
+        family: i_form
+        play_count: 18
       - name: Twins Flex
+        family: i_form
+        play_count: 18
       - name: Tight Pair
+        family: i_form
+        play_count: 15
       - name: Strong Slot Bills
+        family: pistol
+        play_count: 18
       - name: Split Slot
+        family: shotgun
+        play_count: 21
       - name: Doubles Wing
+        family: shotgun
+        play_count: 18
       - name: Bunch Wk
+        family: shotgun
+        play_count: 15
       - name: Normal Y-Flex
+        family: shotgun
+        play_count: 21
       - name: Trips Y-Flex
+        family: shotgun
+        play_count: 18
       - name: Trio Open
+        family: shotgun
+        play_count: 18
       - name: Trips Open
+        family: shotgun
+        play_count: 24
       - name: Empty Base
+        family: shotgun
+        play_count: 15
       - name: Normal
+        family: wildcat
+        play_count: 3
   - team_id: carolina_panthers
     name: Carolina Panthers
     playbook_style: null
     formation_count: 22
     formation_families:
-      ace: 2
-      bunch: 1
-      empty: 1
-      other: 16
-      spread: 1
-      trips: 1
+      i_form: 2
+      pistol: 3
+      shotgun: 9
+      singleback: 6
+      weak: 1
+      wildcat: 1
     personnel_breakdown: null
     formations:
       - name: Ace
+        family: singleback
+        play_count: 18
       - name: Ace Pair Flex
+        family: singleback
+        play_count: 12
       - name: Bunch Ace
+        family: singleback
+        play_count: 15
       - name: Panther Doubles
+        family: singleback
+        play_count: 18
       - name: Tight Slot
+        family: singleback
+        play_count: 12
       - name: Tight Slots
+        family: singleback
+        play_count: 12
       - name: Tight Pair
+        family: i_form
+        play_count: 15
       - name: Pro
+        family: i_form
+        play_count: 18
       - name: Twins
+        family: weak
+        play_count: 12
       - name: Full Panther
+        family: pistol
+        play_count: 15
       - name: Strong
+        family: pistol
+        play_count: 18
       - name: Weak
+        family: pistol
+        play_count: 15
       - name: Split Panther
+        family: shotgun
+        play_count: 15
       - name: Heavy Panther
+        family: shotgun
+        play_count: 3
       - name: Doubles
+        family: shotgun
+        play_count: 27
       - name: V-Trips TE Slot
+        family: shotgun
+        play_count: 21
       - name: Y-Trips TE Slot
+        family: shotgun
+        play_count: 21
       - name: Trips TE
+        family: shotgun
+        play_count: 18
       - name: Spread Y-Slot
+        family: shotgun
+        play_count: 15
       - name: Trey Open
+        family: shotgun
+        play_count: 21
       - name: Empty Base
+        family: shotgun
+        play_count: 12
       - name: Slot Flex
+        family: wildcat
+        play_count: 3
   - team_id: chicago_bears
     name: Chicago Bears
     playbook_style: null
     formation_count: 20
     formation_families:
-      ace: 2
-      bunch: 1
-      empty: 1
-      other: 15
-      spread: 1
+      i_form: 3
+      shotgun: 9
+      singleback: 7
+      strong: 1
     personnel_breakdown: null
     formations:
       - name: Ace
+        family: singleback
+        play_count: 21
       - name: Ace Pair Twins
+        family: singleback
+        play_count: 18
       - name: Doubles
+        family: singleback
+        play_count: 18
       - name: Y-Trips Bear
+        family: singleback
+        play_count: 21
       - name: Bunch
+        family: singleback
+        play_count: 15
       - name: Tight Clev
+        family: singleback
+        play_count: 0
       - name: Tight Flex
+        family: singleback
+        play_count: 9
       - name: Pro
+        family: i_form
+        play_count: 18
       - name: Twins Flex
+        family: i_form
+        play_count: 18
       - name: Tight
+        family: i_form
+        play_count: 18
       - name: Tight Pair
+        family: strong
+        play_count: 15
       - name: Split Offset
+        family: shotgun
+        play_count: 15
       - name: Doubles Wk
+        family: shotgun
+        play_count: 15
       - name: Y-Trips Wk
+        family: shotgun
+        play_count: 15
       - name: Trio
+        family: shotgun
+        play_count: 18
       - name: Snugs Flip
+        family: shotgun
+        play_count: 12
       - name: Spread Flex Wk
+        family: shotgun
+        play_count: 12
       - name: Trey Open
+        family: shotgun
+        play_count: 18
       - name: Empty Trey
+        family: shotgun
+        play_count: 12
       - name: 5WR Trio
+        family: shotgun
+        play_count: 15
   - team_id: cincinnati_bengals
     name: Cincinnati Bengals
     playbook_style: null
     formation_count: 21
     formation_families:
-      ace: 2
-      bunch: 2
-      empty: 1
-      other: 13
-      spread: 2
-      trips: 1
+      i_form: 2
+      shotgun: 9
+      singleback: 6
+      strong: 3
+      wildcat: 1
     personnel_breakdown: null
     formations:
       - name: Ace
+        family: singleback
+        play_count: 15
       - name: Ace Pair
+        family: singleback
+        play_count: 18
       - name: Doubles
+        family: singleback
+        play_count: 21
       - name: Y-Trips
+        family: singleback
+        play_count: 15
       - name: Snugs Flip
+        family: singleback
+        play_count: 12
       - name: Bunch
+        family: singleback
+        play_count: 15
       - name: Pro
+        family: i_form
+        play_count: 15
       - name: Tight Pair
+        family: i_form
+        play_count: 18
       - name: Close
+        family: strong
+        play_count: 12
       - name: Y-Flex
+        family: strong
+        play_count: 15
       - name: V-Flex
+        family: strong
+        play_count: 15
       - name: Split Slot
+        family: shotgun
+        play_count: 18
       - name: Normal Y-Flex Tight
+        family: shotgun
+        play_count: 15
       - name: Y-Trips Bengal
+        family: shotgun
+        play_count: 21
       - name: Trio
+        family: shotgun
+        play_count: 15
       - name: Bunch Wk
+        family: shotgun
+        play_count: 12
       - name: Spread Y-Slot
+        family: shotgun
+        play_count: 18
       - name: Spread
+        family: shotgun
+        play_count: 18
       - name: Trips Y Iso
+        family: shotgun
+        play_count: 15
       - name: Empty Trey
+        family: shotgun
+        play_count: 15
       - name: Bengal
+        family: wildcat
+        play_count: 3
   - team_id: cleveland_browns
     name: Cleveland Browns
     playbook_style: null
     formation_count: 21
     formation_families:
-      ace: 2
-      bunch: 1
-      empty: 1
-      other: 15
-      spread: 1
-      trips: 1
+      i_form: 3
+      shotgun: 10
+      singleback: 6
+      strong: 2
     personnel_breakdown: null
     formations:
       - name: Jumbo
+        family: singleback
+        play_count: 12
       - name: Ace
+        family: singleback
+        play_count: 12
       - name: Ace Pair Twins
+        family: singleback
+        play_count: 15
       - name: Browns Doubles
+        family: singleback
+        play_count: 18
       - name: Y-Trips
+        family: singleback
+        play_count: 18
       - name: Bunch
+        family: singleback
+        play_count: 18
       - name: Pro
+        family: i_form
+        play_count: 18
       - name: Slot Flex
+        family: i_form
+        play_count: 15
       - name: Tight Pair
+        family: i_form
+        play_count: 15
       - name: Close
+        family: strong
+        play_count: 15
       - name: Twins Flex
+        family: strong
+        play_count: 12
       - name: Split V-Flex
+        family: shotgun
+        play_count: 18
       - name: Tight Doubles On
+        family: shotgun
+        play_count: 12
       - name: Y-Trips Open
+        family: shotgun
+        play_count: 15
       - name: Normal Y-Flex Tight
+        family: shotgun
+        play_count: 15
       - name: Split Y-Flex
+        family: shotgun
+        play_count: 18
       - name: Trips TE
+        family: shotgun
+        play_count: 12
       - name: Snugs Flip
+        family: shotgun
+        play_count: 12
       - name: Spread
+        family: shotgun
+        play_count: 18
       - name: Trey Open
+        family: shotgun
+        play_count: 15
       - name: Empty Trey
+        family: shotgun
+        play_count: 12
   - team_id: dallas_cowboys
     name: Dallas Cowboys
     playbook_style: null
     formation_count: 22
     formation_families:
-      ace: 3
-      bunch: 1
-      empty: 1
-      other: 17
+      i_form: 3
+      shotgun: 8
+      singleback: 8
+      strong: 2
+      wildcat: 1
     personnel_breakdown: null
     formations:
       - name: Jumbo
+        family: singleback
+        play_count: 12
       - name: Ace
+        family: singleback
+        play_count: 18
       - name: Ace Pair
+        family: singleback
+        play_count: 12
       - name: Ace Pair Flex
+        family: singleback
+        play_count: 15
       - name: Doubles
+        family: singleback
+        play_count: 21
       - name: V-Trips
+        family: singleback
+        play_count: 21
       - name: Y-Trips
+        family: singleback
+        play_count: 21
       - name: Bunch
+        family: singleback
+        play_count: 18
       - name: Pro
+        family: i_form
+        play_count: 18
       - name: Slot Flex
+        family: i_form
+        play_count: 15
       - name: Tight Pair
+        family: i_form
+        play_count: 15
       - name: Close
+        family: strong
+        play_count: 18
       - name: Y-Flex
+        family: strong
+        play_count: 12
       - name: Split Cowboy
+        family: shotgun
+        play_count: 15
       - name: Y-Trips Cowboy
+        family: shotgun
+        play_count: 21
       - name: Snugs Flip
+        family: shotgun
+        play_count: 9
       - name: Norm Y-Flex Tight
+        family: shotgun
+        play_count: 18
       - name: Y-Trips Lowboy
+        family: shotgun
+        play_count: 21
       - name: Flip Trips
+        family: shotgun
+        play_count: 9
       - name: Trey Open Cowboy
+        family: shotgun
+        play_count: 15
       - name: Empty Trips TE
+        family: shotgun
+        play_count: 12
       - name: Cowboys
+        family: wildcat
+        play_count: 3
   - team_id: denver_broncos
     name: Denver Broncos
     playbook_style: null
     formation_count: 21
     formation_families:
-      bunch: 2
-      empty: 1
-      other: 17
-      trips: 1
+      i_form: 2
+      shotgun: 12
+      singleback: 7
     personnel_breakdown: null
     formations:
       - name: Jumbo Z
+        family: singleback
+        play_count: 9
       - name: Deuce
+        family: singleback
+        play_count: 21
       - name: Deuce Twins
+        family: singleback
+        play_count: 15
       - name: Dice Slot
+        family: singleback
+        play_count: 27
       - name: Jumbo 2
+        family: singleback
+        play_count: 9
       - name: Y-Trips
+        family: singleback
+        play_count: 15
       - name: Bunch
+        family: singleback
+        play_count: 15
       - name: Tight
+        family: i_form
+        play_count: 15
       - name: Tight Pair
+        family: i_form
+        play_count: 12
       - name: Split Slot
+        family: shotgun
+        play_count: 21
       - name: Dice Slot Wk
+        family: shotgun
+        play_count: 15
       - name: Dice
+        family: shotgun
+        play_count: 18
       - name: Dice Wk
+        family: shotgun
+        play_count: 15
       - name: Deuce Trips
+        family: shotgun
+        play_count: 12
       - name: Y-Trips HB Wk
+        family: shotgun
+        play_count: 21
       - name: Trips Over
+        family: shotgun
+        play_count: 21
       - name: Bunch Wk
+        family: shotgun
+        play_count: 15
       - name: Dice V-Flex
+        family: shotgun
+        play_count: 18
       - name: Trey 4WR Str
+        family: shotgun
+        play_count: 18
       - name: Dice Y-Flex
+        family: shotgun
+        play_count: 18
       - name: Empty Trey
+        family: shotgun
+        play_count: 9
   - team_id: detroit_lions
     name: Detroit Lions
     playbook_style: null
     formation_count: 22
     formation_families:
-      ace: 5
-      bunch: 1
-      empty: 2
-      other: 13
-      spread: 1
+      i_form: 2
+      pistol: 2
+      shotgun: 9
+      singleback: 9
     personnel_breakdown: null
     formations:
       - name: Jumbo
+        family: singleback
+        play_count: 12
       - name: Ace
+        family: singleback
+        play_count: 18
       - name: Ace Pair
+        family: singleback
+        play_count: 18
       - name: Ace Pair Flex
+        family: singleback
+        play_count: 15
       - name: Doubles
+        family: singleback
+        play_count: 18
       - name: Y Trips Lion
+        family: singleback
+        play_count: 18
       - name: V-Trips Lion
+        family: singleback
+        play_count: 18
       - name: Y-Trips Lion
+        family: singleback
+        play_count: 18
       - name: Bunch
+        family: singleback
+        play_count: 15
       - name: Pro
+        family: i_form
+        play_count: 15
       - name: Tight Pair
+        family: i_form
+        play_count: 12
       - name: Strong
+        family: pistol
+        play_count: 15
       - name: Twin TE Flex
+        family: pistol
+        play_count: 12
       - name: Split Lion
+        family: shotgun
+        play_count: 18
       - name: Ace Twins
+        family: shotgun
+        play_count: 15
       - name: Ace TE Slot
+        family: shotgun
+        play_count: 15
       - name: Y-Trips Wk
+        family: shotgun
+        play_count: 18
       - name: Snugs Flip
+        family: shotgun
+        play_count: 12
       - name: Spread Y-Flex
+        family: shotgun
+        play_count: 15
       - name: Trey Open
+        family: shotgun
+        play_count: 15
       - name: Empty Trey
+        family: shotgun
+        play_count: 15
       - name: Empty Lion
+        family: shotgun
+        play_count: 12
   - team_id: dick_vermeil
     name: Dick Vermeil
     playbook_style: null
     formation_count: 23
     formation_families:
-      ace: 2
-      bunch: 1
-      empty: 1
-      other: 19
+      i_form: 4
+      shotgun: 5
+      singleback: 11
+      strong: 3
     personnel_breakdown: null
     formations:
       - name: Ace
+        family: singleback
+        play_count: 15
       - name: Ace Twins
+        family: singleback
+        play_count: 15
       - name: F Pair Twins
+        family: singleback
+        play_count: 15
       - name: Bunch Base
+        family: singleback
+        play_count: 15
       - name: Tight Doubles
+        family: singleback
+        play_count: 9
       - name: Doubles
+        family: singleback
+        play_count: 21
       - name: Y-Trips
+        family: singleback
+        play_count: 21
       - name: Trio
+        family: singleback
+        play_count: 15
       - name: Slot Y-Flex
+        family: singleback
+        play_count: 12
       - name: V-Trips
+        family: singleback
+        play_count: 21
       - name: Flip Trips
+        family: singleback
+        play_count: 12
       - name: Pro
+        family: i_form
+        play_count: 21
       - name: Pro Twins
+        family: i_form
+        play_count: 18
       - name: Tight
+        family: i_form
+        play_count: 15
       - name: Tight Pair
+        family: i_form
+        play_count: 12
       - name: H Pro
+        family: strong
+        play_count: 15
       - name: Y-Flex
+        family: strong
+        play_count: 15
       - name: V-Flex
+        family: strong
+        play_count: 15
       - name: Split V-Flex
+        family: shotgun
+        play_count: 15
       - name: Normal Y-Flex
+        family: shotgun
+        play_count: 12
       - name: Empty Spread
+        family: shotgun
+        play_count: 12
       - name: Normal V-Flex
+        family: shotgun
+        play_count: 12
       - name: Split Y-Flex
+        family: shotgun
+        play_count: 15
   - team_id: green_bay_packers
     name: Green Bay Packers
     playbook_style: null
     formation_count: 22
     formation_families:
-      ace: 3
-      bunch: 2
-      empty: 3
-      other: 14
+      i_form: 3
+      shotgun: 13
+      singleback: 6
     personnel_breakdown: null
     formations:
       - name: Ace
+        family: singleback
+        play_count: 18
       - name: Ace Twins
+        family: singleback
+        play_count: 12
       - name: Ace Pair
+        family: singleback
+        play_count: 18
       - name: Flex
+        family: singleback
+        play_count: 24
       - name: Tight Flex
+        family: singleback
+        play_count: 9
       - name: Bunch
+        family: singleback
+        play_count: 15
       - name: Pro
+        family: i_form
+        play_count: 21
       - name: Slot Flex
+        family: i_form
+        play_count: 15
       - name: Tight Pair
+        family: i_form
+        play_count: 15
       - name: Doubles On
+        family: shotgun
+        play_count: 21
       - name: Doubles Flex Wing
+        family: shotgun
+        play_count: 15
       - name: Y-Trips Wk
+        family: shotgun
+        play_count: 18
       - name: Wing Offset Wk
+        family: shotgun
+        play_count: 12
       - name: Normal Y-Flex Tight
+        family: shotgun
+        play_count: 9
       - name: V-Trips Wk
+        family: shotgun
+        play_count: 18
       - name: Bunch Wk
+        family: shotgun
+        play_count: 18
       - name: Double Flex
+        family: shotgun
+        play_count: 15
       - name: Pack Trips
+        family: shotgun
+        play_count: 21
       - name: Empty Trey
+        family: shotgun
+        play_count: 9
       - name: Empty Wing Trip
+        family: shotgun
+        play_count: 9
       - name: Empty Wing Trio
+        family: shotgun
+        play_count: 9
       - name: Flex Trey
+        family: shotgun
+        play_count: 12
   - team_id: houston_texans
     name: Houston Texans
     playbook_style: null
     formation_count: 24
     formation_families:
-      ace: 3
-      bunch: 2
-      empty: 2
-      other: 16
-      trips: 1
+      i_form: 3
+      shotgun: 10
+      singleback: 10
+      weak: 1
     personnel_breakdown: null
     formations:
       - name: Jumbo Z
+        family: singleback
+        play_count: 9
       - name: Ace
+        family: singleback
+        play_count: 12
       - name: Ace Close
+        family: singleback
+        play_count: 12
       - name: Ace Twins
+        family: singleback
+        play_count: 21
       - name: Jumbo 2
+        family: singleback
+        play_count: 9
       - name: Bunch Base
+        family: singleback
+        play_count: 15
       - name: Tight Doubles
+        family: singleback
+        play_count: 15
       - name: Doubles
+        family: singleback
+        play_count: 21
       - name: Y-Trips Texan
+        family: singleback
+        play_count: 15
       - name: Wing Trio
+        family: singleback
+        play_count: 15
       - name: Pro
+        family: i_form
+        play_count: 24
       - name: Close
+        family: i_form
+        play_count: 12
       - name: Tight Pair
+        family: i_form
+        play_count: 15
       - name: Twins
+        family: weak
+        play_count: 12
       - name: Split Close
+        family: shotgun
+        play_count: 12
       - name: Split Texan
+        family: shotgun
+        play_count: 12
       - name: Tight Doubles On
+        family: shotgun
+        play_count: 9
       - name: Y-Trips HB Wk
+        family: shotgun
+        play_count: 18
       - name: Tight Doubles Un
+        family: shotgun
+        play_count: 9
       - name: Trips TE
+        family: shotgun
+        play_count: 15
       - name: Snugs Flip
+        family: shotgun
+        play_count: 9
       - name: Bunch Wk
+        family: shotgun
+        play_count: 18
       - name: Empty Y-Flex
+        family: shotgun
+        play_count: 12
       - name: Empty V-Flex
+        family: shotgun
+        play_count: 12
   - team_id: indianapolis_colts
     name: Indianapolis Colts
     playbook_style: null
     formation_count: 24
     formation_families:
-      ace: 2
-      bunch: 2
-      empty: 1
-      i_form: 1
-      other: 16
-      spread: 1
-      trips: 1
+      i_form: 6
+      pistol: 2
+      shotgun: 7
+      singleback: 7
+      weak: 1
+      wildcat: 1
     personnel_breakdown: null
     formations:
       - name: Jumbo
+        family: singleback
+        play_count: 12
       - name: Ace
+        family: singleback
+        play_count: 21
       - name: Ace Twins
+        family: singleback
+        play_count: 15
       - name: Doubles
+        family: singleback
+        play_count: 21
       - name: Indy Y-Trips
+        family: singleback
+        play_count: 15
       - name: Indy V-Trips
+        family: singleback
+        play_count: 15
       - name: Bunch
+        family: singleback
+        play_count: 12
       - name: Pro
+        family: i_form
+        play_count: 15
       - name: Twins Flex
+        family: i_form
+        play_count: 15
       - name: Tight
+        family: i_form
+        play_count: 15
       - name: Tight Pair
+        family: i_form
+        play_count: 15
       - name: Tackle Over
+        family: i_form
+        play_count: 9
       - name: Hulk
+        family: i_form
+        play_count: 6
       - name: Flex Twins
+        family: weak
+        play_count: 15
       - name: Full House
+        family: pistol
+        play_count: 9
       - name: Y-Trips
+        family: pistol
+        play_count: 21
       - name: Split Close
+        family: shotgun
+        play_count: 12
       - name: Y Trips Wk
+        family: shotgun
+        play_count: 21
       - name: Bunch TE
+        family: shotgun
+        play_count: 12
       - name: Snugs
+        family: shotgun
+        play_count: 9
       - name: Spread Y-Slot
+        family: shotgun
+        play_count: 15
       - name: Trey Open
+        family: shotgun
+        play_count: 12
       - name: Empty Trey
+        family: shotgun
+        play_count: 18
       - name: Trips Over
+        family: wildcat
+        play_count: 3
   - team_id: jacksonville_jaguars
     name: Jacksonville Jaguars
     playbook_style: null
     formation_count: 23
     formation_families:
-      ace: 4
-      bunch: 2
-      empty: 3
-      other: 12
-      spread: 1
-      trips: 1
+      i_form: 3
+      shotgun: 12
+      singleback: 7
+      strong: 1
     personnel_breakdown: null
     formations:
       - name: Jumbo Z
+        family: singleback
+        play_count: 9
       - name: Ace
+        family: singleback
+        play_count: 18
       - name: Ace Twins
+        family: singleback
+        play_count: 15
       - name: Ace Pair Slot
+        family: singleback
+        play_count: 15
       - name: Jumbo 2
+        family: singleback
+        play_count: 9
       - name: Doubles
+        family: singleback
+        play_count: 21
       - name: Bunch
+        family: singleback
+        play_count: 18
       - name: Pro
+        family: i_form
+        play_count: 24
       - name: Tight
+        family: i_form
+        play_count: 15
       - name: Tight Pair
+        family: i_form
+        play_count: 12
       - name: Twins
+        family: strong
+        play_count: 15
       - name: Split Jaguar
+        family: shotgun
+        play_count: 12
       - name: Ace Wing TE
+        family: shotgun
+        play_count: 12
       - name: Y-Trips HB Wk
+        family: shotgun
+        play_count: 21
       - name: Bunch Wk
+        family: shotgun
+        play_count: 18
       - name: V-Trips HB Wk
+        family: shotgun
+        play_count: 21
       - name: Trips TE
+        family: shotgun
+        play_count: 15
       - name: Tight Flex
+        family: shotgun
+        play_count: 15
       - name: Spread Y-Flex
+        family: shotgun
+        play_count: 18
       - name: Trey Open
+        family: shotgun
+        play_count: 18
       - name: Empty Base
+        family: shotgun
+        play_count: 12
       - name: Empty Y-Flex
+        family: shotgun
+        play_count: 15
       - name: Empty V-Flex
+        family: shotgun
+        play_count: 15
   - team_id: jimmy_johnson
     name: Jimmy Johnson
     playbook_style: null
     formation_count: 18
     formation_families:
-      ace: 2
-      other: 15
-      spread: 1
+      i_form: 5
+      shotgun: 2
+      singleback: 11
     personnel_breakdown: null
     formations:
       - name: Ace
+        family: singleback
+        play_count: 15
       - name: Big Wing
+        family: singleback
+        play_count: 18
       - name: Ace Pair
+        family: singleback
+        play_count: 15
       - name: F Pair Twins
+        family: singleback
+        play_count: 15
       - name: Doubles
+        family: singleback
+        play_count: 21
       - name: Slot Wing
+        family: singleback
+        play_count: 12
       - name: Pair Twins
+        family: singleback
+        play_count: 15
       - name: V-Trips
+        family: singleback
+        play_count: 18
       - name: Y-Trips
+        family: singleback
+        play_count: 18
       - name: Wing Trips
+        family: singleback
+        play_count: 15
       - name: Spread
+        family: singleback
+        play_count: 9
       - name: Pro
+        family: i_form
+        play_count: 18
       - name: TE Flip
+        family: i_form
+        play_count: 9
       - name: Pro Twins
+        family: i_form
+        play_count: 18
       - name: Tight
+        family: i_form
+        play_count: 15
       - name: Tight Pair
+        family: i_form
+        play_count: 12
       - name: Split Slot
+        family: shotgun
+        play_count: 15
       - name: Normal Y-Slot
+        family: shotgun
+        play_count: 15
   - team_id: joe_gibbs
     name: Joe Gibbs
     playbook_style: null
     formation_count: 20
     formation_families:
-      bunch: 2
-      other: 17
-      trips: 1
+      i_form: 3
+      singleback: 15
+      weak: 2
     personnel_breakdown: null
     formations:
       - name: Jumbo Wing
+        family: singleback
+        play_count: 9
       - name: Dot
+        family: singleback
+        play_count: 15
       - name: Dot Twins
+        family: singleback
+        play_count: 15
       - name: Twins Right
+        family: singleback
+        play_count: 18
       - name: Twins Clip
+        family: singleback
+        play_count: 12
       - name: Twins Flip
+        family: singleback
+        play_count: 12
       - name: F Pair Twins
+        family: singleback
+        play_count: 15
       - name: Deuce Wing
+        family: singleback
+        play_count: 15
       - name: Walk Right
+        family: singleback
+        play_count: 15
       - name: I Pair Twins
+        family: singleback
+        play_count: 15
       - name: Train Right
+        family: singleback
+        play_count: 15
       - name: Bunch
+        family: singleback
+        play_count: 15
       - name: Bunch Rt Freeze
+        family: singleback
+        play_count: 9
       - name: Rocket
+        family: singleback
+        play_count: 15
       - name: Trips Open
+        family: singleback
+        play_count: 12
       - name: Close
+        family: i_form
+        play_count: 12
       - name: Slot
+        family: i_form
+        play_count: 12
       - name: Tight Pair
+        family: i_form
+        play_count: 12
       - name: H Twin TE
+        family: weak
+        play_count: 9
       - name: H Wing TE
+        family: weak
+        play_count: 6
   - team_id: john_madden
     name: John Madden
     playbook_style: null
     formation_count: 14
     formation_families:
-      ace: 1
-      empty: 1
-      other: 12
+      far: 2
+      i_form: 2
+      near: 2
+      shotgun: 3
+      singleback: 5
     personnel_breakdown: null
     formations:
       - name: Ace Wing
+        family: singleback
+        play_count: 12
       - name: Pair
+        family: singleback
+        play_count: 15
       - name: F Pair T Ins
+        family: singleback
+        play_count: 15
       - name: Slot
+        family: singleback
+        play_count: 18
       - name: F Pair Twins
+        family: singleback
+        play_count: 15
       - name: Pro
+        family: i_form
+        play_count: 18
       - name: Tight
+        family: i_form
+        play_count: 15
       - name: Right
+        family: far
+        play_count: 18
       - name: Right Twins
+        family: far
+        play_count: 12
       - name: Close Twins
+        family: near
+        play_count: 12
       - name: Jumbo
+        family: near
+        play_count: 6
       - name: Doubles
+        family: shotgun
+        play_count: 12
       - name: Y-Trips Open
+        family: shotgun
+        play_count: 15
       - name: Empty Base
+        family: shotgun
+        play_count: 15
   - team_id: kansas_city_chiefs
     name: Kansas City Chiefs
     playbook_style: null
     formation_count: 23
     formation_families:
-      ace: 1
-      bunch: 2
-      empty: 2
-      other: 16
-      spread: 1
-      trips: 1
+      i_form: 3
+      pistol: 3
+      shotgun: 12
+      singleback: 4
+      wildcat: 1
     personnel_breakdown: null
     formations:
       - name: Jumbo Pair
+        family: singleback
+        play_count: 9
       - name: Ace
+        family: singleback
+        play_count: 12
       - name: Chief Doubles
+        family: singleback
+        play_count: 24
       - name: Y-Trips
+        family: singleback
+        play_count: 18
       - name: Pro
+        family: i_form
+        play_count: 21
       - name: Slot Flex
+        family: i_form
+        play_count: 15
       - name: Tight Pair
+        family: i_form
+        play_count: 12
       - name: Twin TE Slot
+        family: pistol
+        play_count: 15
       - name: Slot
+        family: pistol
+        play_count: 12
       - name: Trips
+        family: pistol
+        play_count: 18
       - name: Split Offset
+        family: shotgun
+        play_count: 18
       - name: Doubles
+        family: shotgun
+        play_count: 18
       - name: Doubles Wk
+        family: shotgun
+        play_count: 12
       - name: Y-Trips Wk
+        family: shotgun
+        play_count: 21
       - name: Snugs Flip
+        family: shotgun
+        play_count: 12
       - name: Bunch Wk
+        family: shotgun
+        play_count: 12
       - name: Normal Y-Slot
+        family: shotgun
+        play_count: 18
       - name: Spread Flex
+        family: shotgun
+        play_count: 12
       - name: Trey Open
+        family: shotgun
+        play_count: 21
       - name: Empty Trey
+        family: shotgun
+        play_count: 12
       - name: Empty Chief
+        family: shotgun
+        play_count: 9
       - name: Bunch Quads
+        family: shotgun
+        play_count: 9
       - name: Chief
+        family: wildcat
+        play_count: 3
   - team_id: miami_dolphins
     name: Miami Dolphins
     playbook_style: null
     formation_count: 21
     formation_families:
-      ace: 2
-      bunch: 1
-      empty: 2
-      other: 15
-      trips: 1
+      i_form: 2
+      shotgun: 12
+      singleback: 6
+      strong: 1
     personnel_breakdown: null
     formations:
       - name: Jumbo
+        family: singleback
+        play_count: 12
       - name: Ace
+        family: singleback
+        play_count: 18
       - name: Ace Pair
+        family: singleback
+        play_count: 15
       - name: Flex
+        family: singleback
+        play_count: 24
       - name: Wing Trio
+        family: singleback
+        play_count: 12
       - name: Bunch
+        family: singleback
+        play_count: 15
       - name: Pro
+        family: i_form
+        play_count: 21
       - name: Tight
+        family: i_form
+        play_count: 12
       - name: Tight Pair
+        family: strong
+        play_count: 15
       - name: Split Dolphin
+        family: shotgun
+        play_count: 18
       - name: Doubles Wk
+        family: shotgun
+        play_count: 18
       - name: Doubles Wing TE
+        family: shotgun
+        play_count: 15
       - name: Doubles Flex Wing
+        family: shotgun
+        play_count: 12
       - name: Tight Doubles On
+        family: shotgun
+        play_count: 12
       - name: Dolphin Trips
+        family: shotgun
+        play_count: 21
       - name: Wing Trio Wk
+        family: shotgun
+        play_count: 18
       - name: Wing Offset Wk
+        family: shotgun
+        play_count: 12
       - name: Trips TE
+        family: shotgun
+        play_count: 15
       - name: Snugs Flip
+        family: shotgun
+        play_count: 9
       - name: Empty Base
+        family: shotgun
+        play_count: 12
       - name: Empty Trey
+        family: shotgun
+        play_count: 9
   - team_id: mike_ditka
     name: Mike Ditka
     playbook_style: null
     formation_count: 13
     formation_families:
-      ace: 3
-      other: 10
+      i_form: 4
+      singleback: 8
+      strong: 1
     personnel_breakdown: null
     formations:
       - name: Ace
+        family: singleback
+        play_count: 15
       - name: Ace Twins
+        family: singleback
+        play_count: 15
       - name: Ace Pair
+        family: singleback
+        play_count: 15
       - name: F Pair Twins
+        family: singleback
+        play_count: 15
       - name: Doubles
+        family: singleback
+        play_count: 21
       - name: Y-Trips
+        family: singleback
+        play_count: 18
       - name: Wing Trips
+        family: singleback
+        play_count: 15
       - name: Slot Y-Flex
+        family: singleback
+        play_count: 12
       - name: Pro
+        family: i_form
+        play_count: 18
       - name: TE Flip
+        family: i_form
+        play_count: 9
       - name: Pro Twins
+        family: i_form
+        play_count: 18
       - name: Tight
+        family: i_form
+        play_count: 15
       - name: Tight Pair
+        family: strong
+        play_count: 12
   - team_id: minnesota_vikings
     name: Minnesota Vikings
     playbook_style: null
     formation_count: 24
     formation_families:
-      ace: 3
-      bunch: 1
-      empty: 2
-      other: 15
-      trips: 3
+      i_form: 4
+      shotgun: 12
+      singleback: 7
+      strong: 1
     personnel_breakdown: null
     formations:
       - name: Jumbo Pair
+        family: singleback
+        play_count: 12
       - name: Ace
+        family: singleback
+        play_count: 15
       - name: Ace Twins
+        family: singleback
+        play_count: 15
       - name: Ace Pair Twins
+        family: singleback
+        play_count: 12
       - name: Doubles
+        family: singleback
+        play_count: 10
       - name: Y-Trips
+        family: singleback
+        play_count: 18
       - name: Bunch
+        family: singleback
+        play_count: 18
       - name: Pro
+        family: i_form
+        play_count: 18
       - name: Twins Flex
+        family: i_form
+        play_count: 18
       - name: Slot Flex
+        family: i_form
+        play_count: 15
       - name: Tight Pair
+        family: i_form
+        play_count: 12
       - name: Close
+        family: strong
+        play_count: 12
       - name: Split Viking
+        family: shotgun
+        play_count: 12
       - name: Doubles On
+        family: shotgun
+        play_count: 18
       - name: Y-Trips Wk
+        family: shotgun
+        play_count: 21
       - name: Trips TE
+        family: shotgun
+        play_count: 18
       - name: Doubles Un
+        family: shotgun
+        play_count: 18
       - name: Double Flex
+        family: shotgun
+        play_count: 15
       - name: Trips Y Iso
+        family: shotgun
+        play_count: 12
       - name: Trips V Iso
+        family: shotgun
+        play_count: 12
       - name: Snugs Flip
+        family: shotgun
+        play_count: 12
       - name: Trey Open
+        family: shotgun
+        play_count: 15
       - name: Empty Bunch
+        family: shotgun
+        play_count: 12
       - name: Empty Trey
+        family: shotgun
+        play_count: 12
   - team_id: new_england_patriots
     name: New England Patriots
     playbook_style: null
     formation_count: 27
     formation_families:
-      ace: 7
-      bunch: 1
-      empty: 3
-      other: 15
-      trips: 1
+      i_form: 2
+      shotgun: 18
+      singleback: 5
+      strong: 2
     personnel_breakdown: null
     formations:
       - name: Jumbo Pair
+        family: singleback
+        play_count: 9
       - name: Deuce Wing
+        family: singleback
+        play_count: 15
       - name: Ace Pair Twins
+        family: singleback
+        play_count: 15
       - name: Normal Patriots
+        family: singleback
+        play_count: 24
       - name: Bunch
+        family: singleback
+        play_count: 12
       - name: TE Flip
+        family: i_form
+        play_count: 12
       - name: Tight Pair
+        family: i_form
+        play_count: 12
       - name: Pro
+        family: strong
+        play_count: 15
       - name: Twins
+        family: strong
+        play_count: 12
       - name: Split Patriot
+        family: shotgun
+        play_count: 12
       - name: Ace
+        family: shotgun
+        play_count: 12
       - name: Ace Pair Flex
+        family: shotgun
+        play_count: 12
       - name: Normal Flex Wk Pats
+        family: shotgun
+        play_count: 9
       - name: Ace Wing TE
+        family: shotgun
+        play_count: 21
       - name: Normal Wing Pats
+        family: shotgun
+        play_count: 9
       - name: Y-Trips Wk
+        family: shotgun
+        play_count: 15
       - name: Pats Wing Trips
+        family: shotgun
+        play_count: 21
       - name: Trips TE
+        family: shotgun
+        play_count: 12
       - name: Oca Tight Slots
+        family: shotgun
+        play_count: 12
       - name: Ace Tight Slots
+        family: shotgun
+        play_count: 12
       - name: Normal Y-Slot
+        family: shotgun
+        play_count: 18
       - name: Ace Trips Y-Iso
+        family: shotgun
+        play_count: 9
       - name: Empty Ace Patriot
+        family: shotgun
+        play_count: 15
       - name: Empty Y-Flex
+        family: shotgun
+        play_count: 9
       - name: Ace Trips V-Iso
+        family: shotgun
+        play_count: 9
       - name: Empty V-Flex
+        family: shotgun
+        play_count: 9
       - name: 5WR Patriot
+        family: shotgun
+        play_count: 12
   - team_id: new_orleans_saints
     name: New Orleans Saints
     playbook_style: null
     formation_count: 23
     formation_families:
-      ace: 1
-      bunch: 2
-      empty: 3
-      other: 14
-      spread: 1
-      trips: 2
+      i_form: 3
+      shotgun: 12
+      singleback: 7
+      weak: 1
     personnel_breakdown: null
     formations:
       - name: Jumbo
+        family: singleback
+        play_count: 12
       - name: Ace
+        family: singleback
+        play_count: 15
       - name: Twin TE Flex
+        family: singleback
+        play_count: 15
       - name: Bunch Base
+        family: singleback
+        play_count: 12
       - name: Doubles
+        family: singleback
+        play_count: 18
       - name: Y-Trips
+        family: singleback
+        play_count: 15
       - name: Snugs Flip
+        family: singleback
+        play_count: 18
       - name: Pro
+        family: i_form
+        play_count: 15
       - name: Twins Flex
+        family: i_form
+        play_count: 21
       - name: Tight
+        family: i_form
+        play_count: 15
       - name: H Twins
+        family: weak
+        play_count: 12
       - name: Split Offset
+        family: shotgun
+        play_count: 12
       - name: Doubles Wk
+        family: shotgun
+        play_count: 15
       - name: Wing Trio Wk
+        family: shotgun
+        play_count: 18
       - name: Snugs
+        family: shotgun
+        play_count: 12
       - name: Bunch Wk
+        family: shotgun
+        play_count: 15
       - name: Spread Y-Slot
+        family: shotgun
+        play_count: 15
       - name: Trips Y Iso
+        family: shotgun
+        play_count: 15
       - name: Trips V Iso
+        family: shotgun
+        play_count: 15
       - name: Trey Open
+        family: shotgun
+        play_count: 21
       - name: Empty Trey
+        family: shotgun
+        play_count: 12
       - name: Empty Saint
+        family: shotgun
+        play_count: 9
       - name: Empty V-Saints
+        family: shotgun
+        play_count: 12
   - team_id: new_york_giants
     name: New York Giants
     playbook_style: null
     formation_count: 21
     formation_families:
-      ace: 3
-      bunch: 1
-      empty: 2
-      other: 13
-      spread: 1
-      trips: 1
+      i_form: 4
+      shotgun: 11
+      singleback: 6
     personnel_breakdown: null
     formations:
       - name: Jumbo
+        family: singleback
+        play_count: 12
       - name: Ace
+        family: singleback
+        play_count: 18
       - name: Ace Pair Twins
+        family: singleback
+        play_count: 15
       - name: Doubles Giants
+        family: singleback
+        play_count: 21
       - name: Y-Trips
+        family: singleback
+        play_count: 18
       - name: Bunch
+        family: singleback
+        play_count: 15
       - name: Pro
+        family: i_form
+        play_count: 18
       - name: Pro Twins
+        family: i_form
+        play_count: 12
       - name: Tight
+        family: i_form
+        play_count: 15
       - name: Tight Pair
+        family: i_form
+        play_count: 12
       - name: Split Giant
+        family: shotgun
+        play_count: 15
       - name: Ace Twins
+        family: shotgun
+        play_count: 15
       - name: Doubles Wk
+        family: shotgun
+        play_count: 18
       - name: Normal Wing NY
+        family: shotgun
+        play_count: 21
       - name: Y-Trips Wk
+        family: shotgun
+        play_count: 21
       - name: Wing Trips Wk NY
+        family: shotgun
+        play_count: 21
       - name: Trips TE
+        family: shotgun
+        play_count: 12
       - name: Snugs
+        family: shotgun
+        play_count: 9
       - name: Spread
+        family: shotgun
+        play_count: 18
       - name: Empty Giant
+        family: shotgun
+        play_count: 12
       - name: Empty Spread
+        family: shotgun
+        play_count: 12
   - team_id: new_york_jets
     name: New York Jets
     playbook_style: null
     formation_count: 19
     formation_families:
-      ace: 2
-      bunch: 3
-      empty: 2
-      other: 11
-      spread: 1
+      i_form: 2
+      shotgun: 8
+      singleback: 6
+      strong: 3
     personnel_breakdown: null
     formations:
       - name: Jumbo
+        family: singleback
+        play_count: 12
       - name: Ace
+        family: singleback
+        play_count: 15
       - name: Ace Pair Twins
+        family: singleback
+        play_count: 18
       - name: Doubles
+        family: singleback
+        play_count: 18
       - name: Y-Trips
+        family: singleback
+        play_count: 18
       - name: Bunch
+        family: singleback
+        play_count: 15
       - name: Pro
+        family: i_form
+        play_count: 15
       - name: Slot Flex
+        family: i_form
+        play_count: 15
       - name: Close
+        family: strong
+        play_count: 15
       - name: Y-Flex
+        family: strong
+        play_count: 12
       - name: Tight Pair
+        family: strong
+        play_count: 15
       - name: Split Jet
+        family: shotgun
+        play_count: 15
       - name: Snugs
+        family: shotgun
+        play_count: 9
       - name: Bunch Wk
+        family: shotgun
+        play_count: 15
       - name: Spread Y-Slot
+        family: shotgun
+        play_count: 18
       - name: Trey Open
+        family: shotgun
+        play_count: 24
       - name: Empty Trey
+        family: shotgun
+        play_count: 15
       - name: Empty Jet
+        family: shotgun
+        play_count: 9
       - name: Bunch Quads
+        family: shotgun
+        play_count: 9
   - team_id: oakland_raiders
     name: Oakland Raiders
     playbook_style: null
     formation_count: 23
     formation_families:
-      ace: 2
-      bunch: 1
-      empty: 2
-      other: 17
-      spread: 1
+      i_form: 4
+      shotgun: 10
+      singleback: 8
+      weak: 1
     personnel_breakdown: null
     formations:
       - name: Jumbo Z
+        family: singleback
+        play_count: 9
       - name: Ace
+        family: singleback
+        play_count: 21
       - name: Ace Pair Slot
+        family: singleback
+        play_count: 15
       - name: Bunch Base
+        family: singleback
+        play_count: 12
       - name: Jumbo 2
+        family: singleback
+        play_count: 9
       - name: Doubles
+        family: singleback
+        play_count: 15
       - name: Tight Doubles
+        family: singleback
+        play_count: 12
       - name: Wing Trio
+        family: singleback
+        play_count: 15
       - name: Pro
+        family: i_form
+        play_count: 15
       - name: TE Flip
+        family: i_form
+        play_count: 12
       - name: Pro Twins
+        family: i_form
+        play_count: 18
       - name: Tight Pair
+        family: i_form
+        play_count: 15
       - name: Twins
+        family: weak
+        play_count: 12
       - name: Split V-Flex
+        family: shotgun
+        play_count: 15
       - name: Doubles On
+        family: shotgun
+        play_count: 24
       - name: Y-Trips Wk
+        family: shotgun
+        play_count: 21
       - name: Trio Offset
+        family: shotgun
+        play_count: 15
       - name: Split Y-Flex
+        family: shotgun
+        play_count: 15
       - name: Snugs
+        family: shotgun
+        play_count: 9
       - name: Spread Y-Flex
+        family: shotgun
+        play_count: 18
       - name: Trey Open
+        family: shotgun
+        play_count: 21
       - name: Empty Trey
+        family: shotgun
+        play_count: 9
       - name: Empty Spread
+        family: shotgun
+        play_count: 15
   - team_id: pass_balanced
     name: Pass Balanced
     playbook_style: null
     formation_count: 16
     formation_families:
-      ace: 4
-      bunch: 2
-      empty: 1
-      other: 6
-      spread: 2
-      trips: 1
+      i_form: 2
+      shotgun: 6
+      singleback: 8
     personnel_breakdown: null
     formations:
       - name: Ace
+        family: singleback
+        play_count: 21
       - name: Ace Twins
+        family: singleback
+        play_count: 15
       - name: Ace Y Flex
+        family: singleback
+        play_count: 18
       - name: Ace Pair Tight
+        family: singleback
+        play_count: 21
       - name: Tight Flex
+        family: singleback
+        play_count: 9
       - name: Doubles
+        family: singleback
+        play_count: 27
       - name: Bunch
+        family: singleback
+        play_count: 12
       - name: Spread Flex
+        family: singleback
+        play_count: 15
       - name: Pro
+        family: i_form
+        play_count: 21
       - name: Tight Pair
+        family: i_form
+        play_count: 12
       - name: Split Flex
+        family: shotgun
+        play_count: 15
       - name: Y Trips Wk
+        family: shotgun
+        play_count: 21
       - name: Bunch Wk
+        family: shotgun
+        play_count: 12
       - name: Spread Y-Slot
+        family: shotgun
+        play_count: 18
       - name: Trips HB Wk
+        family: shotgun
+        play_count: 18
       - name: Empty Trey
+        family: shotgun
+        play_count: 15
   - team_id: philadelphia_eagles
     name: Philadelphia Eagles
     playbook_style: null
     formation_count: 18
     formation_families:
-      ace: 2
-      bunch: 1
-      empty: 2
-      other: 11
-      spread: 1
-      trips: 1
+      i_form: 2
+      shotgun: 10
+      singleback: 5
+      wildcat: 1
     personnel_breakdown: null
     formations:
       - name: Ace
+        family: singleback
+        play_count: 12
       - name: Ace Pair Twins
+        family: singleback
+        play_count: 18
       - name: Eagle Doubles
+        family: singleback
+        play_count: 24
       - name: Tight Slots
+        family: singleback
+        play_count: 12
       - name: Bunch
+        family: singleback
+        play_count: 15
       - name: Pro
+        family: i_form
+        play_count: 21
       - name: Tight Pair
+        family: i_form
+        play_count: 12
       - name: Split Eagle
+        family: shotgun
+        play_count: 15
       - name: Normal
+        family: shotgun
+        play_count: 27
       - name: Y-Trips Offset
+        family: shotgun
+        play_count: 18
       - name: Wing Trips Offset
+        family: shotgun
+        play_count: 15
       - name: Spread HB Wk
+        family: shotgun
+        play_count: 18
       - name: Trips Offset
+        family: shotgun
+        play_count: 18
       - name: Trio 4WR
+        family: shotgun
+        play_count: 21
       - name: Empty Trey
+        family: shotgun
+        play_count: 12
       - name: Empty Spread
+        family: shotgun
+        play_count: 15
       - name: 5WR Trio
+        family: shotgun
+        play_count: 15
       - name: Philly
+        family: wildcat
+        play_count: 3
   - team_id: pistol
     name: Pistol
     playbook_style: null
     formation_count: 20
     formation_families:
-      ace: 2
-      bunch: 1
-      i_form: 1
-      other: 13
-      spread: 1
-      trips: 2
+      pistol: 20
     personnel_breakdown: null
     formations:
       - name: Full House
+        family: pistol
+        play_count: 12
       - name: Strong
+        family: pistol
+        play_count: 15
       - name: Strong Twins
+        family: pistol
+        play_count: 12
       - name: Strong Slot
+        family: pistol
+        play_count: 13
       - name: Weak
+        family: pistol
+        play_count: 9
       - name: Weak Twins
+        family: pistol
+        play_count: 12
       - name: Weak Slot
+        family: pistol
+        play_count: 15
       - name: Ace
+        family: pistol
+        play_count: 15
       - name: Ace Twins
+        family: pistol
+        play_count: 15
       - name: Twin TE
+        family: pistol
+        play_count: 18
       - name: Twin TE Slot
+        family: pistol
+        play_count: 15
       - name: Wing Trips TE
+        family: pistol
+        play_count: 15
       - name: Slot
+        family: pistol
+        play_count: 18
       - name: V-Trips
+        family: pistol
+        play_count: 15
       - name: Y-Trips
+        family: pistol
+        play_count: 15
       - name: Wing Trips
+        family: pistol
+        play_count: 15
       - name: Trips
+        family: pistol
+        play_count: 15
       - name: Bunch
+        family: pistol
+        play_count: 12
       - name: Spread
+        family: pistol
+        play_count: 15
       - name: Trips Open
+        family: pistol
+        play_count: 18
   - team_id: pittsburgh_steelers
     name: Pittsburgh Steelers
     playbook_style: null
     formation_count: 23
     formation_families:
-      ace: 3
-      bunch: 2
-      empty: 1
-      other: 15
-      spread: 1
-      trips: 1
+      i_form: 3
+      shotgun: 11
+      singleback: 8
+      strong: 1
     personnel_breakdown: null
     formations:
       - name: Jumbo
+        family: singleback
+        play_count: 12
       - name: Ace
+        family: singleback
+        play_count: 12
       - name: Ace Close
+        family: singleback
+        play_count: 9
       - name: Ace Pair Flex
+        family: singleback
+        play_count: 21
       - name: Ditt Doubles
+        family: singleback
+        play_count: 21
       - name: Pitt Doubles
+        family: singleback
+        play_count: 21
       - name: Y-Trips
+        family: singleback
+        play_count: 21
       - name: Bunch
+        family: singleback
+        play_count: 15
       - name: Pro
+        family: i_form
+        play_count: 15
       - name: Twins
+        family: i_form
+        play_count: 15
       - name: Tight Pair
+        family: i_form
+        play_count: 15
       - name: Close
+        family: strong
+        play_count: 15
       - name: Split Close
+        family: shotgun
+        play_count: 12
       - name: Doubles
+        family: shotgun
+        play_count: 21
       - name: Y-Trips Wk
+        family: shotgun
+        play_count: 18
       - name: Wing Trips Wk
+        family: shotgun
+        play_count: 12
       - name: Trio
+        family: shotgun
+        play_count: 18
       - name: V-Trips Wk
+        family: shotgun
+        play_count: 18
       - name: Snugs
+        family: shotgun
+        play_count: 9
       - name: Bunch Wk
+        family: shotgun
+        play_count: 9
       - name: Spread Y-Slot
+        family: shotgun
+        play_count: 15
       - name: Trips HB Wk
+        family: shotgun
+        play_count: 15
       - name: Empty Steeler
+        family: shotgun
+        play_count: 18
   - team_id: run_balanced
     name: Run Balanced
     playbook_style: null
     formation_count: 13
     formation_families:
-      ace: 3
-      other: 9
-      trips: 1
+      i_form: 2
+      singleback: 8
+      weak: 2
+      wildcat: 1
     personnel_breakdown: null
     formations:
       - name: Ace
+        family: singleback
+        play_count: 24
       - name: Ace Twins
+        family: singleback
+        play_count: 15
       - name: Ace Pair Twins
+        family: singleback
+        play_count: 15
       - name: Flex
+        family: singleback
+        play_count: 21
       - name: V-Trips
+        family: singleback
+        play_count: 21
       - name: Y-Trips
+        family: singleback
+        play_count: 21
       - name: Trips
+        family: singleback
+        play_count: 18
       - name: Wing Trio
+        family: singleback
+        play_count: 12
       - name: Pro
+        family: i_form
+        play_count: 24
       - name: Tight Pair
+        family: i_form
+        play_count: 15
       - name: Tight Twins
+        family: weak
+        play_count: 9
       - name: Slot
+        family: weak
+        play_count: 12
       - name: Normal
+        family: wildcat
+        play_count: 3
   - team_id: run_heavy
     name: Run Heavy
     playbook_style: null
     formation_count: 12
     formation_families:
-      ace: 3
-      bunch: 1
-      other: 7
-      spread: 1
+      i_form: 2
+      shotgun: 2
+      singleback: 6
+      strong: 1
+      weak: 1
     personnel_breakdown: null
     formations:
       - name: Jumbo
+        family: singleback
+        play_count: 15
       - name: Ace
+        family: singleback
+        play_count: 18
       - name: Ace Pair Twins
+        family: singleback
+        play_count: 15
       - name: Ace Twins
+        family: singleback
+        play_count: 15
       - name: Bunch
+        family: singleback
+        play_count: 12
       - name: Spread 4WR
+        family: singleback
+        play_count: 12
       - name: Pro
+        family: i_form
+        play_count: 15
       - name: Tight Pair
+        family: i_form
+        play_count: 15
       - name: Twin TE
+        family: strong
+        play_count: 15
       - name: Twins
+        family: weak
+        play_count: 12
       - name: Doubles
+        family: shotgun
+        play_count: 12
       - name: Wing Trips
+        family: shotgun
+        play_count: 15
   - team_id: run_n_gun
     name: Run N Gun
     playbook_style: null
     formation_count: 17
     formation_families:
-      ace: 2
-      empty: 1
-      other: 13
-      spread: 1
+      i_form: 2
+      shotgun: 6
+      singleback: 5
+      strong: 1
+      weak: 2
+      wildcat: 1
     personnel_breakdown: null
     formations:
       - name: Ace
+        family: singleback
+        play_count: 21
       - name: Ace Twins
+        family: singleback
+        play_count: 15
       - name: Y-Trips
+        family: singleback
+        play_count: 24
       - name: Doubles
+        family: singleback
+        play_count: 24
       - name: V-Trips
+        family: singleback
+        play_count: 24
       - name: Pro
+        family: i_form
+        play_count: 18
       - name: Pro Twins
+        family: i_form
+        play_count: 15
       - name: Tight
+        family: strong
+        play_count: 9
       - name: Tight Twins
+        family: weak
+        play_count: 9
       - name: Tight Pair
+        family: weak
+        play_count: 12
       - name: Heavy
+        family: shotgun
+        play_count: 9
       - name: Split Flex
+        family: shotgun
+        play_count: 15
       - name: Tight Flex
+        family: shotgun
+        play_count: 12
       - name: Spread
+        family: shotgun
+        play_count: 18
       - name: Trey Open
+        family: shotgun
+        play_count: 18
       - name: Empty Trio
+        family: shotgun
+        play_count: 15
       - name: Normal
+        family: wildcat
+        play_count: 3
   - team_id: run_and_shoot
     name: Run and Shoot
     playbook_style: null
     formation_count: 7
     formation_families:
-      other: 2
-      spread: 1
-      trips: 4
+      pistol: 1
+      shotgun: 4
+      singleback: 2
     personnel_breakdown: null
     formations:
       - name: Spread
+        family: singleback
+        play_count: 15
       - name: Trips 4WR
+        family: singleback
+        play_count: 15
       - name: Trips Open
+        family: pistol
+        play_count: 21
       - name: Flanker Close
+        family: shotgun
+        play_count: 9
       - name: Trips
+        family: shotgun
+        play_count: 27
       - name: Trips HB Wk
+        family: shotgun
+        play_count: 21
       - name: 5WR Trips
+        family: shotgun
+        play_count: 15
   - team_id: san_diego_chargers
     name: San Diego Chargers
     playbook_style: null
     formation_count: 22
     formation_families:
-      ace: 3
-      bunch: 2
-      empty: 1
-      other: 14
-      spread: 1
-      trips: 1
+      i_form: 3
+      shotgun: 11
+      singleback: 8
     personnel_breakdown: null
     formations:
       - name: Jumbo
+        family: singleback
+        play_count: 12
       - name: Ace
+        family: singleback
+        play_count: 21
       - name: Ace Pair
+        family: singleback
+        play_count: 15
       - name: Ace Pair Twins
+        family: singleback
+        play_count: 15
       - name: Tight Doubles
+        family: singleback
+        play_count: 12
       - name: Doubles
+        family: singleback
+        play_count: 15
       - name: Wing Trio
+        family: singleback
+        play_count: 12
       - name: Bunch
+        family: singleback
+        play_count: 15
       - name: Pro
+        family: i_form
+        play_count: 21
       - name: Pro Twins
+        family: i_form
+        play_count: 15
       - name: Tight
+        family: i_form
+        play_count: 15
       - name: Split V-Flex
+        family: shotgun
+        play_count: 18
       - name: Normal Y-Flex Tight
+        family: shotgun
+        play_count: 15
       - name: Doubles Wk
+        family: shotgun
+        play_count: 12
       - name: Y-Trips Open
+        family: shotgun
+        play_count: 18
       - name: Normal V-Flex Tight
+        family: shotgun
+        play_count: 15
       - name: Split Y-Flex
+        family: shotgun
+        play_count: 18
       - name: Trips TE
+        family: shotgun
+        play_count: 12
       - name: Bunch Wk
+        family: shotgun
+        play_count: 12
       - name: Spread
+        family: shotgun
+        play_count: 15
       - name: Trey Open Charger
+        family: shotgun
+        play_count: 15
       - name: Empty Trey
+        family: shotgun
+        play_count: 12
   - team_id: san_francisco_49ers
     name: San Francisco 49ers
     playbook_style: null
     formation_count: 23
     formation_families:
-      ace: 3
-      bunch: 2
-      empty: 1
-      i_form: 2
-      other: 15
+      i_form: 5
+      pistol: 6
+      shotgun: 6
+      singleback: 6
     personnel_breakdown: null
     formations:
       - name: Jumbo Pair
+        family: singleback
+        play_count: 9
       - name: Ace Close
+        family: singleback
+        play_count: 12
       - name: Ace Pair
+        family: singleback
+        play_count: 15
       - name: Twin TE Flex
+        family: singleback
+        play_count: 15
       - name: Flex
+        family: singleback
+        play_count: 18
       - name: Bunch
+        family: singleback
+        play_count: 12
       - name: Pro
+        family: i_form
+        play_count: 18
       - name: Pro Twins
+        family: i_form
+        play_count: 12
       - name: Tight
+        family: i_form
+        play_count: 15
       - name: Tight Pair
+        family: i_form
+        play_count: 12
       - name: Niners Heavy
+        family: i_form
+        play_count: 9
       - name: Full House TE
+        family: pistol
+        play_count: 9
       - name: Full House Base
+        family: pistol
+        play_count: 15
       - name: Strong
+        family: pistol
+        play_count: 15
       - name: Strong Twins
+        family: pistol
+        play_count: 12
       - name: Weak Twins
+        family: pistol
+        play_count: 12
       - name: Ace Twins
+        family: pistol
+        play_count: 15
       - name: Doubles On
+        family: shotgun
+        play_count: 18
       - name: Y-Trips Wk
+        family: shotgun
+        play_count: 15
       - name: Wing Trips Wk
+        family: shotgun
+        play_count: 12
       - name: Bunch HB Str
+        family: shotgun
+        play_count: 12
       - name: Trey Open
+        family: shotgun
+        play_count: 15
       - name: Empty Trey Flex
+        family: shotgun
+        play_count: 15
   - team_id: seattle_seahawks
     name: Seattle Seahawks
     playbook_style: null
     formation_count: 23
     formation_families:
-      ace: 3
-      empty: 1
-      other: 17
-      spread: 1
-      trips: 1
+      i_form: 4
+      pistol: 5
+      shotgun: 9
+      singleback: 5
     personnel_breakdown: null
     formations:
       - name: Ace
+        family: singleback
+        play_count: 18
       - name: Ace Pair Flip
+        family: singleback
+        play_count: 9
       - name: Ace Pair Flex
+        family: singleback
+        play_count: 15
       - name: Doubles
+        family: singleback
+        play_count: 18
       - name: Snugs
+        family: singleback
+        play_count: 9
       - name: H Pro
+        family: i_form
+        play_count: 21
       - name: H Slot
+        family: i_form
+        play_count: 18
       - name: H Tight
+        family: i_form
+        play_count: 15
       - name: H Twin Pair
+        family: i_form
+        play_count: 15
       - name: Strong
+        family: pistol
+        play_count: 12
       - name: Strong Twins
+        family: pistol
+        play_count: 12
       - name: Jumbo Z
+        family: pistol
+        play_count: 12
       - name: Twin TE
+        family: pistol
+        play_count: 21
       - name: Trips
+        family: pistol
+        play_count: 18
       - name: Split Hawk
+        family: shotgun
+        play_count: 18
       - name: Doubles On
+        family: shotgun
+        play_count: 18
       - name: Y-Trips Wk
+        family: shotgun
+        play_count: 21
       - name: Trio Offset
+        family: shotgun
+        play_count: 18
       - name: Doubles Un
+        family: shotgun
+        play_count: 18
       - name: Tight Slots
+        family: shotgun
+        play_count: 9
       - name: Spread
+        family: shotgun
+        play_count: 21
       - name: Trio 4WR
+        family: shotgun
+        play_count: 21
       - name: Empty Trey
+        family: shotgun
+        play_count: 12
   - team_id: st_louis_rams
     name: St. Louis Rams
     playbook_style: null
     formation_count: 24
     formation_families:
-      ace: 2
-      bunch: 2
-      empty: 1
-      other: 17
-      trips: 2
+      i_form: 4
+      shotgun: 10
+      singleback: 7
+      strong: 2
+      weak: 1
     personnel_breakdown: null
     formations:
       - name: Jumbo
+        family: singleback
+        play_count: 12
       - name: Ace
+        family: singleback
+        play_count: 12
       - name: Ace Pair Twins
+        family: singleback
+        play_count: 12
       - name: Tight Doubles On
+        family: singleback
+        play_count: 9
       - name: Doubles
+        family: singleback
+        play_count: 21
       - name: Y-Trips
+        family: singleback
+        play_count: 15
       - name: Bunch
+        family: singleback
+        play_count: 18
       - name: Pro
+        family: i_form
+        play_count: 18
       - name: Slot Flex
+        family: i_form
+        play_count: 15
       - name: Tight Pair
+        family: i_form
+        play_count: 15
       - name: Tackle Over
+        family: i_form
+        play_count: 9
       - name: Close
+        family: strong
+        play_count: 15
       - name: Y-Flex
+        family: strong
+        play_count: 12
       - name: Pro Twins
+        family: weak
+        play_count: 12
       - name: Split Offset
+        family: shotgun
+        play_count: 18
       - name: Doubles On
+        family: shotgun
+        play_count: 18
       - name: Wing Trips Wk
+        family: shotgun
+        play_count: 15
       - name: Trips T
+        family: shotgun
+        play_count: 18
       - name: Trips TE
+        family: shotgun
+        play_count: 18
       - name: Snugs Flip
+        family: shotgun
+        play_count: 12
       - name: Bunch Wk
+        family: shotgun
+        play_count: 15
       - name: Double Flex
+        family: shotgun
+        play_count: 18
       - name: Trey Open
+        family: shotgun
+        play_count: 15
       - name: Empty Trey
+        family: shotgun
+        play_count: 12
   - team_id: tampa_bay_buccaneers
     name: Tampa Bay Buccaneers
     playbook_style: null
     formation_count: 20
     formation_families:
-      ace: 2
-      bunch: 2
-      empty: 2
-      other: 13
-      spread: 1
+      i_form: 3
+      shotgun: 8
+      singleback: 6
+      strong: 2
+      weak: 1
     personnel_breakdown: null
     formations:
       - name: Jumbo
+        family: singleback
+        play_count: 12
       - name: Ace
+        family: singleback
+        play_count: 18
       - name: Ace Pair Twins
+        family: singleback
+        play_count: 12
       - name: Doubles
+        family: singleback
+        play_count: 21
       - name: Y-Trips
+        family: singleback
+        play_count: 21
       - name: Bunch
+        family: singleback
+        play_count: 15
       - name: Pro
+        family: i_form
+        play_count: 18
       - name: Slot Flex
+        family: i_form
+        play_count: 15
       - name: Tight Pair
+        family: i_form
+        play_count: 15
       - name: H Pro
+        family: strong
+        play_count: 18
       - name: Close
+        family: strong
+        play_count: 12
       - name: Pro Twins
+        family: weak
+        play_count: 12
       - name: Split Slot
+        family: shotgun
+        play_count: 18
       - name: Wing Trips Wk
+        family: shotgun
+        play_count: 18
       - name: Snugs Flip
+        family: shotgun
+        play_count: 9
       - name: Bunch Wk
+        family: shotgun
+        play_count: 12
       - name: Spread
+        family: shotgun
+        play_count: 12
       - name: Buc Trips
+        family: shotgun
+        play_count: 24
       - name: Empty Buc
+        family: shotgun
+        play_count: 12
       - name: Empty Trey
+        family: shotgun
+        play_count: 12
   - team_id: tennessee_titans
     name: Tennessee Titans
     playbook_style: null
     formation_count: 20
     formation_families:
-      ace: 3
-      bunch: 1
-      empty: 1
-      other: 15
+      i_form: 3
+      shotgun: 9
+      singleback: 7
+      strong: 1
     personnel_breakdown: null
     formations:
       - name: Jumbo Pair
+        family: singleback
+        play_count: 12
       - name: Ace
+        family: singleback
+        play_count: 21
       - name: Ace Pair
+        family: singleback
+        play_count: 18
       - name: Doubles
+        family: singleback
+        play_count: 18
       - name: Y-Trips
+        family: singleback
+        play_count: 18
       - name: Snugs Flip
+        family: singleback
+        play_count: 12
       - name: Bunch
+        family: singleback
+        play_count: 18
       - name: Pro
+        family: i_form
+        play_count: 21
       - name: Tight
+        family: i_form
+        play_count: 12
       - name: Tight Pair
+        family: i_form
+        play_count: 12
       - name: Pro Twins
+        family: strong
+        play_count: 15
       - name: Split Slot
+        family: shotgun
+        play_count: 15
       - name: Ace Twins
+        family: shotgun
+        play_count: 12
       - name: Doubles Wk
+        family: shotgun
+        play_count: 18
       - name: Y-Trips Wk
+        family: shotgun
+        play_count: 18
       - name: Dbls Y-Flex Tight
+        family: shotgun
+        play_count: 12
       - name: Dbls V-Flex Tight
+        family: shotgun
+        play_count: 12
       - name: Normal Y-Slot
+        family: shotgun
+        play_count: 18
       - name: Trey Open
+        family: shotgun
+        play_count: 15
       - name: Empty Spread
+        family: shotgun
+        play_count: 9
   - team_id: tom_flores
     name: Tom Flores
     playbook_style: null
     formation_count: 11
     formation_families:
-      ace: 2
-      other: 8
-      trips: 1
+      far: 1
+      i_form: 3
+      singleback: 6
+      strong: 1
     personnel_breakdown: null
     formations:
       - name: Ace
+        family: singleback
+        play_count: 15
       - name: Ace Twins
+        family: singleback
+        play_count: 15
       - name: Pair
+        family: singleback
+        play_count: 15
       - name: F Pair Twins
+        family: singleback
+        play_count: 15
       - name: Slot
+        family: singleback
+        play_count: 18
       - name: Trips
+        family: singleback
+        play_count: 18
       - name: Pro
+        family: i_form
+        play_count: 18
       - name: Pro Twins
+        family: i_form
+        play_count: 18
       - name: Tight
+        family: i_form
+        play_count: 15
       - name: Twins
+        family: far
+        play_count: 12
       - name: Normal
+        family: strong
+        play_count: 12
   - team_id: tom_landry
     name: Tom Landry
     playbook_style: null
     formation_count: 13
     formation_families:
-      ace: 3
-      other: 9
-      spread: 1
+      i_form: 3
+      shotgun: 4
+      singleback: 6
     personnel_breakdown: null
     formations:
       - name: Ace
+        family: singleback
+        play_count: 12
       - name: Ace Twins
+        family: singleback
+        play_count: 15
       - name: Ace Wing
+        family: singleback
+        play_count: 12
       - name: TE Flip
+        family: singleback
+        play_count: 12
       - name: Twin TE
+        family: singleback
+        play_count: 12
       - name: Slot
+        family: singleback
+        play_count: 12
       - name: Pro
+        family: i_form
+        play_count: 18
       - name: Pro Twins
+        family: i_form
+        play_count: 18
       - name: Tight
+        family: i_form
+        play_count: 15
       - name: Split Slot
+        family: shotgun
+        play_count: 12
       - name: Wing Trips
+        family: shotgun
+        play_count: 12
       - name: Normal Y-Slot
+        family: shotgun
+        play_count: 15
       - name: Spread 4WR
+        family: shotgun
+        play_count: 15
   - team_id: vince_lombardi
     name: Vince Lombardi
     playbook_style: null
     formation_count: 3
     formation_families:
-      other: 2
-      wing: 1
+      other: 3
     personnel_breakdown: null
     formations:
       - name: Right
+        family: other
+        play_count: 18
       - name: Triple Wing
+        family: other
+        play_count: 15
       - name: Double Wing
+        family: other
+        play_count: 12
   - team_id: washington_redskins
     name: Washington Redskins
     playbook_style: null
     formation_count: 21
     formation_families:
-      ace: 2
-      bunch: 1
-      empty: 2
-      i_form: 1
-      other: 15
+      i_form: 2
+      pistol: 6
+      shotgun: 8
+      singleback: 5
     personnel_breakdown: null
     formations:
       - name: Jumbo
+        family: singleback
+        play_count: 12
       - name: Ace
+        family: singleback
+        play_count: 21
       - name: Ace Pair Slot
+        family: singleback
+        play_count: 15
       - name: Normal Skins
+        family: singleback
+        play_count: 21
       - name: Tight Doubles
+        family: singleback
+        play_count: 15
       - name: Pro
+        family: i_form
+        play_count: 18
       - name: Twins Flex
+        family: i_form
+        play_count: 12
       - name: Full House Tight
+        family: pistol
+        play_count: 12
       - name: Strong
+        family: pistol
+        play_count: 15
       - name: Weak
+        family: pistol
+        play_count: 15
       - name: Weak Twins Flex
+        family: pistol
+        play_count: 18
       - name: Y-Trips
+        family: pistol
+        play_count: 24
       - name: Wing Trio
+        family: pistol
+        play_count: 15
       - name: Split Redskin
+        family: shotgun
+        play_count: 18
       - name: Doubles
+        family: shotgun
+        play_count: 24
       - name: Snugs Flip
+        family: shotgun
+        play_count: 9
       - name: Bunch Offset
+        family: shotgun
+        play_count: 12
       - name: Wing Trio Wk
+        family: shotgun
+        play_count: 15
       - name: Trey Open
+        family: shotgun
+        play_count: 21
       - name: Empty Y-Flex
+        family: shotgun
+        play_count: 12
       - name: Empty V-Flex
+        family: shotgun
+        play_count: 12
   - team_id: west_coast
     name: West Coast
     playbook_style: null
     formation_count: 16
     formation_families:
-      ace: 1
-      bunch: 2
-      empty: 1
-      other: 11
-      spread: 1
+      far: 1
+      i_form: 2
+      near: 1
+      shotgun: 5
+      singleback: 6
+      weak: 1
     personnel_breakdown: null
     formations:
       - name: Ace
+        family: singleback
+        play_count: 18
       - name: Flex
+        family: singleback
+        play_count: 18
       - name: Tight Doubles
+        family: singleback
+        play_count: 9
       - name: Y-Trips
+        family: singleback
+        play_count: 18
       - name: Bunch Swap
+        family: singleback
+        play_count: 12
       - name: Spread
+        family: singleback
+        play_count: 15
       - name: Pro
+        family: i_form
+        play_count: 18
       - name: Tight Pair
+        family: i_form
+        play_count: 12
       - name: Tight Twins
+        family: far
+        play_count: 12
       - name: Y Left Twins
+        family: near
+        play_count: 15
       - name: Flex Twins
+        family: weak
+        play_count: 15
       - name: Split Offset
+        family: shotgun
+        play_count: 21
       - name: Bunch Wk
+        family: shotgun
+        play_count: 15
       - name: Snugs Flip
+        family: shotgun
+        play_count: 12
       - name: Double Flex
+        family: shotgun
+        play_count: 12
       - name: Empty Trey
+        family: shotgun
+        play_count: 9

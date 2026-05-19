@@ -84,6 +84,15 @@
         "personnel": {
           "type": ["string", "null"],
           "description": "Personnel grouping code (e.g. '11', '12', '21'). Null when not in source data."
+        },
+        "family": {
+          "type": ["string", "null"],
+          "description": "Formation family slug (singleback, i_form, shotgun, pistol, ...). For docx-ingested Madden games this is the game's own menu panel header; otherwise name-derived. Null when undetermined."
+        },
+        "play_count": {
+          "type": ["integer", "null"],
+          "minimum": 0,
+          "description": "Number of plays the game ships in this formation. Null when the source does not expose a count."
         }
       }
     }

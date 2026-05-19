@@ -16,26 +16,68 @@ teams:
     personnel_breakdown: null
     formations:
       - name: Ace
+        family: ace
+        play_count: null
       - name: Triple
+        family: other
+        play_count: null
       - name: Ace Trips
+        family: ace
+        play_count: null
       - name: Doubles
+        family: other
+        play_count: null
       - name: Tight Triple
+        family: other
+        play_count: null
       - name: Split Pro
+        family: other
+        play_count: null
       - name: Split Jokers
+        family: other
+        play_count: null
       - name: I Pro
+        family: other
+        play_count: null
       - name: Split Spread
+        family: other
+        play_count: null
       - name: Spread
+        family: spread
+        play_count: null
       - name: I Jokers
+        family: other
+        play_count: null
       - name: I Jacks
+        family: other
+        play_count: null
       - name: Strong I Pro
+        family: other
+        play_count: null
       - name: Strong I Twins
+        family: other
+        play_count: null
       - name: Weak I Pro
+        family: i_form
+        play_count: null
       - name: I Twins
+        family: other
+        play_count: null
       - name: I Wing Jokers
+        family: other
+        play_count: null
       - name: I Spread
+        family: other
+        play_count: null
       - name: Strong I Spread
+        family: other
+        play_count: null
       - name: Strong I Jacks
+        family: other
+        play_count: null
       - name: Flip I Wing
+        family: other
+        play_count: null
   - team_id: atlanta_falcons
     name: Atlanta Falcons
     playbook_style: null
@@ -49,27 +91,71 @@ teams:
     personnel_breakdown: null
     formations:
       - name: Split Pro
+        family: other
+        play_count: null
       - name: Split Twins
+        family: other
+        play_count: null
       - name: Split Flip Pro
+        family: other
+        play_count: null
       - name: Split Spread
+        family: other
+        play_count: null
       - name: Split Jokers
+        family: other
+        play_count: null
       - name: Flip Tight Triple
+        family: other
+        play_count: null
       - name: Quads
+        family: other
+        play_count: null
       - name: Triple
+        family: other
+        play_count: null
       - name: Trips
+        family: trips
+        play_count: null
       - name: Doubles
+        family: other
+        play_count: null
       - name: Ace
+        family: ace
+        play_count: null
       - name: Bunch Left
+        family: bunch
+        play_count: null
       - name: I Pro
+        family: other
+        play_count: null
       - name: I Twins
+        family: other
+        play_count: null
       - name: I Spread
+        family: other
+        play_count: null
       - name: I Jokers
+        family: other
+        play_count: null
       - name: Strong I Pro
+        family: other
+        play_count: null
       - name: Weak I Pro
+        family: i_form
+        play_count: null
       - name: Weak I Spread
+        family: i_form
+        play_count: null
       - name: Weak I Jokers
+        family: i_form
+        play_count: null
       - name: Straight Trips
+        family: other
+        play_count: null
       - name: Straight Open
+        family: other
+        play_count: null
   - team_id: baltimore_ravens
     name: Baltimore Ravens
     playbook_style: null
@@ -83,20 +169,50 @@ teams:
     personnel_breakdown: null
     formations:
       - name: Ace Quads
+        family: ace
+        play_count: null
       - name: F Spread
+        family: other
+        play_count: null
       - name: Tight F Trips
+        family: other
+        play_count: null
       - name: Flip Tight Triple
+        family: other
+        play_count: null
       - name: Tight Triple
+        family: other
+        play_count: null
       - name: Bunch
+        family: bunch
+        play_count: null
       - name: Pair Slot
+        family: other
+        play_count: null
       - name: Ace
+        family: ace
+        play_count: null
       - name: Triple
+        family: other
+        play_count: null
       - name: Doubles
+        family: other
+        play_count: null
       - name: Empty Open
+        family: empty
+        play_count: null
       - name: Triple Empty
+        family: other
+        play_count: null
       - name: "Gun: Empty Open"
+        family: shotgun
+        play_count: null
       - name: "Gun: Split Spread"
+        family: shotgun
+        play_count: null
       - name: "Gun: H Slot"
+        family: shotgun
+        play_count: null
   - team_id: buffalo_bills
     name: Buffalo Bills
     playbook_style: null
@@ -110,32 +226,86 @@ teams:
     personnel_breakdown: null
     formations:
       - name: Triple
+        family: other
+        play_count: null
       - name: Doubles
+        family: other
+        play_count: null
       - name: Quads
+        family: other
+        play_count: null
       - name: Trey
+        family: other
+        play_count: null
       - name: Tight Triple
+        family: other
+        play_count: null
       - name: Ace
+        family: ace
+        play_count: null
       - name: Ace Bunch
+        family: ace
+        play_count: null
       - name: Ace Trips
+        family: ace
+        play_count: null
       - name: I Pro
+        family: other
+        play_count: null
       - name: I Twins
+        family: other
+        play_count: null
       - name: I Spread
+        family: other
+        play_count: null
       - name: I Jokers
+        family: other
+        play_count: null
       - name: I Jacks
+        family: other
+        play_count: null
       - name: Strong I Twins
+        family: other
+        play_count: null
       - name: Strong I Jokers
+        family: other
+        play_count: null
       - name: Strong I Jacks
+        family: other
+        play_count: null
       - name: Weak I Pro
+        family: i_form
+        play_count: null
       - name: Split Pro
+        family: other
+        play_count: null
       - name: Split Twins
+        family: other
+        play_count: null
       - name: Split Spread
+        family: other
+        play_count: null
       - name: Empty Tight
+        family: empty
+        play_count: null
       - name: "Gun: Empty Tight"
+        family: shotgun
+        play_count: null
       - name: "Gun: Trey Right"
+        family: shotgun
+        play_count: null
       - name: "Gun: Triple Right"
+        family: shotgun
+        play_count: null
       - name: "Gun: Doubles Right"
+        family: shotgun
+        play_count: null
       - name: "Gun: Quads Left"
+        family: shotgun
+        play_count: null
       - name: "Gun: Straight"
+        family: shotgun
+        play_count: null
   - team_id: carolina_panthers
     name: Carolina Panthers
     playbook_style: null
@@ -147,30 +317,80 @@ teams:
     personnel_breakdown: null
     formations:
       - name: I Pro
+        family: other
+        play_count: null
       - name: I Spread
+        family: other
+        play_count: null
       - name: I Twins
+        family: other
+        play_count: null
       - name: I Jokers
+        family: other
+        play_count: null
       - name: I Jokers Pair
+        family: other
+        play_count: null
       - name: Wing Jokers
+        family: other
+        play_count: null
       - name: Strong II Pro
+        family: other
+        play_count: null
       - name: Strong I Spread
+        family: other
+        play_count: null
       - name: Strong II Jokers
+        family: other
+        play_count: null
       - name: Split Twins
+        family: other
+        play_count: null
       - name: Doubles
+        family: other
+        play_count: null
       - name: Tight Triple
+        family: other
+        play_count: null
       - name: Pro F Flex
+        family: other
+        play_count: null
       - name: Pair Slot
+        family: other
+        play_count: null
       - name: Gun Stack Open
+        family: shotgun
+        play_count: null
       - name: Gun Split Twins
+        family: shotgun
+        play_count: null
       - name: "Gun: Triple Left"
+        family: shotgun
+        play_count: null
       - name: Gun Doubles Right
+        family: shotgun
+        play_count: null
       - name: Split Jokers
+        family: other
+        play_count: null
       - name: Triple
+        family: other
+        play_count: null
       - name: Flip Tight Triple
+        family: other
+        play_count: null
       - name: Ace Bunch
+        family: ace
+        play_count: null
       - name: Ace
+        family: ace
+        play_count: null
       - name: Gun Split Spread
+        family: shotgun
+        play_count: null
       - name: "Gun: Ace Bunch"
+        family: shotgun
+        play_count: null
   - team_id: chicago_bears
     name: Chicago Bears
     playbook_style: null
@@ -182,24 +402,62 @@ teams:
     personnel_breakdown: null
     formations:
       - name: Bunch
+        family: bunch
+        play_count: null
       - name: Triple Bunch
+        family: other
+        play_count: null
       - name: Pair Slot
+        family: other
+        play_count: null
       - name: Doubles
+        family: other
+        play_count: null
       - name: Triple
+        family: other
+        play_count: null
       - name: Tight Triple
+        family: other
+        play_count: null
       - name: Flip Tight Triple
+        family: other
+        play_count: null
       - name: Trey
+        family: other
+        play_count: null
       - name: Quads
+        family: other
+        play_count: null
       - name: Twins F Spread
+        family: other
+        play_count: null
       - name: Ace
+        family: ace
+        play_count: null
       - name: Ace Trips
+        family: ace
+        play_count: null
       - name: I Pro
+        family: other
+        play_count: null
       - name: I Spread
+        family: other
+        play_count: null
       - name: I Jokers
+        family: other
+        play_count: null
       - name: Strong I Pro
+        family: other
+        play_count: null
       - name: Split Twins
+        family: other
+        play_count: null
       - name: Split Jokers
+        family: other
+        play_count: null
       - name: Straight Open
+        family: other
+        play_count: null
   - team_id: cincinnati_bengals
     name: Cincinnati Bengals
     playbook_style: null
@@ -214,30 +472,80 @@ teams:
     personnel_breakdown: null
     formations:
       - name: I Pro
+        family: other
+        play_count: null
       - name: I Spread
+        family: other
+        play_count: null
       - name: I Twins
+        family: other
+        play_count: null
       - name: Jokers
+        family: other
+        play_count: null
       - name: Jokers Pair
+        family: other
+        play_count: null
       - name: I Wing Jokers
+        family: other
+        play_count: null
       - name: Strong I Pro
+        family: other
+        play_count: null
       - name: Strong I Jokers
+        family: other
+        play_count: null
       - name: Weak I Pro
+        family: i_form
+        play_count: null
       - name: Split Pro
+        family: other
+        play_count: null
       - name: Split Twins
+        family: other
+        play_count: null
       - name: Bunch
+        family: bunch
+        play_count: null
       - name: Quads
+        family: other
+        play_count: null
       - name: Triple
+        family: other
+        play_count: null
       - name: Trey
+        family: other
+        play_count: null
       - name: Doubles
+        family: other
+        play_count: null
       - name: Ace
+        family: ace
+        play_count: null
       - name: Ace Trips
+        family: ace
+        play_count: null
       - name: Pair Slot
+        family: other
+        play_count: null
       - name: Empty Spread
+        family: empty
+        play_count: null
       - name: "Gun: Trey Right"
+        family: shotgun
+        play_count: null
       - name: "Gun: Split Spread"
+        family: shotgun
+        play_count: null
       - name: "Gun: Bunch Left"
+        family: shotgun
+        play_count: null
       - name: "Gun: Triple Left"
+        family: shotgun
+        play_count: null
       - name: "Gun: Doubles Right"
+        family: shotgun
+        play_count: null
   - team_id: cleveland_browns
     name: Cleveland Browns
     playbook_style: null
@@ -251,29 +559,77 @@ teams:
     personnel_breakdown: null
     formations:
       - name: Ace Trips
+        family: ace
+        play_count: null
       - name: Ace
+        family: ace
+        play_count: null
       - name: Pair Slot
+        family: other
+        play_count: null
       - name: Tight Triple
+        family: other
+        play_count: null
       - name: Flip Tight Triple
+        family: other
+        play_count: null
       - name: Bunch
+        family: bunch
+        play_count: null
       - name: Doubles
+        family: other
+        play_count: null
       - name: Triple
+        family: other
+        play_count: null
       - name: Quads
+        family: other
+        play_count: null
       - name: Empty Ace Trips
+        family: empty
+        play_count: null
       - name: I-Pro
+        family: other
+        play_count: null
       - name: I-Twins
+        family: other
+        play_count: null
       - name: I-Spread
+        family: other
+        play_count: null
       - name: I-Jokers Pair
+        family: other
+        play_count: null
       - name: I-Jokers
+        family: other
+        play_count: null
       - name: Strong I-Pro
+        family: other
+        play_count: null
       - name: Strong I-Jokers
+        family: other
+        play_count: null
       - name: Split Pro
+        family: other
+        play_count: null
       - name: "Gun: Ace Trips"
+        family: shotgun
+        play_count: null
       - name: "Gun: Split Pro"
+        family: shotgun
+        play_count: null
       - name: "Gun: Split Spread"
+        family: shotgun
+        play_count: null
       - name: "Gun: Bunch Left"
+        family: shotgun
+        play_count: null
       - name: "Gun: Triple Left"
+        family: shotgun
+        play_count: null
       - name: "Gun: Doubles Right"
+        family: shotgun
+        play_count: null
   - team_id: dallas_cowboys
     name: Dallas Cowboys
     playbook_style: null
@@ -286,26 +642,68 @@ teams:
     personnel_breakdown: null
     formations:
       - name: I Pro
+        family: other
+        play_count: null
       - name: I Te Flex
+        family: other
+        play_count: null
       - name: I Twins
+        family: other
+        play_count: null
       - name: Strong Power
+        family: other
+        play_count: null
       - name: Strong I Jokers
+        family: other
+        play_count: null
       - name: Split Spread
+        family: other
+        play_count: null
       - name: Split Twins
+        family: other
+        play_count: null
       - name: Triple
+        family: other
+        play_count: null
       - name: Quads
+        family: other
+        play_count: null
       - name: Trey
+        family: other
+        play_count: null
       - name: Pair Slot
+        family: other
+        play_count: null
       - name: Doubles
+        family: other
+        play_count: null
       - name: Bunch
+        family: bunch
+        play_count: null
       - name: Ace
+        family: ace
+        play_count: null
       - name: Ace Trips
+        family: ace
+        play_count: null
       - name: Tight Triple
+        family: other
+        play_count: null
       - name: Base Doubles
+        family: other
+        play_count: null
       - name: "Gun: Empty Open"
+        family: shotgun
+        play_count: null
       - name: "Gun: Quads Left"
+        family: shotgun
+        play_count: null
       - name: "Gun: Split Spread"
+        family: shotgun
+        play_count: null
       - name: "Gun: Kings Spread"
+        family: shotgun
+        play_count: null
   - team_id: denver_broncos
     name: Denver Broncos
     playbook_style: null
@@ -318,29 +716,77 @@ teams:
     personnel_breakdown: null
     formations:
       - name: Triple
+        family: other
+        play_count: null
       - name: Flip Triple
+        family: other
+        play_count: null
       - name: Tight Triple
+        family: other
+        play_count: null
       - name: Pair Slot
+        family: other
+        play_count: null
       - name: Ace
+        family: ace
+        play_count: null
       - name: Doubles
+        family: other
+        play_count: null
       - name: Ace Trips
+        family: ace
+        play_count: null
       - name: Trey
+        family: other
+        play_count: null
       - name: Bunch
+        family: bunch
+        play_count: null
       - name: Quads
+        family: other
+        play_count: null
       - name: F Wing Jokers
+        family: other
+        play_count: null
       - name: Split Pro
+        family: other
+        play_count: null
       - name: Split Twins
+        family: other
+        play_count: null
       - name: Split Jokers
+        family: other
+        play_count: null
       - name: I Pro
+        family: other
+        play_count: null
       - name: I Twins
+        family: other
+        play_count: null
       - name: I Wing Jokers
+        family: other
+        play_count: null
       - name: I Jokers
+        family: other
+        play_count: null
       - name: Strong I Pro
+        family: other
+        play_count: null
       - name: Strong I Twins
+        family: other
+        play_count: null
       - name: Weak I Pro
+        family: i_form
+        play_count: null
       - name: Straight Trips
+        family: other
+        play_count: null
       - name: Flip Triple Open
+        family: other
+        play_count: null
       - name: Straight Open
+        family: other
+        play_count: null
   - team_id: detroit_lions
     name: Detroit Lions
     playbook_style: null
@@ -355,29 +801,77 @@ teams:
     personnel_breakdown: null
     formations:
       - name: Split Pro
+        family: other
+        play_count: null
       - name: Split Twins
+        family: other
+        play_count: null
       - name: Split Spread
+        family: other
+        play_count: null
       - name: Split Jokers
+        family: other
+        play_count: null
       - name: Near Twins
+        family: i_form
+        play_count: null
       - name: Far Twins
+        family: i_form
+        play_count: null
       - name: Twins H Split
+        family: other
+        play_count: null
       - name: Quads
+        family: other
+        play_count: null
       - name: Doubles
+        family: other
+        play_count: null
       - name: Trips
+        family: trips
+        play_count: null
       - name: Flip Tight Triple
+        family: other
+        play_count: null
       - name: Tight Triple
+        family: other
+        play_count: null
       - name: Ace
+        family: ace
+        play_count: null
       - name: Triple
+        family: other
+        play_count: null
       - name: Bunch
+        family: bunch
+        play_count: null
       - name: Pair Slot
+        family: other
+        play_count: null
       - name: I-Pro
+        family: other
+        play_count: null
       - name: I-Twins
+        family: other
+        play_count: null
       - name: I-Spread
+        family: other
+        play_count: null
       - name: I-Jokers
+        family: other
+        play_count: null
       - name: Strong I-Spread
+        family: other
+        play_count: null
       - name: "Gun: Triple Left"
+        family: shotgun
+        play_count: null
       - name: "Gun: Trips Left"
+        family: shotgun
+        play_count: null
       - name: "Gun: Doubles Right"
+        family: shotgun
+        play_count: null
   - team_id: general
     name: General
     playbook_style: null
@@ -392,28 +886,74 @@ teams:
     personnel_breakdown: null
     formations:
       - name: I Pro
+        family: other
+        play_count: null
       - name: I Twins
+        family: other
+        play_count: null
       - name: I Spread
+        family: other
+        play_count: null
       - name: I Jokers
+        family: other
+        play_count: null
       - name: Strong I Pro
+        family: other
+        play_count: null
       - name: Strong I Twins
+        family: other
+        play_count: null
       - name: Strong I Spread
+        family: other
+        play_count: null
       - name: Weak I Pro
+        family: i_form
+        play_count: null
       - name: Weak I Twins
+        family: i_form
+        play_count: null
       - name: Weak I Spread
+        family: i_form
+        play_count: null
       - name: Weak I Jokers Pair
+        family: i_form
+        play_count: null
       - name: Split Pro
+        family: other
+        play_count: null
       - name: Quads
+        family: other
+        play_count: null
       - name: Doubles
+        family: other
+        play_count: null
       - name: Trips
+        family: trips
+        play_count: null
       - name: Triple
+        family: other
+        play_count: null
       - name: Tight Triple
+        family: other
+        play_count: null
       - name: Bunch
+        family: bunch
+        play_count: null
       - name: Ace
+        family: ace
+        play_count: null
       - name: "Gun: Quads Left"
+        family: shotgun
+        play_count: null
       - name: "Gun: Trips Left"
+        family: shotgun
+        play_count: null
       - name: "Gun: Bunch Left"
+        family: shotgun
+        play_count: null
       - name: "Gun: Split Spread"
+        family: shotgun
+        play_count: null
   - team_id: green_bay_packers
     name: Green Bay Packers
     playbook_style: null
@@ -424,21 +964,53 @@ teams:
     personnel_breakdown: null
     formations:
       - name: I Pro
+        family: other
+        play_count: null
       - name: I Jokers
+        family: other
+        play_count: null
       - name: I Jokers Flip Pair
+        family: other
+        play_count: null
       - name: Split Twins
+        family: other
+        play_count: null
       - name: Split Pro
+        family: other
+        play_count: null
       - name: Split Jokers
+        family: other
+        play_count: null
       - name: Split Spread
+        family: other
+        play_count: null
       - name: Pair Slot
+        family: other
+        play_count: null
       - name: Quads
+        family: other
+        play_count: null
       - name: Flip Tight Triple
+        family: other
+        play_count: null
       - name: "Gun: Split Pro"
+        family: shotgun
+        play_count: null
       - name: "Gun: Trey Left"
+        family: shotgun
+        play_count: null
       - name: "Gun: Triple Left"
+        family: shotgun
+        play_count: null
       - name: "Gun: Split Spread"
+        family: shotgun
+        play_count: null
       - name: "Gun: Doubles Right"
+        family: shotgun
+        play_count: null
       - name: "Gun: Quads Left"
+        family: shotgun
+        play_count: null
   - team_id: houston_texans
     name: Houston Texans
     playbook_style: null
@@ -450,24 +1022,62 @@ teams:
     personnel_breakdown: null
     formations:
       - name: Ace Trips
+        family: ace
+        play_count: null
       - name: Pair Slot
+        family: other
+        play_count: null
       - name: I Pro
+        family: other
+        play_count: null
       - name: I Twins
+        family: other
+        play_count: null
       - name: I Spread
+        family: other
+        play_count: null
       - name: I Jokers
+        family: other
+        play_count: null
       - name: Strong I Pro
+        family: other
+        play_count: null
       - name: Strong I Twins
+        family: other
+        play_count: null
       - name: Strong I Spread
+        family: other
+        play_count: null
       - name: Strong I Jokers
+        family: other
+        play_count: null
       - name: Split Pro
+        family: other
+        play_count: null
       - name: Split Twins
+        family: other
+        play_count: null
       - name: Split Spread
+        family: other
+        play_count: null
       - name: Split Jokers
+        family: other
+        play_count: null
       - name: Pair Slot Flex
+        family: other
+        play_count: null
       - name: "Gun: Quads Left"
+        family: shotgun
+        play_count: null
       - name: "Gun: Triple Left"
+        family: shotgun
+        play_count: null
       - name: "Gun: Doubles Right"
+        family: shotgun
+        play_count: null
       - name: "Gun: Split Spread"
+        family: shotgun
+        play_count: null
   - team_id: indianapolis_colts
     name: Indianapolis Colts
     playbook_style: null
@@ -481,32 +1091,86 @@ teams:
     personnel_breakdown: null
     formations:
       - name: Triple
+        family: other
+        play_count: null
       - name: Quads
+        family: other
+        play_count: null
       - name: Trey
+        family: other
+        play_count: null
       - name: Trips
+        family: trips
+        play_count: null
       - name: Ace
+        family: ace
+        play_count: null
       - name: Flip Ace
+        family: other
+        play_count: null
       - name: Tight Triple
+        family: other
+        play_count: null
       - name: Straight Trips
+        family: other
+        play_count: null
       - name: Straight Open
+        family: other
+        play_count: null
       - name: Ace H Flex
+        family: ace
+        play_count: null
       - name: I Pro
+        family: other
+        play_count: null
       - name: I Twins
+        family: other
+        play_count: null
       - name: I Jacks
+        family: other
+        play_count: null
       - name: Strong I Pro
+        family: other
+        play_count: null
       - name: Strong I Jacks
+        family: other
+        play_count: null
       - name: Weak I Pro
+        family: i_form
+        play_count: null
       - name: Split Pro
+        family: other
+        play_count: null
       - name: Split Spread
+        family: other
+        play_count: null
       - name: Split Jacks
+        family: other
+        play_count: null
       - name: "Gun: Split Spread"
+        family: shotgun
+        play_count: null
       - name: "Gun: H Flex"
+        family: shotgun
+        play_count: null
       - name: "Gun: Triple Left"
+        family: shotgun
+        play_count: null
       - name: "Gun: Quads Left"
+        family: shotgun
+        play_count: null
       - name: "Gun: Straight Trips"
+        family: shotgun
+        play_count: null
       - name: "Gun: Straight Open"
+        family: shotgun
+        play_count: null
       - name: "Gun: Doubles Right"
+        family: shotgun
+        play_count: null
       - name: "Gun: Trips Left"
+        family: shotgun
+        play_count: null
   - team_id: jacksonville_jaguars
     name: Jacksonville Jaguars
     playbook_style: null
@@ -520,26 +1184,68 @@ teams:
     personnel_breakdown: null
     formations:
       - name: Triple
+        family: other
+        play_count: null
       - name: Pair Slot
+        family: other
+        play_count: null
       - name: Ace
+        family: ace
+        play_count: null
       - name: Tight Triple
+        family: other
+        play_count: null
       - name: Ace Trips
+        family: ace
+        play_count: null
       - name: I Pro
+        family: other
+        play_count: null
       - name: I Twins
+        family: other
+        play_count: null
       - name: I Spread
+        family: other
+        play_count: null
       - name: I Jokers
+        family: other
+        play_count: null
       - name: I Jokers Pair
+        family: other
+        play_count: null
       - name: Strong I Pro
+        family: other
+        play_count: null
       - name: Strong I Twins
+        family: other
+        play_count: null
       - name: Strong I Jokers
+        family: other
+        play_count: null
       - name: Weak I Pro
+        family: i_form
+        play_count: null
       - name: Weak I Spread
+        family: i_form
+        play_count: null
       - name: Empty Open
+        family: empty
+        play_count: null
       - name: "Gun: Triple Left"
+        family: shotgun
+        play_count: null
       - name: "Gun: Empty Open"
+        family: shotgun
+        play_count: null
       - name: "Gun: Bunch Left"
+        family: shotgun
+        play_count: null
       - name: "Gun: Doubles Right"
+        family: shotgun
+        play_count: null
       - name: "Gun: Diamonds"
+        family: shotgun
+        play_count: null
   - team_id: kansas_city_chiefs
     name: Kansas City Chiefs
     playbook_style: null
@@ -552,24 +1258,62 @@ teams:
     personnel_breakdown: null
     formations:
       - name: Pair Slot
+        family: other
+        play_count: null
       - name: Tight Triple
+        family: other
+        play_count: null
       - name: Doubles
+        family: other
+        play_count: null
       - name: Triple
+        family: other
+        play_count: null
       - name: Twins F Spread
+        family: other
+        play_count: null
       - name: Ace
+        family: ace
+        play_count: null
       - name: Ace Trips
+        family: ace
+        play_count: null
       - name: Trey
+        family: other
+        play_count: null
       - name: Quads
+        family: other
+        play_count: null
       - name: Bunch
+        family: bunch
+        play_count: null
       - name: Triple Bunch
+        family: other
+        play_count: null
       - name: Flip Tight Triple
+        family: other
+        play_count: null
       - name: Triple Load
+        family: other
+        play_count: null
       - name: Straight Open
+        family: other
+        play_count: null
       - name: "Gun: Quads Left"
+        family: shotgun
+        play_count: null
       - name: "Gun: Straight"
+        family: shotgun
+        play_count: null
       - name: "Gun: Split Spread"
+        family: shotgun
+        play_count: null
       - name: "Gun: Doubles Right"
+        family: shotgun
+        play_count: null
       - name: "Gun: Ace Trips"
+        family: shotgun
+        play_count: null
   - team_id: miami_dolphins
     name: Miami Dolphins
     playbook_style: null
@@ -584,31 +1328,83 @@ teams:
     personnel_breakdown: null
     formations:
       - name: Tight Triple
+        family: other
+        play_count: null
       - name: Quads
+        family: other
+        play_count: null
       - name: Ace
+        family: ace
+        play_count: null
       - name: Ace Doubles
+        family: ace
+        play_count: null
       - name: Ace Trips
+        family: ace
+        play_count: null
       - name: Pair Slot
+        family: other
+        play_count: null
       - name: Triple
+        family: other
+        play_count: null
       - name: Trips
+        family: trips
+        play_count: null
       - name: I Pro
+        family: other
+        play_count: null
       - name: I Spread
+        family: other
+        play_count: null
       - name: I Twins
+        family: other
+        play_count: null
       - name: I Jokers
+        family: other
+        play_count: null
       - name: I Wing Jokers
+        family: other
+        play_count: null
       - name: Strong I Pro
+        family: other
+        play_count: null
       - name: Strong I Spread
+        family: other
+        play_count: null
       - name: Strong I Jumbo
+        family: other
+        play_count: null
       - name: Weak I Pro
+        family: i_form
+        play_count: null
       - name: Weak I Flip Spread
+        family: i_form
+        play_count: null
       - name: Weak I Jokers
+        family: i_form
+        play_count: null
       - name: Weak I Jumbo
+        family: i_form
+        play_count: null
       - name: Empty Open
+        family: empty
+        play_count: null
       - name: "Gun: Quads Left"
+        family: shotgun
+        play_count: null
       - name: "Gun: Ace Doubles"
+        family: shotgun
+        play_count: null
       - name: "Gun: Split Spread"
+        family: shotgun
+        play_count: null
       - name: "Gun: Empty Open"
+        family: shotgun
+        play_count: null
       - name: "Gun: Trips Left"
+        family: shotgun
+        play_count: null
   - team_id: minnesota_vikings
     name: Minnesota Vikings
     playbook_style: null
@@ -622,33 +1418,89 @@ teams:
     personnel_breakdown: null
     formations:
       - name: Doubles
+        family: other
+        play_count: null
       - name: Tight Triple
+        family: other
+        play_count: null
       - name: Triple
+        family: other
+        play_count: null
       - name: Pair Slot
+        family: other
+        play_count: null
       - name: Quads
+        family: other
+        play_count: null
       - name: Ace
+        family: ace
+        play_count: null
       - name: Trips
+        family: trips
+        play_count: null
       - name: Ace Trips
+        family: ace
+        play_count: null
       - name: Ace Bunch
+        family: ace
+        play_count: null
       - name: I Pro
+        family: other
+        play_count: null
       - name: I Spread
+        family: other
+        play_count: null
       - name: I Twins
+        family: other
+        play_count: null
       - name: I Jokers
+        family: other
+        play_count: null
       - name: I Jokers Pair
+        family: other
+        play_count: null
       - name: Split Pro
+        family: other
+        play_count: null
       - name: Split Twins
+        family: other
+        play_count: null
       - name: Split Spread
+        family: other
+        play_count: null
       - name: Split Jokers
+        family: other
+        play_count: null
       - name: Empty Open
+        family: empty
+        play_count: null
       - name: "Gun: Empty Open"
+        family: shotgun
+        play_count: null
       - name: "Gun: Quads Left"
+        family: shotgun
+        play_count: null
       - name: "Gun: Triple Left"
+        family: shotgun
+        play_count: null
       - name: "Gun: Trips Left"
+        family: shotgun
+        play_count: null
       - name: "Gun: Doubles Right"
+        family: shotgun
+        play_count: null
       - name: "Gun: Ace Right"
+        family: shotgun
+        play_count: null
       - name: "Gun: Split Pro"
+        family: shotgun
+        play_count: null
       - name: "Gun: Split Twins"
+        family: shotgun
+        play_count: null
       - name: "Gun: Split Spread"
+        family: shotgun
+        play_count: null
   - team_id: new_england_patriots
     name: New England Patriots
     playbook_style: null
@@ -662,25 +1514,65 @@ teams:
     personnel_breakdown: null
     formations:
       - name: Trips
+        family: trips
+        play_count: null
       - name: Ace
+        family: ace
+        play_count: null
       - name: Quads
+        family: other
+        play_count: null
       - name: Doubles
+        family: other
+        play_count: null
       - name: F Wing Jokers
+        family: other
+        play_count: null
       - name: I Pro
+        family: other
+        play_count: null
       - name: I Twins
+        family: other
+        play_count: null
       - name: I Jokers
+        family: other
+        play_count: null
       - name: Strong I Pro
+        family: other
+        play_count: null
       - name: Weak I Pro
+        family: i_form
+        play_count: null
       - name: Split Jokers
+        family: other
+        play_count: null
       - name: Triple H Flex
+        family: other
+        play_count: null
       - name: Doubles H Flex
+        family: other
+        play_count: null
       - name: Ace Trips Open
+        family: ace
+        play_count: null
       - name: "Gun: Pair Slot Left"
+        family: shotgun
+        play_count: null
       - name: "Gun: Base Open"
+        family: shotgun
+        play_count: null
       - name: "Gun: Trey Right"
+        family: shotgun
+        play_count: null
       - name: "Gun: Trips Left"
+        family: shotgun
+        play_count: null
       - name: "Gun: Doubles Right"
+        family: shotgun
+        play_count: null
       - name: "Gun: Quads Left"
+        family: shotgun
+        play_count: null
   - team_id: new_orleans_saints
     name: New Orleans Saints
     playbook_style: null
@@ -692,21 +1584,53 @@ teams:
     personnel_breakdown: null
     formations:
       - name: Triple
+        family: other
+        play_count: null
       - name: H Flex Spread
+        family: other
+        play_count: null
       - name: I Pro
+        family: other
+        play_count: null
       - name: I Twins
+        family: other
+        play_count: null
       - name: I Jokers
+        family: other
+        play_count: null
       - name: I Jokers Pair
+        family: other
+        play_count: null
       - name: I Jacks
+        family: other
+        play_count: null
       - name: I Jacks Load
+        family: other
+        play_count: null
       - name: Strong I Twins
+        family: other
+        play_count: null
       - name: Weak I Spread
+        family: i_form
+        play_count: null
       - name: Weak I Twins
+        family: i_form
+        play_count: null
       - name: Queens Stack
+        family: other
+        play_count: null
       - name: "Gun: Bunch Left"
+        family: shotgun
+        play_count: null
       - name: "Gun: Doubles Right"
+        family: shotgun
+        play_count: null
       - name: "Gun: Triple Left"
+        family: shotgun
+        play_count: null
       - name: "Gun: Trips Left"
+        family: shotgun
+        play_count: null
   - team_id: new_york_giants
     name: New York Giants
     playbook_style: null
@@ -719,31 +1643,83 @@ teams:
     personnel_breakdown: null
     formations:
       - name: Ace Quads
+        family: ace
+        play_count: null
       - name: Flip Tight Triple
+        family: other
+        play_count: null
       - name: F Spread
+        family: other
+        play_count: null
       - name: Tight F Trips
+        family: other
+        play_count: null
       - name: Tight Triple
+        family: other
+        play_count: null
       - name: Doubles
+        family: other
+        play_count: null
       - name: Ace
+        family: ace
+        play_count: null
       - name: Ace Trips
+        family: ace
+        play_count: null
       - name: Triple
+        family: other
+        play_count: null
       - name: Pair Slot
+        family: other
+        play_count: null
       - name: Pro H Split
+        family: other
+        play_count: null
       - name: I Pro
+        family: other
+        play_count: null
       - name: I Twins
+        family: other
+        play_count: null
       - name: I Spread
+        family: other
+        play_count: null
       - name: I Jokers
+        family: other
+        play_count: null
       - name: I Jokers Pair
+        family: other
+        play_count: null
       - name: Strong I Pro
+        family: other
+        play_count: null
       - name: Strong I Twins
+        family: other
+        play_count: null
       - name: Strong I Jokers
+        family: other
+        play_count: null
       - name: Weak I Pro
+        family: i_form
+        play_count: null
       - name: Weak I Spread
+        family: i_form
+        play_count: null
       - name: "Gun: Split Spread"
+        family: shotgun
+        play_count: null
       - name: "Gun: Doubles Right"
+        family: shotgun
+        play_count: null
       - name: "Gun: Trips Left"
+        family: shotgun
+        play_count: null
       - name: "Gun: Quads Left"
+        family: shotgun
+        play_count: null
       - name: "Gun: Triple Left"
+        family: shotgun
+        play_count: null
   - team_id: new_york_jets
     name: New York Jets
     playbook_style: null
@@ -756,27 +1732,71 @@ teams:
     personnel_breakdown: null
     formations:
       - name: Flip Triple
+        family: other
+        play_count: null
       - name: Quads
+        family: other
+        play_count: null
       - name: Trips
+        family: trips
+        play_count: null
       - name: Trey
+        family: other
+        play_count: null
       - name: Triple
+        family: other
+        play_count: null
       - name: Doubles
+        family: other
+        play_count: null
       - name: F Split Quads
+        family: other
+        play_count: null
       - name: F Split Doubles
+        family: other
+        play_count: null
       - name: Split Pro
+        family: other
+        play_count: null
       - name: Split Spread
+        family: other
+        play_count: null
       - name: Split Jokers
+        family: other
+        play_count: null
       - name: I Pro
+        family: other
+        play_count: null
       - name: I Spread
+        family: other
+        play_count: null
       - name: I Load
+        family: other
+        play_count: null
       - name: I Jokers
+        family: other
+        play_count: null
       - name: Strong I Spread
+        family: other
+        play_count: null
       - name: Weak I Pro
+        family: i_form
+        play_count: null
       - name: H Flex Pro
+        family: other
+        play_count: null
       - name: Empty Open
+        family: empty
+        play_count: null
       - name: Flip Triple Open
+        family: other
+        play_count: null
       - name: Empty Bunch
+        family: empty
+        play_count: null
       - name: Trips Empty
+        family: trips
+        play_count: null
   - team_id: oakland_raiders
     name: Oakland Raiders
     playbook_style: null
@@ -790,29 +1810,77 @@ teams:
     personnel_breakdown: null
     formations:
       - name: Tight Triple
+        family: other
+        play_count: null
       - name: Ace
+        family: ace
+        play_count: null
       - name: Ace Doubles
+        family: ace
+        play_count: null
       - name: Ace Trips
+        family: ace
+        play_count: null
       - name: Doubles
+        family: other
+        play_count: null
       - name: Quads
+        family: other
+        play_count: null
       - name: Trey
+        family: other
+        play_count: null
       - name: Ace Flip Trips
+        family: ace
+        play_count: null
       - name: Pair Slot
+        family: other
+        play_count: null
       - name: Bunch
+        family: bunch
+        play_count: null
       - name: I Pro
+        family: other
+        play_count: null
       - name: I Twins
+        family: other
+        play_count: null
       - name: I Jokers
+        family: other
+        play_count: null
       - name: I Jacks
+        family: other
+        play_count: null
       - name: Weak I Twins
+        family: i_form
+        play_count: null
       - name: Weak I Pro
+        family: i_form
+        play_count: null
       - name: Weak I Jokers
+        family: i_form
+        play_count: null
       - name: Strong I Spread
+        family: other
+        play_count: null
       - name: Strong I Jokers
+        family: other
+        play_count: null
       - name: Strong I Jokers Pair
+        family: other
+        play_count: null
       - name: Bunch Empty
+        family: bunch
+        play_count: null
       - name: "Gun: Split Spread"
+        family: shotgun
+        play_count: null
       - name: "Gun: Ace Doubles"
+        family: shotgun
+        play_count: null
       - name: "Gun: Quads Left"
+        family: shotgun
+        play_count: null
   - team_id: philadelphia_eagles
     name: Philadelphia Eagles
     playbook_style: null
@@ -825,29 +1893,77 @@ teams:
     personnel_breakdown: null
     formations:
       - name: Triple
+        family: other
+        play_count: null
       - name: Doubles
+        family: other
+        play_count: null
       - name: Tight Triple
+        family: other
+        play_count: null
       - name: Bunch
+        family: bunch
+        play_count: null
       - name: Pair Slot
+        family: other
+        play_count: null
       - name: Ace
+        family: ace
+        play_count: null
       - name: Ace Trips
+        family: ace
+        play_count: null
       - name: Quads
+        family: other
+        play_count: null
       - name: Trips
+        family: trips
+        play_count: null
       - name: Flip Tight Triple
+        family: other
+        play_count: null
       - name: Doubles Right
+        family: other
+        play_count: null
       - name: Triple H Slot
+        family: other
+        play_count: null
       - name: Doubles H Wide
+        family: other
+        play_count: null
       - name: Triple Empty
+        family: other
+        play_count: null
       - name: Split Spread
+        family: other
+        play_count: null
       - name: I Pro
+        family: other
+        play_count: null
       - name: I Twins
+        family: other
+        play_count: null
       - name: I Spread
+        family: other
+        play_count: null
       - name: I Pro Load
+        family: other
+        play_count: null
       - name: I Wing
+        family: other
+        play_count: null
       - name: I Wing Jokers
+        family: other
+        play_count: null
       - name: I Jokers Pair
+        family: other
+        play_count: null
       - name: I Jacks
+        family: other
+        play_count: null
       - name: Strong I Jacks
+        family: other
+        play_count: null
   - team_id: pittsburgh_steelers
     name: Pittsburgh Steelers
     playbook_style: null
@@ -863,29 +1979,77 @@ teams:
     personnel_breakdown: null
     formations:
       - name: I Pro
+        family: other
+        play_count: null
       - name: Spread
+        family: spread
+        play_count: null
       - name: Jokers
+        family: other
+        play_count: null
       - name: Strong I Pro
+        family: other
+        play_count: null
       - name: Jacks
+        family: other
+        play_count: null
       - name: Strong I Spread
+        family: other
+        play_count: null
       - name: Strong I Twins
+        family: other
+        play_count: null
       - name: Strong I Jokers
+        family: other
+        play_count: null
       - name: Weak I Twins
+        family: i_form
+        play_count: null
       - name: Split Pro
+        family: other
+        play_count: null
       - name: Split Spread
+        family: other
+        play_count: null
       - name: Split Twins
+        family: other
+        play_count: null
       - name: Split Jacks
+        family: other
+        play_count: null
       - name: Quads
+        family: other
+        play_count: null
       - name: Pair Slot
+        family: other
+        play_count: null
       - name: Trips
+        family: trips
+        play_count: null
       - name: Tight Triple
+        family: other
+        play_count: null
       - name: Ace Bunch
+        family: ace
+        play_count: null
       - name: Ace
+        family: ace
+        play_count: null
       - name: Empty Tight
+        family: empty
+        play_count: null
       - name: Gun Quads Left
+        family: shotgun
+        play_count: null
       - name: Gun Split Spread
+        family: shotgun
+        play_count: null
       - name: Gun Trips Left
+        family: shotgun
+        play_count: null
       - name: Gun Empty Tight
+        family: shotgun
+        play_count: null
   - team_id: san_diego_chargers
     name: San Diego Chargers
     playbook_style: null
@@ -899,29 +2063,77 @@ teams:
     personnel_breakdown: null
     formations:
       - name: I Pro
+        family: other
+        play_count: null
       - name: I Spread
+        family: other
+        play_count: null
       - name: I Twins
+        family: other
+        play_count: null
       - name: I Jokers Pair
+        family: other
+        play_count: null
       - name: I Jacks
+        family: other
+        play_count: null
       - name: Strong I Spread
+        family: other
+        play_count: null
       - name: Strong I Jokers
+        family: other
+        play_count: null
       - name: Weak I Pro
+        family: i_form
+        play_count: null
       - name: Weak I Twins
+        family: i_form
+        play_count: null
       - name: Weak I Jacks
+        family: i_form
+        play_count: null
       - name: Split Spread
+        family: other
+        play_count: null
       - name: Bunch
+        family: bunch
+        play_count: null
       - name: Doubles
+        family: other
+        play_count: null
       - name: Triple
+        family: other
+        play_count: null
       - name: Tight Triple
+        family: other
+        play_count: null
       - name: Quads
+        family: other
+        play_count: null
       - name: Pair Slot
+        family: other
+        play_count: null
       - name: Ace Trips
+        family: ace
+        play_count: null
       - name: Ace
+        family: ace
+        play_count: null
       - name: "Gun: Doubles Right"
+        family: shotgun
+        play_count: null
       - name: "Gun: Split Spread"
+        family: shotgun
+        play_count: null
       - name: "Gun: Quads Left"
+        family: shotgun
+        play_count: null
       - name: "Gun: Triple Left"
+        family: shotgun
+        play_count: null
       - name: "Gun: Trips Left"
+        family: shotgun
+        play_count: null
   - team_id: san_francisco_49ers
     name: San Francisco 49ers
     playbook_style: null
@@ -935,27 +2147,71 @@ teams:
     personnel_breakdown: null
     formations:
       - name: Triple
+        family: other
+        play_count: null
       - name: Doubles
+        family: other
+        play_count: null
       - name: Ace
+        family: ace
+        play_count: null
       - name: Quads
+        family: other
+        play_count: null
       - name: Flip Tight Triple
+        family: other
+        play_count: null
       - name: Trips
+        family: trips
+        play_count: null
       - name: Bunch Left
+        family: bunch
+        play_count: null
       - name: I Pro
+        family: other
+        play_count: null
       - name: I Twins
+        family: other
+        play_count: null
       - name: I Spread
+        family: other
+        play_count: null
       - name: I Jokers
+        family: other
+        play_count: null
       - name: Strong I Pro
+        family: other
+        play_count: null
       - name: Weak I Pro
+        family: i_form
+        play_count: null
       - name: Weak I Spread
+        family: i_form
+        play_count: null
       - name: Weak I Jokers
+        family: i_form
+        play_count: null
       - name: Split Pro
+        family: other
+        play_count: null
       - name: Split Twins
+        family: other
+        play_count: null
       - name: Split Flip Pro
+        family: other
+        play_count: null
       - name: Split Spread
+        family: other
+        play_count: null
       - name: Split Jokers
+        family: other
+        play_count: null
       - name: Straight Trips
+        family: other
+        play_count: null
       - name: Straight Open
+        family: other
+        play_count: null
   - team_id: seattle_seahawks
     name: Seattle Seahawks
     playbook_style: null
@@ -969,31 +2225,83 @@ teams:
     personnel_breakdown: null
     formations:
       - name: I Spread
+        family: other
+        play_count: null
       - name: I Pro
+        family: other
+        play_count: null
       - name: I Twins
+        family: other
+        play_count: null
       - name: I Wing Jokers
+        family: other
+        play_count: null
       - name: I Jokers
+        family: other
+        play_count: null
       - name: Strong I Spread
+        family: other
+        play_count: null
       - name: Strong I Pro
+        family: other
+        play_count: null
       - name: Weak I Spread
+        family: i_form
+        play_count: null
       - name: Weak I Twins
+        family: i_form
+        play_count: null
       - name: Split Spread
+        family: other
+        play_count: null
       - name: Split Twins
+        family: other
+        play_count: null
       - name: Split Jokers
+        family: other
+        play_count: null
       - name: Triple
+        family: other
+        play_count: null
       - name: Doubles
+        family: other
+        play_count: null
       - name: Bunch
+        family: bunch
+        play_count: null
       - name: Quads
+        family: other
+        play_count: null
       - name: Flip Tight Triple
+        family: other
+        play_count: null
       - name: Pair Slot
+        family: other
+        play_count: null
       - name: Ace
+        family: ace
+        play_count: null
       - name: Ace Doubles
+        family: ace
+        play_count: null
       - name: Ace Trips
+        family: ace
+        play_count: null
       - name: Quads H Flex
+        family: other
+        play_count: null
       - name: Bunch H Flex
+        family: bunch
+        play_count: null
       - name: "Gun: Triple Left"
+        family: shotgun
+        play_count: null
       - name: "Gun: Doubles Right"
+        family: shotgun
+        play_count: null
       - name: "Gun: Split Spread"
+        family: shotgun
+        play_count: null
   - team_id: st_louis_rams
     name: St. Louis Rams
     playbook_style: null
@@ -1008,33 +2316,89 @@ teams:
     personnel_breakdown: null
     formations:
       - name: Quads
+        family: other
+        play_count: null
       - name: Trey
+        family: other
+        play_count: null
       - name: Triple
+        family: other
+        play_count: null
       - name: Trips
+        family: trips
+        play_count: null
       - name: Doubles
+        family: other
+        play_count: null
       - name: Pair Slot
+        family: other
+        play_count: null
       - name: Ace Wing
+        family: ace
+        play_count: null
       - name: Ace
+        family: ace
+        play_count: null
       - name: Ace Trips
+        family: ace
+        play_count: null
       - name: Flip Pair Slot
+        family: other
+        play_count: null
       - name: Bunch
+        family: bunch
+        play_count: null
       - name: Tight Triple
+        family: other
+        play_count: null
       - name: Doubles Left
+        family: other
+        play_count: null
       - name: Triple Right
+        family: other
+        play_count: null
       - name: I Spread Doubles
+        family: other
+        play_count: null
       - name: Trips Empty
+        family: trips
+        play_count: null
       - name: Empty Tight
+        family: empty
+        play_count: null
       - name: I Pro
+        family: other
+        play_count: null
       - name: I Spread
+        family: other
+        play_count: null
       - name: I Twins
+        family: other
+        play_count: null
       - name: I Wing Jokers
+        family: other
+        play_count: null
       - name: I Wing
+        family: other
+        play_count: null
       - name: I Jokers
+        family: other
+        play_count: null
       - name: Strong I Pro
+        family: other
+        play_count: null
       - name: Strong I Spread
+        family: other
+        play_count: null
       - name: Strong I Wing Jokers
+        family: other
+        play_count: null
       - name: Split Twins
+        family: other
+        play_count: null
       - name: "Gun: Split Spread"
+        family: shotgun
+        play_count: null
   - team_id: tampa_bay_buccaneers
     name: Tampa Bay Buccaneers
     playbook_style: null
@@ -1047,37 +2411,101 @@ teams:
     personnel_breakdown: null
     formations:
       - name: Split Pro
+        family: other
+        play_count: null
       - name: Split Spread
+        family: other
+        play_count: null
       - name: Split Twins
+        family: other
+        play_count: null
       - name: Far Pro
+        family: i_form
+        play_count: null
       - name: Far Spread
+        family: i_form
+        play_count: null
       - name: Far Twins
+        family: i_form
+        play_count: null
       - name: I Pro
+        family: other
+        play_count: null
       - name: I Spread
+        family: other
+        play_count: null
       - name: I Twins
+        family: other
+        play_count: null
       - name: I Wing
+        family: other
+        play_count: null
       - name: I Jokers
+        family: other
+        play_count: null
       - name: Strong I Spread
+        family: other
+        play_count: null
       - name: Strong I Twins
+        family: other
+        play_count: null
       - name: Strong I Jokers
+        family: other
+        play_count: null
       - name: Strong I Jokers Pair
+        family: other
+        play_count: null
       - name: Weak I Pro
+        family: i_form
+        play_count: null
       - name: Weak I Spread
+        family: i_form
+        play_count: null
       - name: Weak I Jokers
+        family: i_form
+        play_count: null
       - name: Trey
+        family: other
+        play_count: null
       - name: Triple
+        family: other
+        play_count: null
       - name: Doubles
+        family: other
+        play_count: null
       - name: Quads
+        family: other
+        play_count: null
       - name: Tight Triple
+        family: other
+        play_count: null
       - name: Ace
+        family: ace
+        play_count: null
       - name: Ace Trips
+        family: ace
+        play_count: null
       - name: Bunch
+        family: bunch
+        play_count: null
       - name: Pair Slot
+        family: other
+        play_count: null
       - name: Triple Left
+        family: other
+        play_count: null
       - name: Trey Left
+        family: other
+        play_count: null
       - name: Doubles Right
+        family: other
+        play_count: null
       - name: Quads Right
+        family: other
+        play_count: null
       - name: Ace Right
+        family: ace
+        play_count: null
   - team_id: tennessee_titans
     name: Tennessee Titans
     playbook_style: null
@@ -1091,26 +2519,68 @@ teams:
     personnel_breakdown: null
     formations:
       - name: Quads
+        family: other
+        play_count: null
       - name: Doubles
+        family: other
+        play_count: null
       - name: Tight Triple
+        family: other
+        play_count: null
       - name: Trey
+        family: other
+        play_count: null
       - name: Trips
+        family: trips
+        play_count: null
       - name: Ace
+        family: ace
+        play_count: null
       - name: Ace Trips
+        family: ace
+        play_count: null
       - name: Triple
+        family: other
+        play_count: null
       - name: Pair Slot
+        family: other
+        play_count: null
       - name: Ace Right
+        family: ace
+        play_count: null
       - name: I Pro
+        family: other
+        play_count: null
       - name: I Twins
+        family: other
+        play_count: null
       - name: I Jokers
+        family: other
+        play_count: null
       - name: I Jokers Pair
+        family: other
+        play_count: null
       - name: Strong I Pro
+        family: other
+        play_count: null
       - name: Strong I Jokers
+        family: other
+        play_count: null
       - name: Weak I Twins
+        family: i_form
+        play_count: null
       - name: "Gun: Quads Left"
+        family: shotgun
+        play_count: null
       - name: "Gun: Doubles Right"
+        family: shotgun
+        play_count: null
       - name: "Gun: Empty Tight"
+        family: shotgun
+        play_count: null
       - name: "Gun: Triple Left"
+        family: shotgun
+        play_count: null
   - team_id: washington_redskins
     name: Washington Redskins
     playbook_style: null
@@ -1125,26 +2595,68 @@ teams:
     personnel_breakdown: null
     formations:
       - name: Doubles
+        family: other
+        play_count: null
       - name: Triple
+        family: other
+        play_count: null
       - name: Trips Tight
+        family: trips
+        play_count: null
       - name: Tight Triple
+        family: other
+        play_count: null
       - name: Ace Flip
+        family: ace
+        play_count: null
       - name: Ace
+        family: ace
+        play_count: null
       - name: Ace Trips
+        family: ace
+        play_count: null
       - name: Pair Slot
+        family: other
+        play_count: null
       - name: Bunch
+        family: bunch
+        play_count: null
       - name: Ace Bunch
+        family: ace
+        play_count: null
       - name: I Spread
+        family: other
+        play_count: null
       - name: I Twins
+        family: other
+        play_count: null
       - name: Jokers
+        family: other
+        play_count: null
       - name: I Wing Jokers
+        family: other
+        play_count: null
       - name: Strong I Pro
+        family: other
+        play_count: null
       - name: Strong I Jokers
+        family: other
+        play_count: null
       - name: Strong I Wing Jokers
+        family: other
+        play_count: null
       - name: Weak I Pro
+        family: i_form
+        play_count: null
       - name: Weak I Twins
+        family: i_form
+        play_count: null
       - name: "Gun: Doubles Right"
+        family: shotgun
+        play_count: null
       - name: "Gun: Ace Trips"
+        family: shotgun
+        play_count: null
   - team_id: west_coast
     name: West Coast
     playbook_style: null
@@ -1158,19 +2670,53 @@ teams:
     personnel_breakdown: null
     formations:
       - name: Far Twins
+        family: i_form
+        play_count: null
       - name: Far Spread
+        family: i_form
+        play_count: null
       - name: I Pro
+        family: other
+        play_count: null
       - name: I Spread
+        family: other
+        play_count: null
       - name: I Jokers
+        family: other
+        play_count: null
       - name: Strong I Pro
+        family: other
+        play_count: null
       - name: Strong I Twins
+        family: other
+        play_count: null
       - name: Strong I Spread
+        family: other
+        play_count: null
       - name: Weak I Pro
+        family: i_form
+        play_count: null
       - name: Weak I Twins
+        family: i_form
+        play_count: null
       - name: Weak I Spread
+        family: i_form
+        play_count: null
       - name: Quads
+        family: other
+        play_count: null
       - name: Trips
+        family: trips
+        play_count: null
       - name: Doubles
+        family: other
+        play_count: null
       - name: Tight Triple
+        family: other
+        play_count: null
       - name: Bunch
+        family: bunch
+        play_count: null
       - name: Ace
+        family: ace
+        play_count: null
