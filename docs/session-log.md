@@ -99,10 +99,16 @@ order); ESPN will use the on-screen formation header. Indianapolis Colts done �
 333 plays, 24/24 formations within +/-2 of play_count. Chunk caches live in
 `.docx-cache-<game>-plays/` (gitignored), resumable.
 
-**In progress / next step:** the bulk play-name vision grind — ~49 madden-25
-teams + 34 espn-2k5 teams. Run chunked Haiku subagents per team, then
-`extract_play_names.py`. Multi-window (usage limits). (2) Madden 01/03 PS2
-catalogs still need profiles + ingest. See pending-queue.
+**Play-name grind progress:** 10/50 madden-25 playbooks done (Arizona, Atlanta,
+Cleveland, Indianapolis, Minnesota, New Orleans, NY Giants, Oakland, Pittsburgh,
+Seattle) — 224/227 formations within +/-2 of play_count. Per-team workflow:
+extract docx images to /tmp/m25-img/<slug>/, launch 4 chunked Haiku subagents
+(~40 imgs each) writing `.docx-cache-m25-plays/<Team>__chunkNN.json`, then
+`extract_play_names.py --game madden-25-ps3 --cache-dir .docx-cache-m25-plays`.
+
+**In progress / next step:** 40 madden-25 playbooks + 34 espn-2k5 remain. Same
+workflow; ESPN uses header-based association (its play screens name the
+formation). (2) Madden 01/03 PS2 catalogs still need profiles + ingest.
 
 **Uncommitted state:** Madden 25 work committed earlier (e48d0ad). ESPN 2K5
 catalog committed at end of this session.
