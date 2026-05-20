@@ -28,10 +28,18 @@ when an item depends on something external (user input, upstream work).
   families are panel-header-derived; ESPN 2K5's are now a screenshot-verified
   prefix classifier — both accurate. See Done.)
 
-- **Play-name extraction (catalog Phase 2) — in progress.** madden-25 DONE
-  (50/50 playbooks, 14,419 plays). Remaining: espn-2k5 (34 playbooks, header-based
-  association) and ncaa-14 (371-docx Play Database, organised by formation — needs
-  a per-formation pipeline, not the per-team screenshot one).
+- **Play-name extraction (catalog Phase 2) — DONE for madden-25, espn-2k5,
+  ncaa-14.** Phase 3 = backfill plays for the xlsx-sourced games. Sources
+  surveyed 2026-05-19:
+  - **madden-07-ps2**: per-team `Playbook M07.docx` (33 teams, M25 pipeline
+    reusable; xlsx Play Charts only covers ARI/CIN — insufficient).
+  - **madden-04-ps2**: per-team `Playbook M04.docx` (34 teams, M25 pipeline).
+  - **ncaa-06-ps2**: single `Offensive Plays.docx` grouped by formation —
+    NCAA 14 per-formation pipeline.
+  - **ncaa-05-ps2**: single `Offensive Plays.docx` — same as 06.
+  - **BLOCKED on source** (only formation matrix, no play data):
+    `madden-05-ps2`, `ncaa-04-ps2`, `ncaa-07-ps2`. User asked to hunt for
+    sources for these (forum dumps, manuals, community spreadsheets).
 
 - **AI onboarding doc.** `docs/ai-onboarding.md` for smaller models joining the
   repo — a one-shot tutorial with fully-narrated tool-call sequences under
