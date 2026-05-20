@@ -779,24 +779,465 @@ teams:
             type: null
           - name: Payton Option
             type: null
+          - name: Hitch Corner
+            type: null
+          - name: HB Stretch
+            type: null
+          - name: HB Screen
+            type: null
+          - name: Gomez Option In
+            type: null
+          - name: FL Reverse
+            type: null
+          - name: Dual Drag
+            type: null
       - name: Singleback Slot String
       - name: Singleback Trips Bunch
+        plays:
+          - name: Cash Option
+            type: null
+          - name: HB Slam
+            type: null
+          - name: PA Boot Over
+            type: null
+          - name: Curls Attack
+            type: null
+          - name: HB Draw
+            type: null
+          - name: Slants Slot Flat
+            type: null
+          - name: Martin Option
+            type: null
+          - name: HB Counter
+            type: null
+          - name: FL Out Stop
+            type: null
+          - name: PA Draw Pass
+            type: null
+          - name: Quick Pitch
+            type: null
+          - name: Ruvell Deep Post
+            type: null
       - name: Singleback 4WR Flex
+        plays:
+          - name: Payton Option
+            type: null
+          - name: HB Dive
+            type: null
+          - name: PA Drop In
+            type: null
+          - name: Hail Mary
+            type: null
+          - name: HB Cutback
+            type: null
+          - name: Hitch Corners
+            type: null
+          - name: PA Slot Crosses
+            type: null
+          - name: HB Draw
+            type: null
+          - name: Curl Flats
+            type: null
+          - name: HB Screen
+            type: null
+          - name: HB Stretch
+            type: null
+          - name: Slants
+            type: null
       - name: Singleback Empty 5WR
+        plays:
+          - name: Cash Option
+            type: null
+          - name: Comebacks
+            type: null
+          - name: Curl Flats
+            type: null
+          - name: Slot Angle Post
+            type: null
+          - name: WR Screen
+            type: null
+          - name: Zig Outs
+            type: null
+          - name: Smash Fork
+            type: null
+          - name: Stagger Posts
+            type: null
+          - name: X-Clown
+            type: null
       - name: I-Form Normal
+        plays:
+          - name: Cash Option
+            type: null
+          - name: Boss Sweep
+            type: null
+          - name: HB Pass
+            type: null
+          - name: PA TE Post
+            type: null
+          - name: HB Lead Dive
+            type: null
+          - name: Weak Flood
+            type: null
+          - name: HB Lead Toss
+            type: null
+          - name: PA FB Flat
+            type: null
+          - name: HB Slam
+            type: null
+          - name: Cross In
+            type: null
+          - name: HB Draw
+            type: null
+          - name: Comet Pass
+            type: null
+          - name: HB Screen
+            type: null
+          - name: Off Tackle
+            type: null
+          - name: Post Flags
+            type: null
+          - name: Flats
+            type: null
+          - name: HB Counter
+            type: null
+          - name: Gomez Option
+            type: null
+          - name: FB Dive Strong
+            type: null
+          - name: Martin Option
+            type: null
+          - name: FB Fake HB Toss
+            type: null
       - name: I-Form Twin WR
+        plays:
+          - name: Gomez Option
+            type: null
+          - name: HB Lead Dive
+            type: null
+          - name: PA TE Leak
+            type: null
+          - name: Flea Flicker
+            type: null
+          - name: Boss Sweep
+            type: null
+          - name: Short Slants
+            type: null
+          - name: HB Draw
+            type: null
+          - name: Weak Flood
+            type: null
+          - name: HB Counter
+            type: null
+          - name: TE Z Out
+            type: null
+          - name: FB Dive
+            type: null
+          - name: HB Screen
+            type: null
       - name: I-Form Big
+        plays:
+          - name: Counter Lead
+            type: null
+          - name: PA FB Flat
+            type: null
+          - name: HB Lead Dive
+            type: null
+          - name: FB Dive Strong
+            type: null
+          - name: Gomez Option
+            type: null
+          - name: FB Fake HB Toss
+            type: null
+          - name: HB Slam
+            type: null
+          - name: TE Shake
+            type: null
+          - name: HB Off Tackle
+            type: null
+          - name: HB Misdirection
+            type: null
+          - name: PA TE Corner
+            type: null
+          - name: HB Lead Toss
+            type: null
+          - name: HB Inside
+            type: null
+          - name: Curl Flats
+            type: null
       - name: Split Backs Normal
+        plays:
+          - name: Martin Option
+            type: null
+          - name: Quick Toss
+            type: null
+          - name: PA WR Shake
+            type: null
+          - name: QB Sprintout
+            type: null
+          - name: HB Sweep
+            type: null
+          - name: TE Post
+            type: null
+          - name: FB Belly
+            type: null
+          - name: HB Option
+            type: null
+          - name: HB Draw
+            type: null
       - name: Split Backs 3WR
+        plays:
+          - name: Booth Option
+            type: null
+          - name: HB Blast
+            type: null
+          - name: Curls
+            type: null
+          - name: Cash Option
+            type: null
+          - name: FB Blast
+            type: null
+          - name: Slot Z Out
+            type: null
+          - name: HB Option
+            type: null
+          - name: Quick Toss
+            type: null
+          - name: HB Screen
+            type: null
+          - name: Slot Cross
+            type: null
+          - name: HB Draw
+            type: null
+          - name: WR Unders
+            type: null
       - name: Full House Normal Wide
+        plays:
+          - name: HB Smash
+            type: null
+          - name: Curls
+            type: null
+          - name: HB Draw
+            type: null
+          - name: HB Slam
+            type: null
+          - name: PA Middle
+            type: null
+          - name: HB Sweep
+            type: null
+          - name: FB Slam
+            type: null
+          - name: WR DBL Shake
+            type: null
+          - name: Counter Lead
+            type: null
       - name: Strong I Normal
+        plays:
+          - name: Payton Option
+            type: null
+          - name: HB Blast
+            type: null
+          - name: PA Boot Lt
+            type: null
+          - name: TE Corner
+            type: null
+          - name: HB Stretch
+            type: null
+          - name: PA FL Middle
+            type: null
+          - name: Counter Trap
+            type: null
+          - name: PA Rollout
+            type: null
+          - name: HB Dive
+            type: null
+          - name: FB Dive
+            type: null
+          - name: Gomez Option
+            type: null
+          - name: HB Power
+            type: null
       - name: Strong I Twin WR
+        plays:
+          - name: Martin Option
+            type: null
+          - name: HB Dive
+            type: null
+          - name: PA FB Flat
+            type: null
+          - name: FB Dive
+            type: null
+          - name: PA WR Cross
+            type: null
+          - name: HB Lead
+            type: null
+          - name: HB Draw
+            type: null
+          - name: WR Smash
+            type: null
+          - name: HB Power
+            type: null
+          - name: WR Streak
+            type: null
+          - name: Counter Weak
+            type: null
+          - name: WR Flag
+            type: null
       - name: Weak I Normal
+        plays:
+          - name: Gomez Option
+            type: null
+          - name: HB Dive
+            type: null
+          - name: PA Deep Post
+            type: null
+          - name: FB Dive
+            type: null
+          - name: Cash Option
+            type: null
+          - name: Counter Trap
+            type: null
+          - name: HB Gut
+            type: null
+          - name: PA Boot Lt
+            type: null
+          - name: HB Draw
+            type: null
+          - name: HB Screen
+            type: null
+          - name: Double Counter
+            type: null
+          - name: PA TE Post
+            type: null
       - name: Weak I Twin TE
+        plays:
+          - name: Gomez Option
+            type: null
+          - name: HB Dive
+            type: null
+          - name: PA TE Under
+            type: null
+          - name: FB Dive
+            type: null
+          - name: Cash Option
+            type: null
+          - name: Counter Trap
+            type: null
+          - name: HB Draw
+            type: null
+          - name: PA Boot Lt
+            type: null
+          - name: HB Trap
+            type: null
+          - name: Quick Screen
+            type: null
+          - name: Power Toss
+            type: null
+          - name: TE Drag
+            type: null
       - name: Gun Normal
+        plays:
+          - name: Gomez Option In
+            type: null
+          - name: HB Sweep
+            type: null
+          - name: PA Slot Post
+            type: null
+          - name: Cash Option
+            type: null
+          - name: HB Mid Draw
+            type: null
+          - name: Double Outs
+            type: null
+          - name: Corner - Threat
+            type: null
+          - name: Payton Option
+            type: null
+          - name: FL Screen
+            type: null
+          - name: HB Screen
+            type: null
+          - name: Martin Option
+            type: null
+          - name: Slot Drag
+            type: null
       - name: Gun Slot Strong TE Flip
+        plays:
+          - name: Cash Option
+            type: null
+          - name: HB Draw
+            type: null
+          - name: Slot Under
+            type: null
+          - name: QB Dash Comeback
+            type: null
+          - name: PA FL Corner
+            type: null
+          - name: WR Post
+            type: null
+          - name: HB Screen
+            type: null
+          - name: Deep Dig
+            type: null
+          - name: Slant Attack
+            type: null
       - name: Gun 4WR
+        plays:
+          - name: Payton Option
+            type: null
+          - name: HB Draw
+            type: null
+          - name: PA Deep Outs
+            type: null
+          - name: Cash Option
+            type: null
+          - name: HB Quick Base
+            type: null
+          - name: PA Curl - Drag
+            type: null
+          - name: HB Screen
+            type: null
+          - name: Smash Corners
+            type: null
+          - name: Curl Flats
+            type: null
+          - name: Slot Outs
+            type: null
+          - name: HB Sweep
+            type: null
+          - name: WR Cross
+            type: null
+          - name: Slot Outside
+            type: null
+          - name: Dbl WR Shake
+            type: null
+          - name: Booth Option
+            type: null
       - name: Gun 5WR
+        plays:
+          - name: Cash Option
+            type: null
+          - name: Hitch Corners
+            type: null
+          - name: WR Screen
+            type: null
+          - name: Curl - Drag
+            type: null
+          - name: Mid Cross
+            type: null
+          - name: Deep Post
+            type: null
+          - name: WR Comebacks
+            type: null
+          - name: Parallel Slants
+            type: null
+          - name: WR Drag
+            type: null
+          - name: Perez Option
+            type: null
+          - name: WR Screens
+            type: null
+          - name: Curl Flats
+            type: null
   - team_id: "baltimore_ravens"
     name: Baltimore Ravens
     playbook_style: null
@@ -8419,11 +8860,79 @@ teams:
             type: null
       - name: Singleback Big Wing
         plays:
+          - name: McCareins Option
+            type: null
+          - name: HB Dive
+            type: null
+          - name: PA TE Corner
+            type: null
+          - name: HB Power
+            type: null
+          - name: HB Swing
+            type: null
+          - name: HB Cutback
+            type: null
+          - name: Dual TE Flat
+            type: null
+          - name: HB Blunt Dive
+            type: null
+          - name: PA Boot Comeback
+            type: null
+          - name: Coles Option
+            type: null
+          - name: PA Quick Hit
+            type: null
+      - name: Singleback Normal
+        plays:
+          - name: Double Outs
+            type: null
+          - name: HB Sweep
+            type: null
+          - name: SE Quick Hit
+            type: null
+          - name: Post Corners
+            type: null
+          - name: HB Smash
+            type: null
+          - name: Baker Option
+            type: null
+          - name: Cross Up
+            type: null
+          - name: HB Sprint
+            type: null
+          - name: WR Slants
+            type: null
+          - name: Double Hitch
+            type: null
+          - name: HB Draw
+            type: null
+          - name: PA Rollout
+            type: null
           - name: Medium Ins
             type: null
           - name: HB Plunge
             type: null
           - name: Double Drag
+            type: null
+          - name: McCareins Option
+            type: null
+          - name: HB Pitch
+            type: null
+          - name: PA HB Curl
+            type: null
+      - name: Singleback Slot Strong
+        plays:
+          - name: McCareins Option
+            type: null
+          - name: HB Counter
+            type: null
+          - name: PA Trap X-Clown
+            type: null
+          - name: FL Drag
+            type: null
+          - name: HB Draw
+            type: null
+          - name: Slot Zig Out
             type: null
           - name: Safety Bait
             type: null
@@ -8431,11 +8940,77 @@ teams:
             type: null
           - name: Quick Looks
             type: null
+          - name: HB Sprint
+            type: null
+          - name: Cross Up
+            type: null
+          - name: HB Blunt Dive
+            type: null
+      - name: Singleback Trips Bunch
+        plays:
+          - name: McCareins Option
+            type: null
+          - name: HB Slam
+            type: null
+          - name: PA Pin Deep
+            type: null
+          - name: Curls Attack
+            type: null
+          - name: HB Draw
+            type: null
+          - name: Double Drags
+            type: null
           - name: HB Counter Trap
             type: null
           - name: Smash Slot Post
             type: null
           - name: Quick Pitch
+            type: null
+          - name: Delta Sit
+            type: null
+          - name: Spacing
+            type: null
+          - name: Drive
+            type: null
+      - name: Singleback Tight Flex
+        plays:
+          - name: Baker Option
+            type: null
+          - name: HB Dive
+            type: null
+          - name: PA Waggle
+            type: null
+          - name: HB Counter
+            type: null
+          - name: HB Screen
+            type: null
+          - name: HB Slam
+            type: null
+          - name: McCareins Option
+            type: null
+          - name: HB Slant 18
+            type: null
+          - name: Shallow Cross
+            type: null
+      - name: Singleback Base Flex
+        plays:
+          - name: Flood
+            type: null
+          - name: HB Dive
+            type: null
+          - name: PA Post Corner
+            type: null
+          - name: Flanker Post
+            type: null
+          - name: HB Pitch
+            type: null
+          - name: Flanker Drive
+            type: null
+          - name: WR In
+            type: null
+          - name: HB Slant 18
+            type: null
+          - name: PA Boot Lt
             type: null
           - name: Flanker Curl
             type: null
@@ -8443,19 +9018,57 @@ teams:
             type: null
           - name: Criss Cross
             type: null
-      - name: Singleback Normal
+      - name: Singleback 4WR
         plays:
+          - name: McCareins Option
+            type: null
+          - name: HB Draw
+            type: null
+          - name: PA Drop In
+            type: null
+          - name: WR Screen
+            type: null
+          - name: HB Toss
+            type: null
+          - name: Out N Ups
+            type: null
+          - name: PA FL Stretch
+            type: null
+          - name: HB Sprint
+            type: null
+          - name: WR Comeback
+            type: null
+          - name: Posts
+            type: null
+          - name: Off Tackle
+            type: null
+          - name: Zig-Zags
+            type: null
           - name: Comebacks
             type: null
           - name: Martin Option
             type: null
           - name: Cross Up
             type: null
+      - name: I-Form Normal
+        plays:
+          - name: Coles Option
+            type: null
+          - name: HB Dive
+            type: null
+          - name: PA FB Flat
+            type: null
+          - name: FL Hook
+            type: null
+          - name: FB Dive Strong
+            type: null
+          - name: Play Action
+            type: null
           - name: HB Screen
             type: null
-          - name: HB Slash
+          - name: HB Counter
             type: null
-          - name: PA FB Up
+          - name: McCareins Option
             type: null
           - name: FB Dive
             type: null
@@ -8463,11 +9076,77 @@ teams:
             type: null
           - name: HB Toss
             type: null
+          - name: HB Slam
+            type: null
+          - name: TE Corner
+            type: null
+          - name: WR Around
+            type: null
+      - name: I-Form Twin WR
+        plays:
+          - name: HB Lead Toss
+            type: null
+          - name: Baker Option
+            type: null
+          - name: HB Counter
+            type: null
+          - name: HB Dive
+            type: null
+          - name: PA TE Leak
+            type: null
+          - name: HB Draw
+            type: null
+          - name: HB Screen
+            type: null
+          - name: HB Slash
+            type: null
+          - name: PA FB Up
+            type: null
+      - name: I-Form Big
+        plays:
+          - name: FB Dive
+            type: null
+          - name: Pump N Go
+            type: null
+          - name: HB Toss
+            type: null
+          - name: HB Lead Toss
+            type: null
+          - name: TE Post
+            type: null
+          - name: FB Dive Strong
+            type: null
+          - name: Quick Outs
+            type: null
+          - name: HB Counter
+            type: null
+          - name: Deep Cross
+            type: null
           - name: FB Screen
             type: null
           - name: HB Lead Dive
             type: null
           - name: TE Z Out
+            type: null
+      - name: Strong I Normal
+        plays:
+          - name: FB Dive
+            type: null
+          - name: PA Flood
+            type: null
+          - name: Counter Weak
+            type: null
+          - name: HB Streak
+            type: null
+          - name: HB Blast
+            type: null
+          - name: Slant Hook
+            type: null
+          - name: HB Dive
+            type: null
+          - name: FB Flat
+            type: null
+          - name: HB Toss Weak
             type: null
           - name: PA Slide
             type: null
@@ -8475,10 +9154,23 @@ teams:
             type: null
           - name: WR Hookout
             type: null
-      - name: Singleback Slot Strong
-      - name: Singleback Trips Bunch
-      - name: Singleback Tight Flex
-      - name: Singleback Base Flex
+          - name: TE Corner
+            type: null
+          - name: HB Off Tackle
+            type: null
+          - name: PA Dig Post
+            type: null
+          - name: PA Waggle
+            type: null
+          - name: HB Dive Weak
+            type: null
+          - name: HB Check
+            type: null
+          - name: PA HB Curl
+            type: null
+          - name: HB Lead
+            type: null
+      - name: Strong I Twin WR
         plays:
           - name: PA WR Cross
             type: null
@@ -8486,15 +9178,75 @@ teams:
             type: null
           - name: WR Smash
             type: null
+          - name: WR Streak
+            type: null
+          - name: HB Sweep
+            type: null
+          - name: Double Flares
+            type: null
+      - name: Strong I Normal Flex
+        plays:
+          - name: Inside Hook
+            type: null
+          - name: Off Tackle
+            type: null
+          - name: Whip Flat
+            type: null
+          - name: PA Comeback
+            type: null
+          - name: HB Dive
+            type: null
+          - name: PA Post Corner
+            type: null
           - name: FB Dive
             type: null
           - name: PA Rollout
             type: null
           - name: HB Dive Weak
             type: null
+      - name: Strong I Twin TE
+        plays:
+          - name: PA Attack
+            type: null
+          - name: HB Blast
+            type: null
+          - name: PA FB Flat
+            type: null
+          - name: PA Boot Lt
+            type: null
+          - name: HB Stretch
+            type: null
+          - name: Baker Option
+            type: null
+          - name: FB Dive
+            type: null
+          - name: TE Drag
+            type: null
+          - name: Counter Weak
+            type: null
           - name: Toss Strong
             type: null
+          - name: PA Rollout
+            type: null
           - name: Counter Lead
+            type: null
+      - name: Weak I H Pro
+        plays:
+          - name: TE Fade
+            type: null
+          - name: HB Lead
+            type: null
+          - name: Coles Option
+            type: null
+          - name: Baker Option
+            type: null
+          - name: Double Counter
+            type: null
+          - name: PA QB Boot
+            type: null
+          - name: PA Boot Slide
+            type: null
+          - name: HB Gut
             type: null
           - name: TE Hook In
             type: null
@@ -8502,11 +9254,51 @@ teams:
             type: null
           - name: Quick Slants
             type: null
+          - name: HB Wham
+            type: null
+          - name: Cross Under
+            type: null
+          - name: Counter Weak
+            type: null
+          - name: Streaks
+            type: null
+          - name: HB Draw
+            type: null
+          - name: HB Screen
+            type: null
+          - name: TE Shallow
+            type: null
+          - name: HB Counter
+            type: null
+          - name: Hook Ins
+            type: null
+      - name: Weak I H Twins
+        plays:
           - name: Cross Under
             type: null
           - name: HB Lead
             type: null
           - name: PA Boot Lt
+            type: null
+          - name: FB Power
+            type: null
+          - name: PA Waggle
+            type: null
+          - name: HB Gut
+            type: null
+          - name: Baker Option
+            type: null
+          - name: HB Dive
+            type: null
+          - name: Slot Drag
+            type: null
+      - name: Gun Normal Offset Wk
+        plays:
+          - name: Coles Option
+            type: null
+          - name: FL Hook
+            type: null
+          - name: McCareins Option
             type: null
           - name: Dig Wheel
             type: null
@@ -8514,29 +9306,76 @@ teams:
             type: null
           - name: Slant Hook
             type: null
-          - name: McGareins Option
+          - name: WR Drag
+            type: null
+          - name: Quick Ins
+            type: null
+          - name: Slants Middle
+            type: null
+          - name: HB Screen
+            type: null
+          - name: TE Drag
+            type: null
+          - name: WR Curl
+            type: null
+          - name: Martin Option
+            type: null
+          - name: HB Delay
+            type: null
+          - name: FL Drag
+            type: null
+      - name: Gun Slot Strong
+        plays:
+          - name: McCareins Option
             type: null
           - name: HB Draw
             type: null
           - name: PA FL Streak
             type: null
+          - name: Sprint Rt Option
+            type: null
+          - name: WR Drag
+            type: null
+          - name: Slot Hook
+            type: null
+          - name: Read
+            type: null
+          - name: Safety Bait
+            type: null
+          - name: Baker Option
+            type: null
+          - name: Post Corner
+            type: null
+          - name: TE Post
+            type: null
+          - name: Middle Hook
+            type: null
+      - name: Gun 4WR
+        plays:
           - name: Coles Option
+            type: null
+          - name: HB Draw
             type: null
           - name: Jets Cross
             type: null
-      - name: Singleback 4WR
-      - name: I-Form Normal
-      - name: I-Form Twin WR
-      - name: I-Form Big
-      - name: Strong I Normal
-      - name: Strong I Twin WR
-      - name: Strong I Normal Flex
-      - name: Strong I Twin TE
-      - name: Weak I H Pro
-      - name: Weak I H Twins
-      - name: Gun Normal Offset Wk
-      - name: Gun Slot Strong
-      - name: Gun 4WR
+          - name: Slot Flags
+            type: null
+          - name: Slants Middle
+            type: null
+          - name: Corner - Threat
+            type: null
+          - name: Smash Corners
+            type: null
+          - name: Hail Mary
+            type: null
+          - name: Slot Comebacks
+            type: null
+          - name: WR Drag
+            type: null
+          - name: Curl Flats
+            type: null
+          - name: Titan Corners
+            type: null
   - team_id: "oakland_raiders"
     name: Oakland Raiders
     playbook_style: null
@@ -8965,22 +9804,489 @@ teams:
           - name: Triple Outs
             type: null
       - name: Singleback Normal Slot
+        plays:
+          - name: Romby Option
+            type: null
+          - name: HB Draw
+            type: null
+          - name: PA Flow
+            type: null
+          - name: Whip Unders
+            type: null
+          - name: HB Slam
+            type: null
+          - name: Curl Flats
+            type: null
+          - name: Turner Option In
+            type: null
+          - name: HB Stretch
+            type: null
+          - name: PA Dbl Curls
+            type: null
+          - name: FL Middle
+            type: null
+          - name: HB Counter Trap
+            type: null
+          - name: FL Z Clearout
+            type: null
+          - name: Chapman Option
+            type: null
+          - name: HB Cutback
+            type: null
+          - name: Slot Cross
+            type: null
+          - name: HB Screen
+            type: null
+          - name: HB Dive
+            type: null
+          - name: Cross Up
+            type: null
       - name: Singleback Tight Slots
+        plays:
+          - name: Bryant Option
+            type: null
+          - name: HB Dive
+            type: null
+          - name: PA Rollout
+            type: null
+          - name: HB Wheel
+            type: null
+          - name: HB Draw
+            type: null
+          - name: Shallow Cross
+            type: null
+          - name: Hitch Corners
+            type: null
+          - name: HB Pitch
+            type: null
+          - name: Drag Cross Ups
+            type: null
       - name: Singleback 4WR Spread
+        plays:
+          - name: PA HB Out
+            type: null
+          - name: HB Dive
+            type: null
+          - name: Strike Post
+            type: null
+          - name: Slots Attack
+            type: null
+          - name: HB Cutback
+            type: null
+          - name: HB Wheel
+            type: null
+          - name: HB Draw
+            type: null
+          - name: PA Slot Crosses
+            type: null
+          - name: HB Pitch
+            type: null
+          - name: Slot Clearouts
+            type: null
+          - name: HB Slash
+            type: null
+          - name: PA Draw Pass
+            type: null
+          - name: Slot Cross
+            type: null
+          - name: HB Stretch
+            type: null
+          - name: Smash Posts
+            type: null
+          - name: Chapman Option
+            type: null
+          - name: HB Counter
+            type: null
+          - name: Hitch Corners
+            type: null
       - name: Singleback Empty 4WR
+        plays:
+          - name: Bryant Option
+            type: null
+          - name: Curl Flats
+            type: null
+          - name: TE Wheel
+            type: null
+          - name: Outside Corners
+            type: null
+          - name: TE Angle Post
+            type: null
+          - name: Quick Screen
+            type: null
+          - name: Outside Posts
+            type: null
+          - name: TE Post
+            type: null
+          - name: Slot Corners
+            type: null
       - name: Singleback Empty 5WR
+        plays:
+          - name: Curl Flats
+            type: null
+          - name: Bryant Option
+            type: null
+          - name: Cross Ups
+            type: null
+          - name: Slot Curls
+            type: null
+          - name: WR Screen
+            type: null
+          - name: Smash Fork
+            type: null
+          - name: Zig Outs
+            type: null
+          - name: Slot Angle Post
+            type: null
+          - name: Stagger Posts
+            type: null
+          - name: X-Clown
+            type: null
+          - name: Slot Flats
+            type: null
+          - name: Hail Mary
+            type: null
       - name: I-Form Normal
+        plays:
+          - name: Turner Option In
+            type: null
+          - name: HB Misdirection
+            type: null
+          - name: PA FB Flat
+            type: null
+          - name: FB Dive Fake HB
+            type: null
+          - name: Curls
+            type: null
+          - name: FB Fake HB Toss
+            type: null
+          - name: HB Counter
+            type: null
+          - name: Short Slants
+            type: null
+          - name: HB Draw
+            type: null
+          - name: HB Lead Toss
+            type: null
+          - name: Bryant Option
+            type: null
+          - name: HB Slam
+            type: null
+          - name: PA TE Corner
+            type: null
+          - name: WR Reverse
+            type: null
+          - name: HB Screen
+            type: null
+          - name: PA QB Boot
+            type: null
+          - name: TE Shake
+            type: null
+          - name: HB Stretch
+            type: null
       - name: I-Form Twin WR
+        plays:
+          - name: Turner Option
+            type: null
+          - name: HB Slash
+            type: null
+          - name: PA TE Leak
+            type: null
+          - name: HB Counter
+            type: null
+          - name: HB Screen
+            type: null
+          - name: HB Toss
+            type: null
+          - name: Bryant Option
+            type: null
+          - name: HB Blast
+            type: null
+          - name: PA Cross In
+            type: null
+          - name: WR Corner
+            type: null
+          - name: FB Dive Strong
+            type: null
+          - name: TE Post
+            type: null
       - name: I-Form 3WR
+        plays:
+          - name: Bryant Option
+            type: null
+          - name: HB Dive
+            type: null
+          - name: PA FB Flat
+            type: null
+          - name: Elliott Option
+            type: null
+          - name: FB Dive
+            type: null
+          - name: WR Deep Post
+            type: null
+          - name: HB Blast
+            type: null
+          - name: Flats
+            type: null
+          - name: HB Draw
+            type: null
+          - name: Curls
+            type: null
+          - name: HB Toss
+            type: null
+          - name: Pump N Go
+            type: null
       - name: Split Backs Normal
+        plays:
+          - name: Turner Option
+            type: null
+          - name: HB Inside
+            type: null
+          - name: Curl Flats
+            type: null
+          - name: Jones Option
+            type: null
+          - name: Quick Toss
+            type: null
+          - name: PA WR Shake
+            type: null
+          - name: QB Sprintout
+            type: null
+          - name: HB Sweep
+            type: null
+          - name: TE Post
+            type: null
+          - name: FB Belly
+            type: null
+          - name: HB Option
+            type: null
+          - name: HB Draw
+            type: null
       - name: Split Backs 3WR
+        plays:
+          - name: Elliott Option
+            type: null
+          - name: HB Blast
+            type: null
+          - name: Curls
+            type: null
+          - name: Bryant Option
+            type: null
+          - name: FB Blast
+            type: null
+          - name: Slot Z Out
+            type: null
+          - name: HB Option
+            type: null
+          - name: Quick Toss
+            type: null
+          - name: HB Screen
+            type: null
+          - name: Slot Cross
+            type: null
+          - name: HB Draw
+            type: null
+          - name: WR Unders
+            type: null
       - name: Strong I Normal
+        plays:
+          - name: Chapman Option
+            type: null
+          - name: HB Blast
+            type: null
+          - name: PA Boot Lt
+            type: null
+          - name: Bryant Option
+            type: null
+          - name: Counter Lead
+            type: null
+          - name: PA Counter Flat
+            type: null
+          - name: Turner Option
+            type: null
+          - name: FB Dive
+            type: null
+          - name: HB Screen
+            type: null
+          - name: PA QB Boot
+            type: null
+          - name: PA FL Middle
+            type: null
+          - name: Counter Weak
+            type: null
       - name: Strong I 3WR
+        plays:
+          - name: Bryant Option
+            type: null
+          - name: HB Dive
+            type: null
+          - name: PA Pound Draw Pass
+            type: null
+          - name: PA Rollout
+            type: null
+          - name: FB Dive
+            type: null
+          - name: Deep Cross
+            type: null
+          - name: Curl Flats
+            type: null
+          - name: Off Tackle
+            type: null
+          - name: Flats Attack
+            type: null
+          - name: Jamin Option
+            type: null
+          - name: Counter Dive
+            type: null
+          - name: Double Flares
+            type: null
       - name: Gun 2RB 3WR
+        plays:
+          - name: Bryant Option
+            type: null
+          - name: HB Delay
+            type: null
+          - name: PA Smash Shake
+            type: null
+          - name: Mid Slants
+            type: null
+          - name: FB Inside
+            type: null
+          - name: Slot Cross
+            type: null
+          - name: WR Slant Out
+            type: null
+          - name: PA Skinny Post
+            type: null
+          - name: RB Circles
+            type: null
+          - name: Double Slant
+            type: null
+          - name: WR Comebacks
+            type: null
+          - name: HB Screen
+            type: null
+          - name: HB Deep
+            type: null
+          - name: Fk WR Scrn Wheel
+            type: null
+          - name: Bryant Screen
+            type: null
       - name: Gun Trips TE
+        plays:
+          - name: PA Deep Attack
+            type: null
+          - name: HB Mid Draw
+            type: null
+          - name: TE Corner
+            type: null
+          - name: Slot Quick Flat
+            type: null
+          - name: HB Off Tackle
+            type: null
+          - name: PA Slot Corner
+            type: null
+          - name: Trips Attack
+            type: null
+          - name: HB Screen
+            type: null
+          - name: WR Corner
+            type: null
       - name: Gun Trips Bunch
+        plays:
+          - name: Bryant Option
+            type: null
+          - name: HB Mid Draw
+            type: null
+          - name: Double Drags
+            type: null
+          - name: Flood Right
+            type: null
+          - name: Post Corner Read
+            type: null
+          - name: Slant Attack
+            type: null
+          - name: Smash Slot Post
+            type: null
+          - name: Twin Fades
+            type: null
+          - name: Clearout FL In
+            type: null
+          - name: Clearout SE Out
+            type: null
+          - name: Curls Attack
+            type: null
+          - name: Drag Combo
+            type: null
       - name: Gun 4WR
+        plays:
+          - name: Bryant Option
+            type: null
+          - name: HB Mid Draw
+            type: null
+          - name: PA Slot Options
+            type: null
+          - name: Slants Middle
+            type: null
+          - name: HB Quick Base
+            type: null
+          - name: PA Deep Outs
+            type: null
+          - name: Slot Outs
+            type: null
+          - name: Elliott Option
+            type: null
+          - name: HB Flare
+            type: null
+          - name: Slot Comebacks
+            type: null
+          - name: Chapman Option
+            type: null
+          - name: Slot Post
+            type: null
+          - name: Drag Smash
+            type: null
+          - name: Post Cross
+            type: null
+          - name: FL Drag
+            type: null
+          - name: Smash Corners
+            type: null
+          - name: HB Screen
+            type: null
+          - name: Dbl WR Shake
+            type: null
       - name: Gun 5WR
+        plays:
+          - name: Bryant Option
+            type: null
+          - name: Hitch Corners
+            type: null
+          - name: Deep Post
+            type: null
+          - name: WR Shake
+            type: null
+          - name: Hitch-N-Go
+            type: null
+          - name: FL Drag
+            type: null
+          - name: WR Comebacks
+            type: null
+          - name: Mid Cross
+            type: null
+          - name: Parallel Slants
+            type: null
+          - name: Elliott Option
+            type: null
+          - name: Slot Post
+            type: null
+          - name: Hitch Posts
+            type: null
+          - name: Zig Zags
+            type: null
+          - name: Hail Mary
+            type: null
+          - name: WR Screen
+            type: null
   - team_id: "philadelphia_eagles"
     name: Philadelphia Eagles
     playbook_style: null
@@ -10527,45 +11833,406 @@ teams:
     personnel_breakdown: null
     formations:
       - name: Singleback Big
+        plays:
+          - name: Smith Option
+            type: null
+          - name: HB Dive
+            type: null
+          - name: PA FL Clown
+            type: null
+          - name: Rader Option
+            type: null
+          - name: HB Stretch
+            type: null
+          - name: PA Boot Roll
+            type: null
+          - name: HB Counter
+            type: null
+          - name: TE Cross
+            type: null
+          - name: HB Draw
+            type: null
+          - name: HB Power
+            type: null
+          - name: FL Option
+            type: null
+          - name: Ace WR Reverse
+            type: null
       - name: Singleback Twin TE
+        plays:
+          - name: Rader Option
+            type: null
+          - name: HB Plunge
+            type: null
+          - name: PA TE Attack
+            type: null
+          - name: Triple Outs
+            type: null
+          - name: HB Smash
+            type: null
+          - name: PA TE Flood
+            type: null
+          - name: PA Rollout
+            type: null
+          - name: HB Sweep
+            type: null
+          - name: TE Slot Out
+            type: null
+          - name: HB Counter
+            type: null
+          - name: WR Screen
+            type: null
+          - name: HB Draw
+            type: null
       - name: Singleback Big 3TE
+        plays:
+          - name: Rader Option
+            type: null
+          - name: HB Dive
+            type: null
+          - name: PA Boot
+            type: null
+          - name: James Option
+            type: null
+          - name: HB Draw
+            type: null
+          - name: PA TE Cross
+            type: null
+          - name: HB Counter
+            type: null
+          - name: TE Shake
+            type: null
+          - name: HB Power
+            type: null
       - name: Singleback Normal Slot
+        plays:
+          - name: Rader Option
+            type: null
+          - name: HB Draw
+            type: null
+          - name: PA HB Look
+            type: null
+          - name: James Option
+            type: null
+          - name: HB Counter
+            type: null
+          - name: FL Middle
+            type: null
+          - name: PA Boot Lt
+            type: null
+          - name: HB Stretch
+            type: null
+          - name: WR Drag
+            type: null
+          - name: Smith Option
+            type: null
+          - name: HB Dive
+            type: null
+          - name: PA Deep In
+            type: null
+          - name: Slot Cross
+            type: null
+          - name: HB Toss Strong
+            type: null
+          - name: HB Screen
+            type: null
       - name: Singleback Slot Strong
+        plays:
+          - name: Martinez Option
+            type: null
+          - name: HB Dive
+            type: null
+          - name: PA Cross Up
+            type: null
+          - name: Joe Option
+            type: null
+          - name: HB Blunt Dive
+            type: null
+          - name: PA Rollout
+            type: null
+          - name: HB Screen
+            type: null
+          - name: HB Sweep
+            type: null
+          - name: SE Cross
+            type: null
+          - name: HB Toss Strong
+            type: null
+          - name: Corners
+            type: null
+          - name: HB Belly Weak
+            type: null
       - name: Singleback Trips Bunch
+        plays:
+          - name: James Option
+            type: null
+          - name: HB Slam
+            type: null
+          - name: PA Z Zig Out
+            type: null
+          - name: Clearout SE Opt
+            type: null
+          - name: HB Draw
+            type: null
+          - name: PA Draw Pass
+            type: null
+          - name: HB Counter
+            type: null
+          - name: Slants Slot Flat
+            type: null
+          - name: HB Slash
+            type: null
+          - name: Quick Pitch
+            type: null
+          - name: Curls Attack
+            type: null
+          - name: End Around
+            type: null
       - name: Singleback 4WR
+        plays:
+          - name: Smith Option
+            type: null
+          - name: HB Dive
+            type: null
+          - name: PA FL Stretch
+            type: null
+          - name: Martinez Option
+            type: null
+          - name: HB Draw
+            type: null
+          - name: HB Screen
+            type: null
+          - name: HB Sprint
+            type: null
+          - name: Slot Options
+            type: null
+          - name: HB Sweep
+            type: null
+          - name: WR Short Posts
+            type: null
+          - name: HB Stretch
+            type: null
+          - name: Slots Attack
+            type: null
+          - name: HB Wheel
+            type: null
+          - name: HB Slash
+            type: null
+          - name: Hitch Corners
+            type: null
       - name: I-Form Normal
         plays:
+          - name: Rader Option In
+            type: null
+          - name: HB Dive
+            type: null
+          - name: PA FB Flat
+            type: null
+          - name: FB Dive Fake HB
+            type: null
+          - name: Curls
+            type: null
+          - name: FB Fake HB Toss
+            type: null
+          - name: HB Counter
+            type: null
+          - name: Short Slants
+            type: null
+          - name: HB Draw
+            type: null
+          - name: HB Lead Toss
+            type: null
+          - name: James Option
+            type: null
+          - name: HB Slam
+            type: null
+          - name: PA TE Corner
+            type: null
+          - name: WR Reverse
+            type: null
+          - name: HB Screen
+            type: null
           - name: PA QB Boot
             type: null
           - name: TE Shake
             type: null
           - name: HB Stretch
             type: null
+          - name: HB Misdirection
+            type: null
+          - name: Flea Flicker
+            type: null
+          - name: FB Dive
+            type: null
+      - name: I-Form 3WR
+        plays:
+          - name: James Option
+            type: null
           - name: HB Dive
             type: null
           - name: PA FB Flat
             type: null
-      - name: I-Form 3WR
+          - name: McIntyure Option
+            type: null
+          - name: FB Dive
+            type: null
+          - name: WR Deep Post
+            type: null
+          - name: HB Blast
+            type: null
+          - name: Flats
+            type: null
+          - name: HB Draw
+            type: null
+          - name: Curls
+            type: null
+          - name: HB Toss
+            type: null
+          - name: Pump N Go
+            type: null
       - name: I-Form Big
+        plays:
+          - name: Rader Option
+            type: null
+          - name: HB Lead Dive
+            type: null
+          - name: PA TE Corner
+            type: null
+          - name: HB Misdirection
+            type: null
+          - name: PA FB Flat
+            type: null
+          - name: HB Lead Toss
+            type: null
+          - name: FB Fake HB Toss
+            type: null
+          - name: TE Shake
+            type: null
+          - name: FB Dive Strong
+            type: null
+          - name: HB Middle
+            type: null
+          - name: Counter Lead
+            type: null
+          - name: HB Screen
+            type: null
+          - name: FK Sneak HB Swing
+            type: null
+          - name: HB Blast
+            type: null
+          - name: Short Slants
+            type: null
       - name: Full House Wide
+        plays:
+          - name: HB Slam
+            type: null
+          - name: WR Middle
+            type: null
+          - name: HB Misdirection
+            type: null
+          - name: HB Draw
+            type: null
+          - name: Rollout Screen
+            type: null
+          - name: HB Sweep
+            type: null
+          - name: HB Dive
+            type: null
+          - name: Flares
+            type: null
+          - name: HB Smash
+            type: null
       - name: Full House Weak
+        plays:
+          - name: HB Smash
+            type: null
+          - name: PA Flats
+            type: null
+          - name: HB Dive
+            type: null
+          - name: FB Dive
+            type: null
+          - name: Double Cross
+            type: null
+          - name: HB Slam
+            type: null
+          - name: Flares
+            type: null
+          - name: HB Sweep
+            type: null
+          - name: Rollout Screen
+            type: null
       - name: Full House Strong
         plays:
-          - name: HB Pitch
+          - name: HB Dive
             type: null
           - name: PA WR Corner
+            type: null
+          - name: HB Pitch
+            type: null
+          - name: HB Slam
+            type: null
+          - name: Rollout Screen
+            type: null
+          - name: HB Smash
+            type: null
+          - name: FB Slam
+            type: null
+          - name: HB Draw
+            type: null
+          - name: HB Misdirection
+            type: null
+          - name: HB Rev Toss
+            type: null
+          - name: WR Reverse
+            type: null
+          - name: HB Sweep
+            type: null
+      - name: Split Backs Normal
+        plays:
+          - name: Martinez Option
+            type: null
+          - name: HB Inside
+            type: null
+          - name: PA WR Shake
             type: null
           - name: Quick Toss
             type: null
           - name: Rader Option
             type: null
+          - name: HB Draw
+            type: null
+          - name: Mid Split
+            type: null
+          - name: FB Dive
+            type: null
+          - name: FL Corner
+            type: null
           - name: HB Counter
             type: null
           - name: TE Cross
             type: null
+          - name: HB Sweep
+            type: null
+      - name: Split Backs 3WR
+        plays:
+          - name: James Option
+            type: null
+          - name: HB Blast
+            type: null
+          - name: Slants
+            type: null
           - name: Hall Option
             type: null
+          - name: HB Draw
+            type: null
           - name: Curls
+            type: null
+          - name: McIntyre Option
+            type: null
+          - name: FB Dive
+            type: null
+          - name: Slot Post
             type: null
           - name: HB Option
             type: null
@@ -10573,17 +12240,118 @@ teams:
             type: null
           - name: RB Circles
             type: null
+          - name: Slot Z Out
+            type: null
+          - name: Quick Toss
+            type: null
+          - name: HB Screen
+            type: null
+      - name: Strong I Normal
+        plays:
           - name: Smith Option
             type: null
           - name: HB Blast
             type: null
           - name: PA Boot Lt
             type: null
-      - name: Split Backs Normal
-      - name: Split Backs 3WR
-      - name: Strong I Normal
+          - name: James Option
+            type: null
+          - name: Counter Lead
+            type: null
+          - name: PA Counter Flat
+            type: null
+          - name: Rader Option
+            type: null
+          - name: FB Dive
+            type: null
+          - name: HB Screen
+            type: null
+          - name: PA QB Boot
+            type: null
+          - name: PA FL Middle
+            type: null
+          - name: Counter Weak
+            type: null
       - name: Strong I Jumbo
         plays:
+          - name: FB Dive
+            type: null
+          - name: PA FB Flat
+            type: null
+          - name: HB Dive
+            type: null
+          - name: HB Lead Blast
+            type: null
+          - name: PA Rollout
+            type: null
+          - name: PA QB Boot
+            type: null
+          - name: HB Sweep
+            type: null
+          - name: TE Drag
+            type: null
+          - name: HB Counter
+            type: null
+      - name: Weak I Normal
+        plays:
+          - name: Rader Option
+            type: null
+          - name: HB Dive
+            type: null
+          - name: PA Boot Lt
+            type: null
+          - name: FB Dive
+            type: null
+          - name: James Option
+            type: null
+          - name: Counter Trap
+            type: null
+          - name: HB Gut
+            type: null
+          - name: PA Deep Post
+            type: null
+          - name: HB Draw
+            type: null
+          - name: HB Screen
+            type: null
+          - name: Double Counter
+            type: null
+          - name: PA TE Post
+            type: null
+      - name: Weak I Twin TE
+        plays:
+          - name: Rader Option
+            type: null
+          - name: HB Dive
+            type: null
+          - name: PA TE Under
+            type: null
+          - name: FB Dive
+            type: null
+          - name: James Option
+            type: null
+          - name: Counter Trap
+            type: null
+          - name: HB Draw
+            type: null
+          - name: PA Boot Lt
+            type: null
+          - name: HB Trap
+            type: null
+          - name: Quick Screen
+            type: null
+          - name: Power Toss
+            type: null
+          - name: TE Drag
+            type: null
+      - name: Gun 2RB 3WR
+        plays:
+          - name: James Option
+            type: null
+          - name: HB Draw
+            type: null
+          - name: PA Smash Shake
+            type: null
           - name: Corners HB Go
             type: null
           - name: FB Inside
@@ -10608,10 +12376,32 @@ teams:
             type: null
           - name: Slot Drag
             type: null
-      - name: Weak I Normal
-      - name: Weak I Twin TE
-      - name: Gun 2RB 3WR
       - name: Gun Normal
+        plays:
+          - name: Smith Option
+            type: null
+          - name: HB Mid Draw
+            type: null
+          - name: PA FL Fly
+            type: null
+          - name: Rader Option In
+            type: null
+          - name: HB Off Tackle
+            type: null
+          - name: PA Comebacks
+            type: null
+          - name: James Option
+            type: null
+          - name: HB Screen
+            type: null
+          - name: Hail Mary
+            type: null
+          - name: Drag Unders
+            type: null
+          - name: HB Direct Snap
+            type: null
+          - name: FL Screen
+            type: null
   - team_id: "run_heavy"
     name: Run Heavy
     playbook_style: null
@@ -10692,12 +12482,6 @@ teams:
             type: null
           - name: Posts
             type: null
-          - name: HB Counter Wk
-            type: null
-          - name: TE Corners
-            type: null
-          - name: HB Toss Strong
-            type: null
       - name: Singleback Twin TE
         plays:
           - name: Breeden Option
@@ -10731,6 +12515,18 @@ teams:
           - name: HB Dive
             type: null
           - name: PA FL Stretch
+            type: null
+          - name: HB Counter Wk
+            type: null
+          - name: TE Corners
+            type: null
+          - name: HB Toss Strong
+            type: null
+          - name: HB Draw
+            type: null
+          - name: TE Shake
+            type: null
+          - name: HB Counter
             type: null
       - name: Singleback Normal Slot
         plays:
@@ -10810,9 +12606,9 @@ teams:
             type: null
           - name: PA Draw Pass
             type: null
-          - name: Destroy
+          - name: Destrou
             type: null
-          - name: Ahmaud Draw
+          - name: Ahmaad Draw
             type: null
           - name: Greenside Drag
             type: null
@@ -10828,19 +12624,344 @@ teams:
             type: null
           - name: Quick Pitch
             type: null
+          - name: Clearout SE Opt
+            type: null
+          - name: HB Sprint
+            type: null
+          - name: Slants Slot Flat
+            type: null
       - name: Singleback 4WR
+        plays:
+          - name: Galloway Option
+            type: null
+          - name: HB Dive
+            type: null
+          - name: PA FL Stretch
+            type: null
+          - name: Curl Flats
+            type: null
+          - name: HB Cutback
+            type: null
+          - name: HB Screen
+            type: null
+          - name: HB Draw
+            type: null
+          - name: WR Streaks
+            type: null
+          - name: HB Pitch
+            type: null
       - name: I-Form Normal
+        plays:
+          - name: Anelli Option In
+            type: null
+          - name: HB Dive
+            type: null
+          - name: PA FB Flat
+            type: null
+          - name: FB Dive Fake HB
+            type: null
+          - name: Curls
+            type: null
+          - name: FB Fake HB Toss
+            type: null
+          - name: HB Counter
+            type: null
+          - name: Short Slants
+            type: null
+          - name: HB Draw
+            type: null
+          - name: HB Lead Toss
+            type: null
+          - name: Breeden Option
+            type: null
+          - name: HB Slam
+            type: null
+          - name: PA TE Corner
+            type: null
+          - name: WR Reverse
+            type: null
+          - name: HB Screen
+            type: null
+          - name: PA QB Boot
+            type: null
+          - name: TE Shake
+            type: null
+          - name: HB Stretch
+            type: null
+          - name: FB Dive
+            type: null
+          - name: Flea Flicker
+            type: null
+          - name: HB Misdirection
+            type: null
       - name: I-Form Big
+        plays:
+          - name: Anelli Option
+            type: null
+          - name: HB Lead Dive
+            type: null
+          - name: PA TE Corner
+            type: null
+          - name: PA FB Flat
+            type: null
+          - name: HB Lead Toss
+            type: null
+          - name: Short Slants
+            type: null
+          - name: FB Fake HB Toss
+            type: null
+          - name: TE Shake
+            type: null
+          - name: FB Dive Strong
+            type: null
+          - name: HB Middle
+            type: null
+          - name: Counter Lead
+            type: null
+          - name: HB Screen
+            type: null
       - name: I-Form Twin TE
+        plays:
+          - name: Anelli Option
+            type: null
+          - name: HB Slam
+            type: null
+          - name: PA TE Attack
+            type: null
+          - name: FB Dive Strong
+            type: null
+          - name: WR Post
+            type: null
+          - name: FB Fake HB Toss
+            type: null
+          - name: HB Lead
+            type: null
+          - name: PA FB Flat
+            type: null
+          - name: HB Lead Toss
+            type: null
+          - name: HB Counter Str
+            type: null
+          - name: Curls
+            type: null
+          - name: HB Off Tackle
+            type: null
+          - name: PA Split
+            type: null
+          - name: HB Blast
+            type: null
+          - name: HB Screen
+            type: null
       - name: Full House Wide
+        plays:
+          - name: HB Slam
+            type: null
+          - name: WR Middle
+            type: null
+          - name: HB Misdirection
+            type: null
+          - name: HB Draw
+            type: null
+          - name: Rollout Screen
+            type: null
+          - name: HB Sweep
+            type: null
+          - name: HB Dive
+            type: null
+          - name: Flares
+            type: null
+          - name: HB Smash
+            type: null
       - name: Full House Weak
+        plays:
+          - name: HB Smash
+            type: null
+          - name: PA Flats
+            type: null
+          - name: HB Dive
+            type: null
+          - name: FB Dive
+            type: null
+          - name: Double Cross
+            type: null
+          - name: HB Slam
+            type: null
+          - name: Flares
+            type: null
+          - name: HB Sweep
+            type: null
+          - name: Rollout Screen
+            type: null
       - name: Full House Strong
+        plays:
+          - name: HB Dive
+            type: null
+          - name: PA WR Corner
+            type: null
+          - name: HB Pitch
+            type: null
+          - name: HB Slam
+            type: null
+          - name: Rollout Screen
+            type: null
+          - name: HB Smash
+            type: null
+          - name: FB Slam
+            type: null
+          - name: HB Draw
+            type: null
+          - name: HB Misdirection
+            type: null
+          - name: HB Rev Toss
+            type: null
+          - name: WR Reverse
+            type: null
+          - name: HB Sweep
+            type: null
       - name: Jumbo T Big
+        plays:
+          - name: FB Weak
+            type: null
+          - name: HB Counter Pass
+            type: null
+          - name: HB Gap Counter
+            type: null
+          - name: Power Sweep
+            type: null
+          - name: PA Flats
+            type: null
+          - name: HB Weak Sweep
+            type: null
+          - name: HB 24 Dive
+            type: null
+          - name: HB Screen
+            type: null
+          - name: HB Slam
+            type: null
       - name: Strong I Normal
+        plays:
+          - name: Anelli Option
+            type: null
+          - name: HB Dive
+            type: null
+          - name: PA FL Middle
+            type: null
+          - name: Breeden Option
+            type: null
+          - name: Counter Lead
+            type: null
+          - name: PA Counter Flat
+            type: null
+          - name: Counter Weak
+            type: null
+          - name: PA FB Flat
+            type: null
+          - name: HB Draw
+            type: null
+          - name: FB Trap
+            type: null
+          - name: PA Slide
+            type: null
+          - name: FKK FB HB Cntr
+            type: null
+          - name: Comet Pass
+            type: null
+          - name: HB Power
+            type: null
+          - name: HB Screen
+            type: null
       - name: Strong I Twin TE
+        plays:
+          - name: Counter Lead
+            type: null
+          - name: Anelli Option
+            type: null
+          - name: HB Draw
+            type: null
+          - name: HB Dive Weak
+            type: null
+          - name: PA Boot Lt
+            type: null
+          - name: FB Dive
+            type: null
+          - name: Counter Weak
+            type: null
+          - name: PA FB Flat
+            type: null
+          - name: Toss Strong
+            type: null
+          - name: PA FB Fake
+            type: null
+          - name: PA QB Boot
+            type: null
+          - name: TE Drag
+            type: null
       - name: Weak I Normal
+        plays:
+          - name: Anelli Option
+            type: null
+          - name: HB Dive
+            type: null
+          - name: PA Deep Post
+            type: null
+          - name: Breeden Option
+            type: null
+          - name: HB Lead
+            type: null
+          - name: PA TE Post
+            type: null
+          - name: Counter Weak
+            type: null
+          - name: TE Curl
+            type: null
+          - name: HB Draw
+            type: null
+          - name: FB Dive
+            type: null
+          - name: WR Drag
+            type: null
+          - name: HB Inside
+            type: null
       - name: Weak I Twin WR
+        plays:
+          - name: FB Power
+            type: null
+          - name: PA Slot Post
+            type: null
+          - name: HB Dive
+            type: null
+          - name: PA Boot Lt
+            type: null
+          - name: HB Draw
+            type: null
+          - name: Anelli Option
+            type: null
+          - name: WR Cross
+            type: null
+          - name: HB Lead
+            type: null
+          - name: Slants
+            type: null
       - name: Weak I Twin TE
+        plays:
+          - name: Anelli Option
+            type: null
+          - name: HB Dive
+            type: null
+          - name: PA TE Under
+            type: null
+          - name: FB Dive
+            type: null
+          - name: PA Boot Lt
+            type: null
+          - name: HB Trap
+            type: null
+          - name: Power Toss
+            type: null
+          - name: TE Drag
+            type: null
+          - name: Toss Weak
+            type: null
   - team_id: "run_and_gun"
     name: Run and Gun
     playbook_style: null
@@ -10924,6 +13045,8 @@ teams:
             type: null
           - name: Curl Flats
             type: null
+          - name: Frieser Opt
+            type: null
           - name: HB Stretch
             type: null
           - name: PA Dbl Curls
@@ -10954,22 +13077,458 @@ teams:
             type: null
           - name: Strike Post
             type: null
+          - name: Slots Attack
+            type: null
+          - name: HB Cutback
+            type: null
+          - name: HB Wheel
+            type: null
+          - name: HB Draw
+            type: null
+          - name: PA Slot Crosses
+            type: null
+          - name: HB Pitch
+            type: null
+          - name: Slot Clearouts
+            type: null
+          - name: HB Slash
+            type: null
+          - name: PA Draw Pass
+            type: null
+          - name: Slot Cross
+            type: null
+          - name: HB Stretch
+            type: null
+          - name: Smash Posts
+            type: null
+          - name: Murray Option
+            type: null
+          - name: HB Counter
+            type: null
+          - name: Hitch Corners
+            type: null
       - name: I-Form Normal
+        plays:
+          - name: Frieser Option
+            type: null
+          - name: HB Lead Dive
+            type: null
+          - name: PA TE Corner
+            type: null
+          - name: PA FB Screen
+            type: null
+          - name: Cal Toss
+            type: null
+          - name: Short Slants
+            type: null
+          - name: 24 Smash
+            type: null
+          - name: Jennings Option
+            type: null
+          - name: WR Around
+            type: null
+          - name: FB Dive Fake HB
+            type: null
+          - name: TE Shake
+            type: null
+          - name: FB Fake HB Toss
+            type: null
+          - name: Flea Flicker
+            type: null
+          - name: HB Draw
+            type: null
+          - name: PA FB Flat
+            type: null
+          - name: HB Screen
+            type: null
+          - name: HB Counter
+            type: null
+          - name: Flats
+            type: null
       - name: I-Form Big
+        plays:
+          - name: Frieser Option
+            type: null
+          - name: HB Lead Dive
+            type: null
+          - name: PA FB Flat
+            type: null
+          - name: Counter Lead
+            type: null
+          - name: PA TE Corner
+            type: null
+          - name: HB Slam
+            type: null
+          - name: FB Dive Strong
+            type: null
+          - name: HB Screen
+            type: null
+          - name: FB Fake HB Toss
+            type: null
+          - name: TE Shake
+            type: null
+          - name: HB Lead Toss
+            type: null
+          - name: HB Middle
+            type: null
       - name: I-Form Twin TE
+        plays:
+          - name: Frieser Option
+            type: null
+          - name: HB Lead Dive
+            type: null
+          - name: PA FB Flat
+            type: null
+          - name: FB Dive Strong
+            type: null
+          - name: Short Slants
+            type: null
+          - name: FB Fake HB Toss
+            type: null
+          - name: HB Counter Str
+            type: null
+          - name: PA TE Attack
+            type: null
+          - name: HB Slam
+            type: null
+          - name: FL Drag
+            type: null
+          - name: HB Lead Toss
+            type: null
+          - name: HB Screen
+            type: null
       - name: Full House Wide
+        plays:
+          - name: HB Slam
+            type: null
+          - name: WR Middle
+            type: null
+          - name: HB Misdirection
+            type: null
+          - name: HB Draw
+            type: null
+          - name: Rollout Screen
+            type: null
+          - name: HB Sweep
+            type: null
+          - name: HB Dive
+            type: null
+          - name: Flares
+            type: null
+          - name: HB Smash
+            type: null
       - name: Full House Weak
+        plays:
+          - name: HB Smash
+            type: null
+          - name: PA Flats
+            type: null
+          - name: HB Dive
+            type: null
+          - name: FB Dive
+            type: null
+          - name: Double Cross
+            type: null
+          - name: HB Slam
+            type: null
+          - name: Flares
+            type: null
+          - name: HB Sweep
+            type: null
+          - name: Rollout Screen
+            type: null
       - name: Full House Strong
+        plays:
+          - name: HB Dive
+            type: null
+          - name: PA WR Corner
+            type: null
+          - name: HB Pitch
+            type: null
+          - name: HB Slam
+            type: null
+          - name: Rollout Screen
+            type: null
+          - name: HB Smash
+            type: null
+          - name: FB Slam
+            type: null
+          - name: HB Draw
+            type: null
+          - name: HB Misdirection
+            type: null
+          - name: HB Rev Toss
+            type: null
+          - name: WR Reverse
+            type: null
+          - name: HB Sweep
+            type: null
       - name: Strong I Normal
+        plays:
+          - name: Murray Option
+            type: null
+          - name: Counter Trap
+            type: null
+          - name: PA Counter Flat
+            type: null
+          - name: Frieser Option
+            type: null
+          - name: FB Dive
+            type: null
+          - name: WR Middle Cross
+            type: null
+          - name: HB Sweep
+            type: null
+          - name: TE Corner
+            type: null
+          - name: HB Blast
+            type: null
+          - name: PA Rollout
+            type: null
+          - name: HB Dive Weak
+            type: null
+          - name: FB Middle
+            type: null
       - name: Strong I Twin TE
+        plays:
+          - name: PA FB Fake
+            type: null
+          - name: FB Dive
+            type: null
+          - name: TE Drag
+            type: null
+          - name: Counter Lead
+            type: null
+          - name: PA Rollout
+            type: null
+          - name: HB Dive Weak
+            type: null
+          - name: PA FB Flat
+            type: null
+          - name: HB Dive
+            type: null
+          - name: Deep Comeback
+            type: null
       - name: Weak I Close
+        plays:
+          - name: WR Drag
+            type: null
+          - name: Strong Stretch
+            type: null
+          - name: PA Boot Lt
+            type: null
+          - name: PA Boot Slide
+            type: null
+          - name: HB Gut
+            type: null
+          - name: PA Slant
+            type: null
+          - name: TE Fade
+            type: null
+          - name: Counter Trap
+            type: null
+          - name: Frieser Option Out
+            type: null
       - name: Weak I Tight Twins
+        plays:
+          - name: PA Slot Corner
+            type: null
+          - name: HB Dive
+            type: null
+          - name: PA Boot Slide
+            type: null
+          - name: Ok Slants
+            type: null
+          - name: HB Counter
+            type: null
+          - name: Slot Corner
+            type: null
+          - name: PA Boot Lt
+            type: null
+          - name: HB Wham
+            type: null
+          - name: Drive
+            type: null
       - name: Gun 2RB 3WR
+        plays:
+          - name: Jennings Option
+            type: null
+          - name: HB Draw
+            type: null
+          - name: PA Skinny Post
+            type: null
+          - name: Fk WR Scrn Wheel
+            type: null
+          - name: FB Inside
+            type: null
+          - name: Jennings Screen
+            type: null
+          - name: WR Post Corner
+            type: null
+          - name: PA Smash Shake
+            type: null
+          - name: Slot Cross
+            type: null
+          - name: Short Crosses
+            type: null
+          - name: Slot Post
+            type: null
+          - name: WR Quick Drag
+            type: null
       - name: Gun Normal
+        plays:
+          - name: Jennings Option
+            type: null
+          - name: HB Mid Draw
+            type: null
+          - name: PA Slot Post
+            type: null
+          - name: Frieser Option In
+            type: null
+          - name: HB Off Tackle
+            type: null
+          - name: PA Deep In
+            type: null
+          - name: PA Stutter Post
+            type: null
+          - name: FL Slant
+            type: null
+          - name: TE Corner
+            type: null
+          - name: Post Flags
+            type: null
+          - name: FL Screen
+            type: null
+          - name: Boone Option
+            type: null
+          - name: HB Screen
+            type: null
+          - name: Drag Unders
+            type: null
+          - name: WR Drag
+            type: null
       - name: Gun Trips Bunch
+        plays:
+          - name: Jennings Option
+            type: null
+          - name: HB Mid Draw
+            type: null
+          - name: Clearout SE Out
+            type: null
+          - name: Curls Attack
+            type: null
+          - name: Slants Slot Flat
+            type: null
+          - name: Twin Fades
+            type: null
+          - name: Smash Slot Post
+            type: null
+          - name: Slant Attack
+            type: null
+          - name: HB Screen
+            type: null
+          - name: Double Drags
+            type: null
+          - name: Flood Right
+            type: null
+          - name: Spacing Switch
+            type: null
+          - name: Greenside Drag
+            type: null
+          - name: Delta Sit
+            type: null
+          - name: Spacing
+            type: null
       - name: Gun 4WR
+        plays:
+          - name: Jennings Option
+            type: null
+          - name: HB Delay
+            type: null
+          - name: PA Curl - Drag
+            type: null
+          - name: Smash Corners
+            type: null
+          - name: HB Sweep
+            type: null
+          - name: Slot Comebacks
+            type: null
+          - name: Murray Option
+            type: null
+          - name: FL Fly
+            type: null
+          - name: Hail Mary
+            type: null
+          - name: PA Slot Options
+            type: null
+          - name: Slants Middle
+            type: null
+          - name: Circle
+            type: null
+          - name: HB Flat
+            type: null
+          - name: WR Cross
+            type: null
+          - name: Slot Outs
+            type: null
+          - name: HB Screen
+            type: null
+          - name: Stubbs Option
+            type: null
+          - name: Dbl WR Shake
+            type: null
       - name: Gun Trips
+        plays:
+          - name: Smash Middle
+            type: null
+          - name: HB Draw
+            type: null
+          - name: PA Curl - Drag
+            type: null
+          - name: Deep Attack
+            type: null
+          - name: HB Sweep
+            type: null
+          - name: PA Read
+            type: null
+          - name: HB Screen
+            type: null
+          - name: PA Deep Outs
+            type: null
+          - name: SE Under
+            type: null
+          - name: Slants Flat
+            type: null
+          - name: Trips Cross
+            type: null
+          - name: Stubbs Option
+            type: null
       - name: Gun 5WR
+        plays:
+          - name: Jennings Option
+            type: null
+          - name: Slants
+            type: null
+          - name: Stubbs Option
+            type: null
+          - name: Hitch Corners
+            type: null
+          - name: WR Comebacks
+            type: null
+          - name: Slot Option
+            type: null
+          - name: WR Shake
+            type: null
+          - name: Curl Flats
+            type: null
+          - name: Hitch Posts
+            type: null
+          - name: Zig Zags
+            type: null
+          - name: WR Screens
+            type: null
+          - name: Curl - Drag
+            type: null
   - team_id: "san_diego_chargers"
     name: San Diego Chargers
     playbook_style: null
@@ -13023,6 +15582,12 @@ teams:
             type: null
           - name: HB Dive
             type: null
+          - name: Bennett Option
+            type: null
+          - name: Titans 24 Blast
+            type: null
+          - name: Quick Hits
+            type: null
       - name: Singleback Slot Strong
         plays:
           - name: Kinney Option
@@ -13095,6 +15660,8 @@ teams:
             type: null
           - name: HB Slam
             type: null
+          - name: HB Draw
+            type: null
           - name: Quick Fade
             type: null
           - name: Off Tackle
@@ -13152,7 +15719,126 @@ teams:
           - name: Drive
             type: null
       - name: Singleback Empty 5WR
+        plays:
+          - name: X-Clown
+            type: null
+          - name: Givens Option
+            type: null
+          - name: Stagger Posts
+            type: null
+          - name: Smash Fork
+            type: null
+          - name: Slot Flats
+            type: null
+          - name: All Curls
+            type: null
+          - name: Tight Screen
+            type: null
+          - name: Zig Outs
+            type: null
+          - name: FL Fly
+            type: null
       - name: I-Form Normal
+        plays:
+          - name: Givens Option
+            type: null
+          - name: HB Slant 18
+            type: null
+          - name: PA FB Flat
+            type: null
+          - name: Titans 24 Blast
+            type: null
+          - name: Fleming Option
+            type: null
+          - name: WR Around
+            type: null
+          - name: TE Quick Hit
+            type: null
+          - name: Chris Draw
+            type: null
+          - name: FB Under
+            type: null
+          - name: HB Middle
+            type: null
+          - name: HB Counter Wk
+            type: null
+          - name: Short Slants
+            type: null
+          - name: PA TE Post
+            type: null
+          - name: HB Lead Dive
+            type: null
+          - name: PA Waggle
+            type: null
+      - name: I-Form Big
+        plays:
+          - name: Kinney Option
+            type: null
+          - name: HB Lead Dive
+            type: null
+          - name: PA Waggle
+            type: null
+          - name: FB Flare
+            type: null
+          - name: HB Off Tackle
+            type: null
+          - name: Pump N Go
+            type: null
+          - name: HB Misdirection
+            type: null
+          - name: Mid Attack
+            type: null
+          - name: FB Dive
+            type: null
+          - name: Titans 24 Blast
+            type: null
+          - name: Short Slants
+            type: null
+          - name: HB Lead Toss
+            type: null
+      - name: Strong I H Pro
+        plays:
+          - name: Kinney Option
+            type: null
+          - name: HB Blast
+            type: null
+          - name: TE Corner
+            type: null
+          - name: PA FB Flat
+            type: null
+          - name: HB Stretch
+            type: null
+          - name: PA Slide
+            type: null
+          - name: Givens Option
+            type: null
+          - name: Counter Lead
+            type: null
+          - name: HB Screen
+            type: null
+          - name: FB Trap
+            type: null
+          - name: PA FB Fake
+            type: null
+          - name: FK FB HB Cntr
+            type: null
+          - name: Counter Weak
+            type: null
+          - name: HB Swing
+            type: null
+          - name: HB Dive Weak
+            type: null
+          - name: Stick
+            type: null
+          - name: HB Draw
+            type: null
+          - name: FL Curl
+            type: null
+          - name: HB Sweep
+            type: null
+          - name: Short Slants
+            type: null
+      - name: Strong I H Twins
         plays:
           - name: Double Flares
             type: null
@@ -13160,17 +15846,195 @@ teams:
             type: null
           - name: Quick Drag
             type: null
+          - name: Bennett Option
+            type: null
+          - name: HB Dive
+            type: null
+          - name: WR Streak
+            type: null
+          - name: WR Smash
+            type: null
+          - name: Counter Weak
+            type: null
+          - name: HB Screen
+            type: null
+          - name: FB Trap
+            type: null
+          - name: PA FB Fake
+            type: null
+          - name: FK FB HB Cntr
+            type: null
+          - name: HB Lead
+            type: null
+          - name: Givens Flag
+            type: null
+          - name: PA QB Boot
+            type: null
+          - name: PA Boot Slide
+            type: null
+          - name: HB Stretch
+            type: null
+          - name: PA FB Flat
+            type: null
+      - name: Weak I H Pro
+        plays:
+          - name: Kinney Option
+            type: null
+          - name: Double Counter
+            type: null
+          - name: Givens Option
+            type: null
+          - name: PA QB Boot
+            type: null
+          - name: PA Boot Slide
+            type: null
+          - name: HB Gut
+            type: null
+          - name: TE Hook In
+            type: null
+          - name: FB Power
+            type: null
+          - name: Quick Slants
+            type: null
+          - name: HB Wham
+            type: null
+          - name: Cross Under
+            type: null
+          - name: Counter Weak
+            type: null
+          - name: Streaks
+            type: null
+          - name: HB Draw
+            type: null
+          - name: HB Screen
+            type: null
+          - name: TE Fade
+            type: null
+          - name: SE Quick Out
+            type: null
+      - name: Weak I H Twins
+        plays:
+          - name: Cross Under
+            type: null
+          - name: HB Lead
+            type: null
+          - name: PA Boot Lt
+            type: null
           - name: FB Power
             type: null
           - name: PA Waggle
             type: null
           - name: HB Gut
             type: null
+          - name: Kinney Option
+            type: null
+          - name: HB Dive
+            type: null
+          - name: Slot Drag
+            type: null
+          - name: TE Shallow
+            type: null
+          - name: HB Counter
+            type: null
+          - name: Hook Ins
+            type: null
+      - name: Gun Normal Offset Wk
+        plays:
+          - name: Givens Option
+            type: null
+          - name: FL Hook
+            type: null
+          - name: WR Post Corner
+            type: null
+          - name: Bennett Option
+            type: null
+          - name: HB Mid Draw
+            type: null
+          - name: Dig Wheel
+            type: null
+          - name: Slant Hook
+            type: null
+          - name: WR Drag
+            type: null
+          - name: Quick Ins
+            type: null
+          - name: Slants Middle
+            type: null
+          - name: HB Screen
+            type: null
+          - name: TE Drag
+            type: null
+          - name: WR Curl
+            type: null
+          - name: HB Delay
+            type: null
+          - name: FL Drag
+            type: null
+      - name: Gun Slot Strong
+        plays:
+          - name: Bennett Option
+            type: null
+          - name: HB Draw
+            type: null
+          - name: PA Double Hook
+            type: null
+          - name: Sprint Rt Option
+            type: null
+          - name: WR Drag
+            type: null
+          - name: Slot Hook
+            type: null
+          - name: Read
+            type: null
+          - name: Safety Bait
+            type: null
+          - name: Kinney Option
+            type: null
+          - name: Post Corner
+            type: null
+          - name: TE Post
+            type: null
+          - name: Middle Hook
+            type: null
+      - name: Gun Trips TE
+        plays:
           - name: TE Cross
             type: null
           - name: HB Delay
             type: null
           - name: Clearouts
+            type: null
+          - name: Slot Read
+            type: null
+          - name: HB Mid Draw
+            type: null
+          - name: PA Slot Corner
+            type: null
+          - name: Trips Attack
+            type: null
+          - name: HB Swing
+            type: null
+          - name: TE Go
+            type: null
+      - name: Gun 4WR
+        plays:
+          - name: Givens Option
+            type: null
+          - name: HB Draw
+            type: null
+          - name: Titan Cross
+            type: null
+          - name: Slot Flags
+            type: null
+          - name: Slants Middle
+            type: null
+          - name: Corner - Threat
+            type: null
+          - name: Smash Corners
+            type: null
+          - name: Hail Mary
+            type: null
+          - name: Slot Comebacks
             type: null
           - name: WR Drag
             type: null
@@ -13178,15 +16042,6 @@ teams:
             type: null
           - name: Titan Corners
             type: null
-      - name: I-Form Big
-      - name: Strong I H Pro
-      - name: Strong I H Twins
-      - name: Weak I H Pro
-      - name: Weak I H Twins
-      - name: Gun Normal Offset Wk
-      - name: Gun Slot Strong
-      - name: Gun Trips TE
-      - name: Gun 4WR
   - team_id: "washington_redskins"
     name: Washington Redskins
     playbook_style: null
@@ -13567,6 +16422,8 @@ teams:
         plays:
           - name: McCready Option
             type: null
+          - name: HB Dive
+            type: null
           - name: PA FL Stretch
             type: null
           - name: Hitch Corners
@@ -13577,11 +16434,21 @@ teams:
             type: null
           - name: Blizzard Option
             type: null
+          - name: HB Draw
+            type: null
           - name: Posts
             type: null
       - name: Singleback Normal Slot
         plays:
+          - name: Blizzard Option
+            type: null
+          - name: HB Dive
+            type: null
           - name: PA Comeback
+            type: null
+          - name: McCready Option
+            type: null
+          - name: HB Draw
             type: null
           - name: Dual Drag
             type: null
@@ -13591,8 +16458,6 @@ teams:
             type: null
           - name: Slot Cross
             type: null
-      - name: Singleback Slot Strong
-        plays:
           - name: FL Z Clearout
             type: null
           - name: HB Stretch
@@ -13605,6 +16470,8 @@ teams:
             type: null
           - name: PA HB Look
             type: null
+      - name: Singleback Slot Strong
+        plays:
           - name: Blizzard Option
             type: null
           - name: HB Blunt Dive
@@ -13615,21 +16482,455 @@ teams:
             type: null
           - name: Collins Option
             type: null
+          - name: HB Counter
+            type: null
+          - name: HB Screen
+            type: null
+          - name: HB Dive
+            type: null
+          - name: TE Shake
+            type: null
+          - name: WR Screen
+            type: null
+          - name: HB Power
+            type: null
+          - name: Post Corners
+            type: null
       - name: Singleback Trips Bunch
+        plays:
+          - name: McCready Option
+            type: null
+          - name: HB Dive
+            type: null
+          - name: PA Pin Deep
+            type: null
+          - name: Curls Attack
+            type: null
+          - name: Quick Pitch
+            type: null
+          - name: HB Clearout
+            type: null
+          - name: HB Draw
+            type: null
+          - name: Slants Slot Flat
+            type: null
+          - name: HB Sprint
+            type: null
       - name: Singleback 4WR Flex
+        plays:
+          - name: Croom Option
+            type: null
+          - name: HB Dive
+            type: null
+          - name: PA Slot Crosses
+            type: null
+          - name: Collins Option
+            type: null
+          - name: HB Draw
+            type: null
+          - name: Hitch Corners
+            type: null
+          - name: Slants
+            type: null
+          - name: HB Stretch
+            type: null
+          - name: Slot Cross
+            type: null
+          - name: Hail Mary
+            type: null
+          - name: HB Cutback
+            type: null
+          - name: Slot Shallow
+            type: null
+          - name: HB Screen
+            type: null
+          - name: HB Pitch
+            type: null
+          - name: PA Drop In
+            type: null
       - name: Singleback Empty Bunch
+        plays:
+          - name: McCready Option
+            type: null
+          - name: Curl Flats
+            type: null
+          - name: FL Shake
+            type: null
+          - name: Collins Option
+            type: null
+          - name: Motion Drive
+            type: null
+          - name: Double Drags
+            type: null
+          - name: Slants Slot Flat
+            type: null
+          - name: Croom Option
+            type: null
+          - name: WR Post
+            type: null
       - name: I-Form Normal
+        plays:
+          - name: Slants
+            type: null
+          - name: HB Counter
+            type: null
+          - name: Strong Flood
+            type: null
+          - name: McCready Option
+            type: null
+          - name: Croom Blast
+            type: null
+          - name: PA Waggle
+            type: null
+          - name: Blizzard Option
+            type: null
+          - name: HB Slam
+            type: null
+          - name: PA HB Curl
+            type: null
+          - name: FB Dive Strong
+            type: null
+          - name: TE Flat
+            type: null
+          - name: FB Fake HB Toss
+            type: null
+          - name: PA Outside Curls
+            type: null
+          - name: HB Counter Wk
+            type: null
+          - name: Miller Option
+            type: null
+          - name: PA TE Post
+            type: null
+          - name: Larry Draw
+            type: null
+          - name: WR Post
+            type: null
+          - name: PA FB Flat
+            type: null
+          - name: Strong Stretch
+            type: null
+          - name: PA Comeback Slide
+            type: null
       - name: I-Form Twin WR
+        plays:
+          - name: Slot Curl
+            type: null
+          - name: HB Blast
+            type: null
+          - name: PA Waggle
+            type: null
+          - name: Hard Slants
+            type: null
+          - name: HB Counter
+            type: null
+          - name: Slant Posts
+            type: null
+          - name: PA TE Leak
+            type: null
+          - name: Strong Stretch
+            type: null
+          - name: PA Boot Corner
+            type: null
+          - name: HB Lead Toss
+            type: null
+          - name: PA TE Out
+            type: null
+          - name: HB Lead Dive
+            type: null
       - name: I-Form Big
+        plays:
+          - name: PA Streaks
+            type: null
+          - name: HB Lead
+            type: null
+          - name: Short Slants
+            type: null
+          - name: PA HB Curl
+            type: null
+          - name: HB Lead Dive
+            type: null
+          - name: TE Flag
+            type: null
+          - name: HB Sweep
+            type: null
+          - name: WR Post
+            type: null
+          - name: HB Lead Toss
+            type: null
+          - name: PA Bronco Slide
+            type: null
+          - name: Strong Stretch
+            type: null
+          - name: Short Hooks
+            type: null
+          - name: PA FB Flat
+            type: null
+          - name: HB Blast
+            type: null
+          - name: PA Waggle
+            type: null
       - name: Split Backs Twin WR
+        plays:
+          - name: McCready Option
+            type: null
+          - name: HB Dive
+            type: null
+          - name: Slot Corner
+            type: null
       - name: Split Backs 3WR
+        plays:
+          - name: Collins Option
+            type: null
+          - name: FB Belly
+            type: null
+          - name: PA Boot Slide
+            type: null
+          - name: Flats
+            type: null
+          - name: HB Draw
+            type: null
+          - name: Stutter Post
+            type: null
+          - name: Blizzard Option
+            type: null
+          - name: Quick Toss
+            type: null
+          - name: SS Pressure
+            type: null
       - name: Far Pro
+        plays:
+          - name: McCready Option
+            type: null
+          - name: HB Counter
+            type: null
+          - name: Double Swing
+            type: null
+          - name: TE Post
+            type: null
+          - name: HB Sweep
+            type: null
+          - name: Slant N Go
+            type: null
+          - name: TE Curl
+            type: null
+          - name: FB Lead
+            type: null
+          - name: HB Screen
+            type: null
       - name: Far 3WR
+        plays:
+          - name: McCready Option
+            type: null
+          - name: HB Sweep
+            type: null
+          - name: FL Drive
+            type: null
+          - name: HB Screen
+            type: null
+          - name: FB Dive Weak
+            type: null
+          - name: Slot Cross
+            type: null
+          - name: Curl Flats
+            type: null
+          - name: HB Counter
+            type: null
+          - name: McCoy Slant
+            type: null
       - name: Near Pro
+        plays:
+          - name: Texas
+            type: null
+          - name: HB Counter
+            type: null
+          - name: PA Counter Boot
+            type: null
+          - name: Flanker Hook
+            type: null
+          - name: HB Inside
+            type: null
+          - name: McCready Option
+            type: null
+          - name: Collins Option
+            type: null
+          - name: FB Dive Strong
+            type: null
+          - name: PA Strong Flow
+            type: null
+          - name: HB Screen
+            type: null
+          - name: FB Fake HB Toss
+            type: null
+          - name: Slants
+            type: null
       - name: Near Close
+        plays:
+          - name: McCready Option
+            type: null
+          - name: HB Inside
+            type: null
+          - name: Curl Flat
+            type: null
+          - name: FB Dive Strong
+            type: null
+          - name: PA Strong Flow
+            type: null
+          - name: FB Fake HB Toss
+            type: null
+          - name: Post Drag
+            type: null
+          - name: HB Toss
+            type: null
+          - name: HB Screen
+            type: null
+          - name: Spacing
+            type: null
+          - name: HB Counter
+            type: null
+          - name: PA Counter Boot
+            type: null
       - name: Strong I Normal
+        plays:
+          - name: Strong Flood
+            type: null
+          - name: Counter Weak
+            type: null
+          - name: HB Swing
+            type: null
+          - name: Slant Hook
+            type: null
+          - name: HB Dive Weak
+            type: null
+          - name: PA Rollout
+            type: null
+          - name: TE Slant In
+            type: null
+          - name: HB Dive
+            type: null
+          - name: PA TE Corner
+            type: null
+          - name: Stick
+            type: null
+          - name: FB Dive
+            type: null
+          - name: PA FB Fake
+            type: null
       - name: Strong I Twin WR
+        plays:
+          - name: WR Flag
+            type: null
+          - name: HB Dive
+            type: null
+          - name: PA WR Cross
+            type: null
+          - name: HB Sweep
+            type: null
+          - name: PA HB Curl
+            type: null
+          - name: Counter Weak
+            type: null
+          - name: HB Lead Blast
+            type: null
+          - name: PA FB Flat
+            type: null
+          - name: FB Dive
+            type: null
+          - name: WR Smash
+            type: null
+          - name: HB Draw
+            type: null
+          - name: Quick Drag
+            type: null
       - name: Weak I Normal
+        plays:
+          - name: Blizzard Option
+            type: null
+          - name: Strong Outside
+            type: null
+          - name: PA Boot Lt
+            type: null
+          - name: WR Drag
+            type: null
+          - name: FB Power
+            type: null
+          - name: Quick Slants
+            type: null
+          - name: PA Waggle
+            type: null
+          - name: Off Tackle Wk
+            type: null
+          - name: PA Boot Slide
+            type: null
       - name: Weak I Twin WR
+        plays:
+          - name: Chris Option
+            type: null
+          - name: HB Dive
+            type: null
+          - name: TE Flat
+            type: null
+          - name: Hook Ins
+            type: null
+          - name: HB Gut
+            type: null
+          - name: PA Boot Slide
+            type: null
+          - name: HB Counter
+            type: null
+          - name: PA Boot Lt
+            type: null
+          - name: Strong Stretch
+            type: null
+          - name: Strong Screen
+            type: null
+          - name: Toss Weak
+            type: null
+          - name: WR Cross
+            type: null
+          - name: TE Slant Out
+            type: null
+          - name: HB Trap
+            type: null
+          - name: Slot Drag
+            type: null
       - name: Weak I Close
+        plays:
+          - name: WR Drag
+            type: null
+          - name: Strong Stretch
+            type: null
+          - name: PA Boot Lt
+            type: null
+          - name: PA Boot Slide
+            type: null
+          - name: HB Gut
+            type: null
+          - name: PA Slant
+            type: null
+          - name: TE Fade
+            type: null
+          - name: Counter Trap
+            type: null
+          - name: Blizzard Option Out
+            type: null
       - name: Weak I Tight Twins
+        plays:
+          - name: PA Slot Corner
+            type: null
+          - name: HB Dive
+            type: null
+          - name: PA Boot Slide
+            type: null
+          - name: Ok Slants
+            type: null
+          - name: HB Counter
+            type: null
+          - name: Slot Corner
+            type: null
+          - name: PA Boot Lt
+            type: null
+          - name: HB Wham
+            type: null
+          - name: Drive
+            type: null
