@@ -29,6 +29,42 @@ Append-only handoff log. The newest session goes at the **top**. The point is so
 
 ---
 
+## 2026-05-20 — Phase 3 xlsx-game play backfill (M04, M07, NCAA 06, NCAA 05)
+
+**Active thread:** backfilling plays into the xlsx-sourced game catalogs that
+landed at 0% play coverage after the formation-only ingest.
+
+**Landed this session:**
+- **Madden 07** play names — 38/38 teams, 701/809 formations matched (87%);
+  first pass left 8 teams truncated, rerun via 2-chunk per-image observation
+  pass brought them to 20+ formations each. (`40cfb89`, `12a9c2d`)
+- **Madden 04** play names — 38/38 teams, 484/496 formations matched (97.6%).
+  Used the chunked approach from the start; near-perfect coverage on a fresh
+  game. (`2e934a7`)
+- **NCAA 06** play names — 1119/1125 formation-entries matched (99.5%). The
+  game ships a master `Offensive Plays.docx` grouped by Heading-1 paragraphs;
+  a new `map_n06_images_to_formations.py` walks the docx body and produces an
+  image-index → formation map so vision only has to read play names. (`760e18d`)
+- **NCAA 05 formation library** — no per-team playbook xlsx exists for NCAA
+  05 (just team ratings), so the data emits as
+  `data/games/ncaa-05-ps2/formation-library.yaml`: 50 formations, 947 plays
+  from the master Offensive Plays.docx. New artifact shape — a game-wide
+  reference rather than a per-team catalog. (`<this session>`)
+- Reusable infra: `extract_m04_play_names.py`, `extract_m07_play_names.py`,
+  `extract_n06_play_names.py`, `build_n05_formation_library.py`,
+  `map_n06_images_to_formations.py`. The chunked per-image observation
+  pattern (chunks of ~40 images → combiner) is now the default for any
+  per-team docx — single-shot caused subagent truncation at ~100 images.
+
+**In progress / next step:** still source-blocked for `madden-05-ps2`,
+`ncaa-04-ps2`, `ncaa-07-ps2` (catalogs exist at formation-only, no play list
+in research artifacts). User asked to hunt for sources next — forum dumps,
+manuals, community spreadsheets.
+
+**Uncommitted state:** session-log + pending-queue updates not yet committed.
+
+---
+
 ## 2026-05-19 — NCAA 14 play names complete (end of Phase 2)
 
 **Active thread:** finishing the NCAA Football 14 play-name extraction (per-formation docx vision).

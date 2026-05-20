@@ -28,18 +28,21 @@ when an item depends on something external (user input, upstream work).
   families are panel-header-derived; ESPN 2K5's are now a screenshot-verified
   prefix classifier — both accurate. See Done.)
 
-- **Play-name extraction (catalog Phase 2) — DONE for madden-25, espn-2k5,
-  ncaa-14.** Phase 3 = backfill plays for the xlsx-sourced games. Sources
-  surveyed 2026-05-19:
-  - **madden-07-ps2**: per-team `Playbook M07.docx` (33 teams, M25 pipeline
-    reusable; xlsx Play Charts only covers ARI/CIN — insufficient).
-  - **madden-04-ps2**: per-team `Playbook M04.docx` (34 teams, M25 pipeline).
-  - **ncaa-06-ps2**: single `Offensive Plays.docx` grouped by formation —
-    NCAA 14 per-formation pipeline.
-  - **ncaa-05-ps2**: single `Offensive Plays.docx` — same as 06.
-  - **BLOCKED on source** (only formation matrix, no play data):
-    `madden-05-ps2`, `ncaa-04-ps2`, `ncaa-07-ps2`. User asked to hunt for
-    sources for these (forum dumps, manuals, community spreadsheets).
+- **Play-name extraction (catalog Phase 2) — DONE for madden-04/07/25,
+  espn-2k5, ncaa-06/14, and a formation-library for ncaa-05.** Match rates
+  landed 2026-05-19/20:
+  - madden-25-ps3: 99% (965/968)
+  - madden-07-ps2: 87% (701/809) — 8 truncated-cache teams recovered via
+    chunked per-image observations
+  - madden-04-ps2: 97.6% (484/496) — chunked from the start
+  - ncaa-06-ps2: 99.5% (1119/1125) — Heading-1 walker + image map
+  - ncaa-05-ps2: formation-library.yaml (50 formations, 947 plays) — no
+    per-team source available, emitted as a distinct artifact
+  - ncaa-14-ps3: 83% (2570/3084) — gap is defensive formations
+  - espn-2k5-ps2: 94%
+- **Still source-blocked** (only a formation matrix, no play data found):
+  `madden-05-ps2`, `ncaa-04-ps2`, `ncaa-07-ps2`. Next: hunt for sources
+  (community spreadsheets, manuals, forum dumps).
 
 - **AI onboarding doc.** `docs/ai-onboarding.md` for smaller models joining the
   repo — a one-shot tutorial with fully-narrated tool-call sequences under
