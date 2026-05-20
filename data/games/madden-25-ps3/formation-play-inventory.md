@@ -1,0 +1,9392 @@
+# madden-25-ps3 — formation/play inventory
+
+_271 formations · 8846 (formation, play) pairs · 2239 distinct play names_
+
+
+## 5WR Patriot  (3 plays)
+- HB Sting
+- PA Waggle
+- Strong Toss
+
+## 5WR Trio  (28 plays)
+- Curl Flat
+- Curls
+- D 1 Trap
+- Double Cross
+- Drive
+- FL Curl
+- Flanker Drive
+- Flood Switch
+- Four Verticals
+- HB Counter
+- HB Draw
+- HB Mid Draw
+- HB Off Tackle
+- HB Slip Screen
+- Hitch Seam
+- Inside Cross
+- PA Dagger
+- PA Read
+- QB Wrap
+- Quick Slants
+- Read Option
+- Slot Drive
+- Slot Post
+- Smash
+- Spacing
+- Speed Option
+- WR Hook
+- Y Trail
+
+## 5WR Trips  (26 plays)
+- 60 Go
+- 60 Slide
+- 61 X Choice
+- Circle
+- Corner Strike
+- Curls
+- Dbl Comeback
+- Double Out
+- Four Verticals
+- HB Base
+- HB Counter
+- HB Slip Screen
+- HB Sweep
+- Inside Cross
+- Levels
+- Levels Switch
+- PA Bubble Screens
+- PA WR In
+- Quick Slants
+- Read Option
+- Slant Bubble
+- Slot Drive
+- Smash
+- Spacing
+- Stick
+- Zona Slot Out
+
+## Ace  (154 plays)
+- ATL HB Swin
+- ATL Zone Wk
+- Ace Posts
+- Ace TE Drag
+- Ace WR Stretch
+- Bench
+- Bucs HB Option
+- Cards Zone Wk
+- Close Bench
+- Close Cross
+- Close Curls
+- Close Dive Wk
+- Close Drag
+- Close HB Draw
+- Close HB Pitch
+- Close HB Stretch
+- Close Inside Cross
+- Close PA ATL Cross
+- Close PA Cowboy
+- Close PA Cross
+- Close PA HB Wheel
+- Close PA Raider
+- Close Stick
+- Close V Seam
+- Close Y Seam
+- Close Zone Weak
+- Colts Misdirection
+- Colts Under
+- Corner Post
+- Corner Strike
+- Counter Weak
+- Counter Wk
+- Cowboys Comebacks
+- Curl Flats
+- Double Hitch
+- Double Sluggo
+- Dual TE Flat
+- FL Cross
+- FL Under
+- Flanker Curl
+- Flanker Drive
+- Flea Flicker
+- Giants Middle
+- HB Blast
+- HB Counter
+- HB Counter Trap
+- HB Dive
+- HB Draw
+- HB Mid Draw
+- HB Misdirection
+- HB Misdirection Mtn
+- HB Off Tackle
+- HB Option
+- HB Pitch
+- HB Power
+- HB Pump Draw
+- HB Quick Base
+- HB Slam
+- HB Slip Screen
+- HB Smash
+- HB Stretch
+- HB Toss
+- HB Toss Strg
+- HB Zone
+- HB Zone Wk
+- Hitch Corners
+- Inside Cross
+- Inside Zone
+- Jet Sweep
+- Levels Divide
+- Lions Comebacks
+- Lions Zone Wk
+- Miami
+- Mtn Z Under
+- Off Tackle
+- Outside Zone
+- PA 218 Corner
+- PA ATL Seam
+- PA All Go
+- PA BAL Y-Corner
+- PA Boot
+- PA Boot Lion
+- PA Bucs Y-Corner
+- PA Colt Seam
+- PA Comebacks
+- PA Counter
+- PA Crosses
+- PA Ctr Waggle
+- PA DBL Go
+- PA Dee In
+- PA Deep Corner
+- PA Deep In
+- PA Eagle Boot Lt
+- PA Flood
+- PA Jet Sweep
+- PA KC Boot Lt
+- PA OAK Y-Corner
+- PA Panther Seam
+- PA Power O
+- PA Roll Rt
+- PA Rollout
+- PA Stretch
+- PA TE Corner
+- PA Vikes Cross
+- PA Y-Corner
+- PA Y-In
+- PA Zona Seam
+- PA Zona Y-Corner
+- Pats TE Attack
+- Power O
+- Pump HB Draw
+- Quick Slants
+- Rams HB Zone
+- Rams Slants
+- Ravens Stick Outs
+- Seahawks Under
+- Skins Drive
+- Slants
+- Spot
+- Stick
+- Stretch
+- Strong Power
+- TE Cross
+- TE Option In
+- TE Option Out
+- TE Seam Option
+- TE Seams
+- TE Under
+- TE Unders
+- Texan Deep Post
+- Texans Drive
+- Tight TEs Angle
+- Tight TEs Bench
+- Tight TEs Stick
+- WR Comebacks
+- Weak Zone
+- Wing HB Dive Wk
+- Wing HB Misdirect
+- Wing HB Misdirection
+- Wing Mtn Dive Wk
+- Wing PA Boot Slide
+- Wing PA F Slide
+- Wing PA Power O
+- Wing Power O
+- Wing Zone Wk
+- X Dig
+- X Follow
+- X Option
+- X Post
+- Y Shallow Cross
+- Y-Drag
+- Z Spot
+- Zone Weak
+- Zone Wk
+
+## Ace Close  (24 plays)
+- Bench
+- Curl Flats
+- Drag Crossers
+- HB Blunt Dive
+- HB Power
+- HB Stretch
+- HB Sweep
+- Inside Cross
+- Niners Pivot Seam
+- O1 Trap
+- PA Crosses
+- PA HB Wheel
+- Stick
+- Texan Curls
+- Texan Drag
+- Texan Seam
+- Tight Slots Bench
+- Tight Slots Cntr Wk
+- Tight Slots PA Cntr
+- Tight Slots Stick
+- Tight Slots TE Angle
+- Tight Slots Wham
+- Y Shallow Cross
+- Zone Weak
+
+## Ace Pair  (63 plays)
+- ATL Zone Str
+- ATL Zone Wk
+- Bengal Y-Option
+- Close PA Cross
+- Close PA Post
+- Close PA Sail
+- Close Zone Strg
+- Close Zone Strng
+- Counter Wk
+- Curl Combo
+- Curl Flats
+- Drive
+- End Around Lead
+- Flanker Dig
+- H Counter Str
+- H Misdirection Wk
+- H Zone Str
+- HB Counter Wk
+- HB Dive
+- HB Draw
+- HB Power 0
+- HB Slant 18
+- HB Slash Fk End Ard
+- HB Slip Screen
+- HB Smash
+- HB Stretch
+- HB Sweep
+- HB Toss Crack
+- HB Toss Strong
+- HB Trap
+- Inside Zone
+- Mtn Counter Str
+- Mtn PA Power O
+- Mtn Power O
+- Mtn TE Stick
+- Mtn Zone Wk
+- PA ATL Zone Wk
+- PA Boot Lt
+- PA Counter Str
+- PA Ctr Waggle
+- PA DET Zone Wk
+- PA End Around
+- PA Middle
+- PA Misdirection
+- PA Power 0
+- PA Power O
+- PA TE Flood
+- PA Y Corner
+- PA Y-Sail
+- Power 0
+- Power O
+- Ravens Dig
+- Slants
+- Spacing
+- TE Attack
+- TE Option
+- TE Stick
+- WR Drive
+- WR Screen
+- Y Stick
+- Z Spot
+- Zona Curls
+- Zona Misdirection
+
+## Ace Pair Flex  (47 plays)
+- 45 Quick Base
+- Counter Weak
+- Cowboys Comeback
+- Cowboys Y-Delay
+- Dagger
+- Four Verticals
+- HB Belly Weak
+- HB Dive
+- HB Draw
+- HB Off Tackle
+- HB Pitch
+- HB Slam
+- HB Slip Screen
+- HB Stretch
+- HB Toss Strong
+- Hawks Comeback
+- Hawks Y-Delay
+- Inside Cross
+- Lions Comeback
+- Off Tackle
+- PA Boot Lt
+- PA FL Dive
+- PA HB Trail
+- PA Panther Digs
+- PA Pitt Crosses
+- PA Power 0
+- PA Power O
+- PA Slide
+- PA Slot Post
+- PA Steeler Sail
+- PA Y-Cross
+- PA Y-Drag
+- Pats Smash Stick
+- Power 0
+- Power O
+- Quick Slant
+- Smash
+- Smash Drive
+- Steeler Drive
+- Steelers Screen
+- TE Spot
+- WR Clown Cross
+- WR Screen
+- WR Under
+- X Curl
+- Y Stick
+- Zone Strong
+
+## Ace Pair Flip  (9 plays)
+- HB Dive
+- HB Draw
+- HB Off Tackle
+- PA Dive
+- PA FL Stretch
+- Slants Slot Flat
+- Smash Slot Post
+- TE Inside
+- TE Out
+
+## Ace Pair Slot  (29 plays)
+- Bubble Screen
+- Four Verticals
+- H Counter Str
+- H Zone Str
+- H Zone Wk
+- HB Ace Power
+- HB Dive
+- HB Draw
+- HB Slip Screen
+- HB Stretch
+- HB Toss
+- HB Zone Wk
+- HB Zone Wk Sift
+- Inside Cross
+- OAK Slot Deep
+- PA Boot Lt
+- PA Counter Str
+- PA FL Dive
+- PA Power 0
+- PA Power O
+- PA Rollout
+- PA Skin V-PoCo
+- PA V Corner
+- PA Y-Drag Wheel
+- Power 0
+- Power O
+- U Drive
+- X Curl
+- Y Stick
+
+## Ace Pair Tight  (21 plays)
+- Bench
+- Clown Cross
+- Dagger
+- Four Verticals
+- HB Belly Weak
+- HB Dive
+- HB Slam
+- HB Slip Screen
+- HB Stretch
+- HB Zone Wk
+- PA Dig
+- PA Fork
+- PA HB Trail
+- PA Post
+- PA Power O
+- PA Y-Drag Wheel
+- Power O
+- Smash Drive
+- TE Spot
+- WR Under
+- Y Stick
+
+## Ace Pair Twins  (64 plays)
+- Bills HB Zone
+- Bills Slot Cross
+- Blunt Dive
+- Bubble Screen
+- Bucs Y Stick
+- Bucs Y-Option
+- Counter Weak
+- Curl Flats
+- Dagger
+- Dig Slot Post
+- Eagle Slot Post
+- Four Verticals
+- H Counter Str
+- H Misdirection Wk
+- H Zone Str
+- HB Ace Power
+- HB Dive
+- HB Dive Wk
+- HB Draw
+- HB Slam
+- HB Slip Screen
+- HB Sprint
+- HB Stretch
+- HB Toss
+- HB Toss Strong
+- HB Zone Wk
+- Inside Cross
+- Outside Zone
+- PA Boot Lt
+- PA Bucs Sail
+- PA Charger Fork
+- PA Counter Str
+- PA Ctr Waggle
+- PA Eagle Slot N Go
+- PA Eagles Fork
+- PA FL Dive
+- PA Fork
+- PA HB Curl
+- PA Misdirection
+- PA NY Boot Wheel
+- PA Pats Curl
+- PA Power 0
+- PA Power O
+- PA Rams Dig
+- PA SD Y Drag
+- PA Slot N Go
+- PA TE Screen
+- PA V Corner
+- PA V Drag
+- PA Viking Dig
+- PA WR Dig
+- PA Y-Drag Wheel
+- PA Zona Sail
+- Pats Y-Go
+- Power 0
+- Power O
+- Quick Slant
+- Rams Verticals
+- Slants
+- Smash
+- U Drive
+- WR Screen
+- X Curl
+- Y Stick
+
+## Ace TE Slot  (15 plays)
+- 45 Quick Base
+- Corner Strike
+- FL Slant
+- Flanker Drive
+- HB Counter
+- HB Mid Draw
+- HB Slip Screen
+- Lions HB Angle
+- Lions Y-Corner
+- PA Comebacks
+- PA Dagger
+- PA Lions Seams
+- TE Option
+- Weak Flood
+- Z Spot
+
+## Ace Tight Slots  (12 plays)
+- 518 Hook
+- Bunch Trail
+- Corner Strike
+- HB Mid Draw
+- HB Slip Screen
+- HB Sweep
+- Inside Cross
+- PA Post
+- Pats Curl Flat
+- Pats Sail
+- Pats Verts
+- Spacing
+
+## Ace Trips V-Iso  (9 plays)
+- Curl Flats
+- Double Outs
+- Empty Stick
+- Pats Clearout
+- Spacing
+- WR Screens
+- Y Iso Cross
+- Y Iso Shake
+- Y Iso Whip
+
+## Ace Trips Y-Iso  (9 plays)
+- Four Verticals
+- HB Draw
+- HB Slip Screen
+- Inside Cross
+- Inside Dig
+- PA Deep Outs
+- Slants Flat
+- Stick Y Sluggo
+- Y Fade Under
+
+## Ace Twins  (106 plays)
+- 494 F Flat
+- Bubble Screen
+- Cards Flood
+- Close Corner
+- Colts Flood
+- Curl Flat
+- Curl Flat Corner
+- Curl Flats
+- Curls
+- DBL Post
+- DBL Verticals
+- Drive
+- F Lead Read Option
+- Flanker Dig
+- Flood
+- Flood Y Dig
+- HB Counter
+- HB Dive
+- HB Dive Wk
+- HB Draw
+- HB Gut
+- HB Lead
+- HB Mid Draw
+- HB Misdirection
+- HB Off Tackle
+- HB Option
+- HB Pitch
+- HB Power 0
+- HB Power O
+- HB Quick Base
+- HB Slam
+- HB Slant 18
+- HB Slip Screen
+- HB Smash
+- HB Stretch
+- HB Sweep
+- HB Toss Strg
+- HB Toss Strng
+- Inside Zone
+- Inside Zone Split
+- Jags TE Drag
+- Jags Verts
+- Lions Dig
+- PA Boot
+- PA Boot Lt
+- PA Boot Over
+- PA Boot Slide
+- PA Boot Wk
+- PA Boot ver
+- PA Cards Cross
+- PA Cards Y-Corner
+- PA Colts Cross
+- PA Colts Y-Corner
+- PA Corner HB Slip
+- PA Crosses
+- PA Ctr Waggle
+- PA Dig
+- PA F Slide
+- PA FB Flat
+- PA FL Stretch
+- PA Flood
+- PA Fork
+- PA Giants V Cross
+- PA Lions Seams
+- PA Power 0
+- PA Power O
+- PA Read
+- PA Texan Boot
+- PA Texan Curl
+- PA Texan Wheel
+- PA Vertical
+- PA Verts
+- PA Vikes Sail
+- PA Y Go
+- PA Y-Corner
+- Packer Seams
+- Power 0
+- Power O
+- Quick Slants
+- RB Outs
+- Read Option
+- Roll Out Smash
+- Roll ut Smash
+- Slants
+- Slot Under
+- Smash
+- Stick
+- Strong Flood
+- Strong Power
+- TE Drag
+- TE Option
+- Texan DBL Post
+- Texan Ins
+- Texan Post
+- Texan Y-Drag
+- Tr Opt Switch
+- Tr Option Slip
+- Vikes Stick
+- Vikes Toss
+- WR In
+- WR Screen
+- Weak Flood
+- X Post
+- X Spot
+- X Under
+- Zone Weak
+
+## Ace Wing  (12 plays)
+- Corner Strike
+- Curl Flats
+- HB Counter
+- HB Dive
+- Inside Cross
+- PA F Slide
+- PA FL Clown
+- PA Power 0
+- Power 0
+- Quick Slants
+- Y Shallow Cross
+- Zone Wk
+
+## Ace Wing TE  (32 plays)
+- Curl Flats
+- DBL Cross
+- FB Dive
+- FL Screen
+- Flat Combo
+- Goalline Fade
+- HB Draw
+- HB Mid Draw
+- HB Option
+- HB Power
+- HB Slip Screen
+- Inside Cross
+- Jags Deep In
+- PA Boot Lt
+- PA F Slide
+- PA Pats Corner
+- PA Power O
+- PA Skinny Post
+- PA Slot Spot
+- Pats Slot Bubble
+- Pats Slot Out
+- Pats Slot Trail
+- Pats Slot Whip
+- Pats Under
+- Power O
+- RB Outs
+- Slants
+- Slot Out N Up
+- Slot Screen
+- Slot Swing
+- Whip Unders
+- Z Spot
+
+## Ace Y Flex  (18 plays)
+- Curl Flats
+- FL Drag
+- HB Cutback
+- HB Dive
+- HB Dive Wk
+- HB Draw
+- HB Slip Screen
+- Levels Divide
+- PA All Go
+- PA Comeback
+- PA HB Look
+- PA Y-Drag
+- PA Z Over
+- Power O
+- Slot Post
+- WR Screen
+- WR Streak
+- Z Fade
+
+## Bengal  (3 plays)
+- Strong Flood
+- WR Screen
+- Y Corner
+
+## Big Wing  (18 plays)
+- Curl Flats
+- Flanker Curl
+- HB Counter
+- HB Dive
+- HB Draw
+- HB Mtn Toss
+- HB Slip Screen
+- Inside Cross
+- PA Boot Slide
+- PA F Slide
+- PA FL Clown
+- PA Power 0
+- Power 0
+- Quick Slants
+- TE Option In
+- Wing HB Misdirect
+- Z Short Post
+- Zone Wk Mtn
+
+## Browns Doubles  (18 plays)
+- Bubble Screen
+- Corner Strike
+- Curl Flats
+- Four Verts
+- HB Cutback
+- HB Dive
+- HB Draw
+- HB Inside Zone
+- HB Slip Screen
+- HB Zone Wk
+- PA Dig Cross
+- PA Fork
+- PA TE Screen
+- Slants
+- Slot Dig
+- Slot Post
+- Slot Shake
+- Smash Y-In
+
+## Buc Trips  (24 plays)
+- Bench
+- Bench Switch
+- Bucs Cross
+- Bucs Sail
+- Bucs Verticals
+- Curl Flats
+- Double Ins
+- Empty Fk Scrn Whee
+- Empty HB Screen
+- Empty Smash
+- Fork Dig
+- Four Verts
+- HB Draw
+- HB Mid Draw
+- HB Slip Screen
+- HB Sweep
+- Mesh
+- Mesh Switch
+- PA Bucs Cross
+- PA Post
+- Slot Dagger
+- Spacing
+- Stick
+- Stick Switch
+
+## Bunch  (126 plays)
+- Air Raid Under
+- Angle
+- Base HB Counter
+- Base PA Ctr Waggle
+- Base Power 0
+- Base Power O
+- Bench
+- Bubble Screen
+- Bunch Z Option
+- Clearout SE Opt
+- Close Mesh Corner
+- Close Mesh Post
+- Close Post
+- Comebacks
+- Corner Strike
+- Cowboys HB Zone
+- Cross In
+- Curl Flat
+- Curl Flats
+- Curls
+- Deep Post
+- Destroy
+- Double Slant
+- Eagles Drive
+- End Around
+- FB Dive
+- FB Dive Fake HB
+- FB Fake HB Flip
+- FL Drive
+- FL Smoke
+- Flanker Dig
+- Flanker Drive
+- Flood
+- Four Verticals
+- Go's HB Out
+- Goalline Fade
+- HB Ace Power
+- HB Angle
+- HB Blast
+- HB Counter
+- HB Cutback
+- HB Dive
+- HB Draw
+- HB Gut
+- HB Lead
+- HB Lead Draw
+- HB Misdirection Wk
+- HB Power 0
+- HB Slam
+- HB Slash
+- HB Slash Fk End Ard
+- HB Slip Screen
+- HB Stretch
+- HB Toss
+- HB Toss Wk
+- Hitch Corners
+- Iso
+- Jags Z Option
+- Lead Draw
+- Lions Fade
+- Mesh
+- Mid Attack
+- Off Tackle
+- Outside Zone
+- PA ATL Dig
+- PA Boot
+- PA Boot Lt
+- PA Boot Over
+- PA Boot Slide
+- PA Bubble
+- PA Cross In
+- PA Ctr Waggle
+- PA Draw Pass
+- PA End Around
+- PA F Slide
+- PA FB Flat
+- PA Jags DBL Post
+- PA Philly End Ard
+- PA Pin Deep
+- PA Power 0
+- PA Power O
+- PA Raven Go's
+- PA Scissors
+- PA Streak
+- PA Stretch
+- PA TE Corner
+- PA Verticals
+- PA WR In
+- PA WR Screen
+- Philly Divide
+- Philly Post
+- Pivot Slants
+- Power 0
+- Power O
+- Pump HB Draw
+- Quick Pitch
+- Quick Slants
+- RB Outs
+- Rams Z Option
+- Read Option
+- Seattle
+- Slam Fk End Arnd
+- Slants
+- Slants Middle
+- Slants Slot Flat
+- Slash Fk End Ard
+- Slot Pivot
+- Smash Corners
+- Spacing
+- Spacing Switch
+- Spot Dig
+- Stick
+- Stick N Nod
+- TE Angle
+- Texas
+- Toss Crack
+- Verticals
+- Verts Wheel Stop
+- Vikes HB Angle
+- Vikings Y-Seam
+- WR Screen
+- X Post
+- Y Trail
+- Z Option
+- Z Slant
+- Z Spot
+
+## Bunch Ace  (15 plays)
+- Bunch Dig
+- Clearout SE Opt
+- End Around Lead
+- FL Drive
+- HB Ace Power
+- HB Slash Fk End Ard
+- HB Slip Screen
+- Mtn PA Panther Sail
+- Mtn Panther Dig
+- Mtn Panther Zone
+- PA End Around
+- PA Waggle
+- Panther Go's
+- Spacing
+- Toss Crack
+
+## Bunch Base  (43 plays)
+- Bench Switch
+- Curl Flat
+- Deep Post
+- Destroy
+- End Around
+- FL Drive
+- H Counter Str
+- H Power Toss
+- H Zone Str
+- H Zone Wk
+- HB Counter
+- HB Cutback
+- HB Dive
+- HB Draw
+- HB Slash
+- HB Slash Fk End Ard
+- HB Slip Screen
+- OAK Verticals
+- PA Boot Over
+- PA Boot Screen
+- PA Counter Str
+- PA Ctr Waggle
+- PA End Around
+- PA Raider Drive
+- PA Rollout
+- PA Saints In
+- PA Verticals
+- PA Zone Wk
+- Quick Pitch
+- Raider Dive
+- Seattle
+- Slot Corner
+- Spacing
+- Spacing Switch
+- Stick
+- TE Angle
+- Texan Cross
+- Texan Curl
+- Texan Drag In
+- Texan Under
+- Z Option
+- Z Spot
+- Zona Drive
+
+## Bunch HB Str  (12 plays)
+- Comeback Z Post
+- Four Verticals
+- HB Counter
+- HB Mid Draw
+- HB Slip Screen
+- Niners Drive
+- Niners Spot
+- Niners TE Post
+- PA WR In
+- Read Option
+- Stick
+- Strong Flood
+
+## Bunch Offset  (12 plays)
+- Bench
+- Bench Switch
+- Flanker Drive
+- HB Mid Draw
+- HB Slip Screen
+- Inside Zone
+- Inside Zone Read Opt
+- Mesh
+- PA Skins Curls
+- PA Zone Read
+- Skins Switch
+- WR Corners
+
+## Bunch Quads  (15 plays)
+- Corner Strike
+- Curl Flats
+- Dbl Slot Cross
+- Four Verticals
+- Go's Y Shake
+- Jets Y-Screen
+- QB Draw
+- Quick Slants
+- Slot Drive
+- Smash
+- Spacing
+- Stick
+- Stick N Nod
+- Strong Flood
+- WR Screen
+
+## Bunch Rt Freeze  (9 plays)
+- Bubble Screen
+- Four Verticals
+- HB Draw
+- HB Slip Screen
+- HB Trap
+- Middle Slant
+- Slot Middle
+- Spacing
+- WR Post Corner
+
+## Bunch Swap  (12 plays)
+- Corner Strike
+- Flanker Drive
+- HB Counter
+- Inside Zone
+- PA Boot Over
+- PA Ctr Waggle
+- Quick Pitch
+- Seattle
+- Spacing
+- Stick
+- Weak Flood
+- Z Spot
+
+## Bunch TE  (12 plays)
+- Colts Clearout
+- Colts Deep In
+- Colts Slot Under
+- Colts Y-Corner
+- Corner Strike
+- FL Short Dig
+- HB Mid Draw
+- HB Off Tackle
+- HB Slip Screen
+- Indy Slot Cross
+- PA Colts Under
+- Read Option
+
+## Bunch Wk  (142 plays)
+- 45 Quick Base
+- 689 Hook
+- Angle Smash
+- Bench
+- Bench Switch
+- Bengal Curl Flat
+- Bucs Drive Wheel
+- Bucs TE Option
+- Bunch Curl Flat
+- Bunch Trail
+- Circle
+- Clearout SE Out
+- Close Mesh
+- Close Raven Bunch
+- Corner Strike
+- Counter V
+- Curl Flat
+- Curl Flats
+- Curl N Go
+- Curls
+- Curls Slot Out
+- DBL Smash
+- Deep Curl
+- Double Sluggo
+- Drive
+- Drive Sail
+- FL Deep In
+- FL Screen
+- Fake Screen Wheel
+- Falcon Wheel
+- Fk WR Scrn Wheel
+- Flanker Dig
+- Flat Combo
+- Flex SD HB Wheel
+- Flex SD PoCo
+- Flex SD Post
+- Flex Verts
+- Flex Y PoCo
+- Flood
+- Four Verticals
+- HB Angle
+- HB Base
+- HB Counter
+- HB Delay
+- HB Draw
+- HB Inside
+- HB Mid Draw
+- HB Off Tackle
+- HB Option
+- HB Power
+- HB Quick Base
+- HB Screen
+- HB Slip Screen
+- HB Wheel
+- Hitch Seam
+- Inside Cross
+- Inside Dig
+- Inside Smash
+- Inside Zone
+- Inside Zone Split
+- KC Slot Cross
+- KC Stick N Up
+- Mesh
+- PA Bubble
+- PA Comebacks
+- PA Ctr Waggle
+- PA Dbl Stick
+- PA Deep Outs
+- PA Double Hook
+- PA F Slide
+- PA Flood
+- PA Poco
+- PA Post
+- PA Read
+- PA Saints Cross
+- PA Skinny Post
+- PA Slot Corner
+- PA TE In
+- PA WR In
+- PA Wheel Switch
+- PA Y-Out
+- PA Zone
+- Packer Y-Curl
+- Packer Y-Sail
+- Power 0
+- Power O
+- QB Power
+- Quick Slants
+- Rams DBLTrail
+- Rams Seams
+- Ravens Bunch Out
+- Ravens DBL Trail
+- Read Option
+- Saints HB Delay
+- Saints HB Wheel
+- Saints In
+- Saints Spot Shake
+- Scat
+- Slants
+- Slants Middle
+- Slot Cross
+- Slot Drag
+- Slot Drive
+- Slot Fork
+- Slot Out
+- Slot Outs
+- Slot Quick Flat
+- Slot TE Cross
+- Slots HB Sweep
+- Slots PA ATL Cross
+- Slots Stick
+- Sluggo Seam
+- Smash Y Cop
+- Spacing
+- Steelers Under
+- Steelers Y Spot
+- Stick
+- Stop N Go
+- Strong Flood
+- TE Corner
+- TE Screen
+- TE Stick
+- Texan Deep In
+- Under Y-Option
+- V-Drag
+- Vertical TE Cross
+- Verticals
+- WR Corners
+- WR Curls
+- WR Deep Hook
+- WR Dig
+- WR Hooks
+- WR In
+- WR Option
+- WR Screen
+- WR Under
+- Weak Flood
+- X Spot
+- Y Corner
+- Y Shallow Cross
+- Y Trail
+- Z Spot
+
+## Chief  (3 plays)
+- KC Crosses
+- KC Stick
+- KC Stick Nod
+
+## Chief Doubles  (24 plays)
+- Bubble Screen
+- Curl Flats
+- Flanker Drive
+- Goalline Fade
+- HB Dive
+- HB Draw
+- HB Inside Zone
+- HB Slam
+- HB Slip Screen
+- Inside Cross
+- KC Cross
+- KC Go's Drag
+- KC Slot Seam
+- PA KC Slot Cross
+- PA Slot Out
+- PA TE Screen
+- Philly Slants
+- Slot Post
+- Slot Stick
+- Smash Y-In
+- Split Belly
+- Toss Crack
+- Whip Unders
+- Z Spot
+
+## Close  (98 plays)
+- 494 F Flat
+- All Slants
+- Backs Cross
+- Browns Curls
+- China Special
+- Counter Weak
+- Counter Wk
+- Curl Combo
+- Curls
+- Deep Curls
+- End Around
+- F Angle
+- FB Belly
+- FB Dive
+- FB Fake HB Flip
+- FB Middle
+- FL Drive
+- HB Blast
+- HB Counter
+- HB Dive
+- HB Dive Weak
+- HB Draw
+- HB Gut
+- HB Iso
+- HB Lead
+- HB Lead Draw
+- HB Slash Fk End Ard
+- HB Slip Screen
+- HB Sweep
+- HB Toss
+- HB Zone Wk
+- Hitch Corner
+- Inside Post
+- Inside Zone
+- Iso
+- Iso Weak
+- Jets Curls
+- Jets X-Out
+- Mesh
+- Misdirection
+- Off Tackle
+- PA Boot Flow
+- PA Boot Lt
+- PA Boot Slide
+- PA Deep Cross
+- PA Draw Pass
+- PA End Around
+- PA F Slide
+- PA FB Wheel
+- PA Flood
+- PA Jets Go
+- PA Power 0
+- PA Power O
+- PA Rams Go
+- PA Scissors
+- PA Slide
+- PA Spot
+- PA WR Curls
+- PA WR In
+- PA WR Read
+- Power 0
+- Power O
+- Quick Outs
+- Quick Slants
+- Quick Toss
+- SS Pressure
+- Slants
+- Slot Z Out
+- Smash Swing
+- Spacing
+- Strong Stretch
+- TE Option
+- TE Post
+- TE Sail F Flat
+- Texans Pitch
+- Texas
+- Tight HB Screen
+- Tight Mesh
+- Toss Weak
+- V Trail
+- Vikings Go's
+- Vikings Option
+- WR Attack
+- WR Corners
+- WR In
+- WR Option
+- WR Out
+- WR Streak
+- X Curl FB Flat
+- X Dig
+- X Out N Up
+- X Slant
+- X-Corner
+- X-Out
+- Y Shallow Cross
+- Y Trail
+- Z Spot
+- Zone Weak
+
+## Close Twins  (24 plays)
+- Curls
+- Double Comeback
+- FB Dive
+- FB Dive Strong
+- FB Dive Weak
+- HB Counter
+- HB Dive
+- HB Inside
+- HB Screen
+- HB Seam
+- HB Slip Screen
+- HB Sweep
+- Hank
+- Inside Cross
+- Omaha
+- PA Ctr Waggle
+- PA Strong Flow
+- PA Waggle
+- Slants
+- TE Corner
+- TE Curl
+- Texas
+- Thunder
+- Y Post
+
+## Cowboys  (2 plays)
+- HB Sting
+- PA Waggle
+
+## Dbls V-Flex Tight  (12 plays)
+- Curl Flat
+- Double Cross
+- Flanker Dig
+- Four Verticals
+- HB Mid Draw
+- HB Off Tackle
+- HB Slip Screen
+- HB Sweep
+- Inside Cross
+- PA Dagger
+- PA Dig
+- Slants
+
+## Dbls Y-Flex Tight  (12 plays)
+- Corner Strike
+- Flood
+- HB Counter
+- HB Quick Base
+- Inside Zone
+- PA Bubble
+- PA Fork
+- Posts
+- Slot Under
+- Smash
+- Stick
+- U Corner
+
+## Deuce  (21 plays)
+- Corner Strike
+- Curl Flats
+- Double Sluggo
+- Flanker Drive
+- HB Dive
+- HB Misdirection
+- HB Pitch
+- HB Stretch
+- Levels Divide
+- PA 218 Corner
+- PA All Go
+- PA Comebacks
+- PA Crosses
+- PA Y Seam
+- Slants
+- TE Seams
+- TE Unders
+- Weak Zone
+- X Under
+- Y Shallow Cross
+- Z Spot
+
+## Deuce Rt Near  (9 plays)
+- Bench Switch
+- Curl Drag
+- HB Pitch
+- HB Sprint
+- PA Rollout
+- Slot Corner
+- Stick
+- WR Corner
+- X Option
+
+## Deuce Trips  (12 plays)
+- 45 Quick Base
+- Corner Strike
+- Curl Flats
+- Flanker Dig
+- Flanker Drive
+- HB Slip Screen
+- Inside Cross
+- PA Dagger
+- Slot Post
+- Stop N Go
+- X Deep Go
+- X Under
+
+## Deuce Twins  (15 plays)
+- Curl Flat
+- Flood Y Dig
+- HB Dive
+- HB Misdirection
+- HB Slant 18
+- HB Slip Screen
+- HB Smash
+- HB Toss Strg
+- PA Crosses
+- PA FL Stretch
+- PA Y-Corner
+- Slants
+- Slot Under
+- Smash
+- Stick
+
+## Deuce Wing  (28 plays)
+- Curl Flats
+- End Around
+- FL Drag Clearout
+- Four Verticals
+- H Counter Wk
+- H Option
+- HB Counter
+- HB Dive
+- HB Draw
+- HB Slip Screen
+- HB Smash
+- HB Toss
+- PA Boot Slide
+- PA End Around
+- PA Pats Boot
+- PA Pats Dig
+- PA Power 0
+- PA Power O
+- PA WR Out
+- Pats End Around
+- Pats HB Dive
+- Pats Slants
+- Power 0
+- Power O
+- Swing Slant
+- TE Option
+- WR Deep Hook
+- Z Dig
+
+## Dice  (18 plays)
+- 45 Quick Base
+- Corner Strike
+- Curl Flats
+- Curls Slot Shake
+- Dig Switch
+- Drag Under
+- HB Angle
+- HB Mid Draw
+- HB Quick Base
+- HB Slip Screen
+- PA Comebacks
+- PA Dagger
+- PA Read
+- Slants
+- Strong Flood
+- WR Drag
+- X Under
+- Y Shallow Cross
+
+## Dice Slot  (27 plays)
+- Curl Flats
+- Double Sluggo
+- Flanker Dig
+- Flanker Drive
+- HB Cutback
+- HB Draw
+- HB Misdirection
+- HB Slip Screen
+- HB Toss Crack
+- Inside Cross
+- Inside Zone
+- Levels Divide
+- Middle Slants
+- PA Comeback
+- PA Corner Post
+- PA HB Look
+- PA Stretch
+- PA TE Screen
+- PA X Post
+- Slot Cross
+- Slot Swing
+- Stretch
+- WR Fade
+- X Under
+- Z Spot
+- Z Under
+- Zone Weak
+
+## Dice Slot Wk  (15 plays)
+- 46 Z Cross
+- 689 Hook
+- Corner Strike
+- Curl Flats
+- FL Cross
+- Flanker Curl
+- HB Draw
+- HB Sweep
+- Inside Cross
+- PA Dig
+- PA F Slide
+- Quick Slants
+- WR Screen
+- Y Shallow Cross
+- Z Dig
+
+## Dice V-Flex  (18 plays)
+- Bronco Cross
+- Bunch Trail
+- Corner Strike
+- Cross Flood
+- FL Dig
+- HB Cross Screen
+- HB Mid Draw
+- HB Slip Screen
+- Slot Drive
+- Sluggo
+- Smash
+- Spacing
+- Stick
+- Stick Bubble
+- Strong Flood
+- Verticals
+- X Spot
+- Z Spot
+
+## Dice Wk  (15 plays)
+- Curl Flat
+- Deep In
+- Double Cross
+- FL Screen
+- HB Mid Draw
+- HB Off Tackle
+- Inside Cross
+- PA Comebacks
+- PA Dagger
+- PA Dig
+- Short Post
+- Slants
+- TE Out N Up
+- X Follow
+- X Under
+
+## Dice Y-Flex  (18 plays)
+- Comebacks
+- Curls
+- Deep Attack
+- HB Mid Draw
+- HB Off Tackle
+- HB Slip Screen
+- Middle Slant
+- PA WR In
+- Quick Slants
+- Smash
+- Smash Corners
+- Strong Flood
+- Trail Shake
+- WR Cross
+- WR Screen
+- X Follow
+- Y Shallow Cross
+- Z Shallow Cross
+
+## Ditt Doubles  (21 plays)
+- Bubble Screen
+- Curl Flats
+- FL Middle
+- Flanker Drive
+- HB Cutback
+- HB Dive
+- Inside Cross
+- PA Pitt Slot Cross
+- PA Steeler
+- Pitt Slot Post
+- Pitt Verticals
+- Slants
+- Slot Hook
+- Slot Shake
+- Steelers Draw
+- Steelers Fade
+- Toss Crack
+- Whip Unders
+- Z-Close Corner
+- Z-Close Cross
+- Z-Close Curl
+
+## Dolphin Trips  (21 plays)
+- Comeback Z Post
+- Curl Flats
+- Double Smash
+- Drive HB Wheel
+- FL Screen
+- HB Mid Draw
+- HB Off Tackle
+- HB Power
+- HB Slip Screen
+- Inside Cross
+- Inside Zone
+- MIA DBL Dig
+- MIA DBL Stop N Go's
+- PA DBL Ins
+- PA Read
+- PA WR Go
+- Read Option
+- Slants
+- Slot Out
+- Strong Flood
+- Y Shallow Cross
+
+## Dot  (15 plays)
+- Ace Overload
+- Ace Posts
+- Ace TE Drag
+- Comebacks
+- FL Corner
+- HB Blunt Dive
+- HB Counter
+- HB Draw
+- HB Pitch
+- HB Smash
+- PA Boot Roll
+- PA Counter
+- PA Deep In
+- Quick Slants
+- WR Screen
+
+## Dot Twins  (15 plays)
+- Curl Flat
+- HB Counter
+- HB Dive
+- HB Misdirection
+- HB Slant 18
+- HB Slip Screen
+- PA Boot Over
+- PA Boot Wk
+- PA Ctr Waggle
+- PA FL Stretch
+- Roll Out Smash
+- Slants
+- Stick
+- Weak Flood
+- Zone Weak
+
+## Double Flex  (47 plays)
+- Corner Strike
+- Curl Flat
+- Deep Attack
+- Deep Curl
+- Double Post
+- Fk WR Screen
+- Four Verticals
+- HB Angle
+- HB Counter
+- HB Mid Draw
+- HB Out
+- HB Quick Base
+- HB Slip Screen
+- HB Spot
+- HB Sweep
+- HB Trail
+- HB Wheel
+- Inside Cross
+- Mesh Post
+- PA Comebacks
+- PA Post
+- PA Slot Post
+- PA WR In
+- Rams Drive
+- Rams Verticals
+- Slants
+- Slot Outs
+- Spacing
+- Stick
+- Str Flanker Drive
+- Str HB Slip Screen
+- Str HB Sweep
+- Str PA WR In
+- Str Packer In
+- Str Weak Flood
+- Verticals
+- Vikes Seams
+- Vikes Slot Out
+- Vikes Smash
+- WR Corner
+- WR Post
+- WR Screen
+- Y Corner
+- Y-Slot Corner
+- Y-Slot Hitch
+- Y-Slot Post
+- Z Spot
+
+## Double Wing  (32 plays)
+- 80 Weak
+- 83 Weak
+- Curl Flats
+- Dagger
+- Double Sluggo
+- FB Dive
+- FB Dive Weak
+- Flanker Drive
+- Four Verticals
+- HB Blunt Dive
+- HB Draw
+- HB Misdirection
+- HB Off Tackle
+- HB Power O
+- HB Seam
+- HB Slash
+- HB Slip Screen
+- HB Toss Crack
+- Inside Cross
+- Omaha
+- PA Post
+- PA TE Screen
+- PA Waggle
+- PA Y-Corner
+- Slants
+- TE Post
+- Thunder
+- WR Hook
+- WR Screen
+- Weak Flood
+- Y Shallow Cross
+- Z Spot
+
+## Doubles  (214 plays)
+- 45 Quick Base
+- ATL -Under
+- ATL TE Post
+- ATL Zone Wk
+- All Slam
+- Angle Smash
+- Bears Spot
+- Bears Under
+- Bears Z Under
+- Bench Switch
+- Bubble Screen
+- Bucs Y-Option
+- Bunch Verticals
+- Cincy Sluggo Seam
+- Close Corner
+- Close FB Trail
+- Close FL Drag
+- Close HB Slip Screen
+- Close HB Wheel
+- Close Skin Flag Stop
+- Close X Drag
+- Colts Divide
+- Colts Under
+- Corner Strike
+- Cowboy Power O
+- Cross Dagger
+- Curl Flat
+- Curl Flats
+- Curl N Go
+- Curls
+- Curls HB Angle
+- Dagger
+- Dagger Cross
+- Deep Attack
+- Double China
+- Double Go's
+- Double Slant
+- Double Sluggo
+- Draw Fk Bubble
+- FB Dive
+- FB Dive Strong
+- FB Dive Weak
+- FB Inside
+- FL Dagger
+- FL Drive
+- Falcon Slot Seam
+- Falcon Swing
+- Flanker Dig
+- Flanker Drag
+- Flanker Drive
+- Flat Combo
+- Flood
+- Four Verticals
+- Goaliine Fade
+- Goaline Fade
+- Goaltine Fade
+- HB Blast
+- HB Counter
+- HB Cutback
+- HB Dive
+- HB Draw
+- HB Iso
+- HB Lead
+- HB Lead Blast
+- HB Mid Draw
+- HB Misdirection
+- HB Off Tackle
+- HB Option
+- HB Plunge
+- HB Power O
+- HB Pump Draw
+- HB Quick Base
+- HB Slam
+- HB Slip Screen
+- HB Smash
+- HB Sprint
+- HB Stretch
+- HB Sweep
+- HB Swing
+- HB Toss
+- HB Toss Crack
+- HB Toss Mtn
+- HB Toss Strong
+- HB Wk Dive
+- HB Zone Wk
+- Hawks Under
+- Hawks Zone Wk
+- Hitch Corner
+- Inside Cross
+- Inside Zone
+- Inverted Veer
+- Jets O1 Trap
+- Jets Sluggo Seam
+- KC Curls
+- Levels Divide
+- Mesh
+- Middle Slants
+- Mtn Power O
+- Mtn Stick
+- Mtn Stick N Nod
+- Mtn Zone Wk
+- O 1 Trap
+- PA ATL Boot Scrn
+- PA ATL Boot Slide
+- PA ATL Y-Corner
+- PA All Go
+- PA Boot
+- PA Boot Rt
+- PA Bucs Y-Corner
+- PA Comeback
+- PA Comebacks
+- PA Corner Post
+- PA Ctr Waggle
+- PA DAL Power O
+- PA DAL V-Sail
+- PA Dagger
+- PA Deep Cross
+- PA Dig
+- PA F Slide
+- PA Flow
+- PA Go's
+- PA HB Curl
+- PA HB Flat
+- PA HB Look
+- PA Hawks Corner
+- PA Inverted Veer
+- PA Mtn Power
+- PA Poco
+- PA Power O
+- PA Read
+- PA Read Special
+- PA Slide
+- PA Slot Cross
+- PA Slot Crosses
+- PA Slot In
+- PA Slot Stop
+- PA Slot Wheel
+- PA Stretch
+- PA Strong Flow
+- PA TE Corners
+- PA TE Screen
+- PA Vikes Cross
+- PA WR Cross
+- PA WR In
+- PA X Post
+- PA Y-Corner
+- PA Y-Sail
+- PA Zona Y-Corner
+- Panther Y-Sail
+- Pitt DBL Ins
+- Pitt Slot Curl
+- Post Drag
+- Power 0
+- Power O
+- QB Blast
+- QB Wrap
+- Quick Drag
+- Quick Pitch
+- Quick Slants
+- Rams X-Under
+- Read FB Flat
+- Read Option
+- Scat
+- Skins Deep In
+- Skins Out N Up
+- Skins Outs
+- Skins Seams
+- Slants
+- Slants Middle
+- Slot Cross
+- Slot Fade
+- Slot Post
+- Slot Swing
+- Sluggo Seam
+- Smash
+- Spacing
+- Speed Option
+- Stick
+- Streaks HB Delay
+- Stretch
+- Strong Flood
+- Swing Screen
+- Swing Slant
+- TE Hitch Out
+- TE Option
+- TE Post
+- Texan Y-Trail
+- Texas
+- Toss Weak
+- Verticals
+- Vikes X-Under
+- Vikes Zone
+- WR Corner
+- WR Corners
+- WR Fade
+- WR Fork
+- WR Post
+- WR Screen
+- WR Smash
+- Whip Unders
+- X Under
+- Y Option
+- Y Shallow Cross
+- Y Trail
+- Z Dig
+- Z Drive
+- Z Spot
+- Z Under
+- Z-Close Corner
+- Z-Close Cross
+- Z-Close Curl
+- Zona Dbl Curls
+- Zona Under
+- Zone Weak
+
+## Doubles Flex  (21 plays)
+- Corner Strike
+- Curl Flats
+- Flanker Drive
+- Flanker Shake
+- HB Dive
+- HB Draw
+- HB Slip Screen
+- Levels Divide
+- PA Deep In
+- PA Power O
+- Power O
+- Ravens Slot Drag
+- Ravens Under
+- Slants
+- Tight HB Dive
+- Tight PA HB Wheel
+- Tight PA Raven Cross
+- Tight Raven X CoPo
+- Tight Shakes
+- Tight Zone WK
+- Z Spot
+
+## Doubles Flex Wing  (26 plays)
+- 689 Hook
+- Angle Swing
+- Comebacks
+- Corner Strike
+- Corner Y-Angle
+- Counter Lead
+- Curls
+- Deep Curls
+- Dolphins Go's
+- Flat Combo
+- HB Draw
+- HB Misdirection
+- HB Slam
+- HB Slip Screen
+- HB Wheel
+- Mesh
+- PA Middle
+- PA Packer Posts
+- Read Option
+- Slot Cross
+- Toss Weak
+- WR Corners
+- WR In
+- WR Under
+- Weak Zone
+- Y Shallow Cross
+
+## Doubles Giants  (21 plays)
+- Curl Flats
+- Deep Attack
+- FL Middle
+- Goalline Fade
+- HB Dive
+- HB Draw
+- HB Slip Screen
+- HB Toss Crack
+- HB Zone Wk
+- Inside Cross
+- O 1 Trap
+- PA Fork Cross
+- PA Giants Dig
+- PA TE Screen
+- Power O
+- Slants
+- Slot Seam
+- Sluggo Seam
+- WR Drag
+- Whip Unders
+- Z Spot
+
+## Doubles On  (101 plays)
+- 45 Quick Base
+- 46 V Cross
+- Backs Cross
+- Close Cntr Lt
+- Close Z Clown
+- Close Z Corner
+- Corner Strike
+- Counter Trey
+- Curl Flats
+- DBL Stop N Go's
+- Deep Cross
+- Dig Fork
+- Double Flares
+- Double Hinge
+- Double Sluggo
+- End Around
+- FB Inside
+- FB Screen Wk
+- FL Drive
+- FL Screen
+- Fade Smash
+- Falcon Cross
+- Falcon Go's
+- Falcon Spot
+- Falcons X Dig
+- Flanker Dig
+- Flanker Drive
+- Flat Combo
+- Flood
+- Four Verticals
+- HB Angle
+- HB Circle
+- HB Counter
+- HB Delay Out
+- HB Dive
+- HB Draw
+- HB Mid Draw
+- HB Misdirection
+- HB Off Tackle
+- HB Power 0
+- HB Slam
+- HB Slash Fk End Ard
+- HB Slip Screen
+- HB Sweep
+- HB Zone
+- HB Zone Weak
+- Hawks Cross
+- Lead Read Option
+- Levels Divide
+- Mesh
+- OAK Y-Cross
+- PA Boot
+- PA Boot Lt
+- PA Bubble
+- PA Comebacks
+- PA Dagger
+- PA Deep Cross
+- PA Deep In
+- PA Deep Post
+- PA End Around
+- PA F Slide
+- PA FL Fly
+- PA Falcon Slide
+- PA Middle
+- PA Packer Y Go
+- PA Power 0
+- PA Power O
+- PA Scissors
+- PA Seams
+- PA Skinny Post
+- PA Slot Under
+- Packers Zone Wk
+- Power O
+- Quick Slants
+- Quick Toss
+- Rams Cross
+- Rams Slot Seam
+- Roll Out Smash
+- Shakes
+- Slants
+- Slants Middle
+- Slot Cross
+- Slot Post
+- Slot Shake
+- Stop N Go
+- Strong Flood
+- TE Drag
+- TE Flag
+- TE Post Corner
+- Tr Option Lt
+- Vikes Cross
+- WR DBL Ins
+- WR DBL Shake
+- WR Out
+- WR Smash
+- WR Whips
+- Y Shallow Cross
+- Y Trail
+- Y-Angle
+- Z Spot
+- Z Under
+
+## Doubles Un  (35 plays)
+- 45 Quick Base
+- Bench
+- Bench Swap
+- Comebacks Dig
+- HB Draw
+- HB Mid Draw
+- HB Quick Base
+- HB Slip Screen
+- Hawks Drive Trail
+- Hawks Post
+- Levels Fade
+- Mesh
+- PA Boot Over
+- PA Comebacks
+- PA Slot Corner
+- PA WR Cross
+- PA Z-Under
+- Quick Slant
+- Quick Slants
+- Slot Screen
+- Slot Swing
+- Sluggo Seam
+- Smash Corners
+- Stick
+- Stick N Nod
+- V-Screen
+- Verticals
+- WR Deep In
+- WR PoCo
+- WR Screen
+- WR Short Post
+- WR Stick N Out
+- Y Corner
+- Y Trail
+- Z Shallow Cross
+
+## Doubles Wing  (18 plays)
+- Backs Cross
+- Bills DBL Ins
+- Corner Strike
+- Counter Y
+- Cross Weak Flood
+- Curls
+- Flat Combo
+- Flood
+- HB Draw
+- HB Off Tackle
+- HB Slam
+- HB Slip Screen
+- PA F Slide
+- Power 0
+- Read Option
+- Slants
+- Strong Flood
+- Vertical TE Cross
+
+## Doubles Wing TE  (15 plays)
+- Comebacks
+- Corner Strike
+- Counter Lead
+- HB Draw
+- HB Misdirection
+- PA Ctr Waggle
+- PA DBL Posts
+- PA F Slide
+- PA Power 0
+- PA Skinny Post
+- Power 0
+- Slants
+- Slants Middle
+- Slot Post
+- Weak Zone
+
+## Doubles Wk  (79 plays)
+- Angle Swing
+- Bench Switch
+- Close Corner
+- Close Curls
+- Close FB Inside
+- Close FL Spot
+- Close HB Flat
+- Close HB Spot
+- Close HB Trail
+- Close HB Wheel
+- Close Shake
+- Close WR Corner
+- Comet Pass
+- Counter Str
+- Counter Wk
+- Curl Flat
+- Curls
+- Deep Comeback
+- Deep Curls
+- Double Ins
+- FB Dive
+- FB Screen Wk
+- Flat Combo
+- HB Draw
+- HB Gut
+- HB Lead
+- HB Mid Draw
+- HB Misdirection
+- HB Off Tackle
+- HB Slam
+- HB Slip Screen
+- HB Sweep
+- KC Drive Sail
+- KC HB Angle
+- Mesh
+- Mtn Power 0
+- Mtn Zone Wk
+- PA Boot Lt
+- PA Boot Slide
+- PA Ctr Waggle
+- PA Dbl Stick
+- PA F Slide
+- PA FB Wheel
+- PA Flood
+- PA Middle
+- PA Mtn Power
+- PA Power 0
+- PA Power O
+- PA Saints Cross
+- PA Skinny Post
+- PA Slide
+- PA Slot Fork
+- PA WR In
+- Power 0
+- Power O
+- Saints Cross
+- Saints Curls
+- Saints Go's
+- Saints Middle
+- Saints Power O
+- Skinny Post
+- Slants
+- Slants Middle
+- Slot Cross
+- Spacing
+- Stick
+- Stretch
+- TE Corner
+- TE Drag
+- Toss Weak
+- WR Comebacks
+- WR Deep In
+- WR Drag
+- WR Go's
+- WR In
+- X Curl FB Flat
+- X Dig
+- Y Shallow Cross
+- other
+
+## Eagle Doubles  (24 plays)
+- Bubble Screen
+- Curl Flats
+- Flanker Drive
+- Goalline Fade
+- HB Dive
+- HB Draw
+- HB Inside Zone
+- HB Slam
+- HB Slip Screen
+- Inside Cross
+- PA Philly Slot Cross
+- PA Slot Out
+- PA TE Screen
+- Philly Cross
+- Philly Go's Drag
+- Philly Slants
+- Philly Slot Seam
+- Slot Post
+- Slot Stick
+- Smash Y-In
+- Split Belly
+- Toss Crack
+- Whip Unders
+- Z Spot
+
+## East Right  (9 plays)
+- Double Drags
+- HB Counter Wk
+- HB Draw
+- HB Smash
+- PA FL Stretch
+- Slants Slot Flat
+- TE Angle
+- TE Inside
+- Y Cross
+
+## Empty Ace Patriot  (15 plays)
+- Corner Strike
+- Curl Flats
+- Empty Stick
+- Empty Stick Nod
+- Pats Clearout
+- Pats DBL In
+- Pats DBL Seams
+- Pats Go V-Dig
+- Pats Seam
+- Pats X Slant
+- Smash Corner
+- Spacing
+- TE Cross
+- TE Shake
+- WR Screens
+
+## Empty Base  (65 plays)
+- ATL Deep In
+- ATL Drags
+- ATL Flood
+- ATL PoCo
+- ATL Slant
+- ATL V Post
+- Bills Stick N Nod
+- Corner Strike
+- Counter
+- Counter Y
+- Curl Flats
+- Curls
+- Dbl Slot Cross
+- Dig Curl Read
+- Empty Bills Corner
+- Empty Bills Drive
+- Empty Bills Seam
+- FB Dive
+- Flood Post
+- Four Verticals
+- Gambler
+- Go DBL Post
+- HB Counter
+- HB Dive
+- HB Mid Draw
+- HB Off Tackle
+- HB Slip Screen
+- HB Sting
+- Inside Attack
+- Inside Cross
+- Inside Wheels
+- Inside Zone Split
+- Mesh Dig
+- PA Cross
+- PA Double Post
+- PA FL Corner
+- PA Power O
+- PA Read
+- PA Spot
+- PA WR In
+- PA Waggle
+- Power O
+- QB Draw
+- QB Sneak
+- QB Wrap
+- Saints Outs
+- Scat
+- Short Posts
+- Slants
+- Slot Corner
+- Slot Drive
+- Smash
+- Spacing
+- Stick
+- Stick N Nod
+- Stick Nod
+- Strong Flood
+- Strong Toss
+- Vertical TE Cross
+- Verticals
+- WR Screen
+- WR Smash
+- X Iso Fade
+- Y Lead Read Option
+- Y Stick
+
+## Empty Buc  (12 plays)
+- Bucs Bunch
+- Bunch Trail
+- Corner Strike
+- Curl Flats
+- HB Draw
+- HB Option
+- HB Sweep
+- PA Comebacks
+- Slants Middle
+- Smash Corners
+- X Follow
+- Z Spot
+
+## Empty Bunch  (12 plays)
+- Bunch Dig
+- Curl Flats
+- Dbl Slot Cross
+- Jet Sweep
+- PA Jet Sweep
+- Stick
+- Strong Flood
+- TE Slot Cross
+- Verticals
+- Vikings Stick
+- WR Screen
+- Z Spot
+
+## Empty Chief  (9 plays)
+- KC Comebacks
+- KC Inside Dig
+- PA KC Cross
+- PA Read
+- QB Draw
+- Read Option
+- Spacing
+- Stick
+- Stick N Nod
+
+## Empty Falcon  (12 plays)
+- ATL Corners
+- ATL Deep Post
+- ATL Drive Unders
+- ATL Hitch Seams
+- ATL Slot Dig
+- Clearout
+- Comebacks
+- DBL Curl
+- Four Verticals
+- HB Slip Screen
+- Slot Drive
+- Y-Drag
+
+## Empty Giant  (12 plays)
+- Bench
+- Flood
+- Giants Seams
+- HB Draw
+- HB Slip Screen
+- HB Sweep
+- Inside Cross
+- Mesh
+- PA Slot Cross
+- Quick Hook
+- Stick
+- TE Screen
+
+## Empty Jet  (9 plays)
+- Comebacks
+- Curl Flats
+- FL Dig
+- HB Counter
+- Jets Curls Dig
+- PA Read
+- QB Wrap
+- Read Option
+- Spacing
+
+## Empty Lion  (12 plays)
+- Curl Flats
+- Dbl Slot Cross
+- Dig Curl Read
+- QB Draw
+- Quick Slants
+- Slot Drive
+- Smash
+- Stick N Nod
+- Strong Flood
+- TE Screen
+- TE Slot Cross
+- Y Corner
+
+## Empty Saint  (9 plays)
+- Curl Flats
+- Drive Unders
+- Hitch Seams
+- Saints Clearouts
+- Saints Deep In
+- Saints Go's Whip
+- Saints Slant Flood
+- Saints Under
+- WR Corners
+
+## Empty Spread  (47 plays)
+- 45 Quick Base
+- Cake Read Option
+- Curl Flats
+- Deep Attack
+- Drive
+- FB Dive
+- Fake Bubble Post
+- Fake Screen Wheel
+- Flanker Dig
+- Four Verticals
+- Giants Comebacks
+- Giants Smash
+- HB Counter
+- HB Delay
+- HB Dive
+- HB Draw
+- HB Off Tackle
+- HB Quick Base
+- HB Slip Screen
+- HB Sting
+- HB Zone
+- Hitch Seam
+- Inside Cross
+- Inside Zone
+- PA Bubble
+- PA Crossers
+- PA Deep Outs
+- PA Power O
+- PA Read
+- PA Spot
+- PA Under
+- PA Waggle
+- PA Z-Under
+- Power O
+- QB Sneak
+- QB Wrap
+- Quick Slants
+- Read Option
+- Smash HB Check
+- Stick
+- Strong Flood
+- Strong Toss
+- Verticals
+- Weak Flood
+- Y Shallow Cross
+- Z Spot
+- Z Under
+
+## Empty Steeler  (18 plays)
+- Corner Strike
+- Curls Z-Shake
+- FB Dive
+- Fk Screen Sluggo
+- Fk Screen Verts
+- HB Dive
+- Hitch Corners
+- PA Power O
+- PA Spot
+- Power O
+- QB Sneak
+- Shallow Cross
+- Slot Drive
+- Steeler HB Screen
+- Strong Flood
+- Strong Toss
+- Verticals
+- WR Screens
+
+## Empty Trey  (130 plays)
+- Bench Switch
+- Bubble Screen
+- Clearout
+- Clearout SE Out
+- Close Zona Cross
+- Close Zona Fade
+- Close Zona Stick Flat
+- Comebacks
+- Corner Strike
+- Curl Flats
+- Curls
+- Curls V-Fade
+- DBL Curl
+- DBL Inside
+- DBL Slants
+- DBL Unders
+- Dbl Slot Cross
+- Deep Attack
+- Deep Corner
+- Deep Curls
+- Deep Fork
+- Deep Post
+- Divide
+- Double Ins
+- FB Dive
+- FL Drive
+- FL Hook
+- FL Screen
+- Fk WR Screen
+- Flanker Dig
+- Flood Switch
+- Four Verticals
+- Go's Y Shake
+- HB Base
+- HB Counter
+- HB Dive
+- HB Draw
+- HB Mid Draw
+- HB Slip Screen
+- HB Sting
+- HB Sweep
+- HB Wheel
+- Hitch Seam
+- Inside Cross
+- Inside Dig
+- Inside Smash
+- Inside Switch
+- Inside Zone
+- Jets DBL Ins
+- Jets Deep Post
+- Jets Iso Dig
+- Jets Y-Drag
+- KC Corner
+- KC Drive
+- KC Verticals
+- Levels Switch
+- Lions Deep Post
+- Lions Y-Sail
+- Mesh
+- Mesh Dig
+- Mesh Post
+- Motion HB Option
+- Mtn Read Option
+- PA Boot Lt
+- PA Bubble
+- PA DBL Stop
+- PA Dagger
+- PA Motion Read
+- PA Post
+- PA Power O
+- PA Read
+- PA Slot Corner
+- PA Slot Under
+- PA Split Cross
+- PA Spot
+- PA WR In
+- PA WR Seam
+- PA Waggle
+- Packer Smash
+- Packer Stick
+- Packers Scat
+- Power O
+- QB Sneak
+- Quick Slants
+- Read Option
+- Sail Sluggo
+- Saints Drags
+- Saints Flood
+- Saints Stick
+- Scat Wheel
+- Slants
+- Slants Flat
+- Slot Drive
+- Slot Out
+- Slot Outs
+- Slot Quick Flat
+- Slot Seam
+- Slot Trail
+- Smash
+- Smash Corners
+- Spacing
+- Speed Option
+- Stick
+- Stick N Nod
+- Stick Nod
+- Strong Flood
+- Strong Toss
+- TE Slot Cross
+- V-Drag
+- Vertical Looks
+- Verticals
+- Verts V Shake
+- Vikes Y-Shake
+- WR Dbl Screen
+- WR In
+- WR Ins
+- WR Read Dig
+- WR Scat
+- WR Screen
+- WR Smash
+- X Dig
+- X Shallow Cross
+- X Spot
+- Y Corner
+- Y Shallow Cross
+- Y Trail
+- Z Spot
+- Z Spot Dig
+- Zona Fade
+- Zona HB Screen
+
+## Empty Trey Flex  (15 plays)
+- 49ers Dig
+- 619 Sail
+- Buck Sweep Read Opt
+- Durham
+- Flanker Drive
+- HB Counter
+- HB Draw
+- HB Slip Screen
+- PA WR In
+- Read Option
+- Spacing
+- Stick
+- Verticals
+- Y Trail
+- Z Spot
+
+## Empty Trio  (15 plays)
+- Corner Strike
+- Curls
+- DBL Smash
+- Deep Corner
+- Deep In
+- HB Mid Draw
+- HB Slip Screen
+- Mesh
+- PA WR In
+- Quick Slants
+- Slot Stick
+- Smash
+- Spacing
+- Strong Flood
+- Y Short Cross
+
+## Empty Trips TE  (12 plays)
+- Counter
+- Drive
+- FB Dive
+- HB Dive
+- Jet Sweep
+- PA Power O
+- PA Spot
+- Power
+- Power O
+- QB Sneak
+- Strong Toss
+- WR Screen
+
+## Empty V-Flex  (32 plays)
+- Clearout SE Out
+- Corner Strike
+- Corners
+- Curl Flats
+- Deep Dig
+- Drive Post
+- FB Dive
+- HB Dive
+- HB Mid Draw
+- HB Sting
+- HB Sweep
+- Mesh
+- Mesh Post
+- PA Post
+- PA Power O
+- PA Spot
+- PA Waggle
+- Pats Go V-Dig
+- Power O
+- QB Sneak
+- Slants
+- Sluggo
+- Smash Corner
+- Spacing
+- Texans Trail
+- Verticals
+- WR Hooks
+- WR Short Posts
+- WR Smash
+- Y Stick
+- Z Spot
+- Z Spot Dig
+
+## Empty V-Saints  (12 plays)
+- HB Dive
+- HB Sting
+- PA Flood
+- PA Spot
+- Quick Screens
+- Saints Comeback
+- Saints Corner
+- Saints Drags
+- Saints Fork
+- Saints In
+- Saints Seams
+- V Stick
+
+## Empty Wing Trio  (9 plays)
+- Dbl Slot Cross
+- Four Verticals
+- QB Draw
+- Quick Slants
+- Smash
+- Stick
+- Stick N Nod
+- Strong Flood
+- WR Screen
+
+## Empty Wing Trip  (9 plays)
+- Corner Strike
+- Curl Flats
+- Curls
+- DBL Under
+- HB Slip Screen
+- Packer Drive
+- Quick Slants
+- Stick Nod
+- Y Short Cross
+
+## Empty Y-Flex  (47 plays)
+- Bench
+- Bench Switch
+- Curl Flats
+- Deep Dig
+- Drive Post
+- FB Dive
+- Flex Y Post
+- Four Verticals
+- HB Base
+- HB Dive
+- HB Mid Draw
+- HB Slip Screen
+- HB Sweep
+- Jet Sweep
+- Mesh
+- PA Jet Sweep
+- PA Power O
+- PA Spot
+- PA Texan Curls
+- Pats Corners
+- Pats Deep Dig
+- Pats V Shake
+- Power O
+- QB Draw
+- QB Sneak
+- Quick Slants
+- Slant Attack
+- Slants
+- Slot Dig
+- Slot Drive
+- Sluggo
+- Smash Corners
+- Stick
+- Strong Flood
+- Strong Toss
+- Stutter Under
+- Texans Curl
+- Texans Hook
+- Texans Switch
+- Trail Shake
+- V Stick
+- Vertical V Shake
+- WR Corners
+- WR Hooks
+- WR Screen
+- Y Shake
+- Y Short Cross
+
+## F Pair T Ins  (15 plays)
+- Bubble Screen
+- Dagger
+- HB Belly Weak
+- HB Blunt Dive
+- HB Dive
+- HB Draw
+- HB Slip Screen
+- HB Stretch
+- PA Boot Lt
+- PA FL Dive
+- PA Y-Drag Wheel
+- TE Spot
+- U Drive
+- X Curl
+- Y Stick
+
+## F Pair Twins  (56 plays)
+- Bench
+- Bubble Screen
+- Curl Flats
+- Curls
+- Dagger
+- Dual TE Flats
+- H Counter Str
+- H Counter Wk
+- H Misdirection Wk
+- H Power Toss
+- H Zone Wk
+- HB Belly Weak
+- HB Blunt Dive
+- HB Counter Wk
+- HB Dive
+- HB Draw
+- HB Slip Screen
+- HB Smash
+- HB Stretch
+- HB Toss
+- HB Toss Strong
+- Iso
+- Iso Weak
+- Mtn HB Dive
+- PA Boot Lt
+- PA Boot Screen
+- PA Boot Slide
+- PA Comeback Slide
+- PA Comebacks
+- PA Counter Str
+- PA Deep
+- PA Dig
+- PA FL Dive
+- PA Misdirection
+- PA Mtn Boot
+- PA Power 0
+- PA Power O
+- PA Raven Cross
+- PA Ravens Flag
+- PA Scissors
+- PA Spot
+- PA Y-Drag Wheel
+- Power 0
+- Power O
+- Quick Slants
+- RB Stretch
+- Ravens Blast
+- Ravens Zone Str
+- Short Fades
+- Smash
+- TE Spot
+- U Drive
+- X Curl
+- X Post
+- Y Stick
+- Z Dig
+
+## Flanker Close  (9 plays)
+- 60 Go
+- 60 Slide
+- 61 X Choice
+- Curl Flat Corner
+- Curl Flat Wheel
+- Four Verticals
+- HB Draw
+- Mustang Outs
+- Stick Bubble
+
+## Flex  (53 plays)
+- Bubble Screen
+- Corner Strike
+- Cross Dagger
+- Curl Flats
+- Curls
+- Double Ins
+- Double Outs
+- Flanker Dig
+- Flanker Drive
+- Flanker Under
+- Four Verticals
+- HB Blunt Dive
+- HB Counter
+- HB Cutback
+- HB Dive
+- HB Dive Z Motion
+- HB Draw
+- HB Slam
+- HB Slash
+- HB Slip Screen
+- HB Stretch
+- HB Toss Crack
+- Inside Cross
+- Middle Hook
+- O1 Trap
+- PA Dbl Posts
+- PA Deep In
+- PA HB Curl
+- PA HB Look
+- PA Power 0
+- PA Power O
+- PA Read
+- PA TE Screen
+- Packer Cross
+- Packer Ins
+- Power 0
+- Power O
+- Qk Slants In
+- Slants
+- Slot Cross
+- Slot Post
+- Stick
+- Stretch
+- Swing Screen
+- TE Post
+- Verticals
+- WR Screen
+- Whip Ins
+- Y Shallow Cross
+- Z Cross
+- Z Spot
+- Z Under
+- Zone Weak
+
+## Flex Trey  (12 plays)
+- Curl Flat Corner
+- Curl Flats
+- Curls
+- Four Verticals
+- Hitch Corners
+- Packer Corner
+- Packer Drive
+- Slants
+- Slot Drive
+- Spacing
+- Strong Flood
+- WR Screens
+
+## Flex Twins  (28 plays)
+- Counter Wk
+- Deep Curl
+- Drive
+- FB Dive Strong
+- FB Dive Weak
+- Flanker Hook
+- Flats
+- HB Counter
+- HB Gut
+- HB Inside
+- HB Misdirection
+- HB Screen
+- HB Slam
+- HB Slip Screen
+- Mesh
+- PA Boot
+- PA Ctr Waggle
+- PA Flood
+- PA Strong Flow
+- Quick Toss
+- Slant Hook
+- Slants
+- Spacing
+- TE Corner
+- Texas
+- Toss Weak
+- X Option
+- Z Option
+
+## Flip Trips  (30 plays)
+- 518 Hook
+- Corner Strike
+- Cowboy X Dig
+- Cowboys Read Dig
+- Curls V-Fade
+- Deep Post
+- End Around
+- HB Blast
+- HB Draw
+- HB Lead Draw
+- Inside Cross
+- Iso Weak
+- Mesh
+- PA Comeback Slide
+- PA Comebacks
+- PA Deep
+- PA End Around
+- PA Slot Under
+- Quick Outs
+- RB Stretch
+- Sail
+- Slam Fk End Arnd
+- Spacing
+- Stick
+- Stick N Nod
+- Trail Shake
+- Verticals
+- Z Spot
+- Z Spot Dig
+- Zona Bunch
+
+## Full House  (20 plays)
+- Corners
+- Deep Curl
+- Four Verticals
+- HB Counter
+- HB Off Tackle
+- HB Slam
+- HB Zone
+- Inverted Veer
+- PA Boot
+- PA Colts Post
+- PA Comebacks
+- PA Ctr Waggle
+- PA Flood Comeback
+- PA Flood FB Slip
+- PA X Post
+- Read Option Wk
+- Slants
+- TE Stick
+- Tr Opt Switch
+- Zone Read
+
+## Full House Base  (15 plays)
+- Curls
+- Double Go's
+- F Trail
+- FB Screen
+- HB Blast
+- HB Cntr Wk
+- HB Stretch
+- HB Toss
+- HB Toss Mtn
+- PA Power 0
+- PA Slide
+- PA WR In
+- Power 0
+- Quick Outs
+- Spacing
+
+## Full House TE  (9 plays)
+- 494 F Flat
+- F Angle
+- HB Dive
+- HB Stretch
+- PA Post
+- PA Power 0
+- PA Slide
+- Power 0
+- Slants
+
+## Full House Tight  (12 plays)
+- Counter Weak
+- HB Dive Weak
+- HB Force
+- HB Slip Screen
+- Mesh
+- PA Skins Cross
+- PA Skins Curls
+- PA Skins Deep
+- Quick Toss
+- Skins Out
+- Skins Seams
+- Y Trail
+
+## Full Panther  (15 plays)
+- HB Counter
+- HB Dive Wk
+- HB Slash
+- HB Zone
+- PA Boot Rt
+- PA Flood
+- PA Flood FB Slip
+- PA Opt Panther
+- PA Option Pass
+- Read Option
+- Read Option Wk
+- Slants
+- Slot TE Cross
+- Tr Opt Switch
+- Triple Option
+
+## H Close Flip  (18 plays)
+- BAL Flea Flicker
+- BAL Zone Wk
+- Counter Weak
+- FB Screen Wk
+- HB Draw
+- HB Lead
+- Mesh
+- Mtn HB Counter
+- Mtn PA Ctr Waggle
+- PA BAL Cross
+- PA BAL Cross Out
+- PA Boot Screen
+- PA Boot Slide
+- PA Deep Over
+- PA Power O
+- PA WR Curls
+- Power O
+- Spacing
+
+## H Pro  (54 plays)
+- Bench
+- Bucs Y-Trail
+- Bucs Zone Wk
+- Counter Weak
+- Counter Wk
+- Cross In
+- Curls
+- Double Flares
+- Drive
+- FB Dive
+- FB Fake HB Flip
+- FL Drive
+- Flea Flicker
+- HB Dive
+- HB Dive Weak
+- HB Draw
+- HB Gut
+- HB Lead Draw
+- HB Power 0
+- HB Screen
+- HB Slip Screen
+- HB Sweep
+- HB Sweep Strg
+- Inside Zone
+- Iso
+- Mesh
+- Off Tackle
+- PA Boot Lt
+- PA Boot Rt
+- PA Boot Slide
+- PA Ctr Waggle
+- PA Deep Cross
+- PA FB Flat
+- PA Power 0
+- PA Power O
+- PA Scissors
+- PA Slide
+- PA WR In
+- PA X In
+- Power O
+- Quick Pitch
+- Raven Comebacks
+- Raven Go's
+- Short Slants
+- Slant and Go's
+- Slants
+- Stick
+- Stretch
+- TE Seam
+- Texas
+- WR Fork
+- WR In
+- Y-Post
+- Z Spot
+
+## H Slot  (18 plays)
+- Bench
+- Corner Strike
+- Curl N Go
+- Curls
+- FB Dive
+- FB Fake HB Flip
+- Go's HB Out
+- HB Blast
+- HB Iso
+- HB Lead Draw
+- HB Slip Screen
+- PA Power 0
+- PA Scissors
+- Power 0
+- Slants
+- WR Comebacks
+- WR Deep Corner
+- WR Deep In
+
+## H Tight  (15 plays)
+- FB Dive
+- FB Fake HB Flip
+- FL Drive
+- Goalline Fade
+- HB Iso
+- HB Slam
+- HB Stretch
+- HB Toss Crack
+- PA FB Slide
+- PA Power 0
+- PA Scissors
+- PA Weak Flood
+- Power 0
+- Short Slants
+- Z Spot
+
+## H Twin Pair  (15 plays)
+- Curls
+- FB Dive
+- FB Fake HB Flip
+- HB Blast
+- HB Counter Wk
+- HB Iso
+- HB Slam
+- HB Toss
+- PA Power 0
+- PA Spot
+- PA Waggle
+- Power 0
+- TE Post
+- WR Corner
+- X Slant
+
+## H Twin TE  (17 plays)
+- H Counter Strg
+- HB Gut
+- HB Misdirection
+- Hook Ins
+- PA Power O
+- PA Rollout
+- PA Waggle
+- Power O
+- Ravens Curls
+- Ravens Fade
+- Ravens Zone Wk
+- TE Drag
+- Toss Weak
+- Unbal Raven Toss
+- WR Comebacks
+- X Comeback
+- X Slant
+
+## H Twins  (24 plays)
+- BAL Dive Weak
+- Counter Weak
+- Curl Flat
+- FL Drive
+- HB Dive
+- HB Dive Weak
+- HB Misdirection
+- HB Off Tackle
+- HB Slip Screen
+- Inside Post
+- Mesh
+- Outside Zone
+- PA BAL Y-Cop
+- PA Boot
+- PA FB Flat
+- PA Saints Cross
+- PA Scissors
+- Quick Toss
+- Raven Y-Cross
+- Slants
+- Unbal PA Power O
+- Unbal Raven Power
+- WR Out
+- Y Trail
+
+## H Wing TE  (6 plays)
+- Curls
+- HB Draw
+- HB Sweep
+- PA Middle
+- Power O
+- Slants
+
+## Heavy  (9 plays)
+- HB Circle
+- Jet Sweep
+- PA Jet Sweep
+- PA TE Cross
+- Power Fk Jet
+- Power O
+- QB Blast
+- WR Corner
+- Z Streak
+
+## Heavy Panther  (3 plays)
+- 689 Hook
+- QB Blast
+- QB Power
+
+## Hulk  (6 plays)
+- HB Draw
+- HB Slip Screen
+- PA Power O
+- Power O
+- Slanfs
+- WR In
+
+## I Pair Twins  (15 plays)
+- H Counter Str
+- H Power Toss
+- H Zone Str
+- H Zone Wk
+- HB Counter
+- HB Draw
+- HB Slip Screen
+- PA Boot Screen
+- PA Counter Str
+- PA Ctr Waggle
+- PA Verticals
+- PA Zone Wk
+- Spacing
+- Stick
+- Z Spot
+
+## Indy V-Trips  (15 plays)
+- Colts Verticals
+- End Around
+- Flanker Drive
+- HB Ace Power
+- HB Dive
+- HB Slash Fk End Ard
+- PA End Around
+- PA Pin Deep
+- Power O
+- Quick Slants
+- Spacing
+- Spider 2 V Banana
+- Stick
+- Toss Crack
+- Z Spot
+
+## Indy Y-Trips  (15 plays)
+- Four Verticals
+- HB Draw
+- HB Slam
+- HB Zone Wk
+- PA Slot Cross
+- PA Slot Wheel
+- Slants
+- Slot Drive
+- Slot Spot
+- Smash
+- Stick N Nod
+- Stick N Slide
+- TE Stick
+- WR Screen
+- Y-Trail
+
+## Jumbo  (66 plays)
+- ATL Power 0
+- Charger Verts Out
+- Counter Wk
+- Cowboy Post
+- Cowboy Verts Drag
+- Cross
+- Curls
+- Dagger
+- Double Slant
+- FB Circle
+- FB Dive
+- Falcon Deep In
+- Falcon Drive
+- Falcon Post
+- Flanker Drive
+- HB Ace Power
+- HB Counter
+- HB Counter Wk
+- HB Di'e
+- HB Dive
+- HB Draw
+- HB Inside
+- HB Misdirection
+- HB Off Tackle
+- HB Plunge
+- HB Smash
+- HB Stretch
+- HB Sweep
+- HB Toss
+- Inside Cross
+- Inside Zone
+- Mesh
+- PA ATL Pwr 0
+- PA Boot
+- PA Ctr Waggle
+- PA DBL Ins
+- PA Di'e
+- PA Dive
+- PA FL Stretch
+- PA Power 0
+- PA Power O
+- PA Roll Lt
+- PA Saints Sail
+- PA Stretch
+- PA TE Cross
+- PA V-Drag Wheel
+- PA Waggle
+- PA Y-Drag Wheel
+- Post
+- Power 0
+- Power O
+- Quick Slant
+- Skins Post
+- Spacing
+- Stretch
+- Strong Flood
+- TE Corners
+- TE Option
+- TE Shake
+- Toss
+- Verts Drag
+- WR Post
+- X Follow
+- X Option
+- X Post
+- Y Shallow Cross
+
+## Jumbo 2  (31 plays)
+- Curl Flats
+- Curls
+- End Around
+- Four Verticals
+- HB Dive
+- HB Draw
+- HB Plunge
+- HB Slam
+- HB Slash
+- HB Slash Fk End Ard
+- Inside Cross
+- Inside Zone
+- PA Boot
+- PA Drive
+- PA End Around
+- PA HB Look
+- PA OAK Y-Sail
+- PA Power O
+- PA WR In
+- Power O
+- Quick Pitch
+- Seattle
+- Slants
+- Slot Drive
+- Sluggo Seam
+- Spacing
+- TE Option
+- TE Post
+- Verticals
+- WR Screen
+- Z Spot
+
+## Jumbo Pair  (30 plays)
+- Clo e Strect
+- Clo e ert
+- Clo e nag
+- Close Min Drag
+- Close Min Stretch
+- Close Min Verts
+- H Counter Str
+- H Misdirection Wk
+- HB Belly Weak
+- HB Dive
+- HB Plunge
+- HB Sweep
+- HB Zone Str
+- KC Power D
+- KC Zone Str
+- Mtn HB Plunge
+- Mtn Spot
+- Niners Spacing
+- O1 Trap
+- PA Boot Lt
+- PA Counter Str
+- PA KC Boot Lt
+- PA KC Power O
+- PA Niners Seam
+- PA Pats Seam
+- PA Power 0
+- PA Power O
+- Power 0
+- Power O
+- Y Stick
+
+## Jumbo Wing  (9 plays)
+- HB Counter Wk
+- HB Plunge
+- HB Smash
+- HB Toss
+- PA Boot
+- PA FL Stretch
+- TE Corner
+- Trail
+- Y Option
+
+## Jumbo Z  (32 plays)
+- Curl Flat
+- Double Flares
+- Fade Smash
+- Flanker Dig
+- Flanker i
+- H Misdirection Wk
+- H Power Toss
+- H Zone Str
+- H Zone Wk
+- HB Dive
+- HB Draw
+- HB Pitch
+- HB Slip Screen
+- HB Smash
+- HB Zone
+- HB i e
+- Inside Zone Split
+- PA Boo L
+- PA Boot Lt
+- PA Deep In
+- PA Middle
+- PA Misdirection
+- PA Texan Cross
+- PA V Corner
+- PA Y Cross
+- PA Zone Wk
+- Power Option
+- TE Seam
+- Texans Seam
+- Tr Opt Switch
+- WR Smash
+- Y Stick
+
+## Niners Heavy  (9 plays)
+- HB Counter Wk
+- HB Power 0
+- Off Tackle
+- PA Boot Flow
+- TE Fade
+- TE Slant
+- TE Tight Lead
+- TE Tight PA Boot
+- TE Tight Power 0
+
+## Norm Y-Flex Tight  (18 plays)
+- Bench
+- Bench Switch
+- Corner N Go's
+- Cowboy In
+- Curls
+- HB Draw
+- HB Mid Draw
+- HB Slip Screen Lt
+- Mesh
+- PA Deep Outs
+- PA WR Cross
+- PA WR Stops
+- Slot Cross
+- Slot Seam
+- Slot Seams
+- Stick
+- Stick N Nod
+- Y Corner
+
+## Normal  (45 plays)
+- 45 Quick Base
+- Backs Cross
+- Corner Strike
+- Curl Combo
+- Curl Flats
+- Curls
+- Dart Read Option
+- Deep Cross
+- FB Dive
+- FL Screen
+- FL Slant
+- Fake Screen Wheel
+- Flat Combo
+- Go's Backs Cross
+- Go's Slot Post
+- HB Dive
+- HB Draw
+- HB Slip Screen
+- HB Sweep
+- Inside Cross
+- Inside Zone
+- Mesh
+- Midline Read Option
+- Outs
+- PA Bubble
+- PA Comebacks
+- PA F Slide
+- PA Skinny Post
+- PA Slide
+- PA Waggle
+- Power O
+- QB Rollout
+- Read Option
+- Slants
+- Slants Middle
+- Slot Cross
+- Speed Option
+- Texas
+- V Post
+- WR Corners
+- WR Deep In
+- WR Spot
+- Y Shallow Cross
+- Z Option
+- Z Spot
+
+## Normal Flex Wk Pats  (9 plays)
+- FL Screen
+- HB Counter
+- PA Cross
+- Patriots Corner
+- Patriots Drag
+- Patriots Drive
+- Patriots Spot
+- Pats HB Sweep
+- Z Spot
+
+## Normal Patriots  (24 plays)
+- 0 1 Trap
+- Curl Flats
+- Deep Attack
+- Double Stick
+- FL Middle
+- Goalline Fade
+- HB Dive
+- HB Draw
+- HB Power O
+- HB Slip Screen
+- HB Toss Crack
+- HB Zone Wk
+- Inside Cross
+- PA Pats Deep Cross
+- PA Pats Dig
+- PA Slot Out
+- PA TE Screen
+- Pats HB Slash
+- Pats Slants
+- Slot Hook
+- Slot Screen
+- WR Drag
+- Whip Unders
+- Z Spot
+
+## Normal Skins  (21 plays)
+- Bubble Screen
+- Curl Flats
+- Flanker Drive
+- HB Cutback
+- HB Dive
+- HB Inside Zone
+- HB Pump Draw
+- HB Slip Screen
+- HB Zone Wk
+- Inside Cross
+- PA Fork
+- PA TE Screen
+- PA Zip Slot Cross
+- Skins DBL Outs
+- Skins Short Post
+- Slants
+- Slot Post
+- Verticals
+- WR Corners
+- Whip Unders
+- Z Under
+
+## Normal V-Flex  (12 plays)
+- Bubble Screen
+- Curls Shake
+- FL Screen
+- Four Verticals
+- Inside Smash
+- Shallow Cross
+- Spacing
+- Stick
+- Stick N Nod
+- Vertical Looks
+- WR Dbl Screen
+- WR In
+
+## Normal V-Flex Tight  (15 plays)
+- Close Corner
+- Close FB Trail
+- Close HB Wheel
+- Close X Dig
+- Close X Drag
+- Flood
+- Four Verticals
+- HB Draw
+- HB Quick Base
+- HB Slip Screen
+- PA Deep Outs
+- Slot Cross
+- Slot Seams
+- Under Y-Option
+- Y-Sail
+
+## Normal Wide  (9 plays)
+- HB Blast
+- HB Lead
+- PA Flood
+- PA Power 0
+- PA Slide
+- Power 0
+- Slants
+- Slot Drag
+- Toss Strong
+
+## Normal Wing NY  (21 plays)
+- Curl Flat
+- Curl Flat Corner
+- Flood
+- Giants Curl Corner
+- Giants Under
+- HB Base
+- HB Mid Draw
+- HB Off Tackle
+- HB Option
+- HB Quick Base
+- HB Slip Screen
+- Inside Cross
+- PA Bubble
+- PA Dagger
+- PA Dig
+- Posts
+- Slants
+- Slot Under
+- Smash
+- U Corner
+- X Spot
+
+## Normal Wing Pats  (9 plays)
+- Comeback Z Post
+- Curl Flats
+- Four Verticals
+- HB Base
+- HB Draw
+- HB Slip Screen
+- Inside Cross
+- PA Dagger
+- Switch Fork
+
+## Normal Y-Flex  (40 plays)
+- 45 Quick Base
+- 46 Y Cross
+- 46 Z Cross
+- Backs Cross
+- Bills Curl Flat
+- Bills Z Option
+- Bunch Cross
+- Bunch Trail
+- Cntr Read Option
+- Corner Strike
+- Curls
+- Drive HB Wheel
+- FB Dive
+- Flat Combo
+- Flood
+- Four Verticals
+- HB Angle
+- HB Counter
+- HB Draw
+- HB Gut
+- HB Lead
+- HB Mid Draw
+- HB Off Tackle
+- HB Slip Screen
+- Inside Cross
+- Mesh
+- Misdirection
+- PA Boot Lt
+- PA F Slide
+- PA FL Fly
+- PA Misdirection
+- PA Post
+- Quick Slants
+- RB Outs
+- Read Option
+- SE Quick Out
+- Scissors Flats
+- Spacing
+- Verticals
+- Z Spot
+
+## Normal Y-Flex Tight  (51 plays)
+- 689 Hook
+- Backs Cross
+- Bench
+- Browns Cross
+- Browns Curl
+- Browns Flood
+- Browns Post
+- Cl Slash Fk End Ard
+- Close End Around
+- Close HB Zone Wk
+- Close PA Boot Lt
+- Close PA Deep Cross
+- Close PA End Around
+- Close WR Out
+- Close Y-Zig
+- Close Zone Str
+- Cross Weak Flood
+- Curl Flats
+- Curls
+- Drive
+- FB Inside
+- Flat Combo
+- Flood
+- Flood Drive
+- HB Dive
+- HB Draw
+- HB Mid Draw
+- HB Off Tackle
+- HB Quick Base
+- HB Slip Screen
+- HB Zone Weak
+- Inside Cross
+- PA Deep Curls
+- PA Deep Outs
+- PA Dig
+- PA F Slide
+- PA FB Wheel
+- PA Pack Seams
+- PA WR Cross
+- PA WR In
+- PA Wheel Switch
+- PA Y Go
+- Packer Dig
+- Power 0
+- Quick Slants
+- Seams Comebacks
+- Slants
+- Slot Cross
+- Slot Flood
+- WR Screen
+- Z Spot
+
+## Normal Y-Slot  (70 plays)
+- Bench Swap
+- Bench Switch
+- Bunch Trail
+- China Special
+- Corner Strike
+- Counter F
+- Curl Flats
+- Curls
+- Deep Attack
+- Deep Comeback
+- Double Comeback
+- FB Dive
+- Four Verticals
+- HB Base
+- HB Counter
+- HB Draw
+- HB Gut
+- HB Inside
+- HB Lead
+- HB Mid Draw
+- HB Off Tackle
+- HB Power
+- HB Power Sweep
+- HB Quick Base
+- HB Slip Screen
+- HB Sweep
+- KC Divide
+- KC Drive
+- KC PoCo
+- KC Switch
+- Mesh
+- Misdirection Str
+- PA Boot Lt
+- PA Comebacks
+- PA Ctr Waggle
+- PA KC Seam
+- PA KC Stop
+- PA Misdirection
+- PA Post
+- PA Power O
+- PA TE Wheel
+- PA WR In
+- PA X Clown
+- Power O
+- QB Sonya Check
+- Quick Slants
+- RB Outs
+- SE Quick Out
+- Slants
+- Slot Deep Post
+- Slot Drive
+- Slot Outs
+- Slot Post
+- Smash
+- Spacing
+- Sprint Out
+- Stick
+- Stick Switch
+- TE Corner
+- Texas
+- Titans Middle
+- Under
+- Under Y-Option
+- WR Deep Hook
+- X Follow
+- Y Corner
+- Y Stick
+- Y Stick Lion
+- Y Trail
+- Z Shallow Cross
+
+## Oca Tight Slots  (12 plays)
+- Bench
+- Bench Swap
+- Corner N Go's
+- HB Mid Draw
+- HB Sweep
+- Mesh
+- PA Cross
+- PA TE Wheels
+- PA X Clown
+- Pats Wheel Drag
+- Stick N Out
+- Stick Switch
+
+## Pack Trips  (21 plays)
+- Corner Strike
+- Deep Curl
+- Four Verticals
+- HB Mid Draw
+- HB Quick Base
+- HB Slip Screen
+- HB Sweep
+- Inside Cross
+- Mesh
+- PA Comebacks
+- PA Dig
+- PA WR In
+- Packer Seam
+- Packer Slants
+- Quick Slants
+- Slot Outs
+- Smash HB Check
+- Str HB Counter
+- Str HB Draw
+- Str V Trail
+- Weak Flood
+
+## Pair  (18 plays)
+- Curl Combo
+- Drive
+- H Zone Wk
+- HB Counter Wk
+- HB Dive
+- HB Smash
+- HB Stretch
+- PA Boot Lt
+- PA Middle
+- PA Power 0
+- PA Power O
+- PA TE Flood
+- Power 0
+- Power O
+- Stick
+- Strong Curls
+- TE Attack
+- Y Stick
+
+## Pair Slot  (18 plays)
+- Counter Wk
+- Dagger
+- Empty QB Draw
+- Empty WR Screen
+- Emptyl Y-Stick
+- Four Verticals
+- H Zone Wk
+- HB Stretch
+- HB Toss
+- PA Boot Lt
+- PA Boot Screen
+- PA Power 0
+- PA Spot
+- Power 0
+- TE Spot
+- U Drive Check
+- WR Corner
+- X Curl
+
+## Pair Twins  (32 plays)
+- Comebacks
+- Curl Combo
+- Double China
+- Drive
+- Four Verticals
+- HB Counter
+- HB Counter Wk
+- HB Dive
+- HB Draw
+- HB Plunge
+- HB Slip Screen
+- HB Smash
+- HB Stretch
+- HB Toss Crack
+- HB Toss Strong
+- Hi Lo Post
+- Middle Read
+- PA Boot Lt
+- PA Cross Up
+- PA Ctr Waggle
+- PA Middle
+- PA Power 0
+- PA TE Flood
+- Power 0
+- SE Cross
+- Slot Middle
+- Smash
+- Spacing
+- Stick
+- TE Attack
+- TE Stick
+- Z Spot
+
+## Panther Doubles  (18 plays)
+- Bubble Screen
+- Corner Strike
+- Curl Flats
+- HB Cutback
+- HB Dive
+- HB Slip Screen
+- HB Zone Wk
+- PA Panther
+- PA TE Screen
+- Panther Draw
+- Panther Fade
+- Panther Slants
+- Panther Verts
+- Panther Y-In
+- Panthers Slot Dig
+- Power O
+- Slot Post
+- Slot Shake
+
+## Pats Wing Trips  (21 plays)
+- Corners
+- Curl Flats
+- DBL Unders
+- Deep Slot Curl
+- Double Ins
+- HB Power
+- HB Sluggo
+- PA Pats Cross
+- Pats Cross
+- Pats HB Screen
+- Pats Slot Out
+- Pats Unders
+- Pats X Curl
+- Scat
+- Strong HB Flat
+- Strong HB Power
+- Strong SL Screen
+- Stutter Curl Seam
+- TE Deep Out
+- TE Whip
+- WR Screen
+
+## Philly  (3 plays)
+- Four Verticals
+- HB Off Tackle
+- SE Drag
+
+## Pitt Doubles  (21 plays)
+- Curls
+- Four Verticals
+- HB Counter
+- HB Dive
+- HB Draw
+- HB Slip Screen
+- HB Toss Strong
+- HB Zone Wk
+- PA Slot Cross
+- PA WR In
+- Pitt Stick N Slide
+- Pitt V-Trail
+- Slants
+- Slot Drive
+- Slot Spot
+- Sluggo Seam
+- Smash
+- Stick
+- Stick N Nod
+- TE Option
+- WR Screen
+
+## Pro  (210 plays)
+- 494 F Flat
+- ATL Cutback Wk
+- ATL HB Zone
+- ATL TE Cop
+- Angle
+- Bench
+- Bills Zone Wk
+- Browns Zone Wk
+- China Special
+- Close Dive Wk
+- Close Drag Wheel
+- Close HB Counter
+- Close HB Dive
+- Close Mesh
+- Close Mesh Corner
+- Close Mesh Post
+- Close Misdirection
+- Close PA Jet Curls
+- Close PA TE Corner
+- Close PA Z Deep
+- Close Post
+- Comebacks
+- Corner Strike
+- Counter Weak
+- Counter Wk
+- Cross In
+- Curls
+- DBL Pump n Go's
+- Dagger
+- Double Slant
+- Doubles Ins
+- End Around
+- F Angle
+- FB Dive
+- FB Dive Fake HB
+- FB Dive Strong
+- FB Fake HB Flip
+- FB Flare
+- FL Cross
+- FL Drag
+- FL Drive
+- FL Post
+- FL Smoke
+- Fade Smash
+- Falcons Fade
+- Flanker Curl
+- Flanker Dig
+- Flea Flicker
+- Flip HB Blast
+- Flip PA Jags Dig
+- Flip Sluggo Seam
+- Go's V Corner
+- Go's Y Corner
+- HB Ace Power
+- HB Angle
+- HB Blast
+- HB Blast Wk
+- HB Counter
+- HB Counter Strg
+- HB Counter Wk
+- HB Dive
+- HB Dive Wk
+- HB Draw
+- HB Iso
+- HB Lead Dive
+- HB Lead Draw
+- HB Misdirection
+- HB Off Tackle
+- HB Option
+- HB Pass
+- HB Slam
+- HB Slant 18
+- HB Slash Fk End Ard
+- HB Slip Screen
+- HB Stretch
+- HB Sweep
+- HB Toss
+- HB Toss Crack
+- HB Zone Wk
+- Hitch Corner
+- Inside Cross
+- Inside Post
+- Inside Zone
+- Iso
+- Iso Weak
+- Jags Y-Dig
+- Lead Draw
+- Mesh
+- Mid Attack
+- Off Tackle
+- Outside Zone
+- PA Boot
+- PA Boot Corner
+- PA Boot Flow
+- PA Boot Slide
+- PA Browns Boot
+- PA Browns Dig
+- PA Charger Wheel
+- PA Clearout
+- PA Close ATL Poco
+- PA Close ATL Post
+- PA Comeback Slide
+- PA Comebacks
+- PA Corner HB Slip
+- PA Cross In
+- PA Ctr Falcon
+- PA Ctr Waggle
+- PA Deep
+- PA End Around
+- PA FB Fake
+- PA FB Flat
+- PA FB Screen
+- PA FL Hitch
+- PA Flood
+- PA Giant Y-Post
+- PA HB Wheel
+- PA In N Up
+- PA Misdirection
+- PA OAK V-Post
+- PA OAK V-Shake
+- PA Panther In
+- PA Pivot
+- PA Pound Draw Pass
+- PA Power 0
+- PA Power O
+- PA Raider Dig
+- PA Scissors
+- PA Skins Z Slide
+- PA Slide
+- PA Slot Fork
+- PA Slot In
+- PA Spot
+- PA Streaks
+- PA Stretch
+- PA TE Corner
+- PA TE Out
+- PA Texans Clear
+- PA Texans Deep
+- PA Texans Z Slide
+- PA WR In
+- PA Weak Flood
+- PA Y Banana
+- PA Y-Seam
+- PA Zona Slide
+- Packers Post
+- Pats Y Option
+- Power 0
+- Power O
+- Quick Outs
+- Quick Slant
+- Quick Slants
+- Quick Toss
+- RB Stretch
+- Raider Blast
+- Read Option
+- Seam 678
+- Seattle
+- Short Fades
+- Short Slants
+- Skins Outs
+- Skins Zone
+- Slam Fk End Arnd
+- Slanfs
+- Slant and Go's
+- Slants
+- Slants Flat
+- Sluggos
+- Smash
+- Spacing
+- Steelers Sail
+- Stretch
+- Strong Stretch
+- TE Option
+- TE Post
+- Texans Drag
+- Texans HB Zone
+- Texans Zone
+- Texas
+- Unbal PA Power O
+- Unbal Raven Counter
+- Unbal Raven Power
+- WR Corner
+- WR Curls
+- WR Fade
+- WR Out
+- WR Post
+- Weak Flood
+- Weak Iso
+- Wing HB Blast
+- Wing PA Power O
+- Wing Power O
+- Wk Zone Insert
+- Wk Zone Sift
+- X Post
+- X Slant
+- X Under
+- Y Cop
+- Y Trail
+- Z Close Corner
+- Z Close Ctr WK
+- Z Close F-Flat
+- Z Close F-Trail
+- Z Close HB Toss
+- Z Close Shake
+- Z Deep In
+- Z Slant
+- Z Spot
+- Zona Misdirection
+- Zona Stretch
+- Zone Weak
+
+## Pro Twins  (95 plays)
+- 494 F Flat
+- Angle
+- Bubble Screen
+- Bucs HB Option
+- Bucs Y Option
+- China Special
+- Counter Weak
+- Counter Wk
+- Curls
+- Dagger
+- Double Slant
+- Drive
+- F Angle
+- FB Belly
+- FB Dive
+- FB Fake HB Flip
+- FB Flare
+- FB Middle
+- Fade Smash
+- Flanker Dig
+- Flea Flicker
+- HB Blast
+- HB Counter
+- HB Dive
+- HB Dive Weak
+- HB Lead Draw
+- HB Misdirection
+- HB Off Tackle
+- HB Option
+- HB Screen
+- HB Slash Wk
+- HB Slip Screen
+- HB Stretch
+- HB Toss
+- Hitch Corner
+- Inside Cross
+- Inside Zone
+- Iso
+- Iso Weak
+- Mtn Power O
+- Mtn Zone Wk
+- OAK Dive Wk
+- OAK Off Tackle
+- PA Boot
+- PA Boot Corner
+- PA Boot Flow
+- PA Boot Lt
+- PA Boot Rt
+- PA Boot Slide
+- PA Charger Sail
+- PA Clearout
+- PA Ctr Waggle
+- PA FB Fake
+- PA FB Flat
+- PA FB Screen
+- PA HB Wheel
+- PA Mtn Power
+- PA Power 0
+- PA Power O
+- PA Raider Flat
+- PA Raider Out
+- PA Rollout
+- PA Scissors
+- PA Slide
+- PA Spot
+- PA TE Corner
+- PA TE Leak
+- PA TE Out
+- PA WR In
+- PA WR Read
+- Post Wheel
+- Power 0
+- Power O
+- Quick Toss
+- Raider Blast
+- Sail
+- Slants
+- Slot Z Out
+- Spacing
+- Stretch
+- Strong Stretch
+- TE Drag
+- TE Post
+- Tight PA HB Wheel
+- Tight PA Y-Cross
+- Tight Zone Wk
+- Toss Weak
+- WR Fade
+- Weak Flood
+- X Clown
+- X Dig
+- X Post
+- X Slant
+- Y Cop
+- Z Spot
+
+## Raven Empty  (12 plays)
+- Curl Flats
+- Deep Attack
+- Double In
+- Inside Cross
+- Ravens Wheels
+- Slot Drive
+- Smash
+- Stick
+- Stick N Nod
+- Verticals Shake
+- WR Screen
+- Y Corner
+
+## Raven Trips  (9 plays)
+- Curls
+- HB Base
+- HB Gut
+- HB Mid Draw
+- HB Off Tackle
+- Slant
+- Smash
+- Verticals
+- X Spot
+
+## Right  (49 plays)
+- 80 Weak
+- 81 Weak
+- 82 Weak
+- 84 Weak
+- 87 Weak
+- 90 Strong
+- 91 Strong
+- 92 Strong
+- 93 Strong
+- 94 Strong
+- 97 Strong
+- 98 Strong
+- Bingo Cross
+- Cross Right
+- Curls
+- Double Comeback
+- Dragon
+- FB Belly
+- FB Circle
+- FB Dive
+- FB Lead
+- FL Drive
+- HB Counter
+- HB Dive
+- HB Draw
+- HB Off Tackle
+- HB Seam
+- HB Slip Screen
+- HB Sweep
+- Hank
+- Omaha
+- PA Corner
+- PA Slide
+- PA Waggle
+- Packer Sweep
+- Power 0
+- Roll Out
+- Slants
+- Spacing
+- TE Around
+- TE Corner
+- TE Sail F Flat
+- Texas
+- Thunder
+- Toss Sweep
+- Weak Flood
+- Y Post
+- Z In
+- Z Spot
+
+## Right Close  (15 plays)
+- Bench
+- FB Belly
+- FB Trail
+- FL Drag
+- HB Draw
+- HB Flat
+- HB Slip Screen
+- HB Spot
+- HB Sweep
+- HB Trail
+- PA Slide
+- Power 0
+- Scat
+- Switch
+- X Drag Flood
+
+## Right Twins  (23 plays)
+- China Special
+- Curl Flat
+- Curls
+- Dagger
+- Deep Comeback
+- Double Slant
+- FB Belly
+- FB Dive
+- HB Counter
+- HB Draw
+- HB Inside
+- HB Power Sweep
+- HB Slip Screen
+- PA Slide
+- PA Waggle
+- Power 0
+- Power O
+- Slot Corner
+- Smash Swing
+- Sprint Out
+- Texas
+- WR Attack
+- Y Stick Lion
+
+## Rocket  (15 plays)
+- Counter Wk
+- Flanker Drive
+- HB Iso
+- HB Lead Dive
+- Inside Zone
+- Iso
+- Mesh
+- PA Boot Flow
+- PA Ctr Waggle
+- PA HB Wheel
+- PA Slot In
+- PA TE Leak
+- Pitch
+- Quick Slant
+- WR Option
+
+## Slot  (80 plays)
+- 46 Z Cross
+- All Slam
+- Bingo Cross
+- Bubble Screen
+- Close Cntr Lt
+- Close Z Clown
+- Close Z Corner
+- Comebacks
+- Corner Strike
+- Cross Dagger
+- Curl Flats
+- Curls
+- DBL Post
+- Deep Cross
+- Draw Fk Bubble
+- FB Belly
+- Fade
+- Flanker Dig
+- Four Verticals
+- HB Blast
+- HB Counter
+- HB Dive
+- HB Draw
+- HB Gut
+- HB Iso
+- HB Lead
+- HB Lead Toss
+- HB Misdirection
+- HB Off Tackle
+- HB Slam
+- HB Slip Screen
+- HB Smash
+- Hank
+- Inside Zone
+- Mesh
+- Off Tackle
+- PA Boot
+- PA Boot Screen
+- PA Comebacks
+- PA Ctr Waggle
+- PA F Slide
+- PA Middle
+- PA Power 0
+- PA Rollout
+- PA Slide
+- PA Slot Crosses
+- PA Slot In
+- PA TE Post
+- PA WR Slip
+- PA X Corner
+- PA Y-Corner
+- Post Dig
+- Power 0
+- Power O
+- Quick Slant
+- Quick Slants
+- RB Outs
+- Read Option
+- Read Option Wk
+- Rollout Smash
+- SS Pressure
+- Slants
+- Slot Cross
+- Streaks HB Delay
+- Strong Power
+- TE Option
+- TE Post
+- TE Stick
+- Toss Weak
+- WR In
+- WR Option
+- Weak Flood
+- X Post
+- X Slant
+- X-Under
+- Y Option
+- Y Shallow Cross
+- Z Option
+- Zone Weak
+- Zone Wk
+
+## Slot Flex  (73 plays)
+- Bench
+- Browns Curls
+- Bucs HB Slash
+- Bucs Zone Wk
+- Corner Strike
+- Cowboys Zone Wk
+- Cross Dagger
+- Curls
+- DAL Mtn Power
+- DAL Mtn Zone Wk
+- FB Dive
+- FB Fake HB Flip
+- FL Drive
+- Flanker Dig
+- Flanker Drive
+- Flanker Under
+- Four Verticals
+- Go's HB Out
+- HB Blast
+- HB Counter
+- HB Counter Wk
+- HB Cutback
+- HB Dive
+- HB Dive Z Motion
+- HB Draw
+- HB Iso
+- HB Lead Draw
+- HB Power O
+- HB Slam
+- HB Slip Screen
+- HB Toss
+- HB Zone Wk
+- Jets Out N Up
+- Mesh
+- Middle Hook
+- PA Bucs Out
+- PA Ctr Waggle
+- PA Deep Cross
+- PA Deep In
+- PA HB Curl
+- PA Mtn Power
+- PA Power 0
+- PA Power O
+- PA Scissors
+- PA Slot Fork
+- PA Slot In
+- PA Slot Wheel
+- PA TE Screen
+- Pack Deep Corner
+- Packer Comebacks
+- Power 0
+- Power O
+- Qk Slants In
+- Quick Toss
+- Slants
+- Slot Post
+- Smash
+- Split Belly
+- Swing Slant
+- Verticals HB Out
+- Verts Slot Post
+- Vikes Curls
+- Vikes Deep In
+- Vikes Go's
+- WR Curls
+- WR Deep In
+- WR Drag
+- WR Out
+- WR Screen
+- WR Smoke Screen
+- X Post
+- Z Deep In
+- Z Spot
+
+## Slot Wing  (12 plays)
+- Four Verticals
+- H Option
+- HB Counter
+- HB Dive
+- HB Draw
+- HB Slip Screen
+- PA Power 0
+- PA WR Out
+- Power 0
+- Swing Slant
+- TE Option
+- WR Deep Hook
+
+## Slot Y-Flex  (17 plays)
+- Bubble Screen
+- Fade Smash
+- Four Verticals
+- HB Dive
+- HB Draw
+- HB Pitch
+- HB Slip Screen
+- Inside Cross
+- Mtn Stick N Nod
+- Mtn V Stick
+- Mtn Y Stick
+- PA Slot Crosses
+- QB Draw
+- Slants
+- WR Quick
+- Weak Flood
+- Y Cross Flood
+
+## Snugs  (54 plays)
+- Bench Switch
+- Colts Slot Seam
+- Corner Strike
+- Curl Flats
+- Curls
+- Empty Fk Scrn Wheel
+- Empty NY Screen
+- Flanker Drive
+- Flat Combo
+- Four Verticals
+- Giants Iso Drag
+- Giants Slot Curl
+- Giants Slot In
+- Giants Y-Delay
+- HB Ace Power
+- HB Dive
+- HB Drag
+- HB Draw
+- HB Mid Draw
+- HB Off Tackle
+- HB Power
+- HB Slip Screen
+- Hawks HB Wheel
+- Jets Curls Seam
+- Jets Go's
+- Jets Slot Post
+- Mesh
+- OAK Y-Sail
+- PA F Slide
+- PA Hawks Bench
+- PA Post
+- PA Slot Cross
+- PA Slot Fork
+- Power 0
+- Saints Middle
+- Slants
+- Slants Middle
+- Slot Drive
+- Slot Outs
+- Slot Seam
+- Steelers Cross
+- Stick
+- Stick N Nod
+- Stick N Up
+- Strong Flood
+- Under Y-Option
+- Verticals
+- WR Corners
+- WR Deep In
+- WR Hooks
+- Y Shallow Cross
+- Y-Trail
+- Z In
+- Z Spot
+
+## Snugs Flip  (106 plays)
+- 619 Sail
+- 689 Hook
+- Bench
+- Bench Swap
+- Bench Switch
+- Big Misdirection
+- Big PA Boot
+- Big Saints Blast
+- Browns Switch
+- Bucs Y-Sail
+- Comebacks
+- Comebacks Dig
+- Corner N Go's
+- Corner Strike
+- Cowboy DBL Ins
+- Cowboy Deep Post
+- Cowboy V Dig
+- Curl Flat
+- Curl Flats
+- Curls
+- Deep Attack
+- Deep Post
+- Double Drags
+- Double Post
+- Double Sluggo
+- Double Unders
+- FB Inside
+- FL Drag
+- FL Spot
+- Fk WR Scrn Wheel
+- Flood
+- Four Verticals
+- HB Base
+- HB Counter
+- HB Cross Screen
+- HB Cutback
+- HB Dive
+- HB Draw
+- HB Flat
+- HB Mid Draw
+- HB Off Tackle
+- HB Option
+- HB Pitch
+- HB Slam
+- HB Slash
+- HB Slip Screen
+- HB Sprint
+- HB Sweep
+- HB Wheel
+- Hitch Corner
+- Inside Cross
+- Inside Zone Split
+- KC Comebacks
+- KC Cross
+- KC DBL Curl
+- KC Dig
+- KC Under
+- Levels Divide
+- Lions Clearout
+- Lions Deep In
+- Lions Drive
+- Lions Fade
+- Mesh
+- Mesh Switch
+- PA Bears Y-Out
+- PA Boot Over
+- PA Dagger
+- PA Deep Curls
+- PA Post
+- PA Pump Go
+- PA Ram Cross
+- PA Read
+- PA Seam
+- PA Slot Drag
+- PA WR In
+- PA WR Stops
+- QB Wrap
+- Quick Pitch
+- Rams Dig
+- Rams Switch
+- Read Option
+- Shakes
+- Slants
+- Slants Middle
+- Slot Drive
+- Sluggo Seam
+- Smash
+- Spacing
+- Stick
+- Stick N Nod
+- Stick Switch
+- Strong Flood
+- TE In
+- Texans Deep In
+- V Trail
+- Verticals
+- Vikes Dig
+- WR Corner
+- WR Corners
+- WR Stick Nod
+- Y Corner
+- Y Shallow Cross
+- Y Trail
+- Y-Sail
+- Z Option
+- Z Spot
+
+## Solo  (18 plays)
+- Ace Posts
+- Curl Flats
+- Flanker Curl
+- Flanker Drive
+- HB Blunt Dive
+- HB Dive
+- HB Draw
+- HB Misdirection
+- HB Power O
+- HB Slip Screen
+- HB Toss
+- Inside Cross
+- Outs
+- PA All Go
+- PA Boot Roll
+- Quick Slants
+- Y Shallow Cross
+- Z Spot
+
+## Split Close  (44 plays)
+- 494 F Flat
+- Bubble Screen
+- Close FB Trail
+- Close HB Wheel
+- Close X Drag
+- Counter Weak
+- Curls
+- F Angle
+- FB Dive
+- FB Inside
+- HB Blast
+- HB Draw
+- HB Mid Draw
+- HB Slip Screen
+- HB Sweep
+- HB Toss Crack
+- HB Zone Read
+- HB Zone Weak
+- Indy Fade V-Whip
+- Indy Outs
+- PA Comebacks
+- PA F Slide
+- PA Middle
+- PA Misdirection
+- PA Power O
+- PA Scissors
+- PA Texans In
+- PA WR In
+- Post Y-Option
+- Power O
+- Quick Slants
+- Read FB Flat
+- Scat
+- Slants
+- Spacing
+- Texans HB Lead
+- Toss Weak
+- WR Comebacks
+- WR Corner
+- WR In
+- Z Close Ctr WK
+- Z Close F-Flat
+- Z Close F-Trail
+- Z Spot
+
+## Split Cowboy  (15 plays)
+- Cowboy Go's
+- Cowboy Ins
+- Cowboys Dig
+- Cowboys Fade
+- Curl Flats
+- Deep Comeback
+- HB Mid Draw
+- HB Slip Screen
+- Mesh
+- PA Seams
+- PA Slot Post
+- Slants
+- Strong Flood
+- Y Shallow Cross
+- Z Spot
+
+## Split Dolphin  (18 plays)
+- Counter Weak
+- Curls
+- Dolphins Fade
+- HB Dive
+- HB Toss
+- HB Zone Wk
+- Mtn Power 0
+- Mtn Zone Wk
+- PA FB Flat
+- PA Mtn Power
+- PA Power 0
+- PA Slide
+- PA Spot
+- Power 0
+- X Slant
+- Z Close Ctr WK
+- Z Close F-Flat
+- Z Close F-Trail
+
+## Split Eagle  (15 plays)
+- Counter Weak
+- End Around
+- FL Drive
+- HB Dive
+- HB Off Tackle
+- HB Slash Fk End Ard
+- HB Slip Screen
+- Inside Post
+- Mesh
+- PA Deep Cross
+- PA End Around
+- PA Scissors
+- Quick Toss
+- WR Out
+- Y Trail
+
+## Split Flex  (26 plays)
+- 689 Hook
+- Corner Strike
+- Curls
+- Deep Comeback
+- FB Dive
+- FL Drive
+- Flat Combo
+- HB Dive
+- HB Draw
+- HB Mid Draw
+- HB Option
+- HB Slip Screen
+- HB Wheel
+- Off Tackle
+- PA Scissors
+- PA Skinny Post
+- PA Slide
+- Slants Middle
+- Slot Cross
+- Slot Out
+- Slot Post
+- Slot Z Out
+- Stop N Go
+- Under
+- WR Corners
+- Z Option
+
+## Split Giant  (15 plays)
+- Counter Weak
+- FL Drive
+- HB Blast
+- HB Dive Weak
+- HB Draw
+- HB Lead Draw
+- NY V-Post
+- PA Boot Rt
+- PA Giant Dig
+- PA Giant Smash
+- PA Power 0
+- PA WR In
+- Power 0
+- Short Slants
+- Z Spot
+
+## Split Hawk  (18 plays)
+- Flat Combo
+- HB Draw
+- HB Slip Screen
+- Hawks Drive
+- Hawks Go's
+- Hawks Qk Out
+- Lead Option
+- PA Ctr Waggle
+- PA F Slide
+- PA Skinny Post
+- Power O
+- Read Option
+- Slants Middle
+- Slot Cross
+- Slot Post
+- Strong Power
+- WR Corners
+- Y Shallow Cross
+
+## Split Jaguar  (12 plays)
+- Bubble Screen
+- Curls
+- Double Post
+- HB Draw
+- HB Gut
+- HB Lead
+- HB Sweep
+- Misdirection
+- PA F Slide
+- PA FB Slide
+- PA Misdirection
+- Quick Slants
+
+## Split Jet  (15 plays)
+- HB Draw
+- HB Option
+- HB Slip Screen
+- HB Zone Read
+- Jets Deep In
+- Jets Slot Cross
+- Jets X-Middle
+- Jets Zone Wk
+- PA Boot Lt
+- PA F Slide
+- PA Power 0
+- PA Skinny Post
+- Power 0
+- Quick Slants
+- Toss Weak
+
+## Split Lion  (18 plays)
+- Corner Strike
+- Curl Flats
+- Deep Comeback
+- HB Counter
+- HB Mid Draw
+- HB Quick Base
+- HB Slip Screen
+- HB Sweep
+- PA Comebacks
+- PA Dig
+- PA TE Corners
+- Posts
+- Quick Slants
+- Smash
+- Stick
+- TE Under
+- U Corner
+- Y Shallow Cross
+
+## Split Offset  (75 plays)
+- 689 Hook
+- Corner Strike
+- Counter Weak
+- Counter Wk
+- Curl Flat
+- Curl Flats
+- Curls
+- DBL Stop N Go's
+- FB Dive
+- FB Dive Weak
+- FL Drive
+- Falcons Draw
+- Flanker Drive
+- Four Verticals
+- HB Blast
+- HB Counter
+- HB Dive
+- HB Dive Weak
+- HB Draw
+- HB Gut
+- HB Inside
+- HB Misdirection
+- HB Option
+- HB Slam
+- HB Slip Screen
+- HB Stretch
+- HB Sweep
+- HB Toss Crack
+- Inside Cross
+- Inside Smash
+- Middle Hook
+- Middle Hooks
+- Outside Zone
+- PA Boot
+- PA Boot Lt
+- PA Comebacks
+- PA Ctr Waggle
+- PA F Slide
+- PA Middle
+- PA Power 0
+- PA Power O
+- PA Read Special
+- PA Skinny Post
+- PA Slide
+- PA Spot
+- PA TE Under
+- PA WR Dig
+- PA WR Slip
+- PA Waggle
+- PA X Curl
+- Post Drag
+- Power 0
+- Power O
+- Read Option Wk
+- Rollout Smash
+- Slants
+- Slants Middle
+- Slot Deep Out
+- Slot Drag
+- Smash
+- Snag
+- Stretch
+- Strong Power
+- Strong Stretch
+- TE Curl
+- TE Option
+- TE Shallow
+- Texas
+- Toss Strong
+- Toss Weak
+- Verticals
+- WR DBL Shake
+- X Dig
+- X Dig Wheel
+- X Slant
+
+## Split Panther  (15 plays)
+- Corner Strike
+- Curl Flats
+- HB Counter
+- HB Draw
+- HB Slip Screen
+- Inside Zone Split
+- Inverted Veer
+- Load Option
+- Load Option Pass
+- PA Flood
+- PA Inverted Veer
+- PA V Slide
+- Power Option
+- QB Wrap
+- Read Option
+
+## Split Patriot  (12 plays)
+- Flat Combo
+- HB Slip Screen
+- Mesh
+- Pats Cross
+- Pats Deep Dig
+- Pats FL Screen
+- Pats HB Blast
+- Slants Middle
+- Slot Cross
+- Slot Post
+- WR Corners
+- Y Shallow Cross
+
+## Split Raven  (18 plays)
+- Close BAL Wheel
+- Close X Drag
+- Flat Combo
+- HB Draw
+- HB Slip Screen
+- PA F Slide
+- PA Ravens Fork
+- Power O
+- Raven Slot Out
+- Ravens Dig
+- Ravens Go's
+- Ravens Out N Ups
+- Ravens Outs
+- Ravens Slot Post
+- Slants Middle
+- Slot Cross
+- Toss Weak
+- WR Corners
+
+## Split Redskin  (18 plays)
+- F Lead Read Option
+- FL Screen
+- Go's Slot Post
+- HB Dive
+- HB Draw
+- HB Slip Screen
+- HB Stretch
+- PA Boot
+- PA Boot Rt
+- PA Double Post
+- PA Skinny Post
+- PA Skins Slant
+- Power Option
+- Read Option
+- Slants
+- Verticals
+- Z Spot
+- Zone Wk Sift
+
+## Split Slot  (93 plays)
+- 394 Swing
+- 46 V Cross
+- 46 Y Cross
+- Backs Cross
+- Bills Corners
+- Bills Go's RB Cross
+- China Special
+- Close Cntr Lt
+- Close Z Clown
+- Close Z Corner
+- Corner Strike
+- Counter Lead
+- Counter Weak
+- Cross Weak Flood
+- Curl Combo
+- Curls
+- DBL Ins
+- DBL Pump n Go's
+- Deep Comeback
+- Deep Curls
+- Double Flares
+- Drive
+- F Lead Read Option
+- FB Belly
+- FB Dive
+- FB Inside
+- FB Screen Wk
+- FB Slam
+- FL Drive
+- Fake Screen Wheel
+- Flanker Hook
+- Flat Combo
+- Flood
+- HB Counter
+- HB Dive
+- HB Draw
+- HB Gut
+- HB Inside
+- HB Off Tackle
+- HB Out
+- HB Slam
+- HB Slip Screen
+- HB Smash
+- HB Stretch
+- HB Sweep
+- HB Toss
+- HB Zone Weak
+- HB Zone Wk
+- Hawks Zone Wk
+- Inside Zone Split
+- Mesh
+- Mesh Dig
+- Mid Slants
+- Off Tackle
+- PA Boot Lt
+- PA Boot Slide
+- PA Bucs Read
+- PA Deep Post
+- PA Double Post
+- PA F Slide
+- PA FB Fake
+- PA Flood
+- PA Middle
+- PA Power 0
+- PA Power O
+- PA Skinny Post
+- PA Slide
+- PA Spot
+- PA TE Cross
+- PA WR In
+- PA Y Go
+- Power 0
+- Power O
+- Power Option
+- Quick Slants
+- Read Option
+- SS Pressure
+- Scat
+- Slants
+- Slot Fade
+- Spacing
+- TE Post Corner
+- TE Sail F Flat
+- Toss Weak
+- Vertical V-Post
+- WR Comebacks
+- WR DBL Shake
+- WR In
+- WR Under
+- X Dig
+- X Slant
+- Y Shallow Cross
+- Z Close Ctr WK
+
+## Split Texan  (12 plays)
+- FB Trail
+- HB Blast
+- HB Option
+- HB Power O
+- HB Slip Screen
+- PA Boot Slide
+- PA F Slide
+- PA Flood
+- Scat
+- Slants
+- Toss Weak
+- X Dig
+
+## Split V-Flex  (57 plays)
+- 494 F Flat
+- Backs Cross
+- Bubble Screen
+- Charger Y-Post
+- Close Cntr Lt
+- Close Z Clown
+- Close Z Corner
+- Corner Strike
+- Counter Weak
+- Cross Weak Flood
+- Curl Flat
+- Curls
+- End Around
+- F Angle
+- FB Dive
+- FB Inside
+- FB Slam
+- FL Drive
+- Flat Combo
+- HB Base
+- HB Blast
+- HB Dive
+- HB Draw
+- HB Iso
+- HB Lead Draw
+- HB Mtn Stretch
+- HB Off Tackle
+- HB Slash
+- HB Slash Fk End Ard
+- HB Slip Screen
+- HB Sweep
+- Inside Post
+- Mesh
+- PA Deep Cross
+- PA End Around
+- PA F Slide
+- PA FB Flat
+- PA Flood
+- PA Middle
+- PA Power O
+- PA Scissors
+- PA Slide
+- PA TE Cross
+- PA WR In
+- PA Wheel
+- Power O
+- Quick Toss
+- Raiders V-Post
+- Slants
+- Slot TE Cross
+- WR Comebacks
+- WR Out
+- Y Trail
+- Z Close Ctr WK
+- Z Close F-Flat
+- Z Close F-Trail
+- Z Spot
+
+## Split Viking  (12 plays)
+- Counter Weak
+- End Around
+- F Angle
+- HB Draw
+- HB Slash Fk End Ard
+- HB Zone Wk
+- PA End Around
+- PA Slide
+- PA Viking Curl
+- PA WR Curls
+- WR DBL Outs
+- WR Out N Up
+
+## Split Y-Flex  (54 plays)
+- Bench
+- Bench Switch
+- Corner Strike
+- Curl Flats
+- Curls
+- Curls Check
+- Double Cross
+- Double Pivot
+- Double Smash
+- FB Dive
+- FL Drive
+- FL Screen
+- Flood
+- Four Verticals
+- Frisco
+- Go DBL Post
+- HB Delay
+- HB Dive
+- HB Draw
+- HB Off Tackle
+- HB Quick Base
+- HB Slip Screen
+- HB Sting
+- HB Sweep
+- Ins Y-Corner
+- Inside Attack
+- Inside Cross
+- Mesh
+- OAK Seam Comebacks
+- PA DBL Cross
+- PA Deep Outs
+- PA FL Corner
+- PA Oak Cross
+- PA Power O
+- PA Spot
+- PA WR In
+- PA Waggle
+- Power O
+- QB Sneak
+- Raider Y-Option
+- Slants
+- Slot Cross
+- Slot Post
+- Slot Seams
+- Speed Option
+- Stick
+- Stick N Nod
+- Strong Flood
+- Strong Toss
+- Under Y-Option
+- WR Smash
+- Weak Flood
+- Y-Sail
+- Z Spot
+
+## Spread  (141 plays)
+- 0 1 Trap
+- 518 Hook
+- 60 Go
+- 61 X Choice
+- 949 Yara
+- Bench
+- Bench Swap
+- Bench Switch
+- Browns Post
+- Bubble Draw
+- Bubble Screen
+- Bubble Screens
+- Comebacks
+- Corner Strike
+- Curl Flat
+- Curl Flats
+- Curl N Go
+- Curl Outs
+- Curl Y Spot
+- Deep Attack
+- Deep Corner
+- Deep Outs
+- Double Ins
+- Double Post
+- Empty NY Smash
+- FB Dive
+- FL Screen
+- FL Short Dig
+- Fade Smash
+- Flanker Dig
+- Flanker Drive
+- Flood Post
+- Flood Switch
+- Four Verticals
+- Giants Dagger
+- Giants Fork Dig
+- Giants Quick Out
+- Giants Slot Out
+- Giants Slot Wheel
+- Giants Y-Option
+- Giants Y-Seam
+- Go DBL Post
+- HB Base
+- HB Counter
+- HB Cutback
+- HB Dive
+- HB Draw
+- HB Mid Draw
+- HB Off Tackle
+- HB Option
+- HB Power
+- HB Quick Base
+- HB Slip Screen
+- HB Sting
+- HB Sweep
+- Hitch Seam
+- Inside Cross
+- Inside Smash
+- Inside Zone
+- Iso
+- Iso Drag
+- Mesh
+- Mesh Dig
+- Mesh Post
+- Mesh Switch
+- Mtn HB Draw
+- PA Browns Cross
+- PA Comebacks
+- PA Ctr Waggle
+- PA Deep Outs
+- PA FB Flat
+- PA Power O
+- PA QB Read
+- PA Read
+- PA Slot Corner
+- PA Slot Cross
+- PA Slot Crosses
+- PA Slot Fork
+- PA Slot Options
+- PA Spot
+- PA TE Out
+- PA WR In
+- PA Waggle
+- PA X Clown
+- PA Z-Under
+- PA Zona Cross
+- Pivot Slants
+- Power O
+- QB Draw
+- QB Sneak
+- QB Wrap
+- Quick Hook
+- Quick Looks
+- Quick Slants
+- Read Option
+- SD Bunch
+- SD Corner
+- Sail
+- Scat
+- Seam Option
+- Slant Flats
+- Slants
+- Slot Curl
+- Slot In
+- Slot Options
+- Slot Outs
+- Slot Pivot
+- Slot Quick Flat
+- Slot Stick
+- Slot Wheel
+- Sluggos V Shake
+- Smash
+- Smash Corners
+- Spacing
+- Speed Option
+- Stick
+- Stick Switch
+- Strong Flood
+- Strong Toss
+- Switch Smash
+- TE Stick
+- Verticals
+- WR Corners
+- WR Cross
+- WR Dig
+- WR Double Screen
+- WR Go Ins
+- Weak Flood
+- X Follow
+- X Spot
+- Y Cop
+- Y-Delay
+- Y-Option
+- Z Shallow Cross
+- Z Spot
+- Z Spot Dig
+- Zona Corners
+- Zona Drive
+- Zona Post
+- Zona Seams
+- Zona Z Spot
+
+## Spread 4WR  (26 plays)
+- Comebacks
+- Curl Flats
+- FB Angle
+- FB Circle
+- FB Dive Strong
+- FB Dive Weak
+- HB Cutback
+- HB Dive
+- HB Draw
+- HB Option
+- HB Pitch
+- HB Screen
+- HB Slip Screen
+- HB Stretch
+- Off Tackle
+- PA FL Stretch
+- PA Power O
+- PA Slide
+- PA Stretch Go
+- PA Strong Flow
+- PA TE Cross
+- Power O
+- Slants
+- Strong Flood
+- Toss
+- WR Streaks
+
+## Spread Flex  (27 plays)
+- Bubble Screens
+- Curls
+- Empty KC Drive
+- Empty KC Under
+- Empty KC Verts
+- HB Dive
+- HB Draw
+- HB Option
+- HB Quick Base
+- HB Slip Screen
+- Inside Zone
+- KC HB Draw
+- KC Post
+- KC Under V-Out
+- Levels Divide
+- PA Dig
+- PA TE Wheel
+- Post Trail
+- Quick Hitter
+- Short Ins N Outs
+- Slants
+- Slot Cross
+- Slot Middle
+- Slot Out
+- Verticals
+- WR Post Flags
+- Z Spot
+
+## Spread Flex Wk  (12 plays)
+- Flanker Dig
+- Flood
+- HB Counter
+- HB Delay
+- HB Slip Screen
+- Inside Cross
+- Inside Smash
+- PA Bubble Screen
+- PA Crosses
+- Stick
+- Verticals
+- WR Screen
+
+## Spread HB Wk  (18 plays)
+- Comebacks
+- Fake Screen Wheel
+- Four Verticals
+- HB Draw
+- HB Iso
+- HB Slip Screen
+- Inside Zone
+- Inside Zone Split
+- PA Mtn Slide
+- PA Wheel
+- Read Option
+- Slants
+- Slot Drive
+- Spacing
+- Speed Option
+- Stick N Nod
+- Y Corner
+- Y Lead Read Opt
+
+## Spread Y-Flex  (55 plays)
+- 45 Quick Base
+- ATL Deep Post
+- ATL Drive
+- ATL Slot Jerk
+- Aggie
+- Bench
+- Bench Switch
+- Clearout
+- Comebacks
+- Corner N Go's
+- Corner Strike
+- Curl Flats
+- DBL Curl
+- Deep Attack
+- FL Screen
+- Falcons Curl Drag
+- Four Verticals
+- HB Base
+- HB Counter
+- HB Draw
+- HB Mid Draw
+- HB Off Tackle
+- HB Slip Screen
+- HB Sweep
+- Inside Cross
+- Jags Curls Dig
+- Jags Read Dig
+- Jags Y-Sail
+- Mesh
+- Mesh Switch
+- OAK Under
+- PA Deep Outs
+- PA Drag
+- PA Post
+- PA Read
+- PA Slot Under
+- PA Under
+- PA WR Cross
+- PA WR In
+- PA X Clown
+- Quick Slants
+- Raven HB Seam
+- Ravens Y Shallow
+- Read Option
+- Slot Outs
+- Smash HB Check
+- Spacing
+- Stick
+- Stick N Nod
+- Under Y-Option
+- Verticals
+- WR Corners
+- Weak Flood
+- Y Corner
+- Z Spot
+
+## Spread Y-Slot  (75 plays)
+- 45 Quick Base
+- All Curls
+- Bench
+- Buck Sweep
+- Buck Sweep Read Opt
+- Bunch Cross
+- Bunch Trail
+- Bunch Z Option
+- Comebacks
+- Corner Strike
+- Curl Flat Corner
+- Curl Flats
+- Deep Attack
+- Deep Comeback
+- Drag Under
+- FL Hook
+- Flanker Drive
+- Four Verticals
+- HB Base
+- HB Draw
+- HB Mid Draw
+- HB Off Tackle
+- HB Slip Screen
+- HB Sweep
+- Indy Bunch
+- Inside Cross
+- Inside Switch
+- Inverted Veer
+- Jets Dig
+- Jets Drag
+- Jets Slot Post
+- Jets Switch
+- Mesh
+- Mesh Post
+- PA All Cross
+- PA Cross
+- PA Dagger
+- PA Inverted Veer
+- PA Post
+- PA Read
+- PA Slot Cross
+- PA Slot Post
+- PA Slot Under
+- PA TE Wheel
+- PA WR In
+- Panther V Spot
+- Pitt Choice Zig
+- Pitt X Drag
+- Pitt Z Streak
+- QB Blast
+- QB Draw
+- Quick Slants
+- Read Option
+- Saints Curl N Go
+- Slants
+- Slot Shake
+- Smash
+- Spacing
+- Stick
+- Strong Flood
+- TE Corner
+- Texas
+- Under Y-Seam
+- V-Drag
+- Verticals
+- WR Hooks
+- WR Ins
+- Weak Flood
+- X Shallow Cross
+- X Spot
+- Y Shallow Cross
+- Y-Sail
+- Y-Trail
+- Z Spot
+- Z Under
+
+## Strong  (63 plays)
+- 494 F Flat
+- Curl Deep Out
+- Curls
+- DBL Verticals
+- Dagger
+- End Around
+- F Lead Read Option
+- FB Dive
+- FL Drive
+- HB Cntr Wk
+- HB Counter
+- HB Dive
+- HB Draw
+- HB Gut
+- HB Lead
+- HB Off Tackle
+- HB Power 0
+- HB Power O
+- HB Slash Fk End Ard
+- HB Slip Screen
+- HB Stretch
+- HB Toss Sift
+- Inside Zone Split
+- Lions Deep Out
+- Lions Sail
+- Middle Hooks
+- Niners Read Option
+- PA Boot
+- PA Boot Lt
+- PA Boot Slide
+- PA Corner HB Slip
+- PA End Around
+- PA F Slide
+- PA Flood
+- PA Power 0
+- PA Scissors
+- PA Skins Cross
+- PA Skins Slant
+- PA Spot
+- PA TE Cross
+- PA TE Slide
+- PA TE Slip
+- PA Y Go
+- Panthers Zone
+- Posts
+- Power 0
+- Power Option
+- Quick Slants
+- Read Option Wk
+- Skins Corners
+- Skins Curls
+- Slants
+- Spacing
+- TE Drag
+- TE Option
+- Tr Opt Switch
+- Tr Option Slip
+- U Drive
+- X Post
+- X Slant
+- Y Stick
+- Z Spot
+- Zone Wk Sift
+
+## Strong Slot  (13 plays)
+- Cross Weak Flood
+- F Lead Read Option
+- Flat Combo
+- HB Dive
+- HB Draw
+- HB Slip Screen
+- HB Zone
+- Inside Zone Split
+- Mid Slants
+- PA Boot Lt
+- PA Flood
+- Shakes
+- Under
+
+## Strong Slot Bills  (18 plays)
+- Bills Curls
+- Bills Inside Zone
+- Counter Weak
+- DBL Stutter Go
+- FL Drive
+- HB Dive
+- HB Dive Weak
+- HB Off Tackle
+- HB Slip Screen
+- Inside Post
+- Mesh
+- PA Bills Dig
+- PA Deep Cross
+- PA Scissors
+- Quick Toss
+- Stutter Go's
+- V Trail
+- WR Out
+
+## Strong Twins  (35 plays)
+- Double Flares
+- F Lead Read Option
+- FB Screen Wk
+- Fade Smash
+- HB Counter
+- HB Dive
+- HB Off Tackle
+- HB Power O
+- HB Stretch
+- HB Zone
+- Inside Zone Split
+- Mtn 01 Trap
+- Mtn Power 0
+- Niners Cntr Lead
+- Niners Post Wheel
+- Niners Read Option
+- PA Boot Lt
+- PA Comeback
+- PA Corner HB Slip
+- PA Cross
+- PA Deep In
+- PA Flood
+- PA Niners Cross
+- PA Niners Flood
+- PA Power O
+- PA TE Corner
+- Read Option
+- Slants
+- Toss Weak
+- Tr Opt Switch
+- Tr Option Lt
+- Tr Option Slip
+- WR In
+- WR Smash
+- X Post
+
+## TE Flip  (40 plays)
+- Counter H Wk
+- Curls
+- FB Dive Strong
+- FB Fake HB Flip
+- Flanker Dig
+- Flea Flicker
+- HB Blast
+- HB Counter
+- HB Dive
+- HB Draw
+- HB Iso
+- HB Misdirection
+- HB Off Tackle
+- HB Slip Screen
+- HB Stretch
+- HB Toss
+- Hitch Corner
+- Inside Cross
+- Iso
+- PA Boot
+- PA Boot Flow
+- PA Ctr Waggle
+- PA Dive
+- PA FB Flat
+- PA FL Stretch
+- PA Pats Power O
+- PA Power O
+- PA Raider Corner
+- Pats Power O
+- Power O
+- Raider Sail
+- Slants
+- Slants Slot Flat
+- Smash Slot Post
+- TE Angle
+- TE Inside
+- TE Out
+- X Post
+- X Slant
+- X Under
+
+## Tackle Over  (18 plays)
+- Close PA Boot Lt
+- Close Y-Zig
+- Close Zone Str
+- Counter Str
+- Deep Curls
+- FB Dive Strong
+- FB Fake HB Flip
+- FB Screen Wk
+- HB Iso
+- HB Slam
+- HB Toss
+- HB Zone Weak
+- PA F Slide
+- PA FB Flat
+- PA Power O
+- PA Y Go
+- Power O
+- Slants
+
+## Tight  (98 plays)
+- 394 Swing
+- 494 F Flat
+- Angle
+- Backs Cross
+- Bronco Fade
+- Charger Fade
+- Counter Lead
+- Counter Weak
+- Counter Wk
+- Cross Screen
+- Curl Combo
+- Curls
+- DEN Cutback Wk
+- DEN HB Slash
+- DEN HB Zone
+- Double Go's
+- Double Slant
+- F Angle
+- FB Belly
+- FB Dive
+- FB Dive Strong
+- FB Fake HB Flip
+- FL Drive
+- FL Flat
+- Flanker Hook
+- Flea Flicker
+- Giants Fade
+- Giants Zone Wk
+- Go's Y-Post
+- Goalline Fade
+- HB Blast
+- HB Counter
+- HB Dive
+- HB Draw
+- HB Iso
+- HB Lead Draw
+- HB Lead Toss
+- HB Misdirection
+- HB Out
+- HB Slip Screen
+- HB Stretch
+- HB Sweep
+- HB Toss
+- HB Toss Mtn
+- HB Zone Wk
+- Inside Zone
+- Iso
+- Mesh
+- Middle Hooks
+- Mtn Power O
+- Mtn Zone Wk
+- Off Tackle
+- PA Boot
+- PA Boot Flow
+- PA Boot Slide
+- PA Bronco Out
+- PA Ctr Waggle
+- PA FB Flat
+- PA FB Slide
+- PA HB Wheel
+- PA Jags DBL Post
+- PA Mtn Power O
+- PA Post
+- PA Power 0
+- PA Power O
+- PA Saints Boot
+- PA Saints V-Seam
+- PA Scissors
+- PA Slide
+- PA Slot Corner
+- PA Spot
+- PA TE Corner
+- PA WR In
+- PA Y-Seam
+- Power 0
+- Power O
+- QB Rollout
+- QK Slants
+- SS Pressure
+- Saints Swing Screen
+- Slants
+- Spacing
+- Spider 2 Y Banana
+- Stretch
+- Strong Stretch
+- TE Flat
+- TE Option
+- TE Post
+- TE Sail F Flat
+- Texas
+- Toss Sweep
+- WR Curls
+- WR Post
+- Weak Iso Lead
+- X Slant
+- Z Slant
+- Z Spot
+- Zone Weak
+
+## Tight Clev  (0 plays)
+
+## Tight Doubles  (54 plays)
+- Bench Switch
+- Bills Fade
+- Close Cross
+- Close HB Toss
+- Close Skins Cross
+- Close Skins Curl
+- Close Skins Deep Cop
+- Close Skins Skinny
+- Close Skins Under
+- Close Under
+- Curl Drag
+- Curl Flat
+- Curl Flat Corner
+- Curl Flats
+- DBL Cross
+- Drag In
+- Goaline Fade
+- HB Ace Power
+- HB Cutback
+- HB Dive
+- HB Draw
+- HB Lead
+- HB Pitch
+- HB Slam
+- HB Slip Screen
+- HB Stretch
+- HB Windback
+- HB Zone Wk
+- Mtn Lead Dive
+- PA Bills Cross
+- PA Boot
+- PA Cross
+- PA HB Wheel
+- PA Rollout
+- PA Slide
+- PA Slot Crosses
+- PA TE Screen
+- PA Verticals
+- PA WR Cross
+- PA Y-Sail
+- PA Zona Cross
+- Shakes
+- Shallow Cross
+- Slants
+- Slot Corner
+- Slot Fade
+- Stick
+- Switch Post
+- WR Corner
+- WR Fade
+- X Option
+- Z Spot
+- Zona Fade
+- Zona Slip Screen
+
+## Tight Doubles On  (38 plays)
+- Bench
+- Corner Strike
+- Counter Weak
+- Curl Flat
+- Curls
+- Dolphins Wheel
+- Dolphins X Spot
+- Double Slant
+- FL Screen
+- Flag Stop
+- Flood
+- Four Verticals
+- HB Base
+- HB Draw
+- HB Lead Draw
+- HB Off Tackle
+- HB Power
+- HB Slip Screen
+- HB Wheel
+- HB Zone Wk
+- Hitch Corner
+- Outside Corners
+- PA Boot Slide
+- PA DBL Cross
+- PA Dagger
+- PA Dolphin Cross
+- PA F Slide
+- PA HB Wheel
+- Power O
+- Rams Dig N Up
+- Shakes
+- Slants
+- Stick
+- Texan Deep In
+- WR Corner
+- X Drag
+- Y PoCo
+- Z Spot
+
+## Tight Doubles Un  (9 plays)
+- Curl Flats
+- HB Mid Draw
+- HB Off Tackle
+- PA Comebacks
+- PA Dagger
+- Texan Cross
+- Texan Out N Up
+- Texan Outs
+- Texans Dig
+
+## Tight Flex  (45 plays)
+- 45 Quick Base
+- ATL Cross
+- ATL Seam
+- ATL Stick
+- Bench
+- Bench Switch
+- Circle
+- Curl Flats
+- Curls
+- Divide
+- Double Sluggo
+- Four Verticals
+- H Shallow Cross
+- HB Angle
+- HB Counter
+- HB Dive
+- HB Draw
+- HB Off Tackle
+- HB Quick Base
+- HB Slam
+- HB Slip Screen
+- Mesh
+- Off Tackle
+- PA Comebacks
+- PA Dagger
+- PA Deep Attack
+- PA Deep Outs
+- PA Fork Under
+- PA Seams
+- PA WR In
+- PA Waggle
+- Quick Base
+- Shallow Cross
+- Slants
+- Slot Corner
+- Slot Drive
+- Slot Wheel
+- Slots HB Sweep
+- Slots PA Cross
+- Slots Stick
+- Stick
+- Strong Flood
+- WR Corners
+- WR Hooks
+- Weak Flood
+
+## Tight Pair  (185 plays)
+- 394 Swing
+- 494 F Flat
+- ATL DBL Outs
+- ATL Out N Up
+- Angle Swing
+- Bears Stick
+- Bears Zone Wk
+- Bengal Y-Option
+- Bengal Y-Post
+- Bills Zone Wk
+- Bubble Screen
+- Bucs Fade
+- China Special
+- Close HB Lead
+- Close Misdirection
+- Close PA OAK Cross
+- Close PA Post
+- Comet Pass
+- Corner Flat
+- Corner Post
+- Counter Weak
+- Counter Wk
+- Counter Wk Mtn
+- Cowboy V Option
+- Cowboys Y-Post
+- Curl Combo
+- Curl Flat
+- Curls
+- DBL Stutter Go
+- Dagger
+- Dolphins Y-Post
+- Double Slant
+- Drive
+- End Around
+- F Angle
+- F Trail
+- FB Belly
+- FB Dive
+- FB Dive Strong
+- FB Fake HB Flip
+- FB Lead
+- FL Drive
+- Falcons Go's
+- Falcons Option
+- Flanker Dig
+- Flanker Hook
+- Go's Y Post
+- Goalline Fade
+- HB Blast
+- HB Cntr Wk
+- HB Counter
+- HB Counter Wk
+- HB Dive
+- HB Dive Weak
+- HB Draw
+- HB Gut
+- HB Iso
+- HB Lead Blast
+- HB Lead Dive
+- HB Lead Draw
+- HB Misdirection
+- HB Off Tackle
+- HB Option
+- HB Out
+- HB Power
+- HB Power O
+- HB Screen
+- HB Slam
+- HB Slash
+- HB Slash Fk End Ard
+- HB Slip Screen
+- HB Stretch
+- HB Sweep
+- HB Toss
+- HB Zone
+- HB Zone Wk
+- Inside Cross
+- Inside Zone
+- Iso
+- Iso Weak
+- Jet Sweep
+- Mesh
+- Minn Cutback Wk
+- Mtn HB Power
+- Mtn HB Zone
+- Mtn PA HB Power
+- Mtn PA Power
+- Mtn Power
+- Mtn Power 0
+- Mtn Power O
+- Mtn Zone
+- Mtn Zone Wk
+- Niners Spacing
+- Oak Y-Post
+- Off Tackle
+- PA ATL Curl
+- PA Boot
+- PA Boot Flow
+- PA Boot Lt
+- PA Boot Rt
+- PA Boot Slide
+- PA Bronco Flat
+- PA Bucs Smash
+- PA Clearout
+- PA Close Cross
+- PA Close Poco
+- PA Close Post
+- PA Comebacks
+- PA Ctr Waggle
+- PA Deep In
+- PA End Around
+- PA FB Fake
+- PA FB Flat
+- PA FB Slide
+- PA FB Wheel
+- PA Falcon Curl
+- PA GB Out N Up
+- PA HB Power
+- PA Jags PoCo
+- PA Jet Sweep
+- PA Jets Dig
+- PA Middle
+- PA Mtn Power
+- PA Mtn Power O
+- PA Niner Wheel
+- PA Power
+- PA Power 0
+- PA Power O
+- PA Scissors
+- PA Slide
+- PA Slot Corner
+- PA Spot
+- PA TE Corner
+- PA TE Fork
+- PA TE Leak
+- PA Texan Cross
+- PA Texan Curls
+- PA WR In
+- PA Waggle
+- PA Z Dig
+- Power
+- Power 0
+- Power O
+- QB Power
+- Qk Slants
+- Quick Drag
+- Quick Fade
+- Quick Slanfs
+- Quick Slants
+- Quick Toss
+- Read Option
+- SS Pressure
+- Short Fades
+- Skinny Post
+- Slanfs
+- Slants
+- Spacing
+- Spider 2 V Banana
+- Stretch
+- Strong Stretch
+- TE Option
+- TE Poco
+- TE Post
+- TE Sail F Flat
+- Texan Out
+- Texan Post
+- Tight Drive
+- Toss Crack
+- V Trail
+- Vikes Zone Wk
+- Vikings Fade
+- WR Corner
+- WR Curls
+- WR DBL Shake
+- WR Out
+- WR Smash
+- Weak Iso
+- X Curl
+- X Fade
+- X Slant
+- X Sluggo
+- Y Trail
+- Z Spot
+- Zone
+- Zone Weak
+
+## Tight Slot  (12 plays)
+- Bench
+- Bench Switch
+- Deep Post
+- Drag Cross Ups
+- HB Cutback
+- HB Dive
+- HB Draw
+- HB Wheel
+- Mesh
+- PA Panther Post
+- Stick
+- Stick Switch
+
+## Tight Slots  (33 plays)
+- Bench
+- Bench Switch
+- Bubble Screens
+- Corner Strike
+- Counter Wk
+- Curls
+- Deep Attack
+- Deep Post
+- Drag Cross Ups
+- FB Dive
+- FB Fake HB Flip
+- Four Verticals
+- HB Cutback
+- HB Dive
+- HB Draw
+- HB Slip Screen
+- HB Toss
+- HB Wheel
+- Inside Cross
+- Iso
+- Mesh
+- PA Boot Flow
+- PA Deep Post
+- PA Power O
+- PA Spot
+- Panthers Fade
+- Power O
+- Slot Outs
+- Stick
+- Stick Switch
+- Under Y-Option
+- X Follow
+- X Slant
+
+## Tight Twins  (27 plays)
+- Backs Cross
+- Corners
+- Curl Combo
+- Curls
+- FB Belly
+- FB Blast
+- HB Dive
+- HB Draw
+- HB Gut
+- HB Lead
+- HB Misdirection
+- HB Slip Screen
+- HB Sweep
+- O Tackle
+- Off Tackle
+- PA Boot Slide
+- PA Slide
+- PA TE Under
+- PA Waggle
+- Quick Slants
+- SS Pressure
+- Slants
+- TE Drag
+- TE Option
+- Texas
+- WR In
+- X Slant
+
+## Train Right  (15 plays)
+- Corner Flat
+- End Around
+- HB Blast
+- HB Dive
+- HB Draw
+- HB Sweep
+- PA End Around
+- PA HB Out
+- Seattle
+- Skins Corner Strike
+- Slot Cross
+- Slot Curl Flat
+- WR Corners
+- WR Option
+- WR Short Posts
+
+## Trey 4WR Str  (18 plays)
+- 45 Quick Base
+- Circle
+- Clearout SE Opt
+- Close Bronco Cross
+- Close Bronco Sweep
+- Close Mesh
+- Curl Flats
+- Deep Attack
+- Deep Curl
+- H Shallow Cross
+- HB Draw
+- HB Slip Screen
+- Hitch Seam
+- PA Drag
+- PA Seams
+- Quick Slants
+- Slot Outs
+- Stick
+
+## Trey Open  (147 plays)
+- 45 Quick Base
+- 619 Sail
+- Aggie
+- All Curls
+- Bench
+- Bench Switch
+- Bunch Curl Flat
+- Bunch Out
+- Clearout
+- Clearout SE Out
+- Comebacks
+- Corner Strike
+- Curl Flat
+- Curl Flats
+- Curl Outs
+- Curl Weak Flood
+- Curls
+- Curls Shake
+- DBL Cross
+- DBL Inside
+- DBL Seams
+- Dbl Slot Cross
+- Deep Attack
+- Deep Curl
+- Deep Hook
+- Deep Post
+- Divide Wheel
+- Double Post
+- Drive
+- FL Dig
+- FL Screen
+- Falcons Dig
+- Falcons X Drag
+- Fk WR Screen
+- Flanker Dig
+- Flex Jets Drive
+- Flex Jets Y-Sail
+- Flex Jets Z Spot
+- Flood Drive
+- Four Verticals
+- Go's V Shake
+- HB Base
+- HB Counter
+- HB Delay
+- HB Draw
+- HB Mid Draw
+- HB Off Tackle
+- HB Option
+- HB Power
+- HB Quick Base
+- HB Slip Screen
+- HB Sweep
+- Hitch Seam
+- Inside Cross
+- Inside Zone
+- Inverted Veer
+- Jags Stick HB Circle
+- Jags X Drag
+- Jags Y-Sail
+- Jet Seams
+- Jet Seams Dig
+- Jet Sweep
+- Jets DBL Trail
+- Jets Read
+- Jets Slot Post
+- Jets Z Shallow
+- KC Flood
+- KC X-Under
+- KC Y-Seam
+- KC Z-Under
+- Levels Fade
+- Levels Switch
+- Mesh
+- Mesh Switch
+- Mesh Wheel
+- Mtn Read Option
+- PA Bear Wheels
+- PA Comebacks
+- PA Deep Outs
+- PA Inverted Veer
+- PA Mtn Read
+- PA Rams Cross
+- PA Read
+- PA Slot Corner
+- PA Slot Under
+- PA Verticals
+- PA WR Cross
+- PA WR In
+- Panther Smash In
+- Panther Smash In Up
+- Power
+- QB Blast
+- QB Draw
+- QB Wrap
+- Quick Slants
+- Rams Y Corner
+- Rams Y Shake
+- Read Option
+- Saints DBL In
+- Saints Post
+- Saints Switch
+- Saints Y-Screen
+- Scat
+- Skins Deep Post
+- Slants
+- Slants Middle
+- Slot Curls
+- Slot Drive
+- Slot Outs
+- Smash
+- Smash Corners
+- Smash Digs
+- Smash HB Check
+- Spacing
+- Spacing HB Wheel
+- Stick
+- Stick N Nod
+- Strong Flood
+- TE Slot Cross
+- Trail Shake
+- Under V-Option
+- Under Y-Option
+- V-Curl
+- V-Sail
+- Verticals
+- Verticals Shake
+- Vikes Trail
+- WR Corner
+- WR Crosses
+- WR Hooks
+- WR Option
+- WR Screen
+- WR Stick Nod
+- X Follow
+- X Iso Poco
+- X Under
+- Y Corner
+- Y Lead Read Option
+- Y Short Cross
+- Y Spot
+- Y-Drag
+- Y-Sail
+- Y-Under
+- Z In
+- Z Shallow Cross
+- Z Spot
+- Z Under
+
+## Trey Open Charger  (15 plays)
+- Curl Flats
+- Four Verticals
+- HB Draw
+- HB Slip Screen
+- PA Z-Under
+- Quick Slot Out
+- SD Flood
+- SD Post Trail
+- SD Slants
+- Slot Outs
+- Smash Digs
+- Trail Shake
+- WR Screen
+- WR Shallow
+- X Follow
+
+## Trey Open Cowboy  (15 plays)
+- Bubble Screen
+- Cowboys Dig
+- Cowboys Shake
+- Cowboys Stick
+- Cowboys Under
+- Curl Flats
+- Drag Fork
+- Flood
+- Four Verticals
+- HB Base
+- HB Slip Screen
+- Sail Sluggo
+- Smash
+- WR Screen
+- X Dig
+
+## Trey Raven  (18 plays)
+- Deep Post
+- Empty BAL Screens
+- Four Verticals
+- HB Counter
+- HB Draw
+- HB Slip Screen
+- Inside Zone
+- Mesh
+- PA Slot Under
+- PA WR In
+- Raven DBL Inside
+- Raven HB Wheel
+- Ravens Drive
+- Ravens Post
+- Stick
+- Stick HB Wheel
+- Stick N Nod
+- Y-Sail
+
+## Tria Falcon  (12 plays)
+- ATL Bubble Screen
+- Bench
+- Falcon Cross
+- HB Draw
+- HB Off Tackle
+- HB Option
+- HB Slip Screen
+- Mesh Corner
+- PA Slot Options
+- Quick Looks
+- WR Corners
+- WR Screen
+
+## Trio  (57 plays)
+- Bears Under
+- Bears V Corner
+- Corner Strike
+- Curl Flat
+- Curl Flats
+- Curls
+- DBL Under
+- Deep Slot Curl
+- Double Cross
+- Double Smash
+- Drag Nod
+- FL Screen
+- FL Short Dig
+- Four Verticals
+- Four Verts
+- HB Cross Screen
+- HB Delay
+- HB Dive
+- HB Mid Draw
+- HB Off Tackle
+- HB Power
+- HB Slam
+- HB Slip Screen
+- HB Toss
+- Inside Cross
+- Inside Smash
+- PA Bears In
+- PA Boot
+- PA Boot Lt
+- PA Bubble
+- PA Deep Attack
+- PA Fork
+- PA Slot Corner
+- PA Slot Cross
+- PA Slot Under
+- PA Solid Corner
+- PA WR In
+- Shakes
+- Slants
+- Slot Cross In
+- Slot Dagger
+- Slot Deep Post
+- Slot Drive
+- Slot Post
+- Slot Slant
+- Slot Wheel
+- Steeler Dig
+- Steeler Slot Out
+- Stick
+- TE Deep Option
+- TE In
+- Verticals
+- WR Screen
+- X Curl
+- Y Clearout
+- Y Corner
+- Y-Corner
+
+## Trio 4WR  (40 plays)
+- Comebacks
+- Curl Flats
+- D 1 Trap
+- Dbl Slot Cross
+- FB Dive
+- Fake Bubble Slant
+- Fake Screen Wheel
+- Four Verticals
+- HB Dive
+- HB Draw
+- HB Slip Screen
+- Hawks Stick
+- Hitch Seam
+- Inside Zone
+- Jet Sweep
+- PA Bubble
+- PA Jet Sweep
+- PA Power O
+- PA Read
+- PA Spot
+- PA Veer
+- PA Veer Cross
+- Power O
+- QB Draw
+- QB Sneak
+- QB Wrap
+- Quick Slants
+- Read Option
+- SE Screen
+- Slot Drive
+- Smash
+- Smash Corners
+- Speed Option
+- Strong Flood
+- Strong Toss
+- TE Slot Cross
+- Veer Option
+- Verts V-Shake
+- WR Screen
+- Y Shallow Cross
+
+## Trio Falcon  (12 plays)
+- 45 Quick Base
+- Curl Flats
+- Drag Unders
+- FL Screen
+- Fk WR Screen
+- HB Draw
+- Inside Cross
+- PA FL Fly
+- Slants
+- Smash Under
+- WR Screen
+- Y-Trail
+
+## Trio Offset  (22 plays)
+- Bubble Screen
+- Curl Flat
+- D 1 Trap
+- Fake Screen Wheel
+- Flood
+- HB Counter
+- HB Draw
+- Hawks Slot Corner
+- Inside Zone
+- Mesh
+- PA Boot Over
+- PA Bubble
+- PA Crossers
+- PA Hawks Dig
+- PA Read
+- QB Wrap
+- Read Option
+- Speed Option
+- Stick
+- TE In
+- Verticals
+- WR Screen
+
+## Trio Open  (18 plays)
+- Bills Corner
+- Bills Fork
+- Bills Go
+- Corner Strike
+- Curls
+- Deep Curl
+- Four Verticals
+- Go's HB Seam
+- HB Counter
+- HB Draw
+- HB Off Tackle
+- Inside Attack
+- PA FL Corner
+- PA WR In
+- QB Draw
+- Quick Slants
+- Slot Drive
+- Stick
+
+## Triple Wing  (15 plays)
+- 81 Weak
+- 83 Weak
+- 84 Weak
+- 87 Weak
+- 90 Strong
+- 91 Strong
+- 92 Strong
+- 93 Strong
+- 94 Strong
+- 98 Strong
+- HB Dive
+- HB Draw
+- PA Dive
+- Packer Sweep
+- Toss Sweep
+
+## Trips  (75 plays)
+- Bench
+- Bubble Screen
+- Corner Strike
+- Cross In
+- Curl Flat
+- Curl Flat Corner
+- Curl Flats
+- Curls
+- Dagger
+- Fade Smash
+- Flea Flicker
+- Flood
+- Flood Slot Option
+- Four Verticals
+- HB Counter
+- HB Dive
+- HB Draw
+- HB Plunge
+- HB Slam
+- HB Slip Screen
+- HB Stretch
+- HB Toss
+- HB Toss Strong
+- Hitch Corners
+- Inside Cross
+- Inside Switch
+- Inside Zone
+- Iso
+- Iso Weak
+- Levels
+- Levels Switch
+- Mesh
+- Middle Slant
+- Outs
+- PA Boot
+- PA Boot Lt
+- PA Boot Screen
+- PA Bubble
+- PA Comeback Slide
+- PA Ctr Waggle
+- PA Deep In
+- PA FL Stretch
+- PA HB Flat
+- PA Pin Deep
+- PA Power 0
+- PA Scissors
+- PA Stretch
+- PA Verticals
+- PA WR In
+- PA Weak Flood
+- Power 0
+- Quick Slants
+- Quick Slot Out
+- Read Option
+- Read Option Wk
+- Rollout Smash
+- SE Cross
+- Seattle
+- Slants
+- Slot Corner
+- Slot Drive
+- Smash
+- Spacing
+- Stick
+- Stretch
+- Strong Flood
+- Strong Power
+- Vertical Seams
+- Verticals
+- WR Screen
+- Weak Flood
+- Y Shallow Cross
+- Y Stick
+- Z Spot
+- Zone Weak
+
+## Trips 4WR  (15 plays)
+- 0 1 Trap
+- 60 Go
+- 60 Slide
+- 61 X Choice
+- Bubble Screen
+- Curl Flat Corner
+- Curl Flat Wheel
+- Four Verticals
+- HB Draw
+- HB Slip Screen
+- Inside Zone
+- Levels
+- PA FL Stretch
+- Stick
+- Strong Flood
+
+## Trips HB Wk  (64 plays)
+- 45 Quick Base
+- 60 H Y Option
+- 60 Streak X Option
+- Bench
+- Clearout Dig
+- Corner Strike
+- Curl Flats
+- Curls
+- DBLTrail
+- Deep In
+- Double Cross
+- FL Short Dig
+- Four Verticals
+- HB Base
+- HB Counter
+- HB Draw
+- HB Mid Draw
+- HB Mid Screen
+- HB Off Tackle
+- HB Slip Screen
+- HB Sweep
+- Hitch Seam
+- Inside Hooks
+- Mesh Post
+- PA Comebacks
+- PA Dig
+- PA Drag
+- PA Read
+- PA Under
+- PA Z-Under
+- Pitt Flood Switch
+- QB Sonya Check
+- Quick Slant
+- Quick Slants
+- Quick Slot Out
+- RNS Post Drag
+- RNS Switch Curl
+- RNS Switch Curl Flat
+- RNS Switch Curl Post
+- RNS Switch Dig
+- RNS Switch Smash
+- Slot Cross
+- Slot Drive
+- Slot Outs
+- Slot Post
+- Slot Under
+- Smash
+- Smash Digs
+- Steeler Curls
+- Steeler Stick
+- Steeler Switch
+- Steelers Cross
+- Steelers Go
+- Stick
+- Stutter Hook
+- WR Curl
+- WR Screen
+- X Follow
+- Y-Corner
+- Zona Corner
+- Zona Flood
+- Zona Post Trail
+- Zona Shallow
+- Zona Slants
+
+## Trips Offset  (18 plays)
+- Counter V
+- Curl Flat
+- D 1 Trap
+- Fake Screen Wheel
+- Flood
+- HB Draw
+- HB Slip Screen
+- HB Toss
+- Inside Zone
+- PA Boot
+- PA Boot Over
+- PA Bubble
+- Read Option
+- Speed Option
+- Stick
+- TE In
+- Verticals
+- WR Screen
+
+## Trips Open  (60 plays)
+- 60 H Y Option
+- 60 X Option
+- Bills Curls
+- Bills Inside Dig
+- Bills Seam Wheel
+- Bills Slot Out
+- Bubble Screen
+- Cntr Read Option
+- Curls
+- Deep Attack
+- Deep Cross
+- Fade Smash
+- Flood
+- Flood Switch
+- Four Verticals
+- HB Blast
+- HB Counter
+- HB Dive
+- HB Draw
+- HB Lead Toss
+- HB Slam
+- HB Slip Screen
+- HB Stretch
+- HB Sweep
+- HB Trap
+- Inside Cross
+- Inside Smash
+- Inside Zone
+- Inverted Veer
+- Levels
+- Middle Slant
+- PA Boot
+- PA Boot Flow
+- PA Boot Screen
+- PA Bubble
+- PA Comeback
+- PA Deep In
+- PA Deep Outs
+- PA FL Stretch
+- PA Inverted Veer
+- PA Read
+- PA WR In
+- PA WR Screen
+- RNS Post Drag
+- RNS Switch Curl
+- RNS Switch Curl Flat
+- RNS Switch Dig
+- RNS Switch Smash
+- RNS Vertical Read
+- Read Option
+- Rollout Smash
+- Slant Bubble
+- Slot Drive
+- Slot Outside
+- Smash
+- Spacing
+- WR Screen
+- X Post
+- X Slant
+- Z Option
+
+## Trips Over  (22 plays)
+- Comebacks
+- Corner Strike
+- Curl Flat Corner
+- Curls
+- Deep In Zig
+- FL Drive
+- FL Short Dig
+- Four Verticals
+- HB Mid Draw
+- HB Off Tackle
+- HB Slip Screen
+- Levels Switch
+- PA WR In
+- Slants
+- Slot Clearout
+- Slot Cross In
+- Slot Drive
+- Slot Post
+- Slot Under
+- Spacing HB Wheel
+- Stick
+- Strong Flood
+
+## Trips Right  (15 plays)
+- Curls
+- Deep Comebacks
+- Four Verticals
+- HB Dive Weak
+- HB Draw
+- HB Plunge
+- HB Power O
+- HB Slip Screen
+- PA Power O
+- PA TE Vertical
+- Slot Drive
+- Smash
+- Stick
+- WR Screen
+- Z Spot
+
+## Trips T  (18 plays)
+- 45 Quick Base
+- Curl Flat
+- DBL Unders
+- Deep Fork
+- Drive Post
+- HB Mid Draw
+- HB Off Tackle
+- HB Slip Screen
+- HB Sluggo
+- Iso Drag
+- PA Rams Fork
+- PA Slot Corner
+- Rams Crosses
+- Rams Deep In
+- Slot Out
+- TE Deep Option
+- Verticals
+- WR Curl
+
+## Trips TE  (100 plays)
+- 45 Quick Base
+- 619 Sail
+- Bench Swap
+- Bench Switch
+- Bubble Screen
+- Cntr Read Option
+- Comebacks Dig
+- Corner Strike
+- Curl Flat
+- Curl Flat Corner
+- Curl Flats
+- Curls
+- DBL Under
+- Deep Attack
+- Deep Fork
+- Double Sluggo
+- Drive Post
+- FL Dig
+- FL Drive
+- Flanker Drive
+- Flex HB Wheel
+- Flex Jags PoCo
+- Flex Jags Post
+- Flex Jags Verts
+- Flex PoCo
+- Flex Post
+- Flood
+- Four Verticals
+- Giants Go DBL Post
+- Go DBL Post
+- HB Angle
+- HB Counter
+- HB Draw
+- HB Mid Draw
+- HB O Tackle
+- HB Off Tackle
+- HB Option
+- HB Power
+- HB Slip Screen
+- Inside Attack
+- Inside Cross
+- Jet Sweep
+- PA Deep Attack
+- PA Dig Cross
+- PA FL Corner
+- PA Fake Jet
+- PA Jet Sweep
+- PA Ram Seam
+- PA Ram Stop
+- PA Rams Cross
+- PA Slot Corner
+- PA Slot Options
+- PA TE Wheel
+- PA Texans Y-Out
+- PA Vikes Under
+- PA WR In
+- Panther Curls
+- Panther Y-Seam
+- Pats Flood
+- Pats Slant
+- Pats Slot Screen
+- QB Power
+- Quick Looks
+- Quick Slants
+- Rams Switch
+- Rams Verts
+- Rams Y-Screen
+- Slants
+- Slot Drive
+- Slot Out
+- Slot Quick Flat
+- Slot Screen
+- Slot Swing
+- Smash
+- Spacing
+- Speed Option
+- Stick
+- Stick N Nod
+- Stick Nod
+- Stick Switch
+- Strong Flood
+- TE Screen
+- Texans Under
+- Texans Y Trail
+- Verticals
+- Vikes Jet Sweep
+- Vikes Y-Stick
+- Vikings Drive
+- Vikings Middle
+- WR Corners
+- WR Cross
+- WR Deep Post
+- WR Screen
+- WR Smash
+- WR Stick
+- X Spot
+- Y Shallow Cross
+- Y Short Cross
+- Y Trail
+- Z Spot
+
+## Trips V Iso  (22 plays)
+- Aggie
+- Deep Attack
+- Four Verticals
+- HB Base
+- HB Counter
+- HB Draw
+- HB Slip Screen
+- HB Sweep
+- Inside Cross
+- Inside Dig
+- Mesh Dig
+- PA Saints Dig
+- PA WR Cross
+- PA X Clown
+- Saints HB Angle
+- Saints Under
+- Scat Wheel
+- Slants Flat
+- Spacing
+- Stick
+- Stick Y Fade
+- Wheel Switch
+
+## Trips Y Iso  (31 plays)
+- Cin Y Fade
+- Curl Flats
+- Deep Attack
+- FL Cross
+- FL Hook
+- Flanker Dig
+- Four Verticals
+- HB Base
+- HB Counter
+- HB Draw
+- HB Slip Screen
+- HB Toss
+- HB Zone
+- Inside Cross
+- Inside Dig
+- PA Deep Outs
+- Quick Slants
+- Saints In N Up
+- Saints Post
+- Saints Y-Under
+- Slants
+- Slants Flat
+- Slot Outs
+- Smash Corners
+- Smash Y Fade
+- Stick Y Fade
+- Under Y-Option
+- Y Stick
+- Y-Slot Corner
+- Y-Slot Hitch
+- Y-Slot Post
+
+## Trips Y-Flex  (18 plays)
+- Bills Divide
+- FL Hook
+- FL Screen
+- Four Verticals
+- H Shallow Cross
+- HB Counter
+- HB Draw
+- HB Off Tackle
+- HB Slip Screen
+- Mesh Post
+- PA Drag
+- PA Read
+- Read Option
+- Slot Flags
+- Slot Outs
+- Under Y-Option
+- Y Shallow Cross
+- Y Stick
+
+## Twin TE  (45 plays)
+- 494 F Flat
+- Counter Weak
+- Curl Combo
+- Drive
+- F Angle
+- Flanker Dig
+- Go's Y-Post
+- HB Blast
+- HB Counter
+- HB Dive
+- HB Plunge
+- HB Slam
+- HB Slip Screen
+- HB Smash
+- HB Stretch
+- HB Toss Mtn
+- Lead Option
+- Mtn TE Stick
+- PA Boot
+- PA Boot Lt
+- PA Ctr Waggle
+- PA Deep In
+- PA Middle
+- PA Post
+- PA Power 0
+- PA Power O
+- PA Rollout
+- PA Scissors
+- PA Slide
+- PA TE Slip
+- PA WR In
+- Power 0
+- Power O
+- Read Option
+- Read Option Wk
+- Slant Flat
+- Slants
+- Spacing
+- Strong Power
+- TE Attack
+- TE Stick
+- WR Curls
+- WR Drive
+- WR Screen
+- Z Spot
+
+## Twin TE Flex  (37 plays)
+- Counter Weak
+- Cross Up
+- Dagger
+- Flat Combo
+- Four Verticals
+- H Misdirection Wk
+- H Zone Str
+- HB Draw
+- HB Slam
+- HB Slip Screen
+- HB Stretch
+- HB Toss Strong
+- Inside Cross
+- Lions Dig
+- Lions Shake
+- Lions Under
+- Mesh
+- O1 Trap
+- PA Boot Corner
+- PA Boot Lt
+- PA Ctr Waggle
+- PA FL Dive
+- PA FL Stretch
+- PA Power O
+- PA Saints Deep Curl
+- PA Saints V-Cross
+- Power O
+- Quick Slant
+- Slants Middle
+- Slot Cross
+- Slot Post
+- Smash
+- TE Spot
+- WR Corners
+- WR Go's
+- X Curl
+- Y Shallow Cross
+
+## Twin TE Slot  (30 plays)
+- Counter Weak
+- Curls
+- DBL Post
+- HB Dive
+- HB Slam
+- HB Slip Screen
+- HB Stretch
+- HB Toss
+- HB Zone Wk
+- Hitch Corners
+- Mtn Power 0
+- Mtn Zone Wk
+- PA Boot Lt
+- PA Boot Over
+- PA FB Flat
+- PA Mtn Power
+- PA Power 0
+- PA Power O
+- PA Slide
+- PA Slot Out
+- PA Spot
+- PA WR Screen
+- Power 0
+- Power O
+- Quick Slants
+- Read Option
+- Strong Power
+- WR Fade
+- X Slant
+- Y Stick
+
+## Twins  (63 plays)
+- 394 Swing
+- Bubble Screen
+- China Special
+- Counter Weak
+- Curl Combo
+- Curl Flat
+- Curls
+- Double Slant
+- End Around
+- FB Belly
+- FB Dive
+- FB Fake HB Flip
+- FL Drive
+- Flanker Dig
+- Flanker Hook
+- HB Blast
+- HB Dive
+- HB Draw
+- HB Gut
+- HB Lead
+- HB Lead Draw
+- HB Out
+- HB Slash Fk End Ard
+- HB Slip Screen
+- HB Stretch
+- HB Sweep
+- HB Toss Crack
+- Inside Post
+- Iso
+- Jags Go's
+- Mesh
+- Mtn Power 0
+- Mtn Zone Wk
+- Off Tackle
+- PA Corner Post
+- PA Deep Cross
+- PA Deep Threats
+- PA Draw Pass
+- PA End Around
+- PA FB Flat
+- PA FB Slide
+- PA FB Wheel
+- PA Mtn Power 0
+- PA Power O
+- PA Scissors
+- PA Slide
+- PA Spot
+- PA Texans V Go
+- PA WR In
+- Power O
+- Read FB Flat
+- SS Pressure
+- Slants
+- Spacing
+- Steelers Zone Wk
+- TE Option
+- TE Post
+- TE Sail F Flat
+- Toss Weak
+- WR Fade
+- WR Streak
+- X Slant
+- Z Spot
+
+## Twins Clip  (12 plays)
+- Counter H Wk
+- HB Dive
+- HB Draw
+- HB Off Tackle
+- HB Slip Screen
+- PA Dive
+- PA FL Stretch
+- Slants Slot Flat
+- Smash Slot Post
+- TE Angle
+- TE Inside
+- TE Out
+
+## Twins Flex  (71 plays)
+- Bears Fk Toss Scrn
+- Browns Y-Post
+- China Special
+- Counter Weak
+- DBL Pump n Go's
+- End Around
+- FB Dive
+- FB Dive Strong
+- FB Fake HB Flip
+- FB Flare
+- FL Drag
+- FL Drive
+- Flanker Curl
+- Flanker Dig
+- Flea Flicker
+- Goalline Fade
+- HB Blast
+- HB Counter
+- HB Counter Wk
+- HB Dive Weak
+- HB Lead Dive
+- HB Lead Draw
+- HB Misdirection
+- HB Power 0
+- HB Search
+- HB Slip Screen
+- HB Sluggo
+- HB Toss
+- HB Toss crack
+- Hitch Corner
+- Inside Cross
+- Iso
+- Mesh
+- PA Boot
+- PA Boot Corner
+- PA Boot Rt
+- PA Boot Screen
+- PA Cross In
+- PA Ctr Waggle
+- PA Divide
+- PA End Around
+- PA FB Flat
+- PA Power 0
+- PA Power O
+- PA Saints Misdirect
+- PA Skin V-PoCo
+- PA Slide
+- PA TE Corner
+- PA TE Leak
+- PA WR In
+- Power 0
+- Power O
+- Roll Out Smash
+- Saints HB Power
+- Saints HB Sluggo
+- Saints Seams
+- Saints Y-Corner
+- Seams
+- Slam Fk End Arnd
+- Slants
+- Slants Flat
+- Spider 2 Y Banana
+- Vikings Fades
+- WR Smoke Screen
+- Y Iso Fade
+- Y Iso Lead Draw
+- Y Iso Sluggo Seam
+- Y-Corner
+- Z Slant
+- Z Spot
+- Zone Wk
+
+## Twins Flip  (12 plays)
+- Bubble Screen
+- H Counter Str
+- H Power Toss
+- H Zone Wk
+- HB Draw
+- HB Stretch
+- PA Boot Lt
+- PA Boot Screen
+- PA Counter Str
+- PA Spot
+- TE Spot
+- Y Stick
+
+## Twins Right  (18 plays)
+- Curl Combo
+- Drive
+- H Zone Wk
+- HB Counter Wk
+- HB Dive
+- HB Smash
+- HB Stretch
+- HB Toss Crack
+- PA Boot Lt
+- PA Middle
+- PA Power O
+- PA TE Flood
+- Power O
+- Spacing
+- Strong Curls
+- TE Attack
+- Y Stick
+- Z Spot
+
+## V-Flex  (24 plays)
+- Deep Comeback
+- FL Drive
+- Fork Angle
+- HB Draw
+- HB Gut
+- HB Inside
+- HB Lead
+- HB Mtn Toss
+- HB Slip Screen
+- HB Zone
+- PA Boot Lt
+- PA Flood
+- PA Power O
+- PA Slide
+- Power O
+- Roll Out Smash
+- SE Quick Out
+- Slants
+- Slot Drag
+- Toss Weak
+- WR In
+- X Dig
+- X-Corner
+- Z Spot
+
+## V-Trips  (87 plays)
+- ATL -Post
+- ATL Stick
+- ATL Stick N Up
+- ATL Zone Wk
+- Angle
+- Bench
+- Bubble Screen
+- China Under
+- Comebacks
+- Counter Weak
+- Cross In
+- Curls
+- Double China
+- Double Slant
+- FB Dive
+- FB Dive Fake HB
+- FB Flare
+- Falcons Y-Seam
+- Four Verticals
+- HB Counter
+- HB Counter Wk
+- HB Dive
+- HB Draw
+- HB Power
+- HB Power O
+- HB Screen
+- HB Slam
+- HB Slant I8
+- HB Slash
+- HB Slip Screen
+- HB Stretch
+- HB Sweep
+- HB Toss
+- HB Toss Crack
+- HB Toss Strong
+- HB Wham
+- Inside Switch
+- Iso
+- Iso Weak
+- Levels Switch
+- Mesh
+- Mtn Trail
+- Off Tackle
+- PA Boot
+- PA Boot Rt
+- PA Bronco Spot
+- PA Comeback Slide
+- PA Comebacks
+- PA Ctr Waggle
+- PA HB Flat
+- PA HB Out
+- PA Power O
+- PA Read
+- PA Scissors
+- PA Stretch
+- PA TE Out
+- PA Verticals
+- PA WR In
+- PA Waggle
+- Post Wheel
+- Power 0
+- Power O
+- Pump HB Draw
+- Quick Slants
+- Read Option
+- SE Cross
+- SE Curl
+- Seattle
+- Short Fades
+- Slants
+- Slot Drive
+- Sluggo Seam
+- Smash
+- Spacing
+- Stick
+- Stick N Nod
+- Strong Power
+- V Trail
+- WR Drag
+- WR Post
+- WR Screen
+- Weak Iso
+- X Post
+- Y Option
+- Y Shallow Cross
+- Y Trail
+- Zone Weak
+
+## V-Trips HB Wk  (38 plays)
+- 45 Quick Base
+- Bunch Curl
+- Bunch Hook
+- Comebacks
+- Corner Strike
+- Deep Attack
+- FL Cross
+- Flanker Dig
+- Flanker Drive
+- Four Verticals
+- HB Draw
+- HB Mid Draw
+- HB Option
+- HB Slip Screen
+- HB Sweep
+- Inside Cross
+- Jags Y-Screen
+- Mesh
+- Mesh Post
+- PA Comebacks
+- PA Deep Outs
+- PA Post
+- PA Slot Corner
+- Post Flags
+- Slants Flat
+- Slants Middle
+- Slot Outs
+- Slot Quick Flat
+- Smash Corners
+- Spacing
+- Stick
+- Verticals
+- X Follow
+- X Iso Fade
+- Y Trail
+- Z Shallow Cross
+- Z Spot
+- Z Spot Dig
+
+## V-Trips Lion  (18 plays)
+- End Around
+- HB Ace Power
+- HB Dive
+- HB Slash Fk End Ard
+- Lions Fade
+- Lions Smash
+- PA End Around
+- PA Pin Deep
+- PA Power 0
+- PA Waggle
+- Power 0
+- Spacing
+- Spacing Switch
+- Stick
+- Toss Crack
+- V Trail
+- Verticals
+- Z Spot
+
+## V-Trips TE Slot  (34 plays)
+- 01 Trap
+- Angle Smash
+- Curls
+- DBL Drags
+- Double Sluggo
+- FL Middle
+- FL Screen
+- Four Verticals
+- HB Base
+- HB Counter
+- HB Dive
+- HB Draw
+- HB Zone Wk
+- Inside Zone
+- Inverted Veer
+- Load Option
+- Load Option Pass
+- PA Inverted Veer
+- PA Read
+- PA Slot Cross
+- PA Slot Wheel
+- PA WR In
+- Panther Deep In
+- Panther Y-Sail
+- QB Power
+- Read Option
+- Shark HB Wheel
+- Slants
+- Slot Drive
+- Slot Spot
+- Stick
+- Stick N Slide
+- WR Screen
+- Y-Trail
+
+## V-Trips Wk  (35 plays)
+- Bench
+- Corner Strike
+- Curl Weak Flood
+- Curls
+- Flanker Dig
+- Flood
+- Four Verticals
+- HB Draw
+- HB Mid Draw
+- HB Off Tackle
+- HB Slip Screen
+- Inside Cross
+- PA Bubble
+- PA Pitt Cross
+- PA Read
+- PA WR In
+- PA Y-Out
+- Packer Slot Seam
+- Packer Unders
+- Packers Smash
+- Packers Stick
+- Pitt Smash
+- Read Option
+- Scat
+- Slants
+- Slot Drive
+- Spacing
+- Steeler Crosses
+- Stick
+- Stick N Nod
+- Strong Flood
+- TE In
+- Verticals
+- X Spot
+- Y Shallow Cross
+
+## Walk Right  (15 plays)
+- China Under
+- Counter Weak
+- Curls
+- HB Sprint
+- HB Wham
+- Ins Left
+- Off Tackle
+- PA Boot Rt
+- PA Power 0
+- PA Verticals
+- Power 0
+- SE Curl
+- SE In HB Out
+- Slants
+- WR Option
+
+## Weak  (27 plays)
+- 494 F Flat
+- Curls
+- F Lead Read Option
+- HB Off Tackle
+- HB Slip Screen
+- HB Stretch
+- HB Zone Wk
+- Inside Zone Split
+- PA Boot Lt
+- PA Boot Y-Wheel
+- PA Comebacks
+- PA Corner HB Slip
+- PA Crossers
+- PA Flood
+- PA Flood FB Slip
+- PA Opt Panther
+- PA Option Pass
+- PA Short Post
+- Power Option
+- Read Option
+- Slants
+- Spacing
+- Tr Opt Switch
+- Tr Option Slip
+- Triple Option
+- Y Corner
+- other
+
+## Weak Slot  (15 plays)
+- Corner Strike
+- Deep Curls
+- HB Dive
+- HB Draw
+- HB Slam
+- Lead Read Option
+- Mtn Flood
+- Mtn Y Stick
+- PA Bubble
+- PA SE Screen
+- PA Short Post
+- Roll Out Smash
+- Shallow Cross
+- Slants
+- Y Cross Flood
+
+## Weak Twins  (21 plays)
+- Counter Str
+- Dig Wheel
+- F Lead Read Option
+- HB Dive
+- HB Double Iso
+- HB Slam
+- HB Slip Screen
+- Inside Zone Split
+- Lead Read Option
+- Niners Curl Wheel
+- PA Boot
+- PA Boot Lt
+- PA Bubble
+- PA Comeback Flood
+- PA Seams
+- Slants
+- Smash Y-Corner
+- Wing HB Dive
+- Wing PA Cross
+- Wing Power 0
+- X Dig
+
+## Weak Twins Flex  (18 plays)
+- Curls
+- F Lead Read Option
+- FL Drive
+- HB Slip Screen
+- HB Stretch Sift
+- HB Toss Wk
+- HB Zone Wk
+- PA Crossers
+- PA Option Pass
+- PA Short Post
+- PA Skins Boot
+- Power Option
+- Read Option
+- Slants
+- Slants Y-Stick
+- Triple Option
+- Y Corner
+- Z Spot
+
+## West Right  (12 plays)
+- Curl Combo
+- Drive
+- HB Dive
+- HB Draw
+- HB Slip Screen
+- HB Toss Crack
+- HB Zone
+- PA Boot Lt
+- Spacing
+- TE Attack
+- Y Stick
+- Z Spot
+
+## Wing Offset Wk  (23 plays)
+- Corner Strike
+- Deep Corner
+- Dolphin Seam
+- Double Sluggo
+- FL Screen
+- Flanker Drive
+- Four Verticals
+- HB Base
+- HB Circle
+- HB Draw
+- HB Option
+- HB Power
+- HB Slip Screen
+- HB Sweep
+- Mesh
+- PA Packer Go
+- PA WR In
+- Packer Comebacks
+- Packer Slot Out
+- Quick Slants
+- WR Scat
+- Y Shallow Cross
+- Z Spot
+
+## Wing Trio  (59 plays)
+- Curl Flat
+- Curl Flat Corner
+- Curls
+- Deep Comebacks
+- End Around
+- FB Dive
+- FB Fake HB Flip
+- Four Verticals
+- HB Blast
+- HB Counter
+- HB Counter Wk
+- HB Dive
+- HB Draw
+- HB Slip Screen
+- HB Stretch
+- Hi Lo Post
+- Inside Cross
+- Inside Zone
+- Iso
+- Levels
+- Mesh
+- Mtn Lead Dive
+- Mtn PA Slide
+- OAK Zone Wk
+- Off Tackle
+- PA Boot Flow
+- PA Comeback Slide
+- PA Cross Up
+- PA Ctr Waggle
+- PA Deep In
+- PA End Around
+- PA In N Up
+- PA OAK V-Post
+- PA OAK V-Shake
+- PA Power 0
+- PA Power O
+- PA Raider Boot
+- PA Read
+- PA Scissors
+- PA Slide
+- PA Spot
+- PA Texan Boot
+- PA WR In
+- PA Weak Flood
+- Power 0
+- Power O
+- Quick Slants
+- Read Option
+- Slam Fk End Arnd
+- Slants
+- Slot Drive
+- Stretch
+- Strong Flood
+- Texans Outs
+- Texas
+- WR Screen
+- X Slant
+- Y Shallow Cross
+- Z Spot
+
+## Wing Trio Wk  (48 plays)
+- Angle Smash
+- Bunch Drive
+- Corner Strike
+- Curls
+- DBL Stick
+- Deep Dig
+- Dolphins Curl
+- Dolphins Drive
+- Dolphins Post
+- Double Comebacks
+- Double Cross
+- Drive
+- FL Drive
+- FL Screen
+- Four Verticals
+- HB Base
+- HB Cross Screen
+- HB Dive
+- HB Draw
+- HB Off Tackle
+- HB Slip Screen
+- HB Sweep
+- PA Deep Curls
+- PA Read
+- PA Seams
+- PA Skins Dig
+- PA WR Cross
+- PA WR In
+- Read Option
+- Saints Corner
+- Saints Curls
+- Saints Deep Out
+- Saints Go
+- Saints In
+- Saints Outs
+- Saints Smash
+- Saints Under
+- Skins Curl
+- Skins Curl Flat
+- Skins Deep Dig
+- Slants
+- Slot Cross
+- Slot Out
+- Spacing
+- Stick
+- V Trail
+- Verts HB Under
+- Z Spot
+
+## Wing Trips  (90 plays)
+- ATL Slip Screen
+- ATL Spot
+- Angle Swing
+- BAL Fk WR Scrn
+- BAL WR Scrn
+- Backs Cross
+- Bills Inside Switch
+- Bills Zone
+- Bills Zone Wk
+- Bubble Screen
+- China Under
+- Close Corner
+- Close Corner Stop
+- Close Mesh
+- Corner Strike
+- Counter Lead
+- Counter Weak
+- Curl Flat
+- Curls
+- Dagger
+- Deep Comeback
+- Deep Curls
+- Double Slant
+- Empty BAL Smash
+- Empty BAL Y-Corner
+- FB Belly
+- FB Fake HB Flip
+- Flanker Drive
+- Four Verticals
+- HB Blast
+- HB Counter
+- HB Dive
+- HB Draw
+- HB Inside
+- HB Iso
+- HB Lead Draw
+- HB Slam
+- HB Slip Screen
+- HB Wham
+- Inside Smash
+- Inside Switch
+- Iso Weak
+- Off Tackle
+- PA Bills Curl N Go
+- PA Bills PoCo
+- PA Bills Slot Cross
+- PA Boot
+- PA Boot Rt
+- PA Boot Slide
+- PA Comeback
+- PA Comeback Slide
+- PA Comebacks
+- PA Ctr Waggle
+- PA Dagger
+- PA Deep
+- PA Flood
+- PA Middle
+- PA Power 0
+- PA Power O
+- PA Slide
+- PA Verticals
+- PA WR In
+- Power 0
+- Power O
+- QB Rollout
+- Quick Base
+- Quick Outs
+- Ravens Y-Trail
+- Read Option
+- SE Curl
+- Slants
+- Slants Middle
+- Slot Corner
+- Slot Drive
+- Smash
+- Smash Swing
+- Spacing
+- Stick
+- Strong Flood
+- Strong Power
+- Texas
+- Verticals
+- WR Drag
+- WR Screen
+- Weak Zone
+- X Dig
+- X Post
+- X Spot
+- X Under
+- Y Shallow Cross
+
+## Wing Trips Offset  (15 plays)
+- Cross Up
+- Curls
+- D 1 Trap
+- Flood
+- HB Dive
+- HB Quick Base
+- HB Slip Screen
+- Levels Switch
+- PA Fork
+- PA Read
+- Posts
+- Speed Option
+- Stick
+- U Corner
+- X Spot
+
+## Wing Trips TE  (15 plays)
+- DBL Post
+- HB Counter
+- HB Dive
+- HB Slam
+- HB Slip Screen
+- HB Stretch
+- PA Boot
+- PA Boot Over
+- PA Ctr Waggle
+- PA FL Clown
+- PA Slot Out
+- PA WR Screen
+- Posts
+- Read Option
+- Stick
+
+## Wing Trips Wk  (50 plays)
+- 45 Quick Base
+- Backs Cross
+- Corner Strike
+- Cross Weak Flood
+- Curl Combo
+- Curl Flat
+- Curls
+- Deep Fork
+- Double Unders
+- Drive Post
+- FL Screen
+- Flat Combo
+- Flood
+- Four Verticals
+- HB Circle
+- HB Draw
+- HB Mid Draw
+- HB Off Tackle
+- HB Slip Screen
+- HB Wheel
+- Inside Cross
+- Inverted Veer
+- Mtn Y-Dig
+- PA Comebacks
+- PA Deep Threats
+- PA F Slide
+- PA Fake Jet Pitt
+- PA Flood
+- PA Pitt Flood
+- PA Power 0
+- PA Slot Corner
+- PA WR Dig
+- Pitt Jet Sweep
+- Power 0
+- Rams Deep In
+- Rams Verts
+- Read Option
+- Slants
+- Slants Middle
+- Slot Post
+- Slot Quick Flat
+- Smash
+- Steeler Stick
+- Steeler V Trail
+- Stick N Nod
+- Strong Power
+- Strong Stretch
+- Toss Weak
+- WR Screen
+- Y Shallow Cross
+
+## Wing Trips Wk NY  (21 plays)
+- Comeback Z Post
+- Corner Strike
+- Four Verticals
+- Giants Curl Corner
+- Giants Slot Under
+- Giants Sluggo Seam
+- Giants Y-Dig
+- HB Base
+- HB Mid Draw
+- HB Off Tackle
+- HB Slip Screen
+- Inside Cross
+- Levels Switch
+- PA WR In
+- PA Y-Out
+- Slants
+- Stick
+- Stick N Nod
+- Strg HB Zone
+- Strg PA Deep Outs
+- Strg Y-Sail
+
+## Y Left Twins  (15 plays)
+- Bench Switch
+- Curls
+- FB Dive
+- HB Counter
+- HB Dive
+- HB Pitch
+- HB Seam
+- Inside Cross
+- PA Waggle
+- Slants
+- Slot Corner
+- TE Curl
+- X Spot
+- Y Post
+- Z Option
+
+## Y Trips Lion  (18 plays)
+- Curls
+- Four Verticals
+- HB Draw
+- HB Slam
+- HB Stretch
+- Lions Drags
+- Lions Zone Wk
+- PA Lions Cross
+- PA Slot Wheel
+- PA Stretch
+- Power 0
+- Slants
+- Slot Spot
+- Smash
+- Stick N Nod
+- TE Stick
+- WR Post
+- WR Screen
+
+## Y Trips Wk  (58 plays)
+- Close FB Trail
+- Close HB Wheel
+- Close X Drag
+- Colts Deep Go
+- Colts Divide
+- Colts Out
+- Colts Under
+- Corner Strike
+- Curl Flats
+- Curls
+- Curls Slot Shake
+- DBL Ins
+- Drive
+- FB Dive
+- FB Inside
+- FL Screen
+- HB Angle
+- HB Circle
+- HB Delay
+- HB Dive Weak
+- HB Gut
+- HB Off Tackle
+- HB Option
+- HB Quick Base
+- HB Slip Screen
+- Inside Post
+- Mesh
+- PA Boot Lt
+- PA Colts Seams
+- PA Ctr Waggle
+- PA Dagger
+- PA Deep Cross
+- PA Deep Post
+- PA F Slide
+- PA Power 0
+- PA Read
+- PA Zona Cross
+- Power 0
+- Power O
+- Quick Slants
+- Quick Toss
+- Scat
+- Slants
+- Slot Curl
+- Stop N Go
+- Stretch
+- Strong Flood
+- Stutter Go's
+- Toss Weak
+- V Trail
+- WR Corner
+- WR Corners
+- WR Drag
+- WR In
+- Y Shallow Cross
+- Z Spot
+- Zona Curls Check
+- Zona Y-Corner
+
+## Y-Flex  (50 plays)
+- Cowboy Corners
+- Cowboy Curls
+- Cowboy V-Circle
+- Cowboy V-Out
+- Curls
+- End Around
+- FB Dive
+- Fork Angle
+- HB Dive
+- HB Draw
+- HB Gut
+- HB Lead
+- HB Mtn Toss
+- HB Slash Fk End Ard
+- HB Slip Screen
+- Jets Drive
+- Jets Fork
+- Jets HB Screen
+- Jets Mesh
+- Jets Slants
+- Jets X-Corner
+- Misdirection
+- Off Tackle
+- PA Boot Lt
+- PA End Around
+- PA F Slide
+- PA Jets In
+- PA Misdirection
+- PA Skinny Post
+- PA Slide
+- PA WR In
+- Power O
+- Quick Slants
+- Quick Toss
+- RB Outs
+- Slants
+- Slants Middle
+- Slot Cross
+- TE Drag
+- Tight FL Drive
+- Tight HB Screen
+- Tight Mesh
+- Toss Weak
+- WR Curls
+- WR Fade
+- WR Out
+- X-Corner
+- Y Option
+- Y Trail
+- Z Spot
+
+## Y-Trips  (157 plays)
+- Base DAL Dig
+- Base PA DAL Sail
+- Base Zone Str
+- Bench
+- Blunt Dive
+- Bubble Screen
+- Bucs Y Option
+- Chiefs Stick
+- Clearout SE Opt
+- Close Mesh Corner
+- Close Mesh Post
+- Close Post
+- Comebacks
+- Counter Weak
+- Counter Y
+- Curl Flat
+- Curls
+- Curls Y-Shake
+- DBL Ins
+- Double China
+- End Around
+- F Lead Read Option
+- FB Dive
+- Fade Smash
+- Fake Screen Wheel
+- Falcon HB Angle
+- Flanker Drive
+- Flood
+- Flood Slot Option
+- Four Verticals
+- HB Ace Power
+- HB Blast
+- HB Counter
+- HB Counter Wk
+- HB Cutback
+- HB Dive
+- HB Dive Wk
+- HB Draw
+- HB Misdirection
+- HB Plunge
+- HB Power O
+- HB Slam
+- HB Slash
+- HB Slash Fk End Ard
+- HB Slip Screen
+- HB Stretch
+- HB Stretch Sift
+- HB Sweep
+- HB Toss
+- HB Toss Crack
+- HB Toss Strong
+- HB Toss Wk
+- Hi Lo Post
+- Inside Cross
+- Inside Zone
+- Inside Zone Split
+- Iso
+- Jets Flood
+- Jets Stick
+- Jets Zone Wk
+- KC Outside Zone
+- KC Smash
+- Levels Switch
+- Mesh
+- Mesh Switch
+- Middle Read
+- Mtn Lead Dive
+- Outside Zone
+- PA Boot
+- PA Boot Screen
+- PA Boot Slide
+- PA Colts Slant
+- PA Cross Up
+- PA Ctr Waggle
+- PA Deep In
+- PA Double Post
+- PA Draw Pass
+- PA End Around
+- PA F Slide
+- PA Falcon
+- PA HB Out
+- PA Option Pass
+- PA Pin Deep
+- PA Power 0
+- PA Power O
+- PA Power Opt Pass
+- PA Pump Go
+- PA Read
+- PA Scissors
+- PA Seams
+- PA Skins Slant
+- PA Slide
+- PA Slot Cross
+- PA Steeler Seam
+- PA Stretch
+- PA TE Vertical
+- PA Vikes Y-Corner
+- PA WR In
+- PA WR Screen
+- PA Z Comeback
+- Post Wheel
+- Power 0
+- Power O
+- Power Option
+- Pump HB Draw
+- Quick Pitch
+- Quick Slants
+- Rams Zone Wk
+- Read Option Wk
+- SE Cross
+- Saints Seams
+- Saints Sluggo
+- Seattle
+- Skins Flood
+- Skins Under
+- Slant Flats
+- Slants
+- Slot Curl
+- Slot Drive
+- Slot Under
+- Sluggo Seam
+- Smash
+- Smash Corners
+- Smash Y-Corner
+- Spacing
+- Spacing Switch
+- Square Out
+- Steeler Lead Wk
+- Stick
+- Stick N Nod
+- Stick N Up
+- Strong Flood
+- Strong Power
+- TE Option
+- TE Stick
+- Toss Crack
+- Toss Strong
+- Triple Option
+- Under Go
+- V Trail
+- V-Seam
+- Vertical Seams
+- Vertical TE Cross
+- Verticals
+- WR Fade
+- WR Post
+- WR Screen
+- Wing Jets Zone
+- Wing Jets Zone Wk
+- Wing PA Jets Boot
+- X Post
+- X Sluggo
+- X Spot
+- Y Shallow Cross
+- Y Trail
+- Z Spot
+- Zone Weak
+
+## Y-Trips Bear  (21 plays)
+- Bears Drags
+- Bears V Stick
+- Bears Zone Wk
+- Curls
+- Double China
+- Empty CHI Cross
+- Empty CHI Option
+- Empty CHI Under
+- Four Verticals
+- HB Draw
+- HB Slam
+- Levels Switch
+- PA Bears Cross
+- PA Slot Wheel
+- Power O
+- Slants
+- Slot Drive
+- Slot Spot
+- Smash
+- Stick N Nod
+- WR Screen
+
+## Y-Trips Bengal  (21 plays)
+- Corner Strike
+- Curl Flats
+- DBL Ins
+- FL Drive
+- Fork V Drag
+- Four Verticals
+- HB Base
+- HB Draw
+- HB Slip Screen
+- PA Bengal Under
+- PA WR In
+- Slants
+- Slot Cross
+- Slot Seam
+- Sluggo Seam
+- Stick
+- Stick N Nod
+- TE Sail
+- Under Y-Option
+- Y Trail
+- Z Spot
+
+## Y-Trips Cowboy  (21 plays)
+- Corner Strike
+- Cowboy Hooks
+- Cowboy Slot Slant
+- Cowboy Slot Under
+- Cowboy V Drag
+- Cowboys Shake
+- Cowboys Y-Sail
+- Double Cross
+- Dual Drag
+- FL Middle
+- Flanker Drive
+- Flex DAL Levels
+- Flex DAL Semi
+- Flex DAL Under
+- Four Verticals
+- HB Base
+- HB Draw
+- HB Slip Screen
+- PA Dagger
+- PA WR In
+- Slants
+
+## Y-Trips HB Wk  (69 plays)
+- 619 Sail
+- 689 Hook
+- Backs Cross
+- Bench
+- China Corner
+- Corner Strike
+- Corners Under
+- Counter Weak
+- Curl Flat
+- Curl Flats
+- Curls
+- DBL Cross
+- DBL Ins
+- DBL Stick
+- Double Cross
+- Double Under
+- FB Dive
+- FL Screen
+- Fk WR Scrn Wheel
+- Flanker Dig
+- Flat Combo
+- Go's Slot In
+- HB Dive
+- HB Draw
+- HB Mid Draw
+- HB Off Tackle
+- HB Power
+- HB Slip Screen
+- HB Toss
+- Hawks Zone Wk
+- Inside Cross
+- Jags Post Dig
+- Jags Under
+- Mesh
+- PA Comeback
+- PA Corner
+- PA Deep Curls
+- PA Dig
+- PA F Slide
+- PA FB Fake
+- PA FB Flat
+- PA Jags DBL Ins
+- PA Power O
+- PA Skinny Post
+- PA Slide
+- PA Spot
+- PA WR Cross
+- PA WR In
+- Power O
+- Slants
+- Slants Middle
+- Slot Cross
+- Slot Post
+- Slot Seam
+- Slot Swing
+- Stick
+- Stick N Nod
+- Strong Flood
+- Texans Fork
+- WR Corners
+- WR Post Corner
+- WR Screen
+- Whip Unders
+- X Slant
+- Y Drag
+- Y Option
+- Y Shallow Cross
+- Z Sluggo
+- Z Spot
+
+## Y-Trips Lion  (18 plays)
+- Angle
+- Curls
+- End Around
+- FB Dive
+- FB Fake HB Flip
+- HB Pass
+- HB Slash
+- HB Toss
+- Iso
+- Lions Cutback Wk
+- PA Clearout
+- PA End Around
+- PA Lion Flat
+- PA WR In
+- Power 0
+- Quick Slants
+- Slam Fk End Arnd
+- X Slant
+
+## Y-Trips Lowboy  (21 plays)
+- Corner Strike
+- Cowboy Seams
+- Curl Flats
+- Curls
+- Deep Attack
+- Deep Fork
+- FL Drive
+- Fades
+- Flood
+- Four Verticals
+- HB Mid Draw
+- HB Quick Base
+- HB Slip Screen
+- PA Cross
+- Slants
+- Slants Flat
+- Slot Trail
+- Smash Corners
+- Under Y-Option
+- Y-Sail
+- Z Spot
+
+## Y-Trips Offset  (18 plays)
+- Buck Sweep
+- Buck Sweep Read Op
+- FL Spot
+- Four Verticals
+- HB Angle
+- HB Counter
+- HB Mid Draw
+- Jet Sweep
+- PA Bubble
+- PA Jet Sweep
+- Philly Drive Sail
+- QB Wrap
+- Read Option
+- Shark HB Wheel
+- Slot Under
+- Smash
+- Strong Flood
+- X-tra HB Wheel
+
+## Y-Trips Open  (36 plays)
+- 45 Quick Base
+- 689 Hook
+- Backs Cross
+- Close Corner
+- Close FB Trail
+- Close HB Wheel
+- Close Slot Wheel
+- Close X Dig
+- Close X Drag
+- Corner Strike
+- Curl Flats
+- DBL Stick
+- Deep Comeback
+- FB Dive
+- Flanker Drive
+- Flat Combo
+- Flood
+- HB Angle
+- HB Counter
+- HB Draw
+- HB Inside
+- HB Mid Draw
+- HB Off Tackle
+- HB Slip Screen
+- Mesh
+- PA Dagger
+- PA F Slide
+- PA Power O
+- PA Verticals
+- Power O
+- Slants
+- Strong Flood
+- TE Corner
+- Y PoCo
+- Y Shallow Cross
+- Z Spot
+
+## Y-Trips TE Slot  (36 plays)
+- Base H Counter Str
+- Base PA Counter Str
+- Base Power O
+- Buck Sweep
+- Buck Sweep Read Op
+- Curl Flat
+- Curls
+- End Around
+- Flood
+- Four Verticals
+- HB Ace Power
+- HB Counter
+- HB Mid Draw
+- HB Slash Fk End Ard
+- HB Slip Screen
+- Inverted Veer
+- Outside Zone
+- PA Comeback Slide
+- PA Crosses
+- PA End Around
+- PA Panther Veer
+- PA Read
+- PA Slot Corner
+- PA Waggle
+- QB Power
+- Quick Pitch
+- Read Option
+- Slot Drive
+- Slot Quick Flat
+- Spacing
+- Stick N Nod
+- Strong Flood
+- T Trap Read Option
+- Verticals
+- Y Corner
+- Z Spot
+
+## Y-Trips Texan  (15 plays)
+- Curl Flat
+- Drive Drags
+- Four Verticals
+- HB Draw
+- HB Slip Screen
+- HB Sprint
+- Mesh
+- PA Verticals
+- Slants
+- Slot Drive
+- Stick
+- Stick N Slide
+- TE Stick
+- WR Screen
+- Y Shallow Cross
+
+## Y-Trips Wk  (121 plays)
+- 45 Quick Base
+- 46 Y Cross
+- 46 Z Cross
+- 619 Sail
+- 689 Hook
+- Backs Cross
+- Bears Dig
+- Bubble Screen
+- Close Cntr Lt
+- Close Z Clown
+- Close Z Corner
+- Comebacks
+- Corner Strike
+- Counter Weak
+- Curl Flat
+- Curl Flats
+- Curl N Go
+- Curls
+- Deep Curls
+- Double Cross
+- Double Hinge
+- Double Sluggo
+- FB Inside
+- FL Screen
+- Flanker Dig
+- Flanker Drive
+- Flat Combo
+- Flood
+- Four Verticals
+- Giants Fork
+- Giants Go
+- Giants Sail
+- Giants Slot Trail
+- Giants Slot Up
+- Giants Under
+- HB Angle
+- HB Base
+- HB Circle
+- HB Counter
+- HB Delay Out
+- HB Dive
+- HB Draw
+- HB Mid Draw
+- HB Off Tackle
+- HB Option
+- HB Power 0
+- HB Slam
+- HB Slip Screen
+- Hawks Dig
+- Hawks Jet Sweep
+- Inside Cross
+- Inside Zone
+- KC Slot Seam
+- KC Under
+- KC Whips
+- Lions Comebacks
+- Lions Dig
+- Lions Stick
+- Mesh
+- Niner Post Wheel
+- OAK Y Delay
+- OAK Y Drag
+- PA Bubble
+- PA Ctr Waggle
+- PA Dagger
+- PA F Slide
+- PA FL Fly
+- PA FL Stretch
+- PA Fake Jet
+- PA Hawks Under
+- PA Power O
+- PA Read
+- PA Read Option
+- PA Skinny Post
+- PA Slot Under
+- PA Steeler In
+- PA Stutter Post
+- PA WR In
+- PA Y-Out
+- Packer Fade
+- Packer Slot Post
+- Power 0
+- Power O
+- QB Wrap
+- Read Option
+- Scissors Flats
+- Shakes
+- Slants
+- Slants Middle
+- Slot Cross
+- Slot Drive
+- Slot Post
+- Slot Under
+- Sluggo Seam
+- Spacing
+- Steeler Fade
+- Steeler HB Base
+- Steeler Slant
+- Stick
+- Stick N Nod
+- Stop N Go
+- Strong Flood
+- TE Stick
+- V Trail
+- V-Seam
+- Vikes Drive
+- Vikes Go's
+- Vikes Qk Out
+- Viking In N Up
+- WR Corners
+- WR Outs
+- WR Screen
+- X Dig
+- X Middle
+- X Spot
+- X-Under
+- Y Corner
+- Y Shallow Cross
+- Y Trail
+- Y-Sail
+- Z Spot
+
+## Zona Y-Trips  (15 plays)
+- Four Verticals
+- HB Draw
+- HB Slam
+- HB Zone Wk
+- PA Slot Cross
+- PA Slot Wheel
+- Slants
+- Slot Drive
+- Slot Spot
+- Smash
+- Stick N Nod
+- Stick N Slide
+- TE Stick
+- WR Screen
+- Y-Trail

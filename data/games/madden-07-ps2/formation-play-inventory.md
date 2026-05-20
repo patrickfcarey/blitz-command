@@ -1,0 +1,4046 @@
+# madden-07-ps2 — formation/play inventory
+
+_120 formations · 3802 (formation, play) pairs · 1015 distinct play names_
+
+
+## Far 3WR  (9 plays)
+- Curl Flats
+- FB Dive Weak
+- FL Drive
+- HB Counter
+- HB Screen
+- HB Sweep
+- McCoy Slant
+- McCready Option
+- Slot Cross
+
+## Far Pro  (10 plays)
+- Double Swing
+- FB Lead
+- HB Counter
+- HB Screen
+- HB Sweep
+- McCready Option
+- Robinson Option
+- Slant N Go
+- TE Curl
+- TE Post
+
+## Far Tight Twins  (0 plays)
+
+## Full House Normal Wide  (21 plays)
+- Counter
+- Counter Lead
+- Curls
+- Dive
+- FB Slam
+- HB Dive
+- HB Draw
+- HB Slam
+- HB Smash
+- HB Stretch
+- HB Sweep
+- Off Tackle
+- PA Cross
+- PA FL Middle
+- PA Middle
+- Play Action Blast
+- Quick Hitch
+- TE Dig
+- WR DBL Shake
+- Wheel
+- Witten Option
+
+## Full House Philly  (9 plays)
+- Counter Lead
+- Curls
+- FB Slam
+- Fake Dive Pitch
+- HB Dive
+- HB Draw
+- HB Slam
+- PA Middle
+- WR DBL Shake
+
+## Full House Strong  (18 plays)
+- Counter
+- Dive
+- Draw
+- FB Slam
+- HB Dive
+- HB Draw
+- HB Misdirection
+- HB Pitch
+- HB Rev Toss
+- HB Slam
+- HB Smash
+- HB Sweep
+- Off Tackle
+- PA WR Corner
+- Power
+- Rollout Screen
+- Toss
+- WR Reverse
+
+## Full House Weak  (15 plays)
+- Counter
+- Dive
+- Double Cross
+- Draw
+- FB Dive
+- Flares
+- HB Dive
+- HB Slam
+- HB Smash
+- HB Sweep
+- Off Tackle
+- PA Flats
+- Power
+- Rollout Screen
+- Toss
+
+## Full House Wide  (9 plays)
+- Flares
+- HB Dive
+- HB Draw
+- HB Misdirection
+- HB Slam
+- HB Smash
+- HB Sweep
+- Rollout Screen
+- WR Middle
+
+## Gun 2RB 3WR  (87 plays)
+- 2 Jet FL Drive
+- Bryant Option
+- Bryant Screen
+- Chambers Option
+- Corner-Threat
+- Corners HB Go
+- Counter Weak
+- Curl
+- Curl Drag
+- Curl Flats
+- Curls
+- Deep Outs
+- Double Slant
+- FB Dive
+- FB Inside
+- Fk WR Scrn Wheel
+- Flats
+- HB Blast
+- HB Counter
+- HB Deep
+- HB Delay
+- HB Dive
+- HB Draw
+- HB Mid Draw
+- HB Off Tackle
+- HB Power
+- HB Screen
+- HB Short Trap
+- HB Slant 18
+- HB Stretch
+- HB Sweep Strg
+- In N Out
+- James Option
+- James Screen
+- Jennings Option
+- Jennings Screen
+- Johnson Option
+- Jones Screen
+- McCardell Option
+- Mesh
+- Mid Attack
+- Mid Slants
+- Moss Option
+- Muhammad Screen
+- Option
+- Owens Option
+- Owens Screen
+- PA All Go
+- PA Boot
+- PA Bootleg Cross
+- PA Cross
+- PA Dbl Cross
+- PA Dig
+- PA Middle
+- PA Rollout
+- PA Skinny Post
+- PA Smash Shake
+- PA Z Comeback
+- Parrish Option
+- Quick Hit
+- RB Circles
+- Randy Post
+- Reverse
+- Robinson Option
+- Robinson Screen
+- SE Post Flag
+- Sail
+- Screen Pass
+- Short Crosses
+- Slant
+- Slants
+- Slants Middle
+- Slot Cross
+- Slot Drag
+- Slot Post
+- Streaks
+- Strong Overload
+- TE Drag
+- Toss
+- WR Comebacks
+- WR Hooks
+- WR Post
+- WR Post Corner
+- WR Quick Drag
+- WR Slant
+- WR Slant Out
+- Wayne Option
+
+## Gun 2RB 3WR Flex  (0 plays)
+
+## Gun 2RB Flex  (33 plays)
+- Boss Sweep
+- Corner Flats Under
+- Crumpler Option
+- Dual TE Flat
+- FL Middle
+- HB Blunt Dive
+- HB Counter
+- HB Dive
+- HB Draw
+- HB Lead
+- HB Off Tackle
+- HB Pass
+- HB Plunge
+- HB Screen
+- HB Sprint
+- HB Stretch
+- HB Sweep
+- Jenkins Option
+- Jenkins Screen
+- Miller Option
+- PA Boot
+- PA Boot Lt
+- PA Deep In
+- PA FL Clown
+- PA Rollout
+- PA Smash Shake
+- PA TE Cross
+- Parker Option
+- Semi Left
+- TE Cross
+- WR Drag
+- WR Post Corner
+- Ward Option
+
+## Gun 4WR  (135 plays)
+- 45 Quick Base
+- Bears Cross
+- Booth Option
+- Boss Sweep
+- Brown Option
+- Browns Cross
+- Bryant Option
+- Bunch
+- Cash Option
+- Chambers Option
+- Chapman Option
+- Charger Cross
+- Chiefs Cross
+- Circle
+- Coles Option
+- Corner - Threat
+- Corner-Threat
+- Counter Weak
+- Cowboy Cross
+- Curl
+- Curl - Drag
+- Curl Flats
+- Dbl WR Screen
+- Dbl WR Shake
+- Deep Cross
+- Delta Sit
+- Dig
+- Dolphins Cross
+- Drag Smash
+- Dual TE Flat
+- Elliott Option
+- Evans Option
+- Evans Screen
+- FL Drag
+- FL Fly
+- FL Middle
+- Fk WR Scrn Wheel
+- Flats
+- Four Verts
+- Givens Option
+- Glenn Option
+- Gore Option
+- HB Blunt Dive
+- HB Counter
+- HB Deep
+- HB Delay
+- HB Dive
+- HB Draw
+- HB Flare
+- HB Flat
+- HB Mid Draw
+- HB Off Tackle
+- HB Pass
+- HB Plunge
+- HB Power
+- HB Quick Base
+- HB Screen
+- HB Sprint
+- HB Stretch
+- HB Sweep
+- Hail Mary
+- Houshmandz Option
+- Jags Cross
+- Jennings Option
+- Jets Cross
+- Johnson Option
+- Jones Option
+- Jurevcious Option
+- Kennison Option
+- Levels
+- Mason Option
+- Mesh
+- Middle Attack
+- Miller Option
+- Moulds Option
+- Muhammad Option
+- Murray Option
+- Owens Option
+- PA All Go
+- PA All Slants
+- PA Boot
+- PA Bootleg Cross
+- PA Comeback
+- PA Cross
+- PA Curl - Drag
+- PA Dbl Cross
+- PA Dbl Posts
+- PA Deep In
+- PA Deep Outs
+- PA FL Clown
+- PA Mesh
+- PA Rollout
+- PA Slot Options
+- PA TE Cross
+- PA Y Cross
+- PA Z Comeback
+- Parker Option
+- Payton Option
+- Post Cross
+- Post Flags
+- RB Circles
+- Robinson Option
+- Sail
+- Shallow Cross
+- Short Attack
+- Slant
+- Slants
+- Slants Middle
+- Slot Comebacks
+- Slot Drag
+- Slot Flags
+- Slot Outs
+- Slot Outside
+- Slot Post
+- Smash Corners
+- Spacing
+- Stack
+- Stick
+- Streaks
+- Stubbs Option
+- Taylor Option
+- Titan Corners
+- Titan Cross
+- Tomlinson Option
+- Vert Combo
+- Vines Option
+- WR Cross
+- WR Drag
+- WR Hooks
+- WR Post
+- WR Post Corner
+- Ward Option
+- Williams Option
+- Y Cross
+- Zero Mesh
+
+## Gun 4WR Spread  (9 plays)
+- FL Drag
+- FL Hook
+- HB Draw
+- HB Mid Draw
+- HB Screen
+- PA Deep Outs
+- Panther Cross
+- Slot Drag
+- Smith Option
+
+## Gun 5WR  (44 plays)
+- Ashley Option
+- Bills Cross
+- Booker Option
+- Bryant Option
+- Cash Option
+- Chambers Option
+- Curl - Drag
+- Curl Flats
+- Dbl WR Shake
+- Deep Outs
+- Deep Post
+- Double Slant
+- Elliott Option
+- FL Drag
+- FL Fly
+- Finneran Option
+- Hail Mary
+- Hall Option
+- Hitch Corners
+- Hitch Posts
+- Hitch-N-Go
+- Jenkins Option
+- Jennings Option
+- Jones Option
+- Kennison Option
+- Mid Cross
+- Parallel Slants
+- Perez Option
+- Short Attack
+- Slants
+- Slot Drag
+- Slot Option
+- Slot Post
+- Smash Corners
+- Streaks
+- Stubbs Option
+- WR Comebacks
+- WR Drag
+- WR Post Corner
+- WR Screen
+- WR Screens
+- WR Shake
+- Williams Option
+- Zig Zags
+
+## Gun 5WR Bunch  (0 plays)
+
+## Gun 5WR Tight  (9 plays)
+- Clear Deep
+- Desperado
+- Hitch Corners
+- In And Under
+- Panther Smash
+- Quad Curls
+- Quick Slants
+- Shallow Drags
+- Wide Corners
+
+## Gun Empty 4WR  (0 plays)
+
+## Gun Empty TE Flip  (6 plays)
+- Hi Lo Read
+- QB Dash Comeback
+- Slant Attack
+- WR Hooks
+- WR Post
+- WR Smash
+
+## Gun Empty Trey  (6 plays)
+- Comeback Left
+- Hi Lo Read
+- Hook & Verts
+- Inside Crosses
+- Semi Right
+- Under Seams
+
+## Gun Empty Trey Stack  (18 plays)
+- 97 Slot Corner
+- Corkers
+- Curl Flats
+- Empty Stick
+- HB Stretch
+- Middle Corner Post
+- Option
+- Option X Hitch
+- PA Boot
+- PA Dig
+- PA Middle
+- Quick Hit
+- Quick Slant
+- Reverse
+- Screen Pass
+- Shallow Cross
+- Slant Under
+- Strong Overload
+
+## Gun Empty Trips  (3 plays)
+- Curl Flats
+- Empty Stick
+- Option X Hitch
+
+## Gun Normal  (98 plays)
+- Battle Option
+- Boone Option
+- Boss Sweep
+- Bradley Option
+- Bryant Option
+- Cash Option
+- Circle
+- Clark Option In
+- Clayton Option
+- Corner - Threat
+- Counter Weak
+- Crumpler Option In
+- Curl
+- Curl Flats
+- Davis Option
+- Double Flags
+- Double Outs
+- Drag Unders
+- Drive
+- Dual TE Flat
+- Dunn Option
+- FL Drag
+- FL Hitch-n-Go
+- FL Middle
+- FL Screen
+- FL Slant
+- Flats
+- Four Verts
+- Frieser Option In
+- Gomez Option In
+- HB Blunt Dive
+- HB Counter
+- HB Delay
+- HB Direct Snap
+- HB Dive
+- HB Drag
+- HB Draw
+- HB Flare
+- HB Mid Draw
+- HB Off Tackle
+- HB Pass
+- HB Plunge
+- HB Power
+- HB Screen
+- HB Slant 18
+- HB Sprint
+- HB Stretch
+- HB Sweep
+- HB Wheel
+- Hail Mary
+- Heap Option In
+- James Option
+- Jennings Option
+- Johnson Option
+- Kelly Option In
+- Levels
+- Martin Option
+- Mason Option
+- Mesh
+- Miller Option
+- Moulds Option
+- Muhammad Option
+- PA All Go
+- PA Boot
+- PA Bootleg Cross
+- PA Comebacks
+- PA Cross
+- PA Dbl Cross
+- PA Dbl Posts
+- PA Deep In
+- PA Deep Post
+- PA FL Clown
+- PA FL Fly
+- PA Flood
+- PA Hot Routes
+- PA Mesh
+- PA Rollout
+- PA Slot Post
+- PA Stutter Post
+- PA TE Cross
+- PA Z Comeback
+- Parker Option
+- Payton Option
+- Post Flags
+- Rader Option In
+- Sail
+- Short Attack
+- Slant
+- Slants
+- Slants Middle
+- Slot Drag
+- Smash
+- Smith Option
+- Spacing
+- TE Corner
+- WR Curl
+- WR Drag
+- Ward Option
+
+## Gun Normal Offset Wk  (34 plays)
+- Bennett Option
+- Boldin Option
+- Bubble
+- Coles Option
+- Curl - Drag
+- Deep Cross
+- Dig Wheel
+- Double Smash
+- FL Drag
+- FL Go
+- FL Hook
+- Givens Option
+- HB Delay
+- HB Dive
+- HB Mid Draw
+- HB Screen
+- HB Sweep
+- Hot Route
+- James Option
+- Martin Option
+- McCareins Option
+- Quick Ins
+- Quick Slant
+- Screen Pass
+- Seam
+- Slant
+- Slant Hook
+- Slants Middle
+- TE Drag
+- TE Out N Up
+- TE Shallow
+- WR Curl
+- WR Drag
+- WR Post Corner
+
+## Gun Normal Slot  (25 plays)
+- Clinton Screen
+- Counter Weak
+- Deep In
+- FL Slant
+- Flats
+- HB Counter
+- HB Dive
+- HB Mid Draw
+- HB Off Tackle
+- HB Screen
+- PA All Go
+- PA Boot
+- PA Bootleg Cross
+- PA Comebacks
+- PA Cross
+- PA Slot Post
+- PA Z Comeback
+- Sail
+- Slants
+- Slot Drag
+- Slot Hook
+- Smith Option
+- TE Out N Up
+- TE Shallow
+- TE Stick
+
+## Gun Slot Strong  (64 plays)
+- Alex Choice
+- Baker Option
+- Battle Option
+- Bennett Option
+- Clayton Option
+- Counter Weak
+- Deep Attack
+- Deep Curl Flat
+- Double Outs
+- Drag Smash
+- FL Drag
+- FL Fly
+- Fitzgerald Option
+- Flats
+- HB Counter
+- HB Delay
+- HB Dive
+- HB Draw
+- HB Power
+- HB Screen
+- HB Slant 18
+- HB Sweep
+- Hail Mary
+- Heap Option
+- In N Out
+- In-N-Out
+- Kinney Option
+- McCareins Option
+- Middle Hook
+- Outs
+- PA All Go
+- PA Boot
+- PA Bootleg Cross
+- PA Corners
+- PA Cross
+- PA Double Hook
+- PA FL Streak
+- PA Z Comeback
+- Post Corner
+- Posts
+- Quick Hits
+- Read
+- SE Quick Hit
+- SE Slant
+- Safety Bait
+- Sail
+- Slants
+- Slants Middle
+- Slot Drag
+- Slot Flags
+- Slot Hook
+- Slot Post
+- Sprint Rt Option
+- Streaks
+- TE Drag
+- TE Post
+- TE Streak
+- Twin Outs
+- WR Drag
+- WR Fade
+- WR Hooks
+- WR Post Corner
+- WR Screen
+- Wayne Option
+
+## Gun Slot Strong HB Wk  (9 plays)
+- Deep In
+- Derick Corner
+- HB Delay
+- HB Mid Draw
+- HB Sweep
+- Slant Hook
+- Strong Overload
+- TE Drag
+- WR Deep Hook
+
+## Gun Slot Strong TE Flip  (18 plays)
+- Bubble
+- Cash Option
+- Cross
+- Deep Dig
+- HB Dive
+- HB Draw
+- HB Screen
+- PA Boot
+- PA FL Corner
+- QB Dash Comeback
+- Quick Out
+- Read Option
+- Seam
+- Slant Attack
+- Slot Under
+- Slot Wheel
+- TE Dig
+- WR Post
+
+## Gun Trey Open  (6 plays)
+- HB Mid Draw
+- HB Quick Base
+- PA Slot Options
+- Slot Post
+- Strong Overload
+- WR Deep Hook
+
+## Gun Trips  (20 plays)
+- Dbl WR Shake
+- Deep Attack
+- HB Burst
+- HB Draw
+- HB Screen
+- HB Sweep
+- Henry Option
+- Lewis Option
+- Mason Solo Post
+- Moore Option
+- PA Curl - Drag
+- PA Deep Outs
+- PA Read
+- PA WR Whip
+- SE Under
+- Slants Flat
+- Slot Comebacks
+- Smash Middle
+- Stubbs Option
+- Trips Cross
+
+## Gun Trips Bunch  (56 plays)
+- Boss Sweep
+- Bryant Option
+- Bubble
+- Clearout FL In
+- Clearout SE Out
+- Corner Flats
+- Cross
+- Curls Attack
+- Delta Sit
+- Double Drags
+- Drag
+- Drag Combo
+- Dual TE Flat
+- FL Middle
+- Flanker Drive
+- Flood Right
+- Greenside Drag
+- HB Blunt Dive
+- HB Counter
+- HB Dive
+- HB Draw
+- HB Mid Draw
+- HB Off Tackle
+- HB Pass
+- HB Plunge
+- HB Screen
+- HB Sprint
+- HB Stretch
+- HB Sweep
+- Jennings Option
+- Jones Option
+- Mesh
+- Miller Option
+- PA Boot
+- PA Deep In
+- PA FL Clown
+- PA Rollout
+- PA TE Cross
+- Parker Option
+- Post Corner Read
+- Read Middle
+- Read Option
+- Slant
+- Slant Attack
+- Slants Slot Flat
+- Smash Slot Post
+- Spacing
+- Spacing Switch
+- Stretch
+- Strong Overload
+- TE Middle
+- Twin Fades
+- Verticals
+- WR Drag
+- WR Fade
+- Ward Option
+
+## Gun Trips TE  (15 plays)
+- Clearouts
+- HB Delay
+- HB Mid Draw
+- HB Off Tackle
+- HB Screen
+- HB Swing
+- PA Deep Attack
+- PA Slot Corner
+- Slot Quick Flat
+- Slot Read
+- TE Corner
+- TE Cross
+- TE Go
+- Trips Attack
+- WR Corner
+
+## Gun Twin TE Trips  (0 plays)
+
+## Gun Wing Trips  (40 plays)
+- Boss Sweep
+- Counter Trap
+- Deep In
+- Derek Corner
+- Derick Corner
+- Double Post
+- Dual TE Flat
+- FL Middle
+- Fauria Option
+- HB Blunt Dive
+- HB Circle
+- HB Counter
+- HB Delay
+- HB Dive
+- HB Draw
+- HB Gut
+- HB Mid Draw
+- HB Off Tackle
+- HB Pass
+- HB Plunge
+- HB Sprint
+- HB Stretch
+- HB Sweep
+- HB Trap
+- HB Wham
+- Miller Option
+- Moss Option
+- PA Boot
+- PA Deep In
+- PA FL Clown
+- PA Rollout
+- PA TE Cross
+- PA TE Under
+- PA Waggle
+- Parker Option
+- Strong Flood
+- TE Drag
+- Vertical TE Cross
+- WR Drag
+- Ward Option
+
+## I-Form 3WR  (70 plays)
+- 966 H Flat
+- Berrian Option
+- Bryant Option
+- Crockett Option
+- Curls
+- Curry Option
+- Davis Option
+- Deep Cross
+- Elliott Option
+- Engram Option
+- Evans Option
+- FB Curl
+- FB Dive
+- FB Dive Strong
+- FB Flare
+- FL Post
+- Finneran Option
+- Flats
+- HB Blast
+- HB Counter
+- HB Dive
+- HB Draw
+- HB Lead
+- HB Lead Dive
+- HB Misdirection
+- HB Off Tackle
+- HB Screen
+- HB Slam
+- HB Slash
+- HB Stretch
+- HB Toss
+- Hagan Option
+- Heap Option
+- Jackson Option
+- James Option
+- Jenkins Option
+- Lead Draw
+- Mason Option
+- McIntyure Option
+- Mid Attack
+- Moore Option
+- Muhammad Option
+- Off Tackle
+- Option
+- PA Boot
+- PA FB Flat
+- PA Middle
+- PA Post
+- PA Slot In
+- PA Slot Post
+- PA Split
+- PA TE Attack
+- PA TE Leak
+- Post Flags
+- Power Read
+- Pump N Go
+- Quick Hit
+- Quick Slant
+- Randle El Option
+- Reverse
+- Short Slants
+- Slants
+- Slot Flag
+- Slot Z Out
+- Strikeout
+- TE Drag
+- TE Out
+- WR Deep Post
+- WR Drag
+- Williams Option
+
+## I-Form Big  (87 plays)
+- Anelli Option
+- Becht Option
+- Boss Sweep
+- Bryant Option
+- Counter
+- Counter Lead
+- Counter Weak
+- Curl Flats
+- Curls
+- Deep Cross
+- Dive
+- Draw
+- Dual TE Flat
+- FB Dive
+- FB Dive Strong
+- FB Fake HB Toss
+- FB Flare
+- FB Screen
+- FK Sneak HB Swing
+- FL Middle
+- Frieser Option
+- Gomez Option
+- Graham Option
+- HB Blast
+- HB Blunt Dive
+- HB Counter
+- HB Counter Strg
+- HB Dive
+- HB Draw
+- HB Inside
+- HB Lead
+- HB Lead Dive
+- HB Lead Toss
+- HB Middle
+- HB Misdirection
+- HB Off Tackle
+- HB Pass
+- HB Plunge
+- HB Power
+- HB Screen
+- HB Slam
+- HB Sprint
+- HB Stretch
+- HB Sweep
+- HB Toss
+- Kinney Option
+- Mid Attack
+- Miller Option
+- Off Tackle
+- Out N Ups
+- PA All Go
+- PA Boot
+- PA Bronco Slide
+- PA Cross
+- PA Deep In
+- PA FB Flat
+- PA FL Clown
+- PA HB Curl
+- PA Rollout
+- PA Slot In
+- PA Streaks
+- PA TE Attack
+- PA TE Corner
+- PA Waggle
+- Parker Option
+- Power
+- Pump N Go
+- Quick Outs
+- Quick Slant
+- Rader Option
+- Short Hooks
+- Short Slants
+- Slants
+- Stevens Option
+- Strong Close
+- Strong Stretch
+- TE Flag
+- TE Post
+- TE Shake
+- TE Z Out
+- Titans 24 Blast
+- WR Deep Post
+- WR Drag
+- WR Post
+- WR Reverse
+- Ward Option
+- Weak Flood
+
+## I-Form Close  (37 plays)
+- Belly
+- Blast
+- Counter
+- Deep Over
+- Dive
+- End Around
+- Evans Option
+- FB Flare
+- Flanker Drive
+- HB Counter
+- HB Counter Wk
+- HB Draw
+- HB Lead Dive
+- HB Lead Dive Strong
+- HB Misdirection
+- HB Slam Fk WR
+- HB Stretch
+- Off Tackle
+- Owens Option
+- PA Boot Flow
+- PA End Around
+- PA QB Boot
+- PA Rollout
+- PA TE Corner
+- PA TE Leak
+- PA Waggle
+- Power
+- Robinson Option
+- Shallow Cross
+- Short Slants
+- Smith Option
+- Strong Stretch
+- TE Seam
+- TE Z Out
+- WR Streaks
+- Winslow Option
+- Witten Option
+
+## I-Form Normal  (180 plays)
+- 24 Counter
+- 24 Smash
+- Alexander Option
+- Anderson Option In
+- Anelli Option In
+- Ayanbadejo Option
+- Becht Option Out
+- Bell Blast
+- Blizzard Option
+- Boldin Option
+- Boot Leg
+- Boss Sweep
+- Brady Option
+- Brady Option In
+- Breeden Option
+- Bryant Option
+- Cal Toss
+- Cash Option
+- Chambers Option
+- Chiefs 24 Smash
+- Chris Draw
+- Clark Option In
+- Coles Option
+- Comet Pass
+- Counter
+- Counter Weak
+- Croom Blast
+- Cross In
+- Curl N Post
+- Curls
+- Deep Cross
+- Dive
+- Double Under
+- Draw
+- Dual TE Flat
+- Edgerrin Draw
+- Edwards Option In
+- FB Dive
+- FB Dive Fake HB
+- FB Dive Strong
+- FB Fake HB Toss
+- FB Lead
+- FB Under
+- FL Hook
+- FL Middle
+- FL Post
+- Flats
+- Flea Flicker
+- Fleming Option
+- Frieser Option
+- Galloway Option
+- Givens Option
+- Gomez Option
+- Graham Option
+- HB Blast
+- HB Blunt Dive
+- HB Counter
+- HB Counter Wk
+- HB Dive
+- HB Draw
+- HB Lead Dive
+- HB Lead Toss
+- HB Middle
+- HB Misdirection
+- HB Off Tackle
+- HB Pass
+- HB Plunge
+- HB Power
+- HB Screen
+- HB Slam
+- HB Slant 18
+- HB Slash
+- HB Sprint
+- HB Stretch
+- HB Sweep
+- HB Sweep Strg
+- HB Toss
+- HB Wk Screen
+- Handoff
+- Heap Option In
+- Hi Lo Read
+- Holt Option
+- Horn Option
+- Jackson Option
+- James Option
+- Jennings Option
+- Johnson Option
+- Jones Option
+- Jurevcious Option
+- Kelly Option In
+- Kennison Option
+- Larry Draw
+- Larry Toss
+- Martin Option
+- Mason Option
+- McCardell Option
+- McCareins Option
+- McCready Option
+- Mid Attack
+- Middle Hook
+- Miller Option
+- Moss Option
+- Muhammad Option
+- Off Tackle
+- Option
+- Owens Option
+- PA All Go
+- PA Boot
+- PA Bootleg Cross
+- PA Comeback Slide
+- PA Cross
+- PA Deep In
+- PA Dig
+- PA FB Flat
+- PA FB Screen
+- PA FB Streak
+- PA FL Clown
+- PA HB Curl
+- PA Middle
+- PA Middle Screen
+- PA Outside Curls
+- PA QB Boot
+- PA Rollout
+- PA Streaks
+- PA TE Attack
+- PA TE Corner
+- PA TE Dig
+- PA TE Post
+- PA Waggle
+- Parker Option
+- Play Action
+- Pollard Option
+- Post Flags
+- Power
+- Power Read
+- Pump N Go
+- Quick Hit
+- Rader Option In
+- Reverse
+- Robinson Option
+- SE Post Flag
+- Sail
+- Saints 2B Slam
+- Screen Pass
+- Seam 678
+- Short Slants
+- Slants
+- Smith Option
+- Speed Option
+- Stevens Option
+- Strikeout
+- Strong Close
+- Strong Flood
+- Strong Stretch
+- TE Corner
+- TE Flat
+- TE Quick Hit
+- TE Shake
+- TE Slant
+- TE Stick
+- TE/Slot Cross
+- Taylor Blast
+- Titans 24 Blast
+- Toss
+- Trick Play
+- Turner Option In
+- Twin Combos
+- Under Seams
+- Vines Option
+- WR Around
+- WR Drag
+- WR Post
+- WR Reverse
+- WR Smash
+- Ward Option
+- Weak Flood
+- Wheel
+- Wiggins Option
+- Williams Option
+- Witten Option Out
+
+## I-Form Strong Twin TE  (0 plays)
+
+## I-Form Tight Twins  (14 plays)
+- Becht Option
+- Crumpler Option
+- Drive Under
+- HB Counter
+- HB Dive
+- HB Draw
+- HB Lead Toss
+- HB Misdirection
+- HB Screen
+- Heap Option
+- PA Split
+- PA TE Corner
+- TE Post
+- Z Exchange
+
+## I-Form Twin TE  (63 plays)
+- Anelli Option
+- Boot
+- Boss Sweep
+- Brady Option
+- Conwell Option
+- Counter
+- Curls
+- Dive
+- Draw
+- Dual TE Flat
+- FB Dive
+- FB Dive Strong
+- FB Fake HB Toss
+- FB Lead
+- FL Drag
+- FL Middle
+- Fauria Option
+- Frieser Option
+- Gonzalez Option
+- Graham Option
+- HB Blast
+- HB Blunt Dive
+- HB Counter
+- HB Counter Str
+- HB Dive
+- HB Draw
+- HB Lead
+- HB Lead Dive
+- HB Lead Toss
+- HB Off Tackle
+- HB Pass
+- HB Plunge
+- HB Screen
+- HB Slam
+- HB Sprint
+- HB Stretch
+- HB Sweep
+- Miller Option
+- Off Tackle
+- Option
+- PA Boot
+- PA Deep In
+- PA FB Flat
+- PA FL Clown
+- PA Rollout
+- PA Split
+- PA TE Attack
+- PA Waggle
+- Parker Option
+- Power
+- Power Read
+- Quick Hit
+- Short Slants
+- Stretch
+- Strong Close
+- TE Corner
+- TE Drag
+- TE In
+- TE Post
+- TE Slant
+- WR Drag
+- WR Post
+- Ward Option
+
+## I-Form Twin WR  (95 plays)
+- Baker Option
+- Blast
+- Boss Sweep
+- Brady Option
+- Bruener Option
+- Bryant Option
+- Bubble Screen
+- Counter
+- Curl Flats
+- Curl N Post
+- Curls
+- Davis Option
+- Dive
+- Draw
+- Dual TE Flat
+- FB Dive
+- FB Dive Strong
+- FB Flare
+- FB Screen
+- FB Under
+- FL Hook
+- FL Middle
+- Flea Flicker
+- Gates Option
+- Gomez Option
+- Gonzalez Option
+- HB Blast
+- HB Blunt Dive
+- HB Counter
+- HB Dive
+- HB Draw
+- HB Lead Dive
+- HB Lead Toss
+- HB Misdirection
+- HB Off Tackle
+- HB Pass
+- HB Plunge
+- HB Screen
+- HB Slam
+- HB Slash
+- HB Sprint
+- HB Stretch
+- HB Sweep
+- HB Toss
+- Hard Slants
+- Hook Ins
+- Hook Outs
+- Johnson Option
+- Jones Option
+- Kelly Option
+- Kennison Option
+- Max Protect
+- Mid Attack
+- Miller Option
+- Muhammad Option
+- Off Tackle
+- Out N Ups
+- Owens Option
+- PA Boot
+- PA Boot Corner
+- PA Cross
+- PA Cross In
+- PA Deep In
+- PA FB Up
+- PA FL Clown
+- PA Misdirection
+- PA QB Boot
+- PA Rollout
+- PA Split
+- PA TE Attack
+- PA TE Leak
+- PA TE Out
+- PA Waggle
+- Parker Option
+- Play Action
+- Power
+- Short Slants
+- Slant Posts
+- Slants
+- Slot Curl
+- Slot Seam
+- Speed Option
+- Stevens Option
+- Strong Close
+- Strong Stretch
+- TE Flat
+- TE Post
+- TE Z Out
+- Turner Option
+- WR Corner
+- WR Drag
+- Ward Option
+- Weak Flood
+- Winslow Option
+- Witten Option
+
+## Jumbo T Big  (9 plays)
+- FB Weak
+- HB 24 Dive
+- HB Counter Pass
+- HB Gap Counter
+- HB Screen
+- HB Slam
+- HB Weak Sweep
+- PA Flats
+- Power Sweep
+
+## Near 3WR  (9 plays)
+- HB Counter
+- HB Dive
+- HB Off Tackle
+- HB Stretch
+- Option
+- PA Boot
+- PA Middle
+- Quick Hit
+- Reverse
+
+## Near Close  (12 plays)
+- Curl Flat
+- FB Dive Strong
+- FB Fake HB Toss
+- HB Counter
+- HB Inside
+- HB Screen
+- HB Toss
+- McCready Option
+- PA Counter Boot
+- PA Strong Flow
+- Post Drag
+- Spacing
+
+## Near Jumbo  (0 plays)
+
+## Near Normal  (12 plays)
+- FB Lead
+- HB Counter
+- HB Dive
+- HB Off Tackle
+- HB Stretch
+- Option
+- PA Boot
+- PA Middle
+- Power Read
+- Quick Hit
+- Reverse
+- Toss
+
+## Near Pro  (12 plays)
+- Collins Option
+- FB Dive Strong
+- FB Fake HB Toss
+- Flanker Hook
+- HB Counter
+- HB Inside
+- HB Screen
+- McCready Option
+- PA Counter Boot
+- PA Strong Flow
+- Slants
+- Texas
+
+## Singleback 4WR  (65 plays)
+- Battle Option
+- Clayton Option
+- Comebacks
+- Counter Weak
+- Cross Up
+- Curl Flats
+- Deep Attack
+- FL Corner
+- FL Drag
+- Flare Pass
+- Flats
+- Galloway Option
+- Glenn Option
+- HB Counter
+- HB Cutback
+- HB Dive
+- HB Draw
+- HB Pitch
+- HB Power
+- HB Screen
+- HB Slam
+- HB Slash
+- HB Sprint
+- HB Stretch
+- HB Sweep
+- HB Toss
+- HB Wheel
+- Hitch Corners
+- Isolation
+- James Option
+- Johnson Option
+- Jones Option
+- Lewis Option
+- Martin Option
+- Martinez Option
+- McCareins Option
+- McGahee Option
+- Off Tackle
+- Out N Ups
+- PA All Go
+- PA Boot
+- PA Cross
+- PA Drop In
+- PA FL Stretch
+- PA Waggle
+- Parker Option
+- Posts
+- Slant Overload
+- Slants
+- Slot Clearout
+- Slot Cross
+- Slot Options
+- Slot Out
+- Slot Zig Out
+- Slots Attack
+- Smash Posts
+- Smith Option
+- Stallworth Option
+- WR Break Out
+- WR Comeback
+- WR Post Flags
+- WR Screen
+- WR Short Posts
+- WR Streaks
+- Zig-Zags
+
+## Singleback 4WR Falcon  (0 plays)
+
+## Singleback 4WR Flex  (45 plays)
+- Alexander Option
+- Brown Option
+- Bubble
+- Burleson Option
+- Collins Option
+- Croom Option
+- Curl Flats
+- Delta Sit
+- FL Z Clear
+- Ferguson Option
+- Green Option
+- HB Blast
+- HB Counter
+- HB Cutback
+- HB Dash
+- HB Dive
+- HB Draw
+- HB Pitch
+- HB Screen
+- HB Stretch
+- Hail Mary
+- Hitch
+- Hitch Corners
+- Johnson Option
+- Levels
+- PA Boot
+- PA Dig
+- PA Drop In
+- PA Slot Crosses
+- PA Slot Wheels
+- Packers Smash
+- Payton Option
+- Quick Slant
+- Reggie Option
+- Reverse Option
+- Seam
+- Slants
+- Slot Cross
+- Slot Shallow
+- Smash Posts
+- Spacing Switch
+- Stick
+- TE Shallow
+- TE Slot Out
+- Williams Option
+
+## Singleback 4WR Spread  (48 plays)
+- 949 Yara
+- Bruce Option
+- Chapman Option
+- Comebacks
+- Dillon Option
+- Double Smash
+- Givens Option
+- HB Counter
+- HB Cutback
+- HB Dive
+- HB Draw
+- HB Option
+- HB Pitch
+- HB Screen
+- HB Slash
+- HB Sprint
+- HB Stretch
+- HB Sweep
+- HB Wheel
+- Hitch Corners
+- Jackson Counter
+- Jones Counter
+- Lloyd Option
+- Mid Press
+- Murray Option
+- PA Comebacks
+- PA Draw Pass
+- PA HB Out
+- PA HB Streak
+- PA Slot Crosses
+- PA Slot Wheels
+- Quick Slants
+- Rams Mid Press
+- Slant Flats
+- Slot Clearouts
+- Slot Cross
+- Slot Options
+- Slot Zig Outs
+- Slots Attack
+- Smash Posts
+- Strike Post
+- Taylor Option
+- Vines Option
+- WR Deep Curls
+- WR Deep In
+- WR Deep Outs
+- WR Short Posts
+- Wilford Option
+
+## Singleback 4WR Stack  (20 plays)
+- Comebacks
+- Counter Weak
+- Flats
+- HB Counter
+- HB Dive
+- HB Draw
+- HB Power
+- HB Screen
+- Mid Attack
+- PA All Go
+- PA Boot
+- PA Cross
+- PA Drop In
+- PA Z Comeback
+- Slants
+- Slot Cross
+- WR Corners
+- WR Out
+- WR Screen
+- Wayne Option
+
+## Singleback Base Flex  (20 plays)
+- Bruce Option
+- Counter Weak
+- Criss Cross
+- FL Out Stop
+- Flanker Curl
+- Flanker Drive
+- Flanker Post
+- Flood
+- Greenside Drag
+- HB Dive
+- HB Draw
+- HB Pitch
+- HB Slant 18
+- Holt Option
+- PA Boot Lt
+- PA Post Corner
+- Quick Pitch
+- Smash Slot Post
+- Strong Stretch
+- WR In
+
+## Singleback Big  (138 plays)
+- 25 Cutback
+- Ace Curls
+- Ace Play Action
+- Ace TE Drag
+- Ace WR Long
+- Ace WR Reverse
+- Ace WR Stretch
+- Alexander Option
+- Anelli Option In
+- Antwaan Option
+- Ataveus Option
+- Baker Option
+- Becht Option
+- Bennett Option
+- Boss Sweep
+- Brady Option
+- Branch Option
+- Bruce Option
+- Bruener Option
+- Bryant Option
+- Chambers Option
+- Chris Option
+- Clearout SE Opt
+- Coles Option
+- Counter H Wk
+- Counter Weak
+- Curl Flats
+- Deep Corners
+- Destroy
+- Double Drag
+- Double Hitch
+- Dual Drag
+- Dual TE Flak
+- Dual TE Flat
+- FL Corner
+- FL Drag
+- FL Hook
+- FL Middle
+- FL Option
+- FL Stretch
+- Fauria Option
+- Flanker Drive
+- Flanker Post
+- Flea Flicker
+- Galloway Option
+- Giant Cross Ups
+- Giants 25 Counter
+- Gomez Option
+- Gonzalez Option
+- Graham Option
+- HB Belly Strong
+- HB Blast
+- HB Blunt Dive
+- HB Counter
+- HB Counter Trap
+- HB Cutback
+- HB Delay
+- HB Dive
+- HB Draw
+- HB Off Tackle
+- HB Pass
+- HB Pitch
+- HB Plunge
+- HB Power
+- HB Screen
+- HB Slam
+- HB Slant 18
+- HB Smash
+- HB Sprint
+- HB Stretch
+- HB Sweep
+- HB Toss Strong
+- HB Wheel
+- Hail Mary
+- Hitch Corners
+- Holt Option
+- Horn Option
+- Jackson Option
+- Johnson Option
+- Jones Option
+- Kennison Option
+- Kinney Option
+- Lloyd Option
+- Martin Option
+- Medium Ins
+- Middle Hook
+- Middle Screen
+- Miller Option
+- Moss Option
+- Off Tackle
+- Outs
+- Outside Curls
+- Overload Strg
+- PA All Go
+- PA Boot
+- PA Boot Lt
+- PA Boot Roll
+- PA Comebacks
+- PA Dbl Curls
+- PA Deep In
+- PA Deep Post
+- PA FL Clown
+- PA HB Curl
+- PA Rollout
+- PA Slot Crosses
+- PA TE Attack
+- PA Waggle
+- Parker Option
+- Play Action
+- Post Flags
+- Quick Pitch
+- Rader Option
+- Rams 25 Cutback
+- Reggie Option
+- SE Post
+- Sam Option
+- Shallow Cross
+- Shockey Option
+- Slants
+- Smith Option
+- Split Belly
+- Streaks
+- Swing Slant
+- TE Corner
+- TE Cross
+- TE Drag
+- TE Screen
+- TE Seam Option
+- TE Special
+- TE Under
+- Turner Option
+- Vines Option
+- WR Corners
+- WR Drag
+- Ward Option
+- Weak Flow
+- Whip Unders
+- Williams Option
+
+## Singleback Big 3TE  (27 plays)
+- Anelli Option
+- Brady Option
+- Breeden Option
+- Bruener Option
+- Driver Option
+- Franks Option
+- Frieser Option
+- Graham Option
+- HB Counter
+- HB Counter Wk
+- HB Dive
+- HB Draw
+- HB Plunge
+- HB Power
+- HB Smash
+- HB Sprint
+- HB Toss Strong
+- James Option
+- Johnson Option
+- Kinney Option
+- PA Boot
+- PA FL Stretch
+- PA TE Cross
+- Rader Option
+- TE Corners
+- TE Shake
+- Weak Toss
+
+## Singleback Big Jumbo Wing  (0 plays)
+
+## Singleback Big TE Flip  (9 plays)
+- Double Drags
+- HB Counter
+- HB Cutback
+- HB Plunge
+- HB Toss Strong
+- Moulds Deep Post
+- PA Rollout
+- PA TE Flood
+- Slants Slot Flat
+
+## Singleback Big Twin WR  (46 plays)
+- Anelli Option
+- Battle Option
+- Bennett Option
+- Caldwell Option
+- Clark Option
+- Counter Weak
+- Cross Up
+- Double Hitch
+- Gonzalez Option
+- Graham Option
+- H Counter Strg
+- HB Belly Strong
+- HB Counter
+- HB Delay
+- HB Dive
+- HB Draw
+- HB Pitch
+- HB Power
+- HB Power Slam
+- HB Screen
+- HB Screen Right
+- HB Slant 18
+- HB Stretch
+- Hagan Option
+- Jones Option
+- Kennison Option
+- McCareins Option
+- Off Tackle Wk
+- Owens Option
+- PA Boot
+- PA Boot Corner
+- PA FL Stretch
+- PA Rollout
+- PA Slot Out
+- Posts
+- QB Rollout
+- Slot Drag
+- Split Belly
+- Strong Stretch
+- TE Stick
+- Turner Option
+- WR Deep Hook
+- WR Screen
+- Wayne Option
+- Whittaker Option
+- Witten Option
+
+## Singleback Big Wing  (34 plays)
+- Bennett Option
+- Coles Option
+- Collins Option
+- Deep Cross
+- Drag Cross Ups
+- Dual TE Flat
+- FB Fake HB Toss
+- Ferguson Option
+- HB Blunt Dive
+- HB Counter
+- HB Cutback
+- HB Dive
+- HB Draw
+- HB Pitch
+- HB Power
+- HB Slam
+- HB Slant 18
+- HB Stretch
+- HB Swing
+- HB Wheel
+- Housemandz Option
+- Johnson Option
+- McCareins Option
+- Morris Option
+- PA Boot Comeback
+- PA Boot Lt
+- PA FL Clown
+- PA Quick Hit
+- PA Rollout
+- PA TE Corner
+- TE Corner
+- TE Cross
+- TE Option In
+- WR Corners
+
+## Singleback Bunch Swap  (12 plays)
+- Bunch Fade
+- Corner Flat
+- Delta Sit
+- Drive
+- End Around
+- HB Counter
+- HB Dive
+- PA Receiver Slide
+- Read Middle
+- Slants Slot Flat
+- Spacing
+- Spacing Switch
+
+## Singleback Bunch TE  (3 plays)
+- Galloway Option
+- HB Dive
+- PA Waggle
+
+## Singleback Deuce  (30 plays)
+- Ace TE Drag
+- Ace WR Reverse
+- Clark Option
+- Double Drag
+- FL Drag Clearout
+- Flea Flicker
+- HB Blunt Dive
+- HB Counter
+- HB Counter Trap
+- HB Dive
+- HB Off Tackle
+- HB Pass
+- HB Pitch
+- HB Power
+- HB Screen
+- HB Slant 18
+- HB Smash
+- HB Sprint
+- Harrison Option
+- Marvin Option
+- PA 218 Marvin
+- PA All Go
+- PA Comebacks
+- PA Dbl Posts
+- PA FL Clown
+- PA FL Cross
+- PA Trap Y Dig
+- PA Z Comeback
+- Rhodes Option
+- Split Belly
+
+## Singleback Deuce Wing  (0 plays)
+
+## Singleback Dice  (33 plays)
+- Ace TE Drag
+- Clark Option
+- Counter Weak
+- Cross Up
+- Dominic Draw
+- Dominic Lead
+- Dominic Option
+- Dominic Slash
+- FL Z Clearout
+- HB Blunt Dive
+- HB Counter
+- HB Cutback
+- HB Dive
+- HB Off Tackle
+- HB Power
+- HB Screen
+- HB Screen Draw
+- HB Sprint
+- Harrison Option
+- Jailbreak Screen
+- Mesh
+- Mesh Weak
+- Middle Hook
+- PA Boot
+- PA Bootleg Cross
+- PA Dbl Cross
+- PA Dbl Posts
+- PA HB Look
+- PA Mesh
+- PA WR Bubble
+- PA Z Comeback
+- PA Zig Out
+- Split Veer
+
+## Singleback Empty 4WR  (34 plays)
+- Bryant Option
+- Bubble
+- Bunch
+- Corner Strikes
+- Cross Corner
+- Curl Flats
+- Deep Cross
+- Dual Drags
+- FL Deep Curl
+- Galloway Option
+- HB Cutback
+- HB Dive
+- HB Draw
+- HB Pitch
+- HB Screen
+- HB Wheel
+- Outside Corners
+- Outside Posts
+- PA HB Out
+- PA Slot Crosses
+- Quick Screen
+- Seam Wheel
+- Slot Corners
+- Slot Post
+- Slot Zig Outs
+- Slots Attack
+- Smash
+- Strike Post
+- TE Angle Post
+- TE Post
+- TE Wheel
+- WR Clearouts
+- WR Ins
+- WR Post Corner
+
+## Singleback Empty 5WR  (40 plays)
+- All Curls
+- Branch Option
+- Bryant Option
+- Cash Option
+- Comebacks
+- Cross Ups
+- Curl - Drag
+- Curl Flats
+- Curl-Drag
+- Double Slant
+- FL Curl
+- FL Drag
+- FL Fly
+- FL Screen
+- Givens Option
+- HB Counter
+- HB Dive
+- HB Stretch
+- Hail Mary
+- Jurevcious Option
+- Muhammad Option
+- Owens Option
+- PA Boot
+- PA Middle
+- Patriot Screen
+- Quick Hit
+- Robinson Option
+- SE Fly
+- Slot Angle Post
+- Slot Curls
+- Slot Flats
+- Smash Fork
+- Smith Option
+- Stagger Posts
+- TE Seam
+- Tight Screen
+- WR Drag
+- WR Screen
+- X-Clown
+- Zig Outs
+
+## Singleback Empty Bunch  (18 plays)
+- Clayton Option
+- Collins Option
+- Croom Option
+- Curl Flats
+- Double Drags
+- FL Shake
+- Galloway Option
+- HB Cutback
+- HB Stretch
+- McCready Option
+- Motion Drive
+- Slants
+- Slants Slot Flat
+- Slot Cross
+- Slot Shallow
+- Smash Posts
+- WR Post
+- Williams Option
+
+## Singleback Empty Trey  (22 plays)
+- All Curls
+- Brees Choice
+- Curl Flats
+- Double Slot Cross
+- Double Under
+- Gore Option
+- HB Draw
+- Hi Lo Read
+- Middle Hook
+- PA FL Stretch
+- Posts
+- Quick Slants
+- Slant Overload
+- Slot Cross Ins
+- Streaks
+- TE Middle
+- TE Stick
+- Twin Combos
+- Under Seams
+- WR Screen
+- WR Smash
+- Whip Unders
+
+## Singleback Flip Trips  (41 plays)
+- Angle
+- Brown Option
+- Bubble Slant
+- Clearout SE Opt
+- Corner Flat
+- Curl Flat
+- Delta Sit
+- Drive
+- FL Screen
+- Go Curl
+- Gonzalez Option
+- HB Counter
+- HB Counter Trap
+- HB Dive
+- HB Draw
+- HB Lead Dive
+- HB Slam
+- HB Slash
+- HB Sprint
+- HB Stretch
+- HB Toss Crack
+- LaDainian Draw
+- PA Deep Out
+- PA Dig In
+- PA Rollout
+- PA TE Corner
+- PA Waggle
+- Parker Option
+- Quick Hit
+- Quick Seam
+- Rollout
+- Slant Attack
+- Slants Slot Flat
+- Smith Option
+- Spacing
+- Spacing Switch
+- Strongside Flood
+- TE Dig
+- TE Seam
+- Verticals
+- White Option
+
+## Singleback Normal  (91 plays)
+- 27 Counter
+- Backside Drag
+- Baker Option
+- Battle Option
+- Becht Option Out
+- Brown Option
+- Bruce Option
+- Bryant Option
+- Bucs Counter Weak
+- Burleson Option
+- Cash Option
+- Chambers Option
+- Chris Option
+- Cross Up
+- Deep Attack
+- Devery Option
+- Double Drag
+- Double Hitch
+- Double Outs
+- Double Slants
+- Dual Drag
+- FL Corner
+- FL Post In
+- FL Reverse
+- FL Z Clearout
+- Flanker Shake
+- Galloway Option
+- Gomez Option In
+- HB Counter
+- HB Counter Trap
+- HB Cutback
+- HB Delay
+- HB Dive
+- HB Draw
+- HB Pitch
+- HB Plunge
+- HB Power
+- HB Screen
+- HB Slam
+- HB Slash
+- HB Smash
+- HB Sprint
+- HB Stretch
+- HB Sweep
+- Hitch Corner
+- Hitch N Go
+- Holt Option
+- Jackson Option
+- Jailbreak Screen
+- Johnson Option
+- Jones Option
+- Martin Option
+- McCareins Option
+- Medium Ins
+- Mid Strike
+- Middle Hook
+- OK Slants In
+- Off Tackle
+- PA Dbl Curls
+- PA Deep In
+- PA HB Curl
+- PA HB Look
+- PA Quick Hit
+- PA Rollout
+- Payton Option
+- Pinkston Option
+- Post Corner
+- Post Corners
+- QB Draw
+- Rams 27 Counter
+- SE Quick Hit
+- Safety Bait
+- Slant Corner
+- Slants
+- Slot Cross
+- Slot In Drag
+- Slot Mountain
+- Smith Option In
+- Swing Screen
+- TE Corner
+- TE Cross
+- TE Drag
+- TE Middle
+- TE Post
+- Toss Sweep
+- Vines Option
+- WR Corners
+- WR Reverse Pass
+- WR Slants
+- Westbrook Option
+- Williams Option
+
+## Singleback Normal Slot  (99 plays)
+- Bennett Option
+- Blizzard Option
+- Boss Sweep
+- Brady Option In
+- Bruce Option
+- Chapman Option
+- Counter Weak
+- Cross Up
+- Curl Flats
+- Deep Corners
+- Deion Option
+- Driver Option
+- Dual Drag
+- Dual TE Flat
+- FL Middle
+- FL Z Clearout
+- Flats
+- Frieser Opt
+- Galloway Option
+- Giants 25 Counter
+- Givens Option
+- Gonzalez Option
+- Graham Option In
+- HB Blunt Dive
+- HB Counter
+- HB Counter Trap
+- HB Cutback
+- HB Dive
+- HB Draw
+- HB Off Tackle
+- HB Pass
+- HB Plunge
+- HB Power
+- HB Screen
+- HB Slam
+- HB Slant 18
+- HB Slash
+- HB Sprint
+- HB Stretch
+- HB Sweep
+- HB Toss Strong
+- Hagan Option
+- James Option
+- Johnson Option
+- Jones Option
+- Kevin Option
+- Kinney Option
+- Matt Option
+- McCardell Option
+- McCready Option
+- Michael Option
+- Mike Option
+- Miller Option
+- Murray Option
+- Owens Option
+- PA Boot
+- PA Boot Lt
+- PA Bootleg Cross
+- PA Comeback
+- PA Cross
+- PA Dbl Curls
+- PA Deep In
+- PA FL Clown
+- PA Flow
+- PA HB Look
+- PA Rollout
+- PA TE Attack
+- Parker Option
+- Plaxico Option
+- QB Rollout
+- Quick Hits
+- Rader Option
+- Romby Option
+- Sam Option
+- Slant Hit
+- Slant Strong
+- Slants
+- Slot Cross
+- Slot In Drag
+- Slot Out
+- Slot Swing
+- Smith Option
+- Split Belly
+- Strong Stretch
+- TE Corner
+- TE Drag
+- TE Shallow
+- TE Stick
+- Taylor Option
+- Titans 24 Blast
+- Titans Slash
+- Turner Option In
+- Vines Option
+- WR Deep Hook
+- WR Deep Outs
+- WR Drag
+- Ward Option
+- Whip Unders
+- Witten Option
+
+## Singleback Normal TE Flip  (12 plays)
+- Counter H Wk
+- Deep Comebacks
+- Deep Ins
+- HB Draw
+- HB Lead
+- Off Tackle
+- PA Boot Rt
+- Post Check
+- Randle El Option
+- SE Curl
+- SE In HB Out
+- WR Under
+
+## Singleback Offset Strong  (0 plays)
+
+## Singleback Panther Trips  (0 plays)
+
+## Singleback Slot String  (0 plays)
+
+## Singleback Slot Strong  (125 plays)
+- Ace TE Drag
+- All Slants
+- Anelli Option
+- Battle Option
+- Becht Option
+- Blizzard Option
+- Boldin Option
+- Boss Sweep
+- Brown Option
+- Burleson Option
+- Clayton Option
+- Collins Option
+- Conwell Option
+- Corners
+- Counter Weak
+- Cross Up
+- Deep Attack
+- Double Hook
+- Drive
+- Dual TE Flat
+- Edgerrin Option
+- FL Clearout
+- FL Drag
+- FL Middle
+- Ferguson Option
+- Franks Option
+- Fred Option
+- Giants 22 Counter
+- Giants Smash
+- Glenn Option
+- Gonzalez Option
+- HB Belly Strong
+- HB Belly Weak
+- HB Blunt Dive
+- HB Counter
+- HB Counter Trap
+- HB Cutback
+- HB Dive
+- HB Draw
+- HB Off Tackle
+- HB Pass
+- HB Pitch
+- HB Plunge
+- HB Power
+- HB Screen
+- HB Slam
+- HB Slant 18
+- HB Smash
+- HB Sprint
+- HB Stretch
+- HB Sweep
+- HB Toss Strong
+- Hagan Option
+- Inside Hook
+- Joe Option
+- Johnson Option
+- Jones Option
+- Julius Option
+- Kinney Option
+- Larry Option
+- Martinez Option
+- McCareins Option
+- Middle Hook
+- Miller Option
+- PA All Go
+- PA Boot
+- PA Boot Over
+- PA Boot Right
+- PA Boot Rt
+- PA Bootleg Cross
+- PA Cross
+- PA Cross Up
+- PA Deep In
+- PA FL Clown
+- PA FL Stretch
+- PA HB Curl
+- PA Rollout
+- PA TE Attack
+- PA Trap 505
+- PA Trap X-Clown
+- PA Waggle
+- PA Z Comeback
+- Parker Option
+- Pinkston Option
+- Play Action
+- Posse Slants
+- Post Corner
+- Post Corners
+- QB Rollout
+- QB Sprintout
+- Quick Looks
+- SE Cross
+- SE Quick Hit
+- Safety Bait
+- Safety Press
+- Sail
+- Shockey Option
+- Slants
+- Slot Cross
+- Slot Drag
+- Slot Hitch
+- Slot Hook
+- Slot Shallow
+- Slot Zig Out
+- Smith Option
+- Spacing
+- Split Belly
+- Stevens Option
+- Strongside Flood
+- TE Corner
+- TE Flat Slant
+- TE Shake
+- TE Stick
+- Toss Sweep
+- Twin Outs
+- WR Corners
+- WR Deep Hook
+- WR Drag
+- WR Post
+- WR Reverse
+- WR Screen
+- Ward Option
+- Wayne Option
+- Whittaker Option
+- Wilford Option
+
+## Singleback Stack Doubles WK  (9 plays)
+- Corner Flat
+- Deep Cross
+- HB Draw
+- HB Off Tackle
+- HB Sweep
+- Moss Option
+- SE Curl Flat
+- Skins Corner Strike
+- Slot Curl Flat
+
+## Singleback Strong TE Flip  (0 plays)
+
+## Singleback Tight  (15 plays)
+- Clayton Option
+- Galloway Option
+- HB Delay
+- HB Draw
+- HB Slip Left
+- HB Sprint
+- HB Toss
+- Off Tackle
+- PA Slot Drag
+- Porter Option
+- Post Curls
+- Safety Bait
+- Slot Out
+- Strike Post
+- WR Middle
+
+## Singleback Tight Doubles  (15 plays)
+- Curl Drag
+- HB Cutback
+- HB Dive
+- HB Draw
+- HB Pitch
+- HB Screen
+- HB Stretch
+- Horn Option
+- Inside Hook
+- Jackson Option
+- PA Rollout
+- Quick Fade
+- Shallow Cross
+- Slot Corner
+- Stallworth Option
+
+## Singleback Tight Flex  (17 plays)
+- Baker Option
+- Bennett Option
+- HB Counter
+- HB Counter Wk
+- HB Dive
+- HB Draw
+- HB Lead Dive
+- HB Screen
+- HB Slam
+- HB Slant 18
+- Kinney Option
+- McCareins Option
+- Off Tackle
+- PA Waggle
+- Quick Fade
+- Shallow Cross
+- Slot Corner
+
+## Singleback Tight Slots  (16 plays)
+- Bryant Option
+- Drag Cross Ups
+- HB Cutback
+- HB Dive
+- HB Draw
+- HB Pitch
+- HB Wheel
+- Hitch Corners
+- Johnson Option
+- Lions Corners
+- PA Rollout
+- PA Slot Drag
+- Shallow Cross
+- WR Corners
+- Weak Flow
+- Williams Option
+
+## Singleback Trey Open  (33 plays)
+- All Slam
+- Crayton Option
+- Drive
+- Engram Option
+- FL Screen
+- Gates Option
+- HB Counter
+- HB Cutback
+- HB Dash
+- HB Dive
+- HB Draw
+- HB Pitch
+- HB Screen
+- HB Slam
+- HB Slash
+- HB Stretch
+- HB Wheel
+- Hitch Corners
+- Inside Shake
+- Kinney Option
+- PA Boot Rt
+- PA Dig In
+- PA Draw Pass
+- PA Slot Crosses
+- PA Streak
+- Reggie Option
+- SE Cross
+- Slots Attack
+- Smith Option
+- Strike Post
+- TE Slot
+- TE Stick
+- Witten Option
+
+## Singleback Trips Bunch  (102 plays)
+- 22 Draw
+- Ahmaad Draw
+- Bennett Option
+- Boldin Option
+- Booker Deep Post
+- Boss Sweep
+- Breeden Option
+- Brown Option
+- Bunch Fade
+- Bunch Reverse
+- Cash Option
+- Clayton Option
+- Clear SE Option
+- Clearout FL In
+- Clearout SE Oppt
+- Clearout SE Opt
+- Clinton Draw
+- Counter Wk
+- Curl Flat
+- Curl Flats
+- Curls Attack
+- Curtis Attack
+- Deep Attack
+- Deep Curl
+- Delta Sit
+- Destrou
+- Double Drags
+- Drive
+- Driver Option
+- Dual TE Flat
+- End Around
+- FL Middle
+- FL Out Stop
+- FL Screen
+- Fk Rev HB Pass
+- Flood Right
+- Galloway Option
+- Greenside Drag
+- HB Blunt Dive
+- HB Clearout
+- HB Counter
+- HB Counter Trap
+- HB Cutback
+- HB Dive
+- HB Draw
+- HB Off Tackle
+- HB Out
+- HB Pass
+- HB Pitch
+- HB Plunge
+- HB Screen
+- HB Slam
+- HB Slash
+- HB Sprint
+- HB Stretch
+- HB Sweep
+- Hitch Corners
+- James Option
+- Johnson Option
+- Jordan Draw
+- Martin Option
+- Mason Option
+- McCareins Option
+- McCready Option
+- Miller Option
+- Owens Option
+- PA Boot
+- PA Boot Over
+- PA Ctr 335
+- PA Deep In
+- PA Draw Pass
+- PA FL Clown
+- PA Middle
+- PA Pin Deep
+- PA Rollout
+- PA Switch Corner
+- PA TE Attack
+- PA Waggle
+- PA Z Zig Out
+- Parker Option
+- Pinkston Option
+- Quick Pitch
+- Rams 22 Draw
+- Read Middle
+- Ruvell Deep Post
+- Slants Slot Flat
+- Slot Cross
+- Smash Slot Post
+- Spacing
+- Spacing Switch
+- TE Angle
+- TE Flat
+- TE Slant
+- Vines Option
+- WR Drag
+- WR Post
+- WR Post Corner
+- WR Smash
+- Ward Option
+- Whittaker Option
+- Williams Option
+- Z Cross In
+
+## Singleback Trips TE  (14 plays)
+- Deep Attack
+- HB Counter Strg
+- HB Dive
+- HB Draw
+- HB Screen
+- HB Toss
+- HB Wheel
+- Hall Option
+- Kennison Option
+- PA HB Flat
+- PA Pin Deep
+- Slot Read
+- TE Corner
+- TE Shake Out
+
+## Singleback Trips WR  (21 plays)
+- Comebacks
+- Cross Up
+- Double Slant
+- HB Draw
+- HB Screen
+- HB Slam
+- HB Sprint
+- HB Swing
+- HB Trap
+- Henry Option
+- PA FL Stretch
+- PA Streak
+- Parrish Option
+- QB Rollout
+- Randle El Option
+- Sideline Drag
+- Slot Corner
+- WR Deep In
+- WR Hook Out
+- WR Post Corner
+- Williamson Option
+
+## Singleback Twin TE  (63 plays)
+- Ace TE Drag
+- Boss Sweep
+- Breeden Option
+- Brown Option
+- Corners
+- Dual TE Flat
+- FL In
+- FL Middle
+- Gonzalez Option
+- Graham Option
+- HB Belly Weak
+- HB Blast
+- HB Blunt Dive
+- HB Counter
+- HB Counter Wk
+- HB Cutback
+- HB Dive
+- HB Draw
+- HB Off Tackle
+- HB Pass
+- HB Plunge
+- HB Power
+- HB Screen
+- HB Slant 18
+- HB Smash
+- HB Sprint
+- HB Stretch
+- HB Sweep
+- Holt Option
+- Horn Option
+- Housemandz Option
+- Kennison Option
+- McMichael Option
+- Miller Option
+- PA Boot
+- PA Boot Lt
+- PA Cross Up
+- PA Deep In
+- PA Drop Ins
+- PA FL Clown
+- PA FL Stretch
+- PA Middle
+- PA Rollout
+- PA TE Attack
+- PA TE Flood
+- Parker Option
+- Quick In
+- Quick Slant
+- Rader Option
+- Smith Option
+- TE Slot In
+- TE Slot Out
+- TE Stick
+- TE Under
+- Toomer Option
+- Triple Outs
+- Turner Option
+- WR Corners
+- WR Drag
+- WR Screen
+- Ward Option
+- Williams Option
+- Witten Option
+
+## Singleback Twin TE WR  (62 plays)
+- Battle Option
+- Becht Option
+- Blizzard Option
+- Boss Sweep
+- Brady Option
+- Counter Weak
+- Delta Sit
+- Double Smash
+- Drive
+- Driver Option
+- Dual TE Flat
+- Eddie Option
+- FL Middle
+- Franks Option
+- Galloway Option
+- Gonzalez Option
+- Graham Option
+- HB Blunt Dive
+- HB Counter
+- HB Dive
+- HB Draw
+- HB Off Tackle
+- HB Pass
+- HB Pitch
+- HB Plunge
+- HB Screen
+- HB Sprint
+- HB Stretch
+- HB Sweep
+- HB Toss Strong
+- Hitch Corners
+- Kennison Option
+- McCready Option
+- Miller Option
+- PA Boot
+- PA Boot Left
+- PA Boot Lt
+- PA Comebacks
+- PA Deep In
+- PA FL Clown
+- PA FL Stretch
+- PA Flow
+- PA QB Boot
+- PA Rollout
+- PA TE Attack
+- Parker Option
+- Posts
+- QB Draw
+- Quick Pitch
+- Quick Post
+- Quick Slant
+- Slant Flats
+- Smash Slot Post
+- Spacing Switch
+- Stallworth Option
+- TE Shake
+- TE Stick
+- TE Streak
+- WR Drag
+- WR Screen
+- Ward Option
+- Weak Flood
+
+## Singleback  Big  (15 plays)
+- Ace TE Drag
+- Dual TE Flat
+- FL Middle
+- Flea Flicker
+- Frieser Option
+- HB Counter Trap
+- HB Dive
+- HB Draw
+- HB Pitch
+- HB Stretch
+- Jennings Option
+- PA FL Clown
+- PA Rollout
+- SE Post
+- TE Cross
+
+## Split Backs 3WR  (72 plays)
+- 2 Jet FL Drive
+- Blizzard Option
+- Booth Option
+- Bryant Option
+- Cash Option
+- Collins Option
+- Counter Weak
+- Crayton Option
+- Curl Flats
+- Curls
+- Deep Slants
+- Elliott Option
+- FB Belly
+- FB Blast
+- FB Dive
+- Flats
+- Galloway Option
+- HB Blast
+- HB Counter
+- HB Dive
+- HB Draw
+- HB Middle
+- HB Option
+- HB Out
+- HB Pass
+- HB Power
+- HB Screen
+- HB Slant 18
+- HB Smash
+- Hall Option
+- Henry Option
+- Hilliard Option
+- James Option
+- Johnson Option
+- Jones Option
+- McCardell Option
+- McIntyre Option
+- Mid Split
+- Middle Split
+- Moss Option
+- Northcutt Option
+- Off Tackle
+- Owens Option
+- PA All Go
+- PA Boot
+- PA Boot Slide
+- PA Bootleg Cross
+- PA Cross
+- PA Z Comeback
+- Parrish Option
+- Quick Bursts
+- Quick Toss
+- RB Circles
+- RB Cross
+- Robinson Option
+- SS Pressure
+- Sail
+- Slants
+- Slot Cross
+- Slot Post
+- Slot Z Out
+- Smith Option
+- Strong Overload
+- Stutter Post
+- Taylor Option
+- Texas
+- WR Corners
+- WR Screen
+- WR Unders
+- Wayne Option
+- Williams Option
+- Williamson Option
+
+## Split Backs Big  (9 plays)
+- Drag In
+- FB Counter
+- FB Dive
+- HB Circle
+- HB Draw
+- HB Sweep
+- PA TE Corner
+- TE Slant Sit
+- WR Quick Out
+
+## Split Backs Flex Close  (9 plays)
+- Drive
+- HB Circle Rt
+- HB Draw
+- HB Screen
+- Mesh
+- Off Tackle
+- Quick Toss
+- Raider Switch
+- Slants
+
+## Split Backs Normal  (68 plays)
+- Battle Option
+- Brady Option
+- Bruce Option
+- Counter Left
+- Counter Right
+- Curl Flats
+- Dive Left
+- Dive Right
+- Draw
+- FB Belly
+- FB Dive
+- FB Flare
+- FB Lead
+- FL Corner
+- FL Zig Out
+- Flanker Hook
+- HB Blast
+- HB Counter
+- HB Dive
+- HB Draw
+- HB Inside
+- HB Off Tackle
+- HB Option
+- HB Pass
+- HB Power
+- HB Slash
+- HB Stretch
+- HB Sweep
+- Horn Option
+- Houshmandz Option
+- Jones Option
+- Karney Option
+- Kelly Option
+- Martin Option
+- Martinez Option
+- Mid Split
+- Off Tackle
+- Option
+- Overload Strg
+- PA Boot
+- PA Dig
+- PA Middle
+- PA Rollout
+- PA WR Shake
+- QB Rollout
+- QB Sprintout
+- Quick Hit
+- Quick Slants
+- Quick Toss
+- RB Circles
+- Rader Option
+- Reverse
+- Robinson Option
+- Screen Pass
+- Slants
+- Speed Option
+- Streaks
+- TE Cross
+- TE Post
+- TE Slant
+- TE Slant Sit
+- Texas
+- Toss
+- Turner Option
+- Vines Option
+- WR Drag
+- Wiggins Option
+- Wilford Option
+
+## Split Backs Pro  (16 plays)
+- Edwards Option
+- FB Belly
+- Flanker Hook
+- Glenn Option
+- HB Draw
+- HB Off Tackle
+- HB Screen
+- HB Sweep
+- Owens Option
+- PA Boot Slide
+- QB Rollout
+- Quick Toss
+- Slants
+- Texas
+- Witten Option
+- Witten Option Out
+
+## Split Backs Pro Spread  (0 plays)
+
+## Split Backs Twin WR  (3 plays)
+- HB Dive
+- McCready Option
+- Slot Corner
+
+## Strong I 3WR  (54 plays)
+- 26 Counter
+- All Curls
+- Bernard Option
+- Bryant Option
+- Chris Option
+- Counter Dive
+- Cross Ups
+- Curl Flats
+- Deep Cross
+- Double Flares
+- Evans Option
+- FB Dive
+- FB Trap
+- FK FB HB Cntr
+- FL Drag
+- Flats Attack
+- HB Counter
+- HB Crash
+- HB Dive
+- HB Draw
+- HB Off Tackle
+- HB Screen
+- HB Stretch
+- HB Sweep
+- HB Toss Weak
+- Holt Option
+- Jamin Option
+- Off Tackle
+- Option
+- PA Boot
+- PA Comebacks
+- PA FB Flat
+- PA Middle
+- PA Pound Draw Pass
+- PA Rollout
+- PA Slide
+- PA Weak Flat
+- Power Read
+- Quick Hit
+- Quick Toss
+- Reggie Option
+- Reverse
+- Screen Pass
+- Short Attack
+- Slot Streak
+- Smash Fork
+- Stagger Posts
+- Tight Screen
+- Toss
+- WR Middle Drag
+- WR Post
+- Williams Option
+- X-Clown
+- Zig Outs
+
+## Strong I Big Tight  (13 plays)
+- Alexander Option
+- Counter Lead
+- Counter Weak
+- Crumpler Option
+- FB Dive
+- HB Dive
+- HB Dive Weak
+- HB Stretch
+- HB Sweep
+- PA QB Boot
+- PA Rollout
+- TE Drags
+- TE Outs
+
+## Strong I H Pro  (27 plays)
+- Comet Pass
+- Counter Lead
+- Counter Weak
+- Evans Option
+- FB Trap
+- FK FB HB Cntr
+- FL Curl
+- Givens Option
+- HB Blast
+- HB Dive Weak
+- HB Draw
+- HB Screen
+- HB Stretch
+- HB Sweep
+- HB Swing
+- Kinney Option
+- Mangum Option
+- PA Counter Flat
+- PA FB Fake
+- PA FB Flat
+- PA Slide
+- Pollard Option
+- Royal Option
+- Short Slants
+- Stick
+- TE Corner
+- Williams Option
+
+## Strong I H TE Flip  (9 plays)
+- Counter Weak
+- HB Blast
+- HB Dive Weak
+- HB Off Tackle
+- Mangum Option
+- PA Slide
+- PA TE Corner
+- PA Waggle
+- Slant Hook
+
+## Strong I H Twin TE  (13 plays)
+- Counter Weak
+- Deep Comeback
+- Deep Cross
+- FB Trap
+- FK FB HB Cntr
+- HB Blast
+- HB Dive Weak
+- Off Tackle
+- PA FB Fake
+- PA Rollout
+- Quick Slants
+- Short Curls
+- Streaks
+
+## Strong I H Twins  (21 plays)
+- Bennett Option
+- Counter Weak
+- Double Flares
+- FB Trap
+- FK FB HB Cntr
+- Givens Flag
+- HB Dive
+- HB Lead
+- HB Power
+- HB Screen
+- HB Stretch
+- HB Sweep
+- Johnson Option
+- Off Tackle
+- PA Boot Slide
+- PA FB Fake
+- PA FB Flat
+- PA QB Boot
+- Quick Drag
+- WR Smash
+- WR Streak
+
+## Strong I Jumbo  (34 plays)
+- Boss Sweep
+- Counter Weak
+- Dual TE Flat
+- FB Dive
+- FL Middle
+- HB Blunt Dive
+- HB Counter
+- HB Dive
+- HB Draw
+- HB Lead Blast
+- HB Off Tackle
+- HB Pass
+- HB Plunge
+- HB Power
+- HB Screen
+- HB Sprint
+- HB Stretch
+- HB Sweep
+- HB Weak Dive
+- Miller Option
+- PA All Go
+- PA Boot
+- PA Cross
+- PA Deep In
+- PA FB Flat
+- PA FL Clown
+- PA QB Boot
+- PA Rollout
+- PA TE Attack
+- Parker Option
+- Slants
+- TE Drag
+- WR Drag
+- Ward Option
+
+## Strong I Normal  (131 plays)
+- 844 Hook
+- Alexander Option
+- Anderson Option
+- Anelli Option
+- Becht Option
+- Bell Check
+- Blast
+- Boot
+- Boss Sweep
+- Brady Option
+- Breeden Option
+- Bruener Option
+- Bryant Option
+- Chapman Option
+- Clark Option
+- Comet Pass
+- Counter
+- Counter Lead
+- Counter Trap
+- Counter Weak
+- Crockett Option
+- Davis Option
+- Dive
+- Double Flares
+- Draw
+- Dual TE Flat
+- Dunn Option
+- FB Dive
+- FB Flat
+- FB Lead
+- FB Middle
+- FB Spot
+- FB Trap
+- FK FB HB Cntr
+- FKK FB HB Cntr
+- FL Drag
+- FL Middle
+- Flood
+- Frieser Option
+- Galloway Option
+- Gomez Option
+- HB Blast
+- HB Blunt Dive
+- HB Check
+- HB Counter
+- HB Dive
+- HB Dive Weak
+- HB Draw
+- HB Lead
+- HB Off Tackle
+- HB Out
+- HB Pass
+- HB Plunge
+- HB Power
+- HB Screen
+- HB Slant 18
+- HB Sprint
+- HB Streak
+- HB Stretch
+- HB Sweep
+- HB Swing
+- HB Toss Weak
+- James Option
+- Jenkins Option
+- Johnson Option
+- Jones Option
+- Kelly Option
+- Lewis Option
+- Miller Option
+- Muhammad Option
+- Murray Option
+- Off Tackle
+- Option
+- Owens Option
+- PA All Go
+- PA Boot
+- PA Boot Lt
+- PA Bootleg Cross
+- PA Counter Flat
+- PA Cross
+- PA Deep In
+- PA Dig Post
+- PA FB Fake
+- PA FB Flat
+- PA FL Clown
+- PA FL Middle
+- PA Flood
+- PA HB Curl
+- PA Middle
+- PA Post Corner
+- PA Pound Draw Pass
+- PA QB Boot
+- PA Rollout
+- PA Slide
+- PA TE Attack
+- PA TE Corner
+- PA Waggle
+- PA Weak Flat
+- Parker Option
+- Payton Option
+- Power
+- Power Read
+- Quick Hit
+- Quick Toss
+- Rader Option
+- Reverse
+- Robinson Option
+- Royal Option
+- Sail
+- Slant Hook
+- Slants
+- Smith Option
+- Split Belly
+- Stick
+- Stretch
+- Strong Flood
+- TE Corner
+- TE Delay Drag
+- TE Seam
+- TE Slant In
+- Taylor Option
+- Toss
+- Turner Option
+- WR Drag
+- WR Hookout
+- WR Middle Cross
+- WR Streak
+- Ward Option
+- Wiggins Option
+- Williams Option
+- Winslow Option
+
+## Strong I Normal Flex  (18 plays)
+- Counter Dive
+- Curl Flats
+- Deep Cross
+- Double Flares
+- FB Dive
+- Fitzgerald Option
+- Gonzalez Option
+- HB Dive
+- HB Dive Weak
+- HB Draw
+- Inside Hook
+- Kennison Option
+- Off Tackle
+- PA Comeback
+- PA Post Corner
+- PA Rollout
+- Quick Toss
+- Whip Flat
+
+## Strong I Twin TE  (40 plays)
+- Anelli Option
+- Baker Option
+- Becht Option
+- Clark Option
+- Conwell Option
+- Counter
+- Counter Lead
+- Counter Weak
+- Crumpler Option
+- Deep Comeback
+- Dive
+- Draw
+- Dunn Option
+- FB Dive
+- Gates Option
+- HB Blast
+- HB Dive
+- HB Dive Weak
+- HB Draw
+- HB Stretch
+- Heap Option
+- Jones Option
+- Lewis Option
+- Off Tackle
+- PA Attack
+- PA Boot Lt
+- PA FB Fake
+- PA FB Flat
+- PA QB Boot
+- PA Rollout
+- Power
+- Stretch
+- TE Drag
+- Taylor Option
+- Toss Strong
+- Weak Toss
+- Wiggins Option
+- Williams Option
+- Winslow Option
+- Witten Option
+
+## Strong I Twin WR  (56 plays)
+- Blast
+- Boss Sweep
+- Clayton Option
+- Counter
+- Counter Weak
+- Curl Flats
+- Dive
+- Double Flares
+- Dual TE Flat
+- FB Dive
+- FL Middle
+- HB Blunt Dive
+- HB Counter
+- HB Crash
+- HB Dive
+- HB Draw
+- HB Lead
+- HB Lead Blast
+- HB Off Tackle
+- HB Pass
+- HB Plunge
+- HB Power
+- HB Screen
+- HB Sprint
+- HB Stretch
+- HB Sweep
+- Houshmandz Option
+- Martin Option
+- Miller Option
+- Off Tackle
+- PA Boot
+- PA Boot Lt
+- PA Boot Slide
+- PA Bronco Slide
+- PA Deep In
+- PA FB Flat
+- PA FL Clown
+- PA HB Curl
+- PA QB Boot
+- PA Rollout
+- PA Slot Drag
+- PA TE Attack
+- PA WR Cross
+- PA WR Drag
+- PA WRR Cross
+- Parker Option
+- Power
+- Quick Drag
+- Slot Seam
+- Stretch
+- Strong Stretch
+- WR Drag
+- WR Flag
+- WR Smash
+- WR Streak
+- Ward Option
+
+## Weak I 3WR  (11 plays)
+- Edwards Option
+- HB Lead
+- HB Wham
+- Hook Ins
+- Lead Toss Weak
+- PA Boot Slide
+- PA Post Corner
+- Quick Screen
+- Quick Slants
+- Short Flood
+- WR Streak
+
+## Weak I Big  (3 plays)
+- HB Lead
+- Play Action
+- WR Post
+
+## Weak I Close  (24 plays)
+- Anderson Option
+- Blizzard Option Out
+- Counter Trap
+- FB Power
+- Frieser Option Out
+- HB Gut
+- HB Inside
+- HB Lead
+- Kelly Option Out
+- PA Boot Lt
+- PA Boot Slide
+- PA FB Wheel
+- PA Slant
+- PA Waggle
+- Quick Pitch
+- SE Dig
+- Shallow Cross
+- Strong Stretch
+- TE Cross
+- TE Fade
+- TE Hook In
+- WR Deep Posts
+- WR Drag
+- Wiggins Option Out
+
+## Weak I H Pro  (25 plays)
+- Baker Option
+- Coles Option
+- Counter Weak
+- Cross Under
+- Double Counter
+- FB Power
+- Givens Option
+- HB Counter
+- HB Draw
+- HB Gut
+- HB Lead
+- HB Screen
+- HB Wham
+- Hook Ins
+- Kinney Option
+- PA Boot Slide
+- PA QB Boot
+- Quick Slants
+- SE Quick Out
+- Smith Option
+- Streaks
+- TE Fade
+- TE Hook In
+- TE Shallow
+- WR Drag
+
+## Weak I H Twin TE  (6 plays)
+- HB Gut
+- HB Wham
+- Moss Option
+- PA TE Under
+- PA Waggle
+- TE Drag
+
+## Weak I H Twins  (17 plays)
+- Baker Option
+- Counter Trap
+- Cross Under
+- FB Power
+- HB Counter
+- HB Dive
+- HB Gut
+- HB Lead
+- Hook Ins
+- Kinney Option
+- Mangum Option
+- PA Boot Lt
+- PA Waggle
+- Slot Deep Out
+- Slot Drag
+- TE Shallow
+- WR Cross
+
+## Weak I H Wing TE  (7 plays)
+- Counter Trap
+- HB Gut
+- HB Wham
+- Moss Option
+- PA TE Under
+- PA Waggle
+- TE Drag
+
+## Weak I Normal  (123 plays)
+- Alexander Option
+- Anelli Option
+- Becht Option
+- Belly
+- Blast
+- Blizzard Option
+- Boot
+- Boss Sweep
+- Brady Option
+- Breeden Option
+- Bruener Option
+- Bruener Option Out
+- Bryant Option
+- Cash Option
+- Chambers Option
+- Clark Option
+- Conwell Option
+- Counter
+- Counter Lead
+- Counter Trap
+- Counter Weak
+- Cross Under
+- Crumpler Option
+- Davis Option
+- Dive
+- Double Counter
+- Draw
+- Dual TE Flat
+- Evans Option
+- FB Dive
+- FB Go Weak
+- FB Lead
+- FB Power
+- FB Quick In
+- FB Screen
+- FL Middle
+- Fitzgerald Option
+- Flat Pressure
+- Galloway Option
+- Gates Option
+- Gomez Option
+- Gonzalez Option
+- HB Blunt Dive
+- HB Counter
+- HB Dive
+- HB Draw
+- HB Gut
+- HB Inside
+- HB Lead
+- HB Off Tackle
+- HB Pass
+- HB Plunge
+- HB Screen
+- HB Screen Weak
+- HB Screen Wk
+- HB Sprint
+- HB Stretch
+- HB Sweep
+- HB Wham
+- HB Zone Weak
+- Heap Option
+- Hook Ins
+- Horn Option
+- James Option
+- Javon Option
+- Jenkins Option
+- Jones Option
+- Jurevcious Option
+- Kennison Option
+- Mason Option
+- McCardell Option
+- Miller Option
+- Moss Option
+- Muhammad Option
+- Off Tackle
+- Off Tackle Wk
+- Option
+- Owens Option
+- PA Boot
+- PA Boot Lft
+- PA Boot Lt
+- PA Boot Slide
+- PA Counter Flat
+- PA Cross
+- PA Deep In
+- PA Deep Post
+- PA FL Clown
+- PA Middle
+- PA Rollout
+- PA Slant
+- PA Streak
+- PA TE Attack
+- PA TE Post
+- PA Waggle
+- Parker Option
+- Power
+- Power Read
+- Power Toss
+- Quick Hit
+- Quick Pitch
+- Quick Screen
+- Quick Slants
+- RB Outs
+- Rader Option
+- Reverse
+- SE Quick Out
+- Saints Pitch
+- Split Belly
+- Stretch
+- Strong Outside
+- Strong Stretch
+- TE Curl
+- TE Fade
+- TE Flat
+- TE Hook In
+- TE Post Corner
+- TE Shallow
+- Toss
+- Toss Weak
+- WR Drag
+- WR Streak
+- Ward Option
+- Witten Option
+
+## Weak I Tight Twins  (15 plays)
+- Divide
+- Drive
+- FB Screen
+- Flood TE Option
+- HB Counter
+- HB Dive
+- HB Draw
+- HB Wham
+- Mesh
+- Ok Slants
+- PA Boot Lt
+- PA Boot Slide
+- PA Slot Corner
+- PA Waggle
+- Slot Corner
+
+## Weak I Twin TE  (53 plays)
+- Anelli Option
+- Boot
+- Boss Sweep
+- Bryant Option
+- Cash Option
+- Counter
+- Counter Trap
+- Davis Option
+- Dive
+- Draw
+- Dual TE Flat
+- FB Dive
+- FB Power
+- FL Middle
+- Gomez Option
+- HB Blunt Dive
+- HB Counter
+- HB Dive
+- HB Draw
+- HB Gut
+- HB Off Tackle
+- HB Pass
+- HB Plunge
+- HB Sprint
+- HB Stretch
+- HB Sweep
+- HB Trap
+- HB Wham
+- James Option
+- Mason Option
+- Middle Hooks
+- Miller Option
+- Off Tackle
+- Option
+- PA Boot
+- PA Boot Lt
+- PA Deep In
+- PA FL Clown
+- PA Rollout
+- PA TE Attack
+- PA TE Under
+- PA Waggle
+- Parker Option
+- Power
+- Power Toss
+- Quick Screen
+- Rader Option
+- Rollout Strg
+- Stretch
+- TE Drag
+- Toss Weak
+- WR Drag
+- Ward Option
+
+## Weak I Twin WR  (82 plays)
+- Anelli Option
+- Boss Sweep
+- Brady Option
+- Chris Option
+- Clark Option
+- Conwell Option
+- Counter
+- Counter Trap
+- Cross Under
+- Crumpler Option
+- Davis Option
+- Dive
+- Double Under
+- Draw
+- Dual TE Flat
+- Eric Option
+- Ernest Option
+- FB Dive
+- FB Power
+- FB Screen
+- FL Middle
+- Gonzalez Option
+- HB Blunt Dive
+- HB Counter
+- HB Delay
+- HB Dive
+- HB Draw
+- HB Gut
+- HB Inside
+- HB Lead
+- HB Lead Dive
+- HB Off Tackle
+- HB Pass
+- HB Plunge
+- HB Screen
+- HB Sprint
+- HB Stretch
+- HB Sweep
+- HB Trap
+- HB Wham
+- Hook Ins
+- Jones Option
+- Miller Option
+- Off Tackle
+- PA Boot
+- PA Boot Lt
+- PA Boot Slide
+- PA Deep Attack
+- PA Deep In
+- PA Deep Threats
+- PA FB Wheel
+- PA FL Clown
+- PA QB Boot
+- PA Rollout
+- PA Slot Post
+- PA Smash Shake
+- PA TE Attack
+- PA TE Under
+- PA Waggle
+- Parker Option
+- Pollard Option
+- Power
+- Power Toss
+- Quick Screen
+- Roddy Option
+- Rollout Strg
+- Royal Option
+- Samie Option
+- Slants
+- Slot Drag
+- Stretch
+- Strong Screen
+- Strong Stretch
+- TE Cross
+- TE Flat
+- TE Slant Out
+- Terry Option
+- Toss Weak
+- WR Cross
+- WR Drag
+- Ward Option
+- Witten Option
+
+## Weak I Twins  (0 plays)
+
+## Weak I Twins WR  (23 plays)
+- Becht Option
+- Curl Flat
+- FB Power
+- HB Counter
+- HB Dive
+- HB Draw
+- HB Inside
+- HB Off Tackle
+- HB Stretch
+- Option
+- PA Boot
+- PA Boot Slide
+- PA Deep Threats
+- PA Middle
+- PA QB Boot
+- Power Read
+- Quick Hit
+- Reverse
+- Screen Pass
+- Slants
+- TE Seam
+- Toss Weak
+- WR Cross

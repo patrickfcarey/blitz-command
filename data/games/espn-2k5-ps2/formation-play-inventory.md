@@ -1,0 +1,4150 @@
+# espn-2k5-ps2 — formation/play inventory
+
+_154 formations · 3838 (formation, play) pairs · 977 distinct play names_
+
+
+## Ace  (120 plays)
+- 50 All Curl
+- 50 Comebacks
+- 50 Curls-n-Corners
+- 50 Double Corners
+- 50 Double Cross
+- 50 F Screen Weak
+- 50 H Screen Strong
+- 50 H Screen Weak
+- 50 H Swing Strong
+- 50 H Swing Weak
+- 50 H Wheel
+- 50 H Wheel Weak
+- 50 Hitches-n-Corners
+- 50 Posts-n-Comebacks
+- 50 Stops-n-Corners
+- 50 Stops-n-Hooks
+- 50 TE Rub Out
+- 50 TE Skinny
+- 50 TE/Y Outs
+- 50 Verts-n-Flats
+- 50 WR Streaks
+- 50 X Curl In
+- 50 X Out-n-Up
+- 50 X Post-Corner
+- 50 Y/T Cross
+- 50 Y/TE Cross
+- 50 Y/TE Crosses
+- 50 Z Hook-n-Go
+- 50 Z Quick Out-n-Up
+- 50 Z Slide
+- 50 Z Slide In
+- 50 Z Slip Screen
+- 50 Z Stop
+- 50 Z Streak
+- 90 All Stop
+- 90 H Speed Out
+- 90 Quick Hitches
+- 90 Quick Slants
+- 90 Slants-n-Stops
+- 90 TE Speed Out
+- 90 X Hitch
+- 90 X Qk Hitch
+- 90 X Speed Under
+- 90 X/Y Speed Cross
+- 90 X/Z Outs
+- 90 X/Z Quick Outs
+- 90 X/Z Slam
+- 90 X/Z Stops
+- 90 Z Quick Hitch
+- 90 Z Quick Out
+- 90 Z Quick Slant
+- 90 Z Speed Under
+- 90 Zdyrko Under
+- Aces Draw
+- Flea Flicker
+- Flip Weak
+- PA Double Rub
+- PA H Delay Streak
+- PA H Screen Strong
+- PA H Wheel
+- PA Slam-n-Go
+- PA TE Curl-n-Go
+- PA TE Seam
+- PA X Drag
+- PA X Post-Corner
+- PA X Short Drag
+- PA X Slant-n-Go
+- PA X Slide-n-Go
+- PA X Stop-n-Go
+- PA X/Z Fly
+- PA X/Z Go
+- PA X/Z Verticals
+- PA Z Cross
+- PA Z Curl-n-Go
+- PA Z Out-n-Up
+- PA Z Post
+- PA Z Stop-n-Go
+- PA-RO LT Y Out
+- PA-RO Stretch Cross
+- PA-RO Stretch Post
+- PA-RO X/Y Cross
+- PA-RO Z Rollaway
+- QB Naked
+- RO Strong Flow
+- RO X Post-Corner
+- RO Z Deep Slide
+- RO Z In-n-Out
+- RO Z Slide
+- Strong Bendback
+- Strong Center Power
+- Strong Counter
+- Strong Counter Trap
+- Strong Counter Trey
+- Strong Dive
+- Strong Draw
+- Strong G-Toss
+- Strong Lead Draw
+- Strong Outside Zone
+- Strong Power
+- Strong Steel Push
+- Strong Stretch
+- Strong Sweep
+- Strong T-Toss
+- Strong Toss
+- Strong Toss Counter
+- Strong Zone Cutback
+- Weak Counter
+- Weak Counter Trey
+- Weak Dive
+- Weak Draw
+- Weak Gut
+- Weak Lead Toss
+- Weak Outside Zone
+- Weak Power
+- Weak Stretch
+- Weak Toss
+- Weak Toss Counter
+- Weak Trap
+- Weak Zone Bounce
+- Weak Zone Cutback
+
+## Ace Bunch  (39 plays)
+- 50 All Go
+- 50 Corners
+- 50 H Screen Strong
+- 50 H Swing Strong
+- 50 In-n-Out
+- 50 Jumble
+- 50 Strong Flood
+- 50 Strong Spread
+- 90 A In
+- 90 A Speed Out
+- 90 Bubble Screen
+- 90 Quick Fades
+- 90 TE Speed Out
+- 90 TE Swing Strong
+- 90 Z Quick Out
+- Flea Flicker
+- H Shovel Strong
+- PA A/Z Cross
+- PA Cross
+- QB Sneak
+- RO Strong Flow
+- RO Z Deep Hook
+- Strong Dive
+- Strong Draw
+- Strong G-Toss
+- Strong Lead T-Toss
+- Strong Power
+- Strong Sweep
+- Strong Toss
+- Strong Trap
+- Weak Belly
+- Weak Counter
+- Weak Dive
+- Weak Draw
+- Weak Gut
+- Weak Toss
+- Weak Toss Counter
+- Weak Zone Bounce
+- Weak Zone Cutback
+
+## Ace Doubles  (28 plays)
+- 50 H Screen Strong
+- 50 H Swing Weak
+- 50 Y Corner
+- 50 Y Post
+- 90 TE Speed Out
+- 90 Y Speed Under
+- 90 Y/TE Hot
+- 90 Z Speed Under
+- Flea Flicker
+- H Shovel Strong
+- PA Counter Pass
+- PA H Delay Streak
+- PA-RO X Short Hook
+- RO Corners
+- RO TE Side
+- RO Z Rub Out
+- Slot Reverse Strong B
+- Strong Bendback
+- Strong Counter
+- Strong Power
+- Strong Stretch
+- Strong Toss
+- Toss Reverse Strong B
+- Weak Counter
+- Weak Dive
+- Weak Draw
+- Weak G-Toss
+- Weak Zone Bounce
+
+## Ace Flip  (12 plays)
+- 50 Double Cross
+- 50 X Speed Under
+- 90 X Qk Hitch
+- 90 Z Quick Slant
+- PA X/Z Corners
+- PA-RO X Comeback
+- Strong Counter Trey
+- Strong Counter Trey H
+- Strong Power
+- Weak Counter Trey
+- Weak G-Lead Toss
+- Weak Gut
+
+## Ace Flip Trips  (8 plays)
+- 50 X/Z In-n-Out
+- 50 Z Drag
+- 50 Z/TE Cross
+- 90 Y/TE Hot
+- Strong Toss
+- Strong Zone Cutback
+- Weak Dive
+- Weak Draw
+
+## Ace H Flex  (9 plays)
+- 50 H Hook
+- 50 Slide-n-Flow
+- 50 X/H Cross
+- 50 X/H Posts
+- 90 H Slant
+- 90 Z Arrow
+- QB Draw
+- QB Sneak
+- RO A Slide-n-Go
+
+## Ace Quads  (16 plays)
+- 50 Curls-n-Corners
+- 50 H Replace
+- 50 H Screen Strong
+- 50 TE Slant
+- 50 TE Slant-n-Go
+- 90 All Slant
+- 90 TE Hook
+- Flea Flicker
+- HB Pass
+- Strong Dive
+- Strong Draw
+- Strong Outside Zone
+- Strong Toss
+- Weak Dive
+- Weak Draw
+- Weak Toss
+
+## Ace Right  (17 plays)
+- 50 All Curl
+- 50 Double Corners
+- 50 Stops-n-Corners
+- 50 Verts-n-Flats
+- 90 All Stop
+- 90 X Qk Hitch
+- PA TE Seam
+- RO Z Post-Corner
+- Strong Dive
+- Strong Draw
+- Strong Outside Zone
+- Strong T-Toss
+- Strong Toss
+- Strong Zone Cutback
+- Weak Center Power
+- Weak Counter
+- Weak Sweep
+
+## Ace Trips  (103 plays)
+- 50 All Go
+- 50 Double Outs
+- 50 Flow-n-Go
+- 50 H Replace
+- 50 H Screen Strong
+- 50 H Screen Weak
+- 50 H Swing Strong
+- 50 H Swing Weak
+- 50 H Wheel
+- 50 TE Fade Out
+- 50 TE Rub Out
+- 50 TE Spin Out
+- 50 TE Wheel
+- 50 TE Zone In
+- 50 X Corner
+- 50 X Post
+- 50 X/Z Deep Cross
+- 50 X/Z In-n-Out
+- 50 Y/TE Seams
+- 50 Z Comeback
+- 50 Z Deep Slide
+- 50 Z Slip Screen
+- 50 Z Swing Under
+- 50 Z Under
+- 50 Z/TE Cross
+- 90 All Stops
+- 90 H Bubble Motion
+- 90 X Hot
+- 90 X Rub Out
+- 90 X/Z Slam
+- 90 X/Z Stops
+- 90 Y/T Hot
+- 90 Y/TE Hot
+- 90 Z Arrow
+- 90 Z Quick Hitch
+- 90 Z Quick Slant
+- 90 Z Speed Under
+- 90 Z/TE Quick Outs
+- Aces Draw
+- Evans 84
+- Flea Flicker
+- Flip Weak
+- H Lead Shovel
+- H Shovel Strong
+- H Swing Strong
+- HB Pass
+- Henry 20
+- PA Counter Pass
+- PA Counter Z In
+- PA Delay Seam
+- PA Double Post
+- PA Slam-n-Go
+- PA TE Seam
+- PA X Inside Drag
+- PA X Middle Drag
+- PA X Seam Post
+- PA X Short Drag
+- PA X/Z Out-n-Up
+- PA X/Z Verticals
+- PA Z Curl-n-Go
+- PA Z Post-Corner
+- PA Z Slant
+- PA Z Stop-n-Go
+- PA-RO Rub Out-n-Up
+- PA-RO Stretch Post
+- PA-RO Strong Flow
+- PA-RO X/Z Razor
+- QB Naked
+- RO Flow-n-Go
+- RO TE Clear Out
+- RO Z Deep Slide
+- RO Z Go
+- Slot Reverse Weak B
+- Strong Bendback
+- Strong Counter
+- Strong Counter Trey
+- Strong Dive
+- Strong Draw
+- Strong G-Toss
+- Strong Gut
+- Strong Lead Stretch
+- Strong Outside Zone
+- Strong Power
+- Strong Sweep
+- Strong T-Toss
+- Strong Toss
+- Strong Toss Counter
+- Strong Trap
+- Strong Zone Cutback
+- Toss Reverse Weak B
+- Weak Counter
+- Weak Counter Trey
+- Weak Dive
+- Weak Draw
+- Weak Outside Zone
+- Weak Power
+- Weak Stretch
+- Weak T-Toss
+- Weak Toss
+- Weak Toss Counter
+- Weak Trap
+- Weak Zone Bounce
+- Weak Zone Cutback
+
+## Ace Trips Open  (6 plays)
+- 50 X/Z In-n-Out
+- 50 Y/H Cross
+- 50 Z Deep Slide
+- 90 H Lob Fade
+- 90 H Speed Under
+- QB Draw
+
+## Ace Wing  (9 plays)
+- 50 Comebacks
+- 50 X Fade
+- 50 Z Post-Corner
+- 90 Quick Slants
+- 90 Z Quick Slant
+- Aces Draw
+- PA X/Z Comebacks
+- Strong Power
+- Weak Trap
+
+## Base Doubles  (9 plays)
+- 50 Over-n-Under
+- 90 All Hot
+- 90 F Speed Out
+- PA X Slam-n-Go
+- PA-RO F Flow
+- Strong Draw
+- Strong Outside Zone
+- Strong Trap
+- Weak Toss
+
+## Bunch  (88 plays)
+- 50 A Curl
+- 50 A Zone
+- 50 All Go
+- 50 All Streaks
+- 50 Double Drag
+- 50 Double Swing
+- 50 H Screen Strong
+- 50 H Swing Strong
+- 50 H Wheel
+- 50 In-n-Out
+- 50 Spread
+- 50 Strong Spread
+- 50 X Comeback
+- 50 X Out-n-Fade
+- 50 Y Curl
+- 50 Y Fade
+- 50 Y/Z In-n-Out
+- 50 Z Deep Comeback
+- 50 Z Drag Rub
+- 50 Z Fade
+- 50 Z Slant
+- 90 A In
+- 90 A Quick Out
+- 90 F Speed Out
+- 90 Quick Fades
+- 90 TE Speed Out
+- 90 X Hot
+- 90 X Lob Corner
+- 90 X Lob Fade
+- 90 X Speed Under
+- 90 Y Flat
+- 90 Y Hitch
+- 90 Y Quick Hitch
+- 90 Y Speed Under
+- 90 Z Quick Screen
+- 90 Z Speed Out
+- 90 Z Speed Under
+- Bunch Y-Crack Toss
+- Fake Toss Reverse
+- Flea Flicker
+- H Lead Shovel
+- H Shovel Strong
+- HB Pass
+- PA A/Z Cross
+- PA X Drag
+- PA X Slide-n-Go
+- PA X/Z Comebacks
+- PA Y/Z Razor
+- PA Z Go
+- PA Z Quick Slant
+- PA Z Side-n-Go
+- PA Z Slide-n-Go
+- PA-RO Star Flow
+- PA-RO Stretch Corner
+- PA-RO Strong Flood
+- PA-RO Strong Flow
+- Philly Option Screen
+- RO Eagle Flood
+- RO H Speed Out
+- RO X Post-Corner
+- RO Z Corner
+- RO Z Deep Comeback
+- RO Z Deep Hook
+- Strong Counter
+- Strong Dive
+- Strong Draw
+- Strong G-Toss
+- Strong Lead Stretch
+- Strong Lead T-Toss
+- Strong Outside Zone
+- Strong Power
+- Strong Slam
+- Strong Stretch
+- Strong T-Toss
+- Strong Toss
+- Strong Trap
+- Strong Zone Cutback
+- Weak Counter
+- Weak Dive
+- Weak Draw
+- Weak G-Toss
+- Weak Outside Zone
+- Weak Stretch
+- Weak Toss
+- Weak Trap
+- Weak Zone Bounce
+- Weak Zone Cutback
+- Y Slip Screen
+
+## Bunch Empty  (9 plays)
+- 50 H Seam
+- 50 X/H Stop-n-Go
+- 50 Z Fade
+- 90 H Speed Under
+- 90 X Lob Corner
+- 90 X Slant
+- 90 Z Speed Under
+- QB Draw
+- QB Sneak
+
+## Bunch H Flex  (6 plays)
+- 50 H Drag-n-Go
+- 50 Strong Spread
+- 90 H Speed Out
+- 90 Y/Z Stop
+- QB Draw
+- RO Strong Flood
+
+## Bunch Left  (9 plays)
+- 50 Bunch Spread
+- 50 H Swing Strong
+- 90 X/Z Stops
+- RO Bunch Flood
+- RO X/Z Flow
+- Strong Power
+- Weak Dive
+- Weak Draw
+- Weak Toss
+
+## Doubles  (120 plays)
+- 50 A Curl
+- 50 A Out
+- 50 Double Corners
+- 50 Double Cross
+- 50 Double Drag
+- 50 Double Drags
+- 50 Double Outs
+- 50 Fade
+- 50 Flat Curl
+- 50 H Replace
+- 50 H Screen Strong
+- 50 H Speed Out
+- 50 H Swing Strong
+- 50 H Wheel
+- 50 Opposite Flow
+- 50 Stops-n-Corners
+- 50 T Under
+- 50 T Zone Out
+- 50 TE Clear Corner
+- 50 TE Post-Corner
+- 50 TE Zone In
+- 50 X Deep Hook
+- 50 X Fade
+- 50 X/Y Cross
+- 50 X/Z Quick Cross
+- 50 Y Drag
+- 50 Y Fade
+- 50 Y Quick Drag
+- 50 Y Seam
+- 50 Y Speed Under
+- 50 Y Stop-n-Go
+- 50 Y Swing Weak
+- 50 Y Zip Out-n-Up
+- 50 Z Fade
+- 50 Z Stop
+- 50 Z Streak
+- 50 Z Under
+- 90 All Hot
+- 90 All Slam
+- 90 All Slant
+- 90 All Slants
+- 90 H Bubble Motion
+- 90 H Quick Dump
+- 90 Quick Slants
+- 90 Slants-n-Hitches
+- 90 Slants-n-Stops
+- 90 TE Speed Out
+- 90 X Hot
+- 90 Y Quick Hitch
+- 90 Y Quick Slant
+- 90 Y Screen Weak
+- 90 Y Speed Out
+- 90 Y Speed Under
+- 90 Y/TE Quick Curls
+- 90 Z Arrow
+- 90 Z Quick Slant
+- 90 Z Speed Under
+- 90 Zdyrko Under
+- Flea Flicker
+- Flip Strong
+- H Shovel Strong
+- HB Pass
+- PA Counter Z In
+- PA Double Cross
+- PA Reverse Corners
+- PA Reverse H Screen
+- PA Reverse X Post
+- PA Reverse X/Z Go
+- PA Reverse Y Corner
+- PA Reverse Y Fade
+- PA Stops-n-Posts
+- PA TE Fly
+- PA X Out-n-Up
+- PA X Post-Corner
+- PA X Slam-n-Go
+- PA X Slant
+- PA X Stop-n-Go
+- PA Z Out-n-Up
+- PA Z Slam-n-Go
+- PA Z Slant
+- PA Z/TE Cross
+- PA-RO LT Y Out
+- PA-RO Stretch Post
+- PA-RO Z Stop
+- Philly Option Screen
+- QB Draw
+- RO Strong Flow
+- RO Y Bubble Cut
+- RO Y Speed Out
+- RO Y Speed Under
+- RO Z Go
+- Slot Reverse Pass
+- Slot Reverse Strong
+- Strong C-Toss
+- Strong Center Power
+- Strong Counter
+- Strong Dive
+- Strong Draw
+- Strong Gut
+- Strong Outside Zone
+- Strong Power
+- Strong Stretch
+- Strong T-Toss
+- Strong Toss
+- Strong Trap
+- Strong Y Lead T-Toss
+- Strong Zone Cutback
+- Toss Reverse Strong
+- Weak Counter
+- Weak Counter Trey
+- Weak Dive
+- Weak Draw
+- Weak Outside Zone
+- Weak Stretch
+- Weak Sweep
+- Weak Toss
+- Weak Trap
+- Weak Y-Crack Toss
+- Weak Zone Bounce
+- Weak Zone Cutback
+
+## Doubles H Flex  (6 plays)
+- 50 Y Seam
+- 90 Y Screen Weak
+- 90 Z/H Hot
+- QB Pump Draw
+- RO Y Sprint Screen
+- RO Z/H Deep Cross
+
+## Doubles H Wide  (6 plays)
+- 50 T Short Corner
+- 50 X/Z Slants
+- 90 F Swing
+- QB Naked Bootleg
+- Strong FB Dive
+- Weak FB Draw
+
+## Doubles Left  (12 plays)
+- 50 Drags
+- 50 X/Y Verts
+- 50 Y Drag
+- 50 Z Under
+- 90 X/Y Slam
+- H Swing Weak
+- Middle H Screen
+- Strong Outside Zone
+- Strong Power
+- Weak Draw
+- Weak Toss
+- Weak Zone Cutback
+
+## Doubles Right  (18 plays)
+- 50 H Circle
+- 50 H Screen Strong
+- 50 Over-n-Under
+- 50 Y Fade
+- 50 Y Post-Corner
+- 90 H Speed Out
+- 90 Stops-n-Slants
+- 90 Y Speed Under
+- PA X Slant
+- PA Z Stop-n-Go
+- QB Sneak
+- Strong Dive
+- Strong Slam
+- Strong T-Toss
+- Strong Toss
+- Weak Outside Zone
+- Weak Sweep
+- Weak Toss Sweep
+
+## Empty Ace Trips  (6 plays)
+- 50 H Speed Under
+- 50 Hi/Low Drags
+- 50 Y/Z In-n-Out
+- 90 X Rub Out
+- 90 Y/TE Hot
+- QB Sneak
+
+## Empty Bunch  (6 plays)
+- 50 Double Slant
+- 50 Strong Spread
+- 50 Verts
+- 90 All Slam
+- QB Draw
+- RO Open Flow Away
+
+## Empty Open  (18 plays)
+- 50 A Cross
+- 50 Dolphin Flood
+- 50 Double Cross Under
+- 50 Verts
+- 50 Viking Flood
+- 50 Weak Flood
+- 50 X Post
+- 50 X Safety Pull
+- 50 X/A In-n-Out
+- 50 Y Under
+- 50 Z/B Cross
+- 90 A In
+- 90 All Slam
+- 90 All Slams
+- 90 All Stops
+- QB Center Follow
+- QB Draw
+- QB Sneak
+
+## Empty Spread  (6 plays)
+- 50 Double Outs
+- 50 Speed Under
+- 50 Spread Crosses
+- 50 X/Z Go's
+- QB Draw
+- QB Sneak
+
+## Empty Tight  (15 plays)
+- 50 A Under
+- 50 X Slide-n-Go
+- 50 X Speed Under
+- 50 Y Curl
+- 50 Z Deep Slide
+- 50 Z Fade
+- 50 Z Out-n-Up
+- 90 All Slam
+- 90 TE/Y Quick Cross
+- 90 Z Quick Hitch
+- 90 Z Quick Screen
+- 90 Z Slam
+- H Quick Under
+- QB Sneak
+- Z Slip Screen
+
+## F Split Doubles  (3 plays)
+- 50 X/Z Cross
+- 90 Z Quick Out
+- Weak Draw
+
+## F Split Quads  (12 plays)
+- 50 All Curl
+- 50 F/X Cross
+- 90 F Quick Screen
+- 90 Slants-n-Stops
+- 90 Z Quick Out
+- PA F Fade
+- PA-RO F Stop-n-Go
+- Strong Draw
+- Strong Sweep
+- Strong Zone Cutback
+- Weak Dive
+- Weak Toss
+
+## F Spread  (15 plays)
+- 50 F Drag-n-Go
+- 50 H Screen Strong
+- 50 TE Post-Corner
+- 50 TE Zip Screen
+- 50 X Opposite Flow
+- 90 F Speed Out
+- 90 X Quick Comeback
+- H Shovel Strong
+- PA F Flat
+- Strong Draw
+- Strong Toss
+- Strong Zone Cutback
+- Weak Counter
+- Weak Dive
+- Weak Draw
+
+## F Wing Jokers  (21 plays)
+- 50 F Drag
+- 50 WB Wheel
+- 50 Wings Zip
+- 90 F Speed Out
+- 90 X Speed Out
+- Fake Toss Reverse
+- PA Curls-n-Corners
+- PA-RO Stretch Corner
+- PA-RO Y Corner
+- QB Bootleg
+- QB Sneak
+- RO F Flow
+- Strong Iso
+- Strong Stretch
+- Strong Sweep
+- Strong Zone Cutback
+- Weak C-Toss
+- Weak Fan Iso
+- Weak Outside Zone
+- Weak Stretch
+- Weak Toss
+
+## Far Pro  (12 plays)
+- 50 Backs Out
+- 50 H Wheel
+- 50 Y Deep Cross
+- 50 Z Shallow Cross
+- 90 H Speed Out
+- 90 X Speed Under
+- FB Fake Strong Toss
+- RO X Out
+- Strong FB Counter
+- Strong Far CT
+- Strong Toss
+- Strong Toss Counter
+
+## Far Spread  (19 plays)
+- 50 Double Swing
+- 50 H Wheel
+- 50 Slot Outs
+- 50 Y Deep Cross
+- 50 Z Deep Drag
+- 50 Z Fade
+- 50 Z Shallow Cross
+- 90 X Quick Corner
+- 90 X Shallow Cross
+- 90 X/Z Slants
+- 90 Y Dig
+- FB Fake Strong Toss
+- H Lead Shovel
+- Strong Counter Trap
+- Strong Far CT
+- Strong Iso
+- Strong Toss
+- Strong Toss Counter
+- Weak FB Dive
+
+## Far Twins  (28 plays)
+- 50 Double Swing
+- 50 F Screen Weak
+- 50 F Wheel
+- 50 H Wheel
+- 50 Scissors
+- 50 TE Deep Cross
+- 50 X Post-Corner
+- 50 X Stop
+- 50 X/Z Cross
+- 50 Z Shallow Cross
+- 90 F Speed Out
+- 90 X Shallow Cross
+- 90 X Speed Under
+- 90 Z Speed Under
+- FB Fake Strong Toss
+- PA X/Z Cross
+- PA Z Post
+- RO H Dump
+- Strong Counter Trap
+- Strong FB Counter
+- Strong Far CT
+- Strong Sweep
+- Strong Toss
+- Strong Toss Counter
+- Weak Dive
+- Weak F Iso
+- Weak FB Dive
+- Weak FB Sweep
+
+## Flip Ace  (9 plays)
+- 50 Verts-n-Flats
+- 50 Z Slip Screen
+- 90 X/Z Stops
+- PA TE/Y Hooks
+- PA-RO Z Rollaway
+- Strong Toss
+- Strong Trap
+- Weak Draw
+- Weak Zone Bounce
+
+## Flip I Wing  (6 plays)
+- 50 X/TE Corners
+- 90 F/TE Speed Cross
+- Strong Flip Iso
+- Strong Flip Power
+- Strong Flip Toss
+- Weak F Sweep
+
+## Flip Pair Slot  (12 plays)
+- 50 Comebacks
+- 50 H Replace
+- 90 Quick Cross
+- Aces Draw
+- Flea Flicker
+- PA Slam-n-Go
+- RO X Post-Corner
+- Slot Reverse Strong B
+- Strong G-Toss
+- Strong Outside Zone
+- Toss Reverse Strong B
+- Weak G-Toss
+
+## Flip Tight Triple  (58 plays)
+- 50 Corners
+- 50 F/TE Cross
+- 50 H Screen Strong
+- 50 H Screen Weak
+- 50 H Swing
+- 50 H Swing Strong
+- 50 H Wheel
+- 50 Strong Flow
+- 50 TE Curl
+- 50 TE Screen Strong
+- 50 TE Wheel
+- 50 TE/Y Cross
+- 50 X Opposite Flow
+- 50 Y Drag
+- 50 Y Seam
+- 50 Y Skinny Post
+- 50 Y/Z Cross
+- 50 Z Deep Drag
+- 50 Z Drag Rub
+- 50 Z Under
+- 90 F Screen Out
+- 90 TE Hook
+- 90 TE Speed Out
+- 90 TE Swing Strong
+- 90 TE/Y Fan
+- 90 TE/Y Quick Cross
+- 90 X Qk Hitch
+- 90 X/Z Stops
+- 90 Y Quick Slant
+- Flip Strong
+- PA TE Seam
+- PA X Hitch-n-Go
+- PA X Out-n-Up
+- PA X Slide-n-Go
+- PA X/Z Out-n-Up
+- PA Z Post-Corner
+- PA Z Slide-n-Go
+- PA-RO Lion Flow
+- PA-RO Orange Flow
+- PA-RO Raven Flow
+- PA-RO Strong Flow
+- QB Bootleg Weak
+- RO F Dump
+- Strong Counter
+- Strong Draw
+- Strong Flip Trap
+- Strong Fold Toss
+- Strong H Punch
+- Strong Outside Zone
+- Strong Power
+- Strong T-Toss
+- Strong TE Trap
+- Strong Zone Cutback
+- Weak Dive
+- Weak Outside Zone
+- Weak Toss
+- Weak Zone Bounce
+- Weak Zone Cutback
+
+## Flip Triple  (19 plays)
+- 50 Double Outs
+- 50 H Screen Strong
+- 50 TE Seam
+- 50 X Arrow In
+- 50 X Opposite Flow
+- 90 H Dump
+- 90 Y Speed Rub Out
+- PA TE Seam
+- PA Y Stop-n-Go
+- RO Z Deep Slide
+- Strong Counter
+- Strong Draw
+- Strong TE Trap
+- Strong Toss
+- Strong Toss Sweep
+- Weak Dive
+- Weak Flip Counter
+- Weak Zone Bounce
+- Weak Zone Cutback
+
+## Flip Triple Open  (9 plays)
+- 50 Double Slant
+- 50 Outs-n-Go's
+- 50 Strong Flood
+- 50 Verts
+- 90 H Lob Fade
+- 90 H Quick Screen
+- QB Draw
+- QB Sneak
+- RO Open Flow Away
+
+## Gun Doubles Right  (0 plays)
+
+## Gun Empty Tight  (0 plays)
+
+## Gun Quads Left  (0 plays)
+
+## Gun Split Spread  (0 plays)
+
+## Gun Split Twins  (0 plays)
+
+## Gun Stack Open  (0 plays)
+
+## Gun Trips Left  (0 plays)
+
+## Gun: Ace Bunch  (9 plays)
+- 50 Corners
+- 50 Strong Flood
+- 50 Strong Spread
+- 50 Z Corner-Post
+- 90 TE Flat
+- Strong Sweep
+- Weak Dive
+- Weak Draw
+- Weak Trap
+
+## Gun: Ace Doubles  (17 plays)
+- 50 Double Drag
+- 50 H Screen Strong
+- 50 X Slant-n-Go
+- 50 X/Z Deep Cross
+- 50 X/Z Rub Cross
+- 50 Y Corner
+- 50 Y Post
+- 90 All Slant
+- 90 TE Speed Out
+- 90 Y Speed Under
+- PA H Screen Strong
+- RO TE Slide
+- Strong Dive
+- Strong Draw
+- Strong Toss
+- Strong Zone Cutback
+- Weak Sweep
+
+## Gun: Ace Right  (9 plays)
+- 50 H Swing Strong
+- 50 TE/Z Comebacks
+- 50 Viking Flood
+- 50 Z Slant-n-Go
+- 90 All Stops
+- 90 Z Quick Out
+- QB Draw
+- Strong Draw
+- Weak Counter
+
+## Gun: Ace Trips  (22 plays)
+- 50 H Circle
+- 50 H Swing Strong
+- 50 In-n-Out
+- 50 Stops-n-Corners
+- 50 TE Spin Out
+- 50 TE Wheel
+- 50 Z Under
+- 50 Z/TE Cross
+- 90 X Rub Out
+- 90 X/Z Stops
+- 90 Y/TE Hot
+- 90 Z Hook
+- 90 Z Quick Slant
+- PA Posts
+- PA TE Curl-n-Go
+- PA X Drag
+- QB Draw
+- QB Lead Draw
+- Strong Dive
+- Strong Draw
+- Strong Toss
+- Weak Sweep
+
+## Gun: Base Open  (6 plays)
+- 50 F Rub Out
+- 50 Flow Away
+- 50 H Slip Screen
+- 90 F Swing Strong
+- 90 H Lob Fade
+- QB Pump Draw
+
+## Gun: Bunch Left  (28 plays)
+- 50 H Replace
+- 50 H Screen Weak
+- 50 H Swing Weak
+- 50 Strong Flood
+- 50 Strong Spread
+- 50 X Opposite Flow
+- 50 X Post-Corner
+- 50 Y Drag
+- 50 Y Fade
+- 50 Z Deep Drag
+- 50 Z Deep Slide
+- 90 A In
+- 90 H Dump
+- 90 TE Flat
+- 90 X Hot
+- 90 X Lob Corner
+- 90 X Lob Fade
+- 90 Y Speed Under
+- H Shovel Strong
+- PA Z/TE Cross
+- QB Draw
+- QB Lead Draw
+- Strong Outside Zone
+- Strong Sweep
+- Weak Dive
+- Weak Draw
+- Weak Toss
+- Y Slip Screen
+
+## Gun: Diamonds  (6 plays)
+- 50 Diamonds Deep
+- 50 Hooks-n-Curls
+- 50 Jag Flood
+- 90 All Slams
+- 90 B Speed Screen
+- QB Draw
+
+## Gun: Doubles Right  (63 plays)
+- 50 A Curl In
+- 50 A/X Cross
+- 50 All Go
+- 50 Double Corners
+- 50 Double Cross
+- 50 Double Follow
+- 50 Double Outs
+- 50 H Screen Strong
+- 50 H Swing Strong
+- 50 H Swing Weak
+- 50 H Wheel
+- 50 Stops-n-Corners
+- 50 Stops-n-Hooks
+- 50 TE Post-Corner
+- 50 TE Rub Out
+- 50 TE Screen
+- 50 TE Spin Out
+- 50 X Fly
+- 50 X Out
+- 50 Y Drag
+- 50 Y Fade
+- 50 Y Pick Post
+- 50 Y Rollaway
+- 50 Y Seam
+- 50 Y Slam-n-Go
+- 50 Y Speed Under
+- 50 Y Stop-n-Go
+- 50 Y Stutter
+- 50 Y Swing Weak
+- 50 Y Zip Out-n-Up
+- 50 Z Deep Corner
+- 50 Z Deep Slide
+- 50 Z Post
+- 50 Z Rub In
+- 50 Z Stop
+- 50 Z Streak
+- 90 All Hot
+- 90 H Quick Dump
+- 90 H Speed Out
+- 90 Slants-n-Hitches
+- 90 X Hot
+- 90 X/Z Outs
+- 90 Y Quick Hitch
+- 90 Y Screen Weak
+- 90 Y/TE Quick Curls
+- 90 Z Arrow
+- 90 Z/TE Quick Outs
+- Direct Snap Tossback
+- H Direct Snap
+- PA Double Cross
+- PA Inside Seam
+- PA X Post-Corner
+- PA X Slide-n-Go
+- PA Z/TE Cross
+- QB Draw
+- QB Lead Draw
+- Strong Dive
+- Strong Draw
+- Strong Toss
+- Strong Zone Cutback
+- Weak Dive
+- Weak Outside Zone
+- Weak Sweep
+
+## Gun: Empty Open  (20 plays)
+- 50 A Cross
+- 50 Dolphin Flood
+- 50 Double Cross Under
+- 50 Verts
+- 50 Viking Flood
+- 50 Weak Flood
+- 50 X Seam
+- 50 X Speed Over
+- 50 X/A In-n-Out
+- 50 Z Deep Drag
+- 50 Z Deep Side
+- 50 Z Slide-n-Up
+- 50 Z/B Cross
+- 90 A In
+- 90 A Quick Out
+- 90 All Slam
+- 90 All Slams
+- 90 All Stops
+- QB Draw
+- QB Sneak
+
+## Gun: Empty Tight  (10 plays)
+- 50 Verts-n-Flats
+- 50 X Quick Out-n-Up
+- 50 X Speed Under
+- 50 Z Deep Slide
+- 90 TE/Y Quick Cross
+- 90 Z Quick Hitch
+- 90 Z Quick Screen
+- H Quick Under
+- QB Draw
+- RO X Under
+
+## Gun: H Flex  (9 plays)
+- 50 Double Cross
+- 50 H Hook
+- 50 Side-n-Flow
+- 50 X/H Cross
+- 50 X/H Posts
+- 50 Z Corner
+- 90 H Slant
+- 90 Z Arrow
+- QB Draw
+
+## Gun: H Slot  (9 plays)
+- 50 F Swing Strong
+- 50 Outs
+- 50 X/H Cross
+- 90 H Speed Under
+- PA H Slant-n-Go
+- QB Draw
+- Strong FB Draw
+- Strong FB Toss
+- Weak FB Sweep
+
+## Gun: Kings Spread  (6 plays)
+- 50 TE Swing
+- 50 Y/Z Verticals
+- 90 Y Speed Out
+- 90 Z Dig
+- PA X In-n-Up
+- QB Draw
+
+## Gun: Pair Slot Left  (9 plays)
+- 50 Slot Left Gin
+- 50 X Arrow-n-Go
+- 50 Y Seam
+- 50 Z Deep Slide
+- 90 X/Y Slam
+- Direct Snap Tossback
+- H Direct Snap
+- Strong Sweep
+- Weak Draw
+
+## Gun: Quads Left  (71 plays)
+- 50 A Curl In
+- 50 A Out-n-In
+- 50 A/X Cross
+- 50 All Go
+- 50 Comebacks
+- 50 Curls-n-Corners
+- 50 Deep Cross
+- 50 Double Corners
+- 50 Double Cross
+- 50 Flow-n-Go
+- 50 H Wheel
+- 50 Posts-n-Comebacks
+- 50 Red Flood
+- 50 Slot Outs
+- 50 Stops-n-Corners
+- 50 Strong Spread
+- 50 TE Curl In
+- 50 X Comeback
+- 50 X Curl In
+- 50 X Deep Hook
+- 50 X Fly
+- 50 X Hook
+- 50 X Out
+- 50 X/A Cross
+- 50 Y Curl In
+- 50 Y Post
+- 50 Y Quick Drag
+- 50 Y Speed Out
+- 50 Y/A Swing
+- 50 Z Comeback
+- 50 Z Corner-Post
+- 50 Z Deep Drag
+- 50 Z Deep Slide
+- 50 Z Drag
+- 50 Z Fade
+- 50 Z Slide
+- 90 A Quick Hitch
+- 90 All Slants
+- 90 Slants-n-Hitches
+- 90 Slants-n-Stops
+- 90 TE Quick Hitch
+- 90 X Hot
+- 90 X/Z Quick Outs
+- 90 Y/A Hot
+- 90 Z Arrow
+- 90 Z Quick Slant
+- 90 Zdyrko Under
+- H Direct Snap
+- H Shovel Strong
+- HB Pass
+- PA A Hook
+- PA Double Rub
+- PA H Delay Streak
+- PA Stops-n-Posts
+- PA X Post-Corner
+- PA X/Z Verts
+- PA Y Curl
+- PA Z Slam-n-Go
+- PA Z Slide-n-Go
+- QB Draw
+- QB Lead Draw
+- QB Sneak
+- Strong Counter
+- Strong Dive
+- Strong Sweep
+- Weak Dive
+- Weak Draw
+- Weak G-Toss
+- Weak Sweep
+- Weak Toss
+- Weak Trap
+
+## Gun: Split Pro  (22 plays)
+- 50 Double Swing
+- 50 H Screen Weak
+- 50 H Swing Weak
+- 50 H/F Wheels
+- 50 X Deep Hook
+- 50 X Hook
+- 50 Z Deep Drag
+- 90 All Hot
+- 90 Z Quick Hitch
+- H Direct Snap
+- H Lead Shovel
+- PA X Post
+- PA X Post/Z Go
+- QB Lead Draw
+- Strong Counter
+- Strong FB Draw
+- Strong FB Toss
+- Strong Sweep
+- Weak Draw
+- Weak FB Sweep
+- Weak G-Toss
+- Weak Lead Draw
+
+## Gun: Split Spread  (79 plays)
+- 50 All Go
+- 50 Backs Out
+- 50 Double Outs
+- 50 Double Swing
+- 50 H Deep Seam
+- 50 H Replace
+- 50 H Screen Weak
+- 50 H Swing Weak
+- 50 H Wheel
+- 50 H/F Replace
+- 50 H/F Wheels
+- 50 Hawk Flow
+- 50 Heavy Flow
+- 50 Purple Flow
+- 50 TE Out
+- 50 TE Post
+- 50 X Deep Drag
+- 50 X Post
+- 50 X Post-Corner
+- 50 X Speed Over
+- 50 Y Curl In
+- 50 Y Go Z In
+- 50 Z Corner
+- 50 Z Deep Comeback
+- 50 Z Deep Drag
+- 50 Z Deep In
+- 50 Z Fade Rollaway
+- 50 Z Fade Stop
+- 50 Z In-n-Out
+- 50 Z Lob Fade
+- 50 Z Out
+- 50 Z Post
+- 50 Z Rollaway
+- 50 Z Slide
+- 50 Z Slip Screen
+- 90 All Stop
+- 90 Double Out
+- 90 F Speed Out
+- 90 H Dump
+- 90 H Speed Out
+- 90 X Hot
+- 90 X Qk Hitch
+- 90 X Slant
+- 90 Y Speed Under
+- 90 Z Quick Out
+- 90 Zdyrko Under
+- H Direct Snap
+- H Lead Shovel
+- H Shovel Strong
+- HB Pass
+- PA Counter Pass
+- PA TE Seam
+- PA X Drag
+- PA X Drag-n-Go
+- PA X Short Drag
+- PA X Slide-n-Go
+- PA X Stop-n-Go
+- PA Y Slant-n-Go
+- QB Draw
+- QB F Lead Draw
+- QB Lead Draw
+- RO Slot Deep Cross
+- Strong FB Dive
+- Strong FB Draw
+- Strong FB Toss
+- Strong Lead Draw
+- Strong Split Sweep
+- Strong Sweep
+- Weak Dive
+- Weak Draw
+- Weak FB Sweep
+- Weak G-Toss
+- Weak Lead Draw
+- Weak Outside Zone
+- Weak Split Toss
+- Weak T-Toss
+- Weak Toss
+- Weak Trap
+- Weak Zone Cutback
+
+## Gun: Split Twins  (15 plays)
+- 50 All Go
+- 50 Double Swing
+- 50 H Screen Weak
+- 50 Purple Flow
+- 50 X Out-n-Up
+- 50 X Stop
+- 90 All Hot
+- H Direct Snap
+- H Lead Shovel
+- QB Lead Draw
+- Strong FB Draw
+- Strong FB Toss
+- Strong Sweep
+- Weak Draw
+- Weak Toss
+
+## Gun: Straight  (10 plays)
+- 50 A Cross
+- 50 A/Z Cross
+- 50 Straight X Go
+- 50 Strong Flood
+- 50 X Speed Under
+- 50 Y/Z Double Out
+- 50 Z Deep Slide
+- 90 TE Curl
+- 90 Z Quick Screen
+- QB Draw
+
+## Gun: Straight Open  (6 plays)
+- 50 X/A Posts
+- 50 X/Y Curls
+- 50 Y/Z Double Out
+- 90 All Slam
+- 90 Z Arrow
+- QB Draw
+
+## Gun: Straight Trips  (6 plays)
+- 50 TE Stop-n-Go
+- 50 Y Seam
+- 50 Y/TE Curl-n-Go
+- 50 Z Slide
+- 90 All Slam
+- 90 Z Arrow
+
+## Gun: Trey Left  (6 plays)
+- 50 All Go
+- 50 X Post-Corner
+- 90 H Speed Out
+- PA A Hook
+- Weak Dive
+- Weak Draw
+
+## Gun: Trey Right  (20 plays)
+- 50 H Screen Strong
+- 50 H Swing Strong
+- 50 H Wheel
+- 50 X Corner
+- 50 Y/Z In-n-Out
+- 50 Z Deep Slide
+- 50 Z Fade
+- 90 A Quick Out
+- 90 X/Y Slam
+- 90 Z Arrow
+- Direct Snap Tossback
+- H Direct Snap
+- PA Slam-n-Go
+- PA X Dump
+- PA Y Curl
+- QB Lead Draw
+- Strong Dive
+- Strong Draw
+- Strong Toss
+- Weak Sweep
+
+## Gun: Triple Left  (55 plays)
+- 50 All Go
+- 50 Corners
+- 50 H Circle
+- 50 H Screen Strong
+- 50 H Screen Weak
+- 50 H Swing Strong
+- 50 H Swing Weak
+- 50 Posts-n-Comebacks
+- 50 Strong Flood
+- 50 Strong Flow
+- 50 TE Out
+- 50 TE Rub Out
+- 50 TE/Y Cross
+- 50 Texan Flood
+- 50 X Arrow In
+- 50 X Arrow-n-Go
+- 50 X Curl
+- 50 X Curl In
+- 50 X Opposite Flow
+- 50 Y Corner
+- 50 Y Drag
+- 50 Y Rub Vertical
+- 50 Y Streak
+- 50 Y Wheel
+- 50 Y/Z Deep Cross
+- 50 Z Deep Slide
+- 50 Z Hook-n-Go
+- 50 Z In-n-Out
+- 50 Z Slide Pick
+- 90 H Dump
+- 90 H Quick Dump
+- 90 Slants-n-Stops
+- 90 TE Speed Out
+- 90 X Hot
+- 90 X Qk Hitch
+- 90 Y Speed Under
+- H Direct Snap
+- PA Delay Seam
+- PA TE Seam
+- PA X Out-n-Up
+- PA X Post-Corner
+- PA X Slide-n-Go
+- PA Y Slant
+- PA Y/Z Razor
+- QB Draw
+- QB Lead Draw
+- Strong Counter
+- Strong Sweep
+- Weak Dive
+- Weak Draw
+- Weak G-Toss
+- Weak Sweep
+- Weak Toss
+- Weak Trap
+- Weak Zone Cutback
+
+## Gun: Triple Right  (9 plays)
+- 50 H Screen Strong
+- 50 Strong Flood
+- 50 X Opposite Flow
+- 90 Y Speed Under
+- H Direct Snap
+- PA Slam-n-Go
+- PA Y Slant
+- Weak Draw
+- Weak Toss
+
+## Gun: Trips Left  (46 plays)
+- 50 A Out
+- 50 A/X Cross
+- 50 All Go
+- 50 All Streaks
+- 50 Comebacks
+- 50 Deep Cross
+- 50 H Circle
+- 50 H Replace
+- 50 H Screen Weak
+- 50 H Swing Weak
+- 50 H Wheel
+- 50 Over-n-Under
+- 50 Strong Flow
+- 50 X Curl In
+- 50 X Deep Drag
+- 50 X Deep Hook
+- 50 X Post-Corner
+- 50 X/A Deep Cross
+- 50 Y Drag
+- 50 Y Fade
+- 50 Y Fade Rub
+- 50 Y Speed Out
+- 50 Y Stop-n-Go
+- 50 Y/A Curl-n-Go
+- 50 Z Out
+- 50 Z Slide-n-Up
+- 90 A Quick Out
+- 90 A Under
+- 90 H Quick Dump
+- 90 Quick Slants
+- 90 X Qk Hitch
+- 90 X Speed Under
+- 90 Y Speed Out
+- Direct Snap Tossback
+- H Direct Snap
+- PA X Curl
+- PA X Post-Corner
+- PA X/A In-n-Out
+- PA Y Under
+- QB Draw
+- QB Lead Draw
+- Strong Sweep
+- Weak Dive
+- Weak Draw
+- Weak Toss
+- Weak Toss Dive
+
+## H Flex Pro  (12 plays)
+- 50 F Screen Weak
+- 50 Outs-n-Go's
+- 90 H Speed Out
+- 90 Z Speed Under
+- H Slot Reverse
+- H Toss Reverse
+- PA H Slant-n-Go
+- RO F Dump
+- RO Z Slide
+- Strong FB Draw
+- Strong FB Toss
+- Weak FB Dive
+
+## H Flex Spread  (9 plays)
+- 50 H Jet
+- 90 H Speed Under
+- H Slot Reverse
+- H Slot Reverse Pass
+- H Toss Reverse
+- PA H Stop-n-Go
+- QB F Lead Draw
+- RO Side-n-Flow
+- Strong FB Dive
+
+## I Jacks  (44 plays)
+- 50 H Lead Swing
+- 50 H Replace
+- 50 Jack Wheel
+- 50 X Wheel
+- 50 Y/T Corners
+- 50 Y/TE Corners
+- 90 All Hooks
+- 90 F Speed Out
+- 90 Jack Hot
+- 90 TE Dump
+- 90 TE Seam Stop
+- 90 TE Speed Out
+- Fake Toss Reverse I
+- H Lead Shovel
+- PA Counter Pass
+- PA TE Dump
+- PA X Delay Drag
+- PA Y Drag
+- PA Y/TE Seams
+- PA Z Out
+- PA Z Stop-n-Go
+- PA-RO Y Corner
+- PA-RO Z Throwback
+- QB Lead Draw
+- QB Sneak
+- RO Eagle Flood
+- RO Y Out
+- Strong Counter
+- Strong Counter Trap
+- Strong FB Dive
+- Strong Iso
+- Strong Outside Zone
+- Strong Power
+- Strong Toss
+- Strong Zone Cutback
+- Weak A-Iso
+- Weak Counter
+- Weak FB Dive
+- Weak Inside Power
+- Weak Iso
+- Weak Outside Zone
+- Weak Power
+- Weak Toss
+- Weak Zone Bounce
+
+## I Jacks Load  (9 plays)
+- 90 Tackle Eligible
+- FB Fake Weak Toss
+- Fake Toss Reverse I
+- PA H Wheel
+- PA Jack Swing
+- Strong Counter
+- Strong Iso
+- Weak A-Iso
+- Weak Counter
+
+## I Jokers  (65 plays)
+- 50 Comebacks
+- 50 Double Swing
+- 50 TE Clear Out
+- 50 TE Out
+- 50 X Under
+- 50 Y/T Deep Cross
+- 50 Y/TE Comebacks
+- 50 Y/TE Corners
+- 50 Y/TE Outs
+- 50 Y/TE Zones
+- 50 Z Under
+- 90 F Speed Out
+- 90 Hitches
+- 90 TE Slam
+- 90 TE Speed Out
+- 90 X Lob Corner
+- 90 X Lob Fade
+- 90 X Quick Corner
+- 90 X Slant
+- 90 X Speed Corner
+- 90 X Speed Under
+- 90 X Stop
+- 90 Y/TE Hot
+- 90 Y/TE Slams
+- 90 Y/Z Speed Cross
+- PA TE Dump
+- PA TE Rub Out
+- PA TE Zone In
+- PA X Comeback
+- PA X Drag
+- PA X Stop-n-Go
+- PA X Streak
+- PA Y/TE Seams
+- PA Z Hitch
+- PA Z Slant
+- PA Z Stop-n-Go
+- QB Sneak
+- RO H Flare
+- Strong Center Power
+- Strong Counter
+- Strong Counter Trap
+- Strong FB Dive
+- Strong Fan Iso
+- Strong Iso
+- Strong Lead Draw
+- Strong Outside Zone
+- Strong Power
+- Strong Power-O
+- Strong Speed Option
+- Strong Toss
+- Strong Zone Cutback
+- Weak Center Power
+- Weak Counter
+- Weak Counter Trap
+- Weak FB Dive
+- Weak Fan Iso
+- Weak Inside Power
+- Weak Iso
+- Weak Power
+- Weak Power-O
+- Weak Speed Option
+- Weak Stretch
+- Weak Toss
+- Weak Zone Bounce
+- Weak Zone Cutback
+
+## I Jokers Flip Pair  (12 plays)
+- 50 TE Arrow
+- 50 TE Swing Strong
+- 50 X Slant-n-Go
+- 90 F Speed Out
+- 90 TE Flat
+- Strong Fold T-Toss
+- Strong Iso
+- Strong Power-O
+- Strong Toss
+- Weak Counter Trap
+- Weak Iso
+- Weak Toss
+
+## I Jokers Pair  (39 plays)
+- 50 H Swing
+- 50 H Swing Strong
+- 50 H Swing Weak
+- 50 X Lob Fade
+- 50 Y Swing Strong
+- 50 Y Swing Weak
+- 90 T Speed Out
+- 90 TE Curl
+- 90 TE/Y Speed Cross
+- 90 X Lob Fade
+- 90 Y Speed Out
+- 90 Y/TE Hot
+- 90 Y/TE Speed Cross
+- 90 Y/TE Speed Outs
+- PA X Drag
+- PA X In-n-Out
+- PA X Out-n-Up
+- PA Y In-n-Out
+- PA Y/TE In-n-Out
+- PA-RO X Deep Hook
+- Strong Counter
+- Strong Counter Trap
+- Strong Fan Iso
+- Strong Iso
+- Strong Lead Draw
+- Strong Outside Zone
+- Strong Power
+- Strong Speed Option
+- Strong T-Toss
+- Strong Toss
+- Strong Y Trap
+- Strong Zone Cutback
+- Weak Counter Trap
+- Weak FB Dive
+- Weak Iso
+- Weak Outside Zone
+- Weak Stretch
+- Weak Toss
+- Weak Zone Bounce
+
+## I Load  (9 plays)
+- 50 F Wheel
+- 90 TE Speed Out
+- 90 Tackle Eligible
+- Fake Toss Reverse I
+- Strong Center Lead
+- Strong Power
+- Weak Iso
+- Weak Power
+- Weak Toss
+
+## I Pro  (110 plays)
+- 50 All Go
+- 50 Comebacks
+- 50 Deep Cross
+- 50 Double Post
+- 50 Double Swing
+- 50 F Screen Weak
+- 50 H Screen Strong
+- 50 H Screen Weak
+- 50 Inside
+- 50 Outs-n-Go's
+- 50 Streaks
+- 50 Strong Outs
+- 50 TE Corner
+- 50 TE Out
+- 50 TE Seam
+- 50 TE Skinny
+- 50 TE Zone In
+- 50 X Deep Drag
+- 50 X Drag Leak
+- 50 X Drag-n-Go
+- 50 X Out-n-Up
+- 50 X Post-Corner
+- 50 X Speed Over
+- 50 X/Z Verticals
+- 50 Y Go Z In
+- 50 Z Comeback
+- 50 Z Deep Comeback
+- 50 Z Deep Hook
+- 50 Z Quick Out-n-Up
+- 90 All Hot
+- 90 Arrows In
+- 90 Double Out
+- 90 F Speed Out
+- 90 TE Curl
+- 90 TE Seam Stop
+- 90 TE Speed Out
+- 90 X QK Hitch
+- 90 X Qk Hitch
+- 90 X Quick Corner
+- 90 X Slant
+- 90 Z Hot
+- 90 Z Quick Hitch
+- 90 Z Quick Out
+- 90 Z Speed Under
+- 90 Zdyrko Under
+- FB Fake Strong Toss
+- FB Fake Weak Toss
+- H Lead Shovel
+- HB Pass
+- PA All Go
+- PA Counter Pass
+- PA F Flare
+- PA Flood Weak
+- PA Outs
+- PA TE Dump
+- PA X Out-n-Up
+- PA X Slant-n-Go
+- PA X Slide-n-Go
+- PA X Stop-n-Go
+- PA X/Z Go
+- PA Z Out-n-Up
+- PA Z Seam
+- PA-RO 37 Y Out
+- PA-RO TE Out
+- PA-RO Texan Flow
+- PA-RO X Comeback
+- PA-RO Z Comeback
+- PA-RO Z Corner
+- PA-RO Z Curl
+- PA-RO Z Slide
+- PA-RO Z Stop-n-Go
+- Philly Option Screen
+- QB Dbl Lead Draw
+- RO F Dump
+- RO H Flare
+- RO X Comeback
+- Strong Bendback
+- Strong Center Power
+- Strong Counter
+- Strong Counter Trap
+- Strong FB Dive
+- Strong Fan Fold
+- Strong Fan Iso
+- Strong Iso
+- Strong Lead Draw
+- Strong Outside Zone
+- Strong Power
+- Strong Power-O
+- Strong Sweep
+- Strong T-Toss
+- Strong Toss
+- Strong Zone Cutback
+- Weak Belly
+- Weak Center Lead
+- Weak Counter
+- Weak Counter Trap
+- Weak Crossbuck
+- Weak Dive
+- Weak FB Dive
+- Weak FB Trap
+- Weak G-Lead Shovel
+- Weak Inside Power
+- Weak Iso
+- Weak Lead Draw
+- Weak Outside Zone
+- Weak Stretch
+- Weak Toss
+- Weak Toss Counter
+- Weak Zone Bounce
+- Weak Zone Cutback
+
+## I Pro Load  (9 plays)
+- 90 Arrows In
+- PA Load Curl
+- QB Naked Bootleg
+- RO Air Option
+- Strong Iso
+- Strong Outside Zone
+- Strong Student Body
+- Weak FB Dive
+- Weak Toss
+
+## I Spread  (74 plays)
+- 50 Comebacks
+- 50 Double Swing
+- 50 F Out
+- 50 H Screen Weak
+- 50 H Swing
+- 50 TE Out-n-In
+- 50 TE/Z Curls
+- 50 X Deep Drag
+- 50 X Out-n-Up
+- 50 X Post-Corner
+- 50 X Seam
+- 50 Y Corner
+- 50 Y Curl In
+- 50 Y Go Z In
+- 50 Y Hitch
+- 50 Y Out-n-In
+- 50 Y Seam
+- 50 Y/Z Comeback
+- 50 Y/Z Deep Cross
+- 50 Y/Z In-n-Out
+- 50 Z Deep Drag
+- 50 Z Deep Hook
+- 50 Z Deep Post
+- 50 Z Slip Screen
+- 50 Zdyrko Drag
+- 90 F Speed Out
+- 90 TE Speed Out
+- 90 X QK Hitch
+- 90 Y Dig
+- 90 Y Qk Slant
+- 90 Y Speed Out
+- 90 Y/Z Cross
+- 90 Z Quick Hitch
+- 90 Z Speed Under
+- 90 Zdyrko Under
+- H Lead Shovel
+- H Shovel Strong
+- HB Pass
+- PA All Go
+- PA TE Slam-n-Go
+- PA X Out-n-Up
+- PA X Slant-n-Go
+- PA X Slide-n-Go
+- PA X/Z Go
+- PA Y Curl
+- PA Y Slam-n-Go
+- PA Y Streak
+- PA Z Post-Corner
+- PA-RO Y Corner
+- PA-RO Z Curl
+- PA-RO Z Stop-n-Go
+- RO Z In-n-Out
+- RO Z Slide
+- Strong Counter
+- Strong Counter Gap
+- Strong Counter Trap
+- Strong FB Dive
+- Strong Iso
+- Strong Lead Draw
+- Strong Outside Zone
+- Strong Power
+- Strong Speed Option
+- Strong Toss
+- Strong Zone Cutback
+- Weak Counter
+- Weak Counter Gap
+- Weak Counter Trap
+- Weak FB Dive
+- Weak Iso
+- Weak Lead Draw
+- Weak Outside Zone
+- Weak Power
+- Weak Toss
+- Weak Zone Bounce
+
+## I Spread Doubles  (12 plays)
+- 50 Double Cross
+- 50 H Arrow
+- 50 Slants-n-Corners
+- 50 X Under
+- 90 F Speed Out
+- 90 H Slant
+- 90 H Speed Under
+- H Quick Under
+- H Slot Reverse
+- H Slot Reverse Pass
+- H Toss Reverse
+- Weak FB Dive
+
+## I Te Flex  (9 plays)
+- 50 TE Zone In
+- 50 X Seam
+- 90 TE Speed Out
+- PA X/Z Verts
+- PA-RO Z Stop-n-Go
+- Strong Lead Draw
+- Strong Toss
+- Strong Zone Cutback
+- Weak Toss
+
+## I Twins  (92 plays)
+- 50 Double Follow
+- 50 Double Swing
+- 50 H Screen Strong
+- 50 H Screen Weak
+- 50 H Swing Strong
+- 50 H Swing Weak
+- 50 Slot Left Gin
+- 50 T Corner
+- 50 TE Seam
+- 50 TE Zone In
+- 50 TE/Z Curls
+- 50 Weak Flood
+- 50 X Corner
+- 50 X Deep Drag
+- 50 X Post-Corner
+- 50 X/Z Cross
+- 50 X/Z Deep Cross
+- 50 X/Z Fan
+- 50 X/Z In-n-Out
+- 50 X/Z In/Out
+- 50 X/Z Split
+- 50 Z Comeback
+- 50 Z Corner-Post
+- 50 Z Drag
+- 50 Z Rub Out
+- 50 Z Under
+- 90 F Speed Out
+- 90 TE Out
+- 90 TE Slam
+- 90 TE Speed Out
+- 90 X Fade
+- 90 X Slant
+- 90 X/Z Slams
+- 90 X/Z Slants
+- 90 X/Z Speed Cross
+- 90 Y Dig
+- 90 Z Hot
+- 90 Z Speed Under
+- Flea Flicker
+- H Lead Shovel
+- H Shovel Strong
+- HB Pass
+- PA F Dump
+- PA F Flat
+- PA X Out-n-Up
+- PA X Slide
+- PA X Slide Out
+- PA X/Z Cross
+- PA X/Z Go
+- PA X/Z Verts
+- PA Y Slant-n-Go
+- PA Z Post-Corner
+- PA Z Slant-n-Go
+- PA-RO Stretch Cross
+- PA-RO X Out
+- PA-RO Z Delay Out
+- QB Bootleg
+- RO X Comeback
+- RO X/Z Comebacks
+- Slot Reverse I
+- Strong Center Power
+- Strong Chip
+- Strong Counter
+- Strong Counter Trap
+- Strong FB Dive
+- Strong Fan Iso
+- Strong Iso
+- Strong Lead Draw
+- Strong Outside Zone
+- Strong Power
+- Strong Power-O
+- Strong Speed Option
+- Strong Stretch
+- Strong Sweep
+- Strong T-Toss
+- Strong Toss
+- Strong Toss Counter
+- Strong Zone Cutback
+- Toss Reverse I
+- Weak Belly
+- Weak Center Power
+- Weak Counter Gap
+- Weak Counter Trap
+- Weak FB Dive
+- Weak G-Iso
+- Weak Iso
+- Weak Lead Draw
+- Weak Outside Zone
+- Weak Toss
+- Weak Trap
+- Weak Z Crack Iso
+- Weak Zone Bounce
+
+## I Wing  (30 plays)
+- 50 All Go
+- 50 H Swing
+- 50 TE Corner
+- 50 TE/Z Cross
+- 50 X Under
+- 50 Z Rub Under
+- 50 Z Under-n-Over
+- 90 F Speed Out
+- 90 H Lead Swing
+- 90 T Speed Out
+- 90 TE Speed Out
+- 90 X Speed Under
+- 90 Z/T Quick Cross
+- Fake Toss Reverse I
+- H Lead Shovel
+- PA Counter Pass
+- PA Load Curl
+- PA X Post-Corner
+- PA Z Post-Corner
+- PA Z Slam-n-Go
+- Strong Center Power
+- Strong Counter Trap
+- Strong FB Dive
+- Strong Power
+- Strong Toss
+- Weak Iso
+- Weak Lead Draw
+- Weak Outside Zone
+- Weak Toss
+- Weak WB Sweep
+
+## I Wing Jokers  (59 plays)
+- 50 Double Swing
+- 50 H Lead Swing
+- 50 Strong Outs
+- 50 WB Wheel
+- 50 X Rub Under
+- 50 X Run Under
+- 50 Y Corner
+- 50 Y/T Corners
+- 50 Z Wheel
+- 90 Double Out
+- 90 F Speed Out
+- 90 TE Curl
+- 90 X Lob Corner
+- 90 Y/T Hitches
+- 90 Y/TE Hot
+- 90 Y/Z Cross
+- 90 Y/Z Speed Cross
+- FB Fake Strong Toss
+- Fake Toss Reverse I
+- H Lead Shovel
+- HB Pass
+- PA Double Seams
+- PA TE Dump
+- PA TE Speed Out
+- PA Y/T Cross
+- PA Y/T Seams
+- PA Y/TE Seams
+- PA Z Deep Drag
+- PA-RO H Throwback
+- PA-RO Stretch Under
+- PA-RO Strong Flood
+- PA-RO Strong Flow
+- QB Sneak
+- RO F Dump
+- Strong Chip
+- Strong Counter Trap
+- Strong Gut
+- Strong Iso
+- Strong Lead Draw
+- Strong Outside Zone
+- Strong Power
+- Strong Stretch
+- Strong Sweep
+- Strong Tackle Lead
+- Strong Toss
+- Strong Zone Cutback
+- Weak Chip
+- Weak Counter Lead
+- Weak Counter Trap
+- Weak FB Dive
+- Weak Fan Iso
+- Weak G-Lead Toss
+- Weak Iso
+- Weak Lead Draw
+- Weak Power
+- Weak Power-O
+- Weak Stretch
+- Weak Toss
+- Weak WB Sweep
+
+## I-Jokers  (0 plays)
+
+## I-Jokers Pair  (0 plays)
+
+## I-Pro  (0 plays)
+
+## I-Spread  (0 plays)
+
+## I-Twins  (0 plays)
+
+## Jacks  (12 plays)
+- 50 Jokers X Curl
+- 50 Y/TE Corners
+- 90 F Speed Out
+- Fake Toss Reverse I
+- PA Counter Pass
+- QB Sneak
+- RO Steeler Flood
+- Strong Belly
+- Strong G Lead Toss
+- Strong Iso
+- Strong Lead Blast
+- Weak Trap
+
+## Jokers  (9 plays)
+- 50 Y/TE Comebacks
+- 50 Y/TE Corners
+- 90 X Lob Fade
+- PA X Drag
+- Strong Fan Iso
+- Strong Lead Blast
+- Weak Iso
+- Weak Stretch
+- Weak Zone Cutback
+
+## Jokers Pair  (0 plays)
+
+## Near Twins  (9 plays)
+- 50 TE Corner
+- 90 H Speed Out
+- 90 Z Speed Under
+- PA Z Quick Slant
+- RO H Streak
+- Strong Dive
+- Strong Wing Toss
+- Strong Zone Cutback
+- Weak Sweep
+
+## Pair Slot  (90 plays)
+- 50 Double Follow
+- 50 H Circle
+- 50 H Screen Strong
+- 50 H Wheel
+- 50 H Wheel Rub
+- 50 TE Out-n-In
+- 50 TE Spin Out
+- 50 X Arrow-n-Go
+- 50 X Curl
+- 50 X Post-Corner
+- 50 X Speed Over
+- 50 X/Z Cross
+- 50 X/Z Deep Cross
+- 50 X/Z Rub Cross
+- 50 Y Corner
+- 50 Y Curl
+- 50 Y Screen Seam
+- 50 Y Wheel
+- 50 Z Fade
+- 50 Z Out
+- 50 Z Pick Corner
+- 50 Z Under
+- 90 H Speed Out
+- 90 TE Speed Out
+- 90 TE/Y Quick Cross
+- 90 X/Z Slam
+- 90 Y Speed Out
+- 90 Y/TE Speed Cross
+- 90 Z Arrow
+- 90 Z Bubble Motion
+- 90 Z Quick Slant
+- Fake Toss Reverse
+- Flea Flicker
+- Flip Strong
+- H Lead Shovel
+- H Shovel Strong
+- H Swing Weak
+- HB Pass
+- PA Counter Pass
+- PA Counter Z In
+- PA H Wheel
+- PA Verts
+- PA X Drag
+- PA X Short Drag
+- PA X Stop-n-Go
+- PA Y Corner
+- PA Z Quick Slant
+- PA Z Slam-n-Go
+- PA Z Slant
+- PA-RO Stretch Corner
+- PA-RO X Comeback
+- PA-RO X Hook
+- PA-RO Y Corner
+- PA-RO Z Fade
+- QB Draw
+- RO TE Rub Out
+- Slot Reverse Strong
+- Slot Reverse Strong B
+- Strong Belly
+- Strong Bendback
+- Strong C/T Toss
+- Strong Center Power
+- Strong Counter Trey
+- Strong Dive
+- Strong Draw
+- Strong Gut
+- Strong Outside Zone
+- Strong Power
+- Strong Stretch
+- Strong T-Toss
+- Strong TE Lead Toss
+- Strong Toss
+- Strong Trap
+- Strong Y Lead Dive
+- Strong Zone Cutback
+- Toss Reverse Strong B
+- Toss Reverse Weak
+- Weak Counter
+- Weak Counter Trey
+- Weak Dive
+- Weak Draw
+- Weak G-Toss
+- Weak Outside Zone
+- Weak Stretch
+- Weak Toss
+- Weak Trap
+- Weak WB Sweep
+- Weak X-Crack Toss
+- Weak Zone Bounce
+- Weak Zone Cutback
+
+## Pair Slot Flex  (9 plays)
+- 50 Double Swing
+- 50 Verts
+- 90 All Slams
+- 90 H Curl
+- 90 H Quick Dump
+- 90 H Speed Under
+- H Shovel Strong
+- QB Draw
+- RO Strong Flood
+
+## Pro F Flex  (6 plays)
+- 50 H Screen Strong
+- 50 TE Clear Corner
+- 90 F Speed Out
+- Strong Toss
+- Strong Trap
+- Weak Toss
+
+## Pro H Split  (9 plays)
+- 50 H Post-Corner
+- 50 Z Curl Out
+- 90 H Speed Under
+- 90 TE Speed Out
+- 90 X/H Speed Cross
+- PA 138 H Quick Hitch
+- Strong FB Draw
+- Strong FB Toss
+- Weak FB Dive
+
+## Quads  (105 plays)
+- 50 A Out
+- 50 A Out-n-In
+- 50 A/X Cross
+- 50 All Curl
+- 50 All Go
+- 50 All Streaks
+- 50 Dolphin Flood
+- 50 Double Corners
+- 50 Double Cross
+- 50 Double Under
+- 50 H Screen Strong
+- 50 H Speed Out
+- 50 H Swing Strong
+- 50 H Swing Weak
+- 50 H Wheel
+- 50 Seams-n-Fades
+- 50 Short Crosses
+- 50 Slot Outs
+- 50 Stops-n-Corners
+- 50 Verts-n-Flats
+- 50 X Slant-n-Go
+- 50 X/A Cross
+- 50 X/Z Fades
+- 50 Y Drag
+- 50 Y Fade
+- 50 Y Hook-n-Go
+- 50 Y Speed Out
+- 50 Y Zip Out-n-Up
+- 50 Y Zip Post
+- 50 Y/A Swing
+- 50 Z Out
+- 50 Z Slant-n-Go
+- 50 Z Slide
+- 50 Z Slip Screen
+- 90 All Slants
+- 90 H Bubble Motion
+- 90 H Quick Dump
+- 90 H Speed Out
+- 90 Quick Slants
+- 90 Slants-n-Stops
+- 90 X Hot
+- 90 X Speed Under
+- 90 X/Z Quick Fades
+- 90 X/Z Stops
+- 90 Y Speed Under
+- 90 Y/T Hot
+- 90 Z Quick Slant
+- Flea Flicker
+- H Shovel Strong
+- HB Pass
+- PA Counter Pass
+- PA Double Post
+- PA Reverse Drags
+- PA Reverse X P-C
+- PA Reverse X Post
+- PA Reverse Y Corner
+- PA Reverse Y Post
+- PA Reverse Y/Z Cross
+- PA Reverse Z In
+- PA Reverse Z Post
+- PA Sprint 43 Post
+- PA Stops-n-Posts
+- PA TE Seam
+- PA X Post-Corner
+- PA X Slide-n-Go
+- PA X Stop-n-Go
+- PA Z Fade
+- PA Z Post-Corner
+- PA Z Side-n-Go
+- PA Z Slide-n-Go
+- PA-RO Strong Flood
+- PA-RO X/A Cross
+- PA-RO X/Y Cross
+- PA-RO Y Stop-n-Go
+- PA-RO Z Stop
+- QB Lead Draw
+- RO Flood
+- RO Y Speed Out
+- Slot Reverse Strong
+- Strong Bendback
+- Strong Counter
+- Strong Dive
+- Strong Draw
+- Strong G-Toss
+- Strong Outside Zone
+- Strong Slam
+- Strong T-Toss
+- Strong Toss
+- Strong Trap
+- Strong Zone Cutback
+- Toss Reverse Strong
+- Weak Counter
+- Weak Dive
+- Weak Draw
+- Weak Outside Zone
+- Weak Sprint 43
+- Weak Stretch
+- Weak Sweep
+- Weak Toss
+- Weak Toss Sweep
+- Weak Trap
+- Weak Y-Crack T-Toss
+- Weak Zone Bounce
+- Weak Zone Cutback
+- Z Slip Screen
+
+## Quads H Flex  (6 plays)
+- 50 A/H Deep Cross
+- 50 X/Y In-n-Out
+- 50 Y Razor-n-Go
+- 90 H Screen Out
+- 90 H Speed Out
+- QB Draw
+
+## Quads Right  (9 plays)
+- 50 All Go
+- 50 X/Y Cross
+- 50 Y Slant-n-Go
+- 90 A Quick Out
+- PA Y Slant
+- QB Draw
+- Strong Dive
+- Strong Toss
+- Weak Sweep
+
+## Queens Stack  (6 plays)
+- 50 Double Tight Cross
+- 50 F Short Wheel
+- 50 H/F Sticky
+- 50 Z Fade
+- 90 Fans
+- QB Draw
+
+## Split Flip Pro  (15 plays)
+- 50 Backs Out
+- 50 H/F Flares
+- 50 X Rollaway
+- 90 X Quick Corner
+- 90 X Speed Under
+- 90 X Stop
+- 90 Z Speed Under
+- PA X Go
+- QB Lead Draw
+- RO X Comeback
+- Strong Power
+- Strong T-Toss
+- Strong Z Crack Toss
+- Weak Dive
+- Weak FB Sweep
+
+## Split Jacks  (15 plays)
+- 50 Double Swing
+- 50 H Swing Weak
+- 50 H/F Replace
+- 90 H Speed Out
+- 90 Jack Hot
+- 90 TE Dump
+- PA All Stop
+- RO F Dump
+- Strong G Lead Toss
+- Strong Power
+- Strong Sweep
+- Weak Dive
+- Weak FB Sweep
+- Weak Outside Zone
+- Weak Split Toss
+
+## Split Jokers  (57 plays)
+- 50 Double Swing
+- 50 H/E Wheels
+- 50 H/F Outs
+- 50 H/F Replace
+- 50 H/F Wheels
+- 50 Strong Flow
+- 50 Strong Outs
+- 50 Y/TE Comebacks
+- 50 Y/TE Cross
+- 50 Y/TE Square In
+- 90 F Speed Out
+- 90 Hitches
+- 90 X Lob Corner
+- 90 X Lob Fade
+- 90 X Quick Hitch
+- 90 X Speed Under
+- 90 X Stop
+- 90 Y/TE Hot
+- FB Fake Strong Toss
+- FB Fake Weak Toss
+- PA Delay Corner
+- PA TE Delay Corner
+- PA TE Rub Out
+- PA TE Seam
+- PA X Slant
+- PA X Streak
+- PA Y Corner
+- PA-RO Stretch Corner
+- QB Lead Draw
+- QB Sneak
+- RO Strong Flood
+- RO Strong Flow
+- RO Weak Flow
+- RO Z Corner
+- Strong Counter
+- Strong Cross Zone
+- Strong F Lead T-Toss
+- Strong FB Dive
+- Strong FB Draw
+- Strong FB Toss
+- Strong Iso
+- Strong Outside Zone
+- Strong Power
+- Strong Split Sweep
+- Strong Split Toss
+- Strong Sweep
+- Strong Toss
+- Weak Dive
+- Weak Draw
+- Weak FB Dive Cross
+- Weak FB Sweep
+- Weak G-Toss
+- Weak Outside Zone
+- Weak Stretch
+- Weak T-Toss
+- Weak Trap
+- Weak Zone Cutback
+
+## Split Pro  (72 plays)
+- 50 Backs Out
+- 50 Double Drags
+- 50 Double Swing
+- 50 F Screen Strong
+- 50 F Swing Strong
+- 50 F Wheel
+- 50 H Screen Weak
+- 50 H Weak Screen
+- 50 H Wheel
+- 50 H/F Flares
+- 50 Split Inside Out
+- 50 Stretch
+- 50 Strong Flood
+- 50 TE/Z Cross
+- 50 X Deep Drag
+- 50 X Deep Hook
+- 50 X Hook
+- 50 X Post-Corner
+- 50 Z Comeback
+- 50 Z Deep Drag
+- 50 Z Fade Rollaway
+- 50 Z Post
+- 50 Zdyrko Drag
+- 90 F Speed Out
+- 90 H Speed Out
+- 90 X Quick Corner
+- 90 X/TE Qk Cross
+- 90 Y/Z Speed Cross
+- 90 Z Quick Hitch
+- 90 Z Slam
+- 90 Z Speed Under
+- 90 Zdyrko Under
+- FB Fake Strong Toss
+- FB Fake Weak Toss
+- H Lead Shovel
+- PA Delay Corner
+- PA Quick Dump
+- PA TE Dump
+- PA TE Seam
+- PA X Drag Under
+- PA X Go
+- PA X Side Out
+- QB F Lead Draw
+- RO F Dump
+- RO Flood
+- RO X Comeback
+- RO X Deep Hook
+- RO Z Stop-n-Go
+- Strong Center Power
+- Strong Counter
+- Strong Cross Zone
+- Strong FB Dive
+- Strong FB Toss
+- Strong Fan Iso
+- Strong Iso
+- Strong Outside Zone
+- Strong Power
+- Strong Split Sweep
+- Strong Split Toss
+- Strong Sweep
+- Strong Toss
+- Strong Z Crack Toss
+- Weak Dive
+- Weak Draw
+- Weak FB Dive Cross
+- Weak FB Sweep
+- Weak G-Toss
+- Weak Split Toss
+- Weak Stretch
+- Weak T-Toss
+- Weak X-Crack Toss
+- Weak Zone Cutback
+
+## Split Spread  (75 plays)
+- 50 Double Swing
+- 50 F Wheel
+- 50 Falcon Flow
+- 50 Frisco Flow
+- 50 Green Flow
+- 50 H Screen Strong
+- 50 H Screen Weak
+- 50 H Swing Weak
+- 50 H Wheel
+- 50 H/F Outs
+- 50 H/F Wheels
+- 50 Hawk Flow
+- 50 Split Inside Out
+- 50 Stretch
+- 50 X Deep Drag
+- 50 X Fade
+- 50 X Stop
+- 50 Y Out
+- 50 Y Post-Corner
+- 50 Y Swing
+- 50 Y/Z Cross
+- 50 Z Deep Drag
+- 50 Z Deep Hook
+- 50 Z Rollaway
+- 90 Double Out
+- 90 F Speed Out
+- 90 H Speed Out
+- 90 X Slant
+- 90 Y Dig
+- 90 Y Dump
+- 90 Y/Z Speed Cross
+- FB Fake Strong Toss
+- FB Fake Weak Toss
+- HB Pass
+- PA Slam-n-Go
+- PA Strong Flood
+- PA X Out-n-Up
+- PA X Slant-n-Up
+- PA X Slide-n-Go
+- PA Y Dump
+- PA Y Rollaway
+- PA Y Slant-n-Go
+- PA Y Wheel
+- PA-RO Strong Flow
+- QB Draw
+- QB Pump Draw
+- RO H Curl
+- RO Slot Deep Cross
+- RO Steeler Flood
+- RO X Post-Corner
+- RO Y Stop
+- RO Z Corner
+- RO Z Out
+- RO Z Rollaway
+- RO Z Slide
+- Strong A-Iso
+- Strong Cross Zone
+- Strong FB Belly
+- Strong FB Dive
+- Strong FB Draw
+- Strong FB Toss
+- Strong Iso
+- Strong Sweep
+- Strong Toss
+- Weak Dive
+- Weak Draw
+- Weak FB Dive
+- Weak FB Dive Cross
+- Weak FB Sweep
+- Weak Outside Zone
+- Weak Split Toss
+- Weak T-Toss
+- Weak Toss
+- Weak X-Crack Toss
+- Weak Zone Cutback
+
+## Split Twins  (58 plays)
+- 50 Double Swing
+- 50 F Wheel
+- 50 Falcon Flow
+- 50 H Deep Seam
+- 50 H Swing Weak
+- 50 H Wheel
+- 50 H/F Outs
+- 50 H/F Wheels
+- 50 Purple Flow
+- 50 TE Seam
+- 50 X Deep Drag
+- 50 X Stop
+- 50 X/Z Cross
+- 50 X/Z Split
+- 50 Z Comeback
+- 50 Z Drag
+- 90 All Hot
+- 90 X Quick Hitch
+- 90 X Slip Screen
+- 90 X/Z Speed Cross
+- 90 Y Speed Out
+- 90 Z Quick Out
+- 90 Z Speed Under
+- PA Delay Corner
+- PA TE Dump
+- PA X Out-n-Up
+- PA X/Z Cross
+- PA X/Z Verts
+- PA Z Deep Post
+- PA Z Slant
+- PA Z Stop-n-Go
+- QB Draw
+- RO Quick Outs
+- RO Weak Flow
+- RO X Comeback
+- RO X Out
+- RO X Post-Corner
+- RO X/Z Comebacks
+- Slot Reverse Split
+- Strong Counter
+- Strong FB Dive
+- Strong FB Draw
+- Strong FB Toss
+- Strong Fold Sweep
+- Strong G Lead Toss
+- Strong Inside Trap
+- Strong Iso
+- Strong Lead Counter
+- Strong Sweep
+- Toss Reverse Split
+- Weak Dive
+- Weak Draw
+- Weak FB Sweep
+- Weak G-Toss
+- Weak Outside Zone
+- Weak Split Toss
+- Weak T-Toss
+- Weak Zone Cutback
+
+## Spread  (23 plays)
+- 50 F Swing Strong
+- 50 H Screen Weak
+- 50 X Deep Drag
+- 50 X Post
+- 50 X Vertical
+- 50 Z Slip Screen
+- 50 Zona Flow
+- 90 X Slant
+- 90 Y Qk Slant
+- 90 Y Under
+- Flea Flicker
+- H Lead Shovel
+- PA Y Slam-n-Go
+- PA-RO Z Stop-n-Go
+- RO Y Out
+- Strong Iso
+- Strong Lead Draw
+- Strong Outside Zone
+- Strong Toss
+- Weak G-Iso
+- Weak Iso
+- Weak Lead Draw
+- Weak Zone Bounce
+
+## Straight Open  (19 plays)
+- 50 A Curl In
+- 50 Clear Drags
+- 50 Double Slant
+- 50 Slide-n-Flow
+- 50 Strong Flood
+- 50 X/A Posts
+- 50 Y Out-n-Up
+- 50 Y/TE Curl-n-Go
+- 50 Y/Z Cross
+- 50 Y/Z Double Out
+- 50 Z Corner
+- 90 All Slam
+- 90 TE Stop
+- 90 Z Arrow
+- QB Draw
+- QB Sneak
+- RO A Slide-n-Go
+- RO Y Stop-n-Go
+- RO Y/Z Double Out
+
+## Straight Trips  (11 plays)
+- 50 Y Out-n-Up
+- 50 Y Swing Strong
+- 50 Y/TE Curl-n-Go
+- 50 Y/Z Cross
+- 50 Z Corner-Post
+- 90 All Slam
+- 90 TE Arrow
+- 90 Z Arrow
+- QB Draw
+- RO TE Stop-n-Go
+- RO Y Stop-n-Go
+
+## Strong I Jacks  (29 plays)
+- 50 Double Swing
+- 50 H Lead Swing
+- 50 X Wheel
+- 90 All Hooks
+- 90 F Speed Out
+- 90 Hitches
+- 90 Jack Hot
+- 90 T/Y Hitches
+- 90 Y/TE Hot
+- 90 Y/Z Speed Cross
+- F Swing Strong
+- Fake Toss Reverse I
+- H Lead Shovel
+- PA QB Air Option
+- PA TE Dump
+- PA X Delay Drag
+- PA Y/TE Seams
+- QB Sneak
+- Strong FB Dive
+- Strong FB Toss
+- Strong G-Stretch
+- Strong Iso
+- Strong Power
+- Strong Sweep
+- Strong Toss
+- Weak Counter
+- Weak FB Sweep
+- Weak G-Toss
+- Weak Slam
+
+## Strong I Jokers  (57 plays)
+- 50 Double Swing
+- 50 F Swing Strong
+- 50 Jokers X Curl
+- 50 TE Post
+- 50 X Comeback
+- 50 X Stop-n-Go
+- 50 Y Out
+- 50 Y/TE Comebacks
+- 50 Y/TE Corners
+- 90 Double Out
+- 90 F Speed Out
+- 90 X Lob Corner
+- 90 X Lob Fade
+- 90 X Quick Corner
+- 90 X Quick Slant
+- 90 X Speed Corner
+- 90 X Speed Under
+- 90 X Stop
+- 90 Y/TE Speed Outs
+- 90 Y/Z Speed Cross
+- 90 Z Speed Under
+- FB Fake Weak Toss
+- PA Delay Corner
+- PA TE Delay Corner
+- PA TE Rub Out
+- PA TE Zone In
+- PA X Drag
+- PA X Rollaway
+- PA Y Dump
+- PA-RO Corners
+- PA-RO Flood Weak
+- QB Sneak
+- RO F Dump
+- RO X Curl
+- Strong A-Iso
+- Strong Chip
+- Strong Counter
+- Strong FB Dive
+- Strong Fan Iso
+- Strong G Lead Toss
+- Strong Inside Power
+- Strong Iso
+- Strong Lead Draw
+- Strong Outside Zone
+- Strong Power
+- Strong Power-O
+- Strong Speed Option
+- Strong Sweep
+- Strong Toss
+- Weak Counter Gap
+- Weak Counter Trap
+- Weak Dbl Lead Pitch
+- Weak FB Sweep
+- Weak G-Toss
+- Weak Gut
+- Weak Outside Zone
+- Weak Zone Cutback
+
+## Strong I Jokers Pair  (16 plays)
+- 50 Double Swing
+- 50 TE Seam
+- 50 X Stop-n-Go
+- 50 Y/TE In-n-Out
+- 90 X Lob Corner
+- 90 X Quick Slant
+- 90 Y/TE Quick Cross
+- 90 Y/TE Speed Cross
+- FB Fake Weak Toss
+- PA-RO X Comeback
+- Strong FB Dive
+- Strong Inside Power
+- Strong Iso
+- Strong Sweep
+- Strong Toss
+- Weak Inside Zone
+
+## Strong I Jumbo  (9 plays)
+- 90 Y/TE Slants
+- QB Sneak
+- RO Air Option Flood
+- RO Rub Flood Weak
+- Strong FB Dive
+- Strong G-Toss
+- Strong Iso
+- Strong Power-O
+- Weak WB Sweep
+
+## Strong I Pro  (85 plays)
+- 50 Double Swing
+- 50 F Swing Strong
+- 50 F Wheel
+- 50 H Screen Strong
+- 50 H Swing Strong
+- 50 H Swing Weak
+- 50 H Weak Screen
+- 50 Streaks
+- 50 TE Skinny
+- 50 TE Zone In
+- 50 TE/Z Curls
+- 50 X Corner
+- 50 X Curl-n-Go
+- 50 X Post-Corner
+- 50 X Speed Over
+- 50 Y Go Z In
+- 50 Z Deep Hook
+- 50 Z Fade Rollaway
+- 50 Z Quick Out-n-Up
+- 50 Z Rollaway
+- 50 Z/T Cross
+- 50 Z/TE Cross
+- 90 F Speed Out
+- 90 TE Hook
+- 90 TE Slam
+- 90 X Quick Under
+- 90 X/Z Slants
+- 90 Z Hot
+- 90 Z Quick Out
+- FB Fake Weak Toss
+- FB Swing Strong
+- H Lead Shovel
+- HB Pass
+- PA Delay Corner
+- PA F Dump
+- PA TE Delay Corner
+- PA TE Dump
+- PA TE Seam
+- PA X Curl
+- PA X Slant-n-Go
+- PA X Stop-n-Go
+- PA X/Z Go
+- PA Y/T Seams
+- PA Y/Z Comeback
+- PA Z Deep Drag
+- PA Z Deep Post
+- PA-RO Stretch Under
+- PA-RO Strong Flow
+- PA-RO X Comeback
+- PA-RO Z Fade Stop
+- PA-RO Z Rail
+- PA-RO Z Stop-n-Go
+- QB Bootleg Weak
+- RO F Flow
+- RO H Flare
+- RO X Post-Corner
+- RO Z Corner
+- RO Z Deep Comeback
+- Strong Chip
+- Strong FB Dive
+- Strong FB Toss
+- Strong Fan Iso
+- Strong G-Stretch
+- Strong Inside Trap
+- Strong Iso
+- Strong Lead Draw
+- Strong Outside Zone
+- Strong Power
+- Strong Power-O
+- Strong Stretch
+- Strong Sweep
+- Strong Toss
+- Weak C-Toss
+- Weak Counter
+- Weak Counter Trap
+- Weak Dive
+- Weak Draw
+- Weak F Motion Iso
+- Weak FB Sweep
+- Weak G-Toss
+- Weak Outside Zone
+- Weak T-Toss
+- Weak Toss Counter
+- Weak Trap
+- Weak Zone Cutback
+
+## Strong I Spread  (55 plays)
+- 50 Double Swing
+- 50 F Wheel
+- 50 H Screen Strong
+- 50 H Wheel
+- 50 Strong Flood
+- 50 X Arrow-n-Go
+- 50 X Deep Drag
+- 50 X Drag Leak
+- 50 X Fade
+- 50 X Out-n-Up
+- 50 Y Go Z In
+- 50 Y Out-n-In
+- 50 Y Seam
+- 50 Y/Z Deep Cross
+- 50 Y/Z In-n-Out
+- 50 Z Deep Drag
+- 50 Z Post
+- 50 Z Slip Screen
+- 90 Double Out
+- 90 F Speed Out
+- 90 H Speed Out
+- 90 Y Qk Slant
+- 90 Y/Z Speed Cross
+- 90 Z Quick Hitch
+- 90 Z Quick Out
+- 90 Z Slam
+- FB Fake Weak Toss
+- H Lead Shovel
+- PA X/Z Go
+- PA Y Slam-n-Go
+- PA Y Slant
+- PA Y/Z Comeback
+- PA-RO Y Stop
+- PA-RO Z Corner
+- PA-RO Z Stop-n-Go
+- RO F Dump
+- RO Z Deep Comeback
+- Strong A-Iso
+- Strong FB Dive
+- Strong G-Stretch
+- Strong Iso
+- Strong Lead Counter
+- Strong Lead Draw
+- Strong Outside Zone
+- Strong Sweep
+- Strong Toss
+- Weak C-Toss
+- Weak Center Lead
+- Weak Counter
+- Weak Counter Trap
+- Weak Draw
+- Weak G-Toss
+- Weak Outside Zone
+- Weak Trap
+- Weak Zone Cutback
+
+## Strong I Twins  (58 plays)
+- 50 Double Follow
+- 50 Double Swing
+- 50 F Screen Strong
+- 50 H Screen Weak
+- 50 H Swing Strong
+- 50 H Swing Weak
+- 50 H/F Wheels
+- 50 TE Seam
+- 50 TE Streak
+- 50 TE/Z Curls
+- 50 X Post-Corner
+- 50 X/Z In-n-Out
+- 50 X/Z Split
+- 50 X/Z Sticky
+- 50 Z Deep Drag
+- 50 Z Fade
+- 50 Z Under
+- 90 F Speed Out
+- 90 H Speed Out
+- 90 TE Speed Out
+- 90 X Quick Corner
+- 90 X/Z Slants
+- 90 X/Z Speed Cross
+- 90 Z Slam
+- 90 Z Speed Under
+- FB Fake Weak Toss
+- H Lead Shovel
+- PA TE Corner
+- PA X Slide-n-Go
+- PA X/Z Cross
+- PA Z Post
+- PA-RO Stretch Under
+- PA-RO X Out
+- PA-RO Z Delay Out
+- RO H Streak
+- Slot Reverse I
+- Strong Center Power
+- Strong Counter
+- Strong FB Dive
+- Strong Fan Iso
+- Strong G Lead Toss
+- Strong G-Stretch
+- Strong Iso
+- Strong Lead Draw
+- Strong Outside Zone
+- Strong Stretch
+- Strong Sweep
+- Strong Toss
+- Strong Zone Cutback
+- Toss Reverse I
+- Weak Counter
+- Weak Counter Trap
+- Weak Draw
+- Weak FB Sweep
+- Weak G-Toss
+- Weak Outside Zone
+- Weak X-Crack Toss
+- Weak Zone Cutback
+
+## Strong I Wing Jokers  (18 plays)
+- 50 Double Swing
+- 50 TE Fade
+- 90 All Slant
+- 90 Y Speed Out
+- 90 Z Quick Out
+- FB Fake Weak Toss
+- H Lead Shovel
+- PA TE Outs
+- PA Y/T Corners
+- QB Sneak
+- Strong Chip
+- Strong Counter Lead
+- Strong FB Dive
+- Strong Lead G-Toss
+- Strong T-Toss
+- Weak Counter Gap
+- Weak Gut
+- Weak Outside Zone
+
+## Strong I-Jokers  (0 plays)
+
+## Strong I-Pro  (0 plays)
+
+## Strong I-Spread  (0 plays)
+
+## Strong II Jokers  (0 plays)
+
+## Strong II Pro  (0 plays)
+
+## Strong Power  (0 plays)
+
+## Tight F Trips  (19 plays)
+- 50 H Screen Strong
+- 50 X/Y In-n-Out
+- 50 Y Deep Drag
+- 50 Z Slant-n-Go
+- 90 All Slant
+- 90 F Speed Out
+- 90 H Speed Out
+- 90 X/Y Slam
+- Flea Flicker
+- PA F Flat
+- PA Slam-n-Go
+- Slot Reverse Strong
+- Strong Dive
+- Strong Draw
+- Strong Outside Zone
+- Toss Reverse Strong
+- Weak Draw
+- Weak T-Toss
+- Weak Toss
+
+## Tight Triple  (120 plays)
+- 50 A/Z Cross
+- 50 All Streaks
+- 50 Clear Drags
+- 50 Corners
+- 50 Double Drag
+- 50 Double Outs
+- 50 Double Under
+- 50 H Replace
+- 50 H Screen Strong
+- 50 H Screen Weak
+- 50 H Swing Strong
+- 50 H Wheel
+- 50 Hi/Low Drags
+- 50 Over-n-Under
+- 50 Strong Flood
+- 50 TE Post-Corner
+- 50 TE Rub Out
+- 50 WR Streaks
+- 50 X Opposite Flow
+- 50 X Out-n-Up
+- 50 X Post-Corner
+- 50 X/Z Posts
+- 50 Y Screen Seam
+- 50 Y/Z Cross
+- 50 Z Drag
+- 50 Z Out
+- 50 Z Slide
+- 50 Z Stop-n-Go
+- 50 Z/TE Cross
+- 90 All Slants
+- 90 H Speed Out
+- 90 H Speed Under
+- 90 Quick Hitches
+- 90 Quick Slants
+- 90 Slants-n-Stops
+- 90 TE Hook
+- 90 TE Speed Out
+- 90 TE/Y Quick Cross
+- 90 X Hot
+- 90 X/Z Quick Fades
+- 90 X/Z Stops
+- 90 Y Flat
+- 90 Y Speed Out
+- 90 Y Speed Under
+- 90 Y/TE Speed Cross
+- 90 Z Arrow
+- 90 Z Slam
+- 90 Z Speed Under
+- 90 Z/TE Quick Outs
+- Fake Toss Reverse
+- Flea Flicker
+- Flip Strong
+- H Lead Shovel
+- H Shovel Strong
+- PA Counter A Post
+- PA Counter Pass
+- PA Double Post
+- PA H Screen Strong
+- PA Seam Read
+- PA Slam-n-Go
+- PA Sprint 43 Post
+- PA TE Seam
+- PA X Curl
+- PA X Slant-n-Go
+- PA X Stop-n-Go
+- PA X/Z Comebacks
+- PA Z Out-n-Up
+- PA Z Side-n-Go
+- PA Z Slide-n-Go
+- PA Z Stop-n-Go
+- PA-RO Corners
+- PA-RO Raven Flow
+- PA-RO Stop/Corners
+- PA-RO Stretch Corner
+- PA-RO Strong Flood
+- PA-RO TE Delay Out
+- PA-RO X Out
+- PA-RO Y Corner
+- Philly Option Screen
+- QB Bootleg
+- QB Draw
+- RO Corners
+- RO Flood
+- RO Strong Flood
+- RO Strong Flow
+- RO Y Post-Corner
+- Strong Bendback
+- Strong Chip
+- Strong Counter
+- Strong Counter Trey
+- Strong Dive
+- Strong Draw
+- Strong G Lead Toss
+- Strong G-Toss
+- Strong Gut
+- Strong Lead Stretch
+- Strong Outside Zone
+- Strong Power
+- Strong Sweep
+- Strong T-Toss
+- Strong Toss
+- Strong Trap
+- Strong Y Trap
+- Strong Zone Cutback
+- Weak Counter
+- Weak Counter Trap
+- Weak Counter Trey
+- Weak Dive
+- Weak Draw
+- Weak G-Toss
+- Weak Outside Zone
+- Weak Slam
+- Weak Sprint 43
+- Weak Stretch
+- Weak Sweep
+- Weak Toss
+- Weak Trap
+- Weak WB Sweep
+- Weak Zone Bounce
+- Weak Zone Cutback
+
+## Trey  (62 plays)
+- 50 A/Z Cross
+- 50 All Go
+- 50 Clear Drags
+- 50 H Screen Strong
+- 50 H Screen Weak
+- 50 H Swing Strong
+- 50 Hi/Low Drags
+- 50 Strong Flood
+- 50 X Deep Drag
+- 50 X Out-n-Up
+- 50 X Slant-n-Go
+- 50 Y/Z In-n-Out
+- 50 Z Comeback
+- 50 Z Deep Drag
+- 50 Z Deep Out
+- 50 Z Deep Side
+- 50 Z Deep Slide
+- 50 Z Under
+- 90 A In
+- 90 A Quick Out
+- 90 All Slant
+- 90 Slant Slam
+- 90 Slants-n-Stops
+- 90 TE Swing Strong
+- 90 X Hot
+- 90 X/Y Slam
+- 90 X/Z Quick Fades
+- 90 Y Speed Out
+- Flea Flicker
+- H Shovel Strong
+- HB Pass
+- PA H Screen Strong
+- PA H Wheel
+- PA Slam-n-Go
+- PA Sprint 43 Post
+- PA TE Seam
+- PA X Dump
+- PA Y Seam
+- QB Sneak
+- RO Z Deep Slide
+- RO Z In-n-Out
+- Slot Reverse Weak C
+- Strong Counter
+- Strong Dive
+- Strong Draw
+- Strong G-Toss
+- Strong Outside Zone
+- Strong Power
+- Strong Sweep
+- Strong T-Toss
+- Strong Toss
+- Strong Y-Crack Toss
+- Strong Zone Cutback
+- Toss Reverse Weak C
+- Weak Dive
+- Weak Draw
+- Weak Outside Zone
+- Weak Sprint 43
+- Weak Toss
+- Weak Trap
+- Weak Zone Bounce
+- Weak Zone Cutback
+
+## Trey Left  (9 plays)
+- 50 X Out-n-Up
+- 50 Y Under
+- 50 Z Drag
+- 90 A Quick Out
+- 90 All Stop
+- QB Draw
+- Strong Sweep
+- Weak Toss
+- Weak Zone Cutback
+
+## Triple  (135 plays)
+- 50 All Go
+- 50 All Streaks
+- 50 Clear Out
+- 50 Double Outs
+- 50 H Flat
+- 50 H Replace
+- 50 H Screen Strong
+- 50 H Screen Weak
+- 50 H Swing Strong
+- 50 H Wheel
+- 50 Hi/Low Drags
+- 50 Inside Out
+- 50 T Zone In
+- 50 TE Clear Corner
+- 50 X Arrow In
+- 50 X Arrow-n-Go
+- 50 X Curl
+- 50 X Curl In
+- 50 X Opposite Flow
+- 50 X Post
+- 50 X Slant-n-Go
+- 50 X/Z Fades
+- 50 X/Z Go's
+- 50 X/Z Posts
+- 50 Y Corner
+- 50 Y Curl
+- 50 Y Drag
+- 50 Y Hook-n-Go
+- 50 Y Out
+- 50 Y Rub Vertical
+- 50 Y Seam
+- 50 Y Slam-n-Go
+- 50 Y Wheel
+- 50 Y/TE Cross
+- 50 Y/Z Cross
+- 50 Y/Z Quick Cross
+- 50 Z Corner-Post
+- 50 Z Deep Slide
+- 50 Z In-n-Out
+- 50 Z Out
+- 50 Z Slide Pick
+- 50 Z Under
+- 90 A Quick Out
+- 90 F Speed Rub Out
+- 90 H Bubble Strong
+- 90 H Dump
+- 90 Quick Slants
+- 90 TE Flat
+- 90 TE Speed Out
+- 90 X Hot
+- 90 X Quick Slant
+- 90 X/Y Hitches
+- 90 X/Z Slam
+- 90 X/Z Stops
+- 90 Y Quick Hitch
+- 90 Y Slam
+- 90 Y Speed Rub Out
+- 90 Y Speed Run Out
+- 90 Y Speed Under
+- 90 Y/Z Speed Cross
+- 90 Z Quick Hitch
+- 90 Z Quick Slant
+- Flea Flicker
+- H Shovel Strong
+- HB Pass
+- PA Counter A Post
+- PA Counter Pass
+- PA Delay Seam
+- PA H Screen Strong
+- PA Reverse Streaks
+- PA Slam-n-Go
+- PA Sprint 43 Post
+- PA TE Delay Seam
+- PA TE Fly
+- PA TE Seam
+- PA Verts
+- PA X Post-Corner
+- PA Y Quick Slant
+- PA Y Stop-n-Go
+- PA Z Cross
+- PA Z Slide-n-Go
+- PA Z/TE Cross
+- PA-RO Corners
+- PA-RO RT Y Out
+- PA-RO Stretch Under
+- PA-RO Strong Flood
+- PA-RO Strong Flow
+- PA-RO Z Deep In
+- PA-RO Z Stop
+- Philly Option Screen
+- QB Draw
+- QB Lead Draw
+- QB Naked
+- RO Air Option
+- RO Flood
+- RO Strong Flow
+- RO TE Rub Out
+- RO X/Z Flow
+- RO Y Out
+- RO Z Deep Slide
+- RO Z In-n-Out
+- Slot Reverse Weak
+- Strong Bendback
+- Strong Center Power
+- Strong Counter
+- Strong Counter Trey
+- Strong Dive
+- Strong Draw
+- Strong Gut
+- Strong Outside Zone
+- Strong Power
+- Strong Stretch
+- Strong Sweep
+- Strong T-Toss
+- Strong Toss
+- Strong Trap
+- Strong Y-Crack Toss
+- Strong Zone Cutback
+- Toss Reverse Weak
+- Weak Belly
+- Weak Counter Trap
+- Weak Counter Trey
+- Weak Dive
+- Weak Draw
+- Weak G-Lead Toss
+- Weak G-Toss
+- Weak Outside Zone
+- Weak Sprint 43
+- Weak Stretch
+- Weak Sweep
+- Weak Toss
+- Weak Toss Dive
+- Weak Trap
+- Weak Zone Bounce
+- Weak Zone Cutback
+
+## Triple Bunch  (12 plays)
+- 50 H Screen Strong
+- 50 H Screen Weak
+- 90 Clear Under
+- 90 Z Arrow
+- 90 Z Hook
+- PA TE/Z Spread
+- Strong Dive
+- Strong Lead Stretch
+- Strong Lead T-Toss
+- Strong Trap
+- Weak Dive
+- Weak Zone Bounce
+
+## Triple Empty  (14 plays)
+- 50 Double Slant
+- 50 H Flat
+- 50 H Post-Corner
+- 50 H Seam
+- 50 Y Fade Rollaway
+- 50 Y Rub Under
+- 90 H Speed Under
+- 90 Hitches-n-Fades
+- 90 TE Speed Out
+- QB Draw
+- QB Naked Bootleg
+- QB Sneak
+- RO Y/Z Split
+- Strong H Sweep
+
+## Triple H Flex  (6 plays)
+- 50 H Wheel
+- 50 Y Seam
+- 90 H Lob Corner
+- 90 H Speed Under
+- QB Draw
+- RO Z Corner-Post
+
+## Triple H Slot  (9 plays)
+- 50 H Deep Seam
+- 50 H/Z Cross
+- 90 T Speed Out
+- 90 Z Quick Hitch
+- PA X In-n-Up
+- QB Draw
+- RO Air Option
+- Strong FB Dive
+- Weak FB Draw
+
+## Triple Left  (6 plays)
+- 50 TE Seam
+- 50 Y Deep Hook
+- 90 X Quick Corner
+- Strong Sweep
+- Weak Dive
+- Weak Toss
+
+## Triple Load  (9 plays)
+- 90 Tackle Eligible
+- Flip Strong
+- PA Y Rip
+- QB Sneak
+- Strong Dive
+- Strong Trap
+- Weak Counter
+- Weak Dive
+- Weak Toss
+
+## Triple Right  (9 plays)
+- 50 H Replace
+- 50 Y Curl
+- 50 Y Drag
+- 50 Y Seam
+- 90 Z Quick Out
+- Strong Draw
+- Strong Toss
+- Strong Trap
+- Weak Zone Cutback
+
+## Trips  (63 plays)
+- 50 A Out
+- 50 All Go
+- 50 All Streaks
+- 50 Comebacks
+- 50 H Screen Strong
+- 50 H Swing Weak
+- 50 H Zone In
+- 50 Over-n-Under
+- 50 Strong Flow
+- 50 Verts
+- 50 X Dbl Rub Under
+- 50 X Fade
+- 50 X/A Deep Cross
+- 50 X/Z Deep Cross
+- 50 X/Z Fades
+- 50 Y Drag
+- 50 Y Fade Rub
+- 50 Y Slam-n-Go
+- 50 Y Stop-n-Go
+- 50 Y/A Curl-n-Go
+- 90 A Quick Out
+- 90 All Stops
+- 90 H Quick Dump
+- 90 X Speed Under
+- 90 X/A/Z Slams
+- 90 Y Quick Slant
+- 90 Y Speed Out
+- 90 Y Speed Rub Out
+- 90 Y Speed Under
+- 90 Z Quick Slant
+- Flea Flicker
+- H Shovel Strong
+- H Swing Strong
+- HB Pass
+- PA Sprint 43 Post
+- PA X Drag
+- PA X Post-Corner
+- PA X Stop-n-Go
+- PA Y/A Cross
+- PA-RO X/A Cross
+- PA-RO Y Side-n-Up
+- PA-RO Y Stop-n-Go
+- QB Lead Draw
+- Slot Reverse Strong
+- Strong Counter
+- Strong Dive
+- Strong Draw
+- Strong Outside Zone
+- Strong Power
+- Strong Toss
+- Strong Toss Sweep
+- Strong Zone Cutback
+- Toss Reverse Strong
+- Weak Counter
+- Weak Dive
+- Weak Draw
+- Weak Outside Zone
+- Weak Slam
+- Weak Sprint 43
+- Weak Toss
+- Weak Trap
+- Weak Zone Bounce
+- Weak Zone Cutback
+
+## Trips Empty  (11 plays)
+- 50 All Go
+- 50 H Wheel
+- 50 Verts
+- 50 X Post
+- 50 X/Y Verts
+- 50 Y Corner
+- 90 H Lob Fade
+- 90 H Speed Out
+- 90 X Speed Under
+- QB Draw
+- QB Sneak
+
+## Trips Tight  (15 plays)
+- 50 A Deep Post
+- 90 H Quick Dump
+- 90 TE Speed Out
+- Flea Flicker
+- PA Counter Z Under
+- PA Double Post
+- Slot Reverse Pass
+- Slot Reverse Strong
+- Strong Counter Trey
+- Strong Gut
+- Strong Trap
+- Toss Reverse Strong
+- Weak Counter Trey
+- Weak Draw
+- Weak G-Lead Toss
+
+## Twins F Spread  (13 plays)
+- 50 TE Fade Out
+- 50 X Curl
+- 90 F Speed Under
+- 90 Z Arrow
+- Flip Strong
+- H Shovel Strong
+- RO TE Rub Out
+- Slot Reverse Strong B
+- Strong Toss
+- Toss Reverse Strong B
+- Weak Counter
+- Weak Draw
+- Weak Zone Bounce
+
+## Twins H Split  (9 plays)
+- 50 F Swing Strong
+- 50 X Post
+- 90 F Dump
+- 90 H Speed Under
+- PA H Out-n-Up
+- QB Lead Draw
+- QB Sneak
+- Strong FB Dive
+- Strong FB Toss
+
+## Weak I Flip Spread  (12 plays)
+- 50 X Deep Drag
+- 90 X Speed Under
+- 90 Z Speed Under
+- PA Counter Pass
+- PA H Screen Strong
+- RO Z Out
+- Strong C-Toss
+- Strong Counter
+- Strong Zone Cutback
+- Weak Iso
+- Weak Lead Draw
+- Weak Zone Bounce
+
+## Weak I Jacks  (12 plays)
+- 50 F Circle
+- 90 F Speed Out
+- 90 Jack Hot
+- PA Counter Pass
+- PA TE Dump
+- QB Bootleg
+- QB Sneak
+- Strong Counter Trap
+- Strong G-Toss
+- Weak A-Iso
+- Weak G-Toss
+- Weak Toss
+
+## Weak I Jokers  (31 plays)
+- 50 Comebacks
+- 50 X Under
+- 50 Y/TE Corners
+- 50 Y/TE Cross
+- 50 Y/TE Zones
+- 90 F Speed Out
+- 90 X Stop
+- 90 Z Slant
+- FB Fake Strong Toss
+- PA Delay Outs
+- PA Flood Weak
+- PA X Fly
+- PA X Go
+- PA X Streak
+- PA Z Fade
+- PA Z Post
+- PA-RO X Side-n-Go
+- QB Naked
+- Strong C-Toss
+- Strong Counter Trap
+- Strong F Motion Iso
+- Strong Zone Cutback
+- Weak FB Dive
+- Weak Fan Iso
+- Weak G-Toss
+- Weak Inside Power
+- Weak Iso
+- Weak Outside Zone
+- Weak Power
+- Weak Power-O
+- Weak Toss
+
+## Weak I Jokers Pair  (9 plays)
+- 50 Comebacks
+- 50 H Screen Strong
+- 90 TE Out
+- FB Fake Strong Toss
+- Strong Counter
+- Strong Zone Cutback
+- Weak FB Dive
+- Weak Outside Zone
+- Weak Toss
+
+## Weak I Jumbo  (12 plays)
+- 90 All Stop
+- 90 Y/TE Slants
+- Fake Toss Reverse I
+- PA H Screen Strong
+- PA-RO TE Out
+- RO Air Option Flood
+- RO FB Hook
+- RO Strong Flow
+- Strong FB Lead Dive
+- Weak Iso
+- Weak Power-O
+- Weak WB Sweep
+
+## Weak I Pro  (99 plays)
+- 50 Comebacks
+- 50 Double Screen
+- 50 F Screen Weak
+- 50 H Screen Strong
+- 50 H Swing Strong
+- 50 H Wheel
+- 50 H/F Outs
+- 50 H/F Wheels
+- 50 TE Corner
+- 50 TE Fade Out
+- 50 TE Seam
+- 50 TE Skinny
+- 50 TE Zone In
+- 50 X Curl
+- 50 X Deep Drag
+- 50 X Out-n-Up
+- 50 X Post-Corner
+- 50 Y Swing Weak
+- 50 Y/Z In-n-Out
+- 50 Z Comeback
+- 50 Z Deep Hook
+- 50 Z Drag
+- 50 Z Hook-n-Go
+- 50 Z Rub In
+- 50 Z Slant
+- 50 Z Under
+- 90 All Slam
+- 90 F Speed Out
+- 90 F Speed Stop
+- 90 H Speed Out
+- 90 Hitches
+- 90 TE Speed Out
+- 90 X Hot
+- 90 X Slant
+- 90 Y Dump
+- 90 Y Speed Out
+- 90 Z Arrow
+- 90 Z Quick Hitch
+- 90 Z Slant
+- 90 Z Speed Under
+- 90 Zdyrko Under
+- FB Fake Strong Toss
+- HB Pass
+- PA Counter Pass
+- PA F Motion Z Post
+- PA Flood Weak
+- PA H Speed Out
+- PA H Strong Screen
+- PA Slam-n-Go
+- PA TE Drag
+- PA Weak Flood
+- PA X Post-Corner
+- PA X Short Drag
+- PA X Slant-n-Go
+- PA Y Seam
+- PA Z Cross
+- PA Z Post-Corner
+- PA Z Roll In
+- PA-RO F Out
+- PA-RO H Throwback
+- PA-RO Stretch Cross
+- PA-RO X Comeback
+- PA-RO Y Speed Out
+- PA-RO Z Corner
+- QB Bootleg
+- RO Air Option Flood
+- RO H Dump
+- RO Y Wheel
+- RO Z Corner
+- Strong Counter
+- Strong Counter Trap
+- Strong Dbl Lead Pitch
+- Strong Dive
+- Strong Draw
+- Strong F Motion Iso
+- Strong FB Dive
+- Strong G-Toss
+- Strong Gut
+- Strong Inside Zone
+- Strong Outside Zone
+- Strong Stretch
+- Strong T-Toss
+- Strong Zone Cutback
+- Weak A-Iso
+- Weak Belly
+- Weak Center Lead
+- Weak Chip
+- Weak Counter Lead
+- Weak FB Dive
+- Weak G-Stretch
+- Weak G-Toss
+- Weak Inside Power
+- Weak Iso
+- Weak Lead Counter
+- Weak Lead Draw
+- Weak Outside Zone
+- Weak Stretch
+- Weak Toss
+- Weak Zone Bounce
+
+## Weak I Spread  (51 plays)
+- 50 Backs Out
+- 50 Comebacks
+- 50 F Screen Weak
+- 50 H Screen Strong
+- 50 TE Post
+- 50 TE Post-Corner
+- 50 X Corner
+- 50 X Speed Over
+- 50 Y Seam
+- 50 Y/Z Deep Cross
+- 50 Y/Z In-n-Out
+- 90 All Slam
+- 90 F Speed Out
+- 90 X Hot
+- 90 X Lob Corner
+- 90 X Qk Hitch
+- 90 Y Dig
+- 90 Y Qk Slant
+- 90 Z Quick Hitch
+- 90 Z Speed Under
+- FB Fake Strong Toss
+- Flea Flicker
+- HB Pass
+- PA Counter Pass
+- PA H Speed Out
+- PA H Weak Screen
+- PA H Wheel
+- PA Stops-n-Posts
+- PA X Curl
+- PA X Slant-n-Go
+- PA Z Cross
+- PA Z/TE Cross
+- PA-RO 37 Y Out
+- PA-RO Y/Z Switch
+- RO Y Cross
+- RO Y In-n-Out
+- Strong Counter Trap
+- Strong Dive
+- Strong F Motion Iso
+- Strong G-Toss
+- Strong Inside Zone
+- Strong Outside Zone
+- Strong T-Toss
+- Strong Zone Cutback
+- Weak FB Dive
+- Weak Iso
+- Weak Lead Draw
+- Weak Outside Zone
+- Weak Speed Option
+- Weak Sweep
+- Weak Toss
+
+## Weak I Twins  (51 plays)
+- 50 F Circle
+- 50 Weak Flood
+- 50 X Corner
+- 50 X Post
+- 50 X/Z Cross
+- 50 X/Z Drags
+- 50 Z Post
+- 90 F Speed Out
+- 90 TE Drag
+- 90 TE Speed Out
+- 90 X Speed Under
+- 90 Z Quick Hitch
+- 90 Z Slant
+- 90 Z Speed Out
+- 90 Z Speed Under
+- 90 Z Sprint Screen
+- FB Fake Strong Toss
+- PA Double Crosses
+- PA H Delay Streak
+- PA H Speed Out
+- PA H Wheel
+- PA TE Outs
+- PA Weak Flood
+- PA X Out-n-Up
+- PA X Slide-n-Go
+- PA Z Wheel
+- RO Air Option
+- RO H Flare
+- RO X Comeback
+- RO Z Curl-n-Go
+- Slot Reverse I
+- Strong Counter Gap
+- Strong Counter Trap
+- Strong Gut
+- Strong Lead Stretch
+- Strong Outside Zone
+- Strong Steel Push
+- Strong Zone Cutback
+- Toss Reverse I
+- Weak A-Iso
+- Weak Counter Lead
+- Weak FB Dive
+- Weak G-Toss
+- Weak Inside Power
+- Weak Iso
+- Weak Lead Draw
+- Weak Outside Zone
+- Weak Speed Option
+- Weak Toss
+- Weak Toss Dive
+- Week Toss
+
+## Wing Jokers  (12 plays)
+- 50 WB Wheel
+- 50 Weak Flow
+- 50 X Rub Under
+- 50 Y/TE Corners
+- 90 Y/TE Hot
+- 90 Y/Z Cross
+- Fake Toss Reverse I
+- Strong Iso
+- Strong Outside Zone
+- Weak A-Iso
+- Weak Stretch
+- Weak WB Sweep
