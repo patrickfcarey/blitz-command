@@ -10,6 +10,15 @@ when an item depends on something external (user input, upstream work).
 
 ## Highest leverage right now
 
+- **Vision pilot — full M25 geometry extraction.** Pipeline built under
+  `tools/playbook-vision-pilot/`: 7,365 deduped canonical crops, Python
+  target_gap detector (3/3 ground-truth correct), Haiku 4.5 + caching +
+  Python hints dispatch validated on 12 hand-labeled plays. Run cost
+  projected at ~$59 to extract every M25 play geometry-fully. Decision
+  paused — re-run `dispatch_canonical.py` to launch.
+
+
+
 - **Game-editor measurements.** *(blocked: user)* Diagrams against any game
   profile stay placeholder-accurate until `data/games/<game-id>/editor-grid.yaml`
   is filled in via `docs/game-editor-measurement-protocol.md`. Madden 2005 PS2

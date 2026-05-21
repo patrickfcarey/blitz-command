@@ -29,6 +29,125 @@ Append-only handoff log. The newest session goes at the **top**. The point is so
 
 ---
 
+## 2026-05-20 (cont.) — vision pilot resumed + socket-drop root cause
+
+**Active thread:** picking up `tools/playbook-vision-pilot/` (the hybrid-vs-cold
+vision extraction study). Prior session died to mid-turn API socket drops with
+no log trail.
+
+**Landed this session:**
+- Diagnosed the recurring `socket connection was closed unexpectedly` errors:
+  user's VPN is in the route to api.anthropic.com (eth2, MTU 1441) and WSL
+  default `tcp_keepalive_time=7200s` means long Claude turns idle past the
+  VPN's TCP idle cutoff. User confirmed VPN was on — disabling resolves it.
+- Locked the run-log + session-log laws into project memory
+  (`feedback_run_log_law.md`, `feedback_session_log_law.md`). Both are now
+  read at session start.
+- Rebuilt the pilot pipeline artifacts (lost because they wrote to `/tmp`
+  which WSL wiped): 50-play stratified sample, 50 cropped panels, 31/50
+  decoded priors. Sources (`.docx-cache-m25-plays/`, M25 Playbooks docx)
+  all intact.
+- **Corrected OL-identification rule.** Prior run-log claimed
+  "C = circle, OG/OT = squares" — WRONG. Correct rule: all 5 OL are
+  circles; C is a bare circle; OG/OT are circles with a teardrop showing
+  the initial step (forward = run drive-block, backward = pass-pro
+  kickslide). QB is always behind C (wildcat: RB at QB position).
+  Draw/play-action footwork may not be reliable.
+
+**In progress / next step:** built a visual taxonomy from Singleback Ace
+(known 2-TE set). Confirmed rules:
+- C is always rendered as a white SQUARE, dead center of the LOS cluster
+  (the prior "C is a circle" rule was wrong).
+- 4 OG/OT are circles with a downward stub on the LOS row.
+- TEs are circle-glyphs adjacent to the OL cluster (no gap).
+- WRs are circle-glyphs split out from the cluster (visible gap).
+- On PASS plays the 4 eligible receivers (+ HB if checkdown) wear PS
+  button glyphs (□ purple, △ green, ⊗ blue, ⊙ red, also L1/R1). RUN
+  plays leave skill players as plain circles — UNLESS the play is an
+  RPO, which can color the eligible RPO target.
+- Color-vs-monochrome distinguishes pass-vs-run reliably (per user).
+
+**Locked rules (confirmed by user against Singleback Ace HB Dive
++ Z Spot, ~7.5x LOS-zoom crops with cyan LOS line through C-square):**
+
+1. C = white square dead center of LOS cluster (always).
+2. OL = C + 4 plain-white circles flanking.
+3. TE = circle adjacent to OL cluster, no gap from OT.
+4. WR = circle (run) or PS-button-color glyph (pass), separated
+   from the OL/TE cluster by a visible gap.
+5. PS buttons: □ purple, △ green, ⊗ blue, ⊙ red, L1/R1 also possible.
+6. Pass plays color all eligible receivers with PS buttons; run plays
+   leave them mono (RPO is the exception).
+7. Pass-pro signature: OL circles' y-centers sit BELOW the LOS
+   line through C-square center. Run plays: OL circles sit AT the
+   line. (NOT teardrop direction — the stubs are stance icons,
+   constant down regardless of play type.)
+8. QB always lined up directly behind C in non-shotgun. Wildcat = RB
+   at QB position.
+
+**Rules verified across all 4 starting formations (Singleback Ace,
+Singleback Jumbo, Singleback Y-Trips TE Slot, GUN Ace Twins).**
+Confirmed: C-square anchor, OL-offset run-vs-pass signal, TE/WR by
+adjacency-vs-gap, PS-button glyphs on pass eligibles. Route colors:
+red = primary route OR run path (disambig by play_type), yellow =
+standard route, blue/cyan = block-then-release. Dashed lines may be
+option routes / motion (not yet enumerated; pilot will surface).
+
+**Taxonomy verified across 15 distinct formations** spanning all major
+personnel groupings: Singleback (Ace, Jumbo, Y-Trips), GUN (Ace
+Twins, Empty, Bunch), I-Form (Pro), Strong, Weak, Goal Line, Pistol
+(Strong), Wildcat. Backfield-composition rule added per formation
+family. The cyan LOS line + yellow C-box annotations are now part
+of the crop format and the subagent prompt accounts for them.
+
+**Smoke test ran on prompt v3 with Haiku 4.5 → caching still failed
+(Haiku 4.5 doesn't yet support prompt caching, even with a 3303-
+token system block). Haiku also mislabeled the isolated WRs as OL.**
+
+**Switched smoke test to Sonnet 4.5** to debug caching infrastructure
+and check vision quality:
+- Caching CONFIRMED working: cold call cache_creation_input=3303,
+  primed call cache_read_input=3303. Wiring is correct.
+- Sonnet's extraction is COMPLETE: found all 11 players (5 OL + 1 TE
+  + 2 WR + QB/FB/HB stacked). I-Form Pro is canonically 11-personnel
+  with 1 TE (my earlier 2-TE eyeball count was wrong).
+- Minor: cold vs primed differ on which side the TE attaches; pixel
+  coordinates drift ~50–100 px between calls. Counts are stable.
+- Cost: Sonnet+cache ≈ $0.022/call → ~$2.20 for 100-call pilot.
+  Haiku no-cache ≈ $0.010 but produces mislabeled output.
+
+**Full pilot ran end-to-end on Sonnet 4.5 + caching.**
+- 100 extractions (50 plays × 2 arms) in 5.3 min wall time, $2.16
+  actual cost (matched estimate).
+- 100/100 JSON-parseable, 0 errors, 50/50 play_type agreement.
+- Cold: avg 1068 output tokens, 10.7 players found.
+- Primed: avg 1046 output tokens, 10.6 players found.
+- Δ output tokens: **−2.0%** (t = −2.41, Cohen's d = −0.34, 95% CI
+  [−0.625, −0.055] — statistically significant but small).
+- Δ cost/call: primed is +1.5% MORE expensive (prior text in user
+  message adds input cost above the output savings).
+
+**Pilot decision: DROP the hybrid priming pipeline.** Sub-15%
+reduction means priming isn't worth the engineering complexity. Scale
+up to full M25 extraction (~14,000 plays) with cold-only Sonnet 4.5 +
+caching, estimated ~$308 total.
+
+Pilot results: `/tmp/pilot-work/pilot-results/report.md` +
+`pairs.json`.
+
+Pilot artifacts in `tools/playbook-vision-pilot/` (sample-crops/,
+dispatch-crops/, the scripts) — all still untracked, intentional
+until a follow-up commit captures the pilot as a unit.
+
+**In progress / next step:** decide whether to commit the pilot
+work and proceed with full M25 extraction, or shelve until later.
+
+**Uncommitted state:** `tools/playbook-vision-pilot/` is fully untracked.
+sample-crops/ace-batch/ (12 panels at 3x) and sample-crops/los-zoom/
+(2 LOS-only at ~7.5x) added this session.
+
+---
+
 ## 2026-05-20 — Phase 3 xlsx-game play backfill (M04, M07, NCAA 06, NCAA 05)
 
 **Active thread:** backfilling plays into the xlsx-sourced game catalogs that

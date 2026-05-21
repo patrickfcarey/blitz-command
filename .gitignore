@@ -52,3 +52,14 @@ research_artifacts/
 
 # docx vision-ingest caches — per-team JSON cache for ingest_docx_playbooks.py (restartable).
 .docx-cache-*/
+
+# Vision pilot crop directories — 7k+ JPEGs (~1.4GB total), regeneratable
+# from the source docx by running batch_crop.py / dedup_crop.py. The
+# manifests (small JSON) are committed; the crops themselves are not.
+tools/playbook-vision-pilot/dedup-crops/*.jpg
+tools/playbook-vision-pilot/dispatch-crops/*.jpg
+tools/playbook-vision-pilot/sample-crops/**/*.jpg
+tools/playbook-vision-pilot/sample-crops/**/*.png
+tools/playbook-vision-pilot/sample-crops/*.jpg
+tools/playbook-vision-pilot/sample-crops/*.png
+tools/playbook-vision-pilot/__pycache__/

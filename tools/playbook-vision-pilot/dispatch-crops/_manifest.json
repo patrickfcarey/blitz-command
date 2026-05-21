@@ -1,0 +1,502 @@
+{
+  "baltimore_ravens__power_o__0058_1": {
+    "filename": "i-form-tight__run__power-o__baltimore-ravens__img58p1__WIDE.jpg",
+    "team": "Baltimore Ravens",
+    "formation": "I-FORM Tight",
+    "play_name": "Power O",
+    "play_type": "run",
+    "image": 58,
+    "panel": 1,
+    "stratum": "run_clean"
+  },
+  "seattle_seahawks__hb_toss_strong__0013_1": {
+    "filename": "singleback-ace-pair-flex__run__hb-toss-strong__seattle-seahawks__img13p1__WIDE.jpg",
+    "team": "Seattle Seahawks",
+    "formation": "SINGLEBACK Ace Pair Flex",
+    "play_name": "HB Toss Strong",
+    "play_type": "run",
+    "image": 13,
+    "panel": 1,
+    "stratum": "run_clean"
+  },
+  "john_madden__hb_zone_wk__0037_1": {
+    "filename": "i-form-tight__run__hb-zone-wk__john-madden__img37p1__WIDE.jpg",
+    "team": "John Madden",
+    "formation": "I-FORM Tight",
+    "play_name": "HB Zone Wk",
+    "play_type": "run",
+    "image": 37,
+    "panel": 1,
+    "stratum": "run_clean"
+  },
+  "dallas_cowboys__counter_weak__0069_1": {
+    "filename": "strong-close__run__counter-weak__dallas-cowboys__img69p1__WIDE.jpg",
+    "team": "Dallas Cowboys",
+    "formation": "STRONG Close",
+    "play_name": "Counter Weak",
+    "play_type": "run",
+    "image": 69,
+    "panel": 1,
+    "stratum": "run_clean"
+  },
+  "new_england_patriots__hb_zone_wk__0016_1": {
+    "filename": "singleback-ace-pair-twins__run__hb-zone-wk__new-england-patriots__img16p1__WIDE.jpg",
+    "team": "New England Patriots",
+    "formation": "SINGLEBACK Ace Pair Twins",
+    "play_name": "HB Zone Wk",
+    "play_type": "run",
+    "image": 16,
+    "panel": 1,
+    "stratum": "run_clean"
+  },
+  "jimmy_johnson__hawks_zone_wk__0104_0": {
+    "filename": "strong-tight-pair__run__hawks-zone-wk__jimmy-johnson__img104p0__WIDE.jpg",
+    "team": "Jimmy Johnson",
+    "formation": "STRONG Tight Pair",
+    "play_name": "Hawks Zone Wk",
+    "play_type": "run",
+    "image": 104,
+    "panel": 0,
+    "stratum": "run_clean"
+  },
+  "run_balanced__power_o__0019_1": {
+    "filename": "singleback-ace-pair-twins__run__power-o__run-balanced__img19p1__WIDE.jpg",
+    "team": "Run Balanced",
+    "formation": "SINGLEBACK Ace Pair Twins",
+    "play_name": "Power O",
+    "play_type": "run",
+    "image": 19,
+    "panel": 1,
+    "stratum": "run_clean"
+  },
+  "pittsburgh_steelers__counter_weak__0067_1": {
+    "filename": "strong-close__run__counter-weak__pittsburgh-steelers__img67p1__WIDE.jpg",
+    "team": "Pittsburgh Steelers",
+    "formation": "STRONG Close",
+    "play_name": "Counter Weak",
+    "play_type": "run",
+    "image": 67,
+    "panel": 1,
+    "stratum": "run_clean"
+  },
+  "tom_landry__hb_counter_wk__0034_1": {
+    "filename": "i-form-pro__run__hb-counter-wk__tom-landry__img34p1__WIDE.jpg",
+    "team": "Tom Landry",
+    "formation": "I-FORM Pro",
+    "play_name": "HB Counter Wk",
+    "play_type": "run",
+    "image": 34,
+    "panel": 1,
+    "stratum": "run_clean"
+  },
+  "cleveland_browns__hb_toss_strong__0026_1": {
+    "filename": "singleback-y-trips__run__hb-toss-strong__cleveland-browns__img26p1__WIDE.jpg",
+    "team": "Cleveland Browns",
+    "formation": "SINGLEBACK Y-Trips",
+    "play_name": "HB Toss Strong",
+    "play_type": "run",
+    "image": 26,
+    "panel": 1,
+    "stratum": "run_clean"
+  },
+  "san_diego_chargers__base_power_o__0044_2": {
+    "filename": "singleback-bunch__run__base-power-o__san-diego-chargers__img44p2__WIDE.jpg",
+    "team": "San Diego Chargers",
+    "formation": "SINGLEBACK Bunch",
+    "play_name": "Base Power O",
+    "play_type": "run",
+    "image": 44,
+    "panel": 2,
+    "stratum": "run_clean"
+  },
+  "green_bay_packers__power_o__0041_1": {
+    "filename": "i-form-pro__run__power-o__green-bay-packers__img41p1__WIDE.jpg",
+    "team": "Green Bay Packers",
+    "formation": "I-FORM Pro",
+    "play_name": "Power O",
+    "play_type": "run",
+    "image": 41,
+    "panel": 1,
+    "stratum": "run_clean"
+  },
+  "mike_ditka__hb_counter__0037_1": {
+    "filename": "singleback-y-trips__run__hb-counter__mike-ditka__img37p1__WIDE.jpg",
+    "team": "Mike Ditka",
+    "formation": "SINGLEBACK Y-Trips",
+    "play_name": "HB Counter",
+    "play_type": "run",
+    "image": 37,
+    "panel": 1,
+    "stratum": "run_generic"
+  },
+  "balanced__hb_toss__0040_2": {
+    "filename": "i-form-pro__run__hb-toss__balanced__img40p2__WIDE.jpg",
+    "team": "Balanced",
+    "formation": "I-FORM Pro",
+    "play_name": "HB Toss",
+    "play_type": "run",
+    "image": 40,
+    "panel": 2,
+    "stratum": "run_generic"
+  },
+  "run_n_gun__hb_mid_draw__0082_1": {
+    "filename": "gun-doubles__run__hb-mid-draw__run-n-gun__img82p1__WIDE.jpg",
+    "team": "Run N Gun",
+    "formation": "GUN Doubles",
+    "play_name": "HB Mid Draw",
+    "play_type": "run",
+    "image": 82,
+    "panel": 1,
+    "stratum": "run_generic"
+  },
+  "west_coast__seattle__0028_1": {
+    "filename": "singleback-bunch-swap__run__seattle__west-coast__img28p1__WIDE.jpg",
+    "team": "West Coast",
+    "formation": "SINGLEBACK Bunch Swap",
+    "play_name": "Seattle",
+    "play_type": "run",
+    "image": 28,
+    "panel": 1,
+    "stratum": "run_generic"
+  },
+  "bill_walsh__hb_sweep__0068_1": {
+    "filename": "brown-right__run__hb-sweep__bill-walsh__img68p1__WIDE.jpg",
+    "team": "Bill Walsh",
+    "formation": "BROWN Right",
+    "play_name": "HB Sweep",
+    "play_type": "run",
+    "image": 68,
+    "panel": 1,
+    "stratum": "run_generic"
+  },
+  "pittsburgh_steelers__hb_sting__0146_2": {
+    "filename": "goal-line-normal__run__hb-sting__pittsburgh-steelers__img146p2__WIDE.jpg",
+    "team": "Pittsburgh Steelers",
+    "formation": "GOAL LINE Normal",
+    "play_name": "HB Sting",
+    "play_type": "run",
+    "image": 146,
+    "panel": 2,
+    "stratum": "run_generic"
+  },
+  "pass_balanced__hb_dive__0045_1": {
+    "filename": "singleback-bunch__run__hb-dive__pass-balanced__img45p1__WIDE.jpg",
+    "team": "Pass Balanced",
+    "formation": "SINGLEBACK Bunch",
+    "play_name": "HB Dive",
+    "play_type": "run",
+    "image": 45,
+    "panel": 1,
+    "stratum": "run_generic"
+  },
+  "brian_billick__hb_lead_draw__0068_1": {
+    "filename": "i-form-pro-twins__run__hb-lead-draw__brian-billick__img68p1__WIDE.jpg",
+    "team": "Brian Billick",
+    "formation": "I-FORM Pro Twins",
+    "play_name": "HB Lead Draw",
+    "play_type": "run",
+    "image": 68,
+    "panel": 1,
+    "stratum": "run_generic"
+  },
+  "carolina_panthers__hb_toss__0041_2": {
+    "filename": "i-form-pro__run__hb-toss__carolina-panthers__img41p2__WIDE.jpg",
+    "team": "Carolina Panthers",
+    "formation": "I-FORM Pro",
+    "play_name": "HB Toss",
+    "play_type": "run",
+    "image": 41,
+    "panel": 2,
+    "stratum": "run_generic"
+  },
+  "run_n_gun__fb_dive__0118_2": {
+    "filename": "goal-line-normal__run__fb-dive__run-n-gun__img118p2__WIDE.jpg",
+    "team": "Run N Gun",
+    "formation": "GOAL LINE Normal",
+    "play_name": "FB Dive",
+    "play_type": "run",
+    "image": 118,
+    "panel": 2,
+    "stratum": "run_generic"
+  },
+  "indianapolis_colts__weak_zone__0009_1": {
+    "filename": "singleback-ace__run__weak-zone__indianapolis-colts__img09p1__WIDE.jpg",
+    "team": "Indianapolis Colts",
+    "formation": "SINGLEBACK Ace",
+    "play_name": "Weak Zone",
+    "play_type": "run",
+    "image": 9,
+    "panel": 1,
+    "stratum": "run_generic"
+  },
+  "oakland_raiders__hb_base__0079_1": {
+    "filename": "gun-split-v-flex__run__hb-base__oakland-raiders__img79p1__WIDE.jpg",
+    "team": "Oakland Raiders",
+    "formation": "GUN Split V-Flex",
+    "play_name": "HB Base",
+    "play_type": "run",
+    "image": 79,
+    "panel": 1,
+    "stratum": "run_generic"
+  },
+  "houston_texans__x_drag__0096_0": {
+    "filename": "gun-split-close__pass__x-drag__houston-texans__img96p0__WIDE.jpg",
+    "team": "Houston Texans",
+    "formation": "GUN Split Close",
+    "play_name": "X Drag",
+    "play_type": "pass",
+    "image": 96,
+    "panel": 0,
+    "stratum": "pass_named"
+  },
+  "washington_redskins__inside_cross__0011_1": {
+    "filename": "singleback-ace__pass__inside-cross__washington-redskins__img11p1__WIDE.jpg",
+    "team": "Washington Redskins",
+    "formation": "SINGLEBACK Ace",
+    "play_name": "Inside Cross",
+    "play_type": "pass",
+    "image": 11,
+    "panel": 1,
+    "stratum": "pass_named"
+  },
+  "brian_billick__pa_dagger__0115_2": {
+    "filename": "gun-doubles__pass__pa-dagger__brian-billick__img115p2__WIDE.jpg",
+    "team": "Brian Billick",
+    "formation": "GUN Doubles",
+    "play_name": "PA Dagger",
+    "play_type": "pass",
+    "image": 115,
+    "panel": 2,
+    "stratum": "pass_named"
+  },
+  "baltimore_ravens__stick__0136_1": {
+    "filename": "gun-raven-empty__pass__stick__baltimore-ravens__img136p1__WIDE.jpg",
+    "team": "Baltimore Ravens",
+    "formation": "GUN Raven Empty",
+    "play_name": "Stick",
+    "play_type": "pass",
+    "image": 136,
+    "panel": 1,
+    "stratum": "pass_named"
+  },
+  "cincinnati_bengals__pa_boot_lt__0069_2": {
+    "filename": "weak-pro-twins__pass__pa-boot-lt__cincinnati-bengals__img69p2__WIDE.jpg",
+    "team": "Cincinnati Bengals",
+    "formation": "WEAK Pro Twins",
+    "play_name": "PA Boot Lt",
+    "play_type": "pass",
+    "image": 69,
+    "panel": 2,
+    "stratum": "pass_named"
+  },
+  "john_madden__pa_deep__0030_0": {
+    "filename": "i-form-pro__pass__pa-deep__john-madden__img30p0__WIDE.jpg",
+    "team": "John Madden",
+    "formation": "I-FORM Pro",
+    "play_name": "PA Deep",
+    "play_type": "pass",
+    "image": 30,
+    "panel": 0,
+    "stratum": "pass_named"
+  },
+  "run_n_gun__pa_boot_over__0014_0": {
+    "filename": "singleback-ace-twins__pass__pa-boot-over__run-n-gun__img14p0__WIDE.jpg",
+    "team": "Run N Gun",
+    "formation": "SINGLEBACK Ace Twins",
+    "play_name": "PA Boot Over",
+    "play_type": "pass",
+    "image": 14,
+    "panel": 0,
+    "stratum": "pass_named"
+  },
+  "pistol__y_cross_flood__0034_2": {
+    "filename": "pistol-weak-slot__pass__y-cross-flood__pistol__img34p2__WIDE.jpg",
+    "team": "Pistol",
+    "formation": "PISTOL Weak Slot",
+    "play_name": "Y Cross Flood",
+    "play_type": "pass",
+    "image": 34,
+    "panel": 2,
+    "stratum": "pass_named"
+  },
+  "bill_walsh__bingo_cross__0062_2": {
+    "filename": "red-slot__pass__bingo-cross__bill-walsh__img62p2__WIDE.jpg",
+    "team": "Bill Walsh",
+    "formation": "RED Slot",
+    "play_name": "Bingo Cross",
+    "play_type": "pass",
+    "image": 62,
+    "panel": 2,
+    "stratum": "pass_named"
+  },
+  "dallas_cowboys__four_verticals__0125_0": {
+    "filename": "gun-trey-open-cowboy__pass__four-verticals__dallas-cowboys__img125p0__WIDE.jpg",
+    "team": "Dallas Cowboys",
+    "formation": "GUN Trey Open Cowboy",
+    "play_name": "Four Verticals",
+    "play_type": "pass",
+    "image": 125,
+    "panel": 0,
+    "stratum": "pass_named"
+  },
+  "baltimore_ravens__cross_in__0047_0": {
+    "filename": "i-form-pro__pass__cross-in__baltimore-ravens__img47p0__WIDE.jpg",
+    "team": "Baltimore Ravens",
+    "formation": "I-FORM Pro",
+    "play_name": "Cross In",
+    "play_type": "pass",
+    "image": 47,
+    "panel": 0,
+    "stratum": "pass_named"
+  },
+  "dallas_cowboys__pa_deep_outs__0111_2": {
+    "filename": "gun-norm-y-flex-tight__pass__pa-deep-outs__dallas-cowboys__img111p2__WIDE.jpg",
+    "team": "Dallas Cowboys",
+    "formation": "GUN Norm Y-Flex Tight",
+    "play_name": "PA Deep Outs",
+    "play_type": "pass",
+    "image": 111,
+    "panel": 2,
+    "stratum": "pass_named"
+  },
+  "philadelphia_eagles__se_drag__0119_0": {
+    "filename": "gun-trio-4wr__pass__se-drag__philadelphia-eagles__img119p0__WIDE.jpg",
+    "team": "Philadelphia Eagles",
+    "formation": "GUN Trio 4WR",
+    "play_name": "SE Drag",
+    "play_type": "pass",
+    "image": 119,
+    "panel": 0,
+    "stratum": "pass_named"
+  },
+  "oakland_raiders__pa_slide__0038_2": {
+    "filename": "singleback-wing-trio__pass__pa-slide__oakland-raiders__img38p2__WIDE.jpg",
+    "team": "Oakland Raiders",
+    "formation": "SINGLEBACK Wing Trio",
+    "play_name": "PA Slide",
+    "play_type": "pass",
+    "image": 38,
+    "panel": 2,
+    "stratum": "pass_generic"
+  },
+  "pittsburgh_steelers__z_spot__0087_1": {
+    "filename": "gun-split-close__pass__z-spot__pittsburgh-steelers__img87p1__WIDE.jpg",
+    "team": "Pittsburgh Steelers",
+    "formation": "GUN Split Close",
+    "play_name": "Z Spot",
+    "play_type": "pass",
+    "image": 87,
+    "panel": 1,
+    "stratum": "pass_generic"
+  },
+  "jimmy_johnson__curls__0109_0": {
+    "filename": "weak-pro__pass__curls__jimmy-johnson__img109p0__WIDE.jpg",
+    "team": "Jimmy Johnson",
+    "formation": "WEAK Pro",
+    "play_name": "Curls",
+    "play_type": "pass",
+    "image": 109,
+    "panel": 0,
+    "stratum": "pass_generic"
+  },
+  "oakland_raiders__pa_v_corner__0015_2": {
+    "filename": "singleback-ace-pair-slot__pass__pa-v-corner__oakland-raiders__img15p2__WIDE.jpg",
+    "team": "Oakland Raiders",
+    "formation": "SINGLEBACK Ace Pair Slot",
+    "play_name": "PA V Corner",
+    "play_type": "pass",
+    "image": 15,
+    "panel": 2,
+    "stratum": "pass_generic"
+  },
+  "pistol__pa_waggle__0115_1": {
+    "filename": "goal-line-normal__pass__pa-waggle__pistol__img115p1__WIDE.jpg",
+    "team": "Pistol",
+    "formation": "GOAL LINE Normal",
+    "play_name": "PA Waggle",
+    "play_type": "pass",
+    "image": 115,
+    "panel": 1,
+    "stratum": "pass_generic"
+  },
+  "san_diego_chargers__hb_slip_screen__0098_2": {
+    "filename": "gun-normal-y-flex-tight__pass__hb-slip-screen__san-diego-chargers__img98p2__WIDE.jpg",
+    "team": "San Diego Chargers",
+    "formation": "GUN Normal Y-Flex Tight",
+    "play_name": "HB Slip Screen",
+    "play_type": "pass",
+    "image": 98,
+    "panel": 2,
+    "stratum": "pass_generic"
+  },
+  "cleveland_browns__pa_power_o__0042_1": {
+    "filename": "i-form-pro__pass__pa-power-o__cleveland-browns__img42p1__WIDE.jpg",
+    "team": "Cleveland Browns",
+    "formation": "I-FORM Pro",
+    "play_name": "PA Power O",
+    "play_type": "pass",
+    "image": 42,
+    "panel": 1,
+    "stratum": "pass_generic"
+  },
+  "miami_dolphins__hb_slip_screen__0010_0": {
+    "filename": "singleback-ace__pass__hb-slip-screen__miami-dolphins__img10p0__WIDE.jpg",
+    "team": "Miami Dolphins",
+    "formation": "SINGLEBACK Ace",
+    "play_name": "HB Slip Screen",
+    "play_type": "pass",
+    "image": 10,
+    "panel": 0,
+    "stratum": "pass_generic"
+  },
+  "minnesota_vikings__bubble_screen__0025_0": {
+    "filename": "singleback-doubles__pass__bubble-screen__minnesota-vikings__img25p0__WIDE.jpg",
+    "team": "Minnesota Vikings",
+    "formation": "SINGLEBACK Doubles",
+    "play_name": "Bubble Screen",
+    "play_type": "pass",
+    "image": 25,
+    "panel": 0,
+    "stratum": "pass_generic"
+  },
+  "cincinnati_bengals__pa_spot__0045_2": {
+    "filename": "i-form-tight-pair__pass__pa-spot__cincinnati-bengals__img45p2__WIDE.jpg",
+    "team": "Cincinnati Bengals",
+    "formation": "I-FORM Tight Pair",
+    "play_name": "PA Spot",
+    "play_type": "pass",
+    "image": 45,
+    "panel": 2,
+    "stratum": "pass_generic"
+  },
+  "indianapolis_colts__fl_screen__0106_1": {
+    "filename": "gun-doubles__pass__fl-screen__indianapolis-colts__img106p1__WIDE.jpg",
+    "team": "Indianapolis Colts",
+    "formation": "GUN Doubles",
+    "play_name": "FL Screen",
+    "play_type": "pass",
+    "image": 106,
+    "panel": 1,
+    "stratum": "pass_generic"
+  },
+  "run_and_shoot__hb_slip_screen__0018_0": {
+    "filename": "pistol-spread__pass__hb-slip-screen__run-and-shoot__img18p0__WIDE.jpg",
+    "team": "Run and Shoot",
+    "formation": "PISTOL Spread",
+    "play_name": "HB Slip Screen",
+    "play_type": "pass",
+    "image": 18,
+    "panel": 0,
+    "stratum": "pass_generic"
+  },
+  "detroit_lions__quick_slants__0048_0": {
+    "filename": "i-form-pro__pass__quick-slants__detroit-lions__img48p0__WIDE.jpg",
+    "team": "Detroit Lions",
+    "formation": "I-FORM Pro",
+    "play_name": "Quick Slants",
+    "play_type": "pass",
+    "image": 48,
+    "panel": 0,
+    "stratum": "pass_generic"
+  }
+}
