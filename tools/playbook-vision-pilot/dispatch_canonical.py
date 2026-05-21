@@ -31,6 +31,8 @@ from pathlib import Path
 
 import anthropic
 from dotenv import load_dotenv
+from PIL import Image
+import io
 
 REPO = Path(__file__).resolve().parents[2]
 PROMPT_PATH = REPO / "tools/playbook-vision-pilot/subagent-prompt.md"
@@ -42,6 +44,10 @@ OUT_DIR = REPO / "data/games/madden-25-ps3/play-geometry"
 # and injects it as a hint in the user message.
 MODEL = "claude-haiku-4-5-20251001"
 MAX_TOKENS = 2048
+# Pre-API image downscale: full crops are 2802×1458 (~1568 image tokens
+# per call). Downscaling to 700w drops image tokens to ~280 — saves ~$9
+# across 7,300 plays with no measured quality regression on smoke tests.
+RESIZE_WIDTH = 700
 
 sys.path.insert(0, str(REPO / "tools/playbook-vision-pilot"))
 from target_gap_python import compute_target_gap_for_crop  # noqa: E402
@@ -58,7 +64,16 @@ def _load_rules() -> str:
 
 def _build_user(info: dict, crop_path: Path, py_hints: dict,
                 concept: dict) -> list[dict]:
-    img_b64 = base64.standard_b64encode(crop_path.read_bytes()).decode("ascii")
+    # Downscale image to RESIZE_WIDTH before sending — drops image tokens
+    # from ~1568 to ~280 with no measured quality regression.
+    img = Image.open(crop_path)
+    if img.size[0] > RESIZE_WIDTH:
+        scale = RESIZE_WIDTH / img.size[0]
+        img = img.resize((RESIZE_WIDTH, int(img.size[1] * scale)),
+                         Image.LANCZOS)
+    buf = io.BytesIO()
+    img.save(buf, "JPEG", quality=85, optimize=True)
+    img_b64 = base64.standard_b64encode(buf.getvalue()).decode("ascii")
     play_id = crop_path.stem
     # Concept + family + blockers_implicit are Python-classified from the
     # play_name. Pass them as authoritative — the LLM doesn't have to name
