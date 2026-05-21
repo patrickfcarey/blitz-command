@@ -30,7 +30,9 @@ from PIL import Image, ImageDraw
 
 REPO = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO / "tools/ingest-research"))
+sys.path.insert(0, str(REPO / "tools/playbook-vision-pilot"))
 from extract_docx_images import ordered_image_entries  # noqa: E402
+from formation_personnel import personnel_for  # noqa: E402
 
 CACHE = REPO / ".docx-cache-m25-plays"
 PLAYBOOKS = REPO / "research_artifacts/PS3/Madden NFL 25 (2013)/Playbooks"
@@ -40,6 +42,28 @@ PLAY_AREA_LEFT, PLAY_AREA_RIGHT = 420, 1820
 
 def _slug(text: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
+
+
+# Family names in M25 docx data have inconsistent separators (I-FORM,
+# I_FORM, I FOR, I FO, etc.) — normalize to a single canonical name to
+# avoid dedup leaks. Built from inspecting the manifest unique-family list.
+FAMILY_NORMALIZATIONS = {
+    "I-FORM": "I-FORM",
+    "I_FORM": "I-FORM",
+    "I FOR":  "I-FORM",
+    "I FO":   "I-FORM",
+    "STRONG I": "STRONG-I",
+    "WEAK I":   "WEAK-I",
+    "FULL HOUSE": "FULL-HOUSE",
+    "FULL_HOUSE": "FULL-HOUSE",
+}
+
+
+def normalize_family(family: str | None) -> str | None:
+    if not family:
+        return family
+    f = family.strip().upper()
+    return FAMILY_NORMALIZATIONS.get(f, f)
 
 
 def _crop_panel(raw: bytes, panel: int) -> Image.Image:
@@ -98,7 +122,8 @@ def _build_index() -> tuple[dict, dict]:
         for entry in json.loads(cache_file.read_text()):
             kind = entry.get("kind")
             if kind == "formation_list":
-                current = (entry.get("family"), entry.get("highlighted"))
+                family = normalize_family(entry.get("family"))
+                current = (family, entry.get("highlighted"))
             elif kind == "play_screen" and current:
                 family, formation = current
                 for pi, p in enumerate(entry.get("plays", [])):
@@ -138,22 +163,28 @@ def main() -> None:
             continue
         entries = ordered_image_entries(docx)
         items = by_team[team_part]
-        # Cache image bytes per img_idx so we don't re-read the same image.
-        wanted_imgs = {img_idx for _, img_idx, _ in items}
+        # Lazy-load image bytes only when crops actually need to be rendered.
         cache: dict[int, bytes] = {}
-        with zipfile.ZipFile(docx) as z:
-            for img_idx in wanted_imgs:
-                with z.open(entries[img_idx - 1]) as src:
-                    cache[img_idx] = src.read()
         for key, img_idx, panel in items:
             family, formation, name, ptype = key
-            panel_img = _crop_panel(cache[img_idx], panel)
-            zoomed = _wide_zoom(panel_img)
-            marked = _mark_los(zoomed)
-            slug_name = (f"{_slug(family)}__{_slug(formation)}"
+            # Build slug with personnel tag baked in, matching tag_crops_with_personnel.py
+            pers = personnel_for(family, formation)
+            tag = f"r{pers['RB']}f{pers['FB']}t{pers['TE']}w{pers['WR']}"
+            slug_name = (f"{_slug(family)}__{tag}__{_slug(formation)}"
                          f"__{_slug(ptype)}__{_slug(name)}.jpg")
             out = OUT / slug_name
-            marked.save(out, "JPEG", quality=85, optimize=True)
+            # Skip re-rendering if the file already exists with matching size.
+            # Only re-crop if missing or zero-byte. Crops are deterministic.
+            if not out.exists() or out.stat().st_size < 1000:
+                # Lazy-load image only when needed
+                if img_idx not in cache:
+                    with zipfile.ZipFile(docx) as z2:
+                        with z2.open(entries[img_idx - 1]) as src:
+                            cache[img_idx] = src.read()
+                panel_img = _crop_panel(cache[img_idx], panel)
+                zoomed = _wide_zoom(panel_img)
+                marked = _mark_los(zoomed)
+                marked.save(out, "JPEG", quality=85, optimize=True)
             manifest[slug_name] = {
                 "family": family,
                 "formation": formation,
@@ -164,6 +195,7 @@ def main() -> None:
                 "canonical_panel": panel,
                 "owner_teams": sorted(set(owners[key])),
                 "owner_count": len(set(owners[key])),
+                "expected_personnel": pers,
             }
             written += 1
             if written % 500 == 0:

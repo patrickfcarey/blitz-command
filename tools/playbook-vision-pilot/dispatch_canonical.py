@@ -36,7 +36,7 @@ REPO = Path(__file__).resolve().parents[2]
 PROMPT_PATH = REPO / "tools/playbook-vision-pilot/subagent-prompt.md"
 MANIFEST = REPO / "tools/playbook-vision-pilot/dedup-crops/_canonical_manifest.json"
 CROPS_DIR = REPO / "tools/playbook-vision-pilot/dedup-crops"
-OUT_DIR = Path("/tmp/pilot-work/canonical-extractions")
+OUT_DIR = REPO / "data/games/madden-25-ps3/play-geometry"
 # Haiku 4.5 + prompt caching = ~$0.008/call, validated as accurate as Sonnet
 # on the 12 hand-labeled plays. Python computes target_gap deterministically
 # and injects it as a hint in the user message.
@@ -45,6 +45,7 @@ MAX_TOKENS = 2048
 
 sys.path.insert(0, str(REPO / "tools/playbook-vision-pilot"))
 from target_gap_python import compute_target_gap_for_crop  # noqa: E402
+from play_concepts import classify as classify_play  # noqa: E402
 
 
 def _load_rules() -> str:
@@ -55,25 +56,39 @@ def _load_rules() -> str:
     return text[start:end].strip()
 
 
-def _build_user(info: dict, crop_path: Path, py_hints: dict) -> list[dict]:
+def _build_user(info: dict, crop_path: Path, py_hints: dict,
+                concept: dict) -> list[dict]:
     img_b64 = base64.standard_b64encode(crop_path.read_bytes()).decode("ascii")
     play_id = crop_path.stem
+    # Concept + family + blockers_implicit are Python-classified from the
+    # play_name. Pass them as authoritative — the LLM doesn't have to name
+    # the concept. For runs with blockers_implicit, the LLM omits route
+    # entries for blockers (OL/TE/WR who just block).
+    concept_line = ""
+    if concept.get("concept") and concept["concept"] != "unknown":
+        concept_line = f"py_concept: {concept['concept']} (family={concept['concept_family']})\n"
+    blocker_hint = ""
+    if concept.get("blockers_implicit"):
+        blocker_hint = ("This is a standard run — OL/TE/WR blocking is "
+                        "IMPLICIT. Emit `routes` ONLY for the ball-carrier "
+                        "(in `ball_carrier`) and any non-blocking receivers "
+                        "(rare on runs). For typical run plays the `routes` "
+                        "object should be EMPTY {}.\n")
+
     context = (f"play_id: {play_id}\n"
-               f"team: <canonical from {info['canonical_team']}, applies to "
-               f"{info['owner_count']} playbooks>\n"
                f"formation: {info['family']} {info['formation']}\n"
                f"play_name: {info['play_name']}\n"
                f"play_type: {info['play_type']}\n"
+               f"py_target_gap: {py_hints.get('target_gap')}\n"
+               f"{concept_line}"
                "\n"
-               "## Pre-detected geometry (deterministic, from Python)\n"
-               f"- C-square center: {py_hints.get('c_xy')}\n"
-               f"- target_gap (run only, computed deterministically): {py_hints.get('target_gap')}\n"
-               "\n"
-               "You do NOT need to compute target_gap — Python computed it "
-               "with higher accuracy than vision-from-image. Skip target_gap "
-               "in your output. Focus on player counts, route classification, "
-               "and concept naming.\n"
-               "\nExtract per the schema. Emit only the JSON object.")
+               "Filename encodes expected personnel as r#f#t#w# "
+               "(RB/FB/TE/WR). Use those counts as ground truth — LABEL "
+               "visible glyphs, don't re-derive counts. Skip target_gap "
+               "in your output (Python provided). If py_concept was given, "
+               "use it as the `concept` field unchanged (don't re-name).\n"
+               f"{blocker_hint}"
+               "Emit only the JSON object.")
     return [
         {"type": "image",
          "source": {"type": "base64", "media_type": "image/jpeg", "data": img_b64}},
@@ -84,15 +99,16 @@ def _build_user(info: dict, crop_path: Path, py_hints: dict) -> list[dict]:
 def _call(client: anthropic.Anthropic, rules: str, info: dict,
           crop_path: Path) -> dict:
     t0 = time.time()
-    # Python computes target_gap deterministically before the API call.
+    # Python computes target_gap + concept tag deterministically.
     py_hints = compute_target_gap_for_crop(crop_path, info["play_type"])
+    concept = classify_play(info["play_name"], info["play_type"])
     resp = client.messages.create(
         model=MODEL,
         max_tokens=MAX_TOKENS,
         system=[{"type": "text", "text": rules,
                  "cache_control": {"type": "ephemeral"}}],
         messages=[{"role": "user",
-                   "content": _build_user(info, crop_path, py_hints)}],
+                   "content": _build_user(info, crop_path, py_hints, concept)}],
     )
     dt = time.time() - t0
     u = resp.usage
@@ -108,6 +124,7 @@ def _call(client: anthropic.Anthropic, rules: str, info: dict,
         "duration_s": round(dt, 2),
         "response_text": text,
         "py_hints": py_hints,
+        "py_concept": concept,
     }
 
 

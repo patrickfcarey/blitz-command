@@ -142,6 +142,57 @@ until a follow-up commit captures the pilot as a unit.
 **In progress / next step:** decide whether to commit the pilot
 work and proceed with full M25 extraction, or shelve until later.
 
+## 2026-05-21 — Vision pilot cost optimization: $330 → $19.71
+
+**Active thread:** drove the full M25 vision extraction cost down by
+~17× from the original Sonnet baseline, with materially better
+extraction quality than v4.
+
+**Landed this session:**
+
+- **Lever A (compact v5 schema):** dropped xy/glyph/button/los_y/play_id
+  echo from output. Output tokens fell from ~1100 → ~150 avg.
+- **Lever B (`play_concepts.py` + blockers-implicit):** Python concept
+  classifier with 80+ patterns covering 97% of unique plays. For runs
+  with blockers implicit, LLM emits empty routes. Run output dropped
+  to ~60 tokens.
+- **Lever C (route templates):** 10 well-known pass concepts (Mesh,
+  Smash, Stick, Four Verts, Quick Slants, Curl Flat, Flood, Levels,
+  Drags, All Streaks) with route templates baked into the cached system
+  prompt. LLM emits `"routes":"std"` when diagram matches. Validated
+  against user football coaching corrections.
+- **Formation personnel hints (filename tag):** `formation_personnel.py`
+  decodes `(RB, FB, TE, WR)` from formation name. `tag_crops_with_personnel.py`
+  renames crops to embed `r#f#t#w#` in filename — LLM reads personnel
+  from path with zero extra prompt cost.
+- **Python `target_gap`:** deterministic gap classifier from C-square +
+  red-arrow LOS-crossing. 3/3 ground-truth correct, beats LLM.
+- **Family normalization:** I-FORM/I_FORM/I FOR/I FO merged in dedup.
+  7,365 → 7,300 unique plays.
+- **Cross-family smoke test:** all 18 formation families pass.
+- **Multi-concept schema:** `concept` (dominant) + `concepts[]` (all
+  visible) for plays that combine concepts (e.g., Smash + Curl-Flat).
+- **Persistent output:** `data/games/madden-25-ps3/play-geometry/`.
+
+**Cost trajectory:**
+| Step | Cost |
+|---|---:|
+| Sonnet 4.5, unduped (start) | $330 |
+| Haiku 4.5 + Python gap + dedup | $59 |
+| + compact schema (Lever A) | $25 |
+| + play_concepts + blockers-implicit (Lever B) | $20 |
+| + validated route templates (Lever C) | $19 |
+| + family normalization | **$19.71** |
+
+**In progress / next step:** ready to launch full extraction via
+`tools/playbook-vision-pilot/dispatch_canonical.py`. Validator
+(`validate_extractions.py`) runs post-launch offline.
+
+**Uncommitted state:** all the new tooling (`formation_personnel.py`,
+`play_concepts.py`, `tag_crops_with_personnel.py`, `smoke_test_cross_family.py`,
+`validate_extractions.py`, `template-review.html`, `build_template_review.py`)
+and edited dispatcher/prompt — ready to commit before launch.
+
 **Uncommitted state:** `tools/playbook-vision-pilot/` is fully untracked.
 sample-crops/ace-batch/ (12 panels at 3x) and sample-crops/los-zoom/
 (2 LOS-only at ~7.5x) added this session.

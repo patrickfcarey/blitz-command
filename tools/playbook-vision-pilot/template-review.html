@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>Route Template Review</title>
+<style>
+body { font-family: -apple-system, system-ui, sans-serif; max-width: 1400px;
+       margin: 0 auto; padding: 20px; background: #1a1a1a; color: #e8e8e8; }
+h1, h2, h3 { color: #fff; }
+.template { background: #252525; border: 1px solid #3a3a3a;
+            border-radius: 8px; padding: 20px; margin-bottom: 30px; }
+.template-header { display: flex; align-items: center; gap: 12px; }
+.template-name { font-size: 22px; font-weight: bold; color: #ffd060; }
+.summary { font-style: italic; color: #aaa; margin: 10px 0; }
+.routes-table { width: 100%; border-collapse: collapse; margin: 10px 0; }
+.routes-table td, .routes-table th { padding: 6px 10px; border-bottom: 1px solid #333; }
+.routes-table th { text-align: left; color: #999; }
+.routes-table .role { color: #ffd060; font-family: monospace; }
+.crops { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
+.crop img { width: 100%; border: 1px solid #444; border-radius: 4px; display: block; }
+.crop .label { color: #888; font-size: 13px; margin-top: 4px; }
+.review-controls { background: #2a2a2a; padding: 12px; border-radius: 4px;
+                   margin-top: 12px; }
+textarea { width: 100%; box-sizing: border-box; background: #1a1a1a;
+           color: #e8e8e8; border: 1px solid #444; border-radius: 3px;
+           padding: 8px; min-height: 60px; font-family: inherit; }
+input[type=radio] { transform: scale(1.2); margin-right: 6px; }
+.option-row { display: flex; align-items: center; gap: 12px; margin: 6px 0; }
+.save-bar { position: sticky; bottom: 0; background: #1a1a1a; padding: 16px;
+            border-top: 2px solid #444; text-align: center; margin-top: 30px; }
+button { background: #4a8a4a; color: white; border: 0; padding: 12px 30px;
+         font-size: 16px; border-radius: 4px; cursor: pointer; }
+</style></head>
+<body>
+<h1>Route Template Review (10 templates)</h1>
+<p>For each template: look at the sample crops, verify the expected routes
+match what's in the diagram. Mark <b>confirmed</b> if good, <b>needs_fix</b>
+with notes if a route is wrong, or <b>drop</b> if the concept is too
+variable to template.</p>
+
+<div class="template" data-template="four_verticals">
+  <div class="template-header">
+    <span class="template-name">four_verticals</span>
+  </div>
+  <div class="summary">All eligible receivers run streaks; HB checks/releases.</div>
+
+  <h3>Expected routes per role</h3>
+  <table class="routes-table">
+    <thead><tr><th>Role</th><th>Route</th></tr></thead>
+    <tbody><tr><td class="role">WR_X</td><td>streak</td></tr><tr><td class="role">WR_Z</td><td>streak</td></tr><tr><td class="role">WR_SLOT_L</td><td>seam</td></tr><tr><td class="role">WR_SLOT_R</td><td>seam</td></tr><tr><td class="role">TE_L</td><td>seam</td></tr><tr><td class="role">TE_R</td><td>seam</td></tr><tr><td class="role">HB</td><td>check_release</td></tr></tbody>
+  </table>
+
+  <h3>Sample crops (compare against the routes above)</h3>
+  <div class="crops"><div class="crop"><img src="./dedup-crops/singleback__r1f0t1w3__zona-y-trips__pass__four-verticals.jpg"><div class="label">SINGLEBACK Zona Y-Trips — Four Verticals</div></div><div class="crop"><img src="./dedup-crops/gun__r1f0t1w3__y-trips-wk__pass__four-verticals.jpg"><div class="label">GUN Y-Trips Wk — Four Verticals</div></div></div>
+
+  <div class="review-controls">
+    <h3>Your verdict</h3>
+    <div class="option-row">
+      <input type="radio" name="status_four_verticals" id="ok_four_verticals" value="confirmed">
+      <label for="ok_four_verticals">Template is correct as-is</label>
+    </div>
+    <div class="option-row">
+      <input type="radio" name="status_four_verticals" id="fix_four_verticals" value="needs_fix">
+      <label for="fix_four_verticals">Template needs corrections (describe below)</label>
+    </div>
+    <div class="option-row">
+      <input type="radio" name="status_four_verticals" id="drop_four_verticals" value="drop">
+      <label for="drop_four_verticals">Drop this template entirely (too variable)</label>
+    </div>
+    <label><b>Corrections / notes:</b></label>
+    <textarea data-corrections="1" placeholder="e.g. 'WR_X should be post, not corner' or 'this concept varies too much by formation to template'"></textarea>
+  </div>
+</div>
+<div class="template" data-template="mesh">
+  <div class="template-header">
+    <span class="template-name">mesh</span>
+  </div>
+  <div class="summary">Two inner receivers run shallow crosses meeting in the middle. Outer WRs run corners or comebacks. HB swing/checkdown.</div>
+
+  <h3>Expected routes per role</h3>
+  <table class="routes-table">
+    <thead><tr><th>Role</th><th>Route</th></tr></thead>
+    <tbody><tr><td class="role">TE_L</td><td>drag_l_to_r</td></tr><tr><td class="role">TE_R</td><td>drag_r_to_l</td></tr><tr><td class="role">WR_SLOT_L</td><td>drag_l_to_r</td></tr><tr><td class="role">WR_SLOT_R</td><td>drag_r_to_l</td></tr><tr><td class="role">WR_X</td><td>corner</td></tr><tr><td class="role">WR_Z</td><td>corner</td></tr><tr><td class="role">HB</td><td>swing</td></tr></tbody>
+  </table>
+
+  <h3>Sample crops (compare against the routes above)</h3>
+  <div class="crops"><div class="crop"><img src="./dedup-crops/singleback__r1f0t3w1__jumbo__pass__mesh.jpg"><div class="label">SINGLEBACK Jumbo — Mesh</div></div><div class="crop"><img src="./dedup-crops/i-form__r1f1t2w2__tight__pass__mesh.jpg"><div class="label">I-FORM Tight — Mesh</div></div></div>
+
+  <div class="review-controls">
+    <h3>Your verdict</h3>
+    <div class="option-row">
+      <input type="radio" name="status_mesh" id="ok_mesh" value="confirmed">
+      <label for="ok_mesh">Template is correct as-is</label>
+    </div>
+    <div class="option-row">
+      <input type="radio" name="status_mesh" id="fix_mesh" value="needs_fix">
+      <label for="fix_mesh">Template needs corrections (describe below)</label>
+    </div>
+    <div class="option-row">
+      <input type="radio" name="status_mesh" id="drop_mesh" value="drop">
+      <label for="drop_mesh">Drop this template entirely (too variable)</label>
+    </div>
+    <label><b>Corrections / notes:</b></label>
+    <textarea data-corrections="1" placeholder="e.g. 'WR_X should be post, not corner' or 'this concept varies too much by formation to template'"></textarea>
+  </div>
+</div>
+<div class="template" data-template="smash">
+  <div class="template-header">
+    <span class="template-name">smash</span>
+  </div>
+  <div class="summary">Outer WR runs hitch (~5 yds), inner receiver (slot or TE) runs corner over the hitch (high-low concept). Other side: in-breaker or comeback. HB checkdown.</div>
+
+  <h3>Expected routes per role</h3>
+  <table class="routes-table">
+    <thead><tr><th>Role</th><th>Route</th></tr></thead>
+    <tbody><tr><td class="role">WR_X</td><td>corner</td></tr><tr><td class="role">WR_Z</td><td>hitch</td></tr><tr><td class="role">WR_SLOT_L</td><td>corner</td></tr><tr><td class="role">WR_SLOT_R</td><td>hitch</td></tr><tr><td class="role">TE_R</td><td>hitch</td></tr><tr><td class="role">HB</td><td>check_release</td></tr></tbody>
+  </table>
+
+  <h3>Sample crops (compare against the routes above)</h3>
+  <div class="crops"><div class="crop"><img src="./dedup-crops/singleback__r1f0t2w2__ace-twins__run__hb-smash.jpg"><div class="label">SINGLEBACK Ace Twins — HB Smash</div></div><div class="crop"><img src="./dedup-crops/singleback__r1f0t1w3__zona-y-trips__pass__smash.jpg"><div class="label">SINGLEBACK Zona Y-Trips — Smash</div></div></div>
+
+  <div class="review-controls">
+    <h3>Your verdict</h3>
+    <div class="option-row">
+      <input type="radio" name="status_smash" id="ok_smash" value="confirmed">
+      <label for="ok_smash">Template is correct as-is</label>
+    </div>
+    <div class="option-row">
+      <input type="radio" name="status_smash" id="fix_smash" value="needs_fix">
+      <label for="fix_smash">Template needs corrections (describe below)</label>
+    </div>
+    <div class="option-row">
+      <input type="radio" name="status_smash" id="drop_smash" value="drop">
+      <label for="drop_smash">Drop this template entirely (too variable)</label>
+    </div>
+    <label><b>Corrections / notes:</b></label>
+    <textarea data-corrections="1" placeholder="e.g. 'WR_X should be post, not corner' or 'this concept varies too much by formation to template'"></textarea>
+  </div>
+</div>
+<div class="template" data-template="stick">
+  <div class="template-header">
+    <span class="template-name">stick</span>
+  </div>
+  <div class="summary">Slot/inner runs a stick (sit/hook at 5-6 yds). Outer WR runs flat or fade. Opposite side runs slant or in. HB checkdown.</div>
+
+  <h3>Expected routes per role</h3>
+  <table class="routes-table">
+    <thead><tr><th>Role</th><th>Route</th></tr></thead>
+    <tbody><tr><td class="role">WR_SLOT_R</td><td>stick</td></tr><tr><td class="role">WR_SLOT_L</td><td>stick</td></tr><tr><td class="role">TE_R</td><td>stick</td></tr><tr><td class="role">WR_Z</td><td>flat</td></tr><tr><td class="role">WR_X</td><td>slant</td></tr><tr><td class="role">HB</td><td>check_release</td></tr></tbody>
+  </table>
+
+  <h3>Sample crops (compare against the routes above)</h3>
+  <div class="crops"><div class="crop"><img src="./dedup-crops/singleback__r1f0t2w2__ace-twins__pass__stick.jpg"><div class="label">SINGLEBACK Ace Twins — Stick</div></div><div class="crop"><img src="./dedup-crops/singleback__r1f0t1w3__tight-doubles__pass__stick.jpg"><div class="label">SINGLEBACK Tight Doubles — Stick</div></div></div>
+
+  <div class="review-controls">
+    <h3>Your verdict</h3>
+    <div class="option-row">
+      <input type="radio" name="status_stick" id="ok_stick" value="confirmed">
+      <label for="ok_stick">Template is correct as-is</label>
+    </div>
+    <div class="option-row">
+      <input type="radio" name="status_stick" id="fix_stick" value="needs_fix">
+      <label for="fix_stick">Template needs corrections (describe below)</label>
+    </div>
+    <div class="option-row">
+      <input type="radio" name="status_stick" id="drop_stick" value="drop">
+      <label for="drop_stick">Drop this template entirely (too variable)</label>
+    </div>
+    <label><b>Corrections / notes:</b></label>
+    <textarea data-corrections="1" placeholder="e.g. 'WR_X should be post, not corner' or 'this concept varies too much by formation to template'"></textarea>
+  </div>
+</div>
+<div class="template" data-template="quick_slants">
+  <div class="template-header">
+    <span class="template-name">quick_slants</span>
+  </div>
+  <div class="summary">All WRs run 3-step slants. TEs/HB block or checkdown.</div>
+
+  <h3>Expected routes per role</h3>
+  <table class="routes-table">
+    <thead><tr><th>Role</th><th>Route</th></tr></thead>
+    <tbody><tr><td class="role">WR_X</td><td>slant</td></tr><tr><td class="role">WR_Z</td><td>slant</td></tr><tr><td class="role">WR_SLOT_L</td><td>slant</td></tr><tr><td class="role">WR_SLOT_R</td><td>slant</td></tr><tr><td class="role">TE_L</td><td>block</td></tr><tr><td class="role">TE_R</td><td>block</td></tr><tr><td class="role">HB</td><td>check_release</td></tr></tbody>
+  </table>
+
+  <h3>Sample crops (compare against the routes above)</h3>
+  <div class="crops"><div class="crop"><img src="./dedup-crops/singleback__r1f0t3w1__jumbo__pass__quick-slant.jpg"><div class="label">SINGLEBACK Jumbo — Quick Slant</div></div><div class="crop"><img src="./dedup-crops/singleback__r1f0t2w2__ace__pass__quick-slants.jpg"><div class="label">SINGLEBACK Ace — Quick Slants</div></div></div>
+
+  <div class="review-controls">
+    <h3>Your verdict</h3>
+    <div class="option-row">
+      <input type="radio" name="status_quick_slants" id="ok_quick_slants" value="confirmed">
+      <label for="ok_quick_slants">Template is correct as-is</label>
+    </div>
+    <div class="option-row">
+      <input type="radio" name="status_quick_slants" id="fix_quick_slants" value="needs_fix">
+      <label for="fix_quick_slants">Template needs corrections (describe below)</label>
+    </div>
+    <div class="option-row">
+      <input type="radio" name="status_quick_slants" id="drop_quick_slants" value="drop">
+      <label for="drop_quick_slants">Drop this template entirely (too variable)</label>
+    </div>
+    <label><b>Corrections / notes:</b></label>
+    <textarea data-corrections="1" placeholder="e.g. 'WR_X should be post, not corner' or 'this concept varies too much by formation to template'"></textarea>
+  </div>
+</div>
+<div class="template" data-template="curl_flat">
+  <div class="template-header">
+    <span class="template-name">curl_flat</span>
+  </div>
+  <div class="summary">Outside WR runs curl (~12 yds). Slot/inner runs flat under the curl. Opposite side runs comeback or curl. HB checkdown.</div>
+
+  <h3>Expected routes per role</h3>
+  <table class="routes-table">
+    <thead><tr><th>Role</th><th>Route</th></tr></thead>
+    <tbody><tr><td class="role">WR_X</td><td>curl</td></tr><tr><td class="role">WR_Z</td><td>curl</td></tr><tr><td class="role">WR_SLOT_R</td><td>flat</td></tr><tr><td class="role">WR_SLOT_L</td><td>flat</td></tr><tr><td class="role">TE_R</td><td>flat</td></tr><tr><td class="role">HB</td><td>check_release</td></tr></tbody>
+  </table>
+
+  <h3>Sample crops (compare against the routes above)</h3>
+  <div class="crops"><div class="crop"><img src="./dedup-crops/singleback__r1f0t2w2__ace__pass__curl-flats.jpg"><div class="label">SINGLEBACK Ace — Curl Flats</div></div><div class="crop"><img src="./dedup-crops/singleback__r1f0t2w2__ace-pair__pass__zona-curls.jpg"><div class="label">SINGLEBACK Ace Pair — Zona Curls</div></div></div>
+
+  <div class="review-controls">
+    <h3>Your verdict</h3>
+    <div class="option-row">
+      <input type="radio" name="status_curl_flat" id="ok_curl_flat" value="confirmed">
+      <label for="ok_curl_flat">Template is correct as-is</label>
+    </div>
+    <div class="option-row">
+      <input type="radio" name="status_curl_flat" id="fix_curl_flat" value="needs_fix">
+      <label for="fix_curl_flat">Template needs corrections (describe below)</label>
+    </div>
+    <div class="option-row">
+      <input type="radio" name="status_curl_flat" id="drop_curl_flat" value="drop">
+      <label for="drop_curl_flat">Drop this template entirely (too variable)</label>
+    </div>
+    <label><b>Corrections / notes:</b></label>
+    <textarea data-corrections="1" placeholder="e.g. 'WR_X should be post, not corner' or 'this concept varies too much by formation to template'"></textarea>
+  </div>
+</div>
+<div class="template" data-template="flood">
+  <div class="template-header">
+    <span class="template-name">flood</span>
+  </div>
+  <div class="summary">Three routes to one side at different depths (deep + intermediate + flat). Backside WR runs crosser or comeback.</div>
+
+  <h3>Expected routes per role</h3>
+  <table class="routes-table">
+    <thead><tr><th>Role</th><th>Route</th></tr></thead>
+    <tbody><tr><td class="role">WR_Z</td><td>streak</td></tr><tr><td class="role">WR_SLOT_R</td><td>out</td></tr><tr><td class="role">HB</td><td>flat</td></tr><tr><td class="role">WR_X</td><td>crosser</td></tr></tbody>
+  </table>
+
+  <h3>Sample crops (compare against the routes above)</h3>
+  <div class="crops"><div class="crop"><img src="./dedup-crops/singleback__r1f0t2w2__ace-pair__pass__close-pa-sail.jpg"><div class="label">SINGLEBACK Ace Pair — Close PA Sail</div></div><div class="crop"><img src="./dedup-crops/singleback__r1f0t2w2__ace-twins__pass__cards-flood.jpg"><div class="label">SINGLEBACK Ace Twins — Cards Flood</div></div></div>
+
+  <div class="review-controls">
+    <h3>Your verdict</h3>
+    <div class="option-row">
+      <input type="radio" name="status_flood" id="ok_flood" value="confirmed">
+      <label for="ok_flood">Template is correct as-is</label>
+    </div>
+    <div class="option-row">
+      <input type="radio" name="status_flood" id="fix_flood" value="needs_fix">
+      <label for="fix_flood">Template needs corrections (describe below)</label>
+    </div>
+    <div class="option-row">
+      <input type="radio" name="status_flood" id="drop_flood" value="drop">
+      <label for="drop_flood">Drop this template entirely (too variable)</label>
+    </div>
+    <label><b>Corrections / notes:</b></label>
+    <textarea data-corrections="1" placeholder="e.g. 'WR_X should be post, not corner' or 'this concept varies too much by formation to template'"></textarea>
+  </div>
+</div>
+<div class="template" data-template="levels">
+  <div class="template-header">
+    <span class="template-name">levels</span>
+  </div>
+  <div class="summary">Two receivers run in-breakers at different depths (shallow + deep dig). Other receivers run vertical clearouts.</div>
+
+  <h3>Expected routes per role</h3>
+  <table class="routes-table">
+    <thead><tr><th>Role</th><th>Route</th></tr></thead>
+    <tbody><tr><td class="role">WR_X</td><td>shallow_in</td></tr><tr><td class="role">WR_SLOT_L</td><td>dig</td></tr><tr><td class="role">WR_Z</td><td>streak</td></tr><tr><td class="role">WR_SLOT_R</td><td>streak</td></tr><tr><td class="role">TE_R</td><td>block</td></tr><tr><td class="role">HB</td><td>check_release</td></tr></tbody>
+  </table>
+
+  <h3>Sample crops (compare against the routes above)</h3>
+  <div class="crops"><div class="crop"><img src="./dedup-crops/singleback__r1f0t1w3__doubles__pass__levels-divide.jpg"><div class="label">SINGLEBACK Doubles — Levels Divide</div></div><div class="crop"><img src="./dedup-crops/singleback__r1f0t1w3__trips-open__pass__levels.jpg"><div class="label">SINGLEBACK Trips Open — Levels</div></div></div>
+
+  <div class="review-controls">
+    <h3>Your verdict</h3>
+    <div class="option-row">
+      <input type="radio" name="status_levels" id="ok_levels" value="confirmed">
+      <label for="ok_levels">Template is correct as-is</label>
+    </div>
+    <div class="option-row">
+      <input type="radio" name="status_levels" id="fix_levels" value="needs_fix">
+      <label for="fix_levels">Template needs corrections (describe below)</label>
+    </div>
+    <div class="option-row">
+      <input type="radio" name="status_levels" id="drop_levels" value="drop">
+      <label for="drop_levels">Drop this template entirely (too variable)</label>
+    </div>
+    <label><b>Corrections / notes:</b></label>
+    <textarea data-corrections="1" placeholder="e.g. 'WR_X should be post, not corner' or 'this concept varies too much by formation to template'"></textarea>
+  </div>
+</div>
+<div class="template" data-template="drags">
+  <div class="template-header">
+    <span class="template-name">drags</span>
+  </div>
+  <div class="summary">One or more inner receivers run drag routes across the field (~5 yds). Outer WRs run vertical/corner clearouts.</div>
+
+  <h3>Expected routes per role</h3>
+  <table class="routes-table">
+    <thead><tr><th>Role</th><th>Route</th></tr></thead>
+    <tbody><tr><td class="role">WR_SLOT_L</td><td>drag</td></tr><tr><td class="role">WR_SLOT_R</td><td>drag</td></tr><tr><td class="role">TE_L</td><td>drag</td></tr><tr><td class="role">TE_R</td><td>drag</td></tr><tr><td class="role">WR_X</td><td>streak</td></tr><tr><td class="role">WR_Z</td><td>streak</td></tr><tr><td class="role">HB</td><td>swing</td></tr></tbody>
+  </table>
+
+  <h3>Sample crops (compare against the routes above)</h3>
+  <div class="crops"><div class="crop"><img src="./dedup-crops/gun__r1f0t1w3__y-trips-wk__pass__v-drag.jpg"><div class="label">GUN Y Trips Wk — V-Drag</div></div><div class="crop"><img src="./dedup-crops/gun__r0f0t0w5__5wr-trips__pass__wr-drag.jpg"><div class="label">GUN 5WR Trips — WR Drag</div></div></div>
+
+  <div class="review-controls">
+    <h3>Your verdict</h3>
+    <div class="option-row">
+      <input type="radio" name="status_drags" id="ok_drags" value="confirmed">
+      <label for="ok_drags">Template is correct as-is</label>
+    </div>
+    <div class="option-row">
+      <input type="radio" name="status_drags" id="fix_drags" value="needs_fix">
+      <label for="fix_drags">Template needs corrections (describe below)</label>
+    </div>
+    <div class="option-row">
+      <input type="radio" name="status_drags" id="drop_drags" value="drop">
+      <label for="drop_drags">Drop this template entirely (too variable)</label>
+    </div>
+    <label><b>Corrections / notes:</b></label>
+    <textarea data-corrections="1" placeholder="e.g. 'WR_X should be post, not corner' or 'this concept varies too much by formation to template'"></textarea>
+  </div>
+</div>
+<div class="template" data-template="all_streaks">
+  <div class="template-header">
+    <span class="template-name">all_streaks</span>
+  </div>
+  <div class="summary">Same as four_verticals — every eligible receiver runs a streak.</div>
+
+  <h3>Expected routes per role</h3>
+  <table class="routes-table">
+    <thead><tr><th>Role</th><th>Route</th></tr></thead>
+    <tbody><tr><td class="role">WR_X</td><td>streak</td></tr><tr><td class="role">WR_Z</td><td>streak</td></tr><tr><td class="role">WR_SLOT_L</td><td>streak</td></tr><tr><td class="role">WR_SLOT_R</td><td>streak</td></tr><tr><td class="role">TE_L</td><td>streak</td></tr><tr><td class="role">TE_R</td><td>streak</td></tr><tr><td class="role">HB</td><td>check_release</td></tr></tbody>
+  </table>
+
+  <h3>Sample crops (compare against the routes above)</h3>
+  <div class="crops"><div>No canonical crops found for this concept.</div></div>
+
+  <div class="review-controls">
+    <h3>Your verdict</h3>
+    <div class="option-row">
+      <input type="radio" name="status_all_streaks" id="ok_all_streaks" value="confirmed">
+      <label for="ok_all_streaks">Template is correct as-is</label>
+    </div>
+    <div class="option-row">
+      <input type="radio" name="status_all_streaks" id="fix_all_streaks" value="needs_fix">
+      <label for="fix_all_streaks">Template needs corrections (describe below)</label>
+    </div>
+    <div class="option-row">
+      <input type="radio" name="status_all_streaks" id="drop_all_streaks" value="drop">
+      <label for="drop_all_streaks">Drop this template entirely (too variable)</label>
+    </div>
+    <label><b>Corrections / notes:</b></label>
+    <textarea data-corrections="1" placeholder="e.g. 'WR_X should be post, not corner' or 'this concept varies too much by formation to template'"></textarea>
+  </div>
+</div>
+<div class="save-bar">
+  <button onclick="saveReview()">Save → template_review.json</button>
+</div>
+<script>
+function saveReview() {
+  const out = {saved_at: new Date().toISOString(), templates: {}};
+  document.querySelectorAll('.template').forEach(t => {
+    const name = t.dataset.template;
+    const status = t.querySelector('input[name="status_'+name+'"]:checked');
+    const corrections = t.querySelector('textarea[data-corrections]').value;
+    out.templates[name] = {
+      verdict: status ? status.value : 'unreviewed',
+      corrections: corrections
+    };
+  });
+  const blob = new Blob([JSON.stringify(out, null, 2)], {type: 'application/json'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'template_review.json';
+  a.click();
+  alert('Saved. Send template_review.json back to Claude.');
+}
+function autosave() {
+  const state = {};
+  document.querySelectorAll('input, textarea').forEach(el => {
+    state[el.name || el.dataset.corrections + '|' + el.closest('.template').dataset.template] =
+      el.type === 'radio' ? (el.checked ? el.value : null) : el.value;
+  });
+  localStorage.setItem('m25_template_review', JSON.stringify(state));
+}
+function loadAutosave() {
+  const raw = localStorage.getItem('m25_template_review');
+  if (!raw) return;
+  const state = JSON.parse(raw);
+  document.querySelectorAll('input, textarea').forEach(el => {
+    const key = el.name || el.dataset.corrections + '|' + el.closest('.template').dataset.template;
+    if (key in state && state[key] !== null) {
+      if (el.type === 'radio') {
+        if (el.value === state[key]) el.checked = true;
+      } else {
+        el.value = state[key];
+      }
+    }
+  });
+}
+document.addEventListener('DOMContentLoaded', () => {
+  loadAutosave();
+  document.querySelectorAll('input, textarea').forEach(el => {
+    el.addEventListener('change', autosave);
+    el.addEventListener('input', autosave);
+  });
+});
+</script>
+</body>
+</html>

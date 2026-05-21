@@ -10,12 +10,15 @@ when an item depends on something external (user input, upstream work).
 
 ## Highest leverage right now
 
-- **Vision pilot — full M25 geometry extraction.** Pipeline built under
-  `tools/playbook-vision-pilot/`: 7,365 deduped canonical crops, Python
-  target_gap detector (3/3 ground-truth correct), Haiku 4.5 + caching +
-  Python hints dispatch validated on 12 hand-labeled plays. Run cost
-  projected at ~$59 to extract every M25 play geometry-fully. Decision
-  paused — re-run `dispatch_canonical.py` to launch.
+- **Vision pilot — full M25 geometry extraction.** Pipeline at
+  `tools/playbook-vision-pilot/` is fully staged. 7,300 deduped canonical
+  crops, family-normalized. Pipeline: Haiku 4.5 + prompt caching + Python
+  `target_gap` + formation `personnel` (filename-encoded) + `play_concepts`
+  blockers-implicit + 10 validated route templates + multi-concept schema.
+  All 18 formation families pass smoke test. Run cost projected at
+  ~$19.71 — launch via `dispatch_canonical.py`. Validator
+  (`validate_extractions.py`) runs offline post-launch to flag suspect
+  extractions. Output: `data/games/madden-25-ps3/play-geometry/`.
 
 
 

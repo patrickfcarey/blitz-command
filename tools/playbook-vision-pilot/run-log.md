@@ -543,6 +543,171 @@ Pricing for FULL 7,365-play M25 extraction:
 
 Tried to extend Python detection (PS button glyphs, hollow-shape contour hierarchy, etc.) — hit diminishing returns. Buttons are hollow outlines that don't reliably form closed contours at 7.5x zoom; false positives from route arrows. Stopped after several iterations.
 
+User insight: "use formation name to pass in expected TE/RB/WR numbers, that way for some formations where a slot and TE are in the same spot the python will be able to have already labeled this for the vision pass."
+
+Built formation_personnel.py — rule-based classifier that decodes (RB, FB, TE, WR) counts from formation name patterns. Covers 342 unique M25 formations: 66% high confidence, 33% medium, 1% low. No "unknown" fallthroughs.
+
+Built tag_crops_with_personnel.py — renames all 7,365 canonical crops to embed personnel tag in the filename:
+  old: <family>__<formation>__<play_type>__<play_name>__WIDE.jpg
+  new: <family>__<formation>__r<R>f<F>t<T>w<W>__<play_type>__<play_name>__WIDE.jpg
+Also adds expected_personnel to _canonical_manifest.json.
+
+Updated dispatch_canonical.py to inject expected personnel into user message AS AUTHORITATIVE input (not a question). LLM treats it as ground truth and only LABELS visible glyphs against the expected count.
+
+Validation: Singleback Jumbo (previously a TE-count miss in v3/v4) now emits TE=3 WR=1 correctly. Same for other test cases.
+
+Updated cost projection (incl ~250-token personnel block):
+  ~$0.010/call → ~$74 for full 7,365-play extraction (vs $59 before).
+  $15 more, but materially better accuracy on TE/WR counts.
+
+User: "so we just pushed up the accuracy but also raised the cost"
+
+Refactored: dropped the verbose personnel block from user message; rely on
+filename tag (r#f#t#w#) that the LLM reads from play_id context for free.
+
+  ~$0.0083/call → ~$61 for full extraction.
+  Accuracy preserved (Jumbo TE=3 still correctly identified).
+  Net: accuracy lift for +$2 over the no-personnel-hint baseline.
+
+User: "lower cost more — think novel approaches"
+
+Lever A — aggressive output schema compression. Decomposed where the cost
+goes: 66% in output tokens (~1100 per call). Compact v5 schema:
+  - Drop xy coords for all players (Python provides positions via personnel)
+  - Drop play_id / play_type / formation echo (already in input)
+  - Drop offensive_line array (5 OL implicit via personnel + C-square)
+  - Drop glyph/button per-player fields
+  - Compact `routes: {role: route_string}` instead of nested objects
+  - Drop ball_carrier_or_primary verbose object; flat `ball_carrier`
+    (e.g. "HB B_right") and `primary_target` ("WR_X") fields
+
+Output dropped from ~1100 to 81-228 tokens (avg ~159). 7x reduction.
+
+Cost: $0.0033/call avg → **$21-27 for full 7,365-play M25 extraction**.
+That's 7x cheaper than v4 with Sonnet 4.5 ($162), and 12x cheaper than
+the original unduped projection ($330).
+
+Concepts, routes, ball-carrier with gap, and primary target all
+correctly extracted on the 6 test calls.
+
+V5 VALIDATION on 11 hand-labeled plays (mapped to canonical crops):
+- Output tokens: 95-124 per call (avg ~106). Confirms 10x output reduction.
+- Cost: $0.0294 for 11 calls = $0.0027/call.
+- Concepts: 11/11 correctly named.
+- Personnel-tag anchored counts now MATCH hand-truth on previously-failed
+  cases:
+    philadelphia_eagles se_drag: v4=1TE/3WR, truth=0TE/4WR, v5=0TE/4WR ✓
+    baltimore_ravens power_o:    v4=1TE/2WR, truth=2TE/2WR, v5=2TE/2WR ✓
+    west_coast seattle:          v4=1TE/3WR, truth=0TE/4WR, v5=0TE/3WR (TE✓, WR-1)
+- Ball carrier with Python gap working. Primary target on passes working.
+- Caveat: canonical crops come from different teams than the original
+  hand-labeled ones. Diagrams are pixel-identical for the same
+  (formation, play_name) but Python gap may vary slightly per crop.
+
+Full M25 projection updated: ~$20 at $0.0027/call sustained.
+
+LEVER B (concept dictionary + skip blockers on runs):
+- play_concepts.py — 80+ regex patterns mapping play_name → concept tag
+  + family (run/pass/pa_pass/screen/rpo) + blockers_implicit flag.
+- Coverage: 83% of 7,365 unique plays classified, 17% fall back to LLM.
+- dispatch_canonical.py injects py_concept and (for runs) tells LLM to
+  emit empty `routes` since blockers are implicit.
+
+40-play diverse sample results:
+  family    | n  | avg out_tok | v5 baseline | Δ
+  run       | 16 |   63        | ~100        | -37%
+  pass      | 14 |  126        | ~140        | -10%
+  pa_pass   | 10 |  168        | ~210        | -20%
+  Overall   | 40 |  111        | ~159        | -30%
+
+Cost: $0.00275/call → ~$20 for full 7,365-play extraction.
+
+Final cost trajectory:
+  Sonnet 4.5 unduped:                          ~$330
+  Sonnet 4.5 deduped:                          ~$162
+  Haiku 4.5 + Python gap + dedup:              ~$59
+  + personnel tags + compact v5 schema:        ~$25
+  + play_concepts + blockers-implicit (Lever B): ~$20
+
+Iterated on the 17% unknown plays. Added 25+ more patterns: standalone
+drag/under/clown/fly/go/flare/fakes/crossers/clearout/banana/spider/pin,
+"f angle"/etc. fullback variants, double_concept/double_drags etc.,
+deep_attack, texas, sluggo, china, scat, shakes, switch, all_go, omaha,
+hank, hooks, flow_pass, seams, middle, fork, choice, scissors, etc.
+
+Unknown rate: 17% → 7% → 5% → 3%.
+
+But cost stayed at ~$20.60 for full extraction (50-call diverse sample
+showed overall avg out_tok=105, same as before). Reason: most unknowns
+were passes, where concept hint doesn't shrink the route output. The
+real Lever B win was blocker-skip on runs which was already captured.
+
+Floor of what play_concepts.py can save without route templates.
+
+LEVER C TRIAL: route templates for top 10 concepts (Mesh, Stick, Smash,
+Four Verts, Quick Slants, Curl Flats, Flood, Levels, Drags, All Streaks).
+
+Test on 8 specific concept plays: ALL 8 emitted `routes:"std"` correctly.
+Per-play output dropped from 126 to 57 tokens (55% reduction on templated
+pass plays).
+
+But aggregate impact on full M25: ~$0.50-1.50 saved. Templates only fire
+on a fraction of plays (the well-known pass concepts ~25-30%); runs were
+already at the 56-token floor. Marginal.
+
+User chose to REVERT — kept the Lever B baseline ($20). Stripped the
+route-template block from the system prompt.
+
+User asked: "would templating pass concepts make it more accurate?"
+Reframed Lever C as a DATA-QUALITY tool (route-name consistency, not just
+cost savings). User chose to reinstate templates + validate first.
+
+Built template-review.html with the 10 templates and canonical sample crops.
+User reviewed (template_review.json):
+  - 5/10 confirmed: quick_slants, flood, levels, drags, all_streaks
+  - 5/10 needs_fix: four_verticals, mesh, smash, stick, curl_flat
+
+Applied user's coaching corrections to the prompt:
+  - four_verticals: slot/inner may run POST as variant of seam
+  - mesh: role-flexible (any combination of TE/slot/WR/RB can run the crossers)
+  - smash: ONE-side concept (corner + hitch on one side), other side independent
+  - stick: 3-receiver concept (flat + vertical + stick at ~5 yds from #3)
+  - curl_flat: outside curl at 12-14 yds + inside flat, read flat defender
+
+User added: "sometimes a play can be multiple concepts too".
+Updated schema: `concept` (dominant) + `concepts` (array of all visible).
+Emit "routes":"std" only when ALL listed concepts match templates.
+
+Re-tested on 6 templated concept plays — all still match templates and
+emit "routes":"std". Output avg 67 tokens (vs 126 baseline).
+
+Cached system prompt grew from 3469 to 4350 tokens. Cache_create rises
+slightly; cache_read still cheap. Net cost ~$19 (vs $20 before).
+
+PRE-LAUNCH CHECKLIST (all 4 items done):
+1. Persistent output: OUT_DIR moved from /tmp to
+   data/games/madden-25-ps3/play-geometry/ (survives WSL restart).
+2. Family normalization: I-FORM/I_FORM/I FOR/I FO merged into I-FORM;
+   FULL HOUSE/FULL_HOUSE → FULL-HOUSE; STRONG I/WEAK I → STRONG-I/WEAK-I.
+   Manifest entries: 7,365 → 7,300 (saved ~65 leaked dupes).
+3. Cross-family smoke test (smoke_test_cross_family.py): 1 play from
+   each of 18 families. ALL 18 PASSED. $0.056 total spend.
+4. validate_extractions.py built to run post-extraction. Checks JSON
+   parse, concept mismatch, gap mismatch, route count vs personnel,
+   primary_target validity, Wildcat-has-QB.
+
+Updated projection: 7,300 plays × ~$0.0027/call = ~$19.71 for full M25
+geometry extraction.
+
+
+
+
+
+
+
+
+
+
 
 
 

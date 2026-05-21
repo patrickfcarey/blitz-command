@@ -150,76 +150,83 @@ For a run play, determine target_gap by tracing the red ball-carrier arrow's end
 - **Do not invent players you cannot see.** If the formation expects 11 but you see 9, emit a `players_missing` array describing what you expect to be there but can't locate.
 - **Trust the visual vocabulary above** over your prior football intuitions. The diagram language is fixed and is documented here.
 
-### Output format — emit EXACTLY this JSON shape, no other text
+### Output format — compact JSON, emit EXACTLY this shape, no other text
 
-Use these field names verbatim. Do not invent suffixes (`_px`, `_yard`, etc.). Do not add wrapping ``` fences. Pure JSON object.
+Use these field names verbatim. Do not add wrapping ``` fences. Pure JSON object, no commentary.
+
+Positions, target_gap, personnel, and play_type are provided as PYTHON HINTS (see filename tag and user message) — DO NOT echo them. Your job is to emit ONLY the new information: concept, routes per player, ball-carrier (run) or primary target (pass), and any unusual notes.
 
 ```
 {
-  "play_id": "<string>",
-  "play_type_observed": "run" | "pass" | "rpo" | "unknown",
-  "concept": "<string>",
-  "concept_delta": "<string or null — fill only if a concept prior was given and the diagram disagrees>",
-  "los_y": <int>,
-  "center": {
-    "x": <int>,
-    "y": <int>,
-    "glyph": "white_square"
+  "concept": "<primary concept e.g. 'power_run', 'four_verticals', 'mesh', 'stick', 'screen', 'draw'>",
+  "concepts": ["<concept1>", "<concept2>", ...],
+  "routes": {
+    "<role>": "<route description e.g. 'streak', 'drag', 'slant', 'corner', 'flat', 'in', 'out', 'comeback', 'wheel', 'block'>",
+    ...
   },
-  "offensive_line": [
-    { "position": "LT" | "LG" | "RG" | "RT",
-      "x": <int>, "y": <int>,
-      "glyph": "white_circle" }
-    // exactly 4 entries
-  ],
-  "tight_ends": [
-    { "position": "TE_L" | "TE_R" | "TE_WING_L" | "TE_WING_R",
-      "x": <int>, "y": <int>,
-      "glyph": "white_circle" | "<button-color>_<button-shape>",
-      "button": "Square" | "Triangle" | "Cross" | "Circle" | "L1" | "R1" | "none",
-      "attached_side": "left" | "right",
-      "route": { "color": "...", "style": "...", "description": "..." } | null }
-    // 0..3 entries
-  ],
-  "wide_receivers": [
-    { "position": "WR_X" | "WR_Z" | "WR_SLOT_L" | "WR_SLOT_R" | "WR_FLANKER",
-      "x": <int>, "y": <int>,
-      "glyph": "white_circle" | "<button-color>_<button-shape>",
-      "button": "Square" | "Triangle" | "Cross" | "Circle" | "L1" | "R1" | "none",
-      "split_side": "left" | "right",
-      "route": { "color": "...", "style": "...", "description": "..." } | null }
-    // 0..5 entries
-  ],
-  "backfield": [
-    { "position": "QB" | "FB" | "HB" | "WILDCAT_RB",
-      "x": <int>, "y": <int>,
-      "glyph": "white_circle" | "<button-color>_<button-shape>",
-      "button": "Square" | "Triangle" | "Cross" | "Circle" | "L1" | "R1" | "none",
-      "route": { "color": "...", "style": "...", "description": "..." } | null }
-    // 1..3 entries
-  ],
-  "unknowns": [
-    { "x": <int>, "y": <int>, "notes": "<what you saw but couldn't classify>" }
-    // 0..N entries
-  ],
-  "players_missing": [
-    "<freeform — e.g. 'expected WR on far left edge but image may be clipped'>"
-    // 0..N entries
-  ],
-  "ball_carrier_or_primary": {
-    "from_position": "<player position>",
-    "arrow_color": "red" | "yellow" | "blue" | "white" | "unknown",
-    "arrow_style": "solid" | "dashed",
-    "target_gap": "A_left" | "A_right" | "B_left" | "B_right" | "C_left" | "C_right" | "D_left" | "D_right" | "straight" | null,
-    "description": "<freeform path>"
-  } | null,
-  "play_concept_observed": "<1-2 word concept tag — e.g. 'blast', 'mesh', 'stick', 'draw'>",
-  "confidence": "high" | "medium" | "low",
-  "extraction_notes": "<freeform — anything surprising, ambiguous, or worth flagging for the analyst>"
+  "ball_carrier": "<role + carry-direction, e.g. 'HB B_right' on a run, or null on a pass>",
+  "primary_target": "<role of the primary receiver on a pass, e.g. 'WR_X', or null on a run>",
+  "notes": "<freeform, but ONLY if something is unusual or doesn't match the expected personnel. Empty string for clean plays.>"
 }
 ```
 
-Do not output any commentary, explanation, or markdown around the JSON. Return only the JSON object.
+**Multi-concept plays:** Some plays combine concepts — e.g., a play that runs Smash on the right side AND Curl-Flat on the left. List ALL concepts you see in the `concepts` array. The `concept` field should be the DOMINANT or NAMED concept (matching the play_name). For example: `"concept": "smash", "concepts": ["smash", "curl_flat"]`. If only one concept is present, both fields agree.
+
+For `routes: "std"` — only emit "std" when ALL concepts in the `concepts` array match their respective templates. If any side runs something not in templates, emit the full routes dict.
+
+Role names to use in `routes` keys and `ball_carrier` / `primary_target`:
+- OL: `LT`, `LG`, `C`, `RG`, `RT` — usually omitted (blocking is implicit on runs and pass-pro on passes; only include if they pull or release)
+- TEs: `TE_L`, `TE_R`, `TE_WING_L`, `TE_WING_R`
+- WRs: `WR_X`, `WR_Z`, `WR_SLOT_L`, `WR_SLOT_R`, `WR_FLANKER`
+- Backs: `QB`, `FB`, `HB`, `WILDCAT_RB`
+
+Compactness rules:
+1. Only emit `routes` entries for players who actually run a route OR block-then-release. Most OL just block — omit them.
+2. `ball_carrier` is set ONLY on run plays. Set to null otherwise.
+3. `primary_target` is set ONLY on pass plays (the receiver running the RED arrow). Set to null otherwise.
+4. `notes` should be EMPTY STRING for normal plays. Use it only when the visible diagram disagrees with the personnel hint (e.g. you see 4 WRs but the filename tag said 3), or when something unusual is happening (motion, audible markers, dashed-line options).
+
+Example for a Power O run (Singleback I-Form Tight, r1f1t2w1):
+```
+{"concept":"power_o","routes":{"TE_L":"block","TE_R":"kickout_block","WR_X":"streak"},"ball_carrier":"HB B_right","primary_target":null,"notes":""}
+```
+
+Example for a Four Verticals pass (GUN Spread, r1f0t1w3):
+```
+{"concept":"four_verticals","routes":{"WR_X":"streak","WR_Z":"streak","WR_SLOT_R":"seam","TE_R":"streak","HB":"check_release"},"ball_carrier":null,"primary_target":"WR_X","notes":""}
+```
+
+### Route templates (use when diagram matches — emit `"routes":"std"`)
+
+For these well-known pass concepts, if the visible routes in the diagram match the standard template below, emit `"routes":"std"` and skip the full routes dict. If routes DIFFER from the standard, emit the full routes dict as usual.
+
+**Templates describe the CONCEPT** (which routes stretch which defenders). Roles executing the routes can vary by formation — e.g. the inside crosser in Mesh might be a slot WR in one play and a TE in another. The concept is the same; emit `"routes":"std"` if the conceptual structure matches even if specific roles differ.
+
+- **four_verticals**: every eligible receiver runs vertically — outer WRs and slot/TE all attack downfield. Slot/inner receiver MAY run a true seam OR a post (post is a common variant). HB checks/releases. Match `"std"` for either seam or post on the slot.
+
+- **mesh**: two receivers run shallow crosses (drag routes ~5 yds) that MEET in the middle. The two crossers can be ANY combination of TEs / slot WRs / outer WRs / RBs (mesh wrinkles often shift the crossing responsibility, e.g., FB does the swing while HB blocks and X WR runs the mesh). Routes outside the mesh: corners or comebacks. Backfield player(s) not crossing: block or swing.
+
+- **smash**: the smash concept is a TWO-MAN combo on ONE SIDE of the field — outer player runs a hitch (~5 yds), inner player runs a corner OVER the hitch (high-low on the flat defender). The OPPOSITE side of the formation runs whatever it runs (independent — not part of the template). Backfield: check/swing. Match `"std"` if you see the corner+hitch combo on one side.
+
+- **stick**: a 3-receiver concept that stretches horizontally on one side. Components:
+  1. A flat route (the widest receiver to that side)
+  2. A vertical/streak (outermost on that side, clearing out)
+  3. A STICK ROUTE from the #3 (innermost, closest to formation) — sits at ~5 yds, angled back toward LOS, sit-or-break depending on coverage
+  Opposite side is independent. Backfield: check/swing.
+
+- **quick_slants**: all WRs run 3-step slants. TEs and HB block or checkdown.
+
+- **curl_flat / curls**: a two-man combo that stretches the flat defender horizontally — outside receiver runs a CURL at 12-14 yds, inside receiver (slot or RB) runs the FLAT underneath. Opposite side is independent. Read: defender widens → throw curl; defender sits → throw flat. Backfield: check/swing.
+
+- **flood**: 3 routes to one side at different depths (deep + intermediate + flat). Backside WR runs crosser or comeback.
+
+- **levels**: 2 receivers run in-breakers at different depths (shallow + deep dig). Other receivers run vertical clearouts.
+
+- **drags**: one or more inner receivers run drag routes across the field (~5 yds). Outer WRs run vertical/corner clearouts.
+
+- **all_streaks**: every eligible receiver runs a streak straight downfield.
+
+If `py_concept` is one of these AND the conceptual structure matches, emit `"routes":"std"`. Mesh and Smash specifically allow role-flexibility — the concept can be run with any combination of receivers performing the named routes. If you have ANY DOUBT about whether the diagram matches the concept, emit the full routes dict — accuracy matters more than brevity.
 
 ---
 
