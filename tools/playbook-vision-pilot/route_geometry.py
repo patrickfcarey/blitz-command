@@ -15,6 +15,7 @@ reference annotations drawn on it (those collide with route colors).
 """
 from __future__ import annotations
 import io
+import math
 import sys
 import zipfile
 from pathlib import Path
@@ -90,163 +91,251 @@ def _color_mask(img: np.ndarray, color: str) -> np.ndarray:
     return mask
 
 
-# De-fragmentation tuning (task #35). M25 renders a route as a colored
-# arrow, but the color mask of one route comes back in 2-3 pieces (anti-
-# aliasing gaps, the arrowhead detaching from the stem, the line passing
-# behind a player glyph). A morphological CLOSE bridges those intra-route
-# gaps; connected-components then separates genuinely distinct routes.
-CLOSE_KERNEL = 41        # ellipse diameter — bridges intra-route gaps
-# RED is always exactly one route (the primary), so it can be closed far
-# more aggressively — there is no second red route to wrongly merge into.
-# This bridges the larger stem↔arrowhead gaps that split the red route.
-CLOSE_KERNEL_RED = 81
-ROUTE_MIN_AREA = 1800    # min component area to count as a route (post-close)
-
-
-def _is_button_component(mask_component: np.ndarray) -> bool:
-    """A PS-button receiver glyph is a COMPACT, roughly-square blob
-    (~50-95px span, aspect ~1). A route is elongated. True = it's a
-    button, not a route."""
-    ys, xs = np.where(mask_component)
-    if len(xs) == 0:
-        return False
-    w = xs.max() - xs.min() + 1
-    h = ys.max() - ys.min() + 1
-    span = max(w, h)
-    aspect = max(w, h) / max(min(w, h), 1)
-    return span <= 95 and aspect < 1.7
-
-
-def isolate_routes(img: np.ndarray) -> dict:
-    """Return {color: [route_mask, ...]} — ONE mask per detected route.
-
-    De-fragmentation (task #35): a morphological CLOSE bridges the gaps
-    that split one route into multiple color blobs; connected-components
-    then yields one component per genuinely distinct route. RED collapses
-    to a single route — M25 draws exactly one red (primary) route.
-    """
-    out = {}
-    for color in ROUTE_COLORS:
-        mask = _color_mask(img, color)
-        k = CLOSE_KERNEL_RED if color == "red" else CLOSE_KERNEL
-        kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (k, k))
-        closed = cv2.morphologyEx(mask, cv2.MORPH_CLOSE, kernel)
-        n, labels, stats, _ = cv2.connectedComponentsWithStats(closed, 8)
-        routes = []
-        for i in range(1, n):
-            if stats[i, cv2.CC_STAT_AREA] < ROUTE_MIN_AREA:
-                continue
-            comp = (labels == i).astype(np.uint8) * 255
-            if _is_button_component(comp):
-                continue            # compact glyph, not a route
-            routes.append(comp)
-        out[color] = routes
-    # RED is exactly one route (the primary). If the close left >1 red
-    # component, merge them all — every red pixel belongs to that route.
-    if len(out.get("red", [])) > 1:
-        merged = np.zeros_like(out["red"][0])
-        for m in out["red"]:
-            merged = cv2.bitwise_or(merged, m)
-        out["red"] = [merged]
-    return out
-
-
-def annotate_debug(img: np.ndarray, isolated: dict) -> np.ndarray:
-    """Draw the isolated route masks over the crop for visual QA."""
-    out = img.copy()
-    colors = {"red": (0, 0, 255), "yellow": (0, 255, 255),
-              "green": (0, 255, 0), "cyan": (255, 200, 0),
-              "blue": (255, 0, 0)}
-    for color, masks in isolated.items():
-        for i, m in enumerate(masks):
-            cnts, _ = cv2.findContours(m, cv2.RETR_EXTERNAL,
-                                       cv2.CHAIN_APPROX_SIMPLE)
-            cv2.drawContours(out, cnts, -1, colors[color], 2)
-    return out
-
-
 # ---------------------------------------------------------------------------
-# Route tracing (task #32) — skeletonize a route mask and trace the polyline.
+# Route tracing — junction-aware directional walk (tasks #32 / #35 / #36).
+#
+# Connected-components cannot separate routes: it both over-segments one
+# route (fragmentation) and over-merges touching routes. Instead, each
+# route is WALKED from its receiver origin: at a junction the walk takes
+# the straightest branch (routes cross, they don't turn 90° onto each
+# other), and at a fragmentation gap it leaps forward along its heading.
 # ---------------------------------------------------------------------------
 
-def _skeleton_endpoints(skel: np.ndarray) -> list[tuple[int, int]]:
-    """Skeleton pixels (x, y) with exactly one 8-connected neighbor."""
+# 8-connected neighbour offsets.
+_NBR8 = [(-1, -1), (0, -1), (1, -1), (-1, 0), (1, 0), (-1, 1), (0, 1), (1, 1)]
+
+# A SMALL close only bridges anti-aliasing gaps; larger fragmentation
+# gaps (a detached arrowhead) are bridged by the walk's gap-jump — so the
+# kernel stays small and does NOT fuse routes that merely pass close.
+SKEL_CLOSE = 13
+GAP_JUMP_MAX = 85       # px the walk may leap across a fragmentation gap
+
+
+def _skeleton(mask: np.ndarray) -> set:
+    """Light CLOSE, skeletonize, return the set of skeleton pixels."""
+    from skimage.morphology import skeletonize
+    kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE,
+                                       (SKEL_CLOSE, SKEL_CLOSE))
+    closed = cv2.morphologyEx(mask, cv2.MORPH_CLOSE, kernel)
+    skel = skeletonize(closed > 0)
     ys, xs = np.where(skel)
-    pts = set(zip(xs.tolist(), ys.tolist()))
-    endpoints = []
-    for x, y in pts:
-        n = sum(((x + dx, y + dy) in pts)
-                for dx in (-1, 0, 1) for dy in (-1, 0, 1)
-                if not (dx == 0 and dy == 0))
-        if n == 1:
-            endpoints.append((x, y))
-    return endpoints
+    return set(zip(xs.tolist(), ys.tolist()))
 
 
-def _bfs_farthest(pts: set, start: tuple) -> tuple:
-    """BFS over the skeleton point-set; return (farthest_point, parent_map)."""
-    from collections import deque
-    seen = {start: None}
-    q = deque([start])
-    last = start
-    while q:
-        cur = q.popleft()
+def _degree(pts: set, p: tuple) -> int:
+    x, y = p
+    return sum((x + dx, y + dy) in pts for dx, dy in _NBR8)
+
+
+def _prune_spurs(pts: set, max_spur: int = 34) -> set:
+    """Remove short dead-end branches (skeletonization barbs). A spur is
+    an endpoint whose path to the nearest junction is <= max_spur px.
+    Without this, every barb is a false route origin."""
+    pts = set(pts)
+    for _ in range(5):
+        endpoints = [p for p in pts if _degree(pts, p) == 1]
+        remove: set = set()
+        for ep in endpoints:
+            branch = [ep]
+            cur, prev = ep, None
+            while True:
+                nbrs = [(cur[0] + dx, cur[1] + dy) for dx, dy in _NBR8
+                        if (cur[0] + dx, cur[1] + dy) in pts
+                        and (cur[0] + dx, cur[1] + dy) != prev]
+                if len(nbrs) != 1:
+                    break               # hit a junction or dead end
+                prev, cur = cur, nbrs[0]
+                branch.append(cur)
+                if len(branch) > max_spur:
+                    break
+            if len(branch) <= max_spur and _degree(pts, cur) >= 3:
+                remove.update(branch[:-1])   # drop the spur, keep junction
+        if not remove:
+            break
+        pts -= remove
+    return pts
+
+
+def _unit(dx: float, dy: float) -> tuple:
+    n = math.hypot(dx, dy) or 1.0
+    return (dx / n, dy / n)
+
+
+def _branch_heading(pts, frm, first, blocked, depth=18):
+    """Heading of the branch leaving `frm` via `first`, peeked ~depth px —
+    used to choose the straightest branch at a junction."""
+    vis = set(blocked)
+    vis.add(frm)
+    cur = first
+    vis.add(cur)
+    last = first
+    for _ in range(depth):
+        nxt = [(cur[0] + dx, cur[1] + dy) for dx, dy in _NBR8
+               if (cur[0] + dx, cur[1] + dy) in pts
+               and (cur[0] + dx, cur[1] + dy) not in vis]
+        if len(nxt) != 1:
+            break
+        cur = nxt[0]
+        vis.add(cur)
         last = cur
-        cx, cy = cur
-        for dx in (-1, 0, 1):
-            for dy in (-1, 0, 1):
-                if dx == 0 and dy == 0:
-                    continue
-                nb = (cx + dx, cy + dy)
-                if nb in pts and nb not in seen:
-                    seen[nb] = cur
-                    q.append(nb)
-    return last, seen
+    return _unit(last[0] - frm[0], last[1] - frm[1])
 
 
-def _longest_path(comp: set) -> list:
-    """Double-BFS longest path through one connected skeleton component."""
-    start = next(iter(comp))
-    far1, _ = _bfs_farthest(comp, start)
-    far2, parents = _bfs_farthest(comp, far1)
-    path = []
-    node = far2
-    while node is not None:
-        path.append(node)
-        node = parents[node]
-    path.reverse()
+def _gap_jump(pts, cur, heading, visited):
+    """The walk dead-ended mid-route (a fragmentation gap). Find the
+    nearest unvisited skeleton pixel that continues the heading."""
+    best = None
+    for p in pts:
+        if p in visited:
+            continue
+        dx, dy = p[0] - cur[0], p[1] - cur[1]
+        dist = math.hypot(dx, dy)
+        if dist < 5 or dist > GAP_JUMP_MAX:
+            continue
+        align = heading[0] * (dx / dist) + heading[1] * (dy / dist)
+        if align < 0.55:                 # must roughly continue forward
+            continue
+        score = align - 0.25 * dist / GAP_JUMP_MAX
+        if best is None or score > best[0]:
+            best = (score, p)
+    return best[1] if best else None
+
+
+def _walk(pts: set, origin: tuple, max_steps: int = 6000) -> list:
+    """Directional greedy walk from a route origin to its arrowhead.
+
+    At a junction (a route crossing/touching another) it continues in the
+    straightest direction — that is what keeps two routes apart. At a
+    fragmentation gap it leaps forward via `_gap_jump`."""
+    nbrs = [(origin[0] + dx, origin[1] + dy) for dx, dy in _NBR8
+            if (origin[0] + dx, origin[1] + dy) in pts]
+    if not nbrs:
+        return [origin]
+    visited = {origin}
+    cur = nbrs[0]
+    visited.add(cur)
+    path = [origin, cur]
+    heading = _unit(cur[0] - origin[0], cur[1] - origin[1])
+    jumps = 0
+    for _ in range(max_steps):
+        nbrs = [(cur[0] + dx, cur[1] + dy) for dx, dy in _NBR8
+                if (cur[0] + dx, cur[1] + dy) in pts
+                and (cur[0] + dx, cur[1] + dy) not in visited]
+        if not nbrs:
+            if jumps >= 6:
+                break
+            jp = _gap_jump(pts, cur, heading, visited)
+            if jp is None:
+                break
+            jumps += 1
+            nxt = jp
+        elif len(nbrs) == 1:
+            nxt = nbrs[0]
+        else:
+            best = None
+            for nb in nbrs:
+                bh = _branch_heading(pts, cur, nb, visited)
+                score = heading[0] * bh[0] + heading[1] * bh[1]
+                if best is None or score > best[0]:
+                    best = (score, nb)
+            nxt = best[1]
+        visited.add(nxt)
+        path.append(nxt)
+        cur = nxt
+        if len(path) >= 14:
+            a = path[-14]
+            heading = _unit(cur[0] - a[0], cur[1] - a[1])
     return path
 
 
-def trace_route(mask: np.ndarray) -> list[tuple[int, int]] | None:
-    """Skeletonize a route mask and return its centerline polyline.
+def _same_route(a: list, b: list, tol: int = 30, frac: float = 0.62) -> bool:
+    """True if polyline `a` overlaps `b` enough to be the same route —
+    fraction of a's sampled points lying within `tol` of a b point.
+    Endpoint-proximity dedupe fails for bunch formations (distinct
+    receivers, near-identical origins); path overlap is what matters."""
+    sample = a[::10] or a
+    probe = b[::5] or b
+    hits = sum(any(abs(p[0] - q[0]) <= tol and abs(p[1] - q[1]) <= tol
+                   for q in probe)
+               for p in sample)
+    return hits / max(len(sample), 1) >= frac
 
-    The mask is ONE route (post de-fragmentation). If the skeleton still
-    has disconnected pieces, the LARGEST is traced — a stable choice that
-    avoids the zigzag a naive stitch produces. (Bridging genuine intra-
-    route gaps is handled upstream by the morphological close.)"""
-    from skimage.morphology import skeletonize
-    if mask.sum() < 200 * 255:
-        return None
-    skel = skeletonize(mask > 0)
-    ys, xs = np.where(skel)
-    if len(xs) < 15:
-        return None
-    pts = set(zip(xs.tolist(), ys.tolist()))
 
-    # Trace the largest connected component of the skeleton.
-    best_component: set = set()
-    remaining = set(pts)
-    while remaining:
-        seed = next(iter(remaining))
-        _, seen = _bfs_farthest(remaining, seed)
-        comp = set(seen.keys())
-        if len(comp) > len(best_component):
-            best_component = comp
-        remaining -= comp
-    if len(best_component) < 15:
-        return None
-    return _longest_path(best_component)
+def routes_for_color(mask: np.ndarray, los_y: int,
+                     one_route: bool = False) -> list:
+    """Trace every route in one color mask. Each route is walked from its
+    receiver origin — a skeleton endpoint on/near the LOS row. Spurs are
+    pruned first so barbs don't become false origins. `one_route=True`
+    (used for RED) keeps only the single longest walk."""
+    pts = _prune_spurs(_skeleton(mask))
+    if len(pts) < 40:
+        return []
+    endpoints = [p for p in pts if _degree(pts, p) == 1]
+    # Origins: every pruned endpoint on/near the receiver line (+ a
+    # backfield band for RB routes). NOT deduped by proximity — bunch
+    # formations put distinct receivers within a few px of each other.
+    origins = [p for p in endpoints
+               if los_y - 150 <= p[1] <= los_y + 360]
+    routes = []
+    for o in origins:
+        poly = _walk(pts, o)
+        if len(poly) >= 22:
+            routes.append(poly)
+    # Dedupe by PATH OVERLAP — the same route walked from its origin and
+    # from a near-LOS arrowhead, or two origins onto one route. Keep the
+    # longer of any overlapping pair.
+    routes.sort(key=len, reverse=True)
+    unique: list = []
+    for r in routes:
+        if not any(_same_route(r, u) for u in unique):
+            unique.append(r)
+    # RED is exactly one route (the primary) — keep the longest walk.
+    if one_route and len(unique) > 1:
+        unique = [unique[0]]
+    return unique
+
+
+def extract_routes(img: np.ndarray) -> dict:
+    """Top-level: trace + classify every route on a play crop.
+
+    Returns {"c_xy": (cx, cy), "routes": [{color, polyline, route, ...}]}.
+    """
+    try:
+        from target_gap_python import _detect_c
+        c = _detect_c(img)
+    except Exception:       # noqa: BLE001 — fall back to a geometric guess
+        c = None
+    if c is None:
+        cx, cy = img.shape[1] // 2, int(img.shape[0] * 0.42)
+    else:
+        cx, cy = c
+    routes = []
+    for color in ROUTE_COLORS:
+        mask = _color_mask(img, color)
+        for poly in routes_for_color(mask, cy, one_route=(color == "red")):
+            cls = classify_route(poly, cy, cx)
+            if cls.get("route") == "not_a_route":
+                continue
+            routes.append({"color": color, "polyline": poly, **cls})
+    return {"c_xy": (cx, cy), "routes": routes}
+
+
+def annotate_debug(img: np.ndarray, extracted: dict) -> np.ndarray:
+    """Draw every traced route polyline + its label for visual QA."""
+    out = img.copy()
+    cx, cy = extracted["c_xy"]
+    cv2.line(out, (0, cy), (out.shape[1] - 1, cy), (130, 130, 130), 1)
+    for r in extracted["routes"]:
+        poly = r["polyline"]
+        pts = np.array(poly, np.int32).reshape(-1, 1, 2)
+        cv2.polylines(out, [pts], False, (255, 0, 255), 3)
+        tail = poly[0] if abs(poly[0][1] - cy) < abs(poly[-1][1] - cy) else poly[-1]
+        tip = poly[-1] if tail is poly[0] else poly[0]
+        cv2.circle(out, tail, 13, (0, 255, 0), 3)
+        cv2.circle(out, tip, 13, (0, 0, 255), 3)
+        cv2.putText(out, r["route"], (tip[0] + 6, tip[1]),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255, 0, 255), 2)
+    return out
 
 
 def _simplify(polyline: list, epsilon: float = 12.0) -> list:
@@ -361,15 +450,15 @@ def classify_route(polyline: list, los_y: int, c_x: int) -> dict:
 
 
 if __name__ == "__main__":
-    import json
     if len(sys.argv) >= 4:
         team, img_idx, panel = sys.argv[1], int(sys.argv[2]), int(sys.argv[3])
         img = clean_crop(team, img_idx, panel)
-        iso = isolate_routes(img)
-        for color, masks in iso.items():
-            print(f"{color}: {len(masks)} route(s)")
-        dbg = annotate_debug(img, iso)
+        extracted = extract_routes(img)
+        for r in extracted["routes"]:
+            print(f"  [{r['color']:6s}] {r['route']:9s} conf={r.get('confidence')} "
+                  f"maxdepth={r.get('max_depth_px')} cameback={r.get('came_back_px')}")
+        dbg = annotate_debug(img, extracted)
         cv2.imwrite("/tmp/route_geom_debug.jpg", dbg)
-        print("wrote /tmp/route_geom_debug.jpg")
+        print(f"  {len(extracted['routes'])} routes — wrote /tmp/route_geom_debug.jpg")
     else:
         print("usage: route_geometry.py <team> <img_idx> <panel>")

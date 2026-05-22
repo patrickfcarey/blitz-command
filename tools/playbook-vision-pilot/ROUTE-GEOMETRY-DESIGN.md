@@ -217,10 +217,39 @@ A naive nearest-endpoint stitch was tried and rejected — it produced
 zigzag polylines (`cameback` > `max_depth`). Reuniting the red pieces
 needs a colinearity-aware stitch — deferred.
 
+## Iteration-4 — the PIVOT: cluster, don't trace (2026-05-22)
+
+Tracing (iterations 1-3) never converged — every fix for one failure
+(fragmentation, over-merge, spurs, under-detection) broke another. The
+junction-aware walk re-test produced 1 good route + a border artifact
+on a 5-route play. Tracing arbitrary curves is the wrong frame.
+
+**The right frame: these diagrams are GAME-RENDERED.** The same route is
+drawn pixel-identical every time it appears. So the problem is not
+tracing — it is **clustering**: fingerprint every route, group identical
+renderings, and the dataset collapses to a small template set. Label the
+templates once; every route maps to a cluster deterministically.
+
+**Proven on the RED primary route** (`cluster_red_routes.py`):
+- Fingerprint = red mask, button/border removed, dilated to absorb
+  edge jitter, centroid-normalized (receiver alignment irrelevant),
+  downsampled to a 40×40 grid.
+- Match = min mean-abs-difference over small translations (shift-
+  tolerant, so JPEG/anti-alias jitter doesn't split identical routes).
+- Result: **7,289 red routes → 209 clusters. 98% of routes in clusters
+  of ≥3.** Top clusters: 1528 / 1227 / 964 / 534 / 445 plays.
+
+`build_cluster_gallery.py` renders `red-route-clusters.html` — every
+template as an image, sorted by frequency with running coverage. The
+review/label job is ~209 templates, not 7,300 plays.
+
+Next: label the red templates; extend the fingerprint-and-cluster method
+to non-red routes (per receiver). `route_geometry.py`'s tracer is kept
+but is NOT the path — clustering is.
+
 ## Status
 
-Iterations 1-3 done — color isolation, tracing, classification, and
-de-fragmentation all built and tested. One route = one contour holds for
-the multi-route yellow case; the red primary has a residual colour-gap
-issue. Task #34 (integration + 18-play re-test) remains. Task #30
-superseded by `clean_crop()`.
+The route problem has a proven deterministic solution: cluster +
+template-label. Red routes clustered (209 templates, gallery built).
+Remaining: label red templates, then per-receiver clustering for the
+other routes. The iteration 1-3 tracer is superseded.

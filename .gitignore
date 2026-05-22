@@ -63,3 +63,8 @@ tools/playbook-vision-pilot/sample-crops/**/*.png
 tools/playbook-vision-pilot/sample-crops/*.jpg
 tools/playbook-vision-pilot/sample-crops/*.png
 tools/playbook-vision-pilot/__pycache__/
+
+# Generated review galleries (regenerate from scripts)
+tools/playbook-vision-pilot/red-route-clusters.html
+tools/playbook-vision-pilot/route-check.html
+tools/playbook-vision-pilot/hand-review.html
