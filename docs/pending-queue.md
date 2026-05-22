@@ -13,15 +13,16 @@ when an item depends on something external (user input, upstream work).
 - **Vision pilot — route-geometry rebuild.** The full M25 extraction ran
   (7,300 plays, $12.88, in `data/games/madden-25-ps3/play-geometry/`) but
   **failed Tier-1 hand review (~17% clean)** — the LLM cannot reliably
-  read route shapes from the screenshots (defaults to "streak"). A
-  prompt+resolution cheap-fix also failed. Active work is a deterministic
-  Python route-geometry extractor — see
-  `tools/playbook-vision-pilot/ROUTE-GEOMETRY-DESIGN.md`. Tasks: regenerate
-  crops with a non-route annotation color; `route_geometry.py` color
-  isolation → per-receiver tracing → geometry→route classification;
-  integrate + re-test the 18 hand-reviewed plays as the gate. The current
-  dataset's `ball_carrier`/`target_gap`/`concept`/`personnel` are sound;
-  `routes` is the field being rebuilt.
+  read route shapes from the screenshots. `route_geometry.py` (the
+  deterministic Python extractor — see `ROUTE-GEOMETRY-DESIGN.md`) now
+  has color isolation + tracing (skeletonize + double-BFS) + geometry
+  classification built and passing the shape test (4/5: curls + in/dig
+  identified). **Remaining before it can replace the dataset `routes`
+  field:** (#35) de-fragmentation — one route still splits into 2-3
+  contours; (#34) integration + re-test the 18 hand-reviewed plays as the
+  gate; per-receiver route→role assignment; `post`/`curl` classifier
+  tuning. The dataset's `ball_carrier`/`target_gap`/`concept`/`personnel`
+  are sound; `routes` is the field being rebuilt.
 
 
 
