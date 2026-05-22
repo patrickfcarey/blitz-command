@@ -665,6 +665,19 @@ retry. Total spend: $12.88.
 - The 7,300-play dataset stands as a v1 with reliable ball_carrier/
   gap/concept/personnel but UNRELIABLE routes — not validation-passed.
 
+[2026-05-22] route_geometry.py — iterations 1-2 built.
+- clean_crop (annotation-free) + isolate_routes (per-color masks, button/
+  border filtering) + trace_route (skimage skeletonize + double-BFS
+  longest path) + classify_route (polyline geometry → route tree).
+- Noise guard: polylines that never go downfield (max_depth<40px) are
+  rejected as not-a-route.
+- Test (test_route_geometry.py) vs the stated bar — identify a curl + an
+  in route in isolation: 4/5 plays PASS. Zona Curls → curl, Inside Dig /
+  WR Deep In / Deep X Dig → in. Zona Dbl Curls missed (curls read post).
+- The shape engine works. NOT yet a drop-in for the dataset routes field:
+  route fragmentation (one route → 2-3 contours) still unsolved → task
+  #35 de-fragmentation. Plus per-receiver assignment + classifier tuning.
+
 
 
 LEVER B (concept dictionary + skip blockers on runs):

@@ -154,7 +154,41 @@ is working. Findings from the first debug run (`PA Ctr Waggle`):
 
 Next: white/green tuning, then per-receiver tracing (#32).
 
+## Iteration-2 status (2026-05-22)
+
+Full pipeline built: `clean_crop` → `isolate_routes` → `trace_route`
+(skeletonize + double-BFS longest path) → `classify_route` (geometry →
+route tree). Plus a noise guard: a traced polyline that never goes
+meaningfully downfield (`max_depth < 40px`) is rejected as not-a-route.
+
+**Test (`test_route_geometry.py`) — the stated bar was "identify a curl
+and an in/dig route in isolation":**
+
+| Play          | Expect | Result |
+|---------------|--------|--------|
+| Zona Curls    | curl   | PASS — curl ×2 |
+| Inside Dig    | in     | PASS |
+| WR Deep In    | in     | PASS ×2 |
+| Deep X Dig    | in     | PASS |
+| Zona Dbl Curls| curl   | MISS — curls read as `post` |
+
+4/5 — the shape-classification engine works.
+
+**Known gap before this can replace the dataset `routes` field:**
+
+- **Route fragmentation.** One route can split into 2-3 contours (anti-
+  alias gaps, crossings). E.g. `Inside Dig` shows the single red primary
+  route as 3 red contours, each classified separately. → de-fragmentation
+  layer needed (task #35): morphological close + merge contour pieces
+  with colinear nearby endpoints, so one route = one polyline.
+- **Per-receiver assignment.** Routes still need mapping to receiver
+  roles (WR_X etc.).
+- **Classifier tuning** — the `post` vs `curl` boundary on break-and-
+  extend routes (Zona Dbl Curls miss).
+
 ## Status
 
-Build in progress. Iteration 1 (color isolation) done. Tasks #32–#34
-ahead. Task #30 superseded by `clean_crop()`.
+Iterations 1-2 done — color isolation, tracing, classification all built
+and tested at the shape level. Tasks #34 (integration) and #35 (de-
+fragmentation) remain before route_geometry can produce a clean per-play
+route list. Task #30 superseded by `clean_crop()`.
