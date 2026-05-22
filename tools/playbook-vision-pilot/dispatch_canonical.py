@@ -144,7 +144,17 @@ def _call(client: anthropic.Anthropic, rules: str, info: dict,
 
 
 def _existing(slug_name: str) -> bool:
-    return (OUT_DIR / f"{Path(slug_name).stem}.json").exists()
+    """A play counts as done only if its JSON exists AND is not an error
+    record. Failed calls (socket drops, rate limits) save an {"error": ...}
+    file — those should be RE-TRIED on the next run, not skipped."""
+    f = OUT_DIR / f"{Path(slug_name).stem}.json"
+    if not f.exists():
+        return False
+    try:
+        d = json.loads(f.read_text())
+        return "error" not in d
+    except (json.JSONDecodeError, OSError):
+        return False   # corrupt/partial file — re-run it
 
 
 def _save(slug_name: str, info: dict, result: dict) -> None:
