@@ -1,0 +1,76 @@
+{
+  "slug": "singleback__r1f0t2w2__ace__pass__pa-deep-in",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Ace",
+    "play_name": "PA Deep In",
+    "play_type": "pass",
+    "canonical_team": "Atlanta Falcons",
+    "canonical_img": 9,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Atlanta Falcons",
+      "Balanced",
+      "Brian Billick",
+      "Carolina Panthers",
+      "Chicago Bears",
+      "Cincinnati Bengals",
+      "Dallas Cowboys",
+      "Dick Vermeil",
+      "Green Bay Packers",
+      "Houston Texans",
+      "Jacksonville Jaguars",
+      "Miami Dolphins",
+      "Minnesota Vikings",
+      "New Orleans Saints",
+      "New York Giants",
+      "New York Jets",
+      "Oakland Raiders",
+      "Pass Balanced",
+      "Pittsburgh Steelers",
+      "Run Balanced",
+      "Run Heavy",
+      "Run N Gun",
+      "San Diego Chargers",
+      "Seattle Seahawks",
+      "Tennessee Titans",
+      "Tom Flores",
+      "Washington Redskins",
+      "West Coast"
+    ],
+    "owner_count": 28,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Ace",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Ace family \u2014 2 TE 2 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 498,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 215
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.13,
+  "response_text": "```json\n{\n  \"concept\": \"deep_in\",\n  \"concepts\": [\"deep_in\", \"pa_pass\"],\n  \"routes\": {\n    \"WR_X\": \"deep_in\",\n    \"WR_Z\": \"corner\",\n    \"TE_L\": \"seam\",\n    \"TE_R\": \"flat\",\n    \"HB\": \"pass_pro\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Play-action setup with deep in concept. WR_X (\u25a1 purple) runs the primary deep route. WR_Z (\u2299 red) runs corner on opposite side. Both TEs release \u2014 TE_L runs seam (\u25b3 green), TE_R runs flat (\u2297 blue). HB blocks initially then checks. Standard PA Deep In structure.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "deep_in",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdeep in\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

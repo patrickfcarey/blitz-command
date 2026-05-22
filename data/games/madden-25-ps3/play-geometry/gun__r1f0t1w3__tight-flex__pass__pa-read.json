@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__tight-flex__pass__pa-read",
+  "info": {
+    "family": "GUN",
+    "formation": "Tight Flex",
+    "play_name": "PA Read",
+    "play_type": "pass",
+    "canonical_team": "Run N Gun",
+    "canonical_img": 93,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Run N Gun"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Tight Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 495,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 203
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.99,
+  "response_text": "```json\n{\n  \"concept\": \"read_pass\",\n  \"concepts\": [\"read_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"swing\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"PA Read play with play-action fake. Red arrow traces QB read progressing from WR_X (primary streak) to WR_Z corner. TE_R runs seam route. HB swings out as checkdown. Yellow route arrows show option reads on backside. Formation is GUN Tight Flex with QB shotgun, single RB to side, 1 TE, 3 WRs.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "read_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bread\\b(?!.*option)",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

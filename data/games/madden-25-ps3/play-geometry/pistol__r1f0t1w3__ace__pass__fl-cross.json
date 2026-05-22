@@ -1,0 +1,50 @@
+{
+  "slug": "pistol__r1f0t1w3__ace__pass__fl-cross",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Ace",
+    "play_name": "FL Cross",
+    "play_type": "pass",
+    "canonical_team": "Detroit Lions",
+    "canonical_img": 69,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Detroit Lions",
+      "Pistol"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Ace",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "Pistol default \u2014 variant unclear"
+    }
+  },
+  "usage": {
+    "input_tokens": 491,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 126
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 1.9,
+  "response_text": "```json\n{\n  \"concept\": \"cross_concept\",\n  \"concepts\": [\"cross_concept\"],\n  \"routes\": {\n    \"WR_X\": \"drag\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"drag\",\n    \"TE_R\": \"streak\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "cross_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcross(es)?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

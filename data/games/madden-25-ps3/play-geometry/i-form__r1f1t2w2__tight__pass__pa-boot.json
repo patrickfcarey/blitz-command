@@ -1,0 +1,55 @@
+{
+  "slug": "i-form__r1f1t2w2__tight__pass__pa-boot",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Tight",
+    "play_name": "PA Boot",
+    "play_type": "pass",
+    "canonical_team": "Chicago Bears",
+    "canonical_img": 59,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Chicago Bears",
+      "Denver Broncos",
+      "Indianapolis Colts",
+      "Jacksonville Jaguars",
+      "John Madden",
+      "New York Giants",
+      "San Diego Chargers"
+    ],
+    "owner_count": 7,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Tight",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Tight/Twin-TE \u2014 2 TE"
+    }
+  },
+  "usage": {
+    "input_tokens": 495,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 185
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.8,
+  "response_text": "```json\n{\n  \"concept\": \"boot_pass\",\n  \"concepts\": [\"boot_pass\"],\n  \"routes\": {\n    \"TE_L\": \"corner\",\n    \"TE_R\": \"flat\",\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"comeback\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"PA Boot to right with TE-R flat release and TE-L corner route. WR-X streaks vertically (yellow), WR-Z runs comeback (blue) as primary read. HB checks for swing release (green). Red arrow on WR-Z indicates primary target.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "boot_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bboot\\b|\\bbootleg\\b",
+    "is_pa": true,
+    "is_boot_or_roll": true
+  }
+}

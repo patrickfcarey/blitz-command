@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__trips-y-iso__pass__mesh-dig",
+  "info": {
+    "family": "GUN",
+    "formation": "Trips Y Iso",
+    "play_name": "Mesh Dig",
+    "play_type": "pass",
+    "canonical_team": "New Orleans Saints",
+    "canonical_img": 113,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "New Orleans Saints"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Trips Y Iso",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 496,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 193
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.29,
+  "response_text": "```json\n{\n  \"concept\": \"mesh\",\n  \"concepts\": [\"mesh\", \"dig\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"drag\",\n    \"TE_R\": \"dig\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_L\",\n  \"notes\": \"Mesh concept with slot WR running the drag crossing underneath. TE_R runs a dig route (intermediate vertical) on the right side, acting as the second vertical component. WR_Z clears vertically deep. WR_X corners out to create spacing. HB available for check-down.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "mesh",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bmesh\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

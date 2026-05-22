@@ -1,0 +1,49 @@
+{
+  "slug": "i-form__r1f1t1w3__pro-twins__pass__pa-te-leak",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Pro Twins",
+    "play_name": "PA TE Leak",
+    "play_type": "pass",
+    "canonical_team": "New York Giants",
+    "canonical_img": 49,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "New York Giants"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Pro Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Twins \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 503,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 212
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.11,
+  "response_text": "```json\n{\n  \"concept\": \"leak_route\",\n  \"concepts\": [\"leak_route\", \"play_action\"],\n  \"routes\": {\n    \"TE_R\": \"leak\",\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_R\": \"out\",\n    \"FB\": \"pass_pro\",\n    \"HB\": \"pass_pro\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"Play-action with TE leak route primary. TE_R (R1 button, red arrow) runs leak upfield; WR_X and WR_Z run corner routes (yellow); WR_SLOT_R runs out (yellow); backfield (FB, HB) provides pass protection with blue chip routes.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "leak_route",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bleak\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

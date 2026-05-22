@@ -1,0 +1,49 @@
+{
+  "slug": "pistol__r1f0t1w3__ace__pass__pa-jet-sweep",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Ace",
+    "play_name": "PA Jet Sweep",
+    "play_type": "pass",
+    "canonical_team": "Detroit Lions",
+    "canonical_img": 72,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Detroit Lions"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Ace",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "Pistol default \u2014 variant unclear"
+    }
+  },
+  "usage": {
+    "input_tokens": 521,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 192
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.58,
+  "response_text": "```json\n{\n  \"concept\": \"sweep\",\n  \"concepts\": [\"sweep\", \"pa_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"flat\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"wheel\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"PA Jet Sweep with play-action. Red arrow indicates primary target (WR_Z corner route). Yellow routes show secondary reads: WR_X streak, TE_R seam, WR_SLOT_L flat, HB wheel. R1 shoulder-button eligible visible on formation.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "sweep",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bsweep\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

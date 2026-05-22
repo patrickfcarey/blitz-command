@@ -1,0 +1,59 @@
+{
+  "slug": "near__r1f1t1w2__right__run__hb-inside",
+  "info": {
+    "family": "NEAR",
+    "formation": "Right",
+    "play_name": "HB Inside",
+    "play_type": "run",
+    "canonical_team": "Tom Flores",
+    "canonical_img": 77,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Tom Flores",
+      "Tom Landry"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "NEAR",
+      "formation": "Right",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "NEAR family \u2014 old-school 2-back default"
+    }
+  },
+  "usage": {
+    "input_tokens": 231,
+    "cache_creation_input_tokens": 352,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 70
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 4.4,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"generic_hb_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB straight\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "straight",
+    "c_xy": [
+      1537,
+      701
+    ],
+    "arrow_los_crossing_xy": [
+      1593,
+      701
+    ],
+    "dx_from_c": 56,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "^hb \\w+",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

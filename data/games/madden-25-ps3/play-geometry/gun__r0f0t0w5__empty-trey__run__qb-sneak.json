@@ -1,0 +1,58 @@
+{
+  "slug": "gun__r0f0t0w5__empty-trey__run__qb-sneak",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Trey",
+    "play_name": "QB Sneak",
+    "play_type": "run",
+    "canonical_team": "Miami Dolphins",
+    "canonical_img": 147,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Miami Dolphins"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Trey",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 565,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 67
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 62.69,
+  "response_text": "```json\n{\n  \"concept\": \"qb_sneak\",\n  \"concepts\": [\"qb_sneak\"],\n  \"routes\": {},\n  \"ball_carrier\": \"QB straight\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "straight",
+    "c_xy": [
+      1616,
+      701
+    ],
+    "arrow_los_crossing_xy": [
+      1662,
+      701
+    ],
+    "dx_from_c": 46,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "qb_sneak",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bqb sneak\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "split__r1f1t1w2__slot__pass__pa-slide",
+  "info": {
+    "family": "SPLIT",
+    "formation": "Slot",
+    "play_name": "PA Slide",
+    "play_type": "pass",
+    "canonical_team": "Jimmy Johnson",
+    "canonical_img": 87,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Jimmy Johnson",
+      "Joe Gibbs",
+      "Pass Balanced"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "SPLIT",
+      "formation": "Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "SPLIT family \u2014 old-school 2-back default"
+    }
+  },
+  "usage": {
+    "input_tokens": 492,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 200
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.11,
+  "response_text": "```json\n{\n  \"concept\": \"slide_pass\",\n  \"concepts\": [\"slide_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"slide\",\n    \"TE_R\": \"wheel\",\n    \"HB\": \"pass_pro\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"PA-Slide: play-action fake with RB initially blocking. Three-level stretch: WR_X (deep/streak), WR_Z (intermediate corner), WR_SLOT_L (middle slide), TE_R (wheel route out to flat). Red arrow on WR_Z (Circle button) indicates primary target.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "slide_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bslide\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

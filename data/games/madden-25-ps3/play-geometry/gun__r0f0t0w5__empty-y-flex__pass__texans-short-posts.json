@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r0f0t0w5__empty-y-flex__pass__texans-short-posts",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Y-Flex",
+    "play_name": "Texans Short Posts",
+    "play_type": "pass",
+    "canonical_team": "Houston Texans",
+    "canonical_img": 138,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Houston Texans"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Y-Flex",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 489,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 257
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.09,
+  "response_text": "```json\n{\n  \"concept\": \"texans_short_posts\",\n  \"concepts\": [\"texans_short_posts\"],\n  \"routes\": {\n    \"WR_X\": \"post\",\n    \"WR_Z\": \"post\",\n    \"WR_SLOT_L\": \"slant\",\n    \"WR_SLOT_R\": \"post\",\n    \"TE_R\": \"post\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"5-wide Empty formation (GUN Empty Y-Flex). All 5 WRs visible on LOS with button glyphs (\u25a1 purple left, \u25b3 green left-slot, \u2297 blue right-slot, R1 right, \u2299 red far right). Red arrow from QB to WR_X (post). Yellow arrows on WR_Z, WR_SLOT_R, TE_R all running post routes; WR_SLOT_L runs slant. No backfield except QB.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "unknown",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": null,
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

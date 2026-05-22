@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r0f0t0w5__empty-trey__pass__saints-switch",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Trey",
+    "play_name": "Saints Switch",
+    "play_type": "pass",
+    "canonical_team": "New Orleans Saints",
+    "canonical_img": 124,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "New Orleans Saints"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Trey",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 494,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 246
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.91,
+  "response_text": "```json\n{\n  \"concept\": \"switch_concept\",\n  \"concepts\": [\"switch_concept\"],\n  \"routes\": {\n    \"WR_X\": \"slant\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"dig\",\n    \"WR_SLOT_R\": \"wheel\",\n    \"WR_FLANKER\": \"streak\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"GUN Empty Trey (5 WR, 0 TE, 0 RB, QB shotgun). Primary target marked with red arrow (WR_Z corner route). Switch concept with crossing routes: WR_X slant, WR_SLOT_L dig crossing underneath, WR_SLOT_R wheel from backfield, WR_Z corner high. WR_FLANKER (far left, purple \u25a1 glyph) runs streak as clearout. QB alone in backfield.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "switch_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\binside switch\\b|\\bswitch\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__spread-offset__pass__pa-veer",
+  "info": {
+    "family": "GUN",
+    "formation": "Spread Offset",
+    "play_name": "PA Veer",
+    "play_type": "pass",
+    "canonical_team": "Philadelphia Eagles",
+    "canonical_img": 99,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Philadelphia Eagles"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Spread Offset",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 171,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 171
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 6.77,
+  "response_text": "```json\n{\n  \"concept\": \"veer_option\",\n  \"concepts\": [\"veer_option\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_R\": \"seam\",\n    \"TE_R\": \"streak\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"PA Veer play with RPO structure; red arrow on WR_X (Circle button) indicates primary pass target; yellow route structure consistent with four-vertical style pass concept off play-action fake.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "veer_option",
+    "concept_family": "rpo",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bveer\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

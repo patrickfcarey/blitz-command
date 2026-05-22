@@ -1,0 +1,59 @@
+{
+  "slug": "strong__r1f1t1w2__close__pass__wr-out",
+  "info": {
+    "family": "STRONG",
+    "formation": "Close",
+    "play_name": "WR Out",
+    "play_type": "pass",
+    "canonical_team": "Baltimore Ravens",
+    "canonical_img": 70,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Baltimore Ravens",
+      "Buffalo Bills",
+      "Carolina Panthers",
+      "Cincinnati Bengals",
+      "Cleveland Browns",
+      "Dallas Cowboys",
+      "Green Bay Packers",
+      "New Orleans Saints",
+      "Philadelphia Eagles",
+      "Pittsburgh Steelers",
+      "Tampa Bay Buccaneers"
+    ],
+    "owner_count": 11,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "Close",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "STRONG default \u2014 variant unclear"
+    }
+  },
+  "usage": {
+    "input_tokens": 489,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 203
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.95,
+  "response_text": "```json\n{\n  \"concept\": \"outs\",\n  \"concepts\": [\"outs\"],\n  \"routes\": {\n    \"WR_X\": \"out\",\n    \"WR_Z\": \"out\",\n    \"TE_L\": \"block\",\n    \"TE_R\": \"streak\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"WR_X (purple Square) runs out route on left side with red primary arrow. WR_Z (blue X) runs out route on right side with yellow arrow. TE_R (red Circle) runs streak downfield. TE_L (green Triangle) blocks. HB checks. Strong Close formation with 2 TEs, 2 WRs visible.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "outs",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bouts?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

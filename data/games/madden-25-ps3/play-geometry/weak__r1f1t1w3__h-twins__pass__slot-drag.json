@@ -1,0 +1,49 @@
+{
+  "slug": "weak__r1f1t1w3__h-twins__pass__slot-drag",
+  "info": {
+    "family": "WEAK",
+    "formation": "H Twins",
+    "play_name": "Slot Drag",
+    "play_type": "pass",
+    "canonical_team": "New Orleans Saints",
+    "canonical_img": 72,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "New Orleans Saints"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "WEAK",
+      "formation": "H Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 519,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 129
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 1.69,
+  "response_text": "```json\n{\n  \"concept\": \"slot_concept\",\n  \"concepts\": [\"slot_drag\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"comeback\",\n    \"WR_SLOT_L\": \"drag\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_L\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "slot_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bslot (drag|cross|streak|corner|out|in|wheel)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

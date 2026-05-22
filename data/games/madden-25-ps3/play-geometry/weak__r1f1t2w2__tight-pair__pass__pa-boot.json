@@ -1,0 +1,49 @@
+{
+  "slug": "weak__r1f1t2w2__tight-pair__pass__pa-boot",
+  "info": {
+    "family": "WEAK",
+    "formation": "Tight Pair",
+    "play_name": "PA Boot",
+    "play_type": "pass",
+    "canonical_team": "Run N Gun",
+    "canonical_img": 63,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Run N Gun"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "WEAK",
+      "formation": "Tight Pair",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 495,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 186
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 5.39,
+  "response_text": "```json\n{\n  \"concept\": \"boot_pass\",\n  \"concepts\": [\"boot_pass\"],\n  \"routes\": {\n    \"TE_L\": \"block_release\",\n    \"TE_R\": \"corner\",\n    \"WR_X\": \"comeback\",\n    \"WR_Z\": \"streak\",\n    \"HB\": \"swing\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"PA Boot to the right. QB fakes handoff, boots right. TE_R runs corner route (yellow arrow). WR_X runs comeback on backside (red arrow). WR_Z runs streak. HB available for swing checkdown. TE_L blocks initially then releases.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "boot_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bboot\\b|\\bbootleg\\b",
+    "is_pa": true,
+    "is_boot_or_roll": true
+  }
+}

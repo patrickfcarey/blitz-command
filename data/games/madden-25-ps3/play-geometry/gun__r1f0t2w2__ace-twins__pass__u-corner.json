@@ -1,0 +1,51 @@
+{
+  "slug": "gun__r1f0t2w2__ace-twins__pass__u-corner",
+  "info": {
+    "family": "GUN",
+    "formation": "Ace Twins",
+    "play_name": "U Corner",
+    "play_type": "pass",
+    "canonical_team": "Detroit Lions",
+    "canonical_img": 92,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Detroit Lions",
+      "New York Giants",
+      "Tennessee Titans"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Ace Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Ace Twins \u2014 2 TE 2 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 493,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 195
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.68,
+  "response_text": "```json\n{\n  \"concept\": \"corner_concept\",\n  \"concepts\": [\"corner_concept\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"in\",\n    \"WR_SLOT_R\": \"in\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"GUN Ace Twins with two slot WRs running shallow ins while the outer WRs run corners. TE_R runs seam route upfield. HB available for checkdown. Red arrow indicates WR_X corner as primary target.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "corner_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcorners?$",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

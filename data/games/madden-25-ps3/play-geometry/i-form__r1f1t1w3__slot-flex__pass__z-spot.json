@@ -1,0 +1,56 @@
+{
+  "slug": "i-form__r1f1t1w3__slot-flex__pass__z-spot",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Slot Flex",
+    "play_name": "Z Spot",
+    "play_type": "pass",
+    "canonical_team": "Cleveland Browns",
+    "canonical_img": 49,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Cleveland Browns",
+      "Dallas Cowboys",
+      "Green Bay Packers",
+      "Kansas City Chiefs",
+      "Minnesota Vikings",
+      "New York Jets",
+      "St. Louis Rams",
+      "Tampa Bay Buccaneers"
+    ],
+    "owner_count": 8,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Slot Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Slot \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 498,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 206
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 5.31,
+  "response_text": "```json\n{\n  \"concept\": \"z_concept\",\n  \"concepts\": [\"z_concept\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"spot\",\n    \"WR_SLOT_L\": \"drag\",\n    \"TE_L\": \"corner\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Z (blue X button) runs the spot route at intermediate depth; WR_X stretches vertically; slot WR runs drag across; TE_L releases to corner; HB checks out of backfield. Standard I-Form Slot Flex pass structure with 1 RB, 1 FB, 1 TE, 3 WR.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "z_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bz[- ]?(spot|cross|streak|corner|drive|trail|out|drag|sail)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

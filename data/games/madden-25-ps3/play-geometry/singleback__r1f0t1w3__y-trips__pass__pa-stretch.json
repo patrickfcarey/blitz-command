@@ -1,0 +1,52 @@
+{
+  "slug": "singleback__r1f0t1w3__y-trips__pass__pa-stretch",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Y-Trips",
+    "play_name": "PA Stretch",
+    "play_type": "pass",
+    "canonical_team": "Cleveland Browns",
+    "canonical_img": 28,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Cleveland Browns",
+      "Minnesota Vikings",
+      "Run Balanced",
+      "Tennessee Titans"
+    ],
+    "owner_count": 4,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Y-Trips",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 500,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 227
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 4.04,
+  "response_text": "```json\n{\n  \"concept\": \"outside_zone\",\n  \"concepts\": [\"outside_zone\", \"pa_pass\"],\n  \"routes\": {\n    \"TE_R\": \"seam\",\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_R\": \"flat\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Play-action pass with outside-zone run fake. TE releases upfield on seam; Z-WR runs deep corner route over the top; slot WR (R1 button glyph) runs flat to the sideline; X-WR streaks vertically; HB checks down on release. Red arrow indicates primary target is the corner route (Z). Blue/cyan route from TE suggests chip-then-release or delayed vertical.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "outside_zone",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bhb stretch\\b|\\bstretch\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

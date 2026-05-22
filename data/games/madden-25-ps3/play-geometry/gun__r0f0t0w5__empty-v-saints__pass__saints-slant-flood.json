@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r0f0t0w5__empty-v-saints__pass__saints-slant-flood",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty V-Saints",
+    "play_name": "Saints Slant Flood",
+    "play_type": "pass",
+    "canonical_team": "New Orleans Saints",
+    "canonical_img": 132,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "New Orleans Saints"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty V-Saints",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 525,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 208
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.91,
+  "response_text": "```json\n{\n  \"concept\": \"flood\",\n  \"concepts\": [\"flood\"],\n  \"routes\": {\n    \"WR_X\": \"slant\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"flat\",\n    \"WR_SLOT_R\": \"vertical\",\n    \"QB\": \"none\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_R\",\n  \"notes\": \"GUN Empty (5-wide, no RB). Left side runs flood concept: WR_X slant, WR_SLOT_L flat, WR_SLOT_R vertical stretch. Right side (Z) runs corner. Primary target (red arrow) is R1 button on right side vertical. All 5 eligible receivers have button glyphs and routes.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "flood",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bflood\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

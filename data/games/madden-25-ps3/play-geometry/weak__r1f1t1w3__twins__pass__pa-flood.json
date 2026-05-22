@@ -1,0 +1,52 @@
+{
+  "slug": "weak__r1f1t1w3__twins__pass__pa-flood",
+  "info": {
+    "family": "WEAK",
+    "formation": "Twins",
+    "play_name": "PA Flood",
+    "play_type": "pass",
+    "canonical_team": "Carolina Panthers",
+    "canonical_img": 54,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Carolina Panthers",
+      "Houston Texans",
+      "Oakland Raiders",
+      "Tom Landry"
+    ],
+    "owner_count": 4,
+    "expected_personnel": {
+      "family": "WEAK",
+      "formation": "Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 490,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 184
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.19,
+  "response_text": "```json\n{\n  \"concept\": \"flood\",\n  \"concepts\": [\"flood\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"dig\",\n    \"WR_SLOT_L\": \"flat\",\n    \"TE_L\": \"streak\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"PA-action play; red arrow primary to WR_Z dig; flood concept stretched to one side with corner (X), dig (Z), and flat (slot). TE_L runs streak vertical clearout. R1 button glyph visible on TE_L (alternative target).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "flood",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bflood\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

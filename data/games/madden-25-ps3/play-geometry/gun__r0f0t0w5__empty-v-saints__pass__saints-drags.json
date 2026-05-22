@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r0f0t0w5__empty-v-saints__pass__saints-drags",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty V-Saints",
+    "play_name": "Saints Drags",
+    "play_type": "pass",
+    "canonical_team": "New Orleans Saints",
+    "canonical_img": 134,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "New Orleans Saints"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty V-Saints",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 170,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 176
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 4.51,
+  "response_text": "```json\n{\n  \"concept\": \"drags\",\n  \"concepts\": [\"drags\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"drag\",\n    \"WR_SLOT_L\": \"drag\",\n    \"WR_SLOT_R\": \"drag\",\n    \"WR_FLANKER\": \"streak\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"GUN Empty (5-wide, no backs). QB in shotgun. Four drag routes crossing the field at ~5 yds with two vertical clearouts on the outside. Red arrow (primary) targets the Z drag.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "drags",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdrags?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

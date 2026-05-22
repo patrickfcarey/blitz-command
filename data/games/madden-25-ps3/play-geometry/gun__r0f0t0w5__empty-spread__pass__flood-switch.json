@@ -1,0 +1,50 @@
+{
+  "slug": "gun__r0f0t0w5__empty-spread__pass__flood-switch",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Spread",
+    "play_name": "Flood Switch",
+    "play_type": "pass",
+    "canonical_team": "Oakland Raiders",
+    "canonical_img": 132,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Oakland Raiders",
+      "Philadelphia Eagles"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Spread",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 491,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 203
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.97,
+  "response_text": "```json\n{\n  \"concept\": \"flood\",\n  \"concepts\": [\"flood\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"flat\",\n    \"WR_SLOT_R\": \"dig\",\n    \"WR_FLANKER\": \"comeback\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"GUN Empty Spread (5 WR, 0 TE, 0 FB, 1 QB). Flood concept with switch element: left side runs flat+dig combo (curl-flat style), right side has streak+corner+comeback. Primary target (red arrow) is the right-side corner route (WR_Z).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "flood",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bflood\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

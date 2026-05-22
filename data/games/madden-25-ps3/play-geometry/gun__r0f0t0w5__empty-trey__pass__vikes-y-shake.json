@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r0f0t0w5__empty-trey__pass__vikes-y-shake",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Trey",
+    "play_name": "Vikes Y-Shake",
+    "play_type": "pass",
+    "canonical_team": "Minnesota Vikings",
+    "canonical_img": 142,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Minnesota Vikings"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Trey",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 175,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 254
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 13.22,
+  "response_text": "```json\n{\n  \"concept\": \"shake_route\",\n  \"concepts\": [\"shake_route\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"shake\",\n    \"WR_SLOT_L\": \"seam\",\n    \"WR_SLOT_R\": \"dig\",\n    \"WR_FLANKER\": \"comeback\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"GUN Empty Trey with 5 WRs. WR_Z (triangle, center-left) runs shake route with red arrow. WR_X (Square, far left) runs corner. WR_SLOT_L (cyan X) runs seam. WR_SLOT_R (R1 button, right of center) runs dig. WR_FLANKER (red Circle, far right) runs comeback. Yellow dashed horizontal line at LOS marks the cyan reference line. QB positioned approximately 5 yards deep in shotgun.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "shake_route",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bshakes?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

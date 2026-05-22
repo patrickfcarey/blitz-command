@@ -1,0 +1,50 @@
+{
+  "slug": "pistol__r1f0t0w4__trips__pass__pa-hb-flat",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Trips",
+    "play_name": "PA HB Flat",
+    "play_type": "pass",
+    "canonical_team": "Kansas City Chiefs",
+    "canonical_img": 74,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Kansas City Chiefs",
+      "Seattle Seahawks"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Trips",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 0,
+      "WR": 4,
+      "total": 6,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 502,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 192
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.84,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"pa_hb_flat\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"comeback\",\n    \"WR_SLOT_R\": \"flat\",\n    \"HB\": \"flat\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"HB\",\n  \"notes\": \"Play-action pass. Red arrow traces HB swing route to the flat (R1 button). Four WRs run vertical/intermediate concepts (streak, corner, comeback, flat) to stretch coverage vertically and horizontally. QB in Pistol formation 3 yards behind C.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "^hb \\w+",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

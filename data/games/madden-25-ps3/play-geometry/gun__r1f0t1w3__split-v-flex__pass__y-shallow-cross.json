@@ -1,0 +1,50 @@
+{
+  "slug": "gun__r1f0t1w3__split-v-flex__pass__y-shallow-cross",
+  "info": {
+    "family": "GUN",
+    "formation": "Split V-Flex",
+    "play_name": "Y Shallow Cross",
+    "play_type": "pass",
+    "canonical_team": "Dick Vermeil",
+    "canonical_img": 127,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Dick Vermeil",
+      "San Diego Chargers"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Split V-Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "GUN/Shotgun default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 500,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 190
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.52,
+  "response_text": "```json\n{\n  \"concept\": \"y_concept\",\n  \"concepts\": [\"y_shallow_cross\"],\n  \"routes\": {\n    \"WR_X\": \"comeback\",\n    \"WR_Z\": \"shallow_cross\",\n    \"WR_SLOT_L\": \"streak\",\n    \"TE_R\": \"shallow_cross\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Y Shallow Cross with red arrow on WR_Z shallow cross as primary. TE_R and WR_Z both running shallow crosses; WR_X running comeback on the left; WR_SLOT_L running vertical stretch; HB in checkdown position.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "y_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\by[- ]?(cross|sail|stick|corner|trail|spot|drive|shallow)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

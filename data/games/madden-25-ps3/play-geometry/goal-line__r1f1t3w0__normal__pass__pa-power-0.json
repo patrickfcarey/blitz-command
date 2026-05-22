@@ -1,0 +1,54 @@
+{
+  "slug": "goal-line__r1f1t3w0__normal__pass__pa-power-0",
+  "info": {
+    "family": "GOAL LINE",
+    "formation": "Normal",
+    "play_name": "PA Power 0",
+    "play_type": "pass",
+    "canonical_team": "Jimmy Johnson",
+    "canonical_img": 136,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Jimmy Johnson",
+      "New York Giants",
+      "Run Balanced",
+      "Tom Flores",
+      "Vince Lombardi",
+      "West Coast"
+    ],
+    "owner_count": 6,
+    "expected_personnel": {
+      "family": "GOAL LINE",
+      "formation": "Normal",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 3,
+      "WR": 0,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Goal Line \u2014 typical heavy package"
+    }
+  },
+  "usage": {
+    "input_tokens": 522,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 224
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.81,
+  "response_text": "```json\n{\n  \"concept\": \"power_run\",\n  \"concepts\": [\"power_run\", \"pa_pass\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"TE_R\": \"streak\",\n    \"TE_WING_L\": \"block\",\n    \"WR_X\": \"corner\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"PA Power O look with goal-line personnel (r1f1t3w0). Three tight ends visible on LOS \u2014 two inline (TE_L, TE_WING_L) blocking left, one detached right (TE_R) running streak (red arrow). WR_X runs corner route (yellow arrow). HB appears to be backfield blocker. Mesh-like crossing route visible (blue arrow on wing receiver, suggests option or chip-release)\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "power_run",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpower\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

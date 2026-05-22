@@ -1,0 +1,58 @@
+{
+  "slug": "blue__r1f0t3w1__jumbo__run__hb-counter",
+  "info": {
+    "family": "BLUE",
+    "formation": "Jumbo",
+    "play_name": "HB Counter",
+    "play_type": "run",
+    "canonical_team": "Bill Walsh",
+    "canonical_img": 86,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Bill Walsh"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "BLUE",
+      "formation": "Jumbo",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 3,
+      "WR": 1,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Jumbo \u2014 typically 3 TE 1 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 560,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 66
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 56.38,
+  "response_text": "```json\n{\n  \"concept\": \"counter_run\",\n  \"concepts\": [\"counter_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB D_left\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_left",
+    "c_xy": [
+      1014,
+      653
+    ],
+    "arrow_los_crossing_xy": [
+      119,
+      653
+    ],
+    "dx_from_c": -895,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "counter_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bcounter\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

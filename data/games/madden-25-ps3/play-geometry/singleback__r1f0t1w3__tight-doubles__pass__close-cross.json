@@ -1,0 +1,52 @@
+{
+  "slug": "singleback__r1f0t1w3__tight-doubles__pass__close-cross",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Tight Doubles",
+    "play_name": "Close Cross",
+    "play_type": "pass",
+    "canonical_team": "Arizona Cardinals",
+    "canonical_img": 40,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Arizona Cardinals",
+      "Atlanta Falcons",
+      "Oakland Raiders",
+      "San Diego Chargers"
+    ],
+    "owner_count": 4,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Tight Doubles",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 497,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 204
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.74,
+  "response_text": "```json\n{\n  \"concept\": \"cross_concept\",\n  \"concepts\": [\"cross_concept\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"TE_L\": \"drag\",\n    \"TE_R\": \"drag\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_L\",\n  \"notes\": \"Two tight ends lined up in Tight Doubles formation; both run crossing routes (drag-style). WR_X (left slot, purple \u25a1) runs vertical streak. WR_Z (right, blue \u2297) runs corner route over the top. Red primary route arrow traces from QB to TE_L drag route crossing the middle. HB positioned for checkdown release.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "cross_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcross(es)?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

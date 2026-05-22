@@ -1,0 +1,49 @@
+{
+  "slug": "shotgun__r1f0t1w3__split-slot__pass__backs-cross",
+  "info": {
+    "family": "SHOTGUN",
+    "formation": "Split Slot",
+    "play_name": "Backs Cross",
+    "play_type": "pass",
+    "canonical_team": "Tom Landry",
+    "canonical_img": 84,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Tom Landry"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SHOTGUN",
+      "formation": "Split Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "GUN/Shotgun default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 495,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 202
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.04,
+  "response_text": "```json\n{\n  \"concept\": \"cross_concept\",\n  \"concepts\": [\"backs_cross\", \"mesh\"],\n  \"routes\": {\n    \"QB\": \"shotgun\",\n    \"HB\": \"drag_left\",\n    \"TE_R\": \"drag_right\",\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_R\": \"comeback\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"HB\",\n  \"notes\": \"Two backs running crossing routes (HB drag left, TE_R drag right) in a mesh-like structure. Primary read on HB drag. WR_X and WR_Z provide vertical clearouts; slot WR runs comeback on backside. Red arrow indicates HB primary target route.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "cross_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcross(es)?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

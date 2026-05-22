@@ -1,0 +1,49 @@
+{
+  "slug": "i-form__r1f1t1w2__close__pass__pa-te-leak",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Close",
+    "play_name": "PA TE Leak",
+    "play_type": "pass",
+    "canonical_team": "Joe Gibbs",
+    "canonical_img": 78,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Joe Gibbs"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Close",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "I-Form Pro default"
+    }
+  },
+  "usage": {
+    "input_tokens": 499,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 185
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.62,
+  "response_text": "```json\n{\n  \"concept\": \"leak_route\",\n  \"concepts\": [\"leak_route\", \"pa_pass\"],\n  \"routes\": {\n    \"TE_R\": \"leak\",\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"comeback\",\n    \"HB\": \"pass_pro\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"PA play with TE leaking to flat as primary target. Red arrow shows TE_R leak route (flat/checkdown). WR_X runs corner on right side, WR_Z runs comeback on left. HB stays in pass-pro. One WR appears off-screen left (not visible).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "leak_route",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bleak\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

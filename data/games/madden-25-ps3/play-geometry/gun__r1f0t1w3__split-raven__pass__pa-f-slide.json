@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__split-raven__pass__pa-f-slide",
+  "info": {
+    "family": "GUN",
+    "formation": "Split Raven",
+    "play_name": "PA F Slide",
+    "play_type": "pass",
+    "canonical_team": "Baltimore Ravens",
+    "canonical_img": 97,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Baltimore Ravens"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Split Raven",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "GUN/Shotgun default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 500,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 195
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.08,
+  "response_text": "```json\n{\n  \"concept\": \"slide_pass\",\n  \"concepts\": [\"slide_pass\"],\n  \"routes\": {\n    \"HB\": \"flat\",\n    \"TE_R\": \"seam\",\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"comeback\",\n    \"WR_SLOT_R\": \"slant\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"PA play-action with fullback fake; HB releases to flat for checkdown; primary red arrow targets WR_Z on comeback route; TE_R runs seam; slot WR runs slant; X WR runs vertical streak. R1 button glyph visible at right edge (red Circle target).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "slide_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bslide\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

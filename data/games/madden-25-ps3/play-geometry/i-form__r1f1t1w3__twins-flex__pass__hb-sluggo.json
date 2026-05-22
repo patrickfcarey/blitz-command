@@ -1,0 +1,49 @@
+{
+  "slug": "i-form__r1f1t1w3__twins-flex__pass__hb-sluggo",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Twins Flex",
+    "play_name": "HB Sluggo",
+    "play_type": "pass",
+    "canonical_team": "Chicago Bears",
+    "canonical_img": 54,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Chicago Bears"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Twins Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Twins \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 570,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 212
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.28,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"generic_hb_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB B_right\",\n  \"primary_target\": null,\n  \"notes\": \"Play_type is 'pass' but py_concept is 'generic_hb_run (family=run)' \u2014 diagram shows a run play with HB carrying the ball right. Red arrow originates from HB and curves right, attacking B_right gap. All other players execute blocks (implicit). Formation is I-Form Twins Flex: 3 stacked backfield (QB, FB, HB), 1 TE_L, 1 TE_R, 3 WRs (X, Z, Slot). No pass routes visible; this is a ground play despite the PASS label in the banner.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "^hb \\w+",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

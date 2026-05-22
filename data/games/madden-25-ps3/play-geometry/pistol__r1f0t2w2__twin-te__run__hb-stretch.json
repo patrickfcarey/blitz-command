@@ -1,0 +1,59 @@
+{
+  "slug": "pistol__r1f0t2w2__twin-te__run__hb-stretch",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Twin TE",
+    "play_name": "HB Stretch",
+    "play_type": "run",
+    "canonical_team": "Pistol",
+    "canonical_img": 51,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Pistol",
+      "Seattle Seahawks"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Twin TE",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 589,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 66
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 92.72,
+  "response_text": "```json\n{\n  \"concept\": \"outside_zone\",\n  \"concepts\": [\"outside_zone\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB D_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_right",
+    "c_xy": [
+      1551,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      2032,
+      763
+    ],
+    "dx_from_c": 481,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "outside_zone",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bhb stretch\\b|\\bstretch\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

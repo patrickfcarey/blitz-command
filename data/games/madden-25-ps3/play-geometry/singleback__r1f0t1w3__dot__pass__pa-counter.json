@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__dot__pass__pa-counter",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Dot",
+    "play_name": "PA Counter",
+    "play_type": "pass",
+    "canonical_team": "Joe Gibbs",
+    "canonical_img": 6,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Joe Gibbs"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Dot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "Singleback default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 495,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 237
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.98,
+  "response_text": "```json\n{\n  \"concept\": \"counter_run\",\n  \"concepts\": [\"counter_run\", \"pa_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"seam\",\n    \"WR_SLOT_R\": \"wheel\",\n    \"TE_R\": \"wheel\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"PA Counter play with play-action. Red arrow indicates TE_R wheel route as primary target. Formation is Singleback Dot (r1f0t1w3): 1 RB, 0 FB, 1 TE, 3 WR. Fifth receiver (TE_R with R1 button glyph) runs wheel route. WR_SLOT_L seam route and multiple WR streaks provide vertical stretch.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "counter_run",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcounter\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

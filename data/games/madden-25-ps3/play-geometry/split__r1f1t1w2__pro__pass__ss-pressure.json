@@ -1,0 +1,53 @@
+{
+  "slug": "split__r1f1t1w2__pro__pass__ss-pressure",
+  "info": {
+    "family": "SPLIT",
+    "formation": "Pro",
+    "play_name": "SS Pressure",
+    "play_type": "pass",
+    "canonical_team": "Cleveland Browns",
+    "canonical_img": 61,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Cleveland Browns",
+      "Mike Ditka",
+      "Tom Flores",
+      "Tom Landry",
+      "West Coast"
+    ],
+    "owner_count": 5,
+    "expected_personnel": {
+      "family": "SPLIT",
+      "formation": "Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "SPLIT family \u2014 old-school 2-back default"
+    }
+  },
+  "usage": {
+    "input_tokens": 476,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 198
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.72,
+  "response_text": "```json\n{\n  \"concept\": \"ss_pressure\",\n  \"concepts\": [\"ss_pressure\"],\n  \"routes\": {\n    \"WR_X\": \"hitch\",\n    \"WR_Z\": \"corner\",\n    \"TE_L\": \"seam\",\n    \"WR_SLOT_R\": \"wheel\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Split Pro formation with 4-receiver package. Red arrow on WR_Z (circle button) indicates primary target on corner route. Smash concept on right side (hitch from WR_Z, corner from WR_SLOT_R). TE_L runs seam on left. HB available for checkdown.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "unknown",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": null,
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

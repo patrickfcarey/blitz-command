@@ -1,0 +1,50 @@
+{
+  "slug": "gun__r1f0t1w3__split-slot__pass__fk-wr-scrn-wheel",
+  "info": {
+    "family": "GUN",
+    "formation": "Split Slot",
+    "play_name": "Fk WR Scrn Wheel",
+    "play_type": "pass",
+    "canonical_team": "Balanced",
+    "canonical_img": 70,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Balanced",
+      "Tampa Bay Buccaneers"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Split Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "GUN/Shotgun default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 507,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 194
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.52,
+  "response_text": "```json\n{\n  \"concept\": \"wheel_concept\",\n  \"concepts\": [\"wheel_concept\"],\n  \"routes\": {\n    \"WR_X\": \"screen\",\n    \"WR_Z\": \"wheel\",\n    \"WR_SLOT_R\": \"seam\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"WR_X (purple \u25a1) runs screen route with yellow arrow. WR_Z (blue \u2297) runs wheel route (red arrow, primary). WR_SLOT_R (green \u25b3) runs seam. HB (cyan \u25b3) in checkdown role. R1 red \u2299 appears to be defensive read or secondary option.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "wheel_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bwheel\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

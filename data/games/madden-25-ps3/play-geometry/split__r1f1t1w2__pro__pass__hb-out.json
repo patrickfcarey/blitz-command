@@ -1,0 +1,52 @@
+{
+  "slug": "split__r1f1t1w2__pro__pass__hb-out",
+  "info": {
+    "family": "SPLIT",
+    "formation": "Pro",
+    "play_name": "HB Out",
+    "play_type": "pass",
+    "canonical_team": "John Madden",
+    "canonical_img": 39,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "John Madden",
+      "Mike Ditka",
+      "Tom Flores",
+      "Tom Landry"
+    ],
+    "owner_count": 4,
+    "expected_personnel": {
+      "family": "SPLIT",
+      "formation": "Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "SPLIT family \u2014 old-school 2-back default"
+    }
+  },
+  "usage": {
+    "input_tokens": 558,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 213
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.6,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"generic_hb_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB A_left\",\n  \"primary_target\": null,\n  \"notes\": \"Play labeled PASS but diagram shows red arrow (ball-carrier path) from HB to A_left gap, consistent with run play. HB receives colored button glyph (purple \u25a1) despite run play type. WR_X (blue \u2297) positioned right with yellow route arrow (corner/clearout). WR_Z (red \u2299) positioned far right with yellow upward route. Formation is Split Pro: 5 OL + 1 TE_R + 2 WRs + 1 RB (HB) in backfield. UI banner says PASS but visual diagram is run-action.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "^hb \\w+",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

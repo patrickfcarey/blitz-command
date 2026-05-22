@@ -1,0 +1,49 @@
+{
+  "slug": "brown__r1f1t1w2__right__pass__hb-seam",
+  "info": {
+    "family": "BROWN",
+    "formation": "Right",
+    "play_name": "HB Seam",
+    "play_type": "pass",
+    "canonical_team": "Bill Walsh",
+    "canonical_img": 72,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Bill Walsh"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "BROWN",
+      "formation": "Right",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "BROWN family \u2014 old-school 2-back default"
+    }
+  },
+  "usage": {
+    "input_tokens": 561,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 264
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.69,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"generic_hb_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB B_right\",\n  \"primary_target\": null,\n  \"notes\": \"Play labeled 'HB Seam' but play_type is PASS and py_concept is generic_hb_run (family=run). Diagram shows red arrow from backfield (HB) angling right and upfield \u2014 consistent with a run play. Triangle (checkdown/release) visible on TE below LOS. Formation is Brown Right (r1f1t1w2): 1 RB, 1 FB, 1 TE, 2 WR. Visible glyphs match: QB, FB, HB in backfield; 5 OL + 1 TE_R on LOS; 2 WR (one to far left, one Circle button to right). Play_name 'HB Seam' appears to be a label mismatch \u2014 the diagram is a run, not a pass concept.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "^hb \\w+",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "strong__r1f1t1w3__twins-flex__pass__hb-slip-screen",
+  "info": {
+    "family": "STRONG",
+    "formation": "Twins Flex",
+    "play_name": "HB Slip Screen",
+    "play_type": "pass",
+    "canonical_team": "Cleveland Browns",
+    "canonical_img": 77,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Cleveland Browns"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "Twins Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 525,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 189
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.33,
+  "response_text": "```json\n{\n  \"concept\": \"hb_screen\",\n  \"concepts\": [\"hb_screen\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"block\",\n    \"TE_L\": \"block\",\n    \"TE_R\": \"block\",\n    \"FB\": \"lead_block\",\n    \"HB\": \"screen\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"HB\",\n  \"notes\": \"HB Slip Screen \u2014 HB releases to flat for screen pass. Red R1 button designation indicates primary target. Receivers downfield run clearout routes (streak/corner) to open space for screen.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "hb_screen",
+    "concept_family": "screen",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bhb (slip )?screen\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

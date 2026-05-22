@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t3w1__jumbo__pass__post",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Jumbo",
+    "play_name": "Post",
+    "play_type": "pass",
+    "canonical_team": "Brian Billick",
+    "canonical_img": 5,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Brian Billick"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Jumbo",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 3,
+      "WR": 1,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Jumbo \u2014 typically 3 TE 1 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 492,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 248
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.95,
+  "response_text": "```json\n{\n  \"concept\": \"post_concept\",\n  \"concepts\": [\"post_concept\"],\n  \"routes\": {\n    \"WR_X\": \"post\",\n    \"WR_Z\": \"post\",\n    \"TE_L\": \"streak\",\n    \"TE_M\": \"streak\",\n    \"TE_R\": \"corner\",\n    \"HB\": \"swing\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Three tight ends visible on LOS (Jumbo formation). WR_X (purple \u25a1 on far left) runs primary post route (red arrow). WR_Z (blue \u2297 on far right) runs secondary post. TE_R (red \u2299) runs corner route (yellow arrow, upper right). TE_L and TE_M run vertical clearouts. HB runs swing route (blue arrow, R1 shoulder button). Red arrow originates from WR_X, indicating primary read.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "post_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpost(?![- ]corner)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

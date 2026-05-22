@@ -1,0 +1,50 @@
+{
+  "slug": "weak__r1f1t2w2__tight-twins__pass__drive",
+  "info": {
+    "family": "WEAK",
+    "formation": "Tight Twins",
+    "play_name": "Drive",
+    "play_type": "pass",
+    "canonical_team": "Run Balanced",
+    "canonical_img": 74,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Run Balanced",
+      "Run N Gun"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "WEAK",
+      "formation": "Tight Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 490,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 123
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 1.81,
+  "response_text": "```json\n{\n  \"concept\": \"drive_concept\",\n  \"concepts\": [\"drive_concept\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"TE_L\": \"dig\",\n    \"TE_R\": \"flat\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "drive_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdrive\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

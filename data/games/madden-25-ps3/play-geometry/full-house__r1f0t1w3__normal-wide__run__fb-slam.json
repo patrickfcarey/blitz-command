@@ -1,0 +1,60 @@
+{
+  "slug": "full-house__r1f0t1w3__normal-wide__run__fb-slam",
+  "info": {
+    "family": "FULL-HOUSE",
+    "formation": "Normal Wide",
+    "play_name": "FB Slam",
+    "play_type": "run",
+    "canonical_team": "Balanced",
+    "canonical_img": 66,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Balanced",
+      "Dick Vermeil",
+      "Vince Lombardi"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "FULL-HOUSE",
+      "formation": "Normal Wide",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "low",
+      "notes": "unknown family 'FULL-HOUSE' \u2014 generic 11-personnel guess"
+    }
+  },
+  "usage": {
+    "input_tokens": 562,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 63
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 52.58,
+  "response_text": "```json\n{\n  \"concept\": \"iso_slam\",\n  \"concepts\": [\"iso_slam\"],\n  \"routes\": {},\n  \"ball_carrier\": \"FB straight\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "straight",
+    "c_xy": [
+      1462,
+      703
+    ],
+    "arrow_los_crossing_xy": [
+      1423,
+      703
+    ],
+    "dx_from_c": -39,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "iso_slam",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bslam\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

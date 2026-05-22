@@ -1,0 +1,50 @@
+{
+  "slug": "singleback__r1f0t3w1__jumbo__pass__pa-y-drag-wheel",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Jumbo",
+    "play_name": "PA Y-Drag Wheel",
+    "play_type": "pass",
+    "canonical_team": "San Diego Chargers",
+    "canonical_img": 4,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "San Diego Chargers",
+      "Washington Redskins"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Jumbo",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 3,
+      "WR": 1,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Jumbo \u2014 typically 3 TE 1 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 506,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 184
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.64,
+  "response_text": "```json\n{\n  \"concept\": \"wheel_concept\",\n  \"concepts\": [\"wheel_concept\", \"pa_pass\"],\n  \"routes\": {\n    \"TE_L\": \"drag\",\n    \"TE_R\": \"wheel\",\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_R\": \"streak\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"Play-action setup with TE wheel route (primary target, red arrow). Left TE runs drag across formation. Three WRs all run vertical stretches. HB eligible for check-down.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "wheel_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bwheel\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

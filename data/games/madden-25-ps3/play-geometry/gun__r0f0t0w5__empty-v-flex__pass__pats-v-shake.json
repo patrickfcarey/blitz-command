@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r0f0t0w5__empty-v-flex__pass__pats-v-shake",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty V-Flex",
+    "play_name": "Pats V Shake",
+    "play_type": "pass",
+    "canonical_team": "New England Patriots",
+    "canonical_img": 131,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "New England Patriots"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty V-Flex",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 503,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 192
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.73,
+  "response_text": "```json\n{\n  \"concept\": \"shake_route\",\n  \"concepts\": [\"shake_route\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"shake\",\n    \"WR_SLOT_L\": \"streak\",\n    \"WR_SLOT_R\": \"streak\",\n    \"WR_FLANKER\": \"streak\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"GUN Empty 5-WR formation. WR_Z (Triangle button, center-right) runs the shake/option route (dashed line curving back toward QB). Red arrow indicates primary pass target. Four other WRs run vertical clearouts. QB in shotgun alone.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "shake_route",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bshakes?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

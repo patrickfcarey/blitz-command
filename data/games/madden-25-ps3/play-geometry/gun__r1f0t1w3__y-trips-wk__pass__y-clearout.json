@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__y-trips-wk__pass__y-clearout",
+  "info": {
+    "family": "GUN",
+    "formation": "Y Trips Wk",
+    "play_name": "Y Clearout",
+    "play_type": "pass",
+    "canonical_team": "Arizona Cardinals",
+    "canonical_img": 89,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Arizona Cardinals"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Y Trips Wk",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 500,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 203
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.94,
+  "response_text": "```json\n{\n  \"concept\": \"clearout\",\n  \"concepts\": [\"clearout\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_R\": \"streak\",\n    \"TE_R\": \"streak\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_R\",\n  \"notes\": \"All eligible receivers running vertical clearout routes. Primary target (Triangle button) is the slot receiver on the right side running a streak. HB (Triangle button glyph below LOS) available as checkdown. Formation is GUN with QB shotgun, single RB to right, 4 eligible receivers at LOS plus 1 TE attached right side.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "clearout",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bclearout\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

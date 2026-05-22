@@ -1,0 +1,52 @@
+{
+  "slug": "gun__r1f0t2w2__ace-twins__pass__flood",
+  "info": {
+    "family": "GUN",
+    "formation": "Ace Twins",
+    "play_name": "Flood",
+    "play_type": "pass",
+    "canonical_team": "Baltimore Ravens",
+    "canonical_img": 105,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Baltimore Ravens",
+      "Detroit Lions",
+      "New York Giants",
+      "Tennessee Titans"
+    ],
+    "owner_count": 4,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Ace Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Ace Twins \u2014 2 TE 2 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 514,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 184
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.55,
+  "response_text": "```json\n{\n  \"concept\": \"flood\",\n  \"concepts\": [\"flood\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"flat\",\n    \"TE_R\": \"dig\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Flood concept with three-level stretch to the right (WR_Z corner deep, TE_R dig intermediate, WR_SLOT_L flat). WR_X runs clearing streak to left. HB available for checkdown. Red arrow on WR_Z indicates primary target.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "flood",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bflood\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

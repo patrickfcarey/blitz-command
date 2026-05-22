@@ -1,0 +1,59 @@
+{
+  "slug": "singleback__r1f0t1w3__snugs-flip__run__hb-pitch",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Snugs Flip",
+    "play_name": "HB Pitch",
+    "play_type": "run",
+    "canonical_team": "New Orleans Saints",
+    "canonical_img": 38,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "New Orleans Saints",
+      "Tennessee Titans"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Snugs Flip",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "Singleback default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 596,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 66
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 66.82,
+  "response_text": "```json\n{\n  \"concept\": \"pitch_run\",\n  \"concepts\": [\"pitch_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB C_left\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "C_left",
+    "c_xy": [
+      1553,
+      613
+    ],
+    "arrow_los_crossing_xy": [
+      1100,
+      613
+    ],
+    "dx_from_c": -453,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "pitch_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bpitch\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

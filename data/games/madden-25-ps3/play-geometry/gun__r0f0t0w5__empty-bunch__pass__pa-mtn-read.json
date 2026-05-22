@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r0f0t0w5__empty-bunch__pass__pa-mtn-read",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Bunch",
+    "play_name": "PA Mtn Read",
+    "play_type": "pass",
+    "canonical_team": "Minnesota Vikings",
+    "canonical_img": 134,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Minnesota Vikings"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Bunch",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 500,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 216
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.15,
+  "response_text": "```json\n{\n  \"concept\": \"read_pass\",\n  \"concepts\": [\"pa_pass\", \"read_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"streak\",\n    \"WR_SLOT_R\": \"curl\",\n    \"WR_FLANKER\": \"streak\",\n    \"HB\": \"checkdown_swing\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Empty 5-WR set with play-action mechanics. Red arrow on WR_Z (streak) indicates primary read. Four WRs run verticals; slot-right runs curl. HB shows checkdown swing route (cyan arrow). Formation is GUN Bunch with all 5 eligible receivers deployed wide.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "read_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bread\\b(?!.*option)",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

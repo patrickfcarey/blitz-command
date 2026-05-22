@@ -1,0 +1,49 @@
+{
+  "slug": "weak__r1f1t1w2__h-close-flip__pass__pa-power-o",
+  "info": {
+    "family": "WEAK",
+    "formation": "H Close Flip",
+    "play_name": "PA Power O",
+    "play_type": "pass",
+    "canonical_team": "Baltimore Ravens",
+    "canonical_img": 91,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Baltimore Ravens"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "WEAK",
+      "formation": "H Close Flip",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "WEAK default \u2014 variant unclear"
+    }
+  },
+  "usage": {
+    "input_tokens": 500,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 246
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.37,
+  "response_text": "```json\n{\n  \"concept\": \"power_o\",\n  \"concepts\": [\"power_o\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"TE_R\": \"release_seam\",\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"flat\",\n    \"HB\": \"wheel\",\n    \"FB\": \"lead_block\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"PA play-action selling the power O run. TE_R (red circle glyph, primary target) runs seam. HB (blue X glyph) releases to flat/wheel. WR_X (red circle, far right) runs corner route. WR_Z (blue X, slot left) runs flat. Backfield shows QB, FB offset weak side, HB deeper \u2014 classic Weak H Close Flip formation. FB and TE_L engaged in blocking to sell the run before release.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "power_o",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpower ?o\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

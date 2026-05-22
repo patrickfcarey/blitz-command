@@ -1,0 +1,58 @@
+{
+  "slug": "singleback__r1f0t2w2__twin-te-flex__run__four-verticals",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Twin TE Flex",
+    "play_name": "Four Verticals",
+    "play_type": "run",
+    "canonical_team": "New Orleans Saints",
+    "canonical_img": 15,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "New Orleans Saints"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Twin TE Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 531,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 263
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 95.72,
+  "response_text": "```json\n{\n  \"concept\": \"four_verticals\",\n  \"concepts\": [\"four_verticals\"],\n  \"routes\": \"std\",\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Play labeled as RUN in play_type but play_name and concept are Four Verticals (pass concept). Diagram shows pass routes with colored button glyphs and vertical arrows. Formation is Singleback Twin TE Flex (r1f0t2w2): QB, HB in backfield; C + 4 OL on LOS; 2 TEs attached to OL (TE_L, TE_R); 2 WRs (WR_X far left, WR_Z far right). All five eligible receivers (WR_X, WR_Z, TE_L, TE_R, HB) run vertical/streak routes matching four_verticals template. Red arrow originates from QB, primary target is WR_X (leftmost). HB shows check-release (blue/cyan arrow below LOS).\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_left",
+    "c_xy": [
+      1553,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      866,
+      615
+    ],
+    "dx_from_c": -687,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "four_verticals",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bfour ?verticals?\\b|\\b4 ?verts?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "slug": "gun__r1f0t1w3__doubles-on__pass__pa-dagger",
+  "info": {
+    "family": "GUN",
+    "formation": "Doubles On",
+    "play_name": "PA Dagger",
+    "play_type": "pass",
+    "canonical_team": "Atlanta Falcons",
+    "canonical_img": 91,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Atlanta Falcons",
+      "Green Bay Packers",
+      "Minnesota Vikings",
+      "Oakland Raiders",
+      "Run Balanced",
+      "Seattle Seahawks"
+    ],
+    "owner_count": 6,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Doubles On",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Doubles \u2014 1 TE 3 WR (slot variant)"
+    }
+  },
+  "usage": {
+    "input_tokens": 496,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 160
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.36,
+  "response_text": "```json\n{\n  \"concept\": \"dagger\",\n  \"concepts\": [\"dagger\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"TE_R\": \"dig\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"PA play with play-action fake to HB. Red arrow indicates primary target (TE dig route). Yellow arrow on WR_Z is clearing streak. WR_X also runs vertical. HB in checkdown role post-PA.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "dagger",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdagger\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

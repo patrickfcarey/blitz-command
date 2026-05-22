@@ -1,0 +1,52 @@
+{
+  "slug": "singleback__r1f0t2w2__ace-twins__pass__pa-boot",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Ace Twins",
+    "play_name": "PA Boot",
+    "play_type": "pass",
+    "canonical_team": "Green Bay Packers",
+    "canonical_img": 9,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Green Bay Packers",
+      "Jacksonville Jaguars",
+      "Pass Balanced",
+      "Run N Gun"
+    ],
+    "owner_count": 4,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Ace Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Ace family \u2014 2 TE 2 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 499,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 184
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.44,
+  "response_text": "```json\n{\n  \"concept\": \"boot_pass\",\n  \"concepts\": [\"boot_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"TE_L\": \"flat\",\n    \"TE_R\": \"wheel\",\n    \"HB\": \"pass_pro\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"PA Boot to right side. QB boots to right with play-action fake. WR_Z running corner as primary read. TE_L releasing to flat underneath. TE_R tracking wheel route away from boot direction. HB pass-pro responsibility. Red arrow indicates primary target direction.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "boot_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bboot\\b|\\bbootleg\\b",
+    "is_pa": true,
+    "is_boot_or_roll": true
+  }
+}

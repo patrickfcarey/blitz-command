@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__dot__pass__pa-deep-in",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Dot",
+    "play_name": "PA Deep In",
+    "play_type": "pass",
+    "canonical_team": "Joe Gibbs",
+    "canonical_img": 7,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Joe Gibbs"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Dot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "Singleback default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 498,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 213
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.79,
+  "response_text": "```json\n{\n  \"concept\": \"deep_in\",\n  \"concepts\": [\"deep_in\", \"pa_action\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"deep_in\",\n    \"WR_SLOT_L\": \"out\",\n    \"WR_SLOT_R\": \"wheel\",\n    \"HB\": \"pass_pro\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Play-action pass with deep in concept. Red arrow (primary) traces to WR_Z running the in-breaking route at depth. Blue arrow on WR_SLOT_R shows wheel route. Multiple receiver options displayed via button glyphs (\u25a1, \u25b3, \u2297, \u2299, R1) for hot reads and option routes.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "deep_in",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdeep in\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

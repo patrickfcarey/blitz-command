@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r0f0t1w4__empty-ace-patriot__pass__corner-strike",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Ace Patriot",
+    "play_name": "Corner Strike",
+    "play_type": "pass",
+    "canonical_team": "New England Patriots",
+    "canonical_img": 127,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "New England Patriots"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Ace Patriot",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 1,
+      "WR": 4,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 498,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 245
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.09,
+  "response_text": "```json\n{\n  \"concept\": \"corner_strike\",\n  \"concepts\": [\"corner_strike\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"hitch\",\n    \"WR_SLOT_L\": \"comeback\",\n    \"WR_SLOT_R\": \"corner\",\n    \"WR_FLANKER\": \"streak\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"GUN Empty Ace Patriot (5-wide, 0 TE). WR_Z (Triangle, left slot) runs the hitch and appears to be the primary target (red arrow). WR_X (left outer) runs corner over the hitch. WR_SLOT_L (purple Square, inner left) runs comeback. WR_SLOT_R (X, inner right) runs corner. WR_FLANKER (Circle, right outer) runs streak. QB in shotgun alone.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "corner_strike",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcorner strike\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

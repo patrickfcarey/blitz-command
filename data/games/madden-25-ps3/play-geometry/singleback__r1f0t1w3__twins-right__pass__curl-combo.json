@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__twins-right__pass__curl-combo",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Twins Right",
+    "play_name": "Curl Combo",
+    "play_type": "pass",
+    "canonical_team": "Joe Gibbs",
+    "canonical_img": 23,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Joe Gibbs"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Twins Right",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "Singleback default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 497,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 275
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 4.56,
+  "response_text": "```json\n{\n  \"concept\": \"curls\",\n  \"concepts\": [\"curls\"],\n  \"routes\": {\n    \"WR_X\": \"curl\",\n    \"WR_Z\": \"flat\",\n    \"WR_SLOT_R\": \"corner\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"WR_X (purple square, far left) runs curl at ~12-14 yds depth. WR_Z (blue X, right side) runs flat. WR_SLOT_R (red circle, far right) runs corner route. TE_R (green triangle, near R1 label) runs seam/streak upfield. HB (cyan triangle, below LOS) appears to check/release. Single TE on right side matches r1f0t1w3 personnel (1 RB, 0 FB, 1 TE, 3 WR). Curl-flat combo targets left side; right side runs independent seam stretch.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "curls",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcurls?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

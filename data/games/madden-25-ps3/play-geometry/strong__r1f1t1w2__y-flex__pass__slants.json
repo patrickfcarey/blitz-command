@@ -1,0 +1,49 @@
+{
+  "slug": "strong__r1f1t1w2__y-flex__pass__slants",
+  "info": {
+    "family": "STRONG",
+    "formation": "Y-Flex",
+    "play_name": "Slants",
+    "play_type": "pass",
+    "canonical_team": "St. Louis Rams",
+    "canonical_img": 73,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "St. Louis Rams"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "Y-Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "STRONG default \u2014 variant unclear"
+    }
+  },
+  "usage": {
+    "input_tokens": 492,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 201
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.13,
+  "response_text": "```json\n{\n  \"concept\": \"slants\",\n  \"concepts\": [\"slants\"],\n  \"routes\": {\n    \"WR_X\": \"slant\",\n    \"WR_Z\": \"slant\",\n    \"TE_L\": \"slant\",\n    \"WR_SLOT_R\": \"flat\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Red arrow on WR_Z (Circle button, right side) indicates primary target. Layout shows STRONG formation with FB offset strong-side; three receivers running slants (X, Z, TE_L at various depths), slot WR running flat underneath, HB checkdown. All slant routes attack interior gaps on first 3 steps.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "slants",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bslants?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

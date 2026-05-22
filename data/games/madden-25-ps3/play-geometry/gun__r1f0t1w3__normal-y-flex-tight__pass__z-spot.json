@@ -1,0 +1,51 @@
+{
+  "slug": "gun__r1f0t1w3__normal-y-flex-tight__pass__z-spot",
+  "info": {
+    "family": "GUN",
+    "formation": "Normal Y-Flex Tight",
+    "play_name": "Z Spot",
+    "play_type": "pass",
+    "canonical_team": "Cincinnati Bengals",
+    "canonical_img": 90,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Cincinnati Bengals",
+      "Cleveland Browns",
+      "San Diego Chargers"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Normal Y-Flex Tight",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 501,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 188
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.85,
+  "response_text": "```json\n{\n  \"concept\": \"z_concept\",\n  \"concepts\": [\"z_concept\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"in\",\n    \"TE_R\": \"corner\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Z Spot concept with corner route from Z WR (red arrow, primary target) and TE_R running complementary corner. Slot L runs in-breaker. X runs vertical clearout. HB available for checkdown (R1 button glyph visible in backfield).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "z_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bz[- ]?(spot|cross|streak|corner|drive|trail|out|drag|sail)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

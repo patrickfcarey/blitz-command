@@ -1,0 +1,49 @@
+{
+  "slug": "pistol__r1f0t2w2__twin-te-flex__pass__dagger",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Twin TE Flex",
+    "play_name": "Dagger",
+    "play_type": "pass",
+    "canonical_team": "Detroit Lions",
+    "canonical_img": 76,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Detroit Lions"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Twin TE Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 497,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 185
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.42,
+  "response_text": "```json\n{\n  \"concept\": \"dagger\",\n  \"concepts\": [\"dagger\"],\n  \"routes\": {\n    \"TE_L\": \"dig\",\n    \"TE_R\": \"dig\",\n    \"WR_SLOT_L\": \"flat\",\n    \"WR_SLOT_R\": \"hitch\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_L\",\n  \"notes\": \"Twin TE Flex with two inline TEs running shallow digs. Red arrow (primary) targets TE_L. Slot WRs run flat (left) and hitch (right) as intermediate options. HB provides checkdown release from pistol alignment.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "dagger",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdagger\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

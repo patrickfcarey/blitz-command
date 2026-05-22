@@ -1,0 +1,49 @@
+{
+  "slug": "weak__r1f1t1w2__h-close-flip__pass__pa-boot-screen",
+  "info": {
+    "family": "WEAK",
+    "formation": "H Close Flip",
+    "play_name": "PA Boot Screen",
+    "play_type": "pass",
+    "canonical_team": "Baltimore Ravens",
+    "canonical_img": 90,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Baltimore Ravens"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "WEAK",
+      "formation": "H Close Flip",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "WEAK default \u2014 variant unclear"
+    }
+  },
+  "usage": {
+    "input_tokens": 500,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 167
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.51,
+  "response_text": "```json\n{\n  \"concept\": \"boot_pass\",\n  \"concepts\": [\"boot_pass\", \"screen\"],\n  \"routes\": {\n    \"QB\": \"boot_right\",\n    \"HB\": \"screen\",\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"comeback\",\n    \"TE_L\": \"block\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"HB\",\n  \"notes\": \"PA Boot Screen with screen pass to HB. QB boots right with play-action fake. WR_X runs corner route (yellow arrow top-right), WR_Z runs comeback. TE on left blocks.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "boot_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bboot\\b|\\bbootleg\\b",
+    "is_pa": true,
+    "is_boot_or_roll": true
+  }
+}

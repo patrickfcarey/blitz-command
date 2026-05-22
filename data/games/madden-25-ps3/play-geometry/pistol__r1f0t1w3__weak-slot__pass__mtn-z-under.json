@@ -1,0 +1,49 @@
+{
+  "slug": "pistol__r1f0t1w3__weak-slot__pass__mtn-z-under",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Weak Slot",
+    "play_name": "Mtn Z Under",
+    "play_type": "pass",
+    "canonical_team": "Pistol",
+    "canonical_img": 37,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Pistol"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Weak Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Pistol Strong/Weak"
+    }
+  },
+  "usage": {
+    "input_tokens": 174,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 185
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 11.99,
+  "response_text": "```json\n{\n  \"concept\": \"under_route\",\n  \"concepts\": [\"under_route\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"under\",\n    \"WR_SLOT_L\": \"under\",\n    \"TE_R\": \"corner\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Pistol Weak Slot with R1F0T1W3 personnel. Two under routes (Z and slot) stretch intermediate coverage horizontally. X runs vertical clearout. TE runs corner on right. HB in checkdown. Red arrow on Z indicates primary target.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "under_route",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bunders?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

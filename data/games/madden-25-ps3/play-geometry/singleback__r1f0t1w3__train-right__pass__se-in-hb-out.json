@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__train-right__pass__se-in-hb-out",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Train Right",
+    "play_name": "SE In HB Out",
+    "play_type": "pass",
+    "canonical_team": "Joe Gibbs",
+    "canonical_img": 50,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Joe Gibbs"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Train Right",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "Singleback default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 571,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 327
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 5.77,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"generic_hb_run\"],\n  \"routes\": {},\n  \"ball_carrier\": null,\n  \"primary_target\": \"HB\",\n  \"notes\": \"Play labeled as PASS but py_concept indicates run family. Diagram shows: LOS with 5 OL (C-square center, 4 white circles flanking), 1 TE_R (attached to RT), 3 WRs (WR_X far left with purple \u25a1, WR_Z far right with red \u2299 and R1 label, WR_SLOT with blue \u2297). Backfield: QB behind C, HB to right side. Red arrow from QB upward (unusual for run play \u2014 typically run plays show red ball-carrier arrow from HB). Yellow arrows show: WR_X corner route (left side), WR_Z corner route (right side), HB check/swing route (flat, cyan arrow beneath). Discrepancy: play_type=PASS conflicts with py_concept=run. Following filename personnel hint (r1f0t1w3 = 1 RB, 0 FB, 1 TE, 3 WR) and visual evidence. Treating as run concept with HB as implied ball-carrier despite red arrow originating from QB position.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bhb \\w+",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

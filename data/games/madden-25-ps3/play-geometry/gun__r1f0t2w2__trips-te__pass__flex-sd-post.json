@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t2w2__trips-te__pass__flex-sd-post",
+  "info": {
+    "family": "GUN",
+    "formation": "Trips TE",
+    "play_name": "Flex SD Post",
+    "play_type": "pass",
+    "canonical_team": "San Diego Chargers",
+    "canonical_img": 115,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "San Diego Chargers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Trips TE",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 497,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 221
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.86,
+  "response_text": "```json\n{\n  \"concept\": \"post_concept\",\n  \"concepts\": [\"post_concept\"],\n  \"routes\": {\n    \"WR_X\": \"post\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_R\": \"post\",\n    \"TE_R\": \"wheel\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"GUN Trips TE (r1f0t2w2): QB in shotgun, 1 RB to side (press offset), 2 TEs (both on LOS right side), 2 WRs (outer X and slot). WR_X runs deep post (red arrow), WR_Z runs corner (yellow). TE_R runs wheel route (yellow). Formation and route structure match expected personnel.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "post_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpost(?![- ]corner)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

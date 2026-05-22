@@ -1,0 +1,49 @@
+{
+  "slug": "strong__r1f1t2w2__h-twin-te__pass__ravens-fade",
+  "info": {
+    "family": "STRONG",
+    "formation": "H Twin TE",
+    "play_name": "Ravens Fade",
+    "play_type": "pass",
+    "canonical_team": "Baltimore Ravens",
+    "canonical_img": 80,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Baltimore Ravens"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "H Twin TE",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 494,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 204
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.7,
+  "response_text": "```json\n{\n  \"concept\": \"fade\",\n  \"concepts\": [\"fade\"],\n  \"routes\": {\n    \"WR_X\": \"fade\",\n    \"WR_Z\": \"fade\",\n    \"TE_L\": \"block\",\n    \"TE_R\": \"fade\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Strong H Twin TE formation with two eligible TEs. WR_X (purple \u25a1) and WR_Z (blue \u2297) both run fade routes to their respective sidelines. TE_R (red \u2299) also runs a fade. TE_L blocks initially. HB (off-screen or in backfield) releases as checkdown. R1 button label visible near TE_R glyph.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "fade",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bfade\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "slug": "singleback__r1f0t1w3__y-trips__run__pump-hb-draw",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Y-Trips",
+    "play_name": "Pump HB Draw",
+    "play_type": "run",
+    "canonical_team": "Cleveland Browns",
+    "canonical_img": 29,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Cleveland Browns",
+      "Minnesota Vikings",
+      "Run Balanced",
+      "Tennessee Titans"
+    ],
+    "owner_count": 4,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Y-Trips",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 593,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 62
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 6.05,
+  "response_text": "```json\n{\n  \"concept\": \"draw\",\n  \"concepts\": [\"draw\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB D_left\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_left",
+    "c_xy": [
+      1553,
+      613
+    ],
+    "arrow_los_crossing_xy": [
+      141,
+      613
+    ],
+    "dx_from_c": -1412,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "draw",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bdraw\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

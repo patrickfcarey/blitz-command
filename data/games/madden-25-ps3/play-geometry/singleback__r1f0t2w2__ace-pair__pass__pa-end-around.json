@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t2w2__ace-pair__pass__pa-end-around",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Ace Pair",
+    "play_name": "PA End Around",
+    "play_type": "pass",
+    "canonical_team": "Detroit Lions",
+    "canonical_img": 16,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Detroit Lions"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Ace Pair",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Ace family \u2014 2 TE 2 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 525,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 202
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.94,
+  "response_text": "```json\n{\n  \"concept\": \"reverse\",\n  \"concepts\": [\"reverse\", \"play_action\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"TE_L\": \"wheel\",\n    \"TE_R\": \"flat\",\n    \"HB\": \"reverse_carry\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"PA End Around \u2014 play-action pass with RB reversing laterally as a fake; primary read appears to be WR_X on the streak. Yellow dashed arrows indicate pre-snap motion or option routes. R1 button glyph visible on one route endpoint (likely TE or slot receiver). Cyan curved line indicates chip/release route from backfield.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "reverse",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bend around\\b|\\breverse\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

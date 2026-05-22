@@ -1,0 +1,50 @@
+{
+  "slug": "wildcat__r1f0t1w3__normal__pass__pa-jet-sweep",
+  "info": {
+    "family": "WILDCAT",
+    "formation": "Normal",
+    "play_name": "PA Jet Sweep",
+    "play_type": "pass",
+    "canonical_team": "Run Balanced",
+    "canonical_img": 113,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Run Balanced",
+      "Run N Gun"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "WILDCAT",
+      "formation": "Normal",
+      "QB": 0,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 5,
+      "confidence": "high",
+      "notes": "Wildcat \u2014 RB at QB position, no QB; TE/WR counts approximate per variant"
+    }
+  },
+  "usage": {
+    "input_tokens": 520,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 191
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.92,
+  "response_text": "```json\n{\n  \"concept\": \"pa_jet_sweep\",\n  \"concepts\": [\"pa_jet_sweep\"],\n  \"routes\": {\n    \"WILDCAT_RB\": \"jet_sweep\",\n    \"TE_R\": \"vertical\",\n    \"WR_X\": \"drag\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_R\": \"flat\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_R\",\n  \"notes\": \"Play-action jet sweep with 5-wide formation. Red arrow traces WILDCAT_RB jet motion left; primary pass target (cyan arrow) is flat receiver to R1 button. Yellow routes show corner and vertical clearouts on the top side.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "sweep",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bsweep\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

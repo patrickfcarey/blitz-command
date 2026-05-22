@@ -1,0 +1,49 @@
+{
+  "slug": "i-form__r1f1t1w3__twins-flex__pass__y-iso-sluggo-seam",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Twins Flex",
+    "play_name": "Y Iso Sluggo Seam",
+    "play_type": "pass",
+    "canonical_team": "New Orleans Saints",
+    "canonical_img": 56,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "New Orleans Saints"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Twins Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Twins \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 573,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 264
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 4.19,
+  "response_text": "```json\n{\n  \"concept\": \"iso\",\n  \"concepts\": [\"iso\"],\n  \"routes\": {},\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"Play_type=pass contradicts py_concept=iso (run concept). Diagram shows pass play with 3 receivers running routes: WR_X (yellow arrow, left sideline corner), TE_R (blue arrow, seam/streak), WR_Z (yellow arrow, right sideline). Purple \u25a1 and red \u2299 button glyphs visible on left side (WR_X and QB area). TE_R carries the primary red arrow (seam route). Expected personnel r1f1t1w3 matches visible: 1 RB (backfield), 1 FB (backfield stack), 1 TE (TE_R on LOS), 3 WRs (WR_X left, TE_R right, 2 others). This is a PASS play despite py_concept hint; play_name and play_type=pass are authoritative.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "iso",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\biso\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

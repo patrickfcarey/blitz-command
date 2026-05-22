@@ -1,0 +1,58 @@
+{
+  "slug": "brown__r1f1t1w3__right-twins__run__hb-draw",
+  "info": {
+    "family": "BROWN",
+    "formation": "Right Twins",
+    "play_name": "HB Draw",
+    "play_type": "run",
+    "canonical_team": "Bill Walsh",
+    "canonical_img": 76,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Bill Walsh"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "BROWN",
+      "formation": "Right Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 584,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 62
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 54.27,
+  "response_text": "```json\n{\n  \"concept\": \"draw\",\n  \"concepts\": [\"draw\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB D_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_right",
+    "c_xy": [
+      633,
+      613
+    ],
+    "arrow_los_crossing_xy": [
+      2780,
+      613
+    ],
+    "dx_from_c": 2147,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "draw",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bdraw\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

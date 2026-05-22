@@ -1,0 +1,50 @@
+{
+  "slug": "pistol__r1f0t0w4__trips-open__pass__pa-bubble",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Trips Open",
+    "play_name": "PA Bubble",
+    "play_type": "pass",
+    "canonical_team": "Pistol",
+    "canonical_img": 107,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Pistol",
+      "Run and Shoot"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Trips Open",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 0,
+      "WR": 4,
+      "total": 6,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 495,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 188
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.56,
+  "response_text": "```json\n{\n  \"concept\": \"bubble_screen\",\n  \"concepts\": [\"bubble_screen\"],\n  \"routes\": {\n    \"WR_X\": \"bubble\",\n    \"WR_Z\": \"block\",\n    \"WR_SLOT_L\": \"block\",\n    \"WR_SLOT_R\": \"block\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"PA Bubble screen. WR_X (right side, Circle button) runs the bubble route with a yellow arrow. Three other WRs on the left side (Square, Triangle, X buttons) are positioned to block for the screen. HB in backfield available as checkdown.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "bubble_screen",
+    "concept_family": "screen",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bbubble screen\\b|\\bwr bubble\\b|\\bbubble\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

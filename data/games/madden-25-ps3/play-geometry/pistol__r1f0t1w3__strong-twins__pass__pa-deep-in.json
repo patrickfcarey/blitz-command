@@ -1,0 +1,51 @@
+{
+  "slug": "pistol__r1f0t1w3__strong-twins__pass__pa-deep-in",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Strong Twins",
+    "play_name": "PA Deep In",
+    "play_type": "pass",
+    "canonical_team": "Pistol",
+    "canonical_img": 15,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Pistol",
+      "San Francisco 49ers",
+      "Seattle Seahawks"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Strong Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Pistol Strong/Weak"
+    }
+  },
+  "usage": {
+    "input_tokens": 172,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 213
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 6.66,
+  "response_text": "```json\n{\n  \"concept\": \"deep_in\",\n  \"concepts\": [\"deep_in\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"deep_in\",\n    \"WR_SLOT_R\": \"corner\",\n    \"TE_R\": \"wheel\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"PA play with play-action fake. WR_Z (\u25b3 green Triangle) runs the primary deep in route. WR_X (\u25a1 purple Square) runs vertical clearout. Slot WR (\u2297 blue X) runs corner to opposite side. TE_R (R1 label) runs wheel route. HB positioned for checkdown. Red arrow indicates PA fake path.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "deep_in",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdeep in\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

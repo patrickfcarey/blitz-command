@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__v-trips-cowboy__pass__hb-cross-screen",
+  "info": {
+    "family": "GUN",
+    "formation": "V-Trips Cowboy",
+    "play_name": "HB Cross Screen",
+    "play_type": "pass",
+    "canonical_team": "Dallas Cowboys",
+    "canonical_img": 102,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Dallas Cowboys"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "V-Trips Cowboy",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 572,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 154
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.68,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"hb_cross_screen\"],\n  \"routes\": {\n    \"HB\": \"screen\",\n    \"WR_X\": \"block\",\n    \"WR_Z\": \"block\",\n    \"WR_SLOT_R\": \"block\"\n  },\n  \"ball_carrier\": \"HB flat_right\",\n  \"primary_target\": null,\n  \"notes\": \"Screen pass to HB releasing to the flat right. WRs blocking downfield for the screen. Red arrow traces HB's path to the right sideline.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "^hb \\w+",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "slug": "pistol__r1f0t0w4__y-trips__run__hb-slam",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Y-Trips",
+    "play_name": "HB Slam",
+    "play_type": "run",
+    "canonical_team": "Indianapolis Colts",
+    "canonical_img": 89,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Indianapolis Colts",
+      "Washington Redskins"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Y-Trips",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 0,
+      "WR": 4,
+      "total": 6,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 238,
+    "cache_creation_input_tokens": 352,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 66
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 32.85,
+  "response_text": "```json\n{\n  \"concept\": \"iso_slam\",\n  \"concepts\": [\"iso_slam\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB A_left\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "A_left",
+    "c_xy": [
+      1551,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      1437,
+      615
+    ],
+    "dx_from_c": -114,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "iso_slam",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bslam\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

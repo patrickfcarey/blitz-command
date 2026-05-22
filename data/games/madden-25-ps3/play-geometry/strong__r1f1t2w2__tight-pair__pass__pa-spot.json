@@ -1,0 +1,57 @@
+{
+  "slug": "strong__r1f1t2w2__tight-pair__pass__pa-spot",
+  "info": {
+    "family": "STRONG",
+    "formation": "Tight Pair",
+    "play_name": "PA Spot",
+    "play_type": "pass",
+    "canonical_team": "Balanced",
+    "canonical_img": 55,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Balanced",
+      "Brian Billick",
+      "Chicago Bears",
+      "Jimmy Johnson",
+      "Kansas City Chiefs",
+      "Miami Dolphins",
+      "Mike Ditka",
+      "New York Jets",
+      "San Francisco 49ers"
+    ],
+    "owner_count": 9,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "Tight Pair",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 496,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 181
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.26,
+  "response_text": "```json\n{\n  \"concept\": \"spot_concept\",\n  \"concepts\": [\"spot_concept\", \"pa_pass\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"TE_R\": \"spot\",\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"comeback\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"Play-action pass with TE_R running the primary spot route (red arrow). WR_X corners over the top; WR_Z runs comeback on the opposite side. TE_L blocks initial PA read. HB eligible for checkdown.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "spot_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bspot\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

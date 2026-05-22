@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r0f0t1w4__empty-trio__pass__whip-indys",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Trio",
+    "play_name": "Whip Indys",
+    "play_type": "pass",
+    "canonical_team": "Run N Gun",
+    "canonical_img": 112,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Run N Gun"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Trio",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 1,
+      "WR": 4,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 524,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 131
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 1.8,
+  "response_text": "```json\n{\n  \"concept\": \"whip_route\",\n  \"concepts\": [\"whip_route\"],\n  \"routes\": {\n    \"WR_X\": \"whip\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"whip\",\n    \"WR_SLOT_R\": \"corner\",\n    \"R1\": \"comeback\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "whip_route",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bwhip\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

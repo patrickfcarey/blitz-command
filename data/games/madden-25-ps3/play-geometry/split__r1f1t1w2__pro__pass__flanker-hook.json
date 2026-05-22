@@ -1,0 +1,51 @@
+{
+  "slug": "split__r1f1t1w2__pro__pass__flanker-hook",
+  "info": {
+    "family": "SPLIT",
+    "formation": "Pro",
+    "play_name": "Flanker Hook",
+    "play_type": "pass",
+    "canonical_team": "Mike Ditka",
+    "canonical_img": 78,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Mike Ditka",
+      "Tom Flores",
+      "Tom Landry"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "SPLIT",
+      "formation": "Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "SPLIT family \u2014 old-school 2-back default"
+    }
+  },
+  "usage": {
+    "input_tokens": 489,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 193
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.44,
+  "response_text": "```json\n{\n  \"concept\": \"hooks\",\n  \"concepts\": [\"hooks\"],\n  \"routes\": {\n    \"WR_X\": \"hook\",\n    \"WR_Z\": \"hook\",\n    \"TE_R\": \"hook\",\n    \"WR_FLANKER\": \"out\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Split Pro formation with 1 RB, 1 TE, 2 WR plus flanker. Three hook routes on the left side (X, Z, TE_R) with primary target WR_X. Flanker (#1 red circle button on right) runs out route. HB positioned for checkdown.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "hooks",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bhooks?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

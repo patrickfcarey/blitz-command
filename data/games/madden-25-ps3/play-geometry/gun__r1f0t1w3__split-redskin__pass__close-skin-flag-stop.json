@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__split-redskin__pass__close-skin-flag-stop",
+  "info": {
+    "family": "GUN",
+    "formation": "Split Redskin",
+    "play_name": "Close Skin Flag Stop",
+    "play_type": "pass",
+    "canonical_team": "Washington Redskins",
+    "canonical_img": 98,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Washington Redskins"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Split Redskin",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "GUN/Shotgun default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 490,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 225
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.82,
+  "response_text": "```json\n{\n  \"concept\": \"close_skin_flag_stop\",\n  \"concepts\": [\"close_skin_flag_stop\"],\n  \"routes\": {\n    \"WR_X\": \"flag\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"curl\",\n    \"WR_SLOT_R\": \"flat\",\n    \"TE_R\": \"seam\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_R\",\n  \"notes\": \"GUN formation with 3 WRs + 1 TE visible on LOS. Red arrow from WR_SLOT_R (R1 button, Circle glyph) indicates primary target on flat route. Flag route (WR_X) and seam route (TE_R) shown in yellow. Blue arrow from TE_R suggests secondary option or progression.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "unknown",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": null,
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

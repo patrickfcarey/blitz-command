@@ -1,0 +1,58 @@
+{
+  "slug": "singleback__r1f0t2w2__ace-pair-twins__pass__inside-cross",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Ace Pair Twins",
+    "play_name": "Inside Cross",
+    "play_type": "pass",
+    "canonical_team": "Balanced",
+    "canonical_img": 16,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Balanced",
+      "Buffalo Bills",
+      "Cleveland Browns",
+      "Minnesota Vikings",
+      "New England Patriots",
+      "New York Giants",
+      "Run Balanced",
+      "Run Heavy",
+      "San Diego Chargers",
+      "St. Louis Rams"
+    ],
+    "owner_count": 10,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Ace Pair Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Ace family \u2014 2 TE 2 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 501,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 127
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 1.56,
+  "response_text": "```json\n{\n  \"concept\": \"cross_concept\",\n  \"concepts\": [\"inside_cross\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"inside_cross\",\n    \"TE_L\": \"inside_cross\",\n    \"TE_R\": \"corner\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "cross_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcross(es)?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

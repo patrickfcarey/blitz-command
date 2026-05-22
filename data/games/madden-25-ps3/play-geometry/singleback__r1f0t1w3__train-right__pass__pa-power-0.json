@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__train-right__pass__pa-power-0",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Train Right",
+    "play_name": "PA Power 0",
+    "play_type": "pass",
+    "canonical_team": "Joe Gibbs",
+    "canonical_img": 49,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Joe Gibbs"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Train Right",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "Singleback default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 501,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 231
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.51,
+  "response_text": "```json\n{\n  \"concept\": \"power_run\",\n  \"concepts\": [\"power_run\", \"pa_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"drag\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Play-action Power O fake with pass progression. TE_R has seam route (labeled R1 button). WR_Z runs corner route (red arrow, primary target). WR_X streaks vertical. WR_SLOT_L runs shallow drag crossing the formation. HB available for checkdown. One WR likely off-screen to the left (expected w3 count); visible are 3 WRs + 1 TE.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "power_run",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpower\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

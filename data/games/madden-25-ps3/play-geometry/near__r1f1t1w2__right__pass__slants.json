@@ -1,0 +1,50 @@
+{
+  "slug": "near__r1f1t1w2__right__pass__slants",
+  "info": {
+    "family": "NEAR",
+    "formation": "Right",
+    "play_name": "Slants",
+    "play_type": "pass",
+    "canonical_team": "Tom Flores",
+    "canonical_img": 79,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Tom Flores",
+      "Tom Landry"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "NEAR",
+      "formation": "Right",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "NEAR family \u2014 old-school 2-back default"
+    }
+  },
+  "usage": {
+    "input_tokens": 160,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 113
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 7.86,
+  "response_text": "```json\n{\n  \"concept\": \"slants\",\n  \"concepts\": [\"slants\"],\n  \"routes\": {\n    \"WR_X\": \"slant\",\n    \"WR_Z\": \"slant\",\n    \"TE_R\": \"slant\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "slants",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bslants?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

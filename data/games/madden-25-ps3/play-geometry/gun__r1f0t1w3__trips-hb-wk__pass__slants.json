@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__trips-hb-wk__pass__slants",
+  "info": {
+    "family": "GUN",
+    "formation": "Trips HB Wk",
+    "play_name": "Slants",
+    "play_type": "pass",
+    "canonical_team": "Run and Shoot",
+    "canonical_img": 68,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Run and Shoot"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Trips HB Wk",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 499,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 153
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.58,
+  "response_text": "```json\n{\n  \"concept\": \"slants\",\n  \"concepts\": [\"slants\"],\n  \"routes\": \"std\",\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Image is heavily cropped/zoomed showing only top portion of field with player numbers visible (76, 13, 18). Full play diagram not visible \u2014 cannot verify complete route tree or all player positions. Emission based on play_type=pass and py_concept=slants; assumes standard slant concept with all WRs on 3-step slants, TEs/HB blocking or checking down.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "slants",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bslants?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

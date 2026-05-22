@@ -1,0 +1,59 @@
+{
+  "slug": "pistol__r1f0t0w4__wing-trips__run__f-lead-read-option",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Wing Trips",
+    "play_name": "F Lead Read Option",
+    "play_type": "run",
+    "canonical_team": "Buffalo Bills",
+    "canonical_img": 72,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Buffalo Bills",
+      "Pistol"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Wing Trips",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 0,
+      "WR": 4,
+      "total": 6,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 503,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 186
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 58.71,
+  "response_text": "```json\n{\n  \"concept\": \"zone_read\",\n  \"concepts\": [\"zone_read\", \"read_option\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"WR_X\": \"block\",\n    \"WR_Z\": \"block\",\n    \"WR_SLOT_L\": \"block\",\n    \"WR_SLOT_R\": \"block\"\n  },\n  \"ball_carrier\": \"HB D_left\",\n  \"primary_target\": null,\n  \"notes\": \"Pistol formation with 4 WRs (Wing Trips alignment). Red arrow indicates HB read-option carry attacking the D-gap to the left. All eligible receivers block downfield on the run play. No passing routes visible.\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_left",
+    "c_xy": [
+      1632,
+      613
+    ],
+    "arrow_los_crossing_xy": [
+      1082,
+      613
+    ],
+    "dx_from_c": -550,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "zone_read",
+    "concept_family": "rpo",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bread option\\b|\\bzone read\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

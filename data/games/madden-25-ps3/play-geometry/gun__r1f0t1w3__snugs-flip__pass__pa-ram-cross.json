@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__snugs-flip__pass__pa-ram-cross",
+  "info": {
+    "family": "GUN",
+    "formation": "Snugs Flip",
+    "play_name": "PA Ram Cross",
+    "play_type": "pass",
+    "canonical_team": "St. Louis Rams",
+    "canonical_img": 116,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "St. Louis Rams"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Snugs Flip",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 175,
+    "cache_creation_input_tokens": 5610,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 205
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 8.32,
+  "response_text": "```json\n{\n  \"concept\": \"cross_concept\",\n  \"concepts\": [\"pa_cross\", \"crossing_route\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"streak\",\n    \"TE_R\": \"cross\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"PA play with play-action fake. Red arrow indicates primary read on TE crossing route. WR_X runs corner route over the top; WR_Z clears vertically. HB release available for checkdown. GUN Snugs Flip formation with 1 RB, 0 FB, 1 TE, 3 WR matches r1f0t1w3.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "cross_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcross(es)?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

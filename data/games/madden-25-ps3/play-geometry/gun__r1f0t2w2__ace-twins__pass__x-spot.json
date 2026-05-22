@@ -1,0 +1,51 @@
+{
+  "slug": "gun__r1f0t2w2__ace-twins__pass__x-spot",
+  "info": {
+    "family": "GUN",
+    "formation": "Ace Twins",
+    "play_name": "X Spot",
+    "play_type": "pass",
+    "canonical_team": "Baltimore Ravens",
+    "canonical_img": 106,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Baltimore Ravens",
+      "Detroit Lions",
+      "New York Giants"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Ace Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Ace Twins \u2014 2 TE 2 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 494,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 212
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 4.7,
+  "response_text": "```json\n{\n  \"concept\": \"spot_concept\",\n  \"concepts\": [\"spot_concept\"],\n  \"routes\": {\n    \"WR_X\": \"spot\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"drag\",\n    \"WR_SLOT_R\": \"flat\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"GUN Ace Twins with 2 TE (one attached right, one as button glyph). X running the primary spot route with red arrow. Z corners over top. Slot receivers split drag (left) and flat (right). TE_R seam release. R1 button glyph indicates secondary target option.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "spot_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bspot\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

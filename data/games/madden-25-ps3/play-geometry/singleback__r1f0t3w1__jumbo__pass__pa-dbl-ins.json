@@ -1,0 +1,51 @@
+{
+  "slug": "singleback__r1f0t3w1__jumbo__pass__pa-dbl-ins",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Jumbo",
+    "play_name": "PA DBL Ins",
+    "play_type": "pass",
+    "canonical_team": "Atlanta Falcons",
+    "canonical_img": 3,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Atlanta Falcons",
+      "Miami Dolphins",
+      "New York Jets"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Jumbo",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 3,
+      "WR": 1,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Jumbo \u2014 typically 3 TE 1 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 501,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 210
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.76,
+  "response_text": "```json\n{\n  \"concept\": \"ins\",\n  \"concepts\": [\"ins\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"TE_R\": \"in\",\n    \"TE_WING_R\": \"corner\",\n    \"WR_X\": \"corner\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"PA play with play-action indicator. Three TEs visible (TE_L, TE_R, TE_WING_R) plus one WR (WR_X) matching Jumbo personnel (r1f0t3w1). TE_R runs the primary in-route; TE_WING_R and WR_X run corner routes to opposite side. Dashed arrow (motion/option) visible to left.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "ins",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bins?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

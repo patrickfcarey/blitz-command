@@ -1,0 +1,60 @@
+{
+  "slug": "i-form__r1f1t1w2__te-flip__run__fb-fake-hb-flip",
+  "info": {
+    "family": "I-FORM",
+    "formation": "TE Flip",
+    "play_name": "FB Fake HB Flip",
+    "play_type": "run",
+    "canonical_team": "Jimmy Johnson",
+    "canonical_img": 65,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Jimmy Johnson",
+      "Mike Ditka",
+      "New England Patriots"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "TE Flip",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "I-Form Pro default"
+    }
+  },
+  "usage": {
+    "input_tokens": 602,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 72
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 97.93,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"generic_hb_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB C_left\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "C_left",
+    "c_xy": [
+      1553,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      1094,
+      880
+    ],
+    "dx_from_c": -459,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bhb \\w+",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

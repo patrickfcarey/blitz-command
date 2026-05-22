@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__slot__pass__pa-slot-crosses",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Slot",
+    "play_name": "PA Slot Crosses",
+    "play_type": "pass",
+    "canonical_team": "Tom Landry",
+    "canonical_img": 28,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Tom Landry"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 500,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 181
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.4,
+  "response_text": "```json\n{\n  \"concept\": \"cross_concept\",\n  \"concepts\": [\"pa_slot_crosses\", \"crossing_routes\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"cross\",\n    \"TE_R\": \"cross\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_L\",\n  \"notes\": \"Play-action look with slot crossing concept. Two crossing routes (slot WR and TE) working shallow to intermediate depths. Red arrow indicates primary read on slot crossing route. Yellow arrows show secondary crossing action and receiver motion.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "cross_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcross(es)?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

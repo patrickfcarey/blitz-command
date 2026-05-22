@@ -1,0 +1,49 @@
+{
+  "slug": "weak__r1f1t2w2__tight-pair__pass__pa-te-under",
+  "info": {
+    "family": "WEAK",
+    "formation": "Tight Pair",
+    "play_name": "PA TE Under",
+    "play_type": "pass",
+    "canonical_team": "Run N Gun",
+    "canonical_img": 65,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Run N Gun"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "WEAK",
+      "formation": "Tight Pair",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 499,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 201
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.87,
+  "response_text": "```json\n{\n  \"concept\": \"under_route\",\n  \"concepts\": [\"under_route\", \"play_action\"],\n  \"routes\": {\n    \"TE_L\": \"under\",\n    \"TE_R\": \"wheel\",\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"comeback\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_L\",\n  \"notes\": \"PA TE Under \u2014 play-action pass with two-TE set (Tight Pair). TE_L runs the primary under route at ~8 yds. TE_R releases to the wheel. WR_X corners to the field, WR_Z comes back. Red arrow on TE_L indicates primary read.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "under_route",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bunders?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t2w2__ace-pair-flex__pass__pa-slot-post",
+  "info": {
+    "family": "GUN",
+    "formation": "Ace Pair Flex",
+    "play_name": "PA Slot Post",
+    "play_type": "pass",
+    "canonical_team": "New England Patriots",
+    "canonical_img": 63,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "New England Patriots"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Ace Pair Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Ace \u2014 2 TE 2 WR (shotgun-ace)"
+    }
+  },
+  "usage": {
+    "input_tokens": 503,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 222
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.34,
+  "response_text": "```json\n{\n  \"concept\": \"post_concept\",\n  \"concepts\": [\"post_concept\", \"play_action\"],\n  \"routes\": {\n    \"WR_X\": \"post\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"post\",\n    \"WR_SLOT_R\": \"flat\",\n    \"TE_L\": \"block\",\n    \"TE_R\": \"block\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_L\",\n  \"notes\": \"PA action with slot receiver running deep post as primary target. Red arrow originates from TE area, indicating play-action fake. Two TEs blocking inline on LOS; four WRs spread across formation. HB visible below LOS with R1 button glyph for checkdown option.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "post_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpost(?![- ]corner)\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

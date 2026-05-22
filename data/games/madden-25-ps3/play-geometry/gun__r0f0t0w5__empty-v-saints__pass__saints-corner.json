@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r0f0t0w5__empty-v-saints__pass__saints-corner",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty V-Saints",
+    "play_name": "Saints Corner",
+    "play_type": "pass",
+    "canonical_team": "New Orleans Saints",
+    "canonical_img": 134,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "New Orleans Saints"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty V-Saints",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 495,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 279
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.53,
+  "response_text": "```json\n{\n  \"concept\": \"corner_concept\",\n  \"concepts\": [\"corner_concept\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"comeback\",\n    \"WR_SLOT_R\": \"streak\",\n    \"WR_FLANKER\": \"streak\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"GUN Empty 5-wide (0 RB, 0 TE, 5 WR). All 5 WRs visible with button glyphs: WR_X (\u25a1 purple, left), WR_Z (\u25b3 green, left-inner), WR_SLOT_L (\u2297 blue, center-left), WR_SLOT_R (R1 red, right), WR_FLANKER (\u2190 yellow dashed, far right). Red arrow on WR_X indicates primary target running corner route. Yellow streaks on other receivers. Dashed line on far-right WR suggests optional or motion element.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "corner_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcorners?$",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

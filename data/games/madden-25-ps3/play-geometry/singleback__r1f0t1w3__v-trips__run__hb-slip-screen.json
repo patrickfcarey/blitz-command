@@ -1,0 +1,58 @@
+{
+  "slug": "singleback__r1f0t1w3__v-trips__run__hb-slip-screen",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "V-Trips",
+    "play_name": "HB Slip Screen",
+    "play_type": "run",
+    "canonical_team": "New Orleans Saints",
+    "canonical_img": 35,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "New Orleans Saints"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "V-Trips",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 531,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 127
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 70.05,
+  "response_text": "```json\n{\n  \"concept\": \"hb_screen\",\n  \"concepts\": [\"hb_screen\"],\n  \"routes\": {\n    \"WR_X\": \"block\",\n    \"WR_Z\": \"block\",\n    \"WR_SLOT_L\": \"block\",\n    \"TE_R\": \"block\",\n    \"HB\": \"screen\"\n  },\n  \"ball_carrier\": \"HB D_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_right",
+    "c_xy": [
+      1551,
+      613
+    ],
+    "arrow_los_crossing_xy": [
+      2473,
+      613
+    ],
+    "dx_from_c": 922,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "hb_screen",
+    "concept_family": "screen",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bhb (slip )?screen\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

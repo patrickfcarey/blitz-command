@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__dot-twins__pass__pa-boot-wk",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Dot Twins",
+    "play_name": "PA Boot Wk",
+    "play_type": "pass",
+    "canonical_team": "Joe Gibbs",
+    "canonical_img": 15,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Joe Gibbs"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Dot Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "Singleback default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 178,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 279
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 110.17,
+  "response_text": "```json\n{\n  \"concept\": \"boot_pass\",\n  \"concepts\": [\"boot_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"flat\",\n    \"WR_SLOT_R\": \"flat\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"PA boot play with WR_Z running primary streak route (red arrow). TE_R releases on seam. Slot WRs run flat routes underneath. HB executes check-release. Formation appears to be 5-wide with no TEs attached to OL \u2014 all receivers are distributed WRs. R1F0T1W3 expected personnel (1 RB, 0 FB, 1 TE, 3 WR) \u2014 the single TE is WR_SLOT_L or TE_R; diagram shows button glyphs consistent with 4 eligible receivers + TE.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "boot_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bboot\\b|\\bbootleg\\b",
+    "is_pa": true,
+    "is_boot_or_roll": true
+  }
+}

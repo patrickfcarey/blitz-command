@@ -1,0 +1,50 @@
+{
+  "slug": "i-form__r1f1t1w3__twins-flex__pass__inside-cross",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Twins Flex",
+    "play_name": "Inside Cross",
+    "play_type": "pass",
+    "canonical_team": "Chicago Bears",
+    "canonical_img": 53,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Chicago Bears",
+      "New Orleans Saints"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Twins Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Twins \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 497,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 219
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.75,
+  "response_text": "```json\n{\n  \"concept\": \"cross_concept\",\n  \"concepts\": [\"inside_cross\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"inside_cross\",\n    \"WR_SLOT_R\": \"flat\",\n    \"TE_L\": \"block\",\n    \"TE_R\": \"block\",\n    \"FB\": \"block\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Inside cross concept with WR_Z running the primary crossing route. WR_X stretches vertical. WR_SLOT_R fills the flat. Backfield (FB, HB) and both TEs provide pass protection. Red arrow traces WR_Z crossing route; yellow arrow shows WR_SLOT_R flat route.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "cross_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcross(es)?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "pistol__r1f0t1w3__weak-twins-flex__pass__pa-seams",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Weak Twins Flex",
+    "play_name": "PA Seams",
+    "play_type": "pass",
+    "canonical_team": "Washington Redskins",
+    "canonical_img": 71,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Washington Redskins"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Weak Twins Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Pistol Strong/Weak"
+    }
+  },
+  "usage": {
+    "input_tokens": 505,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 231
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.28,
+  "response_text": "```json\n{\n  \"concept\": \"seam_route\",\n  \"concepts\": [\"seam_route\", \"play_action\"],\n  \"routes\": {\n    \"TE_L\": \"seam\",\n    \"TE_R\": \"seam\",\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"streak\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"PA Seams with two TE seam routes. R1 button (red circle glyph) indicates primary target TE_R running seam. TE_L also runs seam route (yellow arrow). WRs run vertical clearout streaks. HB available for checkdown. Red arrow on TE_R is the primary read; yellow arrows indicate secondary receivers and option routes.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "seam_route",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bseams?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

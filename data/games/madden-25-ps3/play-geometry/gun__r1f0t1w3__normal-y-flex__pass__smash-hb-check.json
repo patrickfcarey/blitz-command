@@ -1,0 +1,50 @@
+{
+  "slug": "gun__r1f0t1w3__normal-y-flex__pass__smash-hb-check",
+  "info": {
+    "family": "GUN",
+    "formation": "Normal Y-Flex",
+    "play_name": "Smash HB Check",
+    "play_type": "pass",
+    "canonical_team": "Brian Billick",
+    "canonical_img": 127,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Brian Billick",
+      "Dick Vermeil"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Normal Y-Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 572,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 301
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 4.32,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"generic_hb_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB B_right\",\n  \"primary_target\": null,\n  \"notes\": \"Play labeled 'Smash HB Check' but play_type is PASS and py_concept is 'generic_hb_run (family=run)' \u2014 inconsistency in metadata. Visible diagram shows: 5 OL (LT, LG, C, RG, RT), 1 TE (TE_R attached to RT), 3 WRs (WR_X left slot with purple \u25a1, WR_Z far left with green \u25b3, WR_FLANKER right with blue \u2297). Backfield: QB shotgun ~5 yds behind C, HB to right side. Red arrow originates from HB, curves right toward B_right gap. R1 label visible on TE backfield circle (likely motion or pre-snap adjustment). Given play_type=pass in user message but py_concept=run and red arrow on HB, treating as run with HB as ball-carrier. If this is actually a pass play, primary_target should be reassessed.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bhb \\w+",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

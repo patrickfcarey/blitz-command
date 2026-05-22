@@ -1,0 +1,58 @@
+{
+  "slug": "i-form__r1f1t1w3__slot-flex__run__smash",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Slot Flex",
+    "play_name": "Smash",
+    "play_type": "run",
+    "canonical_team": "Kansas City Chiefs",
+    "canonical_img": 39,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Kansas City Chiefs"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Slot Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Slot \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 523,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 240
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 37.24,
+  "response_text": "```json\n{\n  \"concept\": \"smash\",\n  \"concepts\": [\"smash\"],\n  \"routes\": {\n    \"WR_X\": \"hitch\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"block\",\n    \"TE_L\": \"block\",\n    \"FB\": \"block\"\n  },\n  \"ball_carrier\": \"HB D_left\",\n  \"primary_target\": null,\n  \"notes\": \"Play labeled as run but diagram shows yellow route arrows typical of pass concepts. Smash structure visible: WR_X hitch (5 yds) with WR_Z corner over top on right side. Left side (TE_L, WR_SLOT_L, FB) blocking. Red arrow indicates HB carry to D_left (outside edge). Despite play_type=run, the yellow Smash routes suggest this may be a run-pass option or mislabeled play; emitting as run per py_context.\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_left",
+    "c_xy": [
+      1553,
+      613
+    ],
+    "arrow_los_crossing_xy": [
+      86,
+      613
+    ],
+    "dx_from_c": -1467,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "smash",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bsmash\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

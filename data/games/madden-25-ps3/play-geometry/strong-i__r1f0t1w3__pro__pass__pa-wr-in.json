@@ -1,0 +1,49 @@
+{
+  "slug": "strong-i__r1f0t1w3__pro__pass__pa-wr-in",
+  "info": {
+    "family": "STRONG-I",
+    "formation": "Pro",
+    "play_name": "PA WR In",
+    "play_type": "pass",
+    "canonical_team": "Run Heavy",
+    "canonical_img": 50,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Run Heavy"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "STRONG-I",
+      "formation": "Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "low",
+      "notes": "unknown family 'STRONG-I' \u2014 generic 11-personnel guess"
+    }
+  },
+  "usage": {
+    "input_tokens": 497,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 209
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.87,
+  "response_text": "```json\n{\n  \"concept\": \"ins\",\n  \"concepts\": [\"ins\"],\n  \"routes\": {\n    \"WR_X\": \"in\",\n    \"WR_Z\": \"corner\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"swing\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Play-action pass with PA fake. WR_X (purple \u25a1) runs primary in-breaker route (red arrow). WR_Z (yellow \u25b3) runs corner route (yellow arrow). TE_R (blue \u2297) runs seam release (blue arrow). HB (R1, red \u2299) runs swing route (blue arrow). Strong-I backfield visible: QB, FB, HB stacked with FB offset to strong side.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "ins",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bins?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

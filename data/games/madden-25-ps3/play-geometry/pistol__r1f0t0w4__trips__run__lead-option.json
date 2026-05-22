@@ -1,0 +1,58 @@
+{
+  "slug": "pistol__r1f0t0w4__trips__run__lead-option",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Trips",
+    "play_name": "Lead Option",
+    "play_type": "run",
+    "canonical_team": "Seattle Seahawks",
+    "canonical_img": 91,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Seattle Seahawks"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Trips",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 0,
+      "WR": 4,
+      "total": 6,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 493,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 225
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 91.72,
+  "response_text": "```json\n{\n  \"concept\": \"option_route\",\n  \"concepts\": [\"option_route\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"streak\",\n    \"WR_SLOT_R\": \"streak\"\n  },\n  \"ball_carrier\": \"HB D_right\",\n  \"primary_target\": null,\n  \"notes\": \"Play diagram shows RUN play type with Lead Option concept. Two route arrows visible: green curved arrow (slot/TE release) and red curved arrow (primary ball-carrier path to D_right). Formation is PISTOL Trips (r1f0t0w4): 1 RB, 0 FB, 0 TE, 4 WR. All four receivers shown with streak releases upfield; HB carries the ball on the option path to the right edge.\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_right",
+    "c_xy": [
+      1604,
+      609
+    ],
+    "arrow_los_crossing_xy": [
+      2281,
+      849
+    ],
+    "dx_from_c": 677,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "option_route",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\boption\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

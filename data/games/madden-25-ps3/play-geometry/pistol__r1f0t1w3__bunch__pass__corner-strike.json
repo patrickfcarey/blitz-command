@@ -1,0 +1,49 @@
+{
+  "slug": "pistol__r1f0t1w3__bunch__pass__corner-strike",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Bunch",
+    "play_name": "Corner Strike",
+    "play_type": "pass",
+    "canonical_team": "Pistol",
+    "canonical_img": 97,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Pistol"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Bunch",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 491,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 263
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.65,
+  "response_text": "```json\n{\n  \"concept\": \"corner_strike\",\n  \"concepts\": [\"corner_strike\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"hitch\",\n    \"WR_SLOT_L\": \"flat\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Corner strike concept: WR_X (right side, \u25a1 Square) runs corner route (red arrow upfield-right); WR_Z (left side, \u25b3 Triangle) runs hitch underneath; WR_SLOT_L (\u2297 X button, center-left) runs flat; TE_R (\u2299 Circle, right) runs seam. HB (L1 shoulder button, pistol backfield) checks release. All route arrows visible and color-coded per controller button assignments. Pistol formation confirmed: QB ~3 yards behind C, HB stacked directly behind QB.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "corner_strike",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcorner strike\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

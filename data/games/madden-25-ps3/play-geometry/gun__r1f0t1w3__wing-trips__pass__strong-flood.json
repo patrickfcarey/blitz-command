@@ -1,0 +1,50 @@
+{
+  "slug": "gun__r1f0t1w3__wing-trips__pass__strong-flood",
+  "info": {
+    "family": "GUN",
+    "formation": "Wing Trips",
+    "play_name": "Strong Flood",
+    "play_type": "pass",
+    "canonical_team": "Atlanta Falcons",
+    "canonical_img": 98,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Atlanta Falcons",
+      "Baltimore Ravens"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Wing Trips",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 516,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 206
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.05,
+  "response_text": "```json\n{\n  \"concept\": \"flood\",\n  \"concepts\": [\"flood\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_R\": \"flat\",\n    \"TE_R\": \"dig\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Strong flood to the right side (X, Z, TE_R, slot) with three receivers at different depths stretching the defense vertically and flat. Slot receiver runs the flat route; TE runs intermediate dig; Z runs the deep corner. WR_SLOT_L on left side runs a comeback clearout route (yellow arrow curving back). HB positioned in shotgun alignment.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "flood",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bflood\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

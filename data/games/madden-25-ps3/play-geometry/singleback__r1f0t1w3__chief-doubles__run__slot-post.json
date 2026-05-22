@@ -1,0 +1,58 @@
+{
+  "slug": "singleback__r1f0t1w3__chief-doubles__run__slot-post",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Chief Doubles",
+    "play_name": "Slot Post",
+    "play_type": "run",
+    "canonical_team": "Kansas City Chiefs",
+    "canonical_img": 18,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Kansas City Chiefs"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Chief Doubles",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 524,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 206
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 56.95,
+  "response_text": "```json\n{\n  \"concept\": \"post_concept\",\n  \"concepts\": [\"post_concept\"],\n  \"routes\": {\n    \"WR_X\": \"post\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"flat\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"block\"\n  },\n  \"ball_carrier\": \"HB D_left\",\n  \"primary_target\": null,\n  \"notes\": \"Play labeled 'Slot Post' but play_type is run, not pass. HB carries left edge. Routes shown (post, streak, flat, seam) are receiver blocking assignments or decoys for the run, not primary pass routes. Slot WR runs flat block, Z WR runs streak block, X WR runs post block, TE seam block.\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_left",
+    "c_xy": [
+      1553,
+      613
+    ],
+    "arrow_los_crossing_xy": [
+      63,
+      613
+    ],
+    "dx_from_c": -1490,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "post_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpost(?![- ]corner)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

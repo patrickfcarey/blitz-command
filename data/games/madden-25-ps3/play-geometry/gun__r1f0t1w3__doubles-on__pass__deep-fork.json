@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__doubles-on__pass__deep-fork",
+  "info": {
+    "family": "GUN",
+    "formation": "Doubles On",
+    "play_name": "Deep Fork",
+    "play_type": "pass",
+    "canonical_team": "St. Louis Rams",
+    "canonical_img": 99,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "St. Louis Rams"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Doubles On",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Doubles \u2014 1 TE 3 WR (slot variant)"
+    }
+  },
+  "usage": {
+    "input_tokens": 492,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 202
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.84,
+  "response_text": "```json\n{\n  \"concept\": \"fork_concept\",\n  \"concepts\": [\"fork_concept\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"dig\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"GUN Doubles On personnel: r1f0t1w3 (1 RB, 0 FB, 1 TE, 3 WR). Deep Fork concept typically creates vertical spacing with dig route from slot and seam from TE. Image quality/resolution prevents precise route confirmation but structure matches fork template with multiple vertical threats.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "fork_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bfork\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

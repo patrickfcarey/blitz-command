@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__wing-trips__pass__empty-bal-screens",
+  "info": {
+    "family": "GUN",
+    "formation": "Wing Trips",
+    "play_name": "Empty BAL Screens",
+    "play_type": "pass",
+    "canonical_team": "Baltimore Ravens",
+    "canonical_img": 116,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Baltimore Ravens"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Wing Trips",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 497,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 190
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.93,
+  "response_text": "```json\n{\n  \"concept\": \"city_concept\",\n  \"concepts\": [\"city_concept\"],\n  \"routes\": {\n    \"WR_X\": \"screen\",\n    \"WR_Z\": \"screen\",\n    \"WR_SLOT_L\": \"screen\",\n    \"TE_R\": \"screen\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"All eligible receivers lined up for screen passes with button assignments. R1 (red Circle) indicates primary target on right side receiving backward/lateral pass. Multiple screen options indicated by colored button glyphs (\u25a1, \u25b3, \u2297, R1) with yellow arrow showing lateral direction on far right receiver.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "city_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bseattle\\b|\\bphilly\\b|\\bgreen bay\\b|\\bdallas\\b|\\bbal\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

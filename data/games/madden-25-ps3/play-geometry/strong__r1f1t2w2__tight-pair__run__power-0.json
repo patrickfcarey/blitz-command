@@ -1,0 +1,62 @@
+{
+  "slug": "strong__r1f1t2w2__tight-pair__run__power-0",
+  "info": {
+    "family": "STRONG",
+    "formation": "Tight Pair",
+    "play_name": "Power 0",
+    "play_type": "run",
+    "canonical_team": "Chicago Bears",
+    "canonical_img": 70,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Chicago Bears",
+      "Kansas City Chiefs",
+      "Miami Dolphins",
+      "New York Jets",
+      "San Francisco 49ers"
+    ],
+    "owner_count": 5,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "Tight Pair",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 586,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 66
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 63.88,
+  "response_text": "```json\n{\n  \"concept\": \"power_run\",\n  \"concepts\": [\"power_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB B_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "B_right",
+    "c_xy": [
+      1551,
+      621
+    ],
+    "arrow_los_crossing_xy": [
+      1776,
+      621
+    ],
+    "dx_from_c": 225,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "power_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bpower\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

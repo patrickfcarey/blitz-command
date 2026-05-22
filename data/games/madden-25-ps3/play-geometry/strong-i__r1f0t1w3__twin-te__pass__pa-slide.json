@@ -1,0 +1,49 @@
+{
+  "slug": "strong-i__r1f0t1w3__twin-te__pass__pa-slide",
+  "info": {
+    "family": "STRONG-I",
+    "formation": "Twin TE",
+    "play_name": "PA Slide",
+    "play_type": "pass",
+    "canonical_team": "Run Heavy",
+    "canonical_img": 59,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Run Heavy"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "STRONG-I",
+      "formation": "Twin TE",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "low",
+      "notes": "unknown family 'STRONG-I' \u2014 generic 11-personnel guess"
+    }
+  },
+  "usage": {
+    "input_tokens": 524,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 172
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 4.94,
+  "response_text": "```json\n{\n  \"concept\": \"slide_pass\",\n  \"concepts\": [\"slide_pass\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"TE_R\": \"flat\",\n    \"WR_X\": \"corner\",\n    \"HB\": \"swing\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"PA Slide with strong-side action. Red arrow indicates primary pass to TE_R on flat. Yellow arrows show play-action mesh and bootleg slide pattern. TE_L blocks play-side; HB available for swing check. WR_X runs corner route on backside.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "slide_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bslide\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

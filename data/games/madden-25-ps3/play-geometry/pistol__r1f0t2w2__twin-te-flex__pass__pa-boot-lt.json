@@ -1,0 +1,49 @@
+{
+  "slug": "pistol__r1f0t2w2__twin-te-flex__pass__pa-boot-lt",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Twin TE Flex",
+    "play_name": "PA Boot Lt",
+    "play_type": "pass",
+    "canonical_team": "Detroit Lions",
+    "canonical_img": 75,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Detroit Lions"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Twin TE Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 503,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 181
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.56,
+  "response_text": "```json\n{\n  \"concept\": \"boot_pass\",\n  \"concepts\": [\"boot_pass\"],\n  \"routes\": {\n    \"TE_L\": \"flat\",\n    \"TE_R\": \"corner\",\n    \"WR_SLOT_L\": \"drag\",\n    \"WR_SLOT_R\": \"streak\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"PA Boot Left action \u2014 QB boots to right, primary target TE_R corner route. TE_L flat underneath. Slot receivers (L & R) running drag and streak to create horizontal stretch. HB available as checkdown on left flat.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "boot_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bboot\\b|\\bbootleg\\b",
+    "is_pa": true,
+    "is_boot_or_roll": true
+  }
+}

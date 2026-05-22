@@ -1,0 +1,56 @@
+{
+  "slug": "gun__r1f0t2w2__trips-te__pass__pa-slot-corner",
+  "info": {
+    "family": "GUN",
+    "formation": "Trips TE",
+    "play_name": "PA Slot Corner",
+    "play_type": "pass",
+    "canonical_team": "Carolina Panthers",
+    "canonical_img": 109,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Carolina Panthers",
+      "Cleveland Browns",
+      "Jacksonville Jaguars",
+      "Miami Dolphins",
+      "Minnesota Vikings",
+      "New York Giants",
+      "San Diego Chargers",
+      "St. Louis Rams"
+    ],
+    "owner_count": 8,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Trips TE",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 499,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 241
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.43,
+  "response_text": "```json\n{\n  \"concept\": \"slot_concept\",\n  \"concepts\": [\"pa_slot_corner\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"corner\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"PA play-action with slot corner concept. Red arrow on WR_Z (rightmost WR) corner route \u2014 primary target. Slot WR_SLOT_L also runs corner. WR_X (left) runs streak clearout. TE_R releases into seam. HB available checkdown. Two button glyphs visible on left side (\u25a1 purple Square, \u25b3 green Triangle) \u2014 secondary targets. One button glyph on right (\u2297 blue X) near TE_R.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "slot_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bslot (drag|cross|streak|corner|out|in|wheel)\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

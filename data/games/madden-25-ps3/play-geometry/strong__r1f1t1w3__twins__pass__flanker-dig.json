@@ -1,0 +1,50 @@
+{
+  "slug": "strong__r1f1t1w3__twins__pass__flanker-dig",
+  "info": {
+    "family": "STRONG",
+    "formation": "Twins",
+    "play_name": "Flanker Dig",
+    "play_type": "pass",
+    "canonical_team": "Jacksonville Jaguars",
+    "canonical_img": 68,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Jacksonville Jaguars",
+      "New England Patriots"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 493,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 202
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.47,
+  "response_text": "```json\n{\n  \"concept\": \"dig_route\",\n  \"concepts\": [\"dig_route\"],\n  \"routes\": {\n    \"WR_X\": \"dig\",\n    \"WR_Z\": \"corner\",\n    \"TE_R\": \"dig\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Strong Twins formation with 1 RB, 1 FB, 1 TE, 3 WR. Two dig routes (WR_X and TE_R) at different depths create levels concept. WR_Z runs corner clearout on opposite side. Red arrow originates from WR_X dig route (primary target). R1 button glyph visible on TE_R.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "dig_route",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdig\\b|\\bdigs\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

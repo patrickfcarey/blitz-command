@@ -1,0 +1,50 @@
+{
+  "slug": "gun__r0f0t0w5__5wr-trio__pass__wr-screens",
+  "info": {
+    "family": "GUN",
+    "formation": "5WR Trio",
+    "play_name": "WR Screens",
+    "play_type": "pass",
+    "canonical_team": "Chicago Bears",
+    "canonical_img": 138,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Chicago Bears",
+      "Philadelphia Eagles"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "5WR Trio",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "5-WR set, no RB"
+    }
+  },
+  "usage": {
+    "input_tokens": 526,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 274
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.43,
+  "response_text": "```json\n{\n  \"concept\": \"wr_screen\",\n  \"concepts\": [\"wr_screen\"],\n  \"routes\": {\n    \"WR_X\": \"screen\",\n    \"WR_Z\": \"screen\",\n    \"WR_SLOT_L\": \"screen\",\n    \"WR_SLOT_R\": \"vertical\",\n    \"WR_FLANKER\": \"vertical\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"GUN 5WR Trio spread formation. WR_Z (triangle button, center-left) receives primary red arrow screen route. WR_X (purple square, far left) runs screen route with yellow arrow. WR_SLOT_L (no visible button, left of center) appears to run screen. WR_SLOT_R (blue X, right of center) and WR_FLANKER (red circle, far right) run vertical clearout routes. QB in shotgun position, no visible backfield player (0 RB as indicated by r0 personnel). Screen routes are underneath while outer WRs clear vertically.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "wr_screen",
+    "concept_family": "screen",
+    "blockers_implicit": false,
+    "matched_pattern": "\\b(wr|te) screens?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

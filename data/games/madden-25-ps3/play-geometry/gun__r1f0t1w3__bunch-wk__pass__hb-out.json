@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__bunch-wk__pass__hb-out",
+  "info": {
+    "family": "GUN",
+    "formation": "Bunch Wk",
+    "play_name": "HB Out",
+    "play_type": "pass",
+    "canonical_team": "West Coast",
+    "canonical_img": 92,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "West Coast"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Bunch Wk",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 565,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 222
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.45,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"generic_hb_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB D_right\",\n  \"primary_target\": null,\n  \"notes\": \"Play_type says 'pass' but py_concept says 'generic_hb_run (family=run)'. Diagram shows red arrow from HB moving right toward edge (D-gap). Treating as run play per py_concept. Formation is GUN Bunch Wk: QB shotgun ~5 yds behind C, HB to right side. OL 5-man set present. Personnel r1f0t1w3: 1 RB (the HB), 0 FB, 1 TE (attached right), 3 WRs (1 slot left, 2 outside right in bunch). All receivers block implicitly.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "^hb \\w+",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "slug": "singleback__r1f0t1w3__bunch__run__end-around",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Bunch",
+    "play_name": "End Around",
+    "play_type": "run",
+    "canonical_team": "Balanced",
+    "canonical_img": 27,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Balanced",
+      "Brian Billick",
+      "Buffalo Bills",
+      "Chicago Bears",
+      "Cincinnati Bengals",
+      "Cleveland Browns",
+      "Denver Broncos",
+      "Green Bay Packers",
+      "Indianapolis Colts",
+      "Jacksonville Jaguars",
+      "Joe Gibbs",
+      "Miami Dolphins",
+      "Minnesota Vikings",
+      "New England Patriots",
+      "New York Giants",
+      "New York Jets",
+      "Pass Balanced",
+      "Philadelphia Eagles",
+      "Run Heavy",
+      "San Diego Chargers",
+      "St. Louis Rams",
+      "Tampa Bay Buccaneers"
+    ],
+    "owner_count": 22,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Bunch",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 556,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 61
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.14,
+  "response_text": "```json\n{\n  \"concept\": \"reverse\",\n  \"concepts\": [\"reverse\"],\n  \"routes\": {},\n  \"ball_carrier\": \"WR_X\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "error": "no red arrow detected",
+    "c_x": 1604,
+    "c_y": 611,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "reverse",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bend around\\b|\\breverse\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

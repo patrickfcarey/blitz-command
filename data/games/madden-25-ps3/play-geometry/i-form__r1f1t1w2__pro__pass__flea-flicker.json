@@ -1,0 +1,50 @@
+{
+  "slug": "i-form__r1f1t1w2__pro__pass__flea-flicker",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Pro",
+    "play_name": "Flea Flicker",
+    "play_type": "pass",
+    "canonical_team": "Run Balanced",
+    "canonical_img": 54,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Run Balanced",
+      "San Diego Chargers"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "I-Form Pro default"
+    }
+  },
+  "usage": {
+    "input_tokens": 498,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 219
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.12,
+  "response_text": "```json\n{\n  \"concept\": \"trick_play\",\n  \"concepts\": [\"trick_play\", \"flea_flicker\"],\n  \"routes\": {\n    \"QB\": \"handoff_lateral\",\n    \"HB\": \"lateral_return\",\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Flea flicker: HB receives handoff/lateral and returns ball to QB on rollout. Red arrow indicates QB's final pass target (WR_X streak). Yellow dashed arrow shows HB's lateral motion path. Formation is I-Form Pro with 1 RB, 1 FB, 1 TE, 2 WR as expected. WR_Z runs corner on opposite side. TE likely blocking or chip-releasing.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "trick_play",
+    "concept_family": "trick",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bflea flicker\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

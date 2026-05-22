@@ -1,0 +1,49 @@
+{
+  "slug": "pistol__r1f0t1w3__ace__pass__pa-ctr-waggle",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Ace",
+    "play_name": "PA Ctr Waggle",
+    "play_type": "pass",
+    "canonical_team": "Detroit Lions",
+    "canonical_img": 70,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Detroit Lions"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Ace",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "Pistol default \u2014 variant unclear"
+    }
+  },
+  "usage": {
+    "input_tokens": 503,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 235
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 4.02,
+  "response_text": "```json\n{\n  \"concept\": \"waggle_pass\",\n  \"concepts\": [\"waggle_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"dig\",\n    \"TE_R\": \"flat\",\n    \"HB\": \"wheel\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"PA Ctr Waggle \u2014 play-action bootleg to the right (QB direction marked by dashed motion). WR_Z (Circle/red button) is primary target on the corner route. TE_R runs flat to the flat side. Slot WR runs dig underneath. Backside WR_X runs vertical clearout. HB wheels out to pass-pro/checkdown. One TE expected (r1f0t1w3); one visible on right side of LOS.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "waggle_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bwaggle\\b",
+    "is_pa": true,
+    "is_boot_or_roll": true
+  }
+}

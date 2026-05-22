@@ -1,0 +1,58 @@
+{
+  "slug": "weak__r1f1t1w2__h-pro__run__inside-zone",
+  "info": {
+    "family": "WEAK",
+    "formation": "H Pro",
+    "play_name": "Inside Zone",
+    "play_type": "run",
+    "canonical_team": "Baltimore Ravens",
+    "canonical_img": 83,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Baltimore Ravens"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "WEAK",
+      "formation": "H Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 583,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 66
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 56.5,
+  "response_text": "```json\n{\n  \"concept\": \"inside_zone\",\n  \"concepts\": [\"inside_zone\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB A_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "A_right",
+    "c_xy": [
+      1553,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      1745,
+      615
+    ],
+    "dx_from_c": 192,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "inside_zone",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\binside zone\\b|\\bhb (zone|izn|iz)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "slug": "gun__r1f0t1w3__spread-y-flex__run__hb-draw",
+  "info": {
+    "family": "GUN",
+    "formation": "Spread Y-Flex",
+    "play_name": "HB Draw",
+    "play_type": "run",
+    "canonical_team": "Atlanta Falcons",
+    "canonical_img": 115,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Atlanta Falcons",
+      "Baltimore Ravens",
+      "Jacksonville Jaguars",
+      "Oakland Raiders"
+    ],
+    "owner_count": 4,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Spread Y-Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 587,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 60
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.32,
+  "response_text": "```json\n{\n  \"concept\": \"draw\",\n  \"concepts\": [\"draw\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB straight\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "straight",
+    "c_xy": [
+      1551,
+      613
+    ],
+    "arrow_los_crossing_xy": [
+      1581,
+      613
+    ],
+    "dx_from_c": 30,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "draw",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bdraw\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

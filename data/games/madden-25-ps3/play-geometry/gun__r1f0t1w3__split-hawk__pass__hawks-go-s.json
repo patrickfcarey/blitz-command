@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__split-hawk__pass__hawks-go-s",
+  "info": {
+    "family": "GUN",
+    "formation": "Split Hawk",
+    "play_name": "Hawks Go's",
+    "play_type": "pass",
+    "canonical_team": "Seattle Seahawks",
+    "canonical_img": 95,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Seattle Seahawks"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Split Hawk",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "GUN/Shotgun default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 507,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 246
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.26,
+  "response_text": "```json\n{\n  \"concept\": \"hawks_go\",\n  \"concepts\": [\"hawks_go\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"in\",\n    \"TE_R\": \"corner\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"GUN Split Hawk with 5-wide alignment (1 RB, 0 FB, 1 TE, 3 WR). WR_X (purple \u25a1) is primary target with red arrow streak upfield. WR_Z (blue \u2297) runs streak. WR_SLOT_L (green \u25b3) runs shallow in-route. TE_R (R1 button) runs corner route. HB (red \u2299) available as checkdown. Yellow route arrows indicate secondary concepts on both sides.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "unknown",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": null,
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

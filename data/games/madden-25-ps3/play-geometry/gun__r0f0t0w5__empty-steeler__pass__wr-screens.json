@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r0f0t0w5__empty-steeler__pass__wr-screens",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Steeler",
+    "play_name": "WR Screens",
+    "play_type": "pass",
+    "canonical_team": "Pittsburgh Steelers",
+    "canonical_img": 139,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Pittsburgh Steelers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Steeler",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 498,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 187
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.48,
+  "response_text": "```json\n{\n  \"concept\": \"wr_screen\",\n  \"concepts\": [\"wr_screen\"],\n  \"routes\": {\n    \"WR_X\": \"screen\",\n    \"WR_Z\": \"screen\",\n    \"WR_SLOT_L\": \"screen\",\n    \"WR_SLOT_R\": \"screen\",\n    \"WR_FLANKER\": \"screen\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"GUN Empty 5-wide formation. All WRs running screen routes. Primary target (R1/Circle button) is the right-side receiver (WR_Z or flanker); Yellow route arrows indicate screen concepts with lateral release and quick catch.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "wr_screen",
+    "concept_family": "screen",
+    "blockers_implicit": false,
+    "matched_pattern": "\\b(wr|te) screens?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

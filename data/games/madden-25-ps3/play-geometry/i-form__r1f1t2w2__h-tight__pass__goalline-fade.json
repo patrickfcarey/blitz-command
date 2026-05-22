@@ -1,0 +1,49 @@
+{
+  "slug": "i-form__r1f1t2w2__h-tight__pass__goalline-fade",
+  "info": {
+    "family": "I-FORM",
+    "formation": "H Tight",
+    "play_name": "Goalline Fade",
+    "play_type": "pass",
+    "canonical_team": "Seattle Seahawks",
+    "canonical_img": 48,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Seattle Seahawks"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "H Tight",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Tight/Twin-TE \u2014 2 TE"
+    }
+  },
+  "usage": {
+    "input_tokens": 523,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 198
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 6.44,
+  "response_text": "```json\n{\n  \"concept\": \"fade\",\n  \"concepts\": [\"fade\"],\n  \"routes\": {\n    \"WR_X\": \"fade\",\n    \"WR_Z\": \"fade\",\n    \"TE_L\": \"fade\",\n    \"TE_R\": \"fade\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Goalline fade with 4 receivers running corner/fade routes to the end zone. Red arrow on WR_Z indicates primary target. All eligible receivers (2 WRs + 2 TEs) running vertical fades toward the corners and end zone. QB, FB, HB in compact I-Form backfield. This is a goal-line short-yardage play with high-percentage fade routes.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "fade",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bfade\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

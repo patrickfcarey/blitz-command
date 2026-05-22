@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__trips-hb-wk__pass__pa-read",
+  "info": {
+    "family": "GUN",
+    "formation": "Trips HB Wk",
+    "play_name": "PA Read",
+    "play_type": "pass",
+    "canonical_team": "Run and Shoot",
+    "canonical_img": 65,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Run and Shoot"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Trips HB Wk",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 502,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 245
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.56,
+  "response_text": "```json\n{\n  \"concept\": \"read_pass\",\n  \"concepts\": [\"read_pass\"],\n  \"routes\": {\n    \"WR_X\": \"comeback\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_R\": \"flat\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"wheel\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"PA read with deep option (red arrow to Z WR streak), intermediate seam from TE_R (yellow), flat from slot WR (yellow), comeback from X WR (yellow), and wheel from HB (yellow). Formation GUN Trips HB Wk confirmed: 5 OL, 1 TE (R1 button glyph), 3 WRs (purple slot, blue X, red R1 edge WR), 1 HB (triangle glyph on flat route below LOS).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "read_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bread\\b(?!.*option)",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "slug": "weak__r1f1t1w2__pro__run__hb-zone-weak",
+  "info": {
+    "family": "WEAK",
+    "formation": "Pro",
+    "play_name": "HB Zone Weak",
+    "play_type": "run",
+    "canonical_team": "Green Bay Packers",
+    "canonical_img": 66,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Green Bay Packers",
+      "Houston Texans",
+      "Indianapolis Colts",
+      "San Diego Chargers",
+      "Tampa Bay Buccaneers"
+    ],
+    "owner_count": 5,
+    "expected_personnel": {
+      "family": "WEAK",
+      "formation": "Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 586,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 66
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 56.55,
+  "response_text": "```json\n{\n  \"concept\": \"inside_zone\",\n  \"concepts\": [\"inside_zone\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB C_left\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "C_left",
+    "c_xy": [
+      1553,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      1147,
+      615
+    ],
+    "dx_from_c": -406,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "inside_zone",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\binside zone\\b|\\bhb (zone|izn|iz)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

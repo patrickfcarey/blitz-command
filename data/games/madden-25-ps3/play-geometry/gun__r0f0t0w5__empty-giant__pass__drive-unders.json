@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r0f0t0w5__empty-giant__pass__drive-unders",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Giant",
+    "play_name": "Drive Unders",
+    "play_type": "pass",
+    "canonical_team": "New York Giants",
+    "canonical_img": 138,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "New York Giants"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Giant",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 519,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 206
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.85,
+  "response_text": "```json\n{\n  \"concept\": \"drive_concept\",\n  \"concepts\": [\"drive_concept\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"dig\",\n    \"WR_SLOT_R\": \"dig\",\n    \"TE_R\": \"streak\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_R\",\n  \"notes\": \"5-wide empty formation (r0f0t0w5). Red arrow targets WR_SLOT_R dig route. Two outer WRs on each side run streaks; two slot receivers run dig/intermediate crossing routes at different depths; TE_R runs vertical streak on right edge. All routes stretch coverage vertically and horizontally.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "drive_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdrive\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

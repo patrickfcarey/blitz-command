@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r0f0t0w5__raven-empty__pass__slot-drive",
+  "info": {
+    "family": "GUN",
+    "formation": "Raven Empty",
+    "play_name": "Slot Drive",
+    "play_type": "pass",
+    "canonical_team": "Baltimore Ravens",
+    "canonical_img": 138,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Baltimore Ravens"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Raven Empty",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 520,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 253
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.34,
+  "response_text": "```json\n{\n  \"concept\": \"drive_concept\",\n  \"concepts\": [\"drive_concept\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"drive\",\n    \"WR_SLOT_R\": \"streak\",\n    \"WR_FLANKER\": \"streak\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_L\",\n  \"notes\": \"GUN Raven Empty (5-wide, no TEs). Red arrow points to WR_SLOT_L running drive route. All 5 WRs visible: X (purple \u25a1) at ~330px, slot-left (green \u25b3) at ~380px, slot-right (blue \u2297) at ~500px, R1 (shoulder) at ~620px, and circle (red \u2299) at ~680px. QB in shotgun alone. Yellow arrows indicate option/spread coverage reads on both sides.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "drive_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdrive\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

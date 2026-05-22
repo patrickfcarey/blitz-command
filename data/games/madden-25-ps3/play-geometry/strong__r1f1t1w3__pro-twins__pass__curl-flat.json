@@ -1,0 +1,51 @@
+{
+  "slug": "strong__r1f1t1w3__pro-twins__pass__curl-flat",
+  "info": {
+    "family": "STRONG",
+    "formation": "Pro Twins",
+    "play_name": "Curl Flat",
+    "play_type": "pass",
+    "canonical_team": "Brian Billick",
+    "canonical_img": 95,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Brian Billick",
+      "Dick Vermeil",
+      "Jimmy Johnson"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "Pro Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 494,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 124
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 1.9,
+  "response_text": "```json\n{\n  \"concept\": \"curl_flat\",\n  \"concepts\": [\"curl_flat\"],\n  \"routes\": {\n    \"WR_X\": \"curl\",\n    \"WR_SLOT_R\": \"flat\",\n    \"WR_Z\": \"corner\",\n    \"TE_R\": \"seam\",\n    \"FB\": \"block\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "curl_flat",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcurl flats?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

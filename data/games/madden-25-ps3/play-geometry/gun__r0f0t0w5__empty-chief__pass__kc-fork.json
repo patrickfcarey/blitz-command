@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r0f0t0w5__empty-chief__pass__kc-fork",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Chief",
+    "play_name": "KC Fork",
+    "play_type": "pass",
+    "canonical_team": "Kansas City Chiefs",
+    "canonical_img": 140,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Kansas City Chiefs"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Chief",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 492,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 261
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.68,
+  "response_text": "```json\n{\n  \"concept\": \"fork_concept\",\n  \"concepts\": [\"fork_concept\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"dig\",\n    \"WR_SLOT_R\": \"dig\",\n    \"QB\": \"fork\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"GUN Empty (5-wide, 0 RB/FB/TE). All 5 WRs visible with button glyphs: \u25a1 (Square/X), \u25b3 (Triangle/Z), \u2297 (X/Slot-L), \u2299 (Circle/Slot-R), R1. Yellow arrow from X traces streak upfield (primary read). Red arrow from R1 traces high corner route. Dig routes from interior slots create middle flood. Fork concept structure matches: QB has two primary vertical reads (X streak, R1 corner) with dig intermediate options beneath.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "fork_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bfork\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

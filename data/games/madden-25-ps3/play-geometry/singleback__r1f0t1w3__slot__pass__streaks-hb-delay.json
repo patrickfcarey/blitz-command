@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__slot__pass__streaks-hb-delay",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Slot",
+    "play_name": "Streaks HB Delay",
+    "play_type": "pass",
+    "canonical_team": "Tom Landry",
+    "canonical_img": 31,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Tom Landry"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 570,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 187
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 4.93,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"generic_hb_run\"],\n  \"routes\": {},\n  \"ball_carrier\": null,\n  \"primary_target\": \"HB\",\n  \"notes\": \"Play labeled as pass in play_type field but py_concept indicates run family. Visual diagram shows 5 receiver button glyphs (\u25a1\u25b3\u2297\u2299 and one unlabeled) on LOS with yellow route arrows (all vertical streaks), plus one red arrow from backfield indicating HB delay route. HB runs shallow delay/checkdown route (red arrow ~3-4 yds shallow). All other receivers run vertical streaks (yellow arrows). This is a pass play with HB as primary target on the delay route.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bhb \\w+",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

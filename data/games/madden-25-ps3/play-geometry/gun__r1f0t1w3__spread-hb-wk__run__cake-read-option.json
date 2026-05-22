@@ -1,0 +1,58 @@
+{
+  "slug": "gun__r1f0t1w3__spread-hb-wk__run__cake-read-option",
+  "info": {
+    "family": "GUN",
+    "formation": "Spread HB Wk",
+    "play_name": "Cake Read Option",
+    "play_type": "run",
+    "canonical_team": "Philadelphia Eagles",
+    "canonical_img": 106,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Philadelphia Eagles"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Spread HB Wk",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 507,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 160
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 87.33,
+  "response_text": "```json\n{\n  \"concept\": \"zone_read\",\n  \"concepts\": [\"zone_read\"],\n  \"routes\": {\n    \"TE_R\": \"block\",\n    \"WR_X\": \"block\",\n    \"WR_Z\": \"block\",\n    \"WR_SLOT_R\": \"block\"\n  },\n  \"ball_carrier\": \"HB A_right\",\n  \"primary_target\": null,\n  \"notes\": \"Read-option play with QB reading the edge defender. Red arrow shows HB path to A_right gap. Green dashed line shows QB's option read path. All receivers blocking downfield on this run concept.\"\n}\n```",
+  "py_hints": {
+    "target_gap": "A_right",
+    "c_xy": [
+      1610,
+      621
+    ],
+    "arrow_los_crossing_xy": [
+      1720,
+      621
+    ],
+    "dx_from_c": 110,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "zone_read",
+    "concept_family": "rpo",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bread option\\b|\\bzone read\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

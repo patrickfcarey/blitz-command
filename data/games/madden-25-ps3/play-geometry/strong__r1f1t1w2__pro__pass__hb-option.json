@@ -1,0 +1,50 @@
+{
+  "slug": "strong__r1f1t1w2__pro__pass__hb-option",
+  "info": {
+    "family": "STRONG",
+    "formation": "Pro",
+    "play_name": "HB Option",
+    "play_type": "pass",
+    "canonical_team": "Jacksonville Jaguars",
+    "canonical_img": 63,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Jacksonville Jaguars",
+      "Run N Gun"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 163,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 177
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 6.45,
+  "response_text": "```json\n{\n  \"concept\": \"option_pass\",\n  \"concepts\": [\"option_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"comeback\",\n    \"TE_L\": \"block_release\",\n    \"HB\": \"option_pass\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"HB\",\n  \"notes\": \"HB lined up in Strong offset position with R1 button glyph, carrying the option/pass responsibility. Red arrow indicates HB's throwing or running option path. WR_X streaks vertically, WR_Z runs comeback route on opposite side. TE_L releases after initial block.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "option_pass",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bhb option\\b|\\bte option\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

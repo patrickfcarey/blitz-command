@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__trio-offset__pass__pa-hawks-dig",
+  "info": {
+    "family": "GUN",
+    "formation": "Trio Offset",
+    "play_name": "PA Hawks Dig",
+    "play_type": "pass",
+    "canonical_team": "Seattle Seahawks",
+    "canonical_img": 115,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Seattle Seahawks"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Trio Offset",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "GUN/Shotgun default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 499,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 229
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.06,
+  "response_text": "```json\n{\n  \"concept\": \"dig_route\",\n  \"concepts\": [\"dig_route\", \"play_action\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"dig\",\n    \"WR_SLOT_R\": \"flat\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"pass_pro\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Play-action pass with dig concept. WR_Z (\u25b3 green) runs the primary dig route (yellow arrow). WR_X (\u25a1 purple) streaks vertically. WR_SLOT_R (\u2297 blue) runs flat to the right. TE_R (R1 label) runs seam. HB appears to stay in for pass protection. Red arrow shows play-action fake handoff before dig delivery.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "dig_route",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdig\\b|\\bdigs\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t2w2__twin-te__pass__mtn-te-stick",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Twin TE",
+    "play_name": "Mtn TE Stick",
+    "play_type": "pass",
+    "canonical_team": "Tom Landry",
+    "canonical_img": 26,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Tom Landry"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Twin TE",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 502,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 201
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.56,
+  "response_text": "```json\n{\n  \"concept\": \"stick\",\n  \"concepts\": [\"stick\"],\n  \"routes\": {\n    \"TE_L\": \"vertical\",\n    \"TE_R\": \"stick\",\n    \"WR_X\": \"curl\",\n    \"WR_Z\": \"flat\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"Twin TE formation with stick concept on right side. TE_R runs the stick route at 5 yds. TE_L clears vertically. WR_X (left slot) runs curl. WR_Z (right flat) stretches the flats. Red arrow indicates primary target TE_R. Yellow upfield arrow suggests TE_L vertical clearout.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "stick",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bstick\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "slug": "split__r1f1t1w2__slot__run__fb-belly",
+  "info": {
+    "family": "SPLIT",
+    "formation": "Slot",
+    "play_name": "FB Belly",
+    "play_type": "run",
+    "canonical_team": "Jimmy Johnson",
+    "canonical_img": 87,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Jimmy Johnson",
+      "Joe Gibbs"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "SPLIT",
+      "formation": "Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "SPLIT family \u2014 old-school 2-back default"
+    }
+  },
+  "usage": {
+    "input_tokens": 582,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 65
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 97.52,
+  "response_text": "```json\n{\n  \"concept\": \"fb_run\",\n  \"concepts\": [\"fb_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"FB A_left\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "A_left",
+    "c_xy": [
+      1537,
+      701
+    ],
+    "arrow_los_crossing_xy": [
+      1380,
+      701
+    ],
+    "dx_from_c": -157,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "fb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bfb (belly|inside|base)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

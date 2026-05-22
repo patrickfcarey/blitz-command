@@ -1,0 +1,57 @@
+{
+  "slug": "singleback__r1f0t3w1__jumbo__pass__pa-ctr-waggle",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Jumbo",
+    "play_name": "PA Ctr Waggle",
+    "play_type": "pass",
+    "canonical_team": "Arizona Cardinals",
+    "canonical_img": 3,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Arizona Cardinals",
+      "Balanced",
+      "Baltimore Ravens",
+      "Brian Billick",
+      "Indianapolis Colts",
+      "New Orleans Saints",
+      "New York Giants",
+      "Pittsburgh Steelers",
+      "Tampa Bay Buccaneers"
+    ],
+    "owner_count": 9,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Jumbo",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 3,
+      "WR": 1,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Jumbo \u2014 typically 3 TE 1 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 507,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 214
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.14,
+  "response_text": "```json\n{\n  \"concept\": \"waggle_pass\",\n  \"concepts\": [\"waggle_pass\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"TE_M\": \"seam\",\n    \"TE_R\": \"corner\",\n    \"WR_X\": \"corner\",\n    \"HB\": \"swing\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_M\",\n  \"notes\": \"Jumbo personnel (3 TEs, 1 WR) confirmed. Red arrow originates from QB and targets TE_M on seam route. TE_L blocks initially, TE_R runs corner (yellow), WR_X runs corner (red, secondary). HB releases on swing/checkdown (green R1 arrow). Play-action waggle with TE-heavy vertical stretch.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "waggle_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bwaggle\\b",
+    "is_pa": true,
+    "is_boot_or_roll": true
+  }
+}

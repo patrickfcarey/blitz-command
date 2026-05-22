@@ -1,0 +1,49 @@
+{
+  "slug": "pistol__r1f0t1w3__weak-slot__pass__pa-bubble",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Weak Slot",
+    "play_name": "PA Bubble",
+    "play_type": "pass",
+    "canonical_team": "Pistol",
+    "canonical_img": 36,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Pistol"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Weak Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Pistol Strong/Weak"
+    }
+  },
+  "usage": {
+    "input_tokens": 169,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 198
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 5.09,
+  "response_text": "```json\n{\n  \"concept\": \"bubble_screen\",\n  \"concepts\": [\"bubble_screen\"],\n  \"routes\": {\n    \"WR_X\": \"bubble\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"block\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"pass_pro\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Play-action bubble screen. R1 (red circle button, right side) is the primary receiver running the bubble route on the perimeter. TE on the right runs a seam. Slot WR blocks for the bubble. Opposite-side WR (Z) stretches vertically. HB stays in for pass protection.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "bubble_screen",
+    "concept_family": "screen",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bbubble screen\\b|\\bwr bubble\\b|\\bbubble\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

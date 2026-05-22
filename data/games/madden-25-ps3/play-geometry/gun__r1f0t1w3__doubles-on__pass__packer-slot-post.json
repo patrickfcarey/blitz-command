@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__doubles-on__pass__packer-slot-post",
+  "info": {
+    "family": "GUN",
+    "formation": "Doubles On",
+    "play_name": "Packer Slot Post",
+    "play_type": "pass",
+    "canonical_team": "Green Bay Packers",
+    "canonical_img": 77,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Green Bay Packers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Doubles On",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Doubles \u2014 1 TE 3 WR (slot variant)"
+    }
+  },
+  "usage": {
+    "input_tokens": 499,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 286
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.33,
+  "response_text": "```json\n{\n  \"concept\": \"post_concept\",\n  \"concepts\": [\"post_concept\"],\n  \"routes\": {\n    \"WR_X\": \"post\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"corner\",\n    \"WR_SLOT_R\": \"hitch\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"GUN Doubles On with 1 RB, 0 FB, 1 TE, 3 WR. Red arrow originates from WR_X (left side, purple Square button) running a post route upfield. Yellow routes on right side: WR_Z (blue X button) streaks vertically, WR_SLOT_R (red Circle button) runs a hitch, TE_R runs a seam route. WR_SLOT_L (green Triangle button) runs a corner route on the left side opposite the post concept. HB (R1 button, white circle below LOS) is the checkdown option.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "post_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpost(?![- ]corner)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

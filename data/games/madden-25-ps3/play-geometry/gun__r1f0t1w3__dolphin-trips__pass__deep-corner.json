@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__dolphin-trips__pass__deep-corner",
+  "info": {
+    "family": "GUN",
+    "formation": "Dolphin Trips",
+    "play_name": "Deep Corner",
+    "play_type": "pass",
+    "canonical_team": "Miami Dolphins",
+    "canonical_img": 110,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Miami Dolphins"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Dolphin Trips",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 495,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 199
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.86,
+  "response_text": "```json\n{\n  \"concept\": \"deep_pass\",\n  \"concepts\": [\"deep_pass\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_R\": \"corner\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Deep Corner concept with two corner routes (X and slot) stretching the defense vertically and horizontally. Red arrow (primary) targets WR_X on the left corner. Blue chip route from TE_R releasing to seam. R1 button (Circle glyph) appears to be a hot/secondary option on right side.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "deep_pass",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdeep attack\\b|\\bdeep corners?\\b|\\bdeep middle\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

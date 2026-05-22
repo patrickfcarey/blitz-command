@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r0f0t0w5__empty-lion__pass__lions-flood",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Lion",
+    "play_name": "Lions Flood",
+    "play_type": "pass",
+    "canonical_team": "Detroit Lions",
+    "canonical_img": 141,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Detroit Lions"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Lion",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 515,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 206
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.9,
+  "response_text": "```json\n{\n  \"concept\": \"flood\",\n  \"concepts\": [\"flood\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"dig\",\n    \"WR_SLOT_R\": \"flat\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"GUN Empty 5-wide formation. Red arrow indicates primary target (WR_Z corner route). Yellow arrows show flood concept on right side: streak (X), corner (Z), and dig/intermediate from slot. Blue dashed arrow from slot-left indicates option/checkdown. Backfield shows QB only (shotgun) with HB aligned to one side as checkdown receiver.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "flood",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bflood\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "i-form__r1f1t1w2__pro__pass__pa-raven-go-s",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Pro",
+    "play_name": "PA Raven Go's",
+    "play_type": "pass",
+    "canonical_team": "Baltimore Ravens",
+    "canonical_img": 45,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Baltimore Ravens"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "I-Form Pro default"
+    }
+  },
+  "usage": {
+    "input_tokens": 488,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 118
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 1.67,
+  "response_text": "```json\n{\n  \"concept\": \"pa_raven_go\",\n  \"concepts\": [\"pa_raven_go\"],\n  \"routes\": {\n    \"TE_L\": \"streak\",\n    \"TE_R\": \"go\",\n    \"WR_X\": \"comeback\",\n    \"WR_Z\": \"corner\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "unknown",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": null,
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "weak-i__r1f0t1w3__twins__pass__pa-boot-slide",
+  "info": {
+    "family": "WEAK-I",
+    "formation": "Twins",
+    "play_name": "PA Boot Slide",
+    "play_type": "pass",
+    "canonical_team": "Run Heavy",
+    "canonical_img": 64,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Run Heavy"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "WEAK-I",
+      "formation": "Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "low",
+      "notes": "unknown family 'WEAK-I' \u2014 generic 11-personnel guess"
+    }
+  },
+  "usage": {
+    "input_tokens": 499,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 193
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.58,
+  "response_text": "```json\n{\n  \"concept\": \"boot_pass\",\n  \"concepts\": [\"boot_pass\", \"play_action\"],\n  \"routes\": {\n    \"TE_L\": \"seam\",\n    \"TE_R\": \"wheel\",\n    \"WR_X\": \"streak\",\n    \"HB\": \"swing\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"PA Boot Slide to the right. TE_R (R1-tagged) on the wheel is the primary target. TE_L runs seam on opposite side. WR_X (X-button glyph) runs streak. HB releases to flat/swing. Red arrow indicates boot path to the right with TE_R wheel as primary.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "boot_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bboot\\b|\\bbootleg\\b",
+    "is_pa": true,
+    "is_boot_or_roll": true
+  }
+}

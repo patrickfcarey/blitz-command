@@ -1,0 +1,62 @@
+{
+  "slug": "pistol__r1f0t1w3__strong__run__tr-option-slip",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Strong",
+    "play_name": "Tr Option Slip",
+    "play_type": "run",
+    "canonical_team": "Carolina Panthers",
+    "canonical_img": 64,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Carolina Panthers",
+      "Pistol",
+      "San Francisco 49ers",
+      "Seattle Seahawks",
+      "Washington Redskins"
+    ],
+    "owner_count": 5,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Strong",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Pistol Strong/Weak"
+    }
+  },
+  "usage": {
+    "input_tokens": 497,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 218
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 61.58,
+  "response_text": "```json\n{\n  \"concept\": \"option_route\",\n  \"concepts\": [\"option_route\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_R\": \"streak\",\n    \"TE_R\": \"streak\",\n    \"HB\": \"wheel\"\n  },\n  \"ball_carrier\": \"HB D_left\",\n  \"primary_target\": null,\n  \"notes\": \"Play labeled as run (RUN banner) with option_route concept. Red arrow indicates HB ball carrier moving left edge. Yellow arrows show receiver releases/decoys. Formation is Pistol Strong (r1f0t1w3): 1 RB, 0 FB, 1 TE, 3 WR. All receivers appear to run vertical/streak routes as decoys for the option/slip carry.\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_left",
+    "c_xy": [
+      1476,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      888,
+      674
+    ],
+    "dx_from_c": -588,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "option_route",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\boption\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

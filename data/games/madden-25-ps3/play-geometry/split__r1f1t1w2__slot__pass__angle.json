@@ -1,0 +1,49 @@
+{
+  "slug": "split__r1f1t1w2__slot__pass__angle",
+  "info": {
+    "family": "SPLIT",
+    "formation": "Slot",
+    "play_name": "Angle",
+    "play_type": "pass",
+    "canonical_team": "Jimmy Johnson",
+    "canonical_img": 88,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Jimmy Johnson"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SPLIT",
+      "formation": "Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "SPLIT family \u2014 old-school 2-back default"
+    }
+  },
+  "usage": {
+    "input_tokens": 487,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 112
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.77,
+  "response_text": "```json\n{\n  \"concept\": \"angle_route\",\n  \"concepts\": [\"angle_route\"],\n  \"routes\": {\n    \"WR_X\": \"angle\",\n    \"WR_Z\": \"angle\",\n    \"TE_L\": \"block\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "angle_route",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bangle\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

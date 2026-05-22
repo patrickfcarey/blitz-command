@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__trips-y-flex__pass__bills-fork",
+  "info": {
+    "family": "GUN",
+    "formation": "Trips Y-Flex",
+    "play_name": "Bills Fork",
+    "play_type": "pass",
+    "canonical_team": "Buffalo Bills",
+    "canonical_img": 107,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Buffalo Bills"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Trips Y-Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 522,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 206
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.87,
+  "response_text": "```json\n{\n  \"concept\": \"fork_concept\",\n  \"concepts\": [\"fork_concept\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"dig\",\n    \"TE_R\": \"wheel\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"GUN Trips Y-Flex with shotgun QB. TE_R (R1 button) runs wheel route to the right. WR_X (red arrow) primary target running corner. WR_Z (yellow arrow upper right) also deep. WR_SLOT_L (purple Square button) runs dig route across middle. HB checkdown available.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "fork_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bfork\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

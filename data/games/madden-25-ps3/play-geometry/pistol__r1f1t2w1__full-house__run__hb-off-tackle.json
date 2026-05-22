@@ -1,0 +1,58 @@
+{
+  "slug": "pistol__r1f1t2w1__full-house__run__hb-off-tackle",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Full House",
+    "play_name": "HB Off Tackle",
+    "play_type": "run",
+    "canonical_team": "Pistol",
+    "canonical_img": 3,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Pistol"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Full House",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 1,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Pistol Full House \u2014 heavy backfield"
+    }
+  },
+  "usage": {
+    "input_tokens": 239,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 66
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 17.55,
+  "response_text": "```json\n{\n  \"concept\": \"off_tackle\",\n  \"concepts\": [\"off_tackle\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB B_left\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "B_left",
+    "c_xy": [
+      1476,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      1264,
+      615
+    ],
+    "dx_from_c": -212,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "off_tackle",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\boff[ -]?tackle\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

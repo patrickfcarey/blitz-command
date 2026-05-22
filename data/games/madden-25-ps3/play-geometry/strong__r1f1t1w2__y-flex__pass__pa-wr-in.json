@@ -1,0 +1,50 @@
+{
+  "slug": "strong__r1f1t1w2__y-flex__pass__pa-wr-in",
+  "info": {
+    "family": "STRONG",
+    "formation": "Y-Flex",
+    "play_name": "PA WR In",
+    "play_type": "pass",
+    "canonical_team": "Dallas Cowboys",
+    "canonical_img": 74,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Dallas Cowboys",
+      "St. Louis Rams"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "Y-Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "STRONG default \u2014 variant unclear"
+    }
+  },
+  "usage": {
+    "input_tokens": 498,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 192
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.72,
+  "response_text": "```json\n{\n  \"concept\": \"ins\",\n  \"concepts\": [\"ins\"],\n  \"routes\": {\n    \"WR_X\": \"in\",\n    \"WR_Z\": \"in\",\n    \"TE_L\": \"block\",\n    \"FB\": \"block\",\n    \"HB\": \"block\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Play-action pass with two WRs running in-breakers on the left side. Red arrow originates from QB and targets WR_X. Yellow arrows show WR_Z in-route and R1 button glyph (blue) executing a checkdown/release route to the right. OL and FB/HB engaged in pass-pro blocking.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "ins",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bins?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

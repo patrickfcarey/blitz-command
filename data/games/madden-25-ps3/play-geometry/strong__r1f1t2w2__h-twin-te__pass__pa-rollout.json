@@ -1,0 +1,50 @@
+{
+  "slug": "strong__r1f1t2w2__h-twin-te__pass__pa-rollout",
+  "info": {
+    "family": "STRONG",
+    "formation": "H Twin TE",
+    "play_name": "PA Rollout",
+    "play_type": "pass",
+    "canonical_team": "Baltimore Ravens",
+    "canonical_img": 79,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Baltimore Ravens",
+      "Joe Gibbs"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "H Twin TE",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 501,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 187
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.54,
+  "response_text": "```json\n{\n  \"concept\": \"rollout_pass\",\n  \"concepts\": [\"rollout_pass\", \"pa_pass\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"TE_R\": \"wheel\",\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"comeback\",\n    \"HB\": \"swing\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Play-action rollout to right (red arrow indicates QB direction). TE_R releases to wheel route (green arrow). WR_Z runs comeback on opposite side (yellow arrow). TE_L and backside WR block initially. HB swings as checkdown.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "rollout_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\brollout\\b|\\broll\\b",
+    "is_pa": true,
+    "is_boot_or_roll": true
+  }
+}

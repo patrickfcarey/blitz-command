@@ -1,0 +1,58 @@
+{
+  "slug": "shotgun__r1f0t1w3__normal-y-slot__run__45-quick-base",
+  "info": {
+    "family": "SHOTGUN",
+    "formation": "Normal Y-Slot",
+    "play_name": "45 Quick Base",
+    "play_type": "run",
+    "canonical_team": "Tom Landry",
+    "canonical_img": 94,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Tom Landry"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SHOTGUN",
+      "formation": "Normal Y-Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 570,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 66
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 90.53,
+  "response_text": "```json\n{\n  \"concept\": \"base_run\",\n  \"concepts\": [\"base_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB B_left\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "B_left",
+    "c_xy": [
+      1606,
+      611
+    ],
+    "arrow_los_crossing_xy": [
+      1403,
+      679
+    ],
+    "dx_from_c": -203,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "base_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bbase\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

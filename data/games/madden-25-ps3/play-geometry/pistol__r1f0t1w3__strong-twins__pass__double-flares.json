@@ -1,0 +1,51 @@
+{
+  "slug": "pistol__r1f0t1w3__strong-twins__pass__double-flares",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Strong Twins",
+    "play_name": "Double Flares",
+    "play_type": "pass",
+    "canonical_team": "Pistol",
+    "canonical_img": 15,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Pistol",
+      "San Francisco 49ers",
+      "Seattle Seahawks"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Strong Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Pistol Strong/Weak"
+    }
+  },
+  "usage": {
+    "input_tokens": 498,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 198
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.07,
+  "response_text": "```json\n{\n  \"concept\": \"flare_route\",\n  \"concepts\": [\"flare_route\"],\n  \"routes\": {\n    \"HB\": \"flare\",\n    \"FB\": \"flare\",\n    \"WR_X\": \"streak\",\n    \"TE_R\": \"seam\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"HB\",\n  \"notes\": \"Two-back flare concept from Pistol Strong Twins. HB and FB both release to flats on either side. WR_X (left) runs streak; TE_R runs seam upfield. Red arrow traces HB flare to right; backside FB mirrors flare to left (yellow dashed line indicates motion/option). R1 label on TE_R indicates throw button.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "flare_route",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bflares?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

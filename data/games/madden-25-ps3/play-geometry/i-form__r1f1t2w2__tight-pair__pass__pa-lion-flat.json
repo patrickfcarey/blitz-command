@@ -1,0 +1,49 @@
+{
+  "slug": "i-form__r1f1t2w2__tight-pair__pass__pa-lion-flat",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Tight Pair",
+    "play_name": "PA Lion Flat",
+    "play_type": "pass",
+    "canonical_team": "Detroit Lions",
+    "canonical_img": 53,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Detroit Lions"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Tight Pair",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Tight/Twin-TE \u2014 2 TE"
+    }
+  },
+  "usage": {
+    "input_tokens": 529,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 233
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.86,
+  "response_text": "```json\n{\n  \"concept\": \"flats_concept\",\n  \"concepts\": [\"flats_concept\", \"play_action\"],\n  \"routes\": {\n    \"WR_X\": \"comeback\",\n    \"WR_Z\": \"flat\",\n    \"TE_L\": \"flat\",\n    \"TE_R\": \"block\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Play-action pass with PA motion (red curved arrow from backfield). Left side: TE_L and WR_X run flat/comeback combo. Right side: WR_Z flat (primary), TE_R blocks. HB check-release. Formation is I-Form Tight Pair (r1f1t2w2): 1 RB, 1 FB (in stack), 2 TEs, 2 WRs confirmed.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "flats_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bflats?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__split-v-flex__pass__close-fb-trail",
+  "info": {
+    "family": "GUN",
+    "formation": "Split V-Flex",
+    "play_name": "Close FB Trail",
+    "play_type": "pass",
+    "canonical_team": "San Diego Chargers",
+    "canonical_img": 94,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "San Diego Chargers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Split V-Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "GUN/Shotgun default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 499,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 225
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 4.57,
+  "response_text": "```json\n{\n  \"concept\": \"trail_concept\",\n  \"concepts\": [\"trail_concept\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"corner\",\n    \"TE_R\": \"trail\",\n    \"FB\": \"wheel\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"Gun Split V-Flex with trailing TE. Red arrow (primary) targets TE_R on trail route. Outer WRs run vertical clearouts. FB executes wheel route. Yellow routes on left side (WR_X corner, WR_SLOT_L appears to be in a secondary concept). Formation shows 1 RB, 0 standalone FB in backfield (FB trails from formation), 1 TE, 3 WR.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "trail_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\btrail\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

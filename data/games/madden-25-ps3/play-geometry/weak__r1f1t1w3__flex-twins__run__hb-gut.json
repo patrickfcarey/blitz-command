@@ -1,0 +1,60 @@
+{
+  "slug": "weak__r1f1t1w3__flex-twins__run__hb-gut",
+  "info": {
+    "family": "WEAK",
+    "formation": "Flex Twins",
+    "play_name": "HB Gut",
+    "play_type": "run",
+    "canonical_team": "Arizona Cardinals",
+    "canonical_img": 73,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Arizona Cardinals",
+      "Indianapolis Colts",
+      "West Coast"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "WEAK",
+      "formation": "Flex Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 566,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 72
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 57.71,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"generic_hb_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB D_left\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_left",
+    "c_xy": [
+      1476,
+      613
+    ],
+    "arrow_los_crossing_xy": [
+      90,
+      613
+    ],
+    "dx_from_c": -1386,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "^hb \\w+",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

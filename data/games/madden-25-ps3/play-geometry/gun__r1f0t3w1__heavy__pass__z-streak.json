@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t3w1__heavy__pass__z-streak",
+  "info": {
+    "family": "GUN",
+    "formation": "Heavy",
+    "play_name": "Z Streak",
+    "play_type": "pass",
+    "canonical_team": "Run N Gun",
+    "canonical_img": 74,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Run N Gun"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Heavy",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 3,
+      "WR": 1,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 489,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 122
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 1.95,
+  "response_text": "```json\n{\n  \"concept\": \"z_concept\",\n  \"concepts\": [\"z_concept\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"TE_L\": \"corner\",\n    \"TE_R\": \"streak\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "z_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bz[- ]?(spot|cross|streak|corner|drive|trail|out|drag|sail)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

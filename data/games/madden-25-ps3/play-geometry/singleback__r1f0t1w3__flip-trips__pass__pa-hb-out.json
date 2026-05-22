@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__flip-trips__pass__pa-hb-out",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Flip Trips",
+    "play_name": "PA HB Out",
+    "play_type": "pass",
+    "canonical_team": "Dick Vermeil",
+    "canonical_img": 58,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Dick Vermeil"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Flip Trips",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 507,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 183
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.47,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"pa_pass\", \"hb_out\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_R\": \"out\",\n    \"HB\": \"out\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"HB\",\n  \"notes\": \"Play-action pass disguised as run. HB releases to the flat on an out route (red arrow). WR_X (left) runs streak; WR_Z (far right) runs corner; WR_SLOT_R runs out. Three eligible receivers plus HB checkdown.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "^hb \\w+",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "slug": "weak__r1f1t1w2__h-close-flip__run__hb-draw",
+  "info": {
+    "family": "WEAK",
+    "formation": "H Close Flip",
+    "play_name": "HB Draw",
+    "play_type": "run",
+    "canonical_team": "Baltimore Ravens",
+    "canonical_img": 94,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Baltimore Ravens"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "WEAK",
+      "formation": "H Close Flip",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "WEAK default \u2014 variant unclear"
+    }
+  },
+  "usage": {
+    "input_tokens": 560,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 60
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 57.46,
+  "response_text": "```json\n{\n  \"concept\": \"draw\",\n  \"concepts\": [\"draw\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB straight\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "straight",
+    "c_xy": [
+      1476,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      1524,
+      615
+    ],
+    "dx_from_c": 48,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "draw",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bdraw\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

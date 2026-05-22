@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__deuce__pass__fl-cross",
+  "info": {
+    "family": "GUN",
+    "formation": "Deuce",
+    "play_name": "FL Cross",
+    "play_type": "pass",
+    "canonical_team": "Denver Broncos",
+    "canonical_img": 69,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Denver Broncos"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Deuce",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Doubles \u2014 1 TE 3 WR (slot variant)"
+    }
+  },
+  "usage": {
+    "input_tokens": 491,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 176
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.77,
+  "response_text": "```json\n{\n  \"concept\": \"cross_concept\",\n  \"concepts\": [\"cross_concept\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"cross\",\n    \"WR_SLOT_L\": \"corner\",\n    \"TE_R\": \"out\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"FL Cross concept with Z receiver running horizontal cross at intermediate depth. X runs vertical clearout. Slot L runs corner route. TE_R releases for out route. HB eligible checkdown on right flat (R1 label visible).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "cross_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcross(es)?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

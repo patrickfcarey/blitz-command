@@ -1,0 +1,49 @@
+{
+  "slug": "blue__r1f1t1w3__close-twins__pass__post-drag",
+  "info": {
+    "family": "BLUE",
+    "formation": "Close Twins",
+    "play_name": "Post Drag",
+    "play_type": "pass",
+    "canonical_team": "Bill Walsh",
+    "canonical_img": 98,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Bill Walsh"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "BLUE",
+      "formation": "Close Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 493,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 247
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.68,
+  "response_text": "```json\n{\n  \"concept\": \"post_concept\",\n  \"concepts\": [\"post_concept\", \"drag\"],\n  \"routes\": {\n    \"WR_X\": \"post\",\n    \"WR_Z\": \"drag\",\n    \"WR_SLOT_L\": \"flat\",\n    \"TE_R\": \"wheel\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Post route from X WR (red arrow, primary). Z WR runs drag (yellow). Slot L runs flat (blue). TE_R wheels out to sideline (yellow arc). Close Twins formation with 1 RB, 1 FB, 1 TE, 3 WR matches r1f1t1w3. All receiver button glyphs visible: purple Square (X), blue X (Z), green Triangle (Slot), red Circle (TE_R). HB in backfield as checkdown.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "post_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpost(?![- ]corner)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

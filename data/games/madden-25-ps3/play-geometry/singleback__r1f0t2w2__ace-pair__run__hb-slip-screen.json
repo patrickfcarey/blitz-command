@@ -1,0 +1,58 @@
+{
+  "slug": "singleback__r1f0t2w2__ace-pair__run__hb-slip-screen",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Ace Pair",
+    "play_name": "HB Slip Screen",
+    "play_type": "run",
+    "canonical_team": "Detroit Lions",
+    "canonical_img": 18,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Detroit Lions"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Ace Pair",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Ace family \u2014 2 TE 2 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 506,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 115
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 50.1,
+  "response_text": "```json\n{\n  \"concept\": \"hb_screen\",\n  \"concepts\": [\"hb_screen\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"TE_R\": \"block\",\n    \"WR_X\": \"block\",\n    \"WR_Z\": \"block\"\n  },\n  \"ball_carrier\": \"HB D_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_right",
+    "c_xy": [
+      1476,
+      613
+    ],
+    "arrow_los_crossing_xy": [
+      2360,
+      613
+    ],
+    "dx_from_c": 884,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "hb_screen",
+    "concept_family": "screen",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bhb (slip )?screen\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

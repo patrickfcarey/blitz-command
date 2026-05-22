@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__trio__pass__pa-bubble-screen",
+  "info": {
+    "family": "GUN",
+    "formation": "Trio",
+    "play_name": "PA Bubble Screen",
+    "play_type": "pass",
+    "canonical_team": "Chicago Bears",
+    "canonical_img": 99,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Chicago Bears"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Trio",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "GUN/Shotgun default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 493,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 180
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.31,
+  "response_text": "```json\n{\n  \"concept\": \"bubble_screen\",\n  \"concepts\": [\"bubble_screen\"],\n  \"routes\": {\n    \"WR_X\": \"bubble_screen\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_R\": \"streak\",\n    \"TE_R\": \"block\",\n    \"HB\": \"pass_pro\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"PA Bubble Screen with outside receiver (WR_X) receiving short bubble route. Secondary receivers (WR_Z and WR_SLOT_R) run vertical clearout streaks. TE_R and HB provide blocking support.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "bubble_screen",
+    "concept_family": "screen",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bbubble screen\\b|\\bwr bubble\\b|\\bbubble\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

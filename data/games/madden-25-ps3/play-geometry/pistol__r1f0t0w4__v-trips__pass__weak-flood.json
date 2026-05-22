@@ -1,0 +1,49 @@
+{
+  "slug": "pistol__r1f0t0w4__v-trips__pass__weak-flood",
+  "info": {
+    "family": "PISTOL",
+    "formation": "V-Trips",
+    "play_name": "Weak Flood",
+    "play_type": "pass",
+    "canonical_team": "Pistol",
+    "canonical_img": 75,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Pistol"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "V-Trips",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 0,
+      "WR": 4,
+      "total": 6,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 495,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 202
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.51,
+  "response_text": "```json\n{\n  \"concept\": \"weak_flood\",\n  \"concepts\": [\"weak_flood\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"curl\",\n    \"WR_SLOT_L\": \"flat\",\n    \"WR_SLOT_R\": \"streak\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Weak-side flood concept with three receivers at different depths on the weak side (left). WR_Z runs curl at intermediate depth, WR_SLOT_L runs flat underneath, WR_SLOT_R runs vertical stretch. WR_X (strong side) runs corner as clearout. HB eligible for check-release.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "flood",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bflood\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

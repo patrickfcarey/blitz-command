@@ -1,0 +1,49 @@
+{
+  "slug": "strong__r1f1t1w2__h-pro__pass__te-option",
+  "info": {
+    "family": "STRONG",
+    "formation": "H Pro",
+    "play_name": "TE Option",
+    "play_type": "pass",
+    "canonical_team": "Oakland Raiders",
+    "canonical_img": 69,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Oakland Raiders"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "H Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 165,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 151
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.47,
+  "response_text": "```json\n{\n  \"concept\": \"option_pass\",\n  \"concepts\": [\"option_pass\"],\n  \"routes\": {\n    \"TE_R\": \"option\",\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"comeback\",\n    \"HB\": \"swing\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"TE_R runs option route (dashed line indicating read/progression). Primary target marked with R1 shoulder button glyph. Red arrow from TE_R indicates primary pass option.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "option_pass",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bhb option\\b|\\bte option\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "gun__r1f0t2w2__ace__pass__pa-te-corners",
+  "info": {
+    "family": "GUN",
+    "formation": "Ace",
+    "play_name": "PA TE Corners",
+    "play_type": "pass",
+    "canonical_team": "Carolina Panthers",
+    "canonical_img": 85,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Carolina Panthers",
+      "Detroit Lions"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Ace",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Ace \u2014 2 TE 2 WR (shotgun-ace)"
+    }
+  },
+  "usage": {
+    "input_tokens": 496,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 221
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.85,
+  "response_text": "```json\n{\n  \"concept\": \"pa_te_corners\",\n  \"concepts\": [\"pa_te_corners\"],\n  \"routes\": {\n    \"TE_L\": \"corner\",\n    \"TE_R\": \"corner\",\n    \"WR_X\": \"drag\",\n    \"WR_Z\": \"slant\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"Play-action pass with TE corners concept. Red arrow indicates primary target TE_R corner route. TE_L runs corner to opposite side. WR_X (left slot, purple \u25a1 button) runs drag/crossing route. WR_Z (right side, blue \u2297 button) runs slant. HB (R1 label) positioned for check-release. Yellow route arrows show secondary progression paths.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "receiver_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\b(wr|te|x|y|z|fl|se|slot|h) (corner|drag|hook|option|under|seam|follow|attack|inside|angle|shake|fork|scissors|cross|trail|streak|spot|fade|in|out|wheel|seams|hooks|corners|outs|ins|posts|streaks)\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

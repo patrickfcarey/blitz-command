@@ -1,0 +1,50 @@
+{
+  "slug": "pistol__r1f0t0w4__spread__pass__pa-bubble",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Spread",
+    "play_name": "PA Bubble",
+    "play_type": "pass",
+    "canonical_team": "Pistol",
+    "canonical_img": 102,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Pistol",
+      "Run and Shoot"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Spread",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 0,
+      "WR": 4,
+      "total": 6,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 492,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 193
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.81,
+  "response_text": "```json\n{\n  \"concept\": \"bubble_screen\",\n  \"concepts\": [\"bubble_screen\"],\n  \"routes\": {\n    \"WR_X\": \"bubble\",\n    \"WR_Z\": \"bubble\",\n    \"WR_SLOT_L\": \"bubble\",\n    \"WR_SLOT_R\": \"block\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"PA Bubble screen \u2014 QB receives snap in Pistol, play-action freeze, then quick throw to bubble receiver (WR_X) on the perimeter. Three receivers running bubble routes at different widths; WR_SLOT_R blocks downfield initially. HB available as safety checkdown.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "bubble_screen",
+    "concept_family": "screen",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bbubble screen\\b|\\bwr bubble\\b|\\bbubble\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

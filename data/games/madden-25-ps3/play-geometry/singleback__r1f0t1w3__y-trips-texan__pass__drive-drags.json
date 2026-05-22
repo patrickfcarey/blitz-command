@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__y-trips-texan__pass__drive-drags",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Y-Trips Texan",
+    "play_name": "Drive Drags",
+    "play_type": "pass",
+    "canonical_team": "Houston Texans",
+    "canonical_img": 48,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Houston Texans"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Y-Trips Texan",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 506,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 181
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.77,
+  "response_text": "```json\n{\n  \"concept\": \"drive_concept\",\n  \"concepts\": [\"drive_drags\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"drag\",\n    \"WR_SLOT_L\": \"drag\",\n    \"TE_R\": \"drag\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Drive Drags with three drag routes (Z WR, slot WR, and TE) crossing at intermediate depth. X WR runs streak clearout. HB in checkdown role. Yellow dashed line indicates option/timing window on the left drag.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "drive_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdrive\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

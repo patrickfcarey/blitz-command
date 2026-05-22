@@ -1,0 +1,49 @@
+{
+  "slug": "split__r1f1t1w2__slot__pass__z-option",
+  "info": {
+    "family": "SPLIT",
+    "formation": "Slot",
+    "play_name": "Z Option",
+    "play_type": "pass",
+    "canonical_team": "Pass Balanced",
+    "canonical_img": 71,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Pass Balanced"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SPLIT",
+      "formation": "Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "SPLIT family \u2014 old-school 2-back default"
+    }
+  },
+  "usage": {
+    "input_tokens": 514,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 194
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.87,
+  "response_text": "```json\n{\n  \"concept\": \"receiver_concept\",\n  \"concepts\": [\"z_option\"],\n  \"routes\": {\n    \"WR_X\": \"option\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"flat\",\n    \"TE_L\": \"corner\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Z Option pass concept with option route on outside WR (X), vertical stretch from Z, slot flat, TE corner, and HB checkdown. Visible button glyphs (\u25a1 purple, \u25b3 green, \u2297 blue, \u2299 red, R1) map to receiver targets.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "receiver_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\b(wr|te|x|y|z|fl|se|slot|h) (corner|drag|hook|option|under|seam|follow|attack|inside|angle|shake|fork|scissors|cross|trail|streak|spot|fade|in|out|wheel|seams|hooks|corners|outs|ins|posts|streaks)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

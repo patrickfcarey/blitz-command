@@ -1,0 +1,49 @@
+{
+  "slug": "i-form__r1f1t1w3__twins-flex__pass__pa-saints-misdirect",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Twins Flex",
+    "play_name": "PA Saints Misdirect",
+    "play_type": "pass",
+    "canonical_team": "New Orleans Saints",
+    "canonical_img": 54,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "New Orleans Saints"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Twins Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Twins \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 492,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 243
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.7,
+  "response_text": "```json\n{\n  \"concept\": \"pa_saints_misdirect\",\n  \"concepts\": [\"pa_saints_misdirect\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_R\": \"drag\",\n    \"TE_L\": \"block\",\n    \"HB\": \"wheel\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Play-action passing concept. Red arrow (primary) goes to WR_X streak. Multiple route branches visible: cyan arrow to WR_Z corner, yellow arrow suggests drag from slot receiver, and wheel route from HB. TE_L stays in for pass protection. Formation matches I-Form Twins Flex (r1f1t1w3): QB + FB + HB stacked in backfield, 1 TE left, 3 WRs (X, Z, slot right).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "unknown",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": null,
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

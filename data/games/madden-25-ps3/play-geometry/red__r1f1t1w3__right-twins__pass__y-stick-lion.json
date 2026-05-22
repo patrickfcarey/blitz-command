@@ -1,0 +1,49 @@
+{
+  "slug": "red__r1f1t1w3__right-twins__pass__y-stick-lion",
+  "info": {
+    "family": "RED",
+    "formation": "Right Twins",
+    "play_name": "Y Stick Lion",
+    "play_type": "pass",
+    "canonical_team": "Bill Walsh",
+    "canonical_img": 54,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Bill Walsh"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "RED",
+      "formation": "Right Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 493,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 212
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.02,
+  "response_text": "```json\n{\n  \"concept\": \"stick\",\n  \"concepts\": [\"stick\"],\n  \"routes\": {\n    \"WR_Z\": \"streak\",\n    \"WR_X\": \"stick\",\n    \"WR_SLOT_R\": \"flat\",\n    \"TE_R\": \"corner\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Y Stick Lion runs stick concept to the right side (Z streak, X stick at 5 yds, slot flat). TE_R runs corner over the flat route on right side. Left-side WR (slot, purple \u25a1) and HB (\u2299 red button) are secondary options. Backfield shows HB below LOS ready for checkdown. Red arrow indicates primary read on X stick route.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "stick",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bstick\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

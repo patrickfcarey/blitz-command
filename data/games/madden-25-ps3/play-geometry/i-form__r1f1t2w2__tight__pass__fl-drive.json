@@ -1,0 +1,52 @@
+{
+  "slug": "i-form__r1f1t2w2__tight__pass__fl-drive",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Tight",
+    "play_name": "FL Drive",
+    "play_type": "pass",
+    "canonical_team": "Balanced",
+    "canonical_img": 46,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Balanced",
+      "Denver Broncos",
+      "Jacksonville Jaguars",
+      "New Orleans Saints"
+    ],
+    "owner_count": 4,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Tight",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Tight/Twin-TE \u2014 2 TE"
+    }
+  },
+  "usage": {
+    "input_tokens": 493,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 215
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.69,
+  "response_text": "```json\n{\n  \"concept\": \"drive_concept\",\n  \"concepts\": [\"drive_concept\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"drive\",\n    \"TE_L\": \"wheel\",\n    \"TE_R\": \"block\",\n    \"HB\": \"checkdown\",\n    \"FB\": \"block\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"I-Form Tight with 2 TEs. WR_Z (Triangle) runs the primary drive route. WR_X (Square) runs streak. TE_L (left TE) releases to wheel. TE_R appears to block. HB runs checkdown/outlet. FB blocks. R1 button (red Circle) on right edge appears to be a secondary option.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "drive_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdrive\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "singleback__r1f0t3w1__jumbo-pair__pass__pa-power-o",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Jumbo Pair",
+    "play_name": "PA Power O",
+    "play_type": "pass",
+    "canonical_team": "New England Patriots",
+    "canonical_img": 3,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "New England Patriots",
+      "San Francisco 49ers"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Jumbo Pair",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 3,
+      "WR": 1,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Jumbo \u2014 typically 3 TE 1 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 177,
+    "cache_creation_input_tokens": 352,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 186
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 9.55,
+  "response_text": "```json\n{\n  \"concept\": \"power_o\",\n  \"concepts\": [\"power_o\", \"pa_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"comeback\",\n    \"TE_L\": \"block\",\n    \"TE_R\": \"wheel\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Play-action Power O with 3 TE set (Jumbo Pair formation). WR_X running red primary streak. TE_R running wheel route (cyan arrow). WR_Z running comeback route (yellow). One TE remaining in blocking assignment.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "power_o",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpower ?o\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

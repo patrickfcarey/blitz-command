@@ -1,0 +1,49 @@
+{
+  "slug": "i-form__r1f1t1w2__hulk__pass__te-poco",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Hulk",
+    "play_name": "TE Poco",
+    "play_type": "pass",
+    "canonical_team": "Indianapolis Colts",
+    "canonical_img": 69,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Indianapolis Colts"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Hulk",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "I-Form Pro default"
+    }
+  },
+  "usage": {
+    "input_tokens": 509,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 204
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.47,
+  "response_text": "```json\n{\n  \"concept\": \"te_poco\",\n  \"concepts\": [\"te_poco\"],\n  \"routes\": {\n    \"TE_L\": \"corner\",\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"comeback\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_L\",\n  \"notes\": \"I-Form Hulk with 1 RB, 1 FB, 1 TE (left), 2 WRs. Red arrow from TE_L indicates primary target running corner route. TE_L has R1 button glyph. WR_X (right, X button) runs streak; WR_Z (slot, Triangle button) runs comeback. Play name 'TE Poco' matches TE-centric concept.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "unknown",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": null,
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

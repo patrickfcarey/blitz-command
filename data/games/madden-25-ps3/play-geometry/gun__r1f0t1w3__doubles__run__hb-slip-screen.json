@@ -1,0 +1,60 @@
+{
+  "slug": "gun__r1f0t1w3__doubles__run__hb-slip-screen",
+  "info": {
+    "family": "GUN",
+    "formation": "Doubles",
+    "play_name": "HB Slip Screen",
+    "play_type": "run",
+    "canonical_team": "Houston Texans",
+    "canonical_img": 112,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Houston Texans",
+      "Indianapolis Colts",
+      "Pass Balanced"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Doubles",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Doubles \u2014 1 TE 3 WR (slot variant)"
+    }
+  },
+  "usage": {
+    "input_tokens": 523,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 127
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 5.4,
+  "response_text": "```json\n{\n  \"concept\": \"hb_screen\",\n  \"concepts\": [\"hb_screen\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"comeback\",\n    \"WR_SLOT_L\": \"block\",\n    \"TE_R\": \"block\",\n    \"HB\": \"screen\"\n  },\n  \"ball_carrier\": \"HB D_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_right",
+    "c_xy": [
+      1551,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      2419,
+      615
+    ],
+    "dx_from_c": 868,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "hb_screen",
+    "concept_family": "screen",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bhb (slip )?screen\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

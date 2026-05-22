@@ -1,0 +1,49 @@
+{
+  "slug": "strong__r1f1t1w3__pro-twins__pass__pa-fb-fake",
+  "info": {
+    "family": "STRONG",
+    "formation": "Pro Twins",
+    "play_name": "PA FB Fake",
+    "play_type": "pass",
+    "canonical_team": "Tennessee Titans",
+    "canonical_img": 76,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Tennessee Titans"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "Pro Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 498,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 202
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.05,
+  "response_text": "```json\n{\n  \"concept\": \"play_fake\",\n  \"concepts\": [\"play_fake\", \"pa_pass\"],\n  \"routes\": {\n    \"FB\": \"fake_dive\",\n    \"HB\": \"swing\",\n    \"TE_L\": \"block\",\n    \"TE_R\": \"corner\",\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"in\",\n    \"WR_SLOT_R\": \"streak\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"PA FB Fake with motion; TE_R releases to corner over R1 button glyph; multiple vertical threats downfield; HB available as checkdown swing route.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "play_fake",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bfakes?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

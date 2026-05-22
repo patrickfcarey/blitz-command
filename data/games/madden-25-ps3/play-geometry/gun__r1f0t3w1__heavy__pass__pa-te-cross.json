@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t3w1__heavy__pass__pa-te-cross",
+  "info": {
+    "family": "GUN",
+    "formation": "Heavy",
+    "play_name": "PA TE Cross",
+    "play_type": "pass",
+    "canonical_team": "Run N Gun",
+    "canonical_img": 72,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Run N Gun"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Heavy",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 3,
+      "WR": 1,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 494,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 220
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.18,
+  "response_text": "```json\n{\n  \"concept\": \"cross_concept\",\n  \"concepts\": [\"pa_te_cross\", \"cross\"],\n  \"routes\": {\n    \"TE_L\": \"cross\",\n    \"TE_R\": \"cross\",\n    \"TE_WING_L\": \"block\",\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"streak\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"PA action with TE crossing concept. Two TEs running crossing routes at intermediate depth; wing TE blocks on play-action. WR_X corner route clears the intermediate level; WR_Z streak clears deep. Primary read appears to be TE_R crossing right side (red arrow). Blue arrow on WR_Z indicates release-after-block.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "cross_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcross(es)?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

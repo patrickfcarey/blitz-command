@@ -1,0 +1,49 @@
+{
+  "slug": "weak__r1f1t1w2__pro__pass__pa-packer-y-go",
+  "info": {
+    "family": "WEAK",
+    "formation": "Pro",
+    "play_name": "PA Packer Y Go",
+    "play_type": "pass",
+    "canonical_team": "Green Bay Packers",
+    "canonical_img": 65,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Green Bay Packers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "WEAK",
+      "formation": "Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 484,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 207
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.88,
+  "response_text": "```json\n{\n  \"concept\": \"pa_packer_y_go\",\n  \"concepts\": [\"pa_packer_y_go\"],\n  \"routes\": {\n    \"TE_R\": \"seam\",\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"Play-action bootleg with TE seam as primary. Red arrow traces TE_R vertical release upfield. WR_X (purple \u25a1) runs streak left sideline; WR_Z (red \u2299) runs corner route right side. HB releases into flat as safety valve. Weak-side FB offset left of QB. Standard PA Packer Y Go structure.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "unknown",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": null,
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

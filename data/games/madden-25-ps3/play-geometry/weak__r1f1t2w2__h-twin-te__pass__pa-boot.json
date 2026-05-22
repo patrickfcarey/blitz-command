@@ -1,0 +1,49 @@
+{
+  "slug": "weak__r1f1t2w2__h-twin-te__pass__pa-boot",
+  "info": {
+    "family": "WEAK",
+    "formation": "H Twin TE",
+    "play_name": "PA Boot",
+    "play_type": "pass",
+    "canonical_team": "Joe Gibbs",
+    "canonical_img": 99,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Joe Gibbs"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "WEAK",
+      "formation": "H Twin TE",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 497,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 246
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.07,
+  "response_text": "```json\n{\n  \"concept\": \"boot_pass\",\n  \"concepts\": [\"boot_pass\"],\n  \"routes\": {\n    \"TE_L\": \"seam\",\n    \"TE_R\": \"flat\",\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"comeback\",\n    \"HB\": \"swing\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"PA Boot play. QB appears to roll right with play-action fake. TE_L runs seam route (yellow arrow), TE_R runs flat to right (R1 checkdown, teal arrow). WR_X (\u2297 blue button) runs corner route (yellow arrow angling upper right). WR_Z (\u25a1 purple button) runs comeback route (red arrow, primary). HB positioned for swing release. Two TE set confirmed (WEAK H Twin TE formation). Standard boot pass structure with inside TE and RB as checkdowns.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "boot_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bboot\\b|\\bbootleg\\b",
+    "is_pa": true,
+    "is_boot_or_roll": true
+  }
+}

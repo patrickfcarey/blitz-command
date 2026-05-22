@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__y-trips-wk__pass__colts-deep-in",
+  "info": {
+    "family": "GUN",
+    "formation": "Y Trips Wk",
+    "play_name": "Colts Deep In",
+    "play_type": "pass",
+    "canonical_team": "Indianapolis Colts",
+    "canonical_img": 112,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Indianapolis Colts"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Y Trips Wk",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 504,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 235
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.34,
+  "response_text": "```json\n{\n  \"concept\": \"deep_in\",\n  \"concepts\": [\"deep_in\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"deep_in\",\n    \"WR_SLOT_L\": \"dig\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"GUN Y Trips Wk formation (r1f0t1w3). Red arrow originates from QB and targets WR_Z on the deep in route. Yellow arrows visible on WR_X (streak), WR_SLOT_L (dig), and TE_R (seam). R1 button glyph visible on far right (Circle receiver, likely checkdown). Slot WR running dig at intermediate depth; Z-receiver running the primary deep in cut.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "deep_in",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdeep in\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__tight-doubles__pass__switch-post",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Tight Doubles",
+    "play_name": "Switch Post",
+    "play_type": "pass",
+    "canonical_team": "Dick Vermeil",
+    "canonical_img": 26,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Dick Vermeil"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Tight Doubles",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 497,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 184
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.61,
+  "response_text": "```json\n{\n  \"concept\": \"post_concept\",\n  \"concepts\": [\"post_concept\"],\n  \"routes\": {\n    \"WR_X\": \"post\",\n    \"WR_Z\": \"post\",\n    \"WR_SLOT_L\": \"dig\",\n    \"TE_R\": \"corner\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Two outside WRs running posts (X and Z); slot WR running dig route underneath; TE_R running corner route to right; HB available as checkdown. R1 button glyph visible on TE_R confirming right-side read option.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "post_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpost(?![- ]corner)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

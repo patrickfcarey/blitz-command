@@ -1,0 +1,59 @@
+{
+  "slug": "i-form__r1f1t1w2__tackle-over__run__hb-toss",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Tackle Over",
+    "play_name": "HB Toss",
+    "play_type": "run",
+    "canonical_team": "Indianapolis Colts",
+    "canonical_img": 64,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Indianapolis Colts",
+      "St. Louis Rams"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Tackle Over",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "I-Form Pro default"
+    }
+  },
+  "usage": {
+    "input_tokens": 571,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 72
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 23.39,
+  "response_text": "```json\n{\n  \"concept\": \"outside_run_toss\",\n  \"concepts\": [\"outside_run_toss\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB D_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_right",
+    "c_xy": [
+      1606,
+      611
+    ],
+    "arrow_los_crossing_xy": [
+      2244,
+      720
+    ],
+    "dx_from_c": 638,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "outside_run_toss",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bhb toss\\b|\\btoss\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

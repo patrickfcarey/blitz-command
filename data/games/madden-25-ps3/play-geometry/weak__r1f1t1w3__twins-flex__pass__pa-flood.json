@@ -1,0 +1,51 @@
+{
+  "slug": "weak__r1f1t1w3__twins-flex__pass__pa-flood",
+  "info": {
+    "family": "WEAK",
+    "formation": "Twins Flex",
+    "play_name": "PA Flood",
+    "play_type": "pass",
+    "canonical_team": "Chicago Bears",
+    "canonical_img": 77,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Chicago Bears",
+      "Dallas Cowboys",
+      "Miami Dolphins"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "WEAK",
+      "formation": "Twins Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 494,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 178
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.98,
+  "response_text": "```json\n{\n  \"concept\": \"flood\",\n  \"concepts\": [\"flood\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"dig\",\n    \"WR_SLOT_R\": \"flat\",\n    \"TE_R\": \"wheel\",\n    \"FB\": \"block\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"PA play-action with flood concept to right side. Red arrow on WR_X (corner route). Weak formation with FB offset weak (left), HB at depth. TE_R wheels out to flat. WR_Z runs intermediate dig route. Standard flood structure.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "flood",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bflood\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r0f0t0w5__empty-spread__pass__shallow-cross",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Spread",
+    "play_name": "Shallow Cross",
+    "play_type": "pass",
+    "canonical_team": "Dick Vermeil",
+    "canonical_img": 137,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Dick Vermeil"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Spread",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 518,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 186
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.82,
+  "response_text": "```json\n{\n  \"concept\": \"cross_concept\",\n  \"concepts\": [\"shallow_cross\"],\n  \"routes\": {\n    \"WR_X\": \"shallow_cross\",\n    \"WR_Z\": \"shallow_cross\",\n    \"WR_SLOT_L\": \"vertical\",\n    \"WR_SLOT_R\": \"vertical\",\n    \"WR_FLANKER\": \"vertical\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"GUN Empty Spread (5 WR, 0 TE). Two shallow crossing routes (X and Z) with three vertical clearouts on the perimeter. Red primary arrow on X shallow cross. Yellow arrows indicate vertical stretches.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "cross_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcross(es)?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

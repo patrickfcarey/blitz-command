@@ -1,0 +1,68 @@
+{
+  "slug": "i-form__r1f1t2w2__tight-pair__pass__pa-spot",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Tight Pair",
+    "play_name": "PA Spot",
+    "play_type": "pass",
+    "canonical_team": "Arizona Cardinals",
+    "canonical_img": 62,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Arizona Cardinals",
+      "Atlanta Falcons",
+      "Buffalo Bills",
+      "Carolina Panthers",
+      "Cincinnati Bengals",
+      "Dallas Cowboys",
+      "Denver Broncos",
+      "Dick Vermeil",
+      "Houston Texans",
+      "Indianapolis Colts",
+      "Jacksonville Jaguars",
+      "Joe Gibbs",
+      "New England Patriots",
+      "New York Giants",
+      "Pittsburgh Steelers",
+      "Run Balanced",
+      "Run Heavy",
+      "San Francisco 49ers",
+      "Tampa Bay Buccaneers",
+      "Tennessee Titans"
+    ],
+    "owner_count": 20,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Tight Pair",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Tight/Twin-TE \u2014 2 TE"
+    }
+  },
+  "usage": {
+    "input_tokens": 500,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 186
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.49,
+  "response_text": "```json\n{\n  \"concept\": \"spot_concept\",\n  \"concepts\": [\"spot_concept\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"TE_R\": \"spot\",\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"comeback\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"Play-action pass with PA motion. TE_R runs the spot/sit route at intermediate depth (primary target, red arrow). WR_X runs corner to clear deep right. WR_Z runs comeback left. HB appears as checkdown option below LOS with R1 button assignment.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "spot_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bspot\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

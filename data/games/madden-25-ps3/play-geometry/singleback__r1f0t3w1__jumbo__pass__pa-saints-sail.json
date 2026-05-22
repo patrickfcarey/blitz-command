@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t3w1__jumbo__pass__pa-saints-sail",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Jumbo",
+    "play_name": "PA Saints Sail",
+    "play_type": "pass",
+    "canonical_team": "New Orleans Saints",
+    "canonical_img": 2,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "New Orleans Saints"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Jumbo",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 3,
+      "WR": 1,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Jumbo \u2014 typically 3 TE 1 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 499,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 182
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.5,
+  "response_text": "```json\n{\n  \"concept\": \"sail\",\n  \"concepts\": [\"sail\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"TE_R\": \"sail\",\n    \"TE_WING_R\": \"corner\",\n    \"WR_X\": \"streak\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"Play-action PA Saints Sail. TE_R runs the sail (intermediate out-corner). TE_WING_R runs corner route clearing over the top. WR_X streaks vertically. TE_L stays in for pass-pro block. Red arrow indicates primary throw to TE_R on sail route.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "sail",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bsail\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

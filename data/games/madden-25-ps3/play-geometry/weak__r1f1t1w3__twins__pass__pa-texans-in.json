@@ -1,0 +1,49 @@
+{
+  "slug": "weak__r1f1t1w3__twins__pass__pa-texans-in",
+  "info": {
+    "family": "WEAK",
+    "formation": "Twins",
+    "play_name": "PA Texans In",
+    "play_type": "pass",
+    "canonical_team": "Houston Texans",
+    "canonical_img": 88,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Houston Texans"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "WEAK",
+      "formation": "Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 495,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 190
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.71,
+  "response_text": "```json\n{\n  \"concept\": \"ins\",\n  \"concepts\": [\"ins\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"in\",\n    \"TE_R\": \"in\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"PA play with inside breaking routes on both sides. Red arrow indicates primary target TE_R running in-breaker. Yellow routes show WR_Z corner on right and WR_SLOT_L in-route on left. WR_X streaks vertically as clearout. HB likely checks release underneath.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "ins",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bins?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "slug": "strong__r1f1t1w2__pro__pass__pa-power-0",
+  "info": {
+    "family": "STRONG",
+    "formation": "Pro",
+    "play_name": "PA Power 0",
+    "play_type": "pass",
+    "canonical_team": "Balanced",
+    "canonical_img": 51,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Balanced",
+      "Chicago Bears",
+      "Miami Dolphins",
+      "San Francisco 49ers",
+      "Tennessee Titans"
+    ],
+    "owner_count": 5,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 494,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 253
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.6,
+  "response_text": "```json\n{\n  \"concept\": \"power_run\",\n  \"concepts\": [\"pa_power_o\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"drag\",\n    \"TE_R\": \"wheel\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Play-action Power O fake with pass progression. QB shows the power O run to the right (HB path indicated by dashed line), then pulls ball out and throws. TE_R (R1 button) appears to be primary target on wheel route; WR_Z (Circle button) on corner is secondary. WR_X running streak, WR_SLOT_L on drag. Formation is Strong Pro with 1 RB, 1 FB (likely off-screen or obscured in backfield), 1 TE right, 2 WRs.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "power_run",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpower\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

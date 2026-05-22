@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t2w2__ace-pair-flex__pass__pa-y-cross",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Ace Pair Flex",
+    "play_name": "PA Y-Cross",
+    "play_type": "pass",
+    "canonical_team": "Detroit Lions",
+    "canonical_img": 21,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Detroit Lions"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Ace Pair Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Ace family \u2014 2 TE 2 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 507,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 213
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.62,
+  "response_text": "```json\n{\n  \"concept\": \"y_concept\",\n  \"concepts\": [\"y_concept\", \"pa_pass\"],\n  \"routes\": {\n    \"TE_L\": \"seam\",\n    \"TE_R\": \"out\",\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"drag\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_L\",\n  \"notes\": \"Play-action pass with Y-Cross concept. Red arrow (primary) targets TE_L on seam route. Yellow arrow outline indicates play-action fake. R1 button glyph on far right WR (likely WR_Z or slot receiver) available as option. Formation shows 2 TEs inline (Ace Pair), 2 WRs spread. Backfield shows QB + HB in shotgun alignment.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "y_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\by[- ]?(cross|sail|stick|corner|trail|spot|drive|shallow)\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

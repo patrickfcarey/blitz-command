@@ -1,0 +1,49 @@
+{
+  "slug": "weak__r1f1t1w3__slot__pass__pa-power-o",
+  "info": {
+    "family": "WEAK",
+    "formation": "Slot",
+    "play_name": "PA Power O",
+    "play_type": "pass",
+    "canonical_team": "Run Balanced",
+    "canonical_img": 77,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Run Balanced"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "WEAK",
+      "formation": "Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 494,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 237
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.71,
+  "response_text": "```json\n{\n  \"concept\": \"power_o\",\n  \"concepts\": [\"power_o\", \"pa_pass\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"TE_R\": \"block\",\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"flat\",\n    \"WR_SLOT_R\": \"dig\",\n    \"HB\": \"wheel\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_R\",\n  \"notes\": \"Play-action pass mimicking power run. Red arrow (primary) targets slot receiver on dig route. Yellow arrow from slot-left receiver extends upfield (secondary option). Formation appears to be Weak personnel with 1 TE left, 1 TE right, 3 WRs (X, Z, slot pair), and backfield with QB and HB.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "power_o",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpower ?o\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

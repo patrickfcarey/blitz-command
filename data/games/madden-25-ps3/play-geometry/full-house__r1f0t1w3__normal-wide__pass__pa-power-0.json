@@ -1,0 +1,49 @@
+{
+  "slug": "full-house__r1f0t1w3__normal-wide__pass__pa-power-0",
+  "info": {
+    "family": "FULL-HOUSE",
+    "formation": "Normal Wide",
+    "play_name": "PA Power 0",
+    "play_type": "pass",
+    "canonical_team": "Vince Lombardi",
+    "canonical_img": 31,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Vince Lombardi"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "FULL-HOUSE",
+      "formation": "Normal Wide",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "low",
+      "notes": "unknown family 'FULL-HOUSE' \u2014 generic 11-personnel guess"
+    }
+  },
+  "usage": {
+    "input_tokens": 527,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 259
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.52,
+  "response_text": "```json\n{\n  \"concept\": \"power_run\",\n  \"concepts\": [\"power_run\", \"pa_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"TE_R\": \"flat\",\n    \"HB\": \"swing\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Play-action Power O fake. Red arrow indicates primary target WR_X (circle button glyph) attacking vertically. Yellow arrow shows WR_Z corner route on left side. TE_R appears to run flat. Formation is Full-House (1 RB, 1 FB, 1 TE, 3 WR) with compact backfield. WR_X button glyph on far right; WR_Z button glyph (purple square) on far left with yellow corner route; TE_R (blue X glyph) near right side; HB evident in backfield with blue swing indication. QB under center.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "power_run",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpower\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

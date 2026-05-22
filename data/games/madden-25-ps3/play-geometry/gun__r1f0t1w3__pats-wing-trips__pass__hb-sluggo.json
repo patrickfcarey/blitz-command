@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__pats-wing-trips__pass__hb-sluggo",
+  "info": {
+    "family": "GUN",
+    "formation": "Pats Wing Trips",
+    "play_name": "HB Sluggo",
+    "play_type": "pass",
+    "canonical_team": "New England Patriots",
+    "canonical_img": 94,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "New England Patriots"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Pats Wing Trips",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 244,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 199
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 7.38,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"generic_hb_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB B_right\",\n  \"primary_target\": null,\n  \"notes\": \"Play labeled as PASS in UI but py_concept indicates run family. HB carries red arrow to right B-gap. Formation is GUN with 1 RB, 0 FB, 1 TE, 3 WR (r1f0t1w3). Visible: QB in shotgun, HB aligned to right; TE_R on LOS right of RT; WR_X far right (with R1 button); WR_Z left; WR_SLOT center-left. All receivers block; HB is ball-carrier.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "^hb \\w+",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

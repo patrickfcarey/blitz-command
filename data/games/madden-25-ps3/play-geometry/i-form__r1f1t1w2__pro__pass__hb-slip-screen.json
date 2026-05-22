@@ -1,0 +1,59 @@
+{
+  "slug": "i-form__r1f1t1w2__pro__pass__hb-slip-screen",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Pro",
+    "play_name": "HB Slip Screen",
+    "play_type": "pass",
+    "canonical_team": "Arizona Cardinals",
+    "canonical_img": 52,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Arizona Cardinals",
+      "Atlanta Falcons",
+      "Carolina Panthers",
+      "Houston Texans",
+      "Minnesota Vikings",
+      "New Orleans Saints",
+      "Pass Balanced",
+      "Run Balanced",
+      "San Diego Chargers",
+      "St. Louis Rams",
+      "Tennessee Titans"
+    ],
+    "owner_count": 11,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "I-Form Pro default"
+    }
+  },
+  "usage": {
+    "input_tokens": 499,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 120
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 1.56,
+  "response_text": "```json\n{\n  \"concept\": \"hb_screen\",\n  \"concepts\": [\"hb_screen\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"comeback\",\n    \"TE_L\": \"block\",\n    \"FB\": \"lead_block\",\n    \"HB\": \"screen\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"HB\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "hb_screen",
+    "concept_family": "screen",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bhb (slip )?screen\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

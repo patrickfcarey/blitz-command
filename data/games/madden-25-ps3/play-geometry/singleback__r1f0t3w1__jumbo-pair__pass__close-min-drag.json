@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t3w1__jumbo-pair__pass__close-min-drag",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Jumbo Pair",
+    "play_name": "Close Min Drag",
+    "play_type": "pass",
+    "canonical_team": "Minnesota Vikings",
+    "canonical_img": 3,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Minnesota Vikings"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Jumbo Pair",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 3,
+      "WR": 1,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Jumbo \u2014 typically 3 TE 1 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 502,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 224
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.86,
+  "response_text": "```json\n{\n  \"concept\": \"drags\",\n  \"concepts\": [\"drags\"],\n  \"routes\": {\n    \"TE_L\": \"drag\",\n    \"TE_R\": \"drag\",\n    \"TE_WING_R\": \"corner\",\n    \"WR_X\": \"comeback\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_L\",\n  \"notes\": \"Two TE drags across the formation (red arrow on TE_L indicates primary read). TE_R runs complementary drag. TE_WING_R on right side runs corner as clearout. WR_X on left runs comeback. R1 button glyph visible on right side (likely secondary target or outlet). Formation is Jumbo Pair with 3 TEs (TE_L, TE_R, TE_WING_R) and 1 WR.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "drags",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdrags?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

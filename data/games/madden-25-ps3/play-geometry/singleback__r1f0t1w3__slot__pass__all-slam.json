@@ -1,0 +1,50 @@
+{
+  "slug": "singleback__r1f0t1w3__slot__pass__all-slam",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Slot",
+    "play_name": "All Slam",
+    "play_type": "pass",
+    "canonical_team": "John Madden",
+    "canonical_img": 20,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "John Madden",
+      "Tom Flores"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 559,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 160
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.73,
+  "response_text": "```json\n{\n  \"concept\": \"iso_slam\",\n  \"concepts\": [\"iso_slam\"],\n  \"routes\": {},\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Play labeled as run (iso_slam) but play_type=pass. All Slam appears to be a pass concept with iso-style reads. WR_X (blue X button, right side) is primary target on deep route. WR_Z (purple square, left side) runs vertical clearout. TE_R (green triangle) runs intermediate route. HB (R1 label visible) runs check/release or short route.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "iso_slam",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bslam\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

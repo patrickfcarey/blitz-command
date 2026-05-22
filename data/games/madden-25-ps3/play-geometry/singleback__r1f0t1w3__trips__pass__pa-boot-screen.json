@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__trips__pass__pa-boot-screen",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Trips",
+    "play_name": "PA Boot Screen",
+    "play_type": "pass",
+    "canonical_team": "Tom Flores",
+    "canonical_img": 36,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Tom Flores"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Trips",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 171,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 171
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 4.73,
+  "response_text": "```json\n{\n  \"concept\": \"boot_pass\",\n  \"concepts\": [\"boot_pass\", \"screen\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"screen\",\n    \"HB\": \"swing\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_L\",\n  \"notes\": \"PA Boot Screen with screen to slot receiver. Yellow dashed arrow indicates option/motion path to the slot WR screen target. Red arrow indicates primary QB boot direction. R1 shoulder button assigned to one receiver (likely deep shot on backside).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "boot_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bboot\\b|\\bbootleg\\b",
+    "is_pa": true,
+    "is_boot_or_roll": true
+  }
+}

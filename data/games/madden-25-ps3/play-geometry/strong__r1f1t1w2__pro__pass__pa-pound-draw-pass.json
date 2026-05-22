@@ -1,0 +1,49 @@
+{
+  "slug": "strong__r1f1t1w2__pro__pass__pa-pound-draw-pass",
+  "info": {
+    "family": "STRONG",
+    "formation": "Pro",
+    "play_name": "PA Pound Draw Pass",
+    "play_type": "pass",
+    "canonical_team": "New England Patriots",
+    "canonical_img": 43,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "New England Patriots"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 168,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 214
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 16.92,
+  "response_text": "```json\n{\n  \"concept\": \"draw\",\n  \"concepts\": [\"draw\", \"pa_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"wheel\",\n    \"FB\": \"block\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"R1\",\n  \"notes\": \"PA Pound Draw Pass with play-action fake. R1 (red Circle button) is primary target receiver running wheel/check route. TE_R runs seam route (blue arrow). WR_X and WR_Z run vertical clearouts (yellow arrows). HB initially blocks on play-action before releasing to wheel. FB engages in blocking. Red arrow terminating at circle glyph (right side) indicates R1 target.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "draw",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdraw\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

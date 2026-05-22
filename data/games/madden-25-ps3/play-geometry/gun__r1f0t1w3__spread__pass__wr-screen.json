@@ -1,0 +1,50 @@
+{
+  "slug": "gun__r1f0t1w3__spread__pass__wr-screen",
+  "info": {
+    "family": "GUN",
+    "formation": "Spread",
+    "play_name": "WR Screen",
+    "play_type": "pass",
+    "canonical_team": "Arizona Cardinals",
+    "canonical_img": 116,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Arizona Cardinals",
+      "San Diego Chargers"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Spread",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 492,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 251
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.19,
+  "response_text": "```json\n{\n  \"concept\": \"wr_screen\",\n  \"concepts\": [\"wr_screen\"],\n  \"routes\": {\n    \"WR_X\": \"screen\",\n    \"WR_Z\": \"block\",\n    \"WR_SLOT_R\": \"block\",\n    \"TE_R\": \"block\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"WR Screen pass concept. WR_X (purple Square button, far left) receives the screen pass. WR_Z (green Triangle, center-right) and WR_SLOT_R (blue X, right side) block downfield. TE_R (red Circle, far right) blocks. HB (white circle below LOS) checkdown. Red arrow from QB to WR_X screen target. Formation matches GUN Spread (5 OL, 0 TE, 4 WR, 1 QB in shotgun).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "wr_screen",
+    "concept_family": "screen",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bwr screen\\b|\\bfl screen\\b|\\bse screen\\b|\\bx screen\\b|\\bz screen\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

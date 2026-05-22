@@ -1,0 +1,62 @@
+{
+  "slug": "i-form__r1f1t2w2__tight-pair__run__mtn-zone",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Tight Pair",
+    "play_name": "Mtn Zone",
+    "play_type": "run",
+    "canonical_team": "Buffalo Bills",
+    "canonical_img": 56,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Buffalo Bills",
+      "Carolina Panthers",
+      "Cincinnati Bengals",
+      "Cleveland Browns",
+      "St. Louis Rams"
+    ],
+    "owner_count": 5,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Tight Pair",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Tight/Twin-TE \u2014 2 TE"
+    }
+  },
+  "usage": {
+    "input_tokens": 567,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 66
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 56.75,
+  "response_text": "```json\n{\n  \"concept\": \"zone_run\",\n  \"concepts\": [\"zone_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB B_left\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "B_left",
+    "c_xy": [
+      1604,
+      611
+    ],
+    "arrow_los_crossing_xy": [
+      1377,
+      252
+    ],
+    "dx_from_c": -227,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "zone_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\b(atl|mtn|den|sea|phi|chi|car) zone\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__dice-slot__pass__dig-switch",
+  "info": {
+    "family": "GUN",
+    "formation": "Dice Slot",
+    "play_name": "Dig Switch",
+    "play_type": "pass",
+    "canonical_team": "Denver Broncos",
+    "canonical_img": 77,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Denver Broncos"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Dice Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 494,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 145
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.08,
+  "response_text": "```json\n{\n  \"concept\": \"dig_route\",\n  \"concepts\": [\"dig_route\"],\n  \"routes\": {\n    \"WR_X\": \"dig\",\n    \"WR_Z\": \"dig\",\n    \"WR_SLOT_L\": \"flat\",\n    \"TE_R\": \"seam\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Two-receiver dig concept with slot flat underneath and TE seam clearout. Red arrow indicates primary dig target on WR_X.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "dig_route",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdig\\b|\\bdigs\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

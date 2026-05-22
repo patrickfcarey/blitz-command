@@ -1,0 +1,50 @@
+{
+  "slug": "singleback__r1f0t2w2__ace-wing__pass__curl-flats",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Ace Wing",
+    "play_name": "Curl Flats",
+    "play_type": "pass",
+    "canonical_team": "John Madden",
+    "canonical_img": 2,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "John Madden",
+      "Tom Landry"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Ace Wing",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Ace family \u2014 2 TE 2 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 500,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 123
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 1.55,
+  "response_text": "```json\n{\n  \"concept\": \"curl_flat\",\n  \"concepts\": [\"curl_flat\"],\n  \"routes\": {\n    \"WR_X\": \"curl\",\n    \"WR_Z\": \"flat\",\n    \"TE_L\": \"curl\",\n    \"TE_R\": \"flat\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "curl_flat",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcurl flats?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

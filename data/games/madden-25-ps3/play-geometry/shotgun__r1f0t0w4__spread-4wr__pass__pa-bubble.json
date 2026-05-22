@@ -1,0 +1,49 @@
+{
+  "slug": "shotgun__r1f0t0w4__spread-4wr__pass__pa-bubble",
+  "info": {
+    "family": "SHOTGUN",
+    "formation": "Spread 4WR",
+    "play_name": "PA Bubble",
+    "play_type": "pass",
+    "canonical_team": "Tom Landry",
+    "canonical_img": 100,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Tom Landry"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SHOTGUN",
+      "formation": "Spread 4WR",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 0,
+      "WR": 4,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 500,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 222
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.12,
+  "response_text": "```json\n{\n  \"concept\": \"bubble_screen\",\n  \"concepts\": [\"bubble_screen\"],\n  \"routes\": {\n    \"WR_X\": \"bubble\",\n    \"WR_Z\": \"block\",\n    \"WR_SLOT_L\": \"block\",\n    \"WR_SLOT_R\": \"block\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Play-action bubble screen. WR_X (red circle button, far right) is the primary target running the bubble route with a red arrow. Three other WRs (purple, green, blue buttons) block on the perimeter. HB (white circle, R1 label) in shotgun looks to be checkdown. Formation is 4WR with no TEs as expected from r1f0t0w4 encoding.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "bubble_screen",
+    "concept_family": "screen",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bbubble screen\\b|\\bwr bubble\\b|\\bbubble\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

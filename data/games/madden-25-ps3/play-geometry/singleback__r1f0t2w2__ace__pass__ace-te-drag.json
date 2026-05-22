@@ -1,0 +1,57 @@
+{
+  "slug": "singleback__r1f0t2w2__ace__pass__ace-te-drag",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Ace",
+    "play_name": "Ace TE Drag",
+    "play_type": "pass",
+    "canonical_team": "Balanced",
+    "canonical_img": 8,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Balanced",
+      "Cincinnati Bengals",
+      "Jacksonville Jaguars",
+      "Pass Balanced",
+      "Run Balanced",
+      "Run N Gun",
+      "San Diego Chargers",
+      "Washington Redskins",
+      "West Coast"
+    ],
+    "owner_count": 9,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Ace",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Ace family \u2014 2 TE 2 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 498,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 162
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.13,
+  "response_text": "```json\n{\n  \"concept\": \"drags\",\n  \"concepts\": [\"drags\"],\n  \"routes\": {\n    \"TE_L\": \"drag\",\n    \"TE_R\": \"drag\",\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"comeback\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"R1\",\n  \"notes\": \"Two TEs running drag routes across the field; WRs running vertical clearouts (corner and comeback); HB eligible for checkdown. R1 button assignment (shoulder button) indicates primary target receiver.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "drags",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdrags?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

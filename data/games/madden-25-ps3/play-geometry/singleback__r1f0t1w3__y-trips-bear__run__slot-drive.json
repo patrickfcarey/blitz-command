@@ -1,0 +1,58 @@
+{
+  "slug": "singleback__r1f0t1w3__y-trips-bear__run__slot-drive",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Y-Trips Bear",
+    "play_name": "Slot Drive",
+    "play_type": "run",
+    "canonical_team": "Chicago Bears",
+    "canonical_img": 27,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Chicago Bears"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Y-Trips Bear",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 528,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 224
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 59.35,
+  "response_text": "```json\n{\n  \"concept\": \"drive_concept\",\n  \"concepts\": [\"drive_concept\"],\n  \"routes\": {\n    \"WR_SLOT_R\": \"drive\",\n    \"WR_X\": \"block\",\n    \"WR_Z\": \"block\",\n    \"TE_R\": \"block\"\n  },\n  \"ball_carrier\": \"HB D_right\",\n  \"primary_target\": null,\n  \"notes\": \"Play labeled as RUN but py_concept indicates 'drive_concept (family=pass)' \u2014 diagram shows red ball-carrier arrow for HB sweep right, blue chip route from TE_R (block-then-release). Slot WR runs the drive route (downfield, angled right). Outer WRs block. Personnel matches r1f0t1w3 (1 RB, 0 FB, 1 TE, 3 WR).\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_right",
+    "c_xy": [
+      1553,
+      613
+    ],
+    "arrow_los_crossing_xy": [
+      2481,
+      613
+    ],
+    "dx_from_c": 928,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "drive_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdrive\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

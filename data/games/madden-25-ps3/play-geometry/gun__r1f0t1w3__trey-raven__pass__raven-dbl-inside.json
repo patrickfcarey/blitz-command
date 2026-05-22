@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__trey-raven__pass__raven-dbl-inside",
+  "info": {
+    "family": "GUN",
+    "formation": "Trey Raven",
+    "play_name": "Raven DBL Inside",
+    "play_type": "pass",
+    "canonical_team": "Baltimore Ravens",
+    "canonical_img": 118,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Baltimore Ravens"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Trey Raven",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "GUN/Shotgun default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 492,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 220
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.74,
+  "response_text": "```json\n{\n  \"concept\": \"raven_dbl_inside\",\n  \"concepts\": [\"raven_dbl_inside\"],\n  \"routes\": {\n    \"WR_X\": \"comeback\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"dig\",\n    \"HB\": \"swing\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"GUN Trey Raven (r1f0t1w3): QB in shotgun, HB to right. Two-receiver concept on left side with WR_X running comeback and WR_SLOT_L running dig/inside route. WR_Z runs clearing streak on right. Red arrow indicates primary target to WR_Z vertical. Yellow arrow shows WR_X comeback route. Blue arrow shows HB swing/checkdown route.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "unknown",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": null,
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

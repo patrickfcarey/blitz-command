@@ -1,0 +1,51 @@
+{
+  "slug": "singleback__r1f0t1w3__wing-trio__pass__pa-slide",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Wing Trio",
+    "play_name": "PA Slide",
+    "play_type": "pass",
+    "canonical_team": "Houston Texans",
+    "canonical_img": 54,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Houston Texans",
+      "Oakland Raiders",
+      "Run Balanced"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Wing Trio",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 499,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 163
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.5,
+  "response_text": "```json\n{\n  \"concept\": \"slide_pass\",\n  \"concepts\": [\"slide_pass\"],\n  \"routes\": {\n    \"HB\": \"swing\",\n    \"TE_L\": \"flat\",\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"in\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"PA play with HB swing checkdown; TE_L runs flat route; three-receiver concept on right side with corner/in combo; WR_X streak clears deep.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "slide_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bslide\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

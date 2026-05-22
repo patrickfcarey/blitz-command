@@ -1,0 +1,58 @@
+{
+  "slug": "brown__r1f1t1w2__double-wing__run__fb-lead",
+  "info": {
+    "family": "BROWN",
+    "formation": "Double Wing",
+    "play_name": "FB Lead",
+    "play_type": "run",
+    "canonical_team": "Vince Lombardi",
+    "canonical_img": 21,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Vince Lombardi"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "BROWN",
+      "formation": "Double Wing",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "BROWN family \u2014 old-school 2-back default"
+    }
+  },
+  "usage": {
+    "input_tokens": 505,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 112
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 86.33,
+  "response_text": "```json\n{\n  \"concept\": \"fb_lead\",\n  \"concepts\": [\"fb_lead\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"TE_R\": \"block\",\n    \"WR_X\": \"block\",\n    \"WR_Z\": \"block\"\n  },\n  \"ball_carrier\": \"FB C_left\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "C_left",
+    "c_xy": [
+      1551,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      1191,
+      645
+    ],
+    "dx_from_c": -360,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "unknown",
+    "concept_family": "run",
+    "blockers_implicit": false,
+    "matched_pattern": null,
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

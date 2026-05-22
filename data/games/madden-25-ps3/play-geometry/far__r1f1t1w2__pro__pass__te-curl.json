@@ -1,0 +1,50 @@
+{
+  "slug": "far__r1f1t1w2__pro__pass__te-curl",
+  "info": {
+    "family": "FAR",
+    "formation": "Pro",
+    "play_name": "TE Curl",
+    "play_type": "pass",
+    "canonical_team": "Tom Flores",
+    "canonical_img": 69,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Tom Flores",
+      "West Coast"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "FAR",
+      "formation": "Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "FAR family \u2014 old-school 2-back default"
+    }
+  },
+  "usage": {
+    "input_tokens": 489,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 102
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.89,
+  "response_text": "```json\n{\n  \"concept\": \"curls\",\n  \"concepts\": [\"curls\"],\n  \"routes\": {\n    \"TE_R\": \"curl\",\n    \"WR_SLOT_L\": \"flat\",\n    \"WR_X\": \"corner\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "curls",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcurls?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__bunch__pass__pats-sail",
+  "info": {
+    "family": "GUN",
+    "formation": "Bunch",
+    "play_name": "Pats Sail",
+    "play_type": "pass",
+    "canonical_team": "New England Patriots",
+    "canonical_img": 108,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "New England Patriots"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Bunch",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 491,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 109
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.66,
+  "response_text": "```json\n{\n  \"concept\": \"sail\",\n  \"concepts\": [\"sail\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_R\": \"flat\",\n    \"HB\": \"wheel\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "sail",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bsail\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

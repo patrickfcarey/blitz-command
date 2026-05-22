@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__pair-slot__pass__pa-spot",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Pair Slot",
+    "play_name": "PA Spot",
+    "play_type": "pass",
+    "canonical_team": "Brian Billick",
+    "canonical_img": 26,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Brian Billick"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Pair Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 500,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 183
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.66,
+  "response_text": "```json\n{\n  \"concept\": \"spot_concept\",\n  \"concepts\": [\"spot_concept\", \"pa_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_R\": \"spot\",\n    \"TE_R\": \"wheel\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_R\",\n  \"notes\": \"PA play with play-action fake to RB. Slot receiver runs spot route (sit at ~8-10 yds). X WR runs deep streak, Z runs corner clearout. TE releases to wheel. HB checks out of backfield after pass-pro fake.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "spot_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bspot\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

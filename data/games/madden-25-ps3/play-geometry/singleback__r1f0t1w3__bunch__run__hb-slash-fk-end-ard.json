@@ -1,0 +1,74 @@
+{
+  "slug": "singleback__r1f0t1w3__bunch__run__hb-slash-fk-end-ard",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Bunch",
+    "play_name": "HB Slash Fk End Ard",
+    "play_type": "run",
+    "canonical_team": "Balanced",
+    "canonical_img": 27,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Balanced",
+      "Chicago Bears",
+      "Cincinnati Bengals",
+      "Cleveland Browns",
+      "Denver Broncos",
+      "Green Bay Packers",
+      "Indianapolis Colts",
+      "Jacksonville Jaguars",
+      "Miami Dolphins",
+      "Minnesota Vikings",
+      "New England Patriots",
+      "New York Giants",
+      "New York Jets",
+      "Pass Balanced",
+      "San Diego Chargers",
+      "St. Louis Rams",
+      "Tampa Bay Buccaneers"
+    ],
+    "owner_count": 17,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Bunch",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 578,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 66
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.73,
+  "response_text": "```json\n{\n  \"concept\": \"slash_run\",\n  \"concepts\": [\"slash_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB B_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "B_right",
+    "c_xy": [
+      1476,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      1703,
+      615
+    ],
+    "dx_from_c": 227,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "slash_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bslash\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

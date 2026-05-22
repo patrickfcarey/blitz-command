@@ -1,0 +1,58 @@
+{
+  "slug": "gun__r1f0t2w2__y-trips-te-slot__run__qb-power",
+  "info": {
+    "family": "GUN",
+    "formation": "Y-Trips TE Slot",
+    "play_name": "QB Power",
+    "play_type": "run",
+    "canonical_team": "Carolina Panthers",
+    "canonical_img": 103,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Carolina Panthers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Y-Trips TE Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 569,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 65
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 60.12,
+  "response_text": "```json\n{\n  \"concept\": \"power_run\",\n  \"concepts\": [\"power_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"QB C_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "C_right",
+    "c_xy": [
+      1452,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      1874,
+      615
+    ],
+    "dx_from_c": 422,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "power_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bpower\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

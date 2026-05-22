@@ -1,0 +1,51 @@
+{
+  "slug": "pistol__r1f0t1w3__weak__pass__pa-crossers",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Weak",
+    "play_name": "PA Crossers",
+    "play_type": "pass",
+    "canonical_team": "Carolina Panthers",
+    "canonical_img": 71,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Carolina Panthers",
+      "Pistol",
+      "Washington Redskins"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Weak",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Pistol Strong/Weak"
+    }
+  },
+  "usage": {
+    "input_tokens": 495,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 197
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.49,
+  "response_text": "```json\n{\n  \"concept\": \"crossers\",\n  \"concepts\": [\"crossers\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"streak\",\n    \"TE_R\": \"drag\",\n    \"HB\": \"swing\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"PA play-action (indicated by play name and yellow motion path on L/FB). Red arrow indicates primary target on TE crosser. Backfield shows QB and HB in Pistol offset stacked formation; no FB visible (r1f0 expected). WR_X runs corner route; WR_Z runs vertical clearout; TE runs drag/crosser; HB releases to flat swing.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "crossers",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcrossers?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

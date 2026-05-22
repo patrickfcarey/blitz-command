@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t2w2__ace-pair-tight__pass__dagger",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Ace Pair Tight",
+    "play_name": "Dagger",
+    "play_type": "pass",
+    "canonical_team": "Pass Balanced",
+    "canonical_img": 29,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Pass Balanced"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Ace Pair Tight",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Ace family \u2014 2 TE 2 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 525,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 183
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.03,
+  "response_text": "```json\n{\n  \"concept\": \"dagger\",\n  \"concepts\": [\"dagger\"],\n  \"routes\": {\n    \"WR_X\": \"slant\",\n    \"WR_Z\": \"corner\",\n    \"TE_L\": \"dig\",\n    \"TE_R\": \"flat\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Red arrow indicates primary target WR_X running slant. Yellow arrow from slot area shows dig route. Blue arrows on right side show TE flat and corner routes. Standard Dagger concept with 2 TEs and 2 WRs in Ace Pair Tight formation.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "dagger",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdagger\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

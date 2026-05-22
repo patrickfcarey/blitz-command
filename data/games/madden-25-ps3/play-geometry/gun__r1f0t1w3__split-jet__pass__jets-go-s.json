@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__split-jet__pass__jets-go-s",
+  "info": {
+    "family": "GUN",
+    "formation": "Split Jet",
+    "play_name": "Jets Go's",
+    "play_type": "pass",
+    "canonical_team": "New York Jets",
+    "canonical_img": 79,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "New York Jets"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Split Jet",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "GUN/Shotgun default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 155,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 224
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 5.47,
+  "response_text": "```json\n{\n  \"concept\": \"jets_go\",\n  \"concepts\": [\"jets_go\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"in\",\n    \"WR_SLOT_R\": \"wheel\",\n    \"TE_R\": \"seam\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Five-wide spread formation with four WRs plus one TE. R1 button (shoulder button) labeled on TE_R wheel route. Red arrow traces to TE_R wheel (primary). Yellow routes show outside WR streaks, slot-left in-breaker, and TE seam route. Blue box outline indicates receiver options/hot routes. Backfield shows single QB in shotgun with one checkdown RB.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "unknown",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": null,
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

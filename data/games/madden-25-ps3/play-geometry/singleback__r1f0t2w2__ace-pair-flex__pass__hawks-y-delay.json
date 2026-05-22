@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t2w2__ace-pair-flex__pass__hawks-y-delay",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Ace Pair Flex",
+    "play_name": "Hawks Y-Delay",
+    "play_type": "pass",
+    "canonical_team": "Seattle Seahawks",
+    "canonical_img": 13,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Seattle Seahawks"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Ace Pair Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Ace family \u2014 2 TE 2 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 493,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 242
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.17,
+  "response_text": "```json\n{\n  \"concept\": \"y_delay\",\n  \"concepts\": [\"y_delay\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"comeback\",\n    \"TE_L\": \"delay\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"Y-Delay concept: TE_R runs primary seam route (red arrow), TE_L runs delay route underneath, WRs run corner/comeback on opposite side. Formation is Singlebank Ace Pair Flex with 2 TEs inline and 2 WRs spread. Button glyphs visible: purple \u25a1 (WR_X), red \u2299 (WR_Z), blue \u2297 (R1 = TE_R). HB appears to release for checkdown.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "unknown",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": null,
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

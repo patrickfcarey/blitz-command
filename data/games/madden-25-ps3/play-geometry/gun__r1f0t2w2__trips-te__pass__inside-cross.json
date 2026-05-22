@@ -1,0 +1,54 @@
+{
+  "slug": "gun__r1f0t2w2__trips-te__pass__inside-cross",
+  "info": {
+    "family": "GUN",
+    "formation": "Trips TE",
+    "play_name": "Inside Cross",
+    "play_type": "pass",
+    "canonical_team": "Cleveland Browns",
+    "canonical_img": 108,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Cleveland Browns",
+      "Miami Dolphins",
+      "Minnesota Vikings",
+      "New England Patriots",
+      "San Diego Chargers",
+      "St. Louis Rams"
+    ],
+    "owner_count": 6,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Trips TE",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 518,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 164
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 1.94,
+  "response_text": "```json\n{\n  \"concept\": \"cross_concept\",\n  \"concepts\": [\"inside_cross\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"comeback\",\n    \"TE_L\": \"drag\",\n    \"TE_R\": \"drag\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_L\",\n  \"notes\": \"Inside cross concept with two drag routes from TEs crossing the field; WR_X runs vertical clearout on top, WR_Z runs comeback underneath; HB eligible checkdown below LOS.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "cross_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcross(es)?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

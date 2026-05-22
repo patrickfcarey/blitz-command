@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__slot-y-flex__pass__fade-smash",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Slot Y-Flex",
+    "play_name": "Fade Smash",
+    "play_type": "pass",
+    "canonical_team": "Buffalo Bills",
+    "canonical_img": 34,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Buffalo Bills"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Slot Y-Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 504,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 235
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.22,
+  "response_text": "```json\n{\n  \"concept\": \"smash\",\n  \"concepts\": [\"smash\"],\n  \"routes\": {\n    \"WR_X\": \"fade\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"hitch\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Smash concept on right side (WR_Z corner over WR_X hitch). Left side features TE_R seam route. WR_SLOT_L runs shallow hitch on left. HB eligible checkdown. All four receiver options visible with button assignments: \u25a1 (WR_X), \u25b3 (WR_SLOT_L), \u2297 (WR_Z), \u2299 (TE_R), R1 label visible on field.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "smash",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bsmash\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

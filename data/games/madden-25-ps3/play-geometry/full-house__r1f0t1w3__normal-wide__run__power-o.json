@@ -1,0 +1,62 @@
+{
+  "slug": "full-house__r1f0t1w3__normal-wide__run__power-o",
+  "info": {
+    "family": "FULL-HOUSE",
+    "formation": "Normal Wide",
+    "play_name": "Power O",
+    "play_type": "run",
+    "canonical_team": "Atlanta Falcons",
+    "canonical_img": 79,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Atlanta Falcons",
+      "Cincinnati Bengals",
+      "Dick Vermeil",
+      "Joe Gibbs",
+      "Run N Gun"
+    ],
+    "owner_count": 5,
+    "expected_personnel": {
+      "family": "FULL-HOUSE",
+      "formation": "Normal Wide",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "low",
+      "notes": "unknown family 'FULL-HOUSE' \u2014 generic 11-personnel guess"
+    }
+  },
+  "usage": {
+    "input_tokens": 563,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 66
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 56.29,
+  "response_text": "```json\n{\n  \"concept\": \"power_o\",\n  \"concepts\": [\"power_o\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB C_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "C_right",
+    "c_xy": [
+      1462,
+      701
+    ],
+    "arrow_los_crossing_xy": [
+      1813,
+      701
+    ],
+    "dx_from_c": 351,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "power_o",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bpower ?o\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

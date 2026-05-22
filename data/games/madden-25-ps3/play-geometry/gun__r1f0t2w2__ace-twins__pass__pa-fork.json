@@ -1,0 +1,50 @@
+{
+  "slug": "gun__r1f0t2w2__ace-twins__pass__pa-fork",
+  "info": {
+    "family": "GUN",
+    "formation": "Ace Twins",
+    "play_name": "PA Fork",
+    "play_type": "pass",
+    "canonical_team": "Baltimore Ravens",
+    "canonical_img": 103,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Baltimore Ravens",
+      "Tennessee Titans"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Ace Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Ace Twins \u2014 2 TE 2 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 495,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 197
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.0,
+  "response_text": "```json\n{\n  \"concept\": \"fork_concept\",\n  \"concepts\": [\"fork_concept\", \"pa_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"TE_L\": \"fork\",\n    \"TE_R\": \"wheel\",\n    \"HB\": \"block\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_L\",\n  \"notes\": \"Play-action pass with fork concept. TE_L runs the primary fork route (shallow crossing / option break). TE_R runs wheel route to the flat. Both outer WRs run vertical stretches. HB engaged in pass-pro initially, then available as checkdown. Red arrow indicates TE_L as primary target.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "fork_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bfork\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

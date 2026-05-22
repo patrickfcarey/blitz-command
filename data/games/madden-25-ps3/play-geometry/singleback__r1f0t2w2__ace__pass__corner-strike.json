@@ -1,0 +1,61 @@
+{
+  "slug": "singleback__r1f0t2w2__ace__pass__corner-strike",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Ace",
+    "play_name": "Corner Strike",
+    "play_type": "pass",
+    "canonical_team": "Carolina Panthers",
+    "canonical_img": 3,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Carolina Panthers",
+      "Cincinnati Bengals",
+      "Cleveland Browns",
+      "Detroit Lions",
+      "Green Bay Packers",
+      "Indianapolis Colts",
+      "Pass Balanced",
+      "Run N Gun",
+      "San Diego Chargers",
+      "St. Louis Rams",
+      "Tennessee Titans",
+      "Tom Flores",
+      "Tom Landry"
+    ],
+    "owner_count": 13,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Ace",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Ace family \u2014 2 TE 2 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 493,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 124
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 1.67,
+  "response_text": "```json\n{\n  \"concept\": \"corner_strike\",\n  \"concepts\": [\"corner_strike\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"hitch\",\n    \"TE_L\": \"corner\",\n    \"TE_R\": \"hitch\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "corner_strike",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcorner strike\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

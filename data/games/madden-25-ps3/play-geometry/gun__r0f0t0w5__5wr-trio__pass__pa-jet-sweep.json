@@ -1,0 +1,50 @@
+{
+  "slug": "gun__r0f0t0w5__5wr-trio__pass__pa-jet-sweep",
+  "info": {
+    "family": "GUN",
+    "formation": "5WR Trio",
+    "play_name": "PA Jet Sweep",
+    "play_type": "pass",
+    "canonical_team": "Chicago Bears",
+    "canonical_img": 136,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Chicago Bears",
+      "Philadelphia Eagles"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "5WR Trio",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "5-WR set, no RB"
+    }
+  },
+  "usage": {
+    "input_tokens": 502,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 242
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.14,
+  "response_text": "```json\n{\n  \"concept\": \"sweep\",\n  \"concepts\": [\"sweep\", \"pa_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"flat\",\n    \"WR_SLOT_R\": \"corner\",\n    \"WR_FLANKER\": \"streak\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_L\",\n  \"notes\": \"PA Jet Sweep pass concept \u2014 red arrow indicates primary target (WR_SLOT_L flat route); yellow arrows show outside WRs clearing vertically; cyan dashed line indicates slot receiver timing/option route. 5-WR set confirmed: X, Z, Slot_L, Slot_R, Flanker all visible on LOS with button glyphs (purple \u25a1, green \u25b3, blue \u2297, red \u2299, R1 label).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "sweep",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bsweep\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

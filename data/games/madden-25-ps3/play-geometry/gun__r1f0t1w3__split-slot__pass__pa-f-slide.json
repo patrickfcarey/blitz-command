@@ -1,0 +1,55 @@
+{
+  "slug": "gun__r1f0t1w3__split-slot__pass__pa-f-slide",
+  "info": {
+    "family": "GUN",
+    "formation": "Split Slot",
+    "play_name": "PA F Slide",
+    "play_type": "pass",
+    "canonical_team": "Balanced",
+    "canonical_img": 68,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Balanced",
+      "Buffalo Bills",
+      "Cincinnati Bengals",
+      "Denver Broncos",
+      "Jimmy Johnson",
+      "Tampa Bay Buccaneers",
+      "Tennessee Titans"
+    ],
+    "owner_count": 7,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Split Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "GUN/Shotgun default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 498,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 242
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.42,
+  "response_text": "```json\n{\n  \"concept\": \"slide_pass\",\n  \"concepts\": [\"slide_pass\"],\n  \"routes\": {\n    \"HB\": \"swing\",\n    \"TE_R\": \"flat\",\n    \"WR_X\": \"slant\",\n    \"WR_Z\": \"comeback\",\n    \"WR_SLOT_R\": \"streak\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_R\",\n  \"notes\": \"Play-action fake with fullback-path motion (dashed line). HB receives checkdown swing route. Five-wide personnel: 1 RB, 0 FB, 1 TE, 3 WR. TE_R runs flat. WR_X on left runs slant. WR_Z on far right runs comeback. WR_SLOT_R (green triangle, right slot) is primary target running streak/seam downfield (yellow arrow). Red arrow indicates QB's primary progression.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "slide_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bslide\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

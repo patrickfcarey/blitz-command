@@ -1,0 +1,59 @@
+{
+  "slug": "i-form__r1f1t1w2__tackle-over__run__fb-dive-strong",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Tackle Over",
+    "play_name": "FB Dive Strong",
+    "play_type": "run",
+    "canonical_team": "Indianapolis Colts",
+    "canonical_img": 66,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Indianapolis Colts",
+      "St. Louis Rams"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Tackle Over",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "I-Form Pro default"
+    }
+  },
+  "usage": {
+    "input_tokens": 567,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 65
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 58.04,
+  "response_text": "```json\n{\n  \"concept\": \"fb_dive\",\n  \"concepts\": [\"fb_dive\"],\n  \"routes\": {},\n  \"ball_carrier\": \"FB A_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "A_right",
+    "c_xy": [
+      1476,
+      613
+    ],
+    "arrow_los_crossing_xy": [
+      1655,
+      613
+    ],
+    "dx_from_c": 179,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "fb_dive",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bfb dive\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

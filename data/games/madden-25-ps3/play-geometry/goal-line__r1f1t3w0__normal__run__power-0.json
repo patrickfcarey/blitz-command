@@ -1,0 +1,63 @@
+{
+  "slug": "goal-line__r1f1t3w0__normal__run__power-0",
+  "info": {
+    "family": "GOAL LINE",
+    "formation": "Normal",
+    "play_name": "Power 0",
+    "play_type": "run",
+    "canonical_team": "Jimmy Johnson",
+    "canonical_img": 136,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Jimmy Johnson",
+      "New York Giants",
+      "Run Balanced",
+      "Tom Flores",
+      "Vince Lombardi",
+      "West Coast"
+    ],
+    "owner_count": 6,
+    "expected_personnel": {
+      "family": "GOAL LINE",
+      "formation": "Normal",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 3,
+      "WR": 0,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Goal Line \u2014 typical heavy package"
+    }
+  },
+  "usage": {
+    "input_tokens": 559,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 66
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 97.87,
+  "response_text": "```json\n{\n  \"concept\": \"power_run\",\n  \"concepts\": [\"power_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB B_left\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "B_left",
+    "c_xy": [
+      2078,
+      655
+    ],
+    "arrow_los_crossing_xy": [
+      1810,
+      655
+    ],
+    "dx_from_c": -268,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "power_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bpower\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

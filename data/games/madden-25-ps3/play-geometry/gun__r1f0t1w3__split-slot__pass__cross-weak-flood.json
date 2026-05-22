@@ -1,0 +1,52 @@
+{
+  "slug": "gun__r1f0t1w3__split-slot__pass__cross-weak-flood",
+  "info": {
+    "family": "GUN",
+    "formation": "Split Slot",
+    "play_name": "Cross Weak Flood",
+    "play_type": "pass",
+    "canonical_team": "Buffalo Bills",
+    "canonical_img": 79,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Buffalo Bills",
+      "Denver Broncos",
+      "Jimmy Johnson",
+      "Tampa Bay Buccaneers"
+    ],
+    "owner_count": 4,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Split Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "GUN/Shotgun default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 495,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 203
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.7,
+  "response_text": "```json\n{\n  \"concept\": \"flood\",\n  \"concepts\": [\"flood\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"dig\",\n    \"TE_R\": \"flat\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Red arrow originates from QB and targets WR_X corner route on the left side. Flood concept on weak side (left) with dig/intermediate route, flat route, and deep corner. Opposite side (right) shows R1 button glyph (TE_R) with flat route and WR_Z streak clearout. HB positioned in shotgun offset right.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "flood",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bflood\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

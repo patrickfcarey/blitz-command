@@ -1,0 +1,51 @@
+{
+  "slug": "singleback__r1f0t1w3__bunch-base__pass__seattle",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Bunch Base",
+    "play_name": "Seattle",
+    "play_type": "pass",
+    "canonical_team": "Dick Vermeil",
+    "canonical_img": 21,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Dick Vermeil",
+      "Houston Texans",
+      "New Orleans Saints"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Bunch Base",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 493,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 260
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.07,
+  "response_text": "```json\n{\n  \"concept\": \"city_concept\",\n  \"concepts\": [\"city_concept\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"stick\",\n    \"WR_SLOT_R\": \"flat\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Five-wide spread (4 WR + 1 TE). WR_Z (Circle button, red arrow) is the primary deep target on a corner route. WR_X (Square button, yellow arrow) runs streak. WR_SLOT_L (Triangle button, yellow arrow) runs a stick route at intermediate depth. WR_SLOT_R (X button, yellow arrow) runs flat. TE_R (R1 button, yellow arrow) runs seam route. HB has a checkdown release (cyan arrow).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "city_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bseattle\\b|\\bphilly\\b|\\bgreen bay\\b|\\bdallas\\b|\\bbal\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

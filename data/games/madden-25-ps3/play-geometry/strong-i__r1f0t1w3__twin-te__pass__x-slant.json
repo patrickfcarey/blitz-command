@@ -1,0 +1,49 @@
+{
+  "slug": "strong-i__r1f0t1w3__twin-te__pass__x-slant",
+  "info": {
+    "family": "STRONG-I",
+    "formation": "Twin TE",
+    "play_name": "X Slant",
+    "play_type": "pass",
+    "canonical_team": "Run Heavy",
+    "canonical_img": 57,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Run Heavy"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "STRONG-I",
+      "formation": "Twin TE",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "low",
+      "notes": "unknown family 'STRONG-I' \u2014 generic 11-personnel guess"
+    }
+  },
+  "usage": {
+    "input_tokens": 498,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 201
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.35,
+  "response_text": "```json\n{\n  \"concept\": \"slants\",\n  \"concepts\": [\"slants\"],\n  \"routes\": {\n    \"WR_X\": \"slant\",\n    \"WR_Z\": \"slant\",\n    \"TE_R\": \"flat\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"WR_X runs red-arrow slant (primary). WR_Z runs yellow slant to left side. TE_R (button-glyph Circle) runs flat route. HB eligible (R1 label visible). Strong-I backfield structure confirmed (QB + FB + HB stacked). Two TE set with TE_L and TE_R both on LOS adjacent to tackles.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "slants",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bslants?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

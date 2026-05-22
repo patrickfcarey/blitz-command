@@ -1,0 +1,49 @@
+{
+  "slug": "far__r1f1t1w3__tight-twins__pass__pa-waggle",
+  "info": {
+    "family": "FAR",
+    "formation": "Tight Twins",
+    "play_name": "PA Waggle",
+    "play_type": "pass",
+    "canonical_team": "West Coast",
+    "canonical_img": 59,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "West Coast"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "FAR",
+      "formation": "Tight Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 499,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 228
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.1,
+  "response_text": "```json\n{\n  \"concept\": \"waggle_pass\",\n  \"concepts\": [\"waggle_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"comeback\",\n    \"TE_L\": \"flat\",\n    \"TE_R\": \"wheel\",\n    \"HB\": \"protection_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"PA waggle with QB rolling right. Red primary arrow to WR_X streak. Yellow routes on TE_L flat and TE_R wheel. WR_Z runs comeback. HB appears in backfield. R1 button glyph visible on trailing receiver (likely hot route). Tight Twins formation with 1 RB, 1 FB, 2 TEs, 3 WRs matches expected r1f1t2w3.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "waggle_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bwaggle\\b",
+    "is_pa": true,
+    "is_boot_or_roll": true
+  }
+}

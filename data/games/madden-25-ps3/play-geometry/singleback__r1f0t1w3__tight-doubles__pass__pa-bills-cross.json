@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__tight-doubles__pass__pa-bills-cross",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Tight Doubles",
+    "play_name": "PA Bills Cross",
+    "play_type": "pass",
+    "canonical_team": "Buffalo Bills",
+    "canonical_img": 15,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Buffalo Bills"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Tight Doubles",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 502,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 172
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.22,
+  "response_text": "```json\n{\n  \"concept\": \"cross_concept\",\n  \"concepts\": [\"pa_cross\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"comeback\",\n    \"TE_L\": \"cross\",\n    \"TE_R\": \"cross\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_L\",\n  \"notes\": \"Play-action pass with two tight ends running crossing routes. WR_X runs vertical stretch; WR_Z runs comeback on opposite side. Red arrow indicates primary read to TE_L crossing left. HB available for checkdown.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "cross_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcross(es)?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

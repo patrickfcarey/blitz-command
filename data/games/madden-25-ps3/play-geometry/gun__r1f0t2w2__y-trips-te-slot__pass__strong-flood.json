@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t2w2__y-trips-te-slot__pass__strong-flood",
+  "info": {
+    "family": "GUN",
+    "formation": "Y-Trips TE Slot",
+    "play_name": "Strong Flood",
+    "play_type": "pass",
+    "canonical_team": "Carolina Panthers",
+    "canonical_img": 105,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Carolina Panthers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Y-Trips TE Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 500,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 159
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.27,
+  "response_text": "```json\n{\n  \"concept\": \"flood\",\n  \"concepts\": [\"flood\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"dig\",\n    \"TE_R\": \"flat\",\n    \"WR_SLOT_L\": \"crosser\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Strong Flood attacking right side with dig at intermediate depth, corner at deep depth, TE flat underneath. Backside slot runs crosser. HB eligible checkdown.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "flood",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bflood\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

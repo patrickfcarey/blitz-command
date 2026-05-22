@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__trips-open__pass__x-iso-fade",
+  "info": {
+    "family": "GUN",
+    "formation": "Trips Open",
+    "play_name": "X Iso Fade",
+    "play_type": "pass",
+    "canonical_team": "Balanced",
+    "canonical_img": 94,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Balanced"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Trips Open",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 560,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 210
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 6.06,
+  "response_text": "```json\n{\n  \"concept\": \"iso\",\n  \"concepts\": [\"iso\"],\n  \"routes\": {\n    \"WR_Z\": \"fade\",\n    \"WR_SLOT_L\": \"block\",\n    \"WR_SLOT_R\": \"block\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Play labeled 'iso' but diagram shows PASS play (per play_type field). X WR (Circle button, right side) runs fade route (red arrow upfield). Triple receiver formation with slot receivers blocking. HB (R1 label, blue arrow) runs checkdown/release route right flat. This is a pass concept despite py_concept='iso'; iso typically denotes run plays, but the diagram and play_name 'X Iso Fade' indicate a pass with receiver iso.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "iso",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\biso\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

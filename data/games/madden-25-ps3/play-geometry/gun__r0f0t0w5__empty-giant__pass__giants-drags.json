@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r0f0t0w5__empty-giant__pass__giants-drags",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Giant",
+    "play_name": "Giants Drags",
+    "play_type": "pass",
+    "canonical_team": "New York Giants",
+    "canonical_img": 136,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "New York Giants"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Giant",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 493,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 231
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.14,
+  "response_text": "```json\n{\n  \"concept\": \"drags\",\n  \"concepts\": [\"drags\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"drag\",\n    \"WR_SLOT_R\": \"drag\",\n    \"WR_FLANKER\": \"streak\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_L\",\n  \"notes\": \"GUN Empty Giant (5 WR, 0 TE, 0 FB, 1 QB). Two slot receivers run shallow drags across the field (~5 yds); three outer WRs run vertical clearouts. Primary target is the left-side drag (red arrow). Backside WR_FLANKER (far right, red Circle button) runs a streak. Layout matches drags concept with all five WRs spread wide.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "drags",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdrags?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

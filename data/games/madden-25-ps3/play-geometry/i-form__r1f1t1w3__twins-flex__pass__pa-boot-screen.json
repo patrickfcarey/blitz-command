@@ -1,0 +1,49 @@
+{
+  "slug": "i-form__r1f1t1w3__twins-flex__pass__pa-boot-screen",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Twins Flex",
+    "play_name": "PA Boot Screen",
+    "play_type": "pass",
+    "canonical_team": "Buffalo Bills",
+    "canonical_img": 47,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Buffalo Bills"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Twins Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Twins \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 502,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 204
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.0,
+  "response_text": "```json\n{\n  \"concept\": \"boot_pass\",\n  \"concepts\": [\"boot_pass\", \"screen\"],\n  \"routes\": {\n    \"QB\": \"boot_right\",\n    \"HB\": \"swing_screen\",\n    \"TE_L\": \"checkdown\",\n    \"WR_X\": \"deep_route\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"dig\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"HB\",\n  \"notes\": \"PA boot play with HB as primary screen target. Yellow arrows indicate QB bootleg path to right. Red arrow shows HB receiving swing/screen pass. Multiple secondary receiver routes shown (yellow arrows) with TE_L, WR_X, and WR_Z running complementary routes downfield.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "boot_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bboot\\b|\\bbootleg\\b",
+    "is_pa": true,
+    "is_boot_or_roll": true
+  }
+}

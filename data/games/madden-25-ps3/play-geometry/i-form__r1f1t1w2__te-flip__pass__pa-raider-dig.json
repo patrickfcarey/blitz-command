@@ -1,0 +1,49 @@
+{
+  "slug": "i-form__r1f1t1w2__te-flip__pass__pa-raider-dig",
+  "info": {
+    "family": "I-FORM",
+    "formation": "TE Flip",
+    "play_name": "PA Raider Dig",
+    "play_type": "pass",
+    "canonical_team": "Oakland Raiders",
+    "canonical_img": 49,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Oakland Raiders"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "TE Flip",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "I-Form Pro default"
+    }
+  },
+  "usage": {
+    "input_tokens": 506,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 185
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.63,
+  "response_text": "```json\n{\n  \"concept\": \"dig_route\",\n  \"concepts\": [\"dig_route\", \"pa_pass\"],\n  \"routes\": {\n    \"TE_L\": \"dig\",\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"streak\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_L\",\n  \"notes\": \"Play-action pass with PA motion. TE_L running dig route (RED arrow endpoint). WR_X corner over the top (YELLOW arrow). WR_Z vertical streak (CYAN arrow). R1 button glyph on TE_L confirms primary target. HB in backfield for checkdown.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "dig_route",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdig\\b|\\bdigs\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

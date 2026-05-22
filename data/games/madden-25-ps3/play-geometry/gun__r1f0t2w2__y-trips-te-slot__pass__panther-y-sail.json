@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t2w2__y-trips-te-slot__pass__panther-y-sail",
+  "info": {
+    "family": "GUN",
+    "formation": "Y-Trips TE Slot",
+    "play_name": "Panther Y-Sail",
+    "play_type": "pass",
+    "canonical_team": "Carolina Panthers",
+    "canonical_img": 101,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Carolina Panthers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Y-Trips TE Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 507,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 178
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.32,
+  "response_text": "```json\n{\n  \"concept\": \"sail\",\n  \"concepts\": [\"sail\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"sail\",\n    \"TE_R\": \"seam\",\n    \"WR_SLOT_L\": \"flat\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Sail concept on right side with corner-sail combo (WR_Z sail over WR_X corner). TE_R runs seam centerfield. Slot WR left runs flat. Red arrow traces WR_Z sail route as primary read.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "sail",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bsail\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

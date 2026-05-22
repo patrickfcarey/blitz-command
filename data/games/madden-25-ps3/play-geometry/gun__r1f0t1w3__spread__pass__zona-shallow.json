@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__spread__pass__zona-shallow",
+  "info": {
+    "family": "GUN",
+    "formation": "Spread",
+    "play_name": "Zona Shallow",
+    "play_type": "pass",
+    "canonical_team": "Arizona Cardinals",
+    "canonical_img": 114,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Arizona Cardinals"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Spread",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 489,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 229
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.89,
+  "response_text": "```json\n{\n  \"concept\": \"shallow\",\n  \"concepts\": [\"shallow\"],\n  \"routes\": {\n    \"WR_X\": \"dig\",\n    \"WR_Z\": \"dig\",\n    \"WR_SLOT_L\": \"flat\",\n    \"WR_SLOT_R\": \"flat\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"GUN Spread (r1f0t1w3): QB shotgun, 1 HB to side, 1 TE right, 4 WRs. Red arrow on WR_X dig is primary. Yellow arrows show dig routes from both X and Z deep WRs with shallow intermediate flat routes from slot receivers on each side. TE_R runs seam release. HB available for checkdown.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "shallow",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bshallow\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

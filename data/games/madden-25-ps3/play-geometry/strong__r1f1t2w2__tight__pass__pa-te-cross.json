@@ -1,0 +1,50 @@
+{
+  "slug": "strong__r1f1t2w2__tight__pass__pa-te-cross",
+  "info": {
+    "family": "STRONG",
+    "formation": "Tight",
+    "play_name": "PA TE Cross",
+    "play_type": "pass",
+    "canonical_team": "Tom Flores",
+    "canonical_img": 87,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Tom Flores",
+      "Tom Landry"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "Tight",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 495,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 220
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.77,
+  "response_text": "```json\n{\n  \"concept\": \"cross_concept\",\n  \"concepts\": [\"pa_te_cross\", \"cross_concept\"],\n  \"routes\": {\n    \"TE_L\": \"cross\",\n    \"TE_R\": \"corner\",\n    \"WR_Z\": \"corner\",\n    \"WR_X\": \"streak\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_L\",\n  \"notes\": \"Play-action pass with TE crossing from left side as primary target. Red arrow indicates TE_L cross route. Yellow arrows show corner routes (TE_R and WR_Z) and streak (WR_X). Formation is Strong Tight (1 RB, 1 FB, 2 TEs, 2 WRs as expected). R1 checkdown button visible on HB.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "cross_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcross(es)?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

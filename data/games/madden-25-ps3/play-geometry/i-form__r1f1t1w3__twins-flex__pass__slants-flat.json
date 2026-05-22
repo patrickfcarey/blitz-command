@@ -1,0 +1,53 @@
+{
+  "slug": "i-form__r1f1t1w3__twins-flex__pass__slants-flat",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Twins Flex",
+    "play_name": "Slants Flat",
+    "play_type": "pass",
+    "canonical_team": "Baltimore Ravens",
+    "canonical_img": 52,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Baltimore Ravens",
+      "Chicago Bears",
+      "Minnesota Vikings",
+      "New Orleans Saints",
+      "Washington Redskins"
+    ],
+    "owner_count": 5,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Twins Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Twins \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 500,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 131
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.05,
+  "response_text": "```json\n{\n  \"concept\": \"slants_flat\",\n  \"concepts\": [\"slants_flat\"],\n  \"routes\": {\n    \"WR_X\": \"slant\",\n    \"WR_Z\": \"slant\",\n    \"WR_SLOT_R\": \"flat\",\n    \"TE_L\": \"slant\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "slants",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bslants?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

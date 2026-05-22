@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__dice-slot__pass__curls-slot-shake",
+  "info": {
+    "family": "GUN",
+    "formation": "Dice Slot",
+    "play_name": "Curls Slot Shake",
+    "play_type": "pass",
+    "canonical_team": "Denver Broncos",
+    "canonical_img": 72,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Denver Broncos"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Dice Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 500,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 214
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.6,
+  "response_text": "```json\n{\n  \"concept\": \"curls\",\n  \"concepts\": [\"curls\"],\n  \"routes\": {\n    \"WR_X\": \"curl\",\n    \"WR_Z\": \"flat\",\n    \"WR_SLOT_R\": \"shake\",\n    \"TE_R\": \"curl\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"WR_X (purple \u25a1) runs the primary curl route on the left (red arrow). WR_Z (blue \u2297) runs flat to the right. WR_SLOT_R runs a shake/pivot route at intermediate depth. TE_R (green \u25b3) runs a secondary curl route. HB (white circle below LOS) is checkdown option. Formation is shotgun with single RB.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "curls",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcurls?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "strong__r1f1t1w2__pro__pass__pa-atl-curl",
+  "info": {
+    "family": "STRONG",
+    "formation": "Pro",
+    "play_name": "PA ATL Curl",
+    "play_type": "pass",
+    "canonical_team": "Atlanta Falcons",
+    "canonical_img": 63,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Atlanta Falcons"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 495,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 174
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.33,
+  "response_text": "```json\n{\n  \"concept\": \"curls\",\n  \"concepts\": [\"curls\"],\n  \"routes\": {\n    \"WR_X\": \"curl\",\n    \"WR_Z\": \"flat\",\n    \"TE_L\": \"block\",\n    \"FB\": \"block\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"PA play with Strong Pro personnel (r1f1t1w2). WR_X curl on left side, WR_Z flat underneath on right. TE_L blocks; FB blocks (Strong offset). HB checks. Single TE aligned left.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "curls",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcurls?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "slug": "weak__r1f1t1w3__pro-twins__run__hb-blast",
+  "info": {
+    "family": "WEAK",
+    "formation": "Pro Twins",
+    "play_name": "HB Blast",
+    "play_type": "run",
+    "canonical_team": "Atlanta Falcons",
+    "canonical_img": 74,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Atlanta Falcons",
+      "Jimmy Johnson",
+      "Mike Ditka",
+      "St. Louis Rams"
+    ],
+    "owner_count": 4,
+    "expected_personnel": {
+      "family": "WEAK",
+      "formation": "Pro Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 562,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 66
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 58.7,
+  "response_text": "```json\n{\n  \"concept\": \"iso_blast\",\n  \"concepts\": [\"iso_blast\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB A_left\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "A_left",
+    "c_xy": [
+      1630,
+      611
+    ],
+    "arrow_los_crossing_xy": [
+      1504,
+      611
+    ],
+    "dx_from_c": -126,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "iso_blast",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bblast\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

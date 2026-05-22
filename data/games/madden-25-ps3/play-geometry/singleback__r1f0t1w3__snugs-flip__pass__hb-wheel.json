@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__snugs-flip__pass__hb-wheel",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Snugs Flip",
+    "play_name": "HB Wheel",
+    "play_type": "pass",
+    "canonical_team": "New Orleans Saints",
+    "canonical_img": 40,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "New Orleans Saints"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Snugs Flip",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "Singleback default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 572,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 131
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.28,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"generic_hb_run\"],\n  \"routes\": {\n    \"HB\": \"wheel\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"HB\",\n  \"notes\": \"Play labeled 'pass' but diagram shows HB wheel route (R1 button, red arrow curving right). HB executes wheel release to flat/sideline. This is a pass play with HB as checkdown target.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "^hb \\w+",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

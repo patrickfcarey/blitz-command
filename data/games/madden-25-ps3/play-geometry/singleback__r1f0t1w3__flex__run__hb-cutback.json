@@ -1,0 +1,59 @@
+{
+  "slug": "singleback__r1f0t1w3__flex__run__hb-cutback",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Flex",
+    "play_name": "HB Cutback",
+    "play_type": "run",
+    "canonical_team": "Green Bay Packers",
+    "canonical_img": 28,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Green Bay Packers",
+      "Miami Dolphins"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "Singleback default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 566,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 68
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 14.26,
+  "response_text": "```json\n{\n  \"concept\": \"cutback_run\",\n  \"concepts\": [\"cutback_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB B_left\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "B_left",
+    "c_xy": [
+      1476,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      1237,
+      270
+    ],
+    "dx_from_c": -239,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "cutback_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bcutback\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

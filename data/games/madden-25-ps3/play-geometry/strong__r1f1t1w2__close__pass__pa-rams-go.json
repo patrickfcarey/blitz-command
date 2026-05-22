@@ -1,0 +1,49 @@
+{
+  "slug": "strong__r1f1t1w2__close__pass__pa-rams-go",
+  "info": {
+    "family": "STRONG",
+    "formation": "Close",
+    "play_name": "PA Rams Go",
+    "play_type": "pass",
+    "canonical_team": "St. Louis Rams",
+    "canonical_img": 66,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "St. Louis Rams"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "Close",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "STRONG default \u2014 variant unclear"
+    }
+  },
+  "usage": {
+    "input_tokens": 479,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 182
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.72,
+  "response_text": "```json\n{\n  \"concept\": \"pa_rams_go\",\n  \"concepts\": [\"pa_rams_go\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"TE_R\": \"go\",\n    \"WR_X\": \"go\",\n    \"WR_Z\": \"corner\",\n    \"FB\": \"block\",\n    \"HB\": \"swing\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"Play-action pass with strong-side TE releasing vertically as primary. WR_Z runs corner route on left side. HB swings out as checkdown. QB under center with FB and HB in strong I alignment.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "unknown",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": null,
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

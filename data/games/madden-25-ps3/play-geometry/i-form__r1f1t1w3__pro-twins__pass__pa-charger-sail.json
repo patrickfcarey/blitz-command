@@ -1,0 +1,49 @@
+{
+  "slug": "i-form__r1f1t1w3__pro-twins__pass__pa-charger-sail",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Pro Twins",
+    "play_name": "PA Charger Sail",
+    "play_type": "pass",
+    "canonical_team": "San Diego Chargers",
+    "canonical_img": 57,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "San Diego Chargers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Pro Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Twins \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 503,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 266
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.87,
+  "response_text": "```json\n{\n  \"concept\": \"sail\",\n  \"concepts\": [\"sail\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"flat\",\n    \"WR_SLOT_R\": \"streak\",\n    \"TE_R\": \"sail\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"Play-action pass. TE_R (red circle button, R1 label) runs the sail route (arrow curves back toward sideline). WR_Z (blue X button) runs flat to right. WR_X (purple square button) runs corner to upper left. WR_SLOT_R (yellow arrow) runs vertical streak. HB executes checkdown. One TE visible on right side of OL; expected r1f1t1w3 suggests one RB, one FB, one TE, three WRs \u2014 all accounted for. Backfield shows QB + FB + HB stacked (I-Form signature).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "sail",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bsail\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

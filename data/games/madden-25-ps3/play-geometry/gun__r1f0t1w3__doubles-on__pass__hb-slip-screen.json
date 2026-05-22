@@ -1,0 +1,54 @@
+{
+  "slug": "gun__r1f0t1w3__doubles-on__pass__hb-slip-screen",
+  "info": {
+    "family": "GUN",
+    "formation": "Doubles On",
+    "play_name": "HB Slip Screen",
+    "play_type": "pass",
+    "canonical_team": "Minnesota Vikings",
+    "canonical_img": 92,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Minnesota Vikings",
+      "Oakland Raiders",
+      "Run Balanced",
+      "San Francisco 49ers",
+      "Seattle Seahawks",
+      "St. Louis Rams"
+    ],
+    "owner_count": 6,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Doubles On",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Doubles \u2014 1 TE 3 WR (slot variant)"
+    }
+  },
+  "usage": {
+    "input_tokens": 499,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 174
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.14,
+  "response_text": "```json\n{\n  \"concept\": \"hb_screen\",\n  \"concepts\": [\"hb_screen\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"corner\",\n    \"TE_R\": \"seam\",\n    \"WR_SLOT_L\": \"drag\",\n    \"HB\": \"screen\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"HB\",\n  \"notes\": \"HB slip screen with corner routes clearing outside to create space for the screen pass. WR_SLOT_L runs a drag as part of the clearout pattern. Red arrow indicates primary target is the HB on the screen route.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "hb_screen",
+    "concept_family": "screen",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bhb (slip )?screen\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

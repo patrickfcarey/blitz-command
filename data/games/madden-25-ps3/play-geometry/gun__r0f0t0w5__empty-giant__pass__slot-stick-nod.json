@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r0f0t0w5__empty-giant__pass__slot-stick-nod",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Giant",
+    "play_name": "Slot Stick Nod",
+    "play_type": "pass",
+    "canonical_team": "New York Giants",
+    "canonical_img": 137,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "New York Giants"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Giant",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 522,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 212
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.98,
+  "response_text": "```json\n{\n  \"concept\": \"stick\",\n  \"concepts\": [\"stick\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"stick\",\n    \"WR_SLOT_R\": \"flat\",\n    \"WR_FLANKER\": \"streak\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_R\",\n  \"notes\": \"5-WR Empty formation. Red arrow (primary target) originates from QB and targets WR_SLOT_R running flat. Yellow arrows on left side: WR_X streak, WR_Z corner, WR_SLOT_L stick route. Right side: WR_FLANKER streak. Standard stick concept structure with slot receiver running the flat as primary target.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "stick",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bstick\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

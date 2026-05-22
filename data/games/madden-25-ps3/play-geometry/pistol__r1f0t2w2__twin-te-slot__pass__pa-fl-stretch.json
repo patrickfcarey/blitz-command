@@ -1,0 +1,49 @@
+{
+  "slug": "pistol__r1f0t2w2__twin-te-slot__pass__pa-fl-stretch",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Twin TE Slot",
+    "play_name": "PA FL Stretch",
+    "play_type": "pass",
+    "canonical_team": "Kansas City Chiefs",
+    "canonical_img": 60,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Kansas City Chiefs"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Twin TE Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 529,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 170
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.14,
+  "response_text": "```json\n{\n  \"concept\": \"outside_zone\",\n  \"concepts\": [\"outside_zone\"],\n  \"routes\": {\n    \"TE_L\": \"streak\",\n    \"TE_R\": \"streak\",\n    \"WR_SLOT_L\": \"flat\",\n    \"WR_SLOT_R\": \"flat\",\n    \"HB\": \"wheel\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"PA FL Stretch: play-action pass with two TEs stretching vertically and slot receivers running flats. HB wheels out as checkdown. Red arrow on TE_R indicates primary target.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "outside_zone",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bhb stretch\\b|\\bstretch\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

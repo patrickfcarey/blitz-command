@@ -1,0 +1,49 @@
+{
+  "slug": "i-form__r1f1t1w2__pro__pass__pa-atl-dig",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Pro",
+    "play_name": "PA ATL Dig",
+    "play_type": "pass",
+    "canonical_team": "Atlanta Falcons",
+    "canonical_img": 48,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Atlanta Falcons"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "I-Form Pro default"
+    }
+  },
+  "usage": {
+    "input_tokens": 500,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 235
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.2,
+  "response_text": "```json\n{\n  \"concept\": \"dig_route\",\n  \"concepts\": [\"dig_route\", \"pa_pass\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"dig\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"wheel\",\n    \"FB\": \"block\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Play-action bootleg with dig concept. WR_Z (Triangle/green) runs the primary dig route at ~12 yds. WR_X (Square/purple) runs corner over the top. TE_R (Circle/red) releases on seam. HB (R1/blue) runs wheel route out of backfield. FB blocks initially, then may release. Red arrow originates from QB and targets dig receiver (WR_Z). Yellow arrows show backside action and TE vertical release.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "dig_route",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdig\\b|\\bdigs\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "strong__r1f1t2w2__h-twin-te__pass__f-trail",
+  "info": {
+    "family": "STRONG",
+    "formation": "H Twin TE",
+    "play_name": "F Trail",
+    "play_type": "pass",
+    "canonical_team": "Joe Gibbs",
+    "canonical_img": 97,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Joe Gibbs"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "H Twin TE",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 168,
+    "cache_creation_input_tokens": 352,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 181
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 4.35,
+  "response_text": "```json\n{\n  \"concept\": \"trail_concept\",\n  \"concepts\": [\"trail_concept\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"streak\",\n    \"TE_L\": \"drag\",\n    \"TE_R\": \"trail\",\n    \"FB\": \"swing\",\n    \"HB\": \"block\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"TE_R (R1 button) runs the primary trail route with red arrow; TE_L runs drag across the formation; WR_X runs corner; WR_Z runs streak; FB releases to swing; HB blocks.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "trail_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\btrail\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "slug": "gun__r1f0t1w3__split-close__run__fb-inside",
+  "info": {
+    "family": "GUN",
+    "formation": "Split Close",
+    "play_name": "FB Inside",
+    "play_type": "run",
+    "canonical_team": "Arizona Cardinals",
+    "canonical_img": 79,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Arizona Cardinals",
+      "Indianapolis Colts",
+      "Pittsburgh Steelers"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Split Close",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "GUN/Shotgun default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 583,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 65
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 35.7,
+  "response_text": "```json\n{\n  \"concept\": \"fb_run\",\n  \"concepts\": [\"fb_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"FB D_left\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_left",
+    "c_xy": [
+      1551,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      40,
+      615
+    ],
+    "dx_from_c": -1511,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "fb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bfb (belly|inside|base)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

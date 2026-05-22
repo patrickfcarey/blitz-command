@@ -1,0 +1,49 @@
+{
+  "slug": "weak__r1f1t1w3__flex-twins__pass__wr-in",
+  "info": {
+    "family": "WEAK",
+    "formation": "Flex Twins",
+    "play_name": "WR In",
+    "play_type": "pass",
+    "canonical_team": "West Coast",
+    "canonical_img": 79,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "West Coast"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "WEAK",
+      "formation": "Flex Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 518,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 188
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.68,
+  "response_text": "```json\n{\n  \"concept\": \"ins\",\n  \"concepts\": [\"ins\"],\n  \"routes\": {\n    \"WR_X\": \"in\",\n    \"WR_Z\": \"in\",\n    \"WR_SLOT_L\": \"corner\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Weak formation with Flex Twins personnel (r1f1t1w3). Two inside receivers run in-breakers at different depths; slot WR runs corner to opposite side; TE runs seam vertical clearout; HB checks release. Red arrow on WR_X indicates primary target.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "ins",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bins?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

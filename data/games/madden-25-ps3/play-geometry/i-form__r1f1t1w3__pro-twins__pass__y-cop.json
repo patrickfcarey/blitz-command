@@ -1,0 +1,54 @@
+{
+  "slug": "i-form__r1f1t1w3__pro-twins__pass__y-cop",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Pro Twins",
+    "play_name": "Y Cop",
+    "play_type": "pass",
+    "canonical_team": "Brian Billick",
+    "canonical_img": 65,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Brian Billick",
+      "Dick Vermeil",
+      "Jimmy Johnson",
+      "Mike Ditka",
+      "San Diego Chargers",
+      "Tom Flores"
+    ],
+    "owner_count": 6,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Pro Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Twins \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 509,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 233
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.69,
+  "response_text": "```json\n{\n  \"concept\": \"y_cop\",\n  \"concepts\": [\"y_cop\"],\n  \"routes\": {\n    \"QB\": \"pass\",\n    \"FB\": \"block\",\n    \"HB\": \"swing\",\n    \"TE_L\": \"corner\",\n    \"TE_R\": \"out\",\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"dig\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"I-Form Pro Twins with 3 WRs. Y Cop is a 2-TE concept with dig route from slot WR. Red arrow on TE_R (out route) indicates primary target. Left side shows TE corner and WR streak; right side shows TE out, WR streak, and slot dig. HB swing available as checkdown.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "unknown",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": null,
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

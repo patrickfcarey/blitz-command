@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t2w2__trips-te__pass__flex-sd-hb-wheel",
+  "info": {
+    "family": "GUN",
+    "formation": "Trips TE",
+    "play_name": "Flex SD HB Wheel",
+    "play_type": "pass",
+    "canonical_team": "San Diego Chargers",
+    "canonical_img": 115,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "San Diego Chargers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Trips TE",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 596,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 202
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 5.59,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"generic_hb_run\"],\n  \"routes\": {\n    \"HB\": \"wheel\"\n  },\n  \"ball_carrier\": \"HB B_right\",\n  \"primary_target\": null,\n  \"notes\": \"Play labeled PASS but py_concept indicates run family. Visual shows red arrow (ball-carrier path) on HB wheeling to the right sideline. HB receives handoff and runs edge route. Formation is GUN Trips TE (r1f0t2w2): QB in shotgun, HB to side, 2 TEs on LOS, 2 WRs split wide. Button glyphs visible on receivers but no pass routes traced; all non-ball-carrier receivers block or release downfield as secondary options.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bhb \\w+",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

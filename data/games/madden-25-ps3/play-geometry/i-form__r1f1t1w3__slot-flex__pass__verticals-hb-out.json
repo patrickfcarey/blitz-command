@@ -1,0 +1,50 @@
+{
+  "slug": "i-form__r1f1t1w3__slot-flex__pass__verticals-hb-out",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Slot Flex",
+    "play_name": "Verticals HB Out",
+    "play_type": "pass",
+    "canonical_team": "Kansas City Chiefs",
+    "canonical_img": 39,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Kansas City Chiefs",
+      "New York Jets"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Slot Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Slot \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 573,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 248
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.47,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"generic_hb_run\"],\n  \"routes\": {\n    \"HB\": \"out\",\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_R\": \"streak\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"HB\",\n  \"notes\": \"Play labeled as PASS in UI banner but py_concept indicates run family. Treating as pass play per play_type field. HB is the primary target on the out route (red arrow). Three WRs appear to run vertical clearout streaks (yellow arrows). TE_L and TE_R block. Formation is I-FORM Slot Flex (r1f1t1w3): 1 RB (HB), 1 FB, 1 TE (TE_L inline), 3 WRs (X, Z, Slot_R).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bhb \\w+",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

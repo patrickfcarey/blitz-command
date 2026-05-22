@@ -1,0 +1,54 @@
+{
+  "slug": "gun__r0f0t0w5__empty-base__pass__stick",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Base",
+    "play_name": "Stick",
+    "play_type": "pass",
+    "canonical_team": "Atlanta Falcons",
+    "canonical_img": 135,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Atlanta Falcons",
+      "Buffalo Bills",
+      "Carolina Panthers",
+      "Jacksonville Jaguars",
+      "John Madden",
+      "Miami Dolphins"
+    ],
+    "owner_count": 6,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Base",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 512,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 247
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.22,
+  "response_text": "```json\n{\n  \"concept\": \"stick\",\n  \"concepts\": [\"stick\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"flat\",\n    \"WR_SLOT_L\": \"stick\",\n    \"WR_SLOT_R\": \"corner\",\n    \"QB\": \"dropback\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_L\",\n  \"notes\": \"GUN Empty 5-wide formation (r0f0t0w5). WR_X (purple \u25a1) streaks left. WR_Z (green \u25b3) runs flat. WR_SLOT_L (blue \u2297) runs stick route (primary target, red arrow). WR_SLOT_R (R1 shoulder button) runs corner over flat. WR_FLANKER (red \u2299) runs vertical right edge. QB in shotgun. Standard stick concept with 5 WRs, no backs.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "stick",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bstick\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

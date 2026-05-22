@@ -1,0 +1,50 @@
+{
+  "slug": "i-form__r1f1t2w2__tight-pair__pass__pa-mtn-power",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Tight Pair",
+    "play_name": "PA Mtn Power",
+    "play_type": "pass",
+    "canonical_team": "Buffalo Bills",
+    "canonical_img": 56,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Buffalo Bills",
+      "Dallas Cowboys"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Tight Pair",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Tight/Twin-TE \u2014 2 TE"
+    }
+  },
+  "usage": {
+    "input_tokens": 530,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 129
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 1.9,
+  "response_text": "```json\n{\n  \"concept\": \"pa_mtn_power\",\n  \"concepts\": [\"pa_mtn_power\"],\n  \"routes\": {\n    \"TE_L\": \"streak\",\n    \"TE_R\": \"corner\",\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"comeback\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "power_run",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpower\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

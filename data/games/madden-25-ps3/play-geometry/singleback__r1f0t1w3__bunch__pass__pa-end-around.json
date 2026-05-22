@@ -1,0 +1,68 @@
+{
+  "slug": "singleback__r1f0t1w3__bunch__pass__pa-end-around",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Bunch",
+    "play_name": "PA End Around",
+    "play_type": "pass",
+    "canonical_team": "Balanced",
+    "canonical_img": 27,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Balanced",
+      "Buffalo Bills",
+      "Chicago Bears",
+      "Cincinnati Bengals",
+      "Cleveland Browns",
+      "Denver Broncos",
+      "Green Bay Packers",
+      "Indianapolis Colts",
+      "Jacksonville Jaguars",
+      "Joe Gibbs",
+      "Miami Dolphins",
+      "Minnesota Vikings",
+      "New England Patriots",
+      "New York Giants",
+      "New York Jets",
+      "Pass Balanced",
+      "Run Heavy",
+      "San Diego Chargers",
+      "St. Louis Rams",
+      "Tampa Bay Buccaneers"
+    ],
+    "owner_count": 20,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Bunch",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 521,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 266
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.76,
+  "response_text": "```json\n{\n  \"concept\": \"reverse\",\n  \"concepts\": [\"reverse\", \"pa_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"flat\",\n    \"HB\": \"reverse_carry\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Play-action end around with reverse motion. HB receives handoff on jet sweep/reverse to the right after initial PA action. Primary pass target (red arrow) is WR_Z on corner route. Backside slot runs flat, backside outer WR runs streak as clearout. Single TE position appears to be absent in this 10-personnel formation (r1f0t1w3 = 1 RB, 0 FB, 1 TE, 3 WR); the visible formation shows 4 receivers and 1 RB with QB in shotgun \u2014 may indicate the TE is bunched tight or the personnel hint is override by Bunch package.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "reverse",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bend around\\b|\\breverse\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "slug": "i-form__r1f1t2w2__tight-pair__pass__te-post",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Tight Pair",
+    "play_name": "TE Post",
+    "play_type": "pass",
+    "canonical_team": "Arizona Cardinals",
+    "canonical_img": 63,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Arizona Cardinals",
+      "Buffalo Bills",
+      "Dick Vermeil",
+      "Green Bay Packers",
+      "Houston Texans",
+      "Indianapolis Colts",
+      "Joe Gibbs",
+      "Pass Balanced",
+      "Philadelphia Eagles",
+      "Pittsburgh Steelers",
+      "Run Balanced",
+      "Run Heavy",
+      "Tennessee Titans",
+      "West Coast"
+    ],
+    "owner_count": 14,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Tight Pair",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Tight/Twin-TE \u2014 2 TE"
+    }
+  },
+  "usage": {
+    "input_tokens": 523,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 207
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.64,
+  "response_text": "```json\n{\n  \"concept\": \"post_concept\",\n  \"concepts\": [\"post_concept\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"TE_R\": \"post\",\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"drag\",\n    \"FB\": \"block\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"I-Form Tight Pair with 2 TEs. TE_R (right-side, X button) runs the primary post route (red arrow). WR_X runs corner clearout (yellow), WR_Z runs drag (yellow). Left TE blocks. Backfield is QB + FB + HB stacked column behind C.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "post_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpost(?![- ]corner)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

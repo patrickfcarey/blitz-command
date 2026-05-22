@@ -1,0 +1,49 @@
+{
+  "slug": "strong__r1f1t1w2__h-pro__pass__pa-slide",
+  "info": {
+    "family": "STRONG",
+    "formation": "H Pro",
+    "play_name": "PA Slide",
+    "play_type": "pass",
+    "canonical_team": "Dick Vermeil",
+    "canonical_img": 89,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Dick Vermeil"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "H Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 494,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 185
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.68,
+  "response_text": "```json\n{\n  \"concept\": \"slide_pass\",\n  \"concepts\": [\"slide_pass\"],\n  \"routes\": {\n    \"HB\": \"swing\",\n    \"FB\": \"block\",\n    \"TE_L\": \"block\",\n    \"WR_X\": \"comeback\",\n    \"WR_Z\": \"corner\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"PA play with HB swing check-release to right, WR_Z runs corner route (red arrow), WR_X runs comeback on opposite side. TE_L and FB block on play-action fake. One WR (possibly slot or flanker) visible but role classification limited by single-frame view.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "slide_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bslide\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

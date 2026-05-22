@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r0f0t0w5__empty-y-flex__pass__sluggo",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Y-Flex",
+    "play_name": "Sluggo",
+    "play_type": "pass",
+    "canonical_team": "Houston Texans",
+    "canonical_img": 140,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Houston Texans"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Y-Flex",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 520,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 130
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 1.65,
+  "response_text": "```json\n{\n  \"concept\": \"sluggo\",\n  \"concepts\": [\"sluggo\"],\n  \"routes\": {\n    \"WR_X\": \"sluggo\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"corner\",\n    \"WR_SLOT_R\": \"streak\",\n    \"WR_FLANKER\": \"streak\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "sluggo",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bsluggos?\\b|\\bsluggo seam\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

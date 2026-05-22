@@ -1,0 +1,49 @@
+{
+  "slug": "goal-line__r1f1t3w0__normal__pass__pa-te-drag",
+  "info": {
+    "family": "GOAL LINE",
+    "formation": "Normal",
+    "play_name": "PA TE Drag",
+    "play_type": "pass",
+    "canonical_team": "New Orleans Saints",
+    "canonical_img": 138,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "New Orleans Saints"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GOAL LINE",
+      "formation": "Normal",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 3,
+      "WR": 0,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Goal Line \u2014 typical heavy package"
+    }
+  },
+  "usage": {
+    "input_tokens": 522,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 201
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.71,
+  "response_text": "```json\n{\n  \"concept\": \"drags\",\n  \"concepts\": [\"drags\"],\n  \"routes\": {\n    \"TE_L\": \"drag\",\n    \"TE_M\": \"drag\",\n    \"TE_R\": \"block\",\n    \"FB\": \"block\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_L\",\n  \"notes\": \"Goal Line formation with 3 TEs. Red arrow originates from TE_L (purple \u25a1 Square glyph) running a drag route across the formation. TE_M runs a parallel drag. TE_R blocks at point of attack. Play-action look with compact backfield. HB (green \u25b3 Triangle) available for checkdown swing route (gray arrow).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "drags",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdrags?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

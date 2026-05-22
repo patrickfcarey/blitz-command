@@ -1,0 +1,50 @@
+{
+  "slug": "gun__r0f0t0w5__empty-trey__pass__dig-curl-read",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Trey",
+    "play_name": "Dig Curl Read",
+    "play_type": "pass",
+    "canonical_team": "Chicago Bears",
+    "canonical_img": 132,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Chicago Bears",
+      "Detroit Lions"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Trey",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 498,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 199
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.25,
+  "response_text": "```json\n{\n  \"concept\": \"curls\",\n  \"concepts\": [\"curls\"],\n  \"routes\": {\n    \"WR_X\": \"dig\",\n    \"WR_Z\": \"curl\",\n    \"WR_SLOT_L\": \"streak\",\n    \"WR_SLOT_R\": \"streak\",\n    \"WR_FLANKER\": \"streak\",\n    \"QB\": \"snap\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"5-wide empty formation. WR_X runs dig route (red arrow), WR_Z runs curl (yellow arrow over the middle). Three outer WRs run vertical stretches to clear. R1 button glyph (red circle) marks the primary target receiver on the curl.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "curls",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcurls?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

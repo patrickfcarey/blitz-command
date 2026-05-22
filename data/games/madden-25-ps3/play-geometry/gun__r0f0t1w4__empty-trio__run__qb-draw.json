@@ -1,0 +1,58 @@
+{
+  "slug": "gun__r0f0t1w4__empty-trio__run__qb-draw",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Trio",
+    "play_name": "QB Draw",
+    "play_type": "run",
+    "canonical_team": "Run N Gun",
+    "canonical_img": 109,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Run N Gun"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Trio",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 1,
+      "WR": 4,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 584,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 65
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 82.23,
+  "response_text": "```json\n{\n  \"concept\": \"qb_run\",\n  \"concepts\": [\"qb_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"QB straight\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "straight",
+    "c_xy": [
+      1553,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      1608,
+      615
+    ],
+    "dx_from_c": 55,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "qb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bqb (draw|run|keep)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "slug": "singleback__r1f0t1w3__f-pair-twins__run__hb-toss-strong",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "F Pair Twins",
+    "play_name": "HB Toss Strong",
+    "play_type": "run",
+    "canonical_team": "Baltimore Ravens",
+    "canonical_img": 21,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Baltimore Ravens"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "F Pair Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "Singleback default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 578,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 72
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.2,
+  "response_text": "```json\n{\n  \"concept\": \"outside_run_toss\",\n  \"concepts\": [\"outside_run_toss\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB D_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_right",
+    "c_xy": [
+      1632,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      2306,
+      687
+    ],
+    "dx_from_c": 674,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "outside_run_toss",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bhb toss\\b|\\btoss\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

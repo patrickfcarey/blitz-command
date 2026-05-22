@@ -1,0 +1,58 @@
+{
+  "slug": "strong__r1f1t1w2__pro__run__bears-zone-wk",
+  "info": {
+    "family": "STRONG",
+    "formation": "Pro",
+    "play_name": "Bears Zone Wk",
+    "play_type": "run",
+    "canonical_team": "Chicago Bears",
+    "canonical_img": 66,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Chicago Bears"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 586,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 66
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 65.89,
+  "response_text": "```json\n{\n  \"concept\": \"zone_run\",\n  \"concepts\": [\"zone_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB C_left\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "C_left",
+    "c_xy": [
+      1551,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      1137,
+      615
+    ],
+    "dx_from_c": -414,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "zone_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bzone (wk|str|weak|strong)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

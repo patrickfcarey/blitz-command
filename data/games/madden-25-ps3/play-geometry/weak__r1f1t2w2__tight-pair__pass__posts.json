@@ -1,0 +1,49 @@
+{
+  "slug": "weak__r1f1t2w2__tight-pair__pass__posts",
+  "info": {
+    "family": "WEAK",
+    "formation": "Tight Pair",
+    "play_name": "Posts",
+    "play_type": "pass",
+    "canonical_team": "San Francisco 49ers",
+    "canonical_img": 76,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "San Francisco 49ers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "WEAK",
+      "formation": "Tight Pair",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 490,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 124
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 1.74,
+  "response_text": "```json\n{\n  \"concept\": \"post_concept\",\n  \"concepts\": [\"post_concept\"],\n  \"routes\": {\n    \"WR_X\": \"post\",\n    \"WR_Z\": \"post\",\n    \"TE_L\": \"post\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "post_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "^posts?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

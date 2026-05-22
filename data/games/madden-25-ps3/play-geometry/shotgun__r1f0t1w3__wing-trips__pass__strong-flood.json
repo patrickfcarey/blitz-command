@@ -1,0 +1,49 @@
+{
+  "slug": "shotgun__r1f0t1w3__wing-trips__pass__strong-flood",
+  "info": {
+    "family": "SHOTGUN",
+    "formation": "Wing Trips",
+    "play_name": "Strong Flood",
+    "play_type": "pass",
+    "canonical_team": "Run Heavy",
+    "canonical_img": 78,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Run Heavy"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SHOTGUN",
+      "formation": "Wing Trips",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 493,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 232
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.86,
+  "response_text": "```json\n{\n  \"concept\": \"flood\",\n  \"concepts\": [\"flood\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_R\": \"flat\",\n    \"TE_R\": \"dig\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Strong Flood attacking right side with vertical stretch (WR_Z streak), intermediate dig (TE_R), and flat (WR_SLOT_R). Left side WR_X runs clearout streak. Red arrow on WR_Z indicates primary target. Button assignments visible: \u25a1 (WR_X), \u25b3 (HB), \u2297 (WR_Z), \u2299 (TE_R), R1 (WR_SLOT_R).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "flood",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bflood\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

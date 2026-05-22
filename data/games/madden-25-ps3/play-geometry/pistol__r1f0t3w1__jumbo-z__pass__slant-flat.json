@@ -1,0 +1,49 @@
+{
+  "slug": "pistol__r1f0t3w1__jumbo-z__pass__slant-flat",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Jumbo Z",
+    "play_name": "Slant Flat",
+    "play_type": "pass",
+    "canonical_team": "Seattle Seahawks",
+    "canonical_img": 76,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Seattle Seahawks"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Jumbo Z",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 3,
+      "WR": 1,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Jumbo \u2014 typically 3 TE 1 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 499,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 251
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.75,
+  "response_text": "```json\n{\n  \"concept\": \"slants\",\n  \"concepts\": [\"slants\"],\n  \"routes\": {\n    \"WR_X\": \"slant\",\n    \"WR_Z\": \"slant\",\n    \"TE_L\": \"slant\",\n    \"TE_M\": \"slant\",\n    \"TE_R\": \"flat\",\n    \"HB\": \"wheel\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"Pistol Jumbo Z (3 TEs) with slant-flat concept. WR_X (purple \u25a1) runs slant left; WR_Z (blue \u2297) runs slant right; three TEs (TE_L, TE_M, TE_R white circles on LOS) with TE_L and TE_M running slants and TE_R running flat to the right (primary target, red arrow). HB runs wheel route (blue arrow, check-release).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "slants",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bslants?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

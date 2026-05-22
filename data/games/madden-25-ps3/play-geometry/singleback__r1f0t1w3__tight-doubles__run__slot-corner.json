@@ -1,0 +1,58 @@
+{
+  "slug": "singleback__r1f0t1w3__tight-doubles__run__slot-corner",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Tight Doubles",
+    "play_name": "Slot Corner",
+    "play_type": "run",
+    "canonical_team": "West Coast",
+    "canonical_img": 18,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "West Coast"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Tight Doubles",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 525,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 225
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 95.37,
+  "response_text": "```json\n{\n  \"concept\": \"slot_concept\",\n  \"concepts\": [\"slot_concept\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"corner\",\n    \"TE_R\": \"wheel\"\n  },\n  \"ball_carrier\": \"HB D_left\",\n  \"primary_target\": null,\n  \"notes\": \"Play labeled as RUN but diagram shows pass routes (yellow and cyan arrows on WRs and TE). This appears to be a run-pass option (RPO) or the play_type field is inconsistent with the visual route structure. Ball carrier (HB) breaks left edge. Multiple receivers running breaking/vertical routes suggest pass concept overlay. Yellow arrows indicate slot corner concept with WR_SLOT_L running corner over WR_Z streak on left side; right side shows TE_R wheel route.\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_left",
+    "c_xy": [
+      1551,
+      613
+    ],
+    "arrow_los_crossing_xy": [
+      161,
+      613
+    ],
+    "dx_from_c": -1390,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "slot_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bslot (drag|cross|streak|corner|out|in|wheel)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

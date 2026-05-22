@@ -1,0 +1,49 @@
+{
+  "slug": "pistol__r1f0t1w3__slot__pass__pa-wr-slip",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Slot",
+    "play_name": "PA WR Slip",
+    "play_type": "pass",
+    "canonical_team": "Kansas City Chiefs",
+    "canonical_img": 67,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Kansas City Chiefs"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "Pistol default \u2014 variant unclear"
+    }
+  },
+  "usage": {
+    "input_tokens": 484,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 221
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.69,
+  "response_text": "```json\n{\n  \"concept\": \"pa_wr_slip\",\n  \"concepts\": [\"pa_wr_slip\"],\n  \"routes\": {\n    \"WR_X\": \"slip\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_R\": \"streak\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Play-action pass with WR slip concept. WR_X (purple \u25a1 Square button) runs slip route on left side. WR_Z (red \u25cb Circle button) and slot WR (blue \u2297 X button) run vertical streaks on right side. TE_R (green \u25b3 Triangle button) runs seam. HB in Pistol formation checks/releases.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "unknown",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": null,
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

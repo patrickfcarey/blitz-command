@@ -1,0 +1,58 @@
+{
+  "slug": "i-form__r1f1t1w2__tackle-over__run__hb-slam",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Tackle Over",
+    "play_name": "HB Slam",
+    "play_type": "run",
+    "canonical_team": "St. Louis Rams",
+    "canonical_img": 62,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "St. Louis Rams"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Tackle Over",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "I-Form Pro default"
+    }
+  },
+  "usage": {
+    "input_tokens": 566,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 66
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 74.34,
+  "response_text": "```json\n{\n  \"concept\": \"iso_slam\",\n  \"concepts\": [\"iso_slam\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB B_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "B_right",
+    "c_xy": [
+      1604,
+      609
+    ],
+    "arrow_los_crossing_xy": [
+      1834,
+      609
+    ],
+    "dx_from_c": 230,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "iso_slam",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bslam\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

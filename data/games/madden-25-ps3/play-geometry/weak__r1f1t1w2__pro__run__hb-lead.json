@@ -1,0 +1,65 @@
+{
+  "slug": "weak__r1f1t1w2__pro__run__hb-lead",
+  "info": {
+    "family": "WEAK",
+    "formation": "Pro",
+    "play_name": "HB Lead",
+    "play_type": "run",
+    "canonical_team": "Brian Billick",
+    "canonical_img": 105,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Brian Billick",
+      "Detroit Lions",
+      "Dick Vermeil",
+      "Houston Texans",
+      "Jacksonville Jaguars",
+      "Jimmy Johnson",
+      "Kansas City Chiefs",
+      "Mike Ditka"
+    ],
+    "owner_count": 8,
+    "expected_personnel": {
+      "family": "WEAK",
+      "formation": "Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 585,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 72
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 57.55,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"generic_hb_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB A_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "A_right",
+    "c_xy": [
+      1553,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      1745,
+      615
+    ],
+    "dx_from_c": 192,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "^hb \\w+",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "slug": "i-form__r1f1t1w2__pro__run__texans-zone",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Pro",
+    "play_name": "Texans Zone",
+    "play_type": "run",
+    "canonical_team": "Houston Texans",
+    "canonical_img": 62,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Houston Texans"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "I-Form Pro default"
+    }
+  },
+  "usage": {
+    "input_tokens": 484,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 109
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.54,
+  "response_text": "```json\n{\n  \"concept\": \"zone\",\n  \"concepts\": [\"zone\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"TE_R\": \"block\",\n    \"WR_X\": \"block\",\n    \"WR_Z\": \"block\"\n  },\n  \"ball_carrier\": \"HB B_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "B_right",
+    "c_xy": [
+      1476,
+      613
+    ],
+    "arrow_los_crossing_xy": [
+      1684,
+      613
+    ],
+    "dx_from_c": 208,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "unknown",
+    "concept_family": "run",
+    "blockers_implicit": false,
+    "matched_pattern": null,
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "slug": "singleback__r1f0t1w3__slot__run__zone-weak",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Slot",
+    "play_name": "Zone Weak",
+    "play_type": "run",
+    "canonical_team": "John Madden",
+    "canonical_img": 22,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "John Madden",
+      "Tom Flores",
+      "Tom Landry"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 586,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 66
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 57.99,
+  "response_text": "```json\n{\n  \"concept\": \"zone_run\",\n  \"concepts\": [\"zone_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB B_left\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "B_left",
+    "c_xy": [
+      1553,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      1310,
+      615
+    ],
+    "dx_from_c": -243,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "zone_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bzone (wk|str|weak|strong)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

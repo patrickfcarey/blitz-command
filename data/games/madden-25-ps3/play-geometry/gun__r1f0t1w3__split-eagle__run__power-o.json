@@ -1,0 +1,58 @@
+{
+  "slug": "gun__r1f0t1w3__split-eagle__run__power-o",
+  "info": {
+    "family": "GUN",
+    "formation": "Split Eagle",
+    "play_name": "Power O",
+    "play_type": "run",
+    "canonical_team": "Philadelphia Eagles",
+    "canonical_img": 54,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Philadelphia Eagles"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Split Eagle",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "GUN/Shotgun default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 231,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 66
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 7.44,
+  "response_text": "```json\n{\n  \"concept\": \"power_o\",\n  \"concepts\": [\"power_o\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB C_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "C_right",
+    "c_xy": [
+      1476,
+      621
+    ],
+    "arrow_los_crossing_xy": [
+      1874,
+      230
+    ],
+    "dx_from_c": 398,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "power_o",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bpower ?o\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__trey-open__pass__jets-read",
+  "info": {
+    "family": "GUN",
+    "formation": "Trey Open",
+    "play_name": "Jets Read",
+    "play_type": "pass",
+    "canonical_team": "New York Jets",
+    "canonical_img": 104,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "New York Jets"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Trey Open",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "GUN/Shotgun default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 169,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 191
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 5.9,
+  "response_text": "```json\n{\n  \"concept\": \"read_pass\",\n  \"concepts\": [\"read_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"seam\",\n    \"TE_R\": \"corner\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"R1\",\n  \"notes\": \"R1 button glyph (red Circle) is the primary target marked on the play, positioned right sideline. TE_R runs corner route. Four vertical-like concept with TE releasing upfield. Backfield shows QB in shotgun only (no FB per r1f0 encoding).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "read_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bread\\b(?!.*option)",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

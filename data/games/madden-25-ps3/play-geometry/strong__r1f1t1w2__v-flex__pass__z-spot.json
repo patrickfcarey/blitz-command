@@ -1,0 +1,50 @@
+{
+  "slug": "strong__r1f1t1w2__v-flex__pass__z-spot",
+  "info": {
+    "family": "STRONG",
+    "formation": "V-Flex",
+    "play_name": "Z Spot",
+    "play_type": "pass",
+    "canonical_team": "Cincinnati Bengals",
+    "canonical_img": 67,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Cincinnati Bengals",
+      "Dick Vermeil"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "V-Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "STRONG default \u2014 variant unclear"
+    }
+  },
+  "usage": {
+    "input_tokens": 494,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 224
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.54,
+  "response_text": "```json\n{\n  \"concept\": \"z_concept\",\n  \"concepts\": [\"z_concept\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"TE_L\": \"flat\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Strong V-Flex formation with 1 RB, 1 FB, 1 TE, 2 WRs. Z receiver (WR_Z, blue X button, far right) runs corner route as primary target with red arrow. X receiver (WR_X, purple square, left side) runs streak. TE_L (white circle adjacent to OL) runs flat. HB positioned for checkdown. FB implied in backfield but not distinctly visible as separate from HB in diagram.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "z_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bz[- ]?(spot|cross|streak|corner|drive|trail|out|drag|sail)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

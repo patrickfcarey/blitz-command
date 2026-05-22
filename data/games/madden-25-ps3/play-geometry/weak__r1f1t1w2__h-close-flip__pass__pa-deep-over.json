@@ -1,0 +1,49 @@
+{
+  "slug": "weak__r1f1t1w2__h-close-flip__pass__pa-deep-over",
+  "info": {
+    "family": "WEAK",
+    "formation": "H Close Flip",
+    "play_name": "PA Deep Over",
+    "play_type": "pass",
+    "canonical_team": "Baltimore Ravens",
+    "canonical_img": 93,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Baltimore Ravens"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "WEAK",
+      "formation": "H Close Flip",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "WEAK default \u2014 variant unclear"
+    }
+  },
+  "usage": {
+    "input_tokens": 485,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 267
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.13,
+  "response_text": "```json\n{\n  \"concept\": \"pa_deep_over\",\n  \"concepts\": [\"pa_deep_over\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"WR_X\": \"deep_over\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_R\": \"wheel\",\n    \"HB\": \"swing\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Play-action deep over concept. WR_X (purple Square button, top-left) runs the primary deep over route (red arrow). WR_Z (blue X button, top-right) runs a corner. WR_SLOT_R (green Triangle button, middle-right with R1 label) runs a wheel route (blue arrow). TE_L (left-side circle) blocks initially. HB runs a check/swing route (yellow arrow, bottom). Formation is Weak H Close Flip with 1 RB, 1 FB, 1 TE, 2 WR as expected.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "unknown",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": null,
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

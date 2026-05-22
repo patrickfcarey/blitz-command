@@ -1,0 +1,50 @@
+{
+  "slug": "singleback__r1f0t1w3__tight-slots__pass__bench-switch",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Tight Slots",
+    "play_name": "Bench Switch",
+    "play_type": "pass",
+    "canonical_team": "Carolina Panthers",
+    "canonical_img": 28,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Carolina Panthers",
+      "Philadelphia Eagles"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Tight Slots",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 498,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 227
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.05,
+  "response_text": "```json\n{\n  \"concept\": \"bench_concept\",\n  \"concepts\": [\"bench_concept\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"switch\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_L\",\n  \"notes\": \"Bench Switch concept \u2014 WR_SLOT_L runs the namesake switch/crossing route (blue arrow, likely a short crosser or option break). Both outside WRs corner routes. TE_R runs seam on R1 button. HB available for checkdown. Two-WR formation (Tight Slots) with 1 TE and 1 HB as expected (r1f0t1w3).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "bench_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bbench\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

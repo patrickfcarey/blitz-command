@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__bunch-wk__pass__hb-cross-screen",
+  "info": {
+    "family": "GUN",
+    "formation": "Bunch Wk",
+    "play_name": "HB Cross Screen",
+    "play_type": "pass",
+    "canonical_team": "Denver Broncos",
+    "canonical_img": 120,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Denver Broncos"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Bunch Wk",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 568,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 181
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.61,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"hb_cross_screen\"],\n  \"routes\": {\n    \"HB\": \"screen\"\n  },\n  \"ball_carrier\": \"HB\",\n  \"primary_target\": null,\n  \"notes\": \"Play labeled 'HB Cross Screen' in pass context, but py_concept indicates run family. Red arrow shows HB receiving screen pass and moving laterally/forward. Formation is GUN Bunch Wk (r1f0t1w3): QB shotgun + HB to side, 1 TE, 3 WRs in bunch. Screen route is standard concept \u2014 HB catches short pass behind OL, runs laterally/forward.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "^hb \\w+",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

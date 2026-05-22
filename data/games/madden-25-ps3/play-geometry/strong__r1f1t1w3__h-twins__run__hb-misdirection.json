@@ -1,0 +1,58 @@
+{
+  "slug": "strong__r1f1t1w3__h-twins__run__hb-misdirection",
+  "info": {
+    "family": "STRONG",
+    "formation": "H Twins",
+    "play_name": "HB Misdirection",
+    "play_type": "run",
+    "canonical_team": "Baltimore Ravens",
+    "canonical_img": 75,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Baltimore Ravens"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "H Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 593,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 70
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 59.79,
+  "response_text": "```json\n{\n  \"concept\": \"misdirection_run\",\n  \"concepts\": [\"misdirection_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB A_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "A_right",
+    "c_xy": [
+      1553,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      1751,
+      615
+    ],
+    "dx_from_c": 198,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "misdirection_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bmisdirection\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

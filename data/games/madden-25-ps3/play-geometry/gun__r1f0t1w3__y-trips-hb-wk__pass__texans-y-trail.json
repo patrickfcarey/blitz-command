@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__y-trips-hb-wk__pass__texans-y-trail",
+  "info": {
+    "family": "GUN",
+    "formation": "Y-Trips HB Wk",
+    "play_name": "Texans Y Trail",
+    "play_type": "pass",
+    "canonical_team": "Houston Texans",
+    "canonical_img": 115,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Houston Texans"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Y-Trips HB Wk",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 510,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 229
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.94,
+  "response_text": "```json\n{\n  \"concept\": \"y_concept\",\n  \"concepts\": [\"y_concept\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"TE_R\": \"seam\",\n    \"WR_SLOT_L\": \"drag\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Red arrow from QB to WR_Z (right side outer WR) indicates primary target. TE on right in seam. Slot WR left running drag (blue dashed line). Both outer WRs running vertical clearouts. Formation is GUN with 1 RB (HB to left), 0 FB, 1 TE (right), 3 WRs (outer left, outer right, slot left). Total 11 on field.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "y_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\by[- ]?(cross|sail|stick|corner|trail|spot|drive|shallow)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

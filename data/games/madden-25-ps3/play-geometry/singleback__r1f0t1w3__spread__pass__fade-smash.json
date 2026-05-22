@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__spread__pass__fade-smash",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Spread",
+    "play_name": "Fade Smash",
+    "play_type": "pass",
+    "canonical_team": "Jimmy Johnson",
+    "canonical_img": 55,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Jimmy Johnson"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Spread",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 496,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 201
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.52,
+  "response_text": "```json\n{\n  \"concept\": \"smash\",\n  \"concepts\": [\"smash\"],\n  \"routes\": {\n    \"WR_X\": \"fade\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"hitch\",\n    \"WR_SLOT_R\": \"streak\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Fade Smash concept: WR_X runs fade (red arrow, primary target); WR_SLOT_L runs hitch on left side with WR_Z corner over it (smash combo). WR_SLOT_R runs streak on right side. HB in checkdown release. R1 label visible on diagram.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "smash",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bsmash\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

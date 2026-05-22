@@ -1,0 +1,58 @@
+{
+  "slug": "singleback__r1f0t1w3__spread__run__double-post",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Spread",
+    "play_name": "Double Post",
+    "play_type": "run",
+    "canonical_team": "West Coast",
+    "canonical_img": 36,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "West Coast"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Spread",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 520,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 313
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 94.24,
+  "response_text": "```json\n{\n  \"concept\": \"post_concept\",\n  \"concepts\": [\"post_concept\"],\n  \"routes\": {\n    \"WR_X\": \"post\",\n    \"WR_Z\": \"post\",\n    \"WR_SLOT_L\": \"streak\",\n    \"WR_SLOT_R\": \"streak\",\n    \"HB\": \"block\"\n  },\n  \"ball_carrier\": \"HB D_left\",\n  \"primary_target\": null,\n  \"notes\": \"Play labeled as RUN with play_type=run and D_left gap, but diagram shows 4 WRs with PASS-route arrows (yellow) and controller button glyphs (\u25a1\u25b3\u2297\u2299). This is a mislabeled pass play or the play_id/py_concept fields contradict the actual play_type. Visible: 5 OL (C + 4 circles), 0 TEs, 4 WRs on LOS with button glyphs, QB + HB in shotgun backfield. Red arrow from HB suggests run, but all WR arrows are yellow/pass routes. Treating as pass play structurally; ball_carrier set per py_target_gap hint but primary_target should be WR_X or WR_Z given the post routes visible.\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_left",
+    "c_xy": [
+      1553,
+      613
+    ],
+    "arrow_los_crossing_xy": [
+      29,
+      613
+    ],
+    "dx_from_c": -1524,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "post_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpost(?![- ]corner)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

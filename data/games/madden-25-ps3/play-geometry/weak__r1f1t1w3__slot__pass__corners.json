@@ -1,0 +1,49 @@
+{
+  "slug": "weak__r1f1t1w3__slot__pass__corners",
+  "info": {
+    "family": "WEAK",
+    "formation": "Slot",
+    "play_name": "Corners",
+    "play_type": "pass",
+    "canonical_team": "Run Balanced",
+    "canonical_img": 79,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Run Balanced"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "WEAK",
+      "formation": "Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 512,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 192
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.84,
+  "response_text": "```json\n{\n  \"concept\": \"corner_concept\",\n  \"concepts\": [\"corner_concept\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_R\": \"flat\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Red arrow on WR_Z (right side) indicates primary target corner route. Left-side WR_X also runs corner. Slot WR runs flat. TE_R seam route. HB check/release. Standard corner concept with two-man corners on outside and flat underneath from slot.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "corner_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcorners?$",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

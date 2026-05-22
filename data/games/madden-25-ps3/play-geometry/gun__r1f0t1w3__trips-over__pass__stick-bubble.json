@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__trips-over__pass__stick-bubble",
+  "info": {
+    "family": "GUN",
+    "formation": "Trips Over",
+    "play_name": "Stick Bubble",
+    "play_type": "pass",
+    "canonical_team": "Denver Broncos",
+    "canonical_img": 116,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Denver Broncos"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Trips Over",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 519,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 152
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.34,
+  "response_text": "```json\n{\n  \"concept\": \"bubble_screen\",\n  \"concepts\": [\"bubble_screen\"],\n  \"routes\": {\n    \"WR_X\": \"bubble_screen\",\n    \"WR_Z\": \"flat\",\n    \"WR_SLOT_R\": \"vertical\",\n    \"HB\": \"block\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Bubble screen to X with Z running flat underneath and slot vertical. HB in pass-pro. R1 button glyph visible on slot receiver (vertical route).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "bubble_screen",
+    "concept_family": "screen",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bbubble screen\\b|\\bwr bubble\\b|\\bbubble\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

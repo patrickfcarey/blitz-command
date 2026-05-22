@@ -1,0 +1,49 @@
+{
+  "slug": "strong__r1f1t1w3__h-twins__pass__raven-y-cross",
+  "info": {
+    "family": "STRONG",
+    "formation": "H Twins",
+    "play_name": "Raven Y-Cross",
+    "play_type": "pass",
+    "canonical_team": "Baltimore Ravens",
+    "canonical_img": 73,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Baltimore Ravens"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "H Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 499,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 212
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.63,
+  "response_text": "```json\n{\n  \"concept\": \"y_concept\",\n  \"concepts\": [\"y_concept\"],\n  \"routes\": {\n    \"QB\": \"dropback\",\n    \"HB\": \"check_release\",\n    \"FB\": \"block\",\n    \"TE_L\": \"y_cross\",\n    \"TE_R\": \"seam\",\n    \"WR_X\": \"comeback\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"drag\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_L\",\n  \"notes\": \"Strong H Twins formation with TE_L running the primary Y-Cross route (red arrow leading left). TE_R runs seam on right side. WR routes stretch the field horizontally and vertically. HB in checkdown/releasing position.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "y_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\by[- ]?(cross|sail|stick|corner|trail|spot|drive|shallow)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

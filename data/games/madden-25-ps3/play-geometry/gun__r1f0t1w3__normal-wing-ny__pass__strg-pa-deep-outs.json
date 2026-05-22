@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__normal-wing-ny__pass__strg-pa-deep-outs",
+  "info": {
+    "family": "GUN",
+    "formation": "Normal Wing NY",
+    "play_name": "Strg PA Deep Outs",
+    "play_type": "pass",
+    "canonical_team": "New York Giants",
+    "canonical_img": 102,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "New York Giants"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Normal Wing NY",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "GUN/Shotgun default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 532,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 215
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.88,
+  "response_text": "```json\n{\n  \"concept\": \"deep_outs\",\n  \"concepts\": [\"deep_outs\"],\n  \"routes\": {\n    \"WR_X\": \"out\",\n    \"WR_Z\": \"out\",\n    \"WR_SLOT_R\": \"out\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Play-action pass with PA fake. Four eligible receivers (3 WRs + 1 TE) running deep outs/seam pattern. WR_X (purple \u25a1) is primary with red arrow route. TE_R (blue \u2297) runs seam. HB (R1) checks/releases. Strong PA setup with Wing formation aligns TE to right.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "deep_outs",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdeep outs?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

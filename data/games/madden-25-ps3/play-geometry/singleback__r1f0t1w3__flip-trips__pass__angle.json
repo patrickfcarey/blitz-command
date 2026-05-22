@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__flip-trips__pass__angle",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Flip Trips",
+    "play_name": "Angle",
+    "play_type": "pass",
+    "canonical_team": "Dick Vermeil",
+    "canonical_img": 58,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Dick Vermeil"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Flip Trips",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 495,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 214
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.95,
+  "response_text": "```json\n{\n  \"concept\": \"angle_route\",\n  \"concepts\": [\"angle_route\"],\n  \"routes\": {\n    \"WR_X\": \"angle\",\n    \"WR_Z\": \"angle\",\n    \"WR_SLOT_L\": \"angle\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"WR_Z (blue X button) is primary target running angle route upfield-right. WR_X (purple \u25a1 button) and WR_SLOT_L (green \u25b3 button) both run angle routes to their respective sides. Red arrow from WR_Z indicates primary passing lane. HB checks/releases. Formation is 4-wide (0 TE, 4 WR + 1 HB in backfield).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "angle_route",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bangle\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

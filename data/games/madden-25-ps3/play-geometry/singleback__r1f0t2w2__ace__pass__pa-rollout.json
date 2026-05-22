@@ -1,0 +1,50 @@
+{
+  "slug": "singleback__r1f0t2w2__ace__pass__pa-rollout",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Ace",
+    "play_name": "PA Rollout",
+    "play_type": "pass",
+    "canonical_team": "Baltimore Ravens",
+    "canonical_img": 10,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Baltimore Ravens",
+      "Tampa Bay Buccaneers"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Ace",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Ace family \u2014 2 TE 2 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 499,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 198
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.75,
+  "response_text": "```json\n{\n  \"concept\": \"rollout_pass\",\n  \"concepts\": [\"rollout_pass\", \"pa_pass\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"TE_R\": \"flat\",\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"streak\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"PA rollout to the right. QB rolls right with red arrow; TE_R releases to flat (green arrow); WR_Z runs deep streak (yellow arrow); WR_X runs corner route (yellow arrow); HB stays in backfield for checkdown (R1 button). TE_L blocks initially.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "rollout_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\brollout\\b|\\broll\\b",
+    "is_pa": true,
+    "is_boot_or_roll": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "i-form__r1f1t1w2__close__pass__spacing",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Close",
+    "play_name": "Spacing",
+    "play_type": "pass",
+    "canonical_team": "Houston Texans",
+    "canonical_img": 68,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Houston Texans"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Close",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "I-Form Pro default"
+    }
+  },
+  "usage": {
+    "input_tokens": 488,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 196
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.19,
+  "response_text": "```json\n{\n  \"concept\": \"spacing\",\n  \"concepts\": [\"spacing\"],\n  \"routes\": {\n    \"TE_L\": \"out\",\n    \"WR_X\": \"slant\",\n    \"WR_Z\": \"corner\",\n    \"HB\": \"wheel\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"I-Form Close with 1 RB, 1 FB, 1 TE (left), 2 WR. TE_L runs out route; WR_X slants inside; WR_Z (right) runs corner route as primary target (red arrow); HB wheels to flat. QB in shotgun-like depth. Play matches spacing concept with horizontal stretch and layered reads.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "spacing",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bspacing\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "slug": "i-form__r1f1t1w2__pro__pass__z-spot",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Pro",
+    "play_name": "Z Spot",
+    "play_type": "pass",
+    "canonical_team": "Arizona Cardinals",
+    "canonical_img": 52,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Arizona Cardinals",
+      "Atlanta Falcons",
+      "Carolina Panthers",
+      "Chicago Bears",
+      "Dallas Cowboys",
+      "Houston Texans",
+      "Kansas City Chiefs",
+      "Minnesota Vikings",
+      "New Orleans Saints",
+      "Pass Balanced",
+      "Philadelphia Eagles",
+      "Run Balanced",
+      "St. Louis Rams"
+    ],
+    "owner_count": 13,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "I-Form Pro default"
+    }
+  },
+  "usage": {
+    "input_tokens": 518,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 166
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.33,
+  "response_text": "```json\n{\n  \"concept\": \"z_concept\",\n  \"concepts\": [\"z_concept\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"TE_R\": \"drag\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"I-Form Pro with Z WR (red circle glyph, far right) running corner route as primary. X WR runs streak. TE_R runs drag across formation. HB in backfield available for checkdown. Standard Z Concept structure.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "z_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bz[- ]?(spot|cross|streak|corner|drive|trail|out|drag|sail)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

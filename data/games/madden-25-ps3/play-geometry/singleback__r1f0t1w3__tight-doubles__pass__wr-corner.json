@@ -1,0 +1,56 @@
+{
+  "slug": "singleback__r1f0t1w3__tight-doubles__pass__wr-corner",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Tight Doubles",
+    "play_name": "WR Corner",
+    "play_type": "pass",
+    "canonical_team": "Arizona Cardinals",
+    "canonical_img": 39,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Arizona Cardinals",
+      "Atlanta Falcons",
+      "Buffalo Bills",
+      "Houston Texans",
+      "Oakland Raiders",
+      "San Diego Chargers",
+      "Washington Redskins",
+      "West Coast"
+    ],
+    "owner_count": 8,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Tight Doubles",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 499,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 249
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.45,
+  "response_text": "```json\n{\n  \"concept\": \"receiver_concept\",\n  \"concepts\": [\"corner\", \"curl_flat\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"curl\",\n    \"TE_L\": \"flat\",\n    \"WR_SLOT_R\": \"streak\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"WR_X (left side, purple \u25a1) runs corner route (red arrow upfield then breaks outside). WR_Z (left interior, green \u25b3) runs curl at intermediate depth. TE_L (left OL-attached) runs flat. WR_SLOT_R (right slot, blue \u2297) runs streak. HB checkdown available (R1 button glyph, right side circle receiver). Right side wide receiver (red \u2299 Circle button) appears to be the primary corner target based on red route arrow trajectory.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "receiver_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\b(wr|te|x|y|z|fl|se|slot|h) (corner|drag|hook|option|under|seam|follow|attack|inside|angle|shake|fork|scissors|cross|trail|streak|spot|fade|in|out|wheel|seams|hooks|corners|outs|ins|posts|streaks)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t2w2__ace-pair-flex__pass__pa-y-drag",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Ace Pair Flex",
+    "play_name": "PA Y-Drag",
+    "play_type": "pass",
+    "canonical_team": "Pittsburgh Steelers",
+    "canonical_img": 17,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Pittsburgh Steelers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Ace Pair Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Ace family \u2014 2 TE 2 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 507,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 210
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.25,
+  "response_text": "```json\n{\n  \"concept\": \"drags\",\n  \"concepts\": [\"drags\"],\n  \"routes\": {\n    \"TE_L\": \"drag\",\n    \"TE_R\": \"drag\",\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"comeback\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_L\",\n  \"notes\": \"PA Y-Drag: two TEs run crossing drags at ~5 yds; outer WRs (X streak, Z comeback) provide vertical clearout. Red arrow on TE_L indicates primary read. Button glyphs show receiver eligibility: TE_L (Circle/red), WR_X (X/blue), WR_Z (Square/purple) visible; HB absent from routes (implied checkdown/pass-pro).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "drags",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdrags?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

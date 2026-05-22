@@ -1,0 +1,49 @@
+{
+  "slug": "i-form__r1f1t2w2__tight-pair__pass__pa-bronco-flat",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Tight Pair",
+    "play_name": "PA Bronco Flat",
+    "play_type": "pass",
+    "canonical_team": "Denver Broncos",
+    "canonical_img": 51,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Denver Broncos"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Tight Pair",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Tight/Twin-TE \u2014 2 TE"
+    }
+  },
+  "usage": {
+    "input_tokens": 532,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 241
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.2,
+  "response_text": "```json\n{\n  \"concept\": \"flats_concept\",\n  \"concepts\": [\"flats_concept\", \"play_action\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"flat\",\n    \"TE_L\": \"flat\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"PA Bronco Flat \u2014 play-action bootleg left with flat routes stretching the LOS. Red arrow is QB motion/bootleg path (leftward). WR_Z (right) runs flat as primary flat target; TE_L (left) releases to flat on opposite side. WR_X (left) runs deep corner as vertical clearout. TE_R (right) runs seam as deep option. HB stays for pass-pro initially then checks release. Yellow arrows indicate receiver routes.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "flats_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bflats?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

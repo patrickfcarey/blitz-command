@@ -1,0 +1,59 @@
+{
+  "slug": "gun__r0f0t0w5__empty-spread__run__qb-blast",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Spread",
+    "play_name": "QB Blast",
+    "play_type": "run",
+    "canonical_team": "Oakland Raiders",
+    "canonical_img": 130,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Oakland Raiders",
+      "Philadelphia Eagles"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Spread",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 586,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 65
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 94.0,
+  "response_text": "```json\n{\n  \"concept\": \"iso_blast\",\n  \"concepts\": [\"iso_blast\"],\n  \"routes\": {},\n  \"ball_carrier\": \"QB A_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "A_right",
+    "c_xy": [
+      1551,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      1625,
+      615
+    ],
+    "dx_from_c": 74,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "iso_blast",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bblast\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

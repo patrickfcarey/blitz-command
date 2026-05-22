@@ -1,0 +1,58 @@
+{
+  "slug": "gun__r0f0t0w5__empty-base__run__qb-sneak",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Base",
+    "play_name": "QB Sneak",
+    "play_type": "run",
+    "canonical_team": "Atlanta Falcons",
+    "canonical_img": 140,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Atlanta Falcons"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Base",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 562,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 67
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 43.39,
+  "response_text": "```json\n{\n  \"concept\": \"qb_sneak\",\n  \"concepts\": [\"qb_sneak\"],\n  \"routes\": {},\n  \"ball_carrier\": \"QB straight\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "straight",
+    "c_xy": [
+      1614,
+      701
+    ],
+    "arrow_los_crossing_xy": [
+      1663,
+      701
+    ],
+    "dx_from_c": 49,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "qb_sneak",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bqb sneak\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

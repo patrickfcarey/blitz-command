@@ -1,0 +1,49 @@
+{
+  "slug": "pistol__r1f0t0w4__spread__pass__rns-vertical-read",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Spread",
+    "play_name": "RNS Vertical Read",
+    "play_type": "pass",
+    "canonical_team": "Run and Shoot",
+    "canonical_img": 17,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Run and Shoot"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Spread",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 0,
+      "WR": 4,
+      "total": 6,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 497,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 188
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.51,
+  "response_text": "```json\n{\n  \"concept\": \"verticals\",\n  \"concepts\": [\"verticals\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"streak\",\n    \"WR_SLOT_R\": \"streak\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Four-wide WR set (r1f0t0w4). All eligible receivers running vertical routes. Red arrow indicates primary read on WR_Z. R1 TE label visible at C position but likely UI element; no TE glyph detected separate from OL.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "verticals",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bverticals?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "slug": "singleback__r1f0t1w3__f-pair-twins__pass__pa-boot-screen",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "F Pair Twins",
+    "play_name": "PA Boot Screen",
+    "play_type": "pass",
+    "canonical_team": "Dick Vermeil",
+    "canonical_img": 16,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Dick Vermeil",
+      "Jimmy Johnson",
+      "Joe Gibbs",
+      "Mike Ditka"
+    ],
+    "owner_count": 4,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "F Pair Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "Singleback default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 505,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 196
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.95,
+  "response_text": "```json\n{\n  \"concept\": \"boot_pass\",\n  \"concepts\": [\"boot_pass\", \"screen\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"screen\",\n    \"TE_L\": \"flat\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_L\",\n  \"notes\": \"PA boot to the left with screen route to slot WR. Red arrow indicates primary target (WR_SLOT_L on screen). Yellow arrows show clearing routes for X (streak) and Z (corner). TE_L runs flat to support. HB executes check-release for swing option.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "boot_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bboot\\b|\\bbootleg\\b",
+    "is_pa": true,
+    "is_boot_or_roll": true
+  }
+}

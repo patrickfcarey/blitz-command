@@ -1,0 +1,50 @@
+{
+  "slug": "pistol__r1f0t0w4__wing-trips__pass__fake-screen-wheel",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Wing Trips",
+    "play_name": "Fake Screen Wheel",
+    "play_type": "pass",
+    "canonical_team": "Buffalo Bills",
+    "canonical_img": 73,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Buffalo Bills",
+      "Pistol"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Wing Trips",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 0,
+      "WR": 4,
+      "total": 6,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 499,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 191
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.42,
+  "response_text": "```json\n{\n  \"concept\": \"wheel_concept\",\n  \"concepts\": [\"wheel_concept\", \"fake_screen\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"comeback\",\n    \"WR_SLOT_L\": \"slant\",\n    \"WR_SLOT_R\": \"slant\",\n    \"HB\": \"wheel\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"HB\",\n  \"notes\": \"Fake screen wheel with HB wheel route (red arrow). WR_X runs streak upfield. Slot receivers run slants. WR_Z runs comeback on backside. Four-WR set (Pistol Wing Trips, 0 TE).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "wheel_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bwheel\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

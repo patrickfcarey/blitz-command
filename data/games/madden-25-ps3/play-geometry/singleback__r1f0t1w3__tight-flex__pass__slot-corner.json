@@ -1,0 +1,51 @@
+{
+  "slug": "singleback__r1f0t1w3__tight-flex__pass__slot-corner",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Tight Flex",
+    "play_name": "Slot Corner",
+    "play_type": "pass",
+    "canonical_team": "Chicago Bears",
+    "canonical_img": 40,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Chicago Bears",
+      "Green Bay Packers",
+      "Pass Balanced"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Tight Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "Singleback default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 498,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 130
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 1.83,
+  "response_text": "```json\n{\n  \"concept\": \"slot_concept\",\n  \"concepts\": [\"slot_corner\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"corner\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_L\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "slot_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bslot (drag|cross|streak|corner|out|in|wheel)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

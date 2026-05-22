@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__split-offset__pass__wr-spot",
+  "info": {
+    "family": "GUN",
+    "formation": "Split Offset",
+    "play_name": "WR Spot",
+    "play_type": "pass",
+    "canonical_team": "Run Balanced",
+    "canonical_img": 87,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Run Balanced"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Split Offset",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "GUN/Shotgun default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 520,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 243
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.48,
+  "response_text": "```json\n{\n  \"concept\": \"spot_concept\",\n  \"concepts\": [\"spot_concept\"],\n  \"routes\": {\n    \"WR_X\": \"spot\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"in\",\n    \"TE_R\": \"corner\",\n    \"HB\": \"flat\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"WR_X (\u25a1 purple, left side) runs the primary spot route at ~8 yds depth. WR_Z (far right, \u2299 red) streaks vertically. WR_SLOT_L (\u25b3 green, center-back) runs inside breaking route. TE_R (\u2297 blue, right) runs corner/post route upfield. HB (R1 label, under-center back) releases to flat. Yellow reference box marks C-square center; cyan line marks LOS.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "spot_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bspot\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

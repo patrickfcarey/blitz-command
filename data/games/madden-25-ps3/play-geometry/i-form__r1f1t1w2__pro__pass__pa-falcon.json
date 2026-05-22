@@ -1,0 +1,49 @@
+{
+  "slug": "i-form__r1f1t1w2__pro__pass__pa-falcon",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Pro",
+    "play_name": "PA Falcon",
+    "play_type": "pass",
+    "canonical_team": "Atlanta Falcons",
+    "canonical_img": 46,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Atlanta Falcons"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "I-Form Pro default"
+    }
+  },
+  "usage": {
+    "input_tokens": 480,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 200
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.3,
+  "response_text": "```json\n{\n  \"concept\": \"pa_falcon\",\n  \"concepts\": [\"pa_falcon\"],\n  \"routes\": {\n    \"TE_L\": \"block_then_release_seam\",\n    \"TE_R\": \"out\",\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"drag\",\n    \"HB\": \"wheel\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"PA play with play-action fake to HB. TE_L releases into seam after initial block. Red arrow on WR_X (corner) indicates primary read. Blue arrow (TE_R out route) and cyan arrow (HB wheel) are secondary reads. Yellow arrow extends to WR_Z drag route across formation.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "unknown",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": null,
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r0f0t0w5__empty-y-flex__pass__wr-hooks",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Y-Flex",
+    "play_name": "WR Hooks",
+    "play_type": "pass",
+    "canonical_team": "Houston Texans",
+    "canonical_img": 140,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Houston Texans"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Y-Flex",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 499,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 217
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.59,
+  "response_text": "```json\n{\n  \"concept\": \"receiver_concept\",\n  \"concepts\": [\"wr_hooks\"],\n  \"routes\": {\n    \"WR_X\": \"hook\",\n    \"WR_Z\": \"hook\",\n    \"WR_SLOT_L\": \"hook\",\n    \"WR_SLOT_R\": \"hook\",\n    \"WR_FLANKER\": \"hook\",\n    \"QB\": \"scramble_pocket\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"GUN Empty Y-Flex (5 WRs, 0 TE, 0 RB). All 5 eligible receivers running hook/curl routes at intermediate depth. Red arrow originates from QB; primary target appears to be WR_X (leftmost receiver). Yellow arrows indicate secondary hook routes for other WRs.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "receiver_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\b(wr|te|x|y|z|fl|se|slot|h) (corner|drag|hook|option|under|seam|follow|attack|inside|angle|shake|fork|scissors|cross|trail|streak|spot|fade|in|out|wheel|seams|hooks|corners|outs|ins|posts|streaks)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

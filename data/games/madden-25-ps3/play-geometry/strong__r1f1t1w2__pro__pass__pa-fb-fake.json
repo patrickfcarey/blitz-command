@@ -1,0 +1,52 @@
+{
+  "slug": "strong__r1f1t1w2__pro__pass__pa-fb-fake",
+  "info": {
+    "family": "STRONG",
+    "formation": "Pro",
+    "play_name": "PA FB Fake",
+    "play_type": "pass",
+    "canonical_team": "Balanced",
+    "canonical_img": 48,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Balanced",
+      "Run Balanced",
+      "Run N Gun",
+      "Tennessee Titans"
+    ],
+    "owner_count": 4,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 494,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 190
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.56,
+  "response_text": "```json\n{\n  \"concept\": \"play_fake\",\n  \"concepts\": [\"play_fake\", \"pa_pass\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"TE_R\": \"streak\",\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"hitch\",\n    \"FB\": \"fake_carry\",\n    \"HB\": \"wheel\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Play-action fake to FB, QB rolling right. TE_R releases upfield after initial block. HB wheels out to right flat. Primary read appears to be hitch on WR_Z with corner on WR_X as deep option.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "play_fake",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bfakes?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

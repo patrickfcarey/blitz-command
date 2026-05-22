@@ -1,0 +1,58 @@
+{
+  "slug": "singleback__r1f0t1w3__wing-trips__run__bills-zone",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Wing Trips",
+    "play_name": "Bills Zone",
+    "play_type": "run",
+    "canonical_team": "Buffalo Bills",
+    "canonical_img": 21,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Buffalo Bills"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Wing Trips",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 485,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 116
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 57.59,
+  "response_text": "```json\n{\n  \"concept\": \"bills_zone\",\n  \"concepts\": [\"bills_zone\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"WR_X\": \"block\",\n    \"WR_Z\": \"block\",\n    \"WR_SLOT_R\": \"block\"\n  },\n  \"ball_carrier\": \"HB B_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "B_right",
+    "c_xy": [
+      1476,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      1676,
+      615
+    ],
+    "dx_from_c": 200,
+    "ol_spacing": 117
+  },
+  "py_concept": {
+    "concept": "unknown",
+    "concept_family": "run",
+    "blockers_implicit": false,
+    "matched_pattern": null,
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

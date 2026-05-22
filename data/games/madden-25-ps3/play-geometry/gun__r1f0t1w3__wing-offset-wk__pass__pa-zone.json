@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__wing-offset-wk__pass__pa-zone",
+  "info": {
+    "family": "GUN",
+    "formation": "Wing Offset Wk",
+    "play_name": "PA Zone",
+    "play_type": "pass",
+    "canonical_team": "Green Bay Packers",
+    "canonical_img": 98,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Green Bay Packers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Wing Offset Wk",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "GUN/Shotgun default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 510,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 217
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.15,
+  "response_text": "```json\n{\n  \"concept\": \"pa_zone\",\n  \"concepts\": [\"pa_zone\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"stick\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"swing\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"PA Zone concept with play-action fake. Red arrow (primary read) targets WR_Z on corner route. Formation shows 1 RB, 0 FB, 1 TE (right), 3 WR (X, Z, slot-left). Backfield: QB + HB offset to weak side. R1 button glyph indicates Circle-button receiver (WR_Z corner).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "unknown",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": null,
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

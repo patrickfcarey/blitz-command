@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__bunch-base__pass__pa-raider-drive",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Bunch Base",
+    "play_name": "PA Raider Drive",
+    "play_type": "pass",
+    "canonical_team": "Oakland Raiders",
+    "canonical_img": 23,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Oakland Raiders"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Bunch Base",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 504,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 293
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.83,
+  "response_text": "```json\n{\n  \"concept\": \"drive_concept\",\n  \"concepts\": [\"drive_concept\", \"pa_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"drive\",\n    \"WR_SLOT_R\": \"flat\",\n    \"TE_R\": \"seam\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Play-action pass. WR_X (blue X button, far right) appears to be the primary target with a red arrow (streak route). WR_Z (red Circle button) runs a corner route with red arrow upfield-left. Yellow arrows indicate secondary route concepts: WR_SLOT_L runs a drive/dig route, WR_SLOT_R (cyan Triangle button) runs a flat/swing route. TE_R (green Triangle button on right) appears to run a seam or vertical release. Formation is tight bunch with 3 WRs on the line clustered near the formation, plus 1 TE attached right. No visible backfield eligible receiving routes (HB checkdown likely implicit).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "drive_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdrive\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

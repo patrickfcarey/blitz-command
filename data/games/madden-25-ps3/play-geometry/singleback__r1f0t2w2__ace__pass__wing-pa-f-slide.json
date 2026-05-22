@@ -1,0 +1,51 @@
+{
+  "slug": "singleback__r1f0t2w2__ace__pass__wing-pa-f-slide",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Ace",
+    "play_name": "Wing PA F Slide",
+    "play_type": "pass",
+    "canonical_team": "Green Bay Packers",
+    "canonical_img": 7,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Green Bay Packers",
+      "New York Jets",
+      "San Diego Chargers"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Ace",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Ace family \u2014 2 TE 2 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 527,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 183
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.89,
+  "response_text": "```json\n{\n  \"concept\": \"slide_pass\",\n  \"concepts\": [\"slide_pass\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"TE_R\": \"wheel\",\n    \"WR_X\": \"slant\",\n    \"WR_Z\": \"corner\",\n    \"HB\": \"swing\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"PA play with Wing TE on right. TE_R releases to wheel route (red arrow). WR_Z runs corner route receiving primary red pass arrow. TE_L and HB execute block-first then release. Screen/swing concept for HB on left with cyan arrow.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "slide_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bslide\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

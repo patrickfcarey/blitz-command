@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__bunch-te__pass__curl-flat-corner",
+  "info": {
+    "family": "GUN",
+    "formation": "Bunch TE",
+    "play_name": "Curl Flat Corner",
+    "play_type": "pass",
+    "canonical_team": "Indianapolis Colts",
+    "canonical_img": 120,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Indianapolis Colts"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Bunch TE",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 171,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 214
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 4.06,
+  "response_text": "```json\n{\n  \"concept\": \"curl_flat\",\n  \"concepts\": [\"curl_flat\", \"corner\"],\n  \"routes\": {\n    \"WR_X\": \"curl\",\n    \"WR_SLOT_R\": \"flat\",\n    \"WR_Z\": \"corner\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Curl Flat Corner concept: curl on X (purple \u25a1), flat on slot-right (magenta \u25ef), corner on Z (red \u25ef). TE_R runs seam release upfield. R1 (yellow shoulder-button route) appears to be RB swing/wheel checkdown. This is a 3-man route stretch with independent concepts on each side of formation.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "curl_flat",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcurl flats?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

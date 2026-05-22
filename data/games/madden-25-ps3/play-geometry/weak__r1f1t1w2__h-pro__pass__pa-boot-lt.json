@@ -1,0 +1,49 @@
+{
+  "slug": "weak__r1f1t1w2__h-pro__pass__pa-boot-lt",
+  "info": {
+    "family": "WEAK",
+    "formation": "H Pro",
+    "play_name": "PA Boot Lt",
+    "play_type": "pass",
+    "canonical_team": "Baltimore Ravens",
+    "canonical_img": 83,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Baltimore Ravens"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "WEAK",
+      "formation": "H Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 496,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 234
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.05,
+  "response_text": "```json\n{\n  \"concept\": \"boot_pass\",\n  \"concepts\": [\"boot_pass\"],\n  \"routes\": {\n    \"TE_L\": \"release_upfield\",\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"flat\",\n    \"HB\": \"swing\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"PA Boot Lt: QB rolls right with play-action handoff fake. TE_L releases upfield (yellow). WR_X (\u25a1 purple, top-right) runs corner route (red primary). WR_Z (\u2297 blue, left) runs flat underneath. HB (R1 green triangle, backfield) available as checkdown swing. Expected r1f1t1w2 personnel confirmed: 1 RB, 1 FB (in backfield stack), 1 TE, 2 WR.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "boot_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bboot\\b|\\bbootleg\\b",
+    "is_pa": true,
+    "is_boot_or_roll": true
+  }
+}

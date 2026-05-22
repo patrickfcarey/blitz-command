@@ -1,0 +1,59 @@
+{
+  "slug": "pistol__r1f0t1w3__strong-twins__run__f-lead-read-option",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Strong Twins",
+    "play_name": "F Lead Read Option",
+    "play_type": "run",
+    "canonical_team": "Pistol",
+    "canonical_img": 13,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Pistol",
+      "San Francisco 49ers"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Strong Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Pistol Strong/Weak"
+    }
+  },
+  "usage": {
+    "input_tokens": 176,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 153
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 13.41,
+  "response_text": "```json\n{\n  \"concept\": \"zone_read\",\n  \"concepts\": [\"zone_read\", \"read_option\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"WR_X\": \"block\",\n    \"WR_Z\": \"block\"\n  },\n  \"ball_carrier\": \"HB D_left\",\n  \"primary_target\": null,\n  \"notes\": \"Read-option play with HB carrying left on the edge. Red arrow shows HB's path attacking D_left gap. FB shown leading through the hole. All receivers and TE block downfield to seal the edge.\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_left",
+    "c_xy": [
+      1604,
+      609
+    ],
+    "arrow_los_crossing_xy": [
+      1053,
+      674
+    ],
+    "dx_from_c": -551,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "zone_read",
+    "concept_family": "rpo",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bread option\\b|\\bzone read\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

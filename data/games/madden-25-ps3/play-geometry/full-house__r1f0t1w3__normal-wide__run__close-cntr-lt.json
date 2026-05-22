@@ -1,0 +1,59 @@
+{
+  "slug": "full-house__r1f0t1w3__normal-wide__run__close-cntr-lt",
+  "info": {
+    "family": "FULL-HOUSE",
+    "formation": "Normal Wide",
+    "play_name": "Close Cntr Lt",
+    "play_type": "run",
+    "canonical_team": "Cincinnati Bengals",
+    "canonical_img": 77,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Cincinnati Bengals",
+      "Joe Gibbs"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "FULL-HOUSE",
+      "formation": "Normal Wide",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "low",
+      "notes": "unknown family 'FULL-HOUSE' \u2014 generic 11-personnel guess"
+    }
+  },
+  "usage": {
+    "input_tokens": 516,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 108
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 40.68,
+  "response_text": "```json\n{\n  \"concept\": \"close_cntr_lt\",\n  \"concepts\": [\"close_cntr_lt\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"TE_R\": \"block\",\n    \"WR_X\": \"block\"\n  },\n  \"ball_carrier\": \"HB D_left\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_left",
+    "c_xy": [
+      1537,
+      699
+    ],
+    "arrow_los_crossing_xy": [
+      86,
+      699
+    ],
+    "dx_from_c": -1451,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "unknown",
+    "concept_family": "run",
+    "blockers_implicit": false,
+    "matched_pattern": null,
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

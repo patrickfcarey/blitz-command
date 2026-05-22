@@ -1,0 +1,49 @@
+{
+  "slug": "strong__r1f1t1w2__pro__pass__pa-te-corner",
+  "info": {
+    "family": "STRONG",
+    "formation": "Pro",
+    "play_name": "PA TE Corner",
+    "play_type": "pass",
+    "canonical_team": "Denver Broncos",
+    "canonical_img": 55,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Denver Broncos"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 494,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 194
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.8,
+  "response_text": "```json\n{\n  \"concept\": \"pa_te_corner\",\n  \"concepts\": [\"pa_te_corner\"],\n  \"routes\": {\n    \"TE_R\": \"corner\",\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"comeback\",\n    \"HB\": \"swing\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"Play-action pass with TE Corner as primary concept. Red arrow traces TE_R to corner route (deep). R1 button glyph on TE_R. WR_X and WR_Z run vertical clearouts (streak/comeback). HB checks swing underneath. Strong formation with FB positioned offset to strong side; FB likely blocks on play-action.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "receiver_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\b(wr|te|x|y|z|fl|se|slot|h) (corner|drag|hook|option|under|seam|follow|attack|inside|angle|shake|fork|scissors|cross|trail|streak|spot|fade|in|out|wheel|seams|hooks|corners|outs|ins|posts|streaks)\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

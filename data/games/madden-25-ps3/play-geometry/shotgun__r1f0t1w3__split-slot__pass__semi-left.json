@@ -1,0 +1,49 @@
+{
+  "slug": "shotgun__r1f0t1w3__split-slot__pass__semi-left",
+  "info": {
+    "family": "SHOTGUN",
+    "formation": "Split Slot",
+    "play_name": "Semi Left",
+    "play_type": "pass",
+    "canonical_team": "Tom Landry",
+    "canonical_img": 86,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Tom Landry"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SHOTGUN",
+      "formation": "Split Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "GUN/Shotgun default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 154,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 191
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 8.35,
+  "response_text": "```json\n{\n  \"concept\": \"semi_left\",\n  \"concepts\": [\"semi_left\"],\n  \"routes\": {\n    \"WR_X\": \"comeback\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"drag\",\n    \"TE_R\": \"corner\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_L\",\n  \"notes\": \"Semi Left play with drag route to left slot receiver as primary target. Red arrow originates from slot WR running drag left. Yellow routes show WR_X comeback on far left, WR_Z streak on right, TE_R corner route on right side, and HB checkdown.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "unknown",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": null,
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

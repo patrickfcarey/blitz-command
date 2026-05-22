@@ -1,0 +1,52 @@
+{
+  "slug": "weak__r1f1t1w2__pro__pass__pa-power-0",
+  "info": {
+    "family": "WEAK",
+    "formation": "Pro",
+    "play_name": "PA Power 0",
+    "play_type": "pass",
+    "canonical_team": "Detroit Lions",
+    "canonical_img": 60,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Detroit Lions",
+      "Kansas City Chiefs",
+      "New York Jets",
+      "Pittsburgh Steelers"
+    ],
+    "owner_count": 4,
+    "expected_personnel": {
+      "family": "WEAK",
+      "formation": "Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 494,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 200
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.33,
+  "response_text": "```json\n{\n  \"concept\": \"power_run\",\n  \"concepts\": [\"power_run\", \"pa_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"TE_R\": \"flat\",\n    \"HB\": \"swing\",\n    \"FB\": \"lead_block\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Play-action pass off Power O look. WR_X (blue X button) is primary target on streak. TE_R runs flat on right side. WR_Z (red Circle button) runs corner route. HB (R1 button, cyan) swings out as checkdown. FB stays in for lead block on play-action.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "power_run",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpower\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

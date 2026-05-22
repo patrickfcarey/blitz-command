@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__spread-y-slot__pass__pa-deep-outs",
+  "info": {
+    "family": "GUN",
+    "formation": "Spread Y-Slot",
+    "play_name": "PA Deep Outs",
+    "play_type": "pass",
+    "canonical_team": "New York Jets",
+    "canonical_img": 97,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "New York Jets"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Spread Y-Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 179,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 262
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 7.42,
+  "response_text": "```json\n{\n  \"concept\": \"deep_outs\",\n  \"concepts\": [\"deep_outs\"],\n  \"routes\": {\n    \"WR_X\": \"out\",\n    \"WR_Z\": \"out\",\n    \"WR_SLOT_R\": \"out\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"PA pass play. Five eligible receivers on play-action deep outs concept. WR_X (\u25a1 purple, far left) runs deep out with red arrow (primary). WR_Z (\u25b3 green, center-top) runs deep out with yellow arrow. WR_SLOT_R (\u2297 blue, right of center) runs deep out with yellow arrow. TE_R (\u2299 red, far right) releases vertically (seam). HB (R1 button, backfield) available as checkdown. All receivers stretch the defense vertically and horizontally on outside break routes.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "deep_outs",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdeep outs?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

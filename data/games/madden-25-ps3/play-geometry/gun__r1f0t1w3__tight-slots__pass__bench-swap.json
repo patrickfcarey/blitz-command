@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__tight-slots__pass__bench-swap",
+  "info": {
+    "family": "GUN",
+    "formation": "Tight Slots",
+    "play_name": "Bench Swap",
+    "play_type": "pass",
+    "canonical_team": "Seattle Seahawks",
+    "canonical_img": 123,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Seattle Seahawks"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Tight Slots",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 495,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 246
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.68,
+  "response_text": "```json\n{\n  \"concept\": \"bench_concept\",\n  \"concepts\": [\"bench_concept\"],\n  \"routes\": {\n    \"WR_X\": \"comeback\",\n    \"WR_Z\": \"flat\",\n    \"WR_SLOT_L\": \"drag\",\n    \"TE_R\": \"corner\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Pass play with bench swap concept. WR_X (\u25b3 green triangle) at left runs comeback route with yellow arrow. WR_Z (\u2297 blue X) at right runs flat with yellow arrow. WR_SLOT_L (\u25a1 purple square) runs drag route across middle with yellow arrow. TE_R (\u2299 red circle) runs corner route with yellow arrow upfield. HB (white circle, R1 labeled) positioned as checkdown option below LOS. Primary red arrow indicates WR_X as primary target.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "bench_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bbench\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

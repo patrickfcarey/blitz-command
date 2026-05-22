@@ -1,0 +1,58 @@
+{
+  "slug": "singleback__r1f0t1w3__trips-open__run__inside-zone",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Trips Open",
+    "play_name": "Inside Zone",
+    "play_type": "run",
+    "canonical_team": "Balanced",
+    "canonical_img": 32,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Balanced"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Trips Open",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 588,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 66
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 4.56,
+  "response_text": "```json\n{\n  \"concept\": \"inside_zone\",\n  \"concepts\": [\"inside_zone\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB A_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "A_right",
+    "c_xy": [
+      1553,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      1746,
+      615
+    ],
+    "dx_from_c": 193,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "inside_zone",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\binside zone\\b|\\bhb (zone|izn|iz)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

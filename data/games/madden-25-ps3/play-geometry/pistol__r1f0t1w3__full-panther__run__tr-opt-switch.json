@@ -1,0 +1,58 @@
+{
+  "slug": "pistol__r1f0t1w3__full-panther__run__tr-opt-switch",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Full Panther",
+    "play_name": "Tr Opt Switch",
+    "play_type": "run",
+    "canonical_team": "Carolina Panthers",
+    "canonical_img": 57,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Carolina Panthers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Full Panther",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "Pistol default \u2014 variant unclear"
+    }
+  },
+  "usage": {
+    "input_tokens": 503,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 166
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 64.95,
+  "response_text": "```json\n{\n  \"concept\": \"switch_concept\",\n  \"concepts\": [\"switch_concept\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_R\": \"streak\",\n    \"TE_R\": \"block\"\n  },\n  \"ball_carrier\": \"HB D_left\",\n  \"primary_target\": null,\n  \"notes\": \"Run play with option route (dashed blue line) showing HB edge run to the left. Red arrow indicates primary ball-carrier path outside the TE. Switch concept suggests option/read element. All WRs vertical for clearout.\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_left",
+    "c_xy": [
+      1476,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      992,
+      615
+    ],
+    "dx_from_c": -484,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "switch_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\binside switch\\b|\\bswitch\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

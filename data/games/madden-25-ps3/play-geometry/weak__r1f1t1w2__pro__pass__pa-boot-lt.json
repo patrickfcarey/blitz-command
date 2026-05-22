@@ -1,0 +1,58 @@
+{
+  "slug": "weak__r1f1t1w2__pro__pass__pa-boot-lt",
+  "info": {
+    "family": "WEAK",
+    "formation": "Pro",
+    "play_name": "PA Boot Lt",
+    "play_type": "pass",
+    "canonical_team": "Brian Billick",
+    "canonical_img": 105,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Brian Billick",
+      "Detroit Lions",
+      "Dick Vermeil",
+      "Green Bay Packers",
+      "Jacksonville Jaguars",
+      "Jimmy Johnson",
+      "Mike Ditka",
+      "New York Jets",
+      "Pass Balanced",
+      "Tampa Bay Buccaneers"
+    ],
+    "owner_count": 10,
+    "expected_personnel": {
+      "family": "WEAK",
+      "formation": "Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 493,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 172
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.46,
+  "response_text": "```json\n{\n  \"concept\": \"boot_pass\",\n  \"concepts\": [\"boot_pass\"],\n  \"routes\": {\n    \"TE_R\": \"corner\",\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"drag\",\n    \"HB\": \"wheel\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"PA Boot Lt action \u2014 QB rolling right with a drag/crossing route from WR_Z as primary target. TE_R runs corner route on right side. WR_X stretches vertically. HB releases to wheel route. Standard weak-I personnel with pass-action boot concept.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "boot_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bboot\\b|\\bbootleg\\b",
+    "is_pa": true,
+    "is_boot_or_roll": true
+  }
+}

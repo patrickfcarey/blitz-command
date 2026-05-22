@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__trips-over__pass__wr-screen",
+  "info": {
+    "family": "GUN",
+    "formation": "Trips Over",
+    "play_name": "WR Screen",
+    "play_type": "pass",
+    "canonical_team": "Denver Broncos",
+    "canonical_img": 113,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Denver Broncos"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Trips Over",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 495,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 127
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 1.53,
+  "response_text": "```json\n{\n  \"concept\": \"wr_screen\",\n  \"concepts\": [\"wr_screen\"],\n  \"routes\": {\n    \"WR_X\": \"screen\",\n    \"WR_Z\": \"block\",\n    \"WR_SLOT_R\": \"block\",\n    \"TE_R\": \"block\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "wr_screen",
+    "concept_family": "screen",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bwr screen\\b|\\bfl screen\\b|\\bse screen\\b|\\bx screen\\b|\\bz screen\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

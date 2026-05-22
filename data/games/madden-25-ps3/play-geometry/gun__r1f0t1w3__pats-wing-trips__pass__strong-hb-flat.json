@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__pats-wing-trips__pass__strong-hb-flat",
+  "info": {
+    "family": "GUN",
+    "formation": "Pats Wing Trips",
+    "play_name": "Strong HB Flat",
+    "play_type": "pass",
+    "canonical_team": "New England Patriots",
+    "canonical_img": 96,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "New England Patriots"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Pats Wing Trips",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 245,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 177
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 5.5,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"generic_hb_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB B_right\",\n  \"primary_target\": null,\n  \"notes\": \"Play labeled 'PASS' in UI banner but py_concept indicates run family. Red arrow originates from HB in backfield, traces rightward through B-gap. Formation is GUN with 1 RB (HB in shotgun offset right), 0 FB, 1 TE (wing-tight left), 3 WRs (X left, Z flanker far right, slot center). Personnel matches r1f0t1w3 expectation.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bhb \\w+",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "pistol__r1f0t1w3__weak-twins-flex__pass__pa-option-pass",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Weak Twins Flex",
+    "play_name": "PA Option Pass",
+    "play_type": "pass",
+    "canonical_team": "Washington Redskins",
+    "canonical_img": 75,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Washington Redskins"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Weak Twins Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Pistol Strong/Weak"
+    }
+  },
+  "usage": {
+    "input_tokens": 177,
+    "cache_creation_input_tokens": 352,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 217
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 9.33,
+  "response_text": "```json\n{\n  \"concept\": \"option_route\",\n  \"concepts\": [\"option_route\", \"pa_pass\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"option\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"wheel\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_L\",\n  \"notes\": \"Play-action option pass. WR_SLOT_L (Triangle button) runs the primary option route with red arrow. WR_X (Square button) runs corner route to left sideline. WR_Z (X button) runs vertical streak to right. TE_R (Circle button) runs seam. HB runs wheel route. Yellow dashed line indicates option route read progression.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "option_route",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\boption\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

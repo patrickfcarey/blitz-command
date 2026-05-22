@@ -1,0 +1,51 @@
+{
+  "slug": "gun__r1f0t1w3__spread-y-flex__pass__smash-hb-check",
+  "info": {
+    "family": "GUN",
+    "formation": "Spread Y-Flex",
+    "play_name": "Smash HB Check",
+    "play_type": "pass",
+    "canonical_team": "Baltimore Ravens",
+    "canonical_img": 133,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Baltimore Ravens",
+      "Detroit Lions",
+      "Jacksonville Jaguars"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Spread Y-Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 598,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 348
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 4.95,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"generic_hb_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB B_right\",\n  \"primary_target\": null,\n  \"notes\": \"Play labeled 'Smash HB Check' but play_type is PASS and py_concept is generic_hb_run (family=run). Visual shows: 5 OL (C + 4 circles), 1 TE_R on ROS attached to RT, 4 WRs (WR_X far left with purple \u25a1, WR_SLOT_L with green \u25b3, WR_Z far right with blue \u2297, WR_FLANKER far right with red \u2299), 1 HB backfield (R1 label below QB position). Red arrow from HB curves right toward B_right gap. Expected personnel r1f0t1w3 matches: 1 RB, 0 FB, 1 TE, 3 WR \u2014 but 4 WR glyphs visible (slot + 3 outer). Likely 4-WR set (10-personnel, 0 TE); the glyph labeled 'TE_R' may be a 4th WR or the TE is the slot receiver mislabeled. Play_type=PASS but diagram shows run-ball-carrier; discrepancy flagged.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bhb \\w+",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

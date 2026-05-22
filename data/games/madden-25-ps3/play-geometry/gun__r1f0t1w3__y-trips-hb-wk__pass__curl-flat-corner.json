@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__y-trips-hb-wk__pass__curl-flat-corner",
+  "info": {
+    "family": "GUN",
+    "formation": "Y-Trips HB Wk",
+    "play_name": "Curl Flat Corner",
+    "play_type": "pass",
+    "canonical_team": "Denver Broncos",
+    "canonical_img": 109,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Denver Broncos"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Y-Trips HB Wk",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 509,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 182
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.2,
+  "response_text": "```json\n{\n  \"concept\": \"curl_flat\",\n  \"concepts\": [\"curl_flat\", \"corner\"],\n  \"routes\": {\n    \"WR_X\": \"curl\",\n    \"WR_Z\": \"flat\",\n    \"WR_SLOT_R\": \"corner\",\n    \"TE_R\": \"streak\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Curl-Flat on left side (WR_X curl, WR_Z flat), Corner from slot-right (WR_SLOT_R). TE_R stretches vertical on right. HB eligible checkdown below LOS.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "curl_flat",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcurl flats?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__normal-y-flex__pass__fl-hook",
+  "info": {
+    "family": "GUN",
+    "formation": "Normal Y-Flex",
+    "play_name": "FL Hook",
+    "play_type": "pass",
+    "canonical_team": "Buffalo Bills",
+    "canonical_img": 101,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Buffalo Bills"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Normal Y-Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 521,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 238
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.16,
+  "response_text": "```json\n{\n  \"concept\": \"receiver_concept\",\n  \"concepts\": [\"fl_hook\", \"curl_flat\"],\n  \"routes\": {\n    \"WR_X\": \"hook\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"curl\",\n    \"WR_SLOT_R\": \"flat\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"FL Hook concept with curl-flat combo on opposite side. WR_X (left, \u25a1 purple) runs the primary hook route. WR_Z (right, \u2297 blue) runs corner clearout. Interior slot receivers run curl (\u25b3 green) and flat (\u2299 red). TE_R (R1 button) runs seam release. HB below LOS has checkdown option.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "receiver_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\b(wr|te|x|y|z|fl|se|slot|h) (corner|drag|hook|option|under|seam|follow|attack|inside|angle|shake|fork|scissors|cross|trail|streak|spot|fade|in|out|wheel|seams|hooks|corners|outs|ins|posts|streaks)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}
