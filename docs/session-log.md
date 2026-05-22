@@ -184,9 +184,27 @@ extraction quality than v4.
 | + validated route templates (Lever C) | $19 |
 | + family normalization | **$19.71** |
 
-**In progress / next step:** ready to launch full extraction via
-`tools/playbook-vision-pilot/dispatch_canonical.py`. Validator
-(`validate_extractions.py`) runs post-launch offline.
+**Full extraction LAUNCHED 2026-05-21 ~22:40, running overnight at 5
+workers.** ~7,300 plays, projected ~$13, ~10 hr wall time. Output to
+`data/games/madden-25-ps3/play-geometry/` (persistent — survives WSL
+restart). Resume-safe.
+
+**Morning checklist for the next session:**
+1. Check it finished: `ls data/games/madden-25-ps3/play-geometry/*.json | wc -l`
+   should be ~7,300.
+2. Re-run `dispatch_canonical.py` ONCE to mop up any failures — the
+   `_existing()` fix (commit 063a6b5) makes resume re-attempt error
+   records (socket drops / rate limits) instead of skipping them.
+   The currently-running process has the OLD skip behavior, so any
+   overnight failures need this mop-up pass.
+3. Run `validate_extractions.py` — flags parse failures, concept
+   mismatches, gap mismatches, route-count outliers.
+4. Review `_validation.json`, re-extract or hand-fix flagged plays.
+
+**Known overnight risk:** machine has a history of VPN socket-drops
+(diagnosed earlier this session). The dispatcher catches per-job
+errors and continues, so a drop won't crash the run — failed plays
+just get error records, cleaned up by the morning mop-up pass.
 
 **Uncommitted state:** all the new tooling (`formation_personnel.py`,
 `play_concepts.py`, `tag_crops_with_personnel.py`, `smoke_test_cross_family.py`,
