@@ -111,13 +111,38 @@ def _build_user(info: dict, crop_path: Path, py_hints: dict,
     ]
 
 
+def _create_with_retry(client: anthropic.Anthropic, **kwargs):
+    """messages.create with exponential backoff on transient errors —
+    529 Overloaded, 429 RateLimit, 5xx, and connection drops (the VPN
+    socket-drop failure mode). Up to 6 attempts: 2s, 4s, 8s, 16s, 32s.
+    """
+    delay = 2.0
+    last_exc = None
+    for attempt in range(6):
+        try:
+            return client.messages.create(**kwargs)
+        except Exception as exc:  # noqa: BLE001
+            last_exc = exc
+            msg = repr(exc).lower()
+            retryable = any(s in msg for s in (
+                "529", "overloaded", "429", "rate", "timeout",
+                "connection", "500", "502", "503", "504",
+                "apistatuserror", "internalserver"))
+            if not retryable or attempt == 5:
+                raise
+            time.sleep(delay)
+            delay = min(delay * 2, 32.0)
+    raise last_exc  # pragma: no cover
+
+
 def _call(client: anthropic.Anthropic, rules: str, info: dict,
           crop_path: Path) -> dict:
     t0 = time.time()
     # Python computes target_gap + concept tag deterministically.
     py_hints = compute_target_gap_for_crop(crop_path, info["play_type"])
     concept = classify_play(info["play_name"], info["play_type"])
-    resp = client.messages.create(
+    resp = _create_with_retry(
+        client,
         model=MODEL,
         max_tokens=MAX_TOKENS,
         system=[{"type": "text", "text": rules,
