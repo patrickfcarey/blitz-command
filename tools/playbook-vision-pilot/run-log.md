@@ -606,6 +606,34 @@ V5 VALIDATION on 11 hand-labeled plays (mapped to canonical crops):
 
 Full M25 projection updated: ~$20 at $0.0027/call sustained.
 
+TRIPLE PRE-FLIGHT AUDIT (fiduciary review before launch):
+- Pass 1 (cost): found IMAGE is 56% of cost ($11.45 of $20.50). Resize
+  to 700w drops image tokens ~1568 → ~280. Per-call cost $0.0027 →
+  $0.0018. Full M25 projection: $19.71 → $12.84.
+- Pass 2 (operational): API key, output dir, manifest fields, 7,300
+  crops on disk, resume-safety, prompt cache-min — all green.
+- Pass 3 (edge cases): 10/10 extractions pass pass/run consistency,
+  wildcat handling, gap-match checks.
+
+PRECISION A/B (full vs 700w, 30 diverse plays):
+- ball_carrier: 100% (Python-deterministic, size-immune)
+- A/A control (full vs full): concept 93%, primary_target 97% — this
+  is the LLM's natural run-to-run noise floor.
+- 700w vs full is within that noise band — no resolution-driven loss.
+- concept variance is moot: py_concept (deterministic) saved per play.
+
+RED-ROUTE DETECTION (attempted deterministic primary_target):
+- Every M25 pass play has exactly 1 red route — conceptually unambiguous.
+- But programmatic detection only ~25% clean: route-shape variety,
+  origin/destination ambiguity on lateral routes, red-pollution from
+  panel border + ⊙ button glyph.
+- Decision: ship with LLM primary_target (97% self-consistent).
+  detect_red_route_origin() kept in code as EXPERIMENTAL, unused.
+
+FINAL: full M25 extraction projected ~$12.84 (was $330 unduped Sonnet).
+Launch via dispatch_canonical.py (700w resize live).
+
+
 LEVER B (concept dictionary + skip blockers on runs):
 - play_concepts.py — 80+ regex patterns mapping play_name → concept tag
   + family (run/pass/pa_pass/screen/rpo) + blockers_implicit flag.

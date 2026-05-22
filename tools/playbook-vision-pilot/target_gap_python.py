@@ -194,6 +194,106 @@ def compute_target_gap(arrow_endpoint_x: int, c_x: int, ol_spacing: int) -> str:
     return f"D_{side}"
 
 
+def detect_red_route_origin(img: np.ndarray, los_y: int,
+                            c_x: int) -> dict | None:
+    """EXPERIMENTAL — NOT wired into the production dispatcher.
+
+    Measured at only ~25% clean detection on pass plays (route-shape
+    variety + origin/destination ambiguity + red-pollution from the
+    panel border and ⊙ button glyph). primary_target is currently
+    LLM-derived (~97% self-consistent). This function is kept for a
+    future iteration that solves arrowhead-based origin detection.
+
+    For a PASS play, find where the red (primary) route ORIGINATES —
+    i.e. the receiver running it. Every M25 pass play draws exactly one
+    red route; the origin is the receiver's pre-snap position.
+
+    The route starts at the receiver (on/near the LOS) and goes downfield.
+    The origin is the red-contour point closest to the LOS row.
+
+    Returns {origin_xy, side, dx_from_c} or None if no red route found.
+    side is left/center/right relative to the C-square.
+    """
+    h, w = img.shape[:2]
+    hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
+    m1 = cv2.inRange(hsv, np.array((0, 110, 80)), np.array((10, 255, 255)))
+    m2 = cv2.inRange(hsv, np.array((170, 110, 80)), np.array((180, 255, 255)))
+    mask = cv2.bitwise_or(m1, m2)
+    # Mask the play-name banner (bottom-left red text).
+    mask[int(h * 0.65):, :int(w * 0.30)] = 0
+    mask[int(h * 0.80):, :] = 0
+    # Mask the pink/magenta panel border vignette — inset by a margin so
+    # edge-hugging pink doesn't register as a route.
+    margin = int(w * 0.04)
+    mask[:, :margin] = 0
+    mask[:, w - margin:] = 0
+    mask[:int(h * 0.04), :] = 0
+
+    contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL,
+                                   cv2.CHAIN_APPROX_SIMPLE)
+    # The red ROUTE is a long, thin, curved line — high perimeter relative
+    # to area. The red ⊙ Circle button glyph is a COMPACT blob (~40px,
+    # area/bbox ratio high, perimeter low). Filter to keep route-shaped
+    # contours: large bounding box span, low fill density.
+    route_contours = []
+    for c in contours:
+        area = cv2.contourArea(c)
+        if area < 400:
+            continue
+        x, y, cw, ch = cv2.boundingRect(c)
+        span = max(cw, ch)
+        bbox_area = cw * ch
+        density = area / bbox_area if bbox_area else 1.0
+        # Route: large span (>120 px) AND not a compact filled blob
+        # (density < 0.6). Button glyphs are ~40-60px span, density ~0.5-0.9.
+        if span >= 120 and density < 0.65:
+            route_contours.append(c)
+    if not route_contours:
+        return None
+    # Largest route contour by area is the primary red route.
+    route = max(route_contours, key=cv2.contourArea)
+    pts = route.reshape(-1, 2)
+    ys, xs = pts[:, 1], pts[:, 0]
+
+    # The origin is the route endpoint nearest the LOS row — the receiver
+    # lines up on the LOS and the route extends away from there.
+    near = np.abs(ys - los_y) <= 50
+    if near.any():
+        cand = np.where(near)[0]
+        best = cand[int(np.argmin(np.abs(ys[cand] - los_y)))]
+    else:
+        best = int(np.argmax(ys))   # lowest point as origin proxy
+    ox, oy = int(xs[best]), int(ys[best])
+    dx = ox - c_x
+    side = "center" if abs(dx) < 80 else ("left" if dx < 0 else "right")
+    return {"origin_xy": (ox, oy), "side": side, "dx_from_c": dx}
+
+
+def compute_primary_target_for_crop(crop_path: Path,
+                                    play_type: str | None = None) -> dict:
+    """Top-level: for pass plays, locate the red primary-route origin.
+    Returns {primary_origin_x, primary_side} or skipped/error."""
+    if play_type and play_type.lower() == "run":
+        return {"primary_side": None, "skipped": "run play"}
+    img = cv2.imread(str(crop_path))
+    if img is None:
+        return {"primary_side": None, "error": f"can't read {crop_path}"}
+    c = _detect_c(img)
+    if c is None:
+        return {"primary_side": None, "error": "no C detected"}
+    cx, cy = c
+    origin = detect_red_route_origin(img, cy, cx)
+    if origin is None:
+        return {"primary_side": None, "error": "no red route detected",
+                "c_xy": (cx, cy)}
+    return {
+        "primary_side": origin["side"],
+        "primary_origin_x": origin["origin_xy"][0],
+        "primary_origin_dx_from_c": origin["dx_from_c"],
+        "c_xy": (cx, cy),
+    }
+
+
 def compute_target_gap_for_crop(crop_path: Path,
                                 play_type: str | None = None,
                                 model_ol_xs: list[int] | None = None,
