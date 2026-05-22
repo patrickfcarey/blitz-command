@@ -678,6 +678,19 @@ retry. Total spend: $12.88.
   route fragmentation (one route → 2-3 contours) still unsolved → task
   #35 de-fragmentation. Plus per-receiver assignment + classifier tuning.
 
+[2026-05-22] route_geometry.py — iteration 3: de-fragmentation (#35).
+- isolate_routes() now closes each color mask (morphological CLOSE) to
+  bridge intra-route gaps, then connected-components → one component per
+  route. RED collapses to one route + a bigger close kernel.
+- Route counts: 9-18 fragments/play → 4-5 real routes/play. Shape test
+  5/5 (was 4/5). YELLOW (multi-route color) — each route now exactly one
+  contour. The general fragmentation case is FIXED.
+- Residual: the RED primary route renders with internal color gaps >80px
+  the close can't bridge; widening the red HSV band floods the maroon
+  background. Red traces via largest-component, can miss an arrowhead
+  break. A naive stitch was tried + rejected (zigzag). Colinearity-aware
+  stitch deferred → task #36.
+
 
 
 LEVER B (concept dictionary + skip blockers on runs):

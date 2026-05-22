@@ -90,60 +90,78 @@ def _color_mask(img: np.ndarray, color: str) -> np.ndarray:
     return mask
 
 
-def _is_button_glyph(contour) -> bool:
-    """A PS-button receiver glyph is a COMPACT, fairly-filled blob
-    (~40-70px square, fill density > 0.45). A route is a thin line
-    (low fill density). True = drop it as a button, not a route.
-    """
-    area = cv2.contourArea(contour)
-    x, y, w, h = cv2.boundingRect(contour)
-    if w == 0 or h == 0:
+# De-fragmentation tuning (task #35). M25 renders a route as a colored
+# arrow, but the color mask of one route comes back in 2-3 pieces (anti-
+# aliasing gaps, the arrowhead detaching from the stem, the line passing
+# behind a player glyph). A morphological CLOSE bridges those intra-route
+# gaps; connected-components then separates genuinely distinct routes.
+CLOSE_KERNEL = 41        # ellipse diameter — bridges intra-route gaps
+# RED is always exactly one route (the primary), so it can be closed far
+# more aggressively — there is no second red route to wrongly merge into.
+# This bridges the larger stem↔arrowhead gaps that split the red route.
+CLOSE_KERNEL_RED = 81
+ROUTE_MIN_AREA = 1800    # min component area to count as a route (post-close)
+
+
+def _is_button_component(mask_component: np.ndarray) -> bool:
+    """A PS-button receiver glyph is a COMPACT, roughly-square blob
+    (~50-95px span, aspect ~1). A route is elongated. True = it's a
+    button, not a route."""
+    ys, xs = np.where(mask_component)
+    if len(xs) == 0:
         return False
-    bbox_area = w * h
-    density = area / bbox_area
+    w = xs.max() - xs.min() + 1
+    h = ys.max() - ys.min() + 1
     span = max(w, h)
-    aspect = max(w, h) / min(w, h)
-    # Compact + squarish + reasonably filled → button glyph.
-    return (25 <= span <= 80 and aspect < 1.8 and density > 0.45)
+    aspect = max(w, h) / max(min(w, h), 1)
+    return span <= 95 and aspect < 1.7
 
 
 def isolate_routes(img: np.ndarray) -> dict:
-    """Return per-color route masks with buttons + border removed.
+    """Return {color: [route_mask, ...]} — ONE mask per detected route.
 
-    Output: {color: {"mask": ndarray, "contours": [contour, ...]}}
-    Each contour is a candidate route (may still be 2+ fused routes —
-    that's the tracing step's problem, task #32).
+    De-fragmentation (task #35): a morphological CLOSE bridges the gaps
+    that split one route into multiple color blobs; connected-components
+    then yields one component per genuinely distinct route. RED collapses
+    to a single route — M25 draws exactly one red (primary) route.
     """
     out = {}
     for color in ROUTE_COLORS:
         mask = _color_mask(img, color)
-        contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL,
-                                       cv2.CHAIN_APPROX_SIMPLE)
-        route_contours = []
-        clean = np.zeros_like(mask)
-        for c in contours:
-            if cv2.contourArea(c) < 200:
+        k = CLOSE_KERNEL_RED if color == "red" else CLOSE_KERNEL
+        kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (k, k))
+        closed = cv2.morphologyEx(mask, cv2.MORPH_CLOSE, kernel)
+        n, labels, stats, _ = cv2.connectedComponentsWithStats(closed, 8)
+        routes = []
+        for i in range(1, n):
+            if stats[i, cv2.CC_STAT_AREA] < ROUTE_MIN_AREA:
                 continue
-            if _is_button_glyph(c):
-                continue
-            route_contours.append(c)
-            cv2.drawContours(clean, [c], -1, 255, -1)
-        out[color] = {"mask": clean, "contours": route_contours}
+            comp = (labels == i).astype(np.uint8) * 255
+            if _is_button_component(comp):
+                continue            # compact glyph, not a route
+            routes.append(comp)
+        out[color] = routes
+    # RED is exactly one route (the primary). If the close left >1 red
+    # component, merge them all — every red pixel belongs to that route.
+    if len(out.get("red", [])) > 1:
+        merged = np.zeros_like(out["red"][0])
+        for m in out["red"]:
+            merged = cv2.bitwise_or(merged, m)
+        out["red"] = [merged]
     return out
 
 
 def annotate_debug(img: np.ndarray, isolated: dict) -> np.ndarray:
-    """Draw the isolated route contours over the crop for visual QA."""
+    """Draw the isolated route masks over the crop for visual QA."""
     out = img.copy()
     colors = {"red": (0, 0, 255), "yellow": (0, 255, 255),
               "green": (0, 255, 0), "cyan": (255, 200, 0),
               "blue": (255, 0, 0)}
-    for color, data in isolated.items():
-        for c in data["contours"]:
-            cv2.drawContours(out, [c], -1, colors[color], 2)
-            x, y, w, h = cv2.boundingRect(c)
-            cv2.putText(out, color[:1].upper(), (x, y - 4),
-                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, colors[color], 1)
+    for color, masks in isolated.items():
+        for i, m in enumerate(masks):
+            cnts, _ = cv2.findContours(m, cv2.RETR_EXTERNAL,
+                                       cv2.CHAIN_APPROX_SIMPLE)
+            cv2.drawContours(out, cnts, -1, colors[color], 2)
     return out
 
 
@@ -186,10 +204,27 @@ def _bfs_farthest(pts: set, start: tuple) -> tuple:
     return last, seen
 
 
+def _longest_path(comp: set) -> list:
+    """Double-BFS longest path through one connected skeleton component."""
+    start = next(iter(comp))
+    far1, _ = _bfs_farthest(comp, start)
+    far2, parents = _bfs_farthest(comp, far1)
+    path = []
+    node = far2
+    while node is not None:
+        path.append(node)
+        node = parents[node]
+    path.reverse()
+    return path
+
+
 def trace_route(mask: np.ndarray) -> list[tuple[int, int]] | None:
-    """Skeletonize a single-route mask and return its centerline polyline,
-    ordered tail→tip. Uses double-BFS to find the longest path through the
-    skeleton (ignores the short arrowhead barbs)."""
+    """Skeletonize a route mask and return its centerline polyline.
+
+    The mask is ONE route (post de-fragmentation). If the skeleton still
+    has disconnected pieces, the LARGEST is traced — a stable choice that
+    avoids the zigzag a naive stitch produces. (Bridging genuine intra-
+    route gaps is handled upstream by the morphological close.)"""
     from skimage.morphology import skeletonize
     if mask.sum() < 200 * 255:
         return None
@@ -198,19 +233,20 @@ def trace_route(mask: np.ndarray) -> list[tuple[int, int]] | None:
     if len(xs) < 15:
         return None
     pts = set(zip(xs.tolist(), ys.tolist()))
-    # Double BFS: farthest point from an arbitrary start, then farthest
-    # from THAT — the two define the skeleton's longest path.
-    start = next(iter(pts))
-    far1, _ = _bfs_farthest(pts, start)
-    far2, parents = _bfs_farthest(pts, far1)
-    # Reconstruct path far1..far2
-    path = []
-    node = far2
-    while node is not None:
-        path.append(node)
-        node = parents[node]
-    path.reverse()   # now far1 → far2
-    return path
+
+    # Trace the largest connected component of the skeleton.
+    best_component: set = set()
+    remaining = set(pts)
+    while remaining:
+        seed = next(iter(remaining))
+        _, seen = _bfs_farthest(remaining, seed)
+        comp = set(seen.keys())
+        if len(comp) > len(best_component):
+            best_component = comp
+        remaining -= comp
+    if len(best_component) < 15:
+        return None
+    return _longest_path(best_component)
 
 
 def _simplify(polyline: list, epsilon: float = 12.0) -> list:
@@ -330,8 +366,8 @@ if __name__ == "__main__":
         team, img_idx, panel = sys.argv[1], int(sys.argv[2]), int(sys.argv[3])
         img = clean_crop(team, img_idx, panel)
         iso = isolate_routes(img)
-        for color, d in iso.items():
-            print(f"{color}: {len(d['contours'])} route contour(s)")
+        for color, masks in iso.items():
+            print(f"{color}: {len(masks)} route(s)")
         dbg = annotate_debug(img, iso)
         cv2.imwrite("/tmp/route_geom_debug.jpg", dbg)
         print("wrote /tmp/route_geom_debug.jpg")

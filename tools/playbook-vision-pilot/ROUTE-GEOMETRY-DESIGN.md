@@ -186,9 +186,41 @@ and an in/dig route in isolation":**
 - **Classifier tuning** — the `post` vs `curl` boundary on break-and-
   extend routes (Zona Dbl Curls miss).
 
+## Iteration-3 — de-fragmentation (task #35, 2026-05-22)
+
+`isolate_routes()` now de-fragments: a morphological CLOSE bridges the
+intra-route gaps that split one route into multiple color blobs, then
+connected-components yields one component per route. RED is collapsed to
+a single route (M25 draws exactly one red/primary route) and closed with
+a larger kernel since there is no second red route to wrongly merge.
+
+Result — route counts went from **9–18 fragments/play to 4–5 real
+routes/play**, and the shape test is **5/5** (was 4/5):
+
+| Play | Expect | Result |
+|------|--------|--------|
+| Zona Curls / Zona Dbl Curls | curl | PASS |
+| Inside Dig / WR Deep In / Deep X Dig | in | PASS |
+
+**Verified:** for YELLOW — the multi-route colour, the genuinely hard
+case — each route is now exactly one connected component. The
+fragmentation is fixed for the general case.
+
+**Known residual — the RED primary route.** M25 renders the red arrow
+with internal colour variation: chunks of it fall outside the red HSV
+band, leaving gaps >80px that even the aggressive red close cannot
+bridge. Widening the HSV band floods the maroon panel background (75k →
+360k px), so it is not recoverable that way. The red route therefore
+still traces via largest-skeleton-component and can miss a break on a
+detached arrowhead (e.g. Inside Dig's red out-route reads as `streak`).
+A naive nearest-endpoint stitch was tried and rejected — it produced
+zigzag polylines (`cameback` > `max_depth`). Reuniting the red pieces
+needs a colinearity-aware stitch — deferred.
+
 ## Status
 
-Iterations 1-2 done — color isolation, tracing, classification all built
-and tested at the shape level. Tasks #34 (integration) and #35 (de-
-fragmentation) remain before route_geometry can produce a clean per-play
-route list. Task #30 superseded by `clean_crop()`.
+Iterations 1-3 done — color isolation, tracing, classification, and
+de-fragmentation all built and tested. One route = one contour holds for
+the multi-route yellow case; the red primary has a residual colour-gap
+issue. Task #34 (integration + 18-play re-test) remains. Task #30
+superseded by `clean_crop()`.

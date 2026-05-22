@@ -38,15 +38,14 @@ def main() -> None:
         dbg = img.copy()
         cv2.line(dbg, (0, cy), (img.shape[1] - 1, cy), (128, 128, 128), 1)
         found_routes = []
-        for color, data in iso.items():
-            for i, c in enumerate(data["contours"]):
-                # Build a single-route mask from this contour.
-                m = np.zeros(img.shape[:2], np.uint8)
-                cv2.drawContours(m, [c], -1, 255, -1)
+        for color, masks in iso.items():
+            for m in masks:
                 poly = trace_route(m)
                 if poly is None:
                     continue
                 cls = classify_route(poly, cy, cx)
+                if cls["route"] == "not_a_route":
+                    continue
                 found_routes.append((color, cls))
                 # Draw the traced polyline + label
                 pts = np.array(poly, np.int32).reshape(-1, 1, 2)
