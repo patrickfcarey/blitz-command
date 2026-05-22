@@ -184,27 +184,38 @@ extraction quality than v4.
 | + validated route templates (Lever C) | $19 |
 | + family normalization | **$19.71** |
 
-**Full extraction LAUNCHED 2026-05-21 ~22:40, running overnight at 5
-workers.** ~7,300 plays, projected ~$13, ~10 hr wall time. Output to
-`data/games/madden-25-ps3/play-geometry/` (persistent — survives WSL
-restart). Resume-safe.
+**Full extraction ran 2026-05-21→22.** 7,300/7,300 extracted, 100%
+JSON-parseable, $12.88 total (overnight run + 3 mop-up passes after
+adding exponential-backoff retry — the API threw 2,603 529-Overloaded
+errors overnight). Output: `data/games/madden-25-ps3/play-geometry/`.
 
-**Morning checklist for the next session:**
-1. Check it finished: `ls data/games/madden-25-ps3/play-geometry/*.json | wc -l`
-   should be ~7,300.
-2. Re-run `dispatch_canonical.py` ONCE to mop up any failures — the
-   `_existing()` fix (commit 063a6b5) makes resume re-attempt error
-   records (socket drops / rate limits) instead of skipping them.
-   The currently-running process has the OLD skip behavior, so any
-   overnight failures need this mop-up pass.
-3. Run `validate_extractions.py` — flags parse failures, concept
-   mismatches, gap mismatches, route-count outliers.
-4. Review `_validation.json`, re-extract or hand-fix flagged plays.
+## 2026-05-22 — Hand-review FAILED validation; pivoting to Python route geometry
 
-**Known overnight risk:** machine has a history of VPN socket-drops
-(diagnosed earlier this session). The dispatcher catches per-job
-errors and continues, so a drop won't crash the run — failed plays
-just get error records, cleaned up by the morning mop-up pass.
+**Tier-1 hand review failed.** User reviewed 18 of a 150-play sample:
+3 correct / 10 partial / 5 wrong (~17% clean).
+- **Routes are the core failure** — the LLM defaults to "streak".
+  Dataset-wide, 26% of route labels are streak/seam; breaking routes
+  are starved. A cheap-fix test (route-shape prompt + full resolution)
+  also failed — the LLM still mislabels. It's a perception limit: the
+  LLM cannot trace thin overlapping route arrows from the screenshot.
+- Secondary: player errors (phantom TEs, RB-as-TE, wrong personnel
+  counts, missed backfield backs).
+
+**Decision: build a deterministic Python route-geometry extractor.**
+Design doc: `tools/playbook-vision-pilot/ROUTE-GEOMETRY-DESIGN.md`.
+Approach — per-receiver arrow tracing → geometry → route-tree
+classification. The 18 hand-reviewed plays
+(`/mnt/c/Users/root/Downloads/hand_review_results.json`) are the
+validation gate.
+
+**Dataset status:** the 7,300-play v1 has reliable `ball_carrier`/
+`target_gap`/`concept`/`personnel` but **unreliable `routes`** — it is
+NOT validation-passed. Treat as a foundation, not a finished product.
+
+**In progress / next step:** route-geometry build, tasks #30–#34 —
+(30) regenerate crops with non-route annotation color, (31) color
+isolation + button/border filtering, (32) per-receiver tracing,
+(33) geometry→route classifier, (34) integrate + re-test the 18.
 
 **Uncommitted state:** all the new tooling (`formation_personnel.py`,
 `play_concepts.py`, `tag_crops_with_personnel.py`, `smoke_test_cross_family.py`,

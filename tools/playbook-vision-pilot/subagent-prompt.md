@@ -118,6 +118,48 @@ The C-glyph is a WHITE square — distinct from the purple □ Square-button gly
 - **Solid arrow:** standard route.
 - **Dashed line:** option route or pre-snap motion path. Emit `arrow_style="dashed"` and describe in notes.
 
+#### Route SHAPE identification — READ THIS CAREFULLY
+
+This is the single most error-prone part of the extraction. **Do NOT default to "streak".** A route is identified by the SHAPE of its arrow — trace the arrow from the receiver (origin, on the LOS) to the arrowhead (destination) and classify by how it bends.
+
+First ask: **does the arrow break (bend/turn/stop), or is it perfectly straight?**
+
+**Straight, no break** (rare — most routes break):
+- **streak** — a perfectly straight line going vertically downfield. ONLY call it streak if there is NO bend at all.
+- **seam** — like a streak but from an inner receiver, may angle slightly toward the goalposts. Still essentially straight.
+
+**Breaks toward the MIDDLE of the field:**
+- **slant** — breaks inward almost immediately, shallow, a short ~45° diagonal. Quick.
+- **in / dig** — runs downfield, then a sharp ~90° break toward the middle, running flat across.
+- **post** — runs downfield, then a ~45° break toward the middle, continuing DEEP (toward the goalpost).
+
+**Breaks toward the SIDELINE:**
+- **out** — runs downfield, then a sharp ~90° break toward the sideline.
+- **corner** — runs downfield, then a ~45° break toward the sideline, continuing DEEP (toward the pylon).
+- **flat** — a quick shallow route angling toward the sideline, stays near the LOS.
+
+**Breaks back toward the LINE OF SCRIMMAGE (the arrowhead points back down/short):**
+- **hitch** — a short stem (~5 yds) then stops / comes back slightly toward the QB. Arrowhead near where the stem ended.
+- **curl** — a deeper stem (~10-12 yds) then curls back toward the QB.
+- **comeback** — a deep stem (~15 yds) then a sharp break back toward the sideline-and-down.
+
+**Horizontal / lateral:**
+- **drag / shallow cross** — runs horizontally across the field, very shallow (near the LOS), nearly parallel to it.
+- **wheel** — starts lateral/shallow toward the sideline (like a flat) then TURNS UP and runs vertically up the sideline. An L or J shape.
+
+**Backfield (RB/FB) routes:**
+- **check_release / checkdown** — the back shows block first, then releases short as a safety valve.
+- **swing** — the back runs laterally out toward the sideline behind the LOS.
+- **angle / texas** — the back releases one way then breaks back at an angle the other way.
+- **wheel** — as above, when run by a back out of the backfield.
+
+**Identification discipline:**
+1. If the arrow has ANY bend, it is NOT a streak.
+2. Name the route by the LAST break and where the arrowhead ends up — that's the route's defining move.
+3. A short arrow that ends near the LOS is a hitch/flat/drag — never a streak.
+4. If you genuinely cannot resolve the shape, emit `"uncertain"` rather than guessing "streak".
+5. `py_route_geometry` hints (if provided in the user message) give the Python-measured start/end/direction of each colored arrow — trust them to anchor your shape call.
+
 ### Coordinate convention
 
 When emitting pixel coordinates, use the IMAGE'S NATIVE COORDINATE SYSTEM as you perceive it. Exact pixel precision is not required; a coordinate within ~20 pixels of the glyph's center is sufficient.

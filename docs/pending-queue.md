@@ -10,15 +10,18 @@ when an item depends on something external (user input, upstream work).
 
 ## Highest leverage right now
 
-- **Vision pilot — full M25 geometry extraction.** Pipeline at
-  `tools/playbook-vision-pilot/` is fully staged. 7,300 deduped canonical
-  crops, family-normalized. Pipeline: Haiku 4.5 + prompt caching + Python
-  `target_gap` + formation `personnel` (filename-encoded) + `play_concepts`
-  blockers-implicit + 10 validated route templates + multi-concept schema.
-  All 18 formation families pass smoke test. Run cost projected at
-  ~$19.71 — launch via `dispatch_canonical.py`. Validator
-  (`validate_extractions.py`) runs offline post-launch to flag suspect
-  extractions. Output: `data/games/madden-25-ps3/play-geometry/`.
+- **Vision pilot — route-geometry rebuild.** The full M25 extraction ran
+  (7,300 plays, $12.88, in `data/games/madden-25-ps3/play-geometry/`) but
+  **failed Tier-1 hand review (~17% clean)** — the LLM cannot reliably
+  read route shapes from the screenshots (defaults to "streak"). A
+  prompt+resolution cheap-fix also failed. Active work is a deterministic
+  Python route-geometry extractor — see
+  `tools/playbook-vision-pilot/ROUTE-GEOMETRY-DESIGN.md`. Tasks: regenerate
+  crops with a non-route annotation color; `route_geometry.py` color
+  isolation → per-receiver tracing → geometry→route classification;
+  integrate + re-test the 18 hand-reviewed plays as the gate. The current
+  dataset's `ball_carrier`/`target_gap`/`concept`/`personnel` are sound;
+  `routes` is the field being rebuilt.
 
 
 

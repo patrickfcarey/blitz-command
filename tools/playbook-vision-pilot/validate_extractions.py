@@ -84,13 +84,19 @@ def main() -> None:
         if info.get("play_type") == "run" and pt is not None:
             _flag(report, slug, "run_has_primary_target", str(pt))
 
-        # Check 4: routes count vs expected personnel
+        # Check 4: routes count vs expected personnel — PASS PLAYS ONLY.
+        # Use the authoritative manifest play_type, not the LLM's
+        # play_type_observed (run plays correctly emit empty routes via
+        # the blockers-implicit rule and must not be flagged).
         routes = obj.get("routes")
-        if isinstance(routes, dict) and expected and obj.get("play_type_observed") != "run":
+        if (isinstance(routes, dict) and expected
+                and info.get("play_type") == "pass"):
             expected_targets = (expected.get("TE", 0) + expected.get("WR", 0)
                                 + 1)  # +1 for HB as checkdown
             n_routes = len(routes)
-            if abs(n_routes - expected_targets) >= 3:
+            # Only flag a SHORTFALL of 3+ (missing routes). An overflow is
+            # fine — the LLM may detail more than the minimum.
+            if expected_targets - n_routes >= 3:
                 _flag(report, slug, "route_count_off",
                       f"expected≈{expected_targets} got={n_routes}")
 

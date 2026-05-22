@@ -1,0 +1,160 @@
+# Route-geometry build — design
+
+## Why this exists
+
+The M25 vision pilot extracts per-play geometry. Most fields are solid:
+
+- `ball_carrier` + `target_gap` — Python-deterministic, hand-verified 3/3.
+- `concept` — Python-deterministic via `play_concepts.py`.
+- `personnel` — formation-derived (imperfect, see "Known gaps").
+
+The failure is **routes**. The hand-review of 18 plays (2026-05-22) found
+the LLM systematically mislabels routes — ~26% of all route entries are
+`streak`/`seam` (vertical) when the real route is a hitch, dig, post,
+comeback, etc. A follow-up test added a detailed route-shape guide to the
+prompt AND ran at full resolution — the LLM *still* called the flagged
+routes `streak`. Conclusion: **the LLM cannot reliably trace thin,
+overlapping route arrows from the screenshot.** It is a perception limit,
+not an instruction limit.
+
+Decision: build a deterministic Python route-geometry extractor. The LLM
+keeps the jobs it is good at (concept naming, edge cases); Python owns
+route shape.
+
+## The input
+
+Each canonical crop is a wide LOS-zoom of one M25 play panel. Routes are
+drawn as colored arrows:
+
+- **RED** — the primary route (pass) or ball-carrier path (run). Exactly one.
+- **YELLOW** — standard receiver routes.
+- **CYAN/BLUE** — block-then-release routes (chip, delayed release, RB
+  swing after pass-pro, some motion).
+
+Each route starts at a receiver glyph on the LOS row and ends in an
+arrowhead.
+
+## The hard parts (from the probe, 2026-05-22)
+
+1. **Annotation pollution.** The crops carry a cyan LOS line and a yellow
+   C-box drawn by the pipeline. Cyan line == cyan route color; yellow box
+   == yellow route color. → FIX: regenerate crops with gray annotations
+   (non-route color) or none. (Task #30)
+2. **Button-glyph pollution.** PS-button receiver glyphs (red ⊙, blue ⊗,
+   etc.) are colored compact blobs that register as route pixels. → FIX:
+   filter by shape — routes are thin/elongated (low fill density), buttons
+   are compact filled blobs (~40-60px, high density). (Task #31)
+3. **Overlapping same-color routes.** All yellow routes share one yellow.
+   When two routes cross or touch, `findContours` fuses them into one
+   blob. → FIX: per-receiver tracing (see below). (Task #32)
+
+## Approach — per-receiver route tracing
+
+Rather than segment the route mask top-down, trace bottom-up from each
+receiver:
+
+1. **Anchor on receivers.** Receiver positions are known approximately —
+   they sit on the LOS row, and personnel (`r#f#t#w#`) says how many.
+   Each route originates at a receiver.
+2. **Color-isolate** the route mask (red / yellow / cyan), with button
+   and border pollution removed.
+3. **For each receiver**, start a walk at its position and follow the
+   colored pixels outward. At a crossing (junction with another route),
+   prefer the branch that continues the current heading — routes cross,
+   they don't usually turn 90° at another route's line.
+4. **Stop at the arrowhead** — the widest cluster of route pixels, or the
+   path's far endpoint.
+5. The traced polyline IS the route geometry.
+
+## Geometry → route name (Task #33)
+
+From a traced polyline, measure:
+
+- **stem**: direction + length of the initial segment off the LOS.
+- **break point**: where the heading changes sharply (if any).
+- **break angle**: ~45° (slant/post/corner) vs ~90° (in/dig/out).
+- **break direction**: toward the middle, toward the sideline, or back
+  toward the LOS.
+- **depth**: shallow / intermediate / deep (total downfield distance).
+
+Classification table (see also the route-shape guide in
+`subagent-prompt.md`):
+
+| Route     | Stem | Break | Notes |
+|-----------|------|-------|-------|
+| streak/go | straight, deep | none | perfectly vertical |
+| seam      | straight, deep | none | inner receiver, slight inward lean |
+| slant     | short | immediate ~45° inward | shallow |
+| drag      | — | — | shallow, horizontal across field |
+| hitch     | short (~5yd) | stops / back to QB | arrowhead near stem end |
+| curl      | medium (~12yd) | curls back to QB | |
+| comeback  | deep (~15yd) | sharp back to sideline+down | |
+| out       | medium | ~90° to sideline | |
+| in/dig    | medium | ~90° to middle | |
+| corner    | deep | ~45° to sideline | continues deep |
+| post      | deep | ~45° to middle | continues deep |
+| wheel     | lateral then vertical | L/J shape | up the sideline |
+| flat      | — | — | quick shallow to sideline |
+
+## Output
+
+`route_geometry.py` emits, per play:
+
+```json
+{
+  "routes": [
+    {"color": "red|yellow|cyan",
+     "origin_xy": [x, y],
+     "polyline": [[x,y], ...],
+     "stem_dir": "...", "break_dir": "...", "break_angle_deg": N,
+     "depth": "shallow|intermediate|deep",
+     "route": "<classified name>",
+     "confidence": "high|medium|low"}
+  ],
+  "primary_route_index": <int>   // which route is red
+}
+```
+
+## Integration (Task #34)
+
+Two modes, decided by how well the classifier performs on the 18-play
+re-test:
+
+- **Authoritative** — if classification is reliable, Python's route names
+  go straight into the extraction; the LLM does not touch routes.
+- **Hint** — if classification is medium-reliable, Python's geometry is
+  passed to the LLM as `py_route_geometry` hints (the prompt already
+  references this), and the LLM makes the final call.
+
+The 18 hand-reviewed plays (`hand_review_results.json`) are the gate.
+No full re-run until route accuracy on those 18 clearly beats the
+current ~17%.
+
+## Iteration-1 findings (2026-05-22)
+
+`route_geometry.py` iteration 1 — `clean_crop()` + `isolate_routes()` —
+is working. Findings from the first debug run (`PA Ctr Waggle`):
+
+- **`clean_crop()` works** — generates an annotation-free full-res crop
+  straight from the docx, so there's no cyan-line / yellow-box pollution.
+  This supersedes task #30 (no need to regenerate the stored crops; the
+  CV generates clean ones on demand).
+- **The color model is richer than assumed.** A single play draws routes
+  in red, yellow, green, cyan, blue AND white/gray — M25 colors each
+  receiver's route distinctly. `ROUTE_COLORS` extended to 5 hue families;
+  white/gray routes still TODO (they collide with the white player
+  glyphs, so need shape disambiguation).
+- **Banner pollution fixed** — the bottom-left "RUN"/"PASS" label was
+  being picked up; mask now zeroes the bottom-left quadrant.
+- **Button-glyph filter** (`_is_button_glyph`) works — compact filled
+  blobs are dropped, thin route lines kept.
+- **Green routes render thin/faint** — current detection gets only
+  speckle fragments. Needs a lower saturation floor or morphological
+  bridging.
+
+Next: white/green tuning, then per-receiver tracing (#32).
+
+## Status
+
+Build in progress. Iteration 1 (color isolation) done. Tasks #32–#34
+ahead. Task #30 superseded by `clean_crop()`.

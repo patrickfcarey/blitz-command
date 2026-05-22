@@ -633,6 +633,39 @@ RED-ROUTE DETECTION (attempted deterministic primary_target):
 FINAL: full M25 extraction projected ~$12.84 (was $330 unduped Sonnet).
 Launch via dispatch_canonical.py (700w resize live).
 
+[2026-05-22] FULL RUN executed overnight. 7,300/7,300 extracted, 100%
+JSON-parseable. Overnight run hit 2,603 529-Overloaded failures (API
+busy); recovered via 3 mop-up passes after adding exponential-backoff
+retry. Total spend: $12.88.
+
+[2026-05-22] HAND REVIEW (Tier 1) — VALIDATION FAILED.
+- User hand-reviewed first 18 of a 150-play sample.
+- 3 correct / 10 partial / 5 wrong = ~17% clean.
+- Root cause #1: routes — model defaults to "streak". Dataset-wide,
+  26% of route labels are streak/seam; breaking routes (hitch/post/
+  dig/out/comeback) are starved. The route screenshots have thin
+  overlapping arrows the LLM can't trace.
+- Root cause #2: players — phantom TEs, RB-labeled-as-TE, wrong
+  personnel counts, missed 2nd/3rd backfield backs.
+- Minor: target_gap wrong on ~2/18 runs; 1 play_type wrong in source.
+
+[2026-05-22] CHEAP-FIX TEST — also failed.
+- Added a detailed route-shape guide to the prompt + ran the 18 plays
+  at full resolution. The LLM STILL called the flagged routes "streak".
+- Conclusion: it is a perception limit, not an instruction limit.
+  The LLM cannot trace these arrows regardless of prompt or resolution.
+
+[2026-05-22] DECISION: build deterministic Python route-geometry.
+- Design written: ROUTE-GEOMETRY-DESIGN.md
+- Approach: per-receiver arrow tracing → geometry → route-tree
+  classification. Crops to be regenerated with non-route (gray)
+  annotation color so color detection isn't polluted.
+- Tasks #30-#34. The 18 hand-reviewed plays are the validation gate;
+  no full re-run until route accuracy on them clearly beats ~17%.
+- The 7,300-play dataset stands as a v1 with reliable ball_carrier/
+  gap/concept/personnel but UNRELIABLE routes — not validation-passed.
+
+
 
 LEVER B (concept dictionary + skip blockers on runs):
 - play_concepts.py — 80+ regex patterns mapping play_name → concept tag
