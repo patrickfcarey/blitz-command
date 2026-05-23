@@ -10,19 +10,21 @@ when an item depends on something external (user input, upstream work).
 
 ## Highest leverage right now
 
-- **Vision pilot — route-geometry rebuild.** The full M25 extraction ran
-  (7,300 plays, $12.88, in `data/games/madden-25-ps3/play-geometry/`) but
-  **failed Tier-1 hand review (~17% clean)** — the LLM cannot reliably
-  read route shapes from the screenshots. `route_geometry.py` (the
-  deterministic Python extractor — see `ROUTE-GEOMETRY-DESIGN.md`) now
-  has color isolation + tracing (skeletonize + double-BFS) + geometry
-  classification built and passing the shape test (4/5: curls + in/dig
-  identified). **Remaining before it can replace the dataset `routes`
-  field:** (#35) de-fragmentation — one route still splits into 2-3
-  contours; (#34) integration + re-test the 18 hand-reviewed plays as the
-  gate; per-receiver route→role assignment; `post`/`curl` classifier
-  tuning. The dataset's `ball_carrier`/`target_gap`/`concept`/`personnel`
-  are sound; `routes` is the field being rebuilt.
+- **Vision pilot — red-route clustering (deterministic).** After 6 failed
+  iterations of CV tracing, the route problem is now solved by
+  fingerprint-and-cluster: M25 diagrams are game-rendered so identical
+  routes cluster on exact pixel match. **5,313 pass-play red routes →
+  224 clusters (97% in clusters of ≥3)**, see
+  `tools/playbook-vision-pilot/ROUTE-GEOMETRY-DESIGN.md`. Pipeline:
+  `cluster_red_routes.py` → `build_cluster_gallery.py` →
+  `red-route-clusters.html` (gitignored). User labels ~200 templates
+  (not 7,300 plays); every red route then maps deterministically.
+  **Active:** v2 gallery LLM-labelled via Haiku 4.5 with the user's new
+  vocabulary (fade, quick_slants, hb_texas, screen, wheel/flare_out,
+  double_move, block_release_drag). Pending user review + a small
+  per-play join script. Then extend to non-red routes per receiver.
+  The 7,300-play dataset's other fields (ball_carrier, target_gap,
+  concept, personnel) remain sound.
 
 
 

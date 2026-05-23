@@ -691,6 +691,48 @@ retry. Total spend: $12.88.
   break. A naive stitch was tried + rejected (zigzag). Colinearity-aware
   stitch deferred → task #36.
 
+[2026-05-22] route_geometry.py — iteration 4: junction-aware walk (#36).
+- Replaced CC-based tracing with per-receiver directional walk:
+  skeletonize → from each near-LOS endpoint walk forward, picking the
+  straightest branch at junctions (separates touching routes) and
+  leaping fragmentation gaps in the heading direction.
+- Test verified each "fix" broke something else: over-merge → over-
+  detection (15 routes) → spurs pruned → under-detection (1 of 5
+  routes traced + border artifact).
+- Six iterations of tracing did not converge. The skeleton approach
+  trades one failure mode for another.
+
+[2026-05-22] PIVOT — cluster, don't trace (#37).
+- These are GAME-RENDERED diagrams; the same route is pixel-identical
+  every time. So fingerprint + cluster, don't trace.
+- cluster_red_routes.py: red mask, button/border stripped, dilated to
+  absorb edge jitter, centroid-normalized, downsampled to 40x40 gray.
+  Distance = min mean-abs-diff over small shifts (jitter-tolerant).
+- v1 (all play_types): 7,289 routes -> 209 clusters, 98% in clusters
+  of >=3. Top: 1528/1227/964/534/445.
+- User reviewed top 33 v1 clusters (saved to red_cluster_labels_v1.json).
+  Key feedback:
+  * v1 mixed runs into pass-route clusters
+  * mirror dependency (post vs corner) needs side tracking
+  * magenta overlay confused reviewers
+  * "not_a_route" wrongly dropped screens
+  New vocabulary: fade, quick_slants, hb_texas, screen, wheel/flare_out,
+  double_move, block_release_drag.
+- v2: cluster_red_routes.py filters to pass-only + tracks per-member
+  side (anchored on red ⊙ button glyph when present, else bottommost
+  route bbox-bottom). build_cluster_gallery.py: no overlay, side
+  displayed, Haiku 4.5 LLM-proposes labels with new vocabulary
+  (parallelized 6-way, ~$0.20/build).
+- BUG mid-v2: side detection initially used np.where(labels==i) per
+  component — at 4M px/image, ran 1h+ on 5300 routes. Fixed to use
+  CC stats only (cv2.CC_STAT_*).
+- v2 first build: 5,313 pass routes -> 224 clusters, 97% in clusters
+  of >=3. Side-corrected re-run in progress as of this write.
+
+Next handoff: user reviews v2 gallery → red_cluster_labels.json →
+every red pass primary deterministically mapped. Then extend
+fingerprint-and-cluster per receiver for non-red routes.
+
 
 
 LEVER B (concept dictionary + skip blockers on runs):

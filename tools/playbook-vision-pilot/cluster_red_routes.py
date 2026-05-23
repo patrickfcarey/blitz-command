@@ -27,6 +27,57 @@ MATCH_TOL = 0.055     # mean per-cell abs diff (0-1) below which = same route
 SHIFTS = range(-3, 4)  # small translations tried when matching
 
 
+def detect_red_route_side(img: np.ndarray, c_xy: tuple[int, int] | None
+                          ) -> str:
+    """Side (L/R/C) of the receiver running the red route — i.e. which
+    side of the QB they lined up on, NOT where the route's centroid
+    ended up. The red ⊙ button glyph (when visible) marks the receiver
+    exactly; otherwise we fall back to the route's bottommost pixel
+    (closest to / below the LOS = origin)."""
+    if c_xy is None:
+        return "C"
+    cx, _ = c_xy
+    h, w = img.shape[:2]
+    hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
+    mask = (cv2.inRange(hsv, np.array((0, 110, 80)), np.array((10, 255, 255)))
+            | cv2.inRange(hsv, np.array((170, 110, 80)),
+                          np.array((180, 255, 255))))
+    m = int(w * 0.045)
+    mask[:, :m] = 0
+    mask[:, w - m:] = 0
+    mask[:int(h * 0.05), :] = 0
+    mask[int(h * 0.72):, :] = 0
+    n, _lbl, stats, _ = cv2.connectedComponentsWithStats(mask, 8)
+    # Look for the red ⊙ button: compact, squarish. Else fall back to the
+    # bottommost route component (largest bbox bottom-edge y). Using stats
+    # only — np.where(labels==i) on a 4M-px image is far too slow.
+    button_x = None
+    route_anchor_x = None
+    route_bottom_y = -1
+    for i in range(1, n):
+        a = stats[i, cv2.CC_STAT_AREA]
+        if a < 250:
+            continue
+        bw = stats[i, cv2.CC_STAT_WIDTH]
+        bh = stats[i, cv2.CC_STAT_HEIGHT]
+        bx = stats[i, cv2.CC_STAT_LEFT]
+        by = stats[i, cv2.CC_STAT_TOP]
+        span = max(bw, bh)
+        aspect = max(bw, bh) / max(min(bw, bh), 1)
+        if span <= 95 and aspect < 1.7:
+            button_x = bx + bw // 2
+        else:
+            bottom_y = by + bh - 1
+            if bottom_y > route_bottom_y:
+                route_bottom_y = bottom_y
+                route_anchor_x = bx + bw // 2
+    anchor = button_x if button_x is not None else route_anchor_x
+    if anchor is None:
+        return "C"
+    dx = anchor - cx
+    return "L" if dx < -50 else "R" if dx > 50 else "C"
+
+
 def red_route_mask(img: np.ndarray) -> np.ndarray | None:
     """Binary mask of the red route pixels, border + button removed."""
     h, w = img.shape[:2]
@@ -93,10 +144,22 @@ def _distance(a: np.ndarray, b: np.ndarray) -> float:
 
 def main() -> None:
     import json
+    sys.path.insert(0, str(REPO / "tools/playbook-vision-pilot"))
+    from target_gap_python import _detect_c   # noqa: E402
+
+    # PASS plays only — on RUN plays red is the ball-carrier path, not a
+    # route (already captured by target_gap), so it shouldn't be clustered
+    # alongside pass primaries (user feedback v1, clusters #4 #23).
+    manifest_path = REPO / "tools/playbook-vision-pilot/dedup-crops/_canonical_manifest.json"
+    manifest = json.loads(manifest_path.read_text())
+    pass_files = {name for name, info in manifest.items()
+                  if info.get("play_type") == "pass"}
+
     limit = int(sys.argv[1]) if len(sys.argv) > 1 else 1500
-    crops = sorted(CROPS.glob("*.jpg"))[:limit]
-    print(f"Fingerprinting RED routes for {len(crops)} plays...")
-    items = []          # (crop_filename, fingerprint)
+    crops = [f for f in sorted(CROPS.glob("*.jpg"))
+             if f.name in pass_files][:limit]
+    print(f"Fingerprinting RED primary routes for {len(crops)} PASS plays...")
+    items = []          # list of dicts: name, fp, side ("L"/"R"/"C")
     for i, f in enumerate(crops):
         img = cv2.imread(str(f))
         if img is None:
@@ -105,29 +168,40 @@ def main() -> None:
         if mask is None:
             continue
         fp = fingerprint(mask)
-        if fp is not None:
-            items.append((f.name, fp))
+        if fp is None:
+            continue
+        c = _detect_c(img)
+        side = detect_red_route_side(img, c)
+        items.append({"name": f.name, "fp": fp, "side": side})
         if (i + 1) % 400 == 0:
             print(f"  {i + 1}/{len(crops)}")
 
     print(f"\n{len(items)} red routes fingerprinted. Clustering...")
-    # each cluster: {"members": [filename, ...], "fp": centroid fingerprint}
+    # each cluster: {"members": [{name, side}, ...], "fp": centroid fingerprint}
     clusters: list[dict] = []
-    for name, fp in items:
+    for it in items:
         placed = False
         for cl in clusters:
-            if _distance(cl["fp"], fp) <= MATCH_TOL:
-                cl["members"].append(name)
+            if _distance(cl["fp"], it["fp"]) <= MATCH_TOL:
+                cl["members"].append({"name": it["name"], "side": it["side"]})
                 placed = True
                 break
         if not placed:
-            clusters.append({"members": [name], "fp": fp})
+            clusters.append({"members": [{"name": it["name"],
+                                          "side": it["side"]}],
+                             "fp": it["fp"]})
 
     clusters.sort(key=lambda c: len(c["members"]), reverse=True)
-    out = {"route_count": len(items),
-           "clusters": [{"id": i, "size": len(c["members"]),
-                         "members": c["members"]}
-                        for i, c in enumerate(clusters)]}
+    out_clusters = []
+    for i, c in enumerate(clusters):
+        sides = [m["side"] for m in c["members"]]
+        side_counts = {s: sides.count(s) for s in set(sides)}
+        dominant = max(side_counts, key=side_counts.get)
+        out_clusters.append({"id": i, "size": len(c["members"]),
+                             "side": dominant, "side_counts": side_counts,
+                             "members": c["members"]})
+    out = {"play_type": "pass", "route_count": len(items),
+           "clusters": out_clusters}
     dest = REPO / "tools/playbook-vision-pilot/red_clusters.json"
     dest.write_text(json.dumps(out, indent=1))
     print(f"  wrote {dest}")

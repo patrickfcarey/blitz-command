@@ -217,6 +217,81 @@ NOT validation-passed. Treat as a foundation, not a finished product.
 isolation + button/border filtering, (32) per-receiver tracing,
 (33) geometry→route classifier, (34) integrate + re-test the 18.
 
+## 2026-05-22 evening — PIVOT to clustering (CV tracing abandoned, route problem solvable)
+
+Six iterations of CV tracing never converged — every fix broke
+something else (final test: 1 of 5 routes traced + a border artifact).
+
+**Reframe:** M25 diagrams are GAME-RENDERED — the same route is
+pixel-identical every time. So fingerprint + cluster, don't trace.
+
+**Proven on the red primary route:**
+- v1 (all play_types): 7,289 red routes → 209 clusters, 98% in clusters
+  of ≥3. Top: 1528 / 1227 / 964 / 534 / 445 plays.
+- v2 (pass-only, side-aware): 5,313 routes → 224 clusters, 97% in
+  clusters of ≥3.
+
+**Labelling ~200 templates (not 7,300 plays) is the deterministic
+deliverable.** Every play's red route maps to a cluster by exact pixel
+match — no per-play guessing.
+
+**v1 review (`red_cluster_labels_v1.json`):** user reviewed top 33
+clusters. Verified findings:
+1. v1 wrongly mixed pass-route primaries with run-play ball-carrier
+   paths → v2 filters `play_type == "pass"` only.
+2. Mirror dependency: same shape from a left-receiver = post, from
+   right = corner. v2 records side per cluster member.
+3. Magenta tracer overlay confused reviewers ("you drew this on the
+   play?"). v2 drops it.
+4. Screen routes wrongly dropped as `not_a_route` by the noise guard.
+   v2 leaves proposed label blank for short routes.
+
+**New route vocabulary the user contributed** (now in the LLM-label
+prompt): `fade`, `quick_slants`, `hb_texas` (sideways-V below LOS),
+`screen`, `wheel/flare_out`, `double_move`, `block_release_drag`.
+
+**v2 build (in flight as of this write):**
+- `tools/playbook-vision-pilot/cluster_red_routes.py` — fingerprint +
+  cluster, anchors side on the red ⊙ button glyph (compact red CC) or
+  bottommost route-CC bbox-bottom. **Uses `cv2.CC_STAT_*` only** — an
+  earlier `np.where(labels==i)` implementation took 1h+ on 5,300 routes.
+- `tools/playbook-vision-pilot/build_cluster_gallery.py` — renders an
+  exemplar per cluster (no overlay, green LOS line for reference) and
+  LLM-labels each via Haiku 4.5 with the new vocabulary; 6-way
+  parallel; ~$0.20 per build.
+- Produces `red-route-clusters.html` (~5 MB, gitignored).
+
+**Next steps for the session picking this up:**
+1. Confirm `red_clusters.json` has `"play_type": "pass"` (the v2
+   marker — distinguishes from v1's mixed clustering).
+2. `.venv/bin/python tools/playbook-vision-pilot/build_cluster_gallery.py`
+   → regenerates `red-route-clusters.html` with LLM labels.
+3. Open the gallery in a browser. For each card: leave blank if "LLM
+   says" matches the shape; type the correct route name if wrong. Save
+   `red_cluster_labels.json` when done (or partway through — the user's
+   last commented cluster id marks the end of review).
+4. Author the per-play join (small script not yet written): for each
+   play, find which cluster its red mask matches, look up the cluster's
+   label, write that into the per-play extraction JSON.
+5. Extend to non-red routes: same fingerprint-and-cluster pipeline,
+   anchored per receiver (the colored button glyphs ⊙ □ △ ⊗ mark
+   receivers explicitly on pass plays).
+
+**Active artifacts:**
+- `cluster_red_routes.py`, `build_cluster_gallery.py` — the deterministic
+  route pipeline.
+- `red_clusters.json` — cluster membership + side per member.
+- `red_cluster_labels_v1.json` — user's v1 review (~34 verified labels
+  in the top 33). Use as spot-check gold.
+- `ROUTE-GEOMETRY-DESIGN.md` — full design + iteration history.
+- `route_geometry.py` — the abandoned tracer. Kept; superseded by
+  clustering. Don't try to use it for routes.
+
+**Dataset status (unchanged):** the 7,300-play v1 dataset in
+`data/games/madden-25-ps3/play-geometry/` still has reliable
+`ball_carrier` / `target_gap` / `concept` / `personnel`. `routes` will
+be replaced by the clustering output once v2 labels land.
+
 **Uncommitted state:** all the new tooling (`formation_personnel.py`,
 `play_concepts.py`, `tag_crops_with_personnel.py`, `smoke_test_cross_family.py`,
 `validate_extractions.py`, `template-review.html`, `build_template_review.py`)

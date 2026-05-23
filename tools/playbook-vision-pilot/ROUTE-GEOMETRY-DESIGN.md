@@ -247,9 +247,46 @@ Next: label the red templates; extend the fingerprint-and-cluster method
 to non-red routes (per receiver). `route_geometry.py`'s tracer is kept
 but is NOT the path — clustering is.
 
+## Iteration-5 — v2 gallery fixes from user feedback (2026-05-22)
+
+User reviewed v1 gallery top ~33 clusters and gave critical feedback:
+
+1. **Red mixes runs and passes** — on a pass play red = primary route,
+   on a run play red = ball-carrier path. v1 conflated them; v2 filters
+   to `play_type == "pass"` only. Run plays' red is captured by
+   `target_gap`, not the route extraction.
+2. **Mirror dependency (post vs corner)** — the same shape from a left
+   vs right receiver has different names. Side must be recorded per
+   cluster member.
+3. **Magenta overlay confused reviewers** — they read it as a drawn
+   route. v2 drops the overlay; only the real red route is shown.
+4. **Screen routes dropped as "not_a_route"** — `max_depth < 40` noise
+   guard wrongly nukes them. v2 leaves proposed label blank for short
+   routes rather than emitting "not_a_route".
+
+Side-detection bug found and fixed: v2 first used the red mask's
+*centroid*, which gets pulled in the route's direction of travel and
+gives the wrong side for inward-breaking routes. Corrected to anchor on
+the red ⊙ button (when visible) or the route's bottommost-bbox-bottom
+component — both of which sit at the receiver, not in the route's body.
+Uses `cv2.connectedComponentsWithStats` only; an earlier `np.where(labels==i)`
+implementation was 10× too slow.
+
+**New vocabulary the user contributed** (now in the LLM-label prompt):
+`fade`, `quick_slants`, `hb_texas` (sideways-V below the LOS),
+`screen`, `wheel/flare_out`, `double_move`, `block_release_drag`.
+
+v2 = `cluster_red_routes.py` (pass-only, button-anchored side) +
+`build_cluster_gallery.py` (LLM-proposed labels via Haiku 4.5 with the
+new vocabulary, parallelized 6-way). Cost ~$0.20 per gallery build.
+
+User's v1 labels preserved in `red_cluster_labels_v1.json`. Last
+reviewed cluster was v1 #33 — everything past that in v1 is unreviewed.
+
 ## Status
 
 The route problem has a proven deterministic solution: cluster +
-template-label. Red routes clustered (209 templates, gallery built).
-Remaining: label red templates, then per-receiver clustering for the
-other routes. The iteration 1-3 tracer is superseded.
+template-label. v2 red-route gallery is the active review surface.
+Next: user labels v2 → all red pass primaries deterministically mapped
+→ extend fingerprint-and-cluster to other route colors (per receiver).
+Iteration 1-3 tracer is superseded.
