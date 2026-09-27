@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t3w1__jumbo-pair__pass__close-min-verts",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Jumbo Pair",
+    "play_name": "Close Min Verts",
+    "play_type": "pass",
+    "canonical_team": "Minnesota Vikings",
+    "canonical_img": 3,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Minnesota Vikings"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Jumbo Pair",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 3,
+      "WR": 1,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Jumbo \u2014 typically 3 TE 1 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 492,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 186
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.2,
+  "response_text": "```json\n{\n  \"concept\": \"close_min_verts\",\n  \"concepts\": [\"close_min_verts\"],\n  \"routes\": {\n    \"TE_L\": \"streak\",\n    \"TE_R\": \"streak\",\n    \"TE_WING_L\": \"streak\",\n    \"WR_X\": \"corner\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"3 TEs visible on LOS (2 main + 1 wing) with vertical routes; WR_X runs corner route (red arrow); HB releases on check. R1 button (red Circle glyph) marks primary target.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "unknown",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": null,
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

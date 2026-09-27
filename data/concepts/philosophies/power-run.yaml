@@ -1,0 +1,55 @@
+philosophy_id: power-run
+name: Power Run (Smashmouth)
+description: |
+  Run-first, downhill attack using gap schemes (Power, Counter, Iso) and heavy
+  personnel (multiple TEs, FB). Build-first strategy: establish the run, set up
+  play-action, control the line of scrimmage. Pre-dates the forward pass; roots
+  in 1800s American football. Still dominant at HS level and in NFL when teams
+  have elite OL.
+era: "Pre-WW2 to present"
+originators:
+  - "Amos Alonzo Stagg (early 1900s)"
+  - "Knute Rockne (Notre Dame, 1918–1930)"
+  - "Pop Warner (Stanford, Yale, 1890s–1930s)"
+notable_practitioners:
+  - "Vince Lombardi"
+  - "Tom Coughlin"
+  - "John Gruden"
+  - "Andy Reid (when employing smashmouth)"
+canonical_run_concepts:
+  - power
+  - counter-trey
+  - iso
+  - lead-toss
+  - trap
+canonical_pass_concepts:
+  - pa-mesh
+  - pa-cross
+  - bootleg
+  - play-action
+formation_preferences:
+  - i-formation
+  - big-i
+  - singleback-ace
+  - singleback-trio
+tendency_profile:
+  run_pct: 0.65
+  pass_pct: 0.20
+  pa_pct: 0.10
+  rpo_pct: 0.0
+  screen_pct: 0.05
+tags:
+  - philosophy
+  - power-run
+  - run-first
+  - smashmouth
+  - old-school
+  - downhill
+  - any-level
+  - high-school
+  - college
+  - nfl
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Wikipedia 'Vince Lombardi' (https://en.wikipedia.org/wiki/Vince_Lombardi): power-run philosophy cornerstone of Lombardi's offense and Green Bay dynasty."
+  - "Web validated 2026-04-30 — Wikipedia 'American Football (historical)' (https://en.wikipedia.org/wiki/American_football): power-run origins in early eras before forward pass."

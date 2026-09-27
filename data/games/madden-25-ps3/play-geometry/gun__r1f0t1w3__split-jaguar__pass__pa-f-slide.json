@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__split-jaguar__pass__pa-f-slide",
+  "info": {
+    "family": "GUN",
+    "formation": "Split Jaguar",
+    "play_name": "PA F Slide",
+    "play_type": "pass",
+    "canonical_team": "Jacksonville Jaguars",
+    "canonical_img": 79,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Jacksonville Jaguars"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Split Jaguar",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "GUN/Shotgun default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 500,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 214
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.94,
+  "response_text": "```json\n{\n  \"concept\": \"slide_pass\",\n  \"concepts\": [\"slide_pass\"],\n  \"routes\": {\n    \"HB\": \"swing\",\n    \"TE_R\": \"seam\",\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"dig\",\n    \"WR_SLOT_R\": \"flat\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"PA F Slide with shotgun alignment. HB swings right on check-release; TE_R seam to right hash; WR_X (left) corner deep; WR_Z (center slot) dig route; WR_SLOT_R (right) flat. Red arrow on HB indicates initial direction; QB's primary read appears to be WR_Z dig based on route convergence.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "slide_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bslide\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

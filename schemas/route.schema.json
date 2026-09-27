@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blitz-command.local/schemas/route.schema.json",
+  "title": "Route",
+  "description": "A football pass route defined as a polyline of waypoints from the receiver's start position. Mirror-aware: x positive in waypoints means INSIDE (toward center of field). The drawing tool flips x for receivers on the right side of the formation.",
+  "type": "object",
+  "required": ["name", "path", "verification_status"],
+  "additionalProperties": false,
+  "properties": {
+    "name": { "type": "string" },
+    "aliases": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Alternate names for this route (used when plays reference it by a different name)."
+    },
+    "description": { "type": "string" },
+    "path": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 2,
+        "items": { "type": "number" }
+      },
+      "description": "Polyline waypoints as [x, y] pairs in yards relative to receiver's start (which is [0,0]). x positive = toward INSIDE of field (center); y positive = downfield. Drawing tool mirrors x for right-side receivers."
+    },
+    "typical_break_depth_yd": {
+      "type": "number",
+      "description": "Depth (y) where the route changes direction. Useful for analytics."
+    },
+    "option_route": {
+      "type": "boolean",
+      "description": "True if the receiver reads coverage and adjusts post-snap (snag, stick, choice routes)."
+    },
+    "category": {
+      "enum": ["quick", "intermediate", "deep", "underneath", "screen"]
+    },
+    "beats_coverage": {
+      "enum": ["man", "zone", "both"],
+      "description": "Default coverage type this route is designed to attack. Per-play assignments can override via assignment.beats_coverage."
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "verification_status": {
+      "enum": ["verified", "unverified", "inferred"]
+    },
+    "source_notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

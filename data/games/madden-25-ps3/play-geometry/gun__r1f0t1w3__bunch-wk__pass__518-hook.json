@@ -1,0 +1,50 @@
+{
+  "slug": "gun__r1f0t1w3__bunch-wk__pass__518-hook",
+  "info": {
+    "family": "GUN",
+    "formation": "Bunch Wk",
+    "play_name": "518 Hook",
+    "play_type": "pass",
+    "canonical_team": "Arizona Cardinals",
+    "canonical_img": 108,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Arizona Cardinals",
+      "San Diego Chargers"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Bunch Wk",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 495,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 257
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.2,
+  "response_text": "```json\n{\n  \"concept\": \"hooks\",\n  \"concepts\": [\"hooks\"],\n  \"routes\": {\n    \"WR_X\": \"hook\",\n    \"WR_Z\": \"hook\",\n    \"WR_SLOT_L\": \"vertical\",\n    \"TE_R\": \"hook\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"GUN Bunch Wk formation (r1f0t1w3). Five eligible receivers visible: 3 WRs + 1 TE + 1 HB checkdown. Left-side WR (purple \u25a1) running hook; right-side WR (blue \u2297) running hook as primary target (red arrow); slot WR (green \u25b3) running vertical/seam; TE_R (R1 button) running hook. HB (white circle) positioned for check/release. Two yellow crossing/option routes shown on left side \u2014 likely representing option reads on the hook concepts.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "hooks",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bhooks?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

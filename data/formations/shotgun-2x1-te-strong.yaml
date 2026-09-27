@@ -1,0 +1,86 @@
+name: Shotgun 2x1 TE-Strong
+side: offense
+personnel: "11"
+strength_side: right
+
+# 11 personnel shotgun. TE attached strong (right). 2 WRs strong (Z outer
+# off-line, SLOT inner off-line). 1 WR weak (X on line). HB offset weak.
+#
+# By WR-only count: 2 WRs strong vs 1 WR weak = 2x1.
+# By total receiver count: 3 strong vs 1 weak (TE counts).
+#
+# Legality: 5 OL + TE + X = 7 on line. TE is strong-side line-end (eligible);
+# X is weak-side line-end (eligible).
+players:
+  - { label: LT,    position: LT, x: -2.0,  y:  0.0, on_line: true  }
+  - { label: LG,    position: LG, x: -1.0,  y:  0.0, on_line: true  }
+  - { label: C,     position: C,  x:  0.0,  y:  0.0, on_line: true  }
+  - { label: RG,    position: RG, x:  1.0,  y:  0.0, on_line: true  }
+  - { label: RT,    position: RT, x:  2.0,  y:  0.0, on_line: true  }
+  - { label: TE,    position: TE, x:  3.5,  y:  0.0, on_line: true  }
+  - { label: X,     position: WR, x: -15.0, y:  0.0, on_line: true  }
+  - { label: SLOT,  position: WR, x:  6.0,  y: -1.0, on_line: false }
+  - { label: Z,     position: WR, x:  14.0, y: -1.0, on_line: false }
+  - { label: QB,    position: QB, x:  0.0,  y: -5.0, on_line: false }
+  - { label: HB,    position: HB, x: -2.5,  y: -5.0, on_line: false }
+
+strengths:
+  - 3-receiver strong overload (TE in-line + Z + SLOT) without true trips legality questions
+  - TE attached gives credible PA bootleg threat
+  - Slot creates inside-breaking route opportunities (mesh, slant, stick)
+  - Strong-side run game preserved with TE for sealing/kickout
+  - Backside (X) iso = man-coverage matchup advantages
+
+weaknesses:
+  - Backside has only 1 WR — defense can roll coverage strong
+  - HB offset weak gives a tell for backside protection
+  - Strong-side run is congested if all 3 strong-side receivers crowd inside
+  - Vulnerable to bracket on Z
+
+common_uses:
+  - 1st/2nd-and-medium with strong-side concept calls
+  - Setting up RPOs (read backside MIKE, throw to slot or hand off)
+  - Anti-cover-3 strong-side floods
+  - Pairs naturally with PA shots strong
+
+run_concepts:
+  - inside-zone
+  - outside-zone
+  - power
+  - rpo-bubble (to slot)
+  - jet-sweep
+
+pass_concepts:
+  - mesh
+  - stick
+  - smash-strong
+  - flood-strong
+  - rpo-slant
+  - rpo-glance
+
+era: "2000s onward — modern spread base; common across NFL and college."
+
+famous_users:
+  - "Modern NFL teams using strong-side overload from 11 personnel"
+  - "Air Raid college variants with TE attached"
+
+tags:
+  - spread
+  - shotgun
+  - 11-personnel
+  - 2x1
+  - strong-overload
+  - balanced-passing
+  - modern
+  - rpo-friendly
+  - nfl
+  - college
+
+notes: |
+  Mirror to "Shotgun 2x1 TE-Weak" (TE-Left version) by flipping all x
+  coordinates. The TE side is the strong side; the WR-only count of 2x1
+  refers to the 3 WRs distributed 2-1 (Z + SLOT strong, X weak).
+
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-29 — XsOs Football 'Shotgun Formation and Sets' (https://xsosfootball.com/shotgun-formation-sets/); Throw Deep Publishing 'Complete Guide to Offensive Football Formations' (https://throwdeeppublishing.com/blogs/football-glossary/the-complete-guide-to-offensive-football-formations). 2x1 distribution = 2 WRs strong / 1 WR weak; TE on strong side adds receiver depth without trips legality questions."

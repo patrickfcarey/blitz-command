@@ -1,0 +1,196 @@
+play_id: i-formation-power-o
+name: Power O (Strong)
+aliases:
+  - I-Form Power
+  - Power
+  - Counter Lead
+
+formation: i-formation
+play_type: run
+ball_carrier: HB
+run_reads:
+  - priority: 1
+    read_key: pulling guard (RG)
+    run_to: follow the puller through the C-gap or off-tackle hole; trust his kickout on the edge
+    notes: "The RG pulls and leads — your job is to stay on his hip. Don't outrun him."
+  - priority: 2
+    read_key: playside linebacker
+    run_to: if the LB scrapes over the top of the FB's block, cut inside underneath
+    notes: "FB should lock the LB. If the LB goes over, the B-gap opens behind him."
+  - priority: 3
+    read_key: cutback lane (backside A-gap)
+    run_to: if the playside is blown up, cut all the way back against the grain behind the center
+    notes: "Last resort — only hit the cutback if the frontside is completely collapsed."
+
+# Z motion across pre-snap to constrain the backside safety. Optional — the
+# base play works without it. Mandatory motion would imply the play breaks
+# without the motion, which isn't true here.
+motions:
+  - player: Z
+    type: optional
+    motion_type: short-across
+    end_position: { x: -8.0, y: -1.0 }
+    notes: "Z shifts to weak-side slot to occupy the backside safety."
+
+assignments:
+  - player: LT
+    role: run_block
+    blocking_scheme: down-block
+    target: backside-3-tech
+    notes: "Down block on the backside DT; create the backside hinge."
+  - player: LG
+    role: run_block
+    blocking_scheme: pull-around
+    target: playside-LB
+    path: [[0, 0], [2, -0.5], [4, 0], [5, 4]]
+    notes: "Pull around the C, lead through the hole, kickout or wrap on the playside LB."
+  - player: C
+    role: run_block
+    blocking_scheme: gap-block
+    target: backside-A-gap
+    notes: "Help LG with backside scoop, then climb to the backside LB."
+  - player: RG
+    role: run_block
+    blocking_scheme: down-block
+    target: playside-DT
+  - player: RT
+    role: run_block
+    blocking_scheme: down-block
+    target: playside-5-tech
+    notes: "Down block on the playside DE / 5-tech to seal the C-gap."
+  - player: TE
+    role: run_block
+    blocking_scheme: kickout
+    target: edge-defender
+    notes: "Kick the EDGE defender out — creates the off-tackle hole."
+  - player: X
+    role: run_block
+    blocking_scheme: stalk
+    target: cornerback
+  - player: Z
+    role: run_block
+    blocking_scheme: stalk
+    target: cornerback
+  - player: QB
+    role: handoff
+    path: [[0, 0], [-1, -1], [-2, -1]]
+    notes: "Reverse-out to the HB; sell a fake bootleg to the backside."
+  - player: FB
+    role: lead_block
+    target: playside-LB-or-strong-safety
+    path: [[0, 0], [3, 3], [4, 6]]
+    notes: "Lead through the hole; isolate the playside LB or kickout the strong safety."
+  - player: HB
+    role: ball_carrier
+    is_primary: true
+    path: [[0, 0], [3, 3], [4, 9]]
+    alt_paths:
+      - priority: secondary
+        path: [[0, 0], [2, 2], [2, 9]]
+        notes: "Read 2: LB scrapes over FB — cut inside underneath, bang the B-gap."
+      - priority: tertiary
+        path: [[0, 0], [-1, 2], [-3, 8]]
+        notes: "Read 3: frontside collapsed — cut all the way back against grain."
+    notes: "Take the handoff, hit the off-tackle hole, follow the pulling LG."
+
+strengths:
+  - Double-team at the point of attack (RG and RT both block down on playside)
+  - Pulling guard adds an extra blocker at the second level
+  - FB iso block puts a hat on the playside LB or strong safety
+  - QB reverse-out and bootleg fake hold backside defenders
+  - Reliable downhill production — base call in any era's playbook
+
+weaknesses:
+  - Vulnerable to playside penetration before the down-blocks are set
+  - Needs ~2 seconds to develop — fast-flow defenses can outrun the LG pull
+  - HB must read the pull and not bounce the run wide
+  - Backside cutback shut down by an unblocked safety filling the C-gap
+  - Slower than zone runs vs disciplined fronts
+
+best_vs_defense:
+  - over-front (gives the down-block angles)
+  - cover-3 (single safety reduces second-level support)
+  - 4-3 base
+  - any defense with predictable LB flow
+
+worst_vs_defense:
+  - under-front (changes the down-block math)
+  - 8-man fronts / cover-1 robber (extra defender in the box)
+  - penetrating 1-techs that beat the down-block
+  - bear / 4-6 fronts
+
+defensive_counters:
+  - counter_id: pinch-dl
+    pre_snap_look: "Both DTs in tight inside shades — 2i / inside-eye 3-techniques, cocked toward the guards"
+    qb_key: "Scan the interior DL shade — tackles cheated to the inside eye of the guards"
+    read_category: dl-alignment
+    why: "Inside-shaded tackles kill the down-block angles; the off-tackle hole is squeezed shut before the pulling LG can clear the center."
+    typical_against: ["over-front", "4-3 base"]
+  - counter_id: scrape-lb-playside
+    pre_snap_look: "Playside LB cheated down and tight, stacked over the playside B-gap inside his normal width"
+    qb_key: "Check the playside LB — walked up and cheated toward the call"
+    read_category: lb-depth
+    why: "A LB already cheated playside beats the FB to the iso point and fills the off-tackle hole before the block can land."
+    typical_against: ["over-front", "stack 4-3"]
+  - counter_id: 8-man-front
+    pre_snap_look: "8 defenders inside the tackle box — strong safety walked down to 4-5 yards, single-high shell behind it"
+    qb_key: "Count the box — eight, with one high safety"
+    read_category: box-count
+    why: "There aren't enough blockers for the extra box defender; someone in the run fit comes free unblocked."
+    typical_against: ["cover-1 robber", "quarters with SS rolled down"]
+
+flip_reads:
+  - flip_id: front-overshift-callside
+    pre_snap_look: "Defensive front slid toward the called (strong) side — an extra down lineman or a walked-up LB puts +1 in the strong-side box"
+    qb_key: "Count the box side to side — the called side has one more defender than the weak side"
+    read_category: box-count
+    flip_to: mirror-play
+    why: "Power into the overshift runs into the teeth; flipping the play to the weak side attacks the lighter box with the same blocking math."
+    typical_against: ["over-front", "shifted 4-3"]
+  - flip_id: strength-declared-to-formation
+    pre_snap_look: "Defense has fully declared to the formation's strength — extra box defender to the TE side AND a safety rolled down over the TE"
+    qb_key: "Check the TE side — both the box count and the safety roll are committed to it"
+    read_category: safety-shell
+    flip_to: mirror-formation
+    why: "When the defense keys the formation's strength, flipping the whole formation forces a re-declare; a defense slow to re-set is caught mis-aligned and Power hits the side they vacated."
+    typical_against: ["cover-3 with strong roll", "8-man fronts that set to the TE"]
+
+common_uses:
+  - 1st-and-10 base run
+  - 3rd-and-short / 3rd-and-medium
+  - Goal-line / red-zone (4–7 yard line)
+  - Establishing the run early in a game
+  - Setting up PA cross off the same look
+
+philosophy: power-run
+run_concept_ref: power
+philosophy_ref: power-run
+
+era: "Universal — every era of football. Conceptually unchanged since the 1960s; modernized blocking but same idea."
+
+famous_examples:
+  - "1990s Cowboys (Emmitt Smith behind Daryl Johnston)"
+  - "2000s Steelers (Jerome Bettis)"
+  - "Stanford under Harbaugh (Toby Gerhart era)"
+
+tags:
+  - power-run
+  - gap-scheme
+  - downhill
+  - high-school
+  - college
+  - nfl
+  - any-level
+
+notes: |
+  Canonical Power play. The "O" suffix denotes the Off-tackle hole (between
+  the playside tackle and TE). Some teams call this "Power" or "Counter Lead";
+  the difference is in pull mechanics — true Counter has the BACKSIDE guard
+  and tackle (or TE) pulling, while Power has only the backside guard pulling.
+
+verification_status: unverified
+source_notes:
+  - "Assignments: standard Power O coaching texts (Mark Stoops, Joe Moore lineage)."
+  - "Strengths/weaknesses: power-run textbook material."
+  - "Famous examples: well-documented historical attribution."
+  - "Web validated 2026-04-29 — assignments confirmed against Throw Deep Publishing 'Complete Guide to the Power Play' (https://throwdeeppublishing.com/blogs/football-glossary/the-complete-guide-to-the-power-play); vIQtory Sports 'Install Power' (https://www.viqtorysports.com/running-the-power-play-in-spread-power-offenses/); Wikipedia 'Power run' (https://en.wikipedia.org/wiki/Power_run). Three core elements confirmed: double-team at point of attack, kick-out of EMOL, lead block through the hole."

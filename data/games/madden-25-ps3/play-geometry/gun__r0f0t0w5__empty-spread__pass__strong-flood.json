@@ -1,0 +1,50 @@
+{
+  "slug": "gun__r0f0t0w5__empty-spread__pass__strong-flood",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Spread",
+    "play_name": "Strong Flood",
+    "play_type": "pass",
+    "canonical_team": "New York Giants",
+    "canonical_img": 142,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "New York Giants",
+      "Tennessee Titans"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Spread",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 491,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 202
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.86,
+  "response_text": "```json\n{\n  \"concept\": \"strong_flood\",\n  \"concepts\": [\"strong_flood\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"flat\",\n    \"WR_SLOT_R\": \"dig\",\n    \"WR_FLANKER\": \"comeback\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Strong flood concept with deep corner (Z), intermediate dig (slot-right), flat (slot-left), and backside comeback. Multiple yellow route arrows indicate secondary receiver progressions. No TEs visible in GUN Empty Spread formation \u2014 all 5 eligible receivers are WRs.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "flood",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bflood\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t2w2__ace-pair-twins__pass__pa-sd-y-drag",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Ace Pair Twins",
+    "play_name": "PA SD Y Drag",
+    "play_type": "pass",
+    "canonical_team": "San Diego Chargers",
+    "canonical_img": 22,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "San Diego Chargers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Ace Pair Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Ace family \u2014 2 TE 2 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 509,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 205
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.89,
+  "response_text": "```json\n{\n  \"concept\": \"drags\",\n  \"concepts\": [\"drags\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"TE_L\": \"drag\",\n    \"TE_R\": \"drag\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_L\",\n  \"notes\": \"Play-action pass with drag routes from both TEs. Red arrow (primary) targets TE_L drag; blue arrow targets R1 (likely WR_Z on streak for clear-out). Yellow arrows indicate WR streaks on both sides. Formation is Ace Pair Twins with 2 TEs, 2 WRs, 1 RB as expected.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "drags",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdrags?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

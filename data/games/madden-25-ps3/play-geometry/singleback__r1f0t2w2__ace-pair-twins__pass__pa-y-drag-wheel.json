@@ -1,0 +1,51 @@
+{
+  "slug": "singleback__r1f0t2w2__ace-pair-twins__pass__pa-y-drag-wheel",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Ace Pair Twins",
+    "play_name": "PA Y-Drag Wheel",
+    "play_type": "pass",
+    "canonical_team": "Chicago Bears",
+    "canonical_img": 10,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Chicago Bears",
+      "New York Jets",
+      "Philadelphia Eagles"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Ace Pair Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Ace family \u2014 2 TE 2 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 512,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 209
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.72,
+  "response_text": "```json\n{\n  \"concept\": \"wheel_concept\",\n  \"concepts\": [\"wheel_concept\", \"pa_pass\"],\n  \"routes\": {\n    \"TE_L\": \"drag\",\n    \"TE_R\": \"wheel\",\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"comeback\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"PA Y-Drag Wheel with TE_L running drag across middle and TE_R (right TE) running wheel route to flat. WR_X runs corner route upfield. WR_Z (likely slot left or Z receiver) runs comeback. Red arrow indicates primary read on TE_R wheel. Yellow arrows show complementary routes (drag and corner).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "wheel_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bwheel\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

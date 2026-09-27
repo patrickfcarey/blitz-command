@@ -1,0 +1,51 @@
+{
+  "slug": "split__r1f1t1w2__slot__pass__slot-z-out",
+  "info": {
+    "family": "SPLIT",
+    "formation": "Slot",
+    "play_name": "Slot Z Out",
+    "play_type": "pass",
+    "canonical_team": "Jimmy Johnson",
+    "canonical_img": 88,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Jimmy Johnson",
+      "Joe Gibbs",
+      "Pass Balanced"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "SPLIT",
+      "formation": "Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "SPLIT family \u2014 old-school 2-back default"
+    }
+  },
+  "usage": {
+    "input_tokens": 493,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 115
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 1.79,
+  "response_text": "```json\n{\n  \"concept\": \"z_concept\",\n  \"concepts\": [\"z_concept\"],\n  \"routes\": {\n    \"WR_X\": \"out\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"drag\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "z_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bz[- ]?(spot|cross|streak|corner|drive|trail|out|drag|sail)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

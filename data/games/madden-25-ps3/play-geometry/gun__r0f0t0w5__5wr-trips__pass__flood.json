@@ -1,0 +1,50 @@
+{
+  "slug": "gun__r0f0t0w5__5wr-trips__pass__flood",
+  "info": {
+    "family": "GUN",
+    "formation": "5WR Trips",
+    "play_name": "Flood",
+    "play_type": "pass",
+    "canonical_team": "Arizona Cardinals",
+    "canonical_img": 137,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Arizona Cardinals",
+      "Run and Shoot"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "5WR Trips",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "5-WR set, no RB"
+    }
+  },
+  "usage": {
+    "input_tokens": 518,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 214
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.72,
+  "response_text": "```json\n{\n  \"concept\": \"flood\",\n  \"concepts\": [\"flood\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"comeback\",\n    \"WR_SLOT_L\": \"curl\",\n    \"WR_SLOT_R\": \"flat\",\n    \"WR_FLANKER\": \"in\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_R\",\n  \"notes\": \"5-wide empty backfield (QB only). Flood concept to right side: deep streak (WR_X), intermediate curl (WR_SLOT_L), flat (WR_SLOT_R). Left side: WR_Z comeback, WR_FLANKER in-route. R1 button glyph on far right (Circle button) indicates alternate target option.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "flood",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bflood\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

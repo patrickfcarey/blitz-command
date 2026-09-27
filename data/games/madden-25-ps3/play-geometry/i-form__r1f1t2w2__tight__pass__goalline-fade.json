@@ -1,0 +1,55 @@
+{
+  "slug": "i-form__r1f1t2w2__tight__pass__goalline-fade",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Tight",
+    "play_name": "Goalline Fade",
+    "play_type": "pass",
+    "canonical_team": "Arizona Cardinals",
+    "canonical_img": 56,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Arizona Cardinals",
+      "Baltimore Ravens",
+      "Chicago Bears",
+      "Denver Broncos",
+      "Indianapolis Colts",
+      "Miami Dolphins",
+      "New Orleans Saints"
+    ],
+    "owner_count": 7,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Tight",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Tight/Twin-TE \u2014 2 TE"
+    }
+  },
+  "usage": {
+    "input_tokens": 520,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 155
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.34,
+  "response_text": "```json\n{\n  \"concept\": \"fade\",\n  \"concepts\": [\"fade\"],\n  \"routes\": {\n    \"WR_X\": \"fade\",\n    \"WR_Z\": \"fade\",\n    \"TE_L\": \"fade\",\n    \"TE_R\": \"fade\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Goal line formation with 4 receivers running fade routes to the end zone. Red arrow indicates primary target is WR_Z (right side). Blue chip route visible from backfield player (likely HB) releasing into route.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "fade",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bfade\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

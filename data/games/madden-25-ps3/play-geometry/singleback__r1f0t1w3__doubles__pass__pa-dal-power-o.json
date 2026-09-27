@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__doubles__pass__pa-dal-power-o",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Doubles",
+    "play_name": "PA DAL Power O",
+    "play_type": "pass",
+    "canonical_team": "Dallas Cowboys",
+    "canonical_img": 25,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Dallas Cowboys"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Doubles",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 502,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 290
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.95,
+  "response_text": "```json\n{\n  \"concept\": \"power_o\",\n  \"concepts\": [\"power_o\", \"pa_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"slant\",\n    \"TE_R\": \"wheel\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Play-action pass off Power O look. Red arrow (primary) targets WR_Z on corner route right side. Multiple yellow routes show play-action read progression: WR_X streak, WR_SLOT_L slant left, TE_R wheel to flat right. R1 button glyph indicates checkdown option (likely HB on wheel or flat). Blue arrow suggests secondary read. Formation is Singleback Doubles (r1f0t1w3: 1 RB, 0 FB, 1 TE, 3 WR) \u2014 matches visible 5 OL + 1 TE right + 3 WRs + QB + HB backfield.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "power_o",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpower ?o\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

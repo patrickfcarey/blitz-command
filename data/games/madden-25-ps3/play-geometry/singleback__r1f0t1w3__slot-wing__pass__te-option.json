@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__slot-wing__pass__te-option",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Slot Wing",
+    "play_name": "TE Option",
+    "play_type": "pass",
+    "canonical_team": "Jimmy Johnson",
+    "canonical_img": 37,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Jimmy Johnson"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Slot Wing",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 497,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 201
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.53,
+  "response_text": "```json\n{\n  \"concept\": \"option_pass\",\n  \"concepts\": [\"option_pass\"],\n  \"routes\": {\n    \"TE_R\": \"option\",\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_R\": \"flat\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"TE_R (red circle button, R1) runs the primary option route with red arrow. WR_X (blue X button) streaks downfield. WR_Z (yellow route, far right) runs corner. WR_SLOT_R (green triangle button) runs flat. Singleback empty-style backfield with QB only visible. Play name matches option_pass concept.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "option_pass",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bhb option\\b|\\bte option\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__doubles-wing-te__pass__drive-hb-wheel",
+  "info": {
+    "family": "GUN",
+    "formation": "Doubles Wing TE",
+    "play_name": "Drive HB Wheel",
+    "play_type": "pass",
+    "canonical_team": "Miami Dolphins",
+    "canonical_img": 95,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Miami Dolphins"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Doubles Wing TE",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Doubles \u2014 1 TE 3 WR (slot variant)"
+    }
+  },
+  "usage": {
+    "input_tokens": 570,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 134
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.81,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"generic_hb_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB B_right\",\n  \"primary_target\": null,\n  \"notes\": \"Play labeled 'PASS' in banner but py_concept indicates run family. Red arrow originates from HB and curves right, consistent with HB wheel/motion on run play. Formation is GUN with TE attached right side; HB receives handoff and attacks B_right gap.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bhb \\w+",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

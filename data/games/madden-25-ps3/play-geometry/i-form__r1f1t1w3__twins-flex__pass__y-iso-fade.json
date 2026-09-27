@@ -1,0 +1,49 @@
+{
+  "slug": "i-form__r1f1t1w3__twins-flex__pass__y-iso-fade",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Twins Flex",
+    "play_name": "Y Iso Fade",
+    "play_type": "pass",
+    "canonical_team": "New Orleans Saints",
+    "canonical_img": 56,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "New Orleans Saints"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Twins Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Twins \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 565,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 194
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.35,
+  "response_text": "```json\n{\n  \"concept\": \"iso\",\n  \"concepts\": [\"iso\"],\n  \"routes\": {\n    \"WR_X\": \"fade\",\n    \"WR_Z\": \"streak\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Play labeled as PASS but py_concept='iso' (run family). Diagram shows pass routes: WR_X (\u2297 blue X button) running fade route (red arrow), WR_Z running streak (yellow arrow), slot receiver (\u25b3 green Triangle) running option route (blue dashed). Backfield shows 3-stack (I-Form): QB closest to LOS, FB middle, HB deepest. This is a pass play despite the run-family concept tag.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "iso",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\biso\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

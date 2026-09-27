@@ -1,0 +1,49 @@
+{
+  "slug": "red__r1f1t1w2__triple-wing__pass__pa-dive",
+  "info": {
+    "family": "RED",
+    "formation": "Triple Wing",
+    "play_name": "PA Dive",
+    "play_type": "pass",
+    "canonical_team": "Vince Lombardi",
+    "canonical_img": 12,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Vince Lombardi"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "RED",
+      "formation": "Triple Wing",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "RED family \u2014 old-school 2-back default"
+    }
+  },
+  "usage": {
+    "input_tokens": 493,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 158
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.21,
+  "response_text": "```json\n{\n  \"concept\": \"inside_run\",\n  \"concepts\": [\"inside_run\", \"pa_pass\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"streak\",\n    \"TE_L\": \"seam\",\n    \"HB\": \"dive\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Play-action pass with PA dive fake. Red arrow on WR_Z corner route indicates primary read. Yellow routes show TE seam, WR_X corner, and HB dive fake.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "inside_run",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bhb dive\\b|\\bdive\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

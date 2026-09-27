@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__trips-y-iso__pass__hb-slip-screen",
+  "info": {
+    "family": "GUN",
+    "formation": "Trips Y Iso",
+    "play_name": "HB Slip Screen",
+    "play_type": "pass",
+    "canonical_team": "New Orleans Saints",
+    "canonical_img": 111,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "New Orleans Saints"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Trips Y Iso",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 503,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 169
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.71,
+  "response_text": "```json\n{\n  \"concept\": \"hb_screen\",\n  \"concepts\": [\"hb_screen\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_R\": \"seam\",\n    \"TE_R\": \"block\",\n    \"HB\": \"screen\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"HB\",\n  \"notes\": \"HB screen with R1 button assignment visible. Three WRs running upfield (two streaks + seam) to clear space for the screen pass. TE blocking downfield to support the screen.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "hb_screen",
+    "concept_family": "screen",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bhb (slip )?screen\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

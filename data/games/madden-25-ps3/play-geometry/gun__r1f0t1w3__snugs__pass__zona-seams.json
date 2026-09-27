@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__snugs__pass__zona-seams",
+  "info": {
+    "family": "GUN",
+    "formation": "Snugs",
+    "play_name": "Zona Seams",
+    "play_type": "pass",
+    "canonical_team": "Arizona Cardinals",
+    "canonical_img": 102,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Arizona Cardinals"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Snugs",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 498,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 203
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.5,
+  "response_text": "```json\n{\n  \"concept\": \"seam_route\",\n  \"concepts\": [\"seam_route\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"seam\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"GUN Snugs formation with r1f0t1w3 personnel. Red arrow originates from QB and targets TE_R seam route (blue arrow). WR_X and WR_Z run vertical clearouts. WR_SLOT_L also runs seam. HB to right side as checkdown option.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "seam_route",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bseams?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "pistol__r1f1t2w1__full-house-base__pass__niners-post-wheel",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Full House Base",
+    "play_name": "Niners Post Wheel",
+    "play_type": "pass",
+    "canonical_team": "San Francisco 49ers",
+    "canonical_img": 84,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "San Francisco 49ers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Full House Base",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 1,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Pistol Full House \u2014 heavy backfield"
+    }
+  },
+  "usage": {
+    "input_tokens": 503,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 243
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.25,
+  "response_text": "```json\n{\n  \"concept\": \"wheel_concept\",\n  \"concepts\": [\"wheel_concept\"],\n  \"routes\": {\n    \"WR_X\": \"post\",\n    \"WR_Z\": \"wheel\",\n    \"TE_R\": \"wheel\",\n    \"HB\": \"wheel\",\n    \"FB\": \"block\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Pistol Full House Base (r1f1t2w1): QB in pistol, HB stacked behind. WR_X (far left, purple \u25a1 glyph) runs red post route \u2014 primary target. WR_Z (far right, red circle R1 glyph) runs wheel. TE_R (right side, blue \u2297 glyph) runs wheel. HB (backfield, white circle) runs wheel. FB (backfield offset, white circle) blocks. Yellow and cyan reference lines visible; ignored per instructions.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "wheel_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bwheel\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

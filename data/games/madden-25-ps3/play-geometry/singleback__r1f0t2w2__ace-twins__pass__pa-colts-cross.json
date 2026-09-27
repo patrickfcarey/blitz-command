@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t2w2__ace-twins__pass__pa-colts-cross",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Ace Twins",
+    "play_name": "PA Colts Cross",
+    "play_type": "pass",
+    "canonical_team": "Indianapolis Colts",
+    "canonical_img": 15,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Indianapolis Colts"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Ace Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Ace family \u2014 2 TE 2 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 505,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 198
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.6,
+  "response_text": "```json\n{\n  \"concept\": \"cross_concept\",\n  \"concepts\": [\"pa_cross\", \"crossing_routes\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"cross\",\n    \"TE_L\": \"cross\",\n    \"TE_R\": \"flat\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Play-action pass with crossing routes. WR_Z (green triangle) runs the primary cross route (red arrow). TE_L (cyan triangle) runs a secondary crossing route (yellow arrow). TE_R (blue X) runs flat to the right. WR_X runs vertical stretch. HB checkdown option available.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "cross_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcross(es)?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

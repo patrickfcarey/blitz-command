@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__bunch-wk__pass__str-pa-wr-in",
+  "info": {
+    "family": "GUN",
+    "formation": "Bunch Wk",
+    "play_name": "Str PA WR In",
+    "play_type": "pass",
+    "canonical_team": "Green Bay Packers",
+    "canonical_img": 110,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Green Bay Packers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Bunch Wk",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 502,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 216
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.38,
+  "response_text": "```json\n{\n  \"concept\": \"ins\",\n  \"concepts\": [\"ins\"],\n  \"routes\": {\n    \"WR_X\": \"in\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"in\",\n    \"HB\": \"wheel\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"GUN Bunch Wk formation with play-action fake. Red arrow (primary read) traces WR_X running an in-route to the left. Yellow arrow on WR_Z (R1 button) indicates a streak to the right \u2014 likely a cutoff or secondary option. WR_SLOT_L runs an in-route as well. HB releases on a wheel route. TE_R appears to be the triangle-button option running a seam or release route upfield.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "ins",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bins?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "pistol__r1f0t0w4__wing-trips__pass__pa-double-post",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Wing Trips",
+    "play_name": "PA Double Post",
+    "play_type": "pass",
+    "canonical_team": "Buffalo Bills",
+    "canonical_img": 71,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Buffalo Bills",
+      "Pistol"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Wing Trips",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 0,
+      "WR": 4,
+      "total": 6,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 499,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 186
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.78,
+  "response_text": "```json\n{\n  \"concept\": \"post_concept\",\n  \"concepts\": [\"post_concept\", \"pa_pass\"],\n  \"routes\": {\n    \"WR_X\": \"post\",\n    \"WR_Z\": \"post\",\n    \"WR_SLOT_L\": \"corner\",\n    \"WR_SLOT_R\": \"flat\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"PA Double Post with two deep posts from X and Z receivers. R1 button (red Circle glyph, top right) is the primary target. Slot receivers run corner and flat to stretch coverage underneath. HB in pistol alignment checks down.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "post_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpost(?![- ]corner)\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

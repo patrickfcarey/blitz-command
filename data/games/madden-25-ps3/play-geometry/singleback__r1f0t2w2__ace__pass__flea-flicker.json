@@ -1,0 +1,51 @@
+{
+  "slug": "singleback__r1f0t2w2__ace__pass__flea-flicker",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Ace",
+    "play_name": "Flea Flicker",
+    "play_type": "pass",
+    "canonical_team": "Brian Billick",
+    "canonical_img": 11,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Brian Billick",
+      "Dick Vermeil",
+      "Tennessee Titans"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Ace",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Ace family \u2014 2 TE 2 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 499,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 230
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.45,
+  "response_text": "```json\n{\n  \"concept\": \"trick_play\",\n  \"concepts\": [\"flea_flicker\"],\n  \"routes\": {\n    \"HB\": \"wheel\",\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"TE_L\": \"block\",\n    \"TE_R\": \"block\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"HB\",\n  \"notes\": \"Flea flicker: HB receives lateral/handoff from QB, tosses back to QB for pass. HB releases to wheel route as primary target. WR_X (Triangle, left) runs streak; WR_Z (Circle, right) runs corner. TEs (Square and X glyphs on LOS, attached to OL) block. Play diagram shows the HB's initial carry arc (red) and subsequent release route (yellow wheel). Blue arrow indicates the backward toss/motion.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "trick_play",
+    "concept_family": "trick",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bflea flicker\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

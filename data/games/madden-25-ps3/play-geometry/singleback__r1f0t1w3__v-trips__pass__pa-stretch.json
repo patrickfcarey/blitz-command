@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__v-trips__pass__pa-stretch",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "V-Trips",
+    "play_name": "PA Stretch",
+    "play_type": "pass",
+    "canonical_team": "Run N Gun",
+    "canonical_img": 21,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Run N Gun"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "V-Trips",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 500,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 324
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 4.68,
+  "response_text": "```json\n{\n  \"concept\": \"outside_zone\",\n  \"concepts\": [\"outside_zone\", \"pa_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"dig\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"wheel\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"PA Stretch (play-action pass). Four WRs + one TE visible. WR_X (\u25a1 purple, far left) runs streak; WR_Z (\u2297 blue, far right) runs corner with red primary target arrow; WR_SLOT_L (\u25b3 green, slot position) runs dig route; TE_R (R1 shoulder button, right side) runs seam with yellow arrow; HB (\u2299 red circle, backfield) runs wheel route with blue arrow (check-release). OL (5 white circles) at LOS in pass-pro stance. Formation is V-Trips (11 personnel: 1 RB, 0 FB, 1 TE, 4 WR) with 1 back at QB position, confirming r1f0t1w3 expectation.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "outside_zone",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bhb stretch\\b|\\bstretch\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

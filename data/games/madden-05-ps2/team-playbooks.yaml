@@ -1,0 +1,1044 @@
+game_id: madden-05-ps2
+source: Playbook Gamer
+verification_status: unverified
+generated_date: "2026-05-18"
+notes: "Derived from Madden NFL 2005 Offensive Formation List.xlsx. Per layering rules: game-truth data; not in-game-verified."
+teams:
+  - team_id: 49ers
+    name: 49ers
+    playbook_style: null
+    formation_count: 16
+    formation_families:
+      i_form: 7
+      other: 1
+      pro_set: 2
+      singleback: 6
+    personnel_breakdown: null
+    formations:
+      - name: Far Normal
+      - name: I Form 3WR
+      - name: I Form Big
+      - name: I Form Normal
+      - name: I Form Twin WR
+      - name: Near Normal
+      - name: Singleback 4WR
+      - name: Singleback Big
+      - name: Singleback Big Twin WR
+      - name: Singleback Normal
+      - name: Singleback Slot Strong
+      - name: Singleback Twin TE WR
+      - name: Split Backs 3WR
+      - name: Split Backs Normal
+      - name: Strong I Twin WR
+      - name: Weak I Normal
+  - team_id: balanced
+    name: Balanced
+    playbook_style: null
+    formation_count: 15
+    formation_families:
+      i_form: 5
+      other: 2
+      shotgun: 3
+      singleback: 5
+    personnel_breakdown: null
+    formations:
+      - name: Gun 2RB 3WR
+      - name: Gun 4WR
+      - name: Gun Normal
+      - name: I Form 3WR
+      - name: I Form Normal
+      - name: I Form Twin WR
+      - name: Singleback 4WR
+      - name: Singleback Big
+      - name: Singleback Empty 4WR
+      - name: Singleback Normal
+      - name: Singleback Twin TE WR
+      - name: Strong I Big
+      - name: Strong I Normal
+      - name: Weak I Normal
+      - name: Weak I Twins WR
+  - team_id: bears
+    name: Bears
+    playbook_style: null
+    formation_count: 16
+    formation_families:
+      i_form: 3
+      other: 2
+      pro_set: 2
+      shotgun: 4
+      singleback: 5
+    personnel_breakdown: null
+    formations:
+      - name: Gun 5WR
+      - name: Gun Empty 4WR
+      - name: Gun Normal
+      - name: Gun Trips TE
+      - name: I Form Normal
+      - name: I Form Twin TE
+      - name: I Form Twin WR
+      - name: Singleback 4WR
+      - name: Singleback Big
+      - name: Singleback Normal
+      - name: Singleback Trips Bunch
+      - name: Singleback Trips WR
+      - name: Split Backs 3WR
+      - name: Split Backs Normal
+      - name: Strong I 3WR
+      - name: Strong I Normal
+  - team_id: bengals
+    name: Bengals
+    playbook_style: null
+    formation_count: 16
+    formation_families:
+      i_form: 3
+      other: 3
+      pro_set: 2
+      shotgun: 3
+      singleback: 5
+    personnel_breakdown: null
+    formations:
+      - name: Gun 2RB 3WR
+      - name: Gun 4WR
+      - name: Gun Trips
+      - name: I Form 3WR
+      - name: I Form Normal
+      - name: I Form Twin WR
+      - name: Singleback 4WR
+      - name: Singleback Big
+      - name: Singleback Empty 5WR
+      - name: Singleback Normal
+      - name: Singleback Trips WR
+      - name: Split Backs 3WR
+      - name: Split Backs Normal
+      - name: Strong I 3WR
+      - name: Strong I Big
+      - name: Strong I Normal
+  - team_id: bills
+    name: Bills
+    playbook_style: null
+    formation_count: 16
+    formation_families:
+      i_form: 4
+      other: 2
+      shotgun: 5
+      singleback: 5
+    personnel_breakdown: null
+    formations:
+      - name: Gun 2RB 3WR
+      - name: Gun 4WR
+      - name: Gun 5WR
+      - name: Gun Normal
+      - name: Gun Trips
+      - name: I Form Normal
+      - name: I Form Twin TE
+      - name: Singleback Big
+      - name: Singleback Empty 4WR
+      - name: Singleback Normal
+      - name: Singleback Trips Bunch
+      - name: Singleback Trips TE
+      - name: Strong I 3WR
+      - name: Strong I Normal
+      - name: Weak I Normal
+      - name: Weak I Twins WR
+  - team_id: broncos
+    name: Broncos
+    playbook_style: null
+    formation_count: 16
+    formation_families:
+      i_form: 5
+      other: 3
+      shotgun: 2
+      singleback: 6
+    personnel_breakdown: null
+    formations:
+      - name: Gun 5WR
+      - name: Gun Trips TE
+      - name: I Form Big
+      - name: I Form Normal
+      - name: I Form Twin WR
+      - name: Singleback 4WR
+      - name: Singleback Big
+      - name: Singleback Big Twin WR
+      - name: Singleback Empty 4WR
+      - name: Singleback Normal
+      - name: Singleback Twin TE WR
+      - name: Strong I Big Tight
+      - name: Strong I Normal
+      - name: Strong I Twin WR
+      - name: Weak I Big
+      - name: Weak I Twins WR
+  - team_id: browns
+    name: Browns
+    playbook_style: null
+    formation_count: 17
+    formation_families:
+      i_form: 5
+      other: 2
+      shotgun: 4
+      singleback: 6
+    personnel_breakdown: null
+    formations:
+      - name: Gun 2RB 3WR
+      - name: Gun 4WR
+      - name: Gun 5WR Bunch
+      - name: Gun Normal
+      - name: I Form Big
+      - name: I Form Normal
+      - name: I Form Twin TE
+      - name: Singleback Big
+      - name: Singleback Big 3TE
+      - name: Singleback Normal
+      - name: Singleback Slot Strong
+      - name: Singleback Twin TE
+      - name: Singleback Twin TE WR
+      - name: Strong I Big
+      - name: Strong I Normal
+      - name: Weak I Normal
+      - name: Weak I Twin TE
+  - team_id: buccaneers
+    name: Buccaneers
+    playbook_style: null
+    formation_count: 17
+    formation_families:
+      i_form: 5
+      other: 2
+      pro_set: 2
+      singleback: 8
+    personnel_breakdown: null
+    formations:
+      - name: I Form Normal
+      - name: I Form Twin TE
+      - name: I Form Twin WR
+      - name: Singleback Big
+      - name: Singleback Empty 4WR
+      - name: Singleback Empty 5WR
+      - name: Singleback Normal
+      - name: Singleback Slot Strong
+      - name: Singleback Tight
+      - name: Singleback Trips Bunch
+      - name: Singleback Trips TE
+      - name: Split Backs 3WR
+      - name: Split Backs Twins WR
+      - name: Strong I 3WR
+      - name: Strong I Normal
+      - name: Weak I Normal
+      - name: Weak I Twins WR
+  - team_id: cardinals
+    name: Cardinals
+    playbook_style: null
+    formation_count: 17
+    formation_families:
+      i_form: 5
+      other: 2
+      shotgun: 4
+      singleback: 6
+    personnel_breakdown: null
+    formations:
+      - name: Gun 4WR
+      - name: Gun Slot Strong
+      - name: Gun Trips
+      - name: Gun Trips Bunch
+      - name: I Form 3WR
+      - name: I Form Normal
+      - name: I Form Twin WR
+      - name: Singleback 4WR
+      - name: Singleback Big
+      - name: Singleback Empty 4WR
+      - name: Singleback Normal
+      - name: Singleback Slot Strong
+      - name: Singleback Trips TE
+      - name: Strong I 3WR
+      - name: Strong I Normal
+      - name: Weak I Normal
+      - name: Weak I Twins WR
+  - team_id: chargers
+    name: Chargers
+    playbook_style: null
+    formation_count: 16
+    formation_families:
+      i_form: 5
+      other: 2
+      pro_set: 1
+      shotgun: 3
+      singleback: 5
+    personnel_breakdown: null
+    formations:
+      - name: Gun 2RB 3WR
+      - name: Gun 4WR
+      - name: Gun Normal
+      - name: I Form Big
+      - name: I Form Normal
+      - name: I Form Twin TE
+      - name: Singleback Big
+      - name: Singleback Normal
+      - name: Singleback Slot Strong
+      - name: Singleback Twin TE
+      - name: Singleback Twin TE WR
+      - name: Split Backs 3WR
+      - name: Strong I Normal
+      - name: Strong I Twin WR
+      - name: Weak I Normal
+      - name: Weak I Twins WR
+  - team_id: chiefs
+    name: Chiefs
+    playbook_style: null
+    formation_count: 16
+    formation_families:
+      i_form: 4
+      other: 3
+      shotgun: 3
+      singleback: 6
+    personnel_breakdown: null
+    formations:
+      - name: Gun 4WR
+      - name: Gun 5WR
+      - name: Gun Trips TE
+      - name: I Form 3WR
+      - name: I Form Big
+      - name: I Form Normal
+      - name: I Form Twin WR
+      - name: Singleback 4WR
+      - name: Singleback Big
+      - name: Singleback Empty 5WR
+      - name: Singleback Normal
+      - name: Singleback Slot Strong
+      - name: Singleback Trips WR
+      - name: Strong I 3WR
+      - name: Strong I Big
+      - name: Strong I Normal
+  - team_id: colts
+    name: Colts
+    playbook_style: null
+    formation_count: 14
+    formation_families:
+      i_form: 2
+      other: 2
+      pro_set: 3
+      shotgun: 3
+      singleback: 4
+    personnel_breakdown: null
+    formations:
+      - name: Gun 2RB 3WR
+      - name: Gun 4WR
+      - name: Gun Normal
+      - name: I Form Normal
+      - name: I Form Twin WR
+      - name: Singleback Big
+      - name: Singleback Big Twin WR
+      - name: Singleback Normal
+      - name: Singleback Slot Strong
+      - name: Split Backs 3WR
+      - name: Split Backs Normal
+      - name: Split Backs Twins WR
+      - name: Strong I 3WR
+      - name: Strong I Normal
+  - team_id: cowboys
+    name: Cowboys
+    playbook_style: null
+    formation_count: 14
+    formation_families:
+      i_form: 5
+      pro_set: 1
+      shotgun: 3
+      singleback: 5
+    personnel_breakdown: null
+    formations:
+      - name: Gun 2RB 3WR
+      - name: Gun 4WR
+      - name: Gun Trips
+      - name: I Form 3WR
+      - name: I Form Normal
+      - name: I Form Twin TE
+      - name: Singleback 4WR
+      - name: Singleback Big
+      - name: Singleback Normal
+      - name: Singleback Slot Strong
+      - name: Singleback Twin TE
+      - name: Split Backs 3WR
+      - name: Weak I Normal
+      - name: Weak I Twins WR
+  - team_id: dolphins
+    name: Dolphins
+    playbook_style: null
+    formation_count: 16
+    formation_families:
+      i_form: 6
+      other: 2
+      shotgun: 4
+      singleback: 4
+    personnel_breakdown: null
+    formations:
+      - name: Gun 4WR
+      - name: Gun Empty 4WR
+      - name: Gun Normal
+      - name: Gun Slot Strong
+      - name: I Form Big
+      - name: I Form Normal
+      - name: I Form Twin TE
+      - name: I Form Twin WR
+      - name: Singleback Big
+      - name: Singleback Normal
+      - name: Singleback Tight
+      - name: Singleback Twin TE
+      - name: Strong I Normal
+      - name: Strong I Twin WR
+      - name: Weak I 3WR
+      - name: Weak I Normal
+  - team_id: eagles
+    name: Eagles
+    playbook_style: null
+    formation_count: 16
+    formation_families:
+      i_form: 4
+      other: 2
+      pro_set: 2
+      singleback: 8
+    personnel_breakdown: null
+    formations:
+      - name: I Form 3WR
+      - name: I Form Normal
+      - name: I Form Twin WR
+      - name: Singleback 4WR
+      - name: Singleback Empty 4WR
+      - name: Singleback Normal
+      - name: Singleback Slot Strong
+      - name: Singleback Tight
+      - name: Singleback Trips Bunch
+      - name: Singleback Trips TE
+      - name: Singleback Trips WR
+      - name: Split Backs 3WR
+      - name: Split Backs Normal
+      - name: Strong I 3WR
+      - name: Strong I Normal
+      - name: Weak I Twins WR
+  - team_id: falcons
+    name: Falcons
+    playbook_style: null
+    formation_count: 16
+    formation_families:
+      i_form: 6
+      pro_set: 2
+      shotgun: 2
+      singleback: 6
+    personnel_breakdown: null
+    formations:
+      - name: Full House Normal
+      - name: Full House Strong
+      - name: Full House Weak
+      - name: Gun 2RB 3WR
+      - name: Gun Trips Bunch
+      - name: I Form Normal
+      - name: I Form Twin WR
+      - name: Singleback 4WR
+      - name: Singleback Big
+      - name: Singleback Normal
+      - name: Singleback Slot Strong
+      - name: Singleback Tight
+      - name: Singleback Trips Bunch
+      - name: Split Backs 3WR
+      - name: Split Backs Normal
+      - name: Weak I Normal
+  - team_id: giants
+    name: Giants
+    playbook_style: null
+    formation_count: 16
+    formation_families:
+      i_form: 5
+      other: 2
+      shotgun: 3
+      singleback: 6
+    personnel_breakdown: null
+    formations:
+      - name: Gun 2RB 3WR
+      - name: Gun 4WR
+      - name: Gun Normal
+      - name: I Form 3WR
+      - name: I Form Normal
+      - name: I Form Twin WR
+      - name: Singleback 4WR
+      - name: Singleback Big
+      - name: Singleback Empty 4WR
+      - name: Singleback Normal
+      - name: Singleback Slot Strong
+      - name: Singleback Twin TE
+      - name: Strong I Normal
+      - name: Strong I Twin WR
+      - name: Weak I Normal
+      - name: Weak I Twin TE
+  - team_id: jaguars
+    name: Jaguars
+    playbook_style: null
+    formation_count: 16
+    formation_families:
+      i_form: 4
+      other: 3
+      shotgun: 5
+      singleback: 4
+    personnel_breakdown: null
+    formations:
+      - name: Gun 2RB 3WR
+      - name: Gun 5WR
+      - name: Gun 5WR Bunch
+      - name: Gun Empty 4WR
+      - name: Gun Normal
+      - name: I Form Big
+      - name: I Form Normal
+      - name: I Form Twin WR
+      - name: Singleback Big
+      - name: Singleback Normal
+      - name: Singleback Slot Strong
+      - name: Singleback Trips Bunch
+      - name: Strong I 3WR
+      - name: Strong I Normal
+      - name: Strong I Twin WR
+      - name: Weak I Big
+  - team_id: jets
+    name: Jets
+    playbook_style: null
+    formation_count: 16
+    formation_families:
+      i_form: 5
+      other: 3
+      pro_set: 2
+      singleback: 6
+    personnel_breakdown: null
+    formations:
+      - name: I Form Big
+      - name: I Form Normal
+      - name: I Form Twin WR
+      - name: Singleback 4WR
+      - name: Singleback Big
+      - name: Singleback Empty 4WR
+      - name: Singleback Normal
+      - name: Singleback Slot Strong
+      - name: Singleback Trips Bunch
+      - name: Split Backs 3WR
+      - name: Split Backs Normal
+      - name: Strong I 3WR
+      - name: Strong I Normal
+      - name: Strong I Twin WR
+      - name: Weak I Normal
+      - name: Weak I Twins WR
+  - team_id: lions
+    name: Lions
+    playbook_style: null
+    formation_count: 17
+    formation_families:
+      i_form: 4
+      other: 2
+      pro_set: 2
+      shotgun: 3
+      singleback: 6
+    personnel_breakdown: null
+    formations:
+      - name: Gun 4WR
+      - name: Gun Normal Offset Wk
+      - name: Gun Trips TE
+      - name: I Form Normal
+      - name: I Form Twin WR
+      - name: Singleback 4WR
+      - name: Singleback Big
+      - name: Singleback Empty 4WR
+      - name: Singleback Normal
+      - name: Singleback Trips Bunch
+      - name: Singleback Trips WR
+      - name: Split Backs Normal
+      - name: Split Backs Twins WR
+      - name: Strong I 3WR
+      - name: Strong I Normal
+      - name: Weak I 3WR
+      - name: Weak I Normal
+  - team_id: packers
+    name: Packers
+    playbook_style: null
+    formation_count: 17
+    formation_families:
+      i_form: 5
+      other: 4
+      shotgun: 3
+      singleback: 5
+    personnel_breakdown: null
+    formations:
+      - name: Full House Strong
+      - name: Full House Weak
+      - name: Gun 2RB 3WR
+      - name: Gun 4WR
+      - name: Gun Normal
+      - name: I Form Normal
+      - name: I Form Twin TE
+      - name: I Form Twin WR
+      - name: Jumbo T Big
+      - name: Singleback 4WR
+      - name: Singleback Big
+      - name: Singleback Normal
+      - name: Singleback Trips Bunch
+      - name: Singleback Twin TE WR
+      - name: Strong I 3WR
+      - name: Strong I Normal
+      - name: Strong I Twin TE
+  - team_id: panthers
+    name: Panthers
+    playbook_style: null
+    formation_count: 16
+    formation_families:
+      i_form: 6
+      other: 3
+      shotgun: 1
+      singleback: 6
+    personnel_breakdown: null
+    formations:
+      - name: Gun Normal
+      - name: I Form Big
+      - name: I Form Normal
+      - name: I Form Twin TE
+      - name: I Form Twin WR
+      - name: Singleback 4WR
+      - name: Singleback Big
+      - name: Singleback Empty 5WR
+      - name: Singleback Normal
+      - name: Singleback Trips Bunch
+      - name: Singleback Twin TE
+      - name: Strong I Big
+      - name: Strong I Normal
+      - name: Strong I Twin TE
+      - name: Weak I Normal
+      - name: Weak I Twin TE
+  - team_id: pass_balanced
+    name: Pass Balanced
+    playbook_style: null
+    formation_count: 16
+    formation_families:
+      i_form: 3
+      other: 2
+      pro_set: 2
+      shotgun: 3
+      singleback: 6
+    personnel_breakdown: null
+    formations:
+      - name: Gun 4WR
+      - name: Gun Normal
+      - name: Gun Trips TE
+      - name: I Form 3WR
+      - name: I Form Normal
+      - name: I Form Twin WR
+      - name: Singleback 4WR
+      - name: Singleback Big
+      - name: Singleback Empty 5WR
+      - name: Singleback Normal
+      - name: Singleback Trips Bunch
+      - name: Singleback Trips WR
+      - name: Split Backs 3WR
+      - name: Split Backs Normal
+      - name: Strong I 3WR
+      - name: Strong I Normal
+  - team_id: patriots
+    name: Patriots
+    playbook_style: null
+    formation_count: 17
+    formation_families:
+      i_form: 4
+      other: 2
+      pro_set: 2
+      shotgun: 2
+      singleback: 7
+    personnel_breakdown: null
+    formations:
+      - name: Gun 5WR
+      - name: Gun Normal
+      - name: I Form Normal
+      - name: I Form Twin WR
+      - name: Singleback Big
+      - name: Singleback Big 3TE
+      - name: Singleback Empty 5WR
+      - name: Singleback Normal
+      - name: Singleback Trips Bunch
+      - name: Singleback Trips WR
+      - name: Singleback Twin TE
+      - name: Split Backs 3WR
+      - name: Split Backs Normal
+      - name: Strong I Big
+      - name: Strong I Normal
+      - name: Weak I Normal
+      - name: Weak I Twin TE
+  - team_id: raiders
+    name: Raiders
+    playbook_style: null
+    formation_count: 18
+    formation_families:
+      i_form: 5
+      other: 3
+      pro_set: 2
+      shotgun: 2
+      singleback: 6
+    personnel_breakdown: null
+    formations:
+      - name: Gun 5WR
+      - name: Gun Trips
+      - name: I Form 3WR
+      - name: I Form Normal
+      - name: I Form Twin WR
+      - name: Singleback Empty 4WR
+      - name: Singleback Empty 5WR
+      - name: Singleback Normal
+      - name: Singleback Tight
+      - name: Singleback Trips Bunch
+      - name: Singleback Trips WR
+      - name: Split Backs 3WR
+      - name: Split Backs Normal
+      - name: Strong I 3WR
+      - name: Strong I Big
+      - name: Strong I Normal
+      - name: Weak I 3WR
+      - name: Weak I Normal
+  - team_id: rams
+    name: Rams
+    playbook_style: null
+    formation_count: 17
+    formation_families:
+      i_form: 6
+      other: 2
+      pro_set: 2
+      shotgun: 1
+      singleback: 6
+    personnel_breakdown: null
+    formations:
+      - name: Gun 4WR
+      - name: I Form 3WR
+      - name: I Form Normal
+      - name: I Form Twin TE
+      - name: I Form Twin WR
+      - name: Singleback 4WR
+      - name: Singleback Big
+      - name: Singleback Empty 5WR
+      - name: Singleback Normal
+      - name: Singleback Trips Bunch
+      - name: Singleback Trips WR
+      - name: Split Backs 3WR
+      - name: Split Backs Normal
+      - name: Strong I 3WR
+      - name: Strong I Normal
+      - name: Weak I 3WR
+      - name: Weak I Big
+  - team_id: ravens
+    name: Ravens
+    playbook_style: null
+    formation_count: 15
+    formation_families:
+      i_form: 5
+      other: 3
+      shotgun: 2
+      singleback: 5
+    personnel_breakdown: null
+    formations:
+      - name: Gun 2RB 3WR
+      - name: Gun Normal Offset Wk
+      - name: I Form 3WR
+      - name: I Form Big
+      - name: I Form Normal
+      - name: I Form Twin TE
+      - name: I Form Twin WR
+      - name: Singleback 4WR
+      - name: Singleback Big
+      - name: Singleback Normal
+      - name: Singleback Slot Strong
+      - name: Singleback Tight
+      - name: Strong I Big
+      - name: Strong I Normal
+      - name: Strong I Twin TE
+  - team_id: redskins
+    name: Redskins
+    playbook_style: null
+    formation_count: 16
+    formation_families:
+      i_form: 7
+      other: 2
+      shotgun: 3
+      singleback: 4
+    personnel_breakdown: null
+    formations:
+      - name: Gun 4WR
+      - name: Gun Normal
+      - name: Gun Trips TE
+      - name: I Form 3WR
+      - name: I Form Normal
+      - name: I Form Twin TE
+      - name: I Form Twin WR
+      - name: Singleback 4WR
+      - name: Singleback Big
+      - name: Singleback Normal
+      - name: Singleback Twin TE
+      - name: Strong I 3WR
+      - name: Strong I Normal
+      - name: Weak I Big
+      - name: Weak I Normal
+      - name: Weak I Twins WR
+  - team_id: run_balanced
+    name: Run Balanced
+    playbook_style: null
+    formation_count: 16
+    formation_families:
+      i_form: 8
+      other: 3
+      singleback: 5
+    personnel_breakdown: null
+    formations:
+      - name: Full House Normal
+      - name: Full House Strong
+      - name: Full House Weak
+      - name: I Form Big
+      - name: I Form Normal
+      - name: I Form Twin TE
+      - name: Singleback 4WR
+      - name: Singleback Big
+      - name: Singleback Normal
+      - name: Singleback Slot Strong
+      - name: Singleback Twin TE
+      - name: Strong I Big
+      - name: Strong I Normal
+      - name: Strong I Twin TE
+      - name: Weak I Normal
+      - name: Weak I Twin TE
+  - team_id: run_heavy
+    name: Run Heavy
+    playbook_style: null
+    formation_count: 18
+    formation_families:
+      i_form: 8
+      other: 4
+      pro_set: 1
+      singleback: 5
+    personnel_breakdown: null
+    formations:
+      - name: Full House Normal
+      - name: Full House Strong
+      - name: Full House Weak
+      - name: I Form Big
+      - name: I Form Normal
+      - name: I Form Twin TE
+      - name: Jumbo T Big
+      - name: Singleback Big
+      - name: Singleback Big 3TE
+      - name: Singleback Big Twin WR
+      - name: Singleback Normal
+      - name: Singleback Tight
+      - name: Split Backs Big
+      - name: Strong I Big
+      - name: Strong I Normal
+      - name: Strong I Twin TE
+      - name: Weak I Normal
+      - name: Weak I Twin TE
+  - team_id: run_and_gun
+    name: Run and Gun
+    playbook_style: null
+    formation_count: 15
+    formation_families:
+      i_form: 3
+      other: 2
+      shotgun: 4
+      singleback: 6
+    personnel_breakdown: null
+    formations:
+      - name: Gun 2RB 3WR
+      - name: Gun 4WR
+      - name: Gun Normal
+      - name: Gun Slot Strong
+      - name: I Form 3WR
+      - name: I Form Big
+      - name: I Form Normal
+      - name: Singleback Big
+      - name: Singleback Big 3TE
+      - name: Singleback Empty 5WR
+      - name: Singleback Normal
+      - name: Singleback Trips Bunch
+      - name: Singleback Trips WR
+      - name: Strong I Normal
+      - name: Strong I Twin WR
+  - team_id: saints
+    name: Saints
+    playbook_style: null
+    formation_count: 17
+    formation_families:
+      i_form: 5
+      other: 2
+      shotgun: 6
+      singleback: 4
+    personnel_breakdown: null
+    formations:
+      - name: Gun 4WR
+      - name: Gun 5WR Bunch
+      - name: Gun Empty 4WR
+      - name: Gun Normal
+      - name: Gun Slot Strong
+      - name: Gun Trips
+      - name: I Form 3WR
+      - name: I Form Big
+      - name: I Form Normal
+      - name: Singleback 4WR
+      - name: Singleback Big
+      - name: Singleback Normal
+      - name: Singleback Trips WR
+      - name: Strong I Normal
+      - name: Strong I Twin WR
+      - name: Weak I 3WR
+      - name: Weak I Normal
+  - team_id: seahawks
+    name: Seahawks
+    playbook_style: null
+    formation_count: 15
+    formation_families:
+      i_form: 5
+      other: 2
+      pro_set: 3
+      singleback: 5
+    personnel_breakdown: null
+    formations:
+      - name: I Form 3WR
+      - name: I Form Big
+      - name: I Form Normal
+      - name: Singleback 4WR
+      - name: Singleback Big
+      - name: Singleback Normal
+      - name: Singleback Slot Strong
+      - name: Singleback Twin TE
+      - name: Split Backs 3WR
+      - name: Split Backs Big
+      - name: Split Backs Normal
+      - name: Strong I 3WR
+      - name: Strong I Normal
+      - name: Weak I Normal
+      - name: Weak I Twins WR
+  - team_id: steelers
+    name: Steelers
+    playbook_style: null
+    formation_count: 15
+    formation_families:
+      i_form: 4
+      other: 1
+      shotgun: 4
+      singleback: 6
+    personnel_breakdown: null
+    formations:
+      - name: Gun 4WR
+      - name: Gun Empty 4WR
+      - name: Gun Normal
+      - name: Gun Trips
+      - name: I Form 3WR
+      - name: I Form Normal
+      - name: I Form Twin TE
+      - name: I Form Twin WR
+      - name: Singleback 4WR
+      - name: Singleback Empty 4WR
+      - name: Singleback Normal
+      - name: Singleback Trips Bunch
+      - name: Singleback Trips WR
+      - name: Singleback Twin TE WR
+      - name: Strong I Normal
+  - team_id: texans
+    name: Texans
+    playbook_style: null
+    formation_count: 17
+    formation_families:
+      i_form: 6
+      other: 1
+      shotgun: 4
+      singleback: 6
+    personnel_breakdown: null
+    formations:
+      - name: Gun 2RB 3WR
+      - name: Gun 4WR
+      - name: Gun Normal
+      - name: Gun Tight
+      - name: I Form 3WR
+      - name: I Form Normal
+      - name: I Form Twin TE
+      - name: I Form Twin WR
+      - name: Singleback 4WR
+      - name: Singleback Big
+      - name: Singleback Big 3TE
+      - name: Singleback Big Twin WR
+      - name: Singleback Normal
+      - name: Singleback Tight
+      - name: Strong I Normal
+      - name: Weak I Normal
+      - name: Weak I Twins WR
+  - team_id: titans
+    name: Titans
+    playbook_style: null
+    formation_count: 17
+    formation_families:
+      i_form: 5
+      other: 2
+      shotgun: 4
+      singleback: 6
+    personnel_breakdown: null
+    formations:
+      - name: Gun 4WR
+      - name: Gun Normal
+      - name: Gun Slot Strong
+      - name: Gun Tight
+      - name: I Form Big
+      - name: I Form Normal
+      - name: I Form Twin TE
+      - name: Singleback 4WR
+      - name: Singleback Big
+      - name: Singleback Big Twin WR
+      - name: Singleback Empty 5WR
+      - name: Singleback Normal
+      - name: Singleback Slot Strong
+      - name: Strong I 3WR
+      - name: Strong I Normal
+      - name: Weak I Normal
+      - name: Weak I Twins WR
+  - team_id: vikings
+    name: Vikings
+    playbook_style: null
+    formation_count: 16
+    formation_families:
+      i_form: 4
+      other: 2
+      shotgun: 5
+      singleback: 5
+    personnel_breakdown: null
+    formations:
+      - name: Gun 4WR
+      - name: Gun Normal
+      - name: Gun Slot Strong
+      - name: Gun Tight
+      - name: Gun Trips TE
+      - name: I Form Normal
+      - name: I Form Twin WR
+      - name: Singleback 4WR
+      - name: Singleback Big
+      - name: Singleback Big Twin WR
+      - name: Singleback Normal
+      - name: Singleback Trips WR
+      - name: Strong I Big
+      - name: Strong I Normal
+      - name: Weak I Normal
+      - name: Weak I Twin TE
+  - team_id: west_coast
+    name: West Coast
+    playbook_style: null
+    formation_count: 16
+    formation_families:
+      i_form: 6
+      pro_set: 3
+      singleback: 7
+    personnel_breakdown: null
+    formations:
+      - name: Far Normal
+      - name: I Form Normal
+      - name: I Form Twin TE
+      - name: I Form Twin WR
+      - name: Singleback Big
+      - name: Singleback Empty 4WR
+      - name: Singleback Empty 5WR
+      - name: Singleback Normal
+      - name: Singleback Tight
+      - name: Singleback Trips Bunch
+      - name: Singleback Trips TE
+      - name: Split Backs 3WR
+      - name: Split Backs Big
+      - name: Split Backs Normal
+      - name: Weak I Big
+      - name: Weak I Twins WR

@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__deuce-wing__pass__pa-mtn-boot",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Deuce Wing",
+    "play_name": "PA Mtn Boot",
+    "play_type": "pass",
+    "canonical_team": "Joe Gibbs",
+    "canonical_img": 36,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Joe Gibbs"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Deuce Wing",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 179,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 196
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 106.03,
+  "response_text": "```json\n{\n  \"concept\": \"boot_pass\",\n  \"concepts\": [\"boot_pass\", \"play_action\"],\n  \"routes\": {\n    \"TE_L\": \"flat\",\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_R\": \"wheel\",\n    \"HB\": \"pass_pro\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_R\",\n  \"notes\": \"Play-action boot to the right. TE releases flat to left, WR_X runs corner over top, WR_Z stretches vertically right, slot WR wheels out right as hot. HB engaged in pass protection. Red arrow (primary) traces to wheel route on right.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "boot_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bboot\\b|\\bbootleg\\b",
+    "is_pa": true,
+    "is_boot_or_roll": true
+  }
+}

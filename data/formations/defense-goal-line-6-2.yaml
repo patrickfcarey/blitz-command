@@ -1,0 +1,102 @@
+name: Goal Line 6-2
+side: defense
+personnel: "goal-line"
+front: "6-2"
+coverage_shell: "cover-1"
+
+# Goal-line / short-yardage stop-the-run defense. 6 DL across the front
+# (no gap unaccounted for), 2 ILBs flowing playside, 3 DBs (2 CBs man-up
+# on outside WRs/TEs, 1 SS as middle robber/eraser).
+#
+# Designed to defeat the QB sneak, dive, power, and FB lead. Will give
+# up easy outside throws if offense fades — but at the goal line, those
+# are the only throws available.
+players:
+  - { label: LDE, position: DE, x: -5.0,  y:  1.0, on_line: false }
+  - { label: LDT, position: DT, x: -2.5,  y:  1.0, on_line: false }
+  - { label: LNT, position: DT, x: -0.7,  y:  1.0, on_line: false }
+  - { label: RNT, position: DT, x:  0.7,  y:  1.0, on_line: false }
+  - { label: RDT, position: DT, x:  2.5,  y:  1.0, on_line: false }
+  - { label: RDE, position: DE, x:  5.0,  y:  1.0, on_line: false }
+  - { label: MLB, position: LB, x: -1.5,  y:  4.0, on_line: false }
+  - { label: SLB, position: LB, x:  1.5,  y:  4.0, on_line: false }
+  - { label: LCB, position: CB, x: -10.0, y:  1.5, on_line: false }
+  - { label: RCB, position: CB, x:  10.0, y:  1.5, on_line: false }
+  - { label: SS,  position: S,  x:  0.0,  y:  6.0, on_line: false }
+
+responsibilities:
+  - { player: LDE, role: rush, aim: "weak edge / set hard outside contain" }
+  - { player: LDT, role: rush, aim: "weak B-gap" }
+  - { player: LNT, role: rush, aim: "weak A-gap" }
+  - { player: RNT, role: rush, aim: "strong A-gap" }
+  - { player: RDT, role: rush, aim: "strong B-gap" }
+  - { player: RDE, role: rush, aim: "strong edge / set hard outside contain" }
+  - { player: MLB, role: spy,  aim: "playside A/B gap fit; key on QB/HB" }
+  - { player: SLB, role: spy,  aim: "playside A/B gap fit; key on FB/HB" }
+  - { player: LCB, role: man,  aim: "press-man on weak-side WR/TE; jam at LOS" }
+  - { player: RCB, role: man,  aim: "press-man on strong-side WR/TE; jam at LOS" }
+  - { player: SS,  role: robber, aim: "middle robber / eraser — fill any A-gap leak, key on QB sneak" }
+
+best_against:
+  - "QB sneak (every gap covered + SS robber)"
+  - "FB lead / iso (LBs flow playside fast, DL eats blocks)"
+  - "Dive plays (NTs in both A-gaps)"
+  - "Goal-line power runs"
+
+vulnerable_to:
+  - "Fade routes (corners get beat 1-on-1 if WR wins jump ball)"
+  - "PA TE corner / quick-out (SS robber can't cover both deep middle and underneath)"
+  - "Bootleg / naked rollout (DEs crash inside, no contain)"
+  - "Wheel routes (no LB in coverage)"
+
+strengths:
+  - "Every gap accounted for at the LOS — no holes to run through"
+  - "11 in the box effectively (6 DL + 2 LB + SS)"
+  - "Press man jams WRs at the LOS — disrupts timing"
+  - "Stuffs short-yardage runs at very high rate (~85%+)"
+
+weaknesses:
+  - "Almost no coverage if offense passes (3 DBs total)"
+  - "DEs lose contain if they crash inside on PA"
+  - "No deep coverage — fade is open if corner gets beat"
+  - "Predictable — only used in 1- to 3-yard situations"
+
+common_uses:
+  - "Goal-line stops (1- to 3-yd line)"
+  - "4th-and-1 anywhere on field"
+  - "3rd-and-1 short-yardage"
+  - "End-of-half / end-of-game victory formation defense"
+
+era: "Universal — goal-line 6-2 (or 6-1) defenses are timeless."
+
+famous_users:
+  - "Every NFL/college team's goal-line package"
+  - "Bill Belichick's 'Bear D' goal-line variants"
+  - "Buddy Ryan 46 goal-line look"
+
+tags:
+  - defense
+  - goal-line
+  - short-yardage
+  - 6-2
+  - run-stop
+  - press-man
+  - any-level
+  - high-school
+  - college
+  - nfl
+
+notes: |
+  Goal-line / short-yardage defense. 6 DL across the front (every gap
+  covered), 2 ILBs playing fast flow, 2 press-man corners on the outside,
+  1 SS as middle robber. Designed exclusively to stop the run — passing
+  game gives up significant separation, but at the goal line the offense
+  has limited route options.
+
+  Offense's best counter: PA fade or quick-out to TE. This defense's
+  acceptable risk.
+
+verification_status: unverified
+source_notes:
+  - "Standard goal-line 6-2 alignment; documented in goal-line situational defensive coaching texts."
+  - "Built 2026-04-30 as part of the P5 defensive-side rollout."

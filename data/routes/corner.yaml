@@ -1,0 +1,23 @@
+name: corner
+aliases:
+- flag
+description: Vertical stem to ~12 yards, then 45-degree break toward the corner (sideline + downfield).
+path:
+- - 0
+  - 0
+- - 0
+  - 12
+- - -4
+  - 17
+typical_break_depth_yd: 12
+option_route: false
+category: deep
+beats_coverage: zone
+tags:
+- deep
+- outside-breaking
+- corner
+- smash-component
+verification_status: unverified
+source_notes:
+- Standard corner / flag route. Smash and snag concepts both use this.

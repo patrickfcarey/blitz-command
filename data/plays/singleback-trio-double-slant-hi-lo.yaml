@@ -1,0 +1,167 @@
+play_id: singleback-trio-double-slant-hi-lo
+name: Double Slant / Hi-Lo
+aliases:
+  - Double-Slant Hi-Lo
+  - Under-Center Quick Package
+
+formation: singleback-trio
+play_type: pass
+ball_carrier: X
+primary_read: X
+secondary_read: SLOT
+checkdown: Z
+
+motions: []
+
+# Multi-concept composition (Erhardt-Perkins model): the right side runs a
+# two-man Double Slant; the left side runs a Hi-Lo (a deep dig over a shallow
+# crosser on the same defender). The HB stays in to protect, so this carries
+# a six-man pocket — the under-center counterpart to the spread quick game.
+concepts:
+  - concept_ref: hi-lo
+    concept_type: pass
+    players: [X, SLOT]
+    field_area: left
+    is_primary: true
+    notes: "Hi-Lo to the left — X on the dig over SLOT on the shallow cross. The QB reads high-to-low off the hook defender."
+  - concept_ref: double-slant
+    concept_type: pass
+    players: [TE, Z]
+    field_area: right
+    is_primary: false
+    notes: "Double Slant to the right — TE and Z both slant in. The quick man-beater and the immediate hot answer vs pressure."
+
+assignments:
+  - player: LT
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: LG
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: C
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: RG
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: RT
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: X
+    role: route
+    route_name: in
+    depth_yd: 12
+    is_primary: true
+    notes: "Hi-Lo — the HIGH: 12-yard dig settling behind the hook defender. Primary read."
+  - player: SLOT
+    role: route
+    route_name: drag
+    depth_yd: 4
+    notes: "Hi-Lo — the LOW: shallow cross under the dig, the outlet if the hook defender carries the dig."
+  - player: TE
+    role: route
+    route_name: slant
+    depth_yd: 6
+    notes: "Double Slant — inside slant, the rub man and the quick man-beater."
+  - player: Z
+    role: route
+    route_name: slant
+    depth_yd: 6
+    notes: "Double Slant — outside slant, the immediate hot read vs pressure to that side."
+  - player: HB
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: QB
+    role: ball_carrier
+    path: [[0, 0], [0, -3], [0, -5]]
+    notes: |
+      Three-step timing from under center. Pre-snap, set the protection and
+      pick a side: vs zone, work the left-side Hi-Lo high-to-low off the hook
+      defender. Vs man or a pressure look, throw the right-side Double Slant
+      on rhythm.
+
+strengths:
+  - Two complete concepts — Hi-Lo vs zone, Double Slant vs man, the QB picks pre-snap
+  - HB stays in to protect — a true six-man pocket, rare for a quick-game look
+  - Hi-Lo puts a hook defender in a true high-low bind on one route stem
+  - Double Slant is an instant hot answer to pressure
+  - Under-center look ties to the run game and play-action shells
+
+weaknesses:
+  - All routes are short to intermediate — limited explosive-play upside
+  - With the HB in to protect there is no release-outlet if both concepts are covered
+  - Hi-Lo depends on a defender choosing — a disciplined zone that passes routes off is tougher
+  - Double Slant is two routes only — easy to bracket if the QB hangs on it
+  - QB must diagnose the coverage pre-snap to pick the right side
+
+best_vs_defense:
+  - cover-3 (Hi-Lo high-low bind on the hook/curl defender)
+  - cover-1 (Double Slant rub frees the inside slant)
+  - cover-2 (X dig settles in the void between the corner and the safety)
+  - zone-blitz (Double Slant is the quick hot answer)
+
+worst_vs_defense:
+  - pattern-match quarters that passes the Hi-Lo routes off cleanly
+  - cover-1 robber sitting in the dig window
+  - press-man on both slant receivers, jamming the timing
+  - any defense content to tackle the short completion
+
+defensive_counters:
+  - counter_id: hook-defender-depth
+    pre_snap_look: "The left-side hook/curl defender aligned at depth, eyes to the quarterback, splitting the dig and the shallow"
+    qb_key: "Check the hook defender's depth — already deep enough to carry the dig and break on the shallow"
+    read_category: lb-depth
+    why: "The Hi-Lo only works if one defender must choose; a hook defender at depth covers the dig and still drives the shallow, beating the high-low."
+    typical_against: ["cover-3 with deep hooks", "pattern-match quarters"]
+  - counter_id: slant-side-press
+    pre_snap_look: "Both right-side corners pressed with inside leverage on the slant receivers"
+    qb_key: "Check the slant-side corners — pressed and inside, sitting the slant break"
+    read_category: cb-leverage
+    why: "Inside-leverage press jams the slant timing and sits the break, removing the quick man-beater and the hot answer at once."
+    typical_against: ["cover-1 press", "cover-0"]
+  - counter_id: dig-window-robber
+    pre_snap_look: "Single-high shell with a safety or linebacker cheating down into the middle hole over the dig"
+    qb_key: "Check the middle-of-field defender — sitting in the dig window before the snap"
+    read_category: safety-shell
+    why: "The dig is the primary; a robber pre-set in that window takes the rhythm throw and bait-jumps it for the interception."
+    typical_against: ["cover-1 robber", "cover-3 with a sinking Mike"]
+
+common_uses:
+  - 3rd-and-short to medium chain-mover
+  - 1st-and-10 rhythm throw off a run-look formation
+  - Backed-up or protect-the-QB situations (six-man pocket)
+  - Anytime the defense shows pressure and the protection must hold
+
+philosophy: west-coast
+philosophy_ref: west-coast
+
+era: "Modern — pairing a Double Slant with a Hi-Lo from an under-center look is a classic west-coast quick-game package, built on the Erhardt-Perkins package-of-concepts model."
+
+famous_examples:
+  - "West-coast under-center quick-game packages pairing slants with a high-low read"
+  - "Six-man-protection quick game in pressure situations"
+
+tags:
+  - pass
+  - quick-game
+  - multi-concept
+  - hi-lo
+  - double-slant
+  - singleback
+  - west-coast
+  - high-school
+  - college
+  - nfl
+
+notes: |
+  Multi-concept play: rather than a single pass_concept_ref, this play
+  carries a `concepts` array — Hi-Lo to the left (X/SLOT) and Double Slant to
+  the right (TE/Z). The HB stays in to protect, giving a six-man pocket. The
+  QB declares a side pre-snap off the coverage. Erhardt-Perkins model: a play
+  is a package of concepts, each occupying part of the formation.
+
+  Mirror to singleback-trio-left by flipping all coordinates.
+
+verification_status: unverified
+source_notes:
+  - "Authored as a multi-concept play using the `concepts` schema field. Pairs Hi-Lo (data/concepts/pass-concepts/hi-lo.yaml) on the left with Double Slant (data/concepts/pass-concepts/double-slant.yaml) on the right, in the Erhardt-Perkins two-concepts-in-one-playcall style."

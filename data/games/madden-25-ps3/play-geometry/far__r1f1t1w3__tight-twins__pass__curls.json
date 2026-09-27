@@ -1,0 +1,49 @@
+{
+  "slug": "far__r1f1t1w3__tight-twins__pass__curls",
+  "info": {
+    "family": "FAR",
+    "formation": "Tight Twins",
+    "play_name": "Curls",
+    "play_type": "pass",
+    "canonical_team": "West Coast",
+    "canonical_img": 61,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "West Coast"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "FAR",
+      "formation": "Tight Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 492,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 188
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.42,
+  "response_text": "```json\n{\n  \"concept\": \"curls\",\n  \"concepts\": [\"curls\"],\n  \"routes\": {\n    \"WR_X\": \"curl\",\n    \"WR_Z\": \"flat\",\n    \"TE_L\": \"curl\",\n    \"TE_R\": \"streak\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Curls concept with left-side stretch: WR_X runs curl at 12-14 yds, WR_Z runs flat underneath. TE_L also curls on tight-twins formation. TE_R runs vertical clearout. Red arrow indicates primary read on WR_X curl.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "curls",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcurls?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

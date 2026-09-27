@@ -1,0 +1,24 @@
+name: go
+aliases:
+- fly
+- streak
+- clear-out-go
+- clear-out-fly
+- vertical
+description: Straight-line vertical route. Used as primary deep threat or as a clear-out to remove a defender.
+path:
+- - 0
+  - 0
+- - 0
+  - 25
+typical_break_depth_yd: 0
+option_route: false
+category: deep
+beats_coverage: both
+tags:
+- deep
+- clear-out
+- vertical
+verification_status: unverified
+source_notes:
+- Universal vertical route; depth varies by play (15-25 yds typical).

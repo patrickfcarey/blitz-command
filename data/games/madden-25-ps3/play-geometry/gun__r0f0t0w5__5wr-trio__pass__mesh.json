@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r0f0t0w5__5wr-trio__pass__mesh",
+  "info": {
+    "family": "GUN",
+    "formation": "5WR Trio",
+    "play_name": "Mesh",
+    "play_type": "pass",
+    "canonical_team": "Chicago Bears",
+    "canonical_img": 137,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Chicago Bears"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "5WR Trio",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "5-WR set, no RB"
+    }
+  },
+  "usage": {
+    "input_tokens": 518,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 198
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.81,
+  "response_text": "```json\n{\n  \"concept\": \"mesh\",\n  \"concepts\": [\"mesh\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"drag\",\n    \"WR_SLOT_L\": \"drag\",\n    \"WR_SLOT_R\": \"comeback\",\n    \"WR_FLANKER\": \"streak\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_L\",\n  \"notes\": \"5-WR empty formation (no RB, no TE, no FB). Two slot receivers run shallow crossing routes (drag) meeting in the middle \u2014 classic mesh structure. X runs corner to outside, slot-right runs comeback, flanker clears deep. Primary receiver (red arrow) is left slot dragging across.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "mesh",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bmesh\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

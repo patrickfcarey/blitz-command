@@ -1,0 +1,49 @@
+{
+  "slug": "brown__r1f1t1w3__right-twins__pass__curls",
+  "info": {
+    "family": "BROWN",
+    "formation": "Right Twins",
+    "play_name": "Curls",
+    "play_type": "pass",
+    "canonical_team": "Bill Walsh",
+    "canonical_img": 74,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Bill Walsh"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "BROWN",
+      "formation": "Right Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 491,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 194
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.54,
+  "response_text": "```json\n{\n  \"concept\": \"curls\",\n  \"concepts\": [\"curls\"],\n  \"routes\": {\n    \"WR_X\": \"curl\",\n    \"WR_Z\": \"flat\",\n    \"WR_SLOT_R\": \"comeback\",\n    \"TE_R\": \"block\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"WR_X (purple \u25a1) runs curl at ~14 yds; WR_Z (green \u25b3) runs flat; WR_SLOT_R (blue \u2297) runs comeback on opposite side; TE_R (R1 button glyph) blocks. HB executes checkdown release. Standard curl-flat structure with backside comeback.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "curls",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcurls?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "i-form__r1f1t1w2__pro__pass__hb-pass",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Pro",
+    "play_name": "HB Pass",
+    "play_type": "pass",
+    "canonical_team": "Detroit Lions",
+    "canonical_img": 50,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Detroit Lions",
+      "San Francisco 49ers"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "I-Form Pro default"
+    }
+  },
+  "usage": {
+    "input_tokens": 562,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 202
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.4,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"generic_hb_run\"],\n  \"routes\": {\n    \"HB\": \"pass\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"HB\",\n  \"notes\": \"Play is labeled 'HB Pass' but play_type=pass. HB is receiving a pass, not carrying the ball. Red arrow originates from QB (off-LOS, behind C in I-Form setup), targets HB with a wheel/checkdown route to the right flat. Yellow arrow from HB shows continuation. TE_R and WR appear to run clearing routes (yellow arrows upfield). Formation is I-Form Pro with 1 RB, 1 FB, 1 TE, 2 WR as expected.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "^hb \\w+",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

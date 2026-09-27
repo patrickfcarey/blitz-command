@@ -1,0 +1,52 @@
+{
+  "slug": "pistol__r1f0t1w3__ace__run__jet-sweep",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Ace",
+    "play_name": "Jet Sweep",
+    "play_type": "run",
+    "canonical_team": "Detroit Lions",
+    "canonical_img": 72,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Detroit Lions"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Ace",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "Pistol default \u2014 variant unclear"
+    }
+  },
+  "usage": {
+    "input_tokens": 556,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 62
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 56.38,
+  "response_text": "```json\n{\n  \"concept\": \"sweep\",\n  \"concepts\": [\"sweep\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB D_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "error": "no red arrow detected",
+    "c_x": 1476,
+    "c_y": 615,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "sweep",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bsweep\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t2w2__ace__pass__bench",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Ace",
+    "play_name": "Bench",
+    "play_type": "pass",
+    "canonical_team": "Balanced",
+    "canonical_img": 11,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Balanced"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Ace",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Ace family \u2014 2 TE 2 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 516,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 112
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 1.96,
+  "response_text": "```json\n{\n  \"concept\": \"bench_concept\",\n  \"concepts\": [\"bench_concept\"],\n  \"routes\": {\n    \"WR_X\": \"bench\",\n    \"WR_Z\": \"bench\",\n    \"TE_L\": \"bench\",\n    \"TE_R\": \"bench\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "bench_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bbench\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

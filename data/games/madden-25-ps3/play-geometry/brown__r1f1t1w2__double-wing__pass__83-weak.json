@@ -1,0 +1,49 @@
+{
+  "slug": "brown__r1f1t1w2__double-wing__pass__83-weak",
+  "info": {
+    "family": "BROWN",
+    "formation": "Double Wing",
+    "play_name": "83 Weak",
+    "play_type": "pass",
+    "canonical_team": "Vince Lombardi",
+    "canonical_img": 20,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Vince Lombardi"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "BROWN",
+      "formation": "Double Wing",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "BROWN family \u2014 old-school 2-back default"
+    }
+  },
+  "usage": {
+    "input_tokens": 494,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 212
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.79,
+  "response_text": "```json\n{\n  \"concept\": \"numbered_concept\",\n  \"concepts\": [\"numbered_concept\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"comeback\",\n    \"TE_L\": \"drag\",\n    \"TE_R\": \"flat\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Double Wing formation with 2 TEs on LOS, 2 WRs split wide. Red arrow on WR_X (left outer, Triangle button) indicates primary target. Yellow routes show TE_L drag, TE_R flat, WR_Z comeback. Blue arrow on R1 button (right WR) is secondary flat option. HB positioned for checkdown/pass-pro release.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "numbered_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "^\\d{2,3}\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

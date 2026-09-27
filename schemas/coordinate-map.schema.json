@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blitz-command.local/schemas/coordinate-map.schema.json",
+  "title": "Game coordinate translation profile",
+  "description": "Defines how universal football coordinates (yards from the ball at the line of scrimmage) map to a specific game's editor grid.",
+  "type": "object",
+  "required": ["game_id", "grid", "scale", "verification_status"],
+  "additionalProperties": false,
+  "properties": {
+    "game_id": {
+      "type": "string",
+      "description": "Identifier of the game this profile targets. Should match a file under data/games/."
+    },
+    "grid": {
+      "type": "object",
+      "required": ["width", "height", "origin"],
+      "additionalProperties": false,
+      "properties": {
+        "width": { "type": "integer", "minimum": 1, "description": "Editor grid width, in cells." },
+        "height": { "type": "integer", "minimum": 1, "description": "Editor grid height, in cells." },
+        "origin": {
+          "type": "object",
+          "description": "Editor-grid cell that universal (0, 0) maps to.",
+          "required": ["x", "y"],
+          "additionalProperties": false,
+          "properties": {
+            "x": { "type": "number" },
+            "y": { "type": "number" }
+          }
+        }
+      }
+    },
+    "scale": {
+      "type": "object",
+      "description": "How many real yards each editor cell represents.",
+      "required": ["x_yards_per_cell", "y_yards_per_cell"],
+      "additionalProperties": false,
+      "properties": {
+        "x_yards_per_cell": { "type": "number", "exclusiveMinimum": 0 },
+        "y_yards_per_cell": { "type": "number", "exclusiveMinimum": 0 }
+      }
+    },
+    "limits": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "max_route_depth_yd": { "type": "number" },
+        "max_player_split_yd": { "type": "number" },
+        "max_backfield_depth_yd": { "type": "number" },
+        "allowed_motion": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Names of motion types the editor supports (e.g. 'fly', 'jet', 'short')."
+        }
+      }
+    },
+    "quirks": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Editor or engine peculiarities that affect translation accuracy."
+    },
+    "verification_status": {
+      "enum": ["verified", "unverified", "inferred"],
+      "description": "Confidence in this profile's values."
+    },
+    "source_notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

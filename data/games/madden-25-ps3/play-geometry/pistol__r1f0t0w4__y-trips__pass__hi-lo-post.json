@@ -1,0 +1,49 @@
+{
+  "slug": "pistol__r1f0t0w4__y-trips__pass__hi-lo-post",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Y-Trips",
+    "play_name": "Hi Lo Post",
+    "play_type": "pass",
+    "canonical_team": "Indianapolis Colts",
+    "canonical_img": 91,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Indianapolis Colts"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Y-Trips",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 0,
+      "WR": 4,
+      "total": 6,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 498,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 226
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.74,
+  "response_text": "```json\n{\n  \"concept\": \"hi_lo\",\n  \"concepts\": [\"hi_lo\"],\n  \"routes\": {\n    \"WR_X\": \"post\",\n    \"WR_Z\": \"hitch\",\n    \"WR_SLOT_L\": \"corner\",\n    \"WR_SLOT_R\": \"flat\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Pistol Y-Trips formation with 4 WRs + RB. Hi-Lo Post concept: WR_X (R1 button) runs the deep post as primary target, WR_Z runs hitch above, creating high-low stretch on one side. WR_SLOT_L and WR_SLOT_R run corner and flat on opposite side. HB in pistol slot behind QB runs checkdown route.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "hi_lo",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bhi[- ]?lo\\b|\\bhilo\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

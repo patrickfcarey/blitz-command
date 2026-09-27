@@ -1,0 +1,58 @@
+{
+  "slug": "singleback__r1f0t2w2__ace-pair-twins__pass__pa-power-o",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Ace Pair Twins",
+    "play_name": "PA Power O",
+    "play_type": "pass",
+    "canonical_team": "Balanced",
+    "canonical_img": 15,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Balanced",
+      "Chicago Bears",
+      "New England Patriots",
+      "New York Giants",
+      "New York Jets",
+      "Run Balanced",
+      "Run Heavy",
+      "San Diego Chargers",
+      "St. Louis Rams",
+      "Tampa Bay Buccaneers"
+    ],
+    "owner_count": 10,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Ace Pair Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Ace family \u2014 2 TE 2 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 506,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 199
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.67,
+  "response_text": "```json\n{\n  \"concept\": \"power_o\",\n  \"concepts\": [\"power_o\", \"pa_pass\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"TE_R\": \"seam\",\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"flat\",\n    \"HB\": \"wheel\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"Play-action pass off Power O fake. Red arrow (primary) is TE_R running seam. Yellow routes show complementary distribution: WR_X corner, WR_Z flat checkdown, HB wheel release. TE_L blocks initially then releases. R1 button glyph on right confirms pass eligibility.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "power_o",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpower ?o\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

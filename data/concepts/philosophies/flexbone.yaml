@@ -1,0 +1,44 @@
+philosophy_id: flexbone
+name: Flexbone (Veer-Wishbone Triple Option)
+description: |
+  Modern triple-option system using Flexbone formation (FB offset behind QB, two HBs
+  in I-Form). Veer-option reads at the EDGE defender. More adaptable than pure Wishbone.
+  Used at service academies (Army, Navy) and a few college programs. Emphasizes option
+  flow, deceptive footwork, and pitch-man execution. Punishes aggressive edge defense.
+era: "1960s–present (peak 1980s-1990s; resurgence 2000s)"
+originators:
+  - "Wishbone: Darrell Royal (University of Texas, 1968)"
+  - "Flexbone: Army/Navy coaches (1990s evolution)"
+notable_practitioners:
+  - "Jeff Monken (Army)"
+  - "Ken Niumatalolo (Navy)"
+  - "Craig Coan (Army assistant coaches)"
+canonical_run_concepts:
+  - triple-option-veer
+  - midline-option
+canonical_pass_concepts:
+  - bootleg
+  - naked
+  - pa-pitch
+formation_preferences:
+  - flexbone
+  - i-formation
+  - bone
+tendency_profile:
+  run_pct: 0.85
+  pass_pct: 0.10
+  pa_pct: 0.05
+  rpo_pct: 0.0
+  screen_pct: 0.0
+tags:
+  - philosophy
+  - option
+  - flexbone
+  - triple-option
+  - service-academies
+  - college
+  - run-heavy
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Wikipedia 'Darrell Royal' (https://en.wikipedia.org/wiki/Darrell_Royal): developed Wishbone at Texas 1968."
+  - "Web validated 2026-04-30 — Wikipedia 'Army Black Knights football' (https://en.wikipedia.org/wiki/Army_Black_Knights_football): Flexbone used by service academies."

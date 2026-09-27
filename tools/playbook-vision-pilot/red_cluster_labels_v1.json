@@ -1,0 +1,1258 @@
+{
+ "clusters": [
+  {
+   "cluster_id": 0,
+   "size": 1528,
+   "proposed": "streak",
+   "label": "the route you have draw is  how madden  draws the  fade"
+  },
+  {
+   "cluster_id": 1,
+   "size": 1227,
+   "proposed": "in",
+   "label": "in"
+  },
+  {
+   "cluster_id": 2,
+   "size": 964,
+   "proposed": "in",
+   "label": "looks like  a post, could be a  corner depending  on which side of the  qb it is.I think it's a  post"
+  },
+  {
+   "cluster_id": 3,
+   "size": 534,
+   "proposed": "in",
+   "label": "quick slants"
+  },
+  {
+   "cluster_id": 4,
+   "size": 445,
+   "proposed": "streak",
+   "label": "this is  a run, not a streak. they might  look  too  similar to be able to differentiate"
+  },
+  {
+   "cluster_id": 5,
+   "size": 185,
+   "proposed": "streak",
+   "label": "I do not see the route you're looking at. there is  no streak"
+  },
+  {
+   "cluster_id": 6,
+   "size": 178,
+   "proposed": "in",
+   "label": "this looks like a quick slant"
+  },
+  {
+   "cluster_id": 7,
+   "size": 138,
+   "proposed": "post",
+   "label": "post"
+  },
+  {
+   "cluster_id": 8,
+   "size": 114,
+   "proposed": "in",
+   "label": "this is  specifically the HB \"texas\" route. you can tell because below  the line  of  scrimmage  and above the  HB's route is a  sideways V"
+  },
+  {
+   "cluster_id": 9,
+   "size": 113,
+   "proposed": "in",
+   "label": "looks like  a block+release into a drag to  the outside"
+  },
+  {
+   "cluster_id": 10,
+   "size": 109,
+   "proposed": "out",
+   "label": "this  is  a  corner route if it's on the right side of the qb"
+  },
+  {
+   "cluster_id": 11,
+   "size": 109,
+   "proposed": "not_a_route",
+   "label": "this  is a wheel or flare out"
+  },
+  {
+   "cluster_id": 12,
+   "size": 99,
+   "proposed": "streak",
+   "label": "you drew this line on  the play?"
+  },
+  {
+   "cluster_id": 13,
+   "size": 97,
+   "proposed": "in",
+   "label": "maybe a 10 yards in out"
+  },
+  {
+   "cluster_id": 14,
+   "size": 94,
+   "proposed": "out",
+   "label": "this is a double  move, looks like a  slant to inside fade to corner"
+  },
+  {
+   "cluster_id": 15,
+   "size": 71,
+   "proposed": "hitch",
+   "label": "??? this hand drawn route iswrong"
+  },
+  {
+   "cluster_id": 16,
+   "size": 65,
+   "proposed": "curl",
+   "label": "might be a hitch, looks shallow"
+  },
+  {
+   "cluster_id": 17,
+   "size": 58,
+   "proposed": "streak",
+   "label": "you drew this. it is a drawn streak"
+  },
+  {
+   "cluster_id": 18,
+   "size": 58,
+   "proposed": "in",
+   "label": "looks like a 10 yards in"
+  },
+  {
+   "cluster_id": 19,
+   "size": 51,
+   "proposed": "not_a_route",
+   "label": "not_a_route"
+  },
+  {
+   "cluster_id": 20,
+   "size": 49,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 21,
+   "size": 46,
+   "proposed": "post",
+   "label": "post"
+  },
+  {
+   "cluster_id": 22,
+   "size": 45,
+   "proposed": "not_a_route",
+   "label": "screen route"
+  },
+  {
+   "cluster_id": 23,
+   "size": 43,
+   "proposed": "corner",
+   "label": "it's a run"
+  },
+  {
+   "cluster_id": 24,
+   "size": 37,
+   "proposed": "not_a_route",
+   "label": "screen route"
+  },
+  {
+   "cluster_id": 25,
+   "size": 34,
+   "proposed": "not_a_route",
+   "label": "not_a_route"
+  },
+  {
+   "cluster_id": 26,
+   "size": 33,
+   "proposed": "post",
+   "label": "incorrect, idk what it  is but it's not that"
+  },
+  {
+   "cluster_id": 27,
+   "size": 32,
+   "proposed": "not_a_route",
+   "label": "screen route"
+  },
+  {
+   "cluster_id": 28,
+   "size": 25,
+   "proposed": "not_a_route",
+   "label": "not_a_route"
+  },
+  {
+   "cluster_id": 29,
+   "size": 25,
+   "proposed": "not_a_route",
+   "label": "not_a_route"
+  },
+  {
+   "cluster_id": 30,
+   "size": 25,
+   "proposed": "streak",
+   "label": "this  is more like a fade"
+  },
+  {
+   "cluster_id": 31,
+   "size": 22,
+   "proposed": "not_a_route",
+   "label": "not_a_route"
+  },
+  {
+   "cluster_id": 32,
+   "size": 21,
+   "proposed": "post",
+   "label": "texas route"
+  },
+  {
+   "cluster_id": 33,
+   "size": 21,
+   "proposed": "in",
+   "label": "it's like a regular slant that turns into  the quick slant angle"
+  },
+  {
+   "cluster_id": 34,
+   "size": 20,
+   "proposed": "not_a_route",
+   "label": "not_a_route"
+  },
+  {
+   "cluster_id": 35,
+   "size": 20,
+   "proposed": "post",
+   "label": "looks like a in route"
+  },
+  {
+   "cluster_id": 36,
+   "size": 20,
+   "proposed": "post",
+   "label": "in route"
+  },
+  {
+   "cluster_id": 37,
+   "size": 19,
+   "proposed": "out",
+   "label": "option route - hitch or in/out"
+  },
+  {
+   "cluster_id": 38,
+   "size": 18,
+   "proposed": "curl",
+   "label": "option route - hitch or in/out"
+  },
+  {
+   "cluster_id": 39,
+   "size": 16,
+   "proposed": "not_a_route",
+   "label": "not_a_route"
+  },
+  {
+   "cluster_id": 40,
+   "size": 16,
+   "proposed": "streak",
+   "label": "more like a fade but you drew this.I think you are  mis taking the border colors for a route. that explains why you keep drawing lines where I donot understand"
+  },
+  {
+   "cluster_id": 41,
+   "size": 16,
+   "proposed": "in",
+   "label": "in"
+  },
+  {
+   "cluster_id": 42,
+   "size": 16,
+   "proposed": "corner",
+   "label": "corner"
+  },
+  {
+   "cluster_id": 43,
+   "size": 14,
+   "proposed": "in",
+   "label": "in"
+  },
+  {
+   "cluster_id": 44,
+   "size": 12,
+   "proposed": "corner",
+   "label": "corner"
+  },
+  {
+   "cluster_id": 45,
+   "size": 11,
+   "proposed": "corner",
+   "label": "corner"
+  },
+  {
+   "cluster_id": 46,
+   "size": 10,
+   "proposed": "out",
+   "label": "out"
+  },
+  {
+   "cluster_id": 47,
+   "size": 8,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 48,
+   "size": 8,
+   "proposed": "in",
+   "label": "in"
+  },
+  {
+   "cluster_id": 49,
+   "size": 8,
+   "proposed": "not_a_route",
+   "label": "not_a_route"
+  },
+  {
+   "cluster_id": 50,
+   "size": 8,
+   "proposed": "curl",
+   "label": "curl"
+  },
+  {
+   "cluster_id": 51,
+   "size": 8,
+   "proposed": "not_a_route",
+   "label": "not_a_route"
+  },
+  {
+   "cluster_id": 52,
+   "size": 7,
+   "proposed": "out",
+   "label": "out"
+  },
+  {
+   "cluster_id": 53,
+   "size": 7,
+   "proposed": "not_a_route",
+   "label": "not_a_route"
+  },
+  {
+   "cluster_id": 54,
+   "size": 6,
+   "proposed": "in",
+   "label": "in"
+  },
+  {
+   "cluster_id": 55,
+   "size": 6,
+   "proposed": "out",
+   "label": "out"
+  },
+  {
+   "cluster_id": 56,
+   "size": 6,
+   "proposed": "out",
+   "label": "out"
+  },
+  {
+   "cluster_id": 57,
+   "size": 6,
+   "proposed": "not_a_route",
+   "label": "not_a_route"
+  },
+  {
+   "cluster_id": 58,
+   "size": 6,
+   "proposed": "in",
+   "label": "in"
+  },
+  {
+   "cluster_id": 59,
+   "size": 6,
+   "proposed": "not_a_route",
+   "label": "not_a_route"
+  },
+  {
+   "cluster_id": 60,
+   "size": 6,
+   "proposed": "post",
+   "label": "post"
+  },
+  {
+   "cluster_id": 61,
+   "size": 6,
+   "proposed": "corner",
+   "label": "corner"
+  },
+  {
+   "cluster_id": 62,
+   "size": 6,
+   "proposed": "corner",
+   "label": "corner"
+  },
+  {
+   "cluster_id": 63,
+   "size": 5,
+   "proposed": "curl",
+   "label": "curl"
+  },
+  {
+   "cluster_id": 64,
+   "size": 5,
+   "proposed": "curl",
+   "label": "curl"
+  },
+  {
+   "cluster_id": 65,
+   "size": 5,
+   "proposed": "out",
+   "label": "out"
+  },
+  {
+   "cluster_id": 66,
+   "size": 5,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 67,
+   "size": 5,
+   "proposed": "in",
+   "label": "in"
+  },
+  {
+   "cluster_id": 68,
+   "size": 5,
+   "proposed": "not_a_route",
+   "label": "not_a_route"
+  },
+  {
+   "cluster_id": 69,
+   "size": 5,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 70,
+   "size": 5,
+   "proposed": "curl",
+   "label": "curl"
+  },
+  {
+   "cluster_id": 71,
+   "size": 5,
+   "proposed": "not_a_route",
+   "label": "not_a_route"
+  },
+  {
+   "cluster_id": 72,
+   "size": 5,
+   "proposed": "not_a_route",
+   "label": "not_a_route"
+  },
+  {
+   "cluster_id": 73,
+   "size": 4,
+   "proposed": "curl",
+   "label": "curl"
+  },
+  {
+   "cluster_id": 74,
+   "size": 4,
+   "proposed": "in",
+   "label": "in"
+  },
+  {
+   "cluster_id": 75,
+   "size": 4,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 76,
+   "size": 4,
+   "proposed": "curl",
+   "label": "curl"
+  },
+  {
+   "cluster_id": 77,
+   "size": 4,
+   "proposed": "not_a_route",
+   "label": "not_a_route"
+  },
+  {
+   "cluster_id": 78,
+   "size": 4,
+   "proposed": "curl",
+   "label": "curl"
+  },
+  {
+   "cluster_id": 79,
+   "size": 4,
+   "proposed": "curl",
+   "label": "curl"
+  },
+  {
+   "cluster_id": 80,
+   "size": 4,
+   "proposed": "in",
+   "label": "in"
+  },
+  {
+   "cluster_id": 81,
+   "size": 4,
+   "proposed": "not_a_route",
+   "label": "not_a_route"
+  },
+  {
+   "cluster_id": 82,
+   "size": 4,
+   "proposed": "out",
+   "label": "out"
+  },
+  {
+   "cluster_id": 83,
+   "size": 4,
+   "proposed": "post",
+   "label": "post"
+  },
+  {
+   "cluster_id": 84,
+   "size": 3,
+   "proposed": "drag",
+   "label": "drag"
+  },
+  {
+   "cluster_id": 85,
+   "size": 3,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 86,
+   "size": 3,
+   "proposed": "not_a_route",
+   "label": "not_a_route"
+  },
+  {
+   "cluster_id": 87,
+   "size": 3,
+   "proposed": "not_a_route",
+   "label": "not_a_route"
+  },
+  {
+   "cluster_id": 88,
+   "size": 3,
+   "proposed": "in",
+   "label": "in"
+  },
+  {
+   "cluster_id": 89,
+   "size": 3,
+   "proposed": "in",
+   "label": "in"
+  },
+  {
+   "cluster_id": 90,
+   "size": 3,
+   "proposed": "curl",
+   "label": "curl"
+  },
+  {
+   "cluster_id": 91,
+   "size": 3,
+   "proposed": "curl",
+   "label": "curl"
+  },
+  {
+   "cluster_id": 92,
+   "size": 3,
+   "proposed": "post",
+   "label": "post"
+  },
+  {
+   "cluster_id": 93,
+   "size": 3,
+   "proposed": "post",
+   "label": "post"
+  },
+  {
+   "cluster_id": 94,
+   "size": 3,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 95,
+   "size": 3,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 96,
+   "size": 3,
+   "proposed": "out",
+   "label": "out"
+  },
+  {
+   "cluster_id": 97,
+   "size": 3,
+   "proposed": "not_a_route",
+   "label": "not_a_route"
+  },
+  {
+   "cluster_id": 98,
+   "size": 2,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 99,
+   "size": 2,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 100,
+   "size": 2,
+   "proposed": "comeback",
+   "label": "comeback"
+  },
+  {
+   "cluster_id": 101,
+   "size": 2,
+   "proposed": "in",
+   "label": "in"
+  },
+  {
+   "cluster_id": 102,
+   "size": 2,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 103,
+   "size": 2,
+   "proposed": "out",
+   "label": "out"
+  },
+  {
+   "cluster_id": 104,
+   "size": 2,
+   "proposed": "out",
+   "label": "out"
+  },
+  {
+   "cluster_id": 105,
+   "size": 2,
+   "proposed": "in",
+   "label": "in"
+  },
+  {
+   "cluster_id": 106,
+   "size": 2,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 107,
+   "size": 2,
+   "proposed": "in",
+   "label": "in"
+  },
+  {
+   "cluster_id": 108,
+   "size": 2,
+   "proposed": "in",
+   "label": "in"
+  },
+  {
+   "cluster_id": 109,
+   "size": 2,
+   "proposed": "in",
+   "label": "in"
+  },
+  {
+   "cluster_id": 110,
+   "size": 2,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 111,
+   "size": 2,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 112,
+   "size": 2,
+   "proposed": "corner",
+   "label": "corner"
+  },
+  {
+   "cluster_id": 113,
+   "size": 2,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 114,
+   "size": 2,
+   "proposed": "out",
+   "label": "out"
+  },
+  {
+   "cluster_id": 115,
+   "size": 2,
+   "proposed": "out",
+   "label": "out"
+  },
+  {
+   "cluster_id": 116,
+   "size": 2,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 117,
+   "size": 2,
+   "proposed": "hitch",
+   "label": "hitch"
+  },
+  {
+   "cluster_id": 118,
+   "size": 2,
+   "proposed": "in",
+   "label": "in"
+  },
+  {
+   "cluster_id": 119,
+   "size": 2,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 120,
+   "size": 2,
+   "proposed": "in",
+   "label": "in"
+  },
+  {
+   "cluster_id": 121,
+   "size": 2,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 122,
+   "size": 2,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 123,
+   "size": 2,
+   "proposed": "post",
+   "label": "post"
+  },
+  {
+   "cluster_id": 124,
+   "size": 2,
+   "proposed": "out",
+   "label": "out"
+  },
+  {
+   "cluster_id": 125,
+   "size": 2,
+   "proposed": "not_a_route",
+   "label": "not_a_route"
+  },
+  {
+   "cluster_id": 126,
+   "size": 2,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 127,
+   "size": 2,
+   "proposed": "post",
+   "label": "post"
+  },
+  {
+   "cluster_id": 128,
+   "size": 2,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 129,
+   "size": 1,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 130,
+   "size": 1,
+   "proposed": "in",
+   "label": "in"
+  },
+  {
+   "cluster_id": 131,
+   "size": 1,
+   "proposed": "out",
+   "label": "out"
+  },
+  {
+   "cluster_id": 132,
+   "size": 1,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 133,
+   "size": 1,
+   "proposed": "not_a_route",
+   "label": "not_a_route"
+  },
+  {
+   "cluster_id": 134,
+   "size": 1,
+   "proposed": "in",
+   "label": "in"
+  },
+  {
+   "cluster_id": 135,
+   "size": 1,
+   "proposed": "not_a_route",
+   "label": "not_a_route"
+  },
+  {
+   "cluster_id": 136,
+   "size": 1,
+   "proposed": "not_a_route",
+   "label": "not_a_route"
+  },
+  {
+   "cluster_id": 137,
+   "size": 1,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 138,
+   "size": 1,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 139,
+   "size": 1,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 140,
+   "size": 1,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 141,
+   "size": 1,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 142,
+   "size": 1,
+   "proposed": "not_a_route",
+   "label": "not_a_route"
+  },
+  {
+   "cluster_id": 143,
+   "size": 1,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 144,
+   "size": 1,
+   "proposed": "drag",
+   "label": "drag"
+  },
+  {
+   "cluster_id": 145,
+   "size": 1,
+   "proposed": "in",
+   "label": "in"
+  },
+  {
+   "cluster_id": 146,
+   "size": 1,
+   "proposed": "not_a_route",
+   "label": "not_a_route"
+  },
+  {
+   "cluster_id": 147,
+   "size": 1,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 148,
+   "size": 1,
+   "proposed": "corner",
+   "label": "corner"
+  },
+  {
+   "cluster_id": 149,
+   "size": 1,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 150,
+   "size": 1,
+   "proposed": "in",
+   "label": "in"
+  },
+  {
+   "cluster_id": 151,
+   "size": 1,
+   "proposed": "out",
+   "label": "out"
+  },
+  {
+   "cluster_id": 152,
+   "size": 1,
+   "proposed": "post",
+   "label": "post"
+  },
+  {
+   "cluster_id": 153,
+   "size": 1,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 154,
+   "size": 1,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 155,
+   "size": 1,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 156,
+   "size": 1,
+   "proposed": "not_a_route",
+   "label": "not_a_route"
+  },
+  {
+   "cluster_id": 157,
+   "size": 1,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 158,
+   "size": 1,
+   "proposed": "in",
+   "label": "in"
+  },
+  {
+   "cluster_id": 159,
+   "size": 1,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 160,
+   "size": 1,
+   "proposed": "in",
+   "label": "in"
+  },
+  {
+   "cluster_id": 161,
+   "size": 1,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 162,
+   "size": 1,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 163,
+   "size": 1,
+   "proposed": "in",
+   "label": "in"
+  },
+  {
+   "cluster_id": 164,
+   "size": 1,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 165,
+   "size": 1,
+   "proposed": "seam",
+   "label": "seam"
+  },
+  {
+   "cluster_id": 166,
+   "size": 1,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 167,
+   "size": 1,
+   "proposed": "corner",
+   "label": "corner"
+  },
+  {
+   "cluster_id": 168,
+   "size": 1,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 169,
+   "size": 1,
+   "proposed": "in",
+   "label": "in"
+  },
+  {
+   "cluster_id": 170,
+   "size": 1,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 171,
+   "size": 1,
+   "proposed": "not_a_route",
+   "label": "not_a_route"
+  },
+  {
+   "cluster_id": 172,
+   "size": 1,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 173,
+   "size": 1,
+   "proposed": "out",
+   "label": "out"
+  },
+  {
+   "cluster_id": 174,
+   "size": 1,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 175,
+   "size": 1,
+   "proposed": "corner",
+   "label": "corner"
+  },
+  {
+   "cluster_id": 176,
+   "size": 1,
+   "proposed": "in",
+   "label": "in"
+  },
+  {
+   "cluster_id": 177,
+   "size": 1,
+   "proposed": "in",
+   "label": "in"
+  },
+  {
+   "cluster_id": 178,
+   "size": 1,
+   "proposed": "out",
+   "label": "out"
+  },
+  {
+   "cluster_id": 179,
+   "size": 1,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 180,
+   "size": 1,
+   "proposed": "in",
+   "label": "in"
+  },
+  {
+   "cluster_id": 181,
+   "size": 1,
+   "proposed": "post",
+   "label": "post"
+  },
+  {
+   "cluster_id": 182,
+   "size": 1,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 183,
+   "size": 1,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 184,
+   "size": 1,
+   "proposed": "in",
+   "label": "in"
+  },
+  {
+   "cluster_id": 185,
+   "size": 1,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 186,
+   "size": 1,
+   "proposed": "out",
+   "label": "out"
+  },
+  {
+   "cluster_id": 187,
+   "size": 1,
+   "proposed": "out",
+   "label": "out"
+  },
+  {
+   "cluster_id": 188,
+   "size": 1,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 189,
+   "size": 1,
+   "proposed": "post",
+   "label": "post"
+  },
+  {
+   "cluster_id": 190,
+   "size": 1,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 191,
+   "size": 1,
+   "proposed": "in",
+   "label": "in"
+  },
+  {
+   "cluster_id": 192,
+   "size": 1,
+   "proposed": "not_a_route",
+   "label": "not_a_route"
+  },
+  {
+   "cluster_id": 193,
+   "size": 1,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 194,
+   "size": 1,
+   "proposed": "post",
+   "label": "post"
+  },
+  {
+   "cluster_id": 195,
+   "size": 1,
+   "proposed": "corner",
+   "label": "corner"
+  },
+  {
+   "cluster_id": 196,
+   "size": 1,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 197,
+   "size": 1,
+   "proposed": "out",
+   "label": "out"
+  },
+  {
+   "cluster_id": 198,
+   "size": 1,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 199,
+   "size": 1,
+   "proposed": "in",
+   "label": "in"
+  },
+  {
+   "cluster_id": 200,
+   "size": 1,
+   "proposed": "post",
+   "label": "post"
+  },
+  {
+   "cluster_id": 201,
+   "size": 1,
+   "proposed": "in",
+   "label": "in"
+  },
+  {
+   "cluster_id": 202,
+   "size": 1,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 203,
+   "size": 1,
+   "proposed": "in",
+   "label": "in"
+  },
+  {
+   "cluster_id": 204,
+   "size": 1,
+   "proposed": "out",
+   "label": "out"
+  },
+  {
+   "cluster_id": 205,
+   "size": 1,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 206,
+   "size": 1,
+   "proposed": "not_a_route",
+   "label": "not_a_route"
+  },
+  {
+   "cluster_id": 207,
+   "size": 1,
+   "proposed": "streak",
+   "label": "streak"
+  },
+  {
+   "cluster_id": 208,
+   "size": 1,
+   "proposed": "in",
+   "label": "in"
+  }
+ ]
+}

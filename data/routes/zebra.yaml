@@ -1,0 +1,34 @@
+name: zebra
+aliases:
+- fake-drag
+- zebra-option
+- out-and-in
+- Z-route
+description: |
+  A fake-drag. The receiver releases as if running an out — three hard steps
+  to the outside — then pivots sharply back inside and crosses underneath like
+  a standard drag. The outside fake influences the covering defender to widen
+  or trigger; the receiver works back in behind him for an easy underneath
+  completion. A disguise wrinkle, droppable in anywhere a drag is the primary.
+path:
+- - 0
+  - 0
+- - -3
+  - 3
+- - 17
+  - 5
+typical_break_depth_yd: 3
+option_route: false
+category: underneath
+beats_coverage: man
+tags:
+- underneath
+- crossing
+- fake-route
+- deception
+- drag-variant
+- anti-man
+- mesh-component
+verification_status: unverified
+source_notes:
+- "Authored as a disguise wrinkle on the drag route — for the first three steps it shows an out-breaking release, then pivots inside and crosses. Interchangeable with `drag` anywhere the drag is the primary route; the value is the early-picture deception, not the catch point."

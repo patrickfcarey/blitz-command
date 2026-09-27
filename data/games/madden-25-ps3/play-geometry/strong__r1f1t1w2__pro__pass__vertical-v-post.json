@@ -1,0 +1,49 @@
+{
+  "slug": "strong__r1f1t1w2__pro__pass__vertical-v-post",
+  "info": {
+    "family": "STRONG",
+    "formation": "Pro",
+    "play_name": "Vertical V-Post",
+    "play_type": "pass",
+    "canonical_team": "Denver Broncos",
+    "canonical_img": 57,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Denver Broncos"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 493,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 213
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.83,
+  "response_text": "```json\n{\n  \"concept\": \"post_concept\",\n  \"concepts\": [\"post_concept\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"post\",\n    \"TE_L\": \"block\",\n    \"TE_R\": \"streak\",\n    \"FB\": \"block\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Strong Pro formation with 1 RB, 1 FB, 1 TE, 2 WR. Red arrow originates from QB and targets WR_Z on the post route (right side, breaking upfield). TE_R (right side, attached to RT) runs a streak. Blue arrow from R1 (right shoulder button) indicates secondary target option.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "post_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpost(?![- ]corner)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

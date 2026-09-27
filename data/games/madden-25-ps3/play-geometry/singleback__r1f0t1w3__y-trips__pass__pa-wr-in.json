@@ -1,0 +1,59 @@
+{
+  "slug": "singleback__r1f0t1w3__y-trips__pass__pa-wr-in",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Y-Trips",
+    "play_name": "PA WR In",
+    "play_type": "pass",
+    "canonical_team": "Brian Billick",
+    "canonical_img": 37,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Brian Billick",
+      "Cincinnati Bengals",
+      "Cleveland Browns",
+      "Dallas Cowboys",
+      "Denver Broncos",
+      "Minnesota Vikings",
+      "New York Jets",
+      "Pittsburgh Steelers",
+      "Tampa Bay Buccaneers",
+      "Tennessee Titans",
+      "West Coast"
+    ],
+    "owner_count": 11,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Y-Trips",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 502,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 222
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.29,
+  "response_text": "```json\n{\n  \"concept\": \"ins\",\n  \"concepts\": [\"ins\"],\n  \"routes\": {\n    \"WR_X\": \"in\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"in\",\n    \"TE_R\": \"streak\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Play-action pass with Y-Trips alignment (1 TE right, 3 WRs). WR_X (Square button, left) runs inside route; WR_Z (R1 button, far right) runs vertical streak; WR_SLOT_L (Triangle button, slot) runs inside route; TE_R (Circle button, right) runs streak. Red arrow indicates primary read to WR_X in-breaking route.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "ins",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bins?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

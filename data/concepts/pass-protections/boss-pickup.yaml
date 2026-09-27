@@ -1,0 +1,40 @@
+scheme_id: boss-pickup
+name: Boss Pickup (Big-On-Big)
+description: |
+  "Big-On-Big" protection where every OL blocks a DL one-on-one, and the HB
+  scans for secondary blitzers (LBs, blitzing DBs). Similar to boss-protection
+  but with emphasis on the HB as the primary blitz-pick threat. Used in spread
+  formations where DL are spread wide and secondary blitzers are the threat.
+  6-man (5 OL + HB) structure.
+protection_type: 6-man
+assignments_by_position:
+  LT: "Block the widest left defender (9-tech or wide EDGE)."
+  LG: "Block the A-gap defender on your left (0-tech / 1-tech)."
+  C: "Block the center DL / nose tackle."
+  RG: "Block the A-gap defender on your right."
+  RT: "Block the widest right defender (9-tech or wide EDGE)."
+  HB: "Primary blitz-pick. Scan the LB level; strike first unblocked rusher with urgency."
+  TE: "Optional: secondary help on edge if not releasing on route."
+vulnerable_to:
+  - "5+ rush (overload)"
+  - "slanting DL that get off the ball fast"
+  - "delayed LB blitz that beats HB scan"
+  - "SAM linebacker blitzing from outside the box"
+pairs_with:
+  - mesh
+  - stick
+  - 4-verts
+  - shotgun-passes
+tags:
+  - pass-protection
+  - big-on-big
+  - boss
+  - 6-man
+  - spread
+  - air-raid
+  - college
+  - nfl
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Throw Deep Publishing 'Big-On-Big Protection' (https://throwdeeppublishing.com/blogs/football-glossary/): confirmed one OL per DL, HB scan for secondary threat."
+  - "Web validated 2026-04-30 — X&O Labs 'Spread Protection Schemes' (https://www.xandolabs.com/): boss pickup used in spread and Air Raid offenses."

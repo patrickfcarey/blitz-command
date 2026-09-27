@@ -1,0 +1,59 @@
+{
+  "slug": "near__r1f1t1w2__right__run__fb-dive-strong",
+  "info": {
+    "family": "NEAR",
+    "formation": "Right",
+    "play_name": "FB Dive Strong",
+    "play_type": "run",
+    "canonical_team": "Tom Flores",
+    "canonical_img": 78,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Tom Flores",
+      "Tom Landry"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "NEAR",
+      "formation": "Right",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "NEAR family \u2014 old-school 2-back default"
+    }
+  },
+  "usage": {
+    "input_tokens": 582,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 63
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 93.08,
+  "response_text": "```json\n{\n  \"concept\": \"fb_dive\",\n  \"concepts\": [\"fb_dive\"],\n  \"routes\": {},\n  \"ball_carrier\": \"FB straight\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "straight",
+    "c_xy": [
+      1537,
+      701
+    ],
+    "arrow_los_crossing_xy": [
+      1582,
+      701
+    ],
+    "dx_from_c": 45,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "fb_dive",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bfb dive\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

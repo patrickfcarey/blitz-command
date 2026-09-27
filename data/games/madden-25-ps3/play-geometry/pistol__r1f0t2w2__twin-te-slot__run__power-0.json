@@ -1,0 +1,58 @@
+{
+  "slug": "pistol__r1f0t2w2__twin-te-slot__run__power-0",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Twin TE Slot",
+    "play_name": "Power 0",
+    "play_type": "run",
+    "canonical_team": "Kansas City Chiefs",
+    "canonical_img": 59,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Kansas City Chiefs"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Twin TE Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 591,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 66
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 58.97,
+  "response_text": "```json\n{\n  \"concept\": \"power_run\",\n  \"concepts\": [\"power_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB D_left\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_left",
+    "c_xy": [
+      1551,
+      621
+    ],
+    "arrow_los_crossing_xy": [
+      198,
+      621
+    ],
+    "dx_from_c": -1353,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "power_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bpower\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

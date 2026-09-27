@@ -1,0 +1,49 @@
+{
+  "slug": "i-form__r1f1t1w3__twins-flex__pass__saints-y-corner",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Twins Flex",
+    "play_name": "Saints Y-Corner",
+    "play_type": "pass",
+    "canonical_team": "New Orleans Saints",
+    "canonical_img": 51,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "New Orleans Saints"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Twins Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Twins \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 501,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 339
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 4.62,
+  "response_text": "```json\n{\n  \"concept\": \"y_concept\",\n  \"concepts\": [\"y_concept\"],\n  \"routes\": {\n    \"TE_L\": \"corner\",\n    \"TE_R\": \"seam\",\n    \"WR_X\": \"out\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"drag\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"I-Form Twins Flex: 3 stacked backfield (QB, FB, HB visible). TE_L and TE_R on LOS adjacent to OL. WR_X far right on LOS with X button glyph. WR_Z left side with Circle button glyph. WR_SLOT_L (purple Square glyph) between slot and OL. Red arrow from TE_R indicates primary seam target. Yellow arrows from TE_L (corner), WR_Z (corner), and WR_SLOT_L (drag). Blue drag route from WR_SLOT_L. Formation matches r1f1t2w1 expected personnel (1 RB + 1 FB + 2 TE + 1 WR visible, but 3 WR routes present \u2014 consistent with I-Form Twins Flex layout).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "y_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\by[- ]?(cross|sail|stick|corner|trail|spot|drive|shallow)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

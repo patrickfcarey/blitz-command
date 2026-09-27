@@ -1,0 +1,52 @@
+{
+  "slug": "gun__r1f0t1w3__trio__pass__pa-slot-corner",
+  "info": {
+    "family": "GUN",
+    "formation": "Trio",
+    "play_name": "PA Slot Corner",
+    "play_type": "pass",
+    "canonical_team": "Arizona Cardinals",
+    "canonical_img": 96,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Arizona Cardinals",
+      "Chicago Bears",
+      "Cincinnati Bengals",
+      "Pittsburgh Steelers"
+    ],
+    "owner_count": 4,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Trio",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "GUN/Shotgun default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 495,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 245
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.24,
+  "response_text": "```json\n{\n  \"concept\": \"slot_concept\",\n  \"concepts\": [\"pa_slot_corner\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"corner\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Play-action pass with slot corner concept. WR_Z (X button) runs deep corner route as primary target (red arrow). WR_SLOT_L (purple Square button) runs shallow corner underneath. WR_X (Triangle button) stretches vertically. TE_R (blue X button) releases to seam. HB (R1 button) available for checkdown. Formation is GUN Trio with 1 RB, 0 FB, 1 TE, 3 WR as expected.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "slot_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bslot (drag|cross|streak|corner|out|in|wheel)\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

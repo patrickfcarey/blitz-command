@@ -1,0 +1,59 @@
+{
+  "slug": "singleback__r1f0t1w3__tight-flex__run__off-tackle",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Tight Flex",
+    "play_name": "Off Tackle",
+    "play_type": "run",
+    "canonical_team": "Green Bay Packers",
+    "canonical_img": 31,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Green Bay Packers",
+      "Pass Balanced"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Tight Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "Singleback default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 590,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 66
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 49.59,
+  "response_text": "```json\n{\n  \"concept\": \"off_tackle\",\n  \"concepts\": [\"off_tackle\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB C_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "C_right",
+    "c_xy": [
+      1553,
+      611
+    ],
+    "arrow_los_crossing_xy": [
+      1913,
+      611
+    ],
+    "dx_from_c": 360,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "off_tackle",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\boff[ -]?tackle\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

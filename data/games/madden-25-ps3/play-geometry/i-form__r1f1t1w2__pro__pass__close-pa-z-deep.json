@@ -1,0 +1,49 @@
+{
+  "slug": "i-form__r1f1t1w2__pro__pass__close-pa-z-deep",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Pro",
+    "play_name": "Close PA Z Deep",
+    "play_type": "pass",
+    "canonical_team": "San Diego Chargers",
+    "canonical_img": 55,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "San Diego Chargers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "I-Form Pro default"
+    }
+  },
+  "usage": {
+    "input_tokens": 485,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 213
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.0,
+  "response_text": "```json\n{\n  \"concept\": \"close_pa_z_deep\",\n  \"concepts\": [\"close_pa_z_deep\"],\n  \"routes\": {\n    \"QB\": \"play_action\",\n    \"FB\": \"block\",\n    \"HB\": \"wheel\",\n    \"TE_L\": \"block\",\n    \"TE_R\": \"deep_seam\",\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"deep_post\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Play-action fake with Z WR running deep post (red arrow), TE_R running seam route (yellow), X WR running corner route (yellow). HB releasing on wheel route for checkdown. TE_L blocking. Standard Close PA Z Deep concept with vertical stretch.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "unknown",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": null,
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

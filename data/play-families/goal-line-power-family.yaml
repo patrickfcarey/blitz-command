@@ -1,0 +1,46 @@
+family_id: goal-line-power-family
+name: "Goal Line Power Family"
+description: |
+  A disguise family anchored by Goal Line Power. Every member shows the
+  defense the identical pre-snap look and the identical first ~1.5 seconds
+  — no motion, QB reverse-out, HB off-tackle track, FB lead through the
+  hole, LG pull, playside OL down-block / TE-R kickout. Only after the mesh
+  do they diverge: Goal Line Power hands off, Goal Line Power Pass settles
+  and throws the TE corner from the pocket, Goal Line Power Keeper pulls
+  the ball and boots the backside edge. From a jumbo look where the defense
+  expects run 90%+ of the time, the deception is brutal.
+
+formation_id: goal-line
+philosophy: power-run
+philosophy_ref: power-run
+
+base_play_id: goal-line-power
+companion_play_ids:
+  - goal-line-power-pass
+  - goal-line-power-keeper
+  - goal-line-power-counter
+  - goal-line-power-screen
+
+disguise_score: 0.92
+
+defensive_coverage_matrix:
+  defense-goal-line-6-2: goal-line-power-pass
+  defense-46-bear-cover-0: goal-line-power-keeper
+  defense-nickel-cover-1: goal-line-power
+  defense-dime-cover-4: goal-line-power
+
+tags:
+  - power-run
+  - goal-line
+  - short-yardage
+  - play-action
+  - qb-run
+  - disguise-family
+  - high-school
+  - college
+  - nfl
+
+verification_status: unverified
+source_notes:
+  - "Disguise family curated for the HS base playbook. The two companion plays (power-pass, power-keeper) were authored specifically as disguise twins of goal-line-power — their QB/HB/FB initial path waypoints (first two entries) and empty motions block are byte-identical to the base play through the mesh."
+  - "disguise_score 0.92 reflects an identical empty-motion pre-snap look from a jumbo formation plus identical initial backfield action; the < 1.0 accounts for the keeper's TE-L block changing from down-block to kickout and the pass twin's receiver releases diverging slightly earlier than the backfield action."

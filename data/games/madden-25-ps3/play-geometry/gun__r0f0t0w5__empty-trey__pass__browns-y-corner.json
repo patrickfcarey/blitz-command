@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r0f0t0w5__empty-trey__pass__browns-y-corner",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Trey",
+    "play_name": "Browns Y Corner",
+    "play_type": "pass",
+    "canonical_team": "Cleveland Browns",
+    "canonical_img": 130,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Cleveland Browns"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Trey",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 497,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 130
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 1.54,
+  "response_text": "```json\n{\n  \"concept\": \"y_concept\",\n  \"concepts\": [\"y_concept\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"in\",\n    \"WR_SLOT_R\": \"corner\",\n    \"TE_R\": \"seam\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "y_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\by[- ]?(cross|sail|stick|corner|trail|spot|drive|shallow)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

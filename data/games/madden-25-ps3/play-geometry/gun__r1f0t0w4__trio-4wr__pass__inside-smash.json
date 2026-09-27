@@ -1,0 +1,50 @@
+{
+  "slug": "gun__r1f0t0w4__trio-4wr__pass__inside-smash",
+  "info": {
+    "family": "GUN",
+    "formation": "Trio 4WR",
+    "play_name": "Inside Smash",
+    "play_type": "pass",
+    "canonical_team": "Philadelphia Eagles",
+    "canonical_img": 120,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Philadelphia Eagles",
+      "Seattle Seahawks"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Trio 4WR",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 0,
+      "WR": 4,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 499,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 183
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.71,
+  "response_text": "```json\n{\n  \"concept\": \"smash\",\n  \"concepts\": [\"smash\"],\n  \"routes\": {\n    \"WR_X\": \"hitch\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"flat\",\n    \"WR_SLOT_R\": \"streak\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Inside Smash with the primary smash combo (hitch + corner) on the right side (X and Z receivers). Slot left runs flat as a check option. Slot right and HB run vertical clearouts. Red arrow indicates Z corner as primary target.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "smash",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bsmash\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

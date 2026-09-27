@@ -1,0 +1,260 @@
+play_id: shotgun-trips-left-counter-keep
+name: Counter Keep (Trips Left)
+aliases:
+- Counter-Q Keep
+- QB Counter
+- Trips Counter Q-Run
+formation: shotgun-trips-left
+play_type: run
+ball_carrier: QB
+motions: []
+run_reads:
+- priority: 1
+  read_key: pulling LT (backside tackle kickout)
+  run_to: follow the LT's kickout on the playside EDGE, then bend up off his hip
+  notes: Designed keep — no option read. Stay tight to the LT kickout and the LG lead through the off-tackle hole.
+- priority: 2
+  read_key: playside linebacker
+  run_to: if the playside LB scrapes over the top of the LG's block, cut underneath him inside
+  notes: LG leads up on the playside ILB; if the LB goes over the top, the lane is inside that block.
+- priority: 3
+  read_key: backside cutback (backside A-gap)
+  run_to: if the playside is walled off, cut back behind the center against the grain
+  notes: Last resort — only hit the cutback if the entire frontside is collapsed.
+assignments:
+- player: LT
+  role: run_block
+  blocking_scheme: pull-around
+  target: playside-edge
+  path:
+  - - 0
+    - 0
+  - - -3
+    - -0.5
+  - - -5
+    - -0.5
+  - - -7
+    - 2
+  notes: PULL — identical pull track to Counter Read; backside tackle pulls and kicks out the playside EDGE. On the keep this
+    EDGE is BLOCKED, not read.
+- player: LG
+  role: run_block
+  blocking_scheme: pull-around
+  target: playside-LB
+  path:
+  - - 0
+    - 0
+  - - -2
+    - -0.5
+  - - -4
+    - 0
+  - - -5
+    - 4
+  notes: PULL — identical pull track to Counter Read; backside guard pulls around C and leads through the off-tackle hole
+    on the playside ILB.
+- player: C
+  role: run_block
+  blocking_scheme: gap-block
+  target: backside-A-gap
+  notes: Backside scoop, then climb to the backside LB — identical to Counter Read.
+- player: RG
+  role: run_block
+  blocking_scheme: down-block
+  target: playside-3-tech
+  notes: Down block on the playside 3-tech — identical to Counter Read.
+- player: RT
+  role: run_block
+  blocking_scheme: down-block
+  target: playside-DT
+  notes: Down block on the playside DT. On the keep this is a true down-block — the playside EDGE is kicked out by the LT,
+    not left as a read.
+- player: TE
+  role: run_block
+  blocking_scheme: down-block
+  target: backside-LB
+  notes: Backside TE down-blocks to seal the cutback — identical to Counter Read.
+- player: WR1
+  role: run_block
+  blocking_scheme: stalk
+  target: playside-cornerback
+- player: WR2
+  role: run_block
+  blocking_scheme: stalk
+  target: nickel-defender
+- player: WR3
+  role: run_block
+  blocking_scheme: crack
+  target: playside-safety
+  notes: Inner trips WR cracks back inside to seal the alley defender / playside safety at the second level.
+- player: QB
+  role: ball_carrier
+  is_primary: true
+  path:
+  - - 0
+    - 0
+  - - 1
+    - 0
+  - - -3
+    - 3
+  - - -5
+    - 9
+  notes: 'DESIGNED QB KEEP — first two waypoints IDENTICAL to Counter Read.
+
+    Counter step left selling the give exactly like the base play, then
+
+    plant and accelerate downhill through the off-tackle hole behind the
+
+    LT kickout and the LG lead. No option read — the QB keeps every time
+
+    and the playside EDGE is blocked.
+
+    '
+- player: HB
+  role: fake
+  path:
+  - - 0
+    - 0
+  - - -4
+    - 1
+  - - -7
+    - 3
+  - - -10
+    - 5
+  notes: Run the exact Counter-Read outside-zone sweep track for the first two steps to sell the give, then continue the perimeter
+    path to hold the playside flow defenders away from the QB-keep hole.
+strengths:
+- Identical pre-snap look and first-step action to Counter Read — the defense cannot tell it from the option
+- Removes the option read — the QB hits the hole faster than the read version
+- Two pulling linemen (LT kickout + LG lead) at the QB point of attack
+- The HB sweep fake still pulls the playside flow defenders away from the hole
+- Punishes a defense that scrape-exchanges to take the QB on the read
+weaknesses:
+- Needs Counter Read on tape first — a cold counter step holds no one
+- Slow-developing — the pullers need time to arrive
+- QB injury risk on every snap as the designed ball-carrier
+- No give answer — a loaded box has no built-in pressure release
+- Vulnerable to a playside EDGE who beats the LT kickout flat
+best_vs_defense:
+- 4-3 base with predictable EDGE play and over-front
+- cover-3 with run-fit linebackers
+- any defense that scrape-exchanges the Counter Read
+- nickel personnel forced into a lighter box by the trips look
+worst_vs_defense:
+- 8-man fronts with no QB-keep room
+- bear front with a defender in every gap
+- cover-1 robber adding an extra box defender
+- playside EDGE penetration that beats the LT kickout
+defensive_counters:
+- counter_id: pinch-the-edge
+  pre_snap_look: Playside EDGE squeezed down in a tight inside shade with a square two-point stance, hands free, set to crash
+    flat
+  qb_key: Scan the playside EDGE — squeezed inside, squared up, feet quiet
+  read_category: dl-alignment
+  why: A squeezed playside EDGE crashes flat under the LT kickout and closes the off-tackle hole before the puller can define
+    an edge.
+  typical_against:
+  - over-front
+  - 4-3 base
+  - any defense with QB-run rules
+- counter_id: scrape-lb-playside
+  pre_snap_look: Playside linebacker walked up tight and stacked over the playside B-gap inside his normal width
+  qb_key: Check the playside LB — walked up and cheated toward the call
+  read_category: lb-depth
+  why: A LB already cheated playside beats the LG to the off-tackle hole and fills it before the lead block can land.
+  typical_against:
+  - over-front
+  - stack 4-3
+  - QB-run game-plan defenses
+- counter_id: extra-box-defender
+  pre_snap_look: 8 defenders inside the tackle box — the strong safety walked down to 6-8 yards inside the playside hash,
+    single-high shell behind it
+  qb_key: Count the box — eight, with one high safety
+  read_category: box-count
+  why: The QB is the runner and there is no give answer, so the offense gains no number — the extra box defender comes free
+    unblocked at the off-tackle hole.
+  typical_against:
+  - cover-1 robber
+  - quarters with SS rolled down
+  - 8-man fronts
+common_uses:
+- 1st-and-10 base run with a mobile QB
+- 3rd-and-short / 3rd-and-medium power conversion
+- Constraint to Counter Read against a scrape-exchange defense
+- Red-zone scoring concept inside the 10
+- Modern spread-option base from a trips look
+philosophy: spread-option
+run_concept_ref: counter
+philosophy_ref: spread-option
+era: Mid-2010s onward — the designed QB counter keep grew alongside mobile-QB spread offenses as a constraint on the counter-read
+  option.
+famous_examples:
+- Eagles (Jalen Hurts) designed QB counter from spread sets
+- Modern Power 5 spread programs pairing counter-read with a designed QB keep
+tags:
+- run
+- qb-run
+- designed-qb-run
+- counter
+- gap-scheme
+- shotgun
+- trips
+- 11-personnel
+- modern
+- high-school
+- college
+- nfl
+- spread-option
+notes: 'Designed QB counter keep off Counter Read. The QB counter step, the HB
+
+  outside-zone sweep fake, the LT and LG pulls, and the OL down-block show
+
+  are all IDENTICAL to Counter Read through the first two waypoints — the
+
+  defense reads the counter option. The difference is that the playside
+
+  EDGE is BLOCKED by the LT kickout (not left as a read), the QB keeps
+
+  every time, and the HB sweep is a pure fake. Member of the Shotgun Trips
+
+  Counter disguise family (see data/play-families/).
+
+
+  This is the answer to a defense that scrape-exchanges the Counter Read —
+
+  the QB no longer has to read the EDGE. Mirror to counter-keep-left by
+
+  flipping all coordinates.
+
+  '
+verification_status: unverified
+source_notes:
+- The designed QB counter keep off a counter-read option is a universal modern constraint concept. Authored as a disguise
+  twin of shotgun-trips-right-counter-read — initial action (QB counter step, HB outside-zone sweep track, LT and LG pulls)
+  deliberately mirrors the base play through the first two waypoints.
+- Mirror of shotgun-trips-right-counter-keep.yaml — path waypoints flipped on x; formation reference points to the mirror
+  formation. Routes auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original
+  right-handed look — coordinates and paths are the source of truth.
+flip_reads:
+- flip_id: keys-set-callside
+  pre_snap_look: The dive key and the pitch key (first two defenders outside the tackle) are both
+    aligned hard and downhill to the called side.
+  qb_key: Scan the called-side edge — both option keys are squatted and committed, no width left
+    to read.
+  read_category: dl-alignment
+  flip_to: mirror-play
+  why: An option into keys that are already set gives the QB no honest read; flipping the option
+    attacks the side where the keys still have to choose.
+  typical_against:
+  - over-front
+  - cover-1 with edge pressure
+- flip_id: strength-declared-to-formation
+  pre_snap_look: Defense has declared to the formation's strength — an extra perimeter defender
+    and a safety rolled down to the strong side.
+  qb_key: Check the strength side — the extra hat and the safety roll are committed to it.
+  read_category: safety-shell
+  flip_to: mirror-formation
+  why: Flipping the formation moves the option away from the loaded perimeter and forces the defense
+    to re-declare its keys.
+  typical_against:
+  - cover-3 with strong roll
+  - 8-man fronts

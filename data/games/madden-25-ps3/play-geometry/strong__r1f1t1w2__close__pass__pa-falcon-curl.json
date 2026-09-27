@@ -1,0 +1,49 @@
+{
+  "slug": "strong__r1f1t1w2__close__pass__pa-falcon-curl",
+  "info": {
+    "family": "STRONG",
+    "formation": "Close",
+    "play_name": "PA Falcon Curl",
+    "play_type": "pass",
+    "canonical_team": "Atlanta Falcons",
+    "canonical_img": 67,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Atlanta Falcons"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "Close",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "STRONG default \u2014 variant unclear"
+    }
+  },
+  "usage": {
+    "input_tokens": 494,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 180
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.71,
+  "response_text": "```json\n{\n  \"concept\": \"curls\",\n  \"concepts\": [\"curls\"],\n  \"routes\": {\n    \"WR_X\": \"curl\",\n    \"WR_Z\": \"flat\",\n    \"TE_R\": \"streak\",\n    \"FB\": \"block\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"PA play action indicated in play name. Strong close formation with FB offset to strong side. TE on right side runs vertical clearout. Left side executes curl-flat combo (WR_X curl at ~12 yds, WR_Z flat underneath). R1 button glyph visible on TE_R indicating alternative target.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "curls",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcurls?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "i-form__r1f1t2w2__tight-pair__pass__pa-bucs-out",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Tight Pair",
+    "play_name": "PA Bucs Out",
+    "play_type": "pass",
+    "canonical_team": "Tampa Bay Buccaneers",
+    "canonical_img": 53,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Tampa Bay Buccaneers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Tight Pair",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Tight/Twin-TE \u2014 2 TE"
+    }
+  },
+  "usage": {
+    "input_tokens": 529,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 181
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.49,
+  "response_text": "```json\n{\n  \"concept\": \"outs\",\n  \"concepts\": [\"outs\"],\n  \"routes\": {\n    \"TE_L\": \"out\",\n    \"TE_R\": \"out\",\n    \"WR_X\": \"comeback\",\n    \"WR_Z\": \"out\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"PA play with play-action fake; primary target (red circle button) on TE_R running out route. Multiple out-breaking routes on both sides consistent with Bucs Out concept. I-Form backfield with 2 TEs and 2 WRs as expected.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "outs",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bouts?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

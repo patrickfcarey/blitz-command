@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r0f0t0w5__empty-steeler__pass__steeler-hb-screen",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Steeler",
+    "play_name": "Steeler HB Screen",
+    "play_type": "pass",
+    "canonical_team": "Pittsburgh Steelers",
+    "canonical_img": 142,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Pittsburgh Steelers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Steeler",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 503,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 181
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.4,
+  "response_text": "```json\n{\n  \"concept\": \"hb_screen\",\n  \"concepts\": [\"hb_screen\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"streak\",\n    \"WR_SLOT_R\": \"streak\",\n    \"WR_FLANKER\": \"streak\",\n    \"HB\": \"screen\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"HB\",\n  \"notes\": \"GUN Empty 5-wide. All WRs run vertical clearouts. HB receives screen pass (blue curved arrow) behind LOS. QB in shotgun position alone in backfield.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "hb_screen",
+    "concept_family": "screen",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bhb (slip )?screen\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

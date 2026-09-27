@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__bunch-wk__pass__zona-bunch",
+  "info": {
+    "family": "GUN",
+    "formation": "Bunch Wk",
+    "play_name": "Zona Bunch",
+    "play_type": "pass",
+    "canonical_team": "Arizona Cardinals",
+    "canonical_img": 107,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Arizona Cardinals"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Bunch Wk",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 484,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 220
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.05,
+  "response_text": "```json\n{\n  \"concept\": \"zona_bunch\",\n  \"concepts\": [\"zona_bunch\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"flat\",\n    \"WR_SLOT_L\": \"dig\",\n    \"TE_R\": \"streak\",\n    \"HB\": \"swing\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"GUN Bunch Wk formation with shotgun backfield. TE_R (R1 button) is the primary target running a streak upfield. WR_X runs corner route (high route). WR_Z runs flat to the boundary. WR_SLOT_L runs a dig/intermediate crossing route. HB executes checkdown swing. Multiple yellow arrows indicate progression reads and option routes typical of a zone-read bunch concept.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "unknown",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": null,
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

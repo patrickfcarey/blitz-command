@@ -1,0 +1,1051 @@
+# ncaa-05-ps2 — formation/play inventory
+
+_50 formations · 947 (formation, play) pairs · 432 distinct play names_
+
+
+## Ace Big Twins  (34 plays)
+- Ace Arrow
+- Ace-Big
+- Ace-Big Twins
+- All Right
+- Counter Trap
+- Cross
+- FL Dig
+- HB Blast
+- HB Counter
+- HB Dive
+- HB Draw
+- HB Option
+- HB Read
+- HB Screen
+- HB Streak
+- Option Strong
+- Over Under
+- PA Flat Choice
+- PA Seam
+- PA TE Corner
+- PA Toss Drag
+- Post Cross
+- QB Boot
+- Speed Option
+- Strong Sweep
+- Strong Toss
+- TE Check
+- TE Cross
+- TE Drag
+- TE Screen
+- TE Seams
+- TE Wheel
+- Triple WR Optio
+- Weak Sweep
+
+## Ace Bunch  (19 plays)
+- Ace-Bunch
+- Backside Post
+- Corner Flat
+- Double Outs Dra
+- Fade Delay
+- HB Counter
+- HB Dive
+- HB Draw
+- HB Toss
+- LB Bait
+- Out or Up
+- PA Toss Across
+- Quick Cross
+- Safety Divide
+- Slot Screen
+- Smash Read
+- Vertical
+- WR Toss
+- Weak Toss
+
+## Ace Empty  (19 plays)
+- Ace-Empty
+- Cross Seams
+- Crosses
+- Deep Fade
+- Flat Combo
+- HB Bubble Scrn
+- HB Corner
+- HB Option
+- Out Attack
+- Post Flares
+- QB Draw
+- Safety Delight
+- Skinny Posts
+- Slot Corners
+- Slot Hitches
+- Speed Option
+- Tunnel Screens
+- Twin Slants
+- WR Outs
+
+## Ace Normal  (19 plays)
+- Ace-Normal
+- Counter Trap
+- HB Dive
+- HB Draw
+- HB Option
+- HB Pass
+- HB Read
+- HB Screen
+- HB Slam
+- HB Tackle
+- HB Toss
+- PA Counter
+- PA Rollout
+- PA Strike
+- Safety Attack
+- Speed Option
+- TE Seam Post
+- TE Streaks
+- WR Reverse
+
+## Ace Slot  (19 plays)
+- Ace-Slot
+- Counter Trap
+- Curl Flats
+- Deep Outs
+- FL Middle
+- HB Dive Weak
+- HB Draw
+- HB Screen
+- HB Sting
+- Option Pass
+- Option Strong
+- Option Weak
+- PA Cross Post
+- QB Screen
+- Quick Slants
+- Seamers
+- Slot Seam
+- Toss Strong
+- Toss Weak
+
+## Ace Spread  (19 plays)
+- Ace-Spread
+- Corners
+- Counter Option
+- Cross
+- Curl Flats
+- HB Clearout
+- HB Counter
+- HB Dive
+- HB Draw
+- HB Option
+- HB Toss
+- PA Dive
+- PA Fake Toss
+- QB Draw
+- Quick Slants
+- Safety Draw
+- Slot Crosses
+- Slot Drag
+- Triangle
+
+## Ace Trips  (19 plays)
+- Ace-Trips
+- Counter Option
+- Counter Trap
+- HB Blast
+- HB Dive
+- HB Draw
+- HB Option
+- HB Screen
+- HB Sting
+- HB Toss
+- HB Toss Weak
+- Mid Attack
+- PA Rollout
+- PA TE Corner
+- Quick Flats
+- Slot Corner
+- Stretch
+- TE Drag
+- WR Shovel
+
+## Ace Twins  (19 plays)
+- Ace-Twins
+- Corners
+- Counter Option
+- Counter Trap
+- Cross In
+- FL Post
+- HB Blast
+- HB Dive
+- HB Draw
+- HB Option
+- HB Read
+- HB Screen
+- HB Toss
+- PA TE Crosses
+- TE Drag
+- TE Flag
+- TE Seams
+- TE Wheel
+- WR Reverse
+
+## Ace Y-Trips  (19 plays)
+- Ace-Y-Trips
+- Boot Rt
+- Counter Trap
+- Cross In
+- Curl Flat
+- FL Post
+- FL Quick Scn
+- HB Dive
+- HB Draw
+- HB Read
+- HB Sting
+- HB Toss
+- Option Strong
+- Option Weak
+- PA Deep Post
+- Post Cross
+- Quick Posts
+- TE Corner
+- WR Rev Pass
+
+## Flexbone Normal  (19 plays)
+- All Go
+- FB Dive
+- FB Option
+- FB Sting
+- FB Trap
+- Flexbone-Normal
+- HB Screen
+- Option Pass
+- PA Boot Left
+- PA Roll Right
+- Quick Option
+- Tr Option Cntr
+- Triple Option
+- WB Around
+- WB Corners
+- WB Flats
+- WB Inside
+- WB Lead
+- WB Sweep
+
+## Flexbone Slot  (19 plays)
+- Curl Flats
+- FB Dive
+- FB Option
+- FB Sting
+- FB Trap
+- Flexbone-Slot
+- QB Sweep
+- Slant Flare
+- Slot Cross
+- Smash
+- Tr Option Cntr
+- Triple Option
+- Vertical
+- WB Angle
+- WB Lead
+- WB Sweep
+- WR Corners
+- WR Middle
+- WR Screen
+
+## Flexbone Split  (19 plays)
+- Double Slants
+- FB Dive
+- FB Option
+- FB Sting
+- FB Trap
+- Flexbone-Split
+- PA Slot Post
+- PA TE Drag
+- QB Sweep
+- Read
+- TE Wheel
+- Tr Option Cntr
+- Triple Option
+- Triple WR Optio
+- WB Lead
+- WB Screen
+- WB Sweep
+- WR Quick Post
+- WR Quick Scn
+
+## Flexbone Tight  (19 plays)
+- FB Dive
+- FB Option
+- FB Sting
+- FB Trap
+- Flexbone-Tight
+- PA WB Corners
+- PA WB Wheels
+- QB Sweep
+- Quick Option
+- TE Attack
+- TE Corner
+- TE Cross
+- Tr Option Cntr
+- Triple Option
+- WB Around
+- WB Inside
+- WB Lead
+- WB Screen
+- WB Sweep
+
+## Flexbone Twins  (19 plays)
+- FB Dive
+- FB Option
+- FB Sting
+- FB Trap
+- Flexbone-Twins
+- Fork
+- PA FB Out
+- PA Read
+- PA Slot Cross
+- QB Sweep
+- Slot Screen
+- TE Drag
+- Tr Option Cntr
+- Triple Option
+- Triple WR Optio
+- WB Corner
+- WB Flat
+- WB Lead
+- WB Sweep
+
+## Flexbone Wide  (19 plays)
+- FB Dive
+- FB Option
+- FB Sting
+- FB Trap
+- Flexbone-Wide
+- Quick Option
+- TE Corner
+- TE Post
+- Tr Option Cntr
+- Triple Option
+- WB Around
+- WB Corners
+- WB Cross
+- WB Inside
+- WB Lead
+- WB Sweep
+- WR Corner
+- WR Deep Post
+- WR Screen
+
+## Goal Line  (19 plays)
+- FB Blast
+- FB Dive
+- FB Tackle
+- Goal Line
+- HB Counter
+- HB Iso
+- HB Lead Toss
+- HB Sting
+- HB Swing
+- HB Tackle
+- Option Pass
+- PA Spread
+- Post Corner
+- QB Boot Rt
+- QB Sneak
+- Quick Strike
+- TE Around
+- TE Cross
+- Triple Option
+
+## Hail Mary  (1 plays)
+- Hail Mary
+
+## I Form Normal  (19 plays)
+- Angle
+- Counter Lead
+- Curls
+- FB Dive
+- FB Fake Toss
+- HB Blast
+- HB Iso
+- HB Option Pass
+- HB Toss Pass
+- I-Form-Normal
+- Lead Toss
+- Option Pass
+- PA FBB Flat
+- Power Option
+- Speed Option
+- TE Drag
+- Tr Option Cntr
+- Triple Option
+- WR Post
+
+## I Form Slot  (19 plays)
+- Check
+- FB Blast
+- HB Blast
+- HB Draw
+- HB Iso
+- HB Screen
+- I-Form-Slot
+- Lead Toss
+- Option Pass
+- PA FB Seam
+- PA In
+- Power Option
+- Slants
+- Slot Around
+- Slot Corner
+- Stretch
+- Tr Option Cntr
+- Triple Option
+- WR Drag
+
+## I Form Tight  (19 plays)
+- Counter Trey
+- FB Blast
+- FB Dive
+- FB Screen
+- HB Flat
+- HB Iso
+- HB Lead
+- HB Tackle
+- I-Form-Tight
+- Lead Toss
+- PA FBB Flat
+- Rollout
+- TE Corners
+- TE Crosses
+- TE Flats
+- Tr Option Cntr
+- Tr Option Pass
+- Tr Option Rev
+- Triple Option
+
+## I Form Twins  (19 plays)
+- Counter Lead
+- Double Cross
+- FB Dive
+- HB Iso
+- HB Lead
+- I-Form-Twins
+- Lead Toss
+- Option Pass
+- PA Screen
+- PA Smash
+- Power Option
+- RB Flats
+- Rollout
+- Slants
+- Slot Reverse
+- Speed Option
+- Tr Option Rev
+- Triple Option
+- Vertical
+
+## I Form Y-Trips  (19 plays)
+- Counter Lead
+- FB Dive
+- FB Fake Toss
+- Fake Rt Option
+- HB Dive
+- HB Off Tackle
+- I-Form-Y-Trips
+- Man Flow
+- Option Pass
+- PA HB Toss
+- PA Stop and Go
+- Slot Post
+- Slot Quick
+- Speed Option
+- Sprint Option
+- Strong Toss
+- Tr Option Rev
+- Triple Option
+- Weak Counter
+
+## Maryland I Normal  (19 plays)
+- Counter Lead
+- Double Iso
+- FB Blast
+- FB Dive
+- FB Trap
+- HB Lead Toss
+- HB Power Slam
+- HB Tackle
+- Maryland I-Normal
+- PA Counter
+- PA Rollout
+- PA TE Cross
+- QB FB Option
+- TE Outs
+- Tr Option Cntr
+- Tr Option Pass
+- Tr Option Rev
+- Triple Option
+- Vertical
+
+## No Back Normal  (19 plays)
+- Arrows
+- Curl Flats
+- Deep Post
+- In NOut
+- Inside Hitches
+- Mid Strike
+- No Back-Normal
+- Outer Loop
+- QB Draw
+- Rollout
+- SE Corners
+- Slot Corners
+- Slot Drag
+- Tunnel Screens
+- WR Outs
+- WR Screen
+- WR Streaks
+- WR Under
+- Wheelies
+
+## Power I Normal  (19 plays)
+- Corner
+- Counter Lead
+- Double Iso
+- FB Blast
+- FB Inside
+- FB Streak
+- FB Trap
+- HB Lead Toss
+- HB Power Slam
+- Option Pass
+- Outs
+- PA Fly
+- Power I-Normal
+- QB FB Option
+- RB Flats
+- TE Corner
+- Tr Option Cntr
+- Tr Option Rev
+- Triple Option
+
+## Power T Normal  (19 plays)
+- All Out
+- Corners Delay
+- Counter Lead
+- FB Dive
+- FB Fly
+- FB Toss
+- HB Counter
+- HB Lead
+- HB Streak
+- HB Under
+- Lead Option
+- Off Tackle
+- PA FB Toss
+- PA Lead
+- Power Sweep
+- Power T-Normal
+- Quick Toss
+- Speed Option
+- TE Across
+
+## Pro Form Normal  (19 plays)
+- FB Blast
+- FB Counter
+- HB Counter
+- HB Dbl Option
+- HB Draw
+- HB Screen
+- HB Zone Lead
+- Hitch N Gos
+- Option Pass
+- PA TE Wheel
+- Power Option
+- Pro Form-Normal
+- RB Clearout
+- Speed Option
+- TE Corner
+- TE Seam
+- Toss Sweep
+- WR Corners
+- WR Outs
+
+## Pro Form Slot  (19 plays)
+- DBL Slants
+- FB Dive
+- HB Angle
+- HB Counter
+- HB Dive
+- HB Draw
+- HB Screen
+- HB Zone Lead
+- Lead Toss
+- Option Pass
+- PA Lead
+- Power Option
+- Pro Form-Slot
+- RB Cross
+- Slot Corner
+- Speed Option
+- Underneath
+- WR Corners
+- WR Middle
+
+## Shotgun 2 Back Slot  (19 plays)
+- Angle
+- Dbl RB Opt Lt
+- Double Option
+- HB Circle
+- HB Direct
+- HB Draw
+- HB Screen
+- PA Corner
+- PA Read
+- QB Draw
+- RB Crosses
+- RB Deep
+- Shotgun-2 Back Slot
+- Slants
+- Slot Corner
+- Speed Option
+- Strike
+- WR Middle
+- WR Unders
+
+## Shotgun 5-Wide  (19 plays)
+- Assault
+- Comebacks
+- Curl Flats
+- DBL WR Screen
+- Deep Outs
+- Deep Post
+- Flood
+- Middle Attack
+- Middle Clear
+- QB Draw
+- Quick Crosses
+- SE Corners
+- Shotgun-5-Wide
+- Slants
+- Slot Corners
+- Slot Hitches
+- Slot Outs
+- Wheelies
+- Zig Outs
+
+## Shotgun Ace  (19 plays)
+- Double TE Outs
+- FL Out and Ups
+- HB Corner
+- HB Off Tackle
+- HB Screen
+- Inside HB Draw
+- Middle Choice
+- Option Choice
+- PA Opt Choice
+- QB Draw
+- Safety Occupy
+- Shotgun-Ace
+- Slant Outs
+- Smash HB Go
+- Speed Option
+- Stretch Under
+- TE Delay
+- TE Flats
+- TE Wheel
+
+## Shotgun Ace Twins  (19 plays)
+- Angle Drag
+- Cross Up Hitch
+- Drag Special
+- Flanker Corner
+- HB Draw
+- HB Off Tackle
+- HB TE Combo
+- Option Choice
+- PA Read
+- QB Draw
+- QB Sweep
+- Shotgun-Ace Twins
+- Slant HB Option
+- Speed Option
+- TE Choice
+- TE Deep
+- TE Dig Wheelie
+- Tunnel Screen
+- WR Deep Post
+
+## Shotgun Bunch  (19 plays)
+- All Curls
+- Angle Outs
+- Clearout All
+- Corner Combo
+- Deep Crossup
+- Drag HB Corner
+- FL Special
+- HB Draw
+- HB Off Tackle
+- Inside Wheel
+- Middle Zig-In
+- PA Hooks
+- PA QB Choice
+- QB Choice
+- Shotgun-Bunch
+- Speed Option
+- WR Opt HB Pass
+- WR Sweep
+- WR Sweep Opt
+
+## Shotgun Normal  (19 plays)
+- All Curls
+- Arrows
+- Corners
+- HB Angle
+- HB Corner
+- HB Off Tackle
+- HB Screen
+- HB Streak
+- Inside Draw
+- PA Read
+- PA WR In
+- QB Draw
+- Seam Attack
+- Shotgun-Normal
+- Speed Option
+- TE Cross
+- TE Delay
+- WR Short Posts
+- WR Stutter Slan
+
+## Shotgun Split  (19 plays)
+- Deep Comebacks
+- Deep Threats
+- FB Seam
+- HB Lead
+- HB Lead Draw
+- HB Streak
+- PA Read
+- Power Option
+- QB Option Give
+- QB Sweep
+- RB Cross
+- RB Flats
+- Shotgun-Split
+- Speed Option
+- TE Corner
+- TE Drag
+- Triple QB Optio
+- WR In
+- WR Post
+
+## Shotgun Spread  (19 plays)
+- Corner Strike
+- Deep Attack
+- Double Cross
+- HB Direct
+- HB Go
+- HB Screen
+- Inside Draw
+- PA Flood
+- PA Read
+- QB Choice
+- Quick Slants
+- Shotgun-Spread
+- Slot Seams
+- Slot Wheels
+- Speed Option
+- WR Curls
+- WR Short Posts
+- WR Under
+- Weak Off Tackle
+
+## Shotgun Trips  (19 plays)
+- All Curls
+- Angle
+- Clearout
+- Corners
+- Cross Post
+- HB Draw
+- HB Out
+- HB Screen
+- HB Streak
+- PA Inside
+- PA Read
+- QB Choice
+- QB Draw
+- QB Sprint
+- Shotgun-Trips
+- Slot Cross
+- Slot Screen
+- Speed Option
+- WR Drag
+
+## Shotgun Y-Trips  (19 plays)
+- Corners
+- Cross Post
+- FL Screen
+- FLCross
+- HB Corner
+- HB Out
+- HB Screen
+- In 'N Ups
+- Inside Draw
+- LB Attack
+- PA FL Post
+- PA Read
+- PA WR In
+- QB Choice
+- QB Draw
+- Shotgun-Y-Trips
+- Speed Option
+- TE Post
+- WR Under
+
+## Strong Normal  (19 plays)
+- Counter Weak
+- FB Blast
+- FB Over
+- FB Streak
+- HB Angle
+- HB Dive
+- HB Read
+- Option Pass
+- PA Deep Post
+- PA HB Flat
+- Power Option
+- Quick Slants
+- RB Crosses
+- Strong-Normal
+- TE Seam
+- Toss Strong
+- Tr Option Rev
+- Triple Option
+- WR Corners
+
+## Strong Slot  (19 plays)
+- Counter Weak
+- Double Read
+- FB Blast
+- FB Over
+- HB Dive
+- HB Read
+- HB Screen
+- Option Pass
+- PA FB Seam
+- PA In n' Up
+- PA Slot Post
+- Power Option
+- RB Attack
+- Strong-Slot
+- Toss Sweep
+- Tr Option Rev
+- Triple Option
+- WR Comebacks
+- WR Drag
+
+## Strong Tight  (19 plays)
+- Counter Strong
+- Counter Weak
+- FB Blast
+- FB Dive
+- FB Over
+- FB Seam
+- FL Slant
+- HB Dive
+- HB Read
+- PA HB Flat
+- PA TE Corners
+- Power Option
+- Strong-Tight
+- TE Crosses
+- TE Seams
+- Toss Strong
+- Tr Option Pass
+- Tr Option Rev
+- Triple Option
+
+## Strong Twins  (19 plays)
+- Counter Strong
+- Counter Weak
+- FB Blast
+- FB Weak
+- HB Dive
+- HB Read
+- Option Pass
+- PA FB Corner
+- PA Slot Cross
+- PA TE Drag
+- Power Option
+- QB Sweep
+- Slot Flat Post
+- Smash HB Streak
+- Strong-Twins
+- Toss Strong
+- Tr Option Rev
+- Triple Option
+- WR Crosses
+
+## Weak Normal  (19 plays)
+- Deep Attack
+- FB Dive
+- FB Over
+- HB Blast
+- HB Counter
+- HB Smash
+- HB Weak
+- HB Zone Read
+- Option Pass
+- PA Smash
+- Power Option
+- Sweep Strong
+- TE Drag
+- TE Post
+- TE Wheel
+- Triple Option
+- WR Curls
+- WR Slants
+- Weak-Normal
+
+## Weak Slot  (19 plays)
+- FB Over
+- HB Counter
+- HB Smash
+- HB Weak
+- HB Zone Read
+- Hitch N Go
+- Option Pass
+- PA FB Streak
+- Power Option
+- RB Corner
+- Rollout
+- Short Posts
+- Slot Cross
+- Slot Post
+- Triple Option
+- WR Corner
+- WR Curls
+- WR Drag
+- Weak-Slot
+
+## Weak Tight  (19 plays)
+- Counter Strong
+- Counter Weak
+- FB Dive
+- FB Over
+- HB Blast
+- HB Screen
+- HB Weak
+- HB Zone Read
+- Option Pass
+- Power Option
+- QB Rollout
+- QB Sneak
+- TE Drags
+- TE Flats
+- TE Stretch
+- Toss Sweep
+- Tr Option Rev
+- Triple Option
+- Weak-Tight
+
+## Weak Twins  (19 plays)
+- Counter Strong
+- Counter Weak
+- FB Over
+- HB Smash
+- HB Zone Read
+- Lead Toss
+- Option Pass
+- PA FB Wheel
+- PA TE Drag
+- PA WR Curl
+- Power Option
+- Slot Cross
+- Slot Wheel
+- TE Corner
+- Toss Sweep
+- Tr Option Rev
+- Triple Option
+- WR Crosses
+- Weak-Twins
+
+## Weak Y-Trips  (19 plays)
+- FB Dive
+- FB Streak
+- Flat Read
+- HB Lead
+- HB Off Tackle
+- LB Read
+- Off Tack Weak
+- PA FB Out
+- PA Toss Divide
+- PA Toss Screen
+- Post Crosses
+- Smash
+- Spd Option Weak
+- Speed Option
+- Strong Toss
+- Tr Option Rev
+- WR Option
+- Weak Counter
+- Weak-Y-Trips
+
+## Wishbone Normal  (19 plays)
+- Double Iso
+- FB Blast
+- FB Flat
+- HB Lead
+- HB Option
+- HB Power
+- HB Streaks
+- HB Tackle
+- Inside Counter
+- PA Post
+- Power Option
+- Power Toss
+- QB FB Option
+- TE Corner
+- Tr Option Cntr
+- Tr Option Pass
+- Tr Option Rev
+- Vertical
+- Wishbone-Normal
+
+## Wishbone Tight  (19 plays)
+- Double Iso
+- FB Blast
+- FB Flat
+- HB Lead
+- HB Option
+- HB Power
+- HB Streaks
+- HB Tackle
+- Inside Counter
+- PA Post
+- Power Option
+- Power Toss
+- QB FB Option
+- TE Streaks
+- Tr Option Pass
+- Tr Option Rev
+- Triple Option
+- Vertical
+- Wishbone-Tight
+
+## Wishbone Wide  (19 plays)
+- Double Iso
+- FB Blast
+- FB Flat
+- HB Lead
+- HB Option
+- HB Power
+- HB Streaks
+- Inside Counter
+- Inside Smash
+- Option Pass
+- PA Post
+- Power Option
+- Power Toss
+- QB FB Option
+- Rollout
+- Tr Option Rev
+- Triple Option
+- Vertical
+- Wishbone-Wide

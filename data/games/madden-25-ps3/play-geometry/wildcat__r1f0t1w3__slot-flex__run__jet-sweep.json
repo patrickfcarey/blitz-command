@@ -1,0 +1,53 @@
+{
+  "slug": "wildcat__r1f0t1w3__slot-flex__run__jet-sweep",
+  "info": {
+    "family": "WILDCAT",
+    "formation": "Slot Flex",
+    "play_name": "Jet Sweep",
+    "play_type": "run",
+    "canonical_team": "Carolina Panthers",
+    "canonical_img": 134,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Carolina Panthers",
+      "Cleveland Browns"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "WILDCAT",
+      "formation": "Slot Flex",
+      "QB": 0,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 5,
+      "confidence": "high",
+      "notes": "Wildcat \u2014 RB at QB position, no QB; TE/WR counts approximate per variant"
+    }
+  },
+  "usage": {
+    "input_tokens": 585,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 65
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 58.47,
+  "response_text": "```json\n{\n  \"concept\": \"sweep\",\n  \"concepts\": [\"sweep\"],\n  \"routes\": {},\n  \"ball_carrier\": \"WILDCAT_RB jet sweep\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "error": "no red arrow detected",
+    "c_x": 1551,
+    "c_y": 615,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "sweep",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bsweep\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

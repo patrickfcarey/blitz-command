@@ -1,0 +1,54 @@
+{
+  "slug": "singleback__r1f0t1w3__bunch__pass__base-pa-ctr-waggle",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Bunch",
+    "play_name": "Base PA Ctr Waggle",
+    "play_type": "pass",
+    "canonical_team": "Cincinnati Bengals",
+    "canonical_img": 37,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Cincinnati Bengals",
+      "Miami Dolphins",
+      "New York Giants",
+      "New York Jets",
+      "San Diego Chargers",
+      "Tampa Bay Buccaneers"
+    ],
+    "owner_count": 6,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Bunch",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 595,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 188
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.54,
+  "response_text": "```json\n{\n  \"concept\": \"base_run\",\n  \"concepts\": [\"base_run\"],\n  \"routes\": {},\n  \"ball_carrier\": null,\n  \"primary_target\": null,\n  \"notes\": \"Play labeled as 'pass' in play_type but diagram shows PA (play-action) waggle with pass routes visible. This is a pass play disguised as a run. Red arrow traces QB waggle path. Yellow arrows show receiver routes: WR_X runs corner route (far left), WR_SLOT runs shallow crossing/stick route (cyan-colored blue arrow), WR_Z runs vertical/streak (right side with yellow arrow). R1 button glyph indicates checkdown receiver. QB primary read appears to be the waggle-developing corner route to WR_X.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "base_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bbase\\b",
+    "is_pa": false,
+    "is_boot_or_roll": true
+  }
+}

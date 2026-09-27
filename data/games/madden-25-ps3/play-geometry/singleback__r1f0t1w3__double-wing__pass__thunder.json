@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__double-wing__pass__thunder",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Double Wing",
+    "play_name": "Thunder",
+    "play_type": "pass",
+    "canonical_team": "Bill Walsh",
+    "canonical_img": 27,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Bill Walsh"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Double Wing",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 492,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 248
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.59,
+  "response_text": "```json\n{\n  \"concept\": \"thunder_concept\",\n  \"concepts\": [\"thunder_concept\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"corner\",\n    \"WR_SLOT_R\": \"dig\",\n    \"TE_L\": \"flat\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Pass play with 5 eligible receivers. WR_X (\u25a1 purple, far left) runs primary vertical streak. WR_Z (\u2297 blue, far right) runs secondary vertical streak. Two slot receivers in interior: left slot (\u25b3 green) runs corner route, right slot runs dig/intermediate crossing route. TE_L (\u2299 red) runs flat/wheel release. Single RB in backfield positioned for checkdown. R1 shoulder button labeled on diagram.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "thunder_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bthunder\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

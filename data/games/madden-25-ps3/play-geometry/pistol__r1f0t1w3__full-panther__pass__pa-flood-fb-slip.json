@@ -1,0 +1,49 @@
+{
+  "slug": "pistol__r1f0t1w3__full-panther__pass__pa-flood-fb-slip",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Full Panther",
+    "play_name": "PA Flood FB Slip",
+    "play_type": "pass",
+    "canonical_team": "Carolina Panthers",
+    "canonical_img": 58,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Carolina Panthers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Full Panther",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "Pistol default \u2014 variant unclear"
+    }
+  },
+  "usage": {
+    "input_tokens": 504,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 233
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.54,
+  "response_text": "```json\n{\n  \"concept\": \"flood\",\n  \"concepts\": [\"flood\", \"play_action\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"flat\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"wheel\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Play-action setup with PA motion evident. Flood concept on right side (corner, seam, flat stack). Left-side slot WR runs flat; backfield HB releases to wheel. Red arrow on WR_Z (circle button, right side) indicates primary target. Yellow arrow on WR_X suggests corner route. TE_R runs seam on right side. L1 button (green triangle) on slot WR indicates flat route option. Blue X-button on HB wheel.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "flood",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bflood\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "singleback__r1f0t2w2__ace-close__pass__pa-crosses",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Ace Close",
+    "play_name": "PA Crosses",
+    "play_type": "pass",
+    "canonical_team": "Houston Texans",
+    "canonical_img": 12,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Houston Texans",
+      "Pittsburgh Steelers"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Ace Close",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Ace family \u2014 2 TE 2 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 499,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 205
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.77,
+  "response_text": "```json\n{\n  \"concept\": \"cross_concept\",\n  \"concepts\": [\"pa_crosses\", \"cross_concept\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"comeback\",\n    \"TE_L\": \"drag\",\n    \"TE_R\": \"drag\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_L\",\n  \"notes\": \"PA play with crossing routes on both sides. TE_L runs left-crossing drag (yellow arrow), TE_R runs right-crossing drag (red arrow). WR_X runs vertical clearout (red arrow upfield), WR_Z runs comeback. HB releases to flat (R1 button). Red arrow on TE_R suggests primary read.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "cross_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcross(es)?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

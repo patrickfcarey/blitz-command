@@ -1,0 +1,58 @@
+{
+  "slug": "gun__r0f0t0w5__empty-base__run__hb-dive",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Base",
+    "play_name": "HB Dive",
+    "play_type": "run",
+    "canonical_team": "Atlanta Falcons",
+    "canonical_img": 140,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Atlanta Falcons"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Base",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 561,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 66
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 15.46,
+  "response_text": "```json\n{\n  \"concept\": \"inside_run\",\n  \"concepts\": [\"inside_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB D_left\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_left",
+    "c_xy": [
+      2078,
+      655
+    ],
+    "arrow_los_crossing_xy": [
+      1545,
+      655
+    ],
+    "dx_from_c": -533,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "inside_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bhb dive\\b|\\bdive\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

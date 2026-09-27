@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r0f0t1w4__empty-trips-te__pass__wr-screen",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Trips TE",
+    "play_name": "WR Screen",
+    "play_type": "pass",
+    "canonical_team": "Dallas Cowboys",
+    "canonical_img": 131,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Dallas Cowboys"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Trips TE",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 1,
+      "WR": 4,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 524,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 120
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.31,
+  "response_text": "```json\n{\n  \"concept\": \"wr_screen\",\n  \"concepts\": [\"wr_screen\"],\n  \"routes\": {\n    \"WR_X\": \"screen\",\n    \"WR_Z\": \"block\",\n    \"WR_SLOT_L\": \"block\",\n    \"WR_SLOT_R\": \"block\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "wr_screen",
+    "concept_family": "screen",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bwr screen\\b|\\bfl screen\\b|\\bse screen\\b|\\bx screen\\b|\\bz screen\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

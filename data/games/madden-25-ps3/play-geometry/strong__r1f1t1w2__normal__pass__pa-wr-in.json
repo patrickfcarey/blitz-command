@@ -1,0 +1,49 @@
+{
+  "slug": "strong__r1f1t1w2__normal__pass__pa-wr-in",
+  "info": {
+    "family": "STRONG",
+    "formation": "Normal",
+    "play_name": "PA WR In",
+    "play_type": "pass",
+    "canonical_team": "Tom Flores",
+    "canonical_img": 85,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Tom Flores"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "Normal",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "STRONG default \u2014 variant unclear"
+    }
+  },
+  "usage": {
+    "input_tokens": 493,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 188
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.7,
+  "response_text": "```json\n{\n  \"concept\": \"ins\",\n  \"concepts\": [\"ins\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"in\",\n    \"TE_L\": \"block\",\n    \"FB\": \"block\",\n    \"HB\": \"block\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Play-action pass. WR_Z (blue X button, R1 label) runs the in-route (yellow arrow ~8-10 yds). WR_X (red circle) runs the streak (red arrow, clearing the deep). TE_L and backfield (FB, HB) block on the play-action.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "ins",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bins?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

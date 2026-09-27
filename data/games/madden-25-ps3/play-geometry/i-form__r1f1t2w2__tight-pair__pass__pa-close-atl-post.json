@@ -1,0 +1,49 @@
+{
+  "slug": "i-form__r1f1t2w2__tight-pair__pass__pa-close-atl-post",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Tight Pair",
+    "play_name": "PA Close ATL Post",
+    "play_type": "pass",
+    "canonical_team": "Atlanta Falcons",
+    "canonical_img": 58,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Atlanta Falcons"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Tight Pair",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Tight/Twin-TE \u2014 2 TE"
+    }
+  },
+  "usage": {
+    "input_tokens": 507,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 198
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.62,
+  "response_text": "```json\n{\n  \"concept\": \"post_concept\",\n  \"concepts\": [\"post_concept\", \"pa_pass\"],\n  \"routes\": {\n    \"WR_X\": \"post\",\n    \"WR_Z\": \"corner\",\n    \"TE_L\": \"seam\",\n    \"TE_R\": \"flat\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Play-action pass with post-concept targeting. WR_X runs the primary post route (red arrow). TE_L runs seam, WR_Z corner, TE_R flat. HB in check/release mode. R1 button glyph visible on right TE indicating pass-eligible target.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "post_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpost(?![- ]corner)\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

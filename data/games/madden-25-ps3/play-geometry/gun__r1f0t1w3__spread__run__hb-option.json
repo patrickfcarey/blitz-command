@@ -1,0 +1,59 @@
+{
+  "slug": "gun__r1f0t1w3__spread__run__hb-option",
+  "info": {
+    "family": "GUN",
+    "formation": "Spread",
+    "play_name": "HB Option",
+    "play_type": "run",
+    "canonical_team": "Run Balanced",
+    "canonical_img": 108,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Run Balanced",
+      "Tampa Bay Buccaneers"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Spread",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 518,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 221
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 83.16,
+  "response_text": "```json\n{\n  \"concept\": \"option_pass\",\n  \"concepts\": [\"option_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"seam\",\n    \"WR_SLOT_R\": \"streak\",\n    \"TE_R\": \"streak\",\n    \"HB\": \"option_pass\"\n  },\n  \"ball_carrier\": \"HB D_right\",\n  \"primary_target\": null,\n  \"notes\": \"HB Option run play with option-pass responsibility on HB (red arrow shows option pitch direction to right). Multiple WRs running vertical routes for spacing; TE_R and slot receivers all streak downfield. Play executed from GUN Spread (5-wide, no TE attached). HB has primary ball-carry responsibility but with option-pass read built in.\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_right",
+    "c_xy": [
+      1553,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      2413,
+      615
+    ],
+    "dx_from_c": 860,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "option_pass",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bhb option\\b|\\bte option\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

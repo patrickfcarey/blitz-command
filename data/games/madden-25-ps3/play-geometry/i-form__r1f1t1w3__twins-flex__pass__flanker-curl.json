@@ -1,0 +1,54 @@
+{
+  "slug": "i-form__r1f1t1w3__twins-flex__pass__flanker-curl",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Twins Flex",
+    "play_name": "Flanker Curl",
+    "play_type": "pass",
+    "canonical_team": "Buffalo Bills",
+    "canonical_img": 49,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Buffalo Bills",
+      "Chicago Bears",
+      "Indianapolis Colts",
+      "Minnesota Vikings",
+      "New Orleans Saints",
+      "Washington Redskins"
+    ],
+    "owner_count": 6,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Twins Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Twins \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 500,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 125
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 1.82,
+  "response_text": "```json\n{\n  \"concept\": \"curls\",\n  \"concepts\": [\"curls\"],\n  \"routes\": {\n    \"WR_X\": \"curl\",\n    \"WR_FLANKER\": \"flat\",\n    \"WR_SLOT_L\": \"comeback\",\n    \"TE_L\": \"block\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "curls",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcurls?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

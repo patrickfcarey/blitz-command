@@ -1,0 +1,53 @@
+{
+  "slug": "gun__r0f0t0w5__empty-trey__pass__spacing",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Trey",
+    "play_name": "Spacing",
+    "play_type": "pass",
+    "canonical_team": "Chicago Bears",
+    "canonical_img": 133,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Chicago Bears",
+      "Cincinnati Bengals",
+      "Kansas City Chiefs",
+      "New York Jets",
+      "Philadelphia Eagles"
+    ],
+    "owner_count": 5,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Trey",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 515,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 199
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.53,
+  "response_text": "```json\n{\n  \"concept\": \"spacing\",\n  \"concepts\": [\"spacing\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"in\",\n    \"WR_SLOT_R\": \"corner\",\n    \"QB\": \"pass\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_R\",\n  \"notes\": \"GUN Empty Trey (5 WRs, 0 TEs, 0 RBs). Spacing concept with corner route to R1 (primary target, red arrow), in-breaker to Slot_L (yellow), and streaks from X/Z/Flanker (yellow). QB in shotgun.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "spacing",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bspacing\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

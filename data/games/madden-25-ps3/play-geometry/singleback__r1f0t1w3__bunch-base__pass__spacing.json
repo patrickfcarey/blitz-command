@@ -1,0 +1,53 @@
+{
+  "slug": "singleback__r1f0t1w3__bunch-base__pass__spacing",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Bunch Base",
+    "play_name": "Spacing",
+    "play_type": "pass",
+    "canonical_team": "Arizona Cardinals",
+    "canonical_img": 25,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Arizona Cardinals",
+      "Dick Vermeil",
+      "Houston Texans",
+      "New Orleans Saints",
+      "Oakland Raiders"
+    ],
+    "owner_count": 5,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Bunch Base",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 492,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 124
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 1.65,
+  "response_text": "```json\n{\n  \"concept\": \"spacing\",\n  \"concepts\": [\"spacing\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"in\",\n    \"WR_SLOT_R\": \"flat\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "spacing",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bspacing\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

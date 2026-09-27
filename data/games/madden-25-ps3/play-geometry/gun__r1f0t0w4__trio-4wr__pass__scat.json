@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t0w4__trio-4wr__pass__scat",
+  "info": {
+    "family": "GUN",
+    "formation": "Trio 4WR",
+    "play_name": "Scat",
+    "play_type": "pass",
+    "canonical_team": "Philadelphia Eagles",
+    "canonical_img": 120,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Philadelphia Eagles"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Trio 4WR",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 0,
+      "WR": 4,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 498,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 199
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.98,
+  "response_text": "```json\n{\n  \"concept\": \"scat_route\",\n  \"concepts\": [\"scat_route\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"scat\",\n    \"WR_SLOT_R\": \"streak\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_L\",\n  \"notes\": \"Scat concept with WR_SLOT_L running the namesake scat/option route (dashed yellow line curving left). All other WRs running vertical clearouts. HB eligible checkdown. 4-WR set confirmed (r1f0t0w4).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "scat_route",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bscat\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

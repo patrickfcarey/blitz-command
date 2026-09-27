@@ -1,0 +1,49 @@
+{
+  "slug": "pistol__r1f0t1w3__weak-twins__pass__smash-y-corner",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Weak Twins",
+    "play_name": "Smash Y-Corner",
+    "play_type": "pass",
+    "canonical_team": "Pistol",
+    "canonical_img": 31,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Pistol"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Weak Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Pistol Strong/Weak"
+    }
+  },
+  "usage": {
+    "input_tokens": 501,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 198
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.02,
+  "response_text": "```json\n{\n  \"concept\": \"smash\",\n  \"concepts\": [\"smash\", \"y_corner\"],\n  \"routes\": {\n    \"WR_X\": \"hitch\",\n    \"WR_Z\": \"corner\",\n    \"TE_R\": \"seam\",\n    \"WR_SLOT_L\": \"corner\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Smash combo on right side (WR_Z corner over WR_X hitch) with Y-TE running seam. Left side features WR_SLOT_L running corner route. Red arrow indicates primary target is WR_Z. R1 button label visible on TE_R route.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "smash",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bsmash\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

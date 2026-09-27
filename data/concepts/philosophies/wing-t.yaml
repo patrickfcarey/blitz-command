@@ -1,0 +1,47 @@
+philosophy_id: wing-t
+name: Wing-T
+description: |
+  Misdirection-heavy, run-first offense using 21/22 personnel (2 RBs, 1-2 TEs,
+  1-2 WRs). The "big three" plays — Buck Sweep, Belly Series, Trap — create
+  a core playbook. Heavy use of pulling and trap blocking. Developed by Tubby
+  Raymond at University of Delaware. Staple of high school football; still used
+  in college and occasionally in NFL.
+era: "1950s–today (primarily HS)"
+originators:
+  - "Tubby Raymond (University of Delaware, 1952–1986)"
+notable_practitioners:
+  - "Ken Niumatalolo (Navy)"
+  - "Dave Christensen (Wyoming)"
+  - "Many HS coaches"
+canonical_run_concepts:
+  - sweep
+  - counter-trey
+  - trap
+  - wham
+  - crack-toss
+canonical_pass_concepts:
+  - bootleg
+  - waggle
+  - pa-boot
+formation_preferences:
+  - i-formation
+  - wing-formation
+  - singleback-ace
+tendency_profile:
+  run_pct: 0.70
+  pass_pct: 0.15
+  pa_pct: 0.10
+  rpo_pct: 0.0
+  screen_pct: 0.05
+tags:
+  - philosophy
+  - wing-t
+  - misdirection
+  - run-first
+  - high-school
+  - college
+  - old-school
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Wikipedia 'Tubby Raymond' (https://en.wikipedia.org/wiki/Tubby_Raymond): developed Wing-T at Delaware 1952-1986."
+  - "Web validated 2026-04-30 — Wikipedia 'Wing-T formation' (https://en.wikipedia.org/wiki/Wing_formation): describes Wing-T as high school staple."

@@ -1,0 +1,64 @@
+{
+  "slug": "full-house__r1f0t1w3__normal-wide__run__hb-sweep",
+  "info": {
+    "family": "FULL-HOUSE",
+    "formation": "Normal Wide",
+    "play_name": "HB Sweep",
+    "play_type": "run",
+    "canonical_team": "Atlanta Falcons",
+    "canonical_img": 79,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Atlanta Falcons",
+      "Balanced",
+      "Cincinnati Bengals",
+      "Dick Vermeil",
+      "Joe Gibbs",
+      "Run N Gun",
+      "Vince Lombardi"
+    ],
+    "owner_count": 7,
+    "expected_personnel": {
+      "family": "FULL-HOUSE",
+      "formation": "Normal Wide",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "low",
+      "notes": "unknown family 'FULL-HOUSE' \u2014 generic 11-personnel guess"
+    }
+  },
+  "usage": {
+    "input_tokens": 564,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 62
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 56.81,
+  "response_text": "```json\n{\n  \"concept\": \"sweep\",\n  \"concepts\": [\"sweep\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB D_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_right",
+    "c_xy": [
+      1618,
+      699
+    ],
+    "arrow_los_crossing_xy": [
+      2185,
+      699
+    ],
+    "dx_from_c": 567,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "sweep",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bsweep\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

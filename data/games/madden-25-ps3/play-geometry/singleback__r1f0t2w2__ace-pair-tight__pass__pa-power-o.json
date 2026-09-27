@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t2w2__ace-pair-tight__pass__pa-power-o",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Ace Pair Tight",
+    "play_name": "PA Power O",
+    "play_type": "pass",
+    "canonical_team": "Pass Balanced",
+    "canonical_img": 26,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Pass Balanced"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Ace Pair Tight",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Ace family \u2014 2 TE 2 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 506,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 175
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.56,
+  "response_text": "```json\n{\n  \"concept\": \"power_o\",\n  \"concepts\": [\"power_o\", \"pa_pass\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"TE_R\": \"block\",\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"streak\",\n    \"HB\": \"wheel\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"PA play-action with power O blocking action. Primary read appears to be WR_Z on the streak. WR_X runs corner route. HB releases to wheel route. Both TEs block initially as if power O run.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "power_o",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpower ?o\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r0f0t0w5__5wr-trips__pass__middle-slant",
+  "info": {
+    "family": "GUN",
+    "formation": "5WR Trips",
+    "play_name": "Middle Slant",
+    "play_type": "pass",
+    "canonical_team": "Run and Shoot",
+    "canonical_img": 71,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Run and Shoot"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "5WR Trips",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "5-WR set, no RB"
+    }
+  },
+  "usage": {
+    "input_tokens": 524,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 183
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.38,
+  "response_text": "```json\n{\n  \"concept\": \"slants\",\n  \"concepts\": [\"slants\"],\n  \"routes\": {\n    \"WR_X\": \"slant\",\n    \"WR_Z\": \"slant\",\n    \"WR_SLOT_L\": \"slant\",\n    \"WR_SLOT_R\": \"slant\",\n    \"WR_FLANKER\": \"slant\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_L\",\n  \"notes\": \"GUN 5WR Trips empty formation. All five receivers run slant routes. Red arrow indicates primary target is the left slot receiver running a slant. Yellow arrows show complementary slant routes for other receivers.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "slants",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bslants?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

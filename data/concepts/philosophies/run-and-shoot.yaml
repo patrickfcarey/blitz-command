@@ -1,0 +1,49 @@
+philosophy_id: run-and-shoot
+name: Run and Shoot
+description: |
+  4-WR, no-TE, choice-route offense where every receiver reads post-snap
+  coverage and adjusts his route accordingly. Developed by Mouse Davis and
+  popularized by June Jones. Emphasizes QB precision and receiver autonomy.
+  Low run rate; extremely high pass rate. Used in USFL, WLAF; adapted to NFL
+  by Houston Oilers and others. Still used in some college programs.
+era: "1980s–1990s (peak); 2000s–present (resurgence)"
+originators:
+  - "Mouse Davis (Portland State, 1977–1989)"
+  - "June Jones (Oilers, Atlanta Falcons)"
+notable_practitioners:
+  - "Warren Moon (Houston Oilers)"
+  - "John Robiskie"
+  - "Kyle Whittingham (Utah)"
+canonical_run_concepts:
+  - draw
+  - screen
+  - counter-trey
+canonical_pass_concepts:
+  - choice-routes
+  - mesh
+  - flood
+  - 4-verts
+  - levels
+formation_preferences:
+  - shotgun-4x0
+  - shotgun-4wr
+  - empty-backfield
+tendency_profile:
+  run_pct: 0.20
+  pass_pct: 0.70
+  pa_pct: 0.0
+  rpo_pct: 0.0
+  screen_pct: 0.10
+tags:
+  - philosophy
+  - run-and-shoot
+  - pass-heavy
+  - 4-wr
+  - choice-routes
+  - no-te
+  - college
+  - nfl
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Wikipedia 'Mouse Davis' (https://en.wikipedia.org/wiki/Mouse_Davis): developed Run and Shoot at Portland State."
+  - "Web validated 2026-04-30 — Wikipedia 'June Jones' (https://en.wikipedia.org/wiki/June_Jones): popularized Run and Shoot with Houston Oilers."

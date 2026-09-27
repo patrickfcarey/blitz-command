@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t3w1__heavy__pass__pa-jet-sweep",
+  "info": {
+    "family": "GUN",
+    "formation": "Heavy",
+    "play_name": "PA Jet Sweep",
+    "play_type": "pass",
+    "canonical_team": "Run N Gun",
+    "canonical_img": 73,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Run N Gun"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Heavy",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 3,
+      "WR": 1,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 518,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 259
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.52,
+  "response_text": "```json\n{\n  \"concept\": \"sweep\",\n  \"concepts\": [\"sweep\", \"pa_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"flat\",\n    \"TE_L\": \"drag\",\n    \"TE_R\": \"block_release\",\n    \"HB\": \"sweep\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Play-action jet sweep with heavy TE set (3 TEs). HB runs jet motion (dashed line). Red arrow on HB indicates ball carrier path on the sweep action; QB throwing to WR_X on the streak. TE_L runs drag across formation. WR_SLOT_L runs flat. TE_R (R1 button, red circle glyph) appears to be secondary receiver or block-release. Backfield appears to show QB in shotgun + HB offset to strong side, consistent with GUN Heavy formation.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "sweep",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bsweep\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

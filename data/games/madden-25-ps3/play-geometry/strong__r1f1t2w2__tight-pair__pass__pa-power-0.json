@@ -1,0 +1,53 @@
+{
+  "slug": "strong__r1f1t2w2__tight-pair__pass__pa-power-0",
+  "info": {
+    "family": "STRONG",
+    "formation": "Tight Pair",
+    "play_name": "PA Power 0",
+    "play_type": "pass",
+    "canonical_team": "Chicago Bears",
+    "canonical_img": 70,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Chicago Bears",
+      "Kansas City Chiefs",
+      "Miami Dolphins",
+      "New York Jets",
+      "San Francisco 49ers"
+    ],
+    "owner_count": 5,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "Tight Pair",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 499,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 190
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.34,
+  "response_text": "```json\n{\n  \"concept\": \"power_run\",\n  \"concepts\": [\"power_run\", \"pa_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"comeback\",\n    \"TE_L\": \"drag\",\n    \"TE_R\": \"flat\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"Play-action pass off Power O formation. Red arrow indicates primary target (TE_R on flat). WR_X runs streak to clear, WR_Z runs comeback on left. TE_L runs shallow drag across formation. HB checks protection then releases to flat as secondary option.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "power_run",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpower\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

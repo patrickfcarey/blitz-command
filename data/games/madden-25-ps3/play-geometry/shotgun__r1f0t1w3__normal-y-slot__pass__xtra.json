@@ -1,0 +1,49 @@
+{
+  "slug": "shotgun__r1f0t1w3__normal-y-slot__pass__xtra",
+  "info": {
+    "family": "SHOTGUN",
+    "formation": "Normal Y-Slot",
+    "play_name": "Xtra",
+    "play_type": "pass",
+    "canonical_team": "Tom Landry",
+    "canonical_img": 94,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Tom Landry"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SHOTGUN",
+      "formation": "Normal Y-Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 158,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 223
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 5.82,
+  "response_text": "```json\n{\n  \"concept\": \"xtra\",\n  \"concepts\": [\"xtra\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"drag\",\n    \"TE_R\": \"seam\",\n    \"WR_SLOT_L\": \"slant\",\n    \"HB\": \"wheel\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Shotgun Normal Y-Slot with 1 RB, 0 FB, 1 TE, 3 WR. Red arrow (primary) on WR_Z drag route. Yellow arrow on WR_X corner, yellow arrow on TE_R seam, yellow arrow on slot WR slant. Blue arrow on HB wheel (R1 button). WR_X also has red arrow indicating corner is secondary read.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "unknown",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": null,
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

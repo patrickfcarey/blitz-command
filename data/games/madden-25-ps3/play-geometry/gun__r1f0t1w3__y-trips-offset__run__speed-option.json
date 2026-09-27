@@ -1,0 +1,52 @@
+{
+  "slug": "gun__r1f0t1w3__y-trips-offset__run__speed-option",
+  "info": {
+    "family": "GUN",
+    "formation": "Y-Trips Offset",
+    "play_name": "Speed Option",
+    "play_type": "run",
+    "canonical_team": "Philadelphia Eagles",
+    "canonical_img": 78,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Philadelphia Eagles"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Y-Trips Offset",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 523,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 162
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 90.46,
+  "response_text": "```json\n{\n  \"concept\": \"speed_option\",\n  \"concepts\": [\"speed_option\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_R\": \"streak\",\n    \"TE_R\": \"block\"\n  },\n  \"ball_carrier\": \"HB B_right\",\n  \"primary_target\": null,\n  \"notes\": \"Speed option with HB attacking right edge. TE blocks down, all three WRs release vertically. One backfield player (likely FB or second HB) visible with blue arrow suggesting option read/pitch path.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "error": "no red arrow detected",
+    "c_x": 1553,
+    "c_y": 615,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "speed_option",
+    "concept_family": "rpo",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bspeed option\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

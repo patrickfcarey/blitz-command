@@ -1,0 +1,58 @@
+{
+  "slug": "split__r1f1t1w3__pro-twins__run__fb-dive",
+  "info": {
+    "family": "SPLIT",
+    "formation": "Pro Twins",
+    "play_name": "FB Dive",
+    "play_type": "run",
+    "canonical_team": "Tom Landry",
+    "canonical_img": 64,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Tom Landry"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SPLIT",
+      "formation": "Pro Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 585,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 65
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 94.64,
+  "response_text": "```json\n{\n  \"concept\": \"fb_dive\",\n  \"concepts\": [\"fb_dive\"],\n  \"routes\": {},\n  \"ball_carrier\": \"FB D_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_right",
+    "c_xy": [
+      827,
+      677
+    ],
+    "arrow_los_crossing_xy": [
+      1756,
+      677
+    ],
+    "dx_from_c": 929,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "fb_dive",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bfb dive\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "singleback__r1f0t3w1__jumbo__pass__verts-drag",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Jumbo",
+    "play_name": "Verts Drag",
+    "play_type": "pass",
+    "canonical_team": "Cleveland Browns",
+    "canonical_img": 5,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Cleveland Browns",
+      "Detroit Lions",
+      "St. Louis Rams"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Jumbo",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 3,
+      "WR": 1,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Jumbo \u2014 typically 3 TE 1 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 498,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 208
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 4.1,
+  "response_text": "```json\n{\n  \"concept\": \"verts_drag\",\n  \"concepts\": [\"verts_drag\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"TE_L\": \"drag\",\n    \"TE_M\": \"vertical\",\n    \"TE_R\": \"corner\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_L\",\n  \"notes\": \"Three-TE Jumbo formation. TE_L runs the primary drag route (blue arrow, R1 button). TE_M runs vertical clearout. TE_R runs corner route (red arrow, Circle button). Outer WRs (X and Z) run streaks. HB option release from backfield.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "drags",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdrags?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

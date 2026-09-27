@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__wing-trips-wk-ny__pass__empty-fk-scrn-wheel",
+  "info": {
+    "family": "GUN",
+    "formation": "Wing Trips Wk NY",
+    "play_name": "Empty Fk Scrn Wheel",
+    "play_type": "pass",
+    "canonical_team": "New York Giants",
+    "canonical_img": 115,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "New York Giants"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Wing Trips Wk NY",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 187,
+    "cache_creation_input_tokens": 352,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 254
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 17.52,
+  "response_text": "```json\n{\n  \"concept\": \"wheel_concept\",\n  \"concepts\": [\"wheel_concept\"],\n  \"routes\": {\n    \"HB\": \"wheel\",\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"screen\",\n    \"TE_R\": \"flat\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"HB\",\n  \"notes\": \"Empty Fk Scrn Wheel: HB runs wheel route (red arrow, primary). WR_X (\u25a1 purple) streaks. WR_Z (\u2299 red/Circle button) runs corner. WR_SLOT_L (\u25b3 green/Triangle) runs screen route (yellow arrow, lower-left). TE_R (\u2297 blue/X button) runs flat. Formation is 5-wide (1 RB, 0 TE, 4 WR eligibles in spread) plus TE_R attached to RT on LOS.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "wheel_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bwheel\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

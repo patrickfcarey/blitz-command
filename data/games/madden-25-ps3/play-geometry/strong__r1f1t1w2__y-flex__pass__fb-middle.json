@@ -1,0 +1,49 @@
+{
+  "slug": "strong__r1f1t1w2__y-flex__pass__fb-middle",
+  "info": {
+    "family": "STRONG",
+    "formation": "Y-Flex",
+    "play_name": "FB Middle",
+    "play_type": "pass",
+    "canonical_team": "Dallas Cowboys",
+    "canonical_img": 77,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Dallas Cowboys"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "Y-Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "STRONG default \u2014 variant unclear"
+    }
+  },
+  "usage": {
+    "input_tokens": 493,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 247
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.81,
+  "response_text": "```json\n{\n  \"concept\": \"middle_concept\",\n  \"concepts\": [\"middle_concept\"],\n  \"routes\": {\n    \"LT\": \"block\",\n    \"LG\": \"block\",\n    \"C\": \"block\",\n    \"RG\": \"block\",\n    \"RT\": \"block\",\n    \"TE_L\": \"block\",\n    \"TE_R\": \"block\",\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"comeback\",\n    \"FB\": \"seam\",\n    \"HB\": \"block\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"FB\",\n  \"notes\": \"FB running seam route as primary target (R1 button glyph). Strong Y-Flex with 2 TEs and 2 WRs. WR_X (left, purple square) streaks; WR_Z (right, red circle) runs comeback. Red arrow originates from QB and targets FB seam route upfield.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "middle_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bmiddle\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r0f0t0w5__raven-empty__pass__stick-n-nod",
+  "info": {
+    "family": "GUN",
+    "formation": "Raven Empty",
+    "play_name": "Stick N Nod",
+    "play_type": "pass",
+    "canonical_team": "Baltimore Ravens",
+    "canonical_img": 139,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Baltimore Ravens"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Raven Empty",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 524,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 198
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.75,
+  "response_text": "```json\n{\n  \"concept\": \"stick\",\n  \"concepts\": [\"stick\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"stick\",\n    \"WR_SLOT_R\": \"flat\",\n    \"WR_FLANKER\": \"streak\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"GUN Raven Empty (5-wide, no TE/FB). Red arrow on WR_Z (R1 button, right side) indicates primary target corner route. Stick concept with slot-left running the sit route, slot-right on flat, outer WRs clearing vertically. QB alone in shotgun.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "stick",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bstick\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "gun__r1f0t1w3__wing-trio-wk__pass__corner-strike",
+  "info": {
+    "family": "GUN",
+    "formation": "Wing Trio Wk",
+    "play_name": "Corner Strike",
+    "play_type": "pass",
+    "canonical_team": "Miami Dolphins",
+    "canonical_img": 117,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Miami Dolphins",
+      "New Orleans Saints",
+      "Washington Redskins"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Wing Trio Wk",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 498,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 188
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.78,
+  "response_text": "```json\n{\n  \"concept\": \"corner_strike\",\n  \"concepts\": [\"corner_strike\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"flat\",\n    \"TE_L\": \"seam\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Corner Strike concept: two corner routes (X and Z at outer edges) with slot flat and TE seam filling intermediate zones. Red arrow on R1 (Circle button) indicates primary target is WR_Z corner route to right. HB in shotgun alignment with check-release option.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "corner_strike",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcorner strike\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

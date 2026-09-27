@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__v-trips-wk__pass__pa-fake-jet-pitt",
+  "info": {
+    "family": "GUN",
+    "formation": "V-Trips Wk",
+    "play_name": "PA Fake Jet Pitt",
+    "play_type": "pass",
+    "canonical_team": "Pittsburgh Steelers",
+    "canonical_img": 103,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Pittsburgh Steelers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "V-Trips Wk",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 512,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 316
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 4.31,
+  "response_text": "```json\n{\n  \"concept\": \"jet_sweep\",\n  \"concepts\": [\"jet_sweep\", \"pa_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"seam\",\n    \"WR_SLOT_R\": \"out\",\n    \"TE_R\": \"wheel\",\n    \"HB\": \"jet_motion\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Play-action fake with jet sweep motion (HB releases laterally). Red arrow indicates primary target (WR_Z corner route). Yellow arrows show jet motion and backside stretch. Cyan curve shows checkdown/safety read route. All 5 WR eligible receivers distributed: X and Z streaking vertically, slot receivers at intermediate depths (seam and out), TE releases to wheel. Formation is GUN V-Trips Wk with 1 RB, 0 FB, 1 TE, 3 WR as expected (r1f0t1w3 with the additional slot WR making 4 total pass-eligible receivers at LOS). Backfield: QB shotgun, HB fakes jet sweep then becomes dump-off option.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "jet_sweep",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bjet sweep\\b|\\bjet\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

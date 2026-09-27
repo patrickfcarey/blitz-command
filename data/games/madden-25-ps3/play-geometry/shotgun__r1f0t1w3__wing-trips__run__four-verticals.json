@@ -1,0 +1,58 @@
+{
+  "slug": "shotgun__r1f0t1w3__wing-trips__run__four-verticals",
+  "info": {
+    "family": "SHOTGUN",
+    "formation": "Wing Trips",
+    "play_name": "Four Verticals",
+    "play_type": "run",
+    "canonical_team": "Run Heavy",
+    "canonical_img": 79,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Run Heavy"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SHOTGUN",
+      "formation": "Wing Trips",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 525,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 227
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 89.13,
+  "response_text": "```json\n{\n  \"concept\": \"four_verticals\",\n  \"concepts\": [\"four_verticals\"],\n  \"routes\": \"std\",\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Play labeled 'run' in play_type but diagram shows pass routes (colored button glyphs, vertical arrows). Treating as pass play per diagram. QB in shotgun, HB offset to left. Five eligible receivers: WR_X (far left, purple \u25a1), WR_SLOT_L (green \u25b3, near formation), TE (blue \u2297, right of center), WR_Z (R1 shoulder button, far right), and HB (red \u2299, checkdown). All receivers except HB run vertical streaks. Red arrow from QB to WR_X (primary). Yellow arrows from slot and TE indicate their vertical routes. R1 indicates far-right receiver eligibility.\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_right",
+    "c_xy": [
+      1551,
+      613
+    ],
+    "arrow_los_crossing_xy": [
+      2404,
+      613
+    ],
+    "dx_from_c": 853,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "four_verticals",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bfour ?verticals?\\b|\\b4 ?verts?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "gun__r0f0t0w5__empty-spread__pass__corner-strike",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Spread",
+    "play_name": "Corner Strike",
+    "play_type": "pass",
+    "canonical_team": "New York Giants",
+    "canonical_img": 142,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "New York Giants",
+      "Tennessee Titans"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Spread",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 492,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 243
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.27,
+  "response_text": "```json\n{\n  \"concept\": \"corner_strike\",\n  \"concepts\": [\"corner_strike\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"curl\",\n    \"WR_SLOT_R\": \"curl\",\n    \"WR_FLANKER\": \"streak\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"5-wide empty spread (GUN Empty, r0f0t0w5). All 5 WRs visible with button glyphs and routes. Left-side curl-flat combo (WR_SLOT_L curl, left side stretch). Right-side corner-strike combo (WR_Z corner primary, WR_SLOT_R curl underneath). WR_FLANKER on right edge runs streak/vertical clearout. Red arrow originates from QB and targets WR_X corner route.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "corner_strike",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcorner strike\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

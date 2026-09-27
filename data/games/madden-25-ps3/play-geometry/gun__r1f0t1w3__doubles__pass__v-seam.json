@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__doubles__pass__v-seam",
+  "info": {
+    "family": "GUN",
+    "formation": "Doubles",
+    "play_name": "V-Seam",
+    "play_type": "pass",
+    "canonical_team": "Pittsburgh Steelers",
+    "canonical_img": 94,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Pittsburgh Steelers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Doubles",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Doubles \u2014 1 TE 3 WR (slot variant)"
+    }
+  },
+  "usage": {
+    "input_tokens": 494,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 242
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.5,
+  "response_text": "```json\n{\n  \"concept\": \"seam_route\",\n  \"concepts\": [\"seam_route\"],\n  \"routes\": {\n    \"TE_R\": \"seam\",\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"in\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"TE_R (button glyph R1, red circle) runs the primary seam route with a cyan arrow. WR_X (\u25a1 purple) and WR_Z (\u25b3 green) run vertical stretches. WR_SLOT_L (\u2297 blue) runs an in-breaking route. HB positioned below LOS with checkdown option. Diagram matches GUN Doubles personnel: 1 RB, 0 FB, 1 TE, 3 WR.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "seam_route",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bseams?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

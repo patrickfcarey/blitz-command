@@ -1,0 +1,49 @@
+{
+  "slug": "i-form__r1f1t2w2__tight__pass__pa-fb-flat",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Tight",
+    "play_name": "PA FB Flat",
+    "play_type": "pass",
+    "canonical_team": "Arizona Cardinals",
+    "canonical_img": 55,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Arizona Cardinals"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Tight",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Tight/Twin-TE \u2014 2 TE"
+    }
+  },
+  "usage": {
+    "input_tokens": 500,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 197
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.73,
+  "response_text": "```json\n{\n  \"concept\": \"flats_concept\",\n  \"concepts\": [\"flats_concept\"],\n  \"routes\": {\n    \"FB\": \"flat\",\n    \"HB\": \"checkdown\",\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"corner\",\n    \"TE_L\": \"block\",\n    \"TE_R\": \"block\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"FB\",\n  \"notes\": \"Play-action PA FB Flat. FB runs the primary flat route (red arrow). HB stays tight in backfield as checkdown. Both TEs and both WRs block to sell PA. WRs on perimeter run corner routes as secondary options. R1 button glyph on FB indicates throw target.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "flats_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bflats?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

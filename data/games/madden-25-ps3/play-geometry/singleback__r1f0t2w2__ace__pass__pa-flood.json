@@ -1,0 +1,53 @@
+{
+  "slug": "singleback__r1f0t2w2__ace__pass__pa-flood",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Ace",
+    "play_name": "PA Flood",
+    "play_type": "pass",
+    "canonical_team": "Chicago Bears",
+    "canonical_img": 3,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Chicago Bears",
+      "Oakland Raiders",
+      "Seattle Seahawks",
+      "Tennessee Titans",
+      "Tom Flores"
+    ],
+    "owner_count": 5,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Ace",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Ace family \u2014 2 TE 2 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 494,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 202
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.7,
+  "response_text": "```json\n{\n  \"concept\": \"pa_flood\",\n  \"concepts\": [\"pa_flood\"],\n  \"routes\": {\n    \"TE_L\": \"flat\",\n    \"TE_R\": \"intermediate\",\n    \"WR_X\": \"deep\",\n    \"WR_Z\": \"comeback\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"PA Flood with play-action look. Red arrow (primary) targets TE_R on intermediate route. Yellow routes show flood concept: TE_L on flat, TE_R on intermediate, WR_X stretching deep. WR_Z (far left) runs comeback on backside. Blue route (R1) shows HB check/release option.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "flood",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bflood\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

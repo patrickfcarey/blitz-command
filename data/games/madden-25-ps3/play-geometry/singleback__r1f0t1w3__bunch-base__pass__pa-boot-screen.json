@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__bunch-base__pass__pa-boot-screen",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Bunch Base",
+    "play_name": "PA Boot Screen",
+    "play_type": "pass",
+    "canonical_team": "Arizona Cardinals",
+    "canonical_img": 26,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Arizona Cardinals"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Bunch Base",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 501,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 161
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.16,
+  "response_text": "```json\n{\n  \"concept\": \"boot_pass\",\n  \"concepts\": [\"boot_pass\", \"screen\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"comeback\",\n    \"WR_SLOT_L\": \"screen\",\n    \"HB\": \"swing\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_L\",\n  \"notes\": \"PA Boot Screen with screen route to slot WR. QB boots right with play-action fake. HB swings out as checkdown. Backside WRs run streak and comeback for space.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "boot_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bboot\\b|\\bbootleg\\b",
+    "is_pa": true,
+    "is_boot_or_roll": true
+  }
+}

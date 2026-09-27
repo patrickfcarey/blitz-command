@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__doubles-wk__pass__pa-slot-under",
+  "info": {
+    "family": "GUN",
+    "formation": "Doubles Wk",
+    "play_name": "PA Slot Under",
+    "play_type": "pass",
+    "canonical_team": "Kansas City Chiefs",
+    "canonical_img": 90,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Kansas City Chiefs"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Doubles Wk",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Doubles \u2014 1 TE 3 WR (slot variant)"
+    }
+  },
+  "usage": {
+    "input_tokens": 501,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 203
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.6,
+  "response_text": "```json\n{\n  \"concept\": \"under_route\",\n  \"concepts\": [\"under_route\", \"play_action\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"under\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"block\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_L\",\n  \"notes\": \"Play-action pass with slot receiver running under route (sit pattern ~8 yds). Red arrow indicates primary target on the slot. Formation is GUN Doubles with RB/FB/TE/WR distribution (1/0/1/3). Outside WRs run verticals to clear space for the underneath route.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "under_route",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bunders?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

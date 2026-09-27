@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__wing-trips-wk__pass__double-ins",
+  "info": {
+    "family": "GUN",
+    "formation": "Wing Trips Wk",
+    "play_name": "Double Ins",
+    "play_type": "pass",
+    "canonical_team": "Tampa Bay Buccaneers",
+    "canonical_img": 106,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Tampa Bay Buccaneers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Wing Trips Wk",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 497,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 199
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 4.17,
+  "response_text": "```json\n{\n  \"concept\": \"ins\",\n  \"concepts\": [\"ins\"],\n  \"routes\": {\n    \"WR_X\": \"in\",\n    \"WR_Z\": \"in\",\n    \"WR_SLOT_L\": \"corner\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"GUN Shotgun formation with HB to one side. Two inside receivers (X and Z) running in-breakers at different depths (shallow + deep dig). Slot WR running corner opposite side. TE running seam release. Red arrow indicates primary target to WR_X (in-breaker). Yellow arrows show secondary and tertiary routes.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "ins",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bins?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

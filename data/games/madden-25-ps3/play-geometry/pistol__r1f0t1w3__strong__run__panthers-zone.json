@@ -1,0 +1,58 @@
+{
+  "slug": "pistol__r1f0t1w3__strong__run__panthers-zone",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Strong",
+    "play_name": "Panthers Zone",
+    "play_type": "run",
+    "canonical_team": "Carolina Panthers",
+    "canonical_img": 62,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Carolina Panthers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Strong",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Pistol Strong/Weak"
+    }
+  },
+  "usage": {
+    "input_tokens": 505,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 93
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 58.74,
+  "response_text": "```json\n{\n  \"concept\": \"panthers_zone\",\n  \"concepts\": [\"panthers_zone\"],\n  \"routes\": {\n    \"TE_R\": \"block\",\n    \"WR_X\": \"block\"\n  },\n  \"ball_carrier\": \"HB C_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "C_right",
+    "c_xy": [
+      1553,
+      613
+    ],
+    "arrow_los_crossing_xy": [
+      1984,
+      762
+    ],
+    "dx_from_c": 431,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "unknown",
+    "concept_family": "run",
+    "blockers_implicit": false,
+    "matched_pattern": null,
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

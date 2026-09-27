@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t0w4__trey-4wr-str__pass__levels-switch",
+  "info": {
+    "family": "GUN",
+    "formation": "Trey 4WR Str",
+    "play_name": "Levels Switch",
+    "play_type": "pass",
+    "canonical_team": "Denver Broncos",
+    "canonical_img": 138,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Denver Broncos"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Trey 4WR Str",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 0,
+      "WR": 4,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 502,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 278
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 6.64,
+  "response_text": "```json\n{\n  \"concept\": \"levels\",\n  \"concepts\": [\"levels\"],\n  \"routes\": {\n    \"WR_X\": \"dig\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"in\",\n    \"WR_SLOT_R\": \"dig\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_R\",\n  \"notes\": \"GUN Trey 4WR formation (r1f0t0w4) confirmed. Four WRs visible on LOS plus QB in shotgun, HB offset right. Red arrow (primary) originates from QB and targets WR_SLOT_R dig route. Yellow routes show WR_X corner/comeback left, WR_Z streak right, WR_SLOT_L in route. Levels concept: shallow dig (WR_SLOT_R) and deeper dig (WR_SLOT_L) stretch intermediate zone; WR_Z streak clears vertically; WR_X provides backside coverage. HB in motion/checkdown role.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "levels",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\blevels?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

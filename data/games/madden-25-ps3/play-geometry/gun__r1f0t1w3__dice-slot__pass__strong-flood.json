@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__dice-slot__pass__strong-flood",
+  "info": {
+    "family": "GUN",
+    "formation": "Dice Slot",
+    "play_name": "Strong Flood",
+    "play_type": "pass",
+    "canonical_team": "Denver Broncos",
+    "canonical_img": 75,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Denver Broncos"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Dice Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 517,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 189
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.51,
+  "response_text": "```json\n{\n  \"concept\": \"flood\",\n  \"concepts\": [\"flood\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_R\": \"flat\",\n    \"TE_R\": \"dig\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Strong-side flood with three-level stretch (deep WR_Z corner, intermediate TE_R dig, flat WR_SLOT_R). Backside WR_X runs vertical clearout. HB in checkdown role. R1 button glyph visible on TE_R dig route.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "flood",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bflood\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

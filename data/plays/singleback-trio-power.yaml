@@ -1,0 +1,88 @@
+play_id: singleback-trio-power
+name: Singleback Trio Power
+aliases: [11P Power, Singleback Power]
+formation: singleback-trio
+play_type: run
+ball_carrier: HB
+motions: []
+assignments:
+  - { player: LT, role: run_block, blocking_scheme: down-block, target: backside-3-tech }
+  - { player: LG, role: run_block, blocking_scheme: pull-around, target: playside-LB,
+      path: [[0, 0], [2, -0.5], [4, 0], [5, 4]],
+      notes: "PULL — backside guard pulls around C, leads through the off-tackle hole." }
+  - { player: C, role: run_block, blocking_scheme: gap-block, target: backside-A-gap }
+  - { player: RG, role: run_block, blocking_scheme: down-block, target: playside-3-tech }
+  - { player: RT, role: run_block, blocking_scheme: down-block, target: playside-DT }
+  - { player: TE, role: run_block, blocking_scheme: kickout, target: edge-defender,
+      notes: "Kicks out playside EDGE — opens off-tackle hole." }
+  - { player: X, role: run_block, blocking_scheme: stalk, target: cornerback }
+  - { player: Z, role: run_block, blocking_scheme: stalk, target: cornerback }
+  - { player: SLOT, role: run_block, blocking_scheme: stalk, target: nickel-defender }
+  - { player: QB, role: handoff, path: [[0, 0], [-1, -1], [-2, -1]], notes: "Reverse-out and bootleg fake to backside." }
+  - { player: HB, role: ball_carrier, is_primary: true,
+      path: [[0, 0], [3, 3], [4, 8]],
+      notes: "Take handoff, hit off-tackle behind RT/TE/pulling LG. No FB lead — pulling LG IS the lead in this 11P version." }
+strengths:
+  - "11P Power forces base defense (3 WRs spread)"
+  - "Pulling LG provides lead block through the hole"
+  - "Defense must honor pass with 3 WR — opens box vs heavy fronts"
+  - "Setup for PA shots off the same 11P look"
+weaknesses:
+  - "No FB lead — 1 fewer blocker than I-Form Power"
+  - "HB has to navigate without a centered lead blocker"
+  - "Vulnerable to playside DT penetration"
+  - "Slow vs disciplined fronts"
+best_vs_defense: ["over-front", "cover-3", "4-3 base", "nickel personnel"]
+worst_vs_defense: ["bear front", "8-man fronts", "cover-1 robber"]
+defensive_counters:
+  - counter_id: pinch-dl
+    pre_snap_look: "Both DTs in tight inside shades — 1-techniques / inside-eye 3-techniques crowding the guards, hands cocked toward the A/B gaps"
+    qb_key: "Scan the interior DL shade — tackles crowding the guards' inside eye"
+    read_category: dl-alignment
+    why: "Inside-shaded tackles give the down-blocks nothing to push outside; the off-tackle hole closes before the pulling LG can clear the center, and there's no FB to isolate the LB."
+    typical_against: ["over-front", "4-3 base", "nickel personnel"]
+  - counter_id: spill-the-puller
+    pre_snap_look: "Playside EDGE aligned wide in a wide-9 stance with the nickel walked down into the box at blitz depth"
+    qb_key: "Check the playside edge — wide-9 EDGE with the nickel walked up inside him"
+    read_category: dl-alignment
+    why: "A wide-9 EDGE is set to wrong-arm the LG's kickout and spill the run wide; with no FB and only the LG at the second level, the spilled HB meets a free nickel or rolled-down safety on the edge."
+    typical_against: ["over-front with rolled SS", "nickel with hard edge"]
+  - counter_id: scrape-lb-playside
+    pre_snap_look: "Playside LB cheated down and tight, aligned outside his normal width toward the off-tackle hole"
+    qb_key: "Check the playside LB — cheated wide toward the call"
+    read_category: lb-depth
+    why: "Without a FB the LG must both lead and account for the playside LB; a LB already cheated playside beats the LG to the spot and leaves the HB hitting a stacked hole."
+    typical_against: ["over-front", "stack 4-3"]
+common_uses: ["Modern NFL 11P run game", "1st-and-medium", "Setting up PA from spread"]
+philosophy: power-run
+run_concept_ref: power
+philosophy_ref: power-run
+era: "Modern — 11P Power is a staple of every NFL playbook."
+famous_examples: ["Modern NFL widespread", "Spread-option college teams"]
+tags: [run, power-run, gap-scheme, 11-personnel, singleback, any-level, college, nfl, modern]
+verification_status: unverified
+source_notes:
+  - "Power scheme adapted to 11P singleback — pulling LG is the only lead since no FB."
+flip_reads:
+- flip_id: front-overshift-callside
+  pre_snap_look: Defensive front slid toward the called side — an extra down lineman or a walked-up
+    linebacker puts +1 in the called-side box.
+  qb_key: Count the box side to side — the called side has one more hat than the backside.
+  read_category: box-count
+  flip_to: mirror-play
+  why: Running a gap scheme into the overshift is into the teeth; flipping the play attacks the
+    lighter box with the same blocking math.
+  typical_against:
+  - over-front
+  - shifted 4-3
+- flip_id: strength-declared-to-formation
+  pre_snap_look: Defense has fully declared to the formation's strength — an extra box defender
+    to the strong side and a safety rolled down over it.
+  qb_key: Check the strength side — both the box count and the safety roll are committed to it.
+  read_category: safety-shell
+  flip_to: mirror-formation
+  why: When the defense keys the formation's strength, flipping the whole formation forces a re-declare
+    and the run hits the side they vacated.
+  typical_against:
+  - cover-3 with strong roll
+  - 8-man fronts

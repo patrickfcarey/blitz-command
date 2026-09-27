@@ -1,0 +1,53 @@
+philosophy_id: west-coast
+name: West Coast
+description: |
+  Pass-first offense built around precise short-to-intermediate timing routes
+  (mesh, drag, slant, flat) used to set up the run. Originated with Bill
+  Walsh at the San Francisco 49ers in 1979 as an adaptation of Paul Brown's
+  Cincinnati Bengals system. Emphasizes high-completion-percentage throws,
+  yards after catch, and protection of the QB. Less vertical than Coryell;
+  less spread than Air Raid.
+era: "1979–present"
+originators:
+  - "Bill Walsh (San Francisco 49ers, 1979–1988)"
+  - "Paul Brown (Cincinnati Bengals — Walsh's mentor)"
+notable_practitioners:
+  - "Mike Holmgren"
+  - "Andy Reid"
+  - "Mike Shanahan"
+  - "Sean Payton"
+  - "Kyle Shanahan"
+canonical_run_concepts:
+  - inside-zone
+  - outside-zone
+  - power
+  - draw
+canonical_pass_concepts:
+  - mesh
+  - stick
+  - flood
+  - smash
+  - bootleg-flat
+formation_preferences:
+  - i-formation
+  - singleback-trio
+  - singleback-ace
+  - shotgun-2x2
+tendency_profile:
+  run_pct: 0.45
+  pass_pct: 0.40
+  pa_pct: 0.10
+  rpo_pct: 0.0
+  screen_pct: 0.05
+tags:
+  - philosophy
+  - west-coast
+  - pass-first
+  - timing-based
+  - any-level
+  - college
+  - nfl
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Wikipedia 'West Coast offense' (https://en.wikipedia.org/wiki/West_Coast_offense): confirmed Bill Walsh / 49ers origin in 1979, derived from Paul Brown's Cincinnati system."
+  - "Web validated 2026-04-30 — Wikipedia 'Bill Walsh' (https://en.wikipedia.org/wiki/Bill_Walsh_(American_football_coach)): confirmed Walsh as primary originator; coaching tree includes Holmgren / Shanahan / Reid / Payton."

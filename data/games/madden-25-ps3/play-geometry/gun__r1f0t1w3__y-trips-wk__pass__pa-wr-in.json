@@ -1,0 +1,54 @@
+{
+  "slug": "gun__r1f0t1w3__y-trips-wk__pass__pa-wr-in",
+  "info": {
+    "family": "GUN",
+    "formation": "Y-Trips Wk",
+    "play_name": "PA WR In",
+    "play_type": "pass",
+    "canonical_team": "Detroit Lions",
+    "canonical_img": 111,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Detroit Lions",
+      "Kansas City Chiefs",
+      "New England Patriots",
+      "New York Giants",
+      "San Francisco 49ers",
+      "Tennessee Titans"
+    ],
+    "owner_count": 6,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Y-Trips Wk",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 504,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 205
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.01,
+  "response_text": "```json\n{\n  \"concept\": \"ins\",\n  \"concepts\": [\"ins\"],\n  \"routes\": {\n    \"WR_X\": \"in\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"in\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"PA play-action pass. Red arrow (primary) targets WR_X on in-breaking route. Yellow arrow targets WR_SLOT_L on in-breaking route at intermediate depth. R1 button glyph (red circle) visible on far right likely indicates checkdown target (TE_R or WR_Z). Formation is shotgun with HB to the side.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "ins",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bins?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

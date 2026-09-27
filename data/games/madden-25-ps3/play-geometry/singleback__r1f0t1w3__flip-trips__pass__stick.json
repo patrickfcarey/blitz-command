@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__flip-trips__pass__stick",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Flip Trips",
+    "play_name": "Stick",
+    "play_type": "pass",
+    "canonical_team": "Dick Vermeil",
+    "canonical_img": 57,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Dick Vermeil"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Flip Trips",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 493,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 205
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.52,
+  "response_text": "```json\n{\n  \"concept\": \"stick\",\n  \"concepts\": [\"stick\"],\n  \"routes\": {\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_R\": \"stick\",\n    \"WR_X\": \"flat\",\n    \"TE_R\": \"corner\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_R\",\n  \"notes\": \"Stick concept on right side: WR_X (flat) stretches defender horizontally; WR_SLOT_R (stick route at ~5 yds) sits inside; TE_R (corner) provides intermediate option. WR_Z (streak) clears backside. HB eligible checkdown. R1 button (right shoulder) marks primary target.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "stick",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bstick\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

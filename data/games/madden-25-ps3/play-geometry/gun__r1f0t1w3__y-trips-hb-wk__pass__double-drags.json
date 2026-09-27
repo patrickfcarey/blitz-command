@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__y-trips-hb-wk__pass__double-drags",
+  "info": {
+    "family": "GUN",
+    "formation": "Y-Trips HB Wk",
+    "play_name": "Double Drags",
+    "play_type": "pass",
+    "canonical_team": "Balanced",
+    "canonical_img": 78,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Balanced"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Y-Trips HB Wk",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 506,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 198
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.52,
+  "response_text": "```json\n{\n  \"concept\": \"drags\",\n  \"concepts\": [\"drags\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"drag\",\n    \"WR_SLOT_L\": \"drag\",\n    \"TE_R\": \"corner\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Two drag routes crossing the field at intermediate depth (WR_Z and WR_SLOT_L). WR_X runs vertical clearout streak on left. TE_R runs corner on right side. HB in shotgun alignment available for checkdown. Red arrow indicates WR_Z (blue X button) as primary target on the drag.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "drags",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdrags?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "gun__r1f0t2w2__ace__pass__y-shallow-cross",
+  "info": {
+    "family": "GUN",
+    "formation": "Ace",
+    "play_name": "Y Shallow Cross",
+    "play_type": "pass",
+    "canonical_team": "Carolina Panthers",
+    "canonical_img": 85,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Carolina Panthers",
+      "Detroit Lions"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Ace",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Ace \u2014 2 TE 2 WR (shotgun-ace)"
+    }
+  },
+  "usage": {
+    "input_tokens": 493,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 217
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.58,
+  "response_text": "```json\n{\n  \"concept\": \"y_concept\",\n  \"concepts\": [\"y_concept\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"TE_L\": \"shallow_cross\",\n    \"TE_R\": \"shallow_cross\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_L\",\n  \"notes\": \"Y Shallow Cross concept with two shallow-crossing routes (TE_L primary target, red arrow). Two WRs run vertical stretches. Formation shows GUN Ace (r1f0t2w2): 1 RB, 0 FB, 2 TE, 2 WR. Yellow annotation arrows show option routes/motion. HB remains in backfield for check/release.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "y_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\by[- ]?(cross|sail|stick|corner|trail|spot|drive|shallow)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

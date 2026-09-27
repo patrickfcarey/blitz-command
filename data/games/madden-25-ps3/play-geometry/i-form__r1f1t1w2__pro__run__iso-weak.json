@@ -1,0 +1,69 @@
+{
+  "slug": "i-form__r1f1t1w2__pro__run__iso-weak",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Pro",
+    "play_name": "Iso Weak",
+    "play_type": "run",
+    "canonical_team": "Balanced",
+    "canonical_img": 38,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Balanced",
+      "Brian Billick",
+      "Chicago Bears",
+      "Dick Vermeil",
+      "Houston Texans",
+      "Jimmy Johnson",
+      "John Madden",
+      "Mike Ditka",
+      "Run Balanced",
+      "Run N Gun",
+      "Tom Landry",
+      "Washington Redskins"
+    ],
+    "owner_count": 12,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "I-Form Pro default"
+    }
+  },
+  "usage": {
+    "input_tokens": 584,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 62
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.26,
+  "response_text": "```json\n{\n  \"concept\": \"iso\",\n  \"concepts\": [\"iso\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB A_left\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "A_left",
+    "c_xy": [
+      1553,
+      613
+    ],
+    "arrow_los_crossing_xy": [
+      1452,
+      613
+    ],
+    "dx_from_c": -101,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "iso",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\biso\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

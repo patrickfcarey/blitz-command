@@ -1,0 +1,49 @@
+{
+  "slug": "i-form__r1f1t1w3__pro-twins__pass__tight-pa-hb-wheel",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Pro Twins",
+    "play_name": "Tight PA HB Wheel",
+    "play_type": "pass",
+    "canonical_team": "Oakland Raiders",
+    "canonical_img": 58,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Oakland Raiders"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Pro Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Twins \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 574,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 145
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.55,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"generic_hb_run\"],\n  \"routes\": {\n    \"HB\": \"wheel\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"HB\",\n  \"notes\": \"Play-action pass disguised as run. HB wheels to flat as primary target. Multiple route options shown: slot/TE releases upfield on yellow routes, WR_X runs corner route (red), WR_Z/slot runs vertical clearout. Red arrow traces HB wheel to flat.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bhb \\w+",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

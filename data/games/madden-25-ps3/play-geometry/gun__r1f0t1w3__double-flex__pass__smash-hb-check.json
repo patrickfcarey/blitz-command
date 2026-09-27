@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__double-flex__pass__smash-hb-check",
+  "info": {
+    "family": "GUN",
+    "formation": "Double Flex",
+    "play_name": "Smash HB Check",
+    "play_type": "pass",
+    "canonical_team": "Green Bay Packers",
+    "canonical_img": 116,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Green Bay Packers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Double Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "GUN/Shotgun default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 593,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 205
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.83,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"generic_hb_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB B_right\",\n  \"primary_target\": null,\n  \"notes\": \"Play labeled 'Smash HB Check' but play_type is PASS and py_concept is generic_hb_run (family=run). Diagram shows red arrow from backfield (HB) moving right; blue arrow (chip/option) from TE_R. Treating as a run play per py_concept. Formation is GUN Double Flex (r1f0t1w3): QB in shotgun, 1 RB, 1 TE, 3 WRs. HB receives the red ball-carrier arrow to the right (B_right gap).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bhb \\w+",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

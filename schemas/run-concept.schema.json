@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blitz-command.local/schemas/run-concept.schema.json",
+  "title": "RunConcept",
+  "description": "A reusable run concept (Power, Counter, Inside Zone, etc.) that multiple play files can reference via run_concept_ref.",
+  "type": "object",
+  "required": ["concept_id", "name", "category", "description", "aim_point", "read_tree", "blocking_scheme_ref", "verification_status", "source_notes"],
+  "additionalProperties": false,
+  "properties": {
+    "concept_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "Stable identifier (kebab-case). Must match the filename (without .yaml)."
+    },
+    "name": { "type": "string" },
+    "category": {
+      "enum": ["gap-scheme", "zone-scheme", "option", "man-blocking-scheme", "misdirection"],
+      "description": "Blocking/run philosophy category."
+    },
+    "description": {
+      "type": "string",
+      "description": "1-3 sentence explanation of the concept — what the blocking looks like, where the HB aims, when to use it."
+    },
+    "aim_point": {
+      "type": "string",
+      "description": "Specific gap or zone the ball carrier attacks. Use letter-gap notation (A/B/C/D-gap) or a descriptor like 'off-tackle' or 'perimeter'."
+    },
+    "read_tree": {
+      "type": "array",
+      "description": "Ordered list of post-snap reads the ball carrier makes. Phase 1 is the first (fastest) decision.",
+      "items": {
+        "type": "object",
+        "required": ["phase", "defender", "decision"],
+        "additionalProperties": false,
+        "properties": {
+          "phase": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "Read order (1 = first decision point at snap/handoff)."
+          },
+          "defender": {
+            "type": "string",
+            "description": "The defensive player or assignment being read (e.g. 'playside EDGE', 'playside ILB', 'backside DE')."
+          },
+          "decision": {
+            "type": "string",
+            "description": "What the ball carrier does based on this defender's action."
+          }
+        }
+      }
+    },
+    "blocking_scheme_ref": {
+      "type": "string",
+      "description": "Foreign key into data/concepts/blocking-schemes/ — the primary OL blocking scheme for this concept."
+    },
+    "pulls_required": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["LT", "LG", "C", "RG", "RT"]
+      },
+      "description": "OL positions that pull on this concept. Empty list if no pulls."
+    },
+    "lead_blocker": {
+      "type": "string",
+      "description": "Skill-position player (FB, TE, HB) who leads through the hole. Omit if no designated lead blocker."
+    },
+    "pairs_with": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "IDs of complementary concepts or formations that pair well with this one."
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "verification_status": {
+      "enum": ["verified", "unverified", "inferred"]
+    },
+    "source_notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

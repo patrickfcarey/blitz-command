@@ -1,0 +1,51 @@
+{
+  "slug": "i-form__r1f1t2w2__tight__pass__pa-boot-slide",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Tight",
+    "play_name": "PA Boot Slide",
+    "play_type": "pass",
+    "canonical_team": "Baltimore Ravens",
+    "canonical_img": 56,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Baltimore Ravens",
+      "Denver Broncos",
+      "Miami Dolphins"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Tight",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Tight/Twin-TE \u2014 2 TE"
+    }
+  },
+  "usage": {
+    "input_tokens": 499,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 208
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.82,
+  "response_text": "```json\n{\n  \"concept\": \"boot_pass\",\n  \"concepts\": [\"boot_pass\"],\n  \"routes\": {\n    \"TE_L\": \"wheel\",\n    \"TE_R\": \"flat\",\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"comeback\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"PA boot to right; QB bootlegging right with TE_R as primary target on flat. TE_L releasing on wheel route. WR_X (Square button, purple) runs streak; WR_Z (X button, blue) runs comeback. HB (Triangle button, green) available for checkdown. R1 shoulder button labeled on diagram near TE_R flat route.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "boot_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bboot\\b|\\bbootleg\\b",
+    "is_pa": true,
+    "is_boot_or_roll": true
+  }
+}

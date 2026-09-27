@@ -1,0 +1,51 @@
+{
+  "slug": "singleback__r1f0t2w2__ace-twins__pass__roll-out-smash",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Ace Twins",
+    "play_name": "Roll Out Smash",
+    "play_type": "pass",
+    "canonical_team": "Dick Vermeil",
+    "canonical_img": 11,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Dick Vermeil",
+      "Mike Ditka",
+      "Tom Landry"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Ace Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Ace family \u2014 2 TE 2 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 504,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 238
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.38,
+  "response_text": "```json\n{\n  \"concept\": \"smash\",\n  \"concepts\": [\"smash\"],\n  \"routes\": {\n    \"WR_X\": \"hitch\",\n    \"WR_Z\": \"corner\",\n    \"TE_L\": \"flat\",\n    \"TE_R\": \"streak\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Roll-out pass to the right. WR_X (\u25a1 purple) runs hitch on the right side; WR_Z (\u2297 blue) runs corner over the hitch (smash combo). TE_L (\u25b3 green) runs flat to the left. TE_R (\u2299 red) runs streak vertical. R1 shoulder button route visible on a check/release back (HB not clearly visible in frame but expected per r1f0t2w2 personnel). Smash concept executed on right side with corner+hitch combo.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "smash",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bsmash\\b",
+    "is_pa": false,
+    "is_boot_or_roll": true
+  }
+}

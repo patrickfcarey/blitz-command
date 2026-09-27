@@ -1,0 +1,30 @@
+name: switch-out-go
+aliases:
+  - switch-seam-go
+description: >
+  Out-and-up run as part of a switch concept. The slot receiver releases
+  inside (like a slant) to pick off the press corner covering the outside
+  receiver, then bends back outside and runs a deep vertical up the outside
+  receiver's vacated lane. Primary weapon in the switch concept vs press-man
+  coverage — the natural pick creates clean separation on the seam.
+path:
+  - [0, 0]
+  - [2, 3]
+  - [-3, 10]
+  - [-3, 22]
+typical_break_depth_yd: 10
+option_route: false
+category: deep
+beats_coverage: man
+tags:
+  - deep
+  - switch-concept
+  - anti-press
+  - run-and-shoot
+  - out-and-up
+verification_status: unverified
+source_notes:
+  - >
+    Switch concept — slot receiver's complementary route to switch-go. Initial
+    inside release (x-positive in route space, mirrored for right-side slots)
+    creates the rub, then receiver bends outside (x-negative) and goes vertical.

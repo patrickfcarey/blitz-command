@@ -1,0 +1,51 @@
+{
+  "slug": "gun__r0f0t0w5__empty-spread__pass__curls-shake",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Spread",
+    "play_name": "Curls Shake",
+    "play_type": "pass",
+    "canonical_team": "Dick Vermeil",
+    "canonical_img": 135,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Dick Vermeil",
+      "Oakland Raiders",
+      "Philadelphia Eagles"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Spread",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 168,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 129
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.07,
+  "response_text": "```json\n{\n  \"concept\": \"curls\",\n  \"concepts\": [\"curls\"],\n  \"routes\": {\n    \"WR_X\": \"curl\",\n    \"WR_Z\": \"flat\",\n    \"WR_SLOT_L\": \"curl\",\n    \"WR_SLOT_R\": \"streak\",\n    \"WR_FLANKER\": \"streak\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "curls",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcurls?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

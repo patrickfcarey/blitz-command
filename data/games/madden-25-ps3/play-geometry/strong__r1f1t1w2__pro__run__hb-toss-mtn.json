@@ -1,0 +1,62 @@
+{
+  "slug": "strong__r1f1t1w2__pro__run__hb-toss-mtn",
+  "info": {
+    "family": "STRONG",
+    "formation": "Pro",
+    "play_name": "HB Toss Mtn",
+    "play_type": "run",
+    "canonical_team": "Baltimore Ravens",
+    "canonical_img": 63,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Baltimore Ravens",
+      "Brian Billick",
+      "Jimmy Johnson",
+      "Mike Ditka",
+      "San Francisco 49ers"
+    ],
+    "owner_count": 5,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 594,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 72
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 53.4,
+  "response_text": "```json\n{\n  \"concept\": \"outside_run_toss\",\n  \"concepts\": [\"outside_run_toss\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB D_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_right",
+    "c_xy": [
+      1553,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      2092,
+      298
+    ],
+    "dx_from_c": 539,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "outside_run_toss",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bhb toss\\b|\\btoss\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

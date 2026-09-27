@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t2w2__trips-te__pass__flex-hb-wheel",
+  "info": {
+    "family": "GUN",
+    "formation": "Trips TE",
+    "play_name": "Flex HB Wheel",
+    "play_type": "pass",
+    "canonical_team": "Cleveland Browns",
+    "canonical_img": 106,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Cleveland Browns"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Trips TE",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 593,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 269
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 4.07,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"generic_hb_run\"],\n  \"routes\": {\n    \"HB\": \"wheel\",\n    \"TE_R\": \"vertical_clearout\"\n  },\n  \"ball_carrier\": \"HB B_right\",\n  \"primary_target\": null,\n  \"notes\": \"Play labeled PASS but diagram shows run action with HB wheel route. Red arrow traces HB to right flat/wheel; yellow arrows show receiver verticals (clearout). R1 button glyph visible on HB indicating checkdown eligibility on pass routes, but primary action is run carry. Formation is GUN Trips TE (1 RB, 0 FB, 2 TE, 2 WR) \u2014 visible glyphs match: QB in shotgun, HB offset right, 2 TEs on LOS (TE_L and TE_R attached to OL), 2 WRs (one slot left, one flanker right on button glyphs). Cyan LOS line and yellow C-square outline are reference annotations only.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bhb \\w+",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

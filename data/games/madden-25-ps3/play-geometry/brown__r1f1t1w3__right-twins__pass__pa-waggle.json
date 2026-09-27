@@ -1,0 +1,49 @@
+{
+  "slug": "brown__r1f1t1w3__right-twins__pass__pa-waggle",
+  "info": {
+    "family": "BROWN",
+    "formation": "Right Twins",
+    "play_name": "PA Waggle",
+    "play_type": "pass",
+    "canonical_team": "Bill Walsh",
+    "canonical_img": 75,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Bill Walsh"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "BROWN",
+      "formation": "Right Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 498,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 205
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.24,
+  "response_text": "```json\n{\n  \"concept\": \"waggle_pass\",\n  \"concepts\": [\"waggle_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"comeback\",\n    \"WR_SLOT_R\": \"flat\",\n    \"TE_R\": \"wheel\",\n    \"HB\": \"pass_pro\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"PA waggle with boot motion to the right. Red arrow indicates primary target (WR_X streak). Yellow arrows show secondary receiver routes (Z comeback, slot flat, TE wheel). Formation is Right Twins (r1f1t1w3): 1 RB, 1 FB, 1 TE, 3 WR.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "waggle_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bwaggle\\b",
+    "is_pa": true,
+    "is_boot_or_roll": true
+  }
+}

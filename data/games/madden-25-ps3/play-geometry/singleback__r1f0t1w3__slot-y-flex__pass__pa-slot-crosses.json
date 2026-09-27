@@ -1,0 +1,52 @@
+{
+  "slug": "singleback__r1f0t1w3__slot-y-flex__pass__pa-slot-crosses",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Slot Y-Flex",
+    "play_name": "PA Slot Crosses",
+    "play_type": "pass",
+    "canonical_team": "Brian Billick",
+    "canonical_img": 50,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Brian Billick",
+      "Buffalo Bills",
+      "Dick Vermeil",
+      "Mike Ditka"
+    ],
+    "owner_count": 4,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Slot Y-Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 508,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 241
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.93,
+  "response_text": "```json\n{\n  \"concept\": \"cross_concept\",\n  \"concepts\": [\"pa_slot_crosses\", \"cross_concept\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"cross\",\n    \"WR_SLOT_R\": \"cross\",\n    \"TE_R\": \"seam\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_L\",\n  \"notes\": \"Play-action pass with slot crossing concept. Red arrow indicates primary target is the left slot WR running a crossing route. Right slot WR also runs a cross. Outer WR_X runs streak (clearout), WR_Z runs corner route. TE_R releases into seam. Formation is 1 RB, 0 FB, 1 TE, 3 WR matching personnel hints (r1f0t1w3).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "cross_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcross(es)?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

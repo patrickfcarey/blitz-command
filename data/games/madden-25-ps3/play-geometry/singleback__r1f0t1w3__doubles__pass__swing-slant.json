@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__doubles__pass__swing-slant",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Doubles",
+    "play_name": "Swing Slant",
+    "play_type": "pass",
+    "canonical_team": "Dick Vermeil",
+    "canonical_img": 36,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Dick Vermeil"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Doubles",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 496,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 208
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.81,
+  "response_text": "```json\n{\n  \"concept\": \"slants\",\n  \"concepts\": [\"slants\"],\n  \"routes\": {\n    \"WR_X\": \"slant\",\n    \"WR_Z\": \"slant\",\n    \"WR_SLOT_L\": \"slant\",\n    \"TE_R\": \"slant\",\n    \"HB\": \"swing\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"HB\",\n  \"notes\": \"R1 button-glyph (blue arrow) indicates HB swing as primary target. Four slant routes on WR_X, WR_Z, WR_SLOT_L, and TE_R stretch coverage horizontally. Red arrow visible on left side (likely WR_SLOT_L or WR_Z slant as secondary read or audible option).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "slants",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bslants?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

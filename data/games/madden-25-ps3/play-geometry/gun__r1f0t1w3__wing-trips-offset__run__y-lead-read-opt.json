@@ -1,0 +1,58 @@
+{
+  "slug": "gun__r1f0t1w3__wing-trips-offset__run__y-lead-read-opt",
+  "info": {
+    "family": "GUN",
+    "formation": "Wing Trips Offset",
+    "play_name": "Y Lead Read Opt",
+    "play_type": "run",
+    "canonical_team": "Philadelphia Eagles",
+    "canonical_img": 83,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Philadelphia Eagles"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Wing Trips Offset",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 180,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 184
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 95.73,
+  "response_text": "```json\n{\n  \"concept\": \"read_pass\",\n  \"concepts\": [\"read_pass\"],\n  \"routes\": {\n    \"HB\": \"block\",\n    \"TE_R\": \"lead_block\",\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_R\": \"streak\"\n  },\n  \"ball_carrier\": \"HB C_right\",\n  \"primary_target\": null,\n  \"notes\": \"Y Lead Read Opt: HB receives handoff and runs C-right gap with TE lead-blocking. Red arrow indicates ball-carrier path; three WRs on stretch routes provide vertical spacing. Shotgun formation with offset wing TE to the right side.\"\n}\n```",
+  "py_hints": {
+    "target_gap": "C_right",
+    "c_xy": [
+      1632,
+      611
+    ],
+    "arrow_los_crossing_xy": [
+      2082,
+      611
+    ],
+    "dx_from_c": 450,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "read_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bread\\b(?!.*option)",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

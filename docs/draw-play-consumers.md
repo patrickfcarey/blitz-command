@@ -1,0 +1,94 @@
+# draw-play consumers
+
+A single source of truth for "what depends on `tools/draw-play/draw.py`?" — used when planning a rename, an API change, or a tool removal.
+
+If you're about to rename a public symbol in `draw.py`, search this doc first; if your symbol is here, every dependent module needs an update too.
+
+## Public API surface
+
+These are the only symbols `draw.py` considers stable for external consumers. Everything else is private (leading underscore) and may change without notice.
+
+| Symbol | Kind | Purpose |
+|---|---|---|
+| `render(profile, play=, formation=, defense=, route_lib=, show=, field=)` | function | Build the SVG; returns `(svg, warnings)` |
+| `assign_cells_for_formation(formation, profile)` | function | Map every player label to a `(col, row)` cell |
+| `load_route_library()` | function | Build the alias-aware route-name → Route dict |
+| `route_lookup(route_lib, name)` | function | Look up a route by name with `or`-fallback |
+| `receiver_route_path(x, y, route)` | function | Convert a route's relative waypoints to absolute universal yards |
+| `hash_spec_for_profile(profile)` | function | Per-profile hash-mark distance inference |
+| `DrawError` (and the 6 subclasses) | exception types | `Invalid*Error`, `CellAssignmentError`, `ConfigError` |
+| `Show`, `Field`, `Side`, `PlayType`, `AssignmentRole`, `CoverageRole`, `BeatsCoverage` | enums | Canonical string sets for dispatch |
+| `GameProfile`, `Play`, `Formation`, `Player`, `Route`, `Assignment` | TypedDicts | Documented shape of each YAML schema |
+| `PIXELS_PER_CELL`, `FIELD_MARGIN_PX`, `HASH_TICK_HALF_WIDTH_PX`, `HASH_MAJOR_EXTRA_HALF_PX` | constants | Used by tests that compute expected pixel positions |
+
+## Consumers
+
+### MCP servers under `mcps/`
+
+| MCP | Consumes draw.py? | Symbols used | Tools that call them |
+|---|---|---|---|
+| **`blocking-scheme-mcp`** | No | — | — |
+| **`coverage-mcp`** | No | — | — |
+| **`formation-library-mcp`** | No | — | — |
+| **`game-knowledge-mcp`** | No | — | — |
+| **`pass-protection-mcp`** | No | — | — |
+| **`philosophy-mcp`** | No | — | — |
+| **`playbook-generation-mcp`** | No | — | — |
+| **`play-library-mcp`** | **Yes** (lazy import via `_import_draw_module()`) | `render`, `load_route_library`, `assign_cells_for_formation`, `route_lookup`, `receiver_route_path` | `render_play`, `export_play_instructions` |
+| **`play-variant-mcp`** | No | — | — |
+| **`route-library-mcp`** | No (mentions "draw" in prose only) | — | — |
+| **`run-concept-mcp`** | No (mentions "draw" as a play name only) | — | — |
+| **`validation-mcp`** | No (mentions "draw" in a warning string only) | — | — |
+
+### Tests under `tests/`
+
+| Test file | Symbols imported via `_import_draw()` | Notes |
+|---|---|---|
+| `test_draw_tool.py` | `render`, `assign_cells_for_formation`, `load_route_library`, `hash_spec_for_profile`, `FIELD_MARGIN_PX`, `PIXELS_PER_CELL`, `HASH_TICK_HALF_WIDTH_PX`, `HASH_MAJOR_EXTRA_HALF_PX` | The 11-test smoke suite |
+| `test_draw_unit.py` | All the pure helpers, all enums, all `MARKER_*`, all `COLOR_*` | Pure-function unit tests |
+| `test_draw_render_components.py` | `render`, all `COLOR_*`, all `MARKER_*`, `OPACITY_ZONE_FILL`, `MAX_WARNINGS_DISPLAYED` | Render-branch coverage |
+| `test_draw_cli.py` | None (uses `subprocess` to invoke the CLI as a black box) | — |
+| `test_draw_validation.py` | All exception types, all `_validate_*` helpers, `_bfs_nearest_free_cell`, `BFS_MAX_RINGS`, `render_path_yd` | Validator + silent-failure coverage |
+| `test_draw_properties.py` | `render`, `universal_to_grid`, `grid_to_pixel`, `assign_cells_for_formation`, `_validate_route`, all exception types, `BFS_MAX_RINGS`, `FIELD_MARGIN_PX`, `PIXELS_PER_CELL` | Determinism + round-trip + fault injection |
+
+### Other places that name `draw.py` (non-consumers)
+
+| Location | Reference | Why it doesn't break on a rename |
+|---|---|---|
+| `docs/setup.md` | CLI command example | Documentation only; if the CLI argv changes, update the doc |
+| `docs/draw-play-architecture.md` | Module tour | Same |
+| `docs/draw-play-pipeline.md` | Worked examples | Same |
+| `mcps/route-library-mcp/server.py:139` | Comment string | Free-form prose, not a code reference |
+| `mcps/run-concept-mcp/server.py` | The word "draw" appearing as a play name | Unrelated to the renderer |
+| `mcps/validation-mcp/server.py:296` | Warning string `"...cannot draw"` | Free-form prose |
+
+## Renaming protocol
+
+When renaming or removing a public symbol in `draw.py`:
+
+1. Update the symbol in `draw.py`.
+2. Search this doc for the old name; update every consumer it references.
+3. Update this doc itself (the symbol table at the top) so the next renamer sees the new name.
+4. Run the full draw-test suite (`python3 -m unittest tests.test_draw_*`) to catch test consumers automatically.
+5. Run `find . -name '*.py' -path '*/mcps/*' | xargs grep -l <old-name>` to catch any consumer that this doc missed; if you find one, add it here.
+
+## Refresh procedure for this doc
+
+This list is generated by hand. To audit:
+
+```bash
+# Check every MCP for any draw.py reference (positive or negative)
+for mcp in mcps/*/; do
+  name=$(basename "$mcp")
+  if grep -lq 'tools/draw-play\|draw\.py\|_import_draw\|DRAW_SCRIPT' "$mcp"server.py 2>/dev/null; then
+    echo "$name: USES draw.py"
+  else
+    echo "$name: clean"
+  fi
+done
+
+# Check every test file
+grep -rln 'spec_from_file_location.*draw\|from draw_play\|import draw_play' tests/
+```
+
+If the output disagrees with this doc, this doc is wrong — fix it.

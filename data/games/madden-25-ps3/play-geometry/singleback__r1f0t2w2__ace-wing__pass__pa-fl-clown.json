@@ -1,0 +1,50 @@
+{
+  "slug": "singleback__r1f0t2w2__ace-wing__pass__pa-fl-clown",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Ace Wing",
+    "play_name": "PA FL Clown",
+    "play_type": "pass",
+    "canonical_team": "John Madden",
+    "canonical_img": 3,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "John Madden",
+      "Tom Landry"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Ace Wing",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Ace family \u2014 2 TE 2 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 505,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 189
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.51,
+  "response_text": "```json\n{\n  \"concept\": \"clown_route\",\n  \"concepts\": [\"clown_route\"],\n  \"routes\": {\n    \"TE_L\": \"flat\",\n    \"TE_R\": \"dig\",\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"drag\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"PA play with play-action fake. TE_R (R1 button) is primary target on dig route. TE_L runs flat to left. WR_X (Circle button, far right) runs corner. WR_Z (X button, left side) runs drag across. Red arrow from TE_R dig indicates primary progression.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "clown_route",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bclowns?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

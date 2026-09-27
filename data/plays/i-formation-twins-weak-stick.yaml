@@ -1,0 +1,69 @@
+play_id: i-formation-twins-weak-stick
+name: I-Form Twins Weak Stick
+aliases: [Twins Stick, Y-Stick from I]
+formation: i-formation-twins-weak
+play_type: pass
+ball_carrier: QB
+primary_read: SLOT
+secondary_read: TE
+checkdown: HB
+motions: []
+assignments:
+  - { player: LT, role: pass_block, blocking_scheme: man-protection }
+  - { player: LG, role: pass_block, blocking_scheme: man-protection }
+  - { player: C, role: pass_block, blocking_scheme: man-protection }
+  - { player: RG, role: pass_block, blocking_scheme: man-protection }
+  - { player: RT, role: pass_block, blocking_scheme: man-protection }
+  - { player: TE, role: route, route_name: drag, depth_yd: 6,
+      notes: "Backside drag — late outlet." }
+  - { player: X, role: route, route_name: clear-out-go, depth_yd: 22,
+      notes: "Outer-left clear-out vertical." }
+  - { player: SLOT, role: route, route_name: stick, depth_yd: 6, is_primary: true,
+      notes: "Weak-side slot stick — primary read. Sit vs zone, break out vs man." }
+  - { player: QB, role: ball_carrier, path: [[0, 0], [0, -2], [0, -3]],
+      notes: "3-step drop. Throw stick on rhythm if uncovered, else work to TE drag." }
+  - { player: FB, role: pass_block, blocking_scheme: man-protection,
+      notes: "Stays in to pick up backside blitz." }
+  - { player: HB, role: pass_block, blocking_scheme: man-protection,
+      notes: "Pass-protect; release as checkdown if pressure clears." }
+strengths:
+  - "Quick rhythm (3-step) — ball out fast"
+  - "Stick is option route — wins vs zone (sit) AND man (break out)"
+  - "Twins on weak side creates 2-WR look on that side for SLOT separation"
+  - "Easy first-down concept on 3rd-and-medium"
+weaknesses:
+  - "Limited big-play potential (6-yd stick)"
+  - "21 personnel keeps defense in base — no nickel mismatch"
+  - "Bracket on slot kills it"
+  - "LB carry-and-cushion neutralizes the option"
+best_vs_defense: ["cover-2 zone (sit in soft spot)", "cover-3 (between curl and flat defender)", "cover-1 (break out vs man)"]
+worst_vs_defense: ["bracket on slot", "cover-2 robber", "banjo coverage"]
+defensive_counters:
+  - counter_id: bracket-the-slot
+    pre_snap_look: "Apex defender aligned tight to the slot with inside leverage and a safety stacked directly over the top of that slot"
+    qb_key: "Check the slot's leverage — apex inside and tight, safety capped above him"
+    read_category: cb-leverage
+    why: "An apex inside with a safety over the top is a pre-built high-low bracket that takes away both the sit-vs-zone and break-out-vs-man options of the stick at once."
+    typical_against: ["cover-2 trap", "any defense scouting the slot as primary"]
+  - counter_id: carry-the-stick
+    pre_snap_look: "Curl-flat defender (LB or nickel apex) aligned with depth and inside leverage on the slot, with the corner pressed on the outside WR and no defender sitting in the flat"
+    qb_key: "Check the apex leverage — defender depth and inside, no squat flat defender outside"
+    read_category: cb-leverage
+    why: "A deep, inside-leverage apex with no flat squatter is set to carry the stick vertically, leaving the break-out no soft spot and forcing the QB off rhythm to the TE drag."
+    typical_against: ["cover-3 with disciplined hook-curl drops", "match quarters"]
+  - counter_id: rat-the-throwing-lane
+    pre_snap_look: "MLB stacked over the ball at shallow hook depth showing blitz, behind a single-high safety shell"
+    qb_key: "Check MLB depth and the safety shell — backer shallow over the ball, one high behind"
+    read_category: lb-depth
+    why: "A MLB sitting shallow in the middle hook under single-high is positioned to rat the stick throwing lane, forcing a check-down or risking a tipped interception."
+    typical_against: ["cover-2 robber", "fire-zone with rat in middle"]
+common_uses: ["3rd-and-short / 3rd-and-medium", "1st down chains", "Quick-game tempo"]
+philosophy: pro-style
+pass_concept_ref: stick
+philosophy_ref: pro-style
+era: "Bill Walsh / Paul Brown West Coast tradition; modernized continuously."
+famous_examples: ["Patriots offense (Belichick / Brady)", "Andy Reid Eagles / Chiefs"]
+tags: [pass, quick-game, stick, west-coast, 21-personnel, twins, any-level, high-school, college, nfl]
+verification_status: unverified
+source_notes:
+  - "Stick concept from I-Form Twins Weak — quick-game from a power-running formation."

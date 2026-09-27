@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t2w2__ace-pair__pass__te-option",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Ace Pair",
+    "play_name": "TE Option",
+    "play_type": "pass",
+    "canonical_team": "Miami Dolphins",
+    "canonical_img": 18,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Miami Dolphins"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Ace Pair",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Ace family \u2014 2 TE 2 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 498,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 165
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.41,
+  "response_text": "```json\n{\n  \"concept\": \"option_pass\",\n  \"concepts\": [\"option_pass\"],\n  \"routes\": {\n    \"TE_L\": \"option\",\n    \"TE_R\": \"option\",\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"Red arrow originates from QB and targets TE_R (marked with R1 button). TE_L runs option route to left side. Both TEs are eligible. WRs run vertical stretches. QB has two TE option reads.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "option_pass",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bhb option\\b|\\bte option\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

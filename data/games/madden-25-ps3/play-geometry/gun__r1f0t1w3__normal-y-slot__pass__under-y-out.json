@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__normal-y-slot__pass__under-y-out",
+  "info": {
+    "family": "GUN",
+    "formation": "Normal Y-Slot",
+    "play_name": "Under Y-Out",
+    "play_type": "pass",
+    "canonical_team": "Run Balanced",
+    "canonical_img": 100,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Run Balanced"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Normal Y-Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 499,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 238
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.45,
+  "response_text": "```json\n{\n  \"concept\": \"outs\",\n  \"concepts\": [\"outs\"],\n  \"routes\": {\n    \"WR_X\": \"out\",\n    \"WR_Z\": \"out\",\n    \"WR_SLOT_L\": \"seam\",\n    \"TE_R\": \"out\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"GUN Normal Y-Slot (r1f0t1w3): QB shotgun, 1 HB to right, 1 TE right, 3 WRs (X far left, Z far right, Slot left). Red primary target arrow on WR_X (out route). Yellow arrows: WR_Z out right, TE_R out right, WR_SLOT_L seam/vertical. HB check release. Standard outs family concept with seam clearout.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "outs",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bouts?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

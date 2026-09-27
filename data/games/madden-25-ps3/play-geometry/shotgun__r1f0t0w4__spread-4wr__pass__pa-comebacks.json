@@ -1,0 +1,49 @@
+{
+  "slug": "shotgun__r1f0t0w4__spread-4wr__pass__pa-comebacks",
+  "info": {
+    "family": "SHOTGUN",
+    "formation": "Spread 4WR",
+    "play_name": "PA Comebacks",
+    "play_type": "pass",
+    "canonical_team": "Tom Landry",
+    "canonical_img": 99,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Tom Landry"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SHOTGUN",
+      "formation": "Spread 4WR",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 0,
+      "WR": 4,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 503,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 240
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.38,
+  "response_text": "```json\n{\n  \"concept\": \"comebacks\",\n  \"concepts\": [\"comebacks\"],\n  \"routes\": {\n    \"WR_X\": \"comeback\",\n    \"WR_Z\": \"comeback\",\n    \"WR_SLOT_L\": \"comeback\",\n    \"WR_SLOT_R\": \"comeback\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"PA play \u2014 play-action fake with four WRs running comeback routes at various depths. QB in shotgun with no backfield (0 RB, 0 FB). All four WRs on LOS with button glyphs: purple square (WR_X far left), green triangle (WR_SLOT_L), blue X (WR_SLOT_R), red circle (WR_Z far right). Red arrow originates from QB and targets primary WR_X comeback. Formation is 5-wide empty with no TEs or eligible backs.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "comebacks",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcomebacks?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

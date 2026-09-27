@@ -1,0 +1,50 @@
+{
+  "slug": "gun__r1f0t1w3__bunch-quads__pass__spot",
+  "info": {
+    "family": "GUN",
+    "formation": "Bunch Quads",
+    "play_name": "Spot",
+    "play_type": "pass",
+    "canonical_team": "Kansas City Chiefs",
+    "canonical_img": 144,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Kansas City Chiefs",
+      "New York Jets"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Bunch Quads",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 493,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 193
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.19,
+  "response_text": "```json\n{\n  \"concept\": \"spot_concept\",\n  \"concepts\": [\"spot_concept\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"spot\",\n    \"WR_SLOT_R\": \"spot\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_L\",\n  \"notes\": \"GUN Bunch Quads formation with 4 WRs. Red arrow indicates primary target on left slot. Two WRs on each side with slot receivers running spot routes at intermediate depth while outer WRs stretch vertically. HB available for check-down in backfield.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "spot_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bspot\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

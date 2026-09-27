@@ -1,0 +1,52 @@
+{
+  "slug": "singleback__r1f0t2w2__ace-pair-twins__pass__pa-power-0",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Ace Pair Twins",
+    "play_name": "PA Power 0",
+    "play_type": "pass",
+    "canonical_team": "Buffalo Bills",
+    "canonical_img": 10,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Buffalo Bills",
+      "Cleveland Browns",
+      "Minnesota Vikings",
+      "Philadelphia Eagles"
+    ],
+    "owner_count": 4,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Ace Pair Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Ace family \u2014 2 TE 2 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 507,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 185
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.58,
+  "response_text": "```json\n{\n  \"concept\": \"power_run\",\n  \"concepts\": [\"power_run\", \"pa_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"TE_L\": \"wheel\",\n    \"TE_R\": \"flat\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"Play-action pass off power-run look. QB rolls right with R1 (TE_R) as primary flat/wheel target. WR_X streaks vertical; WR_Z corners over top. TE_L releases on wheel to left. HB executes fake carry before releasing as check option.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "power_run",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpower\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

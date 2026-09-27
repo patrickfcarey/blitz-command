@@ -1,0 +1,88 @@
+name: Pistol
+side: offense
+personnel: "11"
+strength_side: right
+
+# Chris Ault's pistol innovation (Nevada, 2004): QB at 4 yd, HB directly behind
+# QB at 7 yd. Hybrid of singleback (downhill run angles, PA threat) and
+# shotgun (QB has run-fake / pass options without losing a half-second
+# to opening up). 11 personnel base. TE strong-right; 3 WR distributed
+# weak-side X plus strong-side Z + slot.
+# Legality: 5 OL + TE + X = 7 on line.
+players:
+  - { label: LT,    position: LT, x: -2.0,  y:  0.0, on_line: true  }
+  - { label: LG,    position: LG, x: -1.0,  y:  0.0, on_line: true  }
+  - { label: C,     position: C,  x:  0.0,  y:  0.0, on_line: true  }
+  - { label: RG,    position: RG, x:  1.0,  y:  0.0, on_line: true  }
+  - { label: RT,    position: RT, x:  2.0,  y:  0.0, on_line: true  }
+  - { label: TE,    position: TE, x:  3.5,  y:  0.0, on_line: true  }
+  - { label: X,     position: WR, x: -15.0, y:  0.0, on_line: true  }
+  - { label: Z,     position: WR, x:  14.0, y: -1.0, on_line: false }
+  - { label: SLOT,  position: WR, x:  6.0,  y: -1.0, on_line: false }
+  - { label: QB,    position: QB, x:  0.0,  y: -4.0, on_line: false }
+  - { label: HB,    position: HB, x:  0.0,  y: -7.0, on_line: false }
+
+strengths:
+  - QB closer to LOS than shotgun = downhill run angles preserved (faster handoff)
+  - HB directly behind QB hides direction pre-snap (no offset tell)
+  - Read-option / RPO concepts work without the shotgun "back beside" tell
+  - PA threat retained — QB can keep the ball or hand off cleanly
+  - Modern spread-option with under-center-style mesh point
+
+weaknesses:
+  - QB still slightly removed from LOS — sneak / quick play-action a hair slower than under-center
+  - HB depth at 7 yd makes outside zone slower to develop than singleback
+  - Heavy run schemes lose the FB lead block (single-back limitation)
+  - Some games' editors don't model pistol depth correctly
+
+common_uses:
+  - Modern college base offense (zone read + RPO heavy)
+  - 1st-and-10 base run/pass balanced calls
+  - Hiding run direction pre-snap
+  - 2-minute / hurry-up where QB needs reads but HB needs depth
+
+run_concepts:
+  - inside-zone-read
+  - outside-zone-read
+  - power-read
+  - veer
+  - counter-read
+
+pass_concepts:
+  - rpo-slant
+  - rpo-bubble
+  - rpo-glance
+  - pa-y-cross
+  - pa-bootleg
+  - mesh
+  - four-verticals
+
+era: "2004 onward — Chris Ault innovation at Nevada; widespread in modern college and used in NFL (Kaepernick, RG3 era)."
+
+famous_users:
+  - "Chris Ault Nevada (2004 onward) — created the formation"
+  - "Colin Kaepernick / 49ers (2012-2014) under Jim Harbaugh"
+  - "RGIII / Washington (2012)"
+  - "Modern Power 5 college programs (Auburn, Ole Miss, others)"
+
+tags:
+  - pistol
+  - 11-personnel
+  - balanced
+  - shotgun-hybrid
+  - rpo-friendly
+  - zone-read
+  - modern
+  - college
+  - nfl
+
+notes: |
+  QB at 4 yd, HB directly behind QB at 7 yd is the signature alignment.
+  Distinguishes from shotgun (QB at 5 yd, HB beside QB) — pistol hides the
+  HB's lateral position, allowing read-option and PA without a directional
+  tell. Same 11 personnel as Singleback Ace; the Pistol is a depth/alignment
+  variant rather than a personnel change.
+
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-29 — Wikipedia 'Pistol offense' (https://en.wikipedia.org/wiki/Pistol_offense); USA Football 'Nevada Wolfpack and Chris Ault' (https://blogs.usafootball.com/blog/6491/how-the-nevada-wolfpack-and-coach-chris-ault-effectively-utilized-the-pistol-zone-read); KOKA Sports 'Pistol Formation Complete Guide' (https://blog.kokasports.com/pistol-formation-in-football-fully-explained/). Confirmed: QB at 4 yd, HB at 3 yd directly behind QB (i.e. 7 yd from C); Ault originated 2004; Nevada led nation in rushing 2009 with 3 1,000-yd rushers."

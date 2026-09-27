@@ -1,0 +1,59 @@
+{
+  "slug": "pistol__r1f0t0w4__trips-open__run__read-option",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Trips Open",
+    "play_name": "Read Option",
+    "play_type": "run",
+    "canonical_team": "Pistol",
+    "canonical_img": 107,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Pistol",
+      "Run and Shoot"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Trips Open",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 0,
+      "WR": 4,
+      "total": 6,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 522,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 119
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 90.24,
+  "response_text": "```json\n{\n  \"concept\": \"zone_read\",\n  \"concepts\": [\"zone_read\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"streak\",\n    \"WR_SLOT_R\": \"streak\"\n  },\n  \"ball_carrier\": \"HB C_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "C_right",
+    "c_xy": [
+      1549,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      1972,
+      615
+    ],
+    "dx_from_c": 423,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "zone_read",
+    "concept_family": "rpo",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bread option\\b|\\bzone read\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

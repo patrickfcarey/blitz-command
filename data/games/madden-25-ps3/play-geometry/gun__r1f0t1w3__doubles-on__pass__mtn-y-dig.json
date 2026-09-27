@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__doubles-on__pass__mtn-y-dig",
+  "info": {
+    "family": "GUN",
+    "formation": "Doubles On",
+    "play_name": "Mtn Y-Dig",
+    "play_type": "pass",
+    "canonical_team": "St. Louis Rams",
+    "canonical_img": 101,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "St. Louis Rams"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Doubles On",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Doubles \u2014 1 TE 3 WR (slot variant)"
+    }
+  },
+  "usage": {
+    "input_tokens": 500,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 234
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.29,
+  "response_text": "```json\n{\n  \"concept\": \"dig_route\",\n  \"concepts\": [\"dig_route\"],\n  \"routes\": {\n    \"WR_X\": \"dig\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"dig\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Red arrow from WR_X (purple \u25a1 left) running dig route at ~12 yds. Yellow routes: WR_Z streak right, WR_SLOT_L dig left-center, TE_R seam right. HB white circle below C runs check/release. Formation matches GUN Doubles (QB shotgun ~5 yds deep, 1 HB to side, 1 TE right, 3 WRs on LOS).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "dig_route",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdig\\b|\\bdigs\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "slug": "pistol__r1f0t1w3__weak-twins__run__lead-read-option",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Weak Twins",
+    "play_name": "Lead Read Option",
+    "play_type": "run",
+    "canonical_team": "Pistol",
+    "canonical_img": 29,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Pistol",
+      "San Francisco 49ers"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Weak Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Pistol Strong/Weak"
+    }
+  },
+  "usage": {
+    "input_tokens": 174,
+    "cache_creation_input_tokens": 352,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 109
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 83.87,
+  "response_text": "```json\n{\n  \"concept\": \"zone_read\",\n  \"concepts\": [\"zone_read\", \"lead_read_option\"],\n  \"routes\": {\n    \"TE_R\": \"block\",\n    \"WR_X\": \"block\",\n    \"WR_Z\": \"streak\"\n  },\n  \"ball_carrier\": \"HB C_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "C_right",
+    "c_xy": [
+      1551,
+      613
+    ],
+    "arrow_los_crossing_xy": [
+      2003,
+      639
+    ],
+    "dx_from_c": 452,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "zone_read",
+    "concept_family": "rpo",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bread option\\b|\\bzone read\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

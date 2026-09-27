@@ -1,0 +1,49 @@
+{
+  "slug": "pistol__r1f0t0w4__spread__pass__60-x-option",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Spread",
+    "play_name": "60 X Option",
+    "play_type": "pass",
+    "canonical_team": "Run and Shoot",
+    "canonical_img": 16,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Run and Shoot"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Spread",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 0,
+      "WR": 4,
+      "total": 6,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 496,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 192
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.32,
+  "response_text": "```json\n{\n  \"concept\": \"receiver_concept\",\n  \"concepts\": [\"60_x_option\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"streak\",\n    \"WR_SLOT_R\": \"streak\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Pistol Spread 4-wide empty set. All four WRs run vertical streaks. Dashed yellow routes on Z (left) and slot receivers indicate option/progression reads. Red arrow on X (right) indicates primary target. HB in pistol formation behind QB.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "receiver_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\b(wr|te|x|y|z|fl|se|slot|h) (corner|drag|hook|option|under|seam|follow|attack|inside|angle|shake|fork|scissors|cross|trail|streak|spot|fade|in|out|wheel|seams|hooks|corners|outs|ins|posts|streaks)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

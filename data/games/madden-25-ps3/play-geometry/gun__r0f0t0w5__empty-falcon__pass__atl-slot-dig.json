@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r0f0t0w5__empty-falcon__pass__atl-slot-dig",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Falcon",
+    "play_name": "ATL Slot Dig",
+    "play_type": "pass",
+    "canonical_team": "Atlanta Falcons",
+    "canonical_img": 129,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Atlanta Falcons"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Falcon",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 499,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 134
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 1.75,
+  "response_text": "```json\n{\n  \"concept\": \"dig_route\",\n  \"concepts\": [\"dig_route\"],\n  \"routes\": {\n    \"WR_X\": \"dig\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"dig\",\n    \"WR_SLOT_R\": \"streak\",\n    \"WR_FLANKER\": \"streak\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_L\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "dig_route",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdig\\b|\\bdigs\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

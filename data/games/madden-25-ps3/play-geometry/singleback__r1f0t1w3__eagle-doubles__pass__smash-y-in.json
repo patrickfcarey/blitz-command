@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__eagle-doubles__pass__smash-y-in",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Eagle Doubles",
+    "play_name": "Smash Y-In",
+    "play_type": "pass",
+    "canonical_team": "Philadelphia Eagles",
+    "canonical_img": 20,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Philadelphia Eagles"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Eagle Doubles",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 502,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 194
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.1,
+  "response_text": "```json\n{\n  \"concept\": \"smash\",\n  \"concepts\": [\"smash\", \"y_in\"],\n  \"routes\": {\n    \"WR_X\": \"hitch\",\n    \"WR_Z\": \"corner\",\n    \"TE_R\": \"in\",\n    \"WR_SLOT_L\": \"streak\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Smash concept on right side (X hitch, Z corner over). TE_R runs Y-in route (dig/in-breaker). WR_SLOT_L (left slot) runs vertical clearout. HB in checkdown role. Red arrow indicates primary read to Z corner.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "smash",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bsmash\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

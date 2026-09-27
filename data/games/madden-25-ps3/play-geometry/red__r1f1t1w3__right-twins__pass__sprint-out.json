@@ -1,0 +1,49 @@
+{
+  "slug": "red__r1f1t1w3__right-twins__pass__sprint-out",
+  "info": {
+    "family": "RED",
+    "formation": "Right Twins",
+    "play_name": "Sprint Out",
+    "play_type": "pass",
+    "canonical_team": "Bill Walsh",
+    "canonical_img": 53,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Bill Walsh"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "RED",
+      "formation": "Right Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 490,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 177
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.56,
+  "response_text": "```json\n{\n  \"concept\": \"outs\",\n  \"concepts\": [\"outs\"],\n  \"routes\": {\n    \"WR_X\": \"out\",\n    \"WR_Z\": \"out\",\n    \"WR_SLOT_L\": \"out\",\n    \"TE_R\": \"out\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Sprint Out right. QB rolling right with R1 button assigned to TE_R (green \u25b3). All four eligible receivers running out routes at various depths. HB available for checkdown. Expected r1f1t1w3 personnel confirmed.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "outs",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bouts?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

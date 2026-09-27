@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__doubles-on__pass__hb-delay-out",
+  "info": {
+    "family": "GUN",
+    "formation": "Doubles On",
+    "play_name": "HB Delay Out",
+    "play_type": "pass",
+    "canonical_team": "St. Louis Rams",
+    "canonical_img": 93,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "St. Louis Rams"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Doubles On",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Doubles \u2014 1 TE 3 WR (slot variant)"
+    }
+  },
+  "usage": {
+    "input_tokens": 566,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 213
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.13,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"generic_hb_run\"],\n  \"routes\": {\n    \"HB\": \"delay_out\",\n    \"WR_X\": \"block\",\n    \"WR_Z\": \"block\",\n    \"WR_SLOT_L\": \"block\"\n  },\n  \"ball_carrier\": \"HB flat\",\n  \"primary_target\": null,\n  \"notes\": \"Play labeled as PASS in UI but shows run characteristics with HB carrying the ball on a delay-out route to the flat. Red arrow indicates HB ball-carrier path; WRs are blocking downfield. Formation is GUN with 1 RB, 0 TEs, 3 WRs as expected (r1f0t1w3). R1 button glyph visible on backfield player.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "^hb \\w+",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

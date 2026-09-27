@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__spread-y-flex__pass__ravens-y-shallow",
+  "info": {
+    "family": "GUN",
+    "formation": "Spread Y-Flex",
+    "play_name": "Ravens Y Shallow",
+    "play_type": "pass",
+    "canonical_team": "Baltimore Ravens",
+    "canonical_img": 130,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Baltimore Ravens"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Spread Y-Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 501,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 236
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.3,
+  "response_text": "```json\n{\n  \"concept\": \"y_concept\",\n  \"concepts\": [\"y_concept\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"drag\",\n    \"TE_R\": \"shallow_cross\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"Y Shallow concept with TE_R running shallow cross (blue arrow, primary read). WR_X and WR_Z both streak vertically. WR_SLOT_L runs drag at ~5 yds. HB in shotgun alignment checks release. Formation is GUN Spread Y-Flex (5 WR + 1 TE eligible, 1 RB shotgun, no QB visible in backfield \u2014 consistent with r1f0t1w3).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "y_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\by[- ]?(cross|sail|stick|corner|trail|spot|drive|shallow)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

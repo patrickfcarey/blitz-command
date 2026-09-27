@@ -1,0 +1,52 @@
+{
+  "slug": "gun__r1f0t2w2__ace-pair-twins__run__speed-option",
+  "info": {
+    "family": "GUN",
+    "formation": "Ace Pair Twins",
+    "play_name": "Speed Option",
+    "play_type": "run",
+    "canonical_team": "Philadelphia Eagles",
+    "canonical_img": 72,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Philadelphia Eagles"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Ace Pair Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Ace Twins \u2014 2 TE 2 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 171,
+    "cache_creation_input_tokens": 352,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 168
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 91.37,
+  "response_text": "```json\n{\n  \"concept\": \"speed_option\",\n  \"concepts\": [\"speed_option\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"TE_R\": \"block\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_R\": \"streak\"\n  },\n  \"ball_carrier\": \"HB edge\",\n  \"primary_target\": null,\n  \"notes\": \"Speed option with HB attacking the edge. Two TEs blocking in for run support. Both slot/outer WRs running vertical clearout streaks. Blue route arrow indicates option/pitch read component. Play shows classic option geometry with HB reading edge defender.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "error": "no red arrow detected",
+    "c_x": 1553,
+    "c_y": 615,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "speed_option",
+    "concept_family": "rpo",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bspeed option\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

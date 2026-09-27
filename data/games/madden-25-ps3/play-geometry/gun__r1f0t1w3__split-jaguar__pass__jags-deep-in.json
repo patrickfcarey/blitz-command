@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__split-jaguar__pass__jags-deep-in",
+  "info": {
+    "family": "GUN",
+    "formation": "Split Jaguar",
+    "play_name": "Jags Deep In",
+    "play_type": "pass",
+    "canonical_team": "Jacksonville Jaguars",
+    "canonical_img": 79,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Jacksonville Jaguars"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Split Jaguar",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "GUN/Shotgun default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 500,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 129
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.24,
+  "response_text": "```json\n{\n  \"concept\": \"deep_in\",\n  \"concepts\": [\"deep_in\"],\n  \"routes\": {\n    \"WR_X\": \"deep_in\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"dig\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "deep_in",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdeep in\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

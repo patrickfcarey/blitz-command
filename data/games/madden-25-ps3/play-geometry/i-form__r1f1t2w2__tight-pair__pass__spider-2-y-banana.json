@@ -1,0 +1,49 @@
+{
+  "slug": "i-form__r1f1t2w2__tight-pair__pass__spider-2-y-banana",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Tight Pair",
+    "play_name": "Spider 2 Y Banana",
+    "play_type": "pass",
+    "canonical_team": "Indianapolis Colts",
+    "canonical_img": 58,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Indianapolis Colts"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Tight Pair",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Tight/Twin-TE \u2014 2 TE"
+    }
+  },
+  "usage": {
+    "input_tokens": 506,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 123
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 1.65,
+  "response_text": "```json\n{\n  \"concept\": \"banana_route\",\n  \"concepts\": [\"banana_route\"],\n  \"routes\": {\n    \"TE_L\": \"banana\",\n    \"TE_R\": \"corner\",\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"out\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "banana_route",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bbananas?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "slug": "pistol__r1f0t1w3__weak__run__triple-option",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Weak",
+    "play_name": "Triple Option",
+    "play_type": "run",
+    "canonical_team": "Carolina Panthers",
+    "canonical_img": 70,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Carolina Panthers",
+      "Pistol",
+      "Washington Redskins"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Weak",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Pistol Strong/Weak"
+    }
+  },
+  "usage": {
+    "input_tokens": 518,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 191
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 60.21,
+  "response_text": "```json\n{\n  \"concept\": \"option_route\",\n  \"concepts\": [\"option_route\"],\n  \"routes\": {\n    \"HB\": \"pitch_option\",\n    \"QB\": \"keep_option\",\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_R\": \"streak\",\n    \"TE_L\": \"block\"\n  },\n  \"ball_carrier\": \"QB D_left\",\n  \"primary_target\": null,\n  \"notes\": \"Triple option run play from Pistol Weak. Red arrow shows QB keep/dive path left; yellow arrow shows pitch/toss path to HB. Three vertical streaks (WRs) downfield as clearouts. TE blocks on left side.\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_left",
+    "c_xy": [
+      1551,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      1017,
+      644
+    ],
+    "dx_from_c": -534,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "option_route",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\boption\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

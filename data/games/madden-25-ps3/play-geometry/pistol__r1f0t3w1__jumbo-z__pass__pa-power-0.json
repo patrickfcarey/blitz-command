@@ -1,0 +1,49 @@
+{
+  "slug": "pistol__r1f0t3w1__jumbo-z__pass__pa-power-0",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Jumbo Z",
+    "play_name": "PA Power 0",
+    "play_type": "pass",
+    "canonical_team": "Seattle Seahawks",
+    "canonical_img": 76,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Seattle Seahawks"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Jumbo Z",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 3,
+      "WR": 1,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Jumbo \u2014 typically 3 TE 1 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 502,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 216
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.06,
+  "response_text": "```json\n{\n  \"concept\": \"power_run\",\n  \"concepts\": [\"power_run\", \"pa_pass\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"TE_R\": \"block\",\n    \"TE_WING_R\": \"wheel\",\n    \"WR_X\": \"streak\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_WING_R\",\n  \"notes\": \"Play-action Power O disguise. Three TEs lined up (two attached inline, one wing offset below LOS on right side). TE_WING_R releases to wheel route (blue arrow). WR_X runs streak. HB in backfield ready for checkdown. Red arrow primary to TE_WING_R wheel. R1 button assignment visible on right.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "power_run",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpower\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,36 @@
+scheme_id: zone-blocking
+name: Zone Blocking
+category: run-blocking
+description: |
+  OL blocks zones (gaps), not specific defenders. At the snap, each lineman
+  takes a playside zone-step and blocks whatever defender enters that zone.
+  Combo blocks are common — two OL might start together and one climbs to a
+  secondary defender. Foundation of Outside Zone and Inside Zone schemes.
+assignments_by_position:
+  LT: "Take a playside zone-step; block the first defender in your zone."
+  LG: "Take a playside zone-step; can combo with C if DL shades center."
+  C: "Take a playside zone-step; open hip to allow LG combo."
+  RG: "Take a playside zone-step; climb to second level if DL engages with C."
+  RT: "Take a playside zone-step; seal the edge if TE doesn't."
+  TE: "Take a playside zone-step or reach-block; seal edge or combo with RT."
+  HB: "Follow the blocking wall; read BANG/BEND/BOUNCE flow."
+  FB: "Lead into the zone; block the first unblocked defender."
+defeats:
+  - "soft edge defense"
+  - "single-gap schemes that overload one area"
+vulnerable_to:
+  - "stunts (DL slants across the grain before OL can zone-step)"
+  - "over-aggressive secondary defenders"
+tags:
+  - run-blocking
+  - zone-scheme
+  - run
+  - gap-scheme
+  - any-level
+  - high-school
+  - college
+  - nfl
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Throw Deep Publishing 'Zone-Blocking Schemes' (https://throwdeeppublishing.com/blogs/football-glossary/): confirmed zone-step + combo-block structure."
+  - "Web validated 2026-04-30 — X&O Labs 'Zone Run Concepts' (https://www.xandolabs.com/): zone blocking foundation for inside/outside zone."

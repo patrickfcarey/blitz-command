@@ -1,0 +1,49 @@
+{
+  "slug": "i-form__r1f1t1w3__h-slot__pass__bench",
+  "info": {
+    "family": "I-FORM",
+    "formation": "H Slot",
+    "play_name": "Bench",
+    "play_type": "pass",
+    "canonical_team": "Seattle Seahawks",
+    "canonical_img": 40,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Seattle Seahawks"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "H Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Slot \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 494,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 213
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.03,
+  "response_text": "```json\n{\n  \"concept\": \"bench_concept\",\n  \"concepts\": [\"bench_concept\"],\n  \"routes\": {\n    \"WR_X\": \"bench\",\n    \"WR_Z\": \"bench\",\n    \"WR_SLOT_L\": \"bench\",\n    \"TE_L\": \"chip_release\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"I-Form H Slot with 3 WRs (X, Z, Slot) all running bench routes (sit-down at ~10 yds). TE_L chips then releases. HB available checkdown. R1 button (red circle glyph) is primary target WR_X. Yellow corner routes visible on left and right as option routes or pre-snap reads.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "bench_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bbench\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

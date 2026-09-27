@@ -1,0 +1,58 @@
+{
+  "slug": "i-form__r1f1t1w2__hulk__run__hb-counter-wk",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Hulk",
+    "play_name": "HB Counter Wk",
+    "play_type": "run",
+    "canonical_team": "Indianapolis Colts",
+    "canonical_img": 68,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Indianapolis Colts"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Hulk",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "I-Form Pro default"
+    }
+  },
+  "usage": {
+    "input_tokens": 570,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 66
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 56.06,
+  "response_text": "```json\n{\n  \"concept\": \"counter_run\",\n  \"concepts\": [\"counter_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB C_left\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "C_left",
+    "c_xy": [
+      1632,
+      621
+    ],
+    "arrow_los_crossing_xy": [
+      1276,
+      714
+    ],
+    "dx_from_c": -356,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "counter_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bcounter\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

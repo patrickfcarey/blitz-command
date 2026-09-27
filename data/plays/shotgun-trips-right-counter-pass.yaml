@@ -1,0 +1,166 @@
+play_id: shotgun-trips-right-counter-pass
+name: Counter Pass (Trips Right)
+aliases:
+  - Counter-Q Pass
+  - Counter Read Play-Action
+  - Trips Counter Boot Pass
+
+formation: shotgun-trips-right
+play_type: play-action
+ball_carrier: QB
+primary_read: WR3
+secondary_read: TE
+checkdown: HB
+
+# Identical motion to Counter Read — the base play carries an empty motions
+# block, so this twin does too. Running no motion on every member of the
+# Counter family keeps the pre-snap look identical so the defense cannot
+# key it.
+motions: []
+
+assignments:
+  - player: LT
+    role: pass_block
+    blocking_scheme: pull-around
+    target: playside-edge
+    path: [[0, 0], [3, -0.5], [5, -0.5], [7, 2]]
+    notes: "PULL — identical pull track to Counter Read for the first two steps to sell the run, then log and wall the playside edge rusher."
+  - player: LG
+    role: pass_block
+    blocking_scheme: pull-around
+    target: playside-edge
+    path: [[0, 0], [2, -0.5], [4, 0]]
+    notes: "PULL — identical pull track to Counter Read for the first two steps to sell the run, then wall the inside edge of the rush."
+  - player: C
+    role: pass_block
+    blocking_scheme: pa-counter-protection
+    notes: "Show the gap block, then protect the A-gaps."
+  - player: RG
+    role: pass_block
+    blocking_scheme: pa-counter-protection
+    notes: "Fire out showing the Counter down-block, then recover and protect the playside."
+  - player: RT
+    role: pass_block
+    blocking_scheme: pa-counter-protection
+    notes: "Show the down-block, then protect the playside edge."
+  - player: TE
+    role: route
+    route_name: drag
+    depth_yd: 8
+    notes: "Show the down-block on the backside LB for one beat to sell Counter, then release across on the drag behind the run-flow linebackers — the secondary read under the corner route."
+  - player: WR1
+    role: route
+    route_name: comeback
+    depth_yd: 16
+    notes: "Stalk-release to sell run, then break the comeback — the deep playside answer if the corner sits."
+  - player: WR2
+    role: route
+    route_name: post
+    depth_yd: 18
+    notes: "Stalk-release to sell run, then stem to the post — the shot if the playside safety bites the Counter fake."
+  - player: WR3
+    role: route
+    route_name: corner
+    depth_yd: 12
+    is_primary: true
+    notes: "Crack-release to sell the Counter block for one beat, then stem out on the corner route into the void left by the run-flow secondary — the primary throw."
+  - player: QB
+    role: ball_carrier
+    path: [[0, 0], [-1, 0], [-3, -1], [-6, -2]]
+    notes: "First two waypoints IDENTICAL to Counter Read — counter step left selling the give, then continue away from the run action and settle to throw off the bootleg-style fake. Eyes on the WR3 corner first."
+  - player: HB
+    role: fake
+    path: [[0, 0], [4, 1], [7, 3], [9, 4]]
+    notes: "Run the exact Counter-Read outside-zone sweep track for the first two steps to sell the give, then continue as if finishing the perimeter run, becoming a late checkdown leaking to the flat."
+
+strengths:
+  - Identical pre-snap look and first-step action to Counter Read — the defense cannot tell it from the run
+  - The counter step plus a full HB sweep fake holds both linebackers and the alley defender
+  - Two pulling linemen sell the run while still walling the edge for protection
+  - QB drifts away from the run action — moving launch point off a believable fake
+  - Opens the WR3 corner route into the void vacated by the run-flow secondary
+
+weaknesses:
+  - Needs Counter Read on tape first — a cold PA fake holds no one
+  - Pulling both the LT and LG thins interior protection against A-gap pressure
+  - The QB drift takes time — slow to reach the throw against fast pressure
+  - Vulnerable to a defense that does not honor the counter run action
+  - Throwing into the trips-side void is high-risk if the safety does not bite
+
+best_vs_defense:
+  - cover-3 with run-fit linebackers
+  - 4-3 with downhill, aggressive LB play
+  - any defense overcommitting to the Counter run
+  - single-high coverages rotating to the run
+
+worst_vs_defense:
+  - two-high shells with LBs at pass depth
+  - cover-1 robber sitting in the drag window
+  - interior A-gap pressure that ignores the run fake
+  - any defense that has stopped Counter Read and stopped respecting it
+
+defensive_counters:
+  - counter_id: alert-zone-no-bite
+    pre_snap_look: "Linebackers aligned at full passing depth (5+ yards off the LOS) under a two-high safety shell, not crowding the box"
+    qb_key: "Check the LB depth and safety shell — backers deep, two-high behind them"
+    read_category: lb-depth
+    why: "Linebackers already at pass depth under a two-high shell read pass first; they will not vacate on the Counter fake, so the TE drag and crossing windows arrive into a populated zone."
+    typical_against: ["cover-4", "cover-3 alert", "any defense after Counter Read has been slowed"]
+  - counter_id: trips-safety-cap
+    pre_snap_look: "Trips-side safety capped deep over WR3 with the nickel squatting underneath — a bracket showing on the inner trips receiver"
+    qb_key: "Scan the trips-side safety — capped deep over WR3 with help squatting under him"
+    read_category: safety-shell
+    why: "A pre-set bracket on WR3 takes away the primary corner route regardless of the run fake, since the deep safety never has to honor the Counter give."
+    typical_against: ["cover-2 cloud to trips", "quarters with a bracket call"]
+  - counter_id: backside-edge-pressure
+    pre_snap_look: "Backside EDGE in a wide-9 sprinter's stance with no blocker assigned to him — the LT has pulled away"
+    qb_key: "Scan the backside edge — EDGE flared wide-9, weight forward, uncovered"
+    read_category: dl-alignment
+    why: "With the LT pulling, a wide-9 backside EDGE in a get-off stance has a free lane and flushes the QB before the drift reaches its launch point."
+    typical_against: ["cover-1 with edge pressure", "any defense with a free runner off the backside"]
+
+common_uses:
+  - After establishing Counter Read for 4+ yards
+  - 1st-and-10 play-action shot
+  - 2nd-and-medium
+  - Red-zone moving the linebackers with the Counter fake
+
+philosophy: spread-option
+run_concept_ref: counter
+pass_concept_ref: flood
+philosophy_ref: spread-option
+
+era: "Mid-2010s onward — play-action off the QB counter-read run grew alongside mobile-QB spread offenses."
+
+famous_examples:
+  - "Eagles (Jalen Hurts) play-action off the QB counter game"
+  - "Modern Power 5 spread programs running counter-action passes from trips"
+
+tags:
+  - pa
+  - play-action
+  - counter
+  - counter-action
+  - bootleg
+  - shotgun
+  - trips
+  - 11-personnel
+  - modern
+  - high-school
+  - college
+  - nfl
+
+notes: |
+  Play-action pass off Counter Read. The QB counter step, the HB
+  outside-zone sweep fake, the LT and LG pulls, and the OL down-block show
+  are all IDENTICAL to Counter Read through the first two waypoints — the
+  defense reads the Counter run. The QB then drifts away from the run
+  action and throws the WR3 corner route into the void left by the
+  run-flow secondary. Member of the Shotgun Trips Counter disguise family
+  (see data/play-families/).
+
+  Mirror to counter-pass-left by flipping all coordinates.
+
+verification_status: unverified
+source_notes:
+  - "Play-action off the QB counter-read run is a universal constraint concept. Authored as a disguise twin of shotgun-trips-right-counter-read — initial action (QB counter step, HB outside-zone sweep track, LT and LG pulls) deliberately mirrors the base play through the first two waypoints."

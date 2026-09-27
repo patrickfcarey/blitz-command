@@ -1,0 +1,54 @@
+{
+  "slug": "pistol__r1f0t1w3__strong__pass__pa-flood",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Strong",
+    "play_name": "PA Flood",
+    "play_type": "pass",
+    "canonical_team": "Carolina Panthers",
+    "canonical_img": 63,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Carolina Panthers",
+      "Detroit Lions",
+      "Pistol",
+      "San Francisco 49ers",
+      "Seattle Seahawks",
+      "Washington Redskins"
+    ],
+    "owner_count": 6,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Strong",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Pistol Strong/Weak"
+    }
+  },
+  "usage": {
+    "input_tokens": 491,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 197
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.71,
+  "response_text": "```json\n{\n  \"concept\": \"flood\",\n  \"concepts\": [\"flood\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_R\": \"flat\",\n    \"TE_R\": \"dig\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"PA Flood with play-action fake. TE_R runs intermediate dig route (vertical stretch). WR_Z corner over WR_SLOT_R flat creates the high-low read on flat defender. WR_X runs streak clearout on opposite side. HB checkdown availability. Red arrow indicates primary read to WR_Z corner route.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "flood",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bflood\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

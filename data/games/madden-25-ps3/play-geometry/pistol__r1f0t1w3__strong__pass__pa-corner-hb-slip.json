@@ -1,0 +1,54 @@
+{
+  "slug": "pistol__r1f0t1w3__strong__pass__pa-corner-hb-slip",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Strong",
+    "play_name": "PA Corner HB Slip",
+    "play_type": "pass",
+    "canonical_team": "Carolina Panthers",
+    "canonical_img": 64,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Carolina Panthers",
+      "Detroit Lions",
+      "Pistol",
+      "San Francisco 49ers",
+      "Seattle Seahawks",
+      "Washington Redskins"
+    ],
+    "owner_count": 6,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Strong",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Pistol Strong/Weak"
+    }
+  },
+  "usage": {
+    "input_tokens": 529,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 191
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.9,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"pa_corner\", \"hb_slip\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"corner\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"slip_flat\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"HB\",\n  \"notes\": \"Play-action pass with PA Corner concept on both sides. HB runs slip route to flat as checkdown/primary target. TE seam route attacking deep middle. WR_X (purple square, left) and WR_Z (blue X, right) both run corner routes. Red arrow indicates primary read on HB slip.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bhb \\w+",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

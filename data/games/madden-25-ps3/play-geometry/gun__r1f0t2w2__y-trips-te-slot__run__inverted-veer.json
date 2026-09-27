@@ -1,0 +1,58 @@
+{
+  "slug": "gun__r1f0t2w2__y-trips-te-slot__run__inverted-veer",
+  "info": {
+    "family": "GUN",
+    "formation": "Y-Trips TE Slot",
+    "play_name": "Inverted Veer",
+    "play_type": "run",
+    "canonical_team": "Carolina Panthers",
+    "canonical_img": 100,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Carolina Panthers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Y-Trips TE Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 537,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 187
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 49.81,
+  "response_text": "```json\n{\n  \"concept\": \"inverted_veer\",\n  \"concepts\": [\"inverted_veer\"],\n  \"routes\": {\n    \"TE_R\": \"block\",\n    \"WR_Z\": \"block\",\n    \"WR_SLOT_R\": \"block\",\n    \"HB\": \"lead_block\"\n  },\n  \"ball_carrier\": \"WILDCAT_RB B_right\",\n  \"primary_target\": null,\n  \"notes\": \"Wildcat formation \u2014 RB lined up at QB position. Red arrow (ball carrier) runs right-side B-gap with lead-block support from HB. Yellow arrow indicates pulling/lead-block path. TE_R and slot-side receivers execute downfield blocks to seal the edge.\"\n}\n```",
+  "py_hints": {
+    "target_gap": "B_right",
+    "c_xy": [
+      1553,
+      621
+    ],
+    "arrow_los_crossing_xy": [
+      1879,
+      621
+    ],
+    "dx_from_c": 326,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "inverted_veer",
+    "concept_family": "rpo",
+    "blockers_implicit": false,
+    "matched_pattern": "\\binverted veer\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

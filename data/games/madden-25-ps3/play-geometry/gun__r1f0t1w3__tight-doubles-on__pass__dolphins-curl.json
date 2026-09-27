@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__tight-doubles-on__pass__dolphins-curl",
+  "info": {
+    "family": "GUN",
+    "formation": "Tight Doubles On",
+    "play_name": "Dolphins Curl",
+    "play_type": "pass",
+    "canonical_team": "Miami Dolphins",
+    "canonical_img": 103,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Miami Dolphins"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Tight Doubles On",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Doubles \u2014 1 TE 3 WR (slot variant)"
+    }
+  },
+  "usage": {
+    "input_tokens": 497,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 110
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 1.69,
+  "response_text": "```json\n{\n  \"concept\": \"curls\",\n  \"concepts\": [\"curls\"],\n  \"routes\": {\n    \"WR_X\": \"curl\",\n    \"WR_Z\": \"flat\",\n    \"TE_R\": \"streak\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "curls",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcurls?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

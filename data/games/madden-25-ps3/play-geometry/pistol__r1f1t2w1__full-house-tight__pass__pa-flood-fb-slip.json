@@ -1,0 +1,49 @@
+{
+  "slug": "pistol__r1f1t2w1__full-house-tight__pass__pa-flood-fb-slip",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Full House Tight",
+    "play_name": "PA Flood FB Slip",
+    "play_type": "pass",
+    "canonical_team": "Washington Redskins",
+    "canonical_img": 57,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Washington Redskins"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Full House Tight",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 1,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Pistol Full House \u2014 heavy backfield"
+    }
+  },
+  "usage": {
+    "input_tokens": 530,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 205
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.81,
+  "response_text": "```json\n{\n  \"concept\": \"flood\",\n  \"concepts\": [\"flood\", \"pa_pass\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"flat\",\n    \"TE_L\": \"dig\",\n    \"TE_R\": \"seam\",\n    \"FB\": \"slip\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"PA play with play-action fake. Red arrow indicates primary target TE_R on seam route. Flood concept on right side (TE_R seam, WR_Z flat, WR_X corner). TE_L runs dig route on backside. FB releases into flat on slip route. R1 button glyph on TE_R confirms primary receiver.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "flood",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bflood\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

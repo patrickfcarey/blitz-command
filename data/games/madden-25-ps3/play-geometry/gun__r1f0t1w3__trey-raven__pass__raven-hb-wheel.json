@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__trey-raven__pass__raven-hb-wheel",
+  "info": {
+    "family": "GUN",
+    "formation": "Trey Raven",
+    "play_name": "Raven HB Wheel",
+    "play_type": "pass",
+    "canonical_team": "Baltimore Ravens",
+    "canonical_img": 119,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Baltimore Ravens"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Trey Raven",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "GUN/Shotgun default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 574,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 174
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.38,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"generic_hb_run\"],\n  \"routes\": {\n    \"HB\": \"wheel\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"HB\",\n  \"notes\": \"Play labeled as PASS in banner; py_concept indicates run family but play_type=pass. Diagram shows HB wheel route (yellow arrow curving right to sideline). Red arrow originates from QB area and curves left upfield \u2014 appears to be the primary pass target, not a handoff. HB is eligible receiver running wheel route, likely checkdown/hot option. Emit as pass play with HB wheel as primary read.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "^hb \\w+",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

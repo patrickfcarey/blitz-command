@@ -1,0 +1,50 @@
+{
+  "slug": "weak__r1f1t1w3__flex-twins__pass__mesh",
+  "info": {
+    "family": "WEAK",
+    "formation": "Flex Twins",
+    "play_name": "Mesh",
+    "play_type": "pass",
+    "canonical_team": "Arizona Cardinals",
+    "canonical_img": 76,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Arizona Cardinals",
+      "West Coast"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "WEAK",
+      "formation": "Flex Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 489,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 195
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.23,
+  "response_text": "```json\n{\n  \"concept\": \"mesh\",\n  \"concepts\": [\"mesh\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"curl\",\n    \"WR_SLOT_L\": \"drag\",\n    \"WR_SLOT_R\": \"drag\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_L\",\n  \"notes\": \"Mesh concept with two crossing routes (WR_SLOT_L and WR_SLOT_R dragging across). WR_X runs corner to opposite side, WR_Z curl. TE_R releases vertical. HB available checkdown.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "mesh",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bmesh\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "slug": "pistol__r1f0t3w1__jumbo-z__run__lead-option",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Jumbo Z",
+    "play_name": "Lead Option",
+    "play_type": "run",
+    "canonical_team": "Seattle Seahawks",
+    "canonical_img": 74,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Seattle Seahawks"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Jumbo Z",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 3,
+      "WR": 1,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Jumbo \u2014 typically 3 TE 1 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 498,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 199
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 93.46,
+  "response_text": "```json\n{\n  \"concept\": \"option_route\",\n  \"concepts\": [\"option_route\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"TE_R\": \"block\",\n    \"TE_WING_R\": \"corner\",\n    \"WR_X\": \"streak\"\n  },\n  \"ball_carrier\": \"HB D_right\",\n  \"primary_target\": null,\n  \"notes\": \"Lead Option run with option read to TE_WING_R on the corner route (green). Red arrow indicates primary ball-carrier path to HB running D_right edge. Formation is Pistol Jumbo Z with 3 TEs (2 inline + 1 wing-right) and 1 WR. Three attached linemen on right side provide edge support.\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_right",
+    "c_xy": [
+      1604,
+      609
+    ],
+    "arrow_los_crossing_xy": [
+      2273,
+      850
+    ],
+    "dx_from_c": 669,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "option_route",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\boption\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

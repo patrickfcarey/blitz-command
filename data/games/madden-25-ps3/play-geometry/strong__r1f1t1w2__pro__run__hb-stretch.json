@@ -1,0 +1,67 @@
+{
+  "slug": "strong__r1f1t1w2__pro__run__hb-stretch",
+  "info": {
+    "family": "STRONG",
+    "formation": "Pro",
+    "play_name": "HB Stretch",
+    "play_type": "run",
+    "canonical_team": "Baltimore Ravens",
+    "canonical_img": 64,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Baltimore Ravens",
+      "Brian Billick",
+      "Jacksonville Jaguars",
+      "Jimmy Johnson",
+      "Miami Dolphins",
+      "Mike Ditka",
+      "Run Balanced",
+      "Run N Gun",
+      "San Francisco 49ers",
+      "Tennessee Titans"
+    ],
+    "owner_count": 10,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 583,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 56
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 53.29,
+  "response_text": "```json\n{\n  \"concept\": \"outside_zone\",\n  \"routes\": {},\n  \"ball_carrier\": \"HB C_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "C_right",
+    "c_xy": [
+      1553,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      1979,
+      763
+    ],
+    "dx_from_c": 426,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "outside_zone",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bhb stretch\\b|\\bstretch\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

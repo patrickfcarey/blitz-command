@@ -1,0 +1,49 @@
+{
+  "slug": "weak__r1f1t1w2__h-close-flip__pass__pa-wr-curls",
+  "info": {
+    "family": "WEAK",
+    "formation": "H Close Flip",
+    "play_name": "PA WR Curls",
+    "play_type": "pass",
+    "canonical_team": "Baltimore Ravens",
+    "canonical_img": 93,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Baltimore Ravens"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "WEAK",
+      "formation": "H Close Flip",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "WEAK default \u2014 variant unclear"
+    }
+  },
+  "usage": {
+    "input_tokens": 504,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 231
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.95,
+  "response_text": "```json\n{\n  \"concept\": \"curls\",\n  \"concepts\": [\"curls\"],\n  \"routes\": {\n    \"WR_X\": \"curl\",\n    \"WR_Z\": \"flat\",\n    \"TE_L\": \"block\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"PA action visible (play-action fake). WR_X runs curl at 12-14 yds; WR_Z runs flat underneath on opposite side. TE_L blocks; HB checks/releases. Right-side receiver (\u2299 Circle button) runs the red arrow upfield \u2014 this is the primary target on the curl. Formation is Weak H Close Flip (FB offset weak side); 1 RB, 1 FB, 1 TE, 2 WR matches r1f1t1w2.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "curls",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcurls?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

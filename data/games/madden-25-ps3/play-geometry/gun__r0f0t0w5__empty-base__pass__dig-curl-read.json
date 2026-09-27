@@ -1,0 +1,53 @@
+{
+  "slug": "gun__r0f0t0w5__empty-base__pass__dig-curl-read",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Base",
+    "play_name": "Dig Curl Read",
+    "play_type": "pass",
+    "canonical_team": "Atlanta Falcons",
+    "canonical_img": 138,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Atlanta Falcons",
+      "Buffalo Bills",
+      "Jacksonville Jaguars",
+      "John Madden",
+      "Miami Dolphins"
+    ],
+    "owner_count": 5,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Base",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 520,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 180
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.37,
+  "response_text": "```json\n{\n  \"concept\": \"curls\",\n  \"concepts\": [\"curls\"],\n  \"routes\": {\n    \"WR_X\": \"dig\",\n    \"WR_Z\": \"curl\",\n    \"WR_SLOT_L\": \"flat\",\n    \"WR_SLOT_R\": \"curl\",\n    \"QB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"5-wide empty formation; two curl routes (Z and slot-R) stretch intermediate zone; X runs dig route; slot-L runs flat; red arrow indicates primary read on Z curl; yellow arrows show all routes; QB shotgun alone in backfield.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "curls",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcurls?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

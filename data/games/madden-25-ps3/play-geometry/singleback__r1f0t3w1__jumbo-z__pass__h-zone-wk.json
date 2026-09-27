@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t3w1__jumbo-z__pass__h-zone-wk",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Jumbo Z",
+    "play_name": "H Zone Wk",
+    "play_type": "pass",
+    "canonical_team": "Houston Texans",
+    "canonical_img": 2,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Houston Texans"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Jumbo Z",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 3,
+      "WR": 1,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Jumbo \u2014 typically 3 TE 1 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 594,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 115
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.2,
+  "response_text": "```json\n{\n  \"concept\": \"zone_run\",\n  \"concepts\": [\"zone_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB B_right\",\n  \"primary_target\": null,\n  \"notes\": \"Play labeled as pass in play_type but diagram shows run characteristics with red ball-carrier arrow to HB. Treating as run per visual evidence. H Zone Wk is a zone-run concept attacking the B-gap right.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "zone_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bzone (wk|str|weak|strong)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

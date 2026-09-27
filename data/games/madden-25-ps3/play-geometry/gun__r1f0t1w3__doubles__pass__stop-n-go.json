@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__doubles__pass__stop-n-go",
+  "info": {
+    "family": "GUN",
+    "formation": "Doubles",
+    "play_name": "Stop N Go",
+    "play_type": "pass",
+    "canonical_team": "Indianapolis Colts",
+    "canonical_img": 107,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Indianapolis Colts"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Doubles",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Doubles \u2014 1 TE 3 WR (slot variant)"
+    }
+  },
+  "usage": {
+    "input_tokens": 519,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 233
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.36,
+  "response_text": "```json\n{\n  \"concept\": \"stop_and_go\",\n  \"concepts\": [\"stop_and_go\"],\n  \"routes\": {\n    \"WR_X\": \"stop_and_go\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"drag\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"WR_X (purple \u25a1) runs stop-and-go with initial stop at ~5 yds then vertical break. WR_Z (blue \u2297) runs deep streak. WR_SLOT_L (green \u25b3) runs shallow drag across formation. TE_R (red \u2299) runs seam route. HB (R1 shoulder button) available as check/release. Standard GUN Doubles pass concept.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "stop_and_go",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bstop ?n? ?go\\b|\\bstop and go\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

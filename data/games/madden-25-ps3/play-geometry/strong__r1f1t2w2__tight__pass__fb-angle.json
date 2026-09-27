@@ -1,0 +1,50 @@
+{
+  "slug": "strong__r1f1t2w2__tight__pass__fb-angle",
+  "info": {
+    "family": "STRONG",
+    "formation": "Tight",
+    "play_name": "FB Angle",
+    "play_type": "pass",
+    "canonical_team": "Tom Flores",
+    "canonical_img": 88,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Tom Flores",
+      "Tom Landry"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "Tight",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 490,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 117
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.11,
+  "response_text": "```json\n{\n  \"concept\": \"angle_route\",\n  \"concepts\": [\"angle_route\"],\n  \"routes\": {\n    \"FB\": \"angle\",\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"TE_L\": \"block\",\n    \"TE_R\": \"block\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"FB\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "angle_route",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bangle\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,35 @@
+scheme_id: half-slide-protect
+name: Half-Slide Protection
+description: |
+  3 OL slide one direction (toward pressure), while the other 2 OL man-block
+  the opposite side. Hybrid approach combining slide and man protection. HB scans
+  the backside for unblocked rushers. Used when pressure is likely on one side
+  but you want man-block certainty on the weak side. More flexible than pure
+  slide, more aggressive than pure man.
+protection_type: 5-man
+assignments_by_position:
+  LT: "Slide left — protect the blind side."
+  LG: "Slide left — combo with LT if needed, then climb."
+  C: "Man-block the backside DT / center defender."
+  RG: "Man-block the backside DT / 3-tech."
+  RT: "Slide left or stay right depending on coverage; read and react."
+  HB: "Scan for unblocked pressure. Primary threat is from the non-slide side."
+  TE: "Optional: chip on EDGE or stay in pass protection."
+vulnerable_to:
+  - "stunts that cross the slide/man boundary"
+  - "delayed blitz from the man-block side"
+  - "overload blitz from the slide side"
+pairs_with:
+  - mesh
+  - quick-hitter
+  - bootleg-combo
+tags:
+  - pass-protection
+  - hybrid
+  - slide-man-combo
+  - college
+  - nfl
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Throw Deep Publishing 'Half-Slide vs Man' (https://throwdeeppublishing.com/blogs/football-glossary/): confirmed 3-OL slide + 2-OL man hybrid approach."
+  - "Web validated 2026-04-30 — X&O Labs 'Combo Protections' (https://www.xandolabs.com/): half-slide is hybrid protection used in modern NFL."

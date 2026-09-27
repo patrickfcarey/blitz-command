@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__norm-y-flex-tight__pass__smash-corners",
+  "info": {
+    "family": "GUN",
+    "formation": "Norm Y-Flex Tight",
+    "play_name": "Smash Corners",
+    "play_type": "pass",
+    "canonical_team": "Dallas Cowboys",
+    "canonical_img": 116,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Dallas Cowboys"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Norm Y-Flex Tight",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 504,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 169
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.42,
+  "response_text": "```json\n{\n  \"concept\": \"smash\",\n  \"concepts\": [\"smash\", \"corners\"],\n  \"routes\": {\n    \"WR_X\": \"hitch\",\n    \"WR_Z\": \"corner\",\n    \"TE_R\": \"streak\",\n    \"WR_SLOT_L\": \"corner\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Smash concept on right side (WR_Z corner over WR_X hitch); left side runs corners route; TE_R runs vertical stretch; HB available as checkdown.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "smash",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bsmash\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

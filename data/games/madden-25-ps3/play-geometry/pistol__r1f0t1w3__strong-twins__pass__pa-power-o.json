@@ -1,0 +1,49 @@
+{
+  "slug": "pistol__r1f0t1w3__strong-twins__pass__pa-power-o",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Strong Twins",
+    "play_name": "PA Power O",
+    "play_type": "pass",
+    "canonical_team": "Pistol",
+    "canonical_img": 14,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Pistol"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Strong Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Pistol Strong/Weak"
+    }
+  },
+  "usage": {
+    "input_tokens": 172,
+    "cache_creation_input_tokens": 352,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 245
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 13.29,
+  "response_text": "```json\n{\n  \"concept\": \"power_o\",\n  \"concepts\": [\"power_o\", \"pa_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"dig\",\n    \"TE_R\": \"wheel\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"PA Power O with four-receiver look (r1f0t1w3: 1 RB, 0 FB, 1 TE, 3 WR). QB in pistol. Primary red arrow to WR_X (X button glyph, far right) on a streak. Secondary yellow arrow to WR_Z on corner. TE_R runs wheel out of backfield. WR_SLOT_L runs dig route. R1 labeled receiver (right shoulder button) receiving wheel option.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "power_o",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpower ?o\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

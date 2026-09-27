@@ -1,0 +1,207 @@
+play_id: shotgun-2x2-rpo-slant-left
+name: RPO Slant (Strong) (Mirror Left)
+aliases:
+- Slant RPO
+- Inside Zone Slant RPO
+- Glance RPO
+formation: shotgun-2x2-left
+play_type: rpo
+rpo_type: peek
+ball_carrier: QB
+primary_read: Z
+motions: []
+assignments:
+- player: LT
+  role: run_block
+  blocking_scheme: zone-step-playside
+  notes: 'Run block — OL stays at LOS (RPO: no downfield release).'
+- player: LG
+  role: run_block
+  blocking_scheme: zone-combo
+- player: C
+  role: run_block
+  blocking_scheme: zone-combo
+- player: RG
+  role: run_block
+  blocking_scheme: zone-combo
+- player: RT
+  role: run_block
+  blocking_scheme: zone-combo
+- player: TE
+  role: run_block
+  blocking_scheme: zone-step-playside
+  target: edge-defender
+- player: X
+  role: route
+  route_name: clear-out-go
+  depth_yd: 18
+  notes: Backside clear-out — pull weak-side corner deep.
+- player: SLOT-W
+  role: run_block
+  blocking_scheme: stalk
+  notes: Weak-side slot stalk-blocks if QB hands off; otherwise becomes outlet.
+- player: Z
+  role: route
+  route_name: slant
+  depth_yd: 5
+  is_primary: true
+  notes: Strong-side slant — RPO primary throw. Breaks at 5 yds, runs through the soft spot.
+- player: QB
+  role: ball_carrier
+  path:
+  - - 0
+    - 0
+  - - 1
+    - -1
+  - - 0
+    - -1
+  notes: 'Catch the gun snap, mesh with the HB at (-1, -1) — extend the ball toward
+
+    the HB, who is aligned to the QB''s left — then pull up to (0, -1) and set
+
+    square to throw the slant. Quick rhythm: do not drop deeper.
+
+    Read the strong-side LB / nickel defender:
+
+    - LB drops in coverage / sits → GIVE to HB on inside zone
+
+    - LB attacks the run / vacates throwing window → PULL + throw slant to Z
+
+    Decision at the mesh point. OL is run-blocking.
+
+    '
+- player: HB
+  role: ball_carrier
+  path:
+  - - 0
+    - 0
+  - - -1
+    - -1
+  - - 1
+    - 1
+  - - 0
+    - 5
+  notes: Step to mesh at (1,-1) — toward the QB at center — take the handoff, attack playside A/B gap. If QB pulls and throws,
+    HB has executed his fake.
+strengths:
+- Defensive conflict — strong-side LB CAN'T cover both run and slant
+- Quick-rhythm throw (slant breaks at 5 yds — fast release)
+- Easy first-down RPO concept
+- Modern foundational concept across HS/college/NFL
+- Pairs with downhill inside zone for run-game balance
+weaknesses:
+- Requires QB read accuracy at the mesh point
+- OL must NOT release downfield (penalty risk if they push past 1-3 yds)
+- Defenses with disciplined LB read-keys neutralize the conflict
+- Slant can be jumped by aggressive corner
+- NFL ineligible-downfield rules are stricter than NCAA — limits how far OL can push
+best_vs_defense:
+- cover-3 with run-fit LBs
+- 4-3 with crashing strong-side LB
+- any defense with apex/box LB conflict on RPO reads
+worst_vs_defense:
+- cover-2 with squatting nickel on slant
+- cover-4 with disciplined LB read-keys
+- bracket on Z
+- blitz from the slant side
+defensive_counters:
+- counter_id: read-defender-slow-play
+  pre_snap_look: Strong-side conflict LB / nickel aligned at a mid-depth split (4-5 yds), squared up at the LOS with feet
+    quiet — neither walked into the box nor dropped into the slant window
+  qb_key: Check the conflict LB / nickel — squared up at a mid-depth split, feet still
+  read_category: lb-depth
+  why: A conflict defender pre-set at a non-committal mid-depth alignment can read-and-react to either phase, making both
+    the give and the slant look covered enough to force a QB hesitation or wrong decision.
+  typical_against:
+  - disciplined cover-3 / cover-4 RPO defenses
+  - any defense with RPO triangle rules
+- counter_id: sticky-man-slant
+  pre_snap_look: Strong-side corner pressed on Z with the inside foot up, no deep safety help showing to the slant side
+  qb_key: Check the strong-side CB leverage — pressed inside-foot-up with no deep help
+  read_category: cb-leverage
+  why: An inside-leverage press corner is set to drive on the 5-yd slant break and undercut the throw, turning the RPO pull
+    into an interception or PBU.
+  typical_against:
+  - cover-1
+  - cover-0
+  - match coverages with inside-leverage CB
+- counter_id: second-level-box
+  pre_snap_look: MIKE and strong-side LB both widened toward the strong-side hash sitting in the slant window, with a safety
+    walked down to 6-8 yds, eyes in the backfield
+  qb_key: Count the box — extra hat down with the LBs widened into the slant window
+  read_category: box-count
+  why: LBs pre-set in the hook/curl close the slant lane while the walked-down safety adds a +1 on the give — both phases
+    of the RPO are answered before the snap.
+  typical_against:
+  - robber coverages
+  - cover-1 with rolled-down SS
+  - quarters with SS in the box
+common_uses:
+- 1st-and-10 base RPO call
+- 2nd-and-medium
+- College spread base
+- High school spread offenses (RPO has trickled down rapidly)
+- Setting up vertical shots when defense over-rotates to slant
+philosophy: spread-option
+philosophy_ref: spread-option
+era: Mid-2010s onward — RPO trend made this a base call across all levels.
+famous_examples:
+- Eagles under Doug Pederson / Nick Sirianni
+- Chiefs under Andy Reid (Mahomes era)
+- Modern Power 5 college (Alabama, Ohio State, Auburn)
+- HS spread programs across the country
+tags:
+- rpo
+- pass
+- run
+- shotgun
+- 2x2
+- slant
+- quick-game
+- any-level
+- high-school
+- college
+- nfl
+- modern
+- spread-option
+notes: 'RPO = Run-Pass Option. Same play architecture as Pistol RPO Bubble but
+
+  with a slant route instead of a bubble. Slant favors a quick-throw
+
+  rhythm; bubble favors a horizontal stretch. Choose based on defensive
+
+  apex / nickel tendencies.
+
+  '
+verification_status: unverified
+source_notes:
+- Web validated 2026-04-29 — XsOs Football 'Shotgun Formation and Sets' (https://xsosfootball.com/shotgun-formation-sets/);
+  Throw Deep Publishing 'Complete Guide to Offensive Football Formations' (https://throwdeeppublishing.com/blogs/football-glossary/the-complete-guide-to-offensive-football-formations);
+  BreakdownSports '2x2 Mirrored Concepts' (http://breakdownsports.blogspot.com/2015/02/football-fundamentals-2x2-and-mirrored-passing-concepts-route-combinations.html).
+  RPO slant mechanic confirmed across modern coaching documentation.
+- Mirror of shotgun-2x2-rpo-slant.yaml — path waypoints flipped on x; formation reference points to the mirror formation.
+  Routes auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed
+  look — coordinates and paths are the source of truth.
+flip_reads:
+- flip_id: box-overload-callside
+  pre_snap_look: The box is overloaded to the run side — the defense has +1 to the run side while leaving the conflict defender's
+    grass open.
+  qb_key: Count the box to the run side — it is heavy, the give is no longer the answer.
+  read_category: box-count
+  flip_to: mirror-play
+  why: Flipping the run portion away from the overload keeps the box count honest, so the give stays a live answer instead
+    of a forced throw.
+  typical_against:
+  - over-front
+  - 8-man fronts
+- flip_id: strength-declared-to-formation
+  pre_snap_look: Defense has declared fully to the formation's strength — an extra box defender and a safety rolled down over
+    the passing strength.
+  qb_key: Check the strength side — both the box count and the safety roll are set to it.
+  read_category: safety-shell
+  flip_to: mirror-formation
+  why: Flipping the formation re-sets the defense's strength call and rebalances the RPO conflict so both the run and the
+    throw stay viable.
+  typical_against:
+  - cover-3 with strong roll
+  - quarters with strong roll

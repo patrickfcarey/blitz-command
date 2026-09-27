@@ -1,0 +1,58 @@
+{
+  "slug": "gun__r1f0t1w3__normal__run__read-option",
+  "info": {
+    "family": "GUN",
+    "formation": "Normal",
+    "play_name": "Read Option",
+    "play_type": "run",
+    "canonical_team": "Philadelphia Eagles",
+    "canonical_img": 60,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Philadelphia Eagles"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Normal",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "GUN/Shotgun default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 516,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 178
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 93.83,
+  "response_text": "```json\n{\n  \"concept\": \"zone_read\",\n  \"concepts\": [\"zone_read\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_R\": \"streak\",\n    \"TE_R\": \"block\"\n  },\n  \"ball_carrier\": \"HB C_right\",\n  \"primary_target\": null,\n  \"notes\": \"Read Option with option route (dashed yellow line) showing QB keep/hand-off decision path to the right. Red arrow indicates HB carry to C_right gap. TE_R blocks; WRs provide vertical stretch. GUN formation with QB shotgun, HB to side.\"\n}\n```",
+  "py_hints": {
+    "target_gap": "C_right",
+    "c_xy": [
+      1553,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      1957,
+      615
+    ],
+    "dx_from_c": 404,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "zone_read",
+    "concept_family": "rpo",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bread option\\b|\\bzone read\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

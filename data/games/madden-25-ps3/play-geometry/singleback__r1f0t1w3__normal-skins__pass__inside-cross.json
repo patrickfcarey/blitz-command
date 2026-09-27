@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__normal-skins__pass__inside-cross",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Normal Skins",
+    "play_name": "Inside Cross",
+    "play_type": "pass",
+    "canonical_team": "Washington Redskins",
+    "canonical_img": 25,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Washington Redskins"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Normal Skins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "Singleback default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 171,
+    "cache_creation_input_tokens": 352,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 181
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 8.04,
+  "response_text": "```json\n{\n  \"concept\": \"cross_concept\",\n  \"concepts\": [\"inside_cross\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"inside_cross\",\n    \"WR_SLOT_R\": \"flat\",\n    \"TE_R\": \"drag\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Inside Cross concept with WR_Z running the primary crossing route. WR_X clears vertically on the outside. Slot WR runs flat to the right. TE_R runs a drag route underneath. HB available as checkdown.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "cross_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcross(es)?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

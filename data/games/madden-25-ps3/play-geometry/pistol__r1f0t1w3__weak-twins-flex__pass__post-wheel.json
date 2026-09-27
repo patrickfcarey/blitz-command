@@ -1,0 +1,49 @@
+{
+  "slug": "pistol__r1f0t1w3__weak-twins-flex__pass__post-wheel",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Weak Twins Flex",
+    "play_name": "Post Wheel",
+    "play_type": "pass",
+    "canonical_team": "Washington Redskins",
+    "canonical_img": 73,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Washington Redskins"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Weak Twins Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Pistol Strong/Weak"
+    }
+  },
+  "usage": {
+    "input_tokens": 525,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 113
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 1.62,
+  "response_text": "```json\n{\n  \"concept\": \"wheel_concept\",\n  \"concepts\": [\"wheel_concept\"],\n  \"routes\": {\n    \"WR_X\": \"post\",\n    \"WR_Z\": \"wheel\",\n    \"WR_SLOT_L\": \"corner\",\n    \"HB\": \"wheel\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "wheel_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bwheel\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,127 @@
+name: Shotgun 2x2 (Spread) Left
+side: offense
+personnel: '11'
+strength_side: balanced
+players:
+- label: LT
+  position: LT
+  x: -2.0
+  y: 0.0
+  on_line: true
+- label: LG
+  position: LG
+  x: -1.0
+  y: 0.0
+  on_line: true
+- label: C
+  position: C
+  x: 0.0
+  y: 0.0
+  on_line: true
+- label: RG
+  position: RG
+  x: 1.0
+  y: 0.0
+  on_line: true
+- label: RT
+  position: RT
+  x: 2.0
+  y: 0.0
+  on_line: true
+- label: TE
+  position: TE
+  x: -3.5
+  y: 0.0
+  on_line: true
+- label: X
+  position: WR
+  x: 15.0
+  y: 0.0
+  on_line: true
+- label: SLOT-W
+  position: WR
+  x: 8.0
+  y: -1.0
+  on_line: false
+- label: Z
+  position: WR
+  x: -14.0
+  y: -1.0
+  on_line: false
+- label: QB
+  position: QB
+  x: -0.0
+  y: -5.0
+  on_line: false
+- label: HB
+  position: HB
+  x: 2.5
+  y: -5.0
+  on_line: false
+strengths:
+- Balanced presentation forces defense to declare coverage rotation
+- 2 receivers each side = mirrored concepts on left and right
+- Easy RPO setup (read backside LB, throw bubble or quick game)
+- QB has full field read; pre-snap matchups visible
+- Pairs naturally with both 4-vert and quick-game families
+- Modern offensive base — every team has a 2x2 staple
+weaknesses:
+- No formation strength tilts the run game one direction
+- HB offset weak gives a tell for protection slide
+- Vulnerable to bracket coverage on outside WRs
+- Run game without TE attached to playside is one-dimensional vs heavy fronts
+- Defensive nickel personnel matches well — neutralizes mismatch attempts
+common_uses:
+- Modern offensive base on most NFL/college 1st/2nd downs
+- 2-minute drill / hurry-up
+- RPO setups (read-then-throw)
+- Symmetric route concepts (same call, mirrored both sides)
+- Hiding play tendency (no formation tip)
+run_concepts:
+- inside-zone
+- outside-zone
+- draw
+- rpo-bubble
+- rpo-slant
+pass_concepts:
+- mesh
+- stick
+- snag
+- smash
+- four-verticals
+- levels
+- rpo-slant
+- rpo-glance
+era: 2000s onward — modern spread/RPO base; ubiquitous across NFL and college.
+famous_users:
+- Most modern NFL offenses (2x2 with 11 personnel is the league-average set)
+- Air Raid college programs (Mike Leach lineage)
+- Spread option offenses (Auburn, Ole Miss, modern Big 12)
+tags:
+- spread
+- shotgun
+- 11-personnel
+- 2x2
+- balanced
+- modern
+- rpo-friendly
+- nfl
+- college
+notes: '"2x2" = 2 receivers each side. With 11 personnel and TE in-line strong,
+
+  that means TE + Z strong / X + SLOT-W weak. Y-Flex variant (TE flexed
+
+  off the line as a slot) is a separate file when added. Mirror to
+
+  Shotgun 2x2 with TE-Left for opposite strength.
+
+  '
+verification_status: unverified
+source_notes:
+- 'Web validated 2026-04-29 — XsOs Football ''Shotgun Formation and Sets'' (https://xsosfootball.com/shotgun-formation-sets/);
+  Throw Deep Publishing ''Complete Guide to Offensive Football Formations'' (https://throwdeeppublishing.com/blogs/football-glossary/the-complete-guide-to-offensive-football-formations);
+  BreakdownSports ''2x2 and Mirrored Passing Concepts'' (http://breakdownsports.blogspot.com/2015/02/football-fundamentals-2x2-and-mirrored-passing-concepts-route-combinations.html).
+  Confirmed: 2x2 = 2 receivers each side; 11 personnel = 1 RB / 1 TE / 3 WR; balanced presentation forcing defense to declare.'
+- Mirror of shotgun-2x2.yaml — coordinates flipped horizontally on x; strength_side flipped; OL labels (LT/LG/C/RG/RT) and
+  centered backfield positions (QB / centered FB or HB) unchanged. Notes in this file may still describe the original right-handed
+  look in places — read coordinates as the source of truth.

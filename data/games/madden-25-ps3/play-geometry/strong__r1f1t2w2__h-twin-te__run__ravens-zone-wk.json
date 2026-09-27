@@ -1,0 +1,58 @@
+{
+  "slug": "strong__r1f1t2w2__h-twin-te__run__ravens-zone-wk",
+  "info": {
+    "family": "STRONG",
+    "formation": "H Twin TE",
+    "play_name": "Ravens Zone Wk",
+    "play_type": "run",
+    "canonical_team": "Baltimore Ravens",
+    "canonical_img": 79,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Baltimore Ravens"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "H Twin TE",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 593,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 66
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 57.4,
+  "response_text": "```json\n{\n  \"concept\": \"zone_run\",\n  \"concepts\": [\"zone_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB C_left\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "C_left",
+    "c_xy": [
+      1553,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      1138,
+      615
+    ],
+    "dx_from_c": -415,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "zone_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bzone (wk|str|weak|strong)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

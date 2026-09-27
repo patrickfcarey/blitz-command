@@ -1,0 +1,50 @@
+{
+  "slug": "full-house__r1f0t1w3__normal-wide__pass__corner-strike",
+  "info": {
+    "family": "FULL-HOUSE",
+    "formation": "Normal Wide",
+    "play_name": "Corner Strike",
+    "play_type": "pass",
+    "canonical_team": "Atlanta Falcons",
+    "canonical_img": 78,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Atlanta Falcons",
+      "Minnesota Vikings"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "FULL-HOUSE",
+      "formation": "Normal Wide",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "low",
+      "notes": "unknown family 'FULL-HOUSE' \u2014 generic 11-personnel guess"
+    }
+  },
+  "usage": {
+    "input_tokens": 496,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 263
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.34,
+  "response_text": "```json\n{\n  \"concept\": \"corner_strike\",\n  \"concepts\": [\"corner_strike\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"flat\",\n    \"WR_SLOT_R\": \"flat\",\n    \"TE_L\": \"block\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Full-House Normal Wide (r1f0t1w3): 1 RB, 0 FB, 1 TE, 3 WR. Diagram shows 4 WRs on LOS with TE_L offset; two outside WRs (X, Z) running corners, two inside receivers (slots) running flats on opposite sides. Red arrow on WR_X (right corner) indicates primary target. R1 button glyph visible on right side. Opposite-side corners show yellow arrows (secondary reads).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "corner_strike",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcorner strike\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

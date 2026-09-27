@@ -1,0 +1,76 @@
+{
+  "slug": "i-form__r1f1t2w2__tight-pair__run__fb-fake-hb-flip",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Tight Pair",
+    "play_name": "FB Fake HB Flip",
+    "play_type": "run",
+    "canonical_team": "Arizona Cardinals",
+    "canonical_img": 63,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Arizona Cardinals",
+      "Atlanta Falcons",
+      "Buffalo Bills",
+      "Carolina Panthers",
+      "Cincinnati Bengals",
+      "Cleveland Browns",
+      "Dallas Cowboys",
+      "Detroit Lions",
+      "Houston Texans",
+      "Indianapolis Colts",
+      "Jacksonville Jaguars",
+      "Minnesota Vikings",
+      "New England Patriots",
+      "Pittsburgh Steelers",
+      "Run Balanced",
+      "Run Heavy",
+      "St. Louis Rams",
+      "Tampa Bay Buccaneers",
+      "Tennessee Titans"
+    ],
+    "owner_count": 19,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Tight Pair",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Tight/Twin-TE \u2014 2 TE"
+    }
+  },
+  "usage": {
+    "input_tokens": 577,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 72
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 53.81,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"generic_hb_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB C_left\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "C_left",
+    "c_xy": [
+      1476,
+      611
+    ],
+    "arrow_los_crossing_xy": [
+      1024,
+      879
+    ],
+    "dx_from_c": -452,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bhb \\w+",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

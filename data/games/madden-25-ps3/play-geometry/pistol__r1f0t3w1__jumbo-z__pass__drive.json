@@ -1,0 +1,49 @@
+{
+  "slug": "pistol__r1f0t3w1__jumbo-z__pass__drive",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Jumbo Z",
+    "play_name": "Drive",
+    "play_type": "pass",
+    "canonical_team": "Seattle Seahawks",
+    "canonical_img": 75,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Seattle Seahawks"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Jumbo Z",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 3,
+      "WR": 1,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Jumbo \u2014 typically 3 TE 1 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 493,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 192
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.87,
+  "response_text": "```json\n{\n  \"concept\": \"drive_concept\",\n  \"concepts\": [\"drive_concept\"],\n  \"routes\": {\n    \"TE_L\": \"corner\",\n    \"TE_M\": \"dig\",\n    \"TE_R\": \"flat\",\n    \"WR_X\": \"streak\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_M\",\n  \"notes\": \"Pistol Jumbo Z (r1f0t3w1): 3 TEs stacked vertically in backfield/LOS area with a corner, dig (primary), and flat. Single WR_X (\u25a1 square button) on left edge running streak. Red arrow indicates primary read on dig route from middle TE. Yellow arrows show progression reads.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "drive_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdrive\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

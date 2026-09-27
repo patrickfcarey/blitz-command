@@ -1,0 +1,50 @@
+{
+  "slug": "gun__r1f0t1w3__snugs__pass__curl-weak-flood",
+  "info": {
+    "family": "GUN",
+    "formation": "Snugs",
+    "play_name": "Curl Weak Flood",
+    "play_type": "pass",
+    "canonical_team": "Indianapolis Colts",
+    "canonical_img": 124,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Indianapolis Colts",
+      "Pittsburgh Steelers"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Snugs",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 522,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 182
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.48,
+  "response_text": "```json\n{\n  \"concept\": \"flood\",\n  \"concepts\": [\"flood\"],\n  \"routes\": {\n    \"WR_Z\": \"curl\",\n    \"WR_SLOT_L\": \"flat\",\n    \"WR_X\": \"corner\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Flood concept on weak side (left): curl (Z), flat (slot L), corner (X). TE right runs seam. HB eligible checkdown on right flank (R1 glyph visible). Red arrow originates from QB and targets Z curl as primary.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "flood",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bflood\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

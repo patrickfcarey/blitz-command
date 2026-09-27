@@ -1,0 +1,60 @@
+{
+  "slug": "i-form__r1f1t2w2__tight__pass__z-spot",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Tight",
+    "play_name": "Z Spot",
+    "play_type": "pass",
+    "canonical_team": "Arizona Cardinals",
+    "canonical_img": 57,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Arizona Cardinals",
+      "Balanced",
+      "Baltimore Ravens",
+      "Chicago Bears",
+      "Denver Broncos",
+      "Indianapolis Colts",
+      "Jacksonville Jaguars",
+      "John Madden",
+      "Miami Dolphins",
+      "New Orleans Saints",
+      "New York Giants",
+      "San Diego Chargers"
+    ],
+    "owner_count": 12,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Tight",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Tight/Twin-TE \u2014 2 TE"
+    }
+  },
+  "usage": {
+    "input_tokens": 494,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 195
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.76,
+  "response_text": "```json\n{\n  \"concept\": \"z_concept\",\n  \"concepts\": [\"z_concept\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"TE_L\": \"drag\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Z Spot pass concept with Z WR running corner route as primary target (red arrow). TE_L runs drag underneath, TE_R seam route. WR_X streak for clearout. HB checkdown. Two-TE set (I-Form Tight). Yellow diagonal arrows indicate option routes or progression reads.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "z_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bz[- ]?(spot|cross|streak|corner|drive|trail|out|drag|sail)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

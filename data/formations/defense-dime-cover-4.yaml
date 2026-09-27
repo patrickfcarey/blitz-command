@@ -1,0 +1,95 @@
+name: Dime Cover 4 (Quarters)
+side: defense
+personnel: "dime"
+front: "Dime-4-1"
+coverage_shell: "cover-4"
+
+# Dime personnel (6 DBs) with Cover 4 / Quarters coverage (4 deep
+# defenders, each plays a quarter of the field). 4 DL, 1 LB, 6 DBs.
+# Most pass-friendly base call — 6 DBs vs spread offenses.
+players:
+  - { label: LDE, position: DE,  x: -4.0,  y:  1.0, on_line: false }
+  - { label: NT,  position: DT,  x: -1.0,  y:  1.0, on_line: false }
+  - { label: RDT, position: DT,  x:  2.5,  y:  1.0, on_line: false }
+  - { label: RDE, position: DE,  x:  4.0,  y:  1.0, on_line: false }
+  - { label: MLB, position: LB,  x:  0.0,  y:  5.0, on_line: false }
+  - { label: NCB, position: NCB, x: -8.0,  y:  5.0, on_line: false }
+  - { label: DCB, position: DCB, x:  8.0,  y:  5.0, on_line: false }
+  - { label: LCB, position: CB,  x: -15.0, y: 12.0, on_line: false }
+  - { label: RCB, position: CB,  x:  15.0, y: 12.0, on_line: false }
+  - { label: FS,  position: S,   x: -5.0,  y: 12.0, on_line: false }
+  - { label: SS,  position: S,   x:  5.0,  y: 12.0, on_line: false }
+
+responsibilities:
+  - { player: LDE, role: rush,            aim: "weakside contain" }
+  - { player: NT,  role: rush,            aim: "1-tech A-gap" }
+  - { player: RDT, role: rush,            aim: "3-tech B-gap" }
+  - { player: RDE, role: rush,            aim: "strongside contain" }
+  - { player: MLB, role: hook,            aim: "middle hook / underneath middle" }
+  - { player: NCB, role: underneath-zone, aim: "weak slot underneath / flat" }
+  - { player: DCB, role: underneath-zone, aim: "strong slot underneath / flat" }
+  - { player: LCB, role: deep-zone,       aim: "deep outer quarter — left side" }
+  - { player: FS,  role: deep-zone,       aim: "deep inner quarter — left middle" }
+  - { player: SS,  role: deep-zone,       aim: "deep inner quarter — right middle" }
+  - { player: RCB, role: deep-zone,       aim: "deep outer quarter — right side" }
+
+best_against:
+  - "Deep passing concepts (4 deep defenders bracket all verticals)"
+  - "Four verticals (every vertical has bracket help)"
+  - "Long-developing routes (DBs stay deep)"
+  - "Two-minute / desperation passing"
+  - "Spread offenses (6 DBs match 4-5 receivers)"
+
+vulnerable_to:
+  - "Run game (only 5 in box, MLB only LB)"
+  - "Quick game (CBs are deep, lots of underneath cushion)"
+  - "Dump-off / RB checkdown (underneath defenders busy)"
+  - "Deep crossers (Y-Cross can split inside quarters)"
+  - "Flood (overloads one side's quarters defenders)"
+
+strengths:
+  - "Maximum deep coverage — 4 quarter defenders"
+  - "Best against vertical passing"
+  - "6 DBs match modern spread personnel"
+  - "Pattern-match within quarters disrupts route timing"
+
+weaknesses:
+  - "Severely undermanned vs the run"
+  - "Underneath wide open — quick slants / hitches"
+  - "MLB alone vs RB checkdown"
+  - "Single LB vulnerable to mesh / drag"
+
+common_uses:
+  - "3rd-and-long defense"
+  - "2-minute / prevent variants"
+  - "Vs. 4-WR spread offenses"
+  - "Late-game when leading"
+
+era: "2000s onward — Cover 4 / quarters universal in modern college and NFL."
+
+famous_users:
+  - "Nick Saban Alabama (quarters / pattern-match)"
+  - "Pat Narduzzi Pittsburgh (4-3 Quarters)"
+  - "Modern NFL pass-down packages"
+
+tags:
+  - defense
+  - dime
+  - cover-4
+  - quarters
+  - 4-deep
+  - pass-down
+  - prevent
+  - any-level
+  - college
+  - nfl
+
+notes: |
+  Dime personnel + Cover 4 quarters. Four defenders play deep quarters of
+  the field, each pattern-matching the receiver in their zone. Underneath
+  has only MLB + 2 nickel/dime DBs — vulnerable vs the run and quick game.
+
+verification_status: unverified
+source_notes:
+  - "Standard Dime Cover 4 quarters alignment."
+  - "Built 2026-04-30 as part of the P5 defensive-side rollout."

@@ -1,0 +1,49 @@
+{
+  "slug": "strong__r1f1t1w3__h-twins__pass__slants",
+  "info": {
+    "family": "STRONG",
+    "formation": "H Twins",
+    "play_name": "Slants",
+    "play_type": "pass",
+    "canonical_team": "Baltimore Ravens",
+    "canonical_img": 74,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Baltimore Ravens"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "H Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 491,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 193
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.7,
+  "response_text": "```json\n{\n  \"concept\": \"slants\",\n  \"concepts\": [\"slants\"],\n  \"routes\": {\n    \"WR_X\": \"slant\",\n    \"WR_Z\": \"slant\",\n    \"WR_SLOT_L\": \"slant\",\n    \"TE_L\": \"slant\",\n    \"HB\": \"check_release\",\n    \"FB\": \"block\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Red arrow indicates primary target WR_X on slant route. Yellow arrows show complementary slant routes on both sides. TE_L and slot WR also running slants. Backfield: FB blocks (strong side offset), HB available for checkdown.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "slants",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bslants?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "i-form__r1f1t1w2__niners-heavy__pass__pa-boot-flow",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Niners Heavy",
+    "play_name": "PA Boot Flow",
+    "play_type": "pass",
+    "canonical_team": "San Francisco 49ers",
+    "canonical_img": 58,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "San Francisco 49ers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Niners Heavy",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "I-Form Pro default"
+    }
+  },
+  "usage": {
+    "input_tokens": 528,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 211
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.76,
+  "response_text": "```json\n{\n  \"concept\": \"boot_pass\",\n  \"concepts\": [\"boot_pass\"],\n  \"routes\": {\n    \"TE_L\": \"seam\",\n    \"TE_R\": \"flat\",\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"comeback\",\n    \"HB\": \"swing\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"PA Boot Flow to the right. TE_R (Circle button, red glyph) is the primary target on the flat. TE_L runs seam vertically. WR_X (X button, blue glyph) runs corner route upfield. WR_Z (Square button, purple glyph) runs comeback. HB checks/releases. Yellow arrow routes indicate standard boot-pass progression.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "boot_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bboot\\b|\\bbootleg\\b",
+    "is_pa": true,
+    "is_boot_or_roll": true
+  }
+}

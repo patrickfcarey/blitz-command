@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r0f0t1w4__empty-ace-patriot__pass__wr-screens",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Ace Patriot",
+    "play_name": "WR Screens",
+    "play_type": "pass",
+    "canonical_team": "New England Patriots",
+    "canonical_img": 128,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "New England Patriots"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Ace Patriot",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 1,
+      "WR": 4,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 502,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 200
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.75,
+  "response_text": "```json\n{\n  \"concept\": \"wr_screen\",\n  \"concepts\": [\"wr_screen\"],\n  \"routes\": {\n    \"WR_X\": \"screen\",\n    \"WR_Z\": \"screen\",\n    \"WR_SLOT_L\": \"screen\",\n    \"WR_SLOT_R\": \"screen\",\n    \"TE_R\": \"block\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_R\",\n  \"notes\": \"Four WR screens concept with TE blocking downfield. Red arrow indicates primary screen target to WR_SLOT_R (Circle button). Yellow arrow shows secondary screen option to WR_SLOT_L (Triangle button). Empty backfield (no RB or FB visible), QB at shotgun position only.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "wr_screen",
+    "concept_family": "screen",
+    "blockers_implicit": false,
+    "matched_pattern": "\\b(wr|te) screens?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

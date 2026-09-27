@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r0f0t1w4__empty-ace-patriot__pass__pats-clearout",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Ace Patriot",
+    "play_name": "Pats Clearout",
+    "play_type": "pass",
+    "canonical_team": "New England Patriots",
+    "canonical_img": 126,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "New England Patriots"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Ace Patriot",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 1,
+      "WR": 4,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 528,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 237
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.33,
+  "response_text": "```json\n{\n  \"concept\": \"clearout\",\n  \"concepts\": [\"clearout\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"streak\",\n    \"WR_SLOT_R\": \"streak\",\n    \"WR_FLANKER\": \"streak\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_R\",\n  \"notes\": \"Empty 5-wide formation (GUN Empty Ace Patriot). All 5 WRs run vertical streaks to clear the field. Red arrow (primary target) originates from QB and targets the slot-right receiver running upfield. QB is shotgun-positioned ~5 yards behind C. One white circle in backfield below LOS is the QB alone (no RB). L1 and R1 button assignments visible on far-left and far-right receivers respectively.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "clearout",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bclearout\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

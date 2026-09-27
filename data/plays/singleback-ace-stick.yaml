@@ -1,0 +1,153 @@
+play_id: singleback-ace-stick
+name: Stick (Strong)
+aliases:
+  - Y-Stick
+  - Stick Concept
+
+formation: singleback-ace
+play_type: pass
+ball_carrier: QB
+primary_read: TE-R
+secondary_read: HB
+checkdown: TE-L
+
+motions: []
+
+assignments:
+  - player: LT
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: LG
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: C
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: RG
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: RT
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: TE-R
+    role: route
+    route_name: stick
+    depth_yd: 6
+    is_primary: true
+    notes: |
+      Y-Stick option route from the in-line TE. Push to 6 yards and:
+      - sit in the soft spot vs zone (cover-2/3)
+      - break out to the sideline vs man (cover-1)
+  - player: HB
+    role: route
+    route_name: flat
+    depth_yd: 3
+    notes: "Releases to the strong-side flat — the LO option underneath the stick."
+  - player: Z
+    role: route
+    route_name: go
+    depth_yd: 22
+    notes: "Vertical clear-out — pull the strong-side corner out of the stick window."
+  - player: X
+    role: route
+    route_name: comeback
+    depth_yd: 14
+    notes: "Backside comeback — late-window throw if the strong side is covered."
+  - player: TE-L
+    role: route
+    route_name: drag
+    depth_yd: 5
+    notes: "Backside drag — the checkdown crossing into the vacated middle."
+  - player: QB
+    role: ball_carrier
+    path: [[0, 0], [0, -3], [-1, -5]]
+    notes: |
+      3-step drop from under center, throw the stick on rhythm. Pre-snap
+      read: if the apex defender widens with the HB flat, the TE stick
+      wins inside; if he stays inside on the TE, the HB flat wins.
+
+strengths:
+  - Quick-game concept — 3-step drop, fast rhythm throw
+  - Wins vs zone (sit in the soft spot) and man (break out to the sideline)
+  - Reliable first-down concept on 3rd-and-short / 3rd-and-medium
+  - Pre-snap apex read tells the QB which option will be open
+  - In-line TE split makes the flat-to-stick spacing tight and quick
+
+weaknesses:
+  - Limited to short throws (5-7 yards)
+  - The TE must read coverage correctly mid-route
+  - Vulnerable to a linebacker carrying and cushioning the stick
+  - Won't break for big plays
+  - A bracket on the TE shuts it down
+
+best_vs_defense:
+  - cover-2 zone (sit between the corner and the flat defender)
+  - cover-3 (sit between the curl and flat)
+  - cover-1 man (break out to the sideline)
+  - any defense with predictable underneath spacing
+
+worst_vs_defense:
+  - bracket coverage on the TE
+  - banjo / pattern-match coverage
+  - cover-2 robber
+  - a hot underneath defender squatting the TE
+
+defensive_counters:
+  - counter_id: quarters-squat
+    pre_snap_look: "Two-high quarters shell with the playside CB squatting at 5-6 yards in inside leverage and the safety's eyes locked on the #2 (TE-R)"
+    qb_key: "Check the safety shell — two-high, playside safety keying the TE"
+    read_category: safety-shell
+    why: "Stick relies on a soft spot between underneath defenders; a squatting CB and a TE-reading safety wall off both the sit and the out break."
+    typical_against: ["cover-4 quarters", "pattern-match coverages"]
+  - counter_id: carry-the-stick-lb
+    pre_snap_look: "Apex linebacker / nickel aligned wide at the edge of the box, head-up on TE-R at LB depth with no inside coverage help"
+    qb_key: "Check the apex defender — widened and head-up on the TE, not crowding the box"
+    read_category: lb-depth
+    why: "An apex defender already widened onto the TE carries the stick and cushions it, taking away the sit while staying square to the out break."
+    typical_against: ["cover-3 buzz", "quarters with an apex over #2"]
+  - counter_id: sticky-man
+    pre_snap_look: "Defender pressed up on TE-R with an inside shade and a single-high safety shell behind, no underneath zone help"
+    qb_key: "Check the man on the TE — pressed with inside shade, one high behind"
+    read_category: cb-leverage
+    why: "Stick is a 3-step option route; a defender pressed to the TE's inside hip from the snap travels with him and takes away both branches of the option."
+    typical_against: ["cover-1", "cover-0", "cover-1 robber"]
+
+common_uses:
+  - 3rd-and-short / 3rd-and-medium
+  - 1st-down chains
+  - Hot read against blitz
+  - Quick-game tempo
+
+philosophy: pro-style
+pass_concept_ref: stick
+philosophy_ref: pro-style
+
+era: "Originated in the Bill Walsh / Paul Brown West Coast tradition; modernized through Erhardt-Perkins and Andy Reid offenses."
+
+famous_examples:
+  - "Patriots offense (Belichick / Brady era)"
+  - "Andy Reid offense (Eagles, Chiefs)"
+
+tags:
+  - pass
+  - quick-game
+  - stick
+  - 12-personnel
+  - singleback
+  - west-coast
+  - high-school
+  - college
+  - nfl
+
+notes: |
+  Y-Stick from the 12-personnel singleback. The stick comes from the in-line
+  TE-R rather than a slot WR — a tighter split, but the same option-route
+  read (sit vs zone, break out vs man). The HB releases to the flat as the
+  LO of the stick/flat combo; Z clears the corner vertically. Quick-game
+  answer for the singleback-ace section.
+
+  Mirror to stick-weak by flipping all coordinates.
+
+verification_status: unverified
+source_notes:
+  - "West Coast / Walsh-tree Y-Stick concept; standard quick-game material. Same concept as singleback-trio-stick, adapted to run the stick from an in-line TE in 12 personnel."

@@ -1,0 +1,50 @@
+{
+  "slug": "singleback__r1f0t1w3__bunch-base__pass__pa-zone-wk",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Bunch Base",
+    "play_name": "PA Zone Wk",
+    "play_type": "pass",
+    "canonical_team": "Houston Texans",
+    "canonical_img": 27,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Houston Texans",
+      "New Orleans Saints"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Bunch Base",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 504,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 204
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.04,
+  "response_text": "```json\n{\n  \"concept\": \"zone_run\",\n  \"concepts\": [\"zone_run\", \"pa_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"flat\",\n    \"WR_SLOT_R\": \"wheel\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Play-action pass off zone-run look. WR_X (purple \u25a1) primary deep target with red arrow; WR_Z (blue \u2297) corner route with yellow arrow; slot receivers on flat/wheel with cyan arrows; HB wheel check-down. Defense reads run then QB attacks vertically and horizontally.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "zone_run",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bzone (wk|str|weak|strong)\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

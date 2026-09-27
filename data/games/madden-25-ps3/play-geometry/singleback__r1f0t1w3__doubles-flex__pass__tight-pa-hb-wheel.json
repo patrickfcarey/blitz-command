@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__doubles-flex__pass__tight-pa-hb-wheel",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Doubles Flex",
+    "play_name": "Tight PA HB Wheel",
+    "play_type": "pass",
+    "canonical_team": "Baltimore Ravens",
+    "canonical_img": 30,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Baltimore Ravens"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Doubles Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 575,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 153
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.48,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"generic_hb_run\"],\n  \"routes\": {\n    \"HB\": \"wheel\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"HB\",\n  \"notes\": \"Play labeled as PASS in banner but py_concept indicates run family. Diagram shows HB receiving pass with wheel route (blue arrow R1 button). This is a PA pass play where HB is the primary target on wheel route. Red arrow from QB shows play-action fake, yellow arrow shows HB wheel trajectory to right side flat.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bhb \\w+",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

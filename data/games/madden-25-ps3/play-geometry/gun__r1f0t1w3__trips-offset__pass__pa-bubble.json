@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__trips-offset__pass__pa-bubble",
+  "info": {
+    "family": "GUN",
+    "formation": "Trips Offset",
+    "play_name": "PA Bubble",
+    "play_type": "pass",
+    "canonical_team": "Philadelphia Eagles",
+    "canonical_img": 110,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Philadelphia Eagles"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Trips Offset",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 167,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 165
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 4.82,
+  "response_text": "```json\n{\n  \"concept\": \"bubble_screen\",\n  \"concepts\": [\"bubble_screen\"],\n  \"routes\": {\n    \"WR_X\": \"bubble\",\n    \"WR_Z\": \"bubble\",\n    \"WR_SLOT_R\": \"bubble\",\n    \"HB\": \"pass_pro\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"PA Bubble: three receivers (X, Z, Slot R) run bubble routes to the right at ~2-3 yards. HB provides pass protection. R1 button glyph marks primary target WR_Z.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "bubble_screen",
+    "concept_family": "screen",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bbubble screen\\b|\\bwr bubble\\b|\\bbubble\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

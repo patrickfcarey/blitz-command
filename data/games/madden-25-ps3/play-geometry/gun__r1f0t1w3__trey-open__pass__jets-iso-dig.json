@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__trey-open__pass__jets-iso-dig",
+  "info": {
+    "family": "GUN",
+    "formation": "Trey Open",
+    "play_name": "Jets Iso Dig",
+    "play_type": "pass",
+    "canonical_team": "New York Jets",
+    "canonical_img": 107,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "New York Jets"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Trey Open",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "GUN/Shotgun default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 235,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 190
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 5.33,
+  "response_text": "```json\n{\n  \"concept\": \"iso\",\n  \"concepts\": [\"iso\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_R\": \"streak\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"HB\",\n  \"notes\": \"Pass play (py_concept mismatch: 'iso' is run-family but play_type=pass). Diagram shows 3 WRs running vertical/streak routes (yellow arrows). HB (blue triangle glyph at backfield, offset right) appears to be primary checkdown target. QB in shotgun. Slot WR and both outer WRs committed downfield on pass-pro clearout routes.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "iso",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\biso\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

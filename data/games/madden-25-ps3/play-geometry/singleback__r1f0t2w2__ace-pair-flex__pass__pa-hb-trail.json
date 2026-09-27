@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t2w2__ace-pair-flex__pass__pa-hb-trail",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Ace Pair Flex",
+    "play_name": "PA HB Trail",
+    "play_type": "pass",
+    "canonical_team": "Pittsburgh Steelers",
+    "canonical_img": 19,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Pittsburgh Steelers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Ace Pair Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Ace family \u2014 2 TE 2 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 511,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 234
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.06,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"pa_hb_trail\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"TE_R\": \"trail\",\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"comeback\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"Play-action HB Trail pass. TE_R runs the primary trail route (red arrow). WR_X runs corner route (yellow arrow, upper). WR_Z runs comeback route (yellow arrow, left). TE_L blocks initially. One WR button glyph visible on left (Square, purple); R1 button label visible on right. Formation is 1 RB, 0 FB, 2 TE, 2 WR (Ace Pair Flex with flex TE alignment).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "^hb \\w+",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

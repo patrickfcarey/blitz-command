@@ -1,0 +1,36 @@
+concept_id: jet-sweep
+name: Jet Sweep
+category: zone-scheme
+description: |
+  Perimeter run off full-speed pre-snap jet motion: a receiver or slot back
+  runs flat across the formation and the QB hands off at top speed as he
+  crosses. The playside blocks with reach / outside-zone rules to seal the
+  edge. It hits the perimeter before the defense can flow, and the constant
+  motion threat sets up jet-fake counter, power, and play-action.
+aim_point: "Perimeter / edge, attacked at full speed off jet motion"
+read_tree:
+  - phase: 1
+    defender: "playside force defender (CB / OLB)"
+    decision: "Edge reached and sealed → press the sideline. Force squeezes → beat him to the edge with speed, no cutback."
+  - phase: 2
+    defender: "alley defender"
+    decision: "Once past the edge, read the alley fill and turn north."
+blocking_scheme_ref: zone-blocking
+pulls_required: []
+pairs_with:
+  - outside-zone
+  - power
+  - counter-trey
+tags:
+  - run
+  - perimeter
+  - jet-motion
+  - zone-scheme
+  - constraint
+  - any-level
+  - high-school
+  - college
+  - nfl
+verification_status: unverified
+source_notes:
+  - "Concept reviewed 2026-05-17 from Playbook Gamer 'Run Concepts Guide' (https://playbookgamer.com/run-concepts-guide/): Jet Sweep described as a perimeter run off pre-snap jet motion with outside-zone edge blocking; QB times the snap for the handoff at top speed; complements jet-action pass, counter / power and RPO variations."

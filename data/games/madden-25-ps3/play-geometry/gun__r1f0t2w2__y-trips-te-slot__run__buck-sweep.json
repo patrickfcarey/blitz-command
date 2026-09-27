@@ -1,0 +1,58 @@
+{
+  "slug": "gun__r1f0t2w2__y-trips-te-slot__run__buck-sweep",
+  "info": {
+    "family": "GUN",
+    "formation": "Y-Trips TE Slot",
+    "play_name": "Buck Sweep",
+    "play_type": "run",
+    "canonical_team": "Carolina Panthers",
+    "canonical_img": 106,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Carolina Panthers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Y-Trips TE Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 567,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 62
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 58.06,
+  "response_text": "```json\n{\n  \"concept\": \"sweep\",\n  \"concepts\": [\"sweep\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB B_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "B_right",
+    "c_xy": [
+      1476,
+      613
+    ],
+    "arrow_los_crossing_xy": [
+      1771,
+      683
+    ],
+    "dx_from_c": 295,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "sweep",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bsweep\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

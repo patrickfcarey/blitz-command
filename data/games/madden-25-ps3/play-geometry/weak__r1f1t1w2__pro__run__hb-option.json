@@ -1,0 +1,58 @@
+{
+  "slug": "weak__r1f1t1w2__pro__run__hb-option",
+  "info": {
+    "family": "WEAK",
+    "formation": "Pro",
+    "play_name": "HB Option",
+    "play_type": "run",
+    "canonical_team": "New York Jets",
+    "canonical_img": 73,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "New York Jets"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "WEAK",
+      "formation": "Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 165,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 182
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 57.63,
+  "response_text": "```json\n{\n  \"concept\": \"option_pass\",\n  \"concepts\": [\"option_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"option_read\"\n  },\n  \"ball_carrier\": \"HB D_right\",\n  \"primary_target\": null,\n  \"notes\": \"HB Option run play with option-read responsibility. Red arrow indicates HB ball-carrier path to D_right. WR_X and WR_Z run vertical clearout routes (streak and corner). TE_R runs seam route. Play is a run-action option with HB reading the edge defender.\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_right",
+    "c_xy": [
+      1632,
+      613
+    ],
+    "arrow_los_crossing_xy": [
+      2498,
+      613
+    ],
+    "dx_from_c": 866,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "option_pass",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bhb option\\b|\\bte option\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

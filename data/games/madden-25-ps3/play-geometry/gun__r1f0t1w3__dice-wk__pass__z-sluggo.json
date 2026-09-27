@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__dice-wk__pass__z-sluggo",
+  "info": {
+    "family": "GUN",
+    "formation": "Dice Wk",
+    "play_name": "Z Sluggo",
+    "play_type": "pass",
+    "canonical_team": "Denver Broncos",
+    "canonical_img": 93,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Denver Broncos"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Dice Wk",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 497,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 229
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.4,
+  "response_text": "```json\n{\n  \"concept\": \"sluggo\",\n  \"concepts\": [\"sluggo\"],\n  \"routes\": {\n    \"WR_X\": \"sluggo\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"curl\",\n    \"WR_SLOT_R\": \"curl\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Z Sluggo pass concept. WR_Z (right side, blue X button) runs the primary sluggo route (corner/flag). WR_X (left side, purple square button) runs a curl. Two slot receivers (Triangle and Cyan button glyphs) run curls at different depths on opposite sides. HB (R1 label) checks and releases. Red arrow traces primary target WR_Z's sluggo path upfield and to the corner.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "sluggo",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bsluggos?\\b|\\bsluggo seam\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

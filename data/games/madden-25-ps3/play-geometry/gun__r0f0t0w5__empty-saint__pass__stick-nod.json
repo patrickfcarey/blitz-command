@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r0f0t0w5__empty-saint__pass__stick-nod",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Saint",
+    "play_name": "Stick Nod",
+    "play_type": "pass",
+    "canonical_team": "New Orleans Saints",
+    "canonical_img": 128,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "New Orleans Saints"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Saint",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 166,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 219
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 4.97,
+  "response_text": "```json\n{\n  \"concept\": \"stick\",\n  \"concepts\": [\"stick\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"stick\",\n    \"WR_SLOT_R\": \"flat\",\n    \"WR_FLANKER\": \"comeback\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_R\",\n  \"notes\": \"GUN Empty 5-wide formation. Stick concept on right side: WR_SLOT_R runs flat, WR_Z runs corner over it. Left side: WR_SLOT_L runs stick route, WR_X runs vertical clearout streak. WR_FLANKER (far left) runs comeback. Red arrow on WR_SLOT_R indicates primary target on the flat.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "stick",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bstick\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

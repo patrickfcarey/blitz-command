@@ -1,0 +1,49 @@
+{
+  "slug": "pistol__r1f0t1w3__bunch__pass__seattle",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Bunch",
+    "play_name": "Seattle",
+    "play_type": "pass",
+    "canonical_team": "Pistol",
+    "canonical_img": 97,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Pistol"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Bunch",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 488,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 184
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.67,
+  "response_text": "```json\n{\n  \"concept\": \"city_concept\",\n  \"concepts\": [\"city_concept\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"drag\",\n    \"WR_SLOT_R\": \"stick\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Pistol Bunch with 4 WRs (no TE). Primary target (red arrow) is the right-side WR_Z running corner route. Multiple yellow route arrows indicate a multi-level passing concept with receivers stretched horizontally and vertically.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "city_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bseattle\\b|\\bphilly\\b|\\bgreen bay\\b|\\bdallas\\b|\\bbal\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

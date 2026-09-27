@@ -1,0 +1,47 @@
+philosophy_id: run-and-pound
+name: Run-and-Pound (Modern Heavy Run)
+description: |
+  Modern NFL approach emphasizing heavy rushing volume, clock control, and physical
+  play. Originated with Baltimore Ravens (Ray Rice era) and Seattle Seahawks (Beast Mode).
+  Combines zone-blocking with occasional play-action. Heavy reliance on elite RB talent
+  and strong OL. Used to wear down defenses and protect a developing or backup QB.
+era: "2000s–present"
+originators:
+  - "Baltimore Ravens (Ray Rice era, 2008–2012)"
+  - "Seattle Seahawks (Marshawn Lynch era, 2010–2014)"
+  - "John Harbaugh / Pete Carroll"
+notable_practitioners:
+  - "John Harbaugh (Ravens)"
+  - "Pete Carroll (Seahawks)"
+  - "Bill Belichick (Patriots, various)"
+canonical_run_concepts:
+  - inside-zone
+  - outside-zone
+  - power
+  - stretch
+canonical_pass_concepts:
+  - play-action
+  - bootleg
+  - quick-pass
+formation_preferences:
+  - i-formation
+  - singleback-ace
+  - singleback-trio
+tendency_profile:
+  run_pct: 0.60
+  pass_pct: 0.25
+  pa_pct: 0.10
+  rpo_pct: 0.0
+  screen_pct: 0.05
+tags:
+  - philosophy
+  - run-and-pound
+  - run-heavy
+  - nfl
+  - modern
+  - clock-control
+  - power-run
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Wikipedia 'Ravens running backs' (https://en.wikipedia.org/wiki/Ray_Rice): Ravens run-heavy approach with Ray Rice."
+  - "Web validated 2026-04-30 — Wikipedia 'Marshawn Lynch' (https://en.wikipedia.org/wiki/Marshawn_Lynch): Seahawks Beast Mode and run-and-pound philosophy."

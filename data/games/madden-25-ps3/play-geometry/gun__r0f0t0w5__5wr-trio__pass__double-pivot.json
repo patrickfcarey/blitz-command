@@ -1,0 +1,50 @@
+{
+  "slug": "gun__r0f0t0w5__5wr-trio__pass__double-pivot",
+  "info": {
+    "family": "GUN",
+    "formation": "5WR Trio",
+    "play_name": "Double Pivot",
+    "play_type": "pass",
+    "canonical_team": "Chicago Bears",
+    "canonical_img": 139,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Chicago Bears",
+      "Philadelphia Eagles"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "5WR Trio",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "5-WR set, no RB"
+    }
+  },
+  "usage": {
+    "input_tokens": 498,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 239
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.46,
+  "response_text": "```json\n{\n  \"concept\": \"pivot_route\",\n  \"concepts\": [\"pivot_route\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"pivot\",\n    \"WR_SLOT_R\": \"pivot\",\n    \"WR_FLANKER\": \"streak\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_L\",\n  \"notes\": \"GUN 5WR Trio \u2014 no RB, FB, or TE. Five WRs visible with button glyphs (purple \u25a1, green \u25b3, blue \u2297, red \u2299, and one unlabeled). Two pivot routes (slot receivers) are the named concept; outer WRs and flanker run vertical clearouts. Red arrow from QB originates left toward the left slot pivot receiver. Yellow route arrows show the clearout streaks on the outside.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "pivot_route",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpivot\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

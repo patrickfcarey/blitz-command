@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r0f0t0w5__empty-v-saints__pass__quick-screens",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty V-Saints",
+    "play_name": "Quick Screens",
+    "play_type": "pass",
+    "canonical_team": "New Orleans Saints",
+    "canonical_img": 134,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "New Orleans Saints"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty V-Saints",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 156,
+    "cache_creation_input_tokens": 352,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 189
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 5.91,
+  "response_text": "```json\n{\n  \"concept\": \"quick_screens\",\n  \"concepts\": [\"quick_screens\"],\n  \"routes\": {\n    \"WR_X\": \"screen\",\n    \"WR_Z\": \"screen\",\n    \"WR_SLOT_L\": \"screen\",\n    \"WR_SLOT_R\": \"screen\",\n    \"WR_FLANKER\": \"screen\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"GUN Empty 5-wide formation. All 5 WRs running screen routes. Primary target (red arrow) is the right-side WR (WR_Z) running a wheel/swing screen. QB in shotgun alone (no RB visible).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "unknown",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": null,
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

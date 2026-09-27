@@ -1,0 +1,209 @@
+play_id: i-formation-power-counter
+name: Power Counter (Strong)
+aliases:
+  - Power Counter
+  - Counter off Power
+  - Power Crossbuck
+
+formation: i-formation
+play_type: run
+ball_carrier: HB
+run_reads:
+  - priority: 1
+    read_key: kicking tackle (LT) — kickout block on the backside EDGE
+    run_to: show the off-tackle Power track, then plant and run BACKSIDE behind the pulling LT through the weak-side C-gap
+    notes: "HB sells the Power off-tackle path for two steps, then redirects backside. Follow the LT's kickout."
+  - priority: 2
+    read_key: backside linebacker (pulling guard's target)
+    run_to: if the backside LB scrapes over the LG's wrap, cut underneath into the B-gap
+    notes: "LG pulls and wraps the backside LB. If the LB goes over the top, the B-gap opens behind him."
+  - priority: 3
+    read_key: frontside cutback (playside A-gap)
+    run_to: if the backside is overrun by fast flow, cut back frontside behind the down-blocks
+    notes: "Last resort — the Power show already flowed the defense playside; if backside clogs, the cutback is there."
+
+# Identical Z motion to Power-O — part of the family's shared pre-snap look.
+# Run the motion on every member of the Power family, or on none; it must
+# match across the family so the defense cannot key it.
+motions:
+  - player: Z
+    type: optional
+    motion_type: short-across
+    end_position: { x: -8.0, y: -1.0 }
+    notes: "Same Z shift as Power-O — keeps the pre-snap look identical across the Power family."
+
+assignments:
+  - player: LT
+    role: run_block
+    blocking_scheme: pull-around
+    target: backside-edge
+    path: [[0, 0], [-3, -0.5], [-5, -0.5], [-7, 2]]
+    notes: "PULL — backside tackle pulls and kicks out the backside EDGE to open the weak-side C-gap."
+  - player: LG
+    role: run_block
+    blocking_scheme: pull-around
+    target: backside-LB
+    path: [[0, 0], [-2, -0.5], [-4, 0], [-5, 4]]
+    notes: "PULL — backside guard pulls around the C, leads through the weak-side hole onto the backside LB."
+  - player: C
+    role: run_block
+    blocking_scheme: gap-block
+    target: playside-A-gap
+    notes: "Reach the playside A-gap to wall the frontside; sells the Power down-block flow."
+  - player: RG
+    role: run_block
+    blocking_scheme: down-block
+    target: playside-DT
+    notes: "Down-block the playside DT — shows the Power double-team to flow the defense frontside."
+  - player: RT
+    role: run_block
+    blocking_scheme: down-block
+    target: playside-5-tech
+    notes: "Down-block the playside 5-tech — sells the Power off-tackle hole."
+  - player: TE
+    role: run_block
+    blocking_scheme: down-block
+    target: playside-LB
+    notes: "Show the Power kickout for a beat, then down-block the playside LB to climb and flow the front."
+  - player: X
+    role: run_block
+    blocking_scheme: stalk
+    target: cornerback
+    notes: "Backside stalk — the play is now coming to the X's side; wall the corner."
+  - player: Z
+    role: run_block
+    blocking_scheme: stalk
+    target: cornerback
+  - player: QB
+    role: handoff
+    path: [[0, 0], [-1, -1], [-2, -1]]
+    notes: "Reverse-out IDENTICAL to Power-O, hand to the HB, then sell a fake bootleg to the playside."
+  - player: FB
+    role: lead_block
+    target: backside-alley-defender
+    path: [[0, 0], [3, 3], [-1, 5], [-4, 7]]
+    notes: "Lead exactly like Power-O for the first two steps to sell the iso, then cross back to lead the HB through the weak-side hole."
+  - player: HB
+    role: ball_carrier
+    is_primary: true
+    path: [[0, 0], [3, 3], [-2, 5], [-4, 9]]
+    alt_paths:
+      - priority: secondary
+        path: [[0, 0], [3, 3], [-1, 5], [-1, 9]]
+        notes: "Read 2: backside LB scrapes over the LG wrap — cut underneath into the B-gap."
+      - priority: tertiary
+        path: [[0, 0], [3, 3], [2, 5], [3, 9]]
+        notes: "Read 3: backside overrun by fast flow — cut back frontside behind the down-blocks."
+    notes: |
+      Show the exact Power-O off-tackle track for the first two steps to flow
+      the defense playside, then plant and run BACKSIDE behind the pulling LT
+      and LG through the weak-side C-gap.
+
+strengths:
+  - Identical pre-snap look and first-step action to Power-O — the defense reads Power
+  - Two pulling blockers (LT and LG) arriving at the backside point of attack
+  - The Power show flows fast linebackers playside, away from where the ball goes
+  - Devastating against defenses overplaying the Power off-tackle hole
+  - QB reverse-out and playside bootleg fake hold frontside defenders
+
+weaknesses:
+  - Needs Power-O on tape first — a cold counter fake flows no one
+  - Slow-developing — the LT and LG pulls need ~2.5 seconds to arrive
+  - Vulnerable to a backside DE shooting upfield before the LT kickout lands
+  - HB must read the counter correctly or the play breaks
+  - Backside-shaded linebackers who don't chase the Power show kill the pull lane
+
+best_vs_defense:
+  - over-front (gives the down-block and pull angles)
+  - cover-3 with run-fit linebackers
+  - any defense overcommitting to the Power off-tackle hole
+  - speed-flow defenses that over-pursue the Power show
+
+worst_vs_defense:
+  - bear / 4-6 fronts (a DT in every gap)
+  - 8-man fronts / cover-1 robber (extra defender)
+  - backside DE shooting upfield
+  - disciplined defenses drilled against counter
+
+defensive_counters:
+  - counter_id: spill-the-puller
+    pre_snap_look: "Backside EDGE in a tight 6/7-technique with his inside shoulder cocked down and a force defender (OLB or SS) cheated wide outside him"
+    qb_key: "Scan the backside edge — EDGE hand and shoulder pointed inside, force defender widened"
+    read_category: dl-alignment
+    why: "An inside-cocked backside EDGE is set to wrong-arm the LT's kickout and spill the counter wide into the pre-widened force defender, where the pullers have no angle."
+    typical_against: ["over-front", "4-3 base", "any defense coached to spill the counter"]
+  - counter_id: backside-stay-home
+    pre_snap_look: "Backside LB stacked square behind the line at normal depth with his eyes inside on the guards, not shaded or cheated to the Power strength"
+    qb_key: "Check the backside LB — backer squared up and not honoring the Power show"
+    read_category: lb-depth
+    why: "A squared backside LB who does not chase the Power flow stays home over the weak-side hole and fills it before the LG wrap arrives."
+    typical_against: ["disciplined option-fit defenses", "any defense drilled against counter"]
+  - counter_id: 8-man-front
+    pre_snap_look: "8 defenders inside the tackle box — strong safety walked down to 4-5 yards, single-high shell behind it"
+    qb_key: "Count the box — eight, with one high safety"
+    read_category: box-count
+    why: "There aren't enough blockers for the extra box defender; someone in the counter run fit comes free unblocked."
+    typical_against: ["cover-1 robber", "quarters with SS rolled down"]
+
+common_uses:
+  - Counter to an established Power-O tendency
+  - 1st/2nd-and-medium with the run game established
+  - Short-yardage when the defense overcommits to the off-tackle hole
+  - Setting up the boot and PA pass off the same Power look
+
+philosophy: power-run
+run_concept_ref: power
+philosophy_ref: power-run
+
+era: "1980s onward — counter off the power game is a staple of every pro-style power offense."
+
+famous_examples:
+  - "1980s Washington Redskins (Joe Gibbs / John Riggins counter game)"
+  - "Modern NFL teams using counter as a Power complement"
+  - "HS power-run programs across the country"
+
+tags:
+  - run
+  - power-run
+  - counter
+  - gap-scheme
+  - misdirection
+  - high-school
+  - college
+  - nfl
+
+notes: |
+  Counter off Power-O. The QB reverse-out, the HB off-tackle track, the FB
+  lead, and the OL down-block show are all IDENTICAL to Power-O for the first
+  two steps — the defense reads Power and flows playside. The HB then plants
+  and runs BACKSIDE behind the pulling LT and LG through the weak-side C-gap.
+  Member of the I-Formation Power disguise family (see data/play-families/).
+
+  Mirror to power-counter-left by flipping all coordinates.
+
+verification_status: unverified
+source_notes:
+  - "Counter off the power run is a universal constraint concept. Authored as a disguise twin of i-formation-power-o — initial action (QB reverse-out, HB/FB tracks) deliberately mirrors the base play's first two waypoints exactly."
+flip_reads:
+- flip_id: front-overshift-callside
+  pre_snap_look: Defensive front slid toward the called side — an extra down lineman or a walked-up
+    linebacker puts +1 in the called-side box.
+  qb_key: Count the box side to side — the called side has one more hat than the backside.
+  read_category: box-count
+  flip_to: mirror-play
+  why: Running a gap scheme into the overshift is into the teeth; flipping the play attacks the
+    lighter box with the same blocking math.
+  typical_against:
+  - over-front
+  - shifted 4-3
+- flip_id: strength-declared-to-formation
+  pre_snap_look: Defense has fully declared to the formation's strength — an extra box defender
+    to the strong side and a safety rolled down over it.
+  qb_key: Check the strength side — both the box count and the safety roll are committed to it.
+  read_category: safety-shell
+  flip_to: mirror-formation
+  why: When the defense keys the formation's strength, flipping the whole formation forces a re-declare
+    and the run hits the side they vacated.
+  typical_against:
+  - cover-3 with strong roll
+  - 8-man fronts

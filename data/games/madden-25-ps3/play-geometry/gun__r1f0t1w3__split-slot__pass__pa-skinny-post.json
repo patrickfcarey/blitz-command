@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__split-slot__pass__pa-skinny-post",
+  "info": {
+    "family": "GUN",
+    "formation": "Split Slot",
+    "play_name": "PA Skinny Post",
+    "play_type": "pass",
+    "canonical_team": "Denver Broncos",
+    "canonical_img": 59,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Denver Broncos"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Split Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "GUN/Shotgun default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 500,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 265
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.28,
+  "response_text": "```json\n{\n  \"concept\": \"post_concept\",\n  \"concepts\": [\"post_concept\", \"pa_pass\"],\n  \"routes\": {\n    \"WR_X\": \"post\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_R\": \"flat\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"pass_block\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"PA play-action with post-concept primary. WR_X (purple \u25a1, left side) runs the red arrow post route. WR_Z (red \u2299, right side) runs vertical clearout. TE_R (blue \u2297, right) runs seam. WR_SLOT_R (green \u25b3, middle-right, labeled R1) runs flat/swing. HB (white circle in backfield) stays for pass-pro. Standard GUN Split Slot (1 RB, 0 FB, 1 TE, 3 WR).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "post_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpost(?![- ]corner)\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

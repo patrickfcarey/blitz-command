@@ -1,0 +1,51 @@
+{
+  "slug": "gun__r1f0t1w3__doubles__pass__pa-read",
+  "info": {
+    "family": "GUN",
+    "formation": "Doubles",
+    "play_name": "PA Read",
+    "play_type": "pass",
+    "canonical_team": "Carolina Panthers",
+    "canonical_img": 96,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Carolina Panthers",
+      "Indianapolis Colts",
+      "Washington Redskins"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Doubles",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Doubles \u2014 1 TE 3 WR (slot variant)"
+    }
+  },
+  "usage": {
+    "input_tokens": 516,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 262
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.41,
+  "response_text": "```json\n{\n  \"concept\": \"read_pass\",\n  \"concepts\": [\"pa_pass\", \"read_option\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"drag\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"wheel\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"PA Read with shotgun backfield. Red arrow (primary) to WR_X streak; secondary reads visible (yellow routes to Z corner, slot drag, TE seam; blue route to WR_Z option/cutback; HB wheel route). Formation is GUN Doubles (1 RB, 0 FB, 1 TE, 3 WR) as expected. All button glyphs present (\u25a1 purple left, \u25b3 green left-middle, \u2297 blue right, \u2299 red far-right, R1 on HB).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "read_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bread\\b(?!.*option)",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

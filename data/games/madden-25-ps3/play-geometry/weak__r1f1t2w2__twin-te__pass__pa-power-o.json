@@ -1,0 +1,49 @@
+{
+  "slug": "weak__r1f1t2w2__twin-te__pass__pa-power-o",
+  "info": {
+    "family": "WEAK",
+    "formation": "Twin TE",
+    "play_name": "PA Power O",
+    "play_type": "pass",
+    "canonical_team": "Brian Billick",
+    "canonical_img": 111,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Brian Billick"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "WEAK",
+      "formation": "Twin TE",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 497,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 221
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.37,
+  "response_text": "```json\n{\n  \"concept\": \"power_o\",\n  \"concepts\": [\"power_o\", \"pa_pass\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"TE_R\": \"seam\",\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"flat\",\n    \"HB\": \"wheel\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"Play-action pass disguised as power run. Red arrow (primary target) goes to TE_R running seam upfield. TE_L blocks initially as if running the play-action mesh. WR_X (left side) runs corner route. WR_Z (right side) runs flat. HB releases to wheel route to the right flat. Cyan triangle (R1 button) appears to be secondary checkdown option.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "power_o",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpower ?o\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

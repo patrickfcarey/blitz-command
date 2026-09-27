@@ -1,0 +1,49 @@
+{
+  "slug": "i-form__r1f1t1w2__h-twin-pair__pass__pa-spot",
+  "info": {
+    "family": "I-FORM",
+    "formation": "H Twin Pair",
+    "play_name": "PA Spot",
+    "play_type": "pass",
+    "canonical_team": "Seattle Seahawks",
+    "canonical_img": 53,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Seattle Seahawks"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "H Twin Pair",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "I-Form Pro default"
+    }
+  },
+  "usage": {
+    "input_tokens": 527,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 193
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.63,
+  "response_text": "```json\n{\n  \"concept\": \"spot_concept\",\n  \"concepts\": [\"spot_concept\"],\n  \"routes\": {\n    \"WR_X\": \"curl\",\n    \"WR_Z\": \"flat\",\n    \"TE_L\": \"seam\",\n    \"TE_R\": \"corner\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"PA Spot with I-Form H Twin Pair setup. Red arrow (primary route) on right TE running corner. Left side shows curl-flat combo (WR_X curl, WR_Z flat). Left TE runs seam. HB eligible for check/release. Standard spot concept structure with PA action.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "spot_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bspot\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

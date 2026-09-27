@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__eagle-doubles__pass__philly-slot-seam",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Eagle Doubles",
+    "play_name": "Philly Slot Seam",
+    "play_type": "pass",
+    "canonical_team": "Philadelphia Eagles",
+    "canonical_img": 15,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Philadelphia Eagles"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Eagle Doubles",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 506,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 197
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.93,
+  "response_text": "```json\n{\n  \"concept\": \"receiver_concept\",\n  \"concepts\": [\"philly_slot_seam\", \"four_verticals\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"seam\",\n    \"TE_R\": \"streak\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_L\",\n  \"notes\": \"Philly Slot Seam concept: slot receiver (green \u25b3) runs seam route (blue arrow), outer WRs and TE run vertical stretches, HB eligible checkdown (R1 button). Four-vertical structure with slot seam variant.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "receiver_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\b(wr|te|x|y|z|fl|se|slot|h) (corner|drag|hook|option|under|seam|follow|attack|inside|angle|shake|fork|scissors|cross|trail|streak|spot|fade|in|out|wheel|seams|hooks|corners|outs|ins|posts|streaks)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

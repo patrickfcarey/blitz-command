@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__flip-trips__pass__hb-slip-screen",
+  "info": {
+    "family": "GUN",
+    "formation": "Flip Trips",
+    "play_name": "HB Slip Screen",
+    "play_type": "pass",
+    "canonical_team": "Dallas Cowboys",
+    "canonical_img": 120,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Dallas Cowboys"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Flip Trips",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 500,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 170
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.49,
+  "response_text": "```json\n{\n  \"concept\": \"hb_screen\",\n  \"concepts\": [\"hb_screen\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"comeback\",\n    \"WR_SLOT_R\": \"streak\",\n    \"HB\": \"screen\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"HB\",\n  \"notes\": \"HB slip screen with vertical stretch on opposite side. Red arrow indicates HB screen route to the flat. WR_Z runs comeback on opposite side; WR_X and WR_SLOT_R run streaks to stretch vertically. QB in shotgun.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "hb_screen",
+    "concept_family": "screen",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bhb (slip )?screen\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

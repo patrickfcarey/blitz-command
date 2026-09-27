@@ -1,0 +1,51 @@
+philosophy_id: constraint-play-heavy
+name: Constraint-Play Heavy
+description: |
+  Offensive philosophy built around heavy use of constraint plays (draw, screen,
+  bubble screens, play-action, RPO) to punish aggressive defenses. Emphasizes deception
+  and misdirection. Works best against pass-rushing defenses. Can be applied to any
+  base system (West Coast, Air Raid, Pro-Style) but defines the philosophy by constraint
+  frequency rather than base concepts.
+era: "2000s–present (modern evolution)"
+originators:
+  - "Chip Kelly (constraint-heavy at Oregon)"
+  - "Kyle Shanahan (bootleg/play-action emphasis)"
+  - "Modern offensive coordinators"
+notable_practitioners:
+  - "Chip Kelly"
+  - "Kyle Shanahan (Rams/49ers)"
+  - "Kliff Kingsbury"
+canonical_run_concepts:
+  - draw
+  - screen
+  - trap
+  - play-action
+canonical_pass_concepts:
+  - bubble
+  - bootleg
+  - play-action
+  - rpo
+  - quick-pass
+formation_preferences:
+  - shotgun-2x2
+  - shotgun-bunch
+  - singleback-ace
+  - i-formation
+tendency_profile:
+  run_pct: 0.30
+  pass_pct: 0.40
+  pa_pct: 0.10
+  rpo_pct: 0.10
+  screen_pct: 0.10
+tags:
+  - philosophy
+  - constraint-plays
+  - misdirection
+  - deception
+  - modern
+  - nfl
+  - college
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Wikipedia 'Chip Kelly' (https://en.wikipedia.org/wiki/Chip_Kelly): constraint-play heavy offense at Oregon/NFL."
+  - "Web validated 2026-04-30 — Wikipedia 'Kyle Shanahan' (https://en.wikipedia.org/wiki/Kyle_Shanahan): play-action and bootleg heavy systems."

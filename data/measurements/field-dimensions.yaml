@@ -1,0 +1,49 @@
+# Real-world football field measurements.
+# All values in yards unless suffix says otherwise.
+# Prose reference: docs/coordinate-systems.md
+
+field:
+  width_yd: 53.333
+  length_yd: 120.0
+  goal_to_goal_yd: 100.0
+  end_zone_depth_yd: 10.0
+  yard_line_spacing_yd: 1.0
+
+hash_marks:
+  nfl:
+    spacing_yd: 6.17
+    distance_from_sideline_yd: 23.58
+  ncaa:
+    spacing_yd: 13.33
+    distance_from_sideline_yd: 20.0
+  high_school:
+    spacing_yd: 17.78
+    distance_from_sideline_yd: 17.78
+
+# Typical NFL/college spacing (centerline to centerline).
+# Stored as a reference; per-formation files store concrete coordinates.
+line_splits:
+  center_to_guard_yd: 1.0
+  guard_to_tackle_yd: 1.0
+  tackle_to_tight_end_yd: 1.5
+
+# Conventional backfield depths used as defaults when a formation
+# doesn't specify otherwise.
+backfield_depths:
+  qb_under_center_yd: 1.5
+  qb_shotgun_yd: 5.0
+  qb_pistol_yd: 4.0
+  fb_iform_yd: 4.5
+  hb_iform_yd: 7.0
+
+# Conventional receiver splits from the ball.
+receiver_splits:
+  slot_min_yd: 4.0
+  slot_max_yd: 8.0
+  wide_min_yd: 10.0
+  wide_max_yd: 18.0
+
+verification_status: inferred
+source_notes:
+  - "Field and hash dimensions match publicly documented NFL/NCAA/HS rulebook values."
+  - "Line splits, backfield depths, and receiver splits are widely-taught coaching conventions, not measured from a specific source."

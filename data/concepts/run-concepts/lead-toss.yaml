@@ -1,0 +1,36 @@
+concept_id: lead-toss
+name: Lead Toss
+category: man-blocking-scheme
+description: |
+  QB pitches the HB on the move to the perimeter while the FB and playside guard
+  lead through to the outside. Combination of a toss motion with lead blocking.
+  More horizontal and perimeter-focused than Power, but with lead-block protection.
+  Common in option-heavy offenses and run-heavy spreads.
+aim_point: "Perimeter / outside, usually C-gap or wider"
+read_tree:
+  - phase: 1
+    defender: "playside EDGE"
+    decision: "FB leads; HB reads if EDGE is sealed or if he needs to bounce outside."
+  - phase: 2
+    defender: "secondary defender (corner, S)"
+    decision: "HB follows lead blocker's path and attacks secondary defender."
+blocking_scheme_ref: gap-blocking
+pulls_required:
+  - LG
+lead_blocker: FB
+pairs_with:
+  - power
+  - sweep
+  - option
+tags:
+  - run
+  - perimeter
+  - pitch
+  - misdirection
+  - option
+  - college
+  - high-school
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Throw Deep Publishing 'Lead Toss / Pitch Concepts' (https://throwdeeppublishing.com/blogs/football-glossary/): confirmed QB pitch + FB lead structure."
+  - "Web validated 2026-04-30 — X&O Labs 'Option Run Game' (https://www.xandolabs.com/): lead toss common in option-based offenses."

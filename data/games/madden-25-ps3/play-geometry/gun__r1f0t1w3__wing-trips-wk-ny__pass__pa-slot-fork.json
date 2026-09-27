@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__wing-trips-wk-ny__pass__pa-slot-fork",
+  "info": {
+    "family": "GUN",
+    "formation": "Wing Trips Wk NY",
+    "play_name": "PA Slot Fork",
+    "play_type": "pass",
+    "canonical_team": "New York Giants",
+    "canonical_img": 113,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "New York Giants"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Wing Trips Wk NY",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 180,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 187
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 16.36,
+  "response_text": "```json\n{\n  \"concept\": \"receiver_concept\",\n  \"concepts\": [\"pa_slot_fork\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"fork\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_L\",\n  \"notes\": \"Play-action slot fork. Red arrow (primary) targets slot left receiver running fork route. Yellow arrows show stretch routes (WR_X streak, WR_Z corner) and TE seam. Backfield shows QB with HB offset to right side.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "receiver_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\b(wr|te|x|y|z|fl|se|slot|h) (corner|drag|hook|option|under|seam|follow|attack|inside|angle|shake|fork|scissors|cross|trail|streak|spot|fade|in|out|wheel|seams|hooks|corners|outs|ins|posts|streaks)\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

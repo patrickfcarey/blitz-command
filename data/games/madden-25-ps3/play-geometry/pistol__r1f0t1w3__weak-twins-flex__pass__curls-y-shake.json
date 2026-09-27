@@ -1,0 +1,49 @@
+{
+  "slug": "pistol__r1f0t1w3__weak-twins-flex__pass__curls-y-shake",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Weak Twins Flex",
+    "play_name": "Curls Y-Shake",
+    "play_type": "pass",
+    "canonical_team": "Washington Redskins",
+    "canonical_img": 74,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Washington Redskins"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Weak Twins Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Pistol Strong/Weak"
+    }
+  },
+  "usage": {
+    "input_tokens": 506,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 218
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.24,
+  "response_text": "```json\n{\n  \"concept\": \"curls\",\n  \"concepts\": [\"curls\", \"y_shake\"],\n  \"routes\": {\n    \"WR_X\": \"curl\",\n    \"WR_Z\": \"flat\",\n    \"WR_SLOT_L\": \"corner\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"wheel\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Y-Shake variant: curl-flat combo on right side (WR_X curl, WR_Z flat); left side runs independent routes (WR_SLOT_L corner, TE_R seam); HB wheels to flat as checkdown. Red arrow traces primary curl route from WR_X; yellow arrows show complementary routes. R1 button indicates TE_R is an alternative target.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "curls",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcurls?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

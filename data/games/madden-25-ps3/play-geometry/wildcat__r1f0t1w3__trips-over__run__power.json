@@ -1,0 +1,58 @@
+{
+  "slug": "wildcat__r1f0t1w3__trips-over__run__power",
+  "info": {
+    "family": "WILDCAT",
+    "formation": "Trips Over",
+    "play_name": "Power",
+    "play_type": "run",
+    "canonical_team": "Indianapolis Colts",
+    "canonical_img": 145,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Indianapolis Colts"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "WILDCAT",
+      "formation": "Trips Over",
+      "QB": 0,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 5,
+      "confidence": "high",
+      "notes": "Wildcat \u2014 RB at QB position, no QB; TE/WR counts approximate per variant"
+    }
+  },
+  "usage": {
+    "input_tokens": 231,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 70
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 58.98,
+  "response_text": "```json\n{\n  \"concept\": \"power_run\",\n  \"concepts\": [\"power_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"WILDCAT_RB C_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "C_right",
+    "c_xy": [
+      1606,
+      611
+    ],
+    "arrow_los_crossing_xy": [
+      1942,
+      611
+    ],
+    "dx_from_c": 336,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "power_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bpower\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

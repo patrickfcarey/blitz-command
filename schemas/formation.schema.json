@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blitz-command.local/schemas/formation.schema.json",
+  "title": "Formation",
+  "description": "A football formation defined in the universal coordinate system (see docs/coordinate-systems.md). Legality rules NOT enforceable by JSON Schema (e.g. end-of-line players must be eligible receivers) are documented in docs/formation-rules.md.",
+  "type": "object",
+  "required": ["name", "side", "personnel", "players", "verification_status"],
+  "additionalProperties": false,
+  "properties": {
+    "name": { "type": "string" },
+    "side": {
+      "enum": ["offense", "defense"]
+    },
+    "personnel": {
+      "type": "string",
+      "description": "Personnel grouping. An OFFENSIVE formation uses the two-digit RB-TE code and must match a `code` in data/concepts/personnel-groupings.yaml (e.g. '21' = 2 RB / 1 TE / 2 WR). A DEFENSIVE formation uses front-LB shorthand for its package (e.g. '4-3 base', 'nickel', '3-3-5')."
+    },
+    "strength_side": {
+      "enum": ["left", "right", "balanced"],
+      "description": "Side of the formation that's strong (e.g. TE side on offense)."
+    },
+    "players": {
+      "type": "array",
+      "minItems": 11,
+      "maxItems": 11,
+      "items": {
+        "type": "object",
+        "required": ["label", "position", "x", "y", "on_line"],
+        "additionalProperties": false,
+        "properties": {
+          "label": { "type": "string", "description": "Free-form identifier (e.g. 'X', 'Z', 'TE', 'HB', 'LT')." },
+          "position": { "type": "string", "description": "Position (QB, HB, FB, WR, TE, LT, LG, C, RG, RT, etc.)." },
+          "x": { "type": "number", "description": "Universal x in yards (positive = offense's right)." },
+          "y": { "type": "number", "description": "Universal y in yards (positive = downfield)." },
+          "on_line": { "type": "boolean", "description": "True if the player is on the line of scrimmage." }
+        }
+      }
+    },
+    "strengths": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "What this formation does well — schemes/situations it's built for."
+    },
+    "weaknesses": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Where this formation struggles — defenses or situations that exploit it."
+    },
+    "common_uses": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Game situations where you'd typically call this formation."
+    },
+    "run_concepts": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Run concepts that pair well with this formation. Names should match concept entries in data/concepts/ when those exist."
+    },
+    "pass_concepts": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Pass concepts that pair well with this formation. Names should match concept entries in data/concepts/ when those exist."
+    },
+    "era": {
+      "type": "string",
+      "description": "Era when this formation was/is most commonly used (e.g. '1970s-1990s NFL', 'modern college spread')."
+    },
+    "famous_users": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Coaches, teams, or systems known for this formation."
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "notes": { "type": "string" },
+    "verification_status": {
+      "enum": ["verified", "unverified", "inferred"]
+    },
+    "source_notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "front": {
+      "type": "string",
+      "description": "Defensive front (DL + LB structure). Common values: '4-3', '3-4', '4-2-5', '3-3-5', '46-Bear', 'Nickel-4-2', 'Dime-4-1', 'Goal-Line'. Defense only."
+    },
+    "coverage_shell": {
+      "type": "string",
+      "description": "Defensive coverage shell (DB rotation + responsibilities). Common values: 'cover-0', 'cover-1', 'cover-2', 'cover-2-man', 'cover-3', 'cover-4', 'tampa-2', 'cover-6'. Defense only."
+    },
+    "responsibilities": {
+      "type": "array",
+      "description": "Per-player post-snap responsibility. Defense only.",
+      "items": {
+        "type": "object",
+        "required": ["player", "role"],
+        "additionalProperties": false,
+        "properties": {
+          "player": { "type": "string" },
+          "role": {
+            "enum": [
+              "rush", "zone", "man", "spy", "blitz", "qb-spy",
+              "deep-zone", "underneath-zone", "flat", "hook", "curl", "robber",
+              "press-man", "off-man", "buzz", "rat", "lurk", "carry"
+            ]
+          },
+          "aim": { "type": "string", "description": "Where the player goes / what gap or zone they cover." },
+          "covers_player": { "type": "string", "description": "For man coverage: label of the offensive player covered (e.g. 'X', 'TE', 'HB')." },
+          "notes": { "type": "string" }
+        }
+      }
+    },
+    "best_against": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Offensive concepts this defense handles well. Defense only."
+    },
+    "vulnerable_to": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Offensive concepts that beat this defense. Defense only."
+    }
+  }
+}

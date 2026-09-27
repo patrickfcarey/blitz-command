@@ -1,0 +1,171 @@
+play_id: shotgun-2x2-drive
+name: Drive (Strong)
+aliases:
+  - Drive Concept
+  - Shallow Drive
+  - Walsh Drive
+
+formation: shotgun-2x2
+play_type: pass
+ball_carrier: TE
+primary_read: TE
+secondary_read: Z
+checkdown: HB
+
+# Empty motions block — the base play of the West Coast Drive family carries
+# no pre-snap motion, so every disguise twin carries the same empty block.
+# Identical (or absent) motion across the family keeps the pre-snap picture
+# the same so the defense cannot key the call off motion.
+motions: []
+
+assignments:
+  - player: LT
+    role: pass_block
+    blocking_scheme: man-protection
+    notes: "Five-man slide protection — protect the QB's three-step rhythm drop."
+  - player: LG
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: C
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: RG
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: RT
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: TE
+    role: route
+    route_name: drag
+    depth_yd: 5
+    is_primary: true
+    beats_coverage: both
+    notes: "The shallow cross — the LO of the Drive hi-lo. Push to 5 yds off the strong-side line, then drag flat across the formation. Run to grass vs zone, run away from leverage vs man. The bread-and-butter throw."
+  - player: Z
+    role: route
+    route_name: dig
+    depth_yd: 12
+    notes: "The dig — the HI of the Drive hi-lo. Stem vertical, sell the go, then break the deep in-cut at 12 yds behind the linebackers and in front of the safeties. Walsh's 'linchpin' high read."
+  - player: X
+    role: route
+    route_name: comeback
+    depth_yd: 14
+    notes: "Backside comeback — the field-stretching outlet if the strong-side hi-lo is bracketed; opens late vs press or trail man."
+  - player: SLOT-W
+    role: route
+    route_name: dig
+    depth_yd: 12
+    notes: "Weak-side dig mirrors Z — a second deep in-cut occupies the backside hook defender and gives the QB a same-depth alternate if the strong dig is walled."
+  - player: QB
+    role: ball_carrier
+    path: [[0, 0], [0, -1], [0, -2]]
+    notes: |
+      Three-step rhythm drop from shotgun depth. Hi-lo read on the strong side:
+      eyes start on the Z dig (HI), then drop to the TE drag (LO) as the
+      crosser clears the box. Pre-snap, the hook defender's depth tells you
+      which level the Drive attacks — sitting LB = throw the dig over him;
+      deep-bailing LB = throw the drag under him. HB is the safety valve.
+  - player: HB
+    role: route
+    route_name: flat
+    depth_yd: 3
+    path: [[0, 0], [-1, 0], [-4, 3]]
+    notes: "Check-release: scan for weak-side pressure, then leak to the flat as the checkdown if the hi-lo is covered and the rush stays honest."
+
+strengths:
+  - Classic West Coast hi-lo — the dig over and the drag under stress one defender two ways
+  - High-completion shallow cross gives an easy throw and yards after the catch
+  - Beats both man (the crosser runs away from trailing leverage) and zone (it settles in grass)
+  - Three-step rhythm gets the ball out before most four-man rushes arrive
+  - Backside dig and comeback give full-field answers if the strong side is bracketed
+
+weaknesses:
+  - A robber sitting in the crossing window undercuts the primary throw
+  - The dig needs ~2.5 seconds to clear — interior pressure shrinks the high read
+  - No deep shot built in — the play tops out around 14 yards
+  - QB must process the hi-lo quickly or the rhythm is lost
+  - Crossers into a zone-match defense get passed off cleanly defender to defender
+
+best_vs_defense:
+  - cover-3 (drag settles between the underneath zones, dig works the seam)
+  - cover-1 / man (the shallow cross runs away from trail leverage)
+  - 4-3 with downhill, run-keying linebackers
+  - any defense with soft or undisciplined underneath spacing
+
+worst_vs_defense:
+  - cover-2 robber sitting in the crossing window
+  - match quarters that pass crossers off cleanly
+  - cover-2 with the corner squatting and trapping the drag
+  - A-gap pressure that collapses the pocket before the dig clears
+
+defensive_counters:
+  - counter_id: robber-middle
+    pre_snap_look: "A safety dropped to 8-10 yards, squared and stationed over the middle of the field, with a two-high shell rolled behind him"
+    qb_key: "Check the middle of the field — a safety squatting at 8-10 yards over the ball"
+    read_category: safety-shell
+    why: "A robber parked in the crossing window undercuts the TE drag and brackets it from the top, taking the play's primary throw away before the crosser arrives."
+    typical_against: ["cover-1 robber", "cover-3 buzz"]
+  - counter_id: walked-up-hook-lb
+    pre_snap_look: "Both inside linebackers crowded down tight to the LOS, stacked over the guards inside the box, eyes in the backfield"
+    qb_key: "Check the inside-LB depth — both crowded down on the line"
+    read_category: lb-depth
+    why: "Linebackers walked up tight to the line collapse the throwing lane for the dig and rally fast to the shallow cross, squeezing both levels of the hi-lo at once."
+    typical_against: ["cover-1 zero-pressure", "run-committed 4-3"]
+  - counter_id: trap-corner-strong
+    pre_snap_look: "Strong-side corner squatted at 5-7 yards depth with inside leverage, the strong safety widened over the top toward the numbers"
+    qb_key: "Check the strong-side CB depth — squatted short and inside, safety capping over"
+    read_category: cb-leverage
+    why: "A short, squatted corner is set to trap the shallow crosser as it comes across, removing the easy LO throw while the capping safety handles anything deeper."
+    typical_against: ["cover-2 trap", "cover-2 invert"]
+
+common_uses:
+  - 1st-and-10 rhythm passing down
+  - 3rd-and-medium (5-8 yards)
+  - Moving the chains against zone coverage
+  - Anti-man call when the defense locks up the outside receivers
+  - Setting up the play-action and shot companions off the same look
+
+philosophy: west-coast
+pass_concept_ref: drive
+pass_protection_ref: half-slide-protect
+philosophy_ref: west-coast
+
+era: "1980s onward — a Bill Walsh West Coast staple, ubiquitous across every level since."
+
+famous_examples:
+  - "Bill Walsh's San Francisco 49ers (the Drive concept was a core West Coast call)"
+  - "Andy Reid offenses (Eagles and Chiefs shallow-cross game)"
+  - "Modern NFL widely — every West Coast tree carries a Drive variant"
+
+tags:
+  - pass
+  - west-coast
+  - drive
+  - hi-lo
+  - shallow-cross
+  - dig
+  - quick-game
+  - shotgun
+  - 2x2
+  - 11-personnel
+  - any-level
+  - high-school
+  - college
+  - nfl
+
+notes: |
+  The Drive concept — a Bill Walsh West Coast staple. A shallow crossing
+  route (the TE drag) runs underneath a deep in-cut (the Z dig), giving the
+  QB a hi-lo read on a single defender: throw the dig over him if he sits,
+  the drag under him if he bails. Walsh called the hi-lo option the
+  "linchpin" of the West Coast offense. Anchor of the Shotgun 2x2 West Coast
+  Drive disguise family (see data/play-families/) — its empty motion block
+  and the QB's three-step drop are shared by every companion.
+
+  Mirror to drive-left by flipping all coordinates.
+
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-05-15 — Throw Deep Publishing 'Drive Concept' (https://throwdeeppublishing.com/blogs/football-glossary/): the Drive is a shallow cross paired with a dig forming a hi-lo read. Wikipedia 'West Coast offense' (https://en.wikipedia.org/wiki/West_Coast_offense): confirmed Bill Walsh origin and the short-timing-route emphasis. Hi-lo option routes as the West Coast 'linchpin' is standard Walsh-tree coaching material."
+  - "Authored as the base play of the Shotgun 2x2 West Coast Drive disguise family — empty motions block and QB three-step drop deliberately shared by every companion play."

@@ -1,0 +1,21 @@
+name: wheel
+description: Start out toward the sideline (like a flat), then turn and run vertical up the sideline.
+path:
+- - 0
+  - 0
+- - -3
+  - 3
+- - -3
+  - 18
+typical_break_depth_yd: 3
+option_route: false
+category: intermediate
+beats_coverage: man
+tags:
+- intermediate
+- outside-breaking
+- vertical
+- sideline
+verification_status: unverified
+source_notes:
+- Standard wheel route. Often run by RBs out of the backfield or by slot WRs vs man coverage.

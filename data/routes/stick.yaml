@@ -1,0 +1,22 @@
+name: stick
+aliases:
+- y-stick
+description: Push 6 yards then settle in zone OR break out vs man. Option route.
+path:
+- - 0
+  - 0
+- - 0
+  - 6
+typical_break_depth_yd: 6
+option_route: true
+category: quick
+beats_coverage: both
+tags:
+- quick-game
+- option
+- stick-component
+- anti-zone
+- anti-man
+verification_status: unverified
+source_notes:
+- Stick concept's signature route. Identical mechanic to snag but slightly deeper (6 vs 5 yds). Bill Walsh / Paul Brown lineage.

@@ -1,0 +1,51 @@
+{
+  "slug": "singleback__r1f0t1w3__tight-doubles__pass__shallow-cross",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Tight Doubles",
+    "play_name": "Shallow Cross",
+    "play_type": "pass",
+    "canonical_team": "Buffalo Bills",
+    "canonical_img": 18,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Buffalo Bills",
+      "Houston Texans",
+      "Washington Redskins"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Tight Doubles",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 498,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 181
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.5,
+  "response_text": "```json\n{\n  \"concept\": \"cross_concept\",\n  \"concepts\": [\"shallow_cross\", \"levels\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"shallow_cross\",\n    \"TE_L\": \"shallow_cross\",\n    \"TE_R\": \"streak\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Two shallow crosses (WR_Z and TE_L) at similar depth; TE_R clears vertically; WR_X runs corner over the top. R1 button glyph on HB indicates checkdown eligible.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "cross_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcross(es)?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t2w2__ace-pair-twins__pass__pa-bucs-sail",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Ace Pair Twins",
+    "play_name": "PA Bucs Sail",
+    "play_type": "pass",
+    "canonical_team": "Tampa Bay Buccaneers",
+    "canonical_img": 14,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Tampa Bay Buccaneers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Ace Pair Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Ace family \u2014 2 TE 2 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 508,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 197
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.95,
+  "response_text": "```json\n{\n  \"concept\": \"sail\",\n  \"concepts\": [\"sail\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"seam\",\n    \"WR_SLOT_L\": \"flat\",\n    \"TE_L\": \"sail\",\n    \"TE_R\": \"block\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_L\",\n  \"notes\": \"PA play with play-action handoff implied by play name. Red arrow (primary) on TE_L running sail route (corner pattern). Yellow routes on outside WRs (corner and seam) and slot WR (flat). R1 button glyph visible on field right, likely TE_R or receiver releasing to that side.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "sail",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bsail\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

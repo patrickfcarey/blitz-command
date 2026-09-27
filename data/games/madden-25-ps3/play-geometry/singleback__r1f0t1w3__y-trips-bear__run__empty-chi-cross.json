@@ -1,0 +1,58 @@
+{
+  "slug": "singleback__r1f0t1w3__y-trips-bear__run__empty-chi-cross",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Y-Trips Bear",
+    "play_name": "Empty CHI Cross",
+    "play_type": "run",
+    "canonical_team": "Chicago Bears",
+    "canonical_img": 30,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Chicago Bears"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Y-Trips Bear",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 531,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 253
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 51.42,
+  "response_text": "```json\n{\n  \"concept\": \"cross_concept\",\n  \"concepts\": [\"cross_concept\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"drag\",\n    \"WR_SLOT_L\": \"corner\",\n    \"WR_SLOT_R\": \"comeback\",\n    \"TE_R\": \"seam\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Play labeled as RUN in play_type but shows PASS routes with red arrow on WR_Z drag. This is a mislabeled pass play (Empty CHI Cross is a pass concept). HB appears to be absent (5-wide empty set with 1 RB=0 active backs, consistent with r1f0t1w3 + 0 active backfield = just QB). Red arrow on WR_Z drag is primary target. R1 button glyph visible on far right (likely WR_R or deep receiver).\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_right",
+    "c_xy": [
+      1553,
+      613
+    ],
+    "arrow_los_crossing_xy": [
+      2476,
+      613
+    ],
+    "dx_from_c": 923,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "cross_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcross(es)?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

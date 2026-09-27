@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__doubles__pass__pa-zone-read",
+  "info": {
+    "family": "GUN",
+    "formation": "Doubles",
+    "play_name": "PA Zone Read",
+    "play_type": "pass",
+    "canonical_team": "Washington Redskins",
+    "canonical_img": 107,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Washington Redskins"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Doubles",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Doubles \u2014 1 TE 3 WR (slot variant)"
+    }
+  },
+  "usage": {
+    "input_tokens": 518,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 198
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.04,
+  "response_text": "```json\n{\n  \"concept\": \"zone_read\",\n  \"concepts\": [\"zone_read\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"seam\",\n    \"TE_R\": \"streak\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"PA play-action Zone Read. Red arrow from QB traces a handoff-fake to HB (block-first TE/RB release pattern typical of RPO). Primary pass route is WR_X streak on right side. Four-receiver set with all verticals + slot seam, characteristic of GUN Doubles pass concept.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "zone_read",
+    "concept_family": "rpo",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bread option\\b|\\bzone read\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

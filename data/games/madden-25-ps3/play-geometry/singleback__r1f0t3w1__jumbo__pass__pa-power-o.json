@@ -1,0 +1,53 @@
+{
+  "slug": "singleback__r1f0t3w1__jumbo__pass__pa-power-o",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Jumbo",
+    "play_name": "PA Power O",
+    "play_type": "pass",
+    "canonical_team": "Baltimore Ravens",
+    "canonical_img": 3,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Baltimore Ravens",
+      "New Orleans Saints",
+      "Run Heavy",
+      "San Diego Chargers",
+      "St. Louis Rams"
+    ],
+    "owner_count": 5,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Jumbo",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 3,
+      "WR": 1,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Jumbo \u2014 typically 3 TE 1 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 525,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 203
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.48,
+  "response_text": "```json\n{\n  \"concept\": \"power_o\",\n  \"concepts\": [\"power_o\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"TE_R\": \"streak\",\n    \"TE_WING\": \"kickout_block\",\n    \"WR_X\": \"corner\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"PA play. Red arrow (primary) goes to TE_R streaking vertically. Blue arrow (secondary) goes to WR_X on corner route. Three TEs visible (Jumbo formation): two inline (TE_L, TE_R) plus one wing TE below LOS executing kickout block. HB positioned for checkdown.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "power_o",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpower ?o\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

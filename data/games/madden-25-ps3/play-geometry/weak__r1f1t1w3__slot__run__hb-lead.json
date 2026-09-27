@@ -1,0 +1,58 @@
+{
+  "slug": "weak__r1f1t1w3__slot__run__hb-lead",
+  "info": {
+    "family": "WEAK",
+    "formation": "Slot",
+    "play_name": "HB Lead",
+    "play_type": "run",
+    "canonical_team": "Run Balanced",
+    "canonical_img": 80,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Run Balanced"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "WEAK",
+      "formation": "Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 561,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 72
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 85.19,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"generic_hb_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB B_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "B_right",
+    "c_xy": [
+      1606,
+      611
+    ],
+    "arrow_los_crossing_xy": [
+      1856,
+      611
+    ],
+    "dx_from_c": 250,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "^hb \\w+",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

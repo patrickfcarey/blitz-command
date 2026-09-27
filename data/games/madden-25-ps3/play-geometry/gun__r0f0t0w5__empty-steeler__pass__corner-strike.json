@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r0f0t0w5__empty-steeler__pass__corner-strike",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Steeler",
+    "play_name": "Corner Strike",
+    "play_type": "pass",
+    "canonical_team": "Pittsburgh Steelers",
+    "canonical_img": 140,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Pittsburgh Steelers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Steeler",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 494,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 315
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 4.37,
+  "response_text": "```json\n{\n  \"concept\": \"corner_strike\",\n  \"concepts\": [\"corner_strike\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"hitch\",\n    \"WR_SLOT_R\": \"hitch\",\n    \"TE_R\": \"streak\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"5-wide Empty formation with dual corner-strike combos on both sides. WR_X (far left, purple Square button) runs corner; WR_SLOT_L (Triangle, inner-left) runs hitch underneath. WR_Z (far right, blue X button) runs corner; WR_SLOT_R (R1 shoulder button, inner-right) runs hitch. TE_R (red Circle button) runs vertical streak to clear. QB in shotgun alone (r0f0t0w5 confirms 0 RBs, 0 FBs, 0 TEs in formation, but red Circle glyph visible at LOS is TE_R based on route arrow\u2014may be a display artifact or TE eligible split wide). Red arrow indicates primary target WR_X corner route.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "corner_strike",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcorner strike\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

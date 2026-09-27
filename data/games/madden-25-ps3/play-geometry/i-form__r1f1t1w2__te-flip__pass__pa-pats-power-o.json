@@ -1,0 +1,49 @@
+{
+  "slug": "i-form__r1f1t1w2__te-flip__pass__pa-pats-power-o",
+  "info": {
+    "family": "I-FORM",
+    "formation": "TE Flip",
+    "play_name": "PA Pats Power O",
+    "play_type": "pass",
+    "canonical_team": "New England Patriots",
+    "canonical_img": 32,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "New England Patriots"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "TE Flip",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "I-Form Pro default"
+    }
+  },
+  "usage": {
+    "input_tokens": 181,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 221
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 5.23,
+  "response_text": "```json\n{\n  \"concept\": \"power_o\",\n  \"concepts\": [\"power_o\", \"pa_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"comeback\",\n    \"TE_L\": \"wheel\",\n    \"TE_R\": \"block\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"PA play-action with Power O action in backfield. WR_X (red arrow, streak upfield) is primary. WR_Z runs comeback. TE_L releases to wheel route. TE_R engaged in pass-pro block. Backfield shows QB with run-action fake into I-Form (FB/HB visible but QB is ball carrier in fake). Formation confirmed as I-Form TE Flip with expected personnel r1f1t1w2.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "power_o",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpower ?o\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

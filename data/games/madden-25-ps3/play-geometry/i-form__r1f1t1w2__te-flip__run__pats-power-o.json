@@ -1,0 +1,58 @@
+{
+  "slug": "i-form__r1f1t1w2__te-flip__run__pats-power-o",
+  "info": {
+    "family": "I-FORM",
+    "formation": "TE Flip",
+    "play_name": "Pats Power O",
+    "play_type": "run",
+    "canonical_team": "New England Patriots",
+    "canonical_img": 32,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "New England Patriots"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "TE Flip",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "I-Form Pro default"
+    }
+  },
+  "usage": {
+    "input_tokens": 243,
+    "cache_creation_input_tokens": 352,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 66
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 4.92,
+  "response_text": "```json\n{\n  \"concept\": \"power_o\",\n  \"concepts\": [\"power_o\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB C_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "C_right",
+    "c_xy": [
+      1551,
+      619
+    ],
+    "arrow_los_crossing_xy": [
+      1908,
+      619
+    ],
+    "dx_from_c": 357,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "power_o",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bpower ?o\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

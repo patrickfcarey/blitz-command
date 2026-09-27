@@ -1,0 +1,50 @@
+{
+  "slug": "singleback__r1f0t1w3__slot__pass__pa-boot-screen",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Slot",
+    "play_name": "PA Boot Screen",
+    "play_type": "pass",
+    "canonical_team": "John Madden",
+    "canonical_img": 22,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "John Madden",
+      "Tom Flores"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 498,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 171
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.41,
+  "response_text": "```json\n{\n  \"concept\": \"boot_pass\",\n  \"concepts\": [\"boot_pass\", \"screen\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"comeback\",\n    \"WR_SLOT_R\": \"screen\",\n    \"TE_R\": \"checkdown\",\n    \"HB\": \"block\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_R\",\n  \"notes\": \"PA boot to right. Screen route to slot WR (R1 button). Streak to X, comeback to Z on opposite side. TE and HB provide checkdown and blocking.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "boot_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bboot\\b|\\bbootleg\\b",
+    "is_pa": true,
+    "is_boot_or_roll": true
+  }
+}

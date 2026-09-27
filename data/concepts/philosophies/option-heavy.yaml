@@ -1,0 +1,50 @@
+philosophy_id: option-heavy
+name: Option-Heavy (Modern Option)
+description: |
+  General category for any offense built around QB option reads (triple option, veer,
+  midline option, or read-option/zone-read hybrids). Emphasis on QB decision-making,
+  pitch-man execution, and multiple-threat attack. Can be pure triple-option (veer/
+  flexbone) or modern zone-read option. Gaining popularity in college as teams seek
+  mobile QBs.
+era: "1960s–present (waves of popularity)"
+originators:
+  - "Army/Navy service academies"
+  - "Darrell Royal (Texas Wishbone)"
+  - "Rich Rodriguez (modern zone-read option at WVU/Michigan)"
+notable_practitioners:
+  - "Jeff Monken (Army)"
+  - "Ken Niumatalolo (Navy)"
+  - "Willie Snead IV era programs"
+canonical_run_concepts:
+  - triple-option-veer
+  - midline-option
+  - read-option
+  - zone-read
+canonical_pass_concepts:
+  - bootleg
+  - naked
+  - play-action
+formation_preferences:
+  - flexbone
+  - bone
+  - shotgun-option
+  - pistol-option
+tendency_profile:
+  run_pct: 0.75
+  pass_pct: 0.15
+  pa_pct: 0.05
+  rpo_pct: 0.0
+  screen_pct: 0.05
+tags:
+  - philosophy
+  - option
+  - triple-option
+  - read-option
+  - zone-read
+  - college
+  - high-school
+  - run-heavy
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Wikipedia 'Option football' (https://en.wikipedia.org/wiki/Option_football): history and modern usage."
+  - "Web validated 2026-04-30 — Wikipedia 'Jeff Monken' (https://en.wikipedia.org/wiki/Jeff_Monken): modern option coach at Army."

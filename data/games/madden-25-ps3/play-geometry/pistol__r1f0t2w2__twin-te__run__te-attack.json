@@ -1,0 +1,58 @@
+{
+  "slug": "pistol__r1f0t2w2__twin-te__run__te-attack",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Twin TE",
+    "play_name": "TE Attack",
+    "play_type": "run",
+    "canonical_team": "Pistol",
+    "canonical_img": 56,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Pistol"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Twin TE",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 522,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 231
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 94.1,
+  "response_text": "```json\n{\n  \"concept\": \"receiver_concept\",\n  \"concepts\": [\"receiver_concept\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"TE_R\": \"streak\",\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"comeback\"\n  },\n  \"ball_carrier\": \"HB D_right\",\n  \"primary_target\": null,\n  \"notes\": \"Play labeled as 'run' but diagram shows pass-play glyph coloring (red arrow, button glyphs). TE_R (blue X glyph) runs the primary red-arrow route (streak). WR receivers (purple \u25a1 and red \u25cb glyphs) run secondary routes. HB carries the ball to the D_right gap per py_target_gap. Pistol formation confirmed: QB stacked ~3 yards behind C with HB directly behind. Two TEs attached to OL on both sides.\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_right",
+    "c_xy": [
+      1551,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      2359,
+      615
+    ],
+    "dx_from_c": 808,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "receiver_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\b(wr|te|x|y|z|fl|se|slot|h) (corner|drag|hook|option|under|seam|follow|attack|inside|angle|shake|fork|scissors|cross|trail|streak|spot|fade|in|out|wheel|seams|hooks|corners|outs|ins|posts|streaks)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

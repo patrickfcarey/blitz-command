@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__wing-trips-wk__pass__empty-fk-scrn-whee",
+  "info": {
+    "family": "GUN",
+    "formation": "Wing Trips Wk",
+    "play_name": "Empty Fk Scrn Whee",
+    "play_type": "pass",
+    "canonical_team": "Tampa Bay Buccaneers",
+    "canonical_img": 105,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Tampa Bay Buccaneers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Wing Trips Wk",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 500,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 239
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 4.31,
+  "response_text": "```json\n{\n  \"concept\": \"empty_fk_scrn_whee\",\n  \"concepts\": [\"empty_fk_scrn_whee\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"wheel\",\n    \"WR_SLOT_R\": \"flat\",\n    \"TE_R\": \"seam\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Empty backfield (QB only). Five eligible receivers spread wide. Red arrow on WR_Z (far right, R1 button) indicates primary target. TE_R (cyan triangle) runs seam; WR_SLOT_R (blue X) runs flat screen/checkdown; WR_SLOT_L (purple square) runs wheel; outer WRs X and Z both streak vertical with Z as the hot/primary.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "unknown",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": null,
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

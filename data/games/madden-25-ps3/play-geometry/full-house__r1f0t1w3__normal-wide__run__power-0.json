@@ -1,0 +1,58 @@
+{
+  "slug": "full-house__r1f0t1w3__normal-wide__run__power-0",
+  "info": {
+    "family": "FULL-HOUSE",
+    "formation": "Normal Wide",
+    "play_name": "Power 0",
+    "play_type": "run",
+    "canonical_team": "Vince Lombardi",
+    "canonical_img": 31,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Vince Lombardi"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "FULL-HOUSE",
+      "formation": "Normal Wide",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "low",
+      "notes": "unknown family 'FULL-HOUSE' \u2014 generic 11-personnel guess"
+    }
+  },
+  "usage": {
+    "input_tokens": 564,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 66
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 90.48,
+  "response_text": "```json\n{\n  \"concept\": \"power_run\",\n  \"concepts\": [\"power_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB C_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "C_right",
+    "c_xy": [
+      1462,
+      703
+    ],
+    "arrow_los_crossing_xy": [
+      1802,
+      703
+    ],
+    "dx_from_c": 340,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "power_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bpower\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

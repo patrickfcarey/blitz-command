@@ -1,0 +1,36 @@
+concept_id: speed-option
+name: Speed Option
+category: option
+description: |
+  Two-man pitch option with no dive phase: the QB attacks the edge fast and
+  reads the last man on the line of scrimmage (usually the EDGE / DE) while a
+  back trails in pitch relationship. The playside down-blocks to wall off the
+  interior. If the read defender attacks the QB → pitch to the trailing back;
+  if he sits or feathers the pitch → QB keeps and turns up inside him. A
+  quick-hitting perimeter option common in flexbone and spread option systems.
+aim_point: "Perimeter — QB keep up inside the read, or pitch to the trailing back"
+read_tree:
+  - phase: 1
+    defender: "last man on the line (playside EDGE / DE)"
+    decision: "Read attacks the QB → pitch to the back. Read sits or feathers the pitch → QB keeps and turns up inside him."
+  - phase: 2
+    defender: "alley / force defender"
+    decision: "Ball carrier (QB or pitch back) reads the alley fill and works north."
+blocking_scheme_ref: gap-blocking
+pulls_required: []
+pairs_with:
+  - triple-option-veer
+  - midline-option
+  - power-read
+tags:
+  - run
+  - option
+  - qb-run
+  - perimeter
+  - flexbone
+  - spread
+  - high-school
+  - college
+verification_status: unverified
+source_notes:
+  - "Concept reviewed 2026-05-17 from Playbook Gamer 'Option & RPO Concepts Guide' (https://playbookgamer.com/option-rpo-concepts-guide/): Speed Option reads the last man on the line — defender attacks the QB → pitch, defender sits → QB keeps — with down-blocking creating a perimeter wall; an edge-attacking, quick-hitting play in flexbone and spread systems."

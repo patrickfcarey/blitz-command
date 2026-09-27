@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t2w2__ace-tight-slots__pass__pa-cross",
+  "info": {
+    "family": "GUN",
+    "formation": "Ace Tight Slots",
+    "play_name": "PA Cross",
+    "play_type": "pass",
+    "canonical_team": "New England Patriots",
+    "canonical_img": 103,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "New England Patriots"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Ace Tight Slots",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Ace \u2014 2 TE 2 WR (shotgun-ace)"
+    }
+  },
+  "usage": {
+    "input_tokens": 499,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 187
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.74,
+  "response_text": "```json\n{\n  \"concept\": \"cross_concept\",\n  \"concepts\": [\"cross_concept\", \"pa_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"cross\",\n    \"TE_L\": \"cross\",\n    \"TE_R\": \"flat\",\n    \"HB\": \"pass_pro\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"PA Cross with two crossing routes (WR_Z and TE_L) at intermediate depth. WR_X runs vertical clearout. TE_R runs flat to the right. Red arrow indicates primary cross route to WR_Z. HB remains in pass protection.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "cross_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcross(es)?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

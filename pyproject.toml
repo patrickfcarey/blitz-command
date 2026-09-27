@@ -1,0 +1,97 @@
+# Project tooling configuration.
+#
+# This file is scoped narrowly: the only code currently held to strict
+# static-analysis standards is `tools/draw-play/draw.py` (the renderer).
+# Other modules — the MCP servers, tests, scratch scripts — are explicitly
+# excluded from `mypy --strict` and the harshest `ruff` rules until they go
+# through their own hardening pass.
+#
+# Run locally:
+#     pip install mypy ruff
+#     mypy tools/draw-play/draw.py
+#     ruff check tools/draw-play/draw.py
+#
+# Both should report zero issues at the configured strictness level.
+
+[project]
+name = "madden-playgen-mcps"
+version = "0.3.0"
+description = "MCP servers, schemas, and a renderer for football play / formation design across NCAA & Madden eras."
+requires-python = ">=3.9"
+
+
+# ---------------------------------------------------------------------------
+# mypy — strict type checking, scoped to the hardened renderer
+# ---------------------------------------------------------------------------
+
+[tool.mypy]
+python_version = "3.9"
+files = ["tools/draw-play/draw.py"]
+strict = true
+warn_unused_configs = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_return_any = true
+warn_no_return = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+disallow_any_generics = false   # NamedTuple base raises false positives on 3.9
+check_untyped_defs = true
+no_implicit_optional = true
+strict_equality = true
+
+[[tool.mypy.overrides]]
+# yaml.safe_load returns Any; we narrow with TypedDicts and validators, but
+# mypy can't see through that.  Suppress the noise rather than litter casts.
+module = ["yaml"]
+ignore_missing_imports = true
+
+
+# ---------------------------------------------------------------------------
+# ruff — lint + format on the hardened renderer.  Strict ruleset.
+# ---------------------------------------------------------------------------
+
+[tool.ruff]
+target-version = "py39"
+line-length = 110
+
+# Apply only to the renderer for now; broaden once other modules are hardened.
+include = ["tools/draw-play/draw.py", "tests/test_draw_*.py"]
+
+[tool.ruff.lint]
+# Comprehensive ruleset for the renderer.  Notable inclusions:
+#   F   — pyflakes (unused imports / variables)
+#   E,W — pycodestyle errors + warnings
+#   B   — flake8-bugbear (likely-bug patterns)
+#   UP  — pyupgrade (modern syntax)
+#   N   — pep8-naming
+#   SIM — flake8-simplify
+#   RET — flake8-return
+#   PTH — flake8-use-pathlib
+#   PL  — Pylint subset
+#   RUF — ruff-specific lints
+#   ARG — unused arguments
+select = [
+    "F", "E", "W", "B", "UP", "N", "SIM", "RET", "PTH", "PL", "RUF", "ARG",
+]
+
+ignore = [
+    # We document why every assertion exists; ruff flags `assert` as a smell
+    # in production code, but for NASA-style runtime invariants assertions
+    # are the entire point.
+    "S101",
+    # Allow `print()` for the SVG output stream — it is the program's output,
+    # not a debug statement.
+    "T201",
+    # We want our own line-length budget and explicit string-formatting style.
+    "E501",
+    # Magic-number-comparison heuristics misfire on rendering pixel offsets.
+    "PLR2004",
+    # Compound boolean checks in dispatchers are the pattern, not a smell.
+    "PLR0911", "PLR0912", "PLR0913", "PLR0915",
+]
+
+[tool.ruff.lint.per-file-ignores]
+# Tests legitimately use long fixture builders, broad assertions, and
+# private-prefix accesses (testing internal helpers).
+"tests/test_draw_*.py" = ["PLR2004", "ARG002", "N802"]

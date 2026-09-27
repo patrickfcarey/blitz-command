@@ -1,0 +1,50 @@
+{
+  "slug": "gun__r1f0t1w3__trio-offset__pass__pa-bubble",
+  "info": {
+    "family": "GUN",
+    "formation": "Trio Offset",
+    "play_name": "PA Bubble",
+    "play_type": "pass",
+    "canonical_team": "Oakland Raiders",
+    "canonical_img": 101,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Oakland Raiders",
+      "Philadelphia Eagles"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Trio Offset",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "GUN/Shotgun default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 494,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 128
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 1.98,
+  "response_text": "```json\n{\n  \"concept\": \"bubble_screen\",\n  \"concepts\": [\"bubble_screen\"],\n  \"routes\": {\n    \"WR_X\": \"bubble_screen\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_R\": \"streak\",\n    \"TE_R\": \"block\",\n    \"HB\": \"pass_pro\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "bubble_screen",
+    "concept_family": "screen",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bbubble screen\\b|\\bwr bubble\\b|\\bbubble\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

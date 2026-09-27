@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__trips__pass__levels-switch",
+  "info": {
+    "family": "GUN",
+    "formation": "Trips",
+    "play_name": "Levels Switch",
+    "play_type": "pass",
+    "canonical_team": "Run and Shoot",
+    "canonical_img": 52,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Run and Shoot"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Trips",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 488,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 202
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.07,
+  "response_text": "```json\n{\n  \"concept\": \"levels\",\n  \"concepts\": [\"levels\"],\n  \"routes\": {\n    \"WR_X\": \"dig\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_R\": \"shallow_cross\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"GUN Trips formation with levels concept. WR_X runs the dig route (primary target, red arrow pointing left). WR_Z runs a vertical streak to clear. Slot receiver runs a shallow cross. TE_R runs a seam route. HB available as checkdown. Yellow arrows on right side indicate option routes or secondary reads for the RT area.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "levels",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\blevels?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

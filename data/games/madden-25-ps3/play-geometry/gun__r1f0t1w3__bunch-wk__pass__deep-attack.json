@@ -1,0 +1,50 @@
+{
+  "slug": "gun__r1f0t1w3__bunch-wk__pass__deep-attack",
+  "info": {
+    "family": "GUN",
+    "formation": "Bunch Wk",
+    "play_name": "Deep Attack",
+    "play_type": "pass",
+    "canonical_team": "New York Jets",
+    "canonical_img": 94,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "New York Jets",
+      "West Coast"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Bunch Wk",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 168,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 221
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 5.38,
+  "response_text": "```json\n{\n  \"concept\": \"deep_pass\",\n  \"concepts\": [\"deep_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"streak\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"GUN Bunch Wk formation with 3 WRs running vertical routes. R1 (Circle button) is the primary target receiver on the right side, running a deep streak. WR_X (Square button, left) and WR_SLOT_L (Triangle button, middle) also run vertical clearout routes. HB releases from backfield check. Red arrow originates from QB and targets the R1 receiver (Circle) on the right \u2014 consistent with deep pass concept.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "deep_pass",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdeep attack\\b|\\bdeep corners?\\b|\\bdeep middle\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

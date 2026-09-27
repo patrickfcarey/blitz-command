@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__normal-patriots__pass__slot-screen",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Normal Patriots",
+    "play_name": "Slot Screen",
+    "play_type": "pass",
+    "canonical_team": "New England Patriots",
+    "canonical_img": 21,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "New England Patriots"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Normal Patriots",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "Singleback default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 156,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 214
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 21.45,
+  "response_text": "```json\n{\n  \"concept\": \"slot_screen\",\n  \"concepts\": [\"slot_screen\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"block\",\n    \"WR_SLOT_R\": \"screen\",\n    \"TE_R\": \"block\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_R\",\n  \"notes\": \"Slot Screen pass concept. WR_SLOT_R (blue X button glyph) carries the red arrow indicating primary target. WR_X (purple Square button) runs streak as clearout. WR_Z (green Triangle button) blocks. TE_R (red Circle button) blocks. HB releases to flat as check option. R1 label visible near backfield area.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "unknown",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": null,
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

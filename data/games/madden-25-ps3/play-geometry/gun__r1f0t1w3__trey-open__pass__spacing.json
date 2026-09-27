@@ -1,0 +1,51 @@
+{
+  "slug": "gun__r1f0t1w3__trey-open__pass__spacing",
+  "info": {
+    "family": "GUN",
+    "formation": "Trey Open",
+    "play_name": "Spacing",
+    "play_type": "pass",
+    "canonical_team": "Kansas City Chiefs",
+    "canonical_img": 130,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Kansas City Chiefs",
+      "New York Jets",
+      "Run N Gun"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Trey Open",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "GUN/Shotgun default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 515,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 136
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 1.7,
+  "response_text": "```json\n{\n  \"concept\": \"spacing\",\n  \"concepts\": [\"spacing\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"in\",\n    \"WR_SLOT_R\": \"flat\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "spacing",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bspacing\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

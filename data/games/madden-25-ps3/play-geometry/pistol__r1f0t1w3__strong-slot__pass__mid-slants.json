@@ -1,0 +1,49 @@
+{
+  "slug": "pistol__r1f0t1w3__strong-slot__pass__mid-slants",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Strong Slot",
+    "play_name": "Mid Slants",
+    "play_type": "pass",
+    "canonical_team": "Pistol",
+    "canonical_img": 20,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Pistol"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Strong Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Pistol Strong/Weak"
+    }
+  },
+  "usage": {
+    "input_tokens": 496,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 128
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.18,
+  "response_text": "```json\n{\n  \"concept\": \"slants\",\n  \"concepts\": [\"slants\"],\n  \"routes\": {\n    \"WR_X\": \"slant\",\n    \"WR_Z\": \"slant\",\n    \"WR_SLOT_R\": \"slant\",\n    \"TE_R\": \"slant\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "slants",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bslants?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

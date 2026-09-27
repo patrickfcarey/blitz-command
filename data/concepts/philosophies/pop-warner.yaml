@@ -1,0 +1,45 @@
+philosophy_id: pop-warner
+name: Pop Warner (Youth Football)
+description: |
+  Simplified, age-appropriate football for youth players (typically 8-12 years old).
+  Emphasizes fundamentals, ball security, and basic gap-blocking. Limited passing
+  complexity; heavy reliance on outside runs, simple dive plays, and end-sweeps.
+  Designed for shorter fields and younger player bodies. Focus on teaching blocking
+  concepts and reading defenders in simple situations.
+era: "1929–present"
+originators:
+  - "Pop Warner (Carlisle Indian Industrial School, 1900s)"
+  - "Youth football leagues (modern adaptation, 1960s–present)"
+notable_practitioners:
+  - "Pop Warner Little Scholars"
+  - "Community youth football programs"
+  - "Youth tackle football leagues"
+canonical_run_concepts:
+  - sweep
+  - inside-zone
+  - trap
+  - lead-toss
+canonical_pass_concepts:
+  - slant-flat
+  - quick-pass
+formation_preferences:
+  - singleback-ace
+  - i-formation
+  - wing-formation
+tendency_profile:
+  run_pct: 0.80
+  pass_pct: 0.10
+  pa_pct: 0.05
+  rpo_pct: 0.0
+  screen_pct: 0.05
+tags:
+  - philosophy
+  - pop-warner
+  - youth
+  - high-school
+  - fundamentals
+  - run-heavy
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Wikipedia 'Pop Warner Little Scholars' (https://en.wikipedia.org/wiki/Pop_Warner_Little_Scholars): youth football emphasis on fundamentals."
+  - "Web validated 2026-04-30 — Pop Warner official site (https://www.popwarner.org/): rules and philosophy for youth football league."

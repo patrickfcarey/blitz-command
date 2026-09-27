@@ -1,0 +1,49 @@
+{
+  "slug": "i-form__r1f1t2w2__tight-pair__pass__pa-ctr-falcon",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Tight Pair",
+    "play_name": "PA Ctr Falcon",
+    "play_type": "pass",
+    "canonical_team": "Atlanta Falcons",
+    "canonical_img": 54,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Atlanta Falcons"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Tight Pair",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Tight/Twin-TE \u2014 2 TE"
+    }
+  },
+  "usage": {
+    "input_tokens": 516,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 223
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.64,
+  "response_text": "```json\n{\n  \"concept\": \"PA_ctr_falcon\",\n  \"concepts\": [\"PA_ctr_falcon\"],\n  \"routes\": {\n    \"TE_L\": \"block_then_release_seam\",\n    \"TE_R\": \"corner\",\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"dig\",\n    \"HB\": \"checkdown_flat\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"Play-action with two tight ends. Red arrow (primary read) targets TE_R on corner route. Yellow arrow shows TE_L releasing upfield after initial block. Blue arrow indicates HB flat checkdown. WR_X stretches vertically left; WR_Z runs intermediate dig route. Standard I-Form Tight Pair personnel (r1f1t2w2) confirmed.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "unknown",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": null,
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

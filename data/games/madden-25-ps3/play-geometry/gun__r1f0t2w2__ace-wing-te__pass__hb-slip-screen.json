@@ -1,0 +1,50 @@
+{
+  "slug": "gun__r1f0t2w2__ace-wing-te__pass__hb-slip-screen",
+  "info": {
+    "family": "GUN",
+    "formation": "Ace Wing TE",
+    "play_name": "HB Slip Screen",
+    "play_type": "pass",
+    "canonical_team": "Jacksonville Jaguars",
+    "canonical_img": 86,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Jacksonville Jaguars",
+      "New England Patriots"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Ace Wing TE",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Ace \u2014 2 TE 2 WR (shotgun-ace)"
+    }
+  },
+  "usage": {
+    "input_tokens": 503,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 173
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.46,
+  "response_text": "```json\n{\n  \"concept\": \"hb_screen\",\n  \"concepts\": [\"hb_screen\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"comeback\",\n    \"TE_R\": \"wheel\",\n    \"HB\": \"screen\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"HB\",\n  \"notes\": \"HB slip screen with Y-stick concept on backside. WR_X and TE_R run clearing routes; WR_Z runs comeback. HB receives screen pass with lead blockers (TE and WR_Z acting as lead). R1 button label visible on diagram.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "hb_screen",
+    "concept_family": "screen",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bhb (slip )?screen\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

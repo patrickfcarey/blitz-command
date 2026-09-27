@@ -1,0 +1,50 @@
+{
+  "slug": "gun__r1f0t1w3__doubles-wk__pass__pa-read",
+  "info": {
+    "family": "GUN",
+    "formation": "Doubles Wk",
+    "play_name": "PA Read",
+    "play_type": "pass",
+    "canonical_team": "Kansas City Chiefs",
+    "canonical_img": 91,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Kansas City Chiefs",
+      "Miami Dolphins"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Doubles Wk",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Doubles \u2014 1 TE 3 WR (slot variant)"
+    }
+  },
+  "usage": {
+    "input_tokens": 522,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 210
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.4,
+  "response_text": "```json\n{\n  \"concept\": \"read_pass\",\n  \"concepts\": [\"read_pass\", \"pa_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"out\",\n    \"TE_R\": \"out\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Play-action pass with read-option setup. Two receivers stretching vertically (WR_X and WR_Z streaks). Slot and TE running out-breaking routes at intermediate depth. HB eligible on checkdown. R1 shoulder button indicates primary target option routing to the right. Yellow arrows suggest post-snap progression reads with option routes for slot receiver.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "read_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bread\\b(?!.*option)",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

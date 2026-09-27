@@ -1,0 +1,69 @@
+{
+  "slug": "singleback__r1f0t1w3__bunch__run__toss-crack",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Bunch",
+    "play_name": "Toss Crack",
+    "play_type": "run",
+    "canonical_team": "Atlanta Falcons",
+    "canonical_img": 40,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Atlanta Falcons",
+      "Balanced",
+      "Chicago Bears",
+      "Cleveland Browns",
+      "Denver Broncos",
+      "Green Bay Packers",
+      "Indianapolis Colts",
+      "Minnesota Vikings",
+      "New England Patriots",
+      "Pass Balanced",
+      "Philadelphia Eagles",
+      "St. Louis Rams"
+    ],
+    "owner_count": 12,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Bunch",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 592,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 59
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.1,
+  "response_text": "```json\n{\n  \"concept\": \"outside_run_toss\",\n  \"routes\": {},\n  \"ball_carrier\": \"HB B_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "B_right",
+    "c_xy": [
+      1553,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      1846,
+      849
+    ],
+    "dx_from_c": 293,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "outside_run_toss",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bhb toss\\b|\\btoss\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

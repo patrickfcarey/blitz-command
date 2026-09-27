@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__y-trips-hb-wk__pass__pa-texans-y-out",
+  "info": {
+    "family": "GUN",
+    "formation": "Y-Trips HB Wk",
+    "play_name": "PA Texans Y-Out",
+    "play_type": "pass",
+    "canonical_team": "Houston Texans",
+    "canonical_img": 114,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Houston Texans"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Y-Trips HB Wk",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 515,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 219
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.92,
+  "response_text": "```json\n{\n  \"concept\": \"outs\",\n  \"concepts\": [\"outs\"],\n  \"routes\": {\n    \"WR_X\": \"out\",\n    \"WR_Z\": \"out\",\n    \"WR_SLOT_L\": \"seam\",\n    \"TE_R\": \"y_out\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"PA play; TE_R runs the Y-Out (red arrow). WR_X and WR_Z run outs on opposite sides. WR_SLOT_L runs seam. HB in checkdown. Formation is GUN with R1/Circle button on TE_R (primary target), Triangle on WR_Z, Square on WR_X, X button on WR_SLOT_L.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "outs",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bouts?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

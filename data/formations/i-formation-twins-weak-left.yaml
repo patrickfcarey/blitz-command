@@ -1,0 +1,117 @@
+name: I-Formation Twins Weak Left
+side: offense
+personnel: '21'
+strength_side: left
+players:
+- label: LT
+  position: LT
+  x: -2.0
+  y: 0.0
+  on_line: true
+- label: LG
+  position: LG
+  x: -1.0
+  y: 0.0
+  on_line: true
+- label: C
+  position: C
+  x: 0.0
+  y: 0.0
+  on_line: true
+- label: RG
+  position: RG
+  x: 1.0
+  y: 0.0
+  on_line: true
+- label: RT
+  position: RT
+  x: 2.0
+  y: 0.0
+  on_line: true
+- label: TE
+  position: TE
+  x: -3.5
+  y: 0.0
+  on_line: true
+- label: X
+  position: WR
+  x: 15.0
+  y: 0.0
+  on_line: true
+- label: SLOT
+  position: WR
+  x: 8.0
+  y: -1.0
+  on_line: false
+- label: QB
+  position: QB
+  x: -0.0
+  y: -2.0
+  on_line: false
+- label: FB
+  position: FB
+  x: -0.0
+  y: -4.5
+  on_line: false
+- label: HB
+  position: HB
+  x: -0.0
+  y: -7.0
+  on_line: false
+strengths:
+- Two WRs to weak side creates immediate horizontal stress and pick-route potential
+- Strong-side run game intact (TE + FB lead for power, iso)
+- Weak-side HI-LO passing reads available off play-action
+- Slot WR creates inside-breaking route opportunities (slant, drag, mesh)
+- Defense must declare coverage rotation pre-snap — strong-side or weak-side help?
+weaknesses:
+- Strong-side passing is one-dimensional (TE only as immediate threat)
+- Defense can roll coverage weak, leaving strong side in basic look
+- HB at I-depth = slower release for screens than singleback
+- 21 personnel won't force defense out of base on most calls
+- Twins-side run game limited (no weak-side TE-equivalent blocker)
+common_uses:
+- PA pass to twins side after establishing strong-side run
+- Mesh/pick concepts using slot WR and TE crossing
+- Quick game to weak slot
+- 1st/2nd down balance call between Strong I and pure spread
+run_concepts:
+- power-o
+- iso
+- counter-trey
+- inside-zone
+- weak-side-toss
+pass_concepts:
+- twins-mesh
+- slant-flat
+- pa-deep-cross
+- bubble-screen
+- smash-twins
+era: 1990s onward; staple of pro-style offenses blending power and spread elements.
+famous_users:
+- West Coast / Coryell variants using twins to attack matchups
+- Modern pro-style college programs (Wisconsin, Stanford under Harbaugh/Shaw)
+tags:
+- pro-style
+- twins
+- 21-personnel
+- balanced
+- pa-friendly
+- under-center
+- any-level
+notes: 'Sometimes called "I-Form Twins" or "I-Form Doubles Weak." Slot at x=-8 is a
+
+  standard "plus" alignment; can widen to x=-10 for vertical stress.
+
+  '
+verification_status: unverified
+source_notes:
+- 'Coordinates: standard 21-personnel twins conventions.'
+- 'Strengths/weaknesses: pro-style offensive textbook material.'
+- 'Web validated 2026-04-29 — KOKA Sports ''Twins Formation Football Complete Guide'' (https://blog.kokasports.com/twins-formation-football-complete-guide/);
+  Football Advantage ''Twins Formation'' (https://footballadvantage.com/twins-formation-football/); Throw Deep Publishing
+  offensive formations guide. Confirmed: 2 receivers on weak side with FB offset weak; forces defense to commit coverage strong
+  or weak; creates favorable matchups.'
+- Mirror of i-formation-twins-weak.yaml — coordinates flipped horizontally on x; strength_side flipped; OL labels (LT/LG/C/RG/RT)
+  and centered backfield positions (QB / centered FB or HB) unchanged. Notes in this file may still describe the original
+  right-handed look in places — read coordinates as the source of truth.

@@ -1,0 +1,50 @@
+{
+  "slug": "singleback__r1f0t1w3__pair__pass__pa-te-flood",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Pair",
+    "play_name": "PA TE Flood",
+    "play_type": "pass",
+    "canonical_team": "John Madden",
+    "canonical_img": 9,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "John Madden",
+      "Tom Flores"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Pair",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "Singleback default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 498,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 186
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.66,
+  "response_text": "```json\n{\n  \"concept\": \"flood\",\n  \"concepts\": [\"flood\"],\n  \"routes\": {\n    \"TE_L\": \"flat\",\n    \"TE_R\": \"seam\",\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"comeback\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"PA action with TE flood concept. Red arrow (primary) on TE_R seam; blue arrow on TE_L flat; yellow/dashed paths on WR_X and WR_Z. R1 button (Circle) marked on far right (likely hot receiver or backside option).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "flood",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bflood\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

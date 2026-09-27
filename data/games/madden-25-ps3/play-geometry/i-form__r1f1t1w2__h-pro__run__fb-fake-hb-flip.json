@@ -1,0 +1,58 @@
+{
+  "slug": "i-form__r1f1t1w2__h-pro__run__fb-fake-hb-flip",
+  "info": {
+    "family": "I-FORM",
+    "formation": "H Pro",
+    "play_name": "FB Fake HB Flip",
+    "play_type": "run",
+    "canonical_team": "Seattle Seahawks",
+    "canonical_img": 32,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Seattle Seahawks"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "H Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "I-Form Pro default"
+    }
+  },
+  "usage": {
+    "input_tokens": 575,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 72
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 90.37,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"generic_hb_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB C_left\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "C_left",
+    "c_xy": [
+      1604,
+      611
+    ],
+    "arrow_los_crossing_xy": [
+      1174,
+      879
+    ],
+    "dx_from_c": -430,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bhb \\w+",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

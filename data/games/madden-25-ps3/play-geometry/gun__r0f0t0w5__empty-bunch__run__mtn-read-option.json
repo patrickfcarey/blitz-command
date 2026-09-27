@@ -1,0 +1,58 @@
+{
+  "slug": "gun__r0f0t0w5__empty-bunch__run__mtn-read-option",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Bunch",
+    "play_name": "Mtn Read Option",
+    "play_type": "run",
+    "canonical_team": "Minnesota Vikings",
+    "canonical_img": 134,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Minnesota Vikings"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Bunch",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 526,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 193
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 92.14,
+  "response_text": "```json\n{\n  \"concept\": \"zone_read\",\n  \"concepts\": [\"zone_read\"],\n  \"routes\": {\n    \"WR_X\": \"block\",\n    \"WR_Z\": \"block\",\n    \"WR_SLOT_L\": \"block\",\n    \"WR_SLOT_R\": \"block\",\n    \"WR_FLANKER\": \"block\"\n  },\n  \"ball_carrier\": \"HB B_right\",\n  \"primary_target\": null,\n  \"notes\": \"Mountain read option from gun empty bunch \u2014 all 5 WRs aligned in bunch formation, all blocking downfield on the perimeter. Red arrow indicates HB attack to the right B gap after QB reads the edge defender. Cyan dashed line shows QB's read path / option motion.\"\n}\n```",
+  "py_hints": {
+    "target_gap": "B_right",
+    "c_xy": [
+      1553,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      1855,
+      615
+    ],
+    "dx_from_c": 302,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "zone_read",
+    "concept_family": "rpo",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bread option\\b|\\bzone read\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

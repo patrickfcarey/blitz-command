@@ -1,0 +1,58 @@
+{
+  "slug": "singleback__r1f0t1w3__flex__run__double-outs",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Flex",
+    "play_name": "Double Outs",
+    "play_type": "run",
+    "canonical_team": "West Coast",
+    "canonical_img": 14,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "West Coast"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "Singleback default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 522,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 203
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 96.33,
+  "response_text": "```json\n{\n  \"concept\": \"outs\",\n  \"concepts\": [\"outs\"],\n  \"routes\": {\n    \"WR_X\": \"out\",\n    \"WR_Z\": \"out\",\n    \"WR_SLOT_L\": \"block\",\n    \"TE_R\": \"block\"\n  },\n  \"ball_carrier\": \"HB D_left\",\n  \"primary_target\": null,\n  \"notes\": \"Play labeled PASS but play_type=run; red arrow indicates HB ball carrier path to D_left (edge). Two WRs running out routes at different depths. Formation is Singleback Flex (1 RB, 0 FB, 1 TE, 3 WR). R1 label on blue arrow indicates checkdown/wheel route eligibility for receiver on right side.\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_left",
+    "c_xy": [
+      1525,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      40,
+      615
+    ],
+    "dx_from_c": -1485,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "outs",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bouts?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

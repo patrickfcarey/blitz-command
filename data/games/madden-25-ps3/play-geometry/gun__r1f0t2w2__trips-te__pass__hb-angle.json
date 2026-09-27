@@ -1,0 +1,50 @@
+{
+  "slug": "gun__r1f0t2w2__trips-te__pass__hb-angle",
+  "info": {
+    "family": "GUN",
+    "formation": "Trips TE",
+    "play_name": "HB Angle",
+    "play_type": "pass",
+    "canonical_team": "Minnesota Vikings",
+    "canonical_img": 109,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Minnesota Vikings",
+      "New England Patriots"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Trips TE",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 564,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 227
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.39,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"generic_hb_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB A_right\",\n  \"primary_target\": null,\n  \"notes\": \"Play labeled as 'pass' but diagram shows red arrow from backfield consistent with run action. HB takes handoff and attacks A-gap right. Formation is GUN Trips TE (r1f0t2w2): 1 RB, 0 FB, 2 TE, 2 WR. Backfield shows QB in shotgun + HB offset to right side. LOS shows 5 OL + 2 TEs (TE_L and TE_R attached to OL cluster) + 2 WRs (WR_Z far right, WR_SLOT left of TE_R). All receivers block; only HB carries.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "^hb \\w+",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

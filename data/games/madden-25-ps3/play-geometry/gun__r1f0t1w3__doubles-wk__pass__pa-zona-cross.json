@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__doubles-wk__pass__pa-zona-cross",
+  "info": {
+    "family": "GUN",
+    "formation": "Doubles Wk",
+    "play_name": "PA Zona Cross",
+    "play_type": "pass",
+    "canonical_team": "Arizona Cardinals",
+    "canonical_img": 83,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Arizona Cardinals"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Doubles Wk",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Doubles \u2014 1 TE 3 WR (slot variant)"
+    }
+  },
+  "usage": {
+    "input_tokens": 501,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 188
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.75,
+  "response_text": "```json\n{\n  \"concept\": \"pa_zona_cross\",\n  \"concepts\": [\"pa_zona_cross\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"cross\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_L\",\n  \"notes\": \"Play-action fake to HB; primary read is the crossing slot receiver (WR_SLOT_L). Red arrow indicates primary target on the cross route. Standard PA pass concept with four vertical-family routes on the perimeter and a crossing intermediate route underneath.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "cross_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcross(es)?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

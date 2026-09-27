@@ -1,0 +1,58 @@
+{
+  "slug": "singleback__r1f0t1w3__y-trips__run__wing-jets-zone",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Y-Trips",
+    "play_name": "Wing Jets Zone",
+    "play_type": "run",
+    "canonical_team": "New York Jets",
+    "canonical_img": 32,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "New York Jets"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Y-Trips",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 162,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 129
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 26.95,
+  "response_text": "```json\n{\n  \"concept\": \"wing_jets_zone\",\n  \"concepts\": [\"wing_jets_zone\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"TE_R\": \"block\",\n    \"WR_X\": \"block\",\n    \"WR_Z\": \"block\",\n    \"WR_SLOT\": \"block\"\n  },\n  \"ball_carrier\": \"HB D_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_right",
+    "c_xy": [
+      1476,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      1675,
+      615
+    ],
+    "dx_from_c": 199,
+    "ol_spacing": 9
+  },
+  "py_concept": {
+    "concept": "unknown",
+    "concept_family": "run",
+    "blockers_implicit": false,
+    "matched_pattern": null,
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

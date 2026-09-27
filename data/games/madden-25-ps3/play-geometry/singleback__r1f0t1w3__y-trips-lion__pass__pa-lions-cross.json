@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__y-trips-lion__pass__pa-lions-cross",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Y-Trips Lion",
+    "play_name": "PA Lions Cross",
+    "play_type": "pass",
+    "canonical_team": "Detroit Lions",
+    "canonical_img": 34,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Detroit Lions"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Y-Trips Lion",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 505,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 210
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 4.27,
+  "response_text": "```json\n{\n  \"concept\": \"cross_concept\",\n  \"concepts\": [\"cross_concept\", \"play_action\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"cross\",\n    \"TE_R\": \"cross\",\n    \"HB\": \"pass_pro\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_L\",\n  \"notes\": \"Play-action pass with crossing routes. WR_SLOT_L runs primary cross at ~8 yds; TE_R runs complementary cross deeper. WR_Z corner on right side; WR_X vertical clearout on left. HB stays in pass protection. Red arrow indicates primary target is the left slot receiver on the crossing route.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "cross_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcross(es)?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

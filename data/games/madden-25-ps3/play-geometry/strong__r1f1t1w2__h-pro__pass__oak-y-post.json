@@ -1,0 +1,49 @@
+{
+  "slug": "strong__r1f1t1w2__h-pro__pass__oak-y-post",
+  "info": {
+    "family": "STRONG",
+    "formation": "H Pro",
+    "play_name": "Oak Y-Post",
+    "play_type": "pass",
+    "canonical_team": "Oakland Raiders",
+    "canonical_img": 66,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Oakland Raiders"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "H Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 168,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 146
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 4.5,
+  "response_text": "```json\n{\n  \"concept\": \"post_concept\",\n  \"concepts\": [\"post_concept\"],\n  \"routes\": {\n    \"WR_X\": \"post\",\n    \"WR_Z\": \"corner\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"swing\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"TE_R running seam/post hybrid; WR_Z corner over top; HB swing checkdown. Strong formation with offset FB and HB depth.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "post_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpost(?![- ]corner)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

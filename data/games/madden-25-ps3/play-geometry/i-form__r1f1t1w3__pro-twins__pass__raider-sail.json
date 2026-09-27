@@ -1,0 +1,49 @@
+{
+  "slug": "i-form__r1f1t1w3__pro-twins__pass__raider-sail",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Pro Twins",
+    "play_name": "Raider Sail",
+    "play_type": "pass",
+    "canonical_team": "Oakland Raiders",
+    "canonical_img": 53,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Oakland Raiders"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Pro Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Twins \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 498,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 182
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.31,
+  "response_text": "```json\n{\n  \"concept\": \"sail\",\n  \"concepts\": [\"sail\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"flat\",\n    \"TE_L\": \"dig\",\n    \"TE_R\": \"wheel\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Sail concept with TE_L running dig and TE_R wheel. WR_X streak clears, WR_Z corner is primary. WR_SLOT_L flat underneath. HB check-release.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "sail",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bsail\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

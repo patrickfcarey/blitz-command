@@ -1,0 +1,58 @@
+{
+  "slug": "i-form__r1f1t2w2__tight-pair__run__den-hb-slash",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Tight Pair",
+    "play_name": "DEN HB Slash",
+    "play_type": "run",
+    "canonical_team": "Denver Broncos",
+    "canonical_img": 51,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Denver Broncos"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Tight Pair",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Tight/Twin-TE \u2014 2 TE"
+    }
+  },
+  "usage": {
+    "input_tokens": 571,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 66
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 53.26,
+  "response_text": "```json\n{\n  \"concept\": \"slash_run\",\n  \"concepts\": [\"slash_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB B_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "B_right",
+    "c_xy": [
+      1476,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      1689,
+      615
+    ],
+    "dx_from_c": 213,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "slash_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bslash\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "singleback__r1f0t1w3__bunch-base__pass__fl-drive",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Bunch Base",
+    "play_name": "FL Drive",
+    "play_type": "pass",
+    "canonical_team": "Houston Texans",
+    "canonical_img": 27,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Houston Texans",
+      "New Orleans Saints"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Bunch Base",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 496,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 184
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.44,
+  "response_text": "```json\n{\n  \"concept\": \"drive_concept\",\n  \"concepts\": [\"drive_concept\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"drive\",\n    \"WR_SLOT_L\": \"flat\",\n    \"WR_SLOT_R\": \"curl\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Drive concept with WR_Z (R1 button, red arrow) as primary target running a diagonal drive route. Four-wide receiver set (r1f0t1w3) with slot receivers running flat and curl routes. HB positioned for checkdown.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "drive_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdrive\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

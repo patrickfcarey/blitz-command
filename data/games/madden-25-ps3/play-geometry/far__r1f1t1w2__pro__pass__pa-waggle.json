@@ -1,0 +1,50 @@
+{
+  "slug": "far__r1f1t1w2__pro__pass__pa-waggle",
+  "info": {
+    "family": "FAR",
+    "formation": "Pro",
+    "play_name": "PA Waggle",
+    "play_type": "pass",
+    "canonical_team": "Tom Flores",
+    "canonical_img": 66,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Tom Flores",
+      "West Coast"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "FAR",
+      "formation": "Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "FAR family \u2014 old-school 2-back default"
+    }
+  },
+  "usage": {
+    "input_tokens": 167,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 192
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 8.52,
+  "response_text": "```json\n{\n  \"concept\": \"waggle_pass\",\n  \"concepts\": [\"waggle_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"TE_R\": \"flat\",\n    \"HB\": \"swing\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"PA Waggle with QB rolling right. Red arrow indicates primary target WR_X streaking upfield. WR_Z runs corner route. TE_R runs flat/checkdown. HB swing available as secondary target. Formation shows 1 RB, 1 FB, 1 TE, 2 WR as expected for FAR Pro.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "waggle_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bwaggle\\b",
+    "is_pa": true,
+    "is_boot_or_roll": true
+  }
+}

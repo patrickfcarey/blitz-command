@@ -1,0 +1,58 @@
+{
+  "slug": "singleback__r1f0t1w3__bunch-swap__run__seattle",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Bunch Swap",
+    "play_name": "Seattle",
+    "play_type": "run",
+    "canonical_team": "West Coast",
+    "canonical_img": 28,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "West Coast"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Bunch Swap",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 521,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 217
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 92.88,
+  "response_text": "```json\n{\n  \"concept\": \"city_concept\",\n  \"concepts\": [\"city_concept\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"streak\",\n    \"WR_SLOT_R\": \"streak\",\n    \"HB\": \"block\"\n  },\n  \"ball_carrier\": \"HB D_left\",\n  \"primary_target\": null,\n  \"notes\": \"Play is labeled as RUN but diagram shows four vertical streaks (pass concept). py_concept indicates pass family (city_concept). Red arrow traces HB motion toward D_left gap consistent with run action, but four WRs all run vertical routes typical of pass play. This appears to be a play-action or RPO variant where the ball carrier (HB) attacks the edge while receivers stretch the field vertically.\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_left",
+    "c_xy": [
+      1537,
+      701
+    ],
+    "arrow_los_crossing_xy": [
+      96,
+      701
+    ],
+    "dx_from_c": -1441,
+    "ol_spacing": 46
+  },
+  "py_concept": {
+    "concept": "city_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bseattle\\b|\\bphilly\\b|\\bgreen bay\\b|\\bdallas\\b|\\bbal\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "i-form__r1f1t1w3__slot__pass__wr-option",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Slot",
+    "play_name": "WR Option",
+    "play_type": "pass",
+    "canonical_team": "Brian Billick",
+    "canonical_img": 70,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Brian Billick",
+      "Joe Gibbs"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Slot \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 495,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 197
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.73,
+  "response_text": "```json\n{\n  \"concept\": \"receiver_concept\",\n  \"concepts\": [\"receiver_concept\"],\n  \"routes\": {\n    \"WR_X\": \"option\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"dig\",\n    \"TE_L\": \"seam\",\n    \"TE_R\": \"streak\",\n    \"HB\": \"check_release\",\n    \"FB\": \"block\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"WR Option play with option route on X (red arrow). Z runs streak to clear. Slot runs dig. Both TEs and TE_R run vertical routes. HB in check-release. Pass concept family with selective receiver reads.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "receiver_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\b(wr|te|x|y|z|fl|se|slot|h) (corner|drag|hook|option|under|seam|follow|attack|inside|angle|shake|fork|scissors|cross|trail|streak|spot|fade|in|out|wheel|seams|hooks|corners|outs|ins|posts|streaks)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

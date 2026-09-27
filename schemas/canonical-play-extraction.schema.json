@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blitz-command.local/schemas/canonical-play-extraction.schema.json",
+  "title": "CanonicalPlayExtraction",
+  "description": "Documents a built-in play extracted from a specific game's playbook. Used to prove a play exists in-game and to map it to a library play_id.",
+  "type": "object",
+  "required": ["extraction_id", "source_game", "source_playbook", "source_play_call", "extracted_date", "library_play_id", "verification_status"],
+  "additionalProperties": false,
+  "properties": {
+    "extraction_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "Stable id (kebab-case). Convention: <game_id>-<playbook>-<play-name>."
+    },
+    "source_game": {
+      "type": "string",
+      "description": "Game profile id, e.g. 'madden-05-ps2'. Must match a file in data/games/."
+    },
+    "source_playbook": {
+      "type": "string",
+      "description": "Playbook name as shown in the game UI, e.g. 'New England Patriots' or 'Auburn'."
+    },
+    "source_play_call": {
+      "type": "string",
+      "description": "Play name exactly as shown in the game's play call screen, e.g. 'HB Dive', 'PA Cross'."
+    },
+    "source_formation": {
+      "type": "string",
+      "description": "Formation name as shown in game, e.g. 'I Formation', 'Singleback'."
+    },
+    "extracted_date": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+      "description": "ISO date when this extraction was performed (YYYY-MM-DD)."
+    },
+    "library_play_id": {
+      "type": "string",
+      "description": "The play_id in data/plays/ that best matches this in-game play. Use null if no match exists yet."
+    },
+    "match_confidence": {
+      "enum": ["exact", "close", "approximate", "none"],
+      "description": "How closely the in-game play matches the library play: 'exact' = identical design, 'close' = same concept with minor differences, 'approximate' = similar enough to use as reference, 'none' = new play needed."
+    },
+    "screenshot_ref": {
+      "type": "string",
+      "description": "Optional path or URL to a screenshot proving this extraction."
+    },
+    "transcribed_assignments": {
+      "type": "array",
+      "description": "Per-player assignments as read from the game editor. Mirrors the assignments format in play.schema.json.",
+      "items": {
+        "type": "object",
+        "required": ["player", "role"],
+        "additionalProperties": true,
+        "properties": {
+          "player": { "type": "string" },
+          "role": { "type": "string" },
+          "route_name": { "type": "string" },
+          "blocking_scheme": { "type": "string" },
+          "notes": { "type": "string" }
+        }
+      }
+    },
+    "differences_from_library": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "List of differences between the in-game play and the library play_id."
+    },
+    "verification_status": {
+      "enum": ["verified", "unverified", "inferred"],
+      "description": "Use 'verified' only if extracted directly from in-game (with screenshot proof). 'inferred' for web-sourced info. 'unverified' for all else."
+    },
+    "source_notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

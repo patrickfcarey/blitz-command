@@ -1,0 +1,54 @@
+{
+  "slug": "gun__r1f0t1w3__spread__pass__corner-strike",
+  "info": {
+    "family": "GUN",
+    "formation": "Spread",
+    "play_name": "Corner Strike",
+    "play_type": "pass",
+    "canonical_team": "Cincinnati Bengals",
+    "canonical_img": 120,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Cincinnati Bengals",
+      "Cleveland Browns",
+      "Run Balanced",
+      "Run N Gun",
+      "Run and Shoot",
+      "Seattle Seahawks"
+    ],
+    "owner_count": 6,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Spread",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 489,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 200
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.62,
+  "response_text": "```json\n{\n  \"concept\": \"corner_strike\",\n  \"concepts\": [\"corner_strike\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"hitch\",\n    \"WR_SLOT_L\": \"streak\",\n    \"WR_SLOT_R\": \"streak\",\n    \"TE_R\": \"streak\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Corner Strike concept: WR_Z (R1 button) running hitch on right side, WR_X running corner over the top. Left side (WR_SLOT_L and TE_R) run vertical clearouts. HB available as checkdown.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "corner_strike",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcorner strike\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

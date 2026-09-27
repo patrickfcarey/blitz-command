@@ -1,0 +1,92 @@
+name: Nickel Cover 1
+side: defense
+personnel: "nickel"
+front: "Nickel-4-2"
+coverage_shell: "cover-1"
+
+# Nickel personnel (5 DBs) with Cover 1 coverage (1 deep safety, man
+# coverage on receivers, with a "robber" / spy option). 4 DL, 2 LB,
+# 5 DBs (CB, CB, NCB nickel, FS, SS).
+players:
+  - { label: LDE, position: DE,  x: -4.0,  y:  1.0, on_line: false }
+  - { label: NT,  position: DT,  x: -1.0,  y:  1.0, on_line: false }
+  - { label: RDT, position: DT,  x:  2.5,  y:  1.0, on_line: false }
+  - { label: RDE, position: DE,  x:  4.0,  y:  1.0, on_line: false }
+  - { label: MLB, position: LB,  x:  0.0,  y:  5.0, on_line: false }
+  - { label: SLB, position: LB,  x:  4.0,  y:  5.0, on_line: false }
+  - { label: NCB, position: NCB, x: -8.0,  y:  5.0, on_line: false }
+  - { label: LCB, position: CB,  x: -15.0, y:  5.0, on_line: false }
+  - { label: RCB, position: CB,  x:  12.0, y:  5.0, on_line: false }
+  - { label: SS,  position: S,   x:  3.5,  y:  4.0, on_line: false }
+  - { label: FS,  position: S,   x:  0.0,  y: 13.0, on_line: false }
+
+responsibilities:
+  - { player: LDE, role: rush,      aim: "weakside contain" }
+  - { player: NT,  role: rush,      aim: "1-tech A-gap" }
+  - { player: RDT, role: rush,      aim: "3-tech B-gap" }
+  - { player: RDE, role: rush,      aim: "strongside contain" }
+  - { player: MLB, role: man,       aim: "man on HB — covers backfield routes / rush if HB stays in" }
+  - { player: SLB, role: man,       aim: "man on TE if attached, else zone hook" }
+  - { player: NCB, role: man,       aim: "man on slot WR" }
+  - { player: LCB, role: man,       aim: "man on X (split end, weak side)" }
+  - { player: RCB, role: man,       aim: "man on Z (flanker, strong side)" }
+  - { player: SS,  role: robber,    aim: "rat / robber underneath middle — reads QB, jumps crossing routes" }
+  - { player: FS,  role: deep-zone, aim: "deep middle — single-high free safety" }
+
+best_against:
+  - "Mesh / drag concepts (robber breaks them up)"
+  - "Run plays where defense can stay in nickel personnel"
+  - "Quick game when MLB / SLB jam"
+  - "Singular deep threats (FS deep middle)"
+
+vulnerable_to:
+  - "Pick / rub concepts (man coverage = legal rubs)"
+  - "Vertical seam routes (FS can't cover both seams)"
+  - "Wheel routes (MLB / SLB can't run with WRs)"
+  - "Smash / corner routes (CBs in trail position vs the corner break)"
+  - "Heavy run sets (only 6 in box)"
+
+strengths:
+  - "Aggressive man-cover scheme — eliminates short / underneath windows"
+  - "Robber adds underneath middle help"
+  - "Good vs spread offenses (extra DB)"
+  - "Pressure-friendly — MLB / SS can blitz from disguise"
+
+weaknesses:
+  - "Vulnerable to rub / pick concepts"
+  - "Only 6 in the box vs run-heavy formations"
+  - "Wheel routes burn LBs in coverage"
+  - "Single-high requires elite FS"
+
+common_uses:
+  - "Pass-down defense vs 11 personnel"
+  - "3rd-and-medium / 3rd-and-long with run-game threat"
+  - "Vs. spread offenses"
+  - "When defense wants to disguise pressure"
+
+era: "1990s onward — aggressive man-coverage schemes universal in modern football."
+
+famous_users:
+  - "Bill Belichick Patriots (multiple personnel + Cover 1)"
+  - "Modern NFL widely (Cover 1 base for many teams)"
+
+tags:
+  - defense
+  - nickel
+  - cover-1
+  - single-high
+  - man-coverage
+  - pass-down
+  - any-level
+  - college
+  - nfl
+
+notes: |
+  Nickel personnel (extra DB instead of LB) + Cover 1 (man-free with robber).
+  The SS lines up shallow as a "robber" — reads QB eyes, jumps crossing
+  routes, helps on HB. FS is the lone deep safety.
+
+verification_status: unverified
+source_notes:
+  - "Standard Nickel Cover 1 alignment; documented across modern coaching trees."
+  - "Built 2026-04-30 as part of the P5 defensive-side rollout."

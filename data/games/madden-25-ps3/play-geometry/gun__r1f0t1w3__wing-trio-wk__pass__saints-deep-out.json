@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__wing-trio-wk__pass__saints-deep-out",
+  "info": {
+    "family": "GUN",
+    "formation": "Wing Trio Wk",
+    "play_name": "Saints Deep Out",
+    "play_type": "pass",
+    "canonical_team": "New Orleans Saints",
+    "canonical_img": 85,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "New Orleans Saints"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Wing Trio Wk",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 502,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 249
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.18,
+  "response_text": "```json\n{\n  \"concept\": \"deep_outs\",\n  \"concepts\": [\"deep_outs\"],\n  \"routes\": {\n    \"WR_X\": \"deep_out\",\n    \"WR_Z\": \"deep_out\",\n    \"WR_SLOT_R\": \"deep_out\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"GUN formation with shotgun QB. Three WRs running deep outs to stretch the field horizontally. TE_R runs seam route. HB in checkdown role. Red arrow indicates primary target (WR_Z deep out right). Yellow arrows show complementary routes (WR_X and WR_SLOT_R deep outs left/middle). Formation matches r1f0t1w3 personnel (1 RB, 0 FB, 1 TE, 3 WR).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "deep_outs",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdeep outs?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

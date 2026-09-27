@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t2w2__ace__pass__ace-wr-stretch",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Ace",
+    "play_name": "Ace WR Stretch",
+    "play_type": "pass",
+    "canonical_team": "Run Heavy",
+    "canonical_img": 9,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Run Heavy"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Ace",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Ace family \u2014 2 TE 2 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 565,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 189
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.17,
+  "response_text": "```json\n{\n  \"concept\": \"outside_zone\",\n  \"concepts\": [\"outside_zone\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB D_right\",\n  \"primary_target\": null,\n  \"notes\": \"Play labeled as 'pass' in play_type but diagram shows run concept (outside_zone) with red ball-carrier arrow to HB on right edge. No receiver routes visible \u2014 all eligible receivers blocking. Formation is Singleback Ace (5 OL, 2 TE, 2 WR, 1 QB, 1 HB). WR_X on far left running apparent streak as coverage look; WR_Z on right edge. Both TEs (TE_L and TE_R) engaged in perimeter blocking.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "outside_zone",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bhb stretch\\b|\\bstretch\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "slug": "gun__r0f0t0w5__empty-trey__run__power-o",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Trey",
+    "play_name": "Power O",
+    "play_type": "run",
+    "canonical_team": "Miami Dolphins",
+    "canonical_img": 148,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Miami Dolphins"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Trey",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 561,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 66
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 59.41,
+  "response_text": "```json\n{\n  \"concept\": \"power_o\",\n  \"concepts\": [\"power_o\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB B_left\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "B_left",
+    "c_xy": [
+      2078,
+      655
+    ],
+    "arrow_los_crossing_xy": [
+      1817,
+      655
+    ],
+    "dx_from_c": -261,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "power_o",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bpower ?o\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

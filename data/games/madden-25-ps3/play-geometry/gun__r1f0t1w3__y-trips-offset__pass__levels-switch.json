@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__y-trips-offset__pass__levels-switch",
+  "info": {
+    "family": "GUN",
+    "formation": "Y-Trips Offset",
+    "play_name": "Levels Switch",
+    "play_type": "pass",
+    "canonical_team": "Philadelphia Eagles",
+    "canonical_img": 76,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Philadelphia Eagles"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Y-Trips Offset",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 169,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 175
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 9.68,
+  "response_text": "```json\n{\n  \"concept\": \"levels\",\n  \"concepts\": [\"levels\"],\n  \"routes\": {\n    \"WR_X\": \"dig\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"shallow_in\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Levels concept with two in-breakers at different depths on the left side (shallow slot in, deeper dig from X). Z streak and TE seam provide vertical clearout. Red arrow indicates primary target to WR_X dig route.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "levels",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\blevels?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,95 @@
+name: 4-2-5 Cover 2
+side: defense
+personnel: "4-2-5 nickel"
+front: "4-2-5"
+coverage_shell: "cover-2"
+
+# Modern hybrid nickel front: 4 DL, 2 ILBs, 5 DBs (2 CBs, 2 Safeties, 1 Nickel).
+# Cover 2 shell (2 deep zones, 5 underneath). Designed for spread-era passing
+# down-and-distance situations and 11-personnel offenses (the most common
+# offensive personnel grouping in modern football).
+players:
+  - { label: LDE, position: DE, x: -4.0,  y:  1.0, on_line: false }
+  - { label: LDT, position: DT, x: -1.5,  y:  1.0, on_line: false }
+  - { label: RDT, position: DT, x:  1.5,  y:  1.0, on_line: false }
+  - { label: RDE, position: DE, x:  4.0,  y:  1.0, on_line: false }
+  - { label: WLB, position: LB, x: -3.0,  y:  5.0, on_line: false }
+  - { label: MLB, position: LB, x:  2.0,  y:  5.0, on_line: false }
+  - { label: NB,  position: CB, x:  7.5,  y:  4.0, on_line: false }
+  - { label: LCB, position: CB, x: -12.0, y:  5.0, on_line: false }
+  - { label: RCB, position: CB, x:  12.0, y:  5.0, on_line: false }
+  - { label: FS,  position: S,  x: -7.0,  y: 13.0, on_line: false }
+  - { label: SS,  position: S,  x:  7.0,  y: 13.0, on_line: false }
+
+responsibilities:
+  - { player: LDE, role: rush, aim: "weak edge / C-gap contain" }
+  - { player: LDT, role: rush, aim: "1-tech / backside A-gap" }
+  - { player: RDT, role: rush, aim: "3-tech / playside B-gap" }
+  - { player: RDE, role: rush, aim: "strong edge / C-gap contain" }
+  - { player: WLB, role: hook, aim: "weak hook / curl zone, run-fit weak A-gap" }
+  - { player: MLB, role: hook, aim: "middle hook, run-fit playside" }
+  - { player: NB,  role: flat, aim: "strong flat / slot defender (apex)" }
+  - { player: LCB, role: flat, aim: "weak flat / cloud-corner role" }
+  - { player: RCB, role: flat, aim: "strong flat / corner squat-and-flat" }
+  - { player: FS,  role: deep-zone, aim: "deep half — left half of field" }
+  - { player: SS,  role: deep-zone, aim: "deep half — right half of field" }
+
+best_against:
+  - "11-personnel spread (NB matches the slot)"
+  - "RPO concepts (NB is a true coverage defender, not LB in conflict)"
+  - "Quick-game pass attacks (5 underneath defenders)"
+  - "Modern passing-down looks"
+
+vulnerable_to:
+  - "Heavy run formations (only 6 in the box pre-snap)"
+  - "Smash / corner routes (deep half + soft corner = give up the corner)"
+  - "Four verticals (2 deep safeties have to bracket 2 inside seams + 2 outside)"
+  - "Mesh / drag (rubs at apex defender)"
+  - "PA naked / boot to opposite side (DE gets sealed)"
+
+strengths:
+  - "Five DBs match modern 11-personnel offenses"
+  - "Two deep safeties remove most explosive passing plays"
+  - "NB allows true 1-on-1 coverage on the slot vs LB-in-coverage liability"
+  - "Modern flexibility — can spin to single-high, blitz, etc."
+
+weaknesses:
+  - "Lighter run defense than 4-3 (one fewer LB)"
+  - "Vulnerable to inside zone / power if NB doesn't fit run cleanly"
+  - "Requires NB who can play coverage AND fit the run"
+  - "Cover-2 corners squat — gives up underneath outside throws"
+
+common_uses:
+  - "Modern NFL base defense (49% of NFL snaps in 2010s+)"
+  - "11-personnel matchup defense"
+  - "1st-down balanced defense vs modern offenses"
+  - "Passing-down look (3rd-and-long)"
+
+era: "Late 2000s onward — Pat Narduzzi's TCU 4-2-5 popularized the structure; modern NFL adopted as primary base."
+
+famous_users:
+  - "Pat Narduzzi (TCU / Pittsburgh) — 4-2-5 architect"
+  - "Modern NFL teams (most run nickel as primary base)"
+  - "Big 12 college programs (matched against pass-heavy offenses)"
+
+tags:
+  - defense
+  - 4-2-5
+  - nickel
+  - cover-2
+  - two-deep
+  - modern
+  - college
+  - nfl
+  - high-school
+
+notes: |
+  4-2-5 nickel front with Cover 2 shell. NB plays the apex / slot — replacing
+  what would be SLB in a 4-3. Two safeties split the deep field in halves.
+  Five underneath defenders (4 box + NB) plus the soft-corner squat in
+  Cover 2 makes this the most-used defense in modern football.
+
+verification_status: unverified
+source_notes:
+  - "Standard 4-2-5 Cover 2 alignment; widely documented across modern coaching texts."
+  - "Built 2026-04-30 as part of the P5 defensive-side rollout."

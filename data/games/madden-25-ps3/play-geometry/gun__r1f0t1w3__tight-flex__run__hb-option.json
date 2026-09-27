@@ -1,0 +1,59 @@
+{
+  "slug": "gun__r1f0t1w3__tight-flex__run__hb-option",
+  "info": {
+    "family": "GUN",
+    "formation": "Tight Flex",
+    "play_name": "HB Option",
+    "play_type": "run",
+    "canonical_team": "Atlanta Falcons",
+    "canonical_img": 106,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Atlanta Falcons",
+      "Jacksonville Jaguars"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Tight Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 522,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 181
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.43,
+  "response_text": "```json\n{\n  \"concept\": \"option_pass\",\n  \"concepts\": [\"option_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"seam\",\n    \"TE_R\": \"corner\",\n    \"HB\": \"option_carry\"\n  },\n  \"ball_carrier\": \"HB D_right\",\n  \"primary_target\": null,\n  \"notes\": \"HB Option run play with option-pass capability. HB carries toward D_right gap with option to pitch/pass. Red arrow indicates primary ball-carrier path. Multiple receiver routes (streaks and seam) available for potential option-pass decision.\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_right",
+    "c_xy": [
+      1551,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      2151,
+      615
+    ],
+    "dx_from_c": 600,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "option_pass",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bhb option\\b|\\bte option\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

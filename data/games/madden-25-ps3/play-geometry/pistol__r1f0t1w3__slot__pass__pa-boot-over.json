@@ -1,0 +1,49 @@
+{
+  "slug": "pistol__r1f0t1w3__slot__pass__pa-boot-over",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Slot",
+    "play_name": "PA Boot Over",
+    "play_type": "pass",
+    "canonical_team": "Pistol",
+    "canonical_img": 67,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Pistol"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "Pistol default \u2014 variant unclear"
+    }
+  },
+  "usage": {
+    "input_tokens": 496,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 180
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.33,
+  "response_text": "```json\n{\n  \"concept\": \"boot_pass\",\n  \"concepts\": [\"boot_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"corner\",\n    \"TE_R\": \"flat\",\n    \"HB\": \"wheel\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"PA boot-over action. QB fakes handoff, rolls right. Red arrow (primary) targets WR_Z on streak. Yellow arrows show all vertical/breaking routes. TE_R runs flat to support boot edge. HB wheels out for checkdown.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "boot_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bboot\\b|\\bbootleg\\b",
+    "is_pa": true,
+    "is_boot_or_roll": true
+  }
+}

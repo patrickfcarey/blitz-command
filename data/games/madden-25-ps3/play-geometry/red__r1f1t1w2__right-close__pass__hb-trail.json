@@ -1,0 +1,49 @@
+{
+  "slug": "red__r1f1t1w2__right-close__pass__hb-trail",
+  "info": {
+    "family": "RED",
+    "formation": "Right Close",
+    "play_name": "HB Trail",
+    "play_type": "pass",
+    "canonical_team": "Bill Walsh",
+    "canonical_img": 60,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Bill Walsh"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "RED",
+      "formation": "Right Close",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "RED family \u2014 old-school 2-back default"
+    }
+  },
+  "usage": {
+    "input_tokens": 560,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 149
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.37,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"generic_hb_run\"],\n  \"routes\": {\n    \"HB\": \"trail\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"HB\",\n  \"notes\": \"Play labeled as 'pass' in play_type but py_concept indicates run family. HB shown trailing with yellow arrow route. Blue/cyan arrow indicates secondary receiver or option route. Red Circle button glyph visible as primary target. This appears to be a pass play with HB trail checkdown rather than a run.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "^hb \\w+",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__twins-flip__pass__te-angle",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Twins Flip",
+    "play_name": "TE Angle",
+    "play_type": "pass",
+    "canonical_team": "Joe Gibbs",
+    "canonical_img": 28,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Joe Gibbs"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Twins Flip",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "Singleback default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 172,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 115
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 10.2,
+  "response_text": "```json\n{\n  \"concept\": \"receiver_concept\",\n  \"concepts\": [\"te_angle\"],\n  \"routes\": {\n    \"TE_R\": \"angle\",\n    \"WR_X\": \"comeback\",\n    \"WR_Z\": \"drag\",\n    \"WR_SLOT_L\": \"flat\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "receiver_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\b(wr|te|x|y|z|fl|se|slot|h) (corner|drag|hook|option|under|seam|follow|attack|inside|angle|shake|fork|scissors|cross|trail|streak|spot|fade|in|out|wheel|seams|hooks|corners|outs|ins|posts|streaks)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

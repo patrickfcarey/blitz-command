@@ -1,0 +1,379 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blitz-command.local/schemas/play.schema.json",
+  "title": "Play",
+  "description": "A football play. References a formation by id (the formation file in data/formations/) and adds per-player assignments, motions, reads, success/failure analysis, and tags.",
+  "type": "object",
+  "required": ["play_id", "name", "formation", "play_type", "ball_carrier", "verification_status"],
+  "additionalProperties": false,
+  "properties": {
+    "play_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "Stable identifier (kebab-case). Convention: <formation-id>-<play-name>."
+    },
+    "name": { "type": "string" },
+    "aliases": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Alternate names this play is known by (different terminology trees)."
+    },
+    "formation": {
+      "type": "string",
+      "description": "ID of the formation this play uses (matches a file in data/formations/). Player labels in assignments must match labels in the referenced formation."
+    },
+    "play_type": {
+      "enum": ["run", "pass", "play-action", "screen", "rpo", "trick", "special"]
+    },
+    "rpo_type": {
+      "enum": ["alert", "peek", "read"],
+      "description": "For play_type 'rpo' only — which RPO read mechanic the play uses. 'alert' = a pre-snap decision off the defense's alignment (the called run is checked to a quick pass). 'peek' = a post-snap read of a conflict linebacker while riding the HB mesh — give, or pull and throw. 'read' = a post-snap read where the QB is himself a run threat (zone-read / QB-run RPO), reading a specific edge or second-level defender. Optional; meaningful only when play_type is 'rpo'."
+    },
+    "ball_carrier": {
+      "type": "string",
+      "description": "Label of the player who has the ball at the end of the play (e.g. 'HB' for a run, 'QB' for a designed scramble, the receiver who is the primary read for a pass)."
+    },
+    "primary_read": { "type": "string", "description": "Label of the primary receiver (pass plays)." },
+    "secondary_read": { "type": "string" },
+    "tertiary_read": { "type": "string" },
+    "checkdown": { "type": "string", "description": "Label of the safety-valve receiver if all reads are covered." },
+    "run_reads": {
+      "type": "array",
+      "description": "Ball-carrier read progression for run plays. Each entry names what the runner reads at that priority and where to go based on the result. Analogous to a QB's read tree but for the ground game.",
+      "items": {
+        "type": "object",
+        "required": ["priority", "read_key", "run_to"],
+        "additionalProperties": false,
+        "properties": {
+          "priority": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 5,
+            "description": "1 = first read, 2 = second read, 3 = third read, etc."
+          },
+          "read_key": {
+            "type": "string",
+            "description": "What the ball carrier reads — a defender, blocker, or landmark. E.g. 'backside DE', 'playside linebacker', 'pulling guard', 'C-gap', 'frontside A-gap'."
+          },
+          "run_to": {
+            "type": "string",
+            "description": "Where to go if this read is available / the gap opens. E.g. 'cut outside', 'bang the A-gap', 'follow the puller through the C-gap', 'cut back behind the center'."
+          },
+          "notes": {
+            "type": "string",
+            "description": "Optional coaching point or concept note for this read."
+          }
+        }
+      }
+    },
+    "motions": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/motion" },
+      "description": "Pre-snap (or at-snap) motions. Each motion is tagged mandatory or optional."
+    },
+    "assignments": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/assignment" },
+      "description": "Per-player assignment. Should cover all 11 players in the referenced formation."
+    },
+    "strengths": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "What this play does well — situations and matchups it's built for."
+    },
+    "weaknesses": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Where this play struggles — defensive reactions or matchups it can't beat."
+    },
+    "best_vs_defense": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Defensive coverages or fronts this play attacks well (e.g. 'cover-2', 'over-front', 'cover-3')."
+    },
+    "worst_vs_defense": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "defensive_counters": {
+      "type": "array",
+      "description": "Pre-snap defensive ALIGNMENTS that beat or threaten this play. Each entry is a look the QB can recognize before the snap by scanning the defense — NOT a post-snap movement. The QB sees the alignment, then checks to an audible (the playbook's counter_responses map each counter_id to an audible). Post-snap adjustments are handled by the play's run_reads / primary_read progression and assignment alt_paths, not here. Distinct from 'weaknesses' (static play shortcomings) and 'worst_vs_defense' (season-long matchup problems). Each entry has a stable counter_id so playbooks can reference it from their counter_responses field.",
+      "items": {
+        "type": "object",
+        "required": ["counter_id", "pre_snap_look", "qb_key", "read_category", "why"],
+        "additionalProperties": false,
+        "properties": {
+          "counter_id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$",
+            "description": "Stable kebab-case id unique within this play (e.g. 'pinch-dl', 'loaded-box'). A stable handle that playbook counter_responses reference — it need not perfectly describe the alignment, and should NOT be changed once playbooks reference it."
+          },
+          "pre_snap_look": {
+            "type": "string",
+            "description": "The defensive ALIGNMENT the QB sees pre-snap. Must be observable before the snap — a static picture, not a post-snap movement. E.g. 'Both DTs in tight 3-techniques shaded inside the guards', '8 defenders inside the tackle box with a single-high safety', 'Both corners pressed at the line on the outside WRs'."
+          },
+          "qb_key": {
+            "type": "string",
+            "description": "The single fastest visual recognition cue — what the QB scans to identify this look in one glance. E.g. 'Count the box', 'Check the safety shell — one high', 'Scan the interior DL shade'."
+          },
+          "read_category": {
+            "enum": ["box-count", "safety-shell", "dl-alignment", "lb-depth", "cb-leverage"],
+            "description": "Which part of the defense the QB scans to identify this counter. 'box-count' = number of defenders inside the tackle box. 'safety-shell' = number and depth of deep safeties (0/1/2-high). 'dl-alignment' = defensive-line technique and shade. 'lb-depth' = linebacker depth and width (walked up, stacked, cheated). 'cb-leverage' = cornerback depth and leverage (press/off, inside/outside)."
+          },
+          "why": {
+            "type": "string",
+            "description": "One sentence on WHY this alignment beats or threatens the play. Helps a coach understand the mechanism (e.g. 'Inside-shaded tackles kill the down-block angles; the off-tackle hole is dead before the pull arrives')."
+          },
+          "typical_against": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Defensive fronts/coverages where you'd commonly see this alignment (e.g. ['over-front', '4-3 base']). Optional."
+          }
+        }
+      }
+    },
+    "flip_reads": {
+      "type": "array",
+      "description": "Pre-snap alignment reads that tell the QB to FLIP this play's direction — same as defensive_counters in form (a look the QB scans before the snap), but the response is to mirror rather than audible to a different play. 'mirror-play' = run this exact play flipped to the other side (call the play's -left/-right mirror). 'mirror-formation' = flip the whole formation to its mirror, re-setting the defense's strength call, then run the play. Used for the 'check-with-me' run-direction decision and the formation-flip decision.",
+      "items": {
+        "type": "object",
+        "required": ["flip_id", "pre_snap_look", "qb_key", "read_category", "flip_to", "why"],
+        "additionalProperties": false,
+        "properties": {
+          "flip_id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$",
+            "description": "Stable kebab-case id unique within this play (e.g. 'overshift-strong', 'box-heavy-callside')."
+          },
+          "pre_snap_look": {
+            "type": "string",
+            "description": "The defensive ALIGNMENT the QB sees pre-snap that triggers the flip — a static picture, observable before the snap (e.g. 'Front overshifted to the called side — an extra hat in the strong-side box')."
+          },
+          "qb_key": {
+            "type": "string",
+            "description": "The single fastest visual cue the QB scans to identify this look (e.g. 'Count the box by side — called side is +1')."
+          },
+          "read_category": {
+            "enum": ["box-count", "safety-shell", "dl-alignment", "lb-depth", "cb-leverage"],
+            "description": "Which part of the defense the QB scans — same enum as defensive_counters.read_category."
+          },
+          "flip_to": {
+            "enum": ["mirror-play", "mirror-formation"],
+            "description": "'mirror-play' = run this play flipped to the other side (its mirror play). 'mirror-formation' = flip the entire formation to its mirror, then run the play."
+          },
+          "why": {
+            "type": "string",
+            "description": "One sentence on why flipping beats the look (e.g. 'Running into the overshift is into the teeth; flipping attacks the lighter box')."
+          },
+          "typical_against": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Defensive fronts/coverages where you'd commonly see this alignment. Optional."
+          }
+        }
+      }
+    },
+    "common_uses": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Game situations where you'd typically call this play."
+    },
+    "philosophy": {
+      "type": "string",
+      "description": "Offensive philosophy (e.g. 'power-run', 'west-coast', 'air-raid', 'spread-option')."
+    },
+    "run_concept_ref": {
+      "type": "string",
+      "description": "Foreign key into data/concepts/run-concepts/ (kebab-case id). Set for run and play-action plays."
+    },
+    "pass_concept_ref": {
+      "type": "string",
+      "description": "Foreign key into data/concepts/pass-concepts/ (kebab-case id). Set for pass and play-action plays."
+    },
+    "pass_protection_ref": {
+      "type": "string",
+      "description": "Foreign key into data/concepts/pass-protections/ (kebab-case id). Set for pass, play-action, and screen plays."
+    },
+    "concepts": {
+      "type": "array",
+      "description": "Multi-concept composition (the Erhardt-Perkins model — a play is a package of concepts, callable from many formations). A play can run several concepts at once, each occupying a subset of the formation: e.g. Smash on the left two receivers + Spacing on the right three + a QB-run concept. Each entry foreign-keys into data/concepts/pass-concepts/ or run-concepts/ and names the players that execute it. A play uses EITHER the single-valued run_concept_ref / pass_concept_ref (a single-concept play) OR this array (a multi-concept play) — not both.",
+      "items": {
+        "type": "object",
+        "required": ["concept_ref", "concept_type", "players"],
+        "additionalProperties": false,
+        "properties": {
+          "concept_ref": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$",
+            "description": "Foreign key into data/concepts/pass-concepts/ (when concept_type is 'pass') or data/concepts/run-concepts/ (when 'run')."
+          },
+          "concept_type": {
+            "enum": ["pass", "run"],
+            "description": "Which concept library this entry references."
+          },
+          "players": {
+            "type": "array",
+            "items": { "type": "string" },
+            "minItems": 1,
+            "description": "Player labels (matching the play's formation) that execute this concept. A concept may occupy as few as one player (a QB-run) or span the whole formation (four-verticals)."
+          },
+          "field_area": {
+            "enum": ["left", "right", "middle", "backfield", "full"],
+            "description": "Optional shorthand for where the concept sits in the formation."
+          },
+          "is_primary": {
+            "type": "boolean",
+            "description": "True for the concept the QB works first post-snap. Exactly one concept entry in a play should be marked primary."
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "philosophy_ref": {
+      "type": "string",
+      "description": "Foreign key into data/concepts/philosophies/ (kebab-case id). Prefer this over the freeform 'philosophy' string for validated links."
+    },
+    "era": {
+      "type": "string",
+      "description": "Era when this play was/is most associated with (e.g. '1990s NFL', 'modern Air Raid')."
+    },
+    "famous_examples": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Coaches, teams, or notable instances of this play."
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Free-form tags. Conventionally includes a level tag (high-school, college, nfl, any-level), philosophy/concept tags (power-run, air-raid, west-coast, spread, gap-scheme), and situation tags (red-zone, short-yardage, hurry-up)."
+    },
+    "notes": { "type": "string" },
+    "verified_in_games": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "List of game_ids where this play has been manually verified in-game (recreated in the editor and confirmed to work as designed). Each entry must match a profile in data/games/."
+    },
+    "verification_status": {
+      "enum": ["verified", "unverified", "inferred"]
+    },
+    "source_notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "$defs": {
+    "motion": {
+      "type": "object",
+      "required": ["player", "type", "motion_type"],
+      "additionalProperties": false,
+      "properties": {
+        "player": {
+          "type": "string",
+          "description": "Player label from the referenced formation (e.g. 'Z', 'HB', 'SLOT')."
+        },
+        "type": {
+          "enum": ["mandatory", "optional"],
+          "description": "Mandatory: the play assumes the motion happened — running it without motion changes the concept. Optional: motion is a check the QB / coach can call (e.g. for matchup leverage), but the play works without it."
+        },
+        "motion_type": {
+          "type": "string",
+          "description": "Motion category (e.g. 'fly', 'jet', 'short-across', 'long-across', 'short-forward', 'short-backward', 'bunch', 'shift')."
+        },
+        "end_position": {
+          "type": "object",
+          "required": ["x", "y"],
+          "additionalProperties": false,
+          "properties": {
+            "x": { "type": "number" },
+            "y": { "type": "number" }
+          },
+          "description": "Where the motioning player ends up at snap (universal coords). Optional — start position comes from the formation."
+        },
+        "snap_on_motion": {
+          "type": "boolean",
+          "description": "True if the ball is snapped while the player is still in motion (e.g. jet motion). False / omitted means the player is set before snap."
+        },
+        "notes": { "type": "string" }
+      }
+    },
+    "assignment": {
+      "type": "object",
+      "required": ["player", "role"],
+      "additionalProperties": false,
+      "properties": {
+        "player": {
+          "type": "string",
+          "description": "Player label from the formation."
+        },
+        "role": {
+          "enum": ["ball_carrier", "lead_block", "pass_block", "run_block", "route", "fake", "spy", "stay_in_protect", "release", "handoff"],
+          "description": "What the player does on this play. 'handoff' is for the QB on a designed run."
+        },
+        "route_name": {
+          "type": "string",
+          "description": "Route name when role is 'route' (e.g. 'slant', 'post', 'flat', 'comeback', 'deep-cross')."
+        },
+        "depth_yd": {
+          "type": "number",
+          "description": "Route break depth in yards (for routes), or push depth for blockers."
+        },
+        "blocking_scheme": {
+          "type": "string",
+          "description": "Blocking scheme when role is a block variant (e.g. 'down-block', 'kickout', 'pull-around', 'reach', 'man-protection', 'invite-rusher')."
+        },
+        "target": {
+          "type": "string",
+          "description": "Block target (e.g. 'playside-LB', 'edge-defender', 'closest-rusher', 'cornerback')."
+        },
+        "is_primary": {
+          "type": "boolean",
+          "description": "True if this player is the primary read (for routes) or the primary ball-carrier."
+        },
+        "path": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": { "type": "number" }
+          },
+          "description": "Polyline waypoints in yards (universal coords) relative to the player's start position. The PRIMARY path. Color depends on role (orange for ball_carrier, magenta for FB lead, green for pulling lineman, light gray for pass-block, etc.)."
+        },
+        "alt_paths": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["priority", "path"],
+            "additionalProperties": false,
+            "properties": {
+              "priority": {
+                "enum": ["primary", "secondary", "tertiary", "checkdown"],
+                "description": "Read priority — drawn in matching color (primary=orange, secondary=blue, tertiary=lavender, checkdown=light gray)."
+              },
+              "path": {
+                "type": "array",
+                "minItems": 2,
+                "items": {
+                  "type": "array",
+                  "minItems": 2,
+                  "maxItems": 2,
+                  "items": { "type": "number" }
+                }
+              },
+              "notes": { "type": "string" }
+            }
+          },
+          "description": "Additional path alternatives for the same player. Used to show HB read options on a run play (e.g. BANG/BEND/BOUNCE on stretch zone) — the primary `path` is the first read, alt_paths add the secondary and tertiary options."
+        },
+        "beats_coverage": {
+          "enum": ["man", "zone", "both"],
+          "description": "Override for which coverage type this assignment is designed to attack. If absent, falls back to the route's default beats_coverage (when role=route)."
+        },
+        "notes": { "type": "string" }
+      }
+    }
+  }
+}

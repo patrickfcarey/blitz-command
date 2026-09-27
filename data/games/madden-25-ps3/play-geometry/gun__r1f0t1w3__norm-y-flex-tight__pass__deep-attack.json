@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__norm-y-flex-tight__pass__deep-attack",
+  "info": {
+    "family": "GUN",
+    "formation": "Norm Y-Flex Tight",
+    "play_name": "Deep Attack",
+    "play_type": "pass",
+    "canonical_team": "Dallas Cowboys",
+    "canonical_img": 116,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Dallas Cowboys"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Norm Y-Flex Tight",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 526,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 280
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.53,
+  "response_text": "```json\n{\n  \"concept\": \"deep_pass\",\n  \"concepts\": [\"deep_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"TE_L\": \"seam\",\n    \"HB\": \"check_release\",\n    \"WR_FLANKER\": \"corner\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"GUN Norm Y-Flex Tight formation with 5-wide receiver set (4 WRs + 1 TE). Red arrow from QB to WR_Z (right-side receiver) indicates primary deep target. Cyan button glyph (X) on WR_Z confirms throw button. TE_L runs seam route (yellow arrow). WR_X (left outer) runs streak. WR_FLANKER (far right) runs corner route over the top. HB positioned for check/release. Layout matches 1 RB / 0 FB / 1 TE / 3 WR expected from py_concept deep_pass in GUN formation.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "deep_pass",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdeep attack\\b|\\bdeep corners?\\b|\\bdeep middle\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

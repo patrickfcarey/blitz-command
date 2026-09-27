@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__dice-slot-wk__pass__pa-dagger",
+  "info": {
+    "family": "GUN",
+    "formation": "Dice Slot Wk",
+    "play_name": "PA Dagger",
+    "play_type": "pass",
+    "canonical_team": "Denver Broncos",
+    "canonical_img": 80,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Denver Broncos"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Dice Slot Wk",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 503,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 192
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.84,
+  "response_text": "```json\n{\n  \"concept\": \"dagger\",\n  \"concepts\": [\"dagger\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"dig\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_L\",\n  \"notes\": \"PA Dagger with slot dig as primary target. Red arrow originates from QB and terminates on the slot WR running the dig route. Yellow arrow shows WR_Z stretching horizontally (possibly a clearout or option route). TE_R runs seam. Standard PA Dagger structure.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "dagger",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdagger\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

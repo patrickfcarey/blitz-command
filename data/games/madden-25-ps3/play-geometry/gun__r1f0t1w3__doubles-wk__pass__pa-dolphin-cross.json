@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__doubles-wk__pass__pa-dolphin-cross",
+  "info": {
+    "family": "GUN",
+    "formation": "Doubles Wk",
+    "play_name": "PA Dolphin Cross",
+    "play_type": "pass",
+    "canonical_team": "Miami Dolphins",
+    "canonical_img": 85,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Miami Dolphins"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Doubles Wk",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Doubles \u2014 1 TE 3 WR (slot variant)"
+    }
+  },
+  "usage": {
+    "input_tokens": 503,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 202
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.81,
+  "response_text": "```json\n{\n  \"concept\": \"cross_concept\",\n  \"concepts\": [\"pa_cross\", \"mesh\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"drag\",\n    \"WR_SLOT_L\": \"drag\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Play-action setup with crossing routes. Red arrow (primary) targets WR_Z on the drag/cross route. Yellow arrows indicate secondary mesh/crossing action on the left side (WR_SLOT_L drag, WR_X corner). TE_R seam provides vertical stretch. HB stays in backfield for checkdown.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "cross_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcross(es)?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

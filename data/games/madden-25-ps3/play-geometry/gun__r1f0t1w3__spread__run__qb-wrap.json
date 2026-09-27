@@ -1,0 +1,58 @@
+{
+  "slug": "gun__r1f0t1w3__spread__run__qb-wrap",
+  "info": {
+    "family": "GUN",
+    "formation": "Spread",
+    "play_name": "QB Wrap",
+    "play_type": "run",
+    "canonical_team": "Seattle Seahawks",
+    "canonical_img": 132,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Seattle Seahawks"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Spread",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 559,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 67
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 88.77,
+  "response_text": "```json\n{\n  \"concept\": \"qb_run\",\n  \"concepts\": [\"qb_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"QB B_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "B_right",
+    "c_xy": [
+      1476,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      1719,
+      615
+    ],
+    "dx_from_c": 243,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "qb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bqb wrap\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

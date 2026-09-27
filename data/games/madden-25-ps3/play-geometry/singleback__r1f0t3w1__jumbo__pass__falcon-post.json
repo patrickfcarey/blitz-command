@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t3w1__jumbo__pass__falcon-post",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Jumbo",
+    "play_name": "Falcon Post",
+    "play_type": "pass",
+    "canonical_team": "Atlanta Falcons",
+    "canonical_img": 4,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Atlanta Falcons"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Jumbo",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 3,
+      "WR": 1,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Jumbo \u2014 typically 3 TE 1 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 496,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 266
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.24,
+  "response_text": "```json\n{\n  \"concept\": \"post_concept\",\n  \"concepts\": [\"post_concept\"],\n  \"routes\": {\n    \"WR_X\": \"post\",\n    \"WR_Z\": \"corner\",\n    \"TE_L\": \"streak\",\n    \"TE_M\": \"streak\",\n    \"TE_R\": \"flat\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Jumbo personnel (r1f0t3w1) confirmed: 1 RB, 0 FB, 3 TEs, 1 WR. WR_X (purple \u25a1) runs the post (red arrow). WR_Z (green \u25b3) runs corner route (yellow arrow). TE_R (red \u2299) runs flat with blue arrow (check-release). R1 button shown with blue arrow correlates to TE_R checkdown. Three TEs visible on LOS with one wing TE below. Formation matches Jumbo tight end heavy package.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "post_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpost(?![- ]corner)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

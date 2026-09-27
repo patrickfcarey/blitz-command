@@ -1,0 +1,30 @@
+name: stalk-or-route
+aliases:
+  - decoy-or-stalk
+description: >
+  Hybrid assignment used in wildcat and specialty formations: the player
+  (typically the original QB lined up wide) either stalks the cornerback
+  to support the run, or releases on a short decoy route to occupy a
+  defender. Which option is called depends on the play call / pre-snap read
+  by the offense. Rendered as a stalk-depth route for diagram purposes.
+path:
+  - [0, 0]
+  - [0, 4]
+  - [-1, 6]
+typical_break_depth_yd: 4
+option_route: true
+category: underneath
+beats_coverage: both
+tags:
+  - wildcat
+  - run-support
+  - blocking-route
+  - decoy
+  - option-route
+verification_status: unverified
+source_notes:
+  - >
+    Wildcat QB-WR assignment — player reads the defensive reaction and either
+    executes a stalk block (run called) or runs a short decoy/angle route
+    (pass/RPO called). Path mirrors the stalk route since that is the
+    default for run-heavy wildcat schemes.

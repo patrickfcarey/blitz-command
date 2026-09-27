@@ -1,0 +1,49 @@
+{
+  "slug": "strong__r1f1t1w2__normal__pass__pa-power-0",
+  "info": {
+    "family": "STRONG",
+    "formation": "Normal",
+    "play_name": "PA Power 0",
+    "play_type": "pass",
+    "canonical_team": "Tom Flores",
+    "canonical_img": 83,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Tom Flores"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "Normal",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "STRONG default \u2014 variant unclear"
+    }
+  },
+  "usage": {
+    "input_tokens": 494,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 193
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.76,
+  "response_text": "```json\n{\n  \"concept\": \"power_run\",\n  \"concepts\": [\"power_run\", \"pa_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"TE_R\": \"flat\",\n    \"HB\": \"swing\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Play-action Power O disguise on pass play. Red arrow primary to WR_Z (corner). WR_X streaks vertical. TE_R runs flat. HB swings to check-release. R1 labeled on TE_R indicating button assignment. Yellow dashed routes show conceptual power O look; red solid arrow indicates actual pass progression.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "power_run",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpower\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

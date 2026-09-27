@@ -1,0 +1,49 @@
+{
+  "slug": "red__r1f1t1w2__right-close__pass__pa-slide",
+  "info": {
+    "family": "RED",
+    "formation": "Right Close",
+    "play_name": "PA Slide",
+    "play_type": "pass",
+    "canonical_team": "Bill Walsh",
+    "canonical_img": 56,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Bill Walsh"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "RED",
+      "formation": "Right Close",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "RED family \u2014 old-school 2-back default"
+    }
+  },
+  "usage": {
+    "input_tokens": 493,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 150
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.09,
+  "response_text": "```json\n{\n  \"concept\": \"slide_pass\",\n  \"concepts\": [\"slide_pass\"],\n  \"routes\": {\n    \"HB\": \"swing\",\n    \"TE_R\": \"flat\",\n    \"WR_Z\": \"corner\",\n    \"WR_X\": \"streak\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"PA Slide with RB checkdown to flat. Red arrow targets corner route (WR_Z); yellow arrow indicates TE_R flat route. RB eligible on swing route underneath.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "slide_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bslide\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

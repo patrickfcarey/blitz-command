@@ -1,0 +1,58 @@
+{
+  "slug": "gun__r0f0t0w5__empty-trey__run__fb-dive",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Trey",
+    "play_name": "FB Dive",
+    "play_type": "run",
+    "canonical_team": "Miami Dolphins",
+    "canonical_img": 148,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Miami Dolphins"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Trey",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 560,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 63
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 57.02,
+  "response_text": "```json\n{\n  \"concept\": \"fb_dive\",\n  \"concepts\": [\"fb_dive\"],\n  \"routes\": {},\n  \"ball_carrier\": \"FB straight\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "straight",
+    "c_xy": [
+      1618,
+      701
+    ],
+    "arrow_los_crossing_xy": [
+      1574,
+      701
+    ],
+    "dx_from_c": -44,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "fb_dive",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bfb dive\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

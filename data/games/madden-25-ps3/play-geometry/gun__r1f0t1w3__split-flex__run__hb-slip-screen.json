@@ -1,0 +1,58 @@
+{
+  "slug": "gun__r1f0t1w3__split-flex__run__hb-slip-screen",
+  "info": {
+    "family": "GUN",
+    "formation": "Split Flex",
+    "play_name": "HB Slip Screen",
+    "play_type": "run",
+    "canonical_team": "Run N Gun",
+    "canonical_img": 78,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Run N Gun"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Split Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "GUN/Shotgun default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 501,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 272
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 83.45,
+  "response_text": "```json\n{\n  \"concept\": \"hb_screen\",\n  \"concepts\": [\"hb_screen\"],\n  \"routes\": {\n    \"LT\": \"pass_pro\",\n    \"LG\": \"pass_pro\",\n    \"C\": \"pass_pro\",\n    \"RG\": \"pull_screen\",\n    \"RT\": \"pull_screen\",\n    \"TE_R\": \"block_screen\",\n    \"WR_X\": \"clearout\",\n    \"WR_Z\": \"clearout\",\n    \"WR_SLOT_R\": \"clearout\",\n    \"HB\": \"screen_catch\"\n  },\n  \"ball_carrier\": \"HB D_right\",\n  \"primary_target\": null,\n  \"notes\": \"HB Slip Screen: QB in shotgun, HB lined up to right side. RG and RT pull right to lead block the screen. TE_R and slot WR provide initial block. WRs clear out defenders. Red arrow on HB indicates ball-carrier motion to the D_right gap (outside edge). This is a quick-hitting screen pass disguised as a run play.\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_right",
+    "c_xy": [
+      1632,
+      613
+    ],
+    "arrow_los_crossing_xy": [
+      2468,
+      613
+    ],
+    "dx_from_c": 836,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "hb_screen",
+    "concept_family": "screen",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bhb (slip )?screen\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

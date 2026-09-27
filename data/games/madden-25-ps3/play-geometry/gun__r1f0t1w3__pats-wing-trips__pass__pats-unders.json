@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__pats-wing-trips__pass__pats-unders",
+  "info": {
+    "family": "GUN",
+    "formation": "Pats Wing Trips",
+    "play_name": "Pats Unders",
+    "play_type": "pass",
+    "canonical_team": "New England Patriots",
+    "canonical_img": 93,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "New England Patriots"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Pats Wing Trips",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 529,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 196
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.7,
+  "response_text": "```json\n{\n  \"concept\": \"under_route\",\n  \"concepts\": [\"under_route\"],\n  \"routes\": {\n    \"WR_X\": \"comeback\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"under\",\n    \"TE_R\": \"under\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_L\",\n  \"notes\": \"Red arrow originates from slot WR running under route (primary). Yellow arrows show comeback (X), streak (Z), and under from TE. Formation is shotgun with 1 RB, 0 FB, 1 TE, 3 WR matching r1f0t1w3.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "under_route",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bunders?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

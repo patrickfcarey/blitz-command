@@ -1,0 +1,166 @@
+play_id: shotgun-2x2-quick-hitch
+name: Quick Hitch (Hitch-Seam)
+aliases:
+  - 2x2 Quick Hitch
+  - All-Hitch off Stick
+  - Hitch-Seam Quick Game
+
+formation: shotgun-2x2
+play_type: pass
+ball_carrier: QB
+primary_read: X
+secondary_read: Z
+tertiary_read: SLOT-W
+checkdown: HB
+
+# Identical (empty) motions to Stick — the base play carries no motion, so
+# this twin does too. Running no motion on every member of the Quick-Game
+# family keeps the pre-snap look identical so the defense cannot key it.
+motions: []
+
+assignments:
+  - player: LT
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: LG
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: C
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: RG
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: RT
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: TE
+    role: route
+    route_name: seam
+    depth_yd: 8
+    path: [[0, 0], [0, 3], [0, 8], [2, 16]]
+    notes: "Same vertical release as the Stick clear-out for the first three steps — same early picture — then bend into the strong-side seam, the deep answer versus single-high."
+  - player: X
+    role: route
+    route_name: hitch
+    depth_yd: 6
+    is_primary: true
+    path: [[0, 0], [0, 3], [0, 6]]
+    notes: "Identical vertical release to the base Stick clear-out for the first three steps — same early picture — then settle at 6 yards facing the QB as the weak-side hitch, the primary on the 3-step rhythm versus off coverage."
+  - player: SLOT-W
+    role: route
+    route_name: seam
+    depth_yd: 8
+    path: [[0, 0], [0, 3], [0, 8], [-2, 16]]
+    notes: "Same vertical stem as the base Stick option route for the first three steps — same early picture — then bend into the weak-side seam, holding the safety so the X hitch settles clean underneath."
+  - player: Z
+    role: route
+    route_name: hitch
+    depth_yd: 6
+    path: [[0, 0], [0, 3], [0, 6]]
+    notes: "Same vertical stem as the base Stick option route for the first three steps, then settle at 6 yards as the strong-side hitch — the mirror answer if the weak-side hitch is covered."
+  - player: QB
+    role: ball_carrier
+    path: [[0, 0], [0, -1], [0, -2]]
+    notes: |
+      3-step rhythm from shotgun depth — IDENTICAL drop to Stick. Hitch-seam
+      quick game: peek the seams to confirm the safety count, then throw the
+      X hitch versus off coverage. If a corner squats the hitch, the seam
+      behind him is the answer. Z hitch mirrors the read to the strong side.
+  - player: HB
+    role: pass_block
+    blocking_scheme: man-protection
+    notes: "Pass-pro; release as the checkdown only if pressure clears — same protection role as the base Stick play."
+
+strengths:
+  - Identical pre-snap look, QB drop, and early receiver releases to Stick — the defense cannot tell it apart
+  - All-hitch quick game punishes soft / off corners — the easiest completion in football
+  - Built-in hitch-seam answer — if the corner squats the hitch, the seam runs behind him
+  - Mirrored — the QB takes whichever hitch the leverage gives him
+  - Ball out on the 3-step rhythm — minimal protection exposure
+
+weaknesses:
+  - Hitch is dead versus press man — no room to settle
+  - Limited big-play potential unless the seam hits versus single-high
+  - A corner who reads the QB and drives the hitch can jump it
+  - Cover-2 with squat corners shrinks the hitch window
+  - QB must confirm leverage pre-snap — a wrong read is a no-throw
+
+best_vs_defense:
+  - cover-3 (hitch in front of the bailing corner, seam behind the dropping defender)
+  - cover-4 / quarters (hitch underneath the off corner)
+  - any single-high coverage — the seam is the kill shot
+  - off-coverage corners giving cushion to the outside WRs
+
+worst_vs_defense:
+  - press man on the outside WRs
+  - cover-2 with corners squatting on the hitch
+  - bracket coverage on the outside receivers
+  - a disciplined robber sitting in the seam window
+
+defensive_counters:
+  - counter_id: press-the-hitch
+    pre_snap_look: "Both outside corners pressed at the LOS on the X and Z, jammed inside leverage, no cushion"
+    qb_key: "Check the corners — pressed at the line on the outside WRs with no cushion"
+    read_category: cb-leverage
+    why: "Press man removes the cushion the hitch needs to settle into; the receiver cannot separate at 6 yards, taking the primary away on the 3-step rhythm."
+    typical_against: ["cover-1", "cover-0", "press-quarters"]
+  - counter_id: squat-corner-trap
+    pre_snap_look: "Outside corners squatted at 5-7 yards depth, eyes on the QB, with two safeties capping over the top"
+    qb_key: "Check the corner depth and eyes — squatted short, reading the QB, two-high behind"
+    read_category: cb-leverage
+    why: "A squatted corner reading the QB is set to trap and drive the hitch; with two-high safeties the seam is also capped, taking both legs of the hitch-seam answer."
+    typical_against: ["cover-2", "cover-2 trap", "quarters with squat corners"]
+  - counter_id: seam-robber
+    pre_snap_look: "A safety dropped to 8-10 yards, squared and stationed over the middle, with a single-high shell behind him"
+    qb_key: "Check the middle of the field — a safety squatting at 8-10 yards over the ball"
+    read_category: safety-shell
+    why: "A robber in the middle sits in the hitch-seam window and undercuts the seam, removing the answer to a squatted corner and forcing the QB off rhythm."
+    typical_against: ["cover-1 robber", "cover-3 buzz"]
+
+common_uses:
+  - 3rd-and-short / 3rd-and-medium
+  - 1st-down chains versus off coverage
+  - Quick-game tempo
+  - Beating a soft-corner zone shell
+  - Changing the picture after Stick has been on tape
+
+philosophy: west-coast
+pass_concept_ref: stick
+philosophy_ref: west-coast
+
+era: "1980s onward — the hitch and hitch-seam quick game are foundational West Coast answers to soft coverage, run in every era of pro-style football."
+
+famous_examples:
+  - "Bill Walsh 49ers (West Coast quick-game answers to off coverage)"
+  - "Peyton Manning offenses (hitch / hitch-seam versus soft zone)"
+  - "Modern NFL 11-personnel rhythm calls"
+
+tags:
+  - pass
+  - spread
+  - quick-game
+  - hitch
+  - hitch-seam
+  - west-coast
+  - shotgun
+  - 2x2
+  - high-school
+  - college
+  - nfl
+
+notes: |
+  West Coast hitch / hitch-seam quick-game play disguised off Stick. The QB's
+  3-step drop is IDENTICAL to Stick, and the receivers take the same early
+  vertical releases (X and Z stem vertical exactly like the base clear-out
+  and option routes, TE pushes vertical exactly like the base clear-out, the
+  slot seams stem vertical exactly like the base option route) before the
+  routes branch — the outside WRs settle into hitches, the slots bend into
+  seams. The defense reads the same picture as Stick. Member of the Shotgun
+  2x2 Quick-Game disguise family (see data/play-families/).
+
+  Mirror to quick-hitch-left by flipping all coordinates.
+
+verification_status: unverified
+source_notes:
+  - "The hitch and hitch-seam quick game are textbook West Coast answers to soft coverage — an easy completion versus off corners with a built-in seam answer versus a squatted corner. Authored as a disguise twin of shotgun-2x2-stick — the QB drop's first two waypoints are identical to the base play, all members carry the same empty motions block, and the receivers' early release waypoints match the base play's vertical stems before the routes branch."

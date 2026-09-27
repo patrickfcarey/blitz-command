@@ -1,0 +1,59 @@
+{
+  "slug": "gun__r0f0t0w5__empty-spread__run__mtn-read-option",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Spread",
+    "play_name": "Mtn Read Option",
+    "play_type": "run",
+    "canonical_team": "Oakland Raiders",
+    "canonical_img": 131,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Oakland Raiders",
+      "Philadelphia Eagles"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Spread",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 501,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 207
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 90.04,
+  "response_text": "```json\n{\n  \"concept\": \"zone_read\",\n  \"concepts\": [\"zone_read\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"streak\",\n    \"WR_SLOT_R\": \"streak\",\n    \"WR_FLANKER\": \"streak\"\n  },\n  \"ball_carrier\": \"HB C_right\",\n  \"primary_target\": null,\n  \"notes\": \"GUN Empty Spread (5 WR, 0 TE, 0 FB) with read-option QB/HB mesh. All 5 receivers run vertical stretches. Red arrow indicates primary ball carrier (HB) attacking C_right gap; cyan dashed line shows QB's read option path/mesh action with HB.\"\n}\n```",
+  "py_hints": {
+    "target_gap": "C_right",
+    "c_xy": [
+      1476,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      1845,
+      615
+    ],
+    "dx_from_c": 369,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "zone_read",
+    "concept_family": "rpo",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bread option\\b|\\bzone read\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__browns-doubles__pass__pa-dig-cross",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Browns Doubles",
+    "play_name": "PA Dig Cross",
+    "play_type": "pass",
+    "canonical_team": "Cleveland Browns",
+    "canonical_img": 23,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Cleveland Browns"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Browns Doubles",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 502,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 225
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.94,
+  "response_text": "```json\n{\n  \"concept\": \"cross_concept\",\n  \"concepts\": [\"pa_dig_cross\"],\n  \"routes\": {\n    \"WR_X\": \"dig\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"cross\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_L\",\n  \"notes\": \"Play-action pass with dig-cross concept. WR_X runs deep dig, WR_SLOT_L runs shallow cross (primary read), WR_Z runs corner clear, TE_R runs vertical seam. HB releases into checkdown. Expected personnel (r1f0t1w3): 1 RB, 0 FB, 1 TE, 3 WR \u2014 confirmed.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "cross_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcross(es)?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

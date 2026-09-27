@@ -1,0 +1,59 @@
+{
+  "slug": "i-form__r1f1t1w2__pro__run__hb-slip-screen",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Pro",
+    "play_name": "HB Slip Screen",
+    "play_type": "run",
+    "canonical_team": "Kansas City Chiefs",
+    "canonical_img": 30,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Kansas City Chiefs",
+      "Philadelphia Eagles"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "I-Form Pro default"
+    }
+  },
+  "usage": {
+    "input_tokens": 526,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 124
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 33.55,
+  "response_text": "```json\n{\n  \"concept\": \"hb_screen\",\n  \"concepts\": [\"hb_screen\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"TE_R\": \"block\",\n    \"WR_X\": \"block\",\n    \"WR_Z\": \"block\",\n    \"HB\": \"screen\"\n  },\n  \"ball_carrier\": \"HB D_left\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_left",
+    "c_xy": [
+      1553,
+      613
+    ],
+    "arrow_los_crossing_xy": [
+      154,
+      613
+    ],
+    "dx_from_c": -1399,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "hb_screen",
+    "concept_family": "screen",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bhb (slip )?screen\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

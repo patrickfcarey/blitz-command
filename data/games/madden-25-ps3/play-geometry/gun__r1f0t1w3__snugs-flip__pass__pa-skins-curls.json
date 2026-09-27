@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__snugs-flip__pass__pa-skins-curls",
+  "info": {
+    "family": "GUN",
+    "formation": "Snugs Flip",
+    "play_name": "PA Skins Curls",
+    "play_type": "pass",
+    "canonical_team": "Washington Redskins",
+    "canonical_img": 109,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Washington Redskins"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Snugs Flip",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 507,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 230
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.73,
+  "response_text": "```json\n{\n  \"concept\": \"curls\",\n  \"concepts\": [\"curls\"],\n  \"routes\": {\n    \"WR_X\": \"curl\",\n    \"WR_Z\": \"flat\",\n    \"WR_SLOT_L\": \"comeback\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"PA play-action look with 4-wide receiver set (1 RB, 0 FB, 1 TE, 3 WR per filename hint, but 4 receiver glyphs visible on LOS). Curl-flat combo on right side: X runs curl, Z runs flat. Left side: slot WR runs comeback. TE_R runs seam route. HB in backfield as checkdown. Red arrow on X indicates primary target (curl).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "curls",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcurls?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

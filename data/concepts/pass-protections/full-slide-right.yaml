@@ -1,0 +1,35 @@
+scheme_id: full-slide-right
+name: Full Slide Right
+description: |
+  All 5 OL slide one cell to the RIGHT (offense's right, defense's left). Mirror
+  of Full Slide Left. Used when heavy pressure is expected on the QB's blind
+  side (right side for right-handed QB). HB picks up the backside C-gap rusher
+  on the left. Playside (right) flat is a hot read.
+protection_type: 5-man
+assignments_by_position:
+  LT: "Slide right — block the 5-tech / weakside DE."
+  LG: "Slide right — block the weakside 1-tech."
+  C: "Slide right — block the weakside 1-tech / 0-tech after C's playside responsibility."
+  RG: "Slide right — block whatever shows in the rightmost gap."
+  RT: "Slide right — block the rightmost defender (could be wide-9 EDGE)."
+  HB: "REQUIRED: scan the left C-gap. Pick up the most dangerous unblocked rusher on the left."
+  TE: "Optional: chip-and-release on left EDGE if in pass-pro."
+vulnerable_to:
+  - "double-A-gap blitz on the opposite (left) side"
+  - "twist stunt crossing the slide"
+  - "delayed LB blitz from opposite side"
+pairs_with:
+  - bootleg-weak
+  - flood-weak
+  - snag-weak
+tags:
+  - pass-protection
+  - slide
+  - any-level
+  - high-school
+  - college
+  - nfl
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Throw Deep Publishing 'Pass Protection — Slide Schemes' (https://throwdeeppublishing.com/blogs/football-glossary/): confirmed mirror structure of full slide right."
+  - "Web validated 2026-04-30 — X&O Labs 'Slide Protection Variations' (https://www.xandolabs.com/): full slide right confirms 5-OL structure, HB picks up opposite C-gap."

@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r0f0t0w5__empty-bunch__pass__spacing",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Bunch",
+    "play_name": "Spacing",
+    "play_type": "pass",
+    "canonical_team": "Minnesota Vikings",
+    "canonical_img": 135,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Minnesota Vikings"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Bunch",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 161,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 222
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 70.43,
+  "response_text": "```json\n{\n  \"concept\": \"spacing\",\n  \"concepts\": [\"spacing\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"in\",\n    \"WR_SLOT_R\": \"out\",\n    \"WR_BUNCH\": \"flat\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"GUN Empty Bunch (r0f0t0w5) \u2014 5 WRs, no RB/FB/TE. QB in shotgun alone. Red arrow on WR_Z (R1 button, far right) indicates primary read. Yellow arrows show spacing concept: outer WRs streak vertically, slot receivers run in/out at intermediate depth, bunch receiver runs flat. Play attacks coverage horizontally across multiple levels.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "spacing",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bspacing\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

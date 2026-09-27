@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__snugs-flip__pass__pa-kc-seam",
+  "info": {
+    "family": "GUN",
+    "formation": "Snugs Flip",
+    "play_name": "PA KC Seam",
+    "play_type": "pass",
+    "canonical_team": "Kansas City Chiefs",
+    "canonical_img": 103,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Kansas City Chiefs"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Snugs Flip",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 507,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 198
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.54,
+  "response_text": "```json\n{\n  \"concept\": \"seam_route\",\n  \"concepts\": [\"seam_route\", \"play_action\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"seam\",\n    \"TE_R\": \"block_then_release\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_L\",\n  \"notes\": \"Play-action pass with PA fake to HB. Primary route is seam from slot receiver (green \u25b3). TE_R releases into route after play-action block. WR_X and WR_Z run clearing streaks. Red arrow indicates primary seam target.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "seam_route",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bseams?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

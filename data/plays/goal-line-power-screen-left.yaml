@@ -1,0 +1,211 @@
+play_id: goal-line-power-screen-left
+name: Goal Line Power Screen (Mirror Left)
+aliases:
+- GL Slip Screen
+- Power Screen (Goal Line)
+- Goal Line HB Screen
+formation: goal-line-left
+play_type: screen
+ball_carrier: HB
+primary_read: HB
+checkdown: TE-R
+motions: []
+assignments:
+- player: LT
+  role: pass_block
+  blocking_scheme: invite-rusher
+  notes: Show the Power down-block for a beat, set the protection, then deliberately let the backside rusher upfield past
+    the screen — sell the pass-set.
+- player: LG
+  role: pass_block
+  blocking_scheme: pull-around
+  target: screen-alley
+  path:
+  - - 0
+    - 0
+  - - -2
+    - -0.5
+  - - -4
+    - 0
+  - - -4
+    - 2
+  notes: PULL — IDENTICAL pull track to Goal Line Power for the first two waypoints to sell Power, then peel back and lead
+    the slip screen, walling the first defender in the playside alley.
+- player: C
+  role: pass_block
+  blocking_scheme: screen-release
+  target: screen-alley
+  notes: Show the gap block, sell the protection for a beat, then release flat to the playside as the point blocker out front
+    of the screen.
+- player: RG
+  role: pass_block
+  blocking_scheme: invite-rusher
+  notes: Show the Power down-block, set the protection, then deliberately let the playside rusher upfield past the screen.
+- player: RT
+  role: pass_block
+  blocking_scheme: invite-rusher
+  notes: Show the down-block, set the protection, then invite the playside edge rusher upfield away from the screen.
+- player: TE-R
+  role: route
+  route_name: flat
+  depth_yd: 3
+  notes: Show the kickout block on the EDGE for one beat to sell Power, then leak to the playside flat as the checkdown if
+    the screen is read and blown up.
+- player: WR
+  role: route
+  route_name: fade
+  depth_yd: 8
+  notes: Stalk-release to sell run, then run the fade to clear the playside corner and safety up and away from the screen
+    lane.
+- player: TE-L
+  role: pass_block
+  blocking_scheme: chip-and-release
+  target: screen-alley
+  notes: Chip the backside edge to sell the down-block, then release flat as the third blocker out front of the screen.
+- player: QB
+  role: ball_carrier
+  path:
+  - - 0
+    - 0
+  - - -1
+    - -1
+  - - 2
+    - -1
+  - - 3
+    - -2
+  notes: Reverse-out IDENTICAL to Goal Line Power for the first two waypoints, ride the mesh, then drift back letting the
+    rush come before flipping the slip screen out to the HB. Eyes downfield to hold the rush.
+- player: FB
+  role: lead_block
+  blocking_scheme: pull-around
+  target: screen-alley
+  path:
+  - - 0
+    - 0
+  - - -3
+    - 2
+  - - -2
+    - 1
+  - - -5
+    - 3
+  notes: First two waypoints IDENTICAL to Goal Line Power — step playside to sell the Power lead, then redirect and peel back
+    as the lead blocker out front of the slip screen.
+- player: HB
+  role: ball_carrier
+  is_primary: true
+  path:
+  - - 0
+    - 0
+  - - -3
+    - 2
+  - - -4
+    - 1
+  - - -7
+    - 3
+  notes: First two waypoints IDENTICAL to Goal Line Power — run the off-tackle Power track to sell the give, then plant, slip
+    back toward the LOS, settle, catch the screen, and follow the LG/C/TE-L/FB convoy to the pylon.
+strengths:
+- Identical pre-snap look and first-step action to Goal Line Power — the defense cannot tell it from the base run
+- From a jumbo look the defense sells out for the run, vacating the edge for the screen
+- Four blockers (LG pull + C release + TE-L release + FB lead) give the HB a convoy at the catch
+- Punishes an aggressive goal-line front that crashes hard to stop the power
+- The WR fade clears the playside corner and safety out of the screen lane
+weaknesses:
+- A goal-line screen is unusual — a screen-aware defense reads it fast
+- Tight field — very little room for the screen and convoy to develop
+- Timing-dependent — a mistimed HB release lets defenders sit on the screen
+- Loses yardage badly if a defender sniffs the screen and beats the linemen out
+- The QB must hold the rush long enough without taking a sack in the tight field
+best_vs_defense:
+- goal-line stand with hard-crashing, run-fitting defensive linemen
+- cover-0 blitz that vacates the edge
+- any defense overcommitting to the power run
+- 8-man fronts selling out inside
+worst_vs_defense:
+- screen-aware defenses with linebackers reading the QB
+- a spy assigned to the HB
+- disciplined contain rush that holds the edge
+- cover-2 with corners squatting on the flat
+defensive_counters:
+- counter_id: contain-rush-no-upfield
+  pre_snap_look: Playside EDGE in a square two-point stance playing contain, hands free, not in a low get-off sprinter's stance
+  qb_key: Scan the playside edge — EDGE squared and squatting, playing contain rather than rushing
+  read_category: dl-alignment
+  why: A contain rush that does not sell out upfield never vacates the screen lane, so the playside EDGE is in position to
+    beat the pulling LG to the HB.
+  typical_against:
+  - screen-aware goal-line defenses
+  - any defense playing the screen
+- counter_id: lb-flow-to-screen
+  pre_snap_look: Linebackers aligned shallow and shaded toward the HB's release side, tilted that way rather than squared
+    in their gaps
+  qb_key: Check the LB depth — backers shallow and shaded to the HB release side
+  read_category: lb-depth
+  why: LBs pre-shaded to the screen side flow flat on the HB's slip-out and outnumber the LG/C/TE-L convoy before it can seal.
+  typical_against:
+  - screen-alert goal-line fronts
+  - any defense that pattern-matches RB releases
+- counter_id: backside-spy
+  pre_snap_look: A linebacker or safety walked into the underneath shaded to the HB with no clear coverage or run-fit responsibility
+  qb_key: Check the underneath — a defender shaded to the HB with no other job
+  read_category: lb-depth
+  why: A defender spying the HB mirrors him out of the backfield and arrives at the screen catch point before the convoy of
+    linemen can set up.
+  typical_against:
+  - cover-1 with a back spy
+  - RB-spy short-yardage game-plans
+common_uses:
+- After establishing Goal Line Power against an aggressive crashing front
+- 2nd/3rd-and-Goal when the defense sells out to stop the power
+- Slowing a hot-blitzing goal-line defense
+- Constraint changeup off the power look near the stripe
+philosophy: power-run
+pass_concept_ref: hb-screen
+pass_protection_ref: screen-protection
+philosophy_ref: power-run
+era: Universal — the running-back screen as a constraint on an aggressive front is a timeless concept; a goal-line slip-screen
+  version is rarer but legal.
+famous_examples:
+- NFL red-zone slip screens off heavy run-look personnel
+- HS short-yardage screens used to punish a crashing goal-line front
+tags:
+- screen
+- hb-screen
+- slip-screen
+- constraint
+- power-run
+- goal-line
+- red-zone
+- jumbo
+- high-school
+- college
+- nfl
+notes: 'Slip screen off Goal Line Power. The QB reverse-out, the HB off-tackle
+
+  Power track, and the LG pull are all IDENTICAL to Goal Line Power for
+
+  the first two path waypoints — the defense reads Power and crashes the
+
+  run. The interior OL invites the rush; the HB sells the off-tackle
+
+  track, then slips back toward the LOS and catches the screen behind the
+
+  LG, C, and TE-L convoy. A goal-line screen is unusual but legal — kept
+
+  as a quick HS-realistic slip screen, not a deep developing screen.
+
+  Member of the Goal Line Power disguise family (see data/play-families/).
+
+
+  Mirror to goal-line-power-screen-left by flipping all coordinates.
+
+  '
+verification_status: unverified
+source_notes:
+- The running-back screen off run-game action is a universal constraint concept; a goal-line slip-screen application is rarer
+  but legal HS football. Authored as a disguise twin of goal-line-power — the QB/HB/LG initial action deliberately mirrors
+  the base play's first two path waypoints exactly; the interior OL switch from down-block to invite-rusher/screen-release,
+  and TE-L from down-block to chip-and-release, are the structural changes that build the screen.
+- Mirror of goal-line-power-screen.yaml — path waypoints flipped on x; formation reference points to the mirror formation.
+  Routes auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed
+  look — coordinates and paths are the source of truth.

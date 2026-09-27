@@ -1,0 +1,58 @@
+{
+  "slug": "i-form__r1f1t2w2__h-tight__run__hb-stretch",
+  "info": {
+    "family": "I-FORM",
+    "formation": "H Tight",
+    "play_name": "HB Stretch",
+    "play_type": "run",
+    "canonical_team": "Seattle Seahawks",
+    "canonical_img": 46,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Seattle Seahawks"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "H Tight",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Tight/Twin-TE \u2014 2 TE"
+    }
+  },
+  "usage": {
+    "input_tokens": 566,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 66
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 93.06,
+  "response_text": "```json\n{\n  \"concept\": \"outside_zone\",\n  \"concepts\": [\"outside_zone\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB C_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "C_right",
+    "c_xy": [
+      1632,
+      613
+    ],
+    "arrow_los_crossing_xy": [
+      2040,
+      764
+    ],
+    "dx_from_c": 408,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "outside_zone",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bhb stretch\\b|\\bstretch\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

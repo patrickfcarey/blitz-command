@@ -1,0 +1,49 @@
+{
+  "slug": "weak-i__r1f0t1w3__h-pro__pass__quick-slants",
+  "info": {
+    "family": "WEAK-I",
+    "formation": "H Pro",
+    "play_name": "Quick Slants",
+    "play_type": "pass",
+    "canonical_team": "Seattle Seahawks",
+    "canonical_img": 58,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Seattle Seahawks"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "WEAK-I",
+      "formation": "H Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "low",
+      "notes": "unknown family 'WEAK-I' \u2014 generic 11-personnel guess"
+    }
+  },
+  "usage": {
+    "input_tokens": 499,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 120
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.15,
+  "response_text": "```json\n{\n  \"concept\": \"quick_slants\",\n  \"concepts\": [\"quick_slants\"],\n  \"routes\": {\n    \"WR_X\": \"slant\",\n    \"WR_Z\": \"slant\",\n    \"WR_SLOT_R\": \"slant\",\n    \"TE_L\": \"block\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "quick_slants",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bquick slants?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

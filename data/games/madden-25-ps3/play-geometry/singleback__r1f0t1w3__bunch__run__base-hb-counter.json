@@ -1,0 +1,63 @@
+{
+  "slug": "singleback__r1f0t1w3__bunch__run__base-hb-counter",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Bunch",
+    "play_name": "Base HB Counter",
+    "play_type": "run",
+    "canonical_team": "Cincinnati Bengals",
+    "canonical_img": 37,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Cincinnati Bengals",
+      "Miami Dolphins",
+      "New York Giants",
+      "New York Jets",
+      "San Diego Chargers",
+      "Tampa Bay Buccaneers"
+    ],
+    "owner_count": 6,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Bunch",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 565,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 66
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 40.0,
+  "response_text": "```json\n{\n  \"concept\": \"counter_run\",\n  \"concepts\": [\"counter_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB D_left\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_left",
+    "c_xy": [
+      1452,
+      613
+    ],
+    "arrow_los_crossing_xy": [
+      11,
+      613
+    ],
+    "dx_from_c": -1441,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "counter_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bcounter\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

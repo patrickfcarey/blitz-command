@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blitz-command.local/schemas/personnel-groupings.schema.json",
+  "title": "PersonnelGroupings",
+  "description": "The offensive personnel-grouping reference — the standard two-digit RB/TE codes (00 through 32). A formation's `personnel` field foreign-keys into a `code` here. Validates the single file data/concepts/personnel-groupings.yaml.",
+  "type": "object",
+  "required": ["groupings", "verification_status", "source_notes"],
+  "additionalProperties": false,
+  "properties": {
+    "groupings": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Every personnel grouping, one entry per two-digit code.",
+      "items": {
+        "type": "object",
+        "required": ["code", "name", "running_backs", "tight_ends", "wide_receivers", "description"],
+        "additionalProperties": false,
+        "properties": {
+          "code": {
+            "type": "string",
+            "pattern": "^[0-9]{2}$",
+            "description": "Two-digit code: first digit = running backs, second digit = tight ends. The remaining skill spots (of five, excluding the QB) are wide receivers."
+          },
+          "name": { "type": "string" },
+          "running_backs": { "type": "integer", "minimum": 0, "maximum": 5 },
+          "tight_ends": { "type": "integer", "minimum": 0, "maximum": 5 },
+          "wide_receivers": { "type": "integer", "minimum": 0, "maximum": 5 },
+          "description": {
+            "type": "string",
+            "description": "What the grouping is and what it signals to a defense."
+          },
+          "typical_use": {
+            "type": "string",
+            "description": "When and why an offense calls this grouping."
+          },
+          "example_formations": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Formation ids in data/formations/ that field this grouping."
+          },
+          "tags": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    },
+    "verification_status": {
+      "enum": ["verified", "unverified", "inferred"]
+    },
+    "source_notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

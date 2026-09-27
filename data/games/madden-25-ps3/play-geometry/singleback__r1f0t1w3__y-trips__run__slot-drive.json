@@ -1,0 +1,58 @@
+{
+  "slug": "singleback__r1f0t1w3__y-trips__run__slot-drive",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Y-Trips",
+    "play_name": "Slot Drive",
+    "play_type": "run",
+    "canonical_team": "Kansas City Chiefs",
+    "canonical_img": 23,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Kansas City Chiefs"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Y-Trips",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 525,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 235
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 61.03,
+  "response_text": "```json\n{\n  \"concept\": \"drive_concept\",\n  \"concepts\": [\"drive_concept\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"drive\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": \"HB D_left\",\n  \"primary_target\": null,\n  \"notes\": \"Play labeled as RUN but diagram shows PASS-play button glyphs (\u25a1 purple Square on left WR, \u2297 blue X on TE_R, \u2299 red Circle on right). Red arrow originates from slot WR running drive route left, but HB is the ball carrier per play_type=run. This appears to be an RPO or misdirection where the slot motion/read suggest pass but the HB executes the run to D_left.\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_left",
+    "c_xy": [
+      1553,
+      613
+    ],
+    "arrow_los_crossing_xy": [
+      40,
+      613
+    ],
+    "dx_from_c": -1513,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "drive_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdrive\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

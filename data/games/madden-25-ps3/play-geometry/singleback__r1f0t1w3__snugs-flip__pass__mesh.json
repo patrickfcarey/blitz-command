@@ -1,0 +1,51 @@
+{
+  "slug": "singleback__r1f0t1w3__snugs-flip__pass__mesh",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Snugs Flip",
+    "play_name": "Mesh",
+    "play_type": "pass",
+    "canonical_team": "Cincinnati Bengals",
+    "canonical_img": 29,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Cincinnati Bengals",
+      "New Orleans Saints",
+      "Tennessee Titans"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Snugs Flip",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "Singleback default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 497,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 204
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.68,
+  "response_text": "```json\n{\n  \"concept\": \"mesh\",\n  \"concepts\": [\"mesh\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"hitch\",\n    \"WR_SLOT_L\": \"drag\",\n    \"TE_R\": \"drag\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_L\",\n  \"notes\": \"Mesh concept with two crossing receivers (slot WR and TE_R running drags at ~5 yds meeting in middle). Right side (WR_Z and WR_X) runs corner/hitch combo. HB eligible checkdown via R1 button. Yellow route arrows indicate secondary concepts (likely option reads); red arrow indicates primary mesh crossing action.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "mesh",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bmesh\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

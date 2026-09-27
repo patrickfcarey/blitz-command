@@ -1,0 +1,49 @@
+{
+  "slug": "pistol__r1f0t1w3__strong-slot-bills__pass__pa-bills-dig",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Strong Slot Bills",
+    "play_name": "PA Bills Dig",
+    "play_type": "pass",
+    "canonical_team": "Buffalo Bills",
+    "canonical_img": 64,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Buffalo Bills"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Strong Slot Bills",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Pistol Strong/Weak"
+    }
+  },
+  "usage": {
+    "input_tokens": 503,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 236
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.95,
+  "response_text": "```json\n{\n  \"concept\": \"dig_route\",\n  \"concepts\": [\"dig_route\", \"pa_pass\"],\n  \"routes\": {\n    \"WR_X\": \"dig\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_R\": \"flat\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"PA play-action with dig concept. WR_X runs dig route (red arrow, primary target). WR_Z runs corner route (yellow arrow, top-right). TE_R runs seam route (yellow arrow, far right). WR_SLOT_R runs flat route (yellow arrow). HB in backfield available as checkdown. Formation is Pistol Strong Slot with 1 RB, 1 TE, 3 WR as expected.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "dig_route",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdig\\b|\\bdigs\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

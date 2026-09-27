@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t0w4__trio-4wr__pass__pa-read",
+  "info": {
+    "family": "GUN",
+    "formation": "Trio 4WR",
+    "play_name": "PA Read",
+    "play_type": "pass",
+    "canonical_team": "Philadelphia Eagles",
+    "canonical_img": 115,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Philadelphia Eagles"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Trio 4WR",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 0,
+      "WR": 4,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 172,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 181
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 11.59,
+  "response_text": "```json\n{\n  \"concept\": \"read_pass\",\n  \"concepts\": [\"read_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"flat\",\n    \"WR_SLOT_R\": \"dig\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"PA Read with 4 WR set (GUN Trio 4WR). Red arrow indicates primary target is WR_Z running corner route. Yellow arrows show curl/flat concepts on right side. HB to right flat as checkdown.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "read_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bread\\b(?!.*option)",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

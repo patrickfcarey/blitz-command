@@ -1,0 +1,49 @@
+{
+  "slug": "i-form__r1f1t1w2__h-pro__pass__pa-slide",
+  "info": {
+    "family": "I-FORM",
+    "formation": "H Pro",
+    "play_name": "PA Slide",
+    "play_type": "pass",
+    "canonical_team": "Seattle Seahawks",
+    "canonical_img": 30,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Seattle Seahawks"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "H Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "I-Form Pro default"
+    }
+  },
+  "usage": {
+    "input_tokens": 498,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 208
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.89,
+  "response_text": "```json\n{\n  \"concept\": \"slide_pass\",\n  \"concepts\": [\"slide_pass\"],\n  \"routes\": {\n    \"QB\": \"play_action\",\n    \"HB\": \"swing\",\n    \"FB\": \"block\",\n    \"TE_L\": \"flat\",\n    \"WR_X\": \"drag\",\n    \"WR_Z\": \"corner\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"PA Slide with play-action fake to HB; WR_X runs the primary drag route (red arrow), WR_Z runs corner clearout, TE_L releases to flat. Formation is I-Form H Pro (3 backfield, 1 TE left, 2 WR). FB and other OL provide blocking on play-action.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "slide_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bslide\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

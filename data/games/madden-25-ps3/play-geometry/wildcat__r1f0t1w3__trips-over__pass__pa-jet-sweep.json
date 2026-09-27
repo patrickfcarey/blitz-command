@@ -1,0 +1,49 @@
+{
+  "slug": "wildcat__r1f0t1w3__trips-over__pass__pa-jet-sweep",
+  "info": {
+    "family": "WILDCAT",
+    "formation": "Trips Over",
+    "play_name": "PA Jet Sweep",
+    "play_type": "pass",
+    "canonical_team": "Indianapolis Colts",
+    "canonical_img": 145,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Indianapolis Colts"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "WILDCAT",
+      "formation": "Trips Over",
+      "QB": 0,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 5,
+      "confidence": "high",
+      "notes": "Wildcat \u2014 RB at QB position, no QB; TE/WR counts approximate per variant"
+    }
+  },
+  "usage": {
+    "input_tokens": 524,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 219
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.5,
+  "response_text": "```json\n{\n  \"concept\": \"sweep\",\n  \"concepts\": [\"pa_sweep\", \"screen\"],\n  \"routes\": {\n    \"WILDCAT_RB\": \"sweep\",\n    \"TE_L\": \"block\",\n    \"WR_X\": \"slant\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"flat\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_L\",\n  \"notes\": \"PA Jet Sweep pass play. Red arrow (WILDCAT_RB) shows sweep motion but this is a pass play. Primary target (blue X) is the slot WR running flat route to the left. Yellow routes indicate receiver assignments: Triangle (TE_L) blocks down, circle button receiver runs corner, slot runs flat underneath. R1 button (purple square) indicates alternate receiver option.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "sweep",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bsweep\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

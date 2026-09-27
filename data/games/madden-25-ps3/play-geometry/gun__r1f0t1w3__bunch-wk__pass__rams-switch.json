@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__bunch-wk__pass__rams-switch",
+  "info": {
+    "family": "GUN",
+    "formation": "Bunch Wk",
+    "play_name": "Rams Switch",
+    "play_type": "pass",
+    "canonical_team": "St. Louis Rams",
+    "canonical_img": 120,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "St. Louis Rams"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Bunch Wk",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 169,
+    "cache_creation_input_tokens": 5610,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 172
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 10.46,
+  "response_text": "```json\n{\n  \"concept\": \"switch_concept\",\n  \"concepts\": [\"switch_concept\"],\n  \"routes\": {\n    \"WR_X\": \"switch\",\n    \"WR_Z\": \"switch\",\n    \"WR_SLOT_L\": \"dig\",\n    \"TE_R\": \"corner\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"Switch concept with corner route by TE on the right side (marked R1 / red Circle). Dig route by slot WR on left. Outer receivers execute switch/crossing concept. HB eligible in flat.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "switch_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\binside switch\\b|\\bswitch\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

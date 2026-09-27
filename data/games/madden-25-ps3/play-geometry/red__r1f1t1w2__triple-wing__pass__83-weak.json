@@ -1,0 +1,49 @@
+{
+  "slug": "red__r1f1t1w2__triple-wing__pass__83-weak",
+  "info": {
+    "family": "RED",
+    "formation": "Triple Wing",
+    "play_name": "83 Weak",
+    "play_type": "pass",
+    "canonical_team": "Vince Lombardi",
+    "canonical_img": 13,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Vince Lombardi"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "RED",
+      "formation": "Triple Wing",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "RED family \u2014 old-school 2-back default"
+    }
+  },
+  "usage": {
+    "input_tokens": 493,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 248
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.71,
+  "response_text": "```json\n{\n  \"concept\": \"numbered_concept\",\n  \"concepts\": [\"numbered_concept\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"drag\",\n    \"TE_L\": \"wheel\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Triple Wing formation with 1 RB, 1 FB (not visible in backfield \u2014 may be off-frame or very close to LOS), 1 TE on left, 2 WRs (X and Z on right side, Slot on left). R1 button-glyph (blue X) is the primary target at WR_X position running a streak. Red arrow originates from QB and targets R1/WR_X. Yellow route arrows show secondary receiver concepts. Cyan reference line marks LOS through C-square center.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "numbered_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "^\\d{2,3}\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

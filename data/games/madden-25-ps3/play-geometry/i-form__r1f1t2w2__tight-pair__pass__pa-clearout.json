@@ -1,0 +1,59 @@
+{
+  "slug": "i-form__r1f1t2w2__tight-pair__pass__pa-clearout",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Tight Pair",
+    "play_name": "PA Clearout",
+    "play_type": "pass",
+    "canonical_team": "Cleveland Browns",
+    "canonical_img": 54,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Cleveland Browns",
+      "Dallas Cowboys",
+      "Green Bay Packers",
+      "Houston Texans",
+      "Oakland Raiders",
+      "Pass Balanced",
+      "Philadelphia Eagles",
+      "Run Balanced",
+      "Run Heavy",
+      "St. Louis Rams",
+      "West Coast"
+    ],
+    "owner_count": 11,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Tight Pair",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Tight/Twin-TE \u2014 2 TE"
+    }
+  },
+  "usage": {
+    "input_tokens": 526,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 185
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.49,
+  "response_text": "```json\n{\n  \"concept\": \"clearout\",\n  \"concepts\": [\"clearout\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"TE_L\": \"streak\",\n    \"TE_R\": \"streak\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"PA Clearout with all eligible receivers running vertical clearout routes. Red arrow indicates primary target is WR_Z (right side). Four-receiver vertical stretch typical of clearout concept. HB available as safety checkdown. Backfield shows QB + FB + HB stacked in I-Form alignment.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "clearout",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bclearout\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

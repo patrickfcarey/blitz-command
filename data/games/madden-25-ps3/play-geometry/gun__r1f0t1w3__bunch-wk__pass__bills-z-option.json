@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__bunch-wk__pass__bills-z-option",
+  "info": {
+    "family": "GUN",
+    "formation": "Bunch Wk",
+    "play_name": "Bills Z Option",
+    "play_type": "pass",
+    "canonical_team": "Buffalo Bills",
+    "canonical_img": 93,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Buffalo Bills"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Bunch Wk",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 498,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 260
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 4.01,
+  "response_text": "```json\n{\n  \"concept\": \"receiver_concept\",\n  \"concepts\": [\"z_option\", \"bunch\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"option\",\n    \"WR_SLOT_L\": \"drag\",\n    \"TE_R\": \"flat\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Z Option play with bunch alignment on weak side. WR_Z (button glyph at right, marked R1) runs option route (yellow arrow with high-low read). WR_X streaks vertically (yellow arrow up-left). Slot WR runs drag across formation (yellow arrow). TE_R runs flat to the right (yellow arrow). HB provides checkdown option. Single QB in shotgun with no RB in backfield (r1f0t1w3 = 1 RB, 0 FB, 1 TE, 3 WR).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "receiver_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\b(wr|te|x|y|z|fl|se|slot|h) (corner|drag|hook|option|under|seam|follow|attack|inside|angle|shake|fork|scissors|cross|trail|streak|spot|fade|in|out|wheel|seams|hooks|corners|outs|ins|posts|streaks)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

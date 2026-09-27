@@ -1,0 +1,230 @@
+# Play concept templates — used by play-library-mcp's build_starter_play(concept=...).
+# Each template defines per-slot route assignments + a QB path template + read tree.
+# The scaffold tool maps abstract slots (te / right_outer / left_slot / etc.) onto
+# the actual player labels in a formation based on position field + x-coordinate.
+#
+# Slot keys (resolved at apply time):
+#   te         — the TE (or first TE if 2)
+#   te2        — second TE if formation has two
+#   right_outer — outermost WR with x > 8
+#   right_slot  — slot WR with 0 < x < 8
+#   left_outer  — outermost WR with x < -8
+#   left_slot   — slot WR with -8 < x < 0
+#   slot1, slot2 — flexbone-style slot-backs (HB position + on-line=false + abs(x) > 5)
+#   wing       — wing-T-style wing (TE position + abs(x) > 4 + on_line=false)
+#   se         — single split-end WR if only one (e.g. wishbone, flexbone)
+#   hb, fb, qb — backfield positions
+#
+# QB path templates (resolved at apply time based on formation QB y-coord):
+#   3-step             — quick-game shotgun drop
+#   5-step             — standard shotgun drop
+#   5-step-deep        — deep drop for 4-verts
+#   pa-5-step-shotgun  — PA fake then 5-step from shotgun
+#   pa-5-step-uc       — PA fake then 5-step from under-center
+#   rollout-strong     — bootleg right
+#   rollout-weak       — bootleg left
+#   pistol-mesh-point  — pistol read mesh
+#   uc-handoff-strong  — under-center reverse-out handoff to right
+#   uc-pa-bootleg-strong — under-center PA fake then bootleg right
+
+templates:
+
+  mesh:
+    name: "Mesh"
+    play_type: pass
+    philosophy: [air-raid, west-coast]
+    description: "Two crossers meet at the C — devastating vs man. Anti-man rubs at 5-6 yd mesh point."
+    routes_by_slot:
+      te:           { role: route, route_name: drag, depth_yd: 6, is_primary: true,
+                      notes: "Drag from strong-to-weak at 6 yd; meets the other crosser at the mesh point." }
+      right_slot:   { role: route, route_name: drag, depth_yd: 6,
+                      notes: "Drag from weak-to-strong at 6 yd; passes underneath at mesh point." }
+      left_slot:    { role: route, route_name: drag, depth_yd: 6,
+                      notes: "Drag from weak-to-strong at 6 yd; passes underneath at mesh point." }
+      right_outer:  { role: route, route_name: comeback, depth_yd: 14,
+                      notes: "Strong outside comeback — opens late if mesh is bracketed." }
+      left_outer:   { role: route, route_name: comeback, depth_yd: 14,
+                      notes: "Weak outside comeback — opens late if mesh is bracketed." }
+      hb:           { role: pass_block, blocking_scheme: man-protection,
+                      notes: "Pass-protect; release as checkdown if pressure clears." }
+    primary_read_slot: te
+    secondary_read_slot: [right_slot, left_slot]
+    checkdown_slot: hb
+    qb_path_template: 5-step
+    has_fake: false
+
+  smash-strong:
+    name: "Smash (Strong)"
+    play_type: pass
+    philosophy: [pro-style, coryell, west-coast]
+    description: "Hi-lo on the playside corner — hitch + corner. Cover-2 textbook beater."
+    routes_by_slot:
+      right_slot:   { role: route, route_name: corner, depth_yd: 12, is_primary: true,
+                      notes: "12-yd corner — the HI of the smash." }
+      right_outer:  { role: route, route_name: hitch, depth_yd: 6,
+                      notes: "6-yd hitch — the LO of the smash. Throw if corner squats." }
+      te:           { role: route, route_name: drag, depth_yd: 5,
+                      notes: "Backside drag — outlet if smash is bracketed." }
+      left_outer:   { role: route, route_name: comeback, depth_yd: 14,
+                      notes: "Backside comeback — late-window throw." }
+      hb:           { role: pass_block, blocking_scheme: man-protection,
+                      notes: "Pass-protect; release as checkdown if pressure clears." }
+    primary_read_slot: [right_slot, left_slot]
+    secondary_read_slot: [right_outer, left_outer]
+    checkdown_slot: hb
+    qb_path_template: 5-step
+    has_fake: false
+
+  snag-strong:
+    name: "Snag (Strong)"
+    play_type: pass
+    philosophy: [pro-style, west-coast]
+    description: "Triangle — corner / snag / flat. Three-on-two horizontal stretch on the playside underneath defenders."
+    routes_by_slot:
+      right_outer:  { role: route, route_name: corner, depth_yd: 12,
+                      notes: "12-yd corner — HI of the triangle." }
+      right_slot:   { role: route, route_name: snag, depth_yd: 5, is_primary: true,
+                      notes: "Settle in the soft spot — primary read." }
+      te:           { role: route, route_name: flat, depth_yd: 3,
+                      notes: "Quick flat — LO of the triangle, gimme outlet." }
+      left_outer:   { role: route, route_name: comeback, depth_yd: 14,
+                      notes: "Backside comeback — late if strong-side covered." }
+      hb:           { role: pass_block, blocking_scheme: man-protection,
+                      notes: "Pass-pro; release as checkdown if pressure clears." }
+    primary_read_slot: [right_slot, left_slot]
+    secondary_read_slot: [right_outer, left_outer]
+    checkdown_slot: te
+    qb_path_template: 3-step
+    has_fake: false
+
+  stick-strong:
+    name: "Stick (Strong)"
+    play_type: pass
+    philosophy: [pro-style, west-coast]
+    description: "Quick-game option route on the playside slot, with vertical clear-out."
+    routes_by_slot:
+      right_slot:   { role: route, route_name: stick, depth_yd: 6, is_primary: true,
+                      notes: "Option route: sit vs zone, break out vs man." }
+      right_outer:  { role: route, route_name: go, depth_yd: 25,
+                      notes: "Vertical clear — pulls deep coverage out of the stick window." }
+      te:           { role: route, route_name: flat, depth_yd: 3,
+                      notes: "Quick flat — LO option." }
+      left_outer:   { role: route, route_name: comeback, depth_yd: 14,
+                      notes: "Backside comeback — late-window option." }
+      hb:           { role: pass_block, blocking_scheme: man-protection,
+                      notes: "Pass-pro; release as checkdown if pressure clears." }
+    primary_read_slot: [right_slot, left_slot]
+    secondary_read_slot: te
+    checkdown_slot: hb
+    qb_path_template: 3-step
+    has_fake: false
+
+  four-verticals:
+    name: "Four Verticals"
+    play_type: pass
+    philosophy: [air-raid, coryell]
+    description: "Four-vertical stretch — anti single-high. Inner seams + outside go routes."
+    routes_by_slot:
+      right_outer:  { role: route, route_name: go, depth_yd: 25,
+                      notes: "Outside vertical — stay 2 yd inside the sideline." }
+      left_outer:   { role: route, route_name: go, depth_yd: 25,
+                      notes: "Outside vertical — stay 2 yd inside the sideline." }
+      right_slot:   { role: route, route_name: seam, depth_yd: 16, is_primary: true,
+                      notes: "Inner seam — kill shot vs single-high. Primary read." }
+      left_slot:    { role: route, route_name: seam, depth_yd: 16,
+                      notes: "Inner seam — splits the deep middle from the other side." }
+      te:           { role: route, route_name: seam, depth_yd: 16,
+                      notes: "TE seam — pushes vertical and works into the seam." }
+      hb:           { role: pass_block, blocking_scheme: man-protection,
+                      notes: "Stay in for max-protection." }
+    primary_read_slot: [right_slot, left_slot]
+    secondary_read_slot: te
+    checkdown_slot: hb
+    qb_path_template: 5-step-deep
+    has_fake: false
+
+  flood-strong:
+    name: "Flood (Strong)"
+    play_type: pass
+    philosophy: [pro-style, coryell]
+    description: "3-level stretch on the strong side — deep clear / sail / flat."
+    routes_by_slot:
+      right_outer:  { role: route, route_name: go, depth_yd: 25,
+                      notes: "Deep clear — pulls the corner/safety off the sail." }
+      right_slot:   { role: route, route_name: sail, depth_yd: 12, is_primary: true,
+                      notes: "Sail at 12 yd — the intermediate level. Primary read." }
+      te:           { role: route, route_name: flat, depth_yd: 3,
+                      notes: "Quick flat — the LO of the 3-level stretch." }
+      left_outer:   { role: route, route_name: drag, depth_yd: 5,
+                      notes: "Backside drag — outlet if flood is bracketed." }
+      hb:           { role: pass_block, blocking_scheme: man-protection,
+                      notes: "Pass-protect against weak-side blitz." }
+    primary_read_slot: [right_slot, left_slot]
+    secondary_read_slot: [right_outer, left_outer]
+    checkdown_slot: te
+    qb_path_template: 5-step
+    has_fake: false
+
+  pa-y-cross:
+    name: "PA Y-Cross"
+    play_type: play-action
+    philosophy: [west-coast, coryell, pro-style]
+    description: "PA fake then deep crossing route from the TE — canonical west-coast PA shot. Defense bites on run, TE wins underneath."
+    routes_by_slot:
+      te:           { role: route, route_name: deep-cross, depth_yd: 18, is_primary: true,
+                      notes: "TE delays one count to sell the run, then deep cross at 18 yd. Primary on PA." }
+      right_outer:  { role: route, route_name: post, depth_yd: 16,
+                      notes: "Post — pulls the FS away from the middle for the TE cross." }
+      left_outer:   { role: route, route_name: drag, depth_yd: 5,
+                      notes: "Backside drag — secondary, opens late." }
+      right_slot:   { role: route, route_name: flat, depth_yd: 4,
+                      notes: "Quick flat — outlet / hot-vs-blitz." }
+      left_slot:    { role: route, route_name: flat, depth_yd: 4,
+                      notes: "Quick flat — outlet / hot-vs-blitz." }
+      hb:           { role: fake,
+                      notes: "Sell the run fake hard — hold cup if no pressure." }
+    primary_read_slot: te
+    secondary_read_slot: [right_outer, left_outer]
+    tertiary_read_slot: [left_outer, right_outer]
+    checkdown_slot: [right_slot, left_slot, hb]
+    qb_path_template: pa-5-step-shotgun
+    has_fake: true
+
+  bootleg-flat:
+    name: "Bootleg (Flat-Drag-Comeback)"
+    play_type: play-action
+    philosophy: [pro-style, west-coast]
+    description: "PA fake then QB rollout — TE flat / weak drag / comeback over the top."
+    routes_by_slot:
+      te:           { role: route, route_name: flat, depth_yd: 4, is_primary: true,
+                      notes: "TE releases to the playside flat — primary on rollout." }
+      right_outer:  { role: route, route_name: comeback, depth_yd: 14,
+                      notes: "Strong-side comeback — secondary read on rollout." }
+      left_outer:   { role: route, route_name: drag, depth_yd: 5,
+                      notes: "Backside drag — late-window outlet." }
+      right_slot:   { role: route, route_name: post, depth_yd: 16,
+                      notes: "Post — clears the deep coverage off the comeback." }
+      left_slot:    { role: route, route_name: post, depth_yd: 16,
+                      notes: "Post — clears the deep coverage off the comeback." }
+      hb:           { role: fake,
+                      notes: "Sell the run fake hard — hold cup if no pressure." }
+    primary_read_slot: te
+    secondary_read_slot: [right_outer, left_outer]
+    checkdown_slot: [left_outer, right_outer, hb]
+    qb_path_template: rollout-strong
+    has_fake: true
+
+
+# QB path templates — keyed by template name. Resolved against the formation's QB y-coord.
+# Coordinates are relative to the QB's pre-snap position.
+qb_paths:
+  3-step:                 [[0, 0], [0, -1], [0, -2]]
+  5-step:                 [[0, 0], [0, -2], [0, -4]]
+  5-step-deep:            [[0, 0], [0, -2], [0, -5]]
+  pa-5-step-shotgun:      [[0, 0], [-1, -1], [0, -3], [0, -5]]
+  pa-5-step-uc:           [[0, 0], [-1, -1], [0, -3], [0, -5]]
+  rollout-strong:         [[0, 0], [-1, -1], [3, -1], [5, -2]]
+  rollout-weak:           [[0, 0], [1, -1], [-3, -1], [-5, -2]]
+  pistol-mesh-point:      [[0, 0], [-1, 1]]
+  uc-handoff-strong:      [[0, 0], [-1, -1], [-2, -1]]
+  uc-pa-bootleg-strong:   [[0, 0], [-1, -1], [3, -1], [5, -2]]

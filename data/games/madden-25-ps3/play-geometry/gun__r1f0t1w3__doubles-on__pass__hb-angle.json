@@ -1,0 +1,50 @@
+{
+  "slug": "gun__r1f0t1w3__doubles-on__pass__hb-angle",
+  "info": {
+    "family": "GUN",
+    "formation": "Doubles On",
+    "play_name": "HB Angle",
+    "play_type": "pass",
+    "canonical_team": "Oakland Raiders",
+    "canonical_img": 87,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Oakland Raiders",
+      "Seattle Seahawks"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Doubles On",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Doubles \u2014 1 TE 3 WR (slot variant)"
+    }
+  },
+  "usage": {
+    "input_tokens": 563,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 200
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.38,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"generic_hb_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB A_right\",\n  \"primary_target\": null,\n  \"notes\": \"Play labeled as PASS in UI but shows run characteristics (HB Angle with red ball-carrier arrow to A_right gap). Personnel r1f0t1w3 matches: 1 RB (HB), 0 FB, 1 TE (TE_R on LOS), 3 WR (WR_X far left, WR_SLOT_L, WR_Z far right). GUN shotgun formation with HB offset to strong side. Red arrow originates from HB, targets A_right gap between C and RG.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "^hb \\w+",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

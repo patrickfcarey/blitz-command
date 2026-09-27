@@ -1,0 +1,50 @@
+{
+  "slug": "strong__r1f1t2w2__tight__pass__pa-fb-fake",
+  "info": {
+    "family": "STRONG",
+    "formation": "Tight",
+    "play_name": "PA FB Fake",
+    "play_type": "pass",
+    "canonical_team": "Tom Flores",
+    "canonical_img": 90,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Tom Flores",
+      "Tom Landry"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "Tight",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 520,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 216
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.75,
+  "response_text": "```json\n{\n  \"concept\": \"play_fake\",\n  \"concepts\": [\"play_fake\", \"pa_pass\"],\n  \"routes\": {\n    \"FB\": \"fake_handoff\",\n    \"HB\": \"wheel\",\n    \"TE_L\": \"block\",\n    \"TE_R\": \"seam\",\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"comeback\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Play-action with fake to FB. TE_R releases vertical (seam), TE_L blocks initially. HB wheels out as checkdown. WR_Z (X button) appears to be primary with comeback route; WR_X corners to opposite side. Red arrow on R1 (Circle button) indicates quick hot/outlet receiver on flat right.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "play_fake",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bfakes?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

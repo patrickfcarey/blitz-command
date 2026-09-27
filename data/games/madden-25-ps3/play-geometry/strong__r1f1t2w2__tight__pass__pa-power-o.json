@@ -1,0 +1,50 @@
+{
+  "slug": "strong__r1f1t2w2__tight__pass__pa-power-o",
+  "info": {
+    "family": "STRONG",
+    "formation": "Tight",
+    "play_name": "PA Power O",
+    "play_type": "pass",
+    "canonical_team": "Run N Gun",
+    "canonical_img": 55,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Run N Gun",
+      "Tom Landry"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "Tight",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 494,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 220
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.04,
+  "response_text": "```json\n{\n  \"concept\": \"power_o\",\n  \"concepts\": [\"power_o\", \"pa_pass\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"TE_R\": \"release_vertical\",\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"dig\",\n    \"HB\": \"swing\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Play-action Power O on Strong Tight formation. Red arrow (primary target) is WR_X running corner route. TE_R releases vertical (cyan arrow). WR_Z runs dig route (yellow arrow). HB swings right (R1 button, yellow arrow). TE_L blocks. Backfield shows QB + FB + HB stacked in Strong alignment (FB offset to strong/right side).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "power_o",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpower ?o\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

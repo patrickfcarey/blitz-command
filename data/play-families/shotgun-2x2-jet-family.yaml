@@ -1,0 +1,48 @@
+family_id: shotgun-2x2-jet-family
+name: "Shotgun 2x2 Jet Family"
+description: |
+  A disguise family anchored by Jet Sweep. Every member runs the identical
+  jet motion — SLOT-W flying full-speed across the formation with the ball
+  snapped on the move — and the QB rides the identical jet mesh for the
+  first ~1.5 seconds. Only after that do they diverge: Jet Sweep hands it
+  to the flying receiver, Jet Counter pulls it and counters backside, Jet
+  Pop Pass throws the TE seam behind the run-flow linebackers, Jet Boot
+  keeps it and boots away from the jet flow. The defense cannot distinguish
+  them until it is too late to react.
+
+formation_id: shotgun-2x2
+philosophy: spread-option
+philosophy_ref: spread-option
+
+base_play_id: shotgun-2x2-jet-sweep
+companion_play_ids:
+  - shotgun-2x2-jet-counter
+  - shotgun-2x2-jet-pop-pass
+  - shotgun-2x2-jet-boot
+
+disguise_score: 0.92
+
+defensive_coverage_matrix:
+  defense-4-3-cover-3: shotgun-2x2-jet-pop-pass
+  defense-46-bear-cover-0: shotgun-2x2-jet-boot
+  defense-dime-cover-4: shotgun-2x2-jet-sweep
+  defense-nickel-cover-1: shotgun-2x2-jet-counter
+
+tags:
+  - jet-sweep
+  - jet-motion
+  - speed-option
+  - spread-option
+  - play-action
+  - counter
+  - shotgun
+  - 2x2
+  - disguise-family
+  - high-school
+  - college
+  - nfl
+
+verification_status: unverified
+source_notes:
+  - "Disguise family curated for the HS base playbook. The three companion plays (jet-counter, jet-pop-pass, jet-boot) were authored specifically as disguise twins of shotgun-2x2-jet-sweep — every member carries the byte-identical mandatory jet motion block (SLOT-W, jet, end_position x:6.0 y:-2.0, snap_on_motion true), and the QB's first two path waypoints mirror the Jet Sweep handoff mesh."
+  - "disguise_score 0.92 reflects the identical mandatory jet motion plus identical initial QB jet-mesh action; the < 1.0 accounts for receiver releases (route vs stalk-block) diverging slightly earlier than the backfield action."

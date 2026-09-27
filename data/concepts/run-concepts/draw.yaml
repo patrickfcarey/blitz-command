@@ -1,0 +1,36 @@
+concept_id: draw
+name: Draw
+category: misdirection
+description: |
+  Constraint play where OL pass-sets for 1-2 counts (selling pass protection) then
+  drives downfield. QB takes a play-action drop, giving the illusion of a pass,
+  before executing a late handoff to the HB. The DL rush upfield thinking pass,
+  then get pancaked by OL moving downfield. Punishes aggressive pass-rushing.
+aim_point: "Interior gaps (usually B or A-gap depending on blocking)"
+read_tree:
+  - phase: 1
+    defender: "pass-rushing DL"
+    decision: "DL commits upfield to pass rush; OL then drives them into the ground."
+  - phase: 2
+    defender: "LBs who read the handoff late"
+    decision: "OL should have sealed them or created running lanes by this point."
+blocking_scheme_ref: gap-blocking
+pulls_required: []
+lead_blocker: FB
+pairs_with:
+  - play-action
+  - boot
+  - naked
+tags:
+  - run
+  - misdirection
+  - constraint
+  - pass-disguise
+  - third-down
+  - any-level
+  - college
+  - nfl
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Throw Deep Publishing 'Draw Play' (https://throwdeeppublishing.com/blogs/football-glossary/): confirmed pass-set + late handoff structure."
+  - "Web validated 2026-04-30 — X&O Labs 'Constraint Concepts' (https://www.xandolabs.com/): draw listed as key constraint for pass-heavy offenses."

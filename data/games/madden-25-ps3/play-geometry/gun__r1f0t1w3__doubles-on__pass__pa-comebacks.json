@@ -1,0 +1,50 @@
+{
+  "slug": "gun__r1f0t1w3__doubles-on__pass__pa-comebacks",
+  "info": {
+    "family": "GUN",
+    "formation": "Doubles On",
+    "play_name": "PA Comebacks",
+    "play_type": "pass",
+    "canonical_team": "San Francisco 49ers",
+    "canonical_img": 111,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "San Francisco 49ers",
+      "Seattle Seahawks"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Doubles On",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Doubles \u2014 1 TE 3 WR (slot variant)"
+    }
+  },
+  "usage": {
+    "input_tokens": 496,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 188
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.34,
+  "response_text": "```json\n{\n  \"concept\": \"comebacks\",\n  \"concepts\": [\"comebacks\"],\n  \"routes\": {\n    \"WR_X\": \"comeback\",\n    \"WR_Z\": \"comeback\",\n    \"WR_SLOT_L\": \"flat\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"PA play with curl/comeback structure. WR_X and WR_Z running comebacks at 12-14 yds; slot WR running flat; TE_R releasing vertically on seam; HB available as checkdown. Red arrow on WR_X indicates primary read.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "comebacks",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcomebacks?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

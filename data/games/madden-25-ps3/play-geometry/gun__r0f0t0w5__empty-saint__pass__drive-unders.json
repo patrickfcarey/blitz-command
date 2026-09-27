@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r0f0t0w5__empty-saint__pass__drive-unders",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Saint",
+    "play_name": "Drive Unders",
+    "play_type": "pass",
+    "canonical_team": "New Orleans Saints",
+    "canonical_img": 130,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "New Orleans Saints"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Saint",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 167,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 219
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 5.08,
+  "response_text": "```json\n{\n  \"concept\": \"drive_concept\",\n  \"concepts\": [\"drive_concept\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"in\",\n    \"WR_SLOT_R\": \"in\",\n    \"QB\": \"scramble\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_L\",\n  \"notes\": \"GUN Empty (5-wide, no RB). Red arrow indicates primary read on slot-left receiver running in-route. QB has scramble/escape option indicated by red arrow extension. Yellow route arrows show all four WRs stretching vertically and then breaking underneath on in/dig routes. Slot receivers at ~8-10 yard depth, outer WRs at ~12+ yard depth before potential break.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "drive_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdrive\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

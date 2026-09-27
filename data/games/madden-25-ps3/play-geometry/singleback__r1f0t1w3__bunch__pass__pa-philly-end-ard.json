@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__bunch__pass__pa-philly-end-ard",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Bunch",
+    "play_name": "PA Philly End Ard",
+    "play_type": "pass",
+    "canonical_team": "Philadelphia Eagles",
+    "canonical_img": 29,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Philadelphia Eagles"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Bunch",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 532,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 183
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.0,
+  "response_text": "```json\n{\n  \"concept\": \"city_concept\",\n  \"concepts\": [\"city_concept\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"drag\",\n    \"WR_SLOT_R\": \"wheel\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Play-action pass with aggressive receiver distribution. WR_X (red arrow) is primary target running vertical. WR_Z (yellow arrow) corners over the top. Slot receivers run crossing/wheel patterns. HB likely checkdown after pass pro.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "city_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bseattle\\b|\\bphilly\\b|\\bgreen bay\\b|\\bdallas\\b|\\bbal\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

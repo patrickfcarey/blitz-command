@@ -1,0 +1,61 @@
+{
+  "slug": "singleback__r1f0t2w2__ace-twins__pass__hb-slip-screen",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Ace Twins",
+    "play_name": "HB Slip Screen",
+    "play_type": "pass",
+    "canonical_team": "Arizona Cardinals",
+    "canonical_img": 22,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Arizona Cardinals",
+      "Dick Vermeil",
+      "Green Bay Packers",
+      "Houston Texans",
+      "Indianapolis Colts",
+      "Jacksonville Jaguars",
+      "Mike Ditka",
+      "Minnesota Vikings",
+      "Pass Balanced",
+      "Run Balanced",
+      "Run Heavy",
+      "Run N Gun",
+      "Tom Flores"
+    ],
+    "owner_count": 13,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Ace Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Ace family \u2014 2 TE 2 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 504,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 177
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.4,
+  "response_text": "```json\n{\n  \"concept\": \"hb_screen\",\n  \"concepts\": [\"hb_screen\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"TE_L\": \"streak\",\n    \"TE_R\": \"block\",\n    \"HB\": \"screen\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"HB\",\n  \"notes\": \"HB slip screen with vertical clearouts on left side (X, Z, TE_L all streaking). TE_R blocks. R1 button glyph marks HB as primary screen target. Red arrow shows HB release path to the flat.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "hb_screen",
+    "concept_family": "screen",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bhb (slip )?screen\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

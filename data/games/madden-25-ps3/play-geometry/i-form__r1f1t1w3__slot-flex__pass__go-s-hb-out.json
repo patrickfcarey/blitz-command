@@ -1,0 +1,50 @@
+{
+  "slug": "i-form__r1f1t1w3__slot-flex__pass__go-s-hb-out",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Slot Flex",
+    "play_name": "Go's HB Out",
+    "play_type": "pass",
+    "canonical_team": "Dallas Cowboys",
+    "canonical_img": 55,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Dallas Cowboys",
+      "St. Louis Rams"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Slot Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Slot \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 573,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 272
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 4.06,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"generic_hb_run\"],\n  \"routes\": {},\n  \"ball_carrier\": null,\n  \"primary_target\": \"HB\",\n  \"notes\": \"Play labeled as PASS but filename indicates run concept (generic_hb_run). Visual shows button glyphs (purple \u25a1, blue \u2297, red \u2299) and route arrows typical of pass play. HB receives red arrow (primary target). Treating as pass based on visual (button glyphs, route structure) despite filename hint. Formation is I-Form Slot Flex with expected 1 RB, 1 FB, 1 TE, 3 WR. Visible: QB, FB, HB in backfield (3-stack); C and 4 OL on LOS; 1 TE attached right (TE_R); 3 WRs (WR_X far left with purple \u25a1, WR_SLOT_L with blue \u2297, WR_Z far right with red \u2299). Yellow route arrows suggest progression reads.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bhb \\w+",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

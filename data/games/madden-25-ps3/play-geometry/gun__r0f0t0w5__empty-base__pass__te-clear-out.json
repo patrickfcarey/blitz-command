@@ -1,0 +1,50 @@
+{
+  "slug": "gun__r0f0t0w5__empty-base__pass__te-clear-out",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Base",
+    "play_name": "TE Clear Out",
+    "play_type": "pass",
+    "canonical_team": "Atlanta Falcons",
+    "canonical_img": 138,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Atlanta Falcons",
+      "John Madden"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Base",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 494,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 200
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.2,
+  "response_text": "```json\n{\n  \"concept\": \"outs\",\n  \"concepts\": [\"outs\"],\n  \"routes\": {\n    \"WR_X\": \"out\",\n    \"WR_Z\": \"out\",\n    \"WR_SLOT_L\": \"out\",\n    \"WR_SLOT_R\": \"out\",\n    \"WR_FLANKER\": \"out\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"5-wide empty formation (GUN Empty Base, r0f0t0w5). All 5 WRs run out routes at various depths. QB in shotgun. Primary target (red arrow) is WR_X (left side). TE Clear Out concept \u2014 all receivers break outside to stretch the defense horizontally.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "outs",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bouts?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

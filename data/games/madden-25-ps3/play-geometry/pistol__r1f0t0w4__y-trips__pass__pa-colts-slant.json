@@ -1,0 +1,49 @@
+{
+  "slug": "pistol__r1f0t0w4__y-trips__pass__pa-colts-slant",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Y-Trips",
+    "play_name": "PA Colts Slant",
+    "play_type": "pass",
+    "canonical_team": "Indianapolis Colts",
+    "canonical_img": 93,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Indianapolis Colts"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Y-Trips",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 0,
+      "WR": 4,
+      "total": 6,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 530,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 194
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.84,
+  "response_text": "```json\n{\n  \"concept\": \"slants\",\n  \"concepts\": [\"slants\"],\n  \"routes\": {\n    \"WR_X\": \"slant\",\n    \"WR_Z\": \"slant\",\n    \"WR_SLOT_L\": \"slant\",\n    \"WR_SLOT_R\": \"slant\",\n    \"TE_L\": \"block\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"PA play with all four WRs running slants. TE_L blocking at LOS. Red arrow from QB to WR_X (leftmost receiver) indicates primary target. Yellow motion arrow on right side suggests pre-snap shift or motion. Play_action fake evident from backfield setup.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "slants",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bslants?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

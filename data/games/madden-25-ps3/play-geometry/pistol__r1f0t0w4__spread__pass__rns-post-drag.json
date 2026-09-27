@@ -1,0 +1,49 @@
+{
+  "slug": "pistol__r1f0t0w4__spread__pass__rns-post-drag",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Spread",
+    "play_name": "RNS Post Drag",
+    "play_type": "pass",
+    "canonical_team": "Run and Shoot",
+    "canonical_img": 14,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Run and Shoot"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Spread",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 0,
+      "WR": 4,
+      "total": 6,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 523,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 256
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.86,
+  "response_text": "```json\n{\n  \"concept\": \"post_concept\",\n  \"concepts\": [\"post_concept\"],\n  \"routes\": {\n    \"WR_X\": \"post\",\n    \"WR_Z\": \"drag\",\n    \"WR_SLOT_L\": \"corner\",\n    \"WR_SLOT_R\": \"vertical\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"PISTOL Spread formation (0 TE, 4 WR). WR_X (purple \u25a1 Square left) runs the post with red primary arrow. WR_Z (red \u2299 Circle right) runs drag route. WR_SLOT_L (green \u25b3 Triangle) runs corner. WR_SLOT_R (blue \u2297 X) runs vertical. HB behind QB in pistol depth. All 4 WRs accounted for; no TE present as expected (r1f0t0w4).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "post_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpost(?![- ]corner)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

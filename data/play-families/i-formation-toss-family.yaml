@@ -1,0 +1,45 @@
+family_id: i-formation-toss-family
+name: "I-Formation Toss Family"
+description: |
+  A disguise family anchored by Lead Toss. Every member shows the defense
+  the identical pre-snap look and the identical first ~1.5 seconds — no
+  motion, QB reverse-out, HB perimeter track off the pitch, FB lead to the
+  corner, RG pull, OL run-block show. Only after the pitch fake do they
+  diverge: Lead Toss pitches it and runs the perimeter, Toss Pass settles
+  and throws from the pocket, Toss Boot keeps it and boots backside away
+  from the toss flow. The defense cannot distinguish them until it is too
+  late to react.
+
+formation_id: i-formation
+philosophy: power-run
+philosophy_ref: power-run
+
+base_play_id: i-formation-lead-toss
+companion_play_ids:
+  - i-formation-toss-pass
+  - i-formation-toss-boot
+  - i-formation-toss-counter
+  - i-formation-toss-screen
+
+disguise_score: 0.9
+
+defensive_coverage_matrix:
+  defense-4-3-cover-3: i-formation-toss-pass
+  defense-46-bear-cover-0: i-formation-toss-boot
+  defense-dime-cover-4: i-formation-lead-toss
+  defense-nickel-cover-1: i-formation-lead-toss
+
+tags:
+  - power-run
+  - toss
+  - play-action
+  - i-formation
+  - disguise-family
+  - high-school
+  - college
+  - nfl
+
+verification_status: unverified
+source_notes:
+  - "Disguise family curated for the HS base playbook. The two companion plays (toss-pass, toss-boot) were authored specifically as disguise twins of i-formation-lead-toss — their QB/HB/FB initial path waypoints (first two entries) and empty motions block are byte-identical to the base play through the pitch fake."
+  - "disguise_score 0.9 reflects an identical empty-motion pre-snap look plus identical initial backfield action; the < 1.0 accounts for receiver releases (route vs stalk/crack-block) diverging slightly earlier than the backfield action."

@@ -1,0 +1,36 @@
+concept_id: crack-toss
+name: Crack Toss
+category: man-blocking-scheme
+description: |
+  WR or slot receiver "cracks" back inside (blocks a playside safety or OLB)
+  while the QB pitches the HB to the perimeter. Pulling guards and FB lead around
+  the edge. Combination of toss mechanics with a crack-back block to seal the
+  defense. Used in spread and Air Raid offenses for perimeter attacks.
+aim_point: "Perimeter with crack-back seal"
+read_tree:
+  - phase: 1
+    defender: "playside EDGE"
+    decision: "Pulling guards and FB lead; HB reads if EDGE is sealed or if he bounces."
+  - phase: 2
+    defender: "secondary defender cracked by WR"
+    decision: "HB follows lead blockers and attacks the sealed edge."
+blocking_scheme_ref: gap-blocking
+pulls_required:
+  - LG
+  - RG
+lead_blocker: FB
+pairs_with:
+  - sweep
+  - lead-toss
+  - option
+tags:
+  - run
+  - perimeter
+  - pitch
+  - air-raid
+  - spread
+  - college
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Throw Deep Publishing 'Crack-Toss / Pitch Concepts' (https://throwdeeppublishing.com/blogs/football-glossary/): confirmed WR crack + QB pitch + lead block structure."
+  - "Web validated 2026-04-30 — X&O Labs 'Spread Perimeter Runs' (https://www.xandolabs.com/): crack-toss common in spread and Air Raid offenses."

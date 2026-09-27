@@ -1,0 +1,50 @@
+{
+  "slug": "gun__r1f0t1w3__bunch__pass__pa-post",
+  "info": {
+    "family": "GUN",
+    "formation": "Bunch",
+    "play_name": "PA Post",
+    "play_type": "pass",
+    "canonical_team": "Chicago Bears",
+    "canonical_img": 111,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Chicago Bears",
+      "New England Patriots"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Bunch",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 491,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 183
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.06,
+  "response_text": "```json\n{\n  \"concept\": \"post_concept\",\n  \"concepts\": [\"post_concept\"],\n  \"routes\": {\n    \"WR_X\": \"post\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"drag\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Play-action post concept. Red arrow on WR_X (X button glyph) runs the primary post route. WR_Z (triangle) corners over the top. WR_SLOT_L (purple square) runs a drag underneath. HB checks out of backfield. Yellow routes indicate secondary options.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "post_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpost(?![- ]corner)\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

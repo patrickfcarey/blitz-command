@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__snugs__pass__saints-hb-wheel",
+  "info": {
+    "family": "GUN",
+    "formation": "Snugs",
+    "play_name": "Saints HB Wheel",
+    "play_type": "pass",
+    "canonical_team": "New Orleans Saints",
+    "canonical_img": 92,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "New Orleans Saints"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Snugs",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 240,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 217
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 8.17,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"generic_hb_run\"],\n  \"routes\": {\n    \"HB\": \"wheel\"\n  },\n  \"ball_carrier\": \"HB\",\n  \"primary_target\": null,\n  \"notes\": \"Play labeled 'PASS' in UI banner but py_concept indicates run family. HB wheels out to right flat with red arrow. WR_X (\u25a1 purple) and WR_Z (\u2297 blue) show yellow arrows (shallow crosses/slants \u2014 blocking/decoy routes). R1 shoulder button glyph visible on backfield player (HB checkdown option indicator on what is fundamentally a run play or run-pass option). Formation GUN Snugs confirmed: 5 OL, 1 TE, 3 WR, 1 RB in shotgun.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "^hb \\w+",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

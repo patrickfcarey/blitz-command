@@ -1,0 +1,32 @@
+concept_id: trap
+name: Trap
+category: gap-scheme
+description: |
+  Gap-scheme deception play where the playside guard does NOT block the playside
+  DT (lets him rush upfield untouched), while the backside guard pulls and
+  "traps" (ambushes) that DT from the side. Creates a quick hitting lane and
+  punishes aggressive DL. Used to attack A-gap quickly.
+aim_point: "Playside A-gap (quick hitting)"
+read_tree:
+  - phase: 1
+    defender: "playside DT (who is unblocked initially)"
+    decision: "BSG pulls and traps him. HB hits the now-open A-gap fast."
+blocking_scheme_ref: gap-blocking
+pulls_required:
+  - LG
+pairs_with:
+  - power
+  - counter-trey
+  - lead-toss
+tags:
+  - run
+  - gap-scheme
+  - misdirection
+  - quick-hitting
+  - power-run
+  - college
+  - nfl
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Throw Deep Publishing 'Trap Block' (https://throwdeeppublishing.com/blogs/football-glossary/): confirmed unblocked DT is trapped by pull, quick A-gap hit."
+  - "Web validated 2026-04-30 — X&O Labs 'Gap Scheme Variations' (https://www.xandolabs.com/): trap described as pull-block variant of gap scheme."

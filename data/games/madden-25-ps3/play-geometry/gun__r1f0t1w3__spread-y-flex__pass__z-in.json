@@ -1,0 +1,50 @@
+{
+  "slug": "gun__r1f0t1w3__spread-y-flex__pass__z-in",
+  "info": {
+    "family": "GUN",
+    "formation": "Spread Y-Flex",
+    "play_name": "Z In",
+    "play_type": "pass",
+    "canonical_team": "Detroit Lions",
+    "canonical_img": 127,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Detroit Lions",
+      "Oakland Raiders"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Spread Y-Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 495,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 123
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.2,
+  "response_text": "```json\n{\n  \"concept\": \"ins\",\n  \"concepts\": [\"ins\"],\n  \"routes\": {\n    \"WR_X\": \"in\",\n    \"WR_Z\": \"in\",\n    \"WR_SLOT_L\": \"streak\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "ins",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bins?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

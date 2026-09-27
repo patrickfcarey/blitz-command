@@ -1,0 +1,58 @@
+{
+  "slug": "singleback__r1f0t2w2__bunch-ace__run__hb-slash-fk-end-ard",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Bunch Ace",
+    "play_name": "HB Slash Fk End Ard",
+    "play_type": "run",
+    "canonical_team": "Carolina Panthers",
+    "canonical_img": 15,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Carolina Panthers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Bunch Ace",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Ace family \u2014 2 TE 2 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 582,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 66
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 53.5,
+  "response_text": "```json\n{\n  \"concept\": \"slash_run\",\n  \"concepts\": [\"slash_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB B_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "B_right",
+    "c_xy": [
+      1476,
+      613
+    ],
+    "arrow_los_crossing_xy": [
+      1691,
+      613
+    ],
+    "dx_from_c": 215,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "slash_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bslash\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

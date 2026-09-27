@@ -1,0 +1,58 @@
+{
+  "slug": "pistol__r1f0t1w3__ace__run__hb-dive",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Ace",
+    "play_name": "HB Dive",
+    "play_type": "run",
+    "canonical_team": "Detroit Lions",
+    "canonical_img": 71,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Detroit Lions"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Ace",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "Pistol default \u2014 variant unclear"
+    }
+  },
+  "usage": {
+    "input_tokens": 584,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 64
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 56.7,
+  "response_text": "```json\n{\n  \"concept\": \"inside_run\",\n  \"concepts\": [\"inside_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB straight\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "straight",
+    "c_xy": [
+      1553,
+      611
+    ],
+    "arrow_los_crossing_xy": [
+      1602,
+      611
+    ],
+    "dx_from_c": 49,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "inside_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bhb dive\\b|\\bdive\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

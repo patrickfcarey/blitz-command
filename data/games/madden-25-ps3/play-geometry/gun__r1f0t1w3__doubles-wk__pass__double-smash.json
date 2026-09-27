@@ -1,0 +1,51 @@
+{
+  "slug": "gun__r1f0t1w3__doubles-wk__pass__double-smash",
+  "info": {
+    "family": "GUN",
+    "formation": "Doubles Wk",
+    "play_name": "Double Smash",
+    "play_type": "pass",
+    "canonical_team": "Arizona Cardinals",
+    "canonical_img": 86,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Arizona Cardinals",
+      "Miami Dolphins",
+      "San Diego Chargers"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Doubles Wk",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Doubles \u2014 1 TE 3 WR (slot variant)"
+    }
+  },
+  "usage": {
+    "input_tokens": 497,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 189
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.88,
+  "response_text": "```json\n{\n  \"concept\": \"smash\",\n  \"concepts\": [\"smash\", \"smash\"],\n  \"routes\": {\n    \"WR_X\": \"hitch\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"hitch\",\n    \"WR_SLOT_R\": \"corner\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Double Smash \u2014 smash concept on both sides. Right side (X-Z): X runs hitch, Z corner over top (red arrow). Left side (slot-slot): inner slot runs hitch, outer slot runs corner. HB release for checkdown.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "smash",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bsmash\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "slug": "i-form__r1f1t1w2__pro__pass__cross-in",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Pro",
+    "play_name": "Cross In",
+    "play_type": "pass",
+    "canonical_team": "Balanced",
+    "canonical_img": 40,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Balanced",
+      "Baltimore Ravens",
+      "Chicago Bears",
+      "Run Balanced",
+      "Run N Gun",
+      "Tennessee Titans"
+    ],
+    "owner_count": 6,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "I-Form Pro default"
+    }
+  },
+  "usage": {
+    "input_tokens": 517,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 115
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 1.61,
+  "response_text": "```json\n{\n  \"concept\": \"cross_concept\",\n  \"concepts\": [\"cross_concept\"],\n  \"routes\": {\n    \"WR_X\": \"cross_in\",\n    \"WR_Z\": \"corner\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "cross_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcross(es)?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

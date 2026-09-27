@@ -1,0 +1,60 @@
+{
+  "slug": "gun__r0f0t0w5__empty-trey__pass__te-slot-cross",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Trey",
+    "play_name": "TE Slot Cross",
+    "play_type": "pass",
+    "canonical_team": "Arizona Cardinals",
+    "canonical_img": 131,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Arizona Cardinals",
+      "Balanced",
+      "Cleveland Browns",
+      "Denver Broncos",
+      "Detroit Lions",
+      "Indianapolis Colts",
+      "Minnesota Vikings",
+      "Pass Balanced",
+      "San Diego Chargers",
+      "Seattle Seahawks",
+      "St. Louis Rams",
+      "Tampa Bay Buccaneers"
+    ],
+    "owner_count": 12,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Trey",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 499,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 218
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.99,
+  "response_text": "```json\n{\n  \"concept\": \"slot_concept\",\n  \"concepts\": [\"te_slot_cross\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"drag\",\n    \"WR_SLOT_R\": \"streak\",\n    \"TE_R\": \"drag\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"GUN Empty Trey (5 WR set) with TE-eligible (R1 button glyph) running drag route as primary target. Drag route crosses from TE position. Red arrow indicates TE_R as primary read. Slot WR on left (Triangle button) runs drag underneath. Standard empty personnel with horizontal stretch concept.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "slot_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bslot (drag|cross|streak|corner|out|in|wheel)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

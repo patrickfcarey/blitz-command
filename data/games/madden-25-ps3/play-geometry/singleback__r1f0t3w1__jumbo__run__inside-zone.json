@@ -1,0 +1,63 @@
+{
+  "slug": "singleback__r1f0t3w1__jumbo__run__inside-zone",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Jumbo",
+    "play_name": "Inside Zone",
+    "play_type": "run",
+    "canonical_team": "Arizona Cardinals",
+    "canonical_img": 2,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Arizona Cardinals",
+      "Balanced",
+      "Indianapolis Colts",
+      "New York Giants",
+      "Pittsburgh Steelers",
+      "Tampa Bay Buccaneers"
+    ],
+    "owner_count": 6,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Jumbo",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 3,
+      "WR": 1,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Jumbo \u2014 typically 3 TE 1 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 587,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 66
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 46.45,
+  "response_text": "```json\n{\n  \"concept\": \"inside_zone\",\n  \"concepts\": [\"inside_zone\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB D_left\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_left",
+    "c_xy": [
+      1553,
+      613
+    ],
+    "arrow_los_crossing_xy": [
+      40,
+      613
+    ],
+    "dx_from_c": -1513,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "inside_zone",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\binside zone\\b|\\bhb (zone|izn|iz)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

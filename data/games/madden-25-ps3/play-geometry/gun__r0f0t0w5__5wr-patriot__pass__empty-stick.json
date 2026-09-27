@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r0f0t0w5__5wr-patriot__pass__empty-stick",
+  "info": {
+    "family": "GUN",
+    "formation": "5WR Patriot",
+    "play_name": "Empty Stick",
+    "play_type": "pass",
+    "canonical_team": "New England Patriots",
+    "canonical_img": 136,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "New England Patriots"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "5WR Patriot",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "5-WR set, no RB"
+    }
+  },
+  "usage": {
+    "input_tokens": 498,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 283
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.65,
+  "response_text": "```json\n{\n  \"concept\": \"stick\",\n  \"concepts\": [\"stick\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"stick\",\n    \"WR_SLOT_R\": \"flat\",\n    \"WR_FLANKER\": \"comeback\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_R\",\n  \"notes\": \"5-WR Empty set (r0f0t0w5). QB shotgun solo. All 5 WRs receive button assignments (\u25a1 Triangle on left, Triangle, X, R1, Circle on right). Stick concept: WR_SLOT_L runs stick at ~5 yds, WR_SLOT_R (R1 button) runs flat. Primary target (red arrow to R1) is the flat receiver on the right. Left side: WR_X streaks, WR_Z corners (smash-like combo). WR_FLANKER on far right runs comeback. This is a true 5-wide Empty Stick with no backfield threats.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "stick",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bstick\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "slug": "singleback__r1f0t1w3__dot-twins__run__hb-misdirection",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Dot Twins",
+    "play_name": "HB Misdirection",
+    "play_type": "run",
+    "canonical_team": "Joe Gibbs",
+    "canonical_img": 16,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Joe Gibbs"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Dot Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "Singleback default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 246,
+    "cache_creation_input_tokens": 352,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 70
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 102.72,
+  "response_text": "```json\n{\n  \"concept\": \"misdirection_run\",\n  \"concepts\": [\"misdirection_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB D_left\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_left",
+    "c_xy": [
+      1553,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      112,
+      615
+    ],
+    "dx_from_c": -1441,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "misdirection_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bmisdirection\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

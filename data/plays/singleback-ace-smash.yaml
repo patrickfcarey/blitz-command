@@ -1,0 +1,150 @@
+play_id: singleback-ace-smash
+name: Smash (Strong)
+aliases:
+  - Smash Concept
+  - Hi-Lo
+
+formation: singleback-ace
+play_type: pass
+ball_carrier: QB
+primary_read: TE-R
+secondary_read: Z
+checkdown: HB
+
+motions: []
+
+assignments:
+  - player: LT
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: LG
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: C
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: RG
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: RT
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: Z
+    role: route
+    route_name: hitch
+    depth_yd: 6
+    notes: "The LO of the hi-lo — hitch at 6 yards on the strong-side outside WR."
+  - player: TE-R
+    role: route
+    route_name: corner
+    depth_yd: 12
+    is_primary: true
+    notes: "The HI of the hi-lo — 12-yard corner route over the Z hitch. Primary read."
+  - player: X
+    role: route
+    route_name: comeback
+    depth_yd: 14
+    notes: "Backside comeback — opens if the defense rotates strong."
+  - player: TE-L
+    role: route
+    route_name: drag
+    depth_yd: 5
+    notes: "Backside drag — the crossing outlet under the coverage."
+  - player: HB
+    role: pass_block
+    blocking_scheme: man-protection
+    notes: "Pass-protect; release as the checkdown only if pressure clears."
+  - player: QB
+    role: ball_carrier
+    path: [[0, 0], [0, -5], [-1, -7]]
+    notes: |
+      5-step drop from under center. Read the strong-side corner:
+      - if the corner squats on the hitch → throw the corner (HI)
+      - if the corner carries the corner route → throw the hitch (LO)
+
+strengths:
+  - Classic high-low read on the playside corner — beats cover-2 by design
+  - Two-receiver concept = a simple QB read tree
+  - In-line TE running the corner gives a tighter, quicker break than a WR
+  - Big-play potential on the corner route
+  - Pairs naturally with a PA fake to widen the corner
+
+weaknesses:
+  - Requires an accurate corner-route throw (sideline, depth, and air)
+  - Vulnerable to cover-3 (corner carries the corner, flat defender takes the hitch)
+  - Limited to one side of the field
+  - The corner route is slow-developing — needs ~3.5 seconds
+  - A bracket on the TE crushes it
+
+best_vs_defense:
+  - cover-2 (the textbook beater)
+  - cover-2 invert
+  - cover-1 with a soft strong-side corner
+  - any defense with a flat-zone corner
+
+worst_vs_defense:
+  - cover-3 with a hard flat defender
+  - cover-2 robber
+  - bracket coverage on the TE
+  - quarters with a poach defender
+
+defensive_counters:
+  - counter_id: cover-2-invert-safety
+    pre_snap_look: "Two-deep shell with the playside safety cheated down toward the hash and the playside CB at depth with inside eyes on the TE"
+    qb_key: "Check the safety shell — playside safety cheated down off the two-high look"
+    read_category: safety-shell
+    why: "Smash attacks a flat-zone corner; a cheated-down safety inverts to jump the corner route while the CB stays deep, bracketing both routes."
+    typical_against: ["cover-2 invert", "cover-2 robber"]
+  - counter_id: cover-3-squat-hitch
+    pre_snap_look: "Single-high shell with the playside CB at 7+ yards in outside leverage on the Z and an apex defender shaded outside in the flat"
+    qb_key: "Check the playside CB — 7+ yards and outside leverage, single-high behind"
+    read_category: cb-leverage
+    why: "The hi-lo read depends on the corner choosing; a deep, outside-leverage CB with a flat defender outside means the CB carries the corner and the apex takes the hitch — no one is wrong."
+    typical_against: ["cover-3", "cover-3 buzz"]
+  - counter_id: bracket-the-corner
+    pre_snap_look: "Two-high shell with the playside safety aligned tight to the hash, shaded down inside-out over the TE"
+    qb_key: "Check the safety shell — playside safety stacked inside over the TE"
+    read_category: safety-shell
+    why: "The corner route is Smash's big play; a safety pre-set to bracket the TE inside-out with the corner eliminates the deep shot and forces a contested throw to the hitch."
+    typical_against: ["cover-4 quarters with poach", "cover-1 robber"]
+
+common_uses:
+  - 1st-and-10 vs a cover-2 tendency
+  - 2nd-and-medium
+  - Red-zone (the corner becomes a back-of-end-zone fade)
+  - PA shot pairing
+
+philosophy: pro-style
+pass_concept_ref: smash
+philosophy_ref: pro-style
+
+era: "1980s onward — a Don Coryell / Bill Walsh staple, modernized continuously."
+
+famous_examples:
+  - "Don Coryell Chargers"
+  - "Bill Walsh 49ers"
+  - "Modern NFL red-zone playbooks"
+
+tags:
+  - pass
+  - smash
+  - hi-lo
+  - 12-personnel
+  - singleback
+  - coryell
+  - high-school
+  - college
+  - nfl
+
+notes: |
+  Smash from the 12-personnel singleback — a hi-lo on the strong-side
+  corner: Z hitch at 6 yards beneath TE-R's corner route at 12. The QB
+  reads the corner and throws the route he leaves open. Running the corner
+  from an in-line TE gives a tighter, quicker break than a slot WR. The
+  5-step-drop pass-game answer for the singleback-ace section.
+
+  Mirror to smash-weak by flipping all coordinates.
+
+verification_status: unverified
+source_notes:
+  - "Coryell-tree Smash concept; cover-2-beater textbook material. Same concept as singleback-trio-smash, adapted to run the corner route from an in-line TE in 12 personnel."

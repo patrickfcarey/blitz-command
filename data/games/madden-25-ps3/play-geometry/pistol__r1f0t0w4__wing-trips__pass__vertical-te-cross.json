@@ -1,0 +1,50 @@
+{
+  "slug": "pistol__r1f0t0w4__wing-trips__pass__vertical-te-cross",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Wing Trips",
+    "play_name": "Vertical TE Cross",
+    "play_type": "pass",
+    "canonical_team": "Buffalo Bills",
+    "canonical_img": 74,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Buffalo Bills",
+      "Pistol"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Wing Trips",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 0,
+      "WR": 4,
+      "total": 6,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 524,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 208
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.67,
+  "response_text": "```json\n{\n  \"concept\": \"cross_concept\",\n  \"concepts\": [\"vertical_te_cross\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"streak\",\n    \"WR_SLOT_R\": \"cross\",\n    \"TE_L\": \"vertical_cross\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_L\",\n  \"notes\": \"Pistol formation with 4 WRs spread wide. TE runs vertical cross (red arrow, primary target). Slot-right WR runs cross route (yellow). Three outer receivers (X, Z, slot-left) run vertical clearouts. HB in backfield check-release.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "cross_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcross(es)?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

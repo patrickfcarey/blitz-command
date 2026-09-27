@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t2w2__trips-te__pass__v-screen",
+  "info": {
+    "family": "GUN",
+    "formation": "Trips TE",
+    "play_name": "V-Screen",
+    "play_type": "pass",
+    "canonical_team": "Minnesota Vikings",
+    "canonical_img": 106,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Minnesota Vikings"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Trips TE",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 481,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 173
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.66,
+  "response_text": "```json\n{\n  \"concept\": \"v_screen\",\n  \"concepts\": [\"v_screen\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"comeback\",\n    \"TE_L\": \"screen\",\n    \"TE_R\": \"block\",\n    \"HB\": \"screen\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_L\",\n  \"notes\": \"V-Screen with two eligible receivers (TE_L and HB) running screen routes. WR_X runs streak clearout, WR_Z runs comeback. TE_R blocks. R1 button assignment visible for one receiver.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "unknown",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": null,
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

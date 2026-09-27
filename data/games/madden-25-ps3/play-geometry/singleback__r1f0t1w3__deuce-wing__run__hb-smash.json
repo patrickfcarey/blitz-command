@@ -1,0 +1,59 @@
+{
+  "slug": "singleback__r1f0t1w3__deuce-wing__run__hb-smash",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Deuce Wing",
+    "play_name": "HB Smash",
+    "play_type": "run",
+    "canonical_team": "Joe Gibbs",
+    "canonical_img": 39,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Joe Gibbs",
+      "New England Patriots"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Deuce Wing",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 246,
+    "cache_creation_input_tokens": 352,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 72
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 100.32,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"generic_hb_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB D_left\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_left",
+    "c_xy": [
+      1553,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      13,
+      615
+    ],
+    "dx_from_c": -1540,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "^hb \\w+",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "i-form__r1f1t2w2__tight-pair__pass__pa-hb-power",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Tight Pair",
+    "play_name": "PA HB Power",
+    "play_type": "pass",
+    "canonical_team": "New England Patriots",
+    "canonical_img": 40,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "New England Patriots"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Tight Pair",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Tight/Twin-TE \u2014 2 TE"
+    }
+  },
+  "usage": {
+    "input_tokens": 529,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 254
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 4.26,
+  "response_text": "```json\n{\n  \"concept\": \"power_run\",\n  \"concepts\": [\"power_run\", \"pa_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"comeback\",\n    \"TE_L\": \"drag\",\n    \"TE_R\": \"flat\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Play-action pass with Power O look. Red arrow on WR_X (right side, \u2297 blue button glyph) indicates primary target. TE_L runs drag across middle (yellow arrow). TE_R runs flat to sideline (yellow arrow). WR_Z (left side, \u25a1 purple button) runs comeback. HB releases to checkdown. Formation shows classic I-Form backfield (QB + FB + HB stacked behind C) with 2 attached TEs (one each side, no visible gap between TEs and OTs).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "power_run",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpower\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

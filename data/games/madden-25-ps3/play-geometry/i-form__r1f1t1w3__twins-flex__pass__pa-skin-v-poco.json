@@ -1,0 +1,49 @@
+{
+  "slug": "i-form__r1f1t1w3__twins-flex__pass__pa-skin-v-poco",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Twins Flex",
+    "play_name": "PA Skin V-PoCo",
+    "play_type": "pass",
+    "canonical_team": "Washington Redskins",
+    "canonical_img": 42,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Washington Redskins"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Twins Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Twins \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 494,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 203
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.03,
+  "response_text": "```json\n{\n  \"concept\": \"pa_skin_v_poco\",\n  \"concepts\": [\"pa_skin_v_poco\"],\n  \"routes\": {\n    \"TE_L\": \"vertical\",\n    \"TE_R\": \"corner\",\n    \"WR_X\": \"drag\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"flat\",\n    \"HB\": \"wheel\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"Play-action pass with vertical stretch on left (TE_L) and corner combo on right (TE_R corner over WR_Z). Drag from X, flat from slot. HB wheels out as checkdown. Red arrow indicates TE_R as primary target.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "unknown",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": null,
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

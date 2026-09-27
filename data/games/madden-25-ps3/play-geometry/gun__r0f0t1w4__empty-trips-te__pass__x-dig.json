@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r0f0t1w4__empty-trips-te__pass__x-dig",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Trips TE",
+    "play_name": "X Dig",
+    "play_type": "pass",
+    "canonical_team": "Dallas Cowboys",
+    "canonical_img": 130,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Dallas Cowboys"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Trips TE",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 1,
+      "WR": 4,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 497,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 129
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 1.64,
+  "response_text": "```json\n{\n  \"concept\": \"dig_route\",\n  \"concepts\": [\"dig_route\"],\n  \"routes\": {\n    \"WR_X\": \"dig\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"streak\",\n    \"WR_SLOT_R\": \"streak\",\n    \"TE_R\": \"streak\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "dig_route",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdig\\b|\\bdigs\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "gun__r1f0t1w3__split-close__pass__close-hb-wheel",
+  "info": {
+    "family": "GUN",
+    "formation": "Split Close",
+    "play_name": "Close HB Wheel",
+    "play_type": "pass",
+    "canonical_team": "Indianapolis Colts",
+    "canonical_img": 98,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Indianapolis Colts",
+      "Pittsburgh Steelers"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Split Close",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "GUN/Shotgun default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 238,
+    "cache_creation_input_tokens": 352,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 158
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 5.62,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"generic_hb_run\"],\n  \"routes\": {\n    \"HB\": \"wheel\"\n  },\n  \"ball_carrier\": \"HB B_right\",\n  \"primary_target\": null,\n  \"notes\": \"Play labeled as PASS but personnel and diagram show HB receiving handoff/pass and running wheel route. Red arrow traces HB wheel to right flat. TE_R (R1 label) and WR_X (blue \u2297) are secondary options. Formation is GUN Split Close: QB shotgun, HB offset right.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bhb \\w+",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

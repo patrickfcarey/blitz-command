@@ -1,0 +1,50 @@
+{
+  "slug": "i-form__r1f1t1w2__tackle-over__pass__pa-power-o",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Tackle Over",
+    "play_name": "PA Power O",
+    "play_type": "pass",
+    "canonical_team": "Indianapolis Colts",
+    "canonical_img": 65,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Indianapolis Colts",
+      "St. Louis Rams"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Tackle Over",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "I-Form Pro default"
+    }
+  },
+  "usage": {
+    "input_tokens": 526,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 206
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.72,
+  "response_text": "```json\n{\n  \"concept\": \"power_o\",\n  \"concepts\": [\"power_o\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"TE_R\": \"seam\",\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"comeback\",\n    \"HB\": \"wheel\",\n    \"FB\": \"block\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"PA play-action pass mimicking Power O run-scheme. TE_R runs seam on red arrow (primary). WR_X corners on yellow to outside. WR_Z runs comeback on yellow inside. HB wheels out on yellow check route. Backfield shows I-Form stack (QB, FB, HB) with standard PA hold.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "power_o",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpower ?o\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

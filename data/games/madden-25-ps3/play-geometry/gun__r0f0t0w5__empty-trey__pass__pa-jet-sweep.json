@@ -1,0 +1,51 @@
+{
+  "slug": "gun__r0f0t0w5__empty-trey__pass__pa-jet-sweep",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Trey",
+    "play_name": "PA Jet Sweep",
+    "play_type": "pass",
+    "canonical_team": "Minnesota Vikings",
+    "canonical_img": 139,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Minnesota Vikings",
+      "New York Jets",
+      "Seattle Seahawks"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Trey",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 172,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 215
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 12.99,
+  "response_text": "```json\n{\n  \"concept\": \"sweep\",\n  \"concepts\": [\"sweep\", \"pa_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"slant\",\n    \"WR_SLOT_R\": \"comeback\",\n    \"WR_FLANKER\": \"wheel\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_R\",\n  \"notes\": \"PA Jet Sweep pass play with 5 WR empty set (r0f0t0w5). Primary target (red arrow) is WR_SLOT_R on comeback. Four yellow routes indicate secondary receivers stretching field horizontally and vertically. Cyan dashed arc from R1 button to WR_SLOT_R confirms primary read.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "sweep",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bsweep\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

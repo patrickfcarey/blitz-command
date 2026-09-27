@@ -1,0 +1,50 @@
+{
+  "slug": "near__r1f1t1w2__right__pass__te-corner",
+  "info": {
+    "family": "NEAR",
+    "formation": "Right",
+    "play_name": "TE Corner",
+    "play_type": "pass",
+    "canonical_team": "Tom Flores",
+    "canonical_img": 78,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Tom Flores",
+      "Tom Landry"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "NEAR",
+      "formation": "Right",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "NEAR family \u2014 old-school 2-back default"
+    }
+  },
+  "usage": {
+    "input_tokens": 489,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 191
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.67,
+  "response_text": "```json\n{\n  \"concept\": \"receiver_concept\",\n  \"concepts\": [\"te_corner\", \"curl_flat\"],\n  \"routes\": {\n    \"TE_L\": \"corner\",\n    \"WR_X\": \"curl\",\n    \"WR_Z\": \"flat\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_L\",\n  \"notes\": \"TE_L runs corner route (red arrow, primary target). WR_X curl and WR_Z flat form curl-flat combo on opposite side. One backfield player visible (HB). Formation is NEAR Right with 1 RB, 1 FB, 1 TE, 2 WR as expected.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "receiver_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\b(wr|te|x|y|z|fl|se|slot|h) (corner|drag|hook|option|under|seam|follow|attack|inside|angle|shake|fork|scissors|cross|trail|streak|spot|fade|in|out|wheel|seams|hooks|corners|outs|ins|posts|streaks)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

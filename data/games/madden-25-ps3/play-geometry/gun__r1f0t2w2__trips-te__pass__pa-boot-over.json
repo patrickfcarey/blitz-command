@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t2w2__trips-te__pass__pa-boot-over",
+  "info": {
+    "family": "GUN",
+    "formation": "Trips TE",
+    "play_name": "PA Boot Over",
+    "play_type": "pass",
+    "canonical_team": "Minnesota Vikings",
+    "canonical_img": 107,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Minnesota Vikings"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Trips TE",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 498,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 180
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.9,
+  "response_text": "```json\n{\n  \"concept\": \"boot_pass\",\n  \"concepts\": [\"boot_pass\"],\n  \"routes\": {\n    \"TE_R\": \"seam\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_R\": \"flat\",\n    \"WR_X\": \"streak\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"PA boot play action bootleg. QB rolling right with TE seam as primary. Three receiver routes to the right side (corner, flat, seam stack), X stretches backside with streak. HB appears to chip/release for checkdown.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "boot_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bboot\\b|\\bbootleg\\b",
+    "is_pa": true,
+    "is_boot_or_roll": true
+  }
+}

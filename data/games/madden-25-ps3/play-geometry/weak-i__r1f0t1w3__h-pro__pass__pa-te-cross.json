@@ -1,0 +1,49 @@
+{
+  "slug": "weak-i__r1f0t1w3__h-pro__pass__pa-te-cross",
+  "info": {
+    "family": "WEAK-I",
+    "formation": "H Pro",
+    "play_name": "PA TE Cross",
+    "play_type": "pass",
+    "canonical_team": "Seattle Seahawks",
+    "canonical_img": 57,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Seattle Seahawks"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "WEAK-I",
+      "formation": "H Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "low",
+      "notes": "unknown family 'WEAK-I' \u2014 generic 11-personnel guess"
+    }
+  },
+  "usage": {
+    "input_tokens": 501,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 205
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.0,
+  "response_text": "```json\n{\n  \"concept\": \"cross_concept\",\n  \"concepts\": [\"pa_te_cross\", \"cross_concept\"],\n  \"routes\": {\n    \"TE_R\": \"cross\",\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"comeback\",\n    \"WR_SLOT_L\": \"flat\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"PA play with TE crossing from right side; red arrow indicates TE_R primary target on cross route. Play-action fake shown by dashed motion elements. Formation is Weak-I H Pro with 1 RB, 1 FB (implied in backfield stack), 1 TE, 3 WR visible.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "cross_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcross(es)?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

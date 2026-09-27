@@ -1,0 +1,49 @@
+{
+  "slug": "i-form__r1f1t1w3__pro-twins__pass__tight-pa-y-cross",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Pro Twins",
+    "play_name": "Tight PA Y-Cross",
+    "play_type": "pass",
+    "canonical_team": "Oakland Raiders",
+    "canonical_img": 58,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Oakland Raiders"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Pro Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Twins \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 504,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 249
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.35,
+  "response_text": "```json\n{\n  \"concept\": \"y_concept\",\n  \"concepts\": [\"y_concept\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"TE_R\": \"seam\",\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"out\",\n    \"WR_SLOT_L\": \"drag\",\n    \"FB\": \"block\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"I-Form Pro Twins alignment confirmed: QB + FB + HB stacked centrally, 1 TE each side, 3 WRs. Red arrow indicates TE_R seam as primary target. Play-action setup with PA boot action visible (red route path curves right). TE_L blocks initially; WR_X corner, WR_Z out on opposite side; WR_SLOT_L drag across. HB available for checkdown.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "y_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\by[- ]?(cross|sail|stick|corner|trail|spot|drive|shallow)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

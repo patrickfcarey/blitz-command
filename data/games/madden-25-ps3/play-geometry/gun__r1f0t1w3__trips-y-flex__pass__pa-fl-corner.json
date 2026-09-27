@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__trips-y-flex__pass__pa-fl-corner",
+  "info": {
+    "family": "GUN",
+    "formation": "Trips Y-Flex",
+    "play_name": "PA FL Corner",
+    "play_type": "pass",
+    "canonical_team": "Buffalo Bills",
+    "canonical_img": 106,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Buffalo Bills"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Trips Y-Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 502,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 172
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.3,
+  "response_text": "```json\n{\n  \"concept\": \"pa_fl_corner\",\n  \"concepts\": [\"pa_fl_corner\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_R\": \"flat\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Play-action pass with corner route to X. Red primary arrow to WR_X corner. Yellow routes: Z streak, slot flat, TE seam. HB checkdown visible below formation.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "receiver_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\b(wr|te|x|y|z|fl|se|slot|h) (corner|drag|hook|option|under|seam|follow|attack|inside|angle|shake|fork|scissors|cross|trail|streak|spot|fade|in|out|wheel|seams|hooks|corners|outs|ins|posts|streaks)\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "slug": "singleback__r1f0t1w3__flex__pass__hb-slip-screen",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Flex",
+    "play_name": "HB Slip Screen",
+    "play_type": "pass",
+    "canonical_team": "Green Bay Packers",
+    "canonical_img": 26,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Green Bay Packers",
+      "Miami Dolphins",
+      "Run Balanced",
+      "West Coast"
+    ],
+    "owner_count": 4,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "Singleback default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 500,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 155
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.18,
+  "response_text": "```json\n{\n  \"concept\": \"hb_screen\",\n  \"concepts\": [\"hb_screen\"],\n  \"routes\": {\n    \"WR_X\": \"comeback\",\n    \"WR_Z\": \"streak\",\n    \"TE_R\": \"block\",\n    \"HB\": \"screen\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"HB\",\n  \"notes\": \"HB slip screen with two-level passing concept: HB receives screen pass while TE blocks downfield; WR_X runs comeback on left side, WR_Z clears vertically on right side.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "hb_screen",
+    "concept_family": "screen",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bhb (slip )?screen\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

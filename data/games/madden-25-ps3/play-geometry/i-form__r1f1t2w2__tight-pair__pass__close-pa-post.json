@@ -1,0 +1,49 @@
+{
+  "slug": "i-form__r1f1t2w2__tight-pair__pass__close-pa-post",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Tight Pair",
+    "play_name": "Close PA Post",
+    "play_type": "pass",
+    "canonical_team": "Oakland Raiders",
+    "canonical_img": 63,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Oakland Raiders"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Tight Pair",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Tight/Twin-TE \u2014 2 TE"
+    }
+  },
+  "usage": {
+    "input_tokens": 173,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 207
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 16.73,
+  "response_text": "```json\n{\n  \"concept\": \"post_concept\",\n  \"concepts\": [\"post_concept\"],\n  \"routes\": {\n    \"WR_X\": \"post\",\n    \"WR_Z\": \"post\",\n    \"TE_L\": \"block\",\n    \"TE_R\": \"streak\",\n    \"FB\": \"block\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Play-action run-fake with two deep post routes on outside receivers. TE_R released vertically; R1 button (right shoulder) is the primary target receiver (WR_Z running the right post, yellow arrow). Blue arrow on TE_R indicates block-then-release. Red arrow traces the fake run direction before releasing to the post concept.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "post_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpost(?![- ]corner)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

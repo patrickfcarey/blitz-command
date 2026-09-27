@@ -1,0 +1,94 @@
+name: 3-4 Cover 3
+side: defense
+personnel: "3-4 base"
+front: "3-4"
+coverage_shell: "cover-3"
+
+# 3-4 base front (3 DL, 4 LB) with Cover 3 shell (3 deep, 4 underneath).
+# OLBs play edge / hybrid rusher roles; ILBs play hook/curl.
+# Universal coords: positive y = downfield (defense's natural side).
+players:
+  - { label: LDE, position: DE, x: -3.5,  y:  1.0, on_line: false }
+  - { label: NT,  position: DT, x:  0.0,  y:  1.0, on_line: false }
+  - { label: RDE, position: DE, x:  3.5,  y:  1.0, on_line: false }
+  - { label: WOLB, position: LB, x: -5.0,  y:  1.5, on_line: false }
+  - { label: WILB, position: LB, x: -2.5,  y:  5.0, on_line: false }
+  - { label: SILB, position: LB, x:  2.5,  y:  5.0, on_line: false }
+  - { label: SOLB, position: LB, x:  5.0,  y:  1.5, on_line: false }
+  - { label: LCB, position: CB, x: -15.0, y:  7.0, on_line: false }
+  - { label: RCB, position: CB, x:  12.0, y:  7.0, on_line: false }
+  - { label: FS,  position: S,  x:  0.0,  y: 13.0, on_line: false }
+  - { label: SS,  position: S,  x:  8.0,  y:  8.0, on_line: false }
+
+responsibilities:
+  - { player: LDE,  role: rush, aim: "weak 5-tech / C-gap" }
+  - { player: NT,   role: rush, aim: "0-tech, two-gap A-gaps" }
+  - { player: RDE,  role: rush, aim: "strong 5-tech / C-gap" }
+  - { player: WOLB, role: rush, aim: "weak edge rusher / contain" }
+  - { player: WILB, role: hook, aim: "weak hook / curl zone" }
+  - { player: SILB, role: hook, aim: "strong hook / middle" }
+  - { player: SOLB, role: rush, aim: "strong edge rusher / contain" }
+  - { player: LCB,  role: deep-zone, aim: "deep third — left third" }
+  - { player: RCB,  role: deep-zone, aim: "deep third — right third" }
+  - { player: FS,   role: deep-zone, aim: "deep third — middle third" }
+  - { player: SS,   role: flat,      aim: "strong flat / buzz to flat at snap" }
+
+best_against:
+  - "Inside zone / power runs (NT eats up A-gaps, OLBs set edges)"
+  - "12 personnel / heavy run looks (4 LBs in the box concept)"
+  - "Single-high friendly pass concepts"
+  - "PA shots (single-high stays back)"
+
+vulnerable_to:
+  - "Flood / sail vs the strong side (3-on-2 stretch on underneath)"
+  - "Mesh / cross routes (NT's two-gap leaves middle thin if rush wins)"
+  - "Four verticals (FS has whole middle deep third)"
+  - "Pulling-guard schemes that displace OLBs out of their edge"
+
+strengths:
+  - "Two-gap NT controls both A-gaps with one DL"
+  - "Hybrid OLBs are versatile (rush or drop)"
+  - "Sound deep coverage with 3 deep zones"
+  - "Better disguise potential than 4-3 (rush combos vary)"
+
+weaknesses:
+  - "Requires elite NT to two-gap effectively"
+  - "OLB has to be both edge rusher and coverage drop — rare skill set"
+  - "Apex defender (SS) put in run-pass conflict"
+  - "Vulnerable when NT can't hold his ground"
+
+common_uses:
+  - "Base defense vs 12 / 21 personnel"
+  - "Run-down standard call"
+  - "1st / 2nd down look"
+  - "Defense built around an elite 0-tech NT (Vince Wilfork, Haloti Ngata era)"
+
+era: "1970s onward — Bum Phillips / Bill Arnsparger origin; modernized continuously."
+
+famous_users:
+  - "Bill Belichick Patriots (multiple eras)"
+  - "Dick LeBeau Steelers (3-4 zone-blitz tradition)"
+  - "Modern NFL teams using 3-4 as primary base"
+
+tags:
+  - defense
+  - 3-4
+  - cover-3
+  - single-high
+  - base-defense
+  - run-stopping
+  - any-level
+  - high-school
+  - college
+  - nfl
+
+notes: |
+  3-4 base (3 DL + 4 LB) with Cover 3 shell. NT is the linchpin — must
+  two-gap A-gaps. OLBs play edge / hybrid roles. ILBs play hook/curl.
+  Hardest base front to install at lower levels because of the NT
+  requirement, but extremely flexible at NFL/college level.
+
+verification_status: unverified
+source_notes:
+  - "Standard 3-4 Cover 3 alignment; documented across Bum Phillips / Bill Arnsparger / Dick LeBeau coaching trees."
+  - "Built 2026-04-30 as part of the P5 defensive-side rollout."

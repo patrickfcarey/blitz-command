@@ -1,0 +1,36 @@
+concept_id: iso
+name: Isolation (ISO)
+category: man-blocking-scheme
+description: |
+  Man-blocking run concept where the OL drive-blocks a double-team at the
+  playside DT, the FB isolates (seals) the playside ILB one-on-one, and the HB
+  hits the now-open A-gap. This is a pure power run — downhill, violent, and
+  very direct. Used in I-Form, tight-end heavy sets, and goal-line situations.
+aim_point: "Playside A-gap"
+read_tree:
+  - phase: 1
+    defender: "playside ILB"
+    decision: "FB has him isolated. If he fills fast, cut off. If he reads pass, attack."
+  - phase: 2
+    defender: "playside safety"
+    decision: "Only relevant if HB breaks to the second level."
+blocking_scheme_ref: gap-blocking
+pulls_required: []
+lead_blocker: FB
+pairs_with:
+  - power
+  - counter-trey
+  - i-formation
+tags:
+  - run
+  - man-blocking
+  - downhill
+  - goal-line
+  - short-yardage
+  - high-school
+  - college
+  - nfl
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Throw Deep Publishing 'ISO Run Concept' (https://throwdeeppublishing.com/blogs/football-glossary/): confirmed double-team DT + FB isolate ILB structure."
+  - "Web validated 2026-04-30 — X&O Labs 'I-Form Run Game' (https://www.xandolabs.com/): ISO used as primary power run in I-Form."

@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__walk-right__pass__te-option",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Walk Right",
+    "play_name": "TE Option",
+    "play_type": "pass",
+    "canonical_team": "Joe Gibbs",
+    "canonical_img": 44,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Joe Gibbs"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Walk Right",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "Singleback default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 496,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 220
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.54,
+  "response_text": "```json\n{\n  \"concept\": \"option_pass\",\n  \"concepts\": [\"option_pass\"],\n  \"routes\": {\n    \"TE_R\": \"option\",\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"comeback\",\n    \"WR_SLOT_R\": \"streak\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"TE_R (red circle button) runs option route with primary targeting indicated by R1 label. Red arrow traces the primary pass line to TE_R. WR_X (far left, purple square button) runs streak; WR_Z (far right, red circle button, outer) runs comeback; WR_SLOT_R (blue X button, inner slot) runs streak. HB checks/releases in backfield.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "option_pass",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bhb option\\b|\\bte option\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

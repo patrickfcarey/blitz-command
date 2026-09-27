@@ -1,0 +1,56 @@
+{
+  "slug": "singleback__r1f0t2w2__ace__pass__double-sluggo",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Ace",
+    "play_name": "Double Sluggo",
+    "play_type": "pass",
+    "canonical_team": "Chicago Bears",
+    "canonical_img": 4,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Chicago Bears",
+      "Cincinnati Bengals",
+      "Green Bay Packers",
+      "Indianapolis Colts",
+      "Miami Dolphins",
+      "Pass Balanced",
+      "Run Balanced",
+      "Run N Gun"
+    ],
+    "owner_count": 8,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Ace",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Ace family \u2014 2 TE 2 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 495,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 153
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.18,
+  "response_text": "```json\n{\n  \"concept\": \"sluggo\",\n  \"concepts\": [\"sluggo\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"corner\",\n    \"TE_L\": \"sluggo\",\n    \"TE_R\": \"sluggo\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"R1\",\n  \"notes\": \"Double Sluggo with two TE sluggo routes (blue arrows) and two WR corners (yellow arrows). R1 is the primary checkdown/hot route (blue arrow to the right).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "sluggo",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bsluggos?\\b|\\bsluggo seam\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

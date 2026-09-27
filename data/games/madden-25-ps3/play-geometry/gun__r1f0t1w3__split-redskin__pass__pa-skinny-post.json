@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__split-redskin__pass__pa-skinny-post",
+  "info": {
+    "family": "GUN",
+    "formation": "Split Redskin",
+    "play_name": "PA Skinny Post",
+    "play_type": "pass",
+    "canonical_team": "Washington Redskins",
+    "canonical_img": 93,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Washington Redskins"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Split Redskin",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "GUN/Shotgun default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 504,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 226
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.03,
+  "response_text": "```json\n{\n  \"concept\": \"post_concept\",\n  \"concepts\": [\"post_concept\", \"skinny_post\"],\n  \"routes\": {\n    \"WR_X\": \"post\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"flat\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"swing\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"PA play with skinny post concept. WR_X (purple \u25a1) runs the primary post route (red arrow). WR_Z (green \u25b3) streaks vertically. WR_SLOT_L (cyan \u25b3) runs flat to checkdown. TE_R (blue \u2297) runs seam. HB (red \u2299) available on swing route (blue arrow). Play-action setup with tight formation.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "post_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpost(?![- ]corner)\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

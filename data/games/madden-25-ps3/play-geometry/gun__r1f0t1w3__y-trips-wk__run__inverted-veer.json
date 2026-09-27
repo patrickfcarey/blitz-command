@@ -1,0 +1,58 @@
+{
+  "slug": "gun__r1f0t1w3__y-trips-wk__run__inverted-veer",
+  "info": {
+    "family": "GUN",
+    "formation": "Y-Trips Wk",
+    "play_name": "Inverted Veer",
+    "play_type": "run",
+    "canonical_team": "San Francisco 49ers",
+    "canonical_img": 120,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "San Francisco 49ers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Y-Trips Wk",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 510,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 120
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 91.97,
+  "response_text": "```json\n{\n  \"concept\": \"inverted_veer\",\n  \"concepts\": [\"inverted_veer\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_R\": \"streak\",\n    \"TE_R\": \"block\"\n  },\n  \"ball_carrier\": \"HB D_left\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_left",
+    "c_xy": [
+      1452,
+      621
+    ],
+    "arrow_los_crossing_xy": [
+      89,
+      621
+    ],
+    "dx_from_c": -1363,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "inverted_veer",
+    "concept_family": "rpo",
+    "blockers_implicit": false,
+    "matched_pattern": "\\binverted veer\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

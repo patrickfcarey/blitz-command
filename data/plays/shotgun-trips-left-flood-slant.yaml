@@ -1,0 +1,184 @@
+play_id: shotgun-trips-left-flood-slant
+name: Flood / Slant-Flat (Mirror Left)
+aliases:
+- Flood-Slant
+- Trips Flood Package
+formation: shotgun-trips-left
+play_type: pass
+ball_carrier: WR2
+primary_read: WR2
+secondary_read: WR1
+checkdown: WR3
+motions: []
+concepts:
+- concept_ref: flood
+  concept_type: pass
+  players:
+  - WR1
+  - WR2
+  - WR3
+  field_area: left
+  is_primary: true
+  notes: Three-level flood to the trips side — WR1 clears deep, WR2 sails at 14, WR3 to the flat. The QB's first work vs any
+    zone shell.
+- concept_ref: slant-flat
+  concept_type: pass
+  players:
+  - TE
+  - HB
+  field_area: right
+  is_primary: false
+  notes: Backside Slant-Flat — TE slant, HB to the flat. The man-coverage answer and the quick outlet vs pressure.
+assignments:
+- player: LT
+  role: pass_block
+  blocking_scheme: man-protection
+- player: LG
+  role: pass_block
+  blocking_scheme: man-protection
+- player: C
+  role: pass_block
+  blocking_scheme: man-protection
+- player: RG
+  role: pass_block
+  blocking_scheme: man-protection
+- player: RT
+  role: pass_block
+  blocking_scheme: man-protection
+- player: WR1
+  role: route
+  route_name: go
+  depth_yd: 25
+  notes: Flood — the vertical stretch. Clears the deep defender and is the shot if the corner sinks underneath it.
+- player: WR2
+  role: route
+  route_name: sail
+  depth_yd: 14
+  is_primary: true
+  notes: 'Flood — the intermediate sail. Primary read: settles in the void between the corner and the flat defender.'
+- player: WR3
+  role: route
+  route_name: flat
+  depth_yd: 3
+  notes: Flood — the flat / hot. Stretches the flat defender and is the answer vs quick pressure.
+- player: TE
+  role: route
+  route_name: slant
+  depth_yd: 6
+  notes: Slant-Flat — the slant into the vacated backside grass. The man-beater.
+- player: HB
+  role: route
+  route_name: flat
+  depth_yd: 2
+  notes: Slant-Flat — the flat, released backside left. Slant/flat high-low on the backside flat defender.
+- player: QB
+  role: ball_carrier
+  path:
+  - - 0
+    - 0
+  - - 0
+    - -1
+  - - 0
+    - -2
+  notes: 'Catch and hitch from the gun. Pre-snap, read the trips-side shell:
+
+    if it is a zone roll, work the Flood high-to-low (WR1 to WR2 to WR3).
+
+    If the defense plays man across or shows pressure, come back to the
+
+    backside Slant-Flat.
+
+    '
+strengths:
+- Two complete concepts — Flood beats zone, Slant-Flat beats man, the QB picks pre-snap
+- The three-level Flood stretches a single-high zone vertically and horizontally at once
+- Backside Slant-Flat is a built-in pressure outlet — the ball can come out hot
+- Trips alignment forces the defense to declare its coverage and rotation
+- WR3 flat is a true hot read against the blitz
+weaknesses:
+- Five-man protection — against a six-man pressure the ball must come out now
+- Flood is a one-side concept; a defense that matches the trips with bodies removes it
+- Backside Slant-Flat is only two receivers — limited if the QB hangs on it
+- The deep WR1 go is mostly a clear-out — low-percentage as a primary target
+- QB must diagnose the trips-side rotation correctly pre-snap
+best_vs_defense:
+- cover-3 (the Flood stretches the deep-third and curl-flat defender vertically)
+- cover-2 (WR2 sail splits the corner and the half-field safety)
+- man-free (backside Slant-Flat rub on the isolated TE)
+- zone-blitz (WR3 flat is the immediate hot answer)
+worst_vs_defense:
+- quarters with a trips-side bracket that matches the Flood man-to-man
+- cover-1 robber sitting in the backside slant window
+- six-man pressure that beats the five-man protection
+- any disciplined zone that does not over-rotate to the trips
+defensive_counters:
+- counter_id: trips-bracket-rotation
+  pre_snap_look: Two-high shell rotated to the trips side — an extra underneath defender bracketing the trips with the safety
+    capping it
+  qb_key: Count the trips-side underneath defenders — the defense has bodies to match all three flood routes
+  read_category: safety-shell
+  why: The Flood must out-number the zone defenders to that side; a trips-rotated bracket matches the three-level stretch
+    and removes the sail window.
+  typical_against:
+  - quarters with a trips check
+  - cover-2 trips roll
+- counter_id: backside-press-man
+  pre_snap_look: Backside corner pressed hard with inside leverage on the lone TE, no safety help over the top
+  qb_key: Check the backside corner — pressed and inside, sitting the slant
+  read_category: cb-leverage
+  why: Inside-leverage press takes away the TE slant, so the man-coverage answer to the backside is covered before the snap.
+  typical_against:
+  - cover-1 press
+  - cover-0
+- counter_id: interior-overload-pressure
+  pre_snap_look: Defenders walked up over both guards and the center with a single-high look — more rushers than the five-man
+    protection accounts for
+  qb_key: Count the rush threats against five blockers — the box shows a free runner
+  read_category: box-count
+  why: Five-man protection cannot pick up a six-man interior overload; the free runner arrives before the Flood develops.
+  typical_against:
+  - cover-1 pressure
+  - zone pressure from depth
+common_uses:
+- 1st-and-10 vs a known zone tendency
+- 3rd-and-medium chain-mover
+- Two-minute / hurry-up from a spread look
+- Anytime the defense over-rotates to the trips
+philosophy: pro-style
+philosophy_ref: pro-style
+era: Modern — the trips Flood paired with a backside quick concept is a staple of pro and college spread passing games, built
+  on the Erhardt-Perkins package-of-concepts model.
+famous_examples:
+- Pro-style spread offenses pairing a trips Flood with a backside Slant-Flat answer
+- Trips-formation three-level stretch concepts
+tags:
+- pass
+- multi-concept
+- flood
+- trips
+- pro-style
+- high-school
+- college
+- nfl
+notes: 'Multi-concept play: rather than a single pass_concept_ref, this play
+
+  carries a `concepts` array — Flood to the trips side (WR1/WR2/WR3) and
+
+  Slant-Flat to the backside (TE/HB). The QB declares a side pre-snap off
+
+  the coverage shell. Erhardt-Perkins model: a play is a package of
+
+  concepts, each occupying part of the formation.
+
+
+  Mirror to shotgun-trips-left by flipping all coordinates.
+
+  '
+verification_status: unverified
+source_notes:
+- Authored as a multi-concept play using the `concepts` schema field. Pairs Flood (data/concepts/pass-concepts/flood.yaml)
+  on the trips side with Slant-Flat (data/concepts/pass-concepts/slant-flat.yaml) on the backside, in the Erhardt-Perkins
+  two-concepts-in-one-playcall style.
+- Mirror of shotgun-trips-right-flood-slant.yaml — path waypoints flipped on x; formation reference points to the mirror formation.
+  Routes auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed
+  look — coordinates and paths are the source of truth.

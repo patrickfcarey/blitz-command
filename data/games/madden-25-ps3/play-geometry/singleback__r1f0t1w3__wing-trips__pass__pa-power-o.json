@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__wing-trips__pass__pa-power-o",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Wing Trips",
+    "play_name": "PA Power O",
+    "play_type": "pass",
+    "canonical_team": "Jimmy Johnson",
+    "canonical_img": 48,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Jimmy Johnson"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Wing Trips",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 501,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 207
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.03,
+  "response_text": "```json\n{\n  \"concept\": \"power_o\",\n  \"concepts\": [\"power_o\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_R\": \"flat\",\n    \"TE_R\": \"wheel\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"PA Power O pass concept. TE_R (R1 button, red circle glyph) is primary target on wheel route. WR_X runs streak left, WR_Z corners right, WR_SLOT_R runs flat underneath right side. Multiple yellow route arrows visible indicating pass progression. HB likely play-acting run before releasing into pass-pro or receiving option (not distinctly visible in backfield).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "power_o",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpower ?o\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

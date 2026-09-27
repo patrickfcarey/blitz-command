@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t3w1__jumbo__pass__charger-verts-out",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Jumbo",
+    "play_name": "Charger Verts Out",
+    "play_type": "pass",
+    "canonical_team": "San Diego Chargers",
+    "canonical_img": 2,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "San Diego Chargers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Jumbo",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 3,
+      "WR": 1,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Jumbo \u2014 typically 3 TE 1 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 503,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 207
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.57,
+  "response_text": "```json\n{\n  \"concept\": \"outs\",\n  \"concepts\": [\"outs\"],\n  \"routes\": {\n    \"WR_X\": \"out\",\n    \"WR_Z\": \"out\",\n    \"TE_L\": \"streak\",\n    \"TE_R\": \"streak\",\n    \"TE_WING_R\": \"streak\",\n    \"HB\": \"wheel\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"3 TEs in Jumbo formation (TE_L, TE_R, TE_WING_R all in line); two WRs running outs at different levels; primary target (red arrow) is WR_X out route; HB wheel route (blue arrow) with R1 label indicating shoulder button target.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "outs",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bouts?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

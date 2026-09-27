@@ -1,0 +1,49 @@
+{
+  "slug": "pistol__r1f0t0w4__trips__pass__pa-boot",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Trips",
+    "play_name": "PA Boot",
+    "play_type": "pass",
+    "canonical_team": "Pistol",
+    "canonical_img": 89,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Pistol"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Trips",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 0,
+      "WR": 4,
+      "total": 6,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 493,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 229
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.33,
+  "response_text": "```json\n{\n  \"concept\": \"boot_pass\",\n  \"concepts\": [\"boot_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"corner\",\n    \"WR_SLOT_R\": \"flat\",\n    \"HB\": \"swing\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Play-action boot with 4-WR set (Pistol Trips, r1f0t0w4). QB rolls right. WR_X (blue X button, far right) receives primary read with streak route. Three yellow routes show multi-read progression: streak upfield, corner route, and flat/swing underneath. R1 button indicates additional receiver option (likely the HB swing on the edge). Standard PA boot structure with 4-wide receiver distribution.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "boot_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bboot\\b|\\bbootleg\\b",
+    "is_pa": true,
+    "is_boot_or_roll": true
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "slug": "split__r1f1t1w2__pro__pass__slants",
+  "info": {
+    "family": "SPLIT",
+    "formation": "Pro",
+    "play_name": "Slants",
+    "play_type": "pass",
+    "canonical_team": "Cleveland Browns",
+    "canonical_img": 59,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Cleveland Browns",
+      "John Madden",
+      "Mike Ditka",
+      "Tom Flores",
+      "Tom Landry",
+      "West Coast"
+    ],
+    "owner_count": 6,
+    "expected_personnel": {
+      "family": "SPLIT",
+      "formation": "Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "SPLIT family \u2014 old-school 2-back default"
+    }
+  },
+  "usage": {
+    "input_tokens": 487,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 248
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.29,
+  "response_text": "```json\n{\n  \"concept\": \"slants\",\n  \"concepts\": [\"slants\"],\n  \"routes\": {\n    \"WR_X\": \"slant\",\n    \"WR_Z\": \"slant\",\n    \"TE_L\": \"slant\",\n    \"WR_SLOT_L\": \"slant\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Four receivers running slants (WR_X, WR_Z, TE_L, WR_SLOT_L); HB check-release. WR_X marked with blue X-button glyph as primary target (red arrow). WR_Z marked with red Circle-button glyph. WR_SLOT_L marked with green Triangle-button glyph. TE_L marked with cyan Triangle-button glyph. All four receivers execute 3-5 yard slant routes at sharp angles toward the interior.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "slants",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bslants?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

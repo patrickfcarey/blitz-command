@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t2w2__ace-pair-twins__pass__pa-slot-n-go",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Ace Pair Twins",
+    "play_name": "PA Slot N Go",
+    "play_type": "pass",
+    "canonical_team": "New York Jets",
+    "canonical_img": 15,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "New York Jets"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Ace Pair Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Ace family \u2014 2 TE 2 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 495,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 202
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.5,
+  "response_text": "```json\n{\n  \"concept\": \"pa_slot_n_go\",\n  \"concepts\": [\"pa_slot_n_go\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"TE_L\": \"streak\",\n    \"TE_R\": \"flat\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Pass action play with play-action fake. WR_Z (X button, blue) is the primary target running a streak upfield. Red arrow indicates primary progression. Yellow route shows option/play-action motion pattern on left side. Formation shows 2 TEs (Ace Pair) with TE_R aligned to strong side.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "unknown",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": null,
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

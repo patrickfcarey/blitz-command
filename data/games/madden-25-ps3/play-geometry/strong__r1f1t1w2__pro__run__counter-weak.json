@@ -1,0 +1,65 @@
+{
+  "slug": "strong__r1f1t1w2__pro__run__counter-weak",
+  "info": {
+    "family": "STRONG",
+    "formation": "Pro",
+    "play_name": "Counter Weak",
+    "play_type": "run",
+    "canonical_team": "Atlanta Falcons",
+    "canonical_img": 61,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Atlanta Falcons",
+      "Baltimore Ravens",
+      "Cleveland Browns",
+      "Denver Broncos",
+      "Jacksonville Jaguars",
+      "Minnesota Vikings",
+      "Run Balanced",
+      "Run N Gun"
+    ],
+    "owner_count": 8,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 556,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 66
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 56.48,
+  "response_text": "```json\n{\n  \"concept\": \"counter_run\",\n  \"concepts\": [\"counter_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB B_left\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "B_left",
+    "c_xy": [
+      1604,
+      621
+    ],
+    "arrow_los_crossing_xy": [
+      1333,
+      663
+    ],
+    "dx_from_c": -271,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "counter_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bcounter\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

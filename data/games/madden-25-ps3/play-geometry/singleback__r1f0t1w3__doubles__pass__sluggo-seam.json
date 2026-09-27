@@ -1,0 +1,56 @@
+{
+  "slug": "singleback__r1f0t1w3__doubles__pass__sluggo-seam",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Doubles",
+    "play_name": "Sluggo Seam",
+    "play_type": "pass",
+    "canonical_team": "Atlanta Falcons",
+    "canonical_img": 25,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Atlanta Falcons",
+      "Cincinnati Bengals",
+      "Detroit Lions",
+      "Houston Texans",
+      "Jacksonville Jaguars",
+      "New Orleans Saints",
+      "Oakland Raiders",
+      "San Diego Chargers"
+    ],
+    "owner_count": 8,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Doubles",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 498,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 208
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.11,
+  "response_text": "```json\n{\n  \"concept\": \"sluggo\",\n  \"concepts\": [\"sluggo\"],\n  \"routes\": {\n    \"WR_X\": \"sluggo\",\n    \"WR_Z\": \"seam\",\n    \"TE_R\": \"flat\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"WR_X (purple \u25a1 on left) runs red sluggo arrow upfield and breaks out. WR_Z (cyan \u2297 on right) runs yellow seam route. TE_R (red \u2299) runs blue flat route to the right. HB (\u25b3 green, center-backfield) releases on checkdown. R1 shoulder button routes visible (blue arrow to TE_R flat).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "sluggo",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bsluggos?\\b|\\bsluggo seam\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

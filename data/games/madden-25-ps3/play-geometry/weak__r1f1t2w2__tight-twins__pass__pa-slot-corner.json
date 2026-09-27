@@ -1,0 +1,50 @@
+{
+  "slug": "weak__r1f1t2w2__tight-twins__pass__pa-slot-corner",
+  "info": {
+    "family": "WEAK",
+    "formation": "Tight Twins",
+    "play_name": "PA Slot Corner",
+    "play_type": "pass",
+    "canonical_team": "Run Balanced",
+    "canonical_img": 75,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Run Balanced",
+      "Run N Gun"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "WEAK",
+      "formation": "Tight Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 499,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 215
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.86,
+  "response_text": "```json\n{\n  \"concept\": \"slot_concept\",\n  \"concepts\": [\"pa_slot_corner\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_SLOT_L\": \"corner\",\n    \"WR_Z\": \"comeback\",\n    \"TE_L\": \"block\",\n    \"TE_R\": \"wheel\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_L\",\n  \"notes\": \"PA play-action; slot WR (purple \u25a1) runs corner as primary target (red arrow). X WR runs corner route (yellow). Z WR runs comeback (yellow). TE_R releases to wheel (yellow). TE_L blocks. HB checkdown. Two TEs on line consistent with Weak Tight Twins formation.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "slot_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bslot (drag|cross|streak|corner|out|in|wheel)\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

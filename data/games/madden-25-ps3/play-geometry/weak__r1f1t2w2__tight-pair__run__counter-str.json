@@ -1,0 +1,58 @@
+{
+  "slug": "weak__r1f1t2w2__tight-pair__run__counter-str",
+  "info": {
+    "family": "WEAK",
+    "formation": "Tight Pair",
+    "play_name": "Counter Str",
+    "play_type": "run",
+    "canonical_team": "Jimmy Johnson",
+    "canonical_img": 119,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Jimmy Johnson"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "WEAK",
+      "formation": "Tight Pair",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 561,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 66
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 97.44,
+  "response_text": "```json\n{\n  \"concept\": \"counter_run\",\n  \"concepts\": [\"counter_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB B_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "B_right",
+    "c_xy": [
+      1606,
+      611
+    ],
+    "arrow_los_crossing_xy": [
+      1902,
+      764
+    ],
+    "dx_from_c": 296,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "counter_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bcounter\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

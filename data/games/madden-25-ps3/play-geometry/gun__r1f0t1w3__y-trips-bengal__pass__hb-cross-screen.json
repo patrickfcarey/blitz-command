@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__y-trips-bengal__pass__hb-cross-screen",
+  "info": {
+    "family": "GUN",
+    "formation": "Y-Trips Bengal",
+    "play_name": "HB Cross Screen",
+    "play_type": "pass",
+    "canonical_team": "Cincinnati Bengals",
+    "canonical_img": 96,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Cincinnati Bengals"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Y-Trips Bengal",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 570,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 292
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 4.05,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"generic_hb_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB B_right\",\n  \"primary_target\": null,\n  \"notes\": \"Play labeled 'HB Cross Screen' but play_type is PASS and py_concept is generic_hb_run (family=run). Diagram shows red arrow originating from HB below LOS, moving right and downfield. Formation is GUN Y-Trips Bengals (r1f0t1w3: 1 RB, 0 FB, 1 TE, 3 WR). Visible: QB in shotgun, HB to right side (ball-carrier), TE_R on LOS next to RT, 3 WRs (X far right with R1 button, Z far left with \u25a1 button, Slot_L with \u25b3 button). OL: 5-man set (LT, LG, C, RG, RT all visible). Red arrow on HB indicates ball-carrier direction. All other receivers run blocking routes (implicit). Play appears to be a screen pass to HB despite the run-family labeling.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "^hb \\w+",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

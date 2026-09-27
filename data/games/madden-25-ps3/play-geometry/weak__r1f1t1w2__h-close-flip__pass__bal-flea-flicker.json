@@ -1,0 +1,49 @@
+{
+  "slug": "weak__r1f1t1w2__h-close-flip__pass__bal-flea-flicker",
+  "info": {
+    "family": "WEAK",
+    "formation": "H Close Flip",
+    "play_name": "BAL Flea Flicker",
+    "play_type": "pass",
+    "canonical_team": "Baltimore Ravens",
+    "canonical_img": 94,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Baltimore Ravens"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "WEAK",
+      "formation": "H Close Flip",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "WEAK default \u2014 variant unclear"
+    }
+  },
+  "usage": {
+    "input_tokens": 530,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 224
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.43,
+  "response_text": "```json\n{\n  \"concept\": \"trick_play\",\n  \"concepts\": [\"trick_play\", \"flea_flicker\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"TE_L\": \"block\",\n    \"FB\": \"block_then_release_wheel\",\n    \"HB\": \"lateral_receive_then_pass\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Flea flicker play: HB receives lateral/handoff from QB, executes return pass to WR_X on streak. WR_Z runs complementary corner route. TE and FB initially block then release. Red arrow (primary read) targets WR_X vertical downfield after HB's return pitch. Blue arrow from R1 likely indicates HB's lateral motion and subsequent throw option.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "trick_play",
+    "concept_family": "trick",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bflea flicker\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

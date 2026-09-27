@@ -1,0 +1,58 @@
+{
+  "slug": "strong__r1f1t1w2__pro__run__hb-mtn-stretch",
+  "info": {
+    "family": "STRONG",
+    "formation": "Pro",
+    "play_name": "HB Mtn Stretch",
+    "play_type": "run",
+    "canonical_team": "Cleveland Browns",
+    "canonical_img": 68,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Cleveland Browns"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 589,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 66
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 50.17,
+  "response_text": "```json\n{\n  \"concept\": \"outside_zone\",\n  \"concepts\": [\"outside_zone\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB D_left\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_left",
+    "c_xy": [
+      1551,
+      613
+    ],
+    "arrow_los_crossing_xy": [
+      35,
+      613
+    ],
+    "dx_from_c": -1516,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "outside_zone",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bhb stretch\\b|\\bstretch\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,197 @@
+play_id: goal-line-power-pass-left
+name: Goal Line Power Pass (Mirror Left)
+aliases:
+- GL Power Pass
+- PA Power (Goal Line)
+- Goal Line PA Power
+formation: goal-line-left
+play_type: play-action
+ball_carrier: QB
+primary_read: TE-R
+secondary_read: WR
+checkdown: FB
+motions: []
+assignments:
+- player: LT
+  role: pass_block
+  blocking_scheme: pa-power-protection
+  notes: Fire out low showing the Power down-block for a beat, then anchor and protect the backside.
+- player: LG
+  role: pass_block
+  blocking_scheme: pull-around
+  target: playside-edge
+  path:
+  - - 0
+    - 0
+  - - -2
+    - -0.5
+  - - -4
+    - 0
+  notes: PULL — identical pull track to Goal Line Power for the first two steps to sell the run, then log and wall the playside
+    edge rusher.
+- player: C
+  role: pass_block
+  blocking_scheme: pa-power-protection
+  notes: Show the gap block, then protect the A-gaps.
+- player: RG
+  role: pass_block
+  blocking_scheme: pa-power-protection
+  notes: Fire out showing the Power down-block, then recover and protect.
+- player: RT
+  role: pass_block
+  blocking_scheme: pa-power-protection
+  notes: Show the down-block, then protect the playside edge.
+- player: TE-L
+  role: route
+  route_name: drag
+  depth_yd: 4
+  notes: Show the backside down-block for one beat to sell Power, then release on the shallow drag — the underneath outlet.
+- player: TE-R
+  role: route
+  route_name: corner
+  depth_yd: 8
+  is_primary: true
+  notes: Show the kickout block on the EDGE for one beat to sell Power, then break the corner to the back pylon — the primary
+    read once the goal-line LBs trigger on the run fake.
+- player: WR
+  role: route
+  route_name: fade
+  depth_yd: 8
+  notes: Stalk-release to sell run, then run the fade to the back pylon — the matchup throw vs press / zero coverage.
+- player: QB
+  role: ball_carrier
+  path:
+  - - 0
+    - 0
+  - - -1
+    - -1
+  - - 2
+    - -1
+  - - 2
+    - -3
+  notes: Reverse-out IDENTICAL to Goal Line Power, ride the HB fake through the mesh, then settle at depth and throw. Eyes
+    on the TE-R corner first.
+- player: FB
+  role: route
+  route_name: flat
+  depth_yd: 3
+  path:
+  - - 0
+    - 0
+  - - -3
+    - 2
+  - - -5
+    - 2
+  notes: Lead through the hole exactly like Goal Line Power for the first two steps, then leak to the playside flat as the
+    checkdown.
+- player: HB
+  role: fake
+  path:
+  - - 0
+    - 0
+  - - -3
+    - 2
+  - - -4
+    - 4
+  notes: Run the exact Goal Line Power off-tackle track to sell the handoff; lower the shoulder into the hole to make the
+    defense honor the run.
+strengths:
+- Identical pre-snap look and first-step action to Goal Line Power — the defense cannot tell it from the run
+- PA fake fully sells goal-line power, where the defense expects run 90%+ of the time
+- Aggressive goal-line linebackers triggering on the fake vacate the TE-R corner window
+- Keeping the LG pull sells Power harder than a standard PA fake
+- QB stays in the pocket — no edge given up in a tight red-zone field
+weaknesses:
+- Needs Goal Line Power on tape first — a cold PA fake holds no one
+- QB takes 2-3 seconds to deliver — protection is critical in the tight field
+- Vulnerable to interior pressure that doesn't honor the run fake
+- Small field — limited room for the corner and fade to develop
+- Pulling the LG leaves a protection seam if the playside edge rush is wide
+best_vs_defense:
+- goal-line stand with run-fitting linebackers
+- cover-1 with single coverage on TE-R
+- any defense overcommitting to the power run
+- 8-man fronts that vacate coverage zones
+worst_vs_defense:
+- cover-2 zone with a safety carrying the TE corner
+- cover-0 blitz with no time to develop
+- bracket coverage on TE-R
+- any defense playing pass-only at the goal line
+defensive_counters:
+- counter_id: alert-pass-no-bite
+  pre_snap_look: Linebackers and the strong safety aligned with coverage depth off the LOS instead of crowding the box, with
+    the defense in nickel/dime personnel rather than goal-line jumbo
+  qb_key: Check the LB depth and personnel — backers off the ball, sub package on the field
+  read_category: lb-depth
+  why: Linebackers and a safety already at coverage depth in a sub package are keying pass and will not trigger on the fake,
+    so the TE-R corner breaks into populated coverage.
+  typical_against:
+  - goal-line pass alert
+  - any defense after the offense shows pass tendency
+- counter_id: bracket-the-te
+  pre_snap_look: A safety aligned over the top of TE-R at 8-10 yards with the TE-side corner pressed underneath in inside
+    leverage
+  qb_key: Check the TE side — safety capped over the TE, corner pressed inside beneath him
+  read_category: safety-shell
+  why: A safety over the top with a pressed corner beneath is a pre-set bracket on the primary read, covering both above and
+    below the corner break.
+  typical_against:
+  - cover-2 with bracket rules
+  - Tampa-2 with carrying safeties
+- counter_id: zero-blitz-edge
+  pre_snap_look: An OLB or strong safety walked up tight outside TE-R on the corner-route side, with no deep safety and corners
+    pressed in man
+  qb_key: Check the safety shell — zero deep, an extra defender walked up off the TE edge
+  read_category: safety-shell
+  why: An empty deep shell with a defender walked up off the TE edge signals a cover-0 edge blitz that gets home before the
+    deeper PA drop and the corner route can develop.
+  typical_against:
+  - cover-0 short-yardage blitz
+  - any defense bringing pressure on obvious pass downs
+common_uses:
+- After establishing Goal Line Power for short-yardage gains
+- 1st/2nd-and-Goal from inside the 5
+- Red-zone constraint to the power tendency
+- 4th-and-1 shot when the defense sells out for the run
+philosophy: power-run
+pass_concept_ref: sail
+philosophy_ref: power-run
+era: Universal — play-action off goal-line power is as old as the goal-line power game itself; every era's red-zone playbook
+  has it.
+famous_examples:
+- Patriots PA TE corner off the goal-line power look (Gronkowski era)
+- Modern NFL red-zone passing (every team has a PA power variant)
+tags:
+- pa
+- play-action
+- power-run
+- goal-line
+- red-zone
+- pocket-pass
+- tight-end
+- high-school
+- college
+- nfl
+notes: 'Play-action pass off Goal Line Power. The QB reverse-out, the HB
+
+  off-tackle fake, the FB lead, the LG pull, and the OL down-block show
+
+  are all IDENTICAL to Goal Line Power through the mesh — the defense
+
+  reads Power. The QB then settles in the pocket and throws the TE-R
+
+  corner once the goal-line linebackers trigger on the run fake. Member
+
+  of the Goal Line Power disguise family (see data/play-families/).
+
+
+  Mirror to goal-line-power-pass-left by flipping all coordinates.
+
+  '
+verification_status: unverified
+source_notes:
+- Play-action off goal-line power is a universal red-zone constraint concept. Authored as a disguise twin of goal-line-power
+  — initial action (QB reverse-out, HB/FB tracks, LG pull) deliberately mirrors the base play's first two waypoints exactly.
+- Mirror of goal-line-power-pass.yaml — path waypoints flipped on x; formation reference points to the mirror formation. Routes
+  auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed look
+  — coordinates and paths are the source of truth.

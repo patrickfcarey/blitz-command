@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__split-eagle__pass__pa-skinny-post",
+  "info": {
+    "family": "GUN",
+    "formation": "Split Eagle",
+    "play_name": "PA Skinny Post",
+    "play_type": "pass",
+    "canonical_team": "Philadelphia Eagles",
+    "canonical_img": 53,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Philadelphia Eagles"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Split Eagle",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "GUN/Shotgun default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 499,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 182
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.7,
+  "response_text": "```json\n{\n  \"concept\": \"post_concept\",\n  \"concepts\": [\"pa_pass\", \"skinny_post\"],\n  \"routes\": {\n    \"WR_X\": \"post\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"slant\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"swing\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"PA action with red arrow indicating primary post route to X. TE_R seam route shown in blue (chip/release). Slot left runs slant. Z vertical clearout. HB swing route to flat (blue arrow).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "post_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpost(?![- ]corner)\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

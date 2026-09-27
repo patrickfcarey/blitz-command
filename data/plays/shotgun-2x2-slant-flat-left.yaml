@@ -1,0 +1,214 @@
+play_id: shotgun-2x2-slant-flat-left
+name: Slant-Flat (Strong) (Mirror Left)
+aliases:
+- 2x2 Slant-Flat
+- Slant-Flat off Stick
+- West Coast Slant-Flat
+formation: shotgun-2x2-left
+play_type: pass
+ball_carrier: QB
+primary_read: SLOT-W
+secondary_read: Z
+checkdown: HB
+motions: []
+assignments:
+- player: LT
+  role: pass_block
+  blocking_scheme: man-protection
+- player: LG
+  role: pass_block
+  blocking_scheme: man-protection
+- player: C
+  role: pass_block
+  blocking_scheme: man-protection
+- player: RG
+  role: pass_block
+  blocking_scheme: man-protection
+- player: RT
+  role: pass_block
+  blocking_scheme: man-protection
+- player: TE
+  role: route
+  route_name: clear-out-go
+  depth_yd: 18
+  path:
+  - - 0
+    - 0
+  - - 0
+    - 3
+  - - 0
+    - 18
+  notes: Identical vertical clear-out release to Stick — pushes vertical to clear the strong-side corner and lift the safety
+    off the slant/flat window.
+- player: X
+  role: route
+  route_name: slant
+  depth_yd: 6
+  path:
+  - - 0
+    - 0
+  - - 0
+    - 3
+  - - -4
+    - 6
+  notes: Same vertical stem as the base Stick clear-out for the first three steps — same early picture — then break in on
+    the slant, the weak-side quick hitter.
+- player: SLOT-W
+  role: route
+  route_name: flat
+  depth_yd: 3
+  is_primary: true
+  path:
+  - - 0
+    - 0
+  - - 4
+    - 3
+  notes: Weak-side flat — the LO of the slant/flat hi-lo. The X slant runs over the top of the flat defender; the QB throws
+    whichever the flat defender does not take. Releases outside immediately (flat routes cannot match a vertical stem).
+- player: Z
+  role: route
+  route_name: slant
+  depth_yd: 6
+  path:
+  - - 0
+    - 0
+  - - 0
+    - 3
+  - - 4
+    - 6
+  notes: Same vertical stem as the base Stick option route for the first three steps — same early picture — then break in
+    on the strong-side slant as the secondary read.
+- player: QB
+  role: ball_carrier
+  path:
+  - - 0
+    - 0
+  - - 0
+    - -1
+  - - 0
+    - -2
+  notes: '3-step rhythm from shotgun depth — IDENTICAL drop to Stick. Hi-lo the
+
+    weak-side flat defender: SLOT-W flat (LO) under the X slant (HI). If the
+
+    flat defender widens with SLOT-W, throw the X slant behind him; if he
+
+    sinks under the slant, dump the flat. Z slant is the strong-side answer.
+
+    '
+- player: HB
+  role: pass_block
+  blocking_scheme: man-protection
+  notes: Pass-pro; release as the checkdown only if pressure clears — same protection role as the base Stick play.
+strengths:
+- Identical pre-snap look, QB drop, and early receiver releases to Stick — the defense cannot tell it apart
+- Classic West Coast hi-lo — the flat defender is wrong on the flat or wrong on the slant
+- Slant is a built-in blitz beater — ball out on the 3-step rhythm before pressure arrives
+- Yards-after-catch concept — the slant catches in stride with grass ahead
+- Mirrored quick hitter — the Z slant gives the QB an answer to the strong side
+weaknesses:
+- Limited big-play potential — slant and flat are short, YAC-dependent throws
+- A flat defender with depth and discipline can wall the slant and squeeze the flat
+- Inside-leverage press man on the slant receivers chokes the break
+- Cover-2 corners squatting on the flat take away the easy LO
+- QB must read the flat defender quickly — a wrong read is a no-throw
+best_vs_defense:
+- cover-3 (slant behind the curl-flat defender, flat underneath him)
+- cover-1 (slant beats trailing man, flat is the leverage outlet)
+- any defense that blitzes off the edge — the slant is the hot answer
+- off-coverage corners giving a free release to the slant
+worst_vs_defense:
+- cover-2 with corners squatting hard on the flat
+- inside-leverage press man on the slot
+- bracket coverage on the slant receivers
+- disciplined zone with a flat defender who carries the slant
+defensive_counters:
+- counter_id: squat-flat-corner
+  pre_snap_look: Strong-side and weak-side corners squatted at 5-7 yards depth, eyes inside, shaded to the flat rather than
+    bailing to a deep third
+  qb_key: Check the corners' depth and eyes — squatted short, looking inside at the flat
+  read_category: cb-leverage
+  why: A squatted corner sits on the flat route and is in position to drive the slant from outside-in, taking both legs of
+    the hi-lo on the 3-step rhythm.
+  typical_against:
+  - cover-2
+  - cover-2 invert
+  - quarters with squat corners
+- counter_id: inside-press-slot
+  pre_snap_look: Nickel and SAM pressed inside-leverage on both slots, foot up inside, no deep-middle safety showing
+  qb_key: Check slot-defender leverage — pressed with the inside foot up, no middle help
+  read_category: cb-leverage
+  why: Inside-leverage press man kills the slant break — the defender is already where the route wants to go — and the trailing
+    leverage smothers the flat, leaving nowhere to throw.
+  typical_against:
+  - cover-1
+  - cover-0
+  - sticky man-match
+- counter_id: flat-side-pressure
+  pre_snap_look: Weak-side nickel walked up on the LOS over the slot (toes on the line, hand low), single-high safety shell
+    behind
+  qb_key: Scan the slot defender — walked up on the line with only one high safety
+  read_category: lb-depth
+  why: A nickel on the line over the slot is a free runner; with the HB in protection the QB must rely on the slant as the
+    hot throw, and inside leverage on that slant leaves no built-in answer.
+  typical_against:
+  - cover-1 zero-pressure
+  - fire-zone
+  - nickel pressure packages
+common_uses:
+- 3rd-and-short / 3rd-and-medium
+- 1st-down chains
+- Anti-blitz hot read — the slant is the built-in answer
+- Quick-game tempo
+- Moving the chains after Stick has been on tape
+philosophy: west-coast
+pass_concept_ref: stick
+philosophy_ref: west-coast
+era: 1980s onward — slant/flat is a foundational Bill Walsh West Coast quick-game concept, ubiquitous in every modern pro-style
+  and spread playbook.
+famous_examples:
+- Bill Walsh 49ers (the West Coast quick-game template)
+- Andy Reid Eagles / Chiefs quick-game packages
+- Modern NFL 11-personnel rhythm calls
+tags:
+- pass
+- spread
+- quick-game
+- slant-flat
+- hi-lo
+- west-coast
+- shotgun
+- 2x2
+- high-school
+- college
+- nfl
+notes: 'West Coast slant/flat quick-game play disguised off Stick. The QB''s 3-step
+
+  drop is IDENTICAL to Stick, and the receivers take the same early vertical
+
+  releases (X and Z stem vertical exactly like the base clear-out and option
+
+  routes, TE pushes vertical exactly like the base clear-out) before the
+
+  routes branch into the slant/flat hi-lo. The defense reads the same picture
+
+  as Stick. SLOT-W releases flat immediately — a flat route cannot match a
+
+  vertical stem, an inherent limitation of the concept. Member of the Shotgun
+
+  2x2 Quick-Game disguise family (see data/play-families/).
+
+
+  Mirror to slant-flat-left by flipping all coordinates.
+
+  '
+verification_status: unverified
+source_notes:
+- Slant/flat is a textbook Bill Walsh West Coast quick-game concept — a flat defender hi-lo read off the 3-step drop. Authored
+  as a disguise twin of shotgun-2x2-stick — the QB drop's first two waypoints are identical to the base play, all members
+  carry the same empty motions block, and the receivers' early release waypoints match the base play's vertical stems before
+  the routes branch (the SLOT-W flat is the one route that releases outside immediately, an inherent property of the flat
+  route).
+- Mirror of shotgun-2x2-slant-flat.yaml — path waypoints flipped on x; formation reference points to the mirror formation.
+  Routes auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed
+  look — coordinates and paths are the source of truth.

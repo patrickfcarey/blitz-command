@@ -1,0 +1,38 @@
+scheme_id: boss-protection
+name: Boss Protection (Big-On-Big)
+category: pass-protection
+description: |
+  "Big-On-Big" — every offensive lineman blocks a defensive lineman one-on-one,
+  with the RB and TE scanning the second level for blitzers. Removes combo
+  blocks; relies on individual OL skill. Common in spread formations where DL
+  are spread wide. RB is the primary blitz-pick-up player.
+assignments_by_position:
+  LT: "Block the widest left defender (often a 9-tech or wide EDGE)."
+  LG: "Block the A-gap defender to your left (0-tech or 1-tech)."
+  C: "Block the nose tackle or middle 0-1 tech."
+  RG: "Block the A-gap defender to your right."
+  RT: "Block the widest right defender (often a 9-tech or wide EDGE)."
+  HB: "Primary blitz-pick-up. Scan the LB level; hit the first unblocked rusher with urgency."
+  TE: "Secondary blitz-pick-up. Help RB against the next dangerous defender."
+pairs_with:
+  - shotgun-pass
+  - spread-concepts
+defeats:
+  - "4-man rush in spread (wide rush)"
+  - "isolated edge threats"
+vulnerable_to:
+  - "overloads (5+ rushers vs 5 OL + RB)"
+  - "slanting DL who get off the line fast"
+  - "delayed LB blitz that beats RB scan"
+tags:
+  - pass-protection
+  - big-on-big
+  - boss
+  - spread
+  - spread-option
+  - nfl
+  - college
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Throw Deep Publishing 'Big-On-Big Protection' (https://throwdeeppublishing.com/blogs/football-glossary/): confirmed one OL per DL structure, RB as primary blitz-pick."
+  - "Web validated 2026-04-30 — X&O Labs 'Spread Protection Schemes' (https://www.xandolabs.com/): big-on-big described for spread formations with wide DL alignment."

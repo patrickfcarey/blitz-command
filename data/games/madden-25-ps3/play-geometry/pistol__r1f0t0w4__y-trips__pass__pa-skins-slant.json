@@ -1,0 +1,49 @@
+{
+  "slug": "pistol__r1f0t0w4__y-trips__pass__pa-skins-slant",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Y-Trips",
+    "play_name": "PA Skins Slant",
+    "play_type": "pass",
+    "canonical_team": "Washington Redskins",
+    "canonical_img": 79,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Washington Redskins"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Y-Trips",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 0,
+      "WR": 4,
+      "total": 6,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 505,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 231
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.37,
+  "response_text": "```json\n{\n  \"concept\": \"slants\",\n  \"concepts\": [\"slants\"],\n  \"routes\": {\n    \"WR_X\": \"slant\",\n    \"WR_Z\": \"slant\",\n    \"WR_SLOT_L\": \"slant\",\n    \"WR_SLOT_R\": \"slant\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"PA play \u2014 play-action fake indicated by play name. Four WR set (10-personnel, 0 TE) in Y-Trips formation. All four WRs running slants. QB appears to have primary read on X (purple Square button glyph shows red arrow upfield-left). HB in backfield appears to be pass-protection/check-release eligible (shown with button glyph). Pistol backfield formation confirmed (QB stacked behind C at ~3 yds).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "slants",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bslants?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

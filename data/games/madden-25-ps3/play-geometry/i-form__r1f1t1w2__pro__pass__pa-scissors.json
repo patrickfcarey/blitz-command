@@ -1,0 +1,81 @@
+{
+  "slug": "i-form__r1f1t1w2__pro__pass__pa-scissors",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Pro",
+    "play_name": "PA Scissors",
+    "play_type": "pass",
+    "canonical_team": "Arizona Cardinals",
+    "canonical_img": 48,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Arizona Cardinals",
+      "Balanced",
+      "Baltimore Ravens",
+      "Brian Billick",
+      "Buffalo Bills",
+      "Carolina Panthers",
+      "Chicago Bears",
+      "Dallas Cowboys",
+      "Dick Vermeil",
+      "Green Bay Packers",
+      "Houston Texans",
+      "Jimmy Johnson",
+      "John Madden",
+      "Kansas City Chiefs",
+      "Miami Dolphins",
+      "Mike Ditka",
+      "Minnesota Vikings",
+      "New Orleans Saints",
+      "Oakland Raiders",
+      "Pass Balanced",
+      "Philadelphia Eagles",
+      "Pittsburgh Steelers",
+      "Run Balanced",
+      "Run Heavy",
+      "Run N Gun",
+      "San Diego Chargers",
+      "San Francisco 49ers",
+      "St. Louis Rams",
+      "Tennessee Titans",
+      "Tom Flores",
+      "Tom Landry",
+      "Washington Redskins",
+      "West Coast"
+    ],
+    "owner_count": 33,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "I-Form Pro default"
+    }
+  },
+  "usage": {
+    "input_tokens": 495,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 237
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.12,
+  "response_text": "```json\n{\n  \"concept\": \"scissors_concept\",\n  \"concepts\": [\"scissors_concept\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"dig\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"wheel\",\n    \"FB\": \"block\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Play-action pass with scissors concept. TE_R runs seam with R1 button (blue circle glyph). WR_Z runs dig route (yellow arrow). WR_X runs corner route (yellow arrow). HB releases to wheel route (yellow arrow). Formation is I-Form Pro with expected r1f1t1w2 personnel (1 RB, 1 FB, 1 TE, 2 WR) \u2014 visible count matches. Primary read appears to be WR_X on the corner.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "scissors_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bscissors\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

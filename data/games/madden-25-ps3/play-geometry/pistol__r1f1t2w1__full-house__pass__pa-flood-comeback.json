@@ -1,0 +1,49 @@
+{
+  "slug": "pistol__r1f1t2w1__full-house__pass__pa-flood-comeback",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Full House",
+    "play_name": "PA Flood Comeback",
+    "play_type": "pass",
+    "canonical_team": "Pistol",
+    "canonical_img": 4,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Pistol"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Full House",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 1,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Pistol Full House \u2014 heavy backfield"
+    }
+  },
+  "usage": {
+    "input_tokens": 171,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 173
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 5.27,
+  "response_text": "```json\n{\n  \"concept\": \"flood\",\n  \"concepts\": [\"flood\", \"pa_pass\"],\n  \"routes\": {\n    \"WR_X\": \"comeback\",\n    \"WR_Z\": \"streak\",\n    \"TE_R\": \"flat\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"PA play with flood concept on right side (TE flat, WR_Z streak clearing, WR_X comeback as primary). Backfield shows HB eligible checkdown. WR_X marked with red Circle button glyph; TE_R with R1 button.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "flood",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bflood\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

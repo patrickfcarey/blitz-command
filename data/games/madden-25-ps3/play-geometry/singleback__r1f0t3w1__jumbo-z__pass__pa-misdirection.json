@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t3w1__jumbo-z__pass__pa-misdirection",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Jumbo Z",
+    "play_name": "PA Misdirection",
+    "play_type": "pass",
+    "canonical_team": "Denver Broncos",
+    "canonical_img": 3,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Denver Broncos"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Jumbo Z",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 3,
+      "WR": 1,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Jumbo \u2014 typically 3 TE 1 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 532,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 213
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.54,
+  "response_text": "```json\n{\n  \"concept\": \"misdirection_run\",\n  \"concepts\": [\"misdirection_run\", \"pa_pass\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"TE_R\": \"release_vertical\",\n    \"TE_WING\": \"block\",\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT\": \"drag\",\n    \"HB\": \"wheel\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Play-action pass off Jumbo package with 3 TEs. Red arrow on WR_X indicates primary read. TE_R releases vertical after initial block. RB (HB) runs checkdown wheel route. Slot receiver runs drag across formation.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "misdirection_run",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bmisdirection\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "pistol__r1f0t1w3__strong-slot-bills__pass__mesh",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Strong Slot Bills",
+    "play_name": "Mesh",
+    "play_type": "pass",
+    "canonical_team": "Buffalo Bills",
+    "canonical_img": 67,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Buffalo Bills"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Strong Slot Bills",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Pistol Strong/Weak"
+    }
+  },
+  "usage": {
+    "input_tokens": 518,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 187
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.52,
+  "response_text": "```json\n{\n  \"concept\": \"mesh\",\n  \"concepts\": [\"mesh\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"hitch\",\n    \"TE_L\": \"drag\",\n    \"HB\": \"drag\",\n    \"WR_SLOT_R\": \"streak\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_L\",\n  \"notes\": \"Mesh concept with two drag routes crossing in the middle (TE_L and HB); outer WRs (X and Z) on right side with corner/hitch combo; slot WR on right runs vertical clearout. Primary target appears to be the TE dragging across (red arrow origin).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "mesh",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bmesh\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__flip-trips__pass__pa-waggle",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Flip Trips",
+    "play_name": "PA Waggle",
+    "play_type": "pass",
+    "canonical_team": "Dick Vermeil",
+    "canonical_img": 59,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Dick Vermeil"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Flip Trips",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 503,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 183
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.76,
+  "response_text": "```json\n{\n  \"concept\": \"waggle_pass\",\n  \"concepts\": [\"waggle_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"flat\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"PA Waggle with boot action to the right. Primary read on WR_Z corner route (red arrow). Multiple option routes via colored button glyphs (purple, green, blue, red, R1) indicating various outlet targets on the waggle boot.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "waggle_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bwaggle\\b",
+    "is_pa": true,
+    "is_boot_or_roll": true
+  }
+}

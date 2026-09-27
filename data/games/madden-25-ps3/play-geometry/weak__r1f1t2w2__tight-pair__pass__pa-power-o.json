@@ -1,0 +1,49 @@
+{
+  "slug": "weak__r1f1t2w2__tight-pair__pass__pa-power-o",
+  "info": {
+    "family": "WEAK",
+    "formation": "Tight Pair",
+    "play_name": "PA Power O",
+    "play_type": "pass",
+    "canonical_team": "Run N Gun",
+    "canonical_img": 62,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Run N Gun"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "WEAK",
+      "formation": "Tight Pair",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 498,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 200
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.0,
+  "response_text": "```json\n{\n  \"concept\": \"power_o\",\n  \"concepts\": [\"power_o\", \"pa_pass\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"TE_R\": \"seam\",\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"comeback\",\n    \"HB\": \"wheel\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"PA Power O look on WEAK formation. Red arrow (primary) targets WR_X on corner route right side. TE_R releases on seam. HB wheels out on check-release route. WR_Z (backside) runs comeback. TE_L appears to block initially before potential release (play-action fake).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "power_o",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpower ?o\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

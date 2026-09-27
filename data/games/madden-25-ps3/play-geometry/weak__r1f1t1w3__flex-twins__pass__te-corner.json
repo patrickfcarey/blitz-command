@@ -1,0 +1,51 @@
+{
+  "slug": "weak__r1f1t1w3__flex-twins__pass__te-corner",
+  "info": {
+    "family": "WEAK",
+    "formation": "Flex Twins",
+    "play_name": "TE Corner",
+    "play_type": "pass",
+    "canonical_team": "Arizona Cardinals",
+    "canonical_img": 74,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Arizona Cardinals",
+      "Indianapolis Colts",
+      "West Coast"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "WEAK",
+      "formation": "Flex Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 494,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 192
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.3,
+  "response_text": "```json\n{\n  \"concept\": \"receiver_concept\",\n  \"concepts\": [\"te_corner\", \"curl_flat\"],\n  \"routes\": {\n    \"TE_L\": \"corner\",\n    \"WR_Z\": \"curl\",\n    \"WR_SLOT_R\": \"flat\",\n    \"WR_X\": \"streak\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_L\",\n  \"notes\": \"TE_L runs corner route (red arrow, primary). WR_Z runs curl at intermediate depth. WR_SLOT_R runs flat. WR_X runs vertical clearout. HB eligible checkdown. Circle button receiver (TE_L) is the primary target.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "receiver_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\b(wr|te|x|y|z|fl|se|slot|h) (corner|drag|hook|option|under|seam|follow|attack|inside|angle|shake|fork|scissors|cross|trail|streak|spot|fade|in|out|wheel|seams|hooks|corners|outs|ins|posts|streaks)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

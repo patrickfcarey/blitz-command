@@ -1,0 +1,49 @@
+{
+  "slug": "pistol__r1f0t1w3__ace__pass__pa-power-o",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Ace",
+    "play_name": "PA Power O",
+    "play_type": "pass",
+    "canonical_team": "Pistol",
+    "canonical_img": 39,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Pistol"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Ace",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "Pistol default \u2014 variant unclear"
+    }
+  },
+  "usage": {
+    "input_tokens": 496,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 227
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.47,
+  "response_text": "```json\n{\n  \"concept\": \"power_o\",\n  \"concepts\": [\"power_o\", \"pa_pass\"],\n  \"routes\": {\n    \"TE_R\": \"streak\",\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"drag\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Play-action Power O pass. Red arrow from WR_X (right side, Circle button) indicates primary target on corner route. Yellow dashed arrow from left slot WR (Square button) suggests optional drag route. TE_R (X button) runs deep streak. WR_Z (Triangle button) runs vertical. HB (R1 button) available for checkdown. Backfield shows QB in Pistol position with HB offset.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "power_o",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpower ?o\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

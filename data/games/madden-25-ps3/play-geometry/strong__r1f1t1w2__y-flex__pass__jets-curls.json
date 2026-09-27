@@ -1,0 +1,49 @@
+{
+  "slug": "strong__r1f1t1w2__y-flex__pass__jets-curls",
+  "info": {
+    "family": "STRONG",
+    "formation": "Y-Flex",
+    "play_name": "Jets Curls",
+    "play_type": "pass",
+    "canonical_team": "New York Jets",
+    "canonical_img": 58,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "New York Jets"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "Y-Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "STRONG default \u2014 variant unclear"
+    }
+  },
+  "usage": {
+    "input_tokens": 168,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 181
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 5.42,
+  "response_text": "```json\n{\n  \"concept\": \"curls\",\n  \"concepts\": [\"curls\"],\n  \"routes\": {\n    \"WR_X\": \"curl\",\n    \"WR_Z\": \"flat\",\n    \"TE_R\": \"streak\",\n    \"WR_SLOT_L\": \"corner\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Strong Y-Flex formation with curl-flat combo on right side (WR_X curl, WR_Z flat); TE_R runs vertical clearout; WR_SLOT_L runs corner on opposite side. R1 button label visible on yellow arrow to WR_Z (flat receiver).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "curls",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcurls?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

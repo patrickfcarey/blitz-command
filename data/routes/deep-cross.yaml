@@ -1,0 +1,25 @@
+name: deep-cross
+aliases:
+- y-cross
+- cross
+description: Push to 18 yards then cross the field at constant depth (the canonical Y-Cross / Air Raid '95' concept).
+path:
+- - 0
+  - 0
+- - 0
+  - 18
+- - 22
+  - 18
+typical_break_depth_yd: 18
+option_route: false
+category: deep
+beats_coverage: both
+tags:
+- deep
+- crossing
+- y-cross
+- coryell
+- air-raid
+verification_status: unverified
+source_notes:
+- Y-Cross deep crossing route — Coryell-tradition deep cross + Mumme/Leach Air Raid '95'.

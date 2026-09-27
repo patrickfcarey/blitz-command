@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__dice-slot__pass__double-sluggo",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Dice Slot",
+    "play_name": "Double Sluggo",
+    "play_type": "pass",
+    "canonical_team": "Denver Broncos",
+    "canonical_img": 24,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Denver Broncos"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Dice Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 524,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 163
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.42,
+  "response_text": "```json\n{\n  \"concept\": \"sluggo\",\n  \"concepts\": [\"sluggo\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"slant\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Double Sluggo: both outside receivers (X and Z) run corner routes; slot receiver runs slant underneath. R1 button glyph indicates checkdown assignment. Red arrow on WR_X (corner route) is primary.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "sluggo",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bsluggos?\\b|\\bsluggo seam\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

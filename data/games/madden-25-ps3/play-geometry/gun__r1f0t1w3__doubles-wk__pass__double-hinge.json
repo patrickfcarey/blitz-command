@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__doubles-wk__pass__double-hinge",
+  "info": {
+    "family": "GUN",
+    "formation": "Doubles Wk",
+    "play_name": "Double Hinge",
+    "play_type": "pass",
+    "canonical_team": "Kansas City Chiefs",
+    "canonical_img": 92,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Kansas City Chiefs"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Doubles Wk",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Doubles \u2014 1 TE 3 WR (slot variant)"
+    }
+  },
+  "usage": {
+    "input_tokens": 499,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 191
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.76,
+  "response_text": "```json\n{\n  \"concept\": \"hinge_route\",\n  \"concepts\": [\"hinge_route\"],\n  \"routes\": {\n    \"WR_X\": \"hinge\",\n    \"WR_Z\": \"hinge\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"swing\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Double Hinge concept with two WRs executing hinge routes (sharp breaks at 5\u20137 yds). TE_R runs a seam/vertical release. HB swings left flat as checkdown. All four button glyphs visible on LOS; QB in shotgun ~5 yards deep. Standard GUN Doubles structure.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "hinge_route",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bhinge\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

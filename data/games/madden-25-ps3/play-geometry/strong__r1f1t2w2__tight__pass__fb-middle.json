@@ -1,0 +1,49 @@
+{
+  "slug": "strong__r1f1t2w2__tight__pass__fb-middle",
+  "info": {
+    "family": "STRONG",
+    "formation": "Tight",
+    "play_name": "FB Middle",
+    "play_type": "pass",
+    "canonical_team": "Run N Gun",
+    "canonical_img": 56,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Run N Gun"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "Tight",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 514,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 243
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.15,
+  "response_text": "```json\n{\n  \"concept\": \"middle_concept\",\n  \"concepts\": [\"middle_concept\"],\n  \"routes\": {\n    \"QB\": \"pass\",\n    \"FB\": \"streak\",\n    \"HB\": \"block\",\n    \"TE_L\": \"block\",\n    \"TE_R\": \"corner\",\n    \"WR_X\": \"comeback\",\n    \"WR_Z\": \"corner\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"FB\",\n  \"notes\": \"FB Middle concept \u2014 FB runs vertical up the seam as primary target (red arrow). TE_R and WR_Z run corner routes to stretch the field vertically on the right. WR_X runs comeback on the left. TE_L blocks. HB pass-pro blocks. Formation is STRONG Tight (r1f1t2w2) with QB, FB, HB in backfield; 2 TEs on LOS; 2 WRs on perimeter.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "middle_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bmiddle\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

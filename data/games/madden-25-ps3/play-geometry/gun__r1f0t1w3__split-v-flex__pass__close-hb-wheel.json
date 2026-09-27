@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__split-v-flex__pass__close-hb-wheel",
+  "info": {
+    "family": "GUN",
+    "formation": "Split V-Flex",
+    "play_name": "Close HB Wheel",
+    "play_type": "pass",
+    "canonical_team": "San Diego Chargers",
+    "canonical_img": 93,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "San Diego Chargers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Split V-Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "GUN/Shotgun default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 595,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 213
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.82,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"generic_hb_run\"],\n  \"routes\": {\n    \"HB\": \"wheel\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_R\": \"comeback\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"HB\",\n  \"notes\": \"Play is labeled PASS but py_concept is 'generic_hb_run (family=run)'. Visual diagram shows: HB (R1 button glyph) running a wheel route (cyan arrow), WR_Z running a streak (yellow arrow), WR_SLOT_R running a comeback (yellow arrow). QB is in shotgun. This appears to be a pass play disguised as a run concept, with the HB as the primary checkdown target on a wheel route.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bhb \\w+",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

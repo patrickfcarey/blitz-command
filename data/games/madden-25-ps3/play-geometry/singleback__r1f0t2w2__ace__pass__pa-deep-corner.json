@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t2w2__ace__pass__pa-deep-corner",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Ace",
+    "play_name": "PA Deep Corner",
+    "play_type": "pass",
+    "canonical_team": "Carolina Panthers",
+    "canonical_img": 4,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Carolina Panthers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Ace",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Ace family \u2014 2 TE 2 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 498,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 200
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.69,
+  "response_text": "```json\n{\n  \"concept\": \"deep_pass\",\n  \"concepts\": [\"pa_pass\", \"deep_corner\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"streak\",\n    \"TE_L\": \"block\",\n    \"TE_R\": \"streak\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Play-action pass with deep corner concept. WR_X (\u25a1 purple Square button) runs corner route with red primary arrow. WR_Z (\u25b3 green Triangle) runs streak downfield. TE_R (\u2299 red Circle) runs vertical streak. HB checks/releases. TE_L blocks initially.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "deep_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdeep attack\\b|\\bdeep corners?\\b|\\bdeep middle\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

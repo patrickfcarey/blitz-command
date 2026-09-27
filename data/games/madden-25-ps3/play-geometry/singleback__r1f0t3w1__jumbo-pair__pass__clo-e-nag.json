@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t3w1__jumbo-pair__pass__clo-e-nag",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Jumbo Pair",
+    "play_name": "Clo e nag",
+    "play_type": "pass",
+    "canonical_team": "Tennessee Titans",
+    "canonical_img": 5,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Tennessee Titans"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Jumbo Pair",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 3,
+      "WR": 1,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Jumbo \u2014 typically 3 TE 1 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 494,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 252
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.4,
+  "response_text": "```json\n{\n  \"concept\": \"clo_e_nag\",\n  \"concepts\": [\"clo_e_nag\"],\n  \"routes\": {\n    \"TE_L\": \"drag\",\n    \"TE_R\": \"corner\",\n    \"WR_X\": \"streak\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"Jumbo Pair formation with 3 TEs visible on LOS (TE_L, TE_M, TE_R) plus 1 WR (X). Red arrow indicates TE_R (R1 button, red circle) as primary target running corner route. Yellow arrows show TE_L drag and WR_X vertical clearout. Backfield shows QB + HB in shotgun. Expected personnel r1f0t3w1 matches: 1 RB (HB), 0 FB, 3 TE, 1 WR.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "unknown",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": null,
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

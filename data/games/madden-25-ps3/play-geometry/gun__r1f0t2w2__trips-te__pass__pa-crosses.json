@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t2w2__trips-te__pass__pa-crosses",
+  "info": {
+    "family": "GUN",
+    "formation": "Trips TE",
+    "play_name": "PA Crosses",
+    "play_type": "pass",
+    "canonical_team": "Carolina Panthers",
+    "canonical_img": 110,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Carolina Panthers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Trips TE",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 496,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 199
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.55,
+  "response_text": "```json\n{\n  \"concept\": \"cross_concept\",\n  \"concepts\": [\"pa_crosses\", \"cross_concept\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"cross\",\n    \"WR_SLOT_R\": \"cross\",\n    \"TE_R\": \"cross\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"PA play with multiple crossing routes. WR_Z and WR_SLOT_R run shallow crosses; TE_R runs a deeper cross. WR_X streaks vertically as a clearout. HB (R1 button) available as checkdown. All routes visible with yellow arrow indicators except HB.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "cross_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcross(es)?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

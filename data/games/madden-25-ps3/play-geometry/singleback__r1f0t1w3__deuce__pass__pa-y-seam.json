@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__deuce__pass__pa-y-seam",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Deuce",
+    "play_name": "PA Y Seam",
+    "play_type": "pass",
+    "canonical_team": "Denver Broncos",
+    "canonical_img": 6,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Denver Broncos"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Deuce",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 503,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 133
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 1.74,
+  "response_text": "```json\n{\n  \"concept\": \"pa_y_seam\",\n  \"concepts\": [\"pa_y_seam\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"streak\",\n    \"TE_R\": \"seam\",\n    \"WR_SLOT_L\": \"drag\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "receiver_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\b(wr|te|x|y|z|fl|se|slot|h) (corner|drag|hook|option|under|seam|follow|attack|inside|angle|shake|fork|scissors|cross|trail|streak|spot|fade|in|out|wheel|seams|hooks|corners|outs|ins|posts|streaks)\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

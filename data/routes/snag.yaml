@@ -1,0 +1,20 @@
+name: snag
+description: Push 5 yards then settle in the soft spot of zone, OR break out toward the sideline vs man. Option route.
+path:
+- - 0
+  - 0
+- - 0
+  - 5
+typical_break_depth_yd: 5
+option_route: true
+category: quick
+beats_coverage: zone
+tags:
+- quick-game
+- option
+- snag-component
+- anti-zone
+- anti-man
+verification_status: unverified
+source_notes:
+- Snag concept's signature route. Settle vs zone (sit in soft spot), break out vs man.

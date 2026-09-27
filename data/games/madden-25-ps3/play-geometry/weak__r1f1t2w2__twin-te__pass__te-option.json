@@ -1,0 +1,49 @@
+{
+  "slug": "weak__r1f1t2w2__twin-te__pass__te-option",
+  "info": {
+    "family": "WEAK",
+    "formation": "Twin TE",
+    "play_name": "TE Option",
+    "play_type": "pass",
+    "canonical_team": "Brian Billick",
+    "canonical_img": 110,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Brian Billick"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "WEAK",
+      "formation": "Twin TE",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 518,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 197
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.24,
+  "response_text": "```json\n{\n  \"concept\": \"option_pass\",\n  \"concepts\": [\"option_pass\"],\n  \"routes\": {\n    \"TE_L\": \"option\",\n    \"TE_R\": \"flat\",\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"comeback\",\n    \"HB\": \"swing\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_L\",\n  \"notes\": \"TE_L runs red-arrow option route (primary read); TE_R runs flat to strong side; WR_X (far right, blue X button) runs vertical streak; WR_Z (left slot, purple Square button) runs comeback; HB swings to flat. Weak formation with FB offset to weak side and HB deeper.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "option_pass",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bhb option\\b|\\bte option\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "slug": "pistol__r1f1t2w1__full-house__run__read-option-wk",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Full House",
+    "play_name": "Read Option Wk",
+    "play_type": "run",
+    "canonical_team": "Indianapolis Colts",
+    "canonical_img": 84,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Indianapolis Colts"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Full House",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 1,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Pistol Full House \u2014 heavy backfield"
+    }
+  },
+  "usage": {
+    "input_tokens": 527,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 113
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 53.17,
+  "response_text": "```json\n{\n  \"concept\": \"zone_read\",\n  \"concepts\": [\"zone_read\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"TE_R\": \"block\",\n    \"WR_X\": \"block\",\n    \"WR_Z\": \"block\"\n  },\n  \"ball_carrier\": \"HB B_left\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "B_left",
+    "c_xy": [
+      1551,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      1227,
+      650
+    ],
+    "dx_from_c": -324,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "zone_read",
+    "concept_family": "rpo",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bread option\\b|\\bzone read\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

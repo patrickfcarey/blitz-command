@@ -1,0 +1,58 @@
+{
+  "slug": "split__r1f1t1w2__slot__run__hb-off-tackle",
+  "info": {
+    "family": "SPLIT",
+    "formation": "Slot",
+    "play_name": "HB Off Tackle",
+    "play_type": "run",
+    "canonical_team": "Jimmy Johnson",
+    "canonical_img": 86,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Jimmy Johnson"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SPLIT",
+      "formation": "Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "SPLIT family \u2014 old-school 2-back default"
+    }
+  },
+  "usage": {
+    "input_tokens": 587,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 66
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 98.38,
+  "response_text": "```json\n{\n  \"concept\": \"off_tackle\",\n  \"concepts\": [\"off_tackle\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB B_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "B_right",
+    "c_xy": [
+      1537,
+      701
+    ],
+    "arrow_los_crossing_xy": [
+      1801,
+      701
+    ],
+    "dx_from_c": 264,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "off_tackle",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\boff[ -]?tackle\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

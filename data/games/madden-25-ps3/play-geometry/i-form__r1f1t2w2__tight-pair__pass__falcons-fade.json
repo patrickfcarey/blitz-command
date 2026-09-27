@@ -1,0 +1,49 @@
+{
+  "slug": "i-form__r1f1t2w2__tight-pair__pass__falcons-fade",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Tight Pair",
+    "play_name": "Falcons Fade",
+    "play_type": "pass",
+    "canonical_team": "Atlanta Falcons",
+    "canonical_img": 57,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Atlanta Falcons"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Tight Pair",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Tight/Twin-TE \u2014 2 TE"
+    }
+  },
+  "usage": {
+    "input_tokens": 524,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 234
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.3,
+  "response_text": "```json\n{\n  \"concept\": \"fade\",\n  \"concepts\": [\"fade\"],\n  \"routes\": {\n    \"WR_X\": \"fade\",\n    \"WR_Z\": \"fade\",\n    \"TE_L\": \"block\",\n    \"TE_R\": \"fade\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Two tight ends visible on LOS (TE_L and TE_R); TE_R releases into fade route. WR_X (purple square glyph, left) runs primary fade with red arrow. WR_Z (blue X glyph, right) runs fade with yellow arrow. HB (triangle glyph below LOS) is checkdown eligible. Formation matches I-FORM Tight Pair (r1f1t2w2) with 2 TEs and 2 WRs.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "fade",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bfade\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

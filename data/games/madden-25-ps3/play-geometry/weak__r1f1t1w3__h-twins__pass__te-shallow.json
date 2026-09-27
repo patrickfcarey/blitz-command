@@ -1,0 +1,49 @@
+{
+  "slug": "weak__r1f1t1w3__h-twins__pass__te-shallow",
+  "info": {
+    "family": "WEAK",
+    "formation": "H Twins",
+    "play_name": "TE Shallow",
+    "play_type": "pass",
+    "canonical_team": "New Orleans Saints",
+    "canonical_img": 72,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "New Orleans Saints"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "WEAK",
+      "formation": "H Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 165,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 182
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.83,
+  "response_text": "```json\n{\n  \"concept\": \"shallow\",\n  \"concepts\": [\"shallow\"],\n  \"routes\": {\n    \"TE_L\": \"shallow\",\n    \"TE_R\": \"shallow\",\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"streak\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_L\",\n  \"notes\": \"Two TEs running shallow crossing routes at 5-7 yards. Red arrow indicates TE_L as primary target. Opposite side WRs clear vertically (corner and streak). Standard Weak H Twins shallow concept.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "shallow",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bshallow\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

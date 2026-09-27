@@ -1,0 +1,62 @@
+{
+  "slug": "singleback__r1f0t1w3__bunch__pass__y-trail",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Bunch",
+    "play_name": "Y Trail",
+    "play_type": "pass",
+    "canonical_team": "Balanced",
+    "canonical_img": 30,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Balanced",
+      "Chicago Bears",
+      "Cleveland Browns",
+      "Denver Broncos",
+      "Green Bay Packers",
+      "Jacksonville Jaguars",
+      "Miami Dolphins",
+      "Minnesota Vikings",
+      "New England Patriots",
+      "New York Giants",
+      "New York Jets",
+      "San Diego Chargers",
+      "St. Louis Rams",
+      "Tampa Bay Buccaneers"
+    ],
+    "owner_count": 14,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Bunch",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 493,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 232
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.0,
+  "response_text": "```json\n{\n  \"concept\": \"y_concept\",\n  \"concepts\": [\"y_concept\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"dig\",\n    \"WR_SLOT_R\": \"y_trail\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"checkdown_flat\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_R\",\n  \"notes\": \"Y Trail concept with TE_R running seam as secondary option. Red arrow traces WR_SLOT_R (R1 Circle button) running the primary Y-trail route upfield. Yellow arrow shows TE_R seam release. Blue arrow indicates HB checkdown flat to left. Standard Bunch spacing with 4 WRs + 1 TE + HB.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "y_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\by[- ]?(cross|sail|stick|corner|trail|spot|drive|shallow)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

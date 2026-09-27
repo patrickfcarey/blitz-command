@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t2w2__ace__pass__pa-dig",
+  "info": {
+    "family": "GUN",
+    "formation": "Ace",
+    "play_name": "PA Dig",
+    "play_type": "pass",
+    "canonical_team": "Carolina Panthers",
+    "canonical_img": 83,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Carolina Panthers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Ace",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Ace \u2014 2 TE 2 WR (shotgun-ace)"
+    }
+  },
+  "usage": {
+    "input_tokens": 492,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 200
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.63,
+  "response_text": "```json\n{\n  \"concept\": \"dig_route\",\n  \"concepts\": [\"dig_route\", \"pa_pass\"],\n  \"routes\": {\n    \"WR_X\": \"dig\",\n    \"WR_Z\": \"dig\",\n    \"TE_R\": \"flat\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"PA Dig with two-level dig concept. WR_X and WR_Z both run dig routes at different depths. TE_R runs flat route to the right. HB in checkdown position. Formation is GUN Ace (r1f0t2w2): 1 RB, 0 FB, 2 TE, 2 WR.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "dig_route",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdig\\b|\\bdigs\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

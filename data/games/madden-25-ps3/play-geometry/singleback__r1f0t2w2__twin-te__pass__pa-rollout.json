@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t2w2__twin-te__pass__pa-rollout",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Twin TE",
+    "play_name": "PA Rollout",
+    "play_type": "pass",
+    "canonical_team": "Tom Landry",
+    "canonical_img": 24,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Tom Landry"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Twin TE",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 502,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 236
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 4.29,
+  "response_text": "```json\n{\n  \"concept\": \"rollout_pass\",\n  \"concepts\": [\"rollout_pass\", \"pa_pass\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"TE_R\": \"seam\",\n    \"WR_Z\": \"corner\",\n    \"WR_X\": \"flat\",\n    \"HB\": \"swing\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"PA Rollout to the right (QB indicated by red arrow). TE_R runs seam as primary target (red arrow). TE_L blocks initially. WR_Z (left) runs corner (yellow arrow). WR_X (right slot) runs flat (yellow arrow). HB swings (cyan arrow) for check-down. Formation shows 2 TEs attached to OL, 2 WRs in spread, consistent with r1f0t2w2.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "rollout_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\brollout\\b|\\broll\\b",
+    "is_pa": true,
+    "is_boot_or_roll": true
+  }
+}

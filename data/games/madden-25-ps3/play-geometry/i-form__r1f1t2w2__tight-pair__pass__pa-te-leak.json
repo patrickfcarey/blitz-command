@@ -1,0 +1,53 @@
+{
+  "slug": "i-form__r1f1t2w2__tight-pair__pass__pa-te-leak",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Tight Pair",
+    "play_name": "PA TE Leak",
+    "play_type": "pass",
+    "canonical_team": "Green Bay Packers",
+    "canonical_img": 55,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Green Bay Packers",
+      "Oakland Raiders",
+      "Pass Balanced",
+      "Philadelphia Eagles",
+      "West Coast"
+    ],
+    "owner_count": 5,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Tight Pair",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Tight/Twin-TE \u2014 2 TE"
+    }
+  },
+  "usage": {
+    "input_tokens": 504,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 174
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.39,
+  "response_text": "```json\n{\n  \"concept\": \"leak_route\",\n  \"concepts\": [\"leak_route\", \"pa_pass\"],\n  \"routes\": {\n    \"TE_L\": \"leak\",\n    \"TE_R\": \"block\",\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"comeback\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_L\",\n  \"notes\": \"PA play with TE leak to the flat on left side. TE_R stays in pass-pro. WRs run independent routes (corner/comeback) on opposite side. Red arrow indicates primary target (TE_L leak). Yellow arrows show secondary option routes.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "leak_route",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bleak\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

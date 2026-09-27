@@ -1,0 +1,49 @@
+{
+  "slug": "pistol__r1f0t1w3__slot__pass__pa-fl-clown",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Slot",
+    "play_name": "PA FL Clown",
+    "play_type": "pass",
+    "canonical_team": "Pistol",
+    "canonical_img": 64,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Pistol"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "Pistol default \u2014 variant unclear"
+    }
+  },
+  "usage": {
+    "input_tokens": 500,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 240
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.59,
+  "response_text": "```json\n{\n  \"concept\": \"clown_route\",\n  \"concepts\": [\"clown_route\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"flat\",\n    \"HB\": \"wheel\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_L\",\n  \"notes\": \"PA (play-action) pass. Red arrow from QB to slot receiver running flat (primary target). WR_X (left, purple \u25a1) runs corner route. WR_Z (right, blue \u2297) runs vertical/streak. HB runs wheel route (R1 button indicated). Formation is Pistol Slot with 1 RB, 0 FB, 1 TE, 3 WR as expected. C-square visible center. OL cluster (5) along LOS. All routes match clown concept structure.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "clown_route",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bclowns?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

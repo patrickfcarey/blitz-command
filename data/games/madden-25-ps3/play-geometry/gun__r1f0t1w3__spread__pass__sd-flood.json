@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__spread__pass__sd-flood",
+  "info": {
+    "family": "GUN",
+    "formation": "Spread",
+    "play_name": "SD Flood",
+    "play_type": "pass",
+    "canonical_team": "San Diego Chargers",
+    "canonical_img": 127,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "San Diego Chargers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Spread",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 488,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 241
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.18,
+  "response_text": "```json\n{\n  \"concept\": \"flood\",\n  \"concepts\": [\"flood\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_R\": \"flat\",\n    \"TE_R\": \"dig\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"SD Flood with strong-side emphasis. WR_Z (red circle button, far right) runs the primary corner route. WR_X (blue X button, left) runs a deep streak/clearout. WR_SLOT_R (green triangle button, slot middle) runs the flat. TE_R (yellow triangle on LOS, tight right) runs an intermediate dig. HB (white circle below LOS, offset right) is the checkdown. The red arrow originates from QB and targets WR_Z corner route as primary read.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "flood",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bflood\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

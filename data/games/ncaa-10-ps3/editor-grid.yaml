@@ -1,0 +1,40 @@
+game_id: ncaa-10-ps3
+name: "NCAA Football 10"
+release_year: 2009
+developer: "EA Tiburon"
+publisher: "EA Sports"
+platform: ps3
+era: ps3
+custom_play_support: true
+custom_formation_support: false
+grid:
+  width: 25
+  height: 9
+  origin:
+    x: 12
+    y: 6
+scale:
+  x_yards_per_cell: 1.4
+  y_yards_per_cell: 1.5
+snap_to_cells: true
+limits:
+  max_route_depth_yd: 25
+  max_player_split_yd: 18
+  max_backfield_depth_yd: 9
+  allowed_motion:
+    - short
+    - long
+    - across
+playbook_caps:
+  max_plays_total: 100
+engine_quirks:
+  - "PS3-era NCAA engine."
+default_playbooks:
+  - "Florida"
+  - "Texas"
+  - "Alabama"
+verification_status: inferred
+source_notes:
+  - "Web validated 2026-04-30 — Wikipedia 'NCAA Football 10' (https://en.wikipedia.org/wiki/NCAA_Football_10): PS3 release, custom-play confirmed."
+  - "Web validated 2026-04-30 — GameFAQs NCAA Football 10 PS3 (https://gamefaqs.gamespot.com/ps3/): create-a-play editor listed."
+  - "Inferred from PS3-era engine."

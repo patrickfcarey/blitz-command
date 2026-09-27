@@ -1,0 +1,66 @@
+{
+  "slug": "gun__r0f0t0w5__empty-trey__pass__quick-slants",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Trey",
+    "play_name": "Quick Slants",
+    "play_type": "pass",
+    "canonical_team": "Arizona Cardinals",
+    "canonical_img": 130,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Arizona Cardinals",
+      "Balanced",
+      "Chicago Bears",
+      "Cincinnati Bengals",
+      "Cleveland Browns",
+      "Denver Broncos",
+      "Detroit Lions",
+      "Green Bay Packers",
+      "Indianapolis Colts",
+      "Miami Dolphins",
+      "Minnesota Vikings",
+      "New Orleans Saints",
+      "New York Jets",
+      "Pass Balanced",
+      "San Diego Chargers",
+      "Seattle Seahawks",
+      "St. Louis Rams",
+      "Tampa Bay Buccaneers"
+    ],
+    "owner_count": 18,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Trey",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 498,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 138
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 1.61,
+  "response_text": "```json\n{\n  \"concept\": \"quick_slants\",\n  \"concepts\": [\"quick_slants\"],\n  \"routes\": {\n    \"WR_X\": \"slant\",\n    \"WR_Z\": \"slant\",\n    \"WR_SLOT_L\": \"slant\",\n    \"WR_SLOT_R\": \"slant\",\n    \"WR_FLANKER\": \"slant\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "quick_slants",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bquick slants?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

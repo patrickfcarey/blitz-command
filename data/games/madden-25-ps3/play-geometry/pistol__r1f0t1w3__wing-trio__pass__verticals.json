@@ -1,0 +1,49 @@
+{
+  "slug": "pistol__r1f0t1w3__wing-trio__pass__verticals",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Wing Trio",
+    "play_name": "Verticals",
+    "play_type": "pass",
+    "canonical_team": "Washington Redskins",
+    "canonical_img": 89,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Washington Redskins"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Wing Trio",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "Pistol default \u2014 variant unclear"
+    }
+  },
+  "usage": {
+    "input_tokens": 493,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 65
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 1.47,
+  "response_text": "```json\n{\n  \"concept\": \"verticals\",\n  \"concepts\": [\"verticals\"],\n  \"routes\": \"std\",\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "verticals",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bverticals?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

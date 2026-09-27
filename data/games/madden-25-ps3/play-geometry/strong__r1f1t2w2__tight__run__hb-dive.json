@@ -1,0 +1,60 @@
+{
+  "slug": "strong__r1f1t2w2__tight__run__hb-dive",
+  "info": {
+    "family": "STRONG",
+    "formation": "Tight",
+    "play_name": "HB Dive",
+    "play_type": "run",
+    "canonical_team": "Run N Gun",
+    "canonical_img": 56,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Run N Gun",
+      "Tom Flores",
+      "Tom Landry"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "Tight",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 557,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 64
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 92.8,
+  "response_text": "```json\n{\n  \"concept\": \"inside_run\",\n  \"concepts\": [\"inside_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB straight\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "straight",
+    "c_xy": [
+      1632,
+      613
+    ],
+    "arrow_los_crossing_xy": [
+      1698,
+      613
+    ],
+    "dx_from_c": 66,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "inside_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bhb dive\\b|\\bdive\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "red__r1f1t1w2__right-close__pass__hb-spot",
+  "info": {
+    "family": "RED",
+    "formation": "Right Close",
+    "play_name": "HB Spot",
+    "play_type": "pass",
+    "canonical_team": "Bill Walsh",
+    "canonical_img": 60,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Bill Walsh"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "RED",
+      "formation": "Right Close",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "RED family \u2014 old-school 2-back default"
+    }
+  },
+  "usage": {
+    "input_tokens": 561,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 393
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 5.66,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"generic_hb_run\"],\n  \"routes\": {},\n  \"ball_carrier\": null,\n  \"primary_target\": \"HB\",\n  \"notes\": \"Play labeled 'HB Spot' with play_type=pass. Despite py_concept indicating 'generic_hb_run (family=run)', the UI banner explicitly shows 'PASS'. Route diagram shows colored button glyphs (\u25a1 purple Square at left, \u2297 blue X at right, \u2299 red Circle at far right, \u25b3 green Triangle below, R1 label). HB appears to be the primary target (red circle button glyph at far right, with red arrow pointing right). Yellow arrows indicate secondary routes: outer WR left runs back across (yellow), inner slot runs up-field (yellow from \u25b3), far-right WR runs an out route (yellow with R1). Treating as pass play per UI banner. Expected r1f1t1w2 = 1 RB, 1 FB, 1 TE, 2 WR. Visible: 1 QB (C position), 5 OL (white circles + white square center), 1 TE_R (cyan \u25b3 button below LOS, attached to RT), 2 WRs on LOS (\u25a1 purple left, \u2299 red right with R1), 1 HB (red \u2299 at far right, primary target). Formation is tight/compact; backfield shows only 1 RB visible (HB), no FB visible \u2014 may be obscured or off-screen.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "^hb \\w+",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

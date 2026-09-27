@@ -1,0 +1,180 @@
+play_id: empty-smash-spacing-left
+name: Smash / Spacing (Mirror Left)
+aliases:
+- Smash-Spacing
+- Two-Concept Quick Game
+formation: empty-left
+play_type: pass
+ball_carrier: SLOT-R
+primary_read: SLOT-R
+secondary_read: TE
+checkdown: Z
+motions: []
+concepts:
+- concept_ref: spacing
+  concept_type: pass
+  players:
+  - TE
+  - SLOT-R
+  - Z
+  field_area: left
+  is_primary: true
+  notes: Spacing to the field — TE / SLOT-R / Z settle at staggered widths underneath. The QB's first work vs zone.
+- concept_ref: smash
+  concept_type: pass
+  players:
+  - X
+  - SLOT-L
+  field_area: right
+  is_primary: false
+  notes: Smash to the boundary — X hitch under the SLOT-L corner. The shot side / answer vs a squatting boundary corner.
+assignments:
+- player: LT
+  role: pass_block
+  blocking_scheme: man-protection
+- player: LG
+  role: pass_block
+  blocking_scheme: man-protection
+- player: C
+  role: pass_block
+  blocking_scheme: man-protection
+- player: RG
+  role: pass_block
+  blocking_scheme: man-protection
+- player: RT
+  role: pass_block
+  blocking_scheme: man-protection
+- player: TE
+  role: route
+  route_name: snag
+  depth_yd: 5
+  notes: 'Spacing — inside settle: find the soft spot at 5 yards over the ball.'
+- player: SLOT-R
+  role: route
+  route_name: hitch
+  depth_yd: 6
+  is_primary: true
+  notes: Spacing — middle settle at 6 yards. Primary read in the field-side flood.
+- player: Z
+  role: route
+  route_name: out
+  depth_yd: 6
+  notes: Spacing — outside settle / speed-out at 6 yards, widening the flood.
+- player: X
+  role: route
+  route_name: hitch
+  depth_yd: 6
+  notes: 'Smash — the LO: hitch at 6 yards underneath the corner.'
+- player: SLOT-L
+  role: route
+  route_name: corner
+  depth_yd: 12
+  notes: 'Smash — the HI: 12-yard corner over the X hitch.'
+- player: QB
+  role: ball_carrier
+  path:
+  - - 0
+    - 0
+  - - 0
+    - -1
+  - - 0
+    - -2
+  notes: 'Quick drop from the empty gun set. Pre-snap, count the field side:
+
+    if the underneath is light, work Spacing right on rhythm. If the
+
+    boundary corner squats, flip to the Smash hi-lo left.
+
+    '
+strengths:
+- Two complete concepts in one call — the QB picks the side the coverage gives him
+- Spacing floods the field-side underneath; Smash answers a squatting boundary corner
+- Empty 5-wide forces the defense to declare its coverage pre-snap
+- Quick rhythm throw — beats pressure with no back to protect
+- High completion percentage as a chain-mover
+weaknesses:
+- Empty means 5-man protection — no help, the ball must come out fast
+- No run threat; the defense can play pure coverage
+- Both concepts are short — limited explosive-play upside
+- QB must read coverage cleanly pre-snap to pick the right side
+- Vulnerable to disciplined pattern-match that doesn't over-rotate
+best_vs_defense:
+- cover-3 (Spacing floods the underneath)
+- zone-blitz (quick rhythm beats the pressure)
+- cover-2 with a squatting boundary corner (Smash punishes it)
+- any defense that declares coverage pre-snap to empty
+worst_vs_defense:
+- pattern-match quarters that stays disciplined
+- cover-1 robber with a free rusher
+- bracket coverage rolled to the field
+- any defense content to tackle the short completion
+defensive_counters:
+- counter_id: field-bracket
+  pre_snap_look: Two-high shell rotated toward the field — an extra underneath defender bracketing the field-side trips
+  qb_key: Check the field-side underneath count — the defense has bodies to match all three settle routes
+  read_category: safety-shell
+  why: Spacing needs more receivers than the defense has short defenders; a field-rotated bracket matches the flood and removes
+    the soft spot.
+  typical_against:
+  - cover-2 field roll
+  - quarters with a field bracket
+- counter_id: boundary-corner-squat
+  pre_snap_look: Boundary CB squatted tight at 5-6 yards in inside leverage on the X, safety capped over the top
+  qb_key: Check the boundary corner — squatted low and inside with a safety above
+  read_category: cb-leverage
+  why: A low, inside-leverage corner sits the X hitch and the corner-route window both, so the boundary Smash hi-lo has no
+    clean answer.
+  typical_against:
+  - cover-2 with hard corners
+  - cloud to the boundary
+- counter_id: empty-zero-pressure
+  pre_snap_look: Defenders walked up over every interior gap with a single-high shell — more rushers than the 5-man protection
+    can block
+  qb_key: Count the rush vs the five blockers — the box shows a free runner
+  read_category: box-count
+  why: Empty has only five blockers; a six-plus interior pressure gets a free runner home before either concept's rhythm throw.
+  typical_against:
+  - cover-0 / cover-1 pressure
+  - empty zero blitz
+common_uses:
+- 3rd-and-medium chain-mover
+- 1st-and-10 rhythm throw vs a zone tendency
+- Two-minute / hurry-up
+- Anytime the defense over-rotates to the field
+philosophy: west-coast
+philosophy_ref: west-coast
+era: Modern — multi-concept 'two plays in one' design popularized by the Erhardt-Perkins system and now universal in pro and
+  college passing games.
+famous_examples:
+- Erhardt-Perkins offenses pairing a full-field concept with a boundary answer
+- Modern empty-formation quick-game packages
+tags:
+- pass
+- quick-game
+- multi-concept
+- empty
+- west-coast
+- high-school
+- college
+- nfl
+notes: 'Demonstration play for multi-concept composition. Rather than one
+
+  pass_concept_ref, this play carries a `concepts` array: Spacing to the
+
+  field (TE/SLOT-R/Z) and Smash to the boundary (X/SLOT-L). The QB declares
+
+  a side pre-snap off the coverage. This is the Erhardt-Perkins model — a
+
+  play is a package of concepts, each occupying part of the formation.
+
+
+  Mirror to smash-spacing-left by flipping all coordinates.
+
+  '
+verification_status: unverified
+source_notes:
+- Authored as the demonstration of the multi-concept `concepts` schema field. Pairs two standard concepts — Spacing (see data/concepts/pass-concepts/spacing.yaml)
+  and Smash — one to each side of an empty set, in the Erhardt-Perkins 'two concepts in one playcall' style.
+- Mirror of empty-smash-spacing.yaml — path waypoints flipped on x; formation reference points to the mirror formation. Routes
+  auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed look
+  — coordinates and paths are the source of truth.

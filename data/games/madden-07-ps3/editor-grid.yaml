@@ -1,0 +1,41 @@
+game_id: madden-07-ps3
+name: "Madden NFL 07"
+release_year: 2006
+developer: "EA Tiburon"
+publisher: "EA Sports"
+platform: ps3
+era: ps3
+custom_play_support: true
+custom_formation_support: false
+grid:
+  width: 25
+  height: 9
+  origin:
+    x: 12
+    y: 6
+scale:
+  x_yards_per_cell: 1.4
+  y_yards_per_cell: 1.5
+snap_to_cells: true
+limits:
+  max_route_depth_yd: 25
+  max_player_split_yd: 18
+  max_backfield_depth_yd: 9
+  allowed_motion:
+    - short
+    - long
+    - across
+playbook_caps:
+  max_plays_total: 100
+engine_quirks:
+  - "PS3-era Madden uses larger grid (25x9) compared to PS2 (21x7)."
+  - "Custom playbook cap increased to 100 plays (vs 75 on PS2)."
+default_playbooks:
+  - "Bill Belichick (Patriots)"
+  - "Tony Dungy (Colts)"
+  - "Sean Payton (Saints)"
+verification_status: inferred
+source_notes:
+  - "Web validated 2026-04-30 — Wikipedia 'Madden NFL 2007' (https://en.wikipedia.org/wiki/Madden_NFL_2007): PS3 release year 2006, custom-play editor confirmed."
+  - "Web validated 2026-04-30 — GameFAQs Madden NFL 2007 PS3 (https://gamefaqs.gamespot.com/ps3/): custom-play features listed."
+  - "Inferred from PS3-era engine upgrades; larger grid than PS2 generation."

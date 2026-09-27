@@ -1,0 +1,49 @@
+{
+  "slug": "shotgun__r1f0t0w4__spread-4wr__pass__slot-flags",
+  "info": {
+    "family": "SHOTGUN",
+    "formation": "Spread 4WR",
+    "play_name": "Slot Flags",
+    "play_type": "pass",
+    "canonical_team": "Tom Landry",
+    "canonical_img": 101,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Tom Landry"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SHOTGUN",
+      "formation": "Spread 4WR",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 0,
+      "WR": 4,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 488,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 132
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 1.81,
+  "response_text": "```json\n{\n  \"concept\": \"slot_flags\",\n  \"concepts\": [\"slot_flags\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"flag\",\n    \"WR_SLOT_R\": \"flag\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_R\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "unknown",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": null,
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

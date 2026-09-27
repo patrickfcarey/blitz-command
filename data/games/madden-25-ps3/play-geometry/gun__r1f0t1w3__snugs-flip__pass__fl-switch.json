@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__snugs-flip__pass__fl-switch",
+  "info": {
+    "family": "GUN",
+    "formation": "Snugs Flip",
+    "play_name": "FL Switch",
+    "play_type": "pass",
+    "canonical_team": "West Coast",
+    "canonical_img": 96,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "West Coast"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Snugs Flip",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 522,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 196
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.68,
+  "response_text": "```json\n{\n  \"concept\": \"switch_concept\",\n  \"concepts\": [\"switch_concept\"],\n  \"routes\": {\n    \"WR_X\": \"slant\",\n    \"WR_Z\": \"switch\",\n    \"WR_SLOT_L\": \"flat\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Switch concept with WR_Z running the crossing route (red arrow) as primary. WR_X runs slant, WR_SLOT_L flat. Formation is GUN Snugs Flip with 1 RB, 0 FB, 1 TE (R1 label visible), 3 WRs. Clean personnel match.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "switch_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\binside switch\\b|\\bswitch\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

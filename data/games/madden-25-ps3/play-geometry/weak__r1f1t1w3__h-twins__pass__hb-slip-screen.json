@@ -1,0 +1,49 @@
+{
+  "slug": "weak__r1f1t1w3__h-twins__pass__hb-slip-screen",
+  "info": {
+    "family": "WEAK",
+    "formation": "H Twins",
+    "play_name": "HB Slip Screen",
+    "play_type": "pass",
+    "canonical_team": "New Orleans Saints",
+    "canonical_img": 71,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "New Orleans Saints"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "WEAK",
+      "formation": "H Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 499,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 187
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.34,
+  "response_text": "```json\n{\n  \"concept\": \"hb_screen\",\n  \"concepts\": [\"hb_screen\"],\n  \"routes\": {\n    \"WR_X\": \"comeback\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"streak\",\n    \"WR_SLOT_R\": \"streak\",\n    \"TE_L\": \"block\",\n    \"FB\": \"block\",\n    \"HB\": \"screen\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"HB\",\n  \"notes\": \"HB slip screen with 4 WRs stretching field vertically; TE and FB block to set up screen; red arrow indicates HB receiving pass for screen development to right side.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "hb_screen",
+    "concept_family": "screen",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bhb (slip )?screen\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

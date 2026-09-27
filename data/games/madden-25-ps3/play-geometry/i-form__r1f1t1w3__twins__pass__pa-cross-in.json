@@ -1,0 +1,49 @@
+{
+  "slug": "i-form__r1f1t1w3__twins__pass__pa-cross-in",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Twins",
+    "play_name": "PA Cross In",
+    "play_type": "pass",
+    "canonical_team": "Pittsburgh Steelers",
+    "canonical_img": 52,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Pittsburgh Steelers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Twins \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 171,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 198
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 15.99,
+  "response_text": "```json\n{\n  \"concept\": \"cross_concept\",\n  \"concepts\": [\"pa_cross_in\", \"cross_concept\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"cross_in\",\n    \"WR_SLOT_L\": \"cross_in\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Play-action cross concept with two crossing receivers (WR_Z and WR_SLOT_L) at intermediate depth. WR_X runs corner clearout on opposite side. TE_R releases vertically. Red arrow indicates primary read on WR_Z crossing route.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "cross_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcross(es)?\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

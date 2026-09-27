@@ -1,0 +1,23 @@
+game_id: madden-96-ps1
+name: "Madden NFL 96"
+release_year: 1995
+developer: "EA Tiburon"
+publisher: "EA Sports"
+platform: ps1
+era: ps1
+custom_play_support: false
+custom_formation_support: false
+grid: null
+scale: null
+snap_to_cells: null
+limits: null
+playbook_caps: null
+engine_quirks:
+  - "No create-a-play editor in this title — all plays are built-in."
+  - "Limited audible system; no playbook customization."
+default_playbooks:
+  - "All 30 NFL teams (1995 season rosters)"
+verification_status: verified
+source_notes:
+  - "Web validated 2026-04-30 — Wikipedia 'Madden NFL 96' (https://en.wikipedia.org/wiki/Madden_NFL_96): release year 1995, no create-a-play feature listed."
+  - "Web validated 2026-04-30 — GameFAQs Madden NFL 96 PS1 (https://gamefaqs.gamespot.com/ps/): custom-playbook absence confirmed."

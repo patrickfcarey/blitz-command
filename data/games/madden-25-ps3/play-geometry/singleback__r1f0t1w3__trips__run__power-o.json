@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__trips__run__power-o",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Trips",
+    "play_name": "Power O",
+    "play_type": "run",
+    "canonical_team": "Run Balanced",
+    "canonical_img": 38,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Run Balanced"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Trips",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 583,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 66
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 88.39,
+  "response_text": "```json\n{\n  \"concept\": \"power_o\",\n  \"concepts\": [\"power_o\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB B_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "error": "no C detected"
+  },
+  "py_concept": {
+    "concept": "power_o",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bpower ?o\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,86 @@
+name: Singleback Trio
+side: offense
+personnel: "11"
+strength_side: right
+
+# Modern 11-personnel base under-center. 1 RB, 1 TE, 3 WR.
+# X on weak side (left), Z and Slot on strong side (right) — Slot to balance.
+# Legality: 5 OL + TE + X = 7 on the line; Z, Slot, QB, HB off.
+# Note: the slot is placed weak-side here for true balance; many teams put
+# the slot strong-side for trips-feel with the TE.
+players:
+  - { label: LT,    position: LT, x: -2.0,  y:  0.0, on_line: true  }
+  - { label: LG,    position: LG, x: -1.0,  y:  0.0, on_line: true  }
+  - { label: C,     position: C,  x:  0.0,  y:  0.0, on_line: true  }
+  - { label: RG,    position: RG, x:  1.0,  y:  0.0, on_line: true  }
+  - { label: RT,    position: RT, x:  2.0,  y:  0.0, on_line: true  }
+  - { label: TE,    position: TE, x:  3.5,  y:  0.0, on_line: true  }
+  - { label: X,     position: WR, x: -15.0, y:  0.0, on_line: true  }
+  - { label: Z,     position: WR, x:  12.0, y: -1.0, on_line: false }
+  - { label: SLOT,  position: WR, x: -8.0,  y: -1.0, on_line: false }
+  - { label: QB,    position: QB, x:  0.0,  y: -2.0, on_line: false }
+  - { label: HB,    position: HB, x:  0.0,  y: -6.0, on_line: false }
+
+strengths:
+  - Three-receiver spread forces defense out of base personnel (often into nickel)
+  - Removing the FB creates better pass protection windows and cleaner inside-run lanes
+  - One-back zone runs (inside / outside zone) are the bread-and-butter
+  - Slot WR creates horizontal stress points — pick concepts, mesh, stick
+  - Play-action remains credible with TE attached and HB threat
+
+weaknesses:
+  - No FB lead block — relies on OL athleticism (zone) rather than power kickouts
+  - Single RB limits two-back ball-handling deception
+  - Vs heavy fronts the run game has fewer answers without a FB
+  - Strong-side balance is asymmetric (TE vs slot WR side) — defenses can roll coverage
+  - Losing the X via shift gets you to 6 on the line (illegal procedure risk)
+
+common_uses:
+  - Modern NFL/college base offense — workhorse formation
+  - First and second downs in normal field position
+  - Two-minute / hurry-up (allows quick spread without subbing)
+  - Setting up RPOs and quick-game concepts
+
+run_concepts:
+  - inside-zone
+  - outside-zone
+  - power
+  - draw
+  - dart
+
+pass_concepts:
+  - mesh
+  - stick
+  - smash
+  - four-verticals
+  - levels
+  - pa-post
+  - hb-screen
+
+era: "2000s–present, dominant base offense in modern football."
+
+famous_users:
+  - "2000s–2010s Indianapolis Colts (Peyton Manning)"
+  - "Modern NFL widespread — most teams' base 11-personnel under-center look"
+  - "Pro-style college programs"
+
+tags:
+  - spread
+  - 11-personnel
+  - balanced
+  - zone-friendly
+  - modern
+  - under-center
+  - nfl
+  - college
+
+notes: |
+  True Singleback Ace = QB under center, 1 RB. If QB is in shotgun this becomes
+  Shotgun Singleback (separate file). Slot placed weak-side for true balance;
+  move SLOT to x=+8 with Z further out for "Singleback Trips Right" feel.
+
+verification_status: unverified
+source_notes:
+  - "Coordinates: standard 11-personnel under-center alignment."
+  - "Strengths/weaknesses: modern offensive textbook reasoning."
+  - "Web validated 2026-04-29 — Wikipedia 'Single set back' (https://en.wikipedia.org/wiki/Single_set_back); KOKA Sports 'Ace Formation Football' (https://blog.kokasports.com/ace-formation-football-plays-playbook/); XsOs Football 'Singleback Ace Breakdown' (https://www.xsosfootball.com/formation-breakdown-singleback-ace/). Confirmed: 1 RB about 5 yards behind QB; 11 personnel = 1 RB / 1 TE / 3 WR; equal pass/run capability."

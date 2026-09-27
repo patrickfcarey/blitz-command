@@ -1,0 +1,49 @@
+{
+  "slug": "i-form__r1f1t1w3__slot__pass__deep-cross",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Slot",
+    "play_name": "Deep Cross",
+    "play_type": "pass",
+    "canonical_team": "Brian Billick",
+    "canonical_img": 72,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Brian Billick"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Slot \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 493,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 128
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 1.74,
+  "response_text": "```json\n{\n  \"concept\": \"deep_cross\",\n  \"concepts\": [\"deep_cross\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"deep_cross\",\n    \"WR_SLOT_L\": \"curl\",\n    \"TE_L\": \"dig\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "deep_cross",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdeep cross\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

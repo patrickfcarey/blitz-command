@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r0f0t0w5__empty-falcon__pass__stick",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Falcon",
+    "play_name": "Stick",
+    "play_type": "pass",
+    "canonical_team": "Atlanta Falcons",
+    "canonical_img": 130,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Atlanta Falcons"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Falcon",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 513,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 246
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.33,
+  "response_text": "```json\n{\n  \"concept\": \"stick\",\n  \"concepts\": [\"stick\"],\n  \"routes\": {\n    \"WR_Z\": \"streak\",\n    \"WR_X\": \"stick\",\n    \"WR_SLOT_L\": \"flat\",\n    \"WR_SLOT_R\": \"corner\",\n    \"WR_FLANKER\": \"comeback\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"GUN Empty 5-wide (r0f0t0w5). All 5 WRs visible with button glyphs. Stick concept executed on left side: WR_SLOT_L runs flat, WR_X runs stick route at ~5 yds. Right side shows WR_SLOT_R corner and WR_FLANKER comeback. WR_Z (far left) runs streak as vertical clearout. Yellow dashed arrows indicate option/motion paths; red arrow on WR_X indicates primary target.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "stick",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bstick\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

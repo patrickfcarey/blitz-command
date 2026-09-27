@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r0f0t0w5__empty-bunch__pass__curl-flats",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Bunch",
+    "play_name": "Curl Flats",
+    "play_type": "pass",
+    "canonical_team": "Minnesota Vikings",
+    "canonical_img": 136,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Minnesota Vikings"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Bunch",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 521,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 230
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 4.28,
+  "response_text": "```json\n{\n  \"concept\": \"curl_flat\",\n  \"concepts\": [\"curl_flat\"],\n  \"routes\": {\n    \"WR_X\": \"curl\",\n    \"WR_Z\": \"flat\",\n    \"WR_SLOT_L\": \"curl\",\n    \"WR_SLOT_R\": \"flat\",\n    \"WR_FLANKER\": \"streak\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"GUN Empty Bunch with 5 WRs. Red arrow on WR_X (purple \u25a1 button, left side) indicates primary curl target. Right side (red \u2299 Circle button) running flat. Left slot (green \u25b3 Triangle) running curl. Right slot appears to run flat. Far right WR (L1 label) running vertical/streak. Layout matches curl-flat concept with multiple receivers executing the two-man combo structure.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "curl_flat",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcurl flats?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

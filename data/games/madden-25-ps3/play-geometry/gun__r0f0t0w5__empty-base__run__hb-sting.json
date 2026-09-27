@@ -1,0 +1,58 @@
+{
+  "slug": "gun__r0f0t0w5__empty-base__run__hb-sting",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Base",
+    "play_name": "HB Sting",
+    "play_type": "run",
+    "canonical_team": "Atlanta Falcons",
+    "canonical_img": 142,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Atlanta Falcons"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Base",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 566,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 72
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 48.92,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"generic_hb_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB A_left\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "A_left",
+    "c_xy": [
+      1618,
+      699
+    ],
+    "arrow_los_crossing_xy": [
+      1419,
+      699
+    ],
+    "dx_from_c": -199,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "^hb \\w+",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

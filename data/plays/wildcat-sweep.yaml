@@ -1,0 +1,74 @@
+play_id: wildcat-sweep
+name: Wildcat Sweep
+aliases: [Wildcat Toss, Direct-Snap Sweep]
+formation: wildcat
+play_type: run
+ball_carrier: RB1
+motions: []
+assignments:
+  - { player: LT, role: run_block, blocking_scheme: down-block, target: backside-DE }
+  - { player: LG, role: run_block, blocking_scheme: pull-around, target: cornerback,
+      path: [[0, 0], [3, -0.5], [6, 0], [9, 3]],
+      notes: "PULL — leads RB1 around the strong-side edge to seal the perimeter." }
+  - { player: C, role: run_block, blocking_scheme: gap-block }
+  - { player: RG, role: run_block, blocking_scheme: pull-around, target: alley-defender,
+      path: [[0, 0], [3, -0.5], [5, 0], [6, 4]],
+      notes: "PULL — second puller, leads at the LB level." }
+  - { player: RT, role: run_block, blocking_scheme: down-block, target: playside-DT }
+  - { player: TE, role: run_block, blocking_scheme: kickout, target: edge-defender }
+  - { player: QB-WR, role: route, route_name: stalk-or-route, depth_yd: 0,
+      notes: "QB-as-WR holds at his split — provides cushion threat / decoy." }
+  - { player: Z, role: run_block, blocking_scheme: stalk, target: cornerback }
+  - { player: SLOT, role: run_block, blocking_scheme: crack, target: outside-LB,
+      notes: "Crack-block back inside on outside LB / alley defender." }
+  - { player: RB1, role: ball_carrier, is_primary: true,
+      path: [[0, 0], [4, 1], [7, 4], [10, 8]],
+      notes: "Direct snap, take a quick lateral step, follow pulling guards around the strong-side perimeter." }
+  - { player: RB2, role: lead_block, target: cornerback,
+      path: [[0, 0], [5, 3], [9, 5]],
+      notes: "Lead through perimeter — kickout the corner if needed." }
+strengths:
+  - "Direct snap to RB1 with two pulling guards = extreme numbers advantage at edge"
+  - "Multiple lead blockers (pulling LG + pulling RG + RB2 + SLOT crack)"
+  - "Speed advantage — RB1 already moving at the snap"
+  - "Surprise factor in modern football"
+weaknesses:
+  - "Slow-developing perimeter run (~2.5 sec to corner)"
+  - "Wildcat formation tells defense run is coming"
+  - "Vulnerable to disciplined edge contain"
+  - "Defense knows pass is unlikely from this look"
+best_vs_defense: ["over-front", "cover-3 with stretched playside coverage", "speed-flow defenses"]
+worst_vs_defense: ["cover-1 with EDGE squeezing", "blitz from playside", "disciplined edge defenders"]
+common_uses: ["Perimeter alternative to Wildcat Power", "1st-and-10 surprise sweep", "Setting up reverses"]
+philosophy: power-run
+run_concept_ref: sweep
+philosophy_ref: power-run
+era: "Modern Wildcat era (2008 onward)."
+famous_examples: ["2008 Dolphins Wildcat sweep package", "HS direct-snap perimeter packages"]
+tags: [run, sweep, perimeter, wildcat, direct-snap, 21-personnel, any-level, high-school, college, nfl]
+verification_status: unverified
+source_notes:
+  - "Wildcat sweep with two pulling guards — extreme power at the perimeter."
+flip_reads:
+- flip_id: force-set-callside
+  pre_snap_look: The playside force defender (corner or outside linebacker) is aligned tight and
+    downhill with run support set hard to the called side.
+  qb_key: Check the playside edge — force defender squatted and downhill, no cushion.
+  read_category: cb-leverage
+  flip_to: mirror-play
+  why: A perimeter run into a set force defender has no edge; flipping to the side with a soft,
+    depth-aligned corner gives the play the room it needs.
+  typical_against:
+  - cover-2 with hard corners
+  - cloud support
+- flip_id: alley-stacked-formation
+  pre_snap_look: Defense has stacked the alley to the formation's strength — an extra defender
+    plus a rolled safety filling the strong-side perimeter.
+  qb_key: Check the strong-side alley — it is stacked while the backside alley is open.
+  read_category: box-count
+  flip_to: mirror-formation
+  why: Flipping the formation relocates the strength and the run target away from the stacked
+    alley, forcing the defense to re-rotate or surrender the edge.
+  typical_against:
+  - quarters with strong roll
+  - 8-man fronts

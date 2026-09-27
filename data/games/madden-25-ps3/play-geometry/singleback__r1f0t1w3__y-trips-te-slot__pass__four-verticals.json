@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__y-trips-te-slot__pass__four-verticals",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Y-Trips TE Slot",
+    "play_name": "Four Verticals",
+    "play_type": "pass",
+    "canonical_team": "Baltimore Ravens",
+    "canonical_img": 35,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Baltimore Ravens"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Y-Trips TE Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 509,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 69
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 1.19,
+  "response_text": "```json\n{\n  \"concept\": \"four_verticals\",\n  \"concepts\": [\"four_verticals\"],\n  \"routes\": \"std\",\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "four_verticals",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bfour ?verticals?\\b|\\b4 ?verts?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

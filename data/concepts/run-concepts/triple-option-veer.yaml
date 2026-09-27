@@ -1,0 +1,35 @@
+concept_id: triple-option-veer
+name: Triple Option (Veer)
+category: option
+description: |
+  Inside-veer triple option where QB reads the playside EDGE defender. If EDGE
+  crashes inside → QB keeps the ball or pitches to HB. If EDGE stays wide →
+  FB dives into the A-gap (reads the playside DT). If dive is covered → QB keeps
+  or pitches to HB on the perimeter. High-speed decision tree dependent on QB
+  and pitch-man execution.
+aim_point: "Varies per read — A-gap dive, QB keep, or HB pitch"
+read_tree:
+  - phase: 1
+    defender: "playside EDGE"
+    decision: "QB reads EDGE: if crashes inside → pitch or keep. If stays outside → give to FB."
+  - phase: 2
+    defender: "playside DT (for dive read)"
+    decision: "FB reads DT: if open → take it. If filled → remain pitch man."
+blocking_scheme_ref: gap-blocking
+pulls_required: []
+lead_blocker: FB
+pairs_with:
+  - midline-option
+  - option-pa
+  - flexbone
+tags:
+  - run
+  - option
+  - triple-option
+  - veer
+  - high-school
+  - college
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Throw Deep Publishing 'Triple Option / Veer' (https://throwdeeppublishing.com/blogs/football-glossary/): confirmed EDGE read → FB dive, keep, or pitch decision tree."
+  - "Web validated 2026-04-30 — X&O Labs 'Option Run Game' (https://www.xandolabs.com/): triple-option veer standard for option-based offenses."

@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__doubles__pass__pa-y-corner",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Doubles",
+    "play_name": "PA Y-Corner",
+    "play_type": "pass",
+    "canonical_team": "San Diego Chargers",
+    "canonical_img": 33,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "San Diego Chargers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Doubles",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 499,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 200
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.9,
+  "response_text": "```json\n{\n  \"concept\": \"y_concept\",\n  \"concepts\": [\"y_concept\", \"pa_pass\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_R\": \"corner\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"PA Y-Corner with play-action fake. Red arrow on WR_X corner route (primary). Yellow arrows on WR_Z streak, WR_SLOT_R corner, and TE_R seam. R1 button glyph on TE_R. HB positioned for checkdown.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "y_concept",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\by[- ]?(cross|sail|stick|corner|trail|spot|drive|shallow)\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "slug": "gun__r1f0t1w3__split-slot__pass__backs-cross",
+  "info": {
+    "family": "GUN",
+    "formation": "Split Slot",
+    "play_name": "Backs Cross",
+    "play_type": "pass",
+    "canonical_team": "Balanced",
+    "canonical_img": 70,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Balanced",
+      "Buffalo Bills",
+      "Denver Broncos",
+      "Jimmy Johnson",
+      "Tampa Bay Buccaneers",
+      "Tennessee Titans"
+    ],
+    "owner_count": 6,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Split Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "GUN/Shotgun default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 493,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 209
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.87,
+  "response_text": "```json\n{\n  \"concept\": \"cross_concept\",\n  \"concepts\": [\"backs_cross\"],\n  \"routes\": {\n    \"QB\": \"setup\",\n    \"HB\": \"drag\",\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"comeback\",\n    \"TE_R\": \"seam\",\n    \"WR_SLOT_L\": \"out\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"HB\",\n  \"notes\": \"HB runs primary drag route (red arrow). Multiple receiver reads available; slot and outside WRs provide clearing and breaking routes. TE seam helps stretch vertical. Layout matches GUN Split Slot with 1 RB, 0 FB, 1 TE, 3 WR as expected (r1f0t1w3).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "cross_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcross(es)?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

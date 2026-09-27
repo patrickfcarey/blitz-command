@@ -1,0 +1,50 @@
+{
+  "slug": "pistol__r1f0t1w3__ace-twins__pass__hb-slip-screen",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Ace Twins",
+    "play_name": "HB Slip Screen",
+    "play_type": "pass",
+    "canonical_team": "Pistol",
+    "canonical_img": 47,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Pistol",
+      "San Francisco 49ers"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Ace Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "Pistol default \u2014 variant unclear"
+    }
+  },
+  "usage": {
+    "input_tokens": 502,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 162
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.6,
+  "response_text": "```json\n{\n  \"concept\": \"hb_screen\",\n  \"concepts\": [\"hb_screen\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_R\": \"seam\",\n    \"TE_R\": \"block\",\n    \"HB\": \"screen\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"HB\",\n  \"notes\": \"HB slip screen with vertical clearout routes (four_verticals-style stretching). TE right blocks initially; WRs attack downfield to clear the screen lane.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "hb_screen",
+    "concept_family": "screen",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bhb (slip )?screen\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

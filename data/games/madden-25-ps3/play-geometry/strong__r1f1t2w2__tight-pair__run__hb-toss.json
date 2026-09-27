@@ -1,0 +1,65 @@
+{
+  "slug": "strong__r1f1t2w2__tight-pair__run__hb-toss",
+  "info": {
+    "family": "STRONG",
+    "formation": "Tight Pair",
+    "play_name": "HB Toss",
+    "play_type": "run",
+    "canonical_team": "Brian Billick",
+    "canonical_img": 99,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Brian Billick",
+      "Jimmy Johnson",
+      "Kansas City Chiefs",
+      "Miami Dolphins",
+      "Mike Ditka",
+      "New York Jets",
+      "San Francisco 49ers",
+      "Tampa Bay Buccaneers"
+    ],
+    "owner_count": 8,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "Tight Pair",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 568,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 72
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 57.6,
+  "response_text": "```json\n{\n  \"concept\": \"outside_run_toss\",\n  \"concepts\": [\"outside_run_toss\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB D_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_right",
+    "c_xy": [
+      1632,
+      613
+    ],
+    "arrow_los_crossing_xy": [
+      2151,
+      613
+    ],
+    "dx_from_c": 519,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "outside_run_toss",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bhb toss\\b|\\btoss\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

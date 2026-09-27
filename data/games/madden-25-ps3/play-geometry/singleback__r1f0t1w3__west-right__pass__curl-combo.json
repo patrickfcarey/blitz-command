@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__west-right__pass__curl-combo",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "West Right",
+    "play_name": "Curl Combo",
+    "play_type": "pass",
+    "canonical_team": "Bill Walsh",
+    "canonical_img": 14,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Bill Walsh"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "West Right",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "Singleback default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 496,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 234
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.09,
+  "response_text": "```json\n{\n  \"concept\": \"curls\",\n  \"concepts\": [\"curls\"],\n  \"routes\": {\n    \"WR_X\": \"curl\",\n    \"WR_Z\": \"flat\",\n    \"WR_SLOT_L\": \"corner\",\n    \"TE_R\": \"streak\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"WR_X (purple square, left side) runs the primary curl route (yellow arrow). WR_Z (blue X button, right side) runs the flat underneath. WR_SLOT_L (green triangle, left of center) runs a corner route over the curl. TE_R (red circle button, far right) runs a vertical stretch. HB (cyan triangle, backfield) appears to have a check/release role. Play matches curl_flat template structure with additional stretch element from TE.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "curls",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcurls?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

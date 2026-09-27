@@ -1,0 +1,51 @@
+{
+  "slug": "full-house__r1f0t1w3__normal-wide__pass__close-z-clown",
+  "info": {
+    "family": "FULL-HOUSE",
+    "formation": "Normal Wide",
+    "play_name": "Close Z Clown",
+    "play_type": "pass",
+    "canonical_team": "Cincinnati Bengals",
+    "canonical_img": 77,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Cincinnati Bengals",
+      "Joe Gibbs",
+      "Vince Lombardi"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "FULL-HOUSE",
+      "formation": "Normal Wide",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "low",
+      "notes": "unknown family 'FULL-HOUSE' \u2014 generic 11-personnel guess"
+    }
+  },
+  "usage": {
+    "input_tokens": 503,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 287
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.56,
+  "response_text": "```json\n{\n  \"concept\": \"clown_route\",\n  \"concepts\": [\"clown_route\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"slant\",\n    \"TE_R\": \"flat\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Full-House formation (r1f0t1w3): 1 RB (HB), 0 FB, 1 TE (right), 3 WRs. WR_X (left, purple \u25a1) runs streak upfield. WR_Z (right outer, red \u2299) runs corner route \u2014 primary target with red arrow. WR_SLOT_L (middle-left, green \u25b3) runs slant. TE_R (right, cyan \u25b3) runs flat. HB (center-back, blue \u2297) is eligible checkdown. Yellow route arrows on left side indicate motion/presnap setup. Clown concept typically features Z corner as the primary read.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "clown_route",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bclowns?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

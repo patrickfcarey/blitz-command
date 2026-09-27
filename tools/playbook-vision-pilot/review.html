@@ -1,0 +1,2315 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>M25 vision pilot — hand review</title>
+<style>
+  body { font-family: -apple-system, system-ui, sans-serif; max-width: 1200px;
+         margin: 0 auto; padding: 20px; background: #1a1a1a; color: #e8e8e8; }
+  h1, h2 { color: #fff; }
+  .play { background: #252525; border: 1px solid #3a3a3a;
+          border-radius: 8px; padding: 20px; margin-bottom: 30px; }
+  .play h2 { margin-top: 0; border-bottom: 1px solid #3a3a3a; padding-bottom: 8px; }
+  .crop-and-data { display: grid; grid-template-columns: 1fr 1fr; gap: 20px;
+                   margin-top: 12px; }
+  .crop img { width: 100%; border: 1px solid #444; border-radius: 4px;
+              display: block; }
+  .model-read { background: #1a1a1a; padding: 12px; border-radius: 4px;
+                font-size: 14px; }
+  .model-read b { color: #ffd060; }
+  .model-read code { background: #333; padding: 2px 5px; border-radius: 3px;
+                     font-size: 13px; }
+  .truth { margin-top: 16px; background: #2a2a2a; padding: 14px;
+           border-radius: 4px; }
+  .truth h3 { margin: 0 0 12px 0; font-size: 16px; }
+  .check-row { display: flex; align-items: center; gap: 8px; margin: 6px 0;
+               flex-wrap: wrap; }
+  .check-row label { min-width: 220px; }
+  .check-row input[type=text] { background: #1a1a1a; color: #e8e8e8;
+                                border: 1px solid #444; padding: 4px 8px;
+                                border-radius: 3px; width: 180px; }
+  .check-row input[type=checkbox] { transform: scale(1.2); }
+  textarea { width: 100%; box-sizing: border-box; background: #1a1a1a;
+             color: #e8e8e8; border: 1px solid #444; border-radius: 3px;
+             padding: 8px; font-family: inherit; min-height: 50px; }
+  .meta { color: #999; font-size: 13px; margin: 4px 0; }
+  .stratum-tag { display: inline-block; background: #4a3a8a; color: #fff;
+                 padding: 2px 8px; border-radius: 3px; font-size: 12px;
+                 margin-left: 8px; }
+  .save-bar { position: sticky; bottom: 0; background: #1a1a1a;
+              padding: 16px; border-top: 2px solid #444;
+              text-align: center; margin-top: 30px; }
+  button { background: #4a8a4a; color: white; border: 0;
+           padding: 12px 30px; font-size: 16px; border-radius: 4px;
+           cursor: pointer; }
+  button:hover { background: #5aa05a; }
+  #copyArea { position: absolute; left: -9999px; }
+  details { margin-top: 8px; }
+  details summary { cursor: pointer; color: #999; font-size: 13px; }
+  details pre { background: #111; padding: 8px; border-radius: 3px;
+                font-size: 11px; max-height: 200px; overflow: auto; }
+</style>
+</head>
+<body>
+<h1>Hand-labeling review — vision pilot (12 plays)</h1>
+<p>For each play: look at the crop, compare the model's bulleted read on the right.
+Check the boxes for things the model got right. Leave a box unchecked AND
+fill in the text field next to it when wrong. Use the notes blank for anything
+else. Your edits autosave to the browser; click <b>Save</b> at the bottom to
+download the truth JSON.</p>
+
+
+<div class="play" data-play-id="san_diego_chargers__hb_slip_screen__0098_2">
+  <h2>Play 1: HB Slip Screen — San Diego Chargers
+    <span class="stratum-tag">pass_generic</span></h2>
+  <div class="meta">Formation: GUN Normal Y-Flex Tight</div>
+  <div class="meta">play_id: <code>san_diego_chargers__hb_slip_screen__0098_2</code></div>
+  <div class="meta">Crop: <code>gun-normal-y-flex-tight__pass__hb-slip-screen__san-diego-chargers__img98p2__WIDE.jpg</code></div>
+
+  <div class="crop-and-data">
+    <div class="crop"><img src="./dispatch-crops/gun-normal-y-flex-tight__pass__hb-slip-screen__san-diego-chargers__img98p2__WIDE.jpg" alt="play crop"></div>
+    <div class="model-read"><div><b>play_type:</b> pass</div>
+<div><b>concept:</b> slip screen</div>
+<div><b>OL count (excl C):</b> 4</div>
+<div><b>ol_offset_from_c:</b> <code>below</code></div>
+<div><b>TE count:</b> 0</div>
+<div><b>WR count:</b> 4</div>
+<div><b>Backfield:</b> 2 (QB, HB)</div>
+<div><b>target_gap:</b> <code>None</code></div>
+<div><b>ball-carrier path:</b> HB slip screen - releases right from backfield position then curves back behind LOS to catch screen pass</div>
+<div><b>confidence:</b> high</div>
+      <details><summary>full raw JSON</summary><pre>{
+  &quot;play_id&quot;: &quot;san_diego_chargers__hb_slip_screen__0098_2&quot;,
+  &quot;play_type_observed&quot;: &quot;pass&quot;,
+  &quot;concept&quot;: &quot;slip screen&quot;,
+  &quot;concept_delta&quot;: null,
+  &quot;los_y&quot;: 318,
+  &quot;center&quot;: {
+    &quot;x&quot;: 868,
+    &quot;y&quot;: 318,
+    &quot;glyph&quot;: &quot;white_square&quot;
+  },
+  &quot;ol_offset_from_c&quot;: &quot;below&quot;,
+  &quot;offensive_line&quot;: [
+    {
+      &quot;position&quot;: &quot;LT&quot;,
+      &quot;x&quot;: 728,
+      &quot;y&quot;: 360,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    },
+    {
+      &quot;position&quot;: &quot;LG&quot;,
+      &quot;x&quot;: 798,
+      &quot;y&quot;: 360,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    },
+    {
+      &quot;position&quot;: &quot;RG&quot;,
+      &quot;x&quot;: 938,
+      &quot;y&quot;: 360,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    },
+    {
+      &quot;position&quot;: &quot;RT&quot;,
+      &quot;x&quot;: 1008,
+      &quot;y&quot;: 360,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    }
+  ],
+  &quot;tight_ends&quot;: [],
+  &quot;wide_receivers&quot;: [
+    {
+      &quot;position&quot;: &quot;WR_X&quot;,
+      &quot;x&quot;: 420,
+      &quot;y&quot;: 320,
+      &quot;glyph&quot;: &quot;purple_square&quot;,
+      &quot;button&quot;: &quot;Square&quot;,
+      &quot;split_side&quot;: &quot;left&quot;,
+      &quot;route&quot;: {
+        &quot;color&quot;: &quot;yellow&quot;,
+        &quot;style&quot;: &quot;solid&quot;,
+        &quot;description&quot;: &quot;vertical stem upfield then breaks back left on crossing route&quot;
+      }
+    },
+    {
+      &quot;position&quot;: &quot;WR_SLOT_L&quot;,
+      &quot;x&quot;: 520,
+      &quot;y&quot;: 355,
+      &quot;glyph&quot;: &quot;cyan_triangle&quot;,
+      &quot;button&quot;: &quot;Triangle&quot;,
+      &quot;split_side&quot;: &quot;left&quot;,
+      &quot;route&quot;: {
+        &quot;color&quot;: &quot;yellow&quot;,
+        &quot;style&quot;: &quot;solid&quot;,
+        &quot;description&quot;: &quot;vertical upfield route&quot;
+      }
+    },
+    {
+      &quot;position&quot;: &quot;WR_Z&quot;,
+      &quot;x&quot;: 1165,
+      &quot;y&quot;: 320,
+      &quot;glyph&quot;: &quot;blue_x&quot;,
+      &quot;button&quot;: &quot;Cross&quot;,
+      &quot;split_side&quot;: &quot;right&quot;,
+      &quot;route&quot;: {
+        &quot;color&quot;: &quot;yellow&quot;,
+        &quot;style&quot;: &quot;solid&quot;,
+        &quot;description&quot;: &quot;in-breaking route to left&quot;
+      }
+    },
+    {
+      &quot;position&quot;: &quot;WR_SLOT_R&quot;,
+      &quot;x&quot;: 1320,
+      &quot;y&quot;: 320,
+      &quot;glyph&quot;: &quot;red_circle&quot;,
+      &quot;button&quot;: &quot;Circle&quot;,
+      &quot;split_side&quot;: &quot;right&quot;,
+      &quot;route&quot;: {
+        &quot;color&quot;: &quot;yellow&quot;,
+        &quot;style&quot;: &quot;solid&quot;,
+        &quot;description&quot;: &quot;short crosser moving left&quot;
+      }
+    }
+  ],
+  &quot;backfield&quot;: [
+    {
+      &quot;position&quot;: &quot;QB&quot;,
+      &quot;x&quot;: 868,
+      &quot;y&quot;: 460,
+      &quot;glyph&quot;: &quot;white_circle&quot;,
+      &quot;button&quot;: &quot;none&quot;,
+      &quot;route&quot;: null
+    },
+    {
+      &quot;position&quot;: &quot;HB&quot;,
+      &quot;x&quot;: 868,
+      &quot;y&quot;: 480,
+      &quot;glyph&quot;: &quot;white_circle&quot;,
+      &quot;button&quot;: &quot;R1&quot;,
+      &quot;route&quot;: {
+        &quot;color&quot;: &quot;red&quot;,
+        &quot;style&quot;: &quot;solid&quot;,
+        &quot;description&quot;: &quot;slip screen route - releases right then curves back behind LOS for screen pass&quot;
+      }
+    }
+  ],
+  &quot;unknowns&quot;: [],
+  &quot;players_missing&quot;: [],
+  &quot;ball_carrier_or_primary&quot;: {
+    &quot;from_position&quot;: &quot;HB&quot;,
+    &quot;arrow_color&quot;: &quot;red&quot;,
+    &quot;arrow_style&quot;: &quot;solid&quot;,
+    &quot;description&quot;: &quot;HB slip screen - releases right from backfield position then curves back behind LOS to catch screen pass&quot;
+  },
+  &quot;play_concept_observed&quot;: &quot;slip screen&quot;,
+  &quot;confidence&quot;: &quot;high&quot;,
+  &quot;extraction_notes&quot;: &quot;Clear pass play with OL in pass-pro setback position. Four wide receivers spread across formation with varied route depths. HB labeled R1 is the primary screen target with red arrow showing characteristic slip screen path - initial release right then curving back behind the line. QB in shotgun approximately 5 yards behind center. Formation matches GUN Normal Y-Flex Tight with 4 WR, 1 HB, no TE visible on LOS.&quot;
+}</pre></details>
+    </div>
+  </div>
+
+  <div class="truth">
+    <h3>TRUTH (check what's right, fill correction if wrong)</h3>
+    <div class="check-row">
+  <input type="checkbox" data-check="play_type" data-play-id="san_diego_chargers__hb_slip_screen__0098_2" id="san_diego_chargers__hb_slip_screen__0098_2_play_type">
+  <label for="san_diego_chargers__hb_slip_screen__0098_2_play_type">play_type correct</label>
+  <input type="text" data-correction="play_type_actual" data-play-id="san_diego_chargers__hb_slip_screen__0098_2" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="ol_count" data-play-id="san_diego_chargers__hb_slip_screen__0098_2" id="san_diego_chargers__hb_slip_screen__0098_2_ol_count">
+  <label for="san_diego_chargers__hb_slip_screen__0098_2_ol_count">OL count = 4 (excl C)</label>
+  <input type="text" data-correction="ol_count_actual" data-play-id="san_diego_chargers__hb_slip_screen__0098_2" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="te_count" data-play-id="san_diego_chargers__hb_slip_screen__0098_2" id="san_diego_chargers__hb_slip_screen__0098_2_te_count">
+  <label for="san_diego_chargers__hb_slip_screen__0098_2_te_count">TE count correct</label>
+  <input type="text" data-correction="te_count_actual" data-play-id="san_diego_chargers__hb_slip_screen__0098_2" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="wr_count" data-play-id="san_diego_chargers__hb_slip_screen__0098_2" id="san_diego_chargers__hb_slip_screen__0098_2_wr_count">
+  <label for="san_diego_chargers__hb_slip_screen__0098_2_wr_count">WR count correct</label>
+  <input type="text" data-correction="wr_count_actual" data-play-id="san_diego_chargers__hb_slip_screen__0098_2" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="backfield" data-play-id="san_diego_chargers__hb_slip_screen__0098_2" id="san_diego_chargers__hb_slip_screen__0098_2_backfield">
+  <label for="san_diego_chargers__hb_slip_screen__0098_2_backfield">Backfield correct</label>
+  <input type="text" data-correction="backfield_actual" data-play-id="san_diego_chargers__hb_slip_screen__0098_2" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="ol_offset" data-play-id="san_diego_chargers__hb_slip_screen__0098_2" id="san_diego_chargers__hb_slip_screen__0098_2_ol_offset">
+  <label for="san_diego_chargers__hb_slip_screen__0098_2_ol_offset">ol_offset_from_c correct</label>
+  <input type="text" data-correction="ol_offset_actual" data-play-id="san_diego_chargers__hb_slip_screen__0098_2" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="target_gap" data-play-id="san_diego_chargers__hb_slip_screen__0098_2" id="san_diego_chargers__hb_slip_screen__0098_2_target_gap">
+  <label for="san_diego_chargers__hb_slip_screen__0098_2_target_gap">target_gap correct (runs)</label>
+  <input type="text" data-correction="target_gap_actual" data-play-id="san_diego_chargers__hb_slip_screen__0098_2" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="concept" data-play-id="san_diego_chargers__hb_slip_screen__0098_2" id="san_diego_chargers__hb_slip_screen__0098_2_concept">
+  <label for="san_diego_chargers__hb_slip_screen__0098_2_concept">Play concept reasonable</label>
+  <input type="text" data-correction="concept_actual" data-play-id="san_diego_chargers__hb_slip_screen__0098_2" placeholder="if wrong, write correct value">
+</div>
+    <div style="margin-top: 12px;">
+      <label><b>Notes:</b></label>
+      <textarea data-notes="1" data-play-id="san_diego_chargers__hb_slip_screen__0098_2" placeholder="anything else worth flagging — counts that disagree, glyphs the model missed, ambiguous formations"></textarea>
+    </div>
+  </div>
+</div>
+<div class="play" data-play-id="jimmy_johnson__curls__0109_0">
+  <h2>Play 2: Curls — Jimmy Johnson
+    <span class="stratum-tag">pass_generic</span></h2>
+  <div class="meta">Formation: WEAK Pro</div>
+  <div class="meta">play_id: <code>jimmy_johnson__curls__0109_0</code></div>
+  <div class="meta">Crop: <code>weak-pro__pass__curls__jimmy-johnson__img109p0__WIDE.jpg</code></div>
+
+  <div class="crop-and-data">
+    <div class="crop"><img src="./dispatch-crops/weak-pro__pass__curls__jimmy-johnson__img109p0__WIDE.jpg" alt="play crop"></div>
+    <div class="model-read"><div><b>play_type:</b> pass</div>
+<div><b>concept:</b> curls streak</div>
+<div><b>OL count (excl C):</b> 4</div>
+<div><b>ol_offset_from_c:</b> <code>at</code></div>
+<div><b>TE count:</b> 1</div>
+<div><b>WR count:</b> 2</div>
+<div><b>Backfield:</b> 2 (QB, HB)</div>
+<div><b>target_gap:</b> <code>None</code></div>
+<div><b>ball-carrier path:</b> vertical streak route on right sideline, primary passing target</div>
+<div><b>confidence:</b> high</div>
+      <details><summary>full raw JSON</summary><pre>{
+  &quot;play_id&quot;: &quot;jimmy_johnson__curls__0109_0&quot;,
+  &quot;play_type_observed&quot;: &quot;pass&quot;,
+  &quot;concept&quot;: &quot;curls&quot;,
+  &quot;concept_delta&quot;: null,
+  &quot;los_y&quot;: 318,
+  &quot;center&quot;: {
+    &quot;x&quot;: 795,
+    &quot;y&quot;: 318,
+    &quot;glyph&quot;: &quot;white_square&quot;
+  },
+  &quot;ol_offset_from_c&quot;: &quot;at&quot;,
+  &quot;offensive_line&quot;: [
+    {
+      &quot;position&quot;: &quot;LT&quot;,
+      &quot;x&quot;: 635,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    },
+    {
+      &quot;position&quot;: &quot;LG&quot;,
+      &quot;x&quot;: 715,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    },
+    {
+      &quot;position&quot;: &quot;RG&quot;,
+      &quot;x&quot;: 875,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    },
+    {
+      &quot;position&quot;: &quot;RT&quot;,
+      &quot;x&quot;: 955,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    }
+  ],
+  &quot;tight_ends&quot;: [
+    {
+      &quot;position&quot;: &quot;TE_R&quot;,
+      &quot;x&quot;: 1035,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;blue_X&quot;,
+      &quot;button&quot;: &quot;Cross&quot;,
+      &quot;attached_side&quot;: &quot;right&quot;,
+      &quot;route&quot;: {
+        &quot;color&quot;: &quot;yellow&quot;,
+        &quot;style&quot;: &quot;solid&quot;,
+        &quot;description&quot;: &quot;curl route inward from right side, bending back toward middle at approximately 12-15 yards depth&quot;
+      }
+    }
+  ],
+  &quot;wide_receivers&quot;: [
+    {
+      &quot;position&quot;: &quot;WR_X&quot;,
+      &quot;x&quot;: 280,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;purple_Square&quot;,
+      &quot;button&quot;: &quot;Square&quot;,
+      &quot;split_side&quot;: &quot;left&quot;,
+      &quot;route&quot;: {
+        &quot;color&quot;: &quot;yellow&quot;,
+        &quot;style&quot;: &quot;solid&quot;,
+        &quot;description&quot;: &quot;flag route upfield and outward to the left sideline, approximately 20+ yards deep&quot;
+      }
+    },
+    {
+      &quot;position&quot;: &quot;WR_Z&quot;,
+      &quot;x&quot;: 1280,
+      &quot;y&quot;: 340,
+      &quot;glyph&quot;: &quot;red_Circle&quot;,
+      &quot;button&quot;: &quot;Circle&quot;,
+      &quot;split_side&quot;: &quot;right&quot;,
+      &quot;route&quot;: {
+        &quot;color&quot;: &quot;red&quot;,
+        &quot;style&quot;: &quot;solid&quot;,
+        &quot;description&quot;: &quot;vertical streak route straight upfield on right sideline, primary read indicated by red arrow color&quot;
+      }
+    }
+  ],
+  &quot;backfield&quot;: [
+    {
+      &quot;position&quot;: &quot;QB&quot;,
+      &quot;x&quot;: 795,
+      &quot;y&quot;: 450,
+      &quot;glyph&quot;: &quot;green_Triangle&quot;,
+      &quot;button&quot;: &quot;Triangle&quot;,
+      &quot;route&quot;: {
+        &quot;color&quot;: &quot;cyan&quot;,
+        &quot;style&quot;: &quot;solid&quot;,
+        &quot;description&quot;: &quot;QB dropback in pocket, positioned directly behind center approximately 5 yards deep&quot;
+      }
+    },
+    {
+      &quot;position&quot;: &quot;HB&quot;,
+      &quot;x&quot;: 800,
+      &quot;y&quot;: 510,
+      &quot;glyph&quot;: &quot;white_circle&quot;,
+      &quot;button&quot;: &quot;R1&quot;,
+      &quot;route&quot;: {
+        &quot;color&quot;: &quot;yellow&quot;,
+        &quot;style&quot;: &quot;solid&quot;,
+        &quot;description&quot;: &quot;swing route to the right, releasing from backfield after initial pass protection, shallow depth&quot;
+      }
+    }
+  ],
+  &quot;unknowns&quot;: [],
+  &quot;players_missing&quot;: [],
+  &quot;ball_carrier_or_primary&quot;: {
+    &quot;from_position&quot;: &quot;WR_Z&quot;,
+    &quot;arrow_color&quot;: &quot;red&quot;,
+    &quot;arrow_style&quot;: &quot;solid&quot;,
+    &quot;description&quot;: &quot;vertical streak route on right sideline, primary passing target&quot;
+  },
+  &quot;play_concept_observed&quot;: &quot;curls streak&quot;,
+  &quot;confidence&quot;: &quot;high&quot;,
+  &quot;extraction_notes&quot;: &quot;Clear pass play with OL at LOS level (not setback). Five eligible receivers: two WRs split wide (Square left flag, Circle right streak with red primary arrow), TE on right (Cross curl), QB (Triangle), and HB (R1 swing right). The play name &#x27;Curls&#x27; matches the TE&#x27;s curl route and likely refers to a curl/flat concept, though the primary read appears to be the right sideline streak (red arrow). Formation matches WEAK Pro with FB absent and HB offset. All 11 players accounted for.&quot;
+}</pre></details>
+    </div>
+  </div>
+
+  <div class="truth">
+    <h3>TRUTH (check what's right, fill correction if wrong)</h3>
+    <div class="check-row">
+  <input type="checkbox" data-check="play_type" data-play-id="jimmy_johnson__curls__0109_0" id="jimmy_johnson__curls__0109_0_play_type">
+  <label for="jimmy_johnson__curls__0109_0_play_type">play_type correct</label>
+  <input type="text" data-correction="play_type_actual" data-play-id="jimmy_johnson__curls__0109_0" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="ol_count" data-play-id="jimmy_johnson__curls__0109_0" id="jimmy_johnson__curls__0109_0_ol_count">
+  <label for="jimmy_johnson__curls__0109_0_ol_count">OL count = 4 (excl C)</label>
+  <input type="text" data-correction="ol_count_actual" data-play-id="jimmy_johnson__curls__0109_0" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="te_count" data-play-id="jimmy_johnson__curls__0109_0" id="jimmy_johnson__curls__0109_0_te_count">
+  <label for="jimmy_johnson__curls__0109_0_te_count">TE count correct</label>
+  <input type="text" data-correction="te_count_actual" data-play-id="jimmy_johnson__curls__0109_0" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="wr_count" data-play-id="jimmy_johnson__curls__0109_0" id="jimmy_johnson__curls__0109_0_wr_count">
+  <label for="jimmy_johnson__curls__0109_0_wr_count">WR count correct</label>
+  <input type="text" data-correction="wr_count_actual" data-play-id="jimmy_johnson__curls__0109_0" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="backfield" data-play-id="jimmy_johnson__curls__0109_0" id="jimmy_johnson__curls__0109_0_backfield">
+  <label for="jimmy_johnson__curls__0109_0_backfield">Backfield correct</label>
+  <input type="text" data-correction="backfield_actual" data-play-id="jimmy_johnson__curls__0109_0" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="ol_offset" data-play-id="jimmy_johnson__curls__0109_0" id="jimmy_johnson__curls__0109_0_ol_offset">
+  <label for="jimmy_johnson__curls__0109_0_ol_offset">ol_offset_from_c correct</label>
+  <input type="text" data-correction="ol_offset_actual" data-play-id="jimmy_johnson__curls__0109_0" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="target_gap" data-play-id="jimmy_johnson__curls__0109_0" id="jimmy_johnson__curls__0109_0_target_gap">
+  <label for="jimmy_johnson__curls__0109_0_target_gap">target_gap correct (runs)</label>
+  <input type="text" data-correction="target_gap_actual" data-play-id="jimmy_johnson__curls__0109_0" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="concept" data-play-id="jimmy_johnson__curls__0109_0" id="jimmy_johnson__curls__0109_0_concept">
+  <label for="jimmy_johnson__curls__0109_0_concept">Play concept reasonable</label>
+  <input type="text" data-correction="concept_actual" data-play-id="jimmy_johnson__curls__0109_0" placeholder="if wrong, write correct value">
+</div>
+    <div style="margin-top: 12px;">
+      <label><b>Notes:</b></label>
+      <textarea data-notes="1" data-play-id="jimmy_johnson__curls__0109_0" placeholder="anything else worth flagging — counts that disagree, glyphs the model missed, ambiguous formations"></textarea>
+    </div>
+  </div>
+</div>
+<div class="play" data-play-id="oakland_raiders__pa_v_corner__0015_2">
+  <h2>Play 3: PA V Corner — Oakland Raiders
+    <span class="stratum-tag">pass_generic</span></h2>
+  <div class="meta">Formation: SINGLEBACK Ace Pair Slot</div>
+  <div class="meta">play_id: <code>oakland_raiders__pa_v_corner__0015_2</code></div>
+  <div class="meta">Crop: <code>singleback-ace-pair-slot__pass__pa-v-corner__oakland-raiders__img15p2__WIDE.jpg</code></div>
+
+  <div class="crop-and-data">
+    <div class="crop"><img src="./dispatch-crops/singleback-ace-pair-slot__pass__pa-v-corner__oakland-raiders__img15p2__WIDE.jpg" alt="play crop"></div>
+    <div class="model-read"><div><b>play_type:</b> pass</div>
+<div><b>concept:</b> PA Corner</div>
+<div><b>OL count (excl C):</b> 4</div>
+<div><b>ol_offset_from_c:</b> <code>at</code></div>
+<div><b>TE count:</b> 0</div>
+<div><b>WR count:</b> 3</div>
+<div><b>Backfield:</b> 2 (QB, HB)</div>
+<div><b>target_gap:</b> <code>None</code></div>
+<div><b>ball-carrier path:</b> RB flares/releases from backfield position on LOS (R1 button), runs corner route upfield and out to right sideline - primary read</div>
+<div><b>confidence:</b> high</div>
+      <details><summary>full raw JSON</summary><pre>{
+  &quot;play_id&quot;: &quot;oakland_raiders__pa_v_corner__0015_2&quot;,
+  &quot;play_type_observed&quot;: &quot;pass&quot;,
+  &quot;concept&quot;: &quot;PA V Corner&quot;,
+  &quot;concept_delta&quot;: null,
+  &quot;los_y&quot;: 318,
+  &quot;center&quot;: {
+    &quot;x&quot;: 883,
+    &quot;y&quot;: 318,
+    &quot;glyph&quot;: &quot;white_square&quot;
+  },
+  &quot;ol_offset_from_c&quot;: &quot;at&quot;,
+  &quot;offensive_line&quot;: [
+    {
+      &quot;position&quot;: &quot;LT&quot;,
+      &quot;x&quot;: 713,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    },
+    {
+      &quot;position&quot;: &quot;LG&quot;,
+      &quot;x&quot;: 798,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    },
+    {
+      &quot;position&quot;: &quot;RG&quot;,
+      &quot;x&quot;: 968,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    },
+    {
+      &quot;position&quot;: &quot;RT&quot;,
+      &quot;x&quot;: 1053,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    }
+  ],
+  &quot;tight_ends&quot;: [],
+  &quot;wide_receivers&quot;: [
+    {
+      &quot;position&quot;: &quot;WR_X&quot;,
+      &quot;x&quot;: 380,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;purple_square&quot;,
+      &quot;button&quot;: &quot;Square&quot;,
+      &quot;split_side&quot;: &quot;left&quot;,
+      &quot;route&quot;: {
+        &quot;color&quot;: &quot;yellow&quot;,
+        &quot;style&quot;: &quot;solid&quot;,
+        &quot;description&quot;: &quot;curl/comeback route - vertical stem then breaking back toward sideline at 12-15 yards&quot;
+      }
+    },
+    {
+      &quot;position&quot;: &quot;WR_Z&quot;,
+      &quot;x&quot;: 1138,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;blue_x&quot;,
+      &quot;button&quot;: &quot;Cross&quot;,
+      &quot;split_side&quot;: &quot;right&quot;,
+      &quot;route&quot;: {
+        &quot;color&quot;: &quot;cyan&quot;,
+        &quot;style&quot;: &quot;solid&quot;,
+        &quot;description&quot;: &quot;streaking post/corner route angling upfield and to the right sideline&quot;
+      }
+    },
+    {
+      &quot;position&quot;: &quot;WR_SLOT_L&quot;,
+      &quot;x&quot;: 458,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;red_circle&quot;,
+      &quot;button&quot;: &quot;Circle&quot;,
+      &quot;split_side&quot;: &quot;left&quot;,
+      &quot;route&quot;: {
+        &quot;color&quot;: &quot;yellow&quot;,
+        &quot;style&quot;: &quot;solid&quot;,
+        &quot;description&quot;: &quot;short curl route - vertical stem 8-10 yards then hooks back&quot;
+      }
+    }
+  ],
+  &quot;backfield&quot;: [
+    {
+      &quot;position&quot;: &quot;QB&quot;,
+      &quot;x&quot;: 883,
+      &quot;y&quot;: 548,
+      &quot;glyph&quot;: &quot;green_triangle&quot;,
+      &quot;button&quot;: &quot;Triangle&quot;,
+      &quot;route&quot;: null
+    },
+    {
+      &quot;position&quot;: &quot;HB&quot;,
+      &quot;x&quot;: 1215,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;,
+      &quot;button&quot;: &quot;R1&quot;,
+      &quot;route&quot;: {
+        &quot;color&quot;: &quot;red&quot;,
+        &quot;style&quot;: &quot;solid&quot;,
+        &quot;description&quot;: &quot;corner route - vertical release then breaking sharply upfield and toward right sideline at 45-degree angle&quot;
+      }
+    }
+  ],
+  &quot;unknowns&quot;: [],
+  &quot;players_missing&quot;: [],
+  &quot;ball_carrier_or_primary&quot;: {
+    &quot;from_position&quot;: &quot;HB&quot;,
+    &quot;arrow_color&quot;: &quot;red&quot;,
+    &quot;arrow_style&quot;: &quot;solid&quot;,
+    &quot;description&quot;: &quot;RB flares/releases from backfield position on LOS (R1 button), runs corner route upfield and out to right sideline - primary read&quot;
+  },
+  &quot;play_concept_observed&quot;: &quot;PA Corner&quot;,
+  &quot;confidence&quot;: &quot;high&quot;,
+  &quot;extraction_notes&quot;: &quot;This is a play-action pass concept. The HB is lined up on the LOS at the RB position (unusual - appears to be an Ace formation variant with HB motioned/set wide right). The HB has the red primary route arrow running a corner pattern. Three WRs to the left side run curl/comeback routes (Square and Circle buttons). The X receiver on the right (Cross button) runs a deep post/corner. QB is in shotgun with Triangle button. The OL are at the LOS level (not kicked back in pass-pro), which is consistent with play-action despite this being a pass play. Formation appears to be Singleback Ace Pair Slot with the RB positioned wide.&quot;
+}</pre></details>
+    </div>
+  </div>
+
+  <div class="truth">
+    <h3>TRUTH (check what's right, fill correction if wrong)</h3>
+    <div class="check-row">
+  <input type="checkbox" data-check="play_type" data-play-id="oakland_raiders__pa_v_corner__0015_2" id="oakland_raiders__pa_v_corner__0015_2_play_type">
+  <label for="oakland_raiders__pa_v_corner__0015_2_play_type">play_type correct</label>
+  <input type="text" data-correction="play_type_actual" data-play-id="oakland_raiders__pa_v_corner__0015_2" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="ol_count" data-play-id="oakland_raiders__pa_v_corner__0015_2" id="oakland_raiders__pa_v_corner__0015_2_ol_count">
+  <label for="oakland_raiders__pa_v_corner__0015_2_ol_count">OL count = 4 (excl C)</label>
+  <input type="text" data-correction="ol_count_actual" data-play-id="oakland_raiders__pa_v_corner__0015_2" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="te_count" data-play-id="oakland_raiders__pa_v_corner__0015_2" id="oakland_raiders__pa_v_corner__0015_2_te_count">
+  <label for="oakland_raiders__pa_v_corner__0015_2_te_count">TE count correct</label>
+  <input type="text" data-correction="te_count_actual" data-play-id="oakland_raiders__pa_v_corner__0015_2" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="wr_count" data-play-id="oakland_raiders__pa_v_corner__0015_2" id="oakland_raiders__pa_v_corner__0015_2_wr_count">
+  <label for="oakland_raiders__pa_v_corner__0015_2_wr_count">WR count correct</label>
+  <input type="text" data-correction="wr_count_actual" data-play-id="oakland_raiders__pa_v_corner__0015_2" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="backfield" data-play-id="oakland_raiders__pa_v_corner__0015_2" id="oakland_raiders__pa_v_corner__0015_2_backfield">
+  <label for="oakland_raiders__pa_v_corner__0015_2_backfield">Backfield correct</label>
+  <input type="text" data-correction="backfield_actual" data-play-id="oakland_raiders__pa_v_corner__0015_2" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="ol_offset" data-play-id="oakland_raiders__pa_v_corner__0015_2" id="oakland_raiders__pa_v_corner__0015_2_ol_offset">
+  <label for="oakland_raiders__pa_v_corner__0015_2_ol_offset">ol_offset_from_c correct</label>
+  <input type="text" data-correction="ol_offset_actual" data-play-id="oakland_raiders__pa_v_corner__0015_2" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="target_gap" data-play-id="oakland_raiders__pa_v_corner__0015_2" id="oakland_raiders__pa_v_corner__0015_2_target_gap">
+  <label for="oakland_raiders__pa_v_corner__0015_2_target_gap">target_gap correct (runs)</label>
+  <input type="text" data-correction="target_gap_actual" data-play-id="oakland_raiders__pa_v_corner__0015_2" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="concept" data-play-id="oakland_raiders__pa_v_corner__0015_2" id="oakland_raiders__pa_v_corner__0015_2_concept">
+  <label for="oakland_raiders__pa_v_corner__0015_2_concept">Play concept reasonable</label>
+  <input type="text" data-correction="concept_actual" data-play-id="oakland_raiders__pa_v_corner__0015_2" placeholder="if wrong, write correct value">
+</div>
+    <div style="margin-top: 12px;">
+      <label><b>Notes:</b></label>
+      <textarea data-notes="1" data-play-id="oakland_raiders__pa_v_corner__0015_2" placeholder="anything else worth flagging — counts that disagree, glyphs the model missed, ambiguous formations"></textarea>
+    </div>
+  </div>
+</div>
+<div class="play" data-play-id="philadelphia_eagles__se_drag__0119_0">
+  <h2>Play 4: SE Drag — Philadelphia Eagles
+    <span class="stratum-tag">pass_named</span></h2>
+  <div class="meta">Formation: GUN Trio 4WR</div>
+  <div class="meta">play_id: <code>philadelphia_eagles__se_drag__0119_0</code></div>
+  <div class="meta">Crop: <code>gun-trio-4wr__pass__se-drag__philadelphia-eagles__img119p0__WIDE.jpg</code></div>
+
+  <div class="crop-and-data">
+    <div class="crop"><img src="./dispatch-crops/gun-trio-4wr__pass__se-drag__philadelphia-eagles__img119p0__WIDE.jpg" alt="play crop"></div>
+    <div class="model-read"><div><b>play_type:</b> pass</div>
+<div><b>concept:</b> drag</div>
+<div><b>OL count (excl C):</b> 4</div>
+<div><b>ol_offset_from_c:</b> <code>at</code></div>
+<div><b>TE count:</b> 1</div>
+<div><b>WR count:</b> 3</div>
+<div><b>Backfield:</b> 2 (QB, HB)</div>
+<div><b>target_gap:</b> <code>None</code></div>
+<div><b>ball-carrier path:</b> drag route across the formation from left to right</div>
+<div><b>confidence:</b> high</div>
+      <details><summary>full raw JSON</summary><pre>{
+  &quot;play_id&quot;: &quot;philadelphia_eagles__se_drag__0119_0&quot;,
+  &quot;play_type_observed&quot;: &quot;pass&quot;,
+  &quot;concept&quot;: &quot;drag&quot;,
+  &quot;concept_delta&quot;: null,
+  &quot;los_y&quot;: 318,
+  &quot;center&quot;: {
+    &quot;x&quot;: 789,
+    &quot;y&quot;: 318,
+    &quot;glyph&quot;: &quot;white_square&quot;
+  },
+  &quot;ol_offset_from_c&quot;: &quot;at&quot;,
+  &quot;offensive_line&quot;: [
+    {
+      &quot;position&quot;: &quot;LT&quot;,
+      &quot;x&quot;: 650,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    },
+    {
+      &quot;position&quot;: &quot;LG&quot;,
+      &quot;x&quot;: 720,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    },
+    {
+      &quot;position&quot;: &quot;RG&quot;,
+      &quot;x&quot;: 858,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    },
+    {
+      &quot;position&quot;: &quot;RT&quot;,
+      &quot;x&quot;: 928,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    }
+  ],
+  &quot;tight_ends&quot;: [
+    {
+      &quot;position&quot;: &quot;TE_R&quot;,
+      &quot;x&quot;: 1050,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;black_circle_R1_label&quot;,
+      &quot;button&quot;: &quot;R1&quot;,
+      &quot;attached_side&quot;: &quot;right&quot;,
+      &quot;route&quot;: null
+    }
+  ],
+  &quot;wide_receivers&quot;: [
+    {
+      &quot;position&quot;: &quot;WR_X&quot;,
+      &quot;x&quot;: 330,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;purple_square&quot;,
+      &quot;button&quot;: &quot;Square&quot;,
+      &quot;split_side&quot;: &quot;left&quot;,
+      &quot;route&quot;: {
+        &quot;color&quot;: &quot;yellow&quot;,
+        &quot;style&quot;: &quot;solid&quot;,
+        &quot;description&quot;: &quot;shallow drag route left to right across formation&quot;
+      }
+    },
+    {
+      &quot;position&quot;: &quot;WR_Z&quot;,
+      &quot;x&quot;: 1170,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;blue_X&quot;,
+      &quot;button&quot;: &quot;Cross&quot;,
+      &quot;split_side&quot;: &quot;right&quot;,
+      &quot;route&quot;: {
+        &quot;color&quot;: &quot;yellow&quot;,
+        &quot;style&quot;: &quot;solid&quot;,
+        &quot;description&quot;: &quot;vertical route upfield&quot;
+      }
+    },
+    {
+      &quot;position&quot;: &quot;WR_SLOT_R&quot;,
+      &quot;x&quot;: 1240,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;red_circle&quot;,
+      &quot;button&quot;: &quot;Circle&quot;,
+      &quot;split_side&quot;: &quot;right&quot;,
+      &quot;route&quot;: {
+        &quot;color&quot;: &quot;yellow&quot;,
+        &quot;style&quot;: &quot;solid&quot;,
+        &quot;description&quot;: &quot;corner or post route upfield and outward&quot;
+      }
+    }
+  ],
+  &quot;backfield&quot;: [
+    {
+      &quot;position&quot;: &quot;QB&quot;,
+      &quot;x&quot;: 789,
+      &quot;y&quot;: 450,
+      &quot;glyph&quot;: &quot;white_circle&quot;,
+      &quot;button&quot;: &quot;none&quot;,
+      &quot;route&quot;: null
+    },
+    {
+      &quot;position&quot;: &quot;HB&quot;,
+      &quot;x&quot;: 700,
+      &quot;y&quot;: 485,
+      &quot;glyph&quot;: &quot;green_triangle&quot;,
+      &quot;button&quot;: &quot;Triangle&quot;,
+      &quot;route&quot;: {
+        &quot;color&quot;: &quot;yellow&quot;,
+        &quot;style&quot;: &quot;solid&quot;,
+        &quot;description&quot;: &quot;swing route to the left&quot;
+      }
+    }
+  ],
+  &quot;unknowns&quot;: [],
+  &quot;players_missing&quot;: [],
+  &quot;ball_carrier_or_primary&quot;: {
+    &quot;from_position&quot;: &quot;WR_X&quot;,
+    &quot;arrow_color&quot;: &quot;red&quot;,
+    &quot;arrow_style&quot;: &quot;solid&quot;,
+    &quot;description&quot;: &quot;drag route across the formation from left to right&quot;
+  },
+  &quot;play_concept_observed&quot;: &quot;drag&quot;,
+  &quot;confidence&quot;: &quot;high&quot;,
+  &quot;extraction_notes&quot;: &quot;Clear 4WR shotgun formation with HB to QB&#x27;s left. Purple Square WR on far left runs the primary red drag route across the formation. Triangle HB has yellow swing route left. Green Triangle glyph visible on HB. Cross (blue X) and Circle (red) WRs on right side run vertical/corner routes in yellow. R1 TE on right side of line with no visible route arrow. OL aligned at LOS with C-square, consistent with pass protection though offset appears minimal. Play type banner confirms PASS. SE Drag concept matches the observed primary crossing route from the split end.&quot;
+}</pre></details>
+    </div>
+  </div>
+
+  <div class="truth">
+    <h3>TRUTH (check what's right, fill correction if wrong)</h3>
+    <div class="check-row">
+  <input type="checkbox" data-check="play_type" data-play-id="philadelphia_eagles__se_drag__0119_0" id="philadelphia_eagles__se_drag__0119_0_play_type">
+  <label for="philadelphia_eagles__se_drag__0119_0_play_type">play_type correct</label>
+  <input type="text" data-correction="play_type_actual" data-play-id="philadelphia_eagles__se_drag__0119_0" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="ol_count" data-play-id="philadelphia_eagles__se_drag__0119_0" id="philadelphia_eagles__se_drag__0119_0_ol_count">
+  <label for="philadelphia_eagles__se_drag__0119_0_ol_count">OL count = 4 (excl C)</label>
+  <input type="text" data-correction="ol_count_actual" data-play-id="philadelphia_eagles__se_drag__0119_0" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="te_count" data-play-id="philadelphia_eagles__se_drag__0119_0" id="philadelphia_eagles__se_drag__0119_0_te_count">
+  <label for="philadelphia_eagles__se_drag__0119_0_te_count">TE count correct</label>
+  <input type="text" data-correction="te_count_actual" data-play-id="philadelphia_eagles__se_drag__0119_0" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="wr_count" data-play-id="philadelphia_eagles__se_drag__0119_0" id="philadelphia_eagles__se_drag__0119_0_wr_count">
+  <label for="philadelphia_eagles__se_drag__0119_0_wr_count">WR count correct</label>
+  <input type="text" data-correction="wr_count_actual" data-play-id="philadelphia_eagles__se_drag__0119_0" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="backfield" data-play-id="philadelphia_eagles__se_drag__0119_0" id="philadelphia_eagles__se_drag__0119_0_backfield">
+  <label for="philadelphia_eagles__se_drag__0119_0_backfield">Backfield correct</label>
+  <input type="text" data-correction="backfield_actual" data-play-id="philadelphia_eagles__se_drag__0119_0" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="ol_offset" data-play-id="philadelphia_eagles__se_drag__0119_0" id="philadelphia_eagles__se_drag__0119_0_ol_offset">
+  <label for="philadelphia_eagles__se_drag__0119_0_ol_offset">ol_offset_from_c correct</label>
+  <input type="text" data-correction="ol_offset_actual" data-play-id="philadelphia_eagles__se_drag__0119_0" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="target_gap" data-play-id="philadelphia_eagles__se_drag__0119_0" id="philadelphia_eagles__se_drag__0119_0_target_gap">
+  <label for="philadelphia_eagles__se_drag__0119_0_target_gap">target_gap correct (runs)</label>
+  <input type="text" data-correction="target_gap_actual" data-play-id="philadelphia_eagles__se_drag__0119_0" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="concept" data-play-id="philadelphia_eagles__se_drag__0119_0" id="philadelphia_eagles__se_drag__0119_0_concept">
+  <label for="philadelphia_eagles__se_drag__0119_0_concept">Play concept reasonable</label>
+  <input type="text" data-correction="concept_actual" data-play-id="philadelphia_eagles__se_drag__0119_0" placeholder="if wrong, write correct value">
+</div>
+    <div style="margin-top: 12px;">
+      <label><b>Notes:</b></label>
+      <textarea data-notes="1" data-play-id="philadelphia_eagles__se_drag__0119_0" placeholder="anything else worth flagging — counts that disagree, glyphs the model missed, ambiguous formations"></textarea>
+    </div>
+  </div>
+</div>
+<div class="play" data-play-id="dallas_cowboys__pa_deep_outs__0111_2">
+  <h2>Play 5: PA Deep Outs — Dallas Cowboys
+    <span class="stratum-tag">pass_named</span></h2>
+  <div class="meta">Formation: GUN Norm Y-Flex Tight</div>
+  <div class="meta">play_id: <code>dallas_cowboys__pa_deep_outs__0111_2</code></div>
+  <div class="meta">Crop: <code>gun-norm-y-flex-tight__pass__pa-deep-outs__dallas-cowboys__img111p2__WIDE.jpg</code></div>
+
+  <div class="crop-and-data">
+    <div class="crop"><img src="./dispatch-crops/gun-norm-y-flex-tight__pass__pa-deep-outs__dallas-cowboys__img111p2__WIDE.jpg" alt="play crop"></div>
+    <div class="model-read"><div><b>play_type:</b> pass</div>
+<div><b>concept:</b> deep outs</div>
+<div><b>OL count (excl C):</b> 4</div>
+<div><b>ol_offset_from_c:</b> <code>at</code></div>
+<div><b>TE count:</b> 1</div>
+<div><b>WR count:</b> 3</div>
+<div><b>Backfield:</b> 2 (QB, HB)</div>
+<div><b>target_gap:</b> <code>None</code></div>
+<div><b>ball-carrier path:</b> deep out route breaking left from far left WR position</div>
+<div><b>confidence:</b> high</div>
+      <details><summary>full raw JSON</summary><pre>{
+  &quot;play_id&quot;: &quot;dallas_cowboys__pa_deep_outs__0111_2&quot;,
+  &quot;play_type_observed&quot;: &quot;pass&quot;,
+  &quot;concept&quot;: &quot;PA Deep Outs&quot;,
+  &quot;concept_delta&quot;: null,
+  &quot;los_y&quot;: 318,
+  &quot;center&quot;: {
+    &quot;x&quot;: 875,
+    &quot;y&quot;: 318,
+    &quot;glyph&quot;: &quot;white_square&quot;
+  },
+  &quot;ol_offset_from_c&quot;: &quot;at&quot;,
+  &quot;offensive_line&quot;: [
+    {
+      &quot;position&quot;: &quot;LT&quot;,
+      &quot;x&quot;: 720,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    },
+    {
+      &quot;position&quot;: &quot;LG&quot;,
+      &quot;x&quot;: 798,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    },
+    {
+      &quot;position&quot;: &quot;RG&quot;,
+      &quot;x&quot;: 952,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    },
+    {
+      &quot;position&quot;: &quot;RT&quot;,
+      &quot;x&quot;: 1030,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    }
+  ],
+  &quot;tight_ends&quot;: [
+    {
+      &quot;position&quot;: &quot;TE_L&quot;,
+      &quot;x&quot;: 550,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;green_triangle&quot;,
+      &quot;button&quot;: &quot;Triangle&quot;,
+      &quot;attached_side&quot;: &quot;left&quot;,
+      &quot;route&quot;: {
+        &quot;color&quot;: &quot;yellow&quot;,
+        &quot;style&quot;: &quot;solid&quot;,
+        &quot;description&quot;: &quot;stem upfield then break diagonally left on deep out route&quot;
+      }
+    }
+  ],
+  &quot;wide_receivers&quot;: [
+    {
+      &quot;position&quot;: &quot;WR_X&quot;,
+      &quot;x&quot;: 420,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;purple_square&quot;,
+      &quot;button&quot;: &quot;Square&quot;,
+      &quot;split_side&quot;: &quot;left&quot;,
+      &quot;route&quot;: {
+        &quot;color&quot;: &quot;red&quot;,
+        &quot;style&quot;: &quot;solid&quot;,
+        &quot;description&quot;: &quot;vertical stem then sharp left break on deep out route - primary&quot;
+      }
+    },
+    {
+      &quot;position&quot;: &quot;WR_SLOT_R&quot;,
+      &quot;x&quot;: 940,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;blue_x&quot;,
+      &quot;button&quot;: &quot;Cross&quot;,
+      &quot;split_side&quot;: &quot;right&quot;,
+      &quot;route&quot;: {
+        &quot;color&quot;: &quot;yellow&quot;,
+        &quot;style&quot;: &quot;solid&quot;,
+        &quot;description&quot;: &quot;crossing route from right to left across the field&quot;
+      }
+    },
+    {
+      &quot;position&quot;: &quot;WR_Z&quot;,
+      &quot;x&quot;: 1300,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;red_circle&quot;,
+      &quot;button&quot;: &quot;Circle&quot;,
+      &quot;split_side&quot;: &quot;right&quot;,
+      &quot;route&quot;: {
+        &quot;color&quot;: &quot;yellow&quot;,
+        &quot;style&quot;: &quot;solid&quot;,
+        &quot;description&quot;: &quot;corner route stem upfield then break right on deep out&quot;
+      }
+    }
+  ],
+  &quot;backfield&quot;: [
+    {
+      &quot;position&quot;: &quot;QB&quot;,
+      &quot;x&quot;: 875,
+      &quot;y&quot;: 485,
+      &quot;glyph&quot;: &quot;white_circle&quot;,
+      &quot;button&quot;: &quot;none&quot;,
+      &quot;route&quot;: null
+    },
+    {
+      &quot;position&quot;: &quot;HB&quot;,
+      &quot;x&quot;: 970,
+      &quot;y&quot;: 485,
+      &quot;glyph&quot;: &quot;white_circle&quot;,
+      &quot;button&quot;: &quot;R1&quot;,
+      &quot;route&quot;: null
+    }
+  ],
+  &quot;unknowns&quot;: [],
+  &quot;players_missing&quot;: [],
+  &quot;ball_carrier_or_primary&quot;: {
+    &quot;from_position&quot;: &quot;WR_X&quot;,
+    &quot;arrow_color&quot;: &quot;red&quot;,
+    &quot;arrow_style&quot;: &quot;solid&quot;,
+    &quot;description&quot;: &quot;deep out route breaking left from far left WR position&quot;
+  },
+  &quot;play_concept_observed&quot;: &quot;deep outs&quot;,
+  &quot;confidence&quot;: &quot;high&quot;,
+  &quot;extraction_notes&quot;: &quot;Clear pass play with 4 receiver routes. OL circles aligned at same y as C-square (not below), suggesting run-action pass protection or the visual indicates pass-pro at LOS rather than kickslide. All 4 eligible receivers have button glyphs and colored route arrows. HB shows R1 button indicating checkdown eligibility. Primary red arrow on far left WR (Square button) running deep out. Formation matches GUN Norm Y-Flex Tight with TE on left, slot and outside WR on right.&quot;
+}</pre></details>
+    </div>
+  </div>
+
+  <div class="truth">
+    <h3>TRUTH (check what's right, fill correction if wrong)</h3>
+    <div class="check-row">
+  <input type="checkbox" data-check="play_type" data-play-id="dallas_cowboys__pa_deep_outs__0111_2" id="dallas_cowboys__pa_deep_outs__0111_2_play_type">
+  <label for="dallas_cowboys__pa_deep_outs__0111_2_play_type">play_type correct</label>
+  <input type="text" data-correction="play_type_actual" data-play-id="dallas_cowboys__pa_deep_outs__0111_2" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="ol_count" data-play-id="dallas_cowboys__pa_deep_outs__0111_2" id="dallas_cowboys__pa_deep_outs__0111_2_ol_count">
+  <label for="dallas_cowboys__pa_deep_outs__0111_2_ol_count">OL count = 4 (excl C)</label>
+  <input type="text" data-correction="ol_count_actual" data-play-id="dallas_cowboys__pa_deep_outs__0111_2" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="te_count" data-play-id="dallas_cowboys__pa_deep_outs__0111_2" id="dallas_cowboys__pa_deep_outs__0111_2_te_count">
+  <label for="dallas_cowboys__pa_deep_outs__0111_2_te_count">TE count correct</label>
+  <input type="text" data-correction="te_count_actual" data-play-id="dallas_cowboys__pa_deep_outs__0111_2" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="wr_count" data-play-id="dallas_cowboys__pa_deep_outs__0111_2" id="dallas_cowboys__pa_deep_outs__0111_2_wr_count">
+  <label for="dallas_cowboys__pa_deep_outs__0111_2_wr_count">WR count correct</label>
+  <input type="text" data-correction="wr_count_actual" data-play-id="dallas_cowboys__pa_deep_outs__0111_2" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="backfield" data-play-id="dallas_cowboys__pa_deep_outs__0111_2" id="dallas_cowboys__pa_deep_outs__0111_2_backfield">
+  <label for="dallas_cowboys__pa_deep_outs__0111_2_backfield">Backfield correct</label>
+  <input type="text" data-correction="backfield_actual" data-play-id="dallas_cowboys__pa_deep_outs__0111_2" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="ol_offset" data-play-id="dallas_cowboys__pa_deep_outs__0111_2" id="dallas_cowboys__pa_deep_outs__0111_2_ol_offset">
+  <label for="dallas_cowboys__pa_deep_outs__0111_2_ol_offset">ol_offset_from_c correct</label>
+  <input type="text" data-correction="ol_offset_actual" data-play-id="dallas_cowboys__pa_deep_outs__0111_2" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="target_gap" data-play-id="dallas_cowboys__pa_deep_outs__0111_2" id="dallas_cowboys__pa_deep_outs__0111_2_target_gap">
+  <label for="dallas_cowboys__pa_deep_outs__0111_2_target_gap">target_gap correct (runs)</label>
+  <input type="text" data-correction="target_gap_actual" data-play-id="dallas_cowboys__pa_deep_outs__0111_2" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="concept" data-play-id="dallas_cowboys__pa_deep_outs__0111_2" id="dallas_cowboys__pa_deep_outs__0111_2_concept">
+  <label for="dallas_cowboys__pa_deep_outs__0111_2_concept">Play concept reasonable</label>
+  <input type="text" data-correction="concept_actual" data-play-id="dallas_cowboys__pa_deep_outs__0111_2" placeholder="if wrong, write correct value">
+</div>
+    <div style="margin-top: 12px;">
+      <label><b>Notes:</b></label>
+      <textarea data-notes="1" data-play-id="dallas_cowboys__pa_deep_outs__0111_2" placeholder="anything else worth flagging — counts that disagree, glyphs the model missed, ambiguous formations"></textarea>
+    </div>
+  </div>
+</div>
+<div class="play" data-play-id="washington_redskins__inside_cross__0011_1">
+  <h2>Play 6: Inside Cross — Washington Redskins
+    <span class="stratum-tag">pass_named</span></h2>
+  <div class="meta">Formation: SINGLEBACK Ace</div>
+  <div class="meta">play_id: <code>washington_redskins__inside_cross__0011_1</code></div>
+  <div class="meta">Crop: <code>singleback-ace__pass__inside-cross__washington-redskins__img11p1__WIDE.jpg</code></div>
+
+  <div class="crop-and-data">
+    <div class="crop"><img src="./dispatch-crops/singleback-ace__pass__inside-cross__washington-redskins__img11p1__WIDE.jpg" alt="play crop"></div>
+    <div class="model-read"><div><b>play_type:</b> pass</div>
+<div><b>concept:</b> cross</div>
+<div><b>OL count (excl C):</b> 4</div>
+<div><b>ol_offset_from_c:</b> <code>at</code></div>
+<div><b>TE count:</b> 2</div>
+<div><b>WR count:</b> 2</div>
+<div><b>Backfield:</b> 2 (QB, HB)</div>
+<div><b>target_gap:</b> <code>None</code></div>
+<div><b>ball-carrier path:</b> Deep crossing route from left side curving upfield and left</div>
+<div><b>confidence:</b> high</div>
+      <details><summary>full raw JSON</summary><pre>{
+  &quot;play_id&quot;: &quot;washington_redskins__inside_cross__0011_1&quot;,
+  &quot;play_type_observed&quot;: &quot;pass&quot;,
+  &quot;concept&quot;: &quot;Inside Cross&quot;,
+  &quot;concept_delta&quot;: null,
+  &quot;los_y&quot;: 338,
+  &quot;center&quot;: {
+    &quot;x&quot;: 840,
+    &quot;y&quot;: 338,
+    &quot;glyph&quot;: &quot;white_square&quot;
+  },
+  &quot;ol_offset_from_c&quot;: &quot;at&quot;,
+  &quot;offensive_line&quot;: [
+    {
+      &quot;position&quot;: &quot;LT&quot;,
+      &quot;x&quot;: 695,
+      &quot;y&quot;: 338,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    },
+    {
+      &quot;position&quot;: &quot;LG&quot;,
+      &quot;x&quot;: 768,
+      &quot;y&quot;: 338,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    },
+    {
+      &quot;position&quot;: &quot;RG&quot;,
+      &quot;x&quot;: 912,
+      &quot;y&quot;: 338,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    },
+    {
+      &quot;position&quot;: &quot;RT&quot;,
+      &quot;x&quot;: 985,
+      &quot;y&quot;: 338,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    }
+  ],
+  &quot;tight_ends&quot;: [
+    {
+      &quot;position&quot;: &quot;TE_L&quot;,
+      &quot;x&quot;: 622,
+      &quot;y&quot;: 338,
+      &quot;glyph&quot;: &quot;green_triangle&quot;,
+      &quot;button&quot;: &quot;Triangle&quot;,
+      &quot;attached_side&quot;: &quot;left&quot;,
+      &quot;route&quot;: {
+        &quot;color&quot;: &quot;yellow&quot;,
+        &quot;style&quot;: &quot;solid&quot;,
+        &quot;description&quot;: &quot;Arrow curves left then upfield&quot;
+      }
+    },
+    {
+      &quot;position&quot;: &quot;TE_R&quot;,
+      &quot;x&quot;: 1058,
+      &quot;y&quot;: 338,
+      &quot;glyph&quot;: &quot;blue_x&quot;,
+      &quot;button&quot;: &quot;Cross&quot;,
+      &quot;attached_side&quot;: &quot;right&quot;,
+      &quot;route&quot;: {
+        &quot;color&quot;: &quot;blue&quot;,
+        &quot;style&quot;: &quot;solid&quot;,
+        &quot;description&quot;: &quot;Chip block then release upfield angled left&quot;
+      }
+    }
+  ],
+  &quot;wide_receivers&quot;: [
+    {
+      &quot;position&quot;: &quot;WR_X&quot;,
+      &quot;x&quot;: 350,
+      &quot;y&quot;: 338,
+      &quot;glyph&quot;: &quot;purple_square&quot;,
+      &quot;button&quot;: &quot;Square&quot;,
+      &quot;split_side&quot;: &quot;left&quot;,
+      &quot;route&quot;: {
+        &quot;color&quot;: &quot;red&quot;,
+        &quot;style&quot;: &quot;solid&quot;,
+        &quot;description&quot;: &quot;Deep route curving left and upfield&quot;
+      }
+    },
+    {
+      &quot;position&quot;: &quot;WR_Z&quot;,
+      &quot;x&quot;: 1313,
+      &quot;y&quot;: 338,
+      &quot;glyph&quot;: &quot;red_circle&quot;,
+      &quot;button&quot;: &quot;Circle&quot;,
+      &quot;split_side&quot;: &quot;right&quot;,
+      &quot;route&quot;: {
+        &quot;color&quot;: &quot;yellow&quot;,
+        &quot;style&quot;: &quot;solid&quot;,
+        &quot;description&quot;: &quot;Arrow pointing left across formation&quot;
+      }
+    }
+  ],
+  &quot;backfield&quot;: [
+    {
+      &quot;position&quot;: &quot;QB&quot;,
+      &quot;x&quot;: 840,
+      &quot;y&quot;: 508,
+      &quot;glyph&quot;: &quot;white_circle&quot;,
+      &quot;button&quot;: &quot;none&quot;,
+      &quot;route&quot;: null
+    },
+    {
+      &quot;position&quot;: &quot;HB&quot;,
+      &quot;x&quot;: 770,
+      &quot;y&quot;: 228,
+      &quot;glyph&quot;: &quot;white_circle&quot;,
+      &quot;button&quot;: &quot;R1&quot;,
+      &quot;route&quot;: {
+        &quot;color&quot;: &quot;blue&quot;,
+        &quot;style&quot;: &quot;solid&quot;,
+        &quot;description&quot;: &quot;Blue arrow curving upfield from behind QB position&quot;
+      }
+    }
+  ],
+  &quot;unknowns&quot;: [],
+  &quot;players_missing&quot;: [],
+  &quot;ball_carrier_or_primary&quot;: {
+    &quot;from_position&quot;: &quot;WR_X&quot;,
+    &quot;arrow_color&quot;: &quot;red&quot;,
+    &quot;arrow_style&quot;: &quot;solid&quot;,
+    &quot;description&quot;: &quot;Deep crossing route from left side curving upfield and left&quot;
+  },
+  &quot;play_concept_observed&quot;: &quot;cross&quot;,
+  &quot;confidence&quot;: &quot;high&quot;,
+  &quot;extraction_notes&quot;: &quot;Singleback Ace formation with 2 TEs (both on LOS adjacent to OL). OL positioned at C-level indicating run blocking alignment but this is a pass play with route arrows. Triangle TE runs left crossing route, X button TE shows blue chip-and-release. Purple Square WR on far left runs red primary crossing route. Red Circle WR on far right runs yellow crossing route. HB labeled R1 shows blue delayed release/swing route. Play concept is crossing routes (Inside Cross as labeled).&quot;
+}</pre></details>
+    </div>
+  </div>
+
+  <div class="truth">
+    <h3>TRUTH (check what's right, fill correction if wrong)</h3>
+    <div class="check-row">
+  <input type="checkbox" data-check="play_type" data-play-id="washington_redskins__inside_cross__0011_1" id="washington_redskins__inside_cross__0011_1_play_type">
+  <label for="washington_redskins__inside_cross__0011_1_play_type">play_type correct</label>
+  <input type="text" data-correction="play_type_actual" data-play-id="washington_redskins__inside_cross__0011_1" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="ol_count" data-play-id="washington_redskins__inside_cross__0011_1" id="washington_redskins__inside_cross__0011_1_ol_count">
+  <label for="washington_redskins__inside_cross__0011_1_ol_count">OL count = 4 (excl C)</label>
+  <input type="text" data-correction="ol_count_actual" data-play-id="washington_redskins__inside_cross__0011_1" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="te_count" data-play-id="washington_redskins__inside_cross__0011_1" id="washington_redskins__inside_cross__0011_1_te_count">
+  <label for="washington_redskins__inside_cross__0011_1_te_count">TE count correct</label>
+  <input type="text" data-correction="te_count_actual" data-play-id="washington_redskins__inside_cross__0011_1" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="wr_count" data-play-id="washington_redskins__inside_cross__0011_1" id="washington_redskins__inside_cross__0011_1_wr_count">
+  <label for="washington_redskins__inside_cross__0011_1_wr_count">WR count correct</label>
+  <input type="text" data-correction="wr_count_actual" data-play-id="washington_redskins__inside_cross__0011_1" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="backfield" data-play-id="washington_redskins__inside_cross__0011_1" id="washington_redskins__inside_cross__0011_1_backfield">
+  <label for="washington_redskins__inside_cross__0011_1_backfield">Backfield correct</label>
+  <input type="text" data-correction="backfield_actual" data-play-id="washington_redskins__inside_cross__0011_1" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="ol_offset" data-play-id="washington_redskins__inside_cross__0011_1" id="washington_redskins__inside_cross__0011_1_ol_offset">
+  <label for="washington_redskins__inside_cross__0011_1_ol_offset">ol_offset_from_c correct</label>
+  <input type="text" data-correction="ol_offset_actual" data-play-id="washington_redskins__inside_cross__0011_1" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="target_gap" data-play-id="washington_redskins__inside_cross__0011_1" id="washington_redskins__inside_cross__0011_1_target_gap">
+  <label for="washington_redskins__inside_cross__0011_1_target_gap">target_gap correct (runs)</label>
+  <input type="text" data-correction="target_gap_actual" data-play-id="washington_redskins__inside_cross__0011_1" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="concept" data-play-id="washington_redskins__inside_cross__0011_1" id="washington_redskins__inside_cross__0011_1_concept">
+  <label for="washington_redskins__inside_cross__0011_1_concept">Play concept reasonable</label>
+  <input type="text" data-correction="concept_actual" data-play-id="washington_redskins__inside_cross__0011_1" placeholder="if wrong, write correct value">
+</div>
+    <div style="margin-top: 12px;">
+      <label><b>Notes:</b></label>
+      <textarea data-notes="1" data-play-id="washington_redskins__inside_cross__0011_1" placeholder="anything else worth flagging — counts that disagree, glyphs the model missed, ambiguous formations"></textarea>
+    </div>
+  </div>
+</div>
+<div class="play" data-play-id="baltimore_ravens__power_o__0058_1">
+  <h2>Play 7: Power O — Baltimore Ravens
+    <span class="stratum-tag">run_clean</span></h2>
+  <div class="meta">Formation: I-FORM Tight</div>
+  <div class="meta">play_id: <code>baltimore_ravens__power_o__0058_1</code></div>
+  <div class="meta">Crop: <code>i-form-tight__run__power-o__baltimore-ravens__img58p1__WIDE.jpg</code></div>
+
+  <div class="crop-and-data">
+    <div class="crop"><img src="./dispatch-crops/i-form-tight__run__power-o__baltimore-ravens__img58p1__WIDE.jpg" alt="play crop"></div>
+    <div class="model-read"><div><b>play_type:</b> run</div>
+<div><b>concept:</b> power</div>
+<div><b>OL count (excl C):</b> 4</div>
+<div><b>ol_offset_from_c:</b> <code>at</code></div>
+<div><b>TE count:</b> 1</div>
+<div><b>WR count:</b> 1</div>
+<div><b>Backfield:</b> 3 (QB, FB, HB)</div>
+<div><b>target_gap:</b> <code>None</code></div>
+<div><b>ball-carrier path:</b> HB takes handoff and follows pulling blockers to right side, angling upfield through the hole created by power blocking scheme</div>
+<div><b>confidence:</b> high</div>
+      <details><summary>full raw JSON</summary><pre>{
+  &quot;play_id&quot;: &quot;baltimore_ravens__power_o__0058_1&quot;,
+  &quot;play_type_observed&quot;: &quot;run&quot;,
+  &quot;concept&quot;: &quot;power&quot;,
+  &quot;concept_delta&quot;: null,
+  &quot;los_y&quot;: 318,
+  &quot;center&quot;: {
+    &quot;x&quot;: 838,
+    &quot;y&quot;: 318,
+    &quot;glyph&quot;: &quot;white_square&quot;
+  },
+  &quot;ol_offset_from_c&quot;: &quot;at&quot;,
+  &quot;offensive_line&quot;: [
+    {
+      &quot;position&quot;: &quot;LT&quot;,
+      &quot;x&quot;: 570,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    },
+    {
+      &quot;position&quot;: &quot;LG&quot;,
+      &quot;x&quot;: 704,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    },
+    {
+      &quot;position&quot;: &quot;RG&quot;,
+      &quot;x&quot;: 972,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    },
+    {
+      &quot;position&quot;: &quot;RT&quot;,
+      &quot;x&quot;: 1106,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    }
+  ],
+  &quot;tight_ends&quot;: [
+    {
+      &quot;position&quot;: &quot;TE_R&quot;,
+      &quot;x&quot;: 1240,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;,
+      &quot;button&quot;: &quot;none&quot;,
+      &quot;attached_side&quot;: &quot;right&quot;,
+      &quot;route&quot;: null
+    }
+  ],
+  &quot;wide_receivers&quot;: [
+    {
+      &quot;position&quot;: &quot;WR_X&quot;,
+      &quot;x&quot;: 1340,
+      &quot;y&quot;: 270,
+      &quot;glyph&quot;: &quot;white_circle&quot;,
+      &quot;button&quot;: &quot;none&quot;,
+      &quot;split_side&quot;: &quot;right&quot;,
+      &quot;route&quot;: {
+        &quot;color&quot;: &quot;white&quot;,
+        &quot;style&quot;: &quot;solid&quot;,
+        &quot;description&quot;: &quot;downfield arc pattern, appears to be a blocking route or jet sweep motion path&quot;
+      }
+    }
+  ],
+  &quot;backfield&quot;: [
+    {
+      &quot;position&quot;: &quot;QB&quot;,
+      &quot;x&quot;: 838,
+      &quot;y&quot;: 408,
+      &quot;glyph&quot;: &quot;white_circle&quot;,
+      &quot;button&quot;: &quot;none&quot;,
+      &quot;route&quot;: null
+    },
+    {
+      &quot;position&quot;: &quot;FB&quot;,
+      &quot;x&quot;: 838,
+      &quot;y&quot;: 478,
+      &quot;glyph&quot;: &quot;white_circle&quot;,
+      &quot;button&quot;: &quot;none&quot;,
+      &quot;route&quot;: {
+        &quot;color&quot;: &quot;white&quot;,
+        &quot;style&quot;: &quot;solid&quot;,
+        &quot;description&quot;: &quot;pulling motion to right, lead blocking path&quot;
+      }
+    },
+    {
+      &quot;position&quot;: &quot;HB&quot;,
+      &quot;x&quot;: 838,
+      &quot;y&quot;: 548,
+      &quot;glyph&quot;: &quot;white_circle&quot;,
+      &quot;button&quot;: &quot;none&quot;,
+      &quot;route&quot;: {
+        &quot;color&quot;: &quot;red&quot;,
+        &quot;style&quot;: &quot;solid&quot;,
+        &quot;description&quot;: &quot;ball carrier path angling right behind pulling guard/FB, classic Power O trajectory&quot;
+      }
+    }
+  ],
+  &quot;unknowns&quot;: [],
+  &quot;players_missing&quot;: [],
+  &quot;ball_carrier_or_primary&quot;: {
+    &quot;from_position&quot;: &quot;HB&quot;,
+    &quot;arrow_color&quot;: &quot;red&quot;,
+    &quot;arrow_style&quot;: &quot;solid&quot;,
+    &quot;description&quot;: &quot;HB takes handoff and follows pulling blockers to right side, angling upfield through the hole created by power blocking scheme&quot;
+  },
+  &quot;play_concept_observed&quot;: &quot;power&quot;,
+  &quot;confidence&quot;: &quot;high&quot;,
+  &quot;extraction_notes&quot;: &quot;Classic I-Form Power O: 3 stacked backfield circles (QB-FB-HB), FB pulling right as lead blocker with white arrow, HB carrying ball on red arrow following the pull. WR on right has white arc route suggesting downfield blocking or jet motion. All 5 OL at LOS with C-square, 1 TE attached right. Formation signature matches I-Form Tight perfectly.&quot;
+}</pre></details>
+    </div>
+  </div>
+
+  <div class="truth">
+    <h3>TRUTH (check what's right, fill correction if wrong)</h3>
+    <div class="check-row">
+  <input type="checkbox" data-check="play_type" data-play-id="baltimore_ravens__power_o__0058_1" id="baltimore_ravens__power_o__0058_1_play_type">
+  <label for="baltimore_ravens__power_o__0058_1_play_type">play_type correct</label>
+  <input type="text" data-correction="play_type_actual" data-play-id="baltimore_ravens__power_o__0058_1" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="ol_count" data-play-id="baltimore_ravens__power_o__0058_1" id="baltimore_ravens__power_o__0058_1_ol_count">
+  <label for="baltimore_ravens__power_o__0058_1_ol_count">OL count = 4 (excl C)</label>
+  <input type="text" data-correction="ol_count_actual" data-play-id="baltimore_ravens__power_o__0058_1" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="te_count" data-play-id="baltimore_ravens__power_o__0058_1" id="baltimore_ravens__power_o__0058_1_te_count">
+  <label for="baltimore_ravens__power_o__0058_1_te_count">TE count correct</label>
+  <input type="text" data-correction="te_count_actual" data-play-id="baltimore_ravens__power_o__0058_1" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="wr_count" data-play-id="baltimore_ravens__power_o__0058_1" id="baltimore_ravens__power_o__0058_1_wr_count">
+  <label for="baltimore_ravens__power_o__0058_1_wr_count">WR count correct</label>
+  <input type="text" data-correction="wr_count_actual" data-play-id="baltimore_ravens__power_o__0058_1" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="backfield" data-play-id="baltimore_ravens__power_o__0058_1" id="baltimore_ravens__power_o__0058_1_backfield">
+  <label for="baltimore_ravens__power_o__0058_1_backfield">Backfield correct</label>
+  <input type="text" data-correction="backfield_actual" data-play-id="baltimore_ravens__power_o__0058_1" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="ol_offset" data-play-id="baltimore_ravens__power_o__0058_1" id="baltimore_ravens__power_o__0058_1_ol_offset">
+  <label for="baltimore_ravens__power_o__0058_1_ol_offset">ol_offset_from_c correct</label>
+  <input type="text" data-correction="ol_offset_actual" data-play-id="baltimore_ravens__power_o__0058_1" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="target_gap" data-play-id="baltimore_ravens__power_o__0058_1" id="baltimore_ravens__power_o__0058_1_target_gap">
+  <label for="baltimore_ravens__power_o__0058_1_target_gap">target_gap correct (runs)</label>
+  <input type="text" data-correction="target_gap_actual" data-play-id="baltimore_ravens__power_o__0058_1" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="concept" data-play-id="baltimore_ravens__power_o__0058_1" id="baltimore_ravens__power_o__0058_1_concept">
+  <label for="baltimore_ravens__power_o__0058_1_concept">Play concept reasonable</label>
+  <input type="text" data-correction="concept_actual" data-play-id="baltimore_ravens__power_o__0058_1" placeholder="if wrong, write correct value">
+</div>
+    <div style="margin-top: 12px;">
+      <label><b>Notes:</b></label>
+      <textarea data-notes="1" data-play-id="baltimore_ravens__power_o__0058_1" placeholder="anything else worth flagging — counts that disagree, glyphs the model missed, ambiguous formations"></textarea>
+    </div>
+  </div>
+</div>
+<div class="play" data-play-id="run_balanced__power_o__0019_1">
+  <h2>Play 8: Power O — Run Balanced
+    <span class="stratum-tag">run_clean</span></h2>
+  <div class="meta">Formation: SINGLEBACK Ace Pair Twins</div>
+  <div class="meta">play_id: <code>run_balanced__power_o__0019_1</code></div>
+  <div class="meta">Crop: <code>singleback-ace-pair-twins__run__power-o__run-balanced__img19p1__WIDE.jpg</code></div>
+
+  <div class="crop-and-data">
+    <div class="crop"><img src="./dispatch-crops/singleback-ace-pair-twins__run__power-o__run-balanced__img19p1__WIDE.jpg" alt="play crop"></div>
+    <div class="model-read"><div><b>play_type:</b> run</div>
+<div><b>concept:</b> power</div>
+<div><b>OL count (excl C):</b> 4</div>
+<div><b>ol_offset_from_c:</b> <code>at</code></div>
+<div><b>TE count:</b> 2</div>
+<div><b>WR count:</b> 2</div>
+<div><b>Backfield:</b> 2 (QB, HB)</div>
+<div><b>target_gap:</b> <code>None</code></div>
+<div><b>ball-carrier path:</b> HB takes handoff and runs power to the right side, arrow curves right then upfield toward the strong side gap</div>
+<div><b>confidence:</b> high</div>
+      <details><summary>full raw JSON</summary><pre>{
+  &quot;play_id&quot;: &quot;run_balanced__power_o__0019_1&quot;,
+  &quot;play_type_observed&quot;: &quot;run&quot;,
+  &quot;concept&quot;: &quot;power_o&quot;,
+  &quot;concept_delta&quot;: null,
+  &quot;los_y&quot;: 318,
+  &quot;center&quot;: {
+    &quot;x&quot;: 838,
+    &quot;y&quot;: 318,
+    &quot;glyph&quot;: &quot;white_square&quot;
+  },
+  &quot;ol_offset_from_c&quot;: &quot;at&quot;,
+  &quot;offensive_line&quot;: [
+    {
+      &quot;position&quot;: &quot;LT&quot;,
+      &quot;x&quot;: 668,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    },
+    {
+      &quot;position&quot;: &quot;LG&quot;,
+      &quot;x&quot;: 753,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    },
+    {
+      &quot;position&quot;: &quot;RG&quot;,
+      &quot;x&quot;: 923,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    },
+    {
+      &quot;position&quot;: &quot;RT&quot;,
+      &quot;x&quot;: 1008,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    }
+  ],
+  &quot;tight_ends&quot;: [
+    {
+      &quot;position&quot;: &quot;TE_R&quot;,
+      &quot;x&quot;: 1093,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;,
+      &quot;button&quot;: &quot;none&quot;,
+      &quot;attached_side&quot;: &quot;right&quot;,
+      &quot;route&quot;: null
+    },
+    {
+      &quot;position&quot;: &quot;TE_L&quot;,
+      &quot;x&quot;: 583,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;,
+      &quot;button&quot;: &quot;none&quot;,
+      &quot;attached_side&quot;: &quot;left&quot;,
+      &quot;route&quot;: null
+    }
+  ],
+  &quot;wide_receivers&quot;: [
+    {
+      &quot;position&quot;: &quot;WR_X&quot;,
+      &quot;x&quot;: 160,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;,
+      &quot;button&quot;: &quot;none&quot;,
+      &quot;split_side&quot;: &quot;left&quot;,
+      &quot;route&quot;: null
+    },
+    {
+      &quot;position&quot;: &quot;WR_Z&quot;,
+      &quot;x&quot;: 330,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;,
+      &quot;button&quot;: &quot;none&quot;,
+      &quot;split_side&quot;: &quot;left&quot;,
+      &quot;route&quot;: null
+    }
+  ],
+  &quot;backfield&quot;: [
+    {
+      &quot;position&quot;: &quot;QB&quot;,
+      &quot;x&quot;: 838,
+      &quot;y&quot;: 385,
+      &quot;glyph&quot;: &quot;white_circle&quot;,
+      &quot;button&quot;: &quot;none&quot;,
+      &quot;route&quot;: null
+    },
+    {
+      &quot;position&quot;: &quot;HB&quot;,
+      &quot;x&quot;: 838,
+      &quot;y&quot;: 525,
+      &quot;glyph&quot;: &quot;white_circle&quot;,
+      &quot;button&quot;: &quot;none&quot;,
+      &quot;route&quot;: {
+        &quot;color&quot;: &quot;red&quot;,
+        &quot;style&quot;: &quot;solid&quot;,
+        &quot;description&quot;: &quot;ball carrier takes handoff and runs to right side with power blocking scheme, arrow angles right and upfield&quot;
+      }
+    }
+  ],
+  &quot;unknowns&quot;: [],
+  &quot;players_missing&quot;: [],
+  &quot;ball_carrier_or_primary&quot;: {
+    &quot;from_position&quot;: &quot;HB&quot;,
+    &quot;arrow_color&quot;: &quot;red&quot;,
+    &quot;arrow_style&quot;: &quot;solid&quot;,
+    &quot;description&quot;: &quot;HB takes handoff and runs power to the right side, arrow curves right then upfield toward the strong side gap&quot;
+  },
+  &quot;play_concept_observed&quot;: &quot;power&quot;,
+  &quot;confidence&quot;: &quot;high&quot;,
+  &quot;extraction_notes&quot;: &quot;Clean Power O run from Singleback Ace Pair Twins. Two TEs inline (Ace), two WRs split left (Twins). Red arrow shows HB ball carrier path to the right with power blocking scheme. Cyan route arrow visible on right side appears to be pulling guard or blocking scheme indicator. All 11 players accounted for: 5 OL + 2 TE + 2 WR + QB + HB.&quot;
+}</pre></details>
+    </div>
+  </div>
+
+  <div class="truth">
+    <h3>TRUTH (check what's right, fill correction if wrong)</h3>
+    <div class="check-row">
+  <input type="checkbox" data-check="play_type" data-play-id="run_balanced__power_o__0019_1" id="run_balanced__power_o__0019_1_play_type">
+  <label for="run_balanced__power_o__0019_1_play_type">play_type correct</label>
+  <input type="text" data-correction="play_type_actual" data-play-id="run_balanced__power_o__0019_1" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="ol_count" data-play-id="run_balanced__power_o__0019_1" id="run_balanced__power_o__0019_1_ol_count">
+  <label for="run_balanced__power_o__0019_1_ol_count">OL count = 4 (excl C)</label>
+  <input type="text" data-correction="ol_count_actual" data-play-id="run_balanced__power_o__0019_1" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="te_count" data-play-id="run_balanced__power_o__0019_1" id="run_balanced__power_o__0019_1_te_count">
+  <label for="run_balanced__power_o__0019_1_te_count">TE count correct</label>
+  <input type="text" data-correction="te_count_actual" data-play-id="run_balanced__power_o__0019_1" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="wr_count" data-play-id="run_balanced__power_o__0019_1" id="run_balanced__power_o__0019_1_wr_count">
+  <label for="run_balanced__power_o__0019_1_wr_count">WR count correct</label>
+  <input type="text" data-correction="wr_count_actual" data-play-id="run_balanced__power_o__0019_1" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="backfield" data-play-id="run_balanced__power_o__0019_1" id="run_balanced__power_o__0019_1_backfield">
+  <label for="run_balanced__power_o__0019_1_backfield">Backfield correct</label>
+  <input type="text" data-correction="backfield_actual" data-play-id="run_balanced__power_o__0019_1" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="ol_offset" data-play-id="run_balanced__power_o__0019_1" id="run_balanced__power_o__0019_1_ol_offset">
+  <label for="run_balanced__power_o__0019_1_ol_offset">ol_offset_from_c correct</label>
+  <input type="text" data-correction="ol_offset_actual" data-play-id="run_balanced__power_o__0019_1" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="target_gap" data-play-id="run_balanced__power_o__0019_1" id="run_balanced__power_o__0019_1_target_gap">
+  <label for="run_balanced__power_o__0019_1_target_gap">target_gap correct (runs)</label>
+  <input type="text" data-correction="target_gap_actual" data-play-id="run_balanced__power_o__0019_1" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="concept" data-play-id="run_balanced__power_o__0019_1" id="run_balanced__power_o__0019_1_concept">
+  <label for="run_balanced__power_o__0019_1_concept">Play concept reasonable</label>
+  <input type="text" data-correction="concept_actual" data-play-id="run_balanced__power_o__0019_1" placeholder="if wrong, write correct value">
+</div>
+    <div style="margin-top: 12px;">
+      <label><b>Notes:</b></label>
+      <textarea data-notes="1" data-play-id="run_balanced__power_o__0019_1" placeholder="anything else worth flagging — counts that disagree, glyphs the model missed, ambiguous formations"></textarea>
+    </div>
+  </div>
+</div>
+<div class="play" data-play-id="seattle_seahawks__hb_toss_strong__0013_1">
+  <h2>Play 9: HB Toss Strong — Seattle Seahawks
+    <span class="stratum-tag">run_clean</span></h2>
+  <div class="meta">Formation: SINGLEBACK Ace Pair Flex</div>
+  <div class="meta">play_id: <code>seattle_seahawks__hb_toss_strong__0013_1</code></div>
+  <div class="meta">Crop: <code>singleback-ace-pair-flex__run__hb-toss-strong__seattle-seahawks__img13p1__WIDE.jpg</code></div>
+
+  <div class="crop-and-data">
+    <div class="crop"><img src="./dispatch-crops/singleback-ace-pair-flex__run__hb-toss-strong__seattle-seahawks__img13p1__WIDE.jpg" alt="play crop"></div>
+    <div class="model-read"><div><b>play_type:</b> run</div>
+<div><b>concept:</b> toss strong</div>
+<div><b>OL count (excl C):</b> 4</div>
+<div><b>ol_offset_from_c:</b> <code>at</code></div>
+<div><b>TE count:</b> 2</div>
+<div><b>WR count:</b> 2</div>
+<div><b>Backfield:</b> 2 (QB, HB)</div>
+<div><b>target_gap:</b> <code>None</code></div>
+<div><b>ball-carrier path:</b> toss sweep right to edge with upfield arc</div>
+<div><b>confidence:</b> high</div>
+      <details><summary>full raw JSON</summary><pre>{
+  &quot;play_id&quot;: &quot;seattle_seahawks__hb_toss_strong__0013_1&quot;,
+  &quot;play_type_observed&quot;: &quot;run&quot;,
+  &quot;concept&quot;: &quot;toss strong&quot;,
+  &quot;concept_delta&quot;: null,
+  &quot;los_y&quot;: 318,
+  &quot;center&quot;: {
+    &quot;x&quot;: 840,
+    &quot;y&quot;: 318,
+    &quot;glyph&quot;: &quot;white_square&quot;
+  },
+  &quot;ol_offset_from_c&quot;: &quot;at&quot;,
+  &quot;offensive_line&quot;: [
+    {
+      &quot;position&quot;: &quot;LT&quot;,
+      &quot;x&quot;: 640,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    },
+    {
+      &quot;position&quot;: &quot;LG&quot;,
+      &quot;x&quot;: 740,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    },
+    {
+      &quot;position&quot;: &quot;RG&quot;,
+      &quot;x&quot;: 940,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    },
+    {
+      &quot;position&quot;: &quot;RT&quot;,
+      &quot;x&quot;: 1040,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    }
+  ],
+  &quot;tight_ends&quot;: [
+    {
+      &quot;position&quot;: &quot;TE_R&quot;,
+      &quot;x&quot;: 1140,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;,
+      &quot;button&quot;: &quot;none&quot;,
+      &quot;attached_side&quot;: &quot;right&quot;,
+      &quot;route&quot;: null
+    },
+    {
+      &quot;position&quot;: &quot;TE_R&quot;,
+      &quot;x&quot;: 1000,
+      &quot;y&quot;: 285,
+      &quot;glyph&quot;: &quot;white_circle&quot;,
+      &quot;button&quot;: &quot;none&quot;,
+      &quot;attached_side&quot;: &quot;right&quot;,
+      &quot;route&quot;: {
+        &quot;color&quot;: &quot;white&quot;,
+        &quot;style&quot;: &quot;solid&quot;,
+        &quot;description&quot;: &quot;downfield blocking arc to right edge&quot;
+      }
+    }
+  ],
+  &quot;wide_receivers&quot;: [
+    {
+      &quot;position&quot;: &quot;WR_X&quot;,
+      &quot;x&quot;: 360,
+      &quot;y&quot;: 340,
+      &quot;glyph&quot;: &quot;white_circle&quot;,
+      &quot;button&quot;: &quot;none&quot;,
+      &quot;split_side&quot;: &quot;left&quot;,
+      &quot;route&quot;: null
+    },
+    {
+      &quot;position&quot;: &quot;WR_Z&quot;,
+      &quot;x&quot;: 1300,
+      &quot;y&quot;: 380,
+      &quot;glyph&quot;: &quot;white_circle&quot;,
+      &quot;button&quot;: &quot;none&quot;,
+      &quot;split_side&quot;: &quot;right&quot;,
+      &quot;route&quot;: {
+        &quot;color&quot;: &quot;red&quot;,
+        &quot;style&quot;: &quot;solid&quot;,
+        &quot;description&quot;: &quot;arcing toss path toward right edge and upfield&quot;
+      }
+    }
+  ],
+  &quot;backfield&quot;: [
+    {
+      &quot;position&quot;: &quot;QB&quot;,
+      &quot;x&quot;: 840,
+      &quot;y&quot;: 380,
+      &quot;glyph&quot;: &quot;white_circle&quot;,
+      &quot;button&quot;: &quot;none&quot;,
+      &quot;route&quot;: null
+    },
+    {
+      &quot;position&quot;: &quot;HB&quot;,
+      &quot;x&quot;: 820,
+      &quot;y&quot;: 520,
+      &quot;glyph&quot;: &quot;white_circle&quot;,
+      &quot;button&quot;: &quot;none&quot;,
+      &quot;route&quot;: {
+        &quot;color&quot;: &quot;red&quot;,
+        &quot;style&quot;: &quot;solid&quot;,
+        &quot;description&quot;: &quot;sweeping toss right to edge, arcing upfield&quot;
+      }
+    }
+  ],
+  &quot;unknowns&quot;: [],
+  &quot;players_missing&quot;: [],
+  &quot;ball_carrier_or_primary&quot;: {
+    &quot;from_position&quot;: &quot;HB&quot;,
+    &quot;arrow_color&quot;: &quot;red&quot;,
+    &quot;arrow_style&quot;: &quot;solid&quot;,
+    &quot;description&quot;: &quot;toss sweep right to edge with upfield arc&quot;
+  },
+  &quot;play_concept_observed&quot;: &quot;toss strong&quot;,
+  &quot;confidence&quot;: &quot;high&quot;,
+  &quot;extraction_notes&quot;: &quot;Run play with OL at LOS. Two TEs on right side (one inline, one wing/offset slightly below LOS with blocking arc). HB receiving toss to strong side (right). Red arrow traces the toss path from backfield to right edge WR position then upfield. WR_Z at far right edge is the pitch target landmark. Formation matches Singleback Ace Pair Flex with two TEs right side.&quot;
+}</pre></details>
+    </div>
+  </div>
+
+  <div class="truth">
+    <h3>TRUTH (check what's right, fill correction if wrong)</h3>
+    <div class="check-row">
+  <input type="checkbox" data-check="play_type" data-play-id="seattle_seahawks__hb_toss_strong__0013_1" id="seattle_seahawks__hb_toss_strong__0013_1_play_type">
+  <label for="seattle_seahawks__hb_toss_strong__0013_1_play_type">play_type correct</label>
+  <input type="text" data-correction="play_type_actual" data-play-id="seattle_seahawks__hb_toss_strong__0013_1" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="ol_count" data-play-id="seattle_seahawks__hb_toss_strong__0013_1" id="seattle_seahawks__hb_toss_strong__0013_1_ol_count">
+  <label for="seattle_seahawks__hb_toss_strong__0013_1_ol_count">OL count = 4 (excl C)</label>
+  <input type="text" data-correction="ol_count_actual" data-play-id="seattle_seahawks__hb_toss_strong__0013_1" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="te_count" data-play-id="seattle_seahawks__hb_toss_strong__0013_1" id="seattle_seahawks__hb_toss_strong__0013_1_te_count">
+  <label for="seattle_seahawks__hb_toss_strong__0013_1_te_count">TE count correct</label>
+  <input type="text" data-correction="te_count_actual" data-play-id="seattle_seahawks__hb_toss_strong__0013_1" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="wr_count" data-play-id="seattle_seahawks__hb_toss_strong__0013_1" id="seattle_seahawks__hb_toss_strong__0013_1_wr_count">
+  <label for="seattle_seahawks__hb_toss_strong__0013_1_wr_count">WR count correct</label>
+  <input type="text" data-correction="wr_count_actual" data-play-id="seattle_seahawks__hb_toss_strong__0013_1" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="backfield" data-play-id="seattle_seahawks__hb_toss_strong__0013_1" id="seattle_seahawks__hb_toss_strong__0013_1_backfield">
+  <label for="seattle_seahawks__hb_toss_strong__0013_1_backfield">Backfield correct</label>
+  <input type="text" data-correction="backfield_actual" data-play-id="seattle_seahawks__hb_toss_strong__0013_1" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="ol_offset" data-play-id="seattle_seahawks__hb_toss_strong__0013_1" id="seattle_seahawks__hb_toss_strong__0013_1_ol_offset">
+  <label for="seattle_seahawks__hb_toss_strong__0013_1_ol_offset">ol_offset_from_c correct</label>
+  <input type="text" data-correction="ol_offset_actual" data-play-id="seattle_seahawks__hb_toss_strong__0013_1" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="target_gap" data-play-id="seattle_seahawks__hb_toss_strong__0013_1" id="seattle_seahawks__hb_toss_strong__0013_1_target_gap">
+  <label for="seattle_seahawks__hb_toss_strong__0013_1_target_gap">target_gap correct (runs)</label>
+  <input type="text" data-correction="target_gap_actual" data-play-id="seattle_seahawks__hb_toss_strong__0013_1" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="concept" data-play-id="seattle_seahawks__hb_toss_strong__0013_1" id="seattle_seahawks__hb_toss_strong__0013_1_concept">
+  <label for="seattle_seahawks__hb_toss_strong__0013_1_concept">Play concept reasonable</label>
+  <input type="text" data-correction="concept_actual" data-play-id="seattle_seahawks__hb_toss_strong__0013_1" placeholder="if wrong, write correct value">
+</div>
+    <div style="margin-top: 12px;">
+      <label><b>Notes:</b></label>
+      <textarea data-notes="1" data-play-id="seattle_seahawks__hb_toss_strong__0013_1" placeholder="anything else worth flagging — counts that disagree, glyphs the model missed, ambiguous formations"></textarea>
+    </div>
+  </div>
+</div>
+<div class="play" data-play-id="balanced__hb_toss__0040_2">
+  <h2>Play 10: HB Toss — Balanced
+    <span class="stratum-tag">run_generic</span></h2>
+  <div class="meta">Formation: I-FORM Pro</div>
+  <div class="meta">play_id: <code>balanced__hb_toss__0040_2</code></div>
+  <div class="meta">Crop: <code>i-form-pro__run__hb-toss__balanced__img40p2__WIDE.jpg</code></div>
+
+  <div class="crop-and-data">
+    <div class="crop"><img src="./dispatch-crops/i-form-pro__run__hb-toss__balanced__img40p2__WIDE.jpg" alt="play crop"></div>
+    <div class="model-read"><div><b>play_type:</b> run</div>
+<div><b>concept:</b> toss</div>
+<div><b>OL count (excl C):</b> 4</div>
+<div><b>ol_offset_from_c:</b> <code>at</code></div>
+<div><b>TE count:</b> 1</div>
+<div><b>WR count:</b> 2</div>
+<div><b>Backfield:</b> 3 (QB, FB, HB)</div>
+<div><b>target_gap:</b> <code>None</code></div>
+<div><b>ball-carrier path:</b> toss sweep right with outside arc upfield</div>
+<div><b>confidence:</b> high</div>
+      <details><summary>full raw JSON</summary><pre>{
+  &quot;play_id&quot;: &quot;balanced__hb_toss__0040_2&quot;,
+  &quot;play_type_observed&quot;: &quot;run&quot;,
+  &quot;concept&quot;: &quot;toss&quot;,
+  &quot;concept_delta&quot;: null,
+  &quot;los_y&quot;: 318,
+  &quot;center&quot;: {
+    &quot;x&quot;: 858,
+    &quot;y&quot;: 318,
+    &quot;glyph&quot;: &quot;white_square&quot;
+  },
+  &quot;ol_offset_from_c&quot;: &quot;at&quot;,
+  &quot;offensive_line&quot;: [
+    {
+      &quot;position&quot;: &quot;LT&quot;,
+      &quot;x&quot;: 678,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    },
+    {
+      &quot;position&quot;: &quot;LG&quot;,
+      &quot;x&quot;: 768,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    },
+    {
+      &quot;position&quot;: &quot;RG&quot;,
+      &quot;x&quot;: 948,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    },
+    {
+      &quot;position&quot;: &quot;RT&quot;,
+      &quot;x&quot;: 1038,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    }
+  ],
+  &quot;tight_ends&quot;: [
+    {
+      &quot;position&quot;: &quot;TE_R&quot;,
+      &quot;x&quot;: 1128,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;,
+      &quot;button&quot;: &quot;none&quot;,
+      &quot;attached_side&quot;: &quot;right&quot;,
+      &quot;route&quot;: null
+    }
+  ],
+  &quot;wide_receivers&quot;: [
+    {
+      &quot;position&quot;: &quot;WR_X&quot;,
+      &quot;x&quot;: 408,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;,
+      &quot;button&quot;: &quot;none&quot;,
+      &quot;split_side&quot;: &quot;left&quot;,
+      &quot;route&quot;: null
+    },
+    {
+      &quot;position&quot;: &quot;WR_Z&quot;,
+      &quot;x&quot;: 1398,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;,
+      &quot;button&quot;: &quot;none&quot;,
+      &quot;split_side&quot;: &quot;right&quot;,
+      &quot;route&quot;: null
+    }
+  ],
+  &quot;backfield&quot;: [
+    {
+      &quot;position&quot;: &quot;QB&quot;,
+      &quot;x&quot;: 858,
+      &quot;y&quot;: 378,
+      &quot;glyph&quot;: &quot;white_circle&quot;,
+      &quot;button&quot;: &quot;none&quot;,
+      &quot;route&quot;: null
+    },
+    {
+      &quot;position&quot;: &quot;FB&quot;,
+      &quot;x&quot;: 858,
+      &quot;y&quot;: 438,
+      &quot;glyph&quot;: &quot;white_circle&quot;,
+      &quot;button&quot;: &quot;none&quot;,
+      &quot;route&quot;: {
+        &quot;color&quot;: &quot;white&quot;,
+        &quot;style&quot;: &quot;solid&quot;,
+        &quot;description&quot;: &quot;lead blocker pulling right and upfield&quot;
+      }
+    },
+    {
+      &quot;position&quot;: &quot;HB&quot;,
+      &quot;x&quot;: 858,
+      &quot;y&quot;: 528,
+      &quot;glyph&quot;: &quot;white_circle&quot;,
+      &quot;button&quot;: &quot;none&quot;,
+      &quot;route&quot;: {
+        &quot;color&quot;: &quot;red&quot;,
+        &quot;style&quot;: &quot;solid&quot;,
+        &quot;description&quot;: &quot;toss sweep right, arcing to the outside and upfield&quot;
+      }
+    }
+  ],
+  &quot;unknowns&quot;: [],
+  &quot;players_missing&quot;: [],
+  &quot;ball_carrier_or_primary&quot;: {
+    &quot;from_position&quot;: &quot;HB&quot;,
+    &quot;arrow_color&quot;: &quot;red&quot;,
+    &quot;arrow_style&quot;: &quot;solid&quot;,
+    &quot;description&quot;: &quot;toss sweep right with outside arc upfield&quot;
+  },
+  &quot;play_concept_observed&quot;: &quot;toss&quot;,
+  &quot;confidence&quot;: &quot;high&quot;,
+  &quot;extraction_notes&quot;: &quot;Classic I-Form Pro toss play. Three stacked backfield players (QB-FB-HB) visible. FB has white blocking arrow pulling right as lead blocker. HB has red toss path arcing to the right sideline. All 5 OL at LOS level (run play signature). One TE attached right. Two WRs split wide on both edges. Total 11 players accounted for.&quot;
+}</pre></details>
+    </div>
+  </div>
+
+  <div class="truth">
+    <h3>TRUTH (check what's right, fill correction if wrong)</h3>
+    <div class="check-row">
+  <input type="checkbox" data-check="play_type" data-play-id="balanced__hb_toss__0040_2" id="balanced__hb_toss__0040_2_play_type">
+  <label for="balanced__hb_toss__0040_2_play_type">play_type correct</label>
+  <input type="text" data-correction="play_type_actual" data-play-id="balanced__hb_toss__0040_2" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="ol_count" data-play-id="balanced__hb_toss__0040_2" id="balanced__hb_toss__0040_2_ol_count">
+  <label for="balanced__hb_toss__0040_2_ol_count">OL count = 4 (excl C)</label>
+  <input type="text" data-correction="ol_count_actual" data-play-id="balanced__hb_toss__0040_2" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="te_count" data-play-id="balanced__hb_toss__0040_2" id="balanced__hb_toss__0040_2_te_count">
+  <label for="balanced__hb_toss__0040_2_te_count">TE count correct</label>
+  <input type="text" data-correction="te_count_actual" data-play-id="balanced__hb_toss__0040_2" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="wr_count" data-play-id="balanced__hb_toss__0040_2" id="balanced__hb_toss__0040_2_wr_count">
+  <label for="balanced__hb_toss__0040_2_wr_count">WR count correct</label>
+  <input type="text" data-correction="wr_count_actual" data-play-id="balanced__hb_toss__0040_2" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="backfield" data-play-id="balanced__hb_toss__0040_2" id="balanced__hb_toss__0040_2_backfield">
+  <label for="balanced__hb_toss__0040_2_backfield">Backfield correct</label>
+  <input type="text" data-correction="backfield_actual" data-play-id="balanced__hb_toss__0040_2" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="ol_offset" data-play-id="balanced__hb_toss__0040_2" id="balanced__hb_toss__0040_2_ol_offset">
+  <label for="balanced__hb_toss__0040_2_ol_offset">ol_offset_from_c correct</label>
+  <input type="text" data-correction="ol_offset_actual" data-play-id="balanced__hb_toss__0040_2" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="target_gap" data-play-id="balanced__hb_toss__0040_2" id="balanced__hb_toss__0040_2_target_gap">
+  <label for="balanced__hb_toss__0040_2_target_gap">target_gap correct (runs)</label>
+  <input type="text" data-correction="target_gap_actual" data-play-id="balanced__hb_toss__0040_2" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="concept" data-play-id="balanced__hb_toss__0040_2" id="balanced__hb_toss__0040_2_concept">
+  <label for="balanced__hb_toss__0040_2_concept">Play concept reasonable</label>
+  <input type="text" data-correction="concept_actual" data-play-id="balanced__hb_toss__0040_2" placeholder="if wrong, write correct value">
+</div>
+    <div style="margin-top: 12px;">
+      <label><b>Notes:</b></label>
+      <textarea data-notes="1" data-play-id="balanced__hb_toss__0040_2" placeholder="anything else worth flagging — counts that disagree, glyphs the model missed, ambiguous formations"></textarea>
+    </div>
+  </div>
+</div>
+<div class="play" data-play-id="mike_ditka__hb_counter__0037_1">
+  <h2>Play 11: HB Counter — Mike Ditka
+    <span class="stratum-tag">run_generic</span></h2>
+  <div class="meta">Formation: SINGLEBACK Y-Trips</div>
+  <div class="meta">play_id: <code>mike_ditka__hb_counter__0037_1</code></div>
+  <div class="meta">Crop: <code>singleback-y-trips__run__hb-counter__mike-ditka__img37p1__WIDE.jpg</code></div>
+
+  <div class="crop-and-data">
+    <div class="crop"><img src="./dispatch-crops/singleback-y-trips__run__hb-counter__mike-ditka__img37p1__WIDE.jpg" alt="play crop"></div>
+    <div class="model-read"><div><b>play_type:</b> run</div>
+<div><b>concept:</b> counter</div>
+<div><b>OL count (excl C):</b> 4</div>
+<div><b>ol_offset_from_c:</b> <code>at</code></div>
+<div><b>TE count:</b> 1</div>
+<div><b>WR count:</b> 3</div>
+<div><b>Backfield:</b> 2 (QB, HB)</div>
+<div><b>target_gap:</b> <code>None</code></div>
+<div><b>ball-carrier path:</b> counter path from right backfield sweeping left behind OL with characteristic counter arc</div>
+<div><b>confidence:</b> high</div>
+      <details><summary>full raw JSON</summary><pre>{
+  &quot;play_id&quot;: &quot;mike_ditka__hb_counter__0037_1&quot;,
+  &quot;play_type_observed&quot;: &quot;run&quot;,
+  &quot;concept&quot;: &quot;counter&quot;,
+  &quot;concept_delta&quot;: null,
+  &quot;los_y&quot;: 318,
+  &quot;center&quot;: {
+    &quot;x&quot;: 755,
+    &quot;y&quot;: 318,
+    &quot;glyph&quot;: &quot;white_square&quot;
+  },
+  &quot;ol_offset_from_c&quot;: &quot;at&quot;,
+  &quot;offensive_line&quot;: [
+    {
+      &quot;position&quot;: &quot;LT&quot;,
+      &quot;x&quot;: 565,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    },
+    {
+      &quot;position&quot;: &quot;LG&quot;,
+      &quot;x&quot;: 660,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    },
+    {
+      &quot;position&quot;: &quot;RG&quot;,
+      &quot;x&quot;: 850,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    },
+    {
+      &quot;position&quot;: &quot;RT&quot;,
+      &quot;x&quot;: 945,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    }
+  ],
+  &quot;tight_ends&quot;: [
+    {
+      &quot;position&quot;: &quot;TE_R&quot;,
+      &quot;x&quot;: 1050,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;,
+      &quot;button&quot;: &quot;none&quot;,
+      &quot;attached_side&quot;: &quot;right&quot;,
+      &quot;route&quot;: null
+    }
+  ],
+  &quot;wide_receivers&quot;: [
+    {
+      &quot;position&quot;: &quot;WR_X&quot;,
+      &quot;x&quot;: 1205,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;,
+      &quot;button&quot;: &quot;none&quot;,
+      &quot;split_side&quot;: &quot;right&quot;,
+      &quot;route&quot;: null
+    },
+    {
+      &quot;position&quot;: &quot;WR_Z&quot;,
+      &quot;x&quot;: 1330,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;,
+      &quot;button&quot;: &quot;none&quot;,
+      &quot;split_side&quot;: &quot;right&quot;,
+      &quot;route&quot;: null
+    },
+    {
+      &quot;position&quot;: &quot;WR_SLOT_L&quot;,
+      &quot;x&quot;: 340,
+      &quot;y&quot;: 318,
+      &quot;glyph&quot;: &quot;white_circle&quot;,
+      &quot;button&quot;: &quot;none&quot;,
+      &quot;split_side&quot;: &quot;left&quot;,
+      &quot;route&quot;: null
+    }
+  ],
+  &quot;backfield&quot;: [
+    {
+      &quot;position&quot;: &quot;QB&quot;,
+      &quot;x&quot;: 755,
+      &quot;y&quot;: 395,
+      &quot;glyph&quot;: &quot;white_circle&quot;,
+      &quot;button&quot;: &quot;none&quot;,
+      &quot;route&quot;: null
+    },
+    {
+      &quot;position&quot;: &quot;HB&quot;,
+      &quot;x&quot;: 840,
+      &quot;y&quot;: 530,
+      &quot;glyph&quot;: &quot;white_circle&quot;,
+      &quot;button&quot;: &quot;none&quot;,
+      &quot;route&quot;: {
+        &quot;color&quot;: &quot;red&quot;,
+        &quot;style&quot;: &quot;solid&quot;,
+        &quot;description&quot;: &quot;counter motion sweeping left behind the line, arcing down and to the left&quot;
+      }
+    }
+  ],
+  &quot;unknowns&quot;: [],
+  &quot;players_missing&quot;: [],
+  &quot;ball_carrier_or_primary&quot;: {
+    &quot;from_position&quot;: &quot;HB&quot;,
+    &quot;arrow_color&quot;: &quot;red&quot;,
+    &quot;arrow_style&quot;: &quot;solid&quot;,
+    &quot;description&quot;: &quot;counter path from right backfield sweeping left behind OL with characteristic counter arc&quot;
+  },
+  &quot;play_concept_observed&quot;: &quot;counter&quot;,
+  &quot;confidence&quot;: &quot;high&quot;,
+  &quot;extraction_notes&quot;: &quot;Clear counter run diagram. Formation is Singleback Y-Trips with 3 WRs stacked to the right (TE plus 2 WRs) and 1 WR split left. HB takes counter path with red arrow sweeping left behind the line. QB under center, HB offset right. OL aligned at LOS (run-blocking alignment). All 11 players visible and accounted for.&quot;
+}</pre></details>
+    </div>
+  </div>
+
+  <div class="truth">
+    <h3>TRUTH (check what's right, fill correction if wrong)</h3>
+    <div class="check-row">
+  <input type="checkbox" data-check="play_type" data-play-id="mike_ditka__hb_counter__0037_1" id="mike_ditka__hb_counter__0037_1_play_type">
+  <label for="mike_ditka__hb_counter__0037_1_play_type">play_type correct</label>
+  <input type="text" data-correction="play_type_actual" data-play-id="mike_ditka__hb_counter__0037_1" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="ol_count" data-play-id="mike_ditka__hb_counter__0037_1" id="mike_ditka__hb_counter__0037_1_ol_count">
+  <label for="mike_ditka__hb_counter__0037_1_ol_count">OL count = 4 (excl C)</label>
+  <input type="text" data-correction="ol_count_actual" data-play-id="mike_ditka__hb_counter__0037_1" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="te_count" data-play-id="mike_ditka__hb_counter__0037_1" id="mike_ditka__hb_counter__0037_1_te_count">
+  <label for="mike_ditka__hb_counter__0037_1_te_count">TE count correct</label>
+  <input type="text" data-correction="te_count_actual" data-play-id="mike_ditka__hb_counter__0037_1" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="wr_count" data-play-id="mike_ditka__hb_counter__0037_1" id="mike_ditka__hb_counter__0037_1_wr_count">
+  <label for="mike_ditka__hb_counter__0037_1_wr_count">WR count correct</label>
+  <input type="text" data-correction="wr_count_actual" data-play-id="mike_ditka__hb_counter__0037_1" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="backfield" data-play-id="mike_ditka__hb_counter__0037_1" id="mike_ditka__hb_counter__0037_1_backfield">
+  <label for="mike_ditka__hb_counter__0037_1_backfield">Backfield correct</label>
+  <input type="text" data-correction="backfield_actual" data-play-id="mike_ditka__hb_counter__0037_1" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="ol_offset" data-play-id="mike_ditka__hb_counter__0037_1" id="mike_ditka__hb_counter__0037_1_ol_offset">
+  <label for="mike_ditka__hb_counter__0037_1_ol_offset">ol_offset_from_c correct</label>
+  <input type="text" data-correction="ol_offset_actual" data-play-id="mike_ditka__hb_counter__0037_1" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="target_gap" data-play-id="mike_ditka__hb_counter__0037_1" id="mike_ditka__hb_counter__0037_1_target_gap">
+  <label for="mike_ditka__hb_counter__0037_1_target_gap">target_gap correct (runs)</label>
+  <input type="text" data-correction="target_gap_actual" data-play-id="mike_ditka__hb_counter__0037_1" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="concept" data-play-id="mike_ditka__hb_counter__0037_1" id="mike_ditka__hb_counter__0037_1_concept">
+  <label for="mike_ditka__hb_counter__0037_1_concept">Play concept reasonable</label>
+  <input type="text" data-correction="concept_actual" data-play-id="mike_ditka__hb_counter__0037_1" placeholder="if wrong, write correct value">
+</div>
+    <div style="margin-top: 12px;">
+      <label><b>Notes:</b></label>
+      <textarea data-notes="1" data-play-id="mike_ditka__hb_counter__0037_1" placeholder="anything else worth flagging — counts that disagree, glyphs the model missed, ambiguous formations"></textarea>
+    </div>
+  </div>
+</div>
+<div class="play" data-play-id="west_coast__seattle__0028_1">
+  <h2>Play 12: Seattle — West Coast
+    <span class="stratum-tag">run_generic</span></h2>
+  <div class="meta">Formation: SINGLEBACK Bunch Swap</div>
+  <div class="meta">play_id: <code>west_coast__seattle__0028_1</code></div>
+  <div class="meta">Crop: <code>singleback-bunch-swap__run__seattle__west-coast__img28p1__WIDE.jpg</code></div>
+
+  <div class="crop-and-data">
+    <div class="crop"><img src="./dispatch-crops/singleback-bunch-swap__run__seattle__west-coast__img28p1__WIDE.jpg" alt="play crop"></div>
+    <div class="model-read"><div><b>play_type:</b> pass</div>
+<div><b>concept:</b> flood right</div>
+<div><b>OL count (excl C):</b> 4</div>
+<div><b>ol_offset_from_c:</b> <code>below</code></div>
+<div><b>TE count:</b> 1</div>
+<div><b>WR count:</b> 3</div>
+<div><b>Backfield:</b> 1 (HB)</div>
+<div><b>target_gap:</b> <code>None</code></div>
+<div><b>ball-carrier path:</b> R1 TE short flat/swing route to right side - red arrow indicates primary read</div>
+<div><b>confidence:</b> high</div>
+      <details><summary>full raw JSON</summary><pre>{
+  &quot;play_id&quot;: &quot;west_coast__seattle__0028_1&quot;,
+  &quot;play_type_observed&quot;: &quot;pass&quot;,
+  &quot;concept&quot;: &quot;Seattle&quot;,
+  &quot;concept_delta&quot;: &quot;play_type mismatch: metadata says &#x27;run&#x27; but visual shows pass-pro (OL below C) + button glyphs + routes&quot;,
+  &quot;los_y&quot;: 330,
+  &quot;center&quot;: {
+    &quot;x&quot;: 840,
+    &quot;y&quot;: 330,
+    &quot;glyph&quot;: &quot;white_square&quot;
+  },
+  &quot;ol_offset_from_c&quot;: &quot;below&quot;,
+  &quot;offensive_line&quot;: [
+    {
+      &quot;position&quot;: &quot;LT&quot;,
+      &quot;x&quot;: 670,
+      &quot;y&quot;: 355,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    },
+    {
+      &quot;position&quot;: &quot;LG&quot;,
+      &quot;x&quot;: 755,
+      &quot;y&quot;: 355,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    },
+    {
+      &quot;position&quot;: &quot;RG&quot;,
+      &quot;x&quot;: 925,
+      &quot;y&quot;: 355,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    },
+    {
+      &quot;position&quot;: &quot;RT&quot;,
+      &quot;x&quot;: 1010,
+      &quot;y&quot;: 355,
+      &quot;glyph&quot;: &quot;white_circle&quot;
+    }
+  ],
+  &quot;tight_ends&quot;: [
+    {
+      &quot;position&quot;: &quot;TE_R&quot;,
+      &quot;x&quot;: 1090,
+      &quot;y&quot;: 330,
+      &quot;glyph&quot;: &quot;text_R1&quot;,
+      &quot;button&quot;: &quot;R1&quot;,
+      &quot;attached_side&quot;: &quot;right&quot;,
+      &quot;route&quot;: {
+        &quot;color&quot;: &quot;red&quot;,
+        &quot;style&quot;: &quot;solid&quot;,
+        &quot;description&quot;: &quot;short swing/flat route right side&quot;
+      }
+    }
+  ],
+  &quot;wide_receivers&quot;: [
+    {
+      &quot;position&quot;: &quot;WR_X&quot;,
+      &quot;x&quot;: 345,
+      &quot;y&quot;: 330,
+      &quot;glyph&quot;: &quot;purple_square&quot;,
+      &quot;button&quot;: &quot;Square&quot;,
+      &quot;split_side&quot;: &quot;left&quot;,
+      &quot;route&quot;: {
+        &quot;color&quot;: &quot;yellow&quot;,
+        &quot;style&quot;: &quot;solid&quot;,
+        &quot;description&quot;: &quot;deep post/corner route upfield and left&quot;
+      }
+    },
+    {
+      &quot;position&quot;: &quot;WR_Z&quot;,
+      &quot;x&quot;: 1260,
+      &quot;y&quot;: 330,
+      &quot;glyph&quot;: &quot;red_circle&quot;,
+      &quot;button&quot;: &quot;Circle&quot;,
+      &quot;split_side&quot;: &quot;right&quot;,
+      &quot;route&quot;: {
+        &quot;color&quot;: &quot;yellow&quot;,
+        &quot;style&quot;: &quot;solid&quot;,
+        &quot;description&quot;: &quot;vertical/go route straight upfield&quot;
+      }
+    },
+    {
+      &quot;position&quot;: &quot;WR_SLOT_R&quot;,
+      &quot;x&quot;: 1135,
+      &quot;y&quot;: 330,
+      &quot;glyph&quot;: &quot;blue_cross&quot;,
+      &quot;button&quot;: &quot;Cross&quot;,
+      &quot;split_side&quot;: &quot;right&quot;,
+      &quot;route&quot;: {
+        &quot;color&quot;: &quot;blue&quot;,
+        &quot;style&quot;: &quot;solid&quot;,
+        &quot;description&quot;: &quot;drag/in route across formation left, appears to chip/delay&quot;
+      }
+    }
+  ],
+  &quot;backfield&quot;: [
+    {
+      &quot;position&quot;: &quot;HB&quot;,
+      &quot;x&quot;: 840,
+      &quot;y&quot;: 540,
+      &quot;glyph&quot;: &quot;green_triangle&quot;,
+      &quot;button&quot;: &quot;Triangle&quot;,
+      &quot;route&quot;: {
+        &quot;color&quot;: &quot;blue&quot;,
+        &quot;style&quot;: &quot;solid&quot;,
+        &quot;description&quot;: &quot;swing/wheel route downfield right after pass-pro&quot;
+      }
+    }
+  ],
+  &quot;unknowns&quot;: [],
+  &quot;players_missing&quot;: [
+    &quot;QB should be visible in backfield but only see 1 backfield circle (HB). QB may be directly behind C and obscured by glyph overlap or clipped&quot;
+  ],
+  &quot;ball_carrier_or_primary&quot;: {
+    &quot;from_position&quot;: &quot;TE_R&quot;,
+    &quot;arrow_color&quot;: &quot;red&quot;,
+    &quot;arrow_style&quot;: &quot;solid&quot;,
+    &quot;description&quot;: &quot;R1 TE short flat/swing route to right side - red arrow indicates primary read&quot;
+  },
+  &quot;play_concept_observed&quot;: &quot;flood right&quot;,
+  &quot;confidence&quot;: &quot;high&quot;,
+  &quot;extraction_notes&quot;: &quot;Clear pass play despite metadata indicating &#x27;run&#x27;. OL in pass-pro (below C), 4 eligible receivers with button glyphs and routes. Formation appears to be Singleback Bunch (3 receivers bunched right side). Red arrow on R1 TE suggests primary hot route. HB triangle-button with blue arrow = checkdown after chip. Only 10 visible players (missing QB, likely stacked behind C-square and visually obscured). Bunch formation right side with flood concept.&quot;
+}</pre></details>
+    </div>
+  </div>
+
+  <div class="truth">
+    <h3>TRUTH (check what's right, fill correction if wrong)</h3>
+    <div class="check-row">
+  <input type="checkbox" data-check="play_type" data-play-id="west_coast__seattle__0028_1" id="west_coast__seattle__0028_1_play_type">
+  <label for="west_coast__seattle__0028_1_play_type">play_type correct</label>
+  <input type="text" data-correction="play_type_actual" data-play-id="west_coast__seattle__0028_1" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="ol_count" data-play-id="west_coast__seattle__0028_1" id="west_coast__seattle__0028_1_ol_count">
+  <label for="west_coast__seattle__0028_1_ol_count">OL count = 4 (excl C)</label>
+  <input type="text" data-correction="ol_count_actual" data-play-id="west_coast__seattle__0028_1" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="te_count" data-play-id="west_coast__seattle__0028_1" id="west_coast__seattle__0028_1_te_count">
+  <label for="west_coast__seattle__0028_1_te_count">TE count correct</label>
+  <input type="text" data-correction="te_count_actual" data-play-id="west_coast__seattle__0028_1" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="wr_count" data-play-id="west_coast__seattle__0028_1" id="west_coast__seattle__0028_1_wr_count">
+  <label for="west_coast__seattle__0028_1_wr_count">WR count correct</label>
+  <input type="text" data-correction="wr_count_actual" data-play-id="west_coast__seattle__0028_1" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="backfield" data-play-id="west_coast__seattle__0028_1" id="west_coast__seattle__0028_1_backfield">
+  <label for="west_coast__seattle__0028_1_backfield">Backfield correct</label>
+  <input type="text" data-correction="backfield_actual" data-play-id="west_coast__seattle__0028_1" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="ol_offset" data-play-id="west_coast__seattle__0028_1" id="west_coast__seattle__0028_1_ol_offset">
+  <label for="west_coast__seattle__0028_1_ol_offset">ol_offset_from_c correct</label>
+  <input type="text" data-correction="ol_offset_actual" data-play-id="west_coast__seattle__0028_1" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="target_gap" data-play-id="west_coast__seattle__0028_1" id="west_coast__seattle__0028_1_target_gap">
+  <label for="west_coast__seattle__0028_1_target_gap">target_gap correct (runs)</label>
+  <input type="text" data-correction="target_gap_actual" data-play-id="west_coast__seattle__0028_1" placeholder="if wrong, write correct value">
+</div><div class="check-row">
+  <input type="checkbox" data-check="concept" data-play-id="west_coast__seattle__0028_1" id="west_coast__seattle__0028_1_concept">
+  <label for="west_coast__seattle__0028_1_concept">Play concept reasonable</label>
+  <input type="text" data-correction="concept_actual" data-play-id="west_coast__seattle__0028_1" placeholder="if wrong, write correct value">
+</div>
+    <div style="margin-top: 12px;">
+      <label><b>Notes:</b></label>
+      <textarea data-notes="1" data-play-id="west_coast__seattle__0028_1" placeholder="anything else worth flagging — counts that disagree, glyphs the model missed, ambiguous formations"></textarea>
+    </div>
+  </div>
+</div>
+
+<div class="save-bar">
+  <button onclick="collectAndSave()">Save corrections → review_truth.json</button>
+</div>
+
+<script>
+function collectAndSave() {
+  const plays = [];
+  document.querySelectorAll('.play').forEach(playEl => {
+    const playId = playEl.dataset.playId;
+    const checks = {};
+    playEl.querySelectorAll('input[type=checkbox][data-check]').forEach(cb => {
+      checks[cb.dataset.check] = cb.checked;
+    });
+    const corrections = {};
+    playEl.querySelectorAll('input[type=text][data-correction]').forEach(t => {
+      const v = t.value.trim();
+      if (v) corrections[t.dataset.correction] = v;
+    });
+    const notes = (playEl.querySelector('textarea[data-notes]') || {}).value || '';
+    plays.push({ play_id: playId, checks, corrections, notes });
+  });
+  const payload = {
+    saved_at: new Date().toISOString(),
+    plays
+  };
+  const blob = new Blob([JSON.stringify(payload, null, 2)], {type: 'application/json'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'review_truth.json';
+  a.click();
+  URL.revokeObjectURL(url);
+  alert('Saved as review_truth.json. Send it back to Claude when ready.');
+}
+
+// Auto-save to localStorage on any change so user doesn't lose progress
+function autosave() {
+  const state = {};
+  document.querySelectorAll('input, textarea').forEach(el => {
+    const key = el.dataset.playId + '|' + (el.dataset.check || el.dataset.correction || (el.dataset.notes ? 'notes' : ''));
+    state[key] = el.type === 'checkbox' ? el.checked : el.value;
+  });
+  localStorage.setItem('m25_review_state', JSON.stringify(state));
+}
+
+function loadAutosave() {
+  const raw = localStorage.getItem('m25_review_state');
+  if (!raw) return;
+  try {
+    const state = JSON.parse(raw);
+    document.querySelectorAll('input, textarea').forEach(el => {
+      const key = el.dataset.playId + '|' + (el.dataset.check || el.dataset.correction || (el.dataset.notes ? 'notes' : ''));
+      if (key in state) {
+        if (el.type === 'checkbox') el.checked = state[key];
+        else el.value = state[key];
+      }
+    });
+  } catch(e) {}
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  loadAutosave();
+  document.querySelectorAll('input, textarea').forEach(el => {
+    el.addEventListener('change', autosave);
+    el.addEventListener('input', autosave);
+  });
+});
+</script>
+</body>
+</html>

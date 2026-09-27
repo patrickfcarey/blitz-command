@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r0f0t0w5__5wr-patriot__pass__smash-corner",
+  "info": {
+    "family": "GUN",
+    "formation": "5WR Patriot",
+    "play_name": "Smash Corner",
+    "play_type": "pass",
+    "canonical_team": "New England Patriots",
+    "canonical_img": 137,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "New England Patriots"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "5WR Patriot",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "5-WR set, no RB"
+    }
+  },
+  "usage": {
+    "input_tokens": 526,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 228
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.81,
+  "response_text": "```json\n{\n  \"concept\": \"smash\",\n  \"concepts\": [\"smash\"],\n  \"routes\": {\n    \"WR_X\": \"hitch\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"streak\",\n    \"WR_SLOT_R\": \"streak\",\n    \"WR_FLANKER\": \"comeback\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"5WR Empty set (GUN Patriot). Smash concept on right side: WR_Z (R1 red circle) runs corner over WR_X (hitch). Left side: WR_SLOT_L (purple square) and WR_SLOT_R (blue X) run vertical stretches; WR_FLANKER (green triangle) runs comeback. No backfield receivers visible \u2014 QB alone in shotgun.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "smash",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bsmash\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

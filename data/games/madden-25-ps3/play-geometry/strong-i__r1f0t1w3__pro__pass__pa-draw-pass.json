@@ -1,0 +1,49 @@
+{
+  "slug": "strong-i__r1f0t1w3__pro__pass__pa-draw-pass",
+  "info": {
+    "family": "STRONG-I",
+    "formation": "Pro",
+    "play_name": "PA Draw Pass",
+    "play_type": "pass",
+    "canonical_team": "Run Heavy",
+    "canonical_img": 54,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Run Heavy"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "STRONG-I",
+      "formation": "Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "low",
+      "notes": "unknown family 'STRONG-I' \u2014 generic 11-personnel guess"
+    }
+  },
+  "usage": {
+    "input_tokens": 495,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 242
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.63,
+  "response_text": "```json\n{\n  \"concept\": \"draw\",\n  \"concepts\": [\"draw\", \"pa_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"dig\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"wheel\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"PA Draw Pass with play-action fake. Red arrow (primary target) traces to TE_R seam route. Yellow routes on WR_X (streak), WR_Z (corner), WR_SLOT_L (dig). HB wheel route with blue arrow (check/release). One WR (likely slot) on far left with purple \u25a1 button glyph; TE_R has R1 label (shoulder button eligible). Strong-I backfield visible: QB + FB offset to strong side + HB deeper.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "draw",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdraw\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

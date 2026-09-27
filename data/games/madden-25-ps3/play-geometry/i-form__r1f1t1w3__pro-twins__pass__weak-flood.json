@@ -1,0 +1,54 @@
+{
+  "slug": "i-form__r1f1t1w3__pro-twins__pass__weak-flood",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Pro Twins",
+    "play_name": "Weak Flood",
+    "play_type": "pass",
+    "canonical_team": "Brian Billick",
+    "canonical_img": 66,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Brian Billick",
+      "Dick Vermeil",
+      "Jimmy Johnson",
+      "Mike Ditka",
+      "San Diego Chargers",
+      "Tom Flores"
+    ],
+    "owner_count": 6,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Pro Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Twins \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 521,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 207
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.21,
+  "response_text": "```json\n{\n  \"concept\": \"flood\",\n  \"concepts\": [\"flood\"],\n  \"routes\": {\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_R\": \"dig\",\n    \"WR_X\": \"flat\",\n    \"TE_L\": \"comeback\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Weak-side flood (right side of formation) with three receivers at different depths: WR_Z deep, WR_SLOT_R intermediate dig, WR_X flat. Backside (left) TE runs comeback. HB eligible check/release. Red arrow indicates primary read on WR_Z streak. R1 button label visible on WR_SLOT_R.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "flood",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bflood\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

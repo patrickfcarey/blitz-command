@@ -1,0 +1,49 @@
+{
+  "slug": "strong__r1f1t2w2__tight-pair__pass__hb-option",
+  "info": {
+    "family": "STRONG",
+    "formation": "Tight Pair",
+    "play_name": "HB Option",
+    "play_type": "pass",
+    "canonical_team": "Chicago Bears",
+    "canonical_img": 72,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Chicago Bears"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "Tight Pair",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 495,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 206
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.3,
+  "response_text": "```json\n{\n  \"concept\": \"option_pass\",\n  \"concepts\": [\"option_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"comeback\",\n    \"TE_L\": \"block\",\n    \"TE_R\": \"seam\",\n    \"FB\": \"block\",\n    \"HB\": \"option\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"HB\",\n  \"notes\": \"HB lined up in strong formation with option pass concept. R1 button glyph indicates HB is primary receiver eligible. TE_R runs seam route (yellow arrow). WR_X runs streak (red arrow indicates option responsibility). WR_Z runs comeback (yellow arrow). Formation is tight pair strong with 2 TEs attached to strong side.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "option_pass",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bhb option\\b|\\bte option\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

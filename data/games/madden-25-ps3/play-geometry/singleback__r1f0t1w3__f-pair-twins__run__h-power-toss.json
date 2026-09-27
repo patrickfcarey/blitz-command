@@ -1,0 +1,61 @@
+{
+  "slug": "singleback__r1f0t1w3__f-pair-twins__run__h-power-toss",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "F Pair Twins",
+    "play_name": "H Power Toss",
+    "play_type": "run",
+    "canonical_team": "Dick Vermeil",
+    "canonical_img": 15,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Dick Vermeil",
+      "Jimmy Johnson",
+      "Joe Gibbs",
+      "Mike Ditka"
+    ],
+    "owner_count": 4,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "F Pair Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "Singleback default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 576,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 59
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 1.88,
+  "response_text": "```json\n{\n  \"concept\": \"outside_run_toss\",\n  \"routes\": {},\n  \"ball_carrier\": \"HB D_left\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_left",
+    "c_xy": [
+      1604,
+      611
+    ],
+    "arrow_los_crossing_xy": [
+      1085,
+      664
+    ],
+    "dx_from_c": -519,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "outside_run_toss",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bhb toss\\b|\\btoss\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

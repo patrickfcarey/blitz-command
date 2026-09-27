@@ -1,0 +1,49 @@
+{
+  "slug": "pistol__r1f0t2w2__twin-te-slot__pass__pa-ctr-waggle",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Twin TE Slot",
+    "play_name": "PA Ctr Waggle",
+    "play_type": "pass",
+    "canonical_team": "Kansas City Chiefs",
+    "canonical_img": 61,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Kansas City Chiefs"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Twin TE Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 510,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 191
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.54,
+  "response_text": "```json\n{\n  \"concept\": \"waggle_pass\",\n  \"concepts\": [\"waggle_pass\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"TE_R\": \"seam\",\n    \"WR_SLOT_L\": \"flat\",\n    \"WR_X\": \"corner\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"PA action with waggle boot to right. TE_R releases on seam (red arrow, primary target). WR_SLOT_L runs flat to right. WR_X runs corner left (clearout). TE_L provides pass protection. HB appears to be primary motion element in PA fake but not visible in route structure.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "waggle_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bwaggle\\b",
+    "is_pa": true,
+    "is_boot_or_roll": true
+  }
+}

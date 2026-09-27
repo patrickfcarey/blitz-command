@@ -1,0 +1,55 @@
+{
+  "slug": "singleback__r1f0t3w1__jumbo__pass__inside-cross",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Jumbo",
+    "play_name": "Inside Cross",
+    "play_type": "pass",
+    "canonical_team": "Baltimore Ravens",
+    "canonical_img": 5,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Baltimore Ravens",
+      "Brian Billick",
+      "Dallas Cowboys",
+      "New Orleans Saints",
+      "New York Giants",
+      "Tampa Bay Buccaneers",
+      "Washington Redskins"
+    ],
+    "owner_count": 7,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Jumbo",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 3,
+      "WR": 1,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Jumbo \u2014 typically 3 TE 1 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 495,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 204
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.04,
+  "response_text": "```json\n{\n  \"concept\": \"cross_concept\",\n  \"concepts\": [\"inside_cross\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"TE_R\": \"inside_cross\",\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"block\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"TE_R runs the primary inside cross (red arrow). Corner routes on both outer WRs as clearouts. Jumbo formation with 3 TEs; TE_L and TE_WING_L block; TE_R releases on cross. Slot WR blocks initially.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "cross_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcross(es)?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

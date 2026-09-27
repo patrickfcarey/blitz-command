@@ -1,0 +1,28 @@
+name: switch-go
+aliases:
+  - switch-vertical
+description: >
+  Go route run as part of a switch concept. The outside receiver releases
+  inside (toward center), crossing paths with the slot receiver running out
+  — creating a natural pick on press-man coverage. After the switch, the
+  receiver runs a deep vertical in the slot's vacated inside track.
+path:
+  - [0, 0]
+  - [3, 4]
+  - [3, 25]
+typical_break_depth_yd: 0
+option_route: false
+category: deep
+beats_coverage: man
+tags:
+  - deep
+  - switch-concept
+  - anti-press
+  - run-and-shoot
+  - vertical
+verification_status: unverified
+source_notes:
+  - >
+    Switch concept — outside receiver bends inside to cross with the slot,
+    then runs vertically in the vacated lane. Path uses x-positive (inside)
+    since the drawing tool mirrors for right-side receivers.

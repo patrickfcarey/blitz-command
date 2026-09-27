@@ -1,0 +1,54 @@
+{
+  "slug": "singleback__r1f0t1w3__f-pair-twins__pass__pa-fl-dive",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "F Pair Twins",
+    "play_name": "PA FL Dive",
+    "play_type": "pass",
+    "canonical_team": "Dick Vermeil",
+    "canonical_img": 18,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Dick Vermeil",
+      "Jimmy Johnson",
+      "Joe Gibbs",
+      "John Madden",
+      "Mike Ditka",
+      "Tom Flores"
+    ],
+    "owner_count": 6,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "F Pair Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "Singleback default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 506,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 208
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.64,
+  "response_text": "```json\n{\n  \"concept\": \"inside_run\",\n  \"concepts\": [\"inside_run\", \"pa_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"dig\",\n    \"WR_SLOT_R\": \"flat\",\n    \"TE_R\": \"seam\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_R\",\n  \"notes\": \"Play-action pass with pass routes stretching the field vertically and horizontally. Red arrow indicates primary target (flat route). Formation matches expected r1f0t1w3 personnel (1 RB, 0 FB, 1 TE, 3 WR visible plus R1 button receiver).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "inside_run",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bhb dive\\b|\\bdive\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

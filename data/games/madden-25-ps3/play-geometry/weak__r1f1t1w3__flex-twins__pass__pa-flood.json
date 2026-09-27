@@ -1,0 +1,50 @@
+{
+  "slug": "weak__r1f1t1w3__flex-twins__pass__pa-flood",
+  "info": {
+    "family": "WEAK",
+    "formation": "Flex Twins",
+    "play_name": "PA Flood",
+    "play_type": "pass",
+    "canonical_team": "Arizona Cardinals",
+    "canonical_img": 73,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Arizona Cardinals",
+      "Indianapolis Colts"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "WEAK",
+      "formation": "Flex Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 519,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 192
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.74,
+  "response_text": "```json\n{\n  \"concept\": \"flood\",\n  \"concepts\": [\"flood\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"comeback\",\n    \"WR_SLOT_L\": \"flat\",\n    \"TE_R\": \"dig\",\n    \"FB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_L\",\n  \"notes\": \"PA Flood with three-level stretch to the right side (WR_X streak deep, TE_R dig intermediate, WR_SLOT_L flat underneath). Backside WR_Z runs comeback. FB offset to weak side with check/release. Play action fake from weak-side backfield setup.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "flood",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bflood\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

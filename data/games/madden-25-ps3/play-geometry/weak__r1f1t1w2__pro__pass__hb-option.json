@@ -1,0 +1,49 @@
+{
+  "slug": "weak__r1f1t1w2__pro__pass__hb-option",
+  "info": {
+    "family": "WEAK",
+    "formation": "Pro",
+    "play_name": "HB Option",
+    "play_type": "pass",
+    "canonical_team": "Jacksonville Jaguars",
+    "canonical_img": 77,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Jacksonville Jaguars"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "WEAK",
+      "formation": "Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 490,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 169
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.85,
+  "response_text": "```json\n{\n  \"concept\": \"option_pass\",\n  \"concepts\": [\"option_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"comeback\",\n    \"TE_R\": \"flat\",\n    \"HB\": \"option\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"HB\",\n  \"notes\": \"HB Option pass play. Red arrow shows HB receiving handoff/pitch option with right-side release. R1 button glyph indicates HB as eligible receiver. Left side WR runs streak; slot WR runs comeback for secondary reads. TE on right flats out.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "option_pass",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bhb option\\b|\\bte option\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

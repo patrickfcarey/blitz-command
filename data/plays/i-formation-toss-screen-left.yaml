@@ -1,0 +1,209 @@
+play_id: i-formation-toss-screen-left
+name: Toss Screen (Strong) (Mirror Left)
+aliases:
+- Toss HB Screen
+- Screen off Toss
+- Toss Slip Screen
+formation: i-formation-left
+play_type: screen
+ball_carrier: HB
+primary_read: HB
+motions: []
+assignments:
+- player: LT
+  role: pass_block
+  blocking_scheme: invite-rusher
+  notes: Show the drive-block on the backside DE for a beat, sell the rush, then release after a 2-count to lead the screen
+    wall.
+- player: LG
+  role: pass_block
+  blocking_scheme: invite-rusher
+  notes: Show the toss drive-block, hold the rusher, then release downfield as a screen blocker.
+- player: C
+  role: pass_block
+  blocking_scheme: invite-rusher
+  notes: Show the drive-block on the nose, hold the interior rusher, then release downfield to form the wall.
+- player: RG
+  role: pass_block
+  blocking_scheme: pull-around
+  target: screen-alley
+  path:
+  - - 0
+    - 0
+  - - -3
+    - -0.5
+  - - -6
+    - 0
+  - - -8
+    - 4
+  notes: PULL — identical pull track to Lead Toss for the first two steps to sell the toss, then release downfield to lead
+    the screen alley.
+- player: RT
+  role: pass_block
+  blocking_scheme: man-protection
+  notes: Show the down-block on the playside DE, then anchor and protect the playside edge.
+- player: TE
+  role: pass_block
+  blocking_scheme: chip-and-release
+  notes: Show the kickout on the EDGE for one beat to sell the toss, chip the rusher, then release as a window-dressing route.
+- player: X
+  role: route
+  route_name: clear-out-fly
+  depth_yd: 25
+  notes: Stalk-release to sell the perimeter run, then run a fly route to clear the playside corner out of the screen area.
+- player: Z
+  role: route
+  route_name: clear-out-fly
+  depth_yd: 25
+  notes: Show the crack-block for a beat to sell the toss, then clear out on a fly to pull the corner from the screen lane.
+- player: QB
+  role: ball_carrier
+  path:
+  - - 0
+    - 0
+  - - 1
+    - -1
+  - - 3
+    - -1
+  - - 3
+    - -4
+  notes: Reverse-out IDENTICAL to Lead Toss, fake the pitch to the HB, then settle and drop to sell pass; find the LBs, deliver
+    to the HB behind the LT/LG/C wall.
+- player: FB
+  role: lead_block
+  target: screen-side-edge
+  path:
+  - - 0
+    - 0
+  - - -5
+    - 3
+  - - -8
+    - 3
+  notes: Lead to the perimeter exactly like Lead Toss for the first two steps, then settle outside as the point blocker on
+    the screen edge.
+- player: HB
+  role: ball_carrier
+  is_primary: true
+  path:
+  - - 0
+    - 0
+  - - -4
+    - 1
+  - - -3
+    - -1
+  - - -6
+    - 5
+  - - -9
+    - 11
+  notes: 'Run the exact Lead Toss perimeter track for the first two steps to sell
+
+    the toss, then slip back behind the LOS and settle into the screen
+
+    pocket behind the LT/LG/C wall; explode upfield with blockers after the
+
+    catch.
+
+    '
+strengths:
+- Identical pre-snap look and first-step action to Lead Toss — the defense reads toss
+- Devastating against aggressive fronts that crash hard chasing the toss perimeter
+- The toss fake flows linebackers to the perimeter, vacating the screen's second level
+- Pulling the RG sells the toss harder than a standard screen drop
+- Big-play potential when the LT/LG/C wall sets up cleanly
+weaknesses:
+- Needs Lead Toss on tape first — a cold screen fake holds no rushers
+- Screen timing is fragile — a late HB slip kills the play
+- Vulnerable to DL who read the 'happy' OL release and peel into the screen lane
+- Drop-in protection and backside pressure can chase the HB before the catch
+- QB-to-HB distance and timing must be exact
+best_vs_defense:
+- aggressive 4-man rush crashing on the toss flow
+- cover-3 zone (LBs flow to the perimeter, leaves the middle)
+- any defense over-pursuing the toss perimeter
+- over-front with stretched, upfield DEs
+worst_vs_defense:
+- LB blitzes from the screen side
+- cover-2 with corners squatting in the flat
+- zone-with-spy
+- screen-aware defenses reading the OL release tells
+defensive_counters:
+- counter_id: dl-screen-read
+  pre_snap_look: Playside DT/DE in a loose, upright, off-the-ball stance with hands ready rather than a low get-off sprinter's
+    stance
+  qb_key: Scan the playside DL stance — lineman upright and loose, no get-off lean
+  read_category: dl-alignment
+  why: A DL aligned upright and patient is set to read the 'happy' OL invite, peel into the screen lane, and bat the throw
+    or meet the HB at the catch.
+  typical_against:
+  - screen-aware defenses
+  - any DL coached to read 'happy' OL
+- counter_id: alert-lb-no-bite
+  pre_snap_look: Linebackers aligned at full passing depth (5+ yards off the LOS) under a two-high safety shell, not crowding
+    the box or cheating to the toss strength
+  qb_key: Check the LB depth and safety shell — backers deep, two-high behind them
+  read_category: lb-depth
+  why: Linebackers already at pass depth read pass first; they do not flow on the toss fake, so they stay over the screen
+    and outnumber the OL wall.
+  typical_against:
+  - cover-4
+  - screen-alert cover-3
+  - any defense after the toss has been slowed
+- counter_id: blitz-away-from-screen
+  pre_snap_look: Backside LB or nickel walked up tight to the LOS on the side away from the HB screen, with defenders overloaded
+    to that opposite side
+  qb_key: Count the box away from the HB — extra defender walked up on the backside
+  read_category: box-count
+  why: A walked-up overload on the side away from the screen signals a fast backside pressure that forces the throw before
+    the HB and OL wall get into position.
+  typical_against:
+  - fire-zone weak-side pressure
+  - any pressure scheme on obvious pass downs
+common_uses:
+- After establishing Lead Toss for 4+ yards
+- 2nd-and-long / 3rd-and-medium
+- Slowing down a defense over-pursuing the toss perimeter
+- Constraint play after PA pass success off the same look
+philosophy: power-run
+run_concept_ref: power
+philosophy_ref: power-run
+era: Every era — the screen off a perimeter run is a football staple.
+famous_examples:
+- Mike Shanahan-tree screen game off the outside run
+- Patriots screen package (Belichick / Brady era)
+- USC under Pete Carroll (screens off the perimeter run game)
+tags:
+- screen
+- constraint
+- power-run
+- toss
+- high-school
+- college
+- nfl
+notes: 'HB screen off Lead Toss. The QB reverse-out, the HB perimeter track, the
+
+  FB lead, and the RG pull are all IDENTICAL to Lead Toss for the first two
+
+  steps — the defense reads toss and flows to the perimeter. The HB then
+
+  slips back behind the LOS and settles into the screen pocket behind the
+
+  LT/LG/C wall. Member of the I-Formation Toss disguise family (see
+
+  data/play-families/).
+
+
+  Timing window: HB slips on count 2 of the QB''s settle; LT/LG/C hold for a
+
+  1-2 count, then release downfield to form the wall. Mirror to
+
+  toss-screen-left by flipping all coordinates.
+
+  '
+verification_status: unverified
+source_notes:
+- Screen off the toss sweep is a universal constraint concept. Authored as a disguise twin of i-formation-lead-toss — initial
+  action (QB reverse-out, HB/FB tracks, RG pull) deliberately mirrors the base play's first two waypoints exactly.
+- Screen OL release timing (1-2 count) follows standard NFL/college screen coaching, consistent with i-formation-hb-screen.
+- Mirror of i-formation-toss-screen.yaml — path waypoints flipped on x; formation reference points to the mirror formation.
+  Routes auto-mirror in the drawing tool based on receiver side. Narrative notes may still describe the original right-handed
+  look — coordinates and paths are the source of truth.

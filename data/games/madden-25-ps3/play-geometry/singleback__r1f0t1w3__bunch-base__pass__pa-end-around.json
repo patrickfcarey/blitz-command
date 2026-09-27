@@ -1,0 +1,52 @@
+{
+  "slug": "singleback__r1f0t1w3__bunch-base__pass__pa-end-around",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Bunch Base",
+    "play_name": "PA End Around",
+    "play_type": "pass",
+    "canonical_team": "Arizona Cardinals",
+    "canonical_img": 27,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Arizona Cardinals",
+      "Houston Texans",
+      "New Orleans Saints",
+      "Oakland Raiders"
+    ],
+    "owner_count": 4,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Bunch Base",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 524,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 286
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 4.3,
+  "response_text": "```json\n{\n  \"concept\": \"reverse (family=pa_pass)\",\n  \"concepts\": [\"pa_pass\", \"reverse\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"flat\",\n    \"HB\": \"reverse_carry\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Play-action reverse: HB takes reverse handoff (red arrow right). Primary pass route is corner by WR_Z (right side, red arrow). WR_X runs streak left; WR_SLOT_L runs flat underneath. Backfield shows QB behind C and HB offset to strong side. All four eligible receivers on pass play carry button glyphs. Formation matches r1f0t1w3 (1 RB, 0 FB, 1 TE, 3 WR) \u2014 TE appears absent or off-screen; 3 WRs visible. One inner slot receiver (cyan button glyph) runs dumpoff flat. Structure is classic PA end-around with vertical clearouts and underneath outlet.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "reverse",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bend around\\b|\\breverse\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

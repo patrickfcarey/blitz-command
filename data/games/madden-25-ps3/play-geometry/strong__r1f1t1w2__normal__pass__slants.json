@@ -1,0 +1,49 @@
+{
+  "slug": "strong__r1f1t1w2__normal__pass__slants",
+  "info": {
+    "family": "STRONG",
+    "formation": "Normal",
+    "play_name": "Slants",
+    "play_type": "pass",
+    "canonical_team": "Tom Flores",
+    "canonical_img": 83,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Tom Flores"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "Normal",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "STRONG default \u2014 variant unclear"
+    }
+  },
+  "usage": {
+    "input_tokens": 487,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 121
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 1.58,
+  "response_text": "```json\n{\n  \"concept\": \"slants\",\n  \"concepts\": [\"slants\"],\n  \"routes\": {\n    \"WR_X\": \"slant\",\n    \"WR_Z\": \"slant\",\n    \"TE_L\": \"slant\",\n    \"FB\": \"check_release\",\n    \"HB\": \"block\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "slants",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bslants?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

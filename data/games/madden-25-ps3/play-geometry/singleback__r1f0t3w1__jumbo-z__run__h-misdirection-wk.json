@@ -1,0 +1,58 @@
+{
+  "slug": "singleback__r1f0t3w1__jumbo-z__run__h-misdirection-wk",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Jumbo Z",
+    "play_name": "H Misdirection Wk",
+    "play_type": "run",
+    "canonical_team": "Denver Broncos",
+    "canonical_img": 3,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Denver Broncos"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Jumbo Z",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 3,
+      "WR": 1,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Jumbo \u2014 typically 3 TE 1 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 578,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 70
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.19,
+  "response_text": "```json\n{\n  \"concept\": \"misdirection_run\",\n  \"concepts\": [\"misdirection_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB B_left\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "B_left",
+    "c_xy": [
+      1604,
+      619
+    ],
+    "arrow_los_crossing_xy": [
+      1340,
+      720
+    ],
+    "dx_from_c": -264,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "misdirection_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bmisdirection\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

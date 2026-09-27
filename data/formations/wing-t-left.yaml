@@ -1,0 +1,131 @@
+name: Wing-T Left
+side: offense
+personnel: '22'
+strength_side: left
+players:
+- label: LT
+  position: LT
+  x: -2.0
+  y: 0.0
+  on_line: true
+- label: LG
+  position: LG
+  x: -1.0
+  y: 0.0
+  on_line: true
+- label: C
+  position: C
+  x: 0.0
+  y: 0.0
+  on_line: true
+- label: RG
+  position: RG
+  x: 1.0
+  y: 0.0
+  on_line: true
+- label: RT
+  position: RT
+  x: 2.0
+  y: 0.0
+  on_line: true
+- label: TE
+  position: TE
+  x: -3.5
+  y: 0.0
+  on_line: true
+- label: X
+  position: WR
+  x: 15.0
+  y: 0.0
+  on_line: true
+- label: WING
+  position: TE
+  x: -5.0
+  y: -1.0
+  on_line: false
+- label: QB
+  position: QB
+  x: -0.0
+  y: -2.0
+  on_line: false
+- label: FB
+  position: FB
+  x: -0.0
+  y: -4.5
+  on_line: false
+- label: HB
+  position: HB
+  x: 2.0
+  y: -5.5
+  on_line: false
+strengths:
+- Misdirection-heavy — every play looks similar pre-snap (Buck Sweep, Belly, Trap, Waggle all start identically)
+- Multiple ball-carrier threats — FB, HB, Wing, plus reverse / waggle off motion
+- Pulling-guard run game (Buck Sweep) creates angles power can't match
+- Wing alignment allows wing to crack-block, kick-out, pull, or lead
+- Diversified run concepts from one look stresses defensive discipline
+- Best HS option offense — concepts simple to teach, hard to defend without film prep
+weaknesses:
+- Limited passing windows (1 true WR; Wing and TE less explosive route runners)
+- Slow tempo / not built for hurry-up
+- Modern speed defenses with disciplined gap fits neutralize misdirection
+- Vulnerable to LB scrape-exchange schemes that ignore the FB fake
+- Predictable in passing situations (must motion to spread)
+common_uses:
+- HS offenses with run-heavy identity
+- Small college / option football tradition
+- Goal-line and short-yardage at any level (constraint package)
+- 4-minute offense
+- Triple-play series (run, fake-run, waggle pass)
+run_concepts:
+- buck-sweep
+- belly
+- trap
+- down
+- jet-sweep
+- reverse
+- counter-criss-cross
+pass_concepts:
+- waggle
+- boot
+- belly-pass
+- play-action-tight-end-corner
+- pa-flood
+era: 1950s onward — Dave Nelson and Tubby Raymond at Delaware (1960s-2000s) defined the modern Wing-T. Still dominant at HS
+  / small college level.
+famous_users:
+- University of Delaware under Tubby Raymond (1966-2001) — definitive program
+- Many HS programs across the US (especially the Northeast and Mid-Atlantic)
+- Pop Warner and youth football programs
+- Navy under Paul Johnson before transitioning to flexbone
+tags:
+- wing-t
+- 22-personnel
+- misdirection
+- power
+- option
+- high-school
+- college
+- throwback
+- run-heavy
+notes: 'The Wing position is a hybrid TE/HB — listed with position TE for blocking
+
+  purposes (he''s eligible). Some teams classify him as a "wingback" or RB
+
+  (making it 32 personnel). 22 here is the more common modern classification.
+
+  Three core plays per Tubby Raymond / Wakefield tradition: Buck Sweep, Trap,
+
+  Belly. Add Boot/Waggle for the PA cousin.
+
+  '
+verification_status: unverified
+source_notes:
+- 'Web validated 2026-04-29 — Throw Deep Publishing ''Wing-T Offense In-Depth Guide'' (https://throwdeeppublishing.com/blogs/football-glossary/the-wing-t-offense-an-in-depth-guide);
+  Youth Football Online ''Wing T Buck Sweep'' (https://youthfootballonline.com/wing-t-formation-buck-sweep-play/); USA Football
+  ''Reflections from a Wing T guru'' (https://blogs.usafootball.com/blog/6633/reflections-from-a-wing-t-guru-part-1); Glazier
+  Drive ''Base Plays in Under-Center Wing-T'' (https://production.glazierdrive.com/library/base-plays-in-the-under-center-wing-t-offense-buck-sweep-trap-down-belly-jet-sweep-boot-waggle-belly-pass).
+  Confirmed top-3 plays: Trap, Belly, Down (sometimes called Belly G); plus Buck Sweep as signature.'
+- Mirror of wing-t.yaml — coordinates flipped horizontally on x; strength_side flipped; OL labels (LT/LG/C/RG/RT) and centered
+  backfield positions (QB / centered FB or HB) unchanged. Notes in this file may still describe the original right-handed
+  look in places — read coordinates as the source of truth.

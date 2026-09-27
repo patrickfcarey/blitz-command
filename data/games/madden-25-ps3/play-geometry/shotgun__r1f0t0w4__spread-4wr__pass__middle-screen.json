@@ -1,0 +1,49 @@
+{
+  "slug": "shotgun__r1f0t0w4__spread-4wr__pass__middle-screen",
+  "info": {
+    "family": "SHOTGUN",
+    "formation": "Spread 4WR",
+    "play_name": "Middle Screen",
+    "play_type": "pass",
+    "canonical_team": "Tom Landry",
+    "canonical_img": 100,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Tom Landry"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SHOTGUN",
+      "formation": "Spread 4WR",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 0,
+      "WR": 4,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 524,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 162
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.55,
+  "response_text": "```json\n{\n  \"concept\": \"middle_screen\",\n  \"concepts\": [\"middle_screen\"],\n  \"routes\": {\n    \"WR_X\": \"vertical\",\n    \"WR_Z\": \"vertical\",\n    \"WR_SLOT_L\": \"vertical\",\n    \"WR_SLOT_R\": \"screen\",\n    \"HB\": \"screen\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"HB\",\n  \"notes\": \"Screen pass to HB in middle of field; 4 WRs running vertical clearouts on perimeter; R1 button indicated for screen target (HB).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "middle_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bmiddle\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

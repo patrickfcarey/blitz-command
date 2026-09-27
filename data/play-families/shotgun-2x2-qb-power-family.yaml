@@ -1,0 +1,49 @@
+family_id: shotgun-2x2-qb-power-family
+name: "Shotgun 2x2 QB-Power Family"
+description: |
+  A disguise family anchored by QB Power. Every member shows the defense
+  the identical pre-snap look and the identical first ~1.5 seconds — no
+  motion, QB attacking the off-tackle hole, HB lead-sweep track, LG pull,
+  OL down-block show. Only after that do they diverge: QB Power runs it,
+  QB Power Pass pulls up and throws the TE drag from the pocket, QB Power
+  Keep-Throw reads the conflict defender to keep or throw the slant, QB
+  Power Counter plants and counters backside behind a pulling RG, QB Power
+  Screen slips the HB back for a throwback screen. The defense cannot
+  distinguish them until it is too late to react.
+
+formation_id: shotgun-2x2
+philosophy: power-run
+philosophy_ref: power-run
+
+base_play_id: shotgun-2x2-qb-power
+companion_play_ids:
+  - shotgun-2x2-qb-power-pass
+  - shotgun-2x2-qb-power-keep-throw
+  - shotgun-2x2-qb-power-counter
+  - shotgun-2x2-qb-power-screen
+
+disguise_score: 0.9
+
+defensive_coverage_matrix:
+  defense-4-3-cover-3: shotgun-2x2-qb-power-pass
+  defense-nickel-cover-1: shotgun-2x2-qb-power-keep-throw
+  defense-dime-cover-4: shotgun-2x2-qb-power
+  defense-46-bear-cover-0: shotgun-2x2-qb-power-pass
+
+tags:
+  - power-run
+  - qb-run
+  - play-action
+  - rpo
+  - shotgun
+  - 2x2
+  - disguise-family
+  - high-school
+  - college
+  - nfl
+
+verification_status: unverified
+source_notes:
+  - "Disguise family curated for the HS base playbook. The two companion plays (qb-power-pass, qb-power-keep-throw) were authored specifically as disguise twins of shotgun-2x2-qb-power — their QB and HB initial path waypoints are identical to the base play through the first two waypoints, and all three carry the same empty motions block."
+  - "Extended with two further disguise twins (qb-power-counter, qb-power-screen) — both carry the same empty motions block and QB/HB first-two-waypoint paths identical to shotgun-2x2-qb-power. qb-power-counter shows the strong-side QB-Power track then counters backside; qb-power-screen shows the QB-Power track then throws an HB throwback screen."
+  - "disguise_score 0.9 reflects identical (empty) pre-snap motion plus identical initial QB/HB action; the < 1.0 accounts for receiver releases (route vs stalk-block) diverging slightly earlier than the backfield action."

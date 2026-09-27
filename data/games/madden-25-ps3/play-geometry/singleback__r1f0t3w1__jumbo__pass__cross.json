@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t3w1__jumbo__pass__cross",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Jumbo",
+    "play_name": "Cross",
+    "play_type": "pass",
+    "canonical_team": "Balanced",
+    "canonical_img": 5,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Balanced"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Jumbo",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 3,
+      "WR": 1,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Jumbo \u2014 typically 3 TE 1 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 492,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 200
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.73,
+  "response_text": "```json\n{\n  \"concept\": \"cross_concept\",\n  \"concepts\": [\"cross_concept\"],\n  \"routes\": {\n    \"TE_L\": \"cross\",\n    \"TE_R\": \"cross\",\n    \"TE_WING_R\": \"cross\",\n    \"WR_X\": \"comeback\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_L\",\n  \"notes\": \"Three tight ends visible on LOS (TE_L, TE_R, TE_WING_R); all three run cross routes at different depths. WR_X (far left, purple \u25a1 button) runs a comeback route. R1 shoulder button indicates TE_WING_R as an eligible receiver option. Red arrow indicates primary read on TE_L crossing left.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "cross_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bcross(es)?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

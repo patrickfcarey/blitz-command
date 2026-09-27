@@ -1,0 +1,51 @@
+{
+  "slug": "singleback__r1f0t1w3__doubles__pass__streaks-hb-delay",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Doubles",
+    "play_name": "Streaks HB Delay",
+    "play_type": "pass",
+    "canonical_team": "Cincinnati Bengals",
+    "canonical_img": 18,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Cincinnati Bengals",
+      "Dallas Cowboys",
+      "New Orleans Saints"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Doubles",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 570,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 164
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.72,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"generic_hb_run\"],\n  \"routes\": {},\n  \"ball_carrier\": null,\n  \"primary_target\": \"HB\",\n  \"notes\": \"Play labeled as PASS in UI banner but py_concept indicates run family. Visual shows button glyphs (\u25a1 purple Square, \u25b3 green Triangle, \u2297 blue X, \u2299 red Circle) on eligible receivers and a red arrow from HB moving laterally \u2014 consistent with pass play. HB appears to be primary target with checkdown/delay route. Treating as pass play per play_type=pass flag.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bhb \\w+",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

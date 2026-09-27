@@ -1,0 +1,46 @@
+philosophy_id: veer-option
+name: Veer Option (Houston System)
+description: |
+  Triple-option (Veer) attack from under-center. QB reads playside EDGE: if
+  crashes → give to FB dive; if stays wide → keep or pitch to HB on perimeter.
+  Developed by Bill Yeoman at University of Houston in 1965. Punishes aggressive
+  edge defense; relies on QB speed and decision-making. Still used in service
+  academies (Army, Navy, Air Force) and some college programs.
+era: "1965–present"
+originators:
+  - "Bill Yeoman (University of Houston, 1965–1987)"
+notable_practitioners:
+  - "Fisher DeBerry (Air Force)"
+  - "Bobby Ross (Navy)"
+  - "Jeff Monken (Army)"
+canonical_run_concepts:
+  - triple-option-veer
+  - midline-option
+  - counter-trey
+canonical_pass_concepts:
+  - bootleg
+  - naked
+  - pa-pitch
+formation_preferences:
+  - i-formation
+  - singleback-dive
+  - bone
+tendency_profile:
+  run_pct: 0.85
+  pass_pct: 0.10
+  pa_pct: 0.05
+  rpo_pct: 0.0
+  screen_pct: 0.0
+tags:
+  - philosophy
+  - option
+  - veer
+  - triple-option
+  - houston
+  - service-academies
+  - college
+  - high-school
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Wikipedia 'Bill Yeoman' (https://en.wikipedia.org/wiki/Bill_Yeoman): developed veer-option at Houston 1965."
+  - "Web validated 2026-04-30 — Wikipedia 'Army Black Knights football' (https://en.wikipedia.org/wiki/Army_Black_Knights_football): veer-option is service academy standard."

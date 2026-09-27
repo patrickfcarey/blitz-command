@@ -1,0 +1,50 @@
+philosophy_id: mcvay-rams
+name: McVay / Rams Wide Zone
+description: |
+  Wide-zone run + jet motion + condensed formations + pre-snap read passing.
+  Developed by Sean McVay at Los Angeles Rams (2017–2020). Combines stretch
+  outside-zone with motion, slot receiver usage, and RPO/tempo concepts.
+  Modern evolution of zone-blocking; emphasizes receiver separation and
+  window creation. Influential in current NFL.
+era: "2017–present"
+originators:
+  - "Sean McVay (Los Angeles Rams, 2017–2020; Washington 2021–2023; Los Angeles Chargers 2024–)"
+notable_practitioners:
+  - "Brandon McVay (Kyle's cousin, consultant)"
+  - "Kevin O'Connell (Minnesota Vikings)"
+  - "Matt Eberflus"
+canonical_run_concepts:
+  - stretch
+  - outside-zone
+  - inside-zone
+  - counter-trey
+canonical_pass_concepts:
+  - mesh
+  - quick-pass
+  - rpo
+  - jet-sweep-pass
+  - flood
+formation_preferences:
+  - shotgun-2x2
+  - shotgun-bunch
+  - singlebank-trio
+  - 11/12 personnel
+  - condensed-sets
+tendency_profile:
+  run_pct: 0.40
+  pass_pct: 0.35
+  pa_pct: 0.10
+  rpo_pct: 0.10
+  screen_pct: 0.05
+tags:
+  - philosophy
+  - mcvay
+  - wide-zone
+  - modern
+  - jet-motion
+  - nfl
+  - contemporary
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Wikipedia 'Sean McVay' (https://en.wikipedia.org/wiki/Sean_McVay): developed wide-zone system at Rams 2017-2020."
+  - "Web validated 2026-04-30 — Wikipedia 'Los Angeles Rams' (https://en.wikipedia.org/wiki/Los_Angeles_Rams): McVay era 2017-2020 defined modern wide-zone NFL system."

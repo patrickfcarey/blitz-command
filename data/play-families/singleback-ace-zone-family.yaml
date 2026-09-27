@@ -1,0 +1,45 @@
+family_id: singleback-ace-zone-family
+name: "Singleback Ace Zone Family"
+description: |
+  A disguise family anchored by Inside Zone from the 12-personnel symmetric
+  singleback. Every member shows the defense the identical pre-snap look and
+  the identical first ~1.5 seconds — no motion, QB reverse-pivot, HB bang
+  track, OL zone-step show. Only after the mesh do they diverge: Inside Zone
+  hands off, Zone Pass settles and throws from the pocket, Zone Boot keeps it
+  and boots backside. The defense cannot distinguish them until it is too late
+  to react.
+
+formation_id: singleback-ace
+philosophy: zone-run
+philosophy_ref: zone-run
+
+base_play_id: singleback-ace-inside-zone
+companion_play_ids:
+  - singleback-ace-zone-pass
+  - singleback-ace-zone-boot
+  - singleback-ace-zone-counter
+  - singleback-ace-zone-screen
+
+disguise_score: 0.9
+
+defensive_coverage_matrix:
+  defense-4-3-cover-3: singleback-ace-zone-pass
+  defense-46-bear-cover-0: singleback-ace-zone-boot
+  defense-dime-cover-4: singleback-ace-inside-zone
+  defense-nickel-cover-1: singleback-ace-inside-zone
+
+tags:
+  - zone-run
+  - play-action
+  - inside-zone
+  - 12-personnel
+  - singleback
+  - disguise-family
+  - high-school
+  - college
+  - nfl
+
+verification_status: unverified
+source_notes:
+  - "Disguise family curated for the HS base playbook. The two companion plays (zone-pass, zone-boot) were authored specifically as disguise twins of singleback-ace-inside-zone — their QB and HB initial path waypoints are identical to the base play through the mesh, and all three carry the same empty motions block."
+  - "disguise_score 0.9 reflects identical (absent) pre-snap motion + identical initial backfield action; the < 1.0 accounts for receiver releases (route vs stalk-block) differing slightly earlier than the backfield action."

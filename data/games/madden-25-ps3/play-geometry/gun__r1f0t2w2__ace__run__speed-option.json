@@ -1,0 +1,52 @@
+{
+  "slug": "gun__r1f0t2w2__ace__run__speed-option",
+  "info": {
+    "family": "GUN",
+    "formation": "Ace",
+    "play_name": "Speed Option",
+    "play_type": "run",
+    "canonical_team": "Carolina Panthers",
+    "canonical_img": 86,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Carolina Panthers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Ace",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Ace \u2014 2 TE 2 WR (shotgun-ace)"
+    }
+  },
+  "usage": {
+    "input_tokens": 515,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 154
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 58.22,
+  "response_text": "```json\n{\n  \"concept\": \"speed_option\",\n  \"concepts\": [\"speed_option\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"TE_R\": \"block\",\n    \"HB\": \"option_pitch\"\n  },\n  \"ball_carrier\": \"HB D_right\",\n  \"primary_target\": null,\n  \"notes\": \"Speed option with two vertical receivers (WR_X and WR_Z both streaking). TE_R blocks on the edge. HB reads option with pitch responsibility on the perimeter.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "error": "no red arrow detected",
+    "c_x": 1551,
+    "c_y": 613,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "speed_option",
+    "concept_family": "rpo",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bspeed option\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

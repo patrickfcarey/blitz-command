@@ -1,0 +1,58 @@
+{
+  "slug": "pistol__r1f0t1w3__full-panther__run__triple-option",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Full Panther",
+    "play_name": "Triple Option",
+    "play_type": "run",
+    "canonical_team": "Carolina Panthers",
+    "canonical_img": 56,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Carolina Panthers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Full Panther",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "Pistol default \u2014 variant unclear"
+    }
+  },
+  "usage": {
+    "input_tokens": 523,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 244
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 63.46,
+  "response_text": "```json\n{\n  \"concept\": \"option_route\",\n  \"concepts\": [\"option_route\"],\n  \"routes\": {\n    \"TE_R\": \"block\",\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_R\": \"streak\"\n  },\n  \"ball_carrier\": \"HB D_left\",\n  \"primary_target\": null,\n  \"notes\": \"Triple Option run with HB attacking the D_left edge. Red arrow indicates primary ball-carrier path (HB option read to the left). TE_R blocks at LOS. All eligible WRs run vertical clearout streaks. Formation is Pistol Full Panther (r1f0t1w3): 1 RB, 0 FB, 1 TE, 3 WR confirmed. Backfield shows QB ~3 yards behind C with HB stacked directly behind QB (Pistol signature). Yellow arrow shows secondary motion/read path.\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_left",
+    "c_xy": [
+      1551,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      1014,
+      671
+    ],
+    "dx_from_c": -537,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "option_route",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\boption\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

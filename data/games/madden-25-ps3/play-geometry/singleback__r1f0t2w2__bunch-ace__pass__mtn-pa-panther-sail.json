@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t2w2__bunch-ace__pass__mtn-pa-panther-sail",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Bunch Ace",
+    "play_name": "Mtn PA Panther Sail",
+    "play_type": "pass",
+    "canonical_team": "Carolina Panthers",
+    "canonical_img": 18,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Carolina Panthers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Bunch Ace",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Ace family \u2014 2 TE 2 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 533,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 199
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.67,
+  "response_text": "```json\n{\n  \"concept\": \"sail\",\n  \"concepts\": [\"sail\"],\n  \"routes\": {\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"hitch\",\n    \"WR_SLOT_L\": \"flat\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Sail concept with corner-hitch combo on right side (WR_X corner, WR_Z hitch); WR_SLOT_L flat to left; TE_R seam middle; HB check-release. Red arrow on WR_Z indicates primary target. Play-action setup visible with offensive line aligned at LOS.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "sail",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bsail\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__raven-trips__pass__verticals",
+  "info": {
+    "family": "GUN",
+    "formation": "Raven Trips",
+    "play_name": "Verticals",
+    "play_type": "pass",
+    "canonical_team": "Baltimore Ravens",
+    "canonical_img": 109,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Baltimore Ravens"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Raven Trips",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 494,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 196
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.87,
+  "response_text": "```json\n{\n  \"concept\": \"verticals\",\n  \"concepts\": [\"verticals\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_R\": \"streak\",\n    \"TE_R\": \"streak\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"GUN Raven Trips with 4 vertical routes (X, Z, slot, TE) plus HB check. Red arrow from QB to WR_Z (far right) indicates primary target. Yellow arrows show motion pre-snap (slot receiver and TE wing motion left). All eligible receivers stretching vertically downfield.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "verticals",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bverticals?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

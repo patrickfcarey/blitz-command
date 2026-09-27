@@ -1,0 +1,62 @@
+{
+  "slug": "pistol__r1f0t1w3__strong__run__inside-zone-split",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Strong",
+    "play_name": "Inside Zone Split",
+    "play_type": "run",
+    "canonical_team": "Carolina Panthers",
+    "canonical_img": 65,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Carolina Panthers",
+      "Pistol",
+      "San Francisco 49ers",
+      "Seattle Seahawks",
+      "Washington Redskins"
+    ],
+    "owner_count": 5,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Strong",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Pistol Strong/Weak"
+    }
+  },
+  "usage": {
+    "input_tokens": 560,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 66
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 39.13,
+  "response_text": "```json\n{\n  \"concept\": \"inside_zone\",\n  \"concepts\": [\"inside_zone\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB A_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "A_right",
+    "c_xy": [
+      1632,
+      611
+    ],
+    "arrow_los_crossing_xy": [
+      1707,
+      611
+    ],
+    "dx_from_c": 75,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "inside_zone",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\binside zone\\b|\\bhb (zone|izn|iz)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

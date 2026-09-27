@@ -1,0 +1,58 @@
+{
+  "slug": "strong__r1f1t1w2__pro__pass__fl-drive",
+  "info": {
+    "family": "STRONG",
+    "formation": "Pro",
+    "play_name": "FL Drive",
+    "play_type": "pass",
+    "canonical_team": "Brian Billick",
+    "canonical_img": 89,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Brian Billick",
+      "Chicago Bears",
+      "Cincinnati Bengals",
+      "Cleveland Browns",
+      "Jimmy Johnson",
+      "Miami Dolphins",
+      "Mike Ditka",
+      "Run Balanced",
+      "San Diego Chargers",
+      "Tennessee Titans"
+    ],
+    "owner_count": 10,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 488,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 177
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.53,
+  "response_text": "```json\n{\n  \"concept\": \"drive_concept\",\n  \"concepts\": [\"drive_concept\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"drive\",\n    \"TE_R\": \"flat\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Strong Pro formation with FB offset to strong side. WR_Z (likely slot or flanker to strong side) runs the primary drive route. TE_R runs flat release. WR_X clears with streak. HB check/release. R1 button glyph visible on primary target.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "drive_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdrive\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

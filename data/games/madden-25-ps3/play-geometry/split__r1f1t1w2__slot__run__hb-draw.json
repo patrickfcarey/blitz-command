@@ -1,0 +1,59 @@
+{
+  "slug": "split__r1f1t1w2__slot__run__hb-draw",
+  "info": {
+    "family": "SPLIT",
+    "formation": "Slot",
+    "play_name": "HB Draw",
+    "play_type": "run",
+    "canonical_team": "Joe Gibbs",
+    "canonical_img": 90,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Joe Gibbs",
+      "Pass Balanced"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "SPLIT",
+      "formation": "Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "SPLIT family \u2014 old-school 2-back default"
+    }
+  },
+  "usage": {
+    "input_tokens": 581,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 62
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 45.72,
+  "response_text": "```json\n{\n  \"concept\": \"draw\",\n  \"concepts\": [\"draw\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB D_left\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_left",
+    "c_xy": [
+      1537,
+      701
+    ],
+    "arrow_los_crossing_xy": [
+      26,
+      701
+    ],
+    "dx_from_c": -1511,
+    "ol_spacing": 64
+  },
+  "py_concept": {
+    "concept": "draw",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bdraw\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

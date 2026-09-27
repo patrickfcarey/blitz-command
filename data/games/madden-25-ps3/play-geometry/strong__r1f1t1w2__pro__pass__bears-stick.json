@@ -1,0 +1,49 @@
+{
+  "slug": "strong__r1f1t1w2__pro__pass__bears-stick",
+  "info": {
+    "family": "STRONG",
+    "formation": "Pro",
+    "play_name": "Bears Stick",
+    "play_type": "pass",
+    "canonical_team": "Chicago Bears",
+    "canonical_img": 63,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Chicago Bears"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 487,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 193
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.52,
+  "response_text": "```json\n{\n  \"concept\": \"stick\",\n  \"concepts\": [\"stick\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"flat\",\n    \"TE_R\": \"stick\",\n    \"FB\": \"swing\",\n    \"HB\": \"block\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"Strong Pro formation with FB offset to strong side (right). Stick concept on right side: TE_R runs stick route (~5 yds, sit), WR_Z runs flat, WR_X runs vertical clearout. FB executes swing route to the flat. HB blocks in backfield. Red arrow indicates primary read on TE_R stick route.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "stick",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bstick\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

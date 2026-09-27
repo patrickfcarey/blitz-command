@@ -1,0 +1,49 @@
+{
+  "slug": "weak-i__r1f0t1w3__twins__pass__bubble-screen",
+  "info": {
+    "family": "WEAK-I",
+    "formation": "Twins",
+    "play_name": "Bubble Screen",
+    "play_type": "pass",
+    "canonical_team": "Run Heavy",
+    "canonical_img": 63,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Run Heavy"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "WEAK-I",
+      "formation": "Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "low",
+      "notes": "unknown family 'WEAK-I' \u2014 generic 11-personnel guess"
+    }
+  },
+  "usage": {
+    "input_tokens": 494,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 161
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.72,
+  "response_text": "```json\n{\n  \"concept\": \"bubble_screen\",\n  \"concepts\": [\"bubble_screen\"],\n  \"routes\": {\n    \"WR_X\": \"bubble\",\n    \"WR_Z\": \"block\",\n    \"WR_SLOT_R\": \"block\",\n    \"TE_R\": \"block\",\n    \"FB\": \"pass_pro\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Bubble screen to X WR (triangle) with multiple blockers aligned to the outside. Standard bubble concept with quick release.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "bubble_screen",
+    "concept_family": "screen",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bbubble screen\\b|\\bwr bubble\\b|\\bbubble\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

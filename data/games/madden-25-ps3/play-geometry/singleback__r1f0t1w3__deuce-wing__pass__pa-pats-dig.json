@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__deuce-wing__pass__pa-pats-dig",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Deuce Wing",
+    "play_name": "PA Pats Dig",
+    "play_type": "pass",
+    "canonical_team": "New England Patriots",
+    "canonical_img": 9,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "New England Patriots"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Deuce Wing",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 507,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 196
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.11,
+  "response_text": "```json\n{\n  \"concept\": \"dig_route\",\n  \"concepts\": [\"dig_route\", \"pa_pass\"],\n  \"routes\": {\n    \"WR_X\": \"dig\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"dig\",\n    \"TE_R\": \"streak\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Play-action pass with dig concept. Two dig routes (WR_X and WR_SLOT_L) at intermediate depth, two vertical stretches (WR_Z and TE_R) clearing deep. HB available for checkdown. Red arrow indicates primary read on WR_X dig.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "dig_route",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdig\\b|\\bdigs\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

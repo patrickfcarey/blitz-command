@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__wing-trips-wk__pass__y-delay",
+  "info": {
+    "family": "GUN",
+    "formation": "Wing Trips Wk",
+    "play_name": "Y-Delay",
+    "play_type": "pass",
+    "canonical_team": "Tampa Bay Buccaneers",
+    "canonical_img": 104,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Tampa Bay Buccaneers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Wing Trips Wk",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 487,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 174
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.45,
+  "response_text": "```json\n{\n  \"concept\": \"y_delay\",\n  \"concepts\": [\"y_delay\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"delay\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"Y-Delay concept with TE seam as primary (blue arrow). Slot receiver runs delayed dig/delay route. Left-side WRs run vertical clearouts (streak and corner). HB available for checkdown.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "unknown",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": null,
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

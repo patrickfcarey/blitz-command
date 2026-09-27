@@ -1,0 +1,59 @@
+{
+  "slug": "pistol__r1f0t1w3__strong-twins__run__tr-option-lt",
+  "info": {
+    "family": "PISTOL",
+    "formation": "Strong Twins",
+    "play_name": "Tr Option Lt",
+    "play_type": "run",
+    "canonical_team": "Pistol",
+    "canonical_img": 16,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Pistol",
+      "San Francisco 49ers"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "PISTOL",
+      "formation": "Strong Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Pistol Strong/Weak"
+    }
+  },
+  "usage": {
+    "input_tokens": 525,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 187
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 4.14,
+  "response_text": "```json\n{\n  \"concept\": \"option_route\",\n  \"concepts\": [\"option_route\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"flat\",\n    \"TE_R\": \"block\"\n  },\n  \"ball_carrier\": \"HB D_left\",\n  \"primary_target\": null,\n  \"notes\": \"Pistol Strong Twins run with option-read development. QB executes read (red arrow initially to WR_Z corner, yellow arrow to WR_SLOT_L flat suggests secondary option). HB carries left off the edge (D_left gap). TE_R blocks; WR_X runs streak clearout.\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_left",
+    "c_xy": [
+      1551,
+      613
+    ],
+    "arrow_los_crossing_xy": [
+      1063,
+      675
+    ],
+    "dx_from_c": -488,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "option_route",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\boption\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

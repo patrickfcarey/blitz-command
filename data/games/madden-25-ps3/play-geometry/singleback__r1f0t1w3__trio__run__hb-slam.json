@@ -1,0 +1,58 @@
+{
+  "slug": "singleback__r1f0t1w3__trio__run__hb-slam",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Trio",
+    "play_name": "HB Slam",
+    "play_type": "run",
+    "canonical_team": "Dick Vermeil",
+    "canonical_img": 49,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Dick Vermeil"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Trio",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "Singleback default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 588,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 66
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.05,
+  "response_text": "```json\n{\n  \"concept\": \"iso_slam\",\n  \"concepts\": [\"iso_slam\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB A_left\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "A_left",
+    "c_xy": [
+      1553,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      1440,
+      615
+    ],
+    "dx_from_c": -113,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "iso_slam",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bslam\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

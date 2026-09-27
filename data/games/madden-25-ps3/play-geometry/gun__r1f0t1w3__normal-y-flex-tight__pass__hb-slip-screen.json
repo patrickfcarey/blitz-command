@@ -1,0 +1,52 @@
+{
+  "slug": "gun__r1f0t1w3__normal-y-flex-tight__pass__hb-slip-screen",
+  "info": {
+    "family": "GUN",
+    "formation": "Normal Y-Flex Tight",
+    "play_name": "HB Slip Screen",
+    "play_type": "pass",
+    "canonical_team": "Cincinnati Bengals",
+    "canonical_img": 88,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Cincinnati Bengals",
+      "Cleveland Browns",
+      "Green Bay Packers",
+      "San Diego Chargers"
+    ],
+    "owner_count": 4,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Normal Y-Flex Tight",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 507,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 216
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 4.49,
+  "response_text": "```json\n{\n  \"concept\": \"hb_screen\",\n  \"concepts\": [\"hb_screen\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"comeback\",\n    \"WR_SLOT_L\": \"dig\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"screen\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"HB\",\n  \"notes\": \"HB slip screen with 4 vertical clearout routes. Red arrow indicates screen pass to HB. Yellow arrows show vertical/intermediate routes by receivers (X streak, Z comeback, slot dig, TE seam). Formation matches GUN Normal Y-Flex Tight (r1f0t1w3): 1 RB, 0 FB, 1 TE, 3 WR visible.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "hb_screen",
+    "concept_family": "screen",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bhb (slip )?screen\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

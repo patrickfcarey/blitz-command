@@ -1,0 +1,40 @@
+scheme_id: man-protection
+name: Man Protection
+category: pass-protection
+description: |
+  Each offensive lineman is responsible for one specific defender (man-on-man).
+  This is the simplest pass protection — no slides, no zone hand-offs. The
+  HB stays in to scan for blitzers and picks up the most dangerous unblocked
+  defender. Used when the offense expects a 4-man rush and wants maximum
+  pre-snap clarity.
+assignments_by_position:
+  LT: "Block the LDE / EMOL on the weak side. Set vertical, mirror the rusher."
+  LG: "Block the 1-tech or weak-side DT. Punch and anchor."
+  C: "Block the NT (0/1-tech). Slide-step to whichever shade he aligns to."
+  RG: "Block the 3-tech. Punch and anchor."
+  RT: "Block the RDE / EMOL on the strong side. Set vertical."
+  HB: "Check release; scan for first uncovered LB if blitzing, else release as outlet."
+  TE: "Optional: chip-and-release on EDGE if in pass-pro; release as a route otherwise."
+pairs_with:
+  - mesh
+  - smash-strong
+  - snag-strong
+defeats:
+  - "single-DE rush"
+  - "predictable 4-man front"
+  - "vanilla 4-3 pass coverage"
+vulnerable_to:
+  - "double-A-gap blitz (overloads C+G)"
+  - "stunts that overload weak-side"
+  - "delayed LB blitz that beats HB scan"
+tags:
+  - pass-protection
+  - man
+  - any-level
+  - high-school
+  - college
+  - nfl
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Throw Deep Publishing 'Pass Protection Schemes' (https://throwdeeppublishing.com/blogs/football-glossary/): confirmed man protection assigns each OL one defender, HB scans for late blitz."
+  - "Web validated 2026-04-30 — X&O Labs 'Man-Free Pass Protection' (https://www.xandolabs.com/): confirmed standard 5-man + HB scan structure."

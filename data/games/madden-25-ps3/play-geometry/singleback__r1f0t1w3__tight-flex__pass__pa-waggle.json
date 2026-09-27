@@ -1,0 +1,51 @@
+{
+  "slug": "singleback__r1f0t1w3__tight-flex__pass__pa-waggle",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Tight Flex",
+    "play_name": "PA Waggle",
+    "play_type": "pass",
+    "canonical_team": "Chicago Bears",
+    "canonical_img": 38,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Chicago Bears",
+      "Green Bay Packers",
+      "Pass Balanced"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Tight Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "Singleback default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 503,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 126
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 1.64,
+  "response_text": "```json\n{\n  \"concept\": \"waggle_pass\",\n  \"concepts\": [\"waggle_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"stick\",\n    \"TE_R\": \"wheel\",\n    \"HB\": \"swing\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "waggle_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bwaggle\\b",
+    "is_pa": true,
+    "is_boot_or_roll": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t2w2__bunch-ace__pass__hb-slip-screen",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Bunch Ace",
+    "play_name": "HB Slip Screen",
+    "play_type": "pass",
+    "canonical_team": "Carolina Panthers",
+    "canonical_img": 16,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Carolina Panthers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Bunch Ace",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Ace family \u2014 2 TE 2 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 504,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 193
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.58,
+  "response_text": "```json\n{\n  \"concept\": \"hb_screen\",\n  \"concepts\": [\"hb_screen\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"comeback\",\n    \"WR_SLOT_L\": \"slant\",\n    \"WR_SLOT_R\": \"slant\",\n    \"TE_R\": \"block\",\n    \"TE_L\": \"block\",\n    \"HB\": \"screen\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"HB\",\n  \"notes\": \"HB slip screen with dual TE blockers (one left, one right at LOS). WRs run clearout routes to different levels. Red arrow indicates HB screen route receiving the pass.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "hb_screen",
+    "concept_family": "screen",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bhb (slip )?screen\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

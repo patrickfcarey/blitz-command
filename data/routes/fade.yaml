@@ -1,0 +1,21 @@
+name: fade
+aliases:
+- back-shoulder-fade
+description: Vertical with slight outside drift toward the sideline. Designed for back-shoulder throws and 1-on-1 isolation.
+path:
+- - 0
+  - 0
+- - -2
+  - 15
+typical_break_depth_yd: 0
+option_route: false
+category: deep
+beats_coverage: both
+tags:
+- deep
+- outside
+- back-shoulder
+- red-zone
+verification_status: unverified
+source_notes:
+- Fade route — outside vertical with slight drift, for back-shoulder throws and red-zone isolation.

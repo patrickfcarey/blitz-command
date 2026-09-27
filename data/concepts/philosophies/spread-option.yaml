@@ -1,0 +1,48 @@
+philosophy_id: spread-option
+name: Spread Option
+description: |
+  Spread the field with 4-5 WRs to create space and open run lanes for the QB
+  and RB. QB option reads to keep or pitch. Emphasizes speed, space, and OL
+  ability to pull and lead on the perimeter. Developed by Rich Rodriguez at
+  West Virginia and popularized by Gus Malzahn at Auburn. Combines spread
+  spacing with triple-option mechanics.
+era: "2000s–present"
+originators:
+  - "Rich Rodriguez (West Virginia, 2005–2007; Michigan 2008–2010)"
+  - "Gus Malzahn (Auburn, 2013–2020)"
+notable_practitioners:
+  - "Bryan Harsin"
+  - "Chip Kelly"
+  - "Mike Gundy"
+  - "Kevin Sumlin"
+canonical_run_concepts:
+  - triple-option-veer
+  - midline-option
+  - counter-trey
+  - outside-zone
+canonical_pass_concepts:
+  - mesh
+  - bubble
+  - stick
+  - 4-verts
+formation_preferences:
+  - shotgun-spread
+  - singleback-spread
+  - wildcat
+tendency_profile:
+  run_pct: 0.40
+  pass_pct: 0.25
+  pa_pct: 0.05
+  rpo_pct: 0.25
+  screen_pct: 0.05
+tags:
+  - philosophy
+  - spread-option
+  - option-based
+  - rpo-heavy
+  - modern
+  - college
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-04-30 — Wikipedia 'Rich Rodriguez' (https://en.wikipedia.org/wiki/Rich_Rodriguez): developed spread-option at West Virginia 2005-2007."
+  - "Web validated 2026-04-30 — Wikipedia 'Gus Malzahn' (https://en.wikipedia.org/wiki/Gus_Malzahn): popularized spread-option at Auburn; coached high school before college success."

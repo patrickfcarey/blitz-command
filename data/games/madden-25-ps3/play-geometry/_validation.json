@@ -1,0 +1,1000 @@
+{
+  "total_extractions": 7300,
+  "parse_failed": 0,
+  "flag_count": 197,
+  "flag_rate_pct": 2.7,
+  "flags_by_reason": {
+    "pass_no_primary_target": 57,
+    "route_count_off": 81,
+    "concept_mismatch": 45,
+    "gap_mismatch": 8,
+    "run_has_primary_target": 6
+  },
+  "flags": [
+    {
+      "slug": "brown__r1f1t1w2__right__pass__hb-seam",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "brown__r1f1t1w2__right__pass__hb-seam",
+      "reason": "route_count_off",
+      "detail": "expected\u22484 got=0"
+    },
+    {
+      "slug": "far__r1f1t1w2__pro__pass__hb-seam",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "far__r1f1t1w2__pro__pass__hb-seam",
+      "reason": "route_count_off",
+      "detail": "expected\u22484 got=0"
+    },
+    {
+      "slug": "full-house__r1f0t1w3__wide__pass__pa-dbl-posts",
+      "reason": "concept_mismatch",
+      "detail": "py=double_concept llm=pa_dbl_posts"
+    },
+    {
+      "slug": "goal-line__r1f1t3w0__normal__run__qb-sneak",
+      "reason": "gap_mismatch",
+      "detail": "py=D_left bc=QB straight"
+    },
+    {
+      "slug": "gun__r0f0t0w5__5wr-patriot__pass__y-iso-shake",
+      "reason": "route_count_off",
+      "detail": "expected\u22486 got=0"
+    },
+    {
+      "slug": "gun__r0f0t0w5__5wr-patriot__pass__y-iso-whip",
+      "reason": "route_count_off",
+      "detail": "expected\u22486 got=0"
+    },
+    {
+      "slug": "gun__r0f0t0w5__empty-spread__pass__strong-flood",
+      "reason": "concept_mismatch",
+      "detail": "py=flood llm=strong_flood"
+    },
+    {
+      "slug": "gun__r0f0t0w5__empty-trey__run__strong-toss",
+      "reason": "gap_mismatch",
+      "detail": "py=straight bc=HB D_right"
+    },
+    {
+      "slug": "gun__r1f0t0w4__trio-4wr__pass__strong-flood",
+      "reason": "concept_mismatch",
+      "detail": "py=flood llm=strong_flood"
+    },
+    {
+      "slug": "gun__r1f0t1w3__buc-trips__pass__hb-angle",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "gun__r1f0t1w3__buc-trips__pass__hb-angle",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=0"
+    },
+    {
+      "slug": "gun__r1f0t1w3__buc-trips__pass__slot-seam",
+      "reason": "concept_mismatch",
+      "detail": "py=receiver_concept llm=slot_seam"
+    },
+    {
+      "slug": "gun__r1f0t1w3__bunch-offset__pass__verts-hb-under",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=0"
+    },
+    {
+      "slug": "gun__r1f0t1w3__bunch-wk__pass__hb-cross-screen",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "gun__r1f0t1w3__bunch-wk__pass__hb-cross-screen",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=1"
+    },
+    {
+      "slug": "gun__r1f0t1w3__bunch-wk__pass__hb-out",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "gun__r1f0t1w3__bunch-wk__pass__hb-out",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=0"
+    },
+    {
+      "slug": "gun__r1f0t1w3__dice-slot__pass__hb-angle",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "gun__r1f0t1w3__dice-slot__pass__hb-angle",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=0"
+    },
+    {
+      "slug": "gun__r1f0t1w3__dice__pass__strong-flood",
+      "reason": "concept_mismatch",
+      "detail": "py=flood llm=strong_flood"
+    },
+    {
+      "slug": "gun__r1f0t1w3__double-flex__pass__smash-hb-check",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "gun__r1f0t1w3__double-flex__pass__smash-hb-check",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=0"
+    },
+    {
+      "slug": "gun__r1f0t1w3__doubles-on__pass__hb-angle",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "gun__r1f0t1w3__doubles-on__pass__hb-angle",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=0"
+    },
+    {
+      "slug": "gun__r1f0t1w3__doubles-on__pass__hb-circle",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "gun__r1f0t1w3__doubles-on__pass__hb-circle",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=0"
+    },
+    {
+      "slug": "gun__r1f0t1w3__doubles-on__pass__hb-delay-out",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "gun__r1f0t1w3__doubles-on__pass__hb-sluggo",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "gun__r1f0t1w3__doubles-on__pass__hb-sluggo",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=0"
+    },
+    {
+      "slug": "gun__r1f0t1w3__doubles-on__pass__hb-wheel",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "gun__r1f0t1w3__doubles-on__pass__hb-wheel",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=1"
+    },
+    {
+      "slug": "gun__r1f0t1w3__doubles-on__pass__iso-drag",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=0"
+    },
+    {
+      "slug": "gun__r1f0t1w3__doubles-wing-te__pass__drive-hb-wheel",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "gun__r1f0t1w3__doubles-wing-te__pass__drive-hb-wheel",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=0"
+    },
+    {
+      "slug": "gun__r1f0t1w3__doubles-wing__pass__drive-hb-wheel",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "gun__r1f0t1w3__doubles-wing__pass__drive-hb-wheel",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=1"
+    },
+    {
+      "slug": "gun__r1f0t1w3__doubles-wing__pass__hb-angle",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "gun__r1f0t1w3__doubles-wing__pass__hb-angle",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=0"
+    },
+    {
+      "slug": "gun__r1f0t1w3__doubles-wk__pass__hb-delay-out",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "gun__r1f0t1w3__doubles-wk__pass__hb-delay-out",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=1"
+    },
+    {
+      "slug": "gun__r1f0t1w3__doubles-wk__pass__pa-zona-cross",
+      "reason": "concept_mismatch",
+      "detail": "py=cross_concept llm=pa_zona_cross"
+    },
+    {
+      "slug": "gun__r1f0t1w3__doubles__pass__hb-angle",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "gun__r1f0t1w3__doubles__pass__hb-angle",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=0"
+    },
+    {
+      "slug": "gun__r1f0t1w3__doubles__pass__kc-hb-angle",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "gun__r1f0t1w3__doubles__pass__kc-hb-angle",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=0"
+    },
+    {
+      "slug": "gun__r1f0t1w3__doubles__pass__lions-hb-angle",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "gun__r1f0t1w3__doubles__pass__lions-hb-angle",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=0"
+    },
+    {
+      "slug": "gun__r1f0t1w3__doubles__pass__shark-hb-wheel",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "gun__r1f0t1w3__doubles__pass__shark-hb-wheel",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=1"
+    },
+    {
+      "slug": "gun__r1f0t1w3__flip-trips__pass__hb-wheel",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "gun__r1f0t1w3__flip-trips__pass__hb-wheel",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=1"
+    },
+    {
+      "slug": "gun__r1f0t1w3__normal-y-flex__pass__go-s-hb-seam",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "gun__r1f0t1w3__normal-y-flex__pass__go-s-hb-seam",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=0"
+    },
+    {
+      "slug": "gun__r1f0t1w3__normal-y-flex__pass__smash-hb-check",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "gun__r1f0t1w3__normal-y-flex__pass__smash-hb-check",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=0"
+    },
+    {
+      "slug": "gun__r1f0t1w3__normal-y-slot__pass__hb-flare",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "gun__r1f0t1w3__normal__pass__hb-angle",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "gun__r1f0t1w3__normal__pass__hb-angle",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=0"
+    },
+    {
+      "slug": "gun__r1f0t1w3__normal__pass__shark-hb-wheel",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "gun__r1f0t1w3__normal__pass__shark-hb-wheel",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=1"
+    },
+    {
+      "slug": "gun__r1f0t1w3__pats-wing-trips__pass__hb-sluggo",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "gun__r1f0t1w3__pats-wing-trips__pass__hb-sluggo",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=0"
+    },
+    {
+      "slug": "gun__r1f0t1w3__pats-wing-trips__pass__strong-hb-flat",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "gun__r1f0t1w3__pats-wing-trips__pass__strong-hb-flat",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=0"
+    },
+    {
+      "slug": "gun__r1f0t1w3__snugs__pass__saints-hb-delay",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "gun__r1f0t1w3__snugs__pass__saints-hb-wheel",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "gun__r1f0t1w3__snugs__pass__saints-hb-wheel",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=1"
+    },
+    {
+      "slug": "gun__r1f0t1w3__split-close__pass__close-hb-wheel",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "gun__r1f0t1w3__split-close__pass__close-hb-wheel",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=1"
+    },
+    {
+      "slug": "gun__r1f0t1w3__split-close__pass__hb-wheel",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "gun__r1f0t1w3__split-close__pass__hb-wheel",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=1"
+    },
+    {
+      "slug": "gun__r1f0t1w3__split-cowboy__pass__cowboy-curls",
+      "reason": "concept_mismatch",
+      "detail": "py=curls llm=cowboy_curls"
+    },
+    {
+      "slug": "gun__r1f0t1w3__split-flex__pass__hb-circle",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "gun__r1f0t1w3__split-flex__pass__hb-circle",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=0"
+    },
+    {
+      "slug": "gun__r1f0t1w3__split-flex__pass__hb-wheel",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=1"
+    },
+    {
+      "slug": "gun__r1f0t1w3__split-giant__pass__pa-slot-fork",
+      "reason": "concept_mismatch",
+      "detail": "py=receiver_concept llm=pa_slot_fork"
+    },
+    {
+      "slug": "gun__r1f0t1w3__split-offset__pass__close-hb-wheel",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "gun__r1f0t1w3__split-offset__pass__close-hb-wheel",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=1"
+    },
+    {
+      "slug": "gun__r1f0t1w3__split-offset__pass__dig-fork",
+      "reason": "concept_mismatch",
+      "detail": "py=dig_route llm=dig_fork"
+    },
+    {
+      "slug": "gun__r1f0t1w3__split-offset__pass__slot-seam",
+      "reason": "concept_mismatch",
+      "detail": "py=receiver_concept llm=slot_seam"
+    },
+    {
+      "slug": "gun__r1f0t1w3__split-slot__pass__pa-te-cross",
+      "reason": "concept_mismatch",
+      "detail": "py=cross_concept llm=pa_te_cross"
+    },
+    {
+      "slug": "gun__r1f0t1w3__split-texan__pass__slot-seam",
+      "reason": "concept_mismatch",
+      "detail": "py=receiver_concept llm=slot_seam"
+    },
+    {
+      "slug": "gun__r1f0t1w3__spread-y-flex__pass__raven-hb-seam",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "gun__r1f0t1w3__spread-y-flex__pass__raven-hb-seam",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=0"
+    },
+    {
+      "slug": "gun__r1f0t1w3__spread-y-flex__pass__smash-hb-check",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "gun__r1f0t1w3__spread-y-flex__pass__smash-hb-check",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=0"
+    },
+    {
+      "slug": "gun__r1f0t1w3__spread__pass__hb-mid-screen",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "gun__r1f0t1w3__spread__pass__hb-mid-screen",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=1"
+    },
+    {
+      "slug": "gun__r1f0t1w3__trey-open__pass__saints-hb-angle",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "gun__r1f0t1w3__trey-open__pass__saints-hb-angle",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=0"
+    },
+    {
+      "slug": "gun__r1f0t1w3__trey-raven__pass__raven-hb-wheel",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=1"
+    },
+    {
+      "slug": "gun__r1f0t1w3__trey-raven__pass__stick-hb-wheel",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "gun__r1f0t1w3__trey-raven__pass__stick-hb-wheel",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=0"
+    },
+    {
+      "slug": "gun__r1f0t1w3__trips-y-flex__pass__pa-fl-corner",
+      "reason": "concept_mismatch",
+      "detail": "py=receiver_concept llm=pa_fl_corner"
+    },
+    {
+      "slug": "gun__r1f0t1w3__trips__pass__pa-read",
+      "reason": "concept_mismatch",
+      "detail": "py=read_pass llm=pa_read"
+    },
+    {
+      "slug": "gun__r1f0t1w3__v-trips-cowboy__pass__hb-cross-screen",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "gun__r1f0t1w3__wing-trips-wk-ny__pass__giants-iso-drag",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=0"
+    },
+    {
+      "slug": "gun__r1f0t1w3__wing-trips-wk__pass__pa-slot-fork",
+      "reason": "concept_mismatch",
+      "detail": "py=receiver_concept llm=pa_slot_fork"
+    },
+    {
+      "slug": "gun__r1f0t1w3__y-trips-bengal__pass__hb-cross-screen",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "gun__r1f0t1w3__y-trips-bengal__pass__hb-cross-screen",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=0"
+    },
+    {
+      "slug": "gun__r1f0t2w2__ace__pass__pa-te-corners",
+      "reason": "concept_mismatch",
+      "detail": "py=receiver_concept llm=pa_te_corners"
+    },
+    {
+      "slug": "gun__r1f0t2w2__trips-te__pass__flex-hb-wheel",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "gun__r1f0t2w2__trips-te__pass__flex-hb-wheel",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=2"
+    },
+    {
+      "slug": "gun__r1f0t2w2__trips-te__pass__flex-sd-hb-wheel",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "gun__r1f0t2w2__trips-te__pass__flex-sd-hb-wheel",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=1"
+    },
+    {
+      "slug": "gun__r1f0t2w2__trips-te__pass__hb-angle",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "gun__r1f0t2w2__trips-te__pass__hb-angle",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=0"
+    },
+    {
+      "slug": "i-form__r1f1t1w2__close__pass__pa-hb-wheel",
+      "reason": "concept_mismatch",
+      "detail": "py=generic_hb_run llm=pa_hb_wheel"
+    },
+    {
+      "slug": "i-form__r1f1t1w2__pro__pass__hb-angle",
+      "reason": "route_count_off",
+      "detail": "expected\u22484 got=0"
+    },
+    {
+      "slug": "i-form__r1f1t1w2__pro__pass__hb-pass",
+      "reason": "route_count_off",
+      "detail": "expected\u22484 got=1"
+    },
+    {
+      "slug": "i-form__r1f1t1w2__pro__pass__pa-te-corner",
+      "reason": "concept_mismatch",
+      "detail": "py=receiver_concept llm=pa_te_corner"
+    },
+    {
+      "slug": "i-form__r1f1t1w3__pro-twins__pass__tight-pa-hb-wheel",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=1"
+    },
+    {
+      "slug": "i-form__r1f1t1w3__slot-flex__pass__go-s-hb-out",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=0"
+    },
+    {
+      "slug": "i-form__r1f1t1w3__twins-flex__pass__bears-fk-toss-scrn",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "i-form__r1f1t1w3__twins-flex__pass__bears-fk-toss-scrn",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=0"
+    },
+    {
+      "slug": "i-form__r1f1t1w3__twins-flex__pass__hb-sluggo",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "i-form__r1f1t1w3__twins-flex__pass__hb-sluggo",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=0"
+    },
+    {
+      "slug": "i-form__r1f1t1w3__twins-flex__pass__saints-hb-sluggo",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "i-form__r1f1t1w3__twins-flex__pass__saints-hb-sluggo",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=0"
+    },
+    {
+      "slug": "i-form__r1f1t1w3__twins-flex__pass__y-iso-fade",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=2"
+    },
+    {
+      "slug": "i-form__r1f1t1w3__twins-flex__pass__y-iso-sluggo-seam",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=0"
+    },
+    {
+      "slug": "i-form__r1f1t2w2__tight-pair__pass__mtn-pa-hb-power",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=2"
+    },
+    {
+      "slug": "i-form__r1f1t2w2__tight-pair__pass__mtn-pa-power",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=2"
+    },
+    {
+      "slug": "i-form__r1f1t2w2__tight-pair__pass__pa-mtn-power",
+      "reason": "concept_mismatch",
+      "detail": "py=power_run llm=pa_mtn_power"
+    },
+    {
+      "slug": "i-form__r1f1t2w2__tight__pass__pa-te-corner",
+      "reason": "concept_mismatch",
+      "detail": "py=receiver_concept llm=pa_te_corner"
+    },
+    {
+      "slug": "pistol__r1f0t0w4__trips__pass__inside-cross",
+      "reason": "concept_mismatch",
+      "detail": "py=cross_concept llm=inside_cross"
+    },
+    {
+      "slug": "pistol__r1f0t0w4__v-trips__pass__weak-flood",
+      "reason": "concept_mismatch",
+      "detail": "py=flood llm=weak_flood"
+    },
+    {
+      "slug": "pistol__r1f0t1w3__slot__pass__pa-comebacks",
+      "reason": "concept_mismatch",
+      "detail": "py=comebacks llm=pa_comebacks"
+    },
+    {
+      "slug": "pistol__r1f1t2w1__full-house-te__pass__pa-te-corner",
+      "reason": "concept_mismatch",
+      "detail": "py=receiver_concept llm=pa_te_corner"
+    },
+    {
+      "slug": "red__r1f1t1w2__right-close__pass__hb-flat",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "red__r1f1t1w2__right-close__pass__hb-flat",
+      "reason": "route_count_off",
+      "detail": "expected\u22484 got=0"
+    },
+    {
+      "slug": "red__r1f1t1w2__right-close__pass__hb-spot",
+      "reason": "route_count_off",
+      "detail": "expected\u22484 got=0"
+    },
+    {
+      "slug": "red__r1f1t1w2__right-close__pass__hb-trail",
+      "reason": "route_count_off",
+      "detail": "expected\u22484 got=1"
+    },
+    {
+      "slug": "red__r1f1t1w3__right-twins__pass__slot-corner",
+      "reason": "concept_mismatch",
+      "detail": "py=slot_concept llm=slot_corner"
+    },
+    {
+      "slug": "shotgun__r1f0t0w4__spread-4wr__pass__middle-screen",
+      "reason": "concept_mismatch",
+      "detail": "py=middle_concept llm=middle_screen"
+    },
+    {
+      "slug": "shotgun__r1f0t1w3__wing-trips__pass__hb-circle",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "shotgun__r1f0t1w3__wing-trips__pass__hb-circle",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=1"
+    },
+    {
+      "slug": "shotgun__r1f0t1w3__wing-trips__run__four-verticals",
+      "reason": "gap_mismatch",
+      "detail": "py=D_right bc="
+    },
+    {
+      "slug": "shotgun__r1f0t1w3__wing-trips__run__four-verticals",
+      "reason": "run_has_primary_target",
+      "detail": "WR_X"
+    },
+    {
+      "slug": "singleback__r1f0t0w4__trips-4wr__pass__strong-flood",
+      "reason": "concept_mismatch",
+      "detail": "py=flood llm=strong_flood"
+    },
+    {
+      "slug": "singleback__r1f0t1w3__bunch__pass__base-pa-ctr-waggle",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "singleback__r1f0t1w3__bunch__pass__base-pa-ctr-waggle",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=0"
+    },
+    {
+      "slug": "singleback__r1f0t1w3__bunch__pass__falcon-hb-angle",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=0"
+    },
+    {
+      "slug": "singleback__r1f0t1w3__bunch__pass__hb-angle",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "singleback__r1f0t1w3__bunch__pass__hb-angle",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=0"
+    },
+    {
+      "slug": "singleback__r1f0t1w3__deuce__pass__pa-218-corner",
+      "reason": "concept_mismatch",
+      "detail": "py=numbered_concept llm=pa_218_corner"
+    },
+    {
+      "slug": "singleback__r1f0t1w3__deuce__pass__pa-y-seam",
+      "reason": "concept_mismatch",
+      "detail": "py=receiver_concept llm=pa_y_seam"
+    },
+    {
+      "slug": "singleback__r1f0t1w3__doubles-flex__pass__tight-pa-hb-wheel",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=1"
+    },
+    {
+      "slug": "singleback__r1f0t1w3__doubles__pass__all-slam",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=0"
+    },
+    {
+      "slug": "singleback__r1f0t1w3__doubles__pass__hb-swing",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "singleback__r1f0t1w3__doubles__pass__hb-swing",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=0"
+    },
+    {
+      "slug": "singleback__r1f0t1w3__doubles__pass__pa-hb-curl",
+      "reason": "concept_mismatch",
+      "detail": "py=generic_hb_run llm=pa_hb_curl"
+    },
+    {
+      "slug": "singleback__r1f0t1w3__doubles__pass__streaks-hb-delay",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=0"
+    },
+    {
+      "slug": "singleback__r1f0t1w3__doubles__run__four-verticals",
+      "reason": "gap_mismatch",
+      "detail": "py=D_right bc="
+    },
+    {
+      "slug": "singleback__r1f0t1w3__doubles__run__four-verticals",
+      "reason": "run_has_primary_target",
+      "detail": "WR_X"
+    },
+    {
+      "slug": "singleback__r1f0t1w3__pair-twins__pass__pa-te-flood",
+      "reason": "concept_mismatch",
+      "detail": "py=flood llm=pa_te_flood"
+    },
+    {
+      "slug": "singleback__r1f0t1w3__rocket__pass__pa-hb-out",
+      "reason": "concept_mismatch",
+      "detail": "py=generic_hb_run llm=pa_hb_out"
+    },
+    {
+      "slug": "singleback__r1f0t1w3__slot__pass__all-slam",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=0"
+    },
+    {
+      "slug": "singleback__r1f0t1w3__slot__pass__streaks-hb-delay",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=0"
+    },
+    {
+      "slug": "singleback__r1f0t1w3__snugs-flip__pass__hb-wheel",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=1"
+    },
+    {
+      "slug": "singleback__r1f0t1w3__spread__run__slot-pivot",
+      "reason": "gap_mismatch",
+      "detail": "py=D_left bc="
+    },
+    {
+      "slug": "singleback__r1f0t1w3__spread__run__slot-pivot",
+      "reason": "run_has_primary_target",
+      "detail": "WR_SLOT_L"
+    },
+    {
+      "slug": "singleback__r1f0t1w3__tight-slots__pass__hb-wheel",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=1"
+    },
+    {
+      "slug": "singleback__r1f0t1w3__train-right__pass__se-in-hb-out",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=0"
+    },
+    {
+      "slug": "singleback__r1f0t1w3__y-trips-bear__run__empty-chi-cross",
+      "reason": "gap_mismatch",
+      "detail": "py=D_right bc="
+    },
+    {
+      "slug": "singleback__r1f0t1w3__y-trips-bear__run__empty-chi-cross",
+      "reason": "run_has_primary_target",
+      "detail": "WR_Z"
+    },
+    {
+      "slug": "singleback__r1f0t1w3__y-trips__pass__pa-cross-up",
+      "reason": "concept_mismatch",
+      "detail": "py=cross_concept llm=pa_cross"
+    },
+    {
+      "slug": "singleback__r1f0t1w3__y-trips__run__four-verticals",
+      "reason": "gap_mismatch",
+      "detail": "py=D_right bc="
+    },
+    {
+      "slug": "singleback__r1f0t1w3__y-trips__run__four-verticals",
+      "reason": "run_has_primary_target",
+      "detail": "WR_X"
+    },
+    {
+      "slug": "singleback__r1f0t2w2__ace__pass__ace-wr-stretch",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "singleback__r1f0t2w2__ace__pass__ace-wr-stretch",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=0"
+    },
+    {
+      "slug": "singleback__r1f0t2w2__ace__pass__atl-hb-swin",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "singleback__r1f0t2w2__ace__pass__atl-hb-swin",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=2"
+    },
+    {
+      "slug": "singleback__r1f0t2w2__ace__pass__close-pa-hb-wheel",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=2"
+    },
+    {
+      "slug": "singleback__r1f0t2w2__ace__pass__pa-218-corner",
+      "reason": "concept_mismatch",
+      "detail": "py=numbered_concept llm=pa_pass"
+    },
+    {
+      "slug": "singleback__r1f0t2w2__ace__pass__pa-comebacks",
+      "reason": "concept_mismatch",
+      "detail": "py=comebacks llm=pa_comebacks"
+    },
+    {
+      "slug": "singleback__r1f0t2w2__ace__pass__pa-flood",
+      "reason": "concept_mismatch",
+      "detail": "py=flood llm=pa_flood"
+    },
+    {
+      "slug": "singleback__r1f0t2w2__ace__pass__pa-te-corner",
+      "reason": "concept_mismatch",
+      "detail": "py=receiver_concept llm=pa_te_corner"
+    },
+    {
+      "slug": "singleback__r1f0t2w2__ace__pass__wing-pa-power-o",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=2"
+    },
+    {
+      "slug": "singleback__r1f0t2w2__twin-te-flex__run__four-verticals",
+      "reason": "gap_mismatch",
+      "detail": "py=D_left bc="
+    },
+    {
+      "slug": "singleback__r1f0t2w2__twin-te-flex__run__four-verticals",
+      "reason": "run_has_primary_target",
+      "detail": "WR_X"
+    },
+    {
+      "slug": "singleback__r1f0t3w1__jumbo-z__pass__h-zone-wk",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "singleback__r1f0t3w1__jumbo-z__pass__h-zone-wk",
+      "reason": "route_count_off",
+      "detail": "expected\u22485 got=0"
+    },
+    {
+      "slug": "singleback__r1f0t3w1__jumbo__pass__verts-drag",
+      "reason": "concept_mismatch",
+      "detail": "py=drags llm=verts_drag"
+    },
+    {
+      "slug": "split__r1f1t1w2__pro__pass__hb-out",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "split__r1f1t1w2__pro__pass__hb-out",
+      "reason": "route_count_off",
+      "detail": "expected\u22484 got=0"
+    },
+    {
+      "slug": "strong-i__r1f0t1w3__twin-te__pass__pa-mtn-power",
+      "reason": "concept_mismatch",
+      "detail": "py=power_run llm=pa_mtn_power"
+    },
+    {
+      "slug": "strong__r1f1t1w2__pro__pass__close-pa-end-around",
+      "reason": "pass_no_primary_target",
+      "detail": ""
+    },
+    {
+      "slug": "strong__r1f1t1w2__pro__pass__close-pa-end-around",
+      "reason": "route_count_off",
+      "detail": "expected\u22484 got=0"
+    },
+    {
+      "slug": "strong__r1f1t1w2__pro__pass__pa-te-corner",
+      "reason": "concept_mismatch",
+      "detail": "py=receiver_concept llm=pa_te_corner"
+    },
+    {
+      "slug": "strong__r1f1t2w2__tight-pair__pass__pa-mtn-power",
+      "reason": "concept_mismatch",
+      "detail": "py=power_run llm=pa_mtn_power"
+    },
+    {
+      "slug": "weak__r1f1t1w2__h-pro__pass__pa-giants-v-cross",
+      "reason": "concept_mismatch",
+      "detail": "py=cross_concept llm=pa_giants_v_cross"
+    },
+    {
+      "slug": "weak__r1f1t1w2__pro__pass__pa-x-corner",
+      "reason": "concept_mismatch",
+      "detail": "py=receiver_concept llm=pa_x_corner"
+    },
+    {
+      "slug": "weak__r1f1t1w3__pro-twins__pass__pa-power-0",
+      "reason": "concept_mismatch",
+      "detail": "py=power_run llm=pa_power_o"
+    },
+    {
+      "slug": "wildcat__r1f0t1w3__normal__pass__pa-jet-sweep",
+      "reason": "concept_mismatch",
+      "detail": "py=sweep llm=pa_jet_sweep"
+    }
+  ]
+}

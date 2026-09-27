@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__y-trips-wk__pass__lions-clearout",
+  "info": {
+    "family": "GUN",
+    "formation": "Y-Trips Wk",
+    "play_name": "Lions Clearout",
+    "play_type": "pass",
+    "canonical_team": "Detroit Lions",
+    "canonical_img": 113,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Detroit Lions"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Y-Trips Wk",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 501,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 338
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 4.7,
+  "response_text": "```json\n{\n  \"concept\": \"clearout\",\n  \"concepts\": [\"clearout\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_R\": \"streak\",\n    \"TE_R\": \"streak\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Red arrow originates from QB and targets WR_Z (X button glyph) on a streak route. All four eligible receivers (3 WR + 1 TE) run vertical clearout routes. HB eligible as checkdown. Yellow reference box outlines C-square; cyan line marks LOS at y~725px. Formation is GUN Y-Trips Wk as expected: 5 OL (including white C-square), 1 TE_R (green triangle button glyph, attached to RT), 3 WR (purple \u25a1 Square at WR_X far left ~180px; blue \u2297 X at WR_Z right of TE ~920px; green \u25b3 Triangle at WR_SLOT_R between X and TE ~750px), QB at shotgun, HB to side (~240px deep). All routes are vertical/streak clearouts; red arrow indicates primary read on WR_Z.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "clearout",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bclearout\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

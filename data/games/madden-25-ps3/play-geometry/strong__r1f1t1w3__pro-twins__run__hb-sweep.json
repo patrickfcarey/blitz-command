@@ -1,0 +1,58 @@
+{
+  "slug": "strong__r1f1t1w3__pro-twins__run__hb-sweep",
+  "info": {
+    "family": "STRONG",
+    "formation": "Pro Twins",
+    "play_name": "HB Sweep",
+    "play_type": "run",
+    "canonical_team": "Tennessee Titans",
+    "canonical_img": 78,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Tennessee Titans"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "Pro Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 585,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 62
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 86.94,
+  "response_text": "```json\n{\n  \"concept\": \"sweep\",\n  \"concepts\": [\"sweep\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB D_right\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_right",
+    "c_xy": [
+      1551,
+      611
+    ],
+    "arrow_los_crossing_xy": [
+      2164,
+      725
+    ],
+    "dx_from_c": 613,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "sweep",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bsweep\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,169 @@
+play_id: shotgun-2x2-drive-hilo
+name: Drive Hi-Lo (Strong)
+aliases:
+  - Drive Corner
+  - Drive Smash
+  - Corner-Drag Hi-Lo
+
+formation: shotgun-2x2
+play_type: pass
+ball_carrier: Z
+primary_read: Z
+secondary_read: TE
+checkdown: HB
+
+# Empty motions block — identical to the Drive base. The look matches every
+# member of the West Coast Drive family so the defense cannot key the call.
+motions: []
+
+assignments:
+  - player: LT
+    role: pass_block
+    blocking_scheme: man-protection
+    notes: "Five-man slide protection — protect the QB's rhythm drop."
+  - player: LG
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: C
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: RG
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: RT
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: Z
+    role: route
+    route_name: corner
+    depth_yd: 12
+    is_primary: true
+    beats_coverage: zone
+    notes: "The corner — the HI of this hi-lo. Stem vertical, then break 45 degrees to the corner at 12 yds. With the TE drag pulling the flat defender inside, the corner works over the top into the vacated grass."
+  - player: TE
+    role: route
+    route_name: drag
+    depth_yd: 5
+    beats_coverage: both
+    notes: "The shallow cross — the LO of this hi-lo, and the same drag the whole family runs. Push to 5 yds off the strong-side line, then drag flat. It pulls the strong-side flat defender across, clearing the corner route's landing."
+  - player: X
+    role: route
+    route_name: dig
+    depth_yd: 12
+    notes: "Backside dig — occupies the weak-side hook/post-safety defender and gives the QB a same-depth alternate if the strong-side hi-lo is bracketed."
+  - player: SLOT-W
+    role: route
+    route_name: flat
+    depth_yd: 3
+    notes: "Weak-side flat — holds the backside underneath defender and discourages a robber from leaning to the strong-side crosser."
+  - player: QB
+    role: ball_carrier
+    path: [[0, 0], [0, -1], [0, -2]]
+    notes: |
+      Three-step rhythm drop from shotgun depth — IDENTICAL first two
+      waypoints to the Drive base. This is a hi-lo on the strong-side flat /
+      curl defender: the TE drag (LO) underneath holds him, the Z corner (HI)
+      breaks over the top. Pre-snap, the corner's leverage tells the read —
+      squatted corner = throw the corner over him; bailing corner = take the
+      drag under. HB flat is the safety valve.
+  - player: HB
+    role: route
+    route_name: flat
+    depth_yd: 3
+    path: [[0, 0], [-1, 0], [-4, 3]]
+    notes: "Check-release: scan for weak-side pressure, then leak to the flat as the checkdown if the hi-lo is covered."
+
+strengths:
+  - Same shallow cross as the Drive base, but the hi-lo now attacks the corner-over-flat level instead of the dig level
+  - The drag pulls the flat defender inside, vacating the exact grass the corner route lands in
+  - Stresses the strong-side flat/curl defender with a true two-level vertical conflict
+  - Pre-snap corner leverage gives a clean read — squat or bail decides the throw
+  - Beats zone cleanly (corner over flat) and still has a man answer in the crosser
+
+weaknesses:
+  - The corner route needs ~3 seconds — longer to develop than the base Drive
+  - Cover-2 with a deep-half safety capping the corner takes the high read away
+  - A squatting trap corner can sit on the drag and rob the low read
+  - No true deep shot — the corner tops out around 17 yards
+  - Bracketing the Z removes the primary and forces the slower backside dig
+
+best_vs_defense:
+  - cover-3 (corner breaks behind the squatting corner, drag settles underneath)
+  - cover-1 / man (the crosser runs from trail leverage, the corner wins on leverage)
+  - 4-3 with run-keying linebackers vacating the strong hook
+  - any defense with a single defender forced to choose flat or corner
+
+worst_vs_defense:
+  - cover-2 with a deep-half safety capping the corner route
+  - cover-2 trap with the corner squatting on the drag
+  - match quarters bracketing the number-one receiver
+  - strong-side pressure that beats the five-man protection
+
+defensive_counters:
+  - counter_id: cover-2-cap-corner
+    pre_snap_look: "Two deep safeties at 12-14 yards splitting the field, the strong-side corner squatted low at 5-6 yards outside"
+    qb_key: "Check the safety shell — two deep, with the strong corner squatted underneath"
+    read_category: safety-shell
+    why: "A deep-half safety sitting over the top caps the corner route while the squatted corner walls the drag, taking both legs of the hi-lo at once."
+    typical_against: ["cover-2", "cover-2 invert", "tampa-2"]
+  - counter_id: trap-corner-strong
+    pre_snap_look: "Strong-side corner squatted at 5-7 yards depth with inside leverage, eyes in the backfield, no widening toward the corner route's path"
+    qb_key: "Check the strong-side CB — squatted low and inside, eyes on the QB"
+    read_category: cb-leverage
+    why: "A corner squatting low and inside is set to trap the shallow drag, removing the LO read and leaving the QB only the slower-developing corner over the top."
+    typical_against: ["cover-2 trap", "cloud coverage"]
+  - counter_id: strongside-edge-pressure
+    pre_snap_look: "Strong-side EDGE in a wide get-off stance with a linebacker or nickel walked up and stacked just outside him"
+    qb_key: "Scan the strong-side edge — EDGE in a sprinter's stance with a second rusher stacked outside"
+    read_category: dl-alignment
+    why: "An overloaded strong-side edge outnumbers the five-man protection and gets home before the corner route's deeper break develops."
+    typical_against: ["cover-1 with edge pressure", "zone-pressure looks"]
+
+common_uses:
+  - 2nd-and-medium / 3rd-and-medium against zone
+  - Attacking a defense that has squatted underneath to stop the base Drive
+  - Red-zone corner-route shot from the same dropback look
+  - Anti-cover-3 call when the corner sits hard on the underneath
+  - Punishing a flat defender who has overplayed the shallow cross
+
+philosophy: west-coast
+pass_concept_ref: hi-lo
+pass_protection_ref: half-slide-protect
+philosophy_ref: west-coast
+
+era: "1980s onward — the corner-over-shallow hi-lo is a long-standing West Coast and pro-style answer to squatting underneath defenders."
+
+famous_examples:
+  - "Bill Walsh West Coast tree (hi-lo corner reads paired with the shallow-cross game)"
+  - "Modern NFL pro-style offenses (corner-drag combinations off the Drive look)"
+
+tags:
+  - pass
+  - west-coast
+  - drive
+  - hi-lo
+  - corner
+  - shallow-cross
+  - shotgun
+  - 2x2
+  - 11-personnel
+  - any-level
+  - high-school
+  - college
+  - nfl
+
+notes: |
+  A hi-lo variant of the Drive concept that attacks a different level. The
+  base Drive runs a dig over the shallow cross; this play keeps the identical
+  TE drag (LO) but replaces the dig with a Z corner route (HI), turning the
+  read into a corner-over-flat vertical stretch on the strong-side flat/curl
+  defender. The empty motion block and the QB's three-step drop are
+  IDENTICAL to the Drive base — the defense reads the same look. Member of
+  the Shotgun 2x2 West Coast Drive disguise family (see data/play-families/).
+
+  Mirror to drive-hilo-left by flipping all coordinates.
+
+verification_status: unverified
+source_notes:
+  - "Web validated 2026-05-15 — Throw Deep Publishing 'Hi-Lo Concept' (https://throwdeeppublishing.com/blogs/football-glossary/): a hi-lo stacks two routes attacking one defender at two depths. The corner-over-shallow pairing is a standard West Coast answer to a squatting underneath defender."
+  - "Authored as a disguise twin of shotgun-2x2-drive — empty motions block and the QB's three-step drop waypoints deliberately mirror the base play; the shallow TE drag is shared byte-for-byte with the family's other plays."

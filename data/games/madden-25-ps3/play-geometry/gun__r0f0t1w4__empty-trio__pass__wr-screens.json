@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r0f0t1w4__empty-trio__pass__wr-screens",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Trio",
+    "play_name": "WR Screens",
+    "play_type": "pass",
+    "canonical_team": "Run N Gun",
+    "canonical_img": 110,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Run N Gun"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Trio",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 1,
+      "WR": 4,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 496,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 235
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.33,
+  "response_text": "```json\n{\n  \"concept\": \"wr_screen\",\n  \"concepts\": [\"wr_screen\"],\n  \"routes\": {\n    \"WR_X\": \"screen\",\n    \"WR_Z\": \"screen\",\n    \"WR_SLOT_L\": \"screen\",\n    \"WR_SLOT_R\": \"screen\",\n    \"QB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Empty Trio formation (r0f0t1w4): 5 OL, 1 TE, 4 WRs, QB shotgun alone. All four WRs running screen routes. Red arrow indicates primary target (WR_Z screen to right). Yellow arrow on left shows WR_SLOT_L screen option. R1 button assigned to TE, likely release for checkdown. Cyan reference line marks LOS; yellow box marks C-square.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "wr_screen",
+    "concept_family": "screen",
+    "blockers_implicit": false,
+    "matched_pattern": "\\b(wr|te) screens?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

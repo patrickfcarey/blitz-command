@@ -1,0 +1,58 @@
+{
+  "slug": "singleback__r1f0t0w4__spread-4wr__run__hb-option",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Spread 4WR",
+    "play_name": "HB Option",
+    "play_type": "run",
+    "canonical_team": "Run Heavy",
+    "canonical_img": 32,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Run Heavy"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Spread 4WR",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 0,
+      "WR": 4,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 505,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 204
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 93.12,
+  "response_text": "```json\n{\n  \"concept\": \"option_pass\",\n  \"concepts\": [\"option_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"streak\",\n    \"WR_SLOT_R\": \"streak\"\n  },\n  \"ball_carrier\": \"HB D_right\",\n  \"primary_target\": null,\n  \"notes\": \"HB option run to right edge (D_right). All 4 WRs running vertical stretches. Red arrow indicates HB pitch/option path extending outside. R1 button glyph visible on TE/eligible target zone but formation is 4-wide with no TEs (r1f0t0w4). Play diagram shows classic option setup with HB reading edge defender.\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_right",
+    "c_xy": [
+      1476,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      2366,
+      615
+    ],
+    "dx_from_c": 890,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "option_pass",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bhb option\\b|\\bte option\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

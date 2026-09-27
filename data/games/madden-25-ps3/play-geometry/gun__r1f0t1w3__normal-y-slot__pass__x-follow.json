@@ -1,0 +1,51 @@
+{
+  "slug": "gun__r1f0t1w3__normal-y-slot__pass__x-follow",
+  "info": {
+    "family": "GUN",
+    "formation": "Normal Y-Slot",
+    "play_name": "X Follow",
+    "play_type": "pass",
+    "canonical_team": "Kansas City Chiefs",
+    "canonical_img": 118,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Kansas City Chiefs",
+      "New England Patriots",
+      "Run Balanced"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Normal Y-Slot",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 521,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 247
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.55,
+  "response_text": "```json\n{\n  \"concept\": \"receiver_concept\",\n  \"concepts\": [\"x_follow\", \"y_motion\"],\n  \"routes\": {\n    \"WR_X\": \"follow\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_R\": \"motion_to_slot\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"WR_X marked with blue X button glyph, running a follow/option route indicated by red arrow curving left. WR_Z (green Triangle) runs vertical stretch. TE_R (red Circle) runs seam route. WR_SLOT_R (purple Square) appears to be in pre-snap Y-motion alignment. HB (R1 button, white circle in backfield) available as check-release. Yellow dashed motion line visible on left side indicating pre-snap receiver motion.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "receiver_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\b(wr|te|x|y|z|fl|se|slot|h) (corner|drag|hook|option|under|seam|follow|attack|inside|angle|shake|fork|scissors|cross|trail|streak|spot|fade|in|out|wheel|seams|hooks|corners|outs|ins|posts|streaks)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

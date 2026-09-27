@@ -1,0 +1,50 @@
+{
+  "slug": "weak__r1f1t1w2__pro__pass__close-pa-boot-lt",
+  "info": {
+    "family": "WEAK",
+    "formation": "Pro",
+    "play_name": "Close PA Boot Lt",
+    "play_type": "pass",
+    "canonical_team": "Indianapolis Colts",
+    "canonical_img": 73,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Indianapolis Colts",
+      "San Diego Chargers"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "WEAK",
+      "formation": "Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 496,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 181
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.24,
+  "response_text": "```json\n{\n  \"concept\": \"boot_pass\",\n  \"concepts\": [\"boot_pass\", \"pa_pass\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"drag\",\n    \"HB\": \"wheel\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"PA boot to the left with misdirection to RB. Red arrow (primary) on WR_Z streak. Blue arrow (drag) on slot receiver across formation. HB releases to wheel on opposite side. TE_L blocks initially.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "boot_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bboot\\b|\\bbootleg\\b",
+    "is_pa": false,
+    "is_boot_or_roll": true
+  }
+}

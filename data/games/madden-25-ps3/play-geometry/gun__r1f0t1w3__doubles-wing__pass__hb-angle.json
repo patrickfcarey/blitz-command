@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__doubles-wing__pass__hb-angle",
+  "info": {
+    "family": "GUN",
+    "formation": "Doubles Wing",
+    "play_name": "HB Angle",
+    "play_type": "pass",
+    "canonical_team": "Buffalo Bills",
+    "canonical_img": 87,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Buffalo Bills"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Doubles Wing",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Doubles \u2014 1 TE 3 WR (slot variant)"
+    }
+  },
+  "usage": {
+    "input_tokens": 563,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 199
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.05,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"generic_hb_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB A_right\",\n  \"primary_target\": null,\n  \"notes\": \"Play labeled as PASS in UI but play_type=pass conflicts with py_concept=generic_hb_run (family=run). Diagram shows red arrow from backfield (HB) attacking upfield into A_right gap, consistent with run play. HB receives the ball on a run, not a pass route. Formation is GUN Doubles Wing (r1f0t1w3): QB in shotgun, 1 RB/HB to side, 1 TE, 3 WRs. All receivers block downfield; no pass routes drawn.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "^hb \\w+",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

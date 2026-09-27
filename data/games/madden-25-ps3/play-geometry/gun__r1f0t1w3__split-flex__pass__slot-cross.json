@@ -1,0 +1,50 @@
+{
+  "slug": "gun__r1f0t1w3__split-flex__pass__slot-cross",
+  "info": {
+    "family": "GUN",
+    "formation": "Split Flex",
+    "play_name": "Slot Cross",
+    "play_type": "pass",
+    "canonical_team": "Pass Balanced",
+    "canonical_img": 87,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Pass Balanced",
+      "Run N Gun"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Split Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "GUN/Shotgun default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 493,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 117
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 1.84,
+  "response_text": "```json\n{\n  \"concept\": \"slot_concept\",\n  \"concepts\": [\"slot_cross\"],\n  \"routes\": {\n    \"WR_X\": \"comeback\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"drag\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_SLOT_L\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "slot_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bslot (drag|cross|streak|corner|out|in|wheel)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

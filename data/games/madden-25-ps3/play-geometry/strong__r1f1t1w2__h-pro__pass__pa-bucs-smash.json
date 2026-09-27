@@ -1,0 +1,49 @@
+{
+  "slug": "strong__r1f1t1w2__h-pro__pass__pa-bucs-smash",
+  "info": {
+    "family": "STRONG",
+    "formation": "H Pro",
+    "play_name": "PA Bucs Smash",
+    "play_type": "pass",
+    "canonical_team": "Tampa Bay Buccaneers",
+    "canonical_img": 59,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Tampa Bay Buccaneers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "H Pro",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 501,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 199
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.99,
+  "response_text": "```json\n{\n  \"concept\": \"smash\",\n  \"concepts\": [\"smash\"],\n  \"routes\": {\n    \"WR_X\": \"hitch\",\n    \"WR_Z\": \"corner\",\n    \"TE_L\": \"block\",\n    \"HB\": \"swing\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"PA Bucs Smash with play-action setup. Smash concept on right side: WR_X (\u25a1 Square) runs hitch, WR_Z (\u2299 Circle) runs corner over top. Left side TE (L1 triangle) and backfield (HB with R1 shoulder button) in supporting roles. Red arrow indicates primary pass read to the corner route on right.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "smash",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bsmash\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

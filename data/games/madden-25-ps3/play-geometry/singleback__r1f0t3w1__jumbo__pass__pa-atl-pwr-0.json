@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t3w1__jumbo__pass__pa-atl-pwr-0",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Jumbo",
+    "play_name": "PA ATL Pwr 0",
+    "play_type": "pass",
+    "canonical_team": "Atlanta Falcons",
+    "canonical_img": 2,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Atlanta Falcons"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Jumbo",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 3,
+      "WR": 1,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Jumbo \u2014 typically 3 TE 1 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 494,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 212
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.68,
+  "response_text": "```json\n{\n  \"concept\": \"pa_atl_pwr_0\",\n  \"concepts\": [\"pa_atl_pwr_0\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"TE_R\": \"seam\",\n    \"TE_WING_L\": \"flat\",\n    \"WR_X\": \"corner\",\n    \"HB\": \"wheel\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"Play-action setup with 3 TEs (Jumbo personnel). TE_R runs red-arrow seam route (primary). TE_L blocks initially. Wing TE (tight to LT) runs flat. WR_X runs corner route on the outside. HB wheels out as checkdown. Yellow route arrows indicate secondary options.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "unknown",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": null,
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

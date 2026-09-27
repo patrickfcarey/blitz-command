@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__bunch-swap__pass__weak-flood",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Bunch Swap",
+    "play_name": "Weak Flood",
+    "play_type": "pass",
+    "canonical_team": "West Coast",
+    "canonical_img": 29,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "West Coast"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Bunch Swap",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Trips/Doubles family"
+    }
+  },
+  "usage": {
+    "input_tokens": 497,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 158
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.2,
+  "response_text": "```json\n{\n  \"concept\": \"flood\",\n  \"concepts\": [\"flood\"],\n  \"routes\": {\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_R\": \"dig\",\n    \"WR_SLOT_L\": \"flat\",\n    \"TE_R\": \"comeback\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Weak-side flood concept with three-level stretch (streak deep, dig intermediate, flat underneath). TE_R on backside runs comeback clearout. HB appears to check/release based on coverage.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "flood",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bflood\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

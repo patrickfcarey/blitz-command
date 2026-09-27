@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__bunch-wk__pass__bunch-hook",
+  "info": {
+    "family": "GUN",
+    "formation": "Bunch Wk",
+    "play_name": "Bunch Hook",
+    "play_type": "pass",
+    "canonical_team": "Jacksonville Jaguars",
+    "canonical_img": 102,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Jacksonville Jaguars"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Bunch Wk",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Trips-family \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 494,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 166
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.28,
+  "response_text": "```json\n{\n  \"concept\": \"hooks\",\n  \"concepts\": [\"hooks\"],\n  \"routes\": {\n    \"WR_X\": \"hook\",\n    \"WR_Z\": \"hook\",\n    \"WR_SLOT_L\": \"hook\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"GUN Bunch formation with 3 WRs running hook routes at intermediate depth. WR_Z (R1 button, red circle) is primary target with red arrow. HB positioned for checkdown. All three bunch receivers run similar hook breaking patterns.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "hooks",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bhooks?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r0f0t0w5__empty-v-flex__pass__pa-jet-sweep",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty V-Flex",
+    "play_name": "PA Jet Sweep",
+    "play_type": "pass",
+    "canonical_team": "Jacksonville Jaguars",
+    "canonical_img": 139,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Jacksonville Jaguars"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty V-Flex",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 501,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 232
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.57,
+  "response_text": "```json\n{\n  \"concept\": \"sweep\",\n  \"concepts\": [\"sweep\", \"pa_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"corner\",\n    \"WR_SLOT_R\": \"seam\",\n    \"HB\": \"swing\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Play-action jet sweep with 5-wide empty formation. Red arrow originates from QB and targets WR_Z (right outer receiver, marked with red circle glyph). R1 marked with purple circle glyph runs a dashed cyan route (block-first-then-release swing/flat). Yellow routes on left side (corner from slot) and right side (seam from inner slot). Standard PA mesh/sweep structure with all 5 WRs spread wide.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "sweep",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bsweep\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

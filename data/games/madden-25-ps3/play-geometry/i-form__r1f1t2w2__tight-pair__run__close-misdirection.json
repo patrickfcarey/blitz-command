@@ -1,0 +1,59 @@
+{
+  "slug": "i-form__r1f1t2w2__tight-pair__run__close-misdirection",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Tight Pair",
+    "play_name": "Close Misdirection",
+    "play_type": "run",
+    "canonical_team": "Atlanta Falcons",
+    "canonical_img": 58,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Atlanta Falcons",
+      "Cincinnati Bengals"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Tight Pair",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Tight/Twin-TE \u2014 2 TE"
+    }
+  },
+  "usage": {
+    "input_tokens": 596,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 70
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 53.06,
+  "response_text": "```json\n{\n  \"concept\": \"misdirection_run\",\n  \"concepts\": [\"misdirection_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB D_left\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "D_left",
+    "c_xy": [
+      1553,
+      613
+    ],
+    "arrow_los_crossing_xy": [
+      86,
+      613
+    ],
+    "dx_from_c": -1467,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "misdirection_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bmisdirection\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

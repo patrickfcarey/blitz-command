@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blitz-command.local/schemas/pass-protection.schema.json",
+  "title": "PassProtection",
+  "description": "A pass-protection scheme (full slide, half-slide, max protection, etc.) that describes OL + skill-position assignments as a protection unit.",
+  "type": "object",
+  "required": ["scheme_id", "name", "description", "protection_type", "assignments_by_position", "vulnerable_to", "verification_status", "source_notes"],
+  "additionalProperties": false,
+  "properties": {
+    "scheme_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "Stable identifier (kebab-case). Must match the filename (without .yaml)."
+    },
+    "name": { "type": "string" },
+    "description": {
+      "type": "string",
+      "description": "1-3 sentence explanation — direction of slide, who scans for the unblocked rusher, when used."
+    },
+    "protection_type": {
+      "enum": ["5-man", "6-man", "7-man", "slide", "half-slide", "boss", "big-on-big"],
+      "description": "How many protectors and what the assignment style is."
+    },
+    "assignments_by_position": {
+      "type": "object",
+      "description": "Map of position label to assignment rule. Must cover all 5 OL (LT/LG/C/RG/RT) plus HB, and TE if it is part of the protection.",
+      "additionalProperties": { "type": "string" }
+    },
+    "vulnerable_to": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Blitz packages, stunts, or overloads that beat this protection."
+    },
+    "pairs_with": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Pass concept IDs or formations that commonly use this protection."
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "verification_status": {
+      "enum": ["verified", "unverified", "inferred"]
+    },
+    "source_notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__double-flex__pass__pa-read",
+  "info": {
+    "family": "GUN",
+    "formation": "Double Flex",
+    "play_name": "PA Read",
+    "play_type": "pass",
+    "canonical_team": "St. Louis Rams",
+    "canonical_img": 125,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "St. Louis Rams"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Double Flex",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "GUN/Shotgun default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 494,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 223
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.89,
+  "response_text": "```json\n{\n  \"concept\": \"read_pass\",\n  \"concepts\": [\"read_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"WR_SLOT_L\": \"corner\",\n    \"TE_R\": \"flat\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"PA Read with play-action fake. Red arrow indicates primary read to WR_X on streak. Yellow routes show secondary options: WR_Z streak, WR_SLOT_L corner, TE_R flat checkdown with R1 button assignment. Formation is GUN Double Flex (r1f0t1w3) with QB in shotgun, 1 RB, 1 TE, 3 WRs.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "read_pass",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bread\\b(?!.*option)",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

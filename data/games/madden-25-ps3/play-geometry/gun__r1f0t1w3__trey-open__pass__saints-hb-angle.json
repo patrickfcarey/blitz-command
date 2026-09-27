@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__trey-open__pass__saints-hb-angle",
+  "info": {
+    "family": "GUN",
+    "formation": "Trey Open",
+    "play_name": "Saints HB Angle",
+    "play_type": "pass",
+    "canonical_team": "New Orleans Saints",
+    "canonical_img": 116,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "New Orleans Saints"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Trey Open",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "GUN/Shotgun default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 568,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 244
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 4.08,
+  "response_text": "```json\n{\n  \"concept\": \"generic_hb_run\",\n  \"concepts\": [\"generic_hb_run\"],\n  \"routes\": {},\n  \"ball_carrier\": \"HB A_right\",\n  \"primary_target\": null,\n  \"notes\": \"Play_type is PASS but py_concept indicates run family. Visual shows red arrow from backfield (HB) attacking upfield through A_right gap. Formation is GUN with 1 RB, 0 FB, 1 TE, 3 WR (r1f0t1w3). TE_R and WR_X appear to be blocking downfield. Button glyphs visible (purple \u25a1 left, blue \u2297 right, red \u2299 far right, green \u25b3 below) \u2014 these are pass eligibles but play_type=PASS overrides the run concept in py_concept field; treating as pass eligibility markers on a run play (RPO or similar). Red arrow on HB is primary ball-carrier path.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "generic_hb_run",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "^hb \\w+",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

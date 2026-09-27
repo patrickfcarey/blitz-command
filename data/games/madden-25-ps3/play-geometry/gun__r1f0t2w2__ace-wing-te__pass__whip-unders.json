@@ -1,0 +1,50 @@
+{
+  "slug": "gun__r1f0t2w2__ace-wing-te__pass__whip-unders",
+  "info": {
+    "family": "GUN",
+    "formation": "Ace Wing TE",
+    "play_name": "Whip Unders",
+    "play_type": "pass",
+    "canonical_team": "Jacksonville Jaguars",
+    "canonical_img": 85,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Jacksonville Jaguars",
+      "New England Patriots"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Ace Wing TE",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Ace \u2014 2 TE 2 WR (shotgun-ace)"
+    }
+  },
+  "usage": {
+    "input_tokens": 175,
+    "cache_creation_input_tokens": 327,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 122
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.11,
+  "response_text": "```json\n{\n  \"concept\": \"under_route\",\n  \"concepts\": [\"under_route\"],\n  \"routes\": {\n    \"WR_X\": \"under\",\n    \"WR_Z\": \"under\",\n    \"TE_L\": \"under\",\n    \"TE_R\": \"under\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "under_route",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bunders?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

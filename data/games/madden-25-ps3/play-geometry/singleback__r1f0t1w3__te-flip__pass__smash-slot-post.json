@@ -1,0 +1,49 @@
+{
+  "slug": "singleback__r1f0t1w3__te-flip__pass__smash-slot-post",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "TE Flip",
+    "play_name": "Smash Slot Post",
+    "play_type": "pass",
+    "canonical_team": "Tom Landry",
+    "canonical_img": 20,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Tom Landry"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "TE Flip",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "Singleback default \u2014 1 TE 3 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 503,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 184
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.66,
+  "response_text": "```json\n{\n  \"concept\": \"smash\",\n  \"concepts\": [\"smash\"],\n  \"routes\": {\n    \"WR_X\": \"hitch\",\n    \"WR_Z\": \"corner\",\n    \"TE_L\": \"post\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Smash concept on right side with WR_X hitch and WR_Z corner. TE_L runs post route (the 'slot post' element). Left-side WR_SLOT (pink \u25a1 button) appears to be a receiver check-release or secondary target. HB runs blue checkdown arrow to left flat.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "smash",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bsmash\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

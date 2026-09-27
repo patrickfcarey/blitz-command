@@ -1,0 +1,49 @@
+{
+  "slug": "strong__r1f1t1w2__close__pass__cowboy-v-option",
+  "info": {
+    "family": "STRONG",
+    "formation": "Close",
+    "play_name": "Cowboy V Option",
+    "play_type": "pass",
+    "canonical_team": "Dallas Cowboys",
+    "canonical_img": 72,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Dallas Cowboys"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "Close",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 2,
+      "total": 6,
+      "confidence": "medium",
+      "notes": "STRONG default \u2014 variant unclear"
+    }
+  },
+  "usage": {
+    "input_tokens": 494,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 186
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.69,
+  "response_text": "```json\n{\n  \"concept\": \"option_route\",\n  \"concepts\": [\"option_route\"],\n  \"routes\": {\n    \"WR_X\": \"option\",\n    \"WR_Z\": \"option\",\n    \"TE_L\": \"block_release\",\n    \"FB\": \"swing\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Cowboy V Option: two-receiver option concept on right side (WR_Z red arrow primary, WR_X yellow option). TE_L blocks then releases. FB chips/swings. Left TE missing from visible diagram \u2014 may be off-screen or formation adjusted. R1 button glyph visible on WR_Z.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "option_route",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\boption\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

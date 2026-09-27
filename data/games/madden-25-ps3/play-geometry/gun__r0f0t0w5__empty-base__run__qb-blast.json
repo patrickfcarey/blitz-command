@@ -1,0 +1,58 @@
+{
+  "slug": "gun__r0f0t0w5__empty-base__run__qb-blast",
+  "info": {
+    "family": "GUN",
+    "formation": "Empty Base",
+    "play_name": "QB Blast",
+    "play_type": "run",
+    "canonical_team": "Carolina Panthers",
+    "canonical_img": 130,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Carolina Panthers"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Empty Base",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Empty \u2014 5-wide, no RB, no FB"
+    }
+  },
+  "usage": {
+    "input_tokens": 583,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 63
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 62.86,
+  "response_text": "```json\n{\n  \"concept\": \"iso_blast\",\n  \"concepts\": [\"iso_blast\"],\n  \"routes\": {},\n  \"ball_carrier\": \"QB straight\",\n  \"primary_target\": null,\n  \"notes\": \"\"\n}\n```",
+  "py_hints": {
+    "target_gap": "straight",
+    "c_xy": [
+      1553,
+      615
+    ],
+    "arrow_los_crossing_xy": [
+      1588,
+      615
+    ],
+    "dx_from_c": 35,
+    "ol_spacing": 133
+  },
+  "py_concept": {
+    "concept": "iso_blast",
+    "concept_family": "run",
+    "blockers_implicit": true,
+    "matched_pattern": "\\bblast\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

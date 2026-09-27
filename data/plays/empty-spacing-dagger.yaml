@@ -1,0 +1,169 @@
+play_id: empty-spacing-dagger
+name: Spacing / Dagger
+aliases:
+  - Spacing-Dagger
+  - Empty Rhythm-and-Shot
+
+formation: empty
+play_type: pass
+ball_carrier: SLOT-R
+primary_read: SLOT-R
+secondary_read: TE
+checkdown: Z
+
+motions: []
+
+# Multi-concept composition (Erhardt-Perkins model): the right three receivers
+# run a Spacing concept (the rhythm work); the left two run a Dagger — a deep
+# corner with an underneath outlet (the shot). The QB declares pre-snap:
+# Spacing vs a soft zone, Dagger if a safety sits the middle and the corner is
+# beatable up the sideline.
+concepts:
+  - concept_ref: spacing
+    concept_type: pass
+    players: [TE, SLOT-R, Z]
+    field_area: right
+    is_primary: true
+    notes: "Spacing to the right — TE / SLOT-R / Z settle at staggered widths underneath. The QB's first work vs zone."
+  - concept_ref: dagger
+    concept_type: pass
+    players: [X, SLOT-L]
+    field_area: left
+    is_primary: false
+    notes: "Dagger to the left — X on the deep corner, SLOT-L the underneath outlet. The shot side vs a safety that squats the middle."
+
+assignments:
+  - player: LT
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: LG
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: C
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: RG
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: RT
+    role: pass_block
+    blocking_scheme: man-protection
+  - player: TE
+    role: route
+    route_name: snag
+    depth_yd: 5
+    notes: "Spacing — inside settle: find the soft spot at 5 yards over the ball."
+  - player: SLOT-R
+    role: route
+    route_name: hitch
+    depth_yd: 6
+    is_primary: true
+    notes: "Spacing — middle settle at 6 yards. Primary read in the field-side flood."
+  - player: Z
+    role: route
+    route_name: out
+    depth_yd: 6
+    notes: "Spacing — outside settle / speed-out at 6 yards, widening the flood."
+  - player: X
+    role: route
+    route_name: corner
+    depth_yd: 18
+    notes: "Dagger — the deep corner attacking the sideline behind the rolled corner. The shot."
+  - player: SLOT-L
+    role: route
+    route_name: in
+    depth_yd: 6
+    notes: "Dagger — the underneath in-cut, the safety-valve outlet under the corner route."
+  - player: QB
+    role: ball_carrier
+    path: [[0, 0], [0, -1], [0, -2]]
+    notes: |
+      Quick drop from the empty gun set. Pre-snap, count the right-side
+      underneath: if it is light, work Spacing on rhythm. If a safety sits
+      the middle and the left corner is beatable up the sideline, flip to
+      the Dagger — X corner with SLOT-L as the outlet.
+
+strengths:
+  - Two complete concepts — Spacing as the rhythm chain-mover, Dagger as the shot
+  - Spacing floods the underneath zones with more bodies than the defense can match
+  - Dagger gives the play an explosive answer the all-short Spacing lacks
+  - Empty five-wide forces the defense to declare its coverage pre-snap
+  - SLOT-L underneath cut is a built-in outlet if the corner route is covered
+
+weaknesses:
+  - Empty means five-man protection — no back to help, the ball must come out fast
+  - No run threat; the defense can play pure coverage
+  - The Dagger corner is a longer-developing route — risky behind five-man protection
+  - QB must read coverage cleanly pre-snap to pick the right side
+  - Vulnerable to disciplined pattern-match that does not over-rotate
+
+best_vs_defense:
+  - cover-3 (Spacing floods the underneath; Dagger corner attacks the deep third)
+  - zone-blitz (quick Spacing rhythm beats the pressure)
+  - cover-1 (Dagger corner wins one-on-one up the sideline)
+  - any defense that declares coverage pre-snap to empty
+
+worst_vs_defense:
+  - pattern-match quarters that stays disciplined and matches the Spacing flood
+  - cover-2 with a deep half-safety capping the Dagger corner
+  - cover-0 pressure with a free rusher beating the five-man protection
+  - any defense content to tackle the short Spacing completion
+
+defensive_counters:
+  - counter_id: field-bracket
+    pre_snap_look: "Two-high shell rotated toward the field — an extra underneath defender bracketing the field-side trips"
+    qb_key: "Check the field-side underneath count — the defense has bodies to match all three settle routes"
+    read_category: safety-shell
+    why: "Spacing needs more receivers than the defense has short defenders; a field-rotated bracket matches the flood and removes the soft spot."
+    typical_against: ["cover-2 field roll", "quarters with a field bracket"]
+  - counter_id: dagger-half-safety
+    pre_snap_look: "Two-high shell with the left-side safety aligned deep and outside, capping the boundary"
+    qb_key: "Check the left-side safety — deep and wide, sitting over the top of the corner route"
+    read_category: safety-shell
+    why: "A deep, outside-shaded half-safety takes away the Dagger corner, leaving only the short underneath outlet on the shot side."
+    typical_against: ["cover-2", "quarters with a capped boundary"]
+  - counter_id: empty-zero-pressure
+    pre_snap_look: "Defenders walked up over every interior gap with a single-high shell — more rushers than the five-man protection can block"
+    qb_key: "Count the rush vs the five blockers — the box shows a free runner"
+    read_category: box-count
+    why: "Empty has only five blockers; a six-plus interior pressure gets a free runner home before either concept's rhythm throw."
+    typical_against: ["cover-0 / cover-1 pressure", "empty zero blitz"]
+
+common_uses:
+  - 3rd-and-medium chain-mover (Spacing) with a shot built in (Dagger)
+  - 1st-and-10 rhythm throw vs a zone tendency
+  - Two-minute / hurry-up
+  - Anytime the defense over-rotates to the field and leaves the boundary single
+
+philosophy: air-raid
+philosophy_ref: air-raid
+
+era: "Modern — pairing a Spacing rhythm concept with a Dagger shot is a staple of air-raid empty packages, built on the Erhardt-Perkins package-of-concepts model."
+
+famous_examples:
+  - "Air-raid empty packages pairing a rhythm Spacing concept with a backside shot"
+  - "Modern rhythm-and-shot empty-formation passing"
+
+tags:
+  - pass
+  - multi-concept
+  - spacing
+  - dagger
+  - empty
+  - air-raid
+  - high-school
+  - college
+  - nfl
+
+notes: |
+  Multi-concept play: rather than a single pass_concept_ref, this play
+  carries a `concepts` array — Spacing to the field (TE/SLOT-R/Z) and Dagger
+  to the boundary (X/SLOT-L). The QB declares a side pre-snap; Spacing is the
+  rhythm chain-mover, Dagger is the shot. Erhardt-Perkins model: a play is a
+  package of concepts, each occupying part of the formation.
+
+  Mirror to empty-left by flipping all coordinates.
+
+verification_status: unverified
+source_notes:
+  - "Authored as a multi-concept play using the `concepts` schema field. Pairs Spacing (data/concepts/pass-concepts/spacing.yaml) on the field side with Dagger (data/concepts/pass-concepts/dagger.yaml) on the boundary, in the Erhardt-Perkins two-concepts-in-one-playcall style."

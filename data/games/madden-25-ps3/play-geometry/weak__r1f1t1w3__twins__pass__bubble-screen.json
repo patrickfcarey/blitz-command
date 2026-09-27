@@ -1,0 +1,51 @@
+{
+  "slug": "weak__r1f1t1w3__twins__pass__bubble-screen",
+  "info": {
+    "family": "WEAK",
+    "formation": "Twins",
+    "play_name": "Bubble Screen",
+    "play_type": "pass",
+    "canonical_team": "Carolina Panthers",
+    "canonical_img": 53,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Carolina Panthers",
+      "Houston Texans",
+      "Oakland Raiders"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "WEAK",
+      "formation": "Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 1,
+      "WR": 3,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 490,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 182
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.39,
+  "response_text": "```json\n{\n  \"concept\": \"bubble_screen\",\n  \"concepts\": [\"bubble_screen\"],\n  \"routes\": {\n    \"WR_X\": \"bubble\",\n    \"WR_Z\": \"block\",\n    \"WR_SLOT_L\": \"block\",\n    \"TE_L\": \"block\",\n    \"FB\": \"block\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Bubble screen with WR_X receiving outside the numbers to the left. WR_Z (red circle button) trails as primary receiver option. Blocking scheme set up tight with multiple receivers and FB aligned to support the screen development.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "bubble_screen",
+    "concept_family": "screen",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bbubble screen\\b|\\bwr bubble\\b|\\bbubble\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

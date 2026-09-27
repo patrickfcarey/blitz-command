@@ -1,0 +1,51 @@
+{
+  "slug": "strong__r1f1t2w2__tight-pair__pass__wr-fade",
+  "info": {
+    "family": "STRONG",
+    "formation": "Tight Pair",
+    "play_name": "WR Fade",
+    "play_type": "pass",
+    "canonical_team": "Kansas City Chiefs",
+    "canonical_img": 46,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Kansas City Chiefs",
+      "New York Jets",
+      "Tampa Bay Buccaneers"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "Tight Pair",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 494,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 220
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.13,
+  "response_text": "```json\n{\n  \"concept\": \"fade\",\n  \"concepts\": [\"fade\"],\n  \"routes\": {\n    \"WR_X\": \"fade\",\n    \"WR_Z\": \"fade\",\n    \"TE_L\": \"block\",\n    \"TE_R\": \"block\",\n    \"FB\": \"block\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Two-WR fade concept on a STRONG Tight Pair formation. WR_X (purple \u25a1) runs fade to the left (red arrow). WR_Z (blue \u2297) runs fade to the right (yellow arrow). TE_R (R1 button) appears to be a receiver option but runs block based on diagram. Both TEs and FB engaged in blocking. HB positioned for check-release.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "fade",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bfade\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

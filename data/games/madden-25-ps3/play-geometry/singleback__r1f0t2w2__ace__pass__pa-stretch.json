@@ -1,0 +1,61 @@
+{
+  "slug": "singleback__r1f0t2w2__ace__pass__pa-stretch",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Ace",
+    "play_name": "PA Stretch",
+    "play_type": "pass",
+    "canonical_team": "Arizona Cardinals",
+    "canonical_img": 10,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Arizona Cardinals",
+      "Balanced",
+      "Green Bay Packers",
+      "Jacksonville Jaguars",
+      "New York Giants",
+      "Pass Balanced",
+      "Pittsburgh Steelers",
+      "Run Balanced",
+      "Run Heavy",
+      "Run N Gun",
+      "San Diego Chargers",
+      "Washington Redskins",
+      "West Coast"
+    ],
+    "owner_count": 13,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Ace",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Ace family \u2014 2 TE 2 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 496,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 207
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.81,
+  "response_text": "```json\n{\n  \"concept\": \"outside_zone\",\n  \"concepts\": [\"outside_zone\", \"pa_pass\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"TE_R\": \"seam\",\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"comeback\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"Play-action pass disguised as stretch run. TE_R (Circle button, red route) is primary seam target. WR_X (Square button) runs corner on left side. WR_Z (X button) runs comeback. HB releases to flat on check. OL/TEs sell the run initially then release downfield or into pass protection.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "outside_zone",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bhb stretch\\b|\\bstretch\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r1f0t1w3__doubles-wk__pass__slot-deep-post",
+  "info": {
+    "family": "GUN",
+    "formation": "Doubles Wk",
+    "play_name": "Slot Deep Post",
+    "play_type": "pass",
+    "canonical_team": "Tennessee Titans",
+    "canonical_img": 108,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Tennessee Titans"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Doubles Wk",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "high",
+      "notes": "GUN Doubles \u2014 1 TE 3 WR (slot variant)"
+    }
+  },
+  "usage": {
+    "input_tokens": 499,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 218
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.25,
+  "response_text": "```json\n{\n  \"concept\": \"deep_post\",\n  \"concepts\": [\"deep_post\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"deep_post\",\n    \"WR_SLOT_L\": \"flat\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"GUN Doubles Wk formation with 1 RB, 0 FB, 1 TE, 3 WR. Slot receiver (WR_Z, Triangle button) runs the deep post concept with red arrow. X receiver runs vertical clearout. Slot_L and TE_R run intermediate routes. HB in shotgun offset to right side with Circle-button checkdown option.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "deep_post",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bdeep post\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

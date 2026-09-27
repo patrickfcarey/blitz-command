@@ -1,0 +1,77 @@
+{
+  "slug": "i-form__r1f1t2w2__tight-pair__pass__x-slant",
+  "info": {
+    "family": "I-FORM",
+    "formation": "Tight Pair",
+    "play_name": "X Slant",
+    "play_type": "pass",
+    "canonical_team": "Arizona Cardinals",
+    "canonical_img": 60,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Arizona Cardinals",
+      "Atlanta Falcons",
+      "Buffalo Bills",
+      "Carolina Panthers",
+      "Cincinnati Bengals",
+      "Cleveland Browns",
+      "Dallas Cowboys",
+      "Denver Broncos",
+      "Detroit Lions",
+      "Dick Vermeil",
+      "Green Bay Packers",
+      "Houston Texans",
+      "Indianapolis Colts",
+      "Jacksonville Jaguars",
+      "Joe Gibbs",
+      "Minnesota Vikings",
+      "New England Patriots",
+      "New York Giants",
+      "Oakland Raiders",
+      "Pass Balanced",
+      "Philadelphia Eagles",
+      "Pittsburgh Steelers",
+      "Run Balanced",
+      "Run Heavy",
+      "San Francisco 49ers",
+      "St. Louis Rams",
+      "Tampa Bay Buccaneers",
+      "Tennessee Titans",
+      "West Coast"
+    ],
+    "owner_count": 29,
+    "expected_personnel": {
+      "family": "I-FORM",
+      "formation": "Tight Pair",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": "I-Form Tight/Twin-TE \u2014 2 TE"
+    }
+  },
+  "usage": {
+    "input_tokens": 524,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 223
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.77,
+  "response_text": "```json\n{\n  \"concept\": \"slants\",\n  \"concepts\": [\"slants\"],\n  \"routes\": {\n    \"WR_X\": \"slant\",\n    \"WR_Z\": \"slant\",\n    \"TE_L\": \"block\",\n    \"TE_R\": \"block\",\n    \"HB\": \"check_release\",\n    \"FB\": \"block\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Red arrow from purple \u25a1 (WR_X) runs slant upfield; yellow arrows from \u25b3 (WR_Z) and \u2297 (likely TE_L or slot) indicate additional slant routes. Formation shows I-Form with 2 TEs inline (TE_L and TE_R) plus 2 WRs. R1 label visible on one backfield circle.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "slants",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bslants?\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

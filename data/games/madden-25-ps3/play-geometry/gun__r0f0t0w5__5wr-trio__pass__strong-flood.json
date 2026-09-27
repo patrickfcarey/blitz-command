@@ -1,0 +1,49 @@
+{
+  "slug": "gun__r0f0t0w5__5wr-trio__pass__strong-flood",
+  "info": {
+    "family": "GUN",
+    "formation": "5WR Trio",
+    "play_name": "Strong Flood",
+    "play_type": "pass",
+    "canonical_team": "Chicago Bears",
+    "canonical_img": 137,
+    "canonical_panel": 0,
+    "owner_teams": [
+      "Chicago Bears"
+    ],
+    "owner_count": 1,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "5WR Trio",
+      "QB": 1,
+      "RB": 0,
+      "FB": 0,
+      "TE": 0,
+      "WR": 5,
+      "total": 6,
+      "confidence": "high",
+      "notes": "5-WR set, no RB"
+    }
+  },
+  "usage": {
+    "input_tokens": 496,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 214
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 4.15,
+  "response_text": "```json\n{\n  \"concept\": \"flood\",\n  \"concepts\": [\"flood\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"WR_SLOT_L\": \"dig\",\n    \"WR_SLOT_R\": \"flat\",\n    \"WR_FLANKER\": \"comeback\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_Z\",\n  \"notes\": \"Strong Flood with 5 WRs spread wide. Right side (strong side) shows 3-level flood structure: WR_Z streaking deep, WR_SLOT_R running flat underneath, and dig route at intermediate depth. Left side shows comeback/crosser. Red arrow indicates primary target is the corner route (WR_Z). Empty backfield (QB only in shotgun).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "flood",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bflood\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

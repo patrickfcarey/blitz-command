@@ -1,0 +1,53 @@
+{
+  "slug": "strong__r1f1t2w2__tight-pair__pass__pa-mtn-power",
+  "info": {
+    "family": "STRONG",
+    "formation": "Tight Pair",
+    "play_name": "PA Mtn Power",
+    "play_type": "pass",
+    "canonical_team": "Chicago Bears",
+    "canonical_img": 74,
+    "canonical_panel": 1,
+    "owner_teams": [
+      "Chicago Bears",
+      "Kansas City Chiefs",
+      "Miami Dolphins",
+      "New York Jets",
+      "Tampa Bay Buccaneers"
+    ],
+    "owner_count": 5,
+    "expected_personnel": {
+      "family": "STRONG",
+      "formation": "Tight Pair",
+      "QB": 1,
+      "RB": 1,
+      "FB": 1,
+      "TE": 2,
+      "WR": 2,
+      "total": 7,
+      "confidence": "high",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 526,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 221
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 3.45,
+  "response_text": "```json\n{\n  \"concept\": \"pa_mtn_power\",\n  \"concepts\": [\"pa_mtn_power\"],\n  \"routes\": {\n    \"TE_L\": \"block\",\n    \"TE_R\": \"seam\",\n    \"WR_X\": \"corner\",\n    \"WR_Z\": \"streak\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"Play-action pass off power run look. Red arrow (primary) targets TE_R running seam. Yellow arrow shows WR_Z streak to sideline. Strong formation with 2 TEs (TE_L blocks, TE_R runs releasing upfield), 2 WRs split wide, 1 HB in backfield for checkdown. TE_R receiving the red primary-read arrow.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "power_run",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bpower\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

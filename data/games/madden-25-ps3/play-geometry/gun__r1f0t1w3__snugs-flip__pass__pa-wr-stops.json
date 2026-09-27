@@ -1,0 +1,50 @@
+{
+  "slug": "gun__r1f0t1w3__snugs-flip__pass__pa-wr-stops",
+  "info": {
+    "family": "GUN",
+    "formation": "Snugs Flip",
+    "play_name": "PA WR Stops",
+    "play_type": "pass",
+    "canonical_team": "Cleveland Browns",
+    "canonical_img": 110,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Cleveland Browns",
+      "Dallas Cowboys"
+    ],
+    "owner_count": 2,
+    "expected_personnel": {
+      "family": "GUN",
+      "formation": "Snugs Flip",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 490,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 169
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.25,
+  "response_text": "```json\n{\n  \"concept\": \"pa_wr_stops\",\n  \"concepts\": [\"pa_wr_stops\"],\n  \"routes\": {\n    \"WR_X\": \"stop\",\n    \"WR_Z\": \"stop\",\n    \"WR_SLOT_L\": \"slant\",\n    \"TE_R\": \"seam\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Play-action pass with WR stop routes on both outside receivers. Slot WR runs slant. TE seam release. HB available for checkdown.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "unknown",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": null,
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "singleback__r1f0t1w3__wing-trio__pass__y-shallow-cross",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Wing Trio",
+    "play_name": "Y Shallow Cross",
+    "play_type": "pass",
+    "canonical_team": "Houston Texans",
+    "canonical_img": 52,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Houston Texans",
+      "Oakland Raiders",
+      "Run Balanced"
+    ],
+    "owner_count": 3,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Wing Trio",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 1,
+      "WR": 3,
+      "total": 6,
+      "confidence": "medium",
+      "notes": ""
+    }
+  },
+  "usage": {
+    "input_tokens": 500,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 245
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.93,
+  "response_text": "```json\n{\n  \"concept\": \"y_concept\",\n  \"concepts\": [\"y_concept\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"corner\",\n    \"TE_R\": \"shallow_cross\",\n    \"HB\": \"check_release\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"TE_R\",\n  \"notes\": \"TE_R (\u2297 blue X-button glyph) runs the shallow cross route (red arrow, ~5 yds depth). WR_X (\u25a1 purple Square-button) runs vertical streak. WR_Z (\u2299 red Circle-button) runs corner route. HB (\u25b3 green Triangle-button) in backfield, released for checkdown. Formation is Singleback Wing Trio with 1 RB, 0 FB, 1 TE, 3 WR as expected (r1f0t1w3).\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "y_concept",
+    "concept_family": "pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\by[- ]?(cross|sail|stick|corner|trail|spot|drive|shallow)\\b",
+    "is_pa": false,
+    "is_boot_or_roll": false
+  }
+}

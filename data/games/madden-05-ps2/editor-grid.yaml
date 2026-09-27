@@ -1,0 +1,50 @@
+game_id: madden-05-ps2
+name: "Madden NFL 2005"
+release_year: 2004
+developer: "EA Tiburon"
+publisher: "EA Sports"
+platform: ps2
+era: ps2
+custom_play_support: true
+custom_formation_support: false
+grid:
+  width: 21
+  height: 7
+  origin:
+    x: 10
+    y: 5
+scale:
+  x_yards_per_cell: 1.667
+  y_yards_per_cell: 2.0
+snap_to_cells: true
+limits:
+  max_route_depth_yd: 20
+  max_player_split_yd: 15
+  max_backfield_depth_yd: 7.5
+  allowed_motion:
+    - short
+    - long
+    - across
+playbook_caps:
+  max_plays_total: 75
+engine_quirks:
+  - "Grid dimensions (21 wide x 7 tall) confirmed by user measurement."
+  - "Y-axis scale (2.0 yd/cell) derived from QB depth mapping."
+  - "X-axis scale (1.667 yd/cell) derived from WR split measurement (15 yd split = 9 cells)."
+  - "Origin at row 5, column 10 (center of field, LOS)."
+  - "HB position discrepancy: actual Madden 05 default singleback HB may sit deeper than canonical y=-6 (possibly y=-8). Pending clarification."
+default_playbooks:
+  - "Bill Belichick (Patriots)"
+  - "Andy Reid (Eagles)"
+  - "Tony Dungy (Colts)"
+  - "Jeff Fisher (Titans)"
+  - "Tom Coughlin (Jaguars)"
+verification_status: verified
+source_notes:
+  - "Grid dimensions (21×7) — user-verified 2026-04-29 from direct in-game measurement."
+  - "Y-scale (2.0 yd/cell) — derived 2026-04-29 from QB depth mapping (universal y=-2 maps to row 4)."
+  - "X-scale (1.667 yd/cell) — derived 2026-04-29 from WR split measurement (15 yd = 9 cells)."
+  - "Origin row y=5 — LOS placement with 5 backfield rows (0–4) and 1 cell downfield (row 6)."
+  - "Origin column x=10 — center of 21-wide grid with ball centered."
+  - "max_route_depth_yd: 20 — user-confirmed minimum. Actual ceiling may be higher."
+  - "Limits (max_player_split, max_backfield_depth) — INFERRED estimates pending further in-editor testing."

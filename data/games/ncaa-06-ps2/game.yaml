@@ -1,0 +1,48 @@
+game_id: ncaa-06-ps2
+title: NCAA Football 06
+franchise: ncaa
+platform: PS2
+year: 2005
+release_date: "2005-07-12"
+developer: EA Tiburon
+publisher: EA Sports
+
+# Every entry below this line needs in-game verification.
+# Follow docs/game-editor-measurement-protocol.md and report back.
+
+editors:
+  custom_play:
+    status: unknown
+    notes: "TO MEASURE: does NCAA 06 have a draw-your-own-routes editor, or only play-selection-based playbook editing?"
+    verification: inferred
+  custom_formation:
+    status: unknown
+    notes: "TO MEASURE: can players be repositioned within formations and saved?"
+    verification: inferred
+  custom_playbook:
+    status: unknown
+    notes: "TO MEASURE: era convention suggests yes, but confirm cap and scope."
+    verification: inferred
+  custom_roster:
+    status: unknown
+    notes: "TO MEASURE: extent of name/attribute editing."
+    verification: inferred
+  custom_team:
+    status: unknown
+    notes: "TO MEASURE: NCAA 06 advertised Create-A-School. Confirm extent (logos, uniforms, mascot, conference assignment)."
+    verification: inferred
+
+# Populate per Part 4 of the measurement protocol.
+limits: {}
+
+# Populate per Part 6 of the measurement protocol.
+ai_quirks: []
+
+# Populate per Part 6 of the measurement protocol.
+known_limitations: []
+
+verification_status: inferred
+source_notes:
+  - "title, year, release_date, developer, publisher: standard release info, high confidence."
+  - "All editors entries: UNVERIFIED — placeholder pending hands-on testing per docs/game-editor-measurement-protocol.md."
+  - "Race for the Heisman career mode and Create-A-School were headline features of this title (era-appropriate marketing)."

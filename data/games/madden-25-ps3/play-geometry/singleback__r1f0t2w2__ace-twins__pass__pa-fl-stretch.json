@@ -1,0 +1,60 @@
+{
+  "slug": "singleback__r1f0t2w2__ace-twins__pass__pa-fl-stretch",
+  "info": {
+    "family": "SINGLEBACK",
+    "formation": "Ace Twins",
+    "play_name": "PA FL Stretch",
+    "play_type": "pass",
+    "canonical_team": "Arizona Cardinals",
+    "canonical_img": 21,
+    "canonical_panel": 2,
+    "owner_teams": [
+      "Arizona Cardinals",
+      "Dick Vermeil",
+      "Green Bay Packers",
+      "Houston Texans",
+      "Indianapolis Colts",
+      "Jacksonville Jaguars",
+      "Mike Ditka",
+      "Minnesota Vikings",
+      "Pass Balanced",
+      "Run Balanced",
+      "Run Heavy",
+      "Run N Gun"
+    ],
+    "owner_count": 12,
+    "expected_personnel": {
+      "family": "SINGLEBACK",
+      "formation": "Ace Twins",
+      "QB": 1,
+      "RB": 1,
+      "FB": 0,
+      "TE": 2,
+      "WR": 2,
+      "total": 6,
+      "confidence": "high",
+      "notes": "Singleback Ace family \u2014 2 TE 2 WR"
+    }
+  },
+  "usage": {
+    "input_tokens": 503,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 5283,
+    "output_tokens": 199
+  },
+  "stop_reason": "end_turn",
+  "duration_s": 2.55,
+  "response_text": "```json\n{\n  \"concept\": \"outside_zone\",\n  \"concepts\": [\"outside_zone\", \"pa_pass\"],\n  \"routes\": {\n    \"WR_X\": \"streak\",\n    \"WR_Z\": \"streak\",\n    \"TE_L\": \"flat\",\n    \"TE_R\": \"corner\",\n    \"HB\": \"checkdown\"\n  },\n  \"ball_carrier\": null,\n  \"primary_target\": \"WR_X\",\n  \"notes\": \"Play-action with two TEs and two WRs. Red arrow on X WR (streak). Yellow route arrows on Z WR (streak), TE_L (flat), and TE_R (corner). Dashed yellow route on TE_R indicates option/release. HB remains in backfield as checkdown.\"\n}\n```",
+  "py_hints": {
+    "target_gap": null,
+    "skipped": "play_type=pass, not a run"
+  },
+  "py_concept": {
+    "concept": "outside_zone",
+    "concept_family": "pa_pass",
+    "blockers_implicit": false,
+    "matched_pattern": "\\bhb stretch\\b|\\bstretch\\b",
+    "is_pa": true,
+    "is_boot_or_roll": false
+  }
+}
