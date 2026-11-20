@@ -1,120 +1,29 @@
 #!/usr/bin/env python3
-"""Translate a formation from universal football coordinates into a game's editor grid.
-
-Universal coords are yards from the ball at the line of scrimmage; see
-docs/coordinate-systems.md. Each game has an editor-grid profile under
-data/games/<game-id>/editor-grid.yaml that describes how to map them.
-"""
-from __future__ import annotations
-
-import argparse
-import json
-import sys
-from pathlib import Path
-
-import yaml
-from jsonschema import ValidationError, validate
-
-REPO_ROOT = Path(__file__).resolve().parents[2]
-SCHEMA_DIR = REPO_ROOT / "schemas"
-
-
-def load(path: Path) -> dict:
-    with open(path) as f:
-        return yaml.safe_load(f)
-
-
-def translate_point(x: float, y: float, profile: dict) -> tuple[float, float]:
-    origin = profile["grid"]["origin"]
-    scale = profile["scale"]
-    return (
-        origin["x"] + x / scale["x_yards_per_cell"],
-        origin["y"] + y / scale["y_yards_per_cell"],
-    )
-
-
-def player_warnings(player: dict, profile: dict) -> list[str]:
-    warnings: list[str] = []
-    limits = profile.get("limits") or {}
-    grid = profile["grid"]
-    gx, gy = translate_point(player["x"], player["y"], profile)
-
-    if not 0 <= gx <= grid["width"]:
-        warnings.append(f"{player['label']}: grid x={gx:.2f} outside [0, {grid['width']}]")
-    if not 0 <= gy <= grid["height"]:
-        warnings.append(f"{player['label']}: grid y={gy:.2f} outside [0, {grid['height']}]")
-
-    max_split = limits.get("max_player_split_yd")
-    if max_split is not None and abs(player["x"]) > max_split:
-        warnings.append(
-            f"{player['label']}: split |x|={abs(player['x']):.2f} > editor max ({max_split})"
-        )
-
-    max_depth = limits.get("max_backfield_depth_yd")
-    if max_depth is not None and player["y"] < -max_depth:
-        warnings.append(
-            f"{player['label']}: backfield depth {abs(player['y']):.2f} > editor max ({max_depth})"
-        )
-
-    return warnings
-
-
-def main() -> int:
-    parser = argparse.ArgumentParser(
-        description=__doc__,
-        formatter_class=argparse.RawDescriptionHelpFormatter,
-    )
-    parser.add_argument("formation", type=Path, help="Formation YAML (universal coords).")
-    parser.add_argument("profile", type=Path, help="Game editor-grid profile (YAML or JSON).")
-    parser.add_argument(
-        "--no-validate",
-        action="store_true",
-        help="Skip JSON Schema validation of inputs.",
-    )
-    args = parser.parse_args()
-
-    formation = load(args.formation)
-    profile = load(args.profile)
-
-    if not args.no_validate:
-        try:
-            with open(SCHEMA_DIR / "formation.schema.json") as f:
-                validate(formation, json.load(f))
-            with open(SCHEMA_DIR / "coordinate-map.schema.json") as f:
-                validate(profile, json.load(f))
-        except ValidationError as e:
-            print(f"Schema validation failed: {e.message}", file=sys.stderr)
-            return 2
-
-    grid = profile["grid"]
-    scale = profile["scale"]
-    print(f"# {formation['name']} -> {profile['game_id']}")
-    print(
-        f"# grid {grid['width']} x {grid['height']}, "
-        f"scale {scale['x_yards_per_cell']} yd/x-cell, "
-        f"{scale['y_yards_per_cell']} yd/y-cell"
-    )
-    print()
-    print(f"{'Player':<6} {'Pos':<4} {'X(yd)':>7} {'Y(yd)':>7}    {'Grid X':>8} {'Grid Y':>8}")
-    print("-" * 52)
-
-    all_warnings: list[str] = []
-    for player in formation["players"]:
-        gx, gy = translate_point(player["x"], player["y"], profile)
-        print(
-            f"{player['label']:<6} {player['position']:<4} "
-            f"{player['x']:>7.2f} {player['y']:>7.2f}    "
-            f"{gx:>8.2f} {gy:>8.2f}"
-        )
-        all_warnings.extend(player_warnings(player, profile))
-
-    if all_warnings:
-        print("\nWARNINGS:")
-        for w in all_warnings:
-            print(f"  - {w}")
-        return 1
-    return 0
-
-
-if __name__ == "__main__":
-    sys.exit(main())
+# FLEET-TOOLS-FORWARDER: this tool's code lives in fleet-tools-index (the fleet's tools monorepo) at
+#   tools/blitz-command/tools/coordinate-translator/translate.py
+# Edit it THERE. This file runs that code in place, so every old caller of tools/coordinate-translator/translate.py keeps working.
+# Search: $FLEET_TOOLS if set (only it), else ~/github/trunk/fleet-tools-index, ~/fleet-tools-index, /turret/ai_workspace/fleet-tools-index, then ../fleet-tools-index beside this repo's checkout (from this file's real path, only when it runs as itself) and ../trunk/fleet-tools-index from there (a ~/github/worktrees worktree): the first that holds the file.
+# FLEET_FORWARDER_PROBE=1 prints the file it would run and exits 0. Written by fleet-tools-index tix.py move.
+import os as _ft_os, sys as _ft_sys
+_FT_REL = 'tools/blitz-command/tools/coordinate-translator/translate.py'
+def _ft_find(rel):
+    env = _ft_os.environ.get('FLEET_TOOLS')
+    here = None if env else globals().get('__file__')
+    here = here if here and _ft_os.path.basename(here) == 'translate.py' else None
+    up = _ft_os.path.join(_ft_os.path.dirname(_ft_os.path.realpath(here)), *['..'] * 3) if here else ''
+    roots = [env] if env else [_ft_os.path.expanduser(r) for r in ['~/github/trunk/fleet-tools-index', '~/fleet-tools-index', '/turret/ai_workspace/fleet-tools-index']]
+    roots += [] if env else [_ft_os.path.normpath(_ft_os.path.join(up, s)) for s in ['fleet-tools-index', '../trunk/fleet-tools-index'] if up]
+    for r in roots:
+        p = _ft_os.path.join(r, rel)
+        if _ft_os.path.isfile(p):
+            return p
+    _ft_sys.stderr.write('%s: FLEET-TOOLS-FORWARDER: %s is in none of %s\n  fix: git -C <checkout> pull --ff-only (an old checkout lacks the file); no checkout: git clone git@github.com:patrickfcarey/fleet-tools-index.git ~/github/trunk/fleet-tools-index (dev box; the rig: ~/fleet-tools-index; the NAS: /turret/ai_workspace/fleet-tools-index); or FLEET_TOOLS=<checkout>\n' % (globals().get('__file__', '<no __file__>'), rel, roots))
+    _ft_sys.exit(127)
+_FT_REAL = _ft_find(_FT_REL)
+if __name__ == '__main__' and _ft_os.environ.get('FLEET_FORWARDER_PROBE'):
+    print(_FT_REAL)
+    _ft_sys.exit(0)
+with open(_FT_REAL, 'rb') as _ft_f:
+    _ft_code = compile(_ft_f.read(), _FT_REAL, 'exec', dont_inherit=True)
+del _ft_f, _ft_find, _ft_os, _ft_sys
+exec(_ft_code)

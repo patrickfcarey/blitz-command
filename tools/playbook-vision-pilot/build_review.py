@@ -1,157 +1,29 @@
 #!/usr/bin/env python3
-"""Generate a markdown review file for hand-labeling 12 stratified plays.
-
-Picks 3 plays from each stratum (run_clean, run_generic, pass_named, pass_generic)
-from the 50-play pilot. For each, embeds:
-
-- The crop image (relative path so it renders in markdown viewers).
-- The model's cold-arm extraction as readable JSON.
-- A TRUTH section with checkboxes and a notes blank.
-
-Output:
-    tools/playbook-vision-pilot/review.md
-"""
-from __future__ import annotations
-import json
-import random
-import re
-from pathlib import Path
-
-REPO = Path(__file__).resolve().parents[2]
-SAMPLE_PATH = Path("/tmp/pilot-work/pilot-sample.json")
-MANIFEST_PATH = REPO / "tools/playbook-vision-pilot/dispatch-crops/_manifest.json"
-EXTRACTIONS_DIR = Path("/tmp/pilot-work/extractions")
-CROPS_DIR_REL = "./dispatch-crops"   # relative from review.md
-OUT = REPO / "tools/playbook-vision-pilot/review.md"
-SEED = 20260521
-
-
-def _parse_response_json(raw: str) -> dict | None:
-    m = re.search(r"```(?:json)?\s*(\{.*?\})\s*```", raw, re.DOTALL)
-    candidate = m.group(1) if m else raw.strip()
-    try:
-        return json.loads(candidate)
-    except json.JSONDecodeError:
-        return None
-
-
-def _pick_stratified(sample: list[dict], n_per_stratum: int = 3) -> list[dict]:
-    by_stratum: dict[str, list[dict]] = {}
-    for p in sample:
-        by_stratum.setdefault(p["stratum"], []).append(p)
-    rng = random.Random(SEED)
-    picked = []
-    for stratum in sorted(by_stratum.keys()):
-        items = by_stratum[stratum][:]
-        rng.shuffle(items)
-        picked.extend(items[:n_per_stratum])
-    return picked
-
-
-def _summarize_extraction(extracted: dict) -> str:
-    """Short bullet summary of the model's read."""
-    ol = extracted.get("offensive_line", [])
-    te = extracted.get("tight_ends", [])
-    wr = extracted.get("wide_receivers", [])
-    bf = extracted.get("backfield", [])
-    ol_offset = extracted.get("ol_offset_from_c")
-    bc = extracted.get("ball_carrier_or_primary") or {}
-    play_type = extracted.get("play_type_observed")
-    concept = extracted.get("play_concept_observed") or extracted.get("concept")
-    target_gap = bc.get("target_gap")
-    bc_desc = bc.get("description", "")[:120]
-    confidence = extracted.get("confidence")
-    lines = [
-        f"- **play_type observed:** {play_type}",
-        f"- **concept observed:** {concept}",
-        f"- **OL count:** {len(ol)} (expected 4 here — C is separate)"
-        f" — ol_offset_from_c: `{ol_offset}`",
-        f"- **TE count:** {len(te)}",
-        f"- **WR count:** {len(wr)}",
-        f"- **Backfield count:** {len(bf)}  "
-        f"({', '.join(p.get('position', '?') for p in bf)})",
-        f"- **target_gap:** `{target_gap}`",
-        f"- **ball-carrier path:** {bc_desc}",
-        f"- **confidence:** {confidence}",
-    ]
-    return "\n".join(lines)
-
-
-def main() -> None:
-    sample = json.loads(SAMPLE_PATH.read_text())
-    manifest = json.loads(MANIFEST_PATH.read_text())
-    picked = _pick_stratified(sample, n_per_stratum=3)
-
-    lines = []
-    lines.append("# Hand-labeling review — vision pilot")
-    lines.append("")
-    lines.append(f"**{len(picked)} plays** (3 per stratum). For each, "
-                 "look at the crop, compare against the model's read, and "
-                 "fill in the TRUTH section.")
-    lines.append("")
-    lines.append("**How to mark corrections:**")
-    lines.append("- Check the box if the model got that aspect right.")
-    lines.append("- Leave unchecked and write a brief note if wrong.")
-    lines.append("- Use the **Notes** blank for anything else.")
-    lines.append("")
-    lines.append("---")
-    lines.append("")
-
-    for i, play in enumerate(picked, 1):
-        play_id = play["id"]
-        info = manifest.get(play_id, {})
-        crop = f"{CROPS_DIR_REL}/{info.get('filename', 'MISSING.jpg')}"
-        ext_path = EXTRACTIONS_DIR / f"{play_id}__cold.json"
-        if not ext_path.exists():
-            print(f"  skip — missing {ext_path}")
-            continue
-        ext = json.loads(ext_path.read_text())
-        extracted = _parse_response_json(ext.get("response_text", ""))
-        if not extracted:
-            print(f"  skip — couldn't parse {ext_path}")
-            continue
-
-        lines.append(f"## Play {i}: {play['play_name']} — {play['team']}")
-        lines.append(f"*Stratum: {play['stratum']}*")
-        lines.append("")
-        lines.append(f"**Formation:** {info.get('formation', '?')}")
-        lines.append(f"**play_id:** `{play_id}`")
-        lines.append(f"**Crop:** `{info.get('filename', '?')}`")
-        lines.append("")
-        lines.append(f"![]({crop})")
-        lines.append("")
-        lines.append("### Model's read")
-        lines.append("")
-        lines.append(_summarize_extraction(extracted))
-        lines.append("")
-        lines.append("### TRUTH (edit below)")
-        lines.append("")
-        lines.append("Check each box if the model got it right; leave "
-                     "unchecked + note if wrong:")
-        lines.append("")
-        lines.append("- [ ] play_type correct")
-        lines.append("- [ ] OL count = 4 (excluding C)")
-        lines.append("- [ ] TE count correct  ← expected count if wrong: __")
-        lines.append("- [ ] WR count correct  ← expected count if wrong: __")
-        lines.append("- [ ] Backfield correct  ← expected positions if wrong: __")
-        lines.append("- [ ] ol_offset_from_c correct (at vs below)")
-        lines.append("- [ ] target_gap correct (for runs)  "
-                     "← correct gap if wrong: __")
-        lines.append("- [ ] Play concept reasonable")
-        lines.append("")
-        lines.append("**Notes:**")
-        lines.append("")
-        lines.append("```")
-        lines.append("(write here)")
-        lines.append("```")
-        lines.append("")
-        lines.append("---")
-        lines.append("")
-
-    OUT.write_text("\n".join(lines))
-    print(f"wrote {OUT}")
-    print(f"  {len(picked)} plays embedded")
-
-
-if __name__ == "__main__":
-    main()
+# FLEET-TOOLS-FORWARDER: this tool's code lives in fleet-tools-index (the fleet's tools monorepo) at
+#   tools/blitz-command/tools/playbook-vision-pilot/build_review.py
+# Edit it THERE. This file runs that code in place, so every old caller of tools/playbook-vision-pilot/build_review.py keeps working.
+# Search: $FLEET_TOOLS if set (only it), else ~/github/trunk/fleet-tools-index, ~/fleet-tools-index, /turret/ai_workspace/fleet-tools-index, then ../fleet-tools-index beside this repo's checkout (from this file's real path, only when it runs as itself) and ../trunk/fleet-tools-index from there (a ~/github/worktrees worktree): the first that holds the file.
+# FLEET_FORWARDER_PROBE=1 prints the file it would run and exits 0. Written by fleet-tools-index tix.py move.
+import os as _ft_os, sys as _ft_sys
+_FT_REL = 'tools/blitz-command/tools/playbook-vision-pilot/build_review.py'
+def _ft_find(rel):
+    env = _ft_os.environ.get('FLEET_TOOLS')
+    here = None if env else globals().get('__file__')
+    here = here if here and _ft_os.path.basename(here) == 'build_review.py' else None
+    up = _ft_os.path.join(_ft_os.path.dirname(_ft_os.path.realpath(here)), *['..'] * 3) if here else ''
+    roots = [env] if env else [_ft_os.path.expanduser(r) for r in ['~/github/trunk/fleet-tools-index', '~/fleet-tools-index', '/turret/ai_workspace/fleet-tools-index']]
+    roots += [] if env else [_ft_os.path.normpath(_ft_os.path.join(up, s)) for s in ['fleet-tools-index', '../trunk/fleet-tools-index'] if up]
+    for r in roots:
+        p = _ft_os.path.join(r, rel)
+        if _ft_os.path.isfile(p):
+            return p
+    _ft_sys.stderr.write('%s: FLEET-TOOLS-FORWARDER: %s is in none of %s\n  fix: git -C <checkout> pull --ff-only (an old checkout lacks the file); no checkout: git clone git@github.com:patrickfcarey/fleet-tools-index.git ~/github/trunk/fleet-tools-index (dev box; the rig: ~/fleet-tools-index; the NAS: /turret/ai_workspace/fleet-tools-index); or FLEET_TOOLS=<checkout>\n' % (globals().get('__file__', '<no __file__>'), rel, roots))
+    _ft_sys.exit(127)
+_FT_REAL = _ft_find(_FT_REL)
+if __name__ == '__main__' and _ft_os.environ.get('FLEET_FORWARDER_PROBE'):
+    print(_FT_REAL)
+    _ft_sys.exit(0)
+with open(_FT_REAL, 'rb') as _ft_f:
+    _ft_code = compile(_ft_f.read(), _FT_REAL, 'exec', dont_inherit=True)
+del _ft_f, _ft_find, _ft_os, _ft_sys
+exec(_ft_code)

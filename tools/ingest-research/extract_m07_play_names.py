@@ -1,117 +1,29 @@
 #!/usr/bin/env python3
-"""Attach play names to the Madden NFL 07 catalog from per-team docx vision.
-
-Each docx is one team's playbook; vision subagents walk the screenshot
-sequence and emit a per-team cache file:
-
-    .docx-cache-m07-plays/<Team_With_Underscores>.json
-        {"team": "Arizona Cardinals",
-         "formations": [
-             {"name": "Singleback-Big",
-              "plays": [{"name": "Fitzgerald Option", "type": null}, ...]},
-             ...
-         ]}
-
-This script reads them, matches formations into the catalog by tolerant
-name comparison (M07 uses hyphens — "Singleback-Big" vs the catalog's
-"Singleback Big"), and writes the result back. Reuses the NCAA 14 writer
-which preserves every field and always quotes ``team_id``.
-"""
-from __future__ import annotations
-
-import argparse
-import json
-import re
-import sys
-from pathlib import Path
-
-import yaml
-
-from extract_ncaa14_play_names import _write_catalog  # type: ignore
-
-REPO_ROOT = Path(__file__).resolve().parents[2]
-CATALOG = REPO_ROOT / "data" / "games" / "madden-07-ps2" / "team-playbooks.yaml"
-
-
-def _normalize_formation_name(name: str) -> str:
-    """Strip hyphens/whitespace/case and collapse Gun↔Shotgun.
-
-    The xlsx-sourced catalog abbreviates "Shotgun" as "Gun"; the in-game
-    screens spell it out. Without this normalization roughly a third of
-    every team's formations would silently miss.
-    """
-    out = re.sub(r"[\s\-_]+", "", name).lower()
-    if out.startswith("shotgun"):
-        out = "gun" + out[len("shotgun"):]
-    return out
-
-
-def _load_cache(cache_dir: Path) -> dict[str, dict[str, list[dict]]]:
-    """Map team-name -> {normalized-formation-name -> [plays]}."""
-    by_team: dict[str, dict[str, list[dict]]] = {}
-    for cache_file in sorted(cache_dir.glob("*.json")):
-        data = json.loads(cache_file.read_text())
-        team = (data.get("team") or "").strip()
-        if not team:
-            continue
-        forms: dict[str, list[dict]] = {}
-        for formation in data.get("formations", []):
-            name = (formation.get("name") or "").strip()
-            if not name:
-                continue
-            plays: list[dict] = []
-            seen: set[str] = set()
-            for play in formation.get("plays", []):
-                pname = (play.get("name") or "").strip()
-                if not pname or pname.lower() in seen:
-                    continue
-                seen.add(pname.lower())
-                ptype = play.get("type")
-                plays.append({"name": pname,
-                              "type": ptype if ptype in ("run", "pass") else None})
-            forms[_normalize_formation_name(name)] = plays
-        by_team[team] = forms
-    return by_team
-
-
-def main(argv: list[str]) -> None:
-    parser = argparse.ArgumentParser(
-        description="Attach Madden 07 play names to the catalog.")
-    parser.add_argument("--cache-dir", default=".docx-cache-m07-plays",
-                        help="Directory of per-team <Team>.json files")
-    args = parser.parse_args(argv[1:])
-
-    cache_dir = Path(args.cache_dir)
-    by_team = _load_cache(cache_dir)
-    catalog = yaml.safe_load(CATALOG.read_text())
-
-    matched_teams = matched_forms = unmatched_forms = unmatched_teams = 0
-    unmatched_form_names: set[str] = set()
-    for team in catalog["teams"]:
-        team_cache = by_team.get(team["name"])
-        if not team_cache:
-            unmatched_teams += 1
-            continue
-        matched_teams += 1
-        for formation in team["formations"]:
-            plays = team_cache.get(_normalize_formation_name(formation["name"]))
-            if plays:
-                formation["plays"] = plays
-                matched_forms += 1
-            else:
-                unmatched_forms += 1
-                unmatched_form_names.add(formation["name"])
-
-    _write_catalog(catalog, CATALOG)
-    print(f"cached teams: {len(by_team)}")
-    print(f"  catalog teams with plays attached: {matched_teams}")
-    print(f"  catalog teams without cache yet:   {unmatched_teams}")
-    print(f"  formation-entries with plays:      {matched_forms}")
-    print(f"  formation-entries unmatched:       {unmatched_forms} "
-          f"({len(unmatched_form_names)} distinct names)")
-    if unmatched_form_names:
-        print(f"  sample unmatched: {sorted(unmatched_form_names)[:10]}")
-
-
-if __name__ == "__main__":
-    main(sys.argv)
+# FLEET-TOOLS-FORWARDER: this tool's code lives in fleet-tools-index (the fleet's tools monorepo) at
+#   tools/blitz-command/tools/ingest-research/extract_m07_play_names.py
+# Edit it THERE. This file runs that code in place, so every old caller of tools/ingest-research/extract_m07_play_names.py keeps working.
+# Search: $FLEET_TOOLS if set (only it), else ~/github/trunk/fleet-tools-index, ~/fleet-tools-index, /turret/ai_workspace/fleet-tools-index, then ../fleet-tools-index beside this repo's checkout (from this file's real path, only when it runs as itself) and ../trunk/fleet-tools-index from there (a ~/github/worktrees worktree): the first that holds the file.
+# FLEET_FORWARDER_PROBE=1 prints the file it would run and exits 0. Written by fleet-tools-index tix.py move.
+import os as _ft_os, sys as _ft_sys
+_FT_REL = 'tools/blitz-command/tools/ingest-research/extract_m07_play_names.py'
+def _ft_find(rel):
+    env = _ft_os.environ.get('FLEET_TOOLS')
+    here = None if env else globals().get('__file__')
+    here = here if here and _ft_os.path.basename(here) == 'extract_m07_play_names.py' else None
+    up = _ft_os.path.join(_ft_os.path.dirname(_ft_os.path.realpath(here)), *['..'] * 3) if here else ''
+    roots = [env] if env else [_ft_os.path.expanduser(r) for r in ['~/github/trunk/fleet-tools-index', '~/fleet-tools-index', '/turret/ai_workspace/fleet-tools-index']]
+    roots += [] if env else [_ft_os.path.normpath(_ft_os.path.join(up, s)) for s in ['fleet-tools-index', '../trunk/fleet-tools-index'] if up]
+    for r in roots:
+        p = _ft_os.path.join(r, rel)
+        if _ft_os.path.isfile(p):
+            return p
+    _ft_sys.stderr.write('%s: FLEET-TOOLS-FORWARDER: %s is in none of %s\n  fix: git -C <checkout> pull --ff-only (an old checkout lacks the file); no checkout: git clone git@github.com:patrickfcarey/fleet-tools-index.git ~/github/trunk/fleet-tools-index (dev box; the rig: ~/fleet-tools-index; the NAS: /turret/ai_workspace/fleet-tools-index); or FLEET_TOOLS=<checkout>\n' % (globals().get('__file__', '<no __file__>'), rel, roots))
+    _ft_sys.exit(127)
+_FT_REAL = _ft_find(_FT_REL)
+if __name__ == '__main__' and _ft_os.environ.get('FLEET_FORWARDER_PROBE'):
+    print(_FT_REAL)
+    _ft_sys.exit(0)
+with open(_FT_REAL, 'rb') as _ft_f:
+    _ft_code = compile(_ft_f.read(), _FT_REAL, 'exec', dont_inherit=True)
+del _ft_f, _ft_find, _ft_os, _ft_sys
+exec(_ft_code)

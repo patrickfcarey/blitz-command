@@ -1,77 +1,29 @@
 #!/usr/bin/env python3
-"""One-time migration: add a `depth` field to every pass-concept file.
-
-`depth` (quick / medium / deep) is the route-depth axis added to
-pass-concept.schema.json. `category` already classifies a concept by route
-mechanic; `depth` is the orthogonal "how far downfield" axis. This script
-inserts `depth` directly after the `category:` line of each pass-concept
-file, preserving all existing formatting and comments.
-
-Idempotent: a file that already has a `depth` field is left untouched.
-
-Run from the repo root:
-    python3 tools/migrate-add-pass-depth/migrate.py
-"""
-from __future__ import annotations
-
-from pathlib import Path
-
-import yaml
-
-REPO_ROOT = Path(__file__).resolve().parents[2]
-PASS_CONCEPTS_DIR = REPO_ROOT / "data" / "concepts" / "pass-concepts"
-
-# Primary route-depth bucket per pass concept: quick = rhythm game (breaks at
-# ~6 yd or less), medium = intermediate (~7-15 yd), deep = shot plays (16+ yd).
-DEPTH_BY_CONCEPT = {
-    "dagger": "deep",
-    "double-slant": "quick",
-    "drive": "medium",
-    "flood": "medium",
-    "four-verticals": "deep",
-    "hi-lo": "medium",
-    "levels": "medium",
-    "mesh": "quick",
-    "post-corner": "deep",
-    "sail": "medium",
-    "slant-flat": "quick",
-    "smash": "medium",
-    "snag": "quick",
-    "spacing": "quick",
-    "stick": "quick",
-    "switch": "deep",
-}
-
-
-def main() -> None:
-    """Insert `depth` after the `category:` line of each pass-concept file."""
-    updated, skipped_existing, unmapped = [], [], []
-    for concept_path in sorted(PASS_CONCEPTS_DIR.glob("*.yaml")):
-        concept = yaml.safe_load(concept_path.read_text())
-        concept_id = concept["concept_id"]
-        if "depth" in concept:
-            skipped_existing.append(concept_id)
-            continue
-        depth = DEPTH_BY_CONCEPT.get(concept_id)
-        if depth is None:
-            unmapped.append(concept_id)
-            continue
-        lines = concept_path.read_text().splitlines(keepends=True)
-        for line_index, line in enumerate(lines):
-            if line.startswith("category:"):
-                lines.insert(line_index + 1, f"depth: {depth}\n")
-                concept_path.write_text("".join(lines))
-                updated.append(concept_id)
-                break
-        else:
-            unmapped.append(concept_id)
-
-    print(f"depth added to {len(updated)} pass concepts: {sorted(updated)}")
-    if skipped_existing:
-        print(f"already had depth (skipped): {sorted(skipped_existing)}")
-    if unmapped:
-        print(f"WARNING: unmapped / no category line: {sorted(unmapped)}")
-
-
-if __name__ == "__main__":
-    main()
+# FLEET-TOOLS-FORWARDER: this tool's code lives in fleet-tools-index (the fleet's tools monorepo) at
+#   tools/blitz-command/tools/migrate-add-pass-depth/migrate.py
+# Edit it THERE. This file runs that code in place, so every old caller of tools/migrate-add-pass-depth/migrate.py keeps working.
+# Search: $FLEET_TOOLS if set (only it), else ~/github/trunk/fleet-tools-index, ~/fleet-tools-index, /turret/ai_workspace/fleet-tools-index, then ../fleet-tools-index beside this repo's checkout (from this file's real path, only when it runs as itself) and ../trunk/fleet-tools-index from there (a ~/github/worktrees worktree): the first that holds the file.
+# FLEET_FORWARDER_PROBE=1 prints the file it would run and exits 0. Written by fleet-tools-index tix.py move.
+import os as _ft_os, sys as _ft_sys
+_FT_REL = 'tools/blitz-command/tools/migrate-add-pass-depth/migrate.py'
+def _ft_find(rel):
+    env = _ft_os.environ.get('FLEET_TOOLS')
+    here = None if env else globals().get('__file__')
+    here = here if here and _ft_os.path.basename(here) == 'migrate.py' else None
+    up = _ft_os.path.join(_ft_os.path.dirname(_ft_os.path.realpath(here)), *['..'] * 3) if here else ''
+    roots = [env] if env else [_ft_os.path.expanduser(r) for r in ['~/github/trunk/fleet-tools-index', '~/fleet-tools-index', '/turret/ai_workspace/fleet-tools-index']]
+    roots += [] if env else [_ft_os.path.normpath(_ft_os.path.join(up, s)) for s in ['fleet-tools-index', '../trunk/fleet-tools-index'] if up]
+    for r in roots:
+        p = _ft_os.path.join(r, rel)
+        if _ft_os.path.isfile(p):
+            return p
+    _ft_sys.stderr.write('%s: FLEET-TOOLS-FORWARDER: %s is in none of %s\n  fix: git -C <checkout> pull --ff-only (an old checkout lacks the file); no checkout: git clone git@github.com:patrickfcarey/fleet-tools-index.git ~/github/trunk/fleet-tools-index (dev box; the rig: ~/fleet-tools-index; the NAS: /turret/ai_workspace/fleet-tools-index); or FLEET_TOOLS=<checkout>\n' % (globals().get('__file__', '<no __file__>'), rel, roots))
+    _ft_sys.exit(127)
+_FT_REAL = _ft_find(_FT_REL)
+if __name__ == '__main__' and _ft_os.environ.get('FLEET_FORWARDER_PROBE'):
+    print(_FT_REAL)
+    _ft_sys.exit(0)
+with open(_FT_REAL, 'rb') as _ft_f:
+    _ft_code = compile(_ft_f.read(), _FT_REAL, 'exec', dont_inherit=True)
+del _ft_f, _ft_find, _ft_os, _ft_sys
+exec(_ft_code)

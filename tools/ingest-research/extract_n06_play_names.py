@@ -1,120 +1,29 @@
 #!/usr/bin/env python3
-"""Attach play names to the NCAA Football 06 catalog from the master
-``Offensive Plays.docx`` (one docx, formation-grouped by Heading 1 paragraphs).
-
-Pipeline:
-1. ``map_images_to_formations.py`` (sibling script) walks the docx body and
-   records each image's enclosing Heading-1 formation -> ``/tmp/n06-work/image_to_formation.json``.
-2. Vision subagents read the extracted .png strips and emit per-chunk JSON:
-       .docx-cache-n06-plays-rerun/chunkNN.json
-       {"first_image": 1, "last_image": 41,
-        "images": [{"i": 1, "plays": ["All Hook", "HB Dive", "PA Deep Post"]}, ...]}
-3. This script combines the chunks, groups plays by formation, deduplicates,
-   and attaches the resulting formation -> plays map to every catalog entry
-   whose formation name matches (tolerant of dashes/spaces/case).
-"""
-from __future__ import annotations
-
-import argparse
-import json
-import re
-import sys
-from pathlib import Path
-
-import yaml
-
-from extract_ncaa14_play_names import _write_catalog  # type: ignore
-
-REPO_ROOT = Path(__file__).resolve().parents[2]
-CATALOG = REPO_ROOT / "data" / "games" / "ncaa-06-ps2" / "team-playbooks.yaml"
-
-
-def _normalize(name: str) -> str:
-    """Tolerant key for cross-source formation matching.
-
-    The xlsx catalog abbreviates "Shotgun" as "Gun" and uses "5-Wide" / "5 Wide"
-    inconsistently; the docx spells out "Shotgun" and uses "5 Wide". Collapse
-    whitespace/dashes/case and rewrite the Shotgun prefix.
-    """
-    out = re.sub(r"[\s\-_]+", "", name).lower()
-    if out.startswith("shotgun"):
-        out = "gun" + out[len("shotgun"):]
-    return out
-
-
-def _load_image_to_formation(path: Path) -> dict[int, str]:
-    raw = json.loads(path.read_text())
-    return {int(k): v for k, v in raw.items()}
-
-
-def _load_chunks(cache_dir: Path) -> list[dict]:
-    images: list[dict] = []
-    for chunk in sorted(cache_dir.glob("chunk*.json")):
-        data = json.loads(chunk.read_text())
-        images.extend(data.get("images", []))
-    return images
-
-
-def _build_formation_plays(
-    images: list[dict],
-    image_to_formation: dict[int, str],
-) -> dict[str, list[dict]]:
-    """Map normalized-formation -> ordered-deduped play list."""
-    by_formation: dict[str, list[dict]] = {}
-    seen_per_formation: dict[str, set[str]] = {}
-    for obs in images:
-        idx = obs.get("i")
-        formation = image_to_formation.get(idx)
-        if not formation:
-            continue
-        key = _normalize(formation)
-        plays = by_formation.setdefault(key, [])
-        seen = seen_per_formation.setdefault(key, set())
-        for raw_name in obs.get("plays", []):
-            cleaned = (raw_name or "").strip()
-            if not cleaned or cleaned.lower() in seen:
-                continue
-            seen.add(cleaned.lower())
-            plays.append({"name": cleaned, "type": None})
-    return by_formation
-
-
-def main(argv: list[str]) -> None:
-    parser = argparse.ArgumentParser(
-        description="Attach NCAA 06 Offensive Plays.docx play names to the catalog.")
-    parser.add_argument("--cache-dir", default=".docx-cache-n06-plays-rerun",
-                        help="Directory of chunkNN.json per-image observation files")
-    parser.add_argument("--image-map",
-                        default="/tmp/n06-work/image_to_formation.json",
-                        help="JSON of image-index -> formation-name from map_images_to_formations.py")
-    args = parser.parse_args(argv[1:])
-
-    image_to_formation = _load_image_to_formation(Path(args.image_map))
-    images = _load_chunks(Path(args.cache_dir))
-    by_formation = _build_formation_plays(images, image_to_formation)
-
-    catalog = yaml.safe_load(CATALOG.read_text())
-    matched = unmatched = 0
-    unmatched_names: set[str] = set()
-    for team in catalog["teams"]:
-        for formation in team["formations"]:
-            plays = by_formation.get(_normalize(formation["name"]))
-            if plays:
-                formation["plays"] = plays
-                matched += 1
-            else:
-                unmatched += 1
-                unmatched_names.add(formation["name"])
-
-    _write_catalog(catalog, CATALOG)
-    print(f"chunks: {len(images)} image observations")
-    print(f"  distinct formations seen in docx: {len(by_formation)}")
-    print(f"  catalog formation-entries with plays: {matched}")
-    print(f"  unmatched formation-entries: {unmatched} "
-          f"({len(unmatched_names)} distinct names)")
-    if unmatched_names:
-        print(f"  sample unmatched: {sorted(unmatched_names)[:10]}")
-
-
-if __name__ == "__main__":
-    main(sys.argv)
+# FLEET-TOOLS-FORWARDER: this tool's code lives in fleet-tools-index (the fleet's tools monorepo) at
+#   tools/blitz-command/tools/ingest-research/extract_n06_play_names.py
+# Edit it THERE. This file runs that code in place, so every old caller of tools/ingest-research/extract_n06_play_names.py keeps working.
+# Search: $FLEET_TOOLS if set (only it), else ~/github/trunk/fleet-tools-index, ~/fleet-tools-index, /turret/ai_workspace/fleet-tools-index, then ../fleet-tools-index beside this repo's checkout (from this file's real path, only when it runs as itself) and ../trunk/fleet-tools-index from there (a ~/github/worktrees worktree): the first that holds the file.
+# FLEET_FORWARDER_PROBE=1 prints the file it would run and exits 0. Written by fleet-tools-index tix.py move.
+import os as _ft_os, sys as _ft_sys
+_FT_REL = 'tools/blitz-command/tools/ingest-research/extract_n06_play_names.py'
+def _ft_find(rel):
+    env = _ft_os.environ.get('FLEET_TOOLS')
+    here = None if env else globals().get('__file__')
+    here = here if here and _ft_os.path.basename(here) == 'extract_n06_play_names.py' else None
+    up = _ft_os.path.join(_ft_os.path.dirname(_ft_os.path.realpath(here)), *['..'] * 3) if here else ''
+    roots = [env] if env else [_ft_os.path.expanduser(r) for r in ['~/github/trunk/fleet-tools-index', '~/fleet-tools-index', '/turret/ai_workspace/fleet-tools-index']]
+    roots += [] if env else [_ft_os.path.normpath(_ft_os.path.join(up, s)) for s in ['fleet-tools-index', '../trunk/fleet-tools-index'] if up]
+    for r in roots:
+        p = _ft_os.path.join(r, rel)
+        if _ft_os.path.isfile(p):
+            return p
+    _ft_sys.stderr.write('%s: FLEET-TOOLS-FORWARDER: %s is in none of %s\n  fix: git -C <checkout> pull --ff-only (an old checkout lacks the file); no checkout: git clone git@github.com:patrickfcarey/fleet-tools-index.git ~/github/trunk/fleet-tools-index (dev box; the rig: ~/fleet-tools-index; the NAS: /turret/ai_workspace/fleet-tools-index); or FLEET_TOOLS=<checkout>\n' % (globals().get('__file__', '<no __file__>'), rel, roots))
+    _ft_sys.exit(127)
+_FT_REAL = _ft_find(_FT_REL)
+if __name__ == '__main__' and _ft_os.environ.get('FLEET_FORWARDER_PROBE'):
+    print(_FT_REAL)
+    _ft_sys.exit(0)
+with open(_FT_REAL, 'rb') as _ft_f:
+    _ft_code = compile(_ft_f.read(), _FT_REAL, 'exec', dont_inherit=True)
+del _ft_f, _ft_find, _ft_os, _ft_sys
+exec(_ft_code)

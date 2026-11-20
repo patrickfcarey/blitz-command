@@ -1,123 +1,29 @@
 #!/usr/bin/env python3
-"""Build a formation-library YAML for NCAA Football 05.
-
-NCAA 05 has no per-team playbook-database xlsx (unlike NCAA 04/06/07/14), so
-we can't produce the per-team team-playbooks.yaml shape. What we *can* extract
-is the master Offensive Plays.docx, which groups every offensive formation in
-the game and its full play list. That's still a useful artifact — a
-formation-level reference — so we emit it as a distinct schema rather than
-faking a single-team catalog.
-
-Output: ``data/games/ncaa-05-ps2/formation-library.yaml``
-    game_id: ncaa-05-ps2
-    source: in-game Offensive Plays.docx
-    generated_date: <ISO>
-    formation_count: <int>
-    formations:
-      - name: Ace Big Twins
-        plays:
-          - {name: All Hook, type: null}
-          - ...
-"""
-from __future__ import annotations
-
-import argparse
-import json
-import re
-import sys
-from datetime import date
-from pathlib import Path
-
-REPO_ROOT = Path(__file__).resolve().parents[2]
-OUTPUT = REPO_ROOT / "data" / "games" / "ncaa-05-ps2" / "formation-library.yaml"
-
-# Reuse the YAML scalar quoter from the NCAA 14 attacher (already battle-tested
-# against play names with apostrophes, ampersands, and colons).
-from extract_ncaa14_play_names import _yaml_str  # type: ignore
-
-
-def _load_image_to_formation(path: Path) -> dict[int, str]:
-    raw = json.loads(path.read_text())
-    return {int(k): v for k, v in raw.items()}
-
-
-def _load_chunks(cache_dir: Path) -> list[dict]:
-    images: list[dict] = []
-    for chunk in sorted(cache_dir.glob("chunk*.json")):
-        data = json.loads(chunk.read_text())
-        images.extend(data.get("images", []))
-    return images
-
-
-def _build_formation_plays(
-    images: list[dict],
-    image_to_formation: dict[int, str],
-) -> dict[str, list[dict]]:
-    """Map formation-name -> ordered-deduped play list."""
-    by_formation: dict[str, list[dict]] = {}
-    seen_per_formation: dict[str, set[str]] = {}
-    for obs in images:
-        idx = obs.get("i")
-        formation = image_to_formation.get(idx)
-        if not formation:
-            continue
-        plays = by_formation.setdefault(formation, [])
-        seen = seen_per_formation.setdefault(formation, set())
-        for raw_name in obs.get("plays", []) or []:
-            cleaned = (raw_name or "").strip()
-            if not cleaned or cleaned.lower() in seen:
-                continue
-            seen.add(cleaned.lower())
-            ptype = None  # NCAA 05 strips don't reliably surface run/pass
-            plays.append({"name": cleaned, "type": ptype})
-    return by_formation
-
-
-def _write_library(by_formation: dict[str, list[dict]], path: Path) -> None:
-    lines: list[str] = []
-    lines.append("game_id: ncaa-05-ps2")
-    lines.append("source: in-game Offensive Plays.docx")
-    lines.append(f'generated_date: "{date.today().isoformat()}"')
-    lines.append("verification_status: unverified")
-    lines.append(f"formation_count: {len(by_formation)}")
-    lines.append("formations:")
-    for name in sorted(by_formation.keys()):
-        plays = by_formation[name]
-        lines.append(f"  - name: {_yaml_str(name)}")
-        if not plays:
-            lines.append("    plays: []")
-            continue
-        lines.append("    plays:")
-        for play in plays:
-            lines.append(f"      - name: {_yaml_str(play['name'])}")
-            ptype = play.get("type")
-            lines.append(f"        type: "
-                         f"{ptype if ptype in ('run', 'pass') else 'null'}")
-    path.write_text("\n".join(lines) + "\n", encoding="utf-8")
-
-
-def main(argv: list[str]) -> None:
-    parser = argparse.ArgumentParser(
-        description="Build NCAA Football 05 formation library.")
-    parser.add_argument("--cache-dir", default=".docx-cache-n05-plays-rerun",
-                        help="Per-image observation chunks (chunkNN.json)")
-    parser.add_argument("--image-map", default="/tmp/n05-work/image_to_formation.json",
-                        help="image-index -> formation-name JSON")
-    args = parser.parse_args(argv[1:])
-
-    image_to_formation = _load_image_to_formation(Path(args.image_map))
-    images = _load_chunks(Path(args.cache_dir))
-    by_formation = _build_formation_plays(images, image_to_formation)
-
-    OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-    _write_library(by_formation, OUTPUT)
-
-    play_total = sum(len(p) for p in by_formation.values())
-    print(f"observations: {len(images)}")
-    print(f"formations:   {len(by_formation)}")
-    print(f"total plays:  {play_total}")
-    print(f"wrote -> {OUTPUT}")
-
-
-if __name__ == "__main__":
-    main(sys.argv)
+# FLEET-TOOLS-FORWARDER: this tool's code lives in fleet-tools-index (the fleet's tools monorepo) at
+#   tools/blitz-command/tools/ingest-research/build_n05_formation_library.py
+# Edit it THERE. This file runs that code in place, so every old caller of tools/ingest-research/build_n05_formation_library.py keeps working.
+# Search: $FLEET_TOOLS if set (only it), else ~/github/trunk/fleet-tools-index, ~/fleet-tools-index, /turret/ai_workspace/fleet-tools-index, then ../fleet-tools-index beside this repo's checkout (from this file's real path, only when it runs as itself) and ../trunk/fleet-tools-index from there (a ~/github/worktrees worktree): the first that holds the file.
+# FLEET_FORWARDER_PROBE=1 prints the file it would run and exits 0. Written by fleet-tools-index tix.py move.
+import os as _ft_os, sys as _ft_sys
+_FT_REL = 'tools/blitz-command/tools/ingest-research/build_n05_formation_library.py'
+def _ft_find(rel):
+    env = _ft_os.environ.get('FLEET_TOOLS')
+    here = None if env else globals().get('__file__')
+    here = here if here and _ft_os.path.basename(here) == 'build_n05_formation_library.py' else None
+    up = _ft_os.path.join(_ft_os.path.dirname(_ft_os.path.realpath(here)), *['..'] * 3) if here else ''
+    roots = [env] if env else [_ft_os.path.expanduser(r) for r in ['~/github/trunk/fleet-tools-index', '~/fleet-tools-index', '/turret/ai_workspace/fleet-tools-index']]
+    roots += [] if env else [_ft_os.path.normpath(_ft_os.path.join(up, s)) for s in ['fleet-tools-index', '../trunk/fleet-tools-index'] if up]
+    for r in roots:
+        p = _ft_os.path.join(r, rel)
+        if _ft_os.path.isfile(p):
+            return p
+    _ft_sys.stderr.write('%s: FLEET-TOOLS-FORWARDER: %s is in none of %s\n  fix: git -C <checkout> pull --ff-only (an old checkout lacks the file); no checkout: git clone git@github.com:patrickfcarey/fleet-tools-index.git ~/github/trunk/fleet-tools-index (dev box; the rig: ~/fleet-tools-index; the NAS: /turret/ai_workspace/fleet-tools-index); or FLEET_TOOLS=<checkout>\n' % (globals().get('__file__', '<no __file__>'), rel, roots))
+    _ft_sys.exit(127)
+_FT_REAL = _ft_find(_FT_REL)
+if __name__ == '__main__' and _ft_os.environ.get('FLEET_FORWARDER_PROBE'):
+    print(_FT_REAL)
+    _ft_sys.exit(0)
+with open(_FT_REAL, 'rb') as _ft_f:
+    _ft_code = compile(_ft_f.read(), _FT_REAL, 'exec', dont_inherit=True)
+del _ft_f, _ft_find, _ft_os, _ft_sys
+exec(_ft_code)

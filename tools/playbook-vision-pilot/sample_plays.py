@@ -1,148 +1,29 @@
 #!/usr/bin/env python3
-"""Stratified sample of 50 Madden 25 plays for the hybrid-vs-cold vision pilot.
-
-Reads the per-team play_screen cache (`.docx-cache-m25-plays/<Team>__chunkNN.json`)
-and emits ``/tmp/pilot-work/pilot-sample.json`` — a list of records:
-
-    {"id":         "indianapolis_colts__hb_toss__0001",
-     "team":       "Indianapolis Colts",
-     "docx_stem":  "Indianapolis_Colts",
-     "image":      5,
-     "panel":      0,
-     "play_name":  "HB Toss",
-     "play_type":  "run",
-     "stratum":    "run_clean" | "run_generic" | "pass_named" | "pass_generic"}
-
-Stratification keeps power balanced across the four cells we care about:
-clean-name runs (where the parser should give the strongest prior), generic
-runs (where it shouldn't), named passes (well-known concepts like Mesh /
-Levels), and generic passes.
-"""
-from __future__ import annotations
-
-import json
-import random
-import re
-from collections import defaultdict
-from pathlib import Path
-
-REPO_ROOT = Path(__file__).resolve().parents[2]
-CACHE_DIR = REPO_ROOT / ".docx-cache-m25-plays"
-OUT = Path("/tmp/pilot-work/pilot-sample.json")
-
-# Tunable: total pilot sample. With paired within-subject design, ~50 pairs
-# (~25-13 per cell) gives ~80% power to detect a ~15% reduction in tool_calls.
-PILOT_N = 50
-PER_STRATUM = {"run_clean": 12, "run_generic": 12,
-               "pass_named": 13, "pass_generic": 13}
-SEED = 20260520
-
-# Plays whose name encodes direction/gap/strong-weak — the parser will have
-# something to work with. Add liberally; we just need a strong "decodable" prior.
-RUN_CLEAN_PATTERNS = [
-    r"\b(iso|power|blast|sweep|toss|counter|off ?tackle|stretch|trap|dive)\b.*\b(lt|rt|wk|str|strong|weak|left|right)\b",
-    r"\b(power|counter|toss|stretch|sweep|blast)\b\s+[a-z]\b",  # "Power O Lt"
-    r"\bgap\b",                                                   # "HB Gap"
-    r"\bzone\b\s+(lt|rt|wk|str)\b",                              # "Inside Zone Lt"
-]
-PASS_NAMED_PATTERNS = [
-    # Well-known pass-concept names already in data/concepts/pass-concepts/.
-    r"\b(mesh|levels|smash|stick|sail|dagger|drive|flood|four ?verticals|"
-    r"hi[- ]?lo|double slants|drag|cross|hb wheel|y stick|y sail)\b",
-    r"\bpa (boot|read|wheel|deep|cross)\b",
-    r"\bhitches?\b",
-    r"\bcurls?\b\s+(flat|streak|out)\b",
-]
-
-
-def _matches(patterns: list[str], play_name: str) -> bool:
-    needle = play_name.lower()
-    return any(re.search(p, needle) for p in patterns)
-
-
-def _stratum(play: dict) -> str:
-    name = play.get("name", "")
-    ptype = play.get("type")
-    if ptype == "run":
-        return "run_clean" if _matches(RUN_CLEAN_PATTERNS, name) else "run_generic"
-    if ptype == "pass":
-        return "pass_named" if _matches(PASS_NAMED_PATTERNS, name) else "pass_generic"
-    return "skip"  # null/unknown play-types stay out of the pilot
-
-
-def _slug(text: str) -> str:
-    return re.sub(r"[^a-z0-9]+", "_", text.lower()).strip("_")
-
-
-def _walk_cache() -> list[dict]:
-    """Flatten every per-team play_screen cache into individual play records."""
-    plays = []
-    for chunk_file in sorted(CACHE_DIR.glob("*__chunk*.json")):
-        team_part = chunk_file.stem.split("__")[0]
-        docx_stem = team_part.replace(" ", "_")
-        entries = json.loads(chunk_file.read_text())
-        for entry in entries:
-            if entry.get("kind") != "play_screen":
-                continue
-            for panel_idx, play in enumerate(entry.get("plays", [])):
-                name = (play.get("name") or "").strip()
-                if not name:
-                    continue
-                plays.append({
-                    "team": team_part,
-                    "docx_stem": docx_stem,
-                    "image": entry["img"],
-                    "panel": panel_idx,
-                    "play_name": name,
-                    "play_type": play.get("type"),
-                    "stratum": _stratum(play),
-                })
-    return plays
-
-
-def main() -> None:
-    OUT.parent.mkdir(parents=True, exist_ok=True)
-    rng = random.Random(SEED)
-    all_plays = _walk_cache()
-    by_stratum: dict[str, list[dict]] = defaultdict(list)
-    for play in all_plays:
-        by_stratum[play["stratum"]].append(play)
-
-    print("population per stratum:")
-    for stratum, items in sorted(by_stratum.items()):
-        print(f"  {stratum:<14} n={len(items)}")
-
-    sample: list[dict] = []
-    teams_seen: set[str] = set()
-    for stratum, target in PER_STRATUM.items():
-        pool = by_stratum.get(stratum, [])
-        rng.shuffle(pool)
-        # Diversify across teams: prefer plays from teams not yet represented.
-        cell = []
-        for play in pool:
-            if len(cell) >= target:
-                break
-            if play["team"] in teams_seen and len(teams_seen) < target:
-                continue
-            cell.append(play)
-            teams_seen.add(play["team"])
-        # Backfill if filtering left us short.
-        for play in pool:
-            if len(cell) >= target:
-                break
-            if play in cell:
-                continue
-            cell.append(play)
-        sample.extend(cell)
-
-    for play in sample:
-        play["id"] = (f"{_slug(play['team'])}__{_slug(play['play_name'])}"
-                      f"__{play['image']:04d}_{play['panel']}")
-
-    OUT.write_text(json.dumps(sample, indent=2))
-    print(f"\nwrote {OUT}: {len(sample)} plays across "
-          f"{len({p['team'] for p in sample})} teams")
-
-
-if __name__ == "__main__":
-    main()
+# FLEET-TOOLS-FORWARDER: this tool's code lives in fleet-tools-index (the fleet's tools monorepo) at
+#   tools/blitz-command/tools/playbook-vision-pilot/sample_plays.py
+# Edit it THERE. This file runs that code in place, so every old caller of tools/playbook-vision-pilot/sample_plays.py keeps working.
+# Search: $FLEET_TOOLS if set (only it), else ~/github/trunk/fleet-tools-index, ~/fleet-tools-index, /turret/ai_workspace/fleet-tools-index, then ../fleet-tools-index beside this repo's checkout (from this file's real path, only when it runs as itself) and ../trunk/fleet-tools-index from there (a ~/github/worktrees worktree): the first that holds the file.
+# FLEET_FORWARDER_PROBE=1 prints the file it would run and exits 0. Written by fleet-tools-index tix.py move.
+import os as _ft_os, sys as _ft_sys
+_FT_REL = 'tools/blitz-command/tools/playbook-vision-pilot/sample_plays.py'
+def _ft_find(rel):
+    env = _ft_os.environ.get('FLEET_TOOLS')
+    here = None if env else globals().get('__file__')
+    here = here if here and _ft_os.path.basename(here) == 'sample_plays.py' else None
+    up = _ft_os.path.join(_ft_os.path.dirname(_ft_os.path.realpath(here)), *['..'] * 3) if here else ''
+    roots = [env] if env else [_ft_os.path.expanduser(r) for r in ['~/github/trunk/fleet-tools-index', '~/fleet-tools-index', '/turret/ai_workspace/fleet-tools-index']]
+    roots += [] if env else [_ft_os.path.normpath(_ft_os.path.join(up, s)) for s in ['fleet-tools-index', '../trunk/fleet-tools-index'] if up]
+    for r in roots:
+        p = _ft_os.path.join(r, rel)
+        if _ft_os.path.isfile(p):
+            return p
+    _ft_sys.stderr.write('%s: FLEET-TOOLS-FORWARDER: %s is in none of %s\n  fix: git -C <checkout> pull --ff-only (an old checkout lacks the file); no checkout: git clone git@github.com:patrickfcarey/fleet-tools-index.git ~/github/trunk/fleet-tools-index (dev box; the rig: ~/fleet-tools-index; the NAS: /turret/ai_workspace/fleet-tools-index); or FLEET_TOOLS=<checkout>\n' % (globals().get('__file__', '<no __file__>'), rel, roots))
+    _ft_sys.exit(127)
+_FT_REAL = _ft_find(_FT_REL)
+if __name__ == '__main__' and _ft_os.environ.get('FLEET_FORWARDER_PROBE'):
+    print(_FT_REAL)
+    _ft_sys.exit(0)
+with open(_FT_REAL, 'rb') as _ft_f:
+    _ft_code = compile(_ft_f.read(), _FT_REAL, 'exec', dont_inherit=True)
+del _ft_f, _ft_find, _ft_os, _ft_sys
+exec(_ft_code)
